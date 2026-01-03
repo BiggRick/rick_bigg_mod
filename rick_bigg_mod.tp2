@@ -1,0 +1,84 @@
+BACKUP ~weidu_external/tb#rick_mod/backup~ // location to store files for uninstall purposes
+AUTHOR ~vbigiani@gmail.com~ // display email address if install fails
+README ~tb#rick_mod/lang/%LANGUAGE%/readme-tb#rick_mod.txt~
+
+ASK_EVERY_COMPONENT
+
+VERSION ~0.0.1~
+
+ALWAYS
+
+  ACTION_IF !(GAME_IS ~eet~) BEGIN
+	FAIL @200000000
+  END
+
+  ACTION_IF !(MOD_IS_INSTALLED ~SPELL_REV/SETUP-SPELL_REV.TP2~ 0 ) BEGIN
+	FAIL @200000001
+  END
+
+  // On EE games, convert tra files to utf-8 so that games don't crash for non-English
+  ACTION_IF NOT VARIABLE_IS_SET cd_always THEN BEGIN
+    OUTER_SET cd_always = 1
+    
+    ACTION_DEFINE_ARRAY cdnoconvert BEGIN setup END // List of tra files that contain ONLY strings for the WeiDU installer and NOT game content
+    ACTION_DEFINE_ARRAY cdreload BEGIN descriptions END // List of tra files that contain strings used for game content that get converted in the next step
+    
+    LAF HANDLE_CHARSETS INT_VAR infer_charset = 1 STR_VAR tra_path = EVAL ~%MOD_FOLDER%/lang~ noconvert_array = cdnoconvert reload_array = cdreload  END
+  END
+END
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+LANGUAGE ~English~
+         ~english~
+         ~tb#rick_mod/lang/english/descriptions.tra~
+         ~tb#rick_mod/lang/english/setup.tra~
+
+LANGUAGE ~Italian~
+         ~italian~
+         ~tb#rick_mod/lang/italian/descriptions.tra~
+         ~tb#rick_mod/lang/italian/setup.tra~
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+BEGIN @100100000
+DESIGNATED 100
+
+// SOD - be - gone
+COPY_EXISTING ~BDSODTRN.BCS~ ~override~
+    DECOMPILE_AND_PATCH BEGIN
+        REPLACE_TEXTUALLY ~StartMovie("SODCIN01")~ ~~
+        REPLACE_TEXTUALLY ~MoveToCampaign("SoD")~ ~CreateCreatureObject("K#TELBGT",Player1,0,0,0)~
+    END
+
+
+
+COPY ~tb#rick_mod/copy~ ~override~
+
+COPY_EXISTING ~racetext.2da~ ~override~
+              ~bgractxt.2da~ ~override~
+              ~sodrace.2da~  ~override~
+	SET_2DA_ENTRY_LATER racetext 2 3 ( RESOLVE_STR_REF ( @100200001 ))
+	SET_2DA_ENTRY_LATER racetext 3 3 ( RESOLVE_STR_REF ( @100200002 ))
+	SET_2DA_ENTRY_LATER racetext 4 3 ( RESOLVE_STR_REF ( @100200003 ))
+	SET_2DA_ENTRY_LATER racetext 5 3 ( RESOLVE_STR_REF ( @100200004 ))
+	SET_2DA_ENTRY_LATER racetext 6 3 ( RESOLVE_STR_REF ( @100200005 ))
+	SET_2DA_ENTRY_LATER racetext 7 3 ( RESOLVE_STR_REF ( @100200006 ))
+	
+	SET_2DA_ENTRIES_NOW racetext 4
+	PRETTY_PRINT_2DA
+
+COPY_EXISTING ~weapprof.2da~ ~override~
+	SET_2DA_ENTRY_LATER weapprof 29 3 ( RESOLVE_STR_REF ( @100300001 ))
+	SET_2DA_ENTRY_LATER weapprof 30 3 ( RESOLVE_STR_REF ( @100300002 ))
+	SET_2DA_ENTRY_LATER weapprof 31 3 ( RESOLVE_STR_REF ( @100300003 ))
+	SET_2DA_ENTRY_LATER weapprof 32 3 ( RESOLVE_STR_REF ( @100300004 ))
+	
+	SET_2DA_ENTRIES_NOW weapprof 6
+	PRETTY_PRINT_2DA
