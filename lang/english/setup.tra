@@ -1,5 +1,5 @@
-@100100000 = "Rick & Bigg Mod"
+@100000000 = "Rick & Bigg Mod"
 
-@200000000 = "This mod only supports Enhanced Edition Trilogy"
-@200000001 = "This mod requires Spell Revisions to be installed"
-@200000002 = "This mod requires BG1 NPC Project to be installed"
+@100000001 = "This mod only supports Enhanced Edition Trilogy"
+@100000002 = "This mod requires Spell Revisions to be installed"
+@100000003 = "This mod requires BG1 NPC Project to be installed"
