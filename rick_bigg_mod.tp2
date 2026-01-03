@@ -21,9 +21,9 @@ ALWAYS
     OUTER_SET cd_always = 1
     
     ACTION_DEFINE_ARRAY cdnoconvert BEGIN setup END // List of tra files that contain ONLY strings for the WeiDU installer and NOT game content
-    ACTION_DEFINE_ARRAY cdreload BEGIN descriptions END // List of tra files that contain strings used for game content that get converted in the next step
+    ACTION_DEFINE_ARRAY cdreload BEGIN descriptions items_description END // List of tra files that contain strings used for game content that get converted in the next step
     
-    LAF HANDLE_CHARSETS INT_VAR infer_charset = 1 STR_VAR tra_path = EVAL ~%MOD_FOLDER%/lang~ noconvert_array = cdnoconvert reload_array = cdreload  END
+    LAF HANDLE_CHARSETS INT_VAR infer_charset = 1 STR_VAR tra_path = EVAL ~%MOD_FOLDER%/lang~ noconvert_array = cdnoconvert reload_array = cdreload out_path = "weidu_external/rick_bigg_mod/tra" END
   END
 END
 
@@ -35,11 +35,13 @@ END
 LANGUAGE ~English~
          ~english~
          ~rick_bigg_mod/lang/english/descriptions.tra~
+         ~rick_bigg_mod/lang/english/items_descriptions.tra~
          ~rick_bigg_mod/lang/english/setup.tra~
 
 LANGUAGE ~Italian~
          ~italian~
          ~rick_bigg_mod/lang/italian/descriptions.tra~
+         ~rick_bigg_mod/lang/italian/items_descriptions.tra~
          ~rick_bigg_mod/lang/italian/setup.tra~
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -82,3 +84,5 @@ COPY_EXISTING ~weapprof.2da~ ~override~
 	
 	SET_2DA_ENTRIES_NOW weapprof 6
 	PRETTY_PRINT_2DA
+
+INCLUDE ~rick_bigg_mod/lib/items.tpa~
