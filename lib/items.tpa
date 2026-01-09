@@ -1,4 +1,4 @@
-//
+//CARSOMYR + 5//
 COPY "rick_bigg_mod/items/sw2h10.itm" "override"
 	SAY NAME1 "Two-Handed Sword"
 	SAY UNIDENTIFIED_DESC "The two-handed sword is a derivative of the long sword. Weaponsmiths have always looked for ways to improve existing weapons. In an effort to improve the long sword, the blade was lengthened. Eventually, the handle had to be extended and two hands became necessary to properly swing the sword. The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations.
@@ -13,25 +13,25 @@ Requires:
  14 Strength
 
 Weight: 15"
+
 	SAY NAME2 "Carsomyr +5"
-	SAY DESC "The Holy Avenger: Carsomyr
-Carsomyr is a weapon of legend, perhaps one of the most powerful blades ever forged on Faerûn, though its origin and history is thought purposefully forgotten so that the sword itself shall never overshadow the importance of the struggles that must be fought today. It is infused with the very essence of virtue and requires as much from any Paladin who would hope to wield it. The evils of the realms must truly stand aside when this weapon is brought to bear, their magic dispelled with a word, steadfastly resisted with ease. Carsomyr also harbors a special distaste for the forces of evil and chaos, and such creatures must fear additional damage from its touch in battle.
+	SAY DESC "Carsomyr is a weapon of legend, perhaps one of the most powerful blades ever forged on Faerûn, though its origin and history is thought purposefully forgotten so that the sword itself shall never overshadow the importance of the struggles that must be fought today. It is infused with the very essence of virtue and requires as much from any Paladin who would hope to wield it. The evils of the realms must truly stand aside when this weapon is brought to bear, their magic dispelled with a word, steadfastly resisted with ease. Carsomyr also harbors a special distaste for the forces of evil and chaos, and such creatures must fear additional damage from its touch in battle.
 
 STATISTICS:
 
 Equipped abilities:
-– Magic Resistance: +50% bonus
+– Magic Resistance: +50%
 
 Combat abilities:
 – Dispel Magic at level 30 on each hit
 
 Charge abilities:
-– Dispel Magic at level 15 three times per day
+– Dispel Magic at level 20 three times per day
   Range: 40 ft.
   Area of Effect: 15-ft. radius
 
 THAC0: +5
-Damage: 1d12+5, +5 extra vs. chaotic evil
+Damage: 1d10+5, +5 extra vs. evil
 Damage type: Slashing
 Speed Factor: 5
 Proficiency Type: Two-handed Sword
@@ -43,8 +43,12 @@ Weight: 7"
 
 
 
-COPY "rick_bigg_mod/items/HELM14.itm" "override"
-	SAY NAME1 "Helm"
+
+
+
+//CARSOMYR + 6//
+COPY "rick_bigg_mod/items/sw2h19.itm" "override"
+	SAY NAME1 "Two-Handed Sword"
 	SAY UNIDENTIFIED_DESC "The two-handed sword is a derivative of the long sword. Weaponsmiths have always looked for ways to improve existing weapons. In an effort to improve the long sword, the blade was lengthened. Eventually, the handle had to be extended and two hands became necessary to properly swing the sword. The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations.
 
 STATISTICS:
@@ -57,34 +61,127 @@ Requires:
  14 Strength
 
 Weight: 15"
-	SAY NAME2 "Kiel's Helmet +2"
-	SAY DESC "
-This is the helmet worn by Kiel the Legion Killer, firstborn son of Durlag Trollkiller and Clan-prince of his father's ill-fated tower. It is said that anyone who wears it is granted immunity to all forms of fear and panic, be their origins natural or magical.
+
+	SAY NAME2 "Carsomyr +6"
+	SAY DESC "Carsomyr is a weapon of legend, perhaps one of the most powerful blades ever forged on Faerûn, though its origin and history is thought purposefully forgotten so that the sword itself shall never overshadow the importance of the struggles that must be fought today. It is infused with the very essence of virtue and requires as much from any Paladin who would hope to wield it. The evils of the realms must truly stand aside when this weapon is brought to bear, their magic dispelled with a word, steadfastly resisted with ease. Carsomyr also harbors a special distaste for the forces of evil and chaos, and such creatures must fear additional damage from its touch in battle.
+Even a holy relic as powerful as Carsomyr is made even greater when combined with the Eye of Tyr."
+
+STATISTICS:
+
+Equipped abilities:
+– Magic Resistance: 50%
+
+Combat abilities: 
+– Dispel Magic at level 40 on each hit
+
+Charge abilities:
+– Dispel Magic at level 30 three times per day
+  Range: 40 ft.
+  Area of Effect: 15-ft. radius
+
+THAC0: +6
+Damage: 1d10+6, +6 extra vs. evil
+Damage type: Slashing
+Speed Factor: 4
+Proficiency Type: Two-handed Sword 
+Type: Two-handed
+Requires:
+ 14 Strength
+
+Weight: 6"
+
+
+
+
+
+
+
+
+
+//KIEL'S HELMET//
+COPY "rick_bigg_mod/items/HELM14.itm" "override"
+	SAY NAME1 "Helm"
+	SAY UNIDENTIFIED_DESC "The sturdy, steel-banded helm is dented and scarred from heavy use. Dwarven runes are set into the metal above the brow.
+
+STATISTICS:
+
+Equipped abilities:
+– Protects against critical hits
+
+Weight: 2"
+
+	SAY NAME2 "Kiel's Helmet"
+	SAY DESC "This is the helmet worn by Kiel the Legion Killer, firstborn son of Durlag Trollkiller and Clan-prince of his father's ill-fated tower. It is said that anyone who wears it is granted immunity to all forms of fear and panic, be their origins natural or magical.
 
 STATISTICS:
 
 Equipped abilities:
 – Protects against critical hits
 – Protects against all forms of panic and boosts morale
-- +2 AC
+- +1 AC
 
 Weight: 2
 "
 
-COPY "rick_bigg_mod/items/PLAT08.itm" "override"
-	SAY NAME1 "Plate Mail"
-	SAY UNIDENTIFIED_DESC "The two-handed sword is a derivative of the long sword. Weaponsmiths have always looked for ways to improve existing weapons. In an effort to improve the long sword, the blade was lengthened. Eventually, the handle had to be extended and two hands became necessary to properly swing the sword. The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations.
+
+
+
+
+
+
+
+
+//KIEL'S BUCKLER +2//
+COPY "rick_bigg_mod/items/SHLD20.itm" "override"
+	SAY NAME1 "Buckler"
+	SAY UNIDENTIFIED_DESC "A buckler, also known as a target shield, is a small round shield of wood or metal that fastens to the forearm. Because of its size, it is light and can be worn with very little restriction to movement.
 
 STATISTICS:
 
-Damage: 1d10 (slashing)
-Speed Factor: 10
-Proficiency Type: Two-handed Sword
-Type: Two-handed
-Requires:
- 14 Strength
+Equipped abilities:
+– Armor Class: +1
+– No protection against missile and piercing attacks
 
-Weight: 15"
+Requires:
+ 4 Strength
+
+Weight: 2"
+
+	SAY NAME2 "Kiel's Buckler +2"
+	SAY DESC "This is the buckler of Kiel the Legion Killer, firstborn son of Durlag Trollkiller and Clan-prince of his father's ill-fated tower. Its light weight and excellent craftsmanship increase the Dexterity of all who bear it by a single point.
+
+STATISTICS:
+
+Equipped abilities:
+– Dexterity: +1
+– Armor Class: +3
+– No protection against missile and piercing attacks
+
+Requires:
+ 4 Strength
+
+Weight: 2
+"
+
+
+
+
+
+
+
+
+//THE PRACTICAL DEFENSE + 3//
+COPY "rick_bigg_mod/items/PLAT08.itm" "override"
+	SAY NAME1 "Plate Mail"
+	SAY UNIDENTIFIED_DESC "Plate mail is a combination of chain armor with metal plates covering the vital areas such as the chest, abdomen, and groin. Similar in construction to bronze plate mail, true plate mail comprises chain and leather.
+
+STATISTICS:
+
+Armor Class: 3 (0 vs. slashing)
+Requires:
+ 12 Strength
+
+Weight: 50"
 
 	SAY NAME2 "The Practical Defense +3"
 	SAY DESC %
@@ -99,3 +196,104 @@ Requires:
 
 Weight: 18
 %
+
+
+
+
+
+
+
+
+
+
+
+//MOONBLADE +3//
+COPY "rick_bigg_mod/items/sw1h13.itm" "override"
+	SAY NAME1 "Long Sword"
+	SAY UNIDENTIFIED_DESC "These swords are usually referred to as double-edged swords, war swords, or military swords. In many cases, the long sword has a single-edged blade. There is no single version of the long sword; the design and length vary from culture to culture and may vary within the same culture depending on the era. Among the most common characteristics of all long swords is their length, which ranges from thirty-five inches to forty-seven inches. In the latter case, the blade is known to take up forty inches of the total length. Most long swords have a double-edged blade and a sharp point at the tip. Despite the tip, the long sword is designed for slashing, not thrusting.
+
+STATISTICS:
+
+Damage: 1d8 (slashing)
+Speed Factor: 5
+Proficiency Type: Long Sword
+Type: One-handed
+Requires:
+ 6 Strength
+
+Weight: 4"
+
+SAY NAME2 "Moonblade +3"
+	SAY DESC "This potent weapon was created by the smiths of ancient Myth Drannor. Moonblades are used in the long process of selecting a ruler for the isle of Evermeet. A moonblade chooses its owner, and in the case of this sword it has chosen the elf, Xan. Only Xan can use this blade; anyone else who tries will find themselves unable to lift it. This particular moonblade gives resistance to fire and a bonus to the user's Armor Class.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +1
+- Saving Throws: +1
+– Fire Resistance: +50%
+
+THAC0: +3
+Damage: 1d8+3 (slashing)
+Speed Factor: 2
+Proficiency Type: Long Sword
+Type: One-handed
+
+Weight: 3"
+
+
+
+
+
+//HELM OF BALDURAN//
+COPY "rick_bigg_mod/items/HELM07.itm" "override"
+	SAY NAME1 "Helmet"
+	SAY UNIDENTIFIED_DESC "This class of open-face helmet, made of reinforced leather or metal, covers most of the head save the face and neck. These helmets commonly provide protection for the nose. 
+
+STATISTICS:
+
+Equipped abilities:
+– Protects against critical hits
+
+Weight: 2"
+
+SAY NAME2 "Helm of Balduran"
+	SAY DESC "The fabled helm of Balduran, legendary founder of Baldur's Gate, has long been rumored to wield powerful protective magic. The exact nature of this magic, however, has not yet been determined.
+
+STATISTICS:
+
+Equipped abilities:
+– THAC0: +1
+– Armor Class: +1
+– Saving Throws: +1
+– Hit Points: +10
+- Infravision
+– Protects against critical hits
+
+Weight: 1"
+
+
+
+
+"This mighty weapon is the legendary sword of the hero Balduran. Made entirely of gold, yet stronger than steel, this sword is imbued with a great magical power still not fully understood. It accompanied the hero through all his battles, including his final, sad adventure.
+
+STATISTICS:
+
+Equipped abilities:
+– Magic Resistance: +10%
+- Charisma: +1
+
+Charge abilities:
+– True Strike two times per day
+- Haste two times per day
+
+THAC0: +3
+Damage: 2d4 +3
+Damage type: Slashing
+Speed Factor: 5
+Proficiency Type: Bastard Sword
+Type: One-handed
+Requires:
+ 12 Strength
+
+Weight: 12"
