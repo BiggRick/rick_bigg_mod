@@ -325,8 +325,8 @@ Weight: 1"
 
 
 	SAY NAME2 "Rainbow Amulet"
-	SAY DESC "The story goes that Evander Delight, an extravagant gold prospector from Sembia, followed every rainbow tail, convinced he'd find a pot of gold at his feet. He never reached the end of any rainbow, and, of course, never found any pot of gold, until the day he found this amulet in the corpse of an old gypsy woman.
-From then on, he became one of the richest men in the region, and no one dared mock him again."
+	SAY DESC "The story goes that Evander Delight, an extravagant gold prospector from Sembia, followed every rainbow tail, convinced he'd find the legendary pot of gold. He never reached the end of any rainbow, and, of course, never found any pot of gold, but during his traveling he found this amulet next to the corpse of an old gypsy woman.
+SInce then, he became one of the richest men in the region, and no one dared mock him again."
 
 STATISTICS:
 
