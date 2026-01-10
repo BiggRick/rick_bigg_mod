@@ -314,6 +314,42 @@ Weight: 1"
 
 
 
+//RAINBOW AMULET//
+COPY "rick_bigg_mod/items/AMUL18.itm" "override"
+	SAY NAME1 "Amulet"
+	SAY UNIDENTIFIED_DESC "Amulets are usually magical devices that are commonly worn around the neck, suspended from a chain. The type of chain that comes with an amulet generally increases the item's aesthetic value, not its magical properties. Only one amulet can be dangled from the neck at a time.
+
+STATISTICS:
+
+Weight: 1"
+
+
+	SAY NAME2 "Rainbow Amulet"
+	SAY DESC "The story goes that Evander Delight, an extravagant gold prospector from Sembia, followed every rainbow tail, convinced he'd find a pot of gold at his feet. He never reached the end of any rainbow, and, of course, never found any pot of gold, until the day he found this amulet in the corpse of an old gypsy woman.
+From then on, he became one of the richest men in the region, and no one dared mock him again."
+
+STATISTICS:
+
+Equipped abilities:
+– Saving Throws vs Breath: +2
+– Luck +2
+
+Weight: 1"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 //WIZARD SLAYER +2//
@@ -387,6 +423,45 @@ Requires:
  8 Strength
 
 Weight: 10"
+
+
+
+
+
+
+
+//THE EYES OF TRUTH//
+COPY "rick_bigg_mod/items/HELM05.itm" "override"
+	SAY NAME1 "Helmet"
+	SAY DESC "This class of open-face helmet, made of reinforced leather or metal, covers most of the head save the face and neck. These helmets commonly provide protection for the nose. 
+
+STATISTICS:
+
+Equipped abilities:
+– Protects against critical hits
+
+Weight: 2"
+
+	SAY NAME2 "The Eyes of Truth"
+	SAY DESC "Helm of Infravision: The Eyes of Truth 
+Being a scavenger of a sort, Babette Maelestrom had this helm created to aid her in her dungeon excursions. She would later attribute her gathered wealth solely to its power, though likely it was as much her keen eyes as anything.
+
+STATISTICS:
+
+Equipped abilities:
+- +1 THAC0
+– Infravision up to 120 ft.
+– Protects against critical hits
+
+Weight: 32"
+
+
+
+
+
+
+
+
 
 
 
