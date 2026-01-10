@@ -223,7 +223,7 @@ Requires:
 
 Weight: 4"
 
-SAY NAME2 "Moonblade +3"
+	SAY NAME2 "Moonblade +3"
 	SAY DESC "This potent weapon was created by the smiths of ancient Myth Drannor. Moonblades are used in the long process of selecting a ruler for the isle of Evermeet. A moonblade chooses its owner, and in the case of this sword it has chosen the elf, Xan. Only Xan can use this blade; anyone else who tries will find themselves unable to lift it. This particular moonblade gives resistance to fire and a bonus to the user's Armor Class.
 
 STATISTICS:
@@ -257,7 +257,7 @@ Equipped abilities:
 
 Weight: 2"
 
-SAY NAME2 "Helm of Balduran"
+	SAY NAME2 "Helm of Balduran"
 	SAY DESC "The fabled helm of Balduran, legendary founder of Baldur's Gate, has long been rumored to wield powerful protective magic. The exact nature of this magic, however, has not yet been determined.
 
 STATISTICS:
@@ -275,7 +275,186 @@ Weight: 1"
 
 
 
-"This mighty weapon is the legendary sword of the hero Balduran. Made entirely of gold, yet stronger than steel, this sword is imbued with a great magical power still not fully understood. It accompanied the hero through all his battles, including his final, sad adventure.
+
+
+
+//WAREBANE +1//
+COPY "rick_bigg_mod/items/DAGG09.itm" "override"
+	SAY NAME1 "Silver Dagger"
+	SAY UNIDENTIFIED_DESC "This plain silver dagger has a pointed, double-edged blade. 
+
+STATISTICS:
+
+Damage: 1d4 (piercing)
+Speed Factor: 2 
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 1"
+
+
+	SAY NAME2 "Warebane +1"
+	SAY DESC "Dynala Goldenhand, an elven Ranger who wished to rid her homeland of its werejackal problem, forged the dagger. She was killed by a tribe of orcs in the Graypeak Mountains as she tracked the werejackal leader.
+
+STATISTICS:
+
+THAC0: +1, +4 vs. shapeshifters
+Damage: 1d4+1, +4 vs. shapeshifters
+Damage type: Piercing
+Speed Factor: 1
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 1"
+
+
+
+
+
+
+//WIZARD SLAYER +2//
+COPY "rick_bigg_mod/items/AX1H07.itm" "override"
+	SAY NAME1 "Battle Axe"
+	SAY UNIDENTIFIED_DESC "The most common version of the battle axe is a stout pole about four feet in length with a single-edged, trumpet-shaped blade mounted on one end. This axe, in particular, appears to be very poorly made and slightly smaller than the average battle axe.
+
+STATISTICS:
+
+Damage: 1d8 (slashing)
+Speed Factor: 7
+Proficiency Type: Axe
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 6"
+
+	SAY NAME2 "Wizard Slayer +2"
+	SAY DESC "Bala was a foul-tempered prince of a gully dwarf clan, which was enslaved by a cruel elven mage in Thesk. Though Bala managed to escape the more cowardly traits of his race, he was even more filthy and obnoxious than the average gully dwarf. Sickened of his enslavement, Bala crept into the mage's lair and cracked the elf's skull open. Although rumor has it that it was the dwarf's stench that overcame the mage, it was, in fact, his enchanted axe that dispelled the elf's magical defenses. It is obvious from the poor workmanship that Bala himself crafted the axe. The mystery lies in where its power originates. After a lengthy career of mage-slaying, Bala died, never having revealed his secret to those who were willing to risk a lice infestation by approaching him. Some say that the axe was powered by Bala's intense hatred of wizards. The axe gives the owner the ability to dispel magic once a day.
+
+STATISTICS:
+
+Combat abilities:
+– Hit target is affected by Miscast Magic for 100 seconds (80% chance of spellcasting failure, Save vs. Spell at -2 negates)
+
+Charge abilities:
+– Dispel Magic once per day
+  Range: 40 ft.
+  Area of Effect: 15-ft. radius
+
+THAC0: +2
+Damage: 1d8+2 (slashing)
+
+Speed Factor: 5
+Proficiency Type: Axe
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 4"
+
+
+
+
+
+
+//MAIL OF THE DEAD +2//
+COPY "rick_bigg_mod/items/CHAN03.itm" "override"
+	SAY NAME1 "Chain Mail"
+	SAY UNIDENTIFIED_DESC "Chain mail is made of interlocking metal rings. It is always worn over a layer of padded fabric or soft leather to prevent chafing and lessen the impact of blows. 
+
+STATISTICS:
+
+Armor Class: 5 (3 vs. slashing, 7 vs. crushing)
+Requires:
+ 8 Strength
+
+Weight: 40"
+
+	SAY NAME2 "Mail of the Dead +2"
+	SAY DESC "A mage can make an extremely effective assassin, as Vorusta illustrated over four hundred years ago. He would create skeleton warriors equipped with this enchanted armor and a powerful blade, and give their circlet of power to the target as a friendly gift. When the killing machine was through with its work, Vorusta retrieved the equipment and started the entire process over.
+
+STATISTICS:
+
+Equipped abilities:
+– 20% Magic Damage resistance bonus
+
+Armor Class: 3 (1 vs. slashing, 5 vs. crushing)
+Requires:
+ 8 Strength
+
+Weight: 10"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//SWORD OF BALDURAN +3//
+COPY "rick_bigg_mod/items/SW1H18.itm" "override"
+	SAY NAME1 "Bastard Sword"
+	SAY UNIDENTIFIED_DESC "Also known as the hand-and-a-half sword, the bastard sword derives its name from the fact that it is halfway between the two-handed sword and the long sword. The bastard sword has a double-edged blade and a long grip, which can accommodate both hands if preferred. The overall length of the bastard sword ranges between four feet and four feet ten inches.
+
+STATISTICS:
+
+Damage: 2d4 (slashing)
+Speed Factor: 8
+Proficiency Type: Bastard Sword
+Type: One-handed
+Requires:
+ 11 Strength
+
+Weight: 10"
+
+SAY NAME2 "Sword of Balduran +3"
+	SAY DESC "This mighty weapon is the legendary sword of the hero Balduran. Made entirely of gold, yet stronger than steel, this sword is imbued with a great magical power still not fully understood. It accompanied the hero through all his battles, including his final, sad adventure.
 
 STATISTICS:
 
@@ -285,7 +464,6 @@ Equipped abilities:
 
 Charge abilities:
 – True Strike two times per day
-- Haste two times per day
 
 THAC0: +3
 Damage: 2d4 +3
