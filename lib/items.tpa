@@ -314,6 +314,10 @@ Weight: 1"
 
 
 
+
+
+
+
 //RAINBOW AMULET//
 COPY "rick_bigg_mod/items/AMUL18.itm" "override"
 	SAY NAME1 "Amulet"
@@ -461,57 +465,6 @@ Weight: 32"
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //SWORD OF BALDURAN +3//
 COPY "rick_bigg_mod/items/SW1H18.itm" "override"
 	SAY NAME1 "Bastard Sword"
@@ -528,7 +481,7 @@ Requires:
 
 Weight: 10"
 
-SAY NAME2 "Sword of Balduran +3"
+	SAY NAME2 "Sword of Balduran +3"
 	SAY DESC "This mighty weapon is the legendary sword of the hero Balduran. Made entirely of gold, yet stronger than steel, this sword is imbued with a great magical power still not fully understood. It accompanied the hero through all his battles, including his final, sad adventure.
 
 STATISTICS:
@@ -550,3 +503,77 @@ Requires:
  12 Strength
 
 Weight: 12"
+
+
+
+
+
+
+
+
+//CLOACK OF THE WOLF//
+COPY "rick_bigg_mod/items/CLCK04.itm" "override"
+	SAY NAME1 "Cloack"
+	SAY UNIDENTIFIED_DESC "The cloak can be made in every possible shape with just about every type of fabric. The most common forms are a circular piece of fabric with a hole in the center for the head, and fabric draped from neck, connected by a chain, brooch, cord, or pins.
+
+STATISTICS:
+
+Weight: 3"
+
+	SAY NAME2 "Cloack of the Wolf"
+	SAY DESC "A great amount of irony surrounds the creation of this magical cloak. Relair was a mage who overestimated the amount of control he had over magic, and in the course of creating this garment, he apparently inflicted lycanthropy upon himself. The wearer can change form whenever <PRO_HESHE> wishes. Relair was not so lucky.
+
+STATISTICS:
+
+Equipped abilities:
+– Polymorph into a Werewolf once per day
+
+Weight: 3"
+
+
+
+
+
+
+//SHIELD AMULET//
+COPY "rick_bigg_mod/items/AMUL15.itm" "override"
+	SAY NAME1 "Amulet"
+	SAY UNIDENTIFIED_DESC "Amulets are usually magical devices that are commonly worn around the neck, suspended from a chain. The type of chain that comes with an amulet generally increases the item's aesthetic value, not its magical properties. Only one amulet can be dangled from the neck at a time.
+
+STATISTICS:
+
+Weight: 1"
+
+	SAY NAME2 "Shield Amulet"
+	SAY DESC "This amulet can be activated by a simple command word and a touch once per day. The effect is a duplication of the 1st-level wizard spell Shield.
+
+STATISTICS:
+
+Charge abilities:
+– Shield once per day
+
+Weight: 1"
+
+
+
+
+
+
+
+
+
+//ALGERNON'S CLOACK//
+COPY "rick_bigg_mod/items/CLCK08.itm" "override"
+	SAY NAME1 "Cloack"
+	SAY UNIDENTIFIED_DESC "The cloak can be made in every possible shape with just about every type of fabric. The most common forms are a circular piece of fabric with a hole in the center for the head, and fabric draped from neck, connected by a chain, brooch, cord, or pins.
+
+STATISTICS:
+
+Weight: 3"
+
+	SAY NAME2 "Algernon's Cloack"
+	SAY DESC "This is the cloack of the fat man Algernon.
+	
+STATISTICS:
+
+Weight: 3"
