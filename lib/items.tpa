@@ -69,7 +69,7 @@ Even a holy relic as powerful as Carsomyr is made even greater when combined wit
 STATISTICS:
 
 Equipped abilities:
-– Magic Resistance: 50%
+– Magic Resistance: +50%
 
 Combat abilities: 
 – Dispel Magic at level 40 on each hit
@@ -122,9 +122,6 @@ Equipped abilities:
 
 Weight: 2
 "
-
-
-
 
 
 
@@ -189,19 +186,16 @@ The traveling adventurer could ask for no better a suit of armor in all the land
 
 STATISTICS:
 
+Equipped abilities:
+- +2 Charisma
+
 Armor Class: 0 (-3 vs. slashing)
-+2 Charisma
+
 Requires:
  11 Strength
 
 Weight: 18
 %
-
-
-
-
-
-
 
 
 
@@ -278,7 +272,7 @@ Weight: 1"
 
 
 
-//WAREBANE +1//
+//WEREBANE +1//
 COPY "rick_bigg_mod/items/DAGG09.itm" "override"
 	SAY NAME1 "Silver Dagger"
 	SAY UNIDENTIFIED_DESC "This plain silver dagger has a pointed, double-edged blade. 
@@ -295,7 +289,7 @@ Requires:
 Weight: 1"
 
 
-	SAY NAME2 "Warebane +1"
+	SAY NAME2 "Werebane +1"
 	SAY DESC "Dynala Goldenhand, an elven Ranger who wished to rid her homeland of its werejackal problem, forged the dagger. She was killed by a tribe of orcs in the Graypeak Mountains as she tracked the werejackal leader.
 
 STATISTICS:
@@ -313,11 +307,6 @@ Weight: 1"
 
 
 
-
-
-
-
-
 //RAINBOW AMULET//
 COPY "rick_bigg_mod/items/AMUL18.itm" "override"
 	SAY NAME1 "Amulet"
@@ -329,8 +318,7 @@ Weight: 1"
 
 
 	SAY NAME2 "Rainbow Amulet"
-	SAY DESC "The story goes that Evander Delight, an extravagant gold prospector from Sembia, followed every rainbow tail, convinced he'd find the legendary pot of gold. He never reached the end of any rainbow, and, of course, never found any pot of gold, but during his traveling he found this amulet next to the corpse of an old gypsy woman.
-SInce then, he became one of the richest men in the region, and no one dared mock him again."
+	SAY DESC "The story goes that Evander Delight, an extravagant gold prospector from Sembia, followed every rainbow tail, convinced he'd find the legendary pot of gold. He never reached the end of any rainbow, and, of course, never found any pot of gold, but during his traveling he found this amulet next to the corpse of an old gypsy woman. Since then, he became one of the richest men in the region, and no one dared mock him again.
 
 STATISTICS:
 
@@ -339,19 +327,6 @@ Equipped abilities:
 – Luck +2
 
 Weight: 1"
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -399,6 +374,174 @@ Weight: 4"
 
 
 
+//PELLAN'S SHIELD +2//
+COPY "rick_bigg_mod/items/SHLD19A.itm" "override"
+	SAY NAME1 "Large Shield"
+	SAY UNIDENTIFIED_DESC "	A large shield inlaid with a golden griffin. This shield, also known as the kite or tower shield, is a massive metal shield reaching nearly from the chin to the toe of the user. It must be firmly fastened to the forearm and the shield hand must firmly grip it at all times. Naturally, this precludes use of the shield hand for anything but holding the body shield in place. Strangely enough, this shield feels unusually light for its size.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +1, an extra +1 vs. missile attacks
+
+Requires:
+ 10 Strength
+
+Weight: 4"
+
+	SAY NAME2 "Pellan's Shield +2"
+	SAY DESC "This dwarven-made shield was commissioned by Pellan of Tyr, a brash paladin known for unquestioning courage and an almost total lack of common sense. Upon hearing that a red dragon was ravaging the countryside, Pellan mounted his horse and rode off to do battle. As it happened, Pellan and his armor digested readily enough, but the shield gave the dragon severe stomach cramps. Subsequently coughed up, it lay in a hoard for years until retrieved by Pellan's son, a warrior who knew when to sneak.
+
+Superior craftsmanship is supplemented by a permanent lightness spell, which makes the shield very easy to wield.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +3, an extra +1 vs. missile attacks
+- Attack Speed Factor: +2
+
+Requires:
+ 10 Strength
+
+Weight: 4"
+
+
+
+//THE WORLD'S EDGE +3//
+COPY "rick_bigg_mod/items/SW2H07_.itm" "override"
+	SAY NAME1 "Two-Handed Sword"
+	SAY UNIDENTIFIED_DESC "The two-handed sword is a derivative of the long sword. Weaponsmiths have always looked for ways to improve existing weapons. In an effort to improve the long sword, the blade was lengthened. Eventually, the handle had to be extended and two hands became necessary to properly swing the sword. The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations.
+
+STATISTICS:
+
+Damage: 1d10 (slashing)
+Speed Factor: 10
+Proficiency Type: Two-handed Sword
+Type: Two-handed
+Requires:
+ 14 Strength
+
+Weight: 15"
+
+	SAY NAME2 "The World's Edge +3"
+	SAY DESC "This is a legendary weapon of heroic proportions, especially among the far-northern tribes of barbarians. Champion after champion has wielded this blade against countless enemies, and the blood it has spilled could fill a small sea. History will not admit that such a blade could be forged and each consecutive owner seems to tie its origin to whatever creation myth they believe. The most grandiose of these tales is that of a great chieftain who sailed to the cliffs that supposedly bordered the world. There he reached into the void, and his will shaped the blade from nothing. Whatever the truth, in the right hands this sword is a fearsome thing.
+
+STATISTICS:
+
+Equipped abilities:
+– Crushing Damage Resistance: +10%
+– Slashing Damage Resistance: +10%
+– Piercing Damage Resistance: +10%
+– Missile Damage Resistance: +10%
+
+THAC0: +3
+Damage: 1d10+3 (slashing)
+Speed Factor: 7
+Proficiency Type: Two-handed Sword
+Type: Two-handed
+Requires:
+ 13 Strength
+
+Weight: 9"
+
+
+
+
+//DURLAG'S PRIDE//
+COPY "rick_bigg_mod/items/SW2H08_.itm" "override"
+	SAY NAME1 "Two-Handed Sword"
+	SAY UNIDENTIFIED_DESC "The two-handed sword is a derivative of the long sword. Weaponsmiths have always looked for ways to improve existing weapons. In an effort to improve the long sword, the blade was lengthened. Eventually, the handle had to be extended and two hands became necessary to properly swing the sword. The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations.
+
+STATISTICS:
+
+Damage: 1d10 (slashing)
+Speed Factor: 10
+Proficiency Type: Two-handed Sword
+Type: Two-handed
+Requires:
+ 14 Strength
+
+Weight: 15"
+
+	SAY NAME2 "Durlag's Pride"
+	SAY DESC "Durlag's Pride
+
+STATISTICS:
+
+Damage: 1d10 (slashing)
+Speed Factor: 8
+Proficiency Type: Two-handed Sword
+Type: Two-handed
+Requires:
+ 14 Strength
+
+Weight: 15"
+
+
+
+
+//THE SHADOW'S BLADE +3//
+COPY "rick_bigg_mod/items/SW1H10.itm" "override"
+	SAY NAME1 "Short Sword"
+	SAY UNIDENTIFIED_DESC "The short sword is the first type of sword to come into existence. In the simplest of terms, a short sword can be considered a dagger with a blade so long that it can no longer be called a dagger. The term short sword does not exist in sword classifications. However, it has come to be used to describe a double-edged blade about two feet in length. The sword tip is usually pointed, ideal for thrusting.
+
+STATISTICS:
+
+Damage: 1d6 (piercing)
+Speed Factor: 3
+Proficiency Type: Short Sword
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 3"
+
+	SAY NAME2 "The Shadow's Blade +3"
+	SAY DESC "The Shadow's Blade was created to be the perfect assassin's tool. It is highly sought after by any who settle differences with a blade, and many that possess it do not do so for long.
+
+STATISTICS:
+
+Equipped abilities:
+– Move Silently: +15%
+– Hide In Shadows: +15%
+
+THAC0: +3
+Damage: 1d6+3 (piercing)
+Speed Factor: 0
+Proficiency Type: Short Sword
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 3"
+
+
+
+
+
+//CLOACK OF THE HIGH FOREST//
+COPY "rick_bigg_mod/items/NPCLCK.itm" "override"
+	SAY NAME1 "Cloack"
+	SAY UNIDENTIFIED_DESC "The cloak can be made in every possible shape with just about every type of fabric. The most common forms are a circular piece of fabric with a hole in the center for the head, and fabric draped from neck, connected by a chain, brooch, cord, or pins.
+
+STATISTICS:
+
+Weight: 3"
+
+	SAY NAME2 "Cloack of the High Forest"
+	SAY DESC "When younger, Cernd spent a cycle of seasons meditating on his role within nature. He made no shelter, wanting to feel the land unhindered. Nature may have appreciated the intent, for she also knows that for all their dedication, at times her children can be foolish. Cernd found this cloak before the cold season set in, seemingly woven to fit him from the very undergrowth. The message was clear: He can appreciate the rain while still seeking shelter from it. Only Cernd may use this cloak.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +2
+– Saving Throws: +2
+– Protects against critical hits
+
+Weight: 3"
+
+
+
 
 
 //MAIL OF THE DEAD +2//
@@ -429,6 +572,53 @@ Requires:
 Weight: 10"
 
 
+
+//RING OF WIZARDRY//
+COPY "rick_bigg_mod/items/RING40.itm" "override"
+	SAY NAME1 "Ring"
+	SAY DESC "A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.
+
+STATISTICS:
+
+Weight: 0"
+
+	SAY NAME2 "Ring of Wizardry"
+	SAY DESC "The origins of this ring are unclear, and while its enchantments share similarities with historical examples of Rings of Wizardry, there is something strange in how it feels, either in the weight of the metal or in the aura it projects, and it does not function the same. It was likely found on some distant plane and, as such, its maker will remain a mystery to you.
+
+STATISTICS:
+
+Equipped abilities:
+– The wearer can memorize 1 extra spell per level
+
+Weight: 0"
+
+
+
+
+
+
+
+
+
+//RING OF INFRAVISION//
+COPY "rick_bigg_mod/items/RING21.itm" "override"
+	SAY NAME1 "Ring"
+	SAY DESC "A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.
+
+STATISTICS:
+
+Weight: 0"
+
+	SAY NAME2 "Ring of Infravision"
+	SAY DESC "Merchants that dare the risks of trading with the drow of the Great Rift are often given these items to aid in their movements underground. 
+
+STATISTICS:
+
+Equipped abilities:
+– Infravision up to 120 ft.
+- +1 THAC0
+
+Weight: 0"
 
 
 
@@ -461,7 +651,75 @@ Weight: 32"
 
 
 
+//KIEL'S MORNING STAR +3//
+COPY "rick_bigg_mod/items/BLUN09.itm" "override"
+	SAY NAME1 "Morning Star"
+	SAY UNIDENTIFIED_DESC "The morning star is a wooden shaft topped with a metal head covered by a spiked iron sheath. Morning stars have an overall length of about four feet. Some have a round, oval, or cylindrical shaped head studded with spikes. Extending from most morning star heads, regardless of design, is a long point for thrusting.
 
+STATISTICS:
+
+Damage: 2d4 (crushing)
+Speed Factor: 7
+Proficiency Type: Flail/Morning Star
+Type: One-handed
+Requires:
+ 11 Strength
+
+Weight: 12"
+
+	SAY NAME2 "Kiel's Morning Star +3"
+	SAY DESC "This is the morning star of Kiel the Legion Killer, firstborn son of Durlag Trollkiller and Clan-prince of his father's ill-fated tower. He was wielding it in his final hour as he rushed to warn his father of the doppelgangers' infiltration of their Clan-home. It is said that the intensity of his rage in these final moments permanently imprinted itself upon the weapon.
+
+STATISTICS:
+
+Equipped abilities:
+– Chance to score a critical hit: +5% (with this weapon only)
+
+THAC0: +3
+Damage: 2d4+3 (crushing)
+Speed Factor: 4
+Proficiency Type: Flail/Morning Star
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 10"
+
+
+
+//STAFF OF STRIKING +2//
+COPY "rick_bigg_mod/items/STAF05.itm" "override"
+	SAY NAME1 "Staff"
+	SAY UNIDENTIFIED_DESC "The simplest and humblest of staff weapons, the quarterstaff is a length of wood ranging six to nine feet in length. High-quality quarterstaves are made of stout oak and are shod with metal at both ends. The quarterstaff must be wielded with both hands.
+
+STATISTICS:
+
+Damage: 1d6 (crushing)
+Speed Factor: 4
+Proficiency Type: Quarterstaff
+Type: Two-handed
+Requires:
+ 5 Strength
+
+Weight: 4"
+
+	SAY NAME2 "Staff of Striking +2"
+	SAY DESC "Staves of Striking are made by the gold elves of Drelagara on Evermeet. The staves have a life of their own and jump to attack in their bearer's hands. The elven craftsmen rarely sell them to other races, but these powerful melee weapons do surface occasionally in Faerûn.
+	
+Equipped abilities:
+– One extra attack per round	
+	
+STATISTICS:
+
+THAC0: +2
+Damage: 1d6+2 (crushing)
+Speed Factor: 1
+Proficiency Type: Quarterstaff
+Type: Two-handed
+Requires:
+ 5 Strength
+
+Weight: 4"
 
 
 
@@ -525,7 +783,7 @@ Weight: 3"
 
 STATISTICS:
 
-Equipped abilities:
+Charge abilities:
 – Polymorph into a Werewolf once per day
 
 Weight: 3"
@@ -558,6 +816,44 @@ Weight: 1"
 
 
 
+//RETURNING THROWING DAGGER +1//
+COPY "rick_bigg_mod/items/TB#DAG01.itm" "override"
+	SAY NAME1 "Throwing Dagger"
+	SAY UNIDENTIFIED_DESC "The typical throwing dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter than the dagger. Unlike a dagger, this one has a smaller handle and is balanced differently.
+
+STATISTICS:
+
+Damage: 1d4 (missile)
+Speed Factor: 2
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 0"
+
+	SAY NAME2 "Returning Throwing Dagger +1"
+	SAY DESC "This special throwing dagger is often used by the most sadistic pirates of the Sea of Swords to avoid losing precious ammunition.
+	First, the prisoners are thrown into the sea, then bets are placed on who can hit and kill them.
+	The most common problem in this game is sharks and sea monsters, which are often faster than the pirates themselves...
+
+STATISTICS:
+
+
+Combat abilities:
+– Returns to the wielder's hand when thrown
+- One extra attack per round
+
+THAC0: +1
+Damage: 1d4+1 (missile)
+Speed Factor: 1
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 0"
+
 
 
 
@@ -577,3 +873,580 @@ Weight: 3"
 STATISTICS:
 
 Weight: 3"
+
+
+
+
+//BRACERS OF FRENZY//
+COPY "rick_bigg_mod/items/BRAC11.itm" "override"
+	SAY NAME1 "Bracers"
+	SAY UNIDENTIFIED_DESC "Bracers are thick bands of metal or leather that are strapped, belted, or tied to a character's forearm.
+
+STATISTICS:
+
+Weight: 2"
+
+	SAY NAME2 "Bracers of Frenzy"
+	SAY DESC "These bracers are sometimes reserved for the most skilled Drow warriors. Once worn, the hands can move at unimaginable speed, but execution doesn't always match the speed of thought, penalizing the warrior's precision and defense. Many a Drow warrior have died over time believing they could wield these powerful artifacts.
+
+STATISTICS:
+
+Equipped abilities:
+- One extra attack per round
+– Armor Class: -3 penalty
+- Thac0: -3 penalty
+
+Weight: 1"
+
+
+
+//BRACERS OF UNDEAD CONTROL//
+COPY "rick_bigg_mod/items/BRAC08.itm" "override"
+	SAY NAME1 "Bracers"
+	SAY UNIDENTIFIED_DESC "Gauntlets are armored gloves. They can be made of leather, metal plates, or chain mail. Every suit of armor is assumed to include gauntlets of an appropriate type. Magical gauntlets tend to be finer, lighter, and more easily worn than normal varieties.
+
+STATISTICS:
+
+Weight: 2"
+
+	SAY NAME2 "Bracers of Undead Control"
+	SAY DESC "These powerful gauntlets were created by the clerics of Myrkul of Kagarr, intent on controlling an undead horde destabilizing the region. The bracers draw their power from the wearer's sanity, completely detaching them from reality, yet granting them the power to sympathize with the undead.
+
+
+STATISTICS:
+
+Equipped abilities:
+– Wisdom: -4 penalty
+- Turn Undead: +2 cleric level
+
+
+Weight: 0"
+
+
+
+
+
+//ARMOR OF MISSILE ATTRACTION +2//
+COPY "rick_bigg_mod/items/LEAT06.itm" "override"
+	SAY NAME1 "Studded Leather Armor"
+	SAY UNIDENTIFIED_DESC "Studded leather armor has little in common with normal leather armor. Instead of a hardened shell, studded leather offers hundreds of metal rivets affixed to a supple backing. The numerous studs form a flexible coat of metal that helps to turn aside slashing and cutting attacks, while the leather is little more than a means of securing the rivets in place. 
+
+STATISTICS:
+
+Armor Class: 7 (5 vs. slashing, 6 vs. piercing and missile)
+Requires:
+ 6 Strength
+
+Weight: 25"
+
+	SAY NAME2 "Armor of Missile Attraction +2"
+	SAY DESC "This odd-looking suit of studded leather cannot be removed once put on, except under intervention by a priest. While improving a great protection against all melee weapons, this armor actually becomes a target for missile weapons, and hence so does its wearer. The choice is simple: deadly arrows or deadly swords. 
+
+STATISTICS:
+
+Equipped abilities:
+– May only be removed with a Remove Curse spell
+– Crushing Damage Resistance: +10%
+– Slashing Damage Resistance: +10%
+– Piercing Damage Resistance: +10%
+
+Armor Class: 5 (3 vs. slashing, 4 vs. piercing, 15 vs. missile)
+Requires:
+ 6 Strength
+
+Weight: 8"
+
+
+
+
+//RING OF CLUMSINESS//
+COPY "rick_bigg_mod/items/RING04.itm" "override"
+	SAY NAME1 "Ring"
+	SAY UNIDENTIFIED_DESC "A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.
+
+STATISTICS:
+
+Weight: 0"
+
+	SAY NAME2 "Ring of Clumsiness"
+	SAY DESC "The most notorious owner of this ring made a substantial living exploiting its cursed nature. Gregoria the Foole, a Jester by trade, would use his incomparable sleight of hand to switch this ring with that of a patsy taken from his audience. The rest of his performance would involve the mocking of the newly clumsy individual, much to the delight of their comrades. The ring was removed (by a method known only to the wily Jester) only once the stooge had promised no reprisals for the treatment he had received, though Gregoria frequently still had to make a hasty retreat. What he didn't know was that the ring also held other hidden abilities, which were revealed by an angry mage during her final performance at Zhentil Keep... 
+
+
+STATISTICS:
+
+Equipped abilities:
+– Dexterity: -50% penalty
+– May only be removed with a Remove Curse spell
+
+Charge abilities twice a day:
+- Melf's Acid Arrow or Flame Arrow (both at level 10 - 50% chance of each) three times per day
+
+Weight: 0"
+
+
+
+
+
+
+//RING OF FOLLY//
+COPY "rick_bigg_mod/items/RING23.itm" "override"
+	SAY NAME1 "Ring"
+	SAY UNIDENTIFIED_DESC "A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.
+
+STATISTICS:
+
+Weight: 0"
+
+SAY NAME2 "Ring of Folly"
+	SAY DESC "Oft the bane of the careless mage, this ring was actually used to promote humility. Hergat Norin, a grand wizard of Narfell, would give the this ring, also known as Discipliner,to his most skilled and most lazy students. Drastically weakening their learning abilities, the ring required all their willpower to unleash its true potential.
+
+STATISTICS:
+
+Equipped abilities:
+– Intelligence: -50% penalty
+- The wearer can memorize one less spell per level
+- Improves casting speed by 2
+- Improves caster level by 2
+
+– May only be removed with a Remove Curse spell
+
+Weight: 0 " 
+
+
+
+
+
+
+//BERSERKERING SWORD +3//
+COPY "rick_bigg_mod/items/SW2H03.itm" "override"
+	SAY NAME1 "Two-Handed Sword"
+	SAY UNIDENTIFIED_DESC "The two-handed sword is a derivative of the long sword. Weaponsmiths have always looked for ways to improve existing weapons. In an effort to improve the long sword, the blade was lengthened. Eventually, the handle had to be extended and two hands became necessary to properly swing the sword. The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations.
+
+STATISTICS:
+
+Damage: 1d10 (slashing)
+Speed Factor: 10
+Proficiency Type: Two-handed Sword
+Type: Two-handed
+Requires:
+ 14 Strength
+
+Weight: 15"
+
+SAY NAME2 "Berserkering Sword +3"
+	SAY DESC "This sword performs perfectly under every test, save the heat of battle. Upon entering combat, the wielder have a lot o chance to go berserk, killing everything within reach until either calming down or falling unconscious. A very powerful sword, but one must decide whether or not it is worth the risk.
+
+STATISTICS:
+
+Combat abilities:
+– Chance to go berserk 25% every hit (you have the same bonuses as a Berserker Rage, but cannot be controlled).
+
+THAC0: +3
+Damage: 1d10+3 (slashing)
+Speed Factor: 7
+Proficiency Type: Two-handed Sword
+Type: Two-handed
+Requires:
+ 14 Strength
+
+Weight: 12" 
+
+
+
+
+
+
+
+//BACKBITER SPEAR +3//
+COPY "rick_bigg_mod/items/SPER03.itm" "override"
+	SAY NAME1 "Spear"
+	SAY UNIDENTIFIED_DESC "One of the earliest weapons, dating back to the most primitive of times, the first spears were simply wooden poles or sticks sharpened at one end. When the civilized races mastered metals, spearheads were made from iron and steel. Having reached this end, weaponsmiths began experimenting with different types of spearheads, thus leading to the development of certain polearm types.
+
+STATISTICS:
+
+Damage: 1d6 (piercing)
+Speed Factor: 6
+Proficiency Type: Spear
+Type: Two-handed
+Requires:
+ 5 Strength
+
+Weight: 5"
+
+
+	SAY NAME2 "Backbiter Spear +3"
+	SAY DESC "This weapon will appear as a magical spear; however when a combat situation arises, the wielder will attack an enemy and Backbiter will attack the wielder. For every attack made, there's a chance Backbiter will attack the foe and also the wielder. This is a powerful spear, but one must ask if it is worth it in the end.
+
+STATISTICS:
+
+Combat abilities:
+– 50% Chance the wielder receives 3 points of damage (piercing) by the spear upon every successful hit
+
+THAC0: +3
+Damage: 1d6+3 (piercing)
+Speed Factor: 3
+Proficiency Type: Spear
+Type: Two-handed
+Requires:
+ 5 Strength
+
+Weight: 2" 
+
+
+
+
+
+//POTION OF STRENGTH//
+COPY "rick_bigg_mod/items/POTN03.itm" "override"
+	SAY NAME1 "Potion"
+	SAY UNIDENTIFIED_DESC "Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.
+
+STATISTICS:
+
+Weight: 1"
+
+
+	SAY NAME2 "Potion of Strength"
+	SAY DESC "This potion increases the strength of the user. When it is consumed, the individual gains great strength and bonuses to hit and damage while using any hand-held or thrown weapon. The effect lasts for 2 hours.
+
+STATISTICS:
+
+Strength: 18
+Duration: 2 hours
+
+Weight: 1" 
+
+
+
+
+
+//POTION OF EXCEPTIONAL STRENGTH//
+COPY "rick_bigg_mod/items/POTN12.itm" "override"
+	SAY NAME1 "Potion"
+	SAY UNIDENTIFIED_DESC "Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.
+
+STATISTICS:
+
+Weight: 1"
+
+
+	SAY NAME2 "Potion of Exceptional Strength"
+	SAY DESC "This potion increases the strength of the user. When it is consumed, the individual gains great strength and bonuses to hit and damage while using any hand-held or thrown weapon. The effect lasts for 2 hours.
+
+STATISTICS:
+
+Strength: 18/50
+Duration: 2 hours
+
+Weight: 1" 
+
+
+
+
+
+//POTION OF EXTRAORDINARY STRENGTH//
+COPY "rick_bigg_mod/items/POTN04.itm" "override"
+	SAY NAME1 "Potion"
+	SAY UNIDENTIFIED_DESC "Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.
+
+STATISTICS:
+
+Weight: 1"
+
+
+	SAY NAME2 "Potion of Extraordinary Strength"
+	SAY DESC "This potion increases the strength of the user. When it is consumed, the individual gains great strength and bonuses to hit and damage while using any hand-held or thrown weapon. The effect lasts for 2 hours.
+
+STATISTICS:
+
+Strength: 18/75
+Duration: 2 hours
+
+Weight: 1" 
+
+
+
+
+
+
+
+
+//POTION OF SUPERIOR STRENGTH//
+COPY "rick_bigg_mod/items/POTN05.itm" "override"
+	SAY NAME1 "Potion"
+	SAY UNIDENTIFIED_DESC "Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.
+
+STATISTICS:
+
+Weight: 1"
+
+
+	SAY NAME2 "Potion of Superior Strength"
+	SAY DESC "This potion increases the strength of the user. When it is consumed, the individual gains great strength and bonuses to hit and damage while using any hand-held or thrown weapon. The effect lasts for 2 hours.
+
+STATISTICS:
+
+Strength: 18/90
+Duration: 2 hours
+
+Weight: 1" 
+
+
+
+
+
+
+
+//POTION OF PHENOMENAL STRENGTH//
+COPY "rick_bigg_mod/items/POTN06.itm" "override"
+	SAY NAME1 "Potion"
+	SAY UNIDENTIFIED_DESC "Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.
+
+STATISTICS:
+
+Weight: 1"
+
+
+	SAY NAME2 "Potion of Phenomenal Strength"
+	SAY DESC "This potion increases the strength of the user. When it is consumed, the individual gains great strength and bonuses to hit and damage while using any hand-held or thrown weapon. The effect lasts for 2 hours.
+
+STATISTICS:
+
+Strength: 18/99
+Duration: 2 hours
+
+Weight: 1" 
+
+
+
+
+
+
+
+
+//POTION OF OGRE STRENGTH//
+COPY "rick_bigg_mod/items/POTN07.itm" "override"
+	SAY NAME1 "Potion"
+	SAY UNIDENTIFIED_DESC "Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.
+
+STATISTICS:
+
+Weight: 1"
+
+
+	SAY NAME2 "Potion of Ogre Strength"
+	SAY DESC "This potion increases the strength of the user. When it is consumed, the individual gains great strength and bonuses to hit and damage while using any hand-held or thrown weapon. The effect lasts for 2 hours.
+
+STATISTICS:
+
+Strength: 18/00
+Duration: 2 hours
+
+Weight: 1" 
+
+
+
+
+
+//POTION OF GENIUS//
+COPY "rick_bigg_mod/items/POTN29.itm" "override"
+	SAY NAME1 "Potion"
+	SAY UNIDENTIFIED_DESC "Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.
+
+STATISTICS:
+
+Weight: 1"
+
+
+	SAY NAME2 "Potion of Genius"
+	SAY DESC "Very much as the name implies, this potion will increase the Intelligence of the imbiber to 18. The effect will last the full duration, which is 3 hours, or until dispelled.
+
+STATISTICS:
+
+Intelligence: 18
+Duration: 3 hours
+
+Weight: 1" 
+
+
+
+
+
+
+
+
+//POTION OF INSIGHT//
+COPY "rick_bigg_mod/items/POTN43.itm" "override"
+	SAY NAME1 "Potion"
+	SAY UNIDENTIFIED_DESC "Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.
+
+STATISTICS:
+
+Weight: 1"
+
+
+	SAY NAME2 "Potion of Insight"
+	SAY DESC "It will be as if a higher being had stepped into the drinker's head, filling it with intuitive thoughts and amazing insights. The effect is to set the Wisdom of the person to 18 for approximately 3 hours or until dispelled.
+
+STATISTICS:
+
+Wisdom: 18
+Duration: 3 hours
+
+Weight: 1" 
+
+
+
+//POTION OF MIND FOCUSING//
+COPY "rick_bigg_mod/items/POTN37.itm" "override"
+	SAY NAME1 "Potion"
+	SAY UNIDENTIFIED_DESC "Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.
+
+STATISTICS:
+
+Weight: 1"
+
+
+	SAY NAME2 "Potion of Mind Focusing"
+	SAY DESC "This potion will grant whoever drinks it the ability to focus their mind unerringly and be quicker and more efficient in battle. 
+
+STATISTICS:
+
+Speed Factor: +4
+THAC0: +2
+
+Duration: 5 turns
+
+Weight: 1" 
+
+
+
+
+
+
+
+//POTION OF ELEMENTAL ABSORPTION//
+COPY "rick_bigg_mod/items/POTN18.itm" "override"
+	SAY NAME1 "Potion"
+	SAY UNIDENTIFIED_DESC "Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.
+
+STATISTICS:
+
+Weight: 1"
+
+
+	SAY NAME2 "Potion of Elemental Absorption"
+	SAY DESC "This potion, as would be expected, will partially absorb all elemental damage. The effect will last 2 hours. 
+
+STATISTICS:
+
+Fire Resistance: +50%
+Cold Resistance: +50%
+Electrical Resistance: +50%
+
+Duration: 2 hours
+
+Weight: 1" 
+
+
+
+
+
+
+
+//POTION OF HEROISM//
+COPY "rick_bigg_mod/items/POTN09.itm" "override"
+	SAY NAME1 "Potion"
+	SAY UNIDENTIFIED_DESC "Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.
+
+STATISTICS:
+
+Weight: 1"
+
+
+	SAY NAME2 "Potion of Heroism"
+	SAY DESC "This potion is imbued with a powerful enchantment that will give a temporary increase of power. The effect lasts for 2 hours, which makes this potion a powerful ally in a melee combat. 
+
+STATISTICS:
+
+Hit Points: +15
+THAC0 +1
+Damage +2
+
+Duration: 5 turns
+
+Weight: 1" 
+
+
+
+
+//POTION OF INFRAVISION//
+COPY "rick_bigg_mod/items/POTN30.itm" "override"
+	SAY NAME1 "Potion"
+	SAY UNIDENTIFIED_DESC "Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.
+
+STATISTICS:
+
+Weight: 1"
+
+
+	SAY NAME2 "Potion of Infravision"
+	SAY DESC "This potion will grant the person drinking it the ability to see in the infrared spectrum up to 120 feet, namely infravision. It will also raise precision in battle. The effect will last for 4 hours or until dispelled. 
+
+STATISTICS:
+
+Special: Infravision
+THAC0: +1
+Duration: 4 hours
+
+Weight: 1" 
+
+
+
+
+
+
+//POTION OF INVULNERABILITY//
+COPY "rick_bigg_mod/items/POTN11.itm" "override"
+	SAY NAME1 "Potion"
+	SAY UNIDENTIFIED_DESC "Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.
+
+STATISTICS:
+
+Weight: 1"
+
+
+	SAY NAME2 "Potion of Invulnerability"
+	SAY DESC "This potion confers very high resistance to all attacks while giving bonuses to all Saving Throws. The effects of the elixir last for 5 turns.
+
+STATISTICS:
+
+Armor Class: 0
+Saving Throws: +5
+Duration: 5 turns
+
+Weight: 1" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
