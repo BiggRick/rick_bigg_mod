@@ -673,7 +673,7 @@ Weight: 12"
 STATISTICS:
 
 Equipped abilities:
-– Chance to score a critical hit: +5% (with this weapon only)
+– Chance to score a critical hit: +10% (with this weapon only)
 
 THAC0: +3
 Damage: 2d4+3 (crushing)
@@ -1112,7 +1112,7 @@ Weight: 1"
 STATISTICS:
 
 Strength: 18
-Duration: 2 hours
+Duration: 3 hours
 
 Weight: 1" 
 
@@ -1136,7 +1136,7 @@ Weight: 1"
 STATISTICS:
 
 Strength: 18/50
-Duration: 2 hours
+Duration: 3 hours
 
 Weight: 1" 
 
@@ -1160,7 +1160,7 @@ Weight: 1"
 STATISTICS:
 
 Strength: 18/75
-Duration: 2 hours
+Duration: 3 hours
 
 Weight: 1" 
 
@@ -1187,7 +1187,7 @@ Weight: 1"
 STATISTICS:
 
 Strength: 18/90
-Duration: 2 hours
+Duration: 3 hours
 
 Weight: 1" 
 
@@ -1213,7 +1213,7 @@ Weight: 1"
 STATISTICS:
 
 Strength: 18/99
-Duration: 2 hours
+Duration: 3 hours
 
 Weight: 1" 
 
@@ -1240,7 +1240,7 @@ Weight: 1"
 STATISTICS:
 
 Strength: 18/00
-Duration: 2 hours
+Duration: 3 hours
 
 Weight: 1" 
 
@@ -1343,6 +1343,7 @@ STATISTICS:
 Fire Resistance: +50%
 Cold Resistance: +50%
 Electrical Resistance: +50%
+Acid Resistance: +50%
 
 Duration: 2 hours
 
@@ -1370,8 +1371,8 @@ Weight: 1"
 STATISTICS:
 
 Hit Points: +15
-THAC0 +1
-Damage +2
+THAC0: +2
+Damage: +2
 
 Duration: 5 turns
 
@@ -1421,11 +1422,185 @@ Weight: 1"
 
 STATISTICS:
 
-Armor Class: 0
-Saving Throws: +5
+Armor Class: +3
+Saving Throws: +3
 Duration: 5 turns
 
 Weight: 1" 
+
+
+
+
+
+//POTION OF MAGIC PROTECTION//
+COPY "rick_bigg_mod/items/POTN34.itm" "override"
+	SAY NAME1 "Potion"
+	SAY UNIDENTIFIED_DESC "Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.
+
+STATISTICS:
+
+Weight: 1"
+
+
+	SAY NAME2 "Potion of Magic Protection"
+	SAY DESC "This potion will leave the drinker with 20% resistance to all harmful magic. The effect will last for 5 turns or until dispelled.
+
+STATISTICS:
+
+Magic Resistance: +50%
+Duration: 5 turns
+
+Weight: 1" 
+
+
+
+
+
+
+
+//POTION OF MAGIC SHIELDING//
+COPY "rick_bigg_mod/items/POTN35.itm" "override"
+	SAY NAME1 "Potion"
+	SAY UNIDENTIFIED_DESC "Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.
+
+STATISTICS:
+
+Weight: 1"
+
+
+	SAY NAME2 "Potion of Magic Shielding"
+	SAY DESC "This powerful elixir imbues the drinker with 50% resistance to all forms of magical damage. The effect lasts for 5 turns, making this potion slightly more battle specific.
+
+STATISTICS:
+
+Damage Resistance: +50% against all forms of magical non-physical damage
+Saving Throws: +4
+Duration: 5 turns
+
+Weight: 1" 
+
+
+
+
+
+
+
+
+//POTION OF PERSUASIVENESS//
+COPY "rick_bigg_mod/items/POTN60.itm" "override"
+	SAY NAME1 "Potion"
+	SAY UNIDENTIFIED_DESC "Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.
+
+STATISTICS:
+
+Weight: 1"
+
+
+	SAY NAME2 "Potion of Persuasiveness"
+	SAY DESC "Very much as the name implies, this potion will increase the Charisma to 18. The effect will last the full duration, which is 3 hours, or until dispelled.
+
+STATISTICS:
+
+Charisma: 18
+Duration: 3 hours
+
+Weight: 1" 
+
+
+
+
+
+
+//POTION OF REGENERATION//
+COPY "rick_bigg_mod/items/POTN42.itm" "override"
+	SAY NAME1 "Potion"
+	SAY UNIDENTIFIED_DESC "Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.
+
+STATISTICS:
+
+Weight: 1"
+
+
+	SAY NAME2 "Potion of Regeneration"
+	SAY DESC "This is a powerful elixir that imbues the drinker with the regeneration ability similar to that of a troll, wounds literally closing over and healing as you watch. The effect, which lasts for 5 turns, is to regenerate 2 Hit Points per round.
+
+STATISTICS:
+
+Special: Regenerate 2 Hit Points per round
+Duration: 5 turns
+
+Weight: 1" 
+
+
+
+
+
+//POTION OF POWER//
+COPY "rick_bigg_mod/items/POTN41.itm" "override"
+	SAY NAME1 "Potion"
+	SAY UNIDENTIFIED_DESC "Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.
+
+STATISTICS:
+
+Weight: 1"
+
+
+	SAY NAME2 "Potion of Power"
+	SAY DESC "This powerful elixir is similar to the potion of heroism, but in this case it increases the skills more of power rather than precision and resilience.
+
+STATISTICS:
+Damage: +4
+Chance to score a critical hit: +5%
+Duration: 5 turns
+
+Weight: 1" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//JAHEIRA'S GIRDLE//
+COPY "rick_bigg_mod/items/BDBELT02.itm" "override"
+	SAY NAME1 "Girdle"
+	SAY UNIDENTIFIED_DESC "Girdles are generally similar to belts. Unlike belts, girdles are not used to hold up pants and dungarees, but to carry pouches, scabbards, and the like. 
+
+STATISTICS:
+
+Weight: 2"
+
+
+	SAY NAME2 "Jaheira's Girdle"
+	SAY DESC "This is Jaheira's Girdle, a legacy from her druid masters. It will protect her in her quest for balance.
+
+STATISTICS:
+
+Equipped abilities:
+– Protects against critical hits
+- Armor Class: +1
+- Saving Throws: +1
+
+Weight: 2" 
+
+
+
 
 
 
