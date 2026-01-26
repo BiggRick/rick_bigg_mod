@@ -673,7 +673,7 @@ Weight: 12"
 STATISTICS:
 
 Equipped abilities:
-– Chance to score a critical hit: +10% (with this weapon only)
+– Chance to score a critical hit: +5% (with this weapon only)
 
 THAC0: +3
 Damage: 2d4+3 (crushing)
@@ -1536,7 +1536,7 @@ Weight: 1"
 
 
 //POTION OF POWER//
-COPY "rick_bigg_mod/items/POTN41.itm" "override"
+COPY "rick_bigg_mod/items/POTN26.itm" "override"
 	SAY NAME1 "Potion"
 	SAY UNIDENTIFIED_DESC "Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.
 
@@ -1546,11 +1546,11 @@ Weight: 1"
 
 
 	SAY NAME2 "Potion of Power"
-	SAY DESC "This powerful elixir is similar to the potion of heroism, but in this case it increases the skills more of power rather than precision and resilience.
+	SAY DESC "This powerful elixir is similar to the potion of heroism, but in this case it increases power rather than precision and resilience. The effect lasts for 5 turns.
 
 STATISTICS:
 Damage: +4
-Chance to score a critical hit: +5%
+Maximum damage each hit
 Duration: 5 turns
 
 Weight: 1" 
@@ -1558,7 +1558,179 @@ Weight: 1"
 
 
 
+//POTION OF MURDER//
+COPY "rick_bigg_mod/items/POTN41.itm" "override"
+	SAY NAME1 "Potion"
+	SAY UNIDENTIFIED_DESC "Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.
 
+STATISTICS:
+
+Weight: 1"
+
+
+	SAY NAME2 "Potion of Murder"
+	SAY DESC "This powerful elixir is one of the most deadly weapons for assassins. It first makes you invisible to your enemy, and then makes backstabbing even more deadly. The effect lasts for 10 turns.
+
+STATISTICS:
+Backstab bonus: +1
+Hide in shadows: +40%
+Move silently: +40%
+Duration: 10 turns
+
+Weight: 1" 
+
+
+
+
+//POTION OF MAGIC POWER//
+COPY "rick_bigg_mod/items/POTN33.itm" "override"
+	SAY NAME1 "Potion"
+	SAY UNIDENTIFIED_DESC "Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.
+
+STATISTICS:
+
+Weight: 1"
+
+
+	SAY NAME2 "Potion of Magic Power"
+	SAY DESC "This powerful elixir enhances the wizard's abilities: first it increases the casting level and then adds 25% damage to each magical attack performed. The effect lasts for 10 turns.
+
+STATISTICS:
+Caster level: +4 (Wizard only)
+Magic Damage: +25%
+Duration: 10 turns
+
+Weight: 1" 
+
+
+
+
+
+
+
+
+
+
+
+
+//POTION OF MISSILE PROTECTION//
+COPY "rick_bigg_mod/items/POTN44.itm" "override"
+	SAY NAME1 "Potion"
+	SAY UNIDENTIFIED_DESC "Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.
+
+STATISTICS:
+
+Weight: 1"
+
+
+	SAY NAME2 "Potion of Missile Protection"
+	SAY DESC "This elixir grants protection against all missile attacks. The effect lasts for 10 turns.
+
+STATISTICS:
+Armor Class vs Missile: +5
+Duration: 10 turns
+
+Weight: 1" 
+
+
+
+
+//POTION OF FIRE BREATH//
+COPY "rick_bigg_mod/items/POTN27.itm" "override"
+	SAY NAME1 "Potion"
+	SAY UNIDENTIFIED_DESC "Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.
+
+STATISTICS:
+
+Weight: 1"
+
+
+	SAY NAME2 "Potion of Fire Breath"
+	SAY DESC "The potion of firebreath magically transforms the throat so that it is capable of a giant breath of fire spewing forth in an arc. The user does not drink this potion, but instead uses it on an enemy. The effect does 3d10 damage to the target with a Save vs. Breath Weapon for half.
+
+STATISTICS:
+
+Damage: 3d10 (Save vs. Breath for half)
+
+Weight: 1" 
+
+
+
+//OIL OF FIERY BURNING//
+COPY "rick_bigg_mod/items/POTN13.itm" "override"
+	SAY NAME1 "Potion"
+	SAY UNIDENTIFIED_DESC "Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.
+
+STATISTICS:
+
+Weight: 1"
+
+
+	SAY NAME2 "Potion of Fiery Burning"
+	SAY DESC "Once exposed to air, this oil will immediately burst into flame, inflicting 5d6 points of damage (Save vs. Breath for half) to all within the immediate area around the potion. It can be hurled up to around 40 ft., at which point it hits the ground and immediately explodes into a ball of fire.
+
+STATISTICS:
+
+Damage: 3d6 (Save vs. Breath for half)
+
+Weight: 1" 
+
+
+
+
+
+
+//THE ONE GIFT LOST//
+COPY "rick_bigg_mod/items/AMUL01.itm" "override"
+	SAY NAME1 "Necklace"
+	SAY UNIDENTIFIED_DESC "A necklace is a piece of ornamental metal jewelry usually made of silver, gold, platinum, or other precious metal, and adorned with gems. A necklace is always worn on the neck and can be of any length.
+
+STATISTICS:
+
+Weight: 1"
+
+
+	SAY NAME2 "The One Gift Lost"
+	SAY DESC "Necklace of Missiles: The One Gift Lost
+The naming of this necklace originates from its only owner, Ikaida Mourneve, who quested to regain his kidnapped daughter. Not many would help the determined father, but a kind and generous mage bestowed this item on him to aid his cause. Alas, the necklace was lost when Ikaida dropped it into the Immerflow River while fending off bandits upon a suspension bridge. Fortunately, it is rumored that the item was not needed to reunite the family once again. 
+
+STATISTICS:
+
+Charge abilities:
+– Missile Blast once per day
+  Damage: 6d6 fire (Save vs. Spell for half)
+  Range: 50 ft.
+  Area of Effect: 15-ft. radius
+
+Weight: 1" 
+
+
+
+
+
+//XZAR'S RING OF MENTAL DEFENCE//
+COPY "rick_bigg_mod/items/X#XZRING.itm" "override"
+	SAY NAME1 "Ring"
+	SAY UNIDENTIFIED_DESC "A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.
+
+STATISTICS:
+
+Weight: 0"
+
+
+	SAY NAME2 "Xzar's Ring of Mental Defence"
+	SAY DESC "This is the ring that Xzar covets. Enchanted with the blood of a murdered dryad, this ring protects the wearer against Charm Person spells and boosts Saving Throws against all Enchantment spells. It also enables the wearer to cast Dire Charm once per day.
+
+STATISTICS:
+
+Equipped Abilities:
+- Immunity to Charm Person
+- +2 Saving Throws vs Enchantment School
+
+Charge Abilities:
+- Cast Dire Charm once per day
+
+Weight: 0" 
 
 
 
