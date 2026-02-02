@@ -63,8 +63,7 @@ Requires:
 Weight: 15"
 
 	SAY NAME2 "Carsomyr +6"
-	SAY DESC "Carsomyr is a weapon of legend, perhaps one of the most powerful blades ever forged on Faerûn, though its origin and history is thought purposefully forgotten so that the sword itself shall never overshadow the importance of the struggles that must be fought today. It is infused with the very essence of virtue and requires as much from any Paladin who would hope to wield it. The evils of the realms must truly stand aside when this weapon is brought to bear, their magic dispelled with a word, steadfastly resisted with ease. Carsomyr also harbors a special distaste for the forces of evil and chaos, and such creatures must fear additional damage from its touch in battle.
-Even a holy relic as powerful as Carsomyr is made even greater when combined with the Eye of Tyr.
+	SAY DESC "Even a holy relic as powerful as Carsomyr is made even greater when combined with the Eye of Tyr.
 
 STATISTICS:
 
@@ -595,6 +594,41 @@ Weight: 0"
 
 
 
+//RING OF HUMAN INFLUENCE//
+COPY "rick_bigg_mod/items/RING30.itm" "override"
+	SAY NAME1 "Ring"
+	SAY DESC "A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.
+
+STATISTICS:
+
+Weight: 0"
+
+	SAY NAME2 "Ring of Human Influence"
+	SAY DESC "For seven years, Count Fisfnilt searched the realms for a suitable bride for his son Ewnin. Unfortunately, all the women that Fisfnilt found were not up to the standards set by Ewnin, an impossibly spoiled man. Desiring an heir and impatient with his son, the Count had the court mage fashion this ring. He gifted the ring to a woman of no small courtly influence and Ewnin was instantly smitten. They wed three weeks later.
+
+STATISTICS:
+
+Equipped abilities:
+– Charisma +1
+
+Charge abilities:
+– Charm Person once per day (Save vs. Spell at +3 negates)
+  Range: 60 ft.
+  Duration: 100 seconds
+  Area of Effect: 1 creature
+
+Weight: 0"
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -811,6 +845,42 @@ Charge abilities:
 – Shield once per day
 
 Weight: 1"
+
+
+
+
+
+
+
+
+
+
+
+
+
+//THE ONE GIFT LOST//
+COPY "rick_bigg_mod/items/AMUL01.itm" "override"
+	SAY NAME1 "Necklace"
+	SAY UNIDENTIFIED_DESC "A necklace is a piece of ornamental metal jewelry usually made of silver, gold, platinum, or other precious metal, and adorned with gems. A necklace is always worn on the neck and can be of any length.
+
+STATISTICS:
+
+Weight: 1"
+
+
+	SAY NAME2 "The One Gift Lost"
+	SAY DESC "Necklace of Missiles: The One Gift Lost
+The naming of this necklace originates from its only owner, Ikaida Mourneve, who quested to regain his kidnapped daughter. Not many would help the determined father, but a kind and generous mage bestowed this item on him to aid his cause. Alas, the necklace was lost when Ikaida dropped it into the Immerflow River while fending off bandits upon a suspension bridge. Fortunately, it is rumored that the item was not needed to reunite the family once again. 
+
+STATISTICS:
+
+Charge abilities:
+– Missile Blast once per day
+  Damage: 6d6 fire (Save vs. Spell for half)
+  Range: 50 ft.
+  Area of Effect: 15-ft. radius
+
+Weight: 1" 
 
 
 
@@ -1535,7 +1605,7 @@ Weight: 1"
 
 
 
-//POTION OF POWER//
+//VITRIOL GRANADE//
 COPY "rick_bigg_mod/items/POTN26.itm" "override"
 	SAY NAME1 "Potion"
 	SAY UNIDENTIFIED_DESC "Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.
@@ -1545,13 +1615,13 @@ STATISTICS:
 Weight: 1"
 
 
-	SAY NAME2 "Potion of Power"
-	SAY DESC "This powerful elixir is similar to the potion of heroism, but in this case it increases power rather than precision and resilience. The effect lasts for 5 turns.
+	SAY NAME2 "Vitriol Granade
+	SAY DESC "Once throwed, a glowing orb of emerald acid explodes in a 15-foot radius. Each creature in the area takes 5d4 acid damage and 1d4 acid damage at the end of its next 2 rounds. There is no save.
 
 STATISTICS:
-Damage: +4
-Maximum damage each hit
-Duration: 5 turns
+
+Damage: 5d4 - 1d4 acid damage at the end of its next 2 rounds
+Area of Effect: 15-ft. radius
 
 Weight: 1" 
 
@@ -1593,20 +1663,15 @@ Weight: 1"
 
 
 	SAY NAME2 "Potion of Magic Power"
-	SAY DESC "This powerful elixir enhances the wizard's abilities: first it increases the casting level and then adds 25% damage to each magical attack performed. The effect lasts for 10 turns.
+	SAY DESC "This powerful elixir enhances the wizard's abilities: first it increases the casting level, the casting speed factor and then adds 25% damage to each magical attack performed. The effect lasts for 10 turns.
 
 STATISTICS:
-Caster level: +4 (Wizard only)
+Caster level: +4
+Casting speed factor: +4
 Magic Damage: +25%
 Duration: 10 turns
 
 Weight: 1" 
-
-
-
-
-
-
 
 
 
@@ -1650,7 +1715,7 @@ Weight: 1"
 
 STATISTICS:
 
-Damage: 3d10 (Save vs. Breath for half)
+Damage: 3d10
 
 Weight: 1" 
 
@@ -1671,38 +1736,10 @@ Weight: 1"
 
 STATISTICS:
 
-Damage: 3d6 (Save vs. Breath for half)
+Damage: 3d6 
 
 Weight: 1" 
 
-
-
-
-
-
-//THE ONE GIFT LOST//
-COPY "rick_bigg_mod/items/AMUL01.itm" "override"
-	SAY NAME1 "Necklace"
-	SAY UNIDENTIFIED_DESC "A necklace is a piece of ornamental metal jewelry usually made of silver, gold, platinum, or other precious metal, and adorned with gems. A necklace is always worn on the neck and can be of any length.
-
-STATISTICS:
-
-Weight: 1"
-
-
-	SAY NAME2 "The One Gift Lost"
-	SAY DESC "Necklace of Missiles: The One Gift Lost
-The naming of this necklace originates from its only owner, Ikaida Mourneve, who quested to regain his kidnapped daughter. Not many would help the determined father, but a kind and generous mage bestowed this item on him to aid his cause. Alas, the necklace was lost when Ikaida dropped it into the Immerflow River while fending off bandits upon a suspension bridge. Fortunately, it is rumored that the item was not needed to reunite the family once again. 
-
-STATISTICS:
-
-Charge abilities:
-– Missile Blast once per day
-  Damage: 6d6 fire (Save vs. Spell for half)
-  Range: 50 ft.
-  Area of Effect: 15-ft. radius
-
-Weight: 1" 
 
 
 
@@ -1734,21 +1771,6 @@ Weight: 0"
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //JAHEIRA'S GIRDLE//
 COPY "rick_bigg_mod/items/BDBELT02.itm" "override"
 	SAY NAME1 "Girdle"
@@ -1775,6 +1797,1028 @@ Weight: 2"
 
 
 
+//WAND OF FIRE//
+COPY "rick_bigg_mod/items/WAND05.itm" "override"
+	SAY NAME1 "Wand"
+	SAY UNIDENTIFIED_DESC "Wands are 1 1/4 ft. long and slender. They are made of ivory, bone, or wood and are usually tipped with something—metal, crystal, stone, and so on. They are fragile and tend to break easily. Because of this, they are often kept in cases. 
+
+STATISTICS:
+
+Weight: 1"
+
+
+	SAY NAME2 "Wand of Fire"
+	SAY DESC "The wand will cough forth a huge, burning ball of fire that streaks out to the desired range (to a maximum of 90 ft.) and bursts in a fiery, violent blast, just like the Fireball spell. The Fireball inflicts 6d6 points of damage, but all 1s rolled are counted as 2s. The victim(s) may make a Save vs. Wand in order to take only half damage. 
+
+STATISTICS:
+
+Cast Fireball once per day:
+  Damage: 6d6 fire (Save vs. Wand for half)
+  Range: 90 ft.
+  Area of Effect: 15-ft. radius
+
+Requires:
+ 9 Intelligence
+
+Weight: 1" 
+
+
+
+
+
+//WAND OF MAGIC MISSILES//
+COPY "rick_bigg_mod/items/WAND03.itm" "override"
+	SAY NAME1 "Wand"
+	SAY UNIDENTIFIED_DESC "Wands are 1 1/4 ft. long and slender. They are made of ivory, bone, or wood and are usually tipped with something—metal, crystal, stone, and so on. They are fragile and tend to break easily. Because of this, they are often kept in cases. 
+
+STATISTICS:
+
+Weight: 1"
+
+
+	SAY NAME2 "Wand of Magic Missiles"
+	SAY DESC "When activated, the wand will eject three missiles of magical energy that darts forth and unerringly strikes its target. This includes enemy creatures in a melee. The target creature must be seen or otherwise detected to be hit, however, so near-total concealment, such as that offered by arrow slits, can render the spell ineffective. The missiles will inflict 1d4+1 points of damage.
+
+STATISTICS:
+
+Charge abilities:
+– 3 magic missiles will strike the target
+  Damage: 1d4+1 each
+  Range: 100 ft.
+  Area of Effect: 1 creature
+
+Requires:
+ 9 Intelligence
+
+Weight: 1" 
+
+
+
+
+
+//WAND OF FEAR//
+COPY "rick_bigg_mod/items/WAND02.itm" "override"
+	SAY NAME1 "Wand"
+	SAY UNIDENTIFIED_DESC "Wands are 1 1/4 ft. long and slender. They are made of ivory, bone, or wood and are usually tipped with something—metal, crystal, stone, and so on. They are fragile and tend to break easily. Because of this, they are often kept in cases. 
+
+STATISTICS:
+
+Weight: 1"
+
+
+	SAY NAME2 "Wand of Fear"
+	SAY DESC "A Wand of Fear strikes terror into the heart of any creature within its target area. This panic is not universal, however, as the stout of heart have been known to resist its magic.
+
+STATISTICS:
+
+Cast Fear once per day:
+  Causes enemies to run in fear unless they save vs. Wand
+  Range: 100 ft.
+  Area of Effect: 15-ft. radius
+  Duration: 15 rounds
+
+Requires:
+ 9 Intelligence
+
+Weight: 1" 
+
+
+
+
+
+//WAND OF PARALYZATION//
+COPY "rick_bigg_mod/items/WAND04.itm" "override"
+	SAY NAME1 "Wand"
+	SAY UNIDENTIFIED_DESC "Wands are 1 1/4 ft. long and slender. They are made of ivory, bone, or wood and are usually tipped with something—metal, crystal, stone, and so on. They are fragile and tend to break easily. Because of this, they are often kept in cases. 
+
+STATISTICS:
+
+Weight: 1"
+
+
+	SAY NAME2 "Wand of Paralyzation"
+	SAY DESC "When used, this wand shoots forth a thin ray of bluish color to a maximum range of 100 ft. When a creature is touched by the ray, it must save vs. Wand in order to avoid being stunned for 1 turn.
+
+STATISTICS:
+
+Cast Stun once per day:
+  Stun target (Save vs. Wand at -2 penalty negates)
+  Range: 100 ft.
+  Area of Effect: 1 creature
+  Duration: 1 turn
+
+Requires:
+ 9 Intelligence
+
+Weight: 1" 
+
+
+
+
+
+
+
+
+//WAND OF FROST//
+COPY "rick_bigg_mod/items/WAND06.itm" "override"
+	SAY NAME1 "Wand"
+	SAY UNIDENTIFIED_DESC "Wands are 1 1/4 ft. long and slender. They are made of ivory, bone, or wood and are usually tipped with something—metal, crystal, stone, and so on. They are fragile and tend to break easily. Because of this, they are often kept in cases. 
+
+STATISTICS:
+
+Weight: 1"
+
+
+	SAY NAME2 "Wand of Frost"
+	SAY DESC "A wand of frost cast a cold spell. Crystallized particles of snow and ice fan out from the wand's tip, defining an area wherein the temperature drops to -100 degrees F.
+
+STATISTICS:
+
+Cast Cold Ray once per day:
+  Damage: 8d6 cold (Save vs. Wand for half)
+  Range: 100 ft.
+  Area of Effect: 17-ft. cone with 90-deg. arc
+
+Requires:
+ 9 Intelligence
+
+Weight: 1" 
+
+
+
+
+//WAND OF LIGHTNING//
+COPY "rick_bigg_mod/items/WAND07.itm" "override"
+	SAY NAME1 "Wand"
+	SAY UNIDENTIFIED_DESC "Wands are 1 1/4 ft. long and slender. They are made of ivory, bone, or wood and are usually tipped with something—metal, crystal, stone, and so on. They are fragile and tend to break easily. Because of this, they are often kept in cases. 
+
+STATISTICS:
+
+Weight: 1"
+
+
+	SAY NAME2 "Wand of Lightning"
+	SAY DESC "The possessor of the wand can discharge six bolts of lightning, each directed at a target of the user's choosing. As it passes through a creature, a bolt does 1d6 points of damage with a Save vs. Wand for half.
+
+STATISTICS:
+
+Charge abilities:
+– Six Lightning Bolts
+  Damage: 1d6 electrical (Save vs. Wand for half)
+  Range: 100 ft.
+  Area of Effect: Path of bolts
+
+Requires:
+ 9 Intelligence
+
+Weight: 1" 
+
+
+
+//WAND OF SLEEP//
+COPY "rick_bigg_mod/items/WAND08.itm" "override"
+	SAY NAME1 "Wand"
+	SAY UNIDENTIFIED_DESC "Wands are 1 1/4 ft. long and slender. They are made of ivory, bone, or wood and are usually tipped with something—metal, crystal, stone, and so on. They are fragile and tend to break easily. Because of this, they are often kept in cases. 
+
+STATISTICS:
+
+Weight: 1"
+
+
+	SAY NAME2 "Wand of Sleep"
+	SAY DESC "This wand will emit a gold beam of energy at its targets up to a maximum range of 80 ft., affecting a 15-ft. radius. If the target creatures fail their Save vs. Wand, they will fall into a deep, comatose sleep for 2 turns.
+
+STATISTICS:
+
+Cast Sleep once per day:
+  Sleep (Save vs. Wand negates)
+  Range: 80 ft.
+  Area of Effect: 15-ft. radius
+  Duration: 2 turns
+
+Requires:
+ 9 Intelligence
+
+Weight: 1" 
+
+
+
+
+//WAND OF POLYMORPHING//
+COPY "rick_bigg_mod/items/WAND09.itm" "override"
+	SAY NAME1 "Wand"
+	SAY UNIDENTIFIED_DESC "Wands are 1 1/4 ft. long and slender. They are made of ivory, bone, or wood and are usually tipped with something—metal, crystal, stone, and so on. They are fragile and tend to break easily. Because of this, they are often kept in cases. 
+
+STATISTICS:
+
+Weight: 1"
+
+
+	SAY NAME2 "Wand of Polymorphing"
+	SAY DESC "This wand emits a thin, green beam that darts forth to a maximum distance of 5 ft. Any creature touched by this beam must make a Save vs. Wand or be polymorphed into a squirrel.
+
+STATISTICS:
+
+Cast Polymorph once per day:
+  Polymorph target into squirrel (Save vs. Wand negates)
+  Range: 5 ft.
+  Area of Effect: 1 creature
+  Duration: Permanent (until dispelled)
+
+Requires:
+ 9 Intelligence
+
+Weight: 1" 
+
+
+
+
+//WAND OF MONSTER SUMMONING//
+COPY "rick_bigg_mod/items/WAND10.itm" "override"
+	SAY NAME1 "Wand"
+	SAY UNIDENTIFIED_DESC "Wands are 1 1/4 ft. long and slender. They are made of ivory, bone, or wood and are usually tipped with something—metal, crystal, stone, and so on. They are fragile and tend to break easily. Because of this, they are often kept in cases. 
+
+STATISTICS:
+
+Weight: 1"
+
+
+	SAY NAME2 "Wand of Monster Summoning"
+	SAY DESC "This wand will summon 12 HD of monsters, which appear within the area of effect and attack the user's enemies. They remain until the spell duration expires or the monsters are slain. These creatures vanish when slain. If no opponent exists to fight and the wizard can communicate with them, the summoned monsters can perform other services for the summoning wizard.
+
+STATISTICS:
+
+Cast Monster Summoning once per day:
+  Summon 12 HD of monsters
+  Range: 20 ft.
+  Duration: 2 turns
+
+Requires:
+ 9 Intelligence
+
+Weight: 1" 
+
+
+
+
+
+//WAND OF THE HEAVENS//
+COPY "rick_bigg_mod/items/WAND11.itm" "override"
+	SAY NAME1 "Wand"
+	SAY UNIDENTIFIED_DESC "Wands are 1 1/4 ft. long and slender. They are made of ivory, bone, or wood and are usually tipped with something—metal, crystal, stone, and so on. They are fragile and tend to break easily. Because of this, they are often kept in cases. 
+
+STATISTICS:
+
+Weight: 1"
+
+
+	SAY NAME2 "Wand of the Heavens"
+	SAY DESC "This wand will cause a pillar of flame to shoot out of the sky and strike the chosen target. The flames will do 8d6 damage to the target (with 1s taken as 2s), unless the target makes a Save vs. Wand in which case <PRO_HESHE> will take half.
+
+STATISTICS:
+
+Cast Flame Strike once per day:
+  Damage: 8d6 fire (Save vs. Wand for half)
+  Range: 120 ft.
+  Area of Effect: 1 creature
+
+Requires:
+ 9 Intelligence
+
+Weight: 1" 
+
+
+
+
+
+
+//WAND OF THE CLOUDKILL//
+COPY "rick_bigg_mod/items/WAND13.itm" "override"
+	SAY NAME1 "Wand"
+	SAY UNIDENTIFIED_DESC "Wands are 1 1/4 ft. long and slender. They are made of ivory, bone, or wood and are usually tipped with something—metal, crystal, stone, and so on. They are fragile and tend to break easily. Because of this, they are often kept in cases. 
+
+STATISTICS:
+
+Weight: 1"
+
+
+	SAY NAME2 "Wand of the Cloudkill"
+	SAY DESC "This wand emits a vapor bubble that travels toward the target, exploding into a deadly cloud of noxious gas that expands to fill an area roughly 15 ft. in radius. The cloud will instantly kill any creature with 4 HD or less with no Saving Throw. Any creature within 5 to 6 HD must make a Saving Throw or be slain. Creatures with greater than 6 HD simply take 1d10 damage for every round that they remain within the cloud. The cloud will dissipate after 1d4 turns.
+
+STATISTICS:
+
+Cast Cloudkill once per day:
+  Damage: 1d10 poison per round
+  Special: Slays creatures with 1-4 HD; creatures with 5-6 HD must save vs. Poison at -4 or die
+  Range: 60 ft.
+  Area of Effect: 15-ft. radius
+  Duration: 1d4 turns
+
+Requires:
+ 9 Intelligence
+
+Weight: 1" 
+
+
+
+
+
+//ROD OF ABSORPTION//
+COPY "rick_bigg_mod/items/RODS01.itm" "override"
+	SAY NAME1 "Wand"
+	SAY UNIDENTIFIED_DESC "Rods are about three feet long and as thick as your thumb. They are normally found in cases or similar storage places. Rods can be fashioned from metal, wood, ivory, or bone. They can be plain or decorated and carved, tipped, or not. Rods are powered by charges, unless noted otherwise in the description of a particular rod. Each time the rod is used, one or more charge may be expended.
+
+STATISTICS:
+
+Weight: 3"
+
+
+	SAY NAME2 "Rod of Absorption"
+	SAY DESC "This rod acts as a magnet, drawing magical spells of any nature (priest or wizard) into itself. It then absorbs and nullifies their effects. To activate this absorption ability, the user must use the wand, after which time they will be protected for 20 rounds or until the absorption disappears.
+
+STATISTICS:
+
+Cast Spell Trap once per day
+
+Weight: 3" 
+
+
+
+
+
+
+
+
+//WAND OF CURSING//
+COPY "rick_bigg_mod/items/WAND19.itm" "override"
+	SAY NAME1 "Wand"
+	SAY UNIDENTIFIED_DESC "Wands are 1 1/4 ft. long and slender. They are made of ivory, bone, or wood and are usually tipped with something—metal, crystal, stone, and so on. They are fragile and tend to break easily. Because of this, they are often kept in cases. 
+
+STATISTICS:
+
+Weight: 1"
+
+
+	SAY NAME2 "Wand of Cursing"
+	SAY DESC "This wand instantly renders the target blind, deaf, and mute. But perhaps the most dangerous aspect of this terrible device is that anyone can use it.
+
+STATISTICS:
+
+Charge abilities:
+– Cast Blindness, Deafness, and Silence (Save vs. Spell -4 negates all effects)
+  Duration: 1 turn
+  Area of Effect: 1 creature
+
+Weight: 1" 
+
+
+
+
+
+//ROD OF REVERSAL//
+COPY "rick_bigg_mod/items/RODS06.itm" "override"
+	SAY NAME1 "Rod"
+	SAY UNIDENTIFIED_DESC "Rods are about three feet long and as thick as your thumb. They are normally found in cases or similar storage places. Rods can be fashioned from metal, wood, ivory, or bone. They can be plain or decorated and carved, tipped, or not. Rods are powered by charges, unless noted otherwise in the description of a particular rod. Each time the rod is used, one or more charge may be expended.
+
+STATISTICS:
+
+Weight: 3"
+
+
+	SAY NAME2 "Rod of Reversal"
+	SAY DESC "This powerful item allows anyone to quickly remove the magical defenses of an enemy mage. It is particularly prized by wizard slayers.
+
+STATISTICS:
+
+Charge abilities:
+– Ruby Ray of Reversal
+  Special: Removes one spell protection from the target
+  Area of Effect: 1 creature
+
+Weight: 5" 
+
+
+
+
+
+
+
+//IXIL'S NAIL +5//
+COPY "rick_bigg_mod/items/SPER11.itm" "override"
+	SAY NAME1 "Spear"
+	SAY UNIDENTIFIED_DESC "One of the earliest weapons, dating back to the most primitive of times, the first spears were simply wooden poles or sticks sharpened at one end. When the civilized races mastered metals, spearheads were made from iron and steel. Having reached this end, weaponsmiths began experimenting with different types of spearheads, thus leading to the development of certain polearm types.
+
+STATISTICS:
+
+Damage: 1d6 (piercing)
+Speed Factor: 6
+Proficiency Type: Spear
+Type: Two-handed
+Requires:
+ 5 Strength
+
+Weight: 5"
+
+
+	SAY NAME2 "Ixil's Nail +5"
+	SAY DESC "For many generations, this magical shaft has been separated from Ixil's Spike, the enchanted head of the legendary spear. However, even incomplete, this artifact is still a weapon of great power. 
+
+STATISTICS:
+
+THAC0: +5
+Damage: 1d6+5 (piercing)
+Speed Factor: 1
+Proficiency Type: Spear 
+Type: Two-handed
+Requires:
+ 5 Strength
+
+Weight: 4" 
+
+
+
+
+//IXIL'S NAIL +6//
+COPY "rick_bigg_mod/items/SPER12.itm" "override"
+	SAY NAME1 "Spear"
+	SAY UNIDENTIFIED_DESC "One of the earliest weapons, dating back to the most primitive of times, the first spears were simply wooden poles or sticks sharpened at one end. When the civilized races mastered metals, spearheads were made from iron and steel. Having reached this end, weaponsmiths began experimenting with different types of spearheads, thus leading to the development of certain polearm types.
+
+STATISTICS:
+
+Damage: 1d6 (piercing)
+Speed Factor: 6
+Proficiency Type: Spear
+Type: Two-handed
+Requires:
+ 5 Strength
+
+Weight: 5"
+
+
+	SAY NAME2 "Ixil's Nail +6"
+	SAY DESC "With shaft and tip reunited, Ixil's Spike is a fearsome weapon. During the battle, the head can detach to pin opponents to the ground even as a new head magically reforms on the end of the spear.
+
+STATISTICS:
+
+Combat abilities:
+– 1 extra attack per round
+– Hit target is pinned for 3 rounds and takes an additional 1d6+5 piercing damage each round (Save vs. Paralysis -4 negates)
+
+THAC0: +6
+Damage: 1d6+6 (piercing)
+Speed Factor: 1 
+Proficiency Type: Spear 
+Type: Two-handed
+Requires:
+ 5 Strength
+
+Weight: 3" 
+
+
+
+
+
+//IXIL'S SPIKE//
+COPY "rick_bigg_mod/items/DAGG23.itm" "override"
+	SAY NAME1 "Dagger"
+	SAY UNIDENTIFIED_DESC "The typical dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter.
+
+STATISTICS:
+
+Damage: 1d4 (piercing)
+Speed Factor: 2
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 1"
+
+
+	SAY NAME2 "Ixil's Spike"
+	SAY DESC "This "dagger" is actually the tip of Ixil's Nail—an artifact of almost unimaginable power. Even this small piece of the legendary spear is a fierce weapon.
+
+STATISTICS
+
+Combat abilities:
+– 1 extra attack per round
+
+THAC0: +2
+Damage: 1d4+2 (piercing)
+Speed Factor: 0
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 1" 
+
+
+
+
+//HALCYON +2//
+COPY "rick_bigg_mod/items/SPER09.itm" "override"
+	SAY NAME1 "Spear"
+	SAY UNIDENTIFIED_DESC "One of the earliest weapons, dating back to the most primitive of times, the first spears were simply wooden poles or sticks sharpened at one end. When the civilized races mastered metals, spearheads were made from iron and steel. Having reached this end, weaponsmiths began experimenting with different types of spearheads, thus leading to the development of certain polearm types.
+
+STATISTICS:
+
+Damage: 1d6 (piercing)
+Speed Factor: 6
+Proficiency Type: Spear
+Type: Two-handed
+Requires:
+ 5 Strength
+
+Weight: 5"
+
+
+	SAY NAME2 "Halcyon +2"
+	SAY DESC "The electrum-plated shaft of this weapon hums with magical power. Occasionally, blue bolts of energy run down the length of the spear, charging it. In battle when it hits an opponent, it strikes for additional electricity damage.
+
+STATISTICS:
+
+THAC0: +2
+Damage: 1d6+2, +1 electrical damage
+Damage type: Piercing
+Speed Factor: 4
+Proficiency Type: Spear
+Type: Two-handed
+Requires:
+ 5 Strength
+
+Weight: 3" 
+
+
+
+//SPEAR OF KULDAHAR +3//
+COPY "rick_bigg_mod/items/WASPEAR.itm" "override"
+	SAY NAME1 "Spear"
+	SAY UNIDENTIFIED_DESC "One of the earliest weapons, dating back to the most primitive of times, the first spears were simply wooden poles or sticks sharpened at one end. When the civilized races mastered metals, spearheads were made from iron and steel. Having reached this end, weaponsmiths began experimenting with different types of spearheads, thus leading to the development of certain polearm types.
+
+STATISTICS:
+
+Damage: 1d6 (piercing)
+Speed Factor: 6
+Proficiency Type: Spear
+Type: Two-handed
+Requires:
+ 5 Strength
+
+Weight: 5"
+
+
+	SAY NAME2 "Spear of Kuldahar +3"
+	SAY DESC "This spear was forged by the druids who dwelt close to the great tree of Kuldahar. It was meant to be used by the warrior who was appointed as Kuldahar's defender.
+
+STATISTICS:
+
+Equipped abilities:
+– Hit Points: +12
+– Regenerate 1 Hit Point per round
+
+THAC0: +3
+Damage: 1d6+3 (piercing)
+Speed Factor: 3
+Proficiency Type: Spear 
+Type: Two-handed
+Requires:
+ 5 Strength
+
+Weight: 3" 
+
+
+
+
+//HARMONIUM HALBERD +3//
+COPY "rick_bigg_mod/items/WA2HALB.itm" "override"
+	SAY NAME1 "Halberd"
+	SAY UNIDENTIFIED_DESC "By far the oldest and most often used polearm, the halberd consists of a cleaver-like axe blade mounted on a staff averaging six feet in length. The axe blade is balanced at the rear with a fluke and surmounted by a sharp spike, usually of quadrangular design. The fluke is sometimes replaced by a hook used to dismount cavalry. A halberd can be best described as a cross between a spear and an axe.
+
+STATISTICS:
+
+Damage: 1d10 (piercing or slashing)
+Speed Factor: 9
+Proficiency Type: Halberd
+Type: Two-handed
+Requires:
+ 13 Strength
+
+Weight: 15"
+
+
+	SAY NAME2 "Harmonium Halberd +3"
+	SAY DESC "This halberd is a powerful weapon usually given out to the most important of Harmonium captains. The Harmonium is a faction based out of the planar city known as "Sigil."
+
+STATISTICS:
+
+Equipped abilities:
+– Constitution: +1
+– Intelligence: -1
+– Wisdom: -1
+- AC bonus: +2
+
+THAC0: +3
+Damage: 1d10+3 (piercing)
+Speed Factor: 6
+Proficiency Type: Halberd
+Type: Two-handed
+Requires:
+ 11 Strength
+
+Weight: 12" 
+
+
+
+
+
+//DRAGON'S BANE +3//
+COPY "rick_bigg_mod/items/HALB04.itm" "override"
+	SAY NAME1 "Halberd"
+	SAY UNIDENTIFIED_DESC "By far the oldest and most often used polearm, the halberd consists of a cleaver-like axe blade mounted on a staff averaging six feet in length. The axe blade is balanced at the rear with a fluke and surmounted by a sharp spike, usually of quadrangular design. The fluke is sometimes replaced by a hook used to dismount cavalry. A halberd can be best described as a cross between a spear and an axe.
+
+STATISTICS:
+
+Damage: 1d10 (piercing or slashing)
+Speed Factor: 9
+Proficiency Type: Halberd
+Type: Two-handed
+Requires:
+ 13 Strength
+
+Weight: 15"
+
+
+	SAY NAME2 "Dragon's Bane +4"
+	SAY DESC "This was the weapon of Thorvin Dukal, one of seven self-proclaimed Dragonslayers who spent years railing against what they called "an insidious dragon infestation that threatened Faerûn." Thorvin had this weapon enchanted at great expense and used it on many occasions, though of dragons only a single white has fallen to it. The Dragonslayers met their match in a cantankerous ancient red who slew the entire group in an epic battle. This weapon did not end up in the beast's hoard, however, as the creature returned to its lair to recuperate and when it emerged, the field of combat was well scavenged.
+
+STATISTICS:
+
+THAC0: +3
+Damage: 1d10+3, +9 vs. dragons
+Damage type: Piercing
+Speed Factor: 6
+Proficiency Type: Halberd
+Type: Two-handed
+Requires:
+ 13 Strength
+
+Weight: 12" 
+
+
+
+
+
+//DRAGON'S BREATH +3//
+COPY "rick_bigg_mod/items/HALB05.itm" "override"
+	SAY NAME1 "Halberd"
+	SAY UNIDENTIFIED_DESC "By far the oldest and most often used polearm, the halberd consists of a cleaver-like axe blade mounted on a staff averaging six feet in length. The axe blade is balanced at the rear with a fluke and surmounted by a sharp spike, usually of quadrangular design. The fluke is sometimes replaced by a hook used to dismount cavalry. A halberd can be best described as a cross between a spear and an axe.
+
+STATISTICS:
+
+Damage: 1d10 (piercing or slashing)
+Speed Factor: 9
+Proficiency Type: Halberd
+Type: Two-handed
+Requires:
+ 13 Strength
+
+Weight: 15"
+
+
+	SAY NAME2 "Dragon's Breath +3"
+	SAY DESC "Trying to profit from the strength of greater beings, many years ago the mage Ullion founded a dragon-worshipping cult under the moniker "Son of Drago." Attracting followers with promises of conquest, he sought to secure his authority by enchanting this symbolic weapon for his bodyguard, Jaramor Bold. When the Dragon's Breath strikes an opponent, it releases the harsh flames of a red dragon, the poisonous vapor of the green dragon, the blue dragon's lightning bolt, a spray of a black dragon's acid, and the white dragon's penetrating cold. Unfortunately, Ullion was the first to feel its effects, slain by the ambitious Jaramor, who sought to rule. There was no real power to be had without the mage, so the entire organization soon collapsed on itself. 
+
+STATISTICS:
+
+Enchanted 5
+
+THAC0: +3
+Damage: 1d10 
+Elemental damage: +1 cold damage, +1 fire damage, +1 electrical damage, +1 acid damage, +1 poison damage (bypass MR)
+Damage type: Piercing
+Speed Factor: 6
+Proficiency Type: Halberd
+Type: Two-handed
+Requires:
+ 13 Strength
+
+Weight: 13" 
+
+
+
+
+
+//WAVE +4//
+COPY "rick_bigg_mod/items/HALB05.itm" "override"
+	SAY NAME1 "Halberd"
+	SAY UNIDENTIFIED_DESC "By far the oldest and most often used polearm, the halberd consists of a cleaver-like axe blade mounted on a staff averaging six feet in length. The axe blade is balanced at the rear with a fluke and surmounted by a sharp spike, usually of quadrangular design. The fluke is sometimes replaced by a hook used to dismount cavalry. A halberd can be best described as a cross between a spear and an axe.
+
+STATISTICS:
+
+Damage: 1d10 (piercing or slashing)
+Speed Factor: 9
+Proficiency Type: Halberd
+Type: Two-handed
+Requires:
+ 13 Strength
+
+Weight: 15"
+
+
+	SAY NAME2 "Wave +4"
+	SAY DESC "Forged in antiquity by a cult devoted to the goddess Umberlee, this weapon of vengeance was designed to aid the cult's champion in retrieving a holy artifact from the fire giants of the Storm Horn Mountains. That was a lot of hope to place in one champion, and unfortunately the Wave had been lost ever since.
+
+STATISTICS:
+
+Combat abilities:  
+– 25% chance of draining the victim of water (+15 cold damage, bypass MR)
+– Slays fire elementals, efreet, and salamanders
+
+THAC0: +4
+Damage: 1d10+4 (piercing)
+Speed Factor: 5
+Proficiency Type: Halberd
+Type: Two-handed
+Requires:
+ 13 Strength
+
+Weight: 11" 
+
+
+
+//RAVAGER +4//
+COPY "rick_bigg_mod/items/HALB10.itm" "override"
+	SAY NAME1 "Halberd"
+	SAY UNIDENTIFIED_DESC "By far the oldest and most often used polearm, the halberd consists of a cleaver-like axe blade mounted on a staff averaging six feet in length. The axe blade is balanced at the rear with a fluke and surmounted by a sharp spike, usually of quadrangular design. The fluke is sometimes replaced by a hook used to dismount cavalry. A halberd can be best described as a cross between a spear and an axe.
+
+STATISTICS:
+
+Damage: 1d10 (piercing or slashing)
+Speed Factor: 9
+Proficiency Type: Halberd
+Type: Two-handed
+Requires:
+ 13 Strength
+
+Weight: 15"
+
+
+	SAY NAME2 "Ravager +4"
+	SAY DESC "Taking the blood-soaked shaft of this weapon in hand brings a sudden chill along your spine. The origins of this gruesome halberd are unknown, the myth says it can slay the opponents with a single blow—unless they can survive the sudden loss of their head.  
+
+STATISTICS:
+
+Combat abilities:
+– 10% chance of decapitating opponent with each successful attack
+
+THAC0: +4
+Damage: 1d10+4 (piercing)
+Speed Factor: 5
+Proficiency Type: Halberd
+Type: Two-handed
+Requires:
+ 13 Strength
+
+Weight: 11" 
+
+
+
+
+
+//RAVAGER +6//
+COPY "rick_bigg_mod/items/HALB11.itm" "override"
+	SAY NAME1 "Halberd"
+	SAY UNIDENTIFIED_DESC "By far the oldest and most often used polearm, the halberd consists of a cleaver-like axe blade mounted on a staff averaging six feet in length. The axe blade is balanced at the rear with a fluke and surmounted by a sharp spike, usually of quadrangular design. The fluke is sometimes replaced by a hook used to dismount cavalry. A halberd can be best described as a cross between a spear and an axe.
+
+STATISTICS:
+
+Damage: 1d10 (piercing or slashing)
+Speed Factor: 9
+Proficiency Type: Halberd
+Type: Two-handed
+Requires:
+ 13 Strength
+
+Weight: 15"
+
+
+	SAY NAME2 "Ravager +6"
+	SAY DESC "Combined with the Serpent Shaft, this dark halberd has also the ability to poison instantly the opponent without saving throw... unless he is still alive without his head.
+
+STATISTICS:
+
+Combat abilities:
+– Hit target suffer 3d6 points of poison damage (no save, bypass MR)
+– 10% chance of decapitating opponent with each successful attack
+
+THAC0: +6
+Damage: 1d10+6 (piercing)
+Speed Factor: 3
+Proficiency Type: Halberd
+Type: Two-handed
+Requires:
+ 13 Strength
+
+Weight: 9" 
+
+
+
+
+
+
+//ARROW OF BITING//
+COPY "rick_bigg_mod/items/AROW05.itm" "override"
+	SAY NAME1 "Arrow"
+	SAY UNIDENTIFIED_DESC "The flight arrow, as its name implies, is built for distance. These are lightweight arrows and are often used for hunting. Most of these arrows are made of ash or birch and are thirty to forty inches long.
+
+STATISTICS:
+
+Damage: 1d6 (missile)
+Launcher: Bow
+
+Weight: 0"
+
+
+	SAY NAME2 "Arrow of Biting"
+	SAY DESC "The Arrow of Biting was designed as a deadly compliment to the archer. Poison smeared on the barbed arrowhead infiltrates the bloodstream of its victims, causing agony and often death.
+
+STATISTICS:
+
+Combat abilities:
+– Target must save vs. Death or take 30 points of poison damage in 15 seconds
+
+Damage: 1d6 (missile)
+Launcher: Bow
+
+Weight: 0" 
+
+
+
+
+//ARROW OF BITING//
+COPY "rick_bigg_mod/items/AROW12.itm" "override"
+	SAY NAME1 "Arrow"
+	SAY UNIDENTIFIED_DESC "The flight arrow, as its name implies, is built for distance. These are lightweight arrows and are often used for hunting. Most of these arrows are made of ash or birch and are thirty to forty inches long.
+
+STATISTICS:
+
+Damage: 1d6 (missile)
+Launcher: Bow
+
+Weight: 0"
+
+
+	SAY NAME2 "Arrow of Biting"
+	SAY DESC "The Arrow of Biting was designed as a deadly compliment to the archer. Poison smeared on the barbed arrowhead infiltrates the bloodstream of its victims, causing agony and often death.
+
+STATISTICS:
+
+Combat abilities:
+– Target must save vs. Death or take 30 points of poison damage in 15 seconds
+
+Damage: 1d6 (missile)
+Launcher: Bow
+
+Weight: 0" 
+
+
+
+
+
+//ARROW OF ACID +1//
+COPY "rick_bigg_mod/items/AROW04.itm" "override"
+	SAY NAME1 "Arrow"
+	SAY UNIDENTIFIED_DESC "The flight arrow, as its name implies, is built for distance. These are lightweight arrows and are often used for hunting. Most of these arrows are made of ash or birch and are thirty to forty inches long.
+
+STATISTICS:
+
+Damage: 1d6 (missile)
+Launcher: Bow
+
+Weight: 0"
+
+
+	SAY NAME2 "Arrow of Acid +1"
+	SAY DESC "This arrow is coated in acid. When it strikes an enemy, it not only pierces flesh but also eats it away, enlarging and deepening the wound.
+
+STATISTICS:
+
+THAC0: +1
+Damage: 1d6+1, +1d6 acid damage
+Damage type: Missile
+Launcher: Bow
+
+Weight: 0" 
+
+
+
+
+//ARROW OF DETONATION//
+COPY "rick_bigg_mod/items/AROW06.itm" "override"
+	SAY NAME1 "Arrow"
+	SAY UNIDENTIFIED_DESC "The flight arrow, as its name implies, is built for distance. These are lightweight arrows and are often used for hunting. Most of these arrows are made of ash or birch and are thirty to forty inches long.
+
+STATISTICS:
+
+Damage: 1d6 (missile)
+Launcher: Bow
+
+Weight: 0"
+
+
+	SAY NAME2 "Arrow of Detonation"
+	SAY DESC "This arrow doesn't physically harm the target, but upon impact, it explodes into a huge ball of fire and shrapnel affecting all within the area.
+
+STATISTICS:
+
+Damage: 0d6, 3d6 explosion upon impact
+Damage type: Missile
+Launcher: Bow
+
+Weight: 0" 
+
+
+
+
+//ARROW OF PIERCING//
+COPY "rick_bigg_mod/items/AROW10.itm" "override"
+	SAY NAME1 "Arrow"
+	SAY UNIDENTIFIED_DESC "The flight arrow, as its name implies, is built for distance. These are lightweight arrows and are often used for hunting. Most of these arrows are made of ash or birch and are thirty to forty inches long.
+
+STATISTICS:
+
+Damage: 1d6 (missile)
+Launcher: Bow
+
+Weight: 0"
+
+
+	SAY NAME2 "Arrow of Piercing"
+	SAY DESC "This arrow is long and thin, imbued with magical properties that allow it to "push" itself through armor, striking out towards the heart of the victim.
+
+STATISTICS:
+
+THAC0: +4
+Damage: 1d6, +6 piercing damage (Save vs. Death for none)
+Damage type: Missile
+Launcher: Bow
+
+Weight: 0" 
+
+
+
+
+//ARROW OF FIRE +1//
+COPY "rick_bigg_mod/items/AROW08.itm" "override"
+	SAY NAME1 "Arrow"
+	SAY UNIDENTIFIED_DESC "The flight arrow, as its name implies, is built for distance. These are lightweight arrows and are often used for hunting. Most of these arrows are made of ash or birch and are thirty to forty inches long.
+
+STATISTICS:
+
+Damage: 1d6 (missile)
+Launcher: Bow
+
+Weight: 0"
+
+
+	SAY NAME2 "Arrow of Fire +1"
+	SAY DESC "This is a magical arrow that will burst into flames as it is fired at an enemy. The effect is similar to an arrow doused in oil and set to flame.
+
+STATISTICS:
+
+THAC0: +1
+Damage: 1d6+1, +1d6 fire damage
+Damage type: Missile
+Launcher: Bow
+
+Weight: 0" 
+
+
+//ARROW OF FIRE +1//
+COPY "rick_bigg_mod/items/AROWKC.itm" "override"
+	SAY NAME1 "Arrow"
+	SAY UNIDENTIFIED_DESC "The flight arrow, as its name implies, is built for distance. These are lightweight arrows and are often used for hunting. Most of these arrows are made of ash or birch and are thirty to forty inches long.
+
+STATISTICS:
+
+Damage: 1d6 (missile)
+Launcher: Bow
+
+Weight: 0"
+
+
+	SAY NAME2 "Arrow of Fire +1"
+	SAY DESC "This is a magical arrow that will burst into flames as it is fired at an enemy. The effect is similar to an arrow doused in oil and set to flame.
+
+STATISTICS:
+
+THACO: +1
+Damage: 1d6+1, +1d6 fire damage
+Damage type: Missile
+Launcher: Bow
+
+Weight: 0" 
 
 
 
@@ -1785,15 +2829,27 @@ Weight: 2"
 
 
 
+//BOLT OF LIGHTNING +1//
+COPY "rick_bigg_mod/items/BOLT03.itm" "override"
+	SAY NAME1 "Bolt"
+	SAY UNIDENTIFIED_DESC "Quarrels or bolts are the ammunition fired by crossbows regardless of the weapon's size.
+
+STATISTICS:
+
+Damage: 1d8 (missile)
+Launcher: Crossbow
+
+Weight: 0"
 
 
+	SAY NAME2 "Bolt of Lightning"
+	SAY DESC "This bolt seems to crackle with energy as it is held in the hand. When shot from the crossbow, it seems to leap towards its target, leaving behind an electrical sulfuric smell. As it hits, there is a crackle as the energy stored is released into the target's wound.
 
+STATISTICS:
 
+THAC0: +1
+Damage: 1d8+1, +4d4 electrical damage (Save vs. Breath for half)
+Damage type: Missile
+Launcher: Crossbow
 
-
-
-
-
-
-
-
+Weight: 0" 
