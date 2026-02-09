@@ -271,7 +271,7 @@ Weight: 1"
 
 
 
-//WEREBANE +1//
+//WEREBANE +2//
 COPY "rick_bigg_mod/items/DAGG09.itm" "override"
 	SAY NAME1 "Silver Dagger"
 	SAY UNIDENTIFIED_DESC "This plain silver dagger has a pointed, double-edged blade. 
@@ -288,13 +288,13 @@ Requires:
 Weight: 1"
 
 
-	SAY NAME2 "Werebane +1"
+	SAY NAME2 "Werebane +2"
 	SAY DESC "Dynala Goldenhand, an elven Ranger who wished to rid her homeland of its werejackal problem, forged the dagger. She was killed by a tribe of orcs in the Graypeak Mountains as she tracked the werejackal leader.
 
 STATISTICS:
 
-THAC0: +1, +4 vs. shapeshifters
-Damage: 1d4+1, +4 vs. shapeshifters
+THAC0: +2, +5 vs. shapeshifters
+Damage: 1d4+2, +5 vs. shapeshifters
 Damage type: Piercing
 Speed Factor: 1
 Proficiency Type: Dagger
@@ -428,10 +428,7 @@ Weight: 15"
 STATISTICS:
 
 Equipped abilities:
-– Crushing Damage Resistance: +10%
-– Slashing Damage Resistance: +10%
-– Piercing Damage Resistance: +10%
-– Missile Damage Resistance: +10%
+– Physical Damage Resistance: +10%
 
 THAC0: +3
 Damage: 1d10+3 (slashing)
@@ -496,13 +493,14 @@ Requires:
 Weight: 3"
 
 	SAY NAME2 "The Shadow's Blade +3"
-	SAY DESC "The Shadow's Blade was created to be the perfect assassin's tool. It is highly sought after by any who settle differences with a blade, and many that possess it do not do so for long.
+	SAY DESC "The Shadow's Blade was created to be the perfect assassin's tool. It is highly sought after by any who settle differences with a blade, and many that possess it do not do so for long. It can be used only by thieves.
 
 STATISTICS:
 
 Equipped abilities:
 – Move Silently: +15%
 – Hide In Shadows: +15%
+– Backstab Multiplier: +1
 
 THAC0: +3
 Damage: 1d6+3 (piercing)
@@ -539,36 +537,6 @@ Equipped abilities:
 
 Weight: 3"
 
-
-
-
-
-//MAIL OF THE DEAD +2//
-COPY "rick_bigg_mod/items/CHAN03.itm" "override"
-	SAY NAME1 "Chain Mail"
-	SAY UNIDENTIFIED_DESC "Chain mail is made of interlocking metal rings. It is always worn over a layer of padded fabric or soft leather to prevent chafing and lessen the impact of blows. 
-
-STATISTICS:
-
-Armor Class: 5 (3 vs. slashing, 7 vs. crushing)
-Requires:
- 8 Strength
-
-Weight: 40"
-
-	SAY NAME2 "Mail of the Dead +2"
-	SAY DESC "A mage can make an extremely effective assassin, as Vorusta illustrated over four hundred years ago. He would create skeleton warriors equipped with this enchanted armor and a powerful blade, and give their circlet of power to the target as a friendly gift. When the killing machine was through with its work, Vorusta retrieved the equipment and started the entire process over.
-
-STATISTICS:
-
-Equipped abilities:
-– 20% Magic Damage resistance bonus
-
-Armor Class: 3 (1 vs. slashing, 5 vs. crushing)
-Requires:
- 8 Strength
-
-Weight: 10"
 
 
 
@@ -848,11 +816,24 @@ Weight: 1"
 
 
 
+//EVERYMEMORY//
+COPY "rick_bigg_mod/items/AMUL16.itm" "override"
+	SAY NAME1 "Amulet"
+	SAY UNIDENTIFIED_DESC "Amulets are usually magical devices that are commonly worn around the neck, suspended from a chain. The type of chain that comes with an amulet generally increases the item's aesthetic value, not its magical properties. Only one amulet can be dangled from the neck at a time.
 
+STATISTICS:
 
+Weight: 1"
 
+	SAY NAME2 "Everymemory"
+	SAY DESC "Long ago, a grand wizard from Amn was rumored to have defied Mystra's limitations on the magical arts. Legends spoke of this wizard being able to cast spells without the limitation of memorization. In the end it was found that his powers stemmed from the several magical amulets that he had made for himself. His proclaimed "everlasting memory" was a hoax, though his rings continue to be one of the most sought after items in the realms.
 
+STATISTICS:
 
+Equipped abilities:
+– Can memorize double the amount of 1st-level wizard spells
+
+Weight: 1"
 
 
 
@@ -881,49 +862,6 @@ Charge abilities:
   Area of Effect: 15-ft. radius
 
 Weight: 1" 
-
-
-
-
-
-//RETURNING THROWING DAGGER +1//
-COPY "rick_bigg_mod/items/TB#DAG01.itm" "override"
-	SAY NAME1 "Throwing Dagger"
-	SAY UNIDENTIFIED_DESC "The typical throwing dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter than the dagger. Unlike a dagger, this one has a smaller handle and is balanced differently.
-
-STATISTICS:
-
-Damage: 1d4 (missile)
-Speed Factor: 2
-Proficiency Type: Dagger
-Type: One-handed
-Requires:
- 3 Strength
-
-Weight: 0"
-
-	SAY NAME2 "Returning Throwing Dagger +1"
-	SAY DESC "This special throwing dagger is often used by the most sadistic pirates of the Sea of Swords to avoid losing precious ammunition.
-	First, the prisoners are thrown into the sea, then bets are placed on who can hit and kill them.
-	The most common problem in this game is sharks and sea monsters, which are often faster than the pirates themselves...
-
-STATISTICS:
-
-
-Combat abilities:
-– Returns to the wielder's hand when thrown
-- One extra attack per round
-
-THAC0: +1
-Damage: 1d4+1 (missile)
-Speed Factor: 1
-Proficiency Type: Dagger
-Type: One-handed
-Requires:
- 3 Strength
-
-Weight: 0"
-
 
 
 
@@ -1796,6 +1734,112 @@ Weight: 2"
 
 
 
+//MYR'CUTIO'S BARDIC CHAIN +1//
+COPY "rick_bigg_mod/items/X#GARCH.itm" "override"
+	SAY NAME1 "Chain Mail"
+	SAY UNIDENTIFIED_DESC "Chain mail is made of interlocking metal rings. It is always worn over a layer of padded fabric or soft leather to prevent chafing and lessen the impact of blows. 
+
+STATISTICS:
+
+Armor Class: 5 (3 vs. slashing, 7 vs. crushing)
+Requires:
+ 8 Strength
+
+Weight: 40"
+
+
+	SAY NAME2 "Myr'Cutio's Bardic Chain +1"
+	SAY DESC "This bardic chainmail has an illustrious past, being the armor of the noted half-elven bard Myr'Cutio. He wandered the Realms seeking adventure, and so restless was his nature that on his death his spirit, and those of his companions, continued to roam...
+
+Until they were put to rest by the party of <CHARNAME>, that is. Adventurers tend not to have respect for noteworthy figures of the past. Still, the armor is yours: lightweight, shiny and stylish. What more could Garrick hope for?
+
+STATISTICS:
+
+Equipped abilities:
+- Armor Class: 4 (2 vs. slashing, 6 vs. crushing)
+- Does not interfere with arcane spellcasting
+
+Requires: 8 Strength
+
+Weight: 20" 
+
+
+
+
+
+//MYR'CUTIO'S BARDIC CHAIN +2//
+COPY "rick_bigg_mod/items/X#GARCH.itm" "override"
+	SAY NAME1 "Chain Mail"
+	SAY UNIDENTIFIED_DESC "Chain mail is made of interlocking metal rings. It is always worn over a layer of padded fabric or soft leather to prevent chafing and lessen the impact of blows. 
+
+STATISTICS:
+
+Armor Class: 5 (3 vs. slashing, 7 vs. crushing)
+Requires:
+ 8 Strength
+
+Weight: 40"
+
+
+	SAY NAME2 "Myr'Cutio's Bardic Chain +2"
+	SAY DESC "This bardic chainmail has an illustrious past, being the armor of the noted half-elven bard Myr'Cutio. He wandered the Realms seeking adventure, and so restless was his nature that on his death his spirit, and those of his companions, continued to roam...
+
+Until they were put to rest by the party of <CHARNAME>, that is. Adventurers tend not to have respect for noteworthy figures of the past. Still, the armor is yours: lightweight, shiny and stylish. What more could Garrick hope for?
+
+This armor was further improved by Halbazzer Drin of the Sorcerous Sundries store in Baldur's Gate. Combination with a pair of golden pantaloons has afforded an increased measure of protection, while keeping the suit as fashionable as ever.
+
+STATISTICS:
+
+Equipped abilities:
+- Armor Class: 3 (1 vs. slashing, 5 vs. crushing)
+- Does not interfere with arcane spellcasting
+
+Requires: 7 Strength
+
+Weight: 15" 
+
+
+
+
+
+
+
+
+
+//ILVASTARR FAMILY SHIELD +1//
+COPY "rick_bigg_mod/items/x#ajshld.itm" "override"
+	SAY NAME1 "Medium Shield"
+	SAY UNIDENTIFIED_DESC "A medium shield is carried in the same manner as a small shield.  Its weight prevents the character from using his shield hand for anything other than carrying the medium shield.  Medium shields are usually made of metal, range from 3'-4' in diameter, and can be of any shape, from round to square to a spread dragon's wings.  A typical medieval shield resembles a triangle with one point facing downward.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +1
+
+Requires:
+ 12 Strength
+
+Weight: 7"
+
+
+	SAY NAME2 "Ilvastarr Family Shield +1"
+	SAY DESC "This is Ajantis' family shield. It shows the coat of arms of the noble Ilvastarr family of Waterdeep: a metallic green dragon with orange eyes on a golden field.
+
+STATISTICS:
+
+Equipped Abilties:
+- Armor Class: +2, an extra +2 vs. missile attacks
+
+Requires:
+ 12 Strength
+
+Weight: 7"
+
+
+
+
+
+
 
 //WAND OF FIRE//
 COPY "rick_bigg_mod/items/WAND05.itm" "override"
@@ -2278,6 +2322,45 @@ Weight: 3"
 
 
 
+//NEB'S NASTY CUTTER +3//
+COPY "rick_bigg_mod/items/NEBDAG.itm" "override"
+	SAY NAME1 "Dagger"
+	SAY UNIDENTIFIED_DESC "The typical dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter.
+
+STATISTICS:
+
+Damage: 1d4 (piercing)
+Speed Factor: 2
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 1"
+
+
+	SAY NAME2 "Neb's Nasty Cutter +3"
+	SAY DESC "This is a vicious weapon used by Neb, covered with old blood and coated in a poison that is both quick-acting and extremely deadly. Only the truly evil would dare to use this item on their own.
+
+STATISTICS:
+
+Combat abilities:
+– Target must save vs. Poison or suffer 2 points of damage per second for 10 seconds
+
+THAC0: +3
+Damage: 1d4+3 (piercing)
+Speed Factor: 0
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 1" 
+
+
+
+
+
 //IXIL'S SPIKE//
 COPY "rick_bigg_mod/items/DAGG23.itm" "override"
 	SAY NAME1 "Dagger"
@@ -2296,15 +2379,18 @@ Weight: 1"
 
 
 	SAY NAME2 "Ixil's Spike"
-	SAY DESC "This "dagger" is actually the tip of Ixil's Nail—an artifact of almost unimaginable power. Even this small piece of the legendary spear is a fierce weapon.
+	SAY DESC "This dagger is actually the tip of Ixil's Nail—an artifact of almost unimaginable power. Even this small piece of the legendary spear is a fierce weapon.
 
 STATISTICS
 
 Combat abilities:
 – 1 extra attack per round
+- Returns to the wielder's hand when thrown
 
 THAC0: +2
-Damage: 1d4+2 (piercing)
+Damage: 1d4+2
+Damage type (melee): Piercing
+Damage type (thrown): Missile
 Speed Factor: 0
 Proficiency Type: Dagger
 Type: One-handed
@@ -2312,8 +2398,6 @@ Requires:
  3 Strength
 
 Weight: 1" 
-
-
 
 
 //HALCYON +2//
@@ -2449,7 +2533,7 @@ Requires:
 Weight: 15"
 
 
-	SAY NAME2 "Dragon's Bane +4"
+	SAY NAME2 "Dragon's Bane +3"
 	SAY DESC "This was the weapon of Thorvin Dukal, one of seven self-proclaimed Dragonslayers who spent years railing against what they called "an insidious dragon infestation that threatened Faerûn." Thorvin had this weapon enchanted at great expense and used it on many occasions, though of dragons only a single white has fallen to it. The Dragonslayers met their match in a cantankerous ancient red who slew the entire group in an epic battle. This weapon did not end up in the beast's hoard, however, as the creature returned to its lair to recuperate and when it emerged, the field of combat was well scavenged.
 
 STATISTICS:
@@ -2570,7 +2654,7 @@ Weight: 15"
 STATISTICS:
 
 Combat abilities:
-– 10% chance of decapitating opponent with each successful attack
+– 15% chance of decapitating opponent with each successful attack (Save vs. Death -2 negates)
 
 THAC0: +4
 Damage: 1d10+4 (piercing)
@@ -2610,7 +2694,7 @@ STATISTICS:
 
 Combat abilities:
 – Hit target suffer 3d6 points of poison damage (no save, bypass MR)
-– 10% chance of decapitating opponent with each successful attack
+– 15% chance of decapitating opponent with each successful attack (no save)
 
 THAC0: +6
 Damage: 1d10+6 (piercing)
@@ -2621,6 +2705,248 @@ Requires:
  13 Strength
 
 Weight: 9" 
+
+
+
+//LIFE STEALER +4/
+COPY "rick_bigg_mod/items/DAGG20.itm" "override"
+	SAY NAME1 "Dagger"
+	SAY UNIDENTIFIED_DESC "The typical dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter.
+
+STATISTICS:
+
+Damage: 1d4 (piercing)
+Speed Factor: 2
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 1"
+
+
+	SAY NAME2 "Life-Stealer +4"
+	SAY DESC "This dagger weighs heavily in your hand and is warm to the touch. Merely having it on your person makes you feel uneasy for some reason. The gem mounted in the hilt seems to have an inner light of some sort, though how it can have such illumination and still be so deathly black at its core, you do not know.
+
+STATISTICS:
+
+Combat abilities:
+– Each successful hit casts Larloch's Minor Drain on the target (at Level 1)
+
+THAC0: +4
+Damage: 1d4+4 (piercing)
+Speed Factor: 0
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 1"
+
+
+
+//DAGGER OF THE STAR +4/
+COPY "rick_bigg_mod/items/DAGG21.itm" "override"
+	SAY NAME1 "Dagger"
+	SAY UNIDENTIFIED_DESC "The typical dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter.
+
+STATISTICS:
+
+Damage: 1d4 (piercing)
+Speed Factor: 2
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 1"
+
+
+	SAY NAME2 "Dagger of the Star +4"
+	SAY DESC "Rumored to have been dropped from the Heavens by a careless lesser deity, this dagger is a favorite among thieves and assassins, as it will sometimes magically hide its user from the victim's sight.
+
+STATISTICS:
+   
+Combat abilities:
+– 15% chance of making the user go invisible for 1 turn after each successful attack
+
+THAC0: +4
+Damage: 1d4+4 (piercing)
+Speed Factor: 0
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 1"
+
+
+//DAGGER OF THE STAR +5/
+COPY "rick_bigg_mod/items/DAGG21.itm" "override"
+	SAY NAME1 "Dagger"
+	SAY UNIDENTIFIED_DESC "The typical dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter.
+
+STATISTICS:
+
+Damage: 1d4 (piercing)
+Speed Factor: 2
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 1"
+
+
+	SAY NAME2 "Dagger of the Star +5"
+	SAY DESC "With the star sapphires encrusting its hilt, this small blade is one of the most dangerous weapons in the realms.
+
+STATISTICS:
+
+Equipped abilities:
+- Electricity resistance: +50%
+   
+Combat abilities:
+– 15% chance of making the user go invisible for 1 turn after each successful attack
+– Star Bolt: each successful hit causes an extra 1d8 electrical damage (bypass MR)
+
+THAC0: +5
+Damage: 1d4+5 (piercing)
+Speed Factor: 0
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 1"
+
+
+
+
+
+//BOOMERANG DAGGER +2/
+COPY "rick_bigg_mod/items/DAGG11.itm" "override"
+	SAY NAME1 "Dagger"
+	SAY UNIDENTIFIED_DESC "The typical dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter.
+
+STATISTICS:
+
+Damage: 1d4 (piercing)
+Speed Factor: 2
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 1"
+
+
+	SAY NAME2 "Boomerang Dagger +2"
+	SAY DESC "Fullen Woolspinner, an ambitious halfling from a well-to-do family, left his home to spend several years adventuring. During his travels, he ended up staying with a family of dwarven weaponsmiths. Much impressed by their throwing axes, which always returned to the hands of their wielder, Fullen sought to make a dagger that could do the same. With the help of his dwarven friends, he succeeded, creating several of the famous Fullen Boomerang daggers.
+
+STATISTICS:
+
+Combat abilities:
+– Returns to the wielder's hand when thrown
+
+THAC0: +2
+Damage: 1d4+2
+Damage type (melee): Piercing
+Damage type (thrown): Missile
+Speed Factor: 1
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 1"
+
+
+
+
+//PIRATE DAGGER +1//
+COPY "rick_bigg_mod/items/TB#DAG01.itm" "override"
+	SAY NAME1 "Dagger"
+	SAY UNIDENTIFIED_DESC "The typical throwing dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter than the dagger. Unlike a dagger, this one has a smaller handle and is balanced differently.
+
+STATISTICS:
+
+Damage: 1d4 (missile)
+Speed Factor: 2
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 0"
+
+	SAY NAME2 "Pirate Dagger +1"
+	SAY DESC "This special throwing dagger is often used by the most sadistic pirates of the Sea of Swords to avoid losing precious ammunition.
+	First, the prisoners are thrown into the sea, then bets are placed on who can hit and kill them.
+	The most common problems in this game are sharks and sea monsters, which are often faster than the pirates themselves...
+
+STATISTICS:
+
+
+Combat abilities:
+– Returns to the wielder's hand when thrown
+
+THAC0: +1
+Damage: 1d4+1
+Damage type (melee): Piercing
+Damage type (thrown): Missile
+Speed Factor: 1
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 0"
+
+
+
+
+
+//FIRETOOTH +3//
+COPY "rick_bigg_mod/items/DAGG12.itm" "override"
+	SAY NAME1 "Dagger"
+	SAY UNIDENTIFIED_DESC "The typical throwing dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter than the dagger. Unlike a dagger, this one has a smaller handle and is balanced differently.
+
+STATISTICS:
+
+Damage: 1d4 (missile)
+Speed Factor: 2
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 0"
+
+	SAY NAME2 "Pirate Dagger +1"
+	SAY DESC "This throwing knife is imbued with magical fire, and was supposedly carved from an extracted red dragon tooth. Tavern tales suggest that the beast is still alive, her anger fueling the enchantment within the weapon. Though fanciful, the story is consistent, and it is said the dagger returns to the thrower "as though on wings."
+
+STATISTICS:
+
+Combat abilities:
+– Returns to the wielder's hand when thrown
+
+THAC0: +3
+Damage: 1d4+3, +1d4 fire damage
+Damage type (melee): Piercing
+Damage type (thrown): Missile
+Speed Factor: 1
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 1"
+
+
+
+
+
 
 
 
@@ -2685,8 +3011,38 @@ Weight: 0"
 
 
 
+//ELDOTH'S POISONED ARROW//
+COPY "rick_bigg_mod/items/AROW14.itm" "override"
+	SAY NAME1 "Arrow"
+	SAY UNIDENTIFIED_DESC "The flight arrow, as its name implies, is built for distance. These are lightweight arrows and are often used for hunting. Most of these arrows are made of ash or birch and are thirty to forty inches long.
 
-//ARROW OF ACID +1//
+STATISTICS:
+
+Damage: 1d6 (missile)
+Launcher: Bow
+
+Weight: 0"
+
+
+	SAY NAME2 "Eldoth's Poisoned Arrow"
+	SAY DESC "These are Eldoth's personal poisoned arrows. He learned how to use poison at a young age and can create enough venom for about 5 arrows per day. He is the only person who can safely handle these arrows.
+
+STATISTICS:
+
+Combat abilities:
+– Hit target takes 1 point of poison damage every 3 seconds for 40 seconds (Save vs. Poison negates)
+
+Damage: 1d6 (missile)
+Launcher: Bow
+
+Weight: 0" 
+
+
+
+
+
+
+//ARROW OF ACID//
 COPY "rick_bigg_mod/items/AROW04.itm" "override"
 	SAY NAME1 "Arrow"
 	SAY UNIDENTIFIED_DESC "The flight arrow, as its name implies, is built for distance. These are lightweight arrows and are often used for hunting. Most of these arrows are made of ash or birch and are thirty to forty inches long.
@@ -2699,17 +3055,21 @@ Launcher: Bow
 Weight: 0"
 
 
-	SAY NAME2 "Arrow of Acid +1"
-	SAY DESC "This arrow is coated in acid. When it strikes an enemy, it not only pierces flesh but also eats it away, enlarging and deepening the wound.
+	SAY NAME2 "Arrow of Acid"
+	SAY DESC "This enchanted arrow coated in acid. When it strikes an enemy, it not only pierces flesh but also eats it away, enlarging and deepening the wound.
 
 STATISTICS:
 
-THAC0: +1
-Damage: 1d6+1, +1d6 acid damage
+Damage: 1d6, +1d6 acid damage
 Damage type: Missile
 Launcher: Bow
 
 Weight: 0" 
+
+
+
+
+
 
 
 
@@ -2769,7 +3129,7 @@ Weight: 0"
 
 
 
-//ARROW OF FIRE +1//
+//ARROW OF FIRE//
 COPY "rick_bigg_mod/items/AROW08.itm" "override"
 	SAY NAME1 "Arrow"
 	SAY UNIDENTIFIED_DESC "The flight arrow, as its name implies, is built for distance. These are lightweight arrows and are often used for hunting. Most of these arrows are made of ash or birch and are thirty to forty inches long.
@@ -2782,20 +3142,24 @@ Launcher: Bow
 Weight: 0"
 
 
-	SAY NAME2 "Arrow of Fire +1"
+	SAY NAME2 "Arrow of Fire"
 	SAY DESC "This is a magical arrow that will burst into flames as it is fired at an enemy. The effect is similar to an arrow doused in oil and set to flame.
 
 STATISTICS:
 
-THAC0: +1
-Damage: 1d6+1, +1d6 fire damage
+Damage: 1d6, +1d6 fire damage
 Damage type: Missile
 Launcher: Bow
 
 Weight: 0" 
 
 
-//ARROW OF FIRE +1//
+
+
+
+
+
+//ARROW OF FIRE//
 COPY "rick_bigg_mod/items/AROWKC.itm" "override"
 	SAY NAME1 "Arrow"
 	SAY UNIDENTIFIED_DESC "The flight arrow, as its name implies, is built for distance. These are lightweight arrows and are often used for hunting. Most of these arrows are made of ash or birch and are thirty to forty inches long.
@@ -2808,13 +3172,40 @@ Launcher: Bow
 Weight: 0"
 
 
-	SAY NAME2 "Arrow of Fire +1"
+	SAY NAME2 "Arrow of Fire"
 	SAY DESC "This is a magical arrow that will burst into flames as it is fired at an enemy. The effect is similar to an arrow doused in oil and set to flame.
 
 STATISTICS:
 
-THACO: +1
-Damage: 1d6+1, +1d6 fire damage
+Damage: 1d6, +1d6 fire damage
+Damage type: Missile
+Launcher: Bow
+
+Weight: 0" 
+
+
+
+
+
+//ARROW OF ICE//
+COPY "rick_bigg_mod/items/AROW09.itm" "override"
+	SAY NAME1 "Arrow"
+	SAY UNIDENTIFIED_DESC "The flight arrow, as its name implies, is built for distance. These are lightweight arrows and are often used for hunting. Most of these arrows are made of ash or birch and are thirty to forty inches long.
+
+STATISTICS:
+
+Damage: 1d6 (missile)
+Launcher: Bow
+
+Weight: 0"
+
+
+	SAY NAME2 "Arrow of Ice"
+	SAY DESC "This arrow is magically enhanced so as to burst into a rolling ball of ice and cold when fired. When the arrow strikes its victim, a shock of cold will travel through its body, both burning and numbing to the very core.
+
+STATISTICS:
+
+Damage: 1d6, +1d8 cold damage
 Damage type: Missile
 Launcher: Bow
 
@@ -2829,7 +3220,13 @@ Weight: 0"
 
 
 
-//BOLT OF LIGHTNING +1//
+
+
+
+
+
+
+//BOLT OF LIGHTNING//
 COPY "rick_bigg_mod/items/BOLT03.itm" "override"
 	SAY NAME1 "Bolt"
 	SAY UNIDENTIFIED_DESC "Quarrels or bolts are the ammunition fired by crossbows regardless of the weapon's size.
@@ -2847,9 +3244,394 @@ Weight: 0"
 
 STATISTICS:
 
-THAC0: +1
-Damage: 1d8+1, +4d4 electrical damage (Save vs. Breath for half)
+Damage: 1d8, +4d4 electrical damage (Save vs. Breath for half)
 Damage type: Missile
 Launcher: Crossbow
 
 Weight: 0" 
+
+
+
+
+
+
+
+
+//PARALYTIC BOLT//
+COPY "rick_bigg_mod/items/BOLT05.itm" "override"
+	SAY NAME1 "Bolt"
+	SAY UNIDENTIFIED_DESC "Quarrels or bolts are the ammunition fired by crossbows regardless of the weapon's size.
+
+STATISTICS:
+
+Damage: 1d8 (missile)
+Launcher: Crossbow
+
+Weight: 0"
+
+
+	SAY NAME2 "Paralytic Bolt"
+	SAY DESC "Any target hit by this bolt must make a Saving Throw or be paralyzed for 5 rounds.
+
+STATISTICS:
+
+Combat abilities:
+– Hit target must save vs. Paralyzation or be stunned for 5 rounds
+
+Damage: 1d8 (missile)
+Launcher: Crossbow
+
+Weight: 0"
+
+
+
+
+
+//ELEMENT'S FURY +3//
+COPY "rick_bigg_mod/items/BDDAGG01.itm" "override"
+"rick_bigg_mod/items/BDDAGG01.itm" "override/DAGG13.itm"
+	SAY NAME1 "Dagger"
+	SAY UNIDENTIFIED_DESC "The typical dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter.
+
+STATISTICS:
+
+Damage: 1d4 (piercing)
+Speed Factor: 2
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 1"
+
+	SAY NAME2 "Element's Fury +3"
+	SAY DESC "The mage who crafted this strange dagger was obsessed with the four elemental planes and sought to create a means to join them together. Opening portals to all of them at once, he managed to join their energies together to enchant this relic, giving it properties of each plane.
+
+Unfortunately, he happened to be standing between the portals, holding the dagger in his hand; when the energies converged, they converged on him. It was the mage’s apprentice who discovered the dagger, clutched in his master’s charred and frozen hands.
+
+STATISTICS:
+
+Combat abilities:
+– Deals an extra 1d4 cold damage to fire elementals
+– Deals an extra 1d4 fire damage to water elementals
+– Deals an extra 1d4 acid damage to earth elementals
+– Deals an extra 1d4 electrical damage to air elementals
+
+THAC0: +3
+Damage: 1d4+3, +1 fire, cold, electrical and acid damage (random)
+Damage type: Piercing
+Speed Factor: 0 
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 1"
+
+
+
+
+
+
+
+//THE KNEECAPPER +2//
+COPY "rick_bigg_mod/items/HAMM04.itm" "override"
+	SAY NAME1 "Hammer"
+	SAY UNIDENTIFIED_DESC "A massive, unwieldy warhammer inscribed with dwarven runes.
+
+STATISTICS:
+
+Damage: 1d4+1 (crushing)
+Speed Factor: 4
+Proficiency Type: War Hammer
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 8"
+
+	SAY NAME2 "The Kneecapper +2"
+	SAY DESC "The Kneecapper, or "The Capper" as it is affectionately known in dwarven circles, is rumored to have been forged by Clangeddin himself. He gave it to a small clan of homeless dwarves that they might carve a place for themselves amongst the giants and ogres in their area. The hammer has been passed from hero to hero, occasionally finding its way into non-dwarven hands.
+
+STATISTICS:
+
+THAC0: +2, +4 vs. giant humanoids
+Damage: 1d4+3, +5 vs. giant humanoids
+Damage type: Crushing
+Speed Factor: 3
+Proficiency Type: War Hammer
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 8"
+
+
+
+
+
+//CROM FAEYR +5//
+COPY "rick_bigg_mod/items/HAMM09.itm" "override"
+	SAY NAME1 "Hammer"
+	SAY UNIDENTIFIED_DESC "Mounted knights cannot effectively use long pole weapons while on horseback and, as a result, many weapons have been fitted with shorter shafts so they may be wielded with just one hand. Maces and flails are two examples of this—the war hammer is another. The horseman's war hammer is the descendent of the Lucerne hammer. It is made entirely of steel, with rondels protecting and strengthening the grip. (Rondels are small disks of metal, often shaped into decorative designs.) The shaft is about eighteen inches long.
+
+STATISTICS:
+
+Damage: 1d4+1 (crushing)
+Speed Factor: 4
+Proficiency Type: War Hammer
+Type: One-handed
+Requires:
+ 9 Strength
+
+Weight: 6"
+
+	SAY NAME2 "Crom Faeyr +5"
+	SAY DESC "This is the true name that the dwarven weaponsmith, Silverblade, gave to the weapon he intended to create for his son. Alas, his son died before the weapon was ever completed, but here it stands complete... forged from the combined magic of the original hammer with the gauntlets of ogre power and a girdle of frost giant strength. Crom Faeyr gifts its users with all the powers of the original Hammer of Thunderbolts, in addition to enormous strength and the ability to kill golems, ettins, and trolls in one blow.
+
+STATISTICS:
+
+Equipped abilities:
+– Strength: 25
+
+Combat abilities:
+– Slays flesh golems, stone golems and clay golems
+
+THAC0: +5
+Damage: 2d4+6, +5 electrical
+Damage type: Crushing
+Speed Factor: 1
+Proficiency Type: War Hammer
+Type: One-handed
+
+Weight: 4"
+
+
+
+
+//HAMMER OF THUNDERBOLTS +3//
+COPY "rick_bigg_mod/items/HAMM07.itm" "override"
+	SAY NAME1 "Hammer"
+	SAY UNIDENTIFIED_DESC "Mounted knights cannot effectively use long pole weapons while on horseback and, as a result, many weapons have been fitted with shorter shafts so they may be wielded with just one hand. Maces and flails are two examples of this—the war hammer is another. The horseman's war hammer is the descendent of the Lucerne hammer. It is made entirely of steel, with rondels protecting and strengthening the grip. (Rondels are small disks of metal, often shaped into decorative designs.) The shaft is about eighteen inches long.
+
+STATISTICS:
+
+Damage: 1d4+1 (crushing)
+Speed Factor: 4
+Proficiency Type: War Hammer
+Type: One-handed
+Requires:
+ 9 Strength
+
+Weight: 6"
+
+	SAY NAME2 "Hammer of Thunderbolts +3"
+	SAY DESC "A dwarven smith, Silverblade, forged this hammer and two other items: a girdle of frost giant strength and a pair of gauntlets of ogre power. His intention was to gift them to his son, who was then a high officer in the dwarven armies, fighting the giant and ogre tribes of the area. Unfortunately, Silverblade's son died just after the completion of the three items and before they could be gifted to him. In grief, Silverblade himself donned the girdle and the gauntlets. Taking up the Hammer of Thunderbolts, he went to battle against the giant folk. He died valiantly.
+
+STATISTICS:
+
+THAC0: +3
+Damage: 2d4+3, +3 electrical 
+Damage type: Crushing
+Speed Factor: 1
+Proficiency Type: War Hammer
+Type: One-handed
+Requires:
+ 18 Strength
+
+Weight: 4"
+
+
+
+
+
+
+
+//HANDMAIDEN'S MACE +4//
+COPY "rick_bigg_mod/items/HLOLTH.itm" "override"
+	SAY NAME1 "Mace"
+	SAY UNIDENTIFIED_DESC "The mace is a direct descendant of the basic club, being nothing more than a wooden shaft with a stone or iron head mounted on the end. The head design varies: Some are spiked, others flanged, and still others have pyramidal knobs.
+
+STATISTICS:
+
+Damage: 1d6+1 (crushing)
+Speed Factor: 7
+Proficiency Type: Mace
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 10"
+
+	SAY NAME2 "Handmaiden's Mace +4"
+	SAY DESC "This mace has been crafted finely by the drow and specially treated to survive the glare of the sun. It was made for surface raids by the subterranean race... and its black metal glistens with a dark poison that seems to be generated from within and causes incredible damage upon a successful impact.
+
+The mace seems almost alive and warm to the touch, and slithers away from those whom it does not like... namely drow or those who are similar enough to not make a difference. In the hands of anyone else, the mace becomes mere dead weight.
+
+STATISTICS:
+
+Combat abilities:
+– Hit target must save vs. Poison or suffer 2 points of damage per round for 1 turn
+
+THAC0: +4
+Damage: 1d6+5 (crushing)
+Speed Factor: 4
+Proficiency Type: Mace
+Type: One-handed
+Requires:
+ 9 Strength
+
+Weight: 5"
+
+
+
+
+//ORC LEATHER +3//
+COPY "rick_bigg_mod/items/LEAT16.itm" "override"
+	SAY NAME1 "Studded Leather Armor"
+	SAY UNIDENTIFIED_DESC "Studded leather armor has little in common with normal leather armor. Instead of a hardened shell, studded leather offers hundreds of metal rivets affixed to a supple backing. The numerous studs form a flexible coat of metal that helps to turn aside slashing and cutting attacks, while the leather is little more than a means of securing the rivets in place. 
+
+STATISTICS:
+
+Armor Class: 7 (5 vs. slashing, 6 vs. piercing and missile)
+Requires:
+ 6 Strength
+
+Weight: 25"
+
+	SAY NAME2 "Orc Leather +3"
+	SAY DESC "This ghastly armor was taken from an orc camp destroyed by barbarians. Instead of standard metal rivets, like normal studded leather, this orc leather is instead laced with hundreds of fire-hardened bones. Finger bones, ribs, and skulls cover the armor, acting much like the traditional metal rivets. Powerful orcish enchantments give the armor special resistance to missile  and piercing attacks, but the repulsiveness of the armor reduces the wearer's Charisma.
+
+STATISTICS:
+
+Equipped abilities:
+– Charisma: -1
+– +10% resistance to missile damage
+– +10% resistance to piercing damage
+
+Armor Class: 4 (2 vs. slashing, 3 vs. piercing and missile)
+Requires:
+ 6 Strength
+
+Weight: 7"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+COPY_EXISTING 
+	"HALB07.ITM" "override/HALB03.ITM"
+    "HALB07.ITM" "override/HALB12.ITM"
+    "HALB07.ITM" "override/HALB07.ITM"
+WRITE_ASCII 0x3a "IHALB03" #8
+
+COPY_EXISTING "HALB01.ITM" "override/HALB13.ITM"
+
+COPY_EXISTING 
+	"AX1H11.ITM" "override/AX1H03.ITM"
+	"AX1H11.ITM" "override/AX1H17.ITM"
+	"AX1H11.ITM" "override/AX1H11.ITM"
+WRITE_ASCII 0x3a "IAX1H03" #8
+
+COPY_EXISTING "AX1H01.ITM" "override/AX1H19.ITM"
+
+COPY_EXISTING 
+	"BLUN13.ITM" "override/BLUN39.ITM"
+	"BLUN13.ITM" "override/BLUN32.ITM"
+	"BLUN13.ITM" "override/BLUN13.ITM"
+WRITE_ASCII 0x3a "IBLUN32" #8	
+
+COPY_EXISTING 
+	"BLUN21.ITM" "override/BLUN11.ITM"
+	"BLUN21.ITM" "override/BLUN33.ITM"
+	"BLUN21.ITM" "override/BLUN21.ITM"
+WRITE_ASCII 0x3a "IBLUN11" #8
+
+COPY_EXISTING 
+	"BLUN15.ITM" "override/BLUN34.ITM"
+
+COPY_EXISTING 
+	"OHBLUN51.ITM" "override/BLUN31.ITM"
+	"OHBLUN51.ITM" "override/BLUN37.ITM"
+	"OHBLUN51.ITM" "override/BLUN21.ITM"
+	"OHBLUN51.ITM" "override/OHBLUN51.ITM"
+WRITE_ASCII 0x3a "IBLUN31" #8
+
+COPY_EXISTING "BLUN01.ITM" "override/BLUN38.ITM"
+COPY_EXISTING "BLUN04.ITM" "override/BLUN41.ITM"
+
+COPY_EXISTING 
+	"DAGG15.ITM" "override/DAGG03.ITM"
+	"DAGG15.ITM" "override/DAGG24.ITM"
+	"DAGG15.ITM" "override/DAGG15.ITM"
+WRITE_ASCII 0x3a "IDAGG03" #8
+
+COPY_EXISTING 
+	"CHAN08.ITM" "override/CHAN03.ITM"
+	"CHAN08.ITM" "override/CHAN08.ITM"
+	"CHAN08.ITM" "override/CHAN21.ITM"
+	"CHAN08.ITM" "override/CHAN07.ITM"
+WRITE_ASCII 0x3a "ICHAN03" #8
+	
+COPY_EXISTING 
+	"BOW17.ITM" "override/BOW17.ITM"
+	"BOW17.ITM" "override/BOW25.ITM"
+	"BOW17.ITM" "override/BOW07.ITM"
+WRITE_ASCII 0x3a "IBOW07" #8
+
+COPY_EXISTING "BOW16.ITM" "override/BOW24.ITM"
+COPY_EXISTING "BOW18.ITM" "override/BOW08.ITM"
+COPY_EXISTING "BOW18.ITM" "override/BOW26.ITM"
+
+COPY_EXISTING 
+	"HAMM08.ITM" "override/HAMM08.ITM"
+	"HAMM08.ITM" "override/HAMM03.ITM"
+	"HAMM08.ITM" "override/HAMM12.ITM"
+WRITE_ASCII 0x3a "IHAMM03" #8
+
+COPY_EXISTING "HAMM02.ITM" "override/HAMM13.ITM"
+
+COPY_EXISTING 
+	"LEAT11.ITM" "override/LEAT11.ITM"
+	"LEAT11.ITM" "override/LEAT03.ITM"
+	"LEAT11.ITM" "override/LEAT12.ITM"
+WRITE_ASCII 0x3a "ILEAT03" #8
+
+COPY_EXISTING 
+	"LEAT07.ITM" "override/LEAT07.ITM"
+	"LEAT07.ITM" "override/LEAT07_.ITM"
+WRITE_ASCII 0x3a "ILEAT03" #8
+
+COPY_EXISTING 
+	"LEAT12.ITM" "override/LEAT12.ITM"
+	"LEAT12.ITM" "override/LEAT09.ITM"
+WRITE_ASCII 0x3a "ILEAT09" #8
+
+COPY_EXISTING 
+	"PLAT10.ITM" "override/PLAT10.ITM"
+	"PLAT10.ITM" "override/PLAT02.ITM"
+WRITE_ASCII 0x3a "1PLAT02" #8
+
+COPY_EXISTING "PLAT10.ITM" "override/PLAT24.ITM"
+
+COPY_EXISTING 
+	"PLAT14.ITM" "override/PLAT14.ITM"
+	"PLAT14.ITM" "override/PLAT05.ITM"
+	"PLAT14.ITM" "override/PLAT23.ITM"
+	"PLAT14.ITM" "override/PLAT19.ITM"
+WRITE_ASCII 0x3a "IPLAT23" #8
+
+COPY_EXISTING "SLNG04.ITM" "override/SLNG11.ITM"
+
+COPY_EXISTING "SLNG04.ITM" "override/SLNG11.ITM"
+	
