@@ -1,0 +1,13 @@
+INCLUDE "rick_bigg_mod/lib/add_cre_proficiency.tpa"
+
+/*
+COPY_EXISTING ~aerie6.cre~ ~override~
+	LAUNCH_PATCH_FUNCTION add_cre_proficiency
+		INT_VAR pips = 3
+		STR_VAR proficiency = "PROFICIENCYQUARTERSTAFF"
+	END
+	LAUNCH_PATCH_FUNCTION add_cre_proficiency
+		INT_VAR pips = 3
+		STR_VAR proficiency = "PROFICIENCYSWORDANDSHIELD"
+	END
+*/

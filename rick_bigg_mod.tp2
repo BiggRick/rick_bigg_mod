@@ -86,3 +86,5 @@ COPY_EXISTING ~weapprof.2da~ ~override~
 	PRETTY_PRINT_2DA
 
 INCLUDE ~rick_bigg_mod/lib/items.tpa~
+INCLUDE ~rick_bigg_mod/lib/spells.tpa~
+INCLUDE ~rick_bigg_mod/lib/creatures.tpa~
