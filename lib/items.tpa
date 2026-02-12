@@ -826,14 +826,14 @@ STATISTICS:
 Weight: 1"
 
 	SAY NAME2 "Everymemory"
-	SAY DESC "Long ago, a grand wizard from Amn was rumored to have defied Mystra's limitations on the magical arts. Legends spoke of this wizard being able to cast spells without the limitation of memorization. In the end it was found that his powers stemmed from the several magical amulets that he had made for himself. His proclaimed "everlasting memory" was a hoax, though his rings continue to be one of the most sought after items in the realms.
+	SAY DESC %Long ago, a grand wizard from Amn was rumored to have defied Mystra's limitations on the magical arts. Legends spoke of this wizard being able to cast spells without the limitation of memorization. In the end it was found that his powers stemmed from the several magical amulets that he had made for himself. His proclaimed "everlasting memory" was a hoax, though his rings continue to be one of the most sought after items in the realms.
 
 STATISTICS:
 
 Equipped abilities:
 – Can memorize double the amount of 1st-level wizard spells
 
-Weight: 1"
+Weight: 1%
 
 
 
@@ -1553,8 +1553,8 @@ STATISTICS:
 Weight: 1"
 
 
-	SAY NAME2 "Vitriol Granade
-	SAY DESC "Once throwed, a glowing orb of emerald acid explodes in a 15-foot radius. Each creature in the area takes 5d4 acid damage and 1d4 acid damage at the end of its next 2 rounds. There is no save.
+	SAY NAME2 "Vitriol Granade"
+	SAY DESC "Once thrown, a glowing orb of emerald acid explodes in a 15-foot radius. Each creature in the area takes 5d4 acid damage and 1d4 acid damage at the end of its next 2 rounds. There is no save.
 
 STATISTICS:
 
@@ -2492,7 +2492,7 @@ Weight: 15"
 
 
 	SAY NAME2 "Harmonium Halberd +3"
-	SAY DESC "This halberd is a powerful weapon usually given out to the most important of Harmonium captains. The Harmonium is a faction based out of the planar city known as "Sigil."
+	SAY DESC %This halberd is a powerful weapon usually given out to the most important of Harmonium captains. The Harmonium is a faction based out of the planar city known as "Sigil."
 
 STATISTICS:
 
@@ -2510,7 +2510,7 @@ Type: Two-handed
 Requires:
  11 Strength
 
-Weight: 12" 
+Weight: 12%
 
 
 
@@ -2534,7 +2534,7 @@ Weight: 15"
 
 
 	SAY NAME2 "Dragon's Bane +3"
-	SAY DESC "This was the weapon of Thorvin Dukal, one of seven self-proclaimed Dragonslayers who spent years railing against what they called "an insidious dragon infestation that threatened Faerûn." Thorvin had this weapon enchanted at great expense and used it on many occasions, though of dragons only a single white has fallen to it. The Dragonslayers met their match in a cantankerous ancient red who slew the entire group in an epic battle. This weapon did not end up in the beast's hoard, however, as the creature returned to its lair to recuperate and when it emerged, the field of combat was well scavenged.
+	SAY DESC %This was the weapon of Thorvin Dukal, one of seven self-proclaimed Dragonslayers who spent years railing against what they called "an insidious dragon infestation that threatened Faerûn." Thorvin had this weapon enchanted at great expense and used it on many occasions, though of dragons only a single white has fallen to it. The Dragonslayers met their match in a cantankerous ancient red who slew the entire group in an epic battle. This weapon did not end up in the beast's hoard, however, as the creature returned to its lair to recuperate and when it emerged, the field of combat was well scavenged.
 
 STATISTICS:
 
@@ -2547,7 +2547,7 @@ Type: Two-handed
 Requires:
  13 Strength
 
-Weight: 12" 
+Weight: 12%
 
 
 
@@ -2571,7 +2571,7 @@ Weight: 15"
 
 
 	SAY NAME2 "Dragon's Breath +3"
-	SAY DESC "Trying to profit from the strength of greater beings, many years ago the mage Ullion founded a dragon-worshipping cult under the moniker "Son of Drago." Attracting followers with promises of conquest, he sought to secure his authority by enchanting this symbolic weapon for his bodyguard, Jaramor Bold. When the Dragon's Breath strikes an opponent, it releases the harsh flames of a red dragon, the poisonous vapor of the green dragon, the blue dragon's lightning bolt, a spray of a black dragon's acid, and the white dragon's penetrating cold. Unfortunately, Ullion was the first to feel its effects, slain by the ambitious Jaramor, who sought to rule. There was no real power to be had without the mage, so the entire organization soon collapsed on itself. 
+	SAY DESC %Trying to profit from the strength of greater beings, many years ago the mage Ullion founded a dragon-worshipping cult under the moniker "Son of Drago." Attracting followers with promises of conquest, he sought to secure his authority by enchanting this symbolic weapon for his bodyguard, Jaramor Bold. When the Dragon's Breath strikes an opponent, it releases the harsh flames of a red dragon, the poisonous vapor of the green dragon, the blue dragon's lightning bolt, a spray of a black dragon's acid, and the white dragon's penetrating cold. Unfortunately, Ullion was the first to feel its effects, slain by the ambitious Jaramor, who sought to rule. There was no real power to be had without the mage, so the entire organization soon collapsed on itself. 
 
 STATISTICS:
 
@@ -2587,7 +2587,7 @@ Type: Two-handed
 Requires:
  13 Strength
 
-Weight: 13" 
+Weight: 13%
 
 
 
@@ -2924,7 +2924,7 @@ Requires:
 Weight: 0"
 
 	SAY NAME2 "Pirate Dagger +1"
-	SAY DESC "This throwing knife is imbued with magical fire, and was supposedly carved from an extracted red dragon tooth. Tavern tales suggest that the beast is still alive, her anger fueling the enchantment within the weapon. Though fanciful, the story is consistent, and it is said the dagger returns to the thrower "as though on wings."
+	SAY DESC %This throwing knife is imbued with magical fire, and was supposedly carved from an extracted red dragon tooth. Tavern tales suggest that the beast is still alive, her anger fueling the enchantment within the weapon. Though fanciful, the story is consistent, and it is said the dagger returns to the thrower "as though on wings."
 
 STATISTICS:
 
@@ -2941,7 +2941,7 @@ Type: One-handed
 Requires:
  3 Strength
 
-Weight: 1"
+Weight: 1%
 
 
 
@@ -3115,7 +3115,7 @@ Weight: 0"
 
 
 	SAY NAME2 "Arrow of Piercing"
-	SAY DESC "This arrow is long and thin, imbued with magical properties that allow it to "push" itself through armor, striking out towards the heart of the victim.
+	SAY DESC %This arrow is long and thin, imbued with magical properties that allow it to "push" itself through armor, striking out towards the heart of the victim.
 
 STATISTICS:
 
@@ -3124,7 +3124,7 @@ Damage: 1d6, +6 piercing damage (Save vs. Death for none)
 Damage type: Missile
 Launcher: Bow
 
-Weight: 0" 
+Weight: 0%
 
 
 
@@ -3351,7 +3351,7 @@ Requires:
 Weight: 8"
 
 	SAY NAME2 "The Kneecapper +2"
-	SAY DESC "The Kneecapper, or "The Capper" as it is affectionately known in dwarven circles, is rumored to have been forged by Clangeddin himself. He gave it to a small clan of homeless dwarves that they might carve a place for themselves amongst the giants and ogres in their area. The hammer has been passed from hero to hero, occasionally finding its way into non-dwarven hands.
+	SAY DESC %The Kneecapper, or "The Capper" as it is affectionately known in dwarven circles, is rumored to have been forged by Clangeddin himself. He gave it to a small clan of homeless dwarves that they might carve a place for themselves amongst the giants and ogres in their area. The hammer has been passed from hero to hero, occasionally finding its way into non-dwarven hands.
 
 STATISTICS:
 
@@ -3364,7 +3364,7 @@ Type: One-handed
 Requires:
  10 Strength
 
-Weight: 8"
+Weight: 8%
 
 
 
