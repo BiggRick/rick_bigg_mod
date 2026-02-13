@@ -826,7 +826,6 @@ STATISTICS:
 Weight: 1"
 
 	SAY NAME2 "Everymemory"
-	SAY DESC "Long ago, a grand wizard from Amn was rumored to have defied Mystra's limitations on the magical arts. Legends spoke of this wizard being able to cast spells without the limitation of memorization. In the end it was found that his powers stemmed from the several magical amulets that he had made for himself. His proclaimed "everlasting memory" was a hoax, though his rings continue to be one of the most sought after items in the realms.
 	SAY DESC "Long ago, a grand wizard from Amn was rumored to have defied Mystra's limitations on the magical arts. Legends spoke of this wizard being able to cast spells without the limitation of memorization. In the end it was found that his powers stemmed from the several magical amulets that he had made for himself. His proclaimed Everlasting Memory was a hoax, though his rings continue to be one of the most sought after items in the realms.
 
 STATISTICS:
@@ -1552,10 +1551,6 @@ COPY "rick_bigg_mod/items/POTN26.itm" "override"
 STATISTICS:
 
 Weight: 1"
-
-
-	SAY NAME2 "Vitriol Granade
-	SAY DESC "Once throwed, a glowing orb of emerald acid explodes in a 15-foot radius. Each creature in the area takes 5d4 acid damage and 1d4 acid damage at the end of its next 2 rounds. There is no save.
 	SAY NAME2 "Vitriol Granade"
 	SAY DESC "Once throwed, a glowing orb of emerald acid explodes in a 15-foot radius. Each creature in the area takes 5d4 acid damage and 1d4 acid damage at the end of its next 2 rounds. There is no save.
 
@@ -2439,84 +2434,6 @@ Weight: 3"
 
 
 
-//SPEAR OF KULDAHAR +3//
-COPY "rick_bigg_mod/items/WASPEAR.itm" "override"
-	SAY NAME1 "Spear"
-	SAY UNIDENTIFIED_DESC "One of the earliest weapons, dating back to the most primitive of times, the first spears were simply wooden poles or sticks sharpened at one end. When the civilized races mastered metals, spearheads were made from iron and steel. Having reached this end, weaponsmiths began experimenting with different types of spearheads, thus leading to the development of certain polearm types.
-
-STATISTICS:
-
-Damage: 1d6 (piercing)
-Speed Factor: 6
-Proficiency Type: Spear
-Type: Two-handed
-Requires:
- 5 Strength
-
-Weight: 5"
-
-
-	SAY NAME2 "Spear of Kuldahar +3"
-	SAY DESC "This spear was forged by the druids who dwelt close to the great tree of Kuldahar. It was meant to be used by the warrior who was appointed as Kuldahar's defender.
-
-STATISTICS:
-
-Equipped abilities:
-– Hit Points: +12
-– Regenerate 1 Hit Point per round
-
-THAC0: +3
-Damage: 1d6+3 (piercing)
-Speed Factor: 3
-Proficiency Type: Spear 
-Type: Two-handed
-Requires:
- 5 Strength
-
-Weight: 3" 
-
-
-
-
-//HARMONIUM HALBERD +3//
-COPY "rick_bigg_mod/items/WA2HALB.itm" "override"
-	SAY NAME1 "Halberd"
-	SAY UNIDENTIFIED_DESC "By far the oldest and most often used polearm, the halberd consists of a cleaver-like axe blade mounted on a staff averaging six feet in length. The axe blade is balanced at the rear with a fluke and surmounted by a sharp spike, usually of quadrangular design. The fluke is sometimes replaced by a hook used to dismount cavalry. A halberd can be best described as a cross between a spear and an axe.
-
-STATISTICS:
-
-Damage: 1d10 (piercing or slashing)
-Speed Factor: 9
-Proficiency Type: Halberd
-Type: Two-handed
-Requires:
- 13 Strength
-
-Weight: 15"
-
-
-	SAY NAME2 "Harmonium Halberd +3"
-	SAY DESC "This halberd is a powerful weapon usually given out to the most important of Harmonium captains. The Harmonium is a faction based out of the planar city known as "Sigil."
-
-STATISTICS:
-
-Equipped abilities:
-– Constitution: +1
-– Intelligence: -1
-– Wisdom: -1
-- AC bonus: +2
-
-THAC0: +3
-Damage: 1d10+3 (piercing)
-Speed Factor: 6
-Proficiency Type: Halberd
-Type: Two-handed
-Requires:
- 11 Strength
-
-Weight: 12" 
-
-
 
 
 
@@ -2538,7 +2455,6 @@ Weight: 15"
 
 
 	SAY NAME2 "Dragon's Bane +3"
-	SAY DESC "This was the weapon of Thorvin Dukal, one of seven self-proclaimed Dragonslayers who spent years railing against what they called "an insidious dragon infestation that threatened Faerûn." Thorvin had this weapon enchanted at great expense and used it on many occasions, though of dragons only a single white has fallen to it. The Dragonslayers met their match in a cantankerous ancient red who slew the entire group in an epic battle. This weapon did not end up in the beast's hoard, however, as the creature returned to its lair to recuperate and when it emerged, the field of combat was well scavenged.
 	SAY DESC "This was the weapon of Thorvin Dukal, one of seven self-proclaimed Dragonslayers who spent years railing against what they called an insidious dragon infestation that threatened Faerûn. Thorvin had this weapon enchanted at great expense and used it on many occasions, though of dragons only a single white has fallen to it. The Dragonslayers met their match in a cantankerous ancient red who slew the entire group in an epic battle. This weapon did not end up in the beast's hoard, however, as the creature returned to its lair to recuperate and when it emerged, the field of combat was well scavenged.
 
 STATISTICS:
@@ -2576,7 +2492,7 @@ Weight: 15"
 
 
 	SAY NAME2 "Dragon's Breath +3"
-	SAY DESC "Trying to profit from the strength of greater beings, many years ago the mage Ullion founded a dragon-worshipping cult under the moniker "Son of Drago." Attracting followers with promises of conquest, he sought to secure his authority by enchanting this symbolic weapon for his bodyguard, Jaramor Bold. When the Dragon's Breath strikes an opponent, it releases the harsh flames of a red dragon, the poisonous vapor of the green dragon, the blue dragon's lightning bolt, a spray of a black dragon's acid, and the white dragon's penetrating cold. Unfortunately, Ullion was the first to feel its effects, slain by the ambitious Jaramor, who sought to rule. There was no real power to be had without the mage, so the entire organization soon collapsed on itself. 
+	SAY DESC "Trying to profit from the strength of greater beings, many years ago the mage Ullion founded a dragon-worshipping cult under the moniker Son of Drago. Attracting followers with promises of conquest, he sought to secure his authority by enchanting this symbolic weapon for his bodyguard, Jaramor Bold. When the Dragon's Breath strikes an opponent, it releases the harsh flames of a red dragon, the poisonous vapor of the green dragon, the blue dragon's lightning bolt, a spray of a black dragon's acid, and the white dragon's penetrating cold. Unfortunately, Ullion was the first to feel its effects, slain by the ambitious Jaramor, who sought to rule. There was no real power to be had without the mage, so the entire organization soon collapsed on itself. 
 
 STATISTICS:
 
@@ -2929,7 +2845,7 @@ Requires:
 Weight: 0"
 
 	SAY NAME2 "Pirate Dagger +1"
-	SAY DESC "This throwing knife is imbued with magical fire, and was supposedly carved from an extracted red dragon tooth. Tavern tales suggest that the beast is still alive, her anger fueling the enchantment within the weapon. Though fanciful, the story is consistent, and it is said the dagger returns to the thrower "as though on wings."
+	SAY DESC "This throwing knife is imbued with magical fire, and was supposedly carved from an extracted red dragon tooth. Tavern tales suggest that the beast is still alive, her anger fueling the enchantment within the weapon. Though fanciful, the story is consistent, and it is said the dagger returns to the thrower as though on wings.
 
 STATISTICS:
 
@@ -3120,7 +3036,7 @@ Weight: 0"
 
 
 	SAY NAME2 "Arrow of Piercing"
-	SAY DESC "This arrow is long and thin, imbued with magical properties that allow it to "push" itself through armor, striking out towards the heart of the victim.
+	SAY DESC "This arrow is long and thin, imbued with magical properties that allow it to push itself through armor, striking out towards the heart of the victim.
 
 STATISTICS:
 
@@ -3356,7 +3272,7 @@ Requires:
 Weight: 8"
 
 	SAY NAME2 "The Kneecapper +2"
-	SAY DESC "The Kneecapper, or "The Capper" as it is affectionately known in dwarven circles, is rumored to have been forged by Clangeddin himself. He gave it to a small clan of homeless dwarves that they might carve a place for themselves amongst the giants and ogres in their area. The hammer has been passed from hero to hero, occasionally finding its way into non-dwarven hands.
+	SAY DESC "The Kneecapper, or The Capper as it is affectionately known in dwarven circles, is rumored to have been forged by Clangeddin himself. He gave it to a small clan of homeless dwarves that they might carve a place for themselves amongst the giants and ogres in their area. The hammer has been passed from hero to hero, occasionally finding its way into non-dwarven hands.
 
 STATISTICS:
 
@@ -3649,18 +3565,17 @@ COPY_EXISTING
 WRITE_ASCII 0x3a "ISLING10" #8	
 
 COPY_EXISTING 
-	"SPER05.ITM" "override/SPER05.ITM"
 	"SPER05.ITM" "override/SPER06.ITM"
 
 COPY_EXISTING 
-	"STAFF18.ITM" "override/STAFF18.ITM"
-	"STAFF18.ITM" "override/STAFF19.ITM"
-	"STAFF18.ITM" "override/STAFF08.ITM"
-	"STAFF18.ITM" "override/STAFF24.ITM"
-WRITE_ASCII 0x3a "ISLING04" #8
+	"STAF18.ITM" "override/STAF18.ITM"
+	"STAF18.ITM" "override/STAF19.ITM"
+	"STAF18.ITM" "override/STAF08.ITM"
+	"STAF18.ITM" "override/STAF24.ITM"
+WRITE_ASCII 0x3a "ISTAF18" #8
 
 COPY_EXISTING 
-	"STAFF01.ITM" "override/STAFF25.ITM"
+	"STAF01.ITM" "override/STAF25.ITM"
 	
 COPY_EXISTING 
 	"SW1H41.ITM" "override/SW1H06.ITM"
