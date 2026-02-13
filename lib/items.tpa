@@ -826,7 +826,7 @@ STATISTICS:
 Weight: 1"
 
 	SAY NAME2 "Everymemory"
-	SAY DESC "Long ago, a grand wizard from Amn was rumored to have defied Mystra's limitations on the magical arts. Legends spoke of this wizard being able to cast spells without the limitation of memorization. In the end it was found that his powers stemmed from the several magical amulets that he had made for himself. His proclaimed "everlasting memory" was a hoax, though his rings continue to be one of the most sought after items in the realms.
+	SAY DESC "Long ago, a grand wizard from Amn was rumored to have defied Mystra's limitations on the magical arts. Legends spoke of this wizard being able to cast spells without the limitation of memorization. In the end it was found that his powers stemmed from the several magical amulets that he had made for himself. His proclaimed Everlasting Memory was a hoax, though his rings continue to be one of the most sought after items in the realms.
 
 STATISTICS:
 
@@ -1552,8 +1552,7 @@ STATISTICS:
 
 Weight: 1"
 
-
-	SAY NAME2 "Vitriol Granade
+	SAY NAME2 "Vitriol Granade"
 	SAY DESC "Once throwed, a glowing orb of emerald acid explodes in a 15-foot radius. Each creature in the area takes 5d4 acid damage and 1d4 acid damage at the end of its next 2 rounds. There is no save.
 
 STATISTICS:
@@ -2534,7 +2533,7 @@ Weight: 15"
 
 
 	SAY NAME2 "Dragon's Bane +3"
-	SAY DESC "This was the weapon of Thorvin Dukal, one of seven self-proclaimed Dragonslayers who spent years railing against what they called "an insidious dragon infestation that threatened Faerûn." Thorvin had this weapon enchanted at great expense and used it on many occasions, though of dragons only a single white has fallen to it. The Dragonslayers met their match in a cantankerous ancient red who slew the entire group in an epic battle. This weapon did not end up in the beast's hoard, however, as the creature returned to its lair to recuperate and when it emerged, the field of combat was well scavenged.
+	SAY DESC "This was the weapon of Thorvin Dukal, one of seven self-proclaimed Dragonslayers who spent years railing against what they called an insidious dragon infestation that threatened Faerûn. Thorvin had this weapon enchanted at great expense and used it on many occasions, though of dragons only a single white has fallen to it. The Dragonslayers met their match in a cantankerous ancient red who slew the entire group in an epic battle. This weapon did not end up in the beast's hoard, however, as the creature returned to its lair to recuperate and when it emerged, the field of combat was well scavenged.
 
 STATISTICS:
 
@@ -3631,7 +3630,37 @@ COPY_EXISTING
 	"PLAT14.ITM" "override/PLAT19.ITM"
 WRITE_ASCII 0x3a "IPLAT23" #8
 
-COPY_EXISTING "SLNG04.ITM" "override/SLNG11.ITM"
+COPY_EXISTING 
+	"SLNG04.ITM" "override/SLNG04.ITM"
+	"SLNG04.ITM" "override/SLNG10.ITM"
+	"SLNG04.ITM" "override/SLNG11.ITM"
+WRITE_ASCII 0x3a "ISLING04" #8
 
-COPY_EXISTING "SLNG04.ITM" "override/SLNG11.ITM"
+COPY_EXISTING 
+	"SLNG05.ITM" "override/SLNG05.ITM"
+WRITE_ASCII 0x3a "ISLING10" #8	
+
+COPY_EXISTING 
+	"SPER05.ITM" "override/SPER05.ITM"
+	"SPER05.ITM" "override/SPER06.ITM"
+
+COPY_EXISTING 
+	"STAFF18.ITM" "override/STAFF18.ITM"
+	"STAFF18.ITM" "override/STAFF19.ITM"
+	"STAFF18.ITM" "override/STAFF08.ITM"
+	"STAFF18.ITM" "override/STAFF24.ITM"
+WRITE_ASCII 0x3a "ISLING04" #8
+
+COPY_EXISTING 
+	"STAFF01.ITM" "override/STAFF25.ITM"
 	
+COPY_EXISTING 
+	"SW1H41.ITM" "override/SW1H06.ITM"
+	"SW1H41.ITM" "override/SW1H73.ITM"
+	"SW1H41.ITM" "override/SW1H53.ITM"
+	"SW1H41.ITM" "override/BDSW1H25.ITM"
+	
+WRITE_ASCII 0x3a "ISW1HRN" #8
+
+COPY_EXISTING 
+	"SW1H04.ITM" "override/SW1H79.ITM"
