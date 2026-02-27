@@ -5,7 +5,7 @@ COPY "rick_bigg_mod/items/sw2h10.itm" "override"
 
 STATISTICS:
 
-Damage: 1d10 (slashing)
+Damage: 2d6 (slashing)
 Speed Factor: 10
 Proficiency Type: Two-handed Sword
 Type: Two-handed
@@ -31,7 +31,7 @@ Charge abilities:
   Area of Effect: 15-ft. radius
 
 THAC0: +5
-Damage: 1d10+5, +5 extra vs. evil
+Damage: 2d6+5, +5 extra vs. evil
 Damage type: Slashing
 Speed Factor: 5
 Proficiency Type: Two-handed Sword
@@ -53,7 +53,7 @@ COPY "rick_bigg_mod/items/sw2h19.itm" "override"
 
 STATISTICS:
 
-Damage: 1d10 (slashing)
+Damage: 2d6 (slashing)
 Speed Factor: 10
 Proficiency Type: Two-handed Sword
 Type: Two-handed
@@ -79,7 +79,7 @@ Charge abilities:
   Area of Effect: 15-ft. radius
 
 THAC0: +6
-Damage: 1d10+6, +6 extra vs. evil
+Damage: 2d6+6, +6 extra vs. evil
 Damage type: Slashing
 Speed Factor: 4
 Proficiency Type: Two-handed Sword 
@@ -268,44 +268,6 @@ Weight: 1"
 
 
 
-
-
-
-//WEREBANE +2//
-COPY "rick_bigg_mod/items/DAGG09.itm" "override"
-	SAY NAME1 "Silver Dagger"
-	SAY UNIDENTIFIED_DESC "This plain silver dagger has a pointed, double-edged blade. 
-
-STATISTICS:
-
-Damage: 1d4 (piercing)
-Speed Factor: 2 
-Proficiency Type: Dagger
-Type: One-handed
-Requires:
- 3 Strength
-
-Weight: 1"
-
-
-	SAY NAME2 "Werebane +2"
-	SAY DESC "Dynala Goldenhand, an elven Ranger who wished to rid her homeland of its werejackal problem, forged the dagger. She was killed by a tribe of orcs in the Graypeak Mountains as she tracked the werejackal leader.
-
-STATISTICS:
-
-THAC0: +2, +5 vs. shapeshifters
-Damage: 1d4+2, +5 vs. shapeshifters
-Damage type: Piercing
-Speed Factor: 1
-Proficiency Type: Dagger
-Type: One-handed
-Requires:
- 3 Strength
-
-Weight: 1"
-
-
-
 //RAINBOW AMULET//
 COPY "rick_bigg_mod/items/AMUL18.itm" "override"
 	SAY NAME1 "Amulet"
@@ -330,45 +292,7 @@ Weight: 1"
 
 
 
-//WIZARD SLAYER +2//
-COPY "rick_bigg_mod/items/AX1H07.itm" "override"
-	SAY NAME1 "Battle Axe"
-	SAY UNIDENTIFIED_DESC "The most common version of the battle axe is a stout pole about four feet in length with a single-edged, trumpet-shaped blade mounted on one end. This axe, in particular, appears to be very poorly made and slightly smaller than the average battle axe.
 
-STATISTICS:
-
-Damage: 1d8 (slashing)
-Speed Factor: 7
-Proficiency Type: Axe
-Type: One-handed
-Requires:
- 10 Strength
-
-Weight: 6"
-
-	SAY NAME2 "Wizard Slayer +2"
-	SAY DESC "Bala was a foul-tempered prince of a gully dwarf clan, which was enslaved by a cruel elven mage in Thesk. Though Bala managed to escape the more cowardly traits of his race, he was even more filthy and obnoxious than the average gully dwarf. Sickened of his enslavement, Bala crept into the mage's lair and cracked the elf's skull open. Although rumor has it that it was the dwarf's stench that overcame the mage, it was, in fact, his enchanted axe that dispelled the elf's magical defenses. It is obvious from the poor workmanship that Bala himself crafted the axe. The mystery lies in where its power originates. After a lengthy career of mage-slaying, Bala died, never having revealed his secret to those who were willing to risk a lice infestation by approaching him. Some say that the axe was powered by Bala's intense hatred of wizards. The axe gives the owner the ability to dispel magic once a day.
-
-STATISTICS:
-
-Combat abilities:
-– Hit target is affected by Miscast Magic for 100 seconds (80% chance of spellcasting failure, Save vs. Spell at -2 negates)
-
-Charge abilities:
-– Dispel Magic once per day
-  Range: 40 ft.
-  Area of Effect: 15-ft. radius
-
-THAC0: +2
-Damage: 1d8+2 (slashing)
-
-Speed Factor: 5
-Proficiency Type: Axe
-Type: One-handed
-Requires:
- 10 Strength
-
-Weight: 4"
 
 
 
@@ -406,42 +330,6 @@ Weight: 4"
 
 
 
-//THE WORLD'S EDGE +3//
-COPY "rick_bigg_mod/items/SW2H07_.itm" "override"
-	SAY NAME1 "Two-Handed Sword"
-	SAY UNIDENTIFIED_DESC "The two-handed sword is a derivative of the long sword. Weaponsmiths have always looked for ways to improve existing weapons. In an effort to improve the long sword, the blade was lengthened. Eventually, the handle had to be extended and two hands became necessary to properly swing the sword. The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations.
-
-STATISTICS:
-
-Damage: 1d10 (slashing)
-Speed Factor: 10
-Proficiency Type: Two-handed Sword
-Type: Two-handed
-Requires:
- 14 Strength
-
-Weight: 15"
-
-	SAY NAME2 "The World's Edge +3"
-	SAY DESC "This is a legendary weapon of heroic proportions, especially among the far-northern tribes of barbarians. Champion after champion has wielded this blade against countless enemies, and the blood it has spilled could fill a small sea. History will not admit that such a blade could be forged and each consecutive owner seems to tie its origin to whatever creation myth they believe. The most grandiose of these tales is that of a great chieftain who sailed to the cliffs that supposedly bordered the world. There he reached into the void, and his will shaped the blade from nothing. Whatever the truth, in the right hands this sword is a fearsome thing.
-
-STATISTICS:
-
-Equipped abilities:
-– Physical Damage Resistance: +10%
-
-THAC0: +3
-Damage: 1d10+3 (slashing)
-Speed Factor: 7
-Proficiency Type: Two-handed Sword
-Type: Two-handed
-Requires:
- 13 Strength
-
-Weight: 9"
-
-
-
 
 //DURLAG'S PRIDE//
 COPY "rick_bigg_mod/items/SW2H08_.itm" "override"
@@ -450,7 +338,7 @@ COPY "rick_bigg_mod/items/SW2H08_.itm" "override"
 
 STATISTICS:
 
-Damage: 1d10 (slashing)
+Damage: 2d6 (slashing)
 Speed Factor: 10
 Proficiency Type: Two-handed Sword
 Type: Two-handed
@@ -464,7 +352,7 @@ Weight: 15"
 
 STATISTICS:
 
-Damage: 1d10 (slashing)
+Damage: 2d6 (slashing)
 Speed Factor: 8
 Proficiency Type: Two-handed Sword
 Type: Two-handed
@@ -590,18 +478,6 @@ Weight: 0"
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 //RING OF INFRAVISION//
 COPY "rick_bigg_mod/items/RING21.itm" "override"
 	SAY NAME1 "Ring"
@@ -621,8 +497,6 @@ Equipped abilities:
 - +1 THAC0
 
 Weight: 0"
-
-
 
 
 
@@ -767,10 +641,6 @@ Weight: 12"
 
 
 
-
-
-
-
 //CLOACK OF THE WOLF//
 COPY "rick_bigg_mod/items/CLCK04.itm" "override"
 	SAY NAME1 "Cloack"
@@ -789,10 +659,6 @@ Charge abilities:
 – Polymorph into a Werewolf once per day
 
 Weight: 3"
-
-
-
-
 
 
 //SHIELD AMULET//
@@ -1032,7 +898,7 @@ COPY "rick_bigg_mod/items/SW2H03.itm" "override"
 
 STATISTICS:
 
-Damage: 1d10 (slashing)
+Damage: 2d6 (slashing)
 Speed Factor: 10
 Proficiency Type: Two-handed Sword
 Type: Two-handed
@@ -1050,7 +916,7 @@ Combat abilities:
 – Chance to go berserk 25% every hit (you have the same bonuses as a Berserker Rage, but cannot be controlled).
 
 THAC0: +3
-Damage: 1d10+3 (slashing)
+Damage: 2d6+3 (slashing)
 Speed Factor: 7
 Proficiency Type: Two-handed Sword
 Type: Two-handed
@@ -1065,40 +931,7 @@ Weight: 12"
 
 
 
-//BACKBITER SPEAR +3//
-COPY "rick_bigg_mod/items/SPER03.itm" "override"
-	SAY NAME1 "Spear"
-	SAY UNIDENTIFIED_DESC "One of the earliest weapons, dating back to the most primitive of times, the first spears were simply wooden poles or sticks sharpened at one end. When the civilized races mastered metals, spearheads were made from iron and steel. Having reached this end, weaponsmiths began experimenting with different types of spearheads, thus leading to the development of certain polearm types.
 
-STATISTICS:
-
-Damage: 1d6 (piercing)
-Speed Factor: 6
-Proficiency Type: Spear
-Type: Two-handed
-Requires:
- 5 Strength
-
-Weight: 5"
-
-
-	SAY NAME2 "Backbiter Spear +3"
-	SAY DESC "This weapon will appear as a magical spear; however when a combat situation arises, the wielder will attack an enemy and Backbiter will attack the wielder. For every attack made, there's a chance Backbiter will attack the foe and also the wielder. This is a powerful spear, but one must ask if it is worth it in the end.
-
-STATISTICS:
-
-Combat abilities:
-– 50% Chance the wielder receives 3 points of damage (piercing) by the spear upon every successful hit
-
-THAC0: +3
-Damage: 1d6+3 (piercing)
-Speed Factor: 3
-Proficiency Type: Spear
-Type: Two-handed
-Requires:
- 5 Strength
-
-Weight: 2" 
 
 
 
@@ -2242,12 +2075,45 @@ Weight: 5"
 
 
 
+//BACKBITER SPEAR +3//
+COPY "rick_bigg_mod/items/SPER03.itm" "override"
+	SAY NAME1 "Spear"
+	SAY UNIDENTIFIED_DESC "One of the earliest weapons, dating back to the most primitive of times, the first spears were simply wooden poles or sticks sharpened at one end. When the civilized races mastered metals, spearheads were made from iron and steel. Having reached this end, weaponsmiths began experimenting with different types of spearheads, thus leading to the development of certain polearm types.
+
+STATISTICS:
+
+Damage: 1d8 (piercing)
+Speed Factor: 6
+Proficiency Type: Spear
+Type: Two-handed
+Requires:
+ 5 Strength
+
+Weight: 5"
+
+
+	SAY NAME2 "Backbiter Spear +3"
+	SAY DESC "This weapon will appear as a magical spear; however when a combat situation arises, the wielder will attack an enemy and Backbiter will attack the wielder. For every attack made, there's a chance Backbiter will attack the foe and also the wielder. This is a powerful spear, but one must ask if it is worth it in the end.
+
+STATISTICS:
+
+Combat abilities:
+– 20% Chance the wielder receives 3 points of damage (piercing) by the spear upon every successful hit
+
+THAC0: +3
+Damage: 1d8+3 (piercing)
+Speed Factor: 3
+Proficiency Type: Spear
+Type: Two-handed
+Requires:
+ 5 Strength
+
+Weight: 2" 
 
 
 
-
-//IXIL'S NAIL +5//
-COPY "rick_bigg_mod/items/SPER11.itm" "override"
+//SPEAR OF THE UNICORN +2//
+COPY "rick_bigg_mod/items/SPER07.itm" "override"
 	SAY NAME1 "Spear"
 	SAY UNIDENTIFIED_DESC "One of the earliest weapons, dating back to the most primitive of times, the first spears were simply wooden poles or sticks sharpened at one end. When the civilized races mastered metals, spearheads were made from iron and steel. Having reached this end, weaponsmiths began experimenting with different types of spearheads, thus leading to the development of certain polearm types.
 
@@ -2263,13 +2129,198 @@ Requires:
 Weight: 5"
 
 
+	SAY NAME2 "Spear of the Unicorn +2"
+	SAY DESC "This graceful spear is carved to resemble the elongated horn of the unicorn. Wielders of this spear are immune to charm and hold spells, just as a unicorn might be. Whether the horn is or isn't an actual unicorn horn is the subject of much debate.
+
+STATISTICS:
+
+Equipped abilities: 
+– Immunity to charm and hold
+– Save vs. Death: +3
+
+THAC0: +2
+Damage: 1d6+2 (piercing)
+Speed Factor: 4
+Proficiency Type: Spear
+Type: Two-handed
+Requires:
+ 5 Strength
+
+Weight: 3" 
+
+
+
+
+//HALCYON +2//
+COPY "rick_bigg_mod/items/SPER09.itm" "override"
+	SAY NAME1 "Spear"
+	SAY UNIDENTIFIED_DESC "One of the earliest weapons, dating back to the most primitive of times, the first spears were simply wooden poles or sticks sharpened at one end. When the civilized races mastered metals, spearheads were made from iron and steel. Having reached this end, weaponsmiths began experimenting with different types of spearheads, thus leading to the development of certain polearm types.
+
+STATISTICS:
+
+Damage: 1d8 (piercing)
+Speed Factor: 6
+Proficiency Type: Spear
+Type: Two-handed
+Requires:
+ 5 Strength
+
+Weight: 5"
+
+
+	SAY NAME2 "Halcyon +2"
+	SAY DESC "The electrum-plated shaft of this weapon hums with magical power. Occasionally, blue bolts of energy run down the length of the spear, charging it. In battle when it hits an opponent, it strikes for additional electricity damage.
+
+STATISTICS:
+
+THAC0: +2
+Damage: 1d8+2, +2 electrical damage
+Damage type: Piercing
+Speed Factor: 5
+Proficiency Type: Spear
+Type: Two-handed
+Requires:
+ 5 Strength
+
+Weight: 3" 
+
+
+
+
+
+
+//IMPALER +3//
+COPY "rick_bigg_mod/items/SPER08.itm" "override"
+	SAY NAME1 "Spear"
+	SAY UNIDENTIFIED_DESC "One of the earliest weapons, dating back to the most primitive of times, the first spears were simply wooden poles or sticks sharpened at one end. When the civilized races mastered metals, spearheads were made from iron and steel. Having reached this end, weaponsmiths began experimenting with different types of spearheads, thus leading to the development of certain polearm types.
+
+STATISTICS:
+
+Damage: 1d8 (piercing)
+Speed Factor: 6
+Proficiency Type: Spear
+Type: Two-handed
+Requires:
+ 5 Strength
+
+Weight: 5"
+
+
+	SAY NAME2 "Impaler +3"
+	SAY DESC "The Impaler has a palpable aura of magic that hints at the vicious nature of the weapon and why it has been a favorite of several powerful orc chieftains in the past. When a victim is struck they are, as one would guess, very nearly impaled, run through as the massive enchantment does its dirty work. 
+
+STATISTICS:
+
+THAC0: +3
+Damage: 1d8+3, +10 piercing damage
+Damage type: Piercing
+Speed Factor: 3
+Proficiency Type: Spear
+Type: Two-handed
+Requires:
+ 5 Strength
+
+Weight: 3" 
+
+
+
+
+//SPEAR OF WITHERING +4//
+COPY "rick_bigg_mod/items/SPER10.itm" "override"
+	SAY NAME1 "Spear"
+	SAY UNIDENTIFIED_DESC "One of the earliest weapons, dating back to the most primitive of times, the first spears were simply wooden poles or sticks sharpened at one end. When the civilized races mastered metals, spearheads were made from iron and steel. Having reached this end, weaponsmiths began experimenting with different types of spearheads, thus leading to the development of certain polearm types.
+
+STATISTICS:
+
+Damage: 1d8 (piercing)
+Speed Factor: 6
+Proficiency Type: Spear
+Type: Two-handed
+Requires:
+ 5 Strength
+
+Weight: 5"
+
+
+	SAY NAME2 "Spear of Withering +4"
+	SAY DESC "Carved from the heart of a rotten treant, this spear smells of death. When held in your hands, it groans a little, as if reluctant to allow a living thing to touch it. In battle, the Spear of Withering spits a foul poison into its target upon each successful hit.
+
+STATISTICS:
+
+THAC0: +4
+Damage: 1d8+4, + 4 poison damage
+Damage type: Piercing
+Speed Factor: 2
+Proficiency Type: Spear
+Type: Two-handed
+Requires:
+ 5 Strength
+
+Weight: 5" 
+
+
+//SPEAR OF KULDAHAR +4//
+COPY "rick_bigg_mod/items/WASPEAR.itm" "override"
+	SAY NAME1 "Spear"
+	SAY UNIDENTIFIED_DESC "One of the earliest weapons, dating back to the most primitive of times, the first spears were simply wooden poles or sticks sharpened at one end. When the civilized races mastered metals, spearheads were made from iron and steel. Having reached this end, weaponsmiths began experimenting with different types of spearheads, thus leading to the development of certain polearm types.
+
+STATISTICS:
+
+Damage: 1d8 (piercing)
+Speed Factor: 6
+Proficiency Type: Spear
+Type: Two-handed
+Requires:
+ 5 Strength
+
+Weight: 5"
+
+
+	SAY NAME2 "Spear of Kuldahar +4"
+	SAY DESC "This spear was forged by the druids who dwelt close to the great tree of Kuldahar. It was meant to be used by the warrior who was appointed as Kuldahar's defender.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +2
+- Save vs Necromancy: +4
+
+THAC0: +4
+Damage: 1d8+4 (piercing)
+Speed Factor: 2
+Proficiency Type: Spear 
+Type: Two-handed
+Requires:
+ 5 Strength
+
+Weight: 3" 
+
+
+
+//IXIL'S NAIL +5//
+COPY "rick_bigg_mod/items/SPER11.itm" "override"
+	SAY NAME1 "Spear"
+	SAY UNIDENTIFIED_DESC "One of the earliest weapons, dating back to the most primitive of times, the first spears were simply wooden poles or sticks sharpened at one end. When the civilized races mastered metals, spearheads were made from iron and steel. Having reached this end, weaponsmiths began experimenting with different types of spearheads, thus leading to the development of certain polearm types.
+
+STATISTICS:
+
+Damage: 1d8 (piercing)
+Speed Factor: 6
+Proficiency Type: Spear
+Type: Two-handed
+Requires:
+ 5 Strength
+
+Weight: 5"
+
+
 	SAY NAME2 "Ixil's Nail +5"
 	SAY DESC "For many generations, this magical shaft has been separated from Ixil's Spike, the enchanted head of the legendary spear. However, even incomplete, this artifact is still a weapon of great power. 
 
 STATISTICS:
 
 THAC0: +5
-Damage: 1d6+5 (piercing)
+Damage: 1d8+5 (piercing)
 Speed Factor: 1
 Proficiency Type: Spear 
 Type: Two-handed
@@ -2288,7 +2339,7 @@ COPY "rick_bigg_mod/items/SPER12.itm" "override"
 
 STATISTICS:
 
-Damage: 1d6 (piercing)
+Damage: 1d8 (piercing)
 Speed Factor: 6
 Proficiency Type: Spear
 Type: Two-handed
@@ -2308,7 +2359,7 @@ Combat abilities:
 – Hit target is pinned for 3 rounds and takes an additional 1d6+5 piercing damage each round (Save vs. Paralysis -4 negates)
 
 THAC0: +6
-Damage: 1d6+6 (piercing)
+Damage: 1d8+6 (piercing)
 Speed Factor: 1 
 Proficiency Type: Spear 
 Type: Two-handed
@@ -2316,6 +2367,260 @@ Requires:
  5 Strength
 
 Weight: 3" 
+
+
+
+
+
+//ARBANE +2//
+COPY "rick_bigg_mod/items/SW1H27.itm" "override"
+	SAY NAME1 "Short Sword"
+	SAY UNIDENTIFIED_DESC "The short sword is the first type of sword to come into existence. In the simplest of terms, a short sword can be considered a dagger with a blade so long that it can no longer be called a dagger. The term short sword does not exist in sword classifications. However, it has come to be used to describe a double-edged blade about two feet in length. The sword tip is usually pointed, ideal for thrusting.
+
+STATISTICS:
+
+Damage: 1d6 (piercing)
+Speed Factor: 3
+Proficiency Type: Short Sword
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 3"
+
+	SAY NAME2 "Arbane +2"
+	SAY DESC "One of many created in the name of the mage who first discovered how to enchant a blade in this manner, this was the weapon of the outlaw Garno, and many a cleric died at its edge. Garno became disillusioned with the gods when his family was put to the torch by clerics of Loviatar and spent his life seeking revenge. Despite his focused hatred of the devout, it is thought that one of the gods of chaos had a hand in Garno's acquisition of this sword, delighting in the havoc that followed the young man.
+
+STATISTICS:
+
+Equipped abilities:
+– Immunity to hold and paralysis
+
+THAC0: +2
+Damage: 1d6+2 (piercing)
+Speed Factor: 1
+Proficiency Type: Short Sword
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 2" 
+
+
+//ILBRATHA +2//
+COPY "rick_bigg_mod/items/SW1H26.itm" "override"
+	SAY NAME1 "Short Sword"
+	SAY UNIDENTIFIED_DESC "The short sword is the first type of sword to come into existence. In the simplest of terms, a short sword can be considered a dagger with a blade so long that it can no longer be called a dagger. The term short sword does not exist in sword classifications. However, it has come to be used to describe a double-edged blade about two feet in length. The sword tip is usually pointed, ideal for thrusting.
+
+STATISTICS:
+
+Damage: 1d6 (piercing)
+Speed Factor: 3
+Proficiency Type: Short Sword
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 3"
+
+	SAY NAME2 "Ilbratha +2"
+	SAY DESC "This ancient bronze sword is set with six matching bloodstones and was apparently forged for Azoun the First, a long-dead king of Cormyr. It saw little use and eventually found its way to a favored of the king's guards. Despite the aid of its illusionary magic, that unnamed soldier fell in a later battle, and the sword was lost to brigands or scavengers.
+
+STATISTICS:
+
+Charge abilities:
+– Mirror Image once per day
+  Duration: 1 turn
+
+THAC0: +2
+Damage: 1d6+2 (piercing)
+Speed Factor: 1
+Proficiency Type: Short Sword
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 2" 
+
+
+//KUNDANE +3//
+COPY "rick_bigg_mod/items/SW1H25.itm" "override"
+	SAY NAME1 "Short Sword"
+	SAY UNIDENTIFIED_DESC "The short sword is the first type of sword to come into existence. In the simplest of terms, a short sword can be considered a dagger with a blade so long that it can no longer be called a dagger. The term short sword does not exist in sword classifications. However, it has come to be used to describe a double-edged blade about two feet in length. The sword tip is usually pointed, ideal for thrusting.
+
+STATISTICS:
+
+Damage: 1d6 (piercing)
+Speed Factor: 3
+Proficiency Type: Short Sword
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 3"
+
+	SAY NAME2 "Kundane +3"
+	SAY DESC "Disfigured as a child, Dramnek Olk was ostracized and ridiculed by his peers. In his loneliness he spent many hours alone on the hills overlooking Trademeet. A nearby wizard, Galloma, discovered the youth and found in him a kindred soul. The two fast became friends; master and apprentice. Galloma died before Dramnek's tutorage could be completed, however, and the youth found himself once more alone in the world. Eventually he made his way to the streets of Athkatla. There he became a cutpurse, augmenting his thieving skills with the little magic he'd learned from Galloma. Eventually he crafted this sword, which enhanced Dramnek's weak physical body. This weapon has no speed factor.
+
+STATISTICS:
+
+Charge abilities:
+– Haste once per day
+  Duration: 2 rounds
+
+THAC0: +3
+Damage: 1d6+3 (piercing)
+Speed Factor: 0
+Proficiency Type: Short Sword
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 1" 
+
+
+//CUTTHROAT +4//
+COPY "rick_bigg_mod/items/SW1H25.itm" "override"
+	SAY NAME1 "Short Sword"
+	SAY UNIDENTIFIED_DESC "The short sword is the first type of sword to come into existence. In the simplest of terms, a short sword can be considered a dagger with a blade so long that it can no longer be called a dagger. The term short sword does not exist in sword classifications. However, it has come to be used to describe a double-edged blade about two feet in length. The sword tip is usually pointed, ideal for thrusting.
+
+STATISTICS:
+
+Damage: 1d6 (piercing)
+Speed Factor: 3
+Proficiency Type: Short Sword
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 3"
+
+	SAY NAME2 "Cutthroat +4"
+	SAY DESC "This weapon has a bloody history, having been used to exercise its namesake many times. Popular among the assassin trade for its size and enchantment, it has been in the possession of many of the realms' more dangerous citizens, though seldom remaining in one place for any length of time.
+
+STATISTICS:
+
+Combat abilities:
+– Critical Hit Chance: +10% with this weapon
+
+THAC0: +4
+Damage: 1d6+4 (piercing)
+Speed Factor: 1
+Proficiency Type: Short Sword
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 2" 
+
+
+//SWORD OF THE MASK +4//
+COPY "rick_bigg_mod/items/SW1H58.itm" "override"
+	SAY NAME1 "Short Sword"
+	SAY UNIDENTIFIED_DESC "The short sword is the first type of sword to come into existence. In the simplest of terms, a short sword can be considered a dagger with a blade so long that it can no longer be called a dagger. The term short sword does not exist in sword classifications. However, it has come to be used to describe a double-edged blade about two feet in length. The sword tip is usually pointed, ideal for thrusting.
+
+STATISTICS:
+
+Damage: 1d6 (piercing)
+Speed Factor: 3
+Proficiency Type: Short Sword
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 3"
+
+	SAY NAME2 "Sword of the Mask +4"
+	SAY DESC "This blade is highly prized by those who serve the Shadowlord, as well as any who engage in shadowy business.
+
+STATISTICS:
+
+Equipped abilities:
+– Whenever the wielder is hit, there is a 10% chance is surrounded by 3 mirror images for 3 rounds
+
+THAC0: +4
+Damage: 1d6+4 (piercing)
+Speed Factor: 0
+Proficiency Type: Short Sword
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 2" 
+
+
+
+//SWORD OF THE MASK +5//
+COPY "rick_bigg_mod/items/SW1H59.itm" "override"
+	SAY NAME1 "Short Sword"
+	SAY UNIDENTIFIED_DESC "The short sword is the first type of sword to come into existence. In the simplest of terms, a short sword can be considered a dagger with a blade so long that it can no longer be called a dagger. The term short sword does not exist in sword classifications. However, it has come to be used to describe a double-edged blade about two feet in length. The sword tip is usually pointed, ideal for thrusting.
+
+STATISTICS:
+
+Damage: 1d6 (piercing)
+Speed Factor: 3
+Proficiency Type: Short Sword
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 3"
+
+	SAY NAME2 "Sword of the Mask +5"
+	SAY DESC "This blade is highly prized by those who serve the Shadowlord, as well as any who engage in shadowy business.
+
+STATISTICS:
+
+Equipped abilities:
+– Whenever the wielder is hit, there is a 10% chance is surrounded by 3 mirror images for 3 rounds
+
+Combat abilities:
+- 20% chance with every hit to drain 1 level from opponent
+
+THAC0: +5
+Damage: 1d6+5 (piercing)
+Speed Factor: 0
+Proficiency Type: Short Sword
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 2" 
+
+
+//DAGGER OF VENOM +2//
+COPY "rick_bigg_mod/items/MISC75.itm" "override"
+	SAY NAME1 "Dagger"
+	SAY UNIDENTIFIED_DESC "The typical dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter.
+
+STATISTICS:
+
+Damage: 1d4 (piercing)
+Speed Factor: 2
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 1"
+
+	SAY NAME2 "Dagger of Venom +2"
+	SAY DESC "This dagger is a potent blade favored by assassins all across the realms. This particular dagger of venom was created for use by the Shadow Thieves of Amn. Every time it hits an opponent, it secretes a venom into the bloodstream of the creature. The venom works quickly and efficiently.
+
+STATISTICS:
+
+Combat abilities:
+– Hit target suffers 1 point of poison damage per second for 15 seconds (Save vs. Poison negates)
+
+THAC0: +2 
+Damage: 1d4+2 (piercing)
+Speed Factor: 0
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 2" 
 
 
 
@@ -2344,7 +2649,7 @@ Weight: 1"
 STATISTICS:
 
 Combat abilities:
-– Target must save vs. Poison or suffer 2 points of damage per second for 10 seconds
+– Target must save vs. Poison (-2 penalty) or suffer 2 points of damage per second for 10 seconds
 
 THAC0: +3
 Damage: 1d4+3 (piercing)
@@ -2355,6 +2660,47 @@ Requires:
  3 Strength
 
 Weight: 1" 
+
+
+
+
+//STILETTO OF DEMARCHESS +3//
+COPY "rick_bigg_mod/items/DAGG17.itm" "override"
+	SAY NAME1 "Dagger"
+	SAY UNIDENTIFIED_DESC "The typical dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter.
+
+STATISTICS:
+
+Damage: 1d4 (piercing)
+Speed Factor: 2
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 1"
+
+
+	SAY NAME2 "Stiletto of Demarchess +3"
+	SAY DESC "Most who take up the trade of murder for hire do so for reasons other than personal pleasure, but not so the Lady Demarche. She took special pleasure in the torture of her targets... which is why she made this dagger. With but one touch of its polished blade, an opponent was rendered immobile, incapable of so much as screaming, yet the victim could watch and feel all that happened to them. While her opponent was thus held, the Lady would slowly bleed them, sometimes taking several hours before allowing her subject to succumb to the final agony of death. The Lady finally fell victim to her own evil; disarmed by a rival and struck by her own stiletto, her fate was soon sealed.
+
+STATISTICS:
+
+Combat abilities: 
+– 30% chance per hit that the target must save vs. Death or be held for 2 rounds
+
+THAC0: +3
+Damage: 1d4+3 (piercing)
+Speed Factor: 0 
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 1" 
+
+
+
 
 
 
@@ -2399,40 +2745,38 @@ Requires:
 Weight: 1" 
 
 
-//HALCYON +2//
-COPY "rick_bigg_mod/items/SPER09.itm" "override"
-	SAY NAME1 "Spear"
-	SAY UNIDENTIFIED_DESC "One of the earliest weapons, dating back to the most primitive of times, the first spears were simply wooden poles or sticks sharpened at one end. When the civilized races mastered metals, spearheads were made from iron and steel. Having reached this end, weaponsmiths began experimenting with different types of spearheads, thus leading to the development of certain polearm types.
+//DUSKBLADE +2//
+COPY "rick_bigg_mod/items/HALB08.itm" "override"
+	SAY NAME1 "Halberd"
+	SAY UNIDENTIFIED_DESC "By far the oldest and most often used polearm, the halberd consists of a cleaver-like axe blade mounted on a staff averaging six feet in length. The axe blade is balanced at the rear with a fluke and surmounted by a sharp spike, usually of quadrangular design. The fluke is sometimes replaced by a hook used to dismount cavalry. A halberd can be best described as a cross between a spear and an axe.
 
 STATISTICS:
 
-Damage: 1d6 (piercing)
-Speed Factor: 6
-Proficiency Type: Spear
+Damage: 1d10 (piercing or slashing)
+Speed Factor: 9
+Proficiency Type: Halberd
 Type: Two-handed
 Requires:
- 5 Strength
+ 13 Strength
 
-Weight: 5"
+Weight: 15"
 
 
-	SAY NAME2 "Halcyon +2"
-	SAY DESC "The electrum-plated shaft of this weapon hums with magical power. Occasionally, blue bolts of energy run down the length of the spear, charging it. In battle when it hits an opponent, it strikes for additional electricity damage.
+	SAY NAME2 "Duskblade +2"
+	SAY DESC "Though once a simple halberd, this weapon spent many hundreds of years in a tomb next to the soul phylactery of a powerful lich. The creature was eventually erased from existence, purportedly by another of its kind, but such close proximity to that concentrated evil has imbued this blade with the very essence of night and the chill of darkness, energy that becomes deadly in combat. It is a foul weapon, and a warrior should use it with caution. 
 
 STATISTICS:
 
 THAC0: +2
-Damage: 1d6+2, +1 electrical damage
+Damage: 1d10+2, +2 points of cold damage
 Damage type: Piercing
-Speed Factor: 4
-Proficiency Type: Spear
+Speed Factor: 7
+Proficiency Type: Halberd
 Type: Two-handed
 Requires:
- 5 Strength
+ 13 Strength
 
-Weight: 3" 
-
-
+Weight: 12" 
 
 
 
@@ -2474,7 +2818,7 @@ Weight: 12"
 
 
 
-//DRAGON'S BREATH +3//
+//DRAGON'S BREATH +5//
 COPY "rick_bigg_mod/items/HALB05.itm" "override"
 	SAY NAME1 "Halberd"
 	SAY UNIDENTIFIED_DESC "By far the oldest and most often used polearm, the halberd consists of a cleaver-like axe blade mounted on a staff averaging six feet in length. The axe blade is balanced at the rear with a fluke and surmounted by a sharp spike, usually of quadrangular design. The fluke is sometimes replaced by a hook used to dismount cavalry. A halberd can be best described as a cross between a spear and an axe.
@@ -2491,15 +2835,13 @@ Requires:
 Weight: 15"
 
 
-	SAY NAME2 "Dragon's Breath +3"
+	SAY NAME2 "Dragon's Breath +5"
 	SAY DESC "Trying to profit from the strength of greater beings, many years ago the mage Ullion founded a dragon-worshipping cult under the moniker Son of Drago. Attracting followers with promises of conquest, he sought to secure his authority by enchanting this symbolic weapon for his bodyguard, Jaramor Bold. When the Dragon's Breath strikes an opponent, it releases the harsh flames of a red dragon, the poisonous vapor of the green dragon, the blue dragon's lightning bolt, a spray of a black dragon's acid, and the white dragon's penetrating cold. Unfortunately, Ullion was the first to feel its effects, slain by the ambitious Jaramor, who sought to rule. There was no real power to be had without the mage, so the entire organization soon collapsed on itself. 
 
 STATISTICS:
 
-Enchanted 5
-
 THAC0: +3
-Damage: 1d10 
+Damage: 1d10 (strikes as a +5 weapon)
 Elemental damage: +1 cold damage, +1 fire damage, +1 electrical damage, +1 acid damage, +1 poison damage (bypass MR)
 Damage type: Piercing
 Speed Factor: 6
@@ -2515,7 +2857,7 @@ Weight: 13"
 
 
 //WAVE +4//
-COPY "rick_bigg_mod/items/HALB05.itm" "override"
+COPY "rick_bigg_mod/items/HALB09.itm" "override"
 	SAY NAME1 "Halberd"
 	SAY UNIDENTIFIED_DESC "By far the oldest and most often used polearm, the halberd consists of a cleaver-like axe blade mounted on a staff averaging six feet in length. The axe blade is balanced at the rear with a fluke and surmounted by a sharp spike, usually of quadrangular design. The fluke is sometimes replaced by a hook used to dismount cavalry. A halberd can be best described as a cross between a spear and an axe.
 
@@ -2629,6 +2971,50 @@ Weight: 9"
 
 
 
+
+//ELEMENT'S FURY +3//
+COPY "rick_bigg_mod/items/BDDAGG01.itm" "override"
+"rick_bigg_mod/items/BDDAGG01.itm" "override/DAGG13.itm"
+	SAY NAME1 "Dagger"
+	SAY UNIDENTIFIED_DESC "The typical dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter.
+
+STATISTICS:
+
+Damage: 1d4 (piercing)
+Speed Factor: 2
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 1"
+
+	SAY NAME2 "Element's Fury +3"
+	SAY DESC "The mage who crafted this strange dagger was obsessed with the four elemental planes and sought to create a means to join them together. Opening portals to all of them at once, he managed to join their energies together to enchant this relic, giving it properties of each plane.
+
+Unfortunately, he happened to be standing between the portals, holding the dagger in his hand; when the energies converged, they converged on him. It was the mage’s apprentice who discovered the dagger, clutched in his master’s charred and frozen hands.
+
+STATISTICS:
+
+Combat abilities:
+– Deals an extra 1d4 cold damage to fire elementals
+– Deals an extra 1d4 fire damage to water elementals
+– Deals an extra 1d4 acid damage to earth elementals
+– Deals an extra 1d4 electrical damage to air elementals
+
+THAC0: +3
+Damage: 1d4+3, +1 fire, cold, electrical and acid damage (random)
+Damage type: Piercing
+Speed Factor: 0 
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 1"
+
+
+
 //LIFE STEALER +4/
 COPY "rick_bigg_mod/items/DAGG20.itm" "override"
 	SAY NAME1 "Dagger"
@@ -2703,7 +3089,7 @@ Weight: 1"
 
 
 //DAGGER OF THE STAR +5/
-COPY "rick_bigg_mod/items/DAGG21.itm" "override"
+COPY "rick_bigg_mod/items/DAGG22.itm" "override"
 	SAY NAME1 "Dagger"
 	SAY UNIDENTIFIED_DESC "The typical dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter.
 
@@ -2825,9 +3211,6 @@ Requires:
 Weight: 0"
 
 
-
-
-
 //FIRETOOTH +3//
 COPY "rick_bigg_mod/items/DAGG12.itm" "override"
 	SAY NAME1 "Dagger"
@@ -2863,10 +3246,6 @@ Requires:
  3 Strength
 
 Weight: 1"
-
-
-
-
 
 
 
@@ -3134,19 +3513,6 @@ Weight: 0"
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 //BOLT OF LIGHTNING//
 COPY "rick_bigg_mod/items/BOLT03.itm" "override"
 	SAY NAME1 "Bolt"
@@ -3208,61 +3574,16 @@ Weight: 0"
 
 
 
-//ELEMENT'S FURY +3//
-COPY "rick_bigg_mod/items/BDDAGG01.itm" "override"
-"rick_bigg_mod/items/BDDAGG01.itm" "override/DAGG13.itm"
-	SAY NAME1 "Dagger"
-	SAY UNIDENTIFIED_DESC "The typical dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter.
-
-STATISTICS:
-
-Damage: 1d4 (piercing)
-Speed Factor: 2
-Proficiency Type: Dagger
-Type: One-handed
-Requires:
- 3 Strength
-
-Weight: 1"
-
-	SAY NAME2 "Element's Fury +3"
-	SAY DESC "The mage who crafted this strange dagger was obsessed with the four elemental planes and sought to create a means to join them together. Opening portals to all of them at once, he managed to join their energies together to enchant this relic, giving it properties of each plane.
-
-Unfortunately, he happened to be standing between the portals, holding the dagger in his hand; when the energies converged, they converged on him. It was the mage’s apprentice who discovered the dagger, clutched in his master’s charred and frozen hands.
-
-STATISTICS:
-
-Combat abilities:
-– Deals an extra 1d4 cold damage to fire elementals
-– Deals an extra 1d4 fire damage to water elementals
-– Deals an extra 1d4 acid damage to earth elementals
-– Deals an extra 1d4 electrical damage to air elementals
-
-THAC0: +3
-Damage: 1d4+3, +1 fire, cold, electrical and acid damage (random)
-Damage type: Piercing
-Speed Factor: 0 
-Proficiency Type: Dagger
-Type: One-handed
-Requires:
- 3 Strength
-
-Weight: 1"
-
-
-
-
-
 
 
 //THE KNEECAPPER +2//
 COPY "rick_bigg_mod/items/HAMM04.itm" "override"
 	SAY NAME1 "Hammer"
-	SAY UNIDENTIFIED_DESC "A massive, unwieldy warhammer inscribed with dwarven runes.
+	SAY UNIDENTIFIED_DESC "A massive warhammer inscribed with dwarven runes.
 
 STATISTICS:
 
-Damage: 1d4+1 (crushing)
+Damage: 2d3+1 (crushing)
 Speed Factor: 4
 Proficiency Type: War Hammer
 Type: One-handed
@@ -3277,7 +3598,7 @@ Weight: 8"
 STATISTICS:
 
 THAC0: +2, +4 vs. giant humanoids
-Damage: 1d4+3, +5 vs. giant humanoids
+Damage: 2d3+3, +5 vs. giant humanoids
 Damage type: Crushing
 Speed Factor: 3
 Proficiency Type: War Hammer
@@ -3291,14 +3612,102 @@ Weight: 8"
 
 
 
-//CROM FAEYR +5//
-COPY "rick_bigg_mod/items/HAMM09.itm" "override"
+
+
+//BOROK'S FIST +2//
+COPY "rick_bigg_mod/items/HAMM05.itm" "override"
 	SAY NAME1 "Hammer"
-	SAY UNIDENTIFIED_DESC "Mounted knights cannot effectively use long pole weapons while on horseback and, as a result, many weapons have been fitted with shorter shafts so they may be wielded with just one hand. Maces and flails are two examples of this—the war hammer is another. The horseman's war hammer is the descendent of the Lucerne hammer. It is made entirely of steel, with rondels protecting and strengthening the grip. (Rondels are small disks of metal, often shaped into decorative designs.) The shaft is about eighteen inches long.
+	SAY UNIDENTIFIED_DESC "A massive warhammer inscribed with dwarven runes.
 
 STATISTICS:
 
-Damage: 1d4+1 (crushing)
+Damage: 2d3+1 (crushing)
+Speed Factor: 4
+Proficiency Type: War Hammer
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 8"
+
+	SAY NAME2 "Borok's Fist +2"
+	SAY DESC "Borok Thundercracker was a dwarven hero that led several campaigns against giants and other "tall vermin" that had plagued his people in a number of their communities. This hammer was his blessed weapon, which his elven allies called his "little iron fist," though not to his face.
+
+STATISTICS:
+
+Equipped abilities:
+– Chance to score a critical hit: +5% with this weapon only
+
+THAC0: +2
+Damage: 2d3+3
+Damage type: Crushing
+Speed Factor: 2
+Proficiency Type: War Hammer
+Type: One-handed
+Requires:
+ 9 Strength
+
+Weight: 5"
+
+
+
+
+
+
+
+//AEGIS-FANG +4//
+COPY "rick_bigg_mod/items/AEGIS.itm" "override"
+	SAY NAME1 "Hammer"
+	SAY UNIDENTIFIED_DESC "A massive warhammer inscribed with dwarven runes.
+
+STATISTICS:
+
+Damage: 2d3+1 (crushing)
+Speed Factor: 4
+Proficiency Type: War Hammer
+Type: One-handed
+Requires:
+ 9 Strength
+
+Weight: 6"
+
+	SAY NAME2 "Aegis-Fang +4"
+	SAY DESC "This weapon was made specifically for Wulfgar by Bruenor Battlehammer, and the strongest of its enchantments only function while in the young warrior's hands. Anyone else wields Aegis-Fang as a war hammer +3.
+
+STATISTICS:
+
+Equipped abilities:
+– Chance to score a critical hit: +5% with this weapon only
+
+Combat abilities (thrown):
+– 15% chance opponent is knocked back and stunned (large creatures such as a dragons or giants will not be knocked back or stunned
+
+THAC0: +4
+Damage: 2d3+5 (crushing)
+Speed Factor: 1
+Proficiency Type: War Hammer
+Type: One-handed
+Requires:
+ 18 Strength
+
+Weight: 3"
+
+COPY_EXISTING "AEGIS.ITM" "override/AEGIS2.ITM"
+
+	
+	
+	
+	
+	
+	
+//CROM FAEYR +5//
+COPY "rick_bigg_mod/items/HAMM09.itm" "override"
+	SAY NAME1 "Hammer"
+	SAY UNIDENTIFIED_DESC "A massive warhammer inscribed with dwarven runes.
+
+STATISTICS:
+
+Damage: 2d3+1 (crushing)
 Speed Factor: 4
 Proficiency Type: War Hammer
 Type: One-handed
@@ -3319,7 +3728,7 @@ Combat abilities:
 – Slays flesh golems, stone golems and clay golems
 
 THAC0: +5
-Damage: 2d4+6, +5 electrical
+Damage: 2d3+6, +5 electrical
 Damage type: Crushing
 Speed Factor: 1
 Proficiency Type: War Hammer
@@ -3330,14 +3739,16 @@ Weight: 4"
 
 
 
+
+
 //HAMMER OF THUNDERBOLTS +3//
 COPY "rick_bigg_mod/items/HAMM07.itm" "override"
 	SAY NAME1 "Hammer"
-	SAY UNIDENTIFIED_DESC "Mounted knights cannot effectively use long pole weapons while on horseback and, as a result, many weapons have been fitted with shorter shafts so they may be wielded with just one hand. Maces and flails are two examples of this—the war hammer is another. The horseman's war hammer is the descendent of the Lucerne hammer. It is made entirely of steel, with rondels protecting and strengthening the grip. (Rondels are small disks of metal, often shaped into decorative designs.) The shaft is about eighteen inches long.
+	SAY UNIDENTIFIED_DESC "A massive warhammer inscribed with dwarven runes.
 
 STATISTICS:
 
-Damage: 1d4+1 (crushing)
+Damage: 2d3+1 (crushing)
 Speed Factor: 4
 Proficiency Type: War Hammer
 Type: One-handed
@@ -3352,7 +3763,7 @@ Weight: 6"
 STATISTICS:
 
 THAC0: +3
-Damage: 2d4+3, +3 electrical 
+Damage: 2d3+4, +3 electrical 
 Damage type: Crushing
 Speed Factor: 1
 Proficiency Type: War Hammer
@@ -3362,6 +3773,97 @@ Requires:
 
 Weight: 4"
 
+
+
+
+
+
+
+
+//RUNEHAMMER +4//
+COPY "rick_bigg_mod/items/HAMM10.itm" "override"
+	SAY NAME1 "Hammer"
+	SAY UNIDENTIFIED_DESC "A massive warhammer inscribed with dwarven runes.
+
+STATISTICS:
+
+Damage: 2d3+1 (crushing)
+Speed Factor: 4
+Proficiency Type: War Hammer
+Type: One-handed
+Requires:
+ 9 Strength
+
+Weight: 6"
+
+	SAY NAME2 "Runehammer +4"
+	SAY DESC "This darksteel hammer has a rune of power inscribed upon its head and has protects against Negative Plane.
+
+STATISTICS:
+
+Equipped abilities:
+– Negative Plane Protection   
+
+THAC0: +4
+Damage: 2d4+5 (crushing)
+Speed Factor: 0
+Proficiency Type: War Hammer
+Type: One-handed
+Requires:
+ 16 Strength
+
+Weight: 3"
+
+
+
+
+
+
+
+
+
+//RUNEHAMMER +5//
+COPY "rick_bigg_mod/items/HAMM11.itm" "override"
+	SAY NAME1 "Hammer"
+	SAY UNIDENTIFIED_DESC "A massive warhammer inscribed with dwarven runes.
+
+STATISTICS:
+
+Damage: 2d3+1 (crushing)
+Speed Factor: 4
+Proficiency Type: War Hammer
+Type: One-handed
+Requires:
+ 9 Strength
+
+Weight: 6"
+
+	SAY NAME2 "Runehammer +5"
+	SAY DESC "The rune of Clangeddin is now inscribed on the head of this hammer, granting even greater powers to any who wield the weapon.
+
+STATISTICS:
+
+Equipped abilities
+– Negative Plane Protection
+– Immunity to fear
+
+Combat abilities:
+– On hit activate the following spells:
+	- 5% Sunray
+	- 10% Mass Cure
+	- 15% Defensive Harmony
+	- 20% Holy Smite
+	- 50% Chant
+
+THAC0: +5
+Damage: 2d3+6 (crushing)
+Speed Factor: 0
+Proficiency Type: War Hammer
+Type: One-handed
+Requires:
+ 16 Strength
+
+Weight: 2"
 
 
 
@@ -3407,6 +3909,9 @@ Weight: 5"
 
 
 
+
+
+
 //ORC LEATHER +3//
 COPY "rick_bigg_mod/items/LEAT16.itm" "override"
 	SAY NAME1 "Studded Leather Armor"
@@ -3442,9 +3947,652 @@ Weight: 7"
 
 
 
+//RETURNING THROWING AXE +1//
+COPY "rick_bigg_mod/items/AX1H05.itm" "override"
+	SAY NAME1 "Throwing Axe"
+	SAY UNIDENTIFIED_DESC "The hand axe or throwing axe is also known as a hatchet. The axe blade has a sharp steel tip counterbalanced by a pointed fluke. The short handle has a point on the bottom, and the head may have a spike on the top.
+
+STATISTICS:
+
+Damage: 1d6+1
+Damage type (melee): Slashing
+Damage type (thrown): Missile
+Speed Factor: 4
+Proficiency Type: Axe
+Type: One-handed
+Requires:
+ 4 Strength
+
+Weight: 1"
+
+	SAY NAME2 "Returning Throwing Axe +1"
+	SAY DESC "This throwing axe has not only been finely balanced for use as a missile weapon but has also been the subject of significant magical enhancement. As a result, it is both more damaging and more accurate than any non-magical weapon of a similar style.
+
+STATISTICS:
+
+Combat abilities:
+– Returns to the wielder's hand when thrown
+
+THAC0: +1
+Damage: 1d6+2
+Damage type (melee): Slashing
+Damage type (thrown): Missile
+Speed Factor: 3
+Proficiency Type: Axe
+Type: One-handed
+Requires:
+ 4 Strength
+
+Weight: 4"
 
 
 
+
+
+
+
+//WIZARD SLAYER +3//
+COPY "rick_bigg_mod/items/AX1H07.itm" "override"
+	SAY NAME1 "Battle Axe"
+	SAY UNIDENTIFIED_DESC "The most common version of the battle axe is a stout pole about four feet in length with a single-edged, trumpet-shaped blade mounted on one end. This axe, in particular, appears to be very poorly made and slightly smaller than the average battle axe.
+
+STATISTICS:
+
+Damage: 1d8+1 (slashing)
+Speed Factor: 7
+Proficiency Type: Axe
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 6"
+
+	SAY NAME2 "Wizard Slayer +3"
+	SAY DESC "Bala was a foul-tempered prince of a gully dwarf clan, which was enslaved by a cruel elven mage in Thesk. Though Bala managed to escape the more cowardly traits of his race, he was even more filthy and obnoxious than the average gully dwarf. Sickened of his enslavement, Bala crept into the mage's lair and cracked the elf's skull open. Although rumor has it that it was the dwarf's stench that overcame the mage, it was, in fact, his enchanted axe that dispelled the elf's magical defenses. It is obvious from the poor workmanship that Bala himself crafted the axe. The mystery lies in where its power originates. After a lengthy career of mage-slaying, Bala died, never having revealed his secret to those who were willing to risk a lice infestation by approaching him. Some say that the axe was powered by Bala's intense hatred of wizards. The axe gives the owner the ability to dispel magic once a day.
+
+STATISTICS:
+
+Combat abilities:
+– Hit target is affected by Miscast Magic for 100 seconds (80% chance of spellcasting failure, Save vs. Spell at -2 negates)
+
+Charge abilities:
+– Dispel Magic once per day
+  Range: 40 ft.
+  Area of Effect: 15-ft. radius
+
+THAC0: +3
+Damage: 1d8+4 (slashing)
+
+Speed Factor: 4
+Proficiency Type: Axe
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 3"
+
+
+
+
+
+
+
+
+//HANGARD'S AXE +2//
+COPY "rick_bigg_mod/items/AX1H08.itm" "override"
+	SAY NAME1 "Throwing Axe"
+	SAY UNIDENTIFIED_DESC "The hand axe or throwing axe is also known as a hatchet. The axe blade has a sharp steel tip counterbalanced by a pointed fluke. The short handle has a point on the bottom, and the head may have a spike on the top.
+
+STATISTICS:
+
+Damage: 1d6+1
+Damage type (melee): Slashing
+Damage type (thrown): Missile
+Speed Factor: 2
+Proficiency Type: Axe
+Type: One-handed
+Requires:
+ 4 Strength
+
+Weight: 1"
+
+	SAY NAME2 "Hangard's Axe +2"
+	SAY DESC "This throwing axe has not only been finely balanced for use as a missile weapon but has also been the subject of significant magical enhancement. As a result, it is both more damaging and more accurate than any non-magical weapon of a similar style.
+
+STATISTICS:
+
+Combat abilities:
+– Returns to the wielder's hand when thrown
+
+THAC0: +2
+Damage: 1d6+3
+Damage type (melee): Slashing
+Damage type (thrown): Missile
+Speed Factor: 2
+Proficiency Type: Axe
+Type: One-handed
+Requires:
+ 4 Strength
+
+Weight: 4"
+
+
+
+
+
+//RYFTHOME AXE +3//
+COPY "rick_bigg_mod/items/AX1H09.itm" "override"
+	SAY NAME1 "Throwing Axe"
+	SAY UNIDENTIFIED_DESC "The hand axe or throwing axe is also known as a hatchet. The axe blade has a sharp steel tip counterbalanced by a pointed fluke. The short handle has a point on the bottom, and the head may have a spike on the top.
+
+STATISTICS:
+
+Damage: 1d6+1
+Damage type (melee): Slashing
+Damage type (thrown): Missile
+Speed Factor: 2
+Proficiency Type: Axe
+Type: One-handed
+Requires:
+ 4 Strength
+
+Weight: 1"
+
+	SAY NAME2 "Ryfthome Axe +3"
+	SAY DESC "This axe of hurling is one of the most heavily enchanted weapons of its type. Its markings are vaguely dwarven, but no dwarf yet encountered on Faerûn has claimed a kinship with the maker. This causes some to speculate that it may not be the product of a terrestrial dwarven hand, rather some extraplanar variant. Dwarves laugh this off, of course, claiming the maker likely has no time for nosy scholars. 
+
+STATISTICS:
+
+Equipped abilities:
+– Chance to score a critical hit: +5% (with this weapon only)
+
+Combat abilities:
+– Returns to the wielder's hand when thrown
+
+THAC0: +3
+Damage: 1d6+3
+Damage type (melee): Slashing
+Damage type (thrown): Missile
+Speed Factor: 1
+Proficiency Type: Axe
+Type: One-handed
+Requires:
+ 4 Strength
+
+Weight: 2"
+
+
+
+//K'LOGARATH +4//
+COPY "rick_bigg_mod/items/AX1H16.itm" "override"
+	SAY NAME1 "Throwing Axe"
+	SAY UNIDENTIFIED_DESC "The hand axe or throwing axe is also known as a hatchet. The axe blade has a sharp steel tip counterbalanced by a pointed fluke. The short handle has a point on the bottom, and the head may have a spike on the top.
+
+STATISTICS:
+
+Damage: 1d6+1
+Damage type (melee): Slashing
+Damage type (thrown): Missile
+Speed Factor: 4
+Proficiency Type: Axe
+Type: One-handed
+Requires:
+ 4 Strength
+
+Weight: 1"
+
+	SAY NAME2 "K'logarath +4"
+	SAY DESC "The origins of this throwing axe are known only to denizens of the Underdark. What is known is that clans of duergar have gone to war simply to possess this artifact. 
+
+STATISTICS:
+
+Combat abilities: 
+– Returns to the wielder's hand when thrown
+– Hit target must save vs. Death or be knocked down and take 2d6 extra damage
+
+THAC0: +4
+Damage: 1d6+4
+Damage type (melee): slashing
+Damage type (thrown): missile
+Speed Factor: 0
+Proficiency Type: Axe
+Type: One-handed
+Requires:
+ 4 Strength
+
+Weight: 1"
+
+
+
+
+
+
+//HOJAR'S FAME +2//
+COPY "rick_bigg_mod/items/OHRAX1H1.itm" "override"
+	SAY NAME1 "Battle Axe"
+	SAY UNIDENTIFIED_DESC "The most common version of the battle axe is a stout pole about four feet in length with a single-edged, trumpet-shaped blade mounted on one end. This axe, in particular, appears to be very poorly made and slightly smaller than the average battle axe.
+
+STATISTICS:
+
+Damage: 1d8+1 (slashing)
+Speed Factor: 7
+Proficiency Type: Axe
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 6"
+
+	SAY NAME2 "Hojar's Fame +2"
+	SAY DESC "This axe has been magically enchanted to smother its target in flames with each strike. The enchantment was poor, however, and the effect does not always appear.
+
+STATISTICS:
+
+Combat abilities:
+– 25% chance of each hit inflicting an additional 1d8 points of fire damage
+
+THAC0: +2
+Damage: 1d8+3 (slashing)
+Speed Factor: 5
+Proficiency Type: Axe
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 6"
+
+
+
+
+
+//FROSTREAVER +3//
+COPY "rick_bigg_mod/items/AX1H13.itm" "override"
+	SAY NAME1 "Battle Axe"
+	SAY UNIDENTIFIED_DESC "The most common version of the battle axe is a stout pole about four feet in length with a single-edged, trumpet-shaped blade mounted on one end. This axe, in particular, appears to be very poorly made and slightly smaller than the average battle axe.
+
+STATISTICS:
+
+Damage: 1d8+1 (slashing)
+Speed Factor: 7
+Proficiency Type: Axe
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 6"
+
+	SAY NAME2 "Frostreaver +3"
+	SAY DESC "This was the axe of Illgarth, a frost giant that terrorized northern communities long ago. It is not known where he acquired the weapon, but he took a perverse pleasure in unleashing it upon small folk, particularly halflings. Ice maimed those not killed, and the giant would laugh coldly if he recognized his handiwork from a previous visit. Ultimately a group did manage to kill him, and at the request of his victims, Frostreaver was buried with him. 
+
+STATISTICS:
+
+THAC0: +3 
+Damage: 1d8+4, +5 cold damage
+Damage type: Slashing
+Speed Factor: 4
+Proficiency Type: Axe
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 7"
+
+
+
+
+//STONEFIRE +4//
+COPY "rick_bigg_mod/items/AX1H12.itm" "override"
+	SAY NAME1 "Battle Axe"
+	SAY UNIDENTIFIED_DESC "The most common version of the battle axe is a stout pole about four feet in length with a single-edged, trumpet-shaped blade mounted on one end. This axe, in particular, appears to be very poorly made and slightly smaller than the average battle axe.
+
+STATISTICS:
+
+Damage: 1d8+1 (slashing)
+Speed Factor: 7
+Proficiency Type: Axe
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 6"
+
+	SAY NAME2 "Stonefire +4"
+	SAY DESC "The Stonefires were an old lineage of dwarves, and the eldest male of the line carried this axe, an heirloom of utmost importance. Unfortunately, they were decimated in 1150 DR, falling in a mere two years to a mysterious plague. Ulgan, keeper of the axe, fled in hopes of escaping the inevitable, but he died several weeks later. His body was found in the Cloakwood Forest, but the axe was missing.
+
+STATISTICS:
+
+Equipped abilities:
+- Cold Resistance: +30%
+
+THAC0: +4 
+Damage: 1d8+5, +2 fire damage
+Damage type: Slashing
+Speed Factor: 3
+Proficiency Type: Axe
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 6"
+
+
+
+
+//DEFENDER OF EASTHEAVEN +4//
+COPY "rick_bigg_mod/items/WAFLAIL.itm" "override"
+	SAY NAME1 "Flail"
+	SAY UNIDENTIFIED_DESC "The flail is a sturdy wooden handle attached to an iron rod, a wooden rod with spikes, or a spiked iron ball. Between the handle and its implement is either a hinge or chain link. The weapon was originally used as a tool for threshing grain.
+
+STATISTICS:
+
+Damage: 2d4+1 (crushing)
+Speed Factor: 7
+Proficiency Type: Flail/Morning Star
+Type: One-handed
+Requires:
+ 13 Strength
+
+Weight: 15"
+
+	SAY NAME2 "Defender of Eastheaven +4"
+	SAY DESC "This flail was created a century ago to commemorate the defeat of the devil Belhifet. It was meant to always remain within the town of Easthaven to remind the people of the great evil that had been barely defeated. 
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +2
+– +10% resistance to slashing, piercing, and crushing damage
+
+THAC0: +4
+Damage: 2d4+5 (crushing)
+Speed Factor: 4
+Proficiency Type: Flail/Morning Star
+Type: One-handed
+Requires:
+ 13 Strength
+
+Weight: 11"
+
+
+
+
+
+
+//FLAIL OF AGES +3//
+COPY "rick_bigg_mod/items/BLUN14.itm" "override"
+	SAY NAME1 "Flail"
+	SAY UNIDENTIFIED_DESC "The flail is a sturdy wooden handle attached to an iron rod, a wooden rod with spikes, or a spiked iron ball. Between the handle and its implement is either a hinge or chain link. The weapon was originally used as a tool for threshing grain.
+
+STATISTICS:
+
+Damage: 2d4+1 (crushing)
+Speed Factor: 7
+Proficiency Type: Flail/Morning Star
+Type: One-handed
+Requires:
+ 13 Strength
+
+Weight: 15"
+
+	SAY NAME2 "Flail of Ages +3"
+	SAY DESC "This flail has been in the care of Lord de'Arnise for some time, a relic of his adventuring youth. It has been kept disassembled, the individual pieces stored in separate locations, and only used in the direst of emergencies. Lord de'Arnise was likely concerned about the powerful magic that the weapon radiated when compiled, and rightfully so. A trail of destruction has followed it through history, leading straight back to the original owners. The flail was the creation of the warlike rakshasa, a race of vengeful spirits that crave human meat, and used as an adaptable weapon that could suit any battle. During a particularly violent hunt, the flail was lost, only to be returned when they used their affinity for magic to locate its powerful aura. They discovered that the weapon had found its way into the hands of a great human warrior, and the battle that followed was truly splendid. They have since used the item as bait countless times, "losing" it again and again. Powerful items gravitate toward powerful people, and powerful people yield the most glorious battles.
+
+STATISTICS:
+
+Combat abilities:
+– 33% chance of slowing target for 20 seconds
+- Magic Resistance: +5%
+
+THAC0: +3
+Damage: 2d4+4, +1 acid damage, +1 cold damage, +1 fire damage
+Damage type: Crushing
+Speed Factor: 4
+Proficiency Type: Flail/Morning Star
+Type: One-handed
+Requires:
+ 13 Strength
+
+Weight: 10"
+
+
+
+
+//FLAIL OF AGES +4//
+COPY "rick_bigg_mod/items/BLUN30C.itm" "override"
+	SAY NAME1 "Flail"
+	SAY UNIDENTIFIED_DESC "The flail is a sturdy wooden handle attached to an iron rod, a wooden rod with spikes, or a spiked iron ball. Between the handle and its implement is either a hinge or chain link. The weapon was originally used as a tool for threshing grain.
+
+STATISTICS:
+
+Damage: 2d4+1 (crushing)
+Speed Factor: 7
+Proficiency Type: Flail/Morning Star
+Type: One-handed
+Requires:
+ 13 Strength
+
+Weight: 15"
+
+	SAY NAME2 "Flail of Ages +4"
+	SAY DESC "This four-headed flail causes fire, cold, acid, and poison damage. If the fifth head for the Flail of Ages could be found, it would make this awesome weapon even more powerful.
+
+STATISTICS:
+
+Combat abilities:
+– 33% chance each hit that target will be slowed for 20 seconds
+- Magic Resistance: +10%
+
+THAC0: +4
+Damage: 2d4+5, +1 fire damage, +1 cold damage, +1 acid damage, +1 poison damage
+Damage type: Crushing
+Speed Factor: 3
+Proficiency Type: Flail/Morning Star
+Type: One-handed
+Requires:
+ 13 Strength
+
+Weight: 9"
+
+
+
+
+
+
+//FLAIL OF AGES +4//
+COPY "rick_bigg_mod/items/BLUN30D.itm" "override"
+	SAY NAME1 "Flail"
+	SAY UNIDENTIFIED_DESC "The flail is a sturdy wooden handle attached to an iron rod, a wooden rod with spikes, or a spiked iron ball. Between the handle and its implement is either a hinge or chain link. The weapon was originally used as a tool for threshing grain.
+
+STATISTICS:
+
+Damage: 2d4+1 (crushing)
+Speed Factor: 7
+Proficiency Type: Flail/Morning Star
+Type: One-handed
+Requires:
+ 13 Strength
+
+Weight: 15"
+
+	SAY NAME2 "Flail of Ages +4"
+	SAY DESC "This four-headed flail causes fire, cold, acid, and poison damage. If the fifth head for the Flail of Ages could be found, it would make this awesome weapon even more powerful.
+
+STATISTICS:
+
+Combat abilities:
+– 33% chance each hit that target will be slowed for 20 seconds
+- Magic Resistance: +10%
+
+THAC0: +4
+Damage: 2d4+5, +1 fire damage, +1 cold damage, +1 acid damage, +1 electrical damage
+Damage type: Crushing
+Speed Factor: 3
+Proficiency Type: Flail/Morning Star
+Type: One-handed
+Requires:
+ 13 Strength
+
+Weight: 9"
+
+
+
+
+
+
+//FLAIL OF AGES +5//
+COPY "rick_bigg_mod/items/BLUN30.itm" "override"
+	SAY NAME1 "Flail"
+	SAY UNIDENTIFIED_DESC "The flail is a sturdy wooden handle attached to an iron rod, a wooden rod with spikes, or a spiked iron ball. Between the handle and its implement is either a hinge or chain link. The weapon was originally used as a tool for threshing grain.
+
+STATISTICS:
+
+Damage: 2d4+1 (crushing)
+Speed Factor: 7
+Proficiency Type: Flail/Morning Star
+Type: One-handed
+Requires:
+ 13 Strength
+
+Weight: 15"
+
+	SAY NAME2 "Flail of Ages +5"
+	SAY DESC "With the addition of the fifth and final head to this weapon created by the evil rakshasa race, the true potential of the Flail of Ages is finally realized.
+
+STATISTICS:
+
+Equipped abilities:
+– Magic Resistance: +10%
+– Free Action
+
+Combat abilities: 
+– 33% chance each hit that target will be slowed for 20 seconds
+
+THAC0: +5
+Damage: 2d4+6, +2 acid damage, +2 cold damage, +2 fire damage, +2 poison damage, +2 electrical damage
+Damage type: Crushing
+Speed Factor: 2
+Proficiency Type: Flail/Morning Star
+Type: One-handed
+Requires:
+ 13 Strength
+
+Weight: 8"
+
+
+
+
+
+
+//NAMARRA +2//
+COPY "rick_bigg_mod/items/SW1H36.itm" "override"
+	SAY NAME1 "Scimitar"
+	SAY UNIDENTIFIED_DESC "The long, curved, single-edged blade is characteristic of both the saber and the scimitar, even though their origins lie in different parts of Faerûn. Whereas the saber was intended chiefly for horsemen, mainly due to its versatility, the scimitar has a heavier oriental influence. The "shamshir," as it was originally called, is larger, more highly curved, and tapered to an elongated, sharp point. This makes the weapon slightly slower but more effective and deadly in combat.
+
+STATISTICS:
+
+Damage: 1d8+1 (slashing)
+Speed Factor: 5
+Proficiency Type: Scimitar/Wakizashi/Ninjatō
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 4"
+
+	SAY NAME2 "Namarra +2"
+	SAY DESC "Also known as Neversleep, this ancient blade is thought to have been present at some of the most influential conflicts in Faerûn's history. Sightings have been noted as far north as Thay and as south as the jungles of Chult, though documentation is oddly lacking regarding the details. It is perhaps a result of the sword's ability to silence all sound within a large radius, removing the effectiveness of attacking mages but also preventing any discussion that might have followed. 
+
+STATISTICS:
+
+Charge abilities:
+– Silence, 15' Radius three times per day (Save vs. Spell at -5 to negate)
+  Duration: 1 turn
+
+THAC0: +2
+Damage: 1d8+3 (slashing)
+Speed Factor: 3
+Proficiency Type: Scimitar
+Type: One-handed
+Requires:
+ 8 Strength
+
+Weight: 2"
+
+
+
+
+
+
+//TWINKLE +3//
+COPY "rick_bigg_mod/items/SW1H16.itm" "override"
+	SAY NAME1 "Scimitar"
+	SAY UNIDENTIFIED_DESC "The long, curved, single-edged blade is characteristic of both the saber and the scimitar, even though their origins lie in different parts of Faerûn. Whereas the saber was intended chiefly for horsemen, mainly due to its versatility, the scimitar has a heavier oriental influence. The "shamshir," as it was originally called, is larger, more highly curved, and tapered to an elongated, sharp point. This makes the weapon slightly slower but more effective and deadly in combat.
+
+STATISTICS:
+
+Damage: 1d8+1 (slashing)
+Speed Factor: 5
+Proficiency Type: Scimitar/Wakizashi/Ninjatō
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 4"
+
+	SAY NAME2 "Twinkle +3"
+	SAY DESC "This is the magical scimitar +3 that bears the name Twinkle. It is one of the personal weapons of Drizzt. Due to its magical nature, only those pure of heart can use it.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +2
+
+THAC0: +3
+Damage: 1d8+4 (slashing)
+Speed Factor: 2
+Proficiency type: Scimitar/Wakizashi/Ninjatō
+Type: One-handed
+Requires:
+ 8 Strength
+
+Weight: 4"
+
+
+
+
+//ICINGDEATH +3//
+COPY "rick_bigg_mod/items/SW1H15.itm" "override"
+	SAY NAME1 "Scimitar"
+	SAY UNIDENTIFIED_DESC "The long, curved, single-edged blade is characteristic of both the saber and the scimitar, even though their origins lie in different parts of Faerûn. Whereas the saber was intended chiefly for horsemen, mainly due to its versatility, the scimitar has a heavier oriental influence. The "shamshir," as it was originally called, is larger, more highly curved, and tapered to an elongated, sharp point. This makes the weapon slightly slower but more effective and deadly in combat.
+
+STATISTICS:
+
+Damage: 1d8+1 (slashing)
+Speed Factor: 5
+Proficiency Type: Scimitar/Wakizashi/Ninjatō
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 4"
+
+	SAY NAME2 "Icingdeath +3"
+	SAY DESC "This is the Frostbrand scimitar Icingdeath. It is one of Drizzt's personal weapons.
+
+STATISTICS:
+
+Equipped abilities:
+– Fire Resistance: +50%
+
+THAC0: +3
+Damage: 1d8+4 (slashing), +2d10 against cold damage against fire creatures (bypass MR)
+Speed Factor: 2
+Proficiency Type: Scimitar/Wakizashi/Ninjatō
+Type: One-handed
+Requires:
+ 8 Strength
+
+Weight: 4"
 
 
 
@@ -3463,6 +4611,10 @@ COPY_EXISTING
 	"AX1H11.ITM" "override/AX1H17.ITM"
 	"AX1H11.ITM" "override/AX1H11.ITM"
 WRITE_ASCII 0x3a "IAX1H03" #8
+
+COPY_EXISTING 
+	"AX1H04.ITM" "override/AX1H18.ITM"
+	"AX1H04.ITM" "override/BDAX1H04.ITM"
 
 COPY_EXISTING "AX1H01.ITM" "override/AX1H19.ITM"
 
@@ -3484,7 +4636,6 @@ COPY_EXISTING
 COPY_EXISTING 
 	"OHBLUN51.ITM" "override/BLUN31.ITM"
 	"OHBLUN51.ITM" "override/BLUN37.ITM"
-	"OHBLUN51.ITM" "override/BLUN21.ITM"
 	"OHBLUN51.ITM" "override/OHBLUN51.ITM"
 WRITE_ASCII 0x3a "IBLUN31" #8
 
@@ -3494,6 +4645,7 @@ COPY_EXISTING "BLUN04.ITM" "override/BLUN41.ITM"
 COPY_EXISTING 
 	"DAGG15.ITM" "override/DAGG03.ITM"
 	"DAGG15.ITM" "override/DAGG24.ITM"
+	"DAGG15.ITM" "override/DAGG09.ITM"
 	"DAGG15.ITM" "override/DAGG15.ITM"
 WRITE_ASCII 0x3a "IDAGG03" #8
 
@@ -3518,6 +4670,7 @@ COPY_EXISTING
 	"HAMM08.ITM" "override/HAMM08.ITM"
 	"HAMM08.ITM" "override/HAMM03.ITM"
 	"HAMM08.ITM" "override/HAMM12.ITM"
+	"HAMM08.ITM" "override/HAMM06.ITM"
 WRITE_ASCII 0x3a "IHAMM03" #8
 
 COPY_EXISTING "HAMM02.ITM" "override/HAMM13.ITM"
@@ -3582,8 +4735,55 @@ COPY_EXISTING
 	"SW1H41.ITM" "override/SW1H73.ITM"
 	"SW1H41.ITM" "override/SW1H53.ITM"
 	"SW1H41.ITM" "override/BDSW1H25.ITM"
-	
-WRITE_ASCII 0x3a "ISW1HRN" #8
+	WRITE_ASCII 0x3a "ISW1HRN" #8
 
 COPY_EXISTING 
 	"SW1H04.ITM" "override/SW1H79.ITM"
+	
+COPY_EXISTING 
+	"SW1H09.ITM" "override/SW1H09.ITM"
+	"SW1H09.ITM" "override/SW1H09_.ITM"
+	"SW1H09.ITM" "override/SW1H29.ITM"
+	"SW1H09.ITM" "override/SW1H76.ITM"
+	WRITE_ASCII 0x3a "SW1H09" #8
+	
+COPY_EXISTING 
+	"BDSW1H23.ITM" "override/BDSW1H23.ITM"
+	"BDSW1H23.ITM" "override/SW1H23_.ITM"
+	"BDSW1H23.ITM" "override/SW1H29.ITM"
+	"SW1H09.ITM" "override/SW1H74.ITM"
+	WRITE_ASCII 0x3a "ISW1H09_" #8
+	
+	
+COPY_EXISTING 
+	"SW1H55.ITM" "override/SW1H75.ITM"
+
+COPY_EXISTING 
+	"SW1H55.ITM" "override/OHSW1H53.ITM"
+	"SW1H55.ITM" "override/OHSW1H54.ITM"
+	"SW1H55.ITM" "override/OHSW1H51.ITM"
+	"SW1H55.ITM" "override/OHSW1H52.ITM"
+	
+COPY_EXISTING 
+	"SW1H43.ITM" "override/SW1H48.ITM"
+	"SW1H43.ITM" "override/SW1H49.ITM"
+	"SW1H43.ITM" "override/TTSWORD9.ITM"
+	"SW1H43.ITM" "override/SW1H46.ITM"
+	"SW1H43.ITM" "override/SW1H47.ITM"
+	"SW1H43.ITM" "override/TTSWORD8.ITM"
+	
+	
+COPY_EXISTING 
+	"SW2H11.ITM" "override/SW2H11.ITM"
+	"SW2H11.ITM" "override/SW2H07_.ITM"
+	"SW2H11.ITM" "override/SW2H07A.ITM"
+	"SW2H11.ITM" "override/SW2H20.ITM"
+	WRITE_ASCII 0x3a "ISW2H07_" #8
+	
+
+	
+
+	
+	
+	
+
