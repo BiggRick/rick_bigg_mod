@@ -527,42 +527,6 @@ Weight: 32"
 
 
 
-//KIEL'S MORNING STAR +3//
-COPY "rick_bigg_mod/items/BLUN09.itm" "override"
-	SAY NAME1 "Morning Star"
-	SAY UNIDENTIFIED_DESC "The morning star is a wooden shaft topped with a metal head covered by a spiked iron sheath. Morning stars have an overall length of about four feet. Some have a round, oval, or cylindrical shaped head studded with spikes. Extending from most morning star heads, regardless of design, is a long point for thrusting.
-
-STATISTICS:
-
-Damage: 2d4 (crushing)
-Speed Factor: 7
-Proficiency Type: Flail/Morning Star
-Type: One-handed
-Requires:
- 11 Strength
-
-Weight: 12"
-
-	SAY NAME2 "Kiel's Morning Star +3"
-	SAY DESC "This is the morning star of Kiel the Legion Killer, firstborn son of Durlag Trollkiller and Clan-prince of his father's ill-fated tower. He was wielding it in his final hour as he rushed to warn his father of the doppelgangers' infiltration of their Clan-home. It is said that the intensity of his rage in these final moments permanently imprinted itself upon the weapon.
-
-STATISTICS:
-
-Equipped abilities:
-– Chance to score a critical hit: +5% (with this weapon only)
-
-THAC0: +3
-Damage: 2d4+3 (crushing)
-Speed Factor: 4
-Proficiency Type: Flail/Morning Star
-Type: One-handed
-Requires:
- 10 Strength
-
-Weight: 10"
-
-
-
 //STAFF OF STRIKING +2//
 COPY "rick_bigg_mod/items/STAF05.itm" "override"
 	SAY NAME1 "Staff"
@@ -3845,7 +3809,6 @@ STATISTICS:
 
 Equipped abilities
 – Negative Plane Protection
-– Immunity to fear
 
 Combat abilities:
 – On hit activate the following spells:
@@ -3868,7 +3831,344 @@ Weight: 2"
 
 
 
+//BONE CLUB +2, +4 VS UNDEAD//
+COPY "rick_bigg_mod/items/BLUN23.itm" "override"
+	SAY NAME1 "Club"
+	SAY UNIDENTIFIED_DESC "Most clubs are stout, hardwood sticks, narrow at the grip and wider at the end. This simple weapon has been used since people first began using tools. Anyone can find a good stout piece of wood and swing it; hence the club's widespread use.
 
+STATISTICS:
+
+Damage: 1d6 (crushing)
+Speed Factor: 4
+Proficiency Type: Club
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 3"
+
+	SAY NAME2 "Bone Club +2, +4 vs undead"
+	SAY DESC "This vicious club was created hundreds of years ago, reportedly by a shaman on a quest for revenge. His family had fallen to undead, and so personal was his rage that he amputated his own leg, using the femur for the body of the weapon. Magical runes empower it, though it is likely the sheer force of the shaman's hatred would have served on its own. 
+
+STATISTICS:
+
+THAC0: +2, +4 vs. undead
+Damage: 1d6+2, +4 vs. undead
+Damage type: Crushing
+Speed Factor: 2
+Proficiency Type: Club
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 3"
+
+
+
+
+//WYVERN'S TAIL +3//
+COPY "rick_bigg_mod/items/BLUN17.itm" "override"
+	SAY NAME1 "Club"
+	SAY UNIDENTIFIED_DESC "Most clubs are stout, hardwood sticks, narrow at the grip and wider at the end. This simple weapon has been used since people first began using tools. Anyone can find a good stout piece of wood and swing it; hence the club's widespread use.
+
+STATISTICS:
+
+Damage: 1d6 (crushing)
+Speed Factor: 4
+Proficiency Type: Club
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 3"
+
+	SAY NAME2 "Wyvern's Tail +3"
+	SAY DESC "The large spike at the head of this club is actually the lethal stinger of a wyvern. The fighter/mage Sedej created this weapon, using his magical abilities to keep the stinger capable of producing poison. The magic he used has actually made the Wyvern's Tail a living weapon that pulses with life in the hands of its wielder.
+ 
+STATISTICS:
+
+Combat abilities:
+– Hit target must save vs. Poison or take 5 Hit Points of poison damage
+
+THAC0: +3
+Damage: 1d6+3 (crushing)
+Speed Factor: 1
+Proficiency Type: Flail/Morning Star
+Type: One-handed
+Requires:
+ 11 Strength
+
+Weight: 1"
+
+
+
+//BLACKBLOOD +4//
+COPY "rick_bigg_mod/items/BLUN22.itm" "override"
+	SAY NAME1 "Club"
+	SAY UNIDENTIFIED_DESC "Most clubs are stout, hardwood sticks, narrow at the grip and wider at the end. This simple weapon has been used since people first began using tools. Anyone can find a good stout piece of wood and swing it; hence the club's widespread use.
+
+STATISTICS:
+
+Damage: 1d6 (crushing)
+Speed Factor: 4
+Proficiency Type: Club
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 3"
+
+	SAY NAME2 "Blackblood +4"
+	SAY DESC "This oak club is coated with darkened, dried globs of a tar-like substance. During battle, this substance glows black with an inner light and becomes thick and fluid. When the club strikes an opponent, it delivers additional acid damage from the liquid splashing over the victim.
+
+STATISTICS:
+
+THAC0: +4
+Damage: 1d6+4, +3 acid damage
+Damage type: Crushing
+Speed Factor: 1
+Proficiency Type: Club
+Type: One-handed
+Requires:
+ 5 Strength"
+ 
+ 
+ 
+ 
+//CLUB DETONATION +3//
+COPY "rick_bigg_mod/items/BLUN26.itm" "override"
+	SAY NAME1 "Club"
+	SAY UNIDENTIFIED_DESC "Most clubs are stout, hardwood sticks, narrow at the grip and wider at the end. This simple weapon has been used since people first began using tools. Anyone can find a good stout piece of wood and swing it; hence the club's widespread use.
+
+STATISTICS:
+
+Damage: 1d6 (crushing)
+Speed Factor: 4
+Proficiency Type: Club
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 3"
+
+	SAY NAME2 "Club od Detonation +3"
+	SAY DESC "This crude wooden club burns with the raging spirit of the demon forever trapped within by the powerful enchantments placed on the weapon. Occasionally, however, the demon's wrath escapes in a fiery blast.
+
+STATISTICS:
+
+Combat abilities:
+– 15% chance per hit target will take an additional 10 points of fire damage
+– 10% chance per hit a 15-ft. radius fireball will automatically detonate (5d6 fire damage; Save vs. Spell for half)
+
+THAC0: +3
+Damage: 1d6+3, +3 fire damage
+Damage type: Crushing
+Speed Factor: 1
+Proficiency Type: Club
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 3"
+
+
+
+
+//CLUB DETONATION +5//
+COPY "rick_bigg_mod/items/BLUN27.itm" "override"
+	SAY NAME1 "Club"
+	SAY UNIDENTIFIED_DESC "Most clubs are stout, hardwood sticks, narrow at the grip and wider at the end. This simple weapon has been used since people first began using tools. Anyone can find a good stout piece of wood and swing it; hence the club's widespread use.
+
+STATISTICS:
+
+Damage: 1d6 (crushing)
+Speed Factor: 4
+Proficiency Type: Club
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 3"
+
+	SAY NAME2 "Club od Detonation +5"
+	SAY DESC "The enchantments from the ring of fire resistance makes the demon spirit trapped within this weapon easier to control—though the wrath of the creature may occasionally still be released without warning.
+
+STATISTICS:
+
+Equipped abilities:
+– Fire Resistance: +40%
+
+Combat abilities:
+– 30% chance per hit target will take an additional 20 points of fire damage
+– 5% chance per hit a 15-ft. radius fireball will automatically detonate (10d6 fire damage; Save vs. Spell for half)
+
+THAC0: +5
+Damage: 1d6+5, +5 fire damage
+Damage type: Crushing
+Speed Factor: 1
+Proficiency Type: Club
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 1"
+
+
+
+
+//KIEL'S MORNING STAR +3//
+COPY "rick_bigg_mod/items/BLUN09.itm" "override"
+	SAY NAME1 "Morning Star"
+	SAY UNIDENTIFIED_DESC "The morning star is a wooden shaft topped with a metal head covered by a spiked iron sheath. Morning stars have an overall length of about four feet. Some have a round, oval, or cylindrical shaped head studded with spikes. Extending from most morning star heads, regardless of design, is a long point for thrusting.
+
+STATISTICS:
+
+Damage: 2d4 (crushing)
+Speed Factor: 7
+Proficiency Type: Flail/Morning Star
+Type: One-handed
+Requires:
+ 11 Strength
+
+Weight: 12"
+
+	SAY NAME2 "Kiel's Morning Star +3"
+	SAY DESC "This is the morning star of Kiel the Legion Killer, firstborn son of Durlag Trollkiller and Clan-prince of his father's ill-fated tower. He was wielding it in his final hour as he rushed to warn his father of the doppelgangers' infiltration of their Clan-home. It is said that the intensity of his rage in these final moments permanently imprinted itself upon the weapon.
+
+STATISTICS:
+
+Equipped abilities:
+– Chance to score a critical hit: +5% (with this weapon only)
+
+Combat abilities:
+– On a critical hit, the wielder gains +5 THAC0 for 3 rounds (non-cumulative)
+
+THAC0: +3
+Damage: 2d4+3 (crushing)
+Speed Factor: 4
+Proficiency Type: Flail/Morning Star
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 10"
+
+
+
+
+//THE SLEEPER +2//
+COPY "rick_bigg_mod/items/BLUN16.itm" "override"
+	SAY NAME1 "Morning Star"
+	SAY UNIDENTIFIED_DESC "The morning star is a wooden shaft topped with a metal head covered by a spiked iron sheath. Morning stars have an overall length of about four feet. Some have a round, oval, or cylindrical shaped head studded with spikes. Extending from most morning star heads, regardless of design, is a long point for thrusting.
+
+STATISTICS:
+
+Damage: 2d4 (crushing)
+Speed Factor: 7
+Proficiency Type: Flail/Morning Star
+Type: One-handed
+Requires:
+ 11 Strength
+
+Weight: 12"
+
+	SAY NAME2 "The Sleeper +2"
+	SAY DESC "This belonged to Ssitalc, an uncharacteristically evil elf known as the Slaver of the Sword Coast. Until his sudden death several years ago, Ssitalc commanded a large force of human, dwarven, and gnomish brigands, using the Sleeper to keep them in line. It has a chance to incapacitate any human, dwarf, gnome, or halfling by inducing deep slumber, though elves are conveniently immune.
+
+STATISTICS:
+
+Combat abilities:
+– Any human or demihuman, excluding elves, hit by the Sleeper must save vs. Poison with a +2 bonus or fall asleep for 3 rounds
+
+THAC0: +2
+Damage: 2d4 +2 (crushing)
+Speed Factor: 5
+Proficiency Type: Flail/Morning Star
+Type: One-handed
+Requires:
+ 11 Strength
+
+Weight: 10"
+
+
+
+//EVERARD'S MORNING STAR +4//
+COPY "rick_bigg_mod/items/WASTAR.itm" "override"
+	SAY NAME1 "Morning Star"
+	SAY UNIDENTIFIED_DESC "The morning star is a wooden shaft topped with a metal head covered by a spiked iron sheath. Morning stars have an overall length of about four feet. Some have a round, oval, or cylindrical shaped head studded with spikes. Extending from most morning star heads, regardless of design, is a long point for thrusting.
+
+STATISTICS:
+
+Damage: 2d4 (crushing)
+Speed Factor: 7
+Proficiency Type: Flail/Morning Star
+Type: One-handed
+Requires:
+ 11 Strength
+
+Weight: 12"
+
+	SAY NAME2 "Everard's Morning Star +4"
+	SAY DESC "This morning star was the personal weapon of the cleric Everard. Everard was a powerful priest of Tempus who sacrificed his life in the battle against the devil Belhifet.
+
+STATISTICS:
+
+Equipped abilities:
+– Wisdom bonus: +2
+- Casting speed bonus: +2
+- Caster level bonus: +2
+
+THAC0: +4
+Damage: 2d4+4 (crushing)
+Speed Factor: 3
+Proficiency Type: Flail/Morning Star
+Type: One-handed
+Requires:
+ 11 Strength
+
+Weight: 8"
+
+
+
+//ICE STAR +5//
+COPY "rick_bigg_mod/items/BLUN35.itm" "override"
+	SAY NAME1 "Morning Star"
+	SAY UNIDENTIFIED_DESC "The morning star is a wooden shaft topped with a metal head covered by a spiked iron sheath. Morning stars have an overall length of about four feet. Some have a round, oval, or cylindrical shaped head studded with spikes. Extending from most morning star heads, regardless of design, is a long point for thrusting.
+
+STATISTICS:
+
+Damage: 2d4 (crushing)
+Speed Factor: 7
+Proficiency Type: Flail/Morning Star
+Type: One-handed
+Requires:
+ 11 Strength
+
+Weight: 12"
+
+	SAY NAME2 "Ice Star +5"
+	SAY DESC "The head of this morning star appears to be forged from unbreakable ice-blue crystal. The handle is chill to the touch, and the wielder is surrounded by a soothing nimbus of cool air which protects against even magical fire.
+
+STATISTICS:
+
+Equipped abilities:
+– Fire Resistance: +50%
+
+Charge abilities:
+– Cone of Cold (at level 15) two times per day
+
+THAC0: +5
+Damage: 2d4+5, +4d4 cold damage
+Damage type: Crushing
+Speed Factor: 2
+Proficiency Type: Flail/Morning Star
+Type: One-handed
+Requires:
+ 11 Strength
+
+Weight: 7"
+
+ 
 
 //HANDMAIDEN'S MACE +4//
 COPY "rick_bigg_mod/items/HLOLTH.itm" "override"
@@ -4078,6 +4378,49 @@ Weight: 4"
 
 
 
+//AZUREDGE +2//
+COPY "rick_bigg_mod/items/AX1H10.itm" "override"
+	SAY NAME1 "Throwing Axe"
+	SAY UNIDENTIFIED_DESC "The hand axe or throwing axe is also known as a hatchet. The axe blade has a sharp steel tip counterbalanced by a pointed fluke. The short handle has a point on the bottom, and the head may have a spike on the top.
+
+STATISTICS:
+
+Damage: 1d6+1
+Damage type (melee): Slashing
+Damage type (thrown): Missile
+Speed Factor: 4
+Proficiency Type: Axe
+Type: One-handed
+Requires:
+ 4 Strength
+
+Weight: 1"
+
+	SAY NAME2 "Azuredge +2"
+	SAY DESC "Gulen Rockfire, Slayer of Undead, crafted this powerful throwing axe expressly for reinforcing his claim to his namesake. Blessed by a cross-section of gods, this weapon does phenomenal damage against creatures unwisely rebelling against their deceased status and can potentially destroy them in a single blow. Obviously Gulen no longer carries Azuredge, and it is rumored that he died fighting a powerful vampire years ago, only to rise as one himself. This may have softened his stance regarding the undead, at the very least prompting a change of name.
+
+STATISTICS:
+
+Equipped abilities: 
+- Enchantment vs undead +5
+
+Combat abilities:
+– Returns to the wielder's hand when thrown
+
+Thac0: +2
+Damage: 1d6+3, +2d6 vs. undead
+Damage type (melee): Slashing
+Damage type (thrown): Missile
+Speed Factor: 2
+Proficiency Type: Axe
+Type: One-handed
+Requires:
+ 4 Strength
+
+Weight: 2"
+
+
+
 
 
 //RYFTHOME AXE +3//
@@ -4205,6 +4548,10 @@ Weight: 6"
 
 
 
+
+
+
+
 //FROSTREAVER +3//
 COPY "rick_bigg_mod/items/AX1H13.itm" "override"
 	SAY NAME1 "Battle Axe"
@@ -4274,6 +4621,319 @@ Requires:
  10 Strength
 
 Weight: 6"
+
+
+
+
+//AXE OF THE UNYIELDING +3//
+COPY "rick_bigg_mod/items/AX1H15.itm" "override"
+	SAY NAME1 "Battle Axe"
+	SAY UNIDENTIFIED_DESC "The most common version of the battle axe is a stout pole about four feet in length with a single-edged, trumpet-shaped blade mounted on one end. This axe, in particular, appears to be very poorly made and slightly smaller than the average battle axe.
+
+STATISTICS:
+
+Damage: 1d8+1 (slashing)
+Speed Factor: 7
+Proficiency Type: Axe
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 6"
+
+	SAY NAME2 "Axe of the Unyielding +3"
+	SAY DESC "This axe was last seen in the gnarled fists of Glimred Heavyhand, an aging dwarven hero who disappeared in the deepest caverns beneath the Marching Mountains.  
+
+STATISTICS:
+
+Equipped abilities: 
+– Armor Class: +2
+– Physical Damage Resistance: +10%
+
+THAC0: +3
+Damage: 1d8+4 (slashing)
+Speed Factor: 4
+Proficiency Type: Axe
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 7"
+
+
+//AXE OF THE UNYIELDING +5//
+COPY "rick_bigg_mod/items/AX1H15.itm" "override"
+	SAY NAME1 "Battle Axe"
+	SAY UNIDENTIFIED_DESC "The most common version of the battle axe is a stout pole about four feet in length with a single-edged, trumpet-shaped blade mounted on one end. This axe, in particular, appears to be very poorly made and slightly smaller than the average battle axe.
+
+STATISTICS:
+
+Damage: 1d8+1 (slashing)
+Speed Factor: 7
+Proficiency Type: Axe
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 6"
+
+	SAY NAME2 "Axe of the Unyielding +5"
+	SAY DESC "Enhanced by the magic of the balor's claw, the Axe of the Unyielding is now the most fearsome of weapons—a vorpal-edged axe capable of severing an opponent's head with a single blow. 
+
+STATISTICS:
+
+Equipped abilities: 
+– Armor Class: +2
+– Physical Damage Resistance: +10%
+- Magic Resistance: +10%
+
+Combat abilities:
+– 15% chance of decapitating opponent with each successful attack (Save vs. Death at -2 negates)
+- 30% chance of casting Fire Shield on yourself (level 20)
+
+THAC0: +5 
+Damage: 1d8+5 (slashing)
+Speed Factor: 2
+Proficiency Type: Axe
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 5"
+
+
+
+
+//ARDULIA'S FALL +2//
+COPY "rick_bigg_mod/items/BLUN20.itm" "override"
+	SAY NAME1 "Mace"
+	SAY UNIDENTIFIED_DESC "The mace is a direct descendant of the basic club, being nothing more than a wooden shaft with a stone or iron head mounted on the end. The head design varies: Some are spiked, others flanged, and still others have pyramidal knobs.
+
+STATISTICS:
+
+Damage: 1d6+1 (crushing)
+Speed Factor: 7
+Proficiency Type: Mace
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 10"
+
+	SAY NAME2 "Ardulia's Fall +2"
+	SAY DESC "Ardulia the Agile was a man whose speed and skill at knife play made him exceptionally lethal in battle, and he repeatedly proved it by leading raids on settlements along the Sword Coast. He would often challenge the village leader for possession of the town, and with his speed, the duels were always quickly decided in his favor. Ardulia met his match one spring morn however, when he battled the priest Itgan, who wielded this mace. Ardulia seemed to stagger under each blow, slowing his pace to recoup and regain his breath. Without his speed, Ardulia was lost, and fell to the measured attacks of Itgan.
+
+STATISTICS:
+
+Combat abilities:
+– Hit target must save vs. Spell or be slowed for 2 rounds
+
+THAC0: +2
+Damage: 1d6+3 (crushing)
+Speed Factor: 5
+Proficiency Type: Mace
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 7"
+
+
+
+//MAULER'S ARM +2//
+COPY "rick_bigg_mod/items/BLUN19.itm" "override"
+	SAY NAME1 "Mace"
+	SAY UNIDENTIFIED_DESC "The mace is a direct descendant of the basic club, being nothing more than a wooden shaft with a stone or iron head mounted on the end. The head design varies: Some are spiked, others flanged, and still others have pyramidal knobs.
+
+STATISTICS:
+
+Damage: 1d6+1 (crushing)
+Speed Factor: 7
+Proficiency Type: Mace
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 10"
+
+	SAY NAME2 "Mauler's Arm +2"
+	SAY DESC "Jurrg the Mauler was proud chieftain of a northern tribe, but feared he would be the last of his family to lead. His son Kullen was sickly and clearly couldn't meet the traditional requirements of strength for a chieftain. Jurrg knew that wise leadership took more than brawn, however, so he bargained to enchant this mace such that it would cover Kullen's weakness. Who Jurrg made the deal with is unknown, but the cost was apparently high. Kullen came to rule soon after.
+
+STATISTICS:
+
+Equipped Ability:
+– Strength: 18/50
+
+THAC0: +2
+Damage: 1d6+3 (crushing)
+Speed Factor: 5
+Proficiency Type: Mace
+Type: One-handed
+
+Weight: 7"
+
+
+
+//MACE OF DISRUPTION +2//
+COPY "rick_bigg_mod/items/BLUN12.itm" "override"
+	SAY NAME1 "Mace"
+	SAY UNIDENTIFIED_DESC "The mace is a direct descendant of the basic club, being nothing more than a wooden shaft with a stone or iron head mounted on the end. The head design varies: Some are spiked, others flanged, and still others have pyramidal knobs.
+
+STATISTICS:
+
+Damage: 1d6+1 (crushing)
+Speed Factor: 7
+Proficiency Type: Mace
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 10"
+
+	SAY NAME2 "Mace of Disruption +2"
+	SAY DESC "This heavy mace was created for a very specific purpose: to slay undead. Any such creature hit by it not only feels the sting of the weapon, but also has a chance of being simply blasted from existence. There are legends that speak of a priest so holy a single glancing touch could send a vampire to oblivion, but whether the weapon empowered her or she empowered it is a topic for theologians.
+
+STATISTICS:
+
+Equipped abilities: 
+- Enchantment vs undead +5
+
+Combat abilities: 
+– Undead must save vs. Death at -4 or be utterly destroyed
+
+THAC0: +2
+Damage: 1d6+3, 2d6+4 vs. undead
+Damage type: Crushing
+Speed Factor: 5
+Proficiency Type: Mace
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 7"
+
+
+
+
+
+//MACE OF DISRUPTION +4//
+COPY "rick_bigg_mod/items/BLUN25.itm" "override"
+	SAY NAME1 "Mace"
+	SAY UNIDENTIFIED_DESC "The mace is a direct descendant of the basic club, being nothing more than a wooden shaft with a stone or iron head mounted on the end. The head design varies: Some are spiked, others flanged, and still others have pyramidal knobs.
+
+STATISTICS:
+
+Damage: 1d6+1 (crushing)
+Speed Factor: 7
+Proficiency Type: Mace
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 10"
+
+	SAY NAME2 "Mace of Disruption +4"
+	SAY DESC "This heavy mace was created for a very specific purpose: to slay undead. Any such creature hit by it not only feels the sting of the weapon, but also has a chance of being simply blasted from existence. There are legends that speak of a priest so holy a single glancing touch could send a vampire to oblivion, but whether the weapon empowered her or she empowered it is a topic for theologians.
+
+Now that the mace has been coated with illithium, it is even more potent, conferring to its user immunity to the life-draining powers of the more powerful undead.
+
+STATISTICS:
+
+Equipped abilities:
+– Immunity to level drain
+
+Combat abilities:
+– Undead must save vs. Death at -4 or be utterly destroyed
+
+THAC0: +4
+Damage: 1d6+5, 2d6+4 vs. undead
+Damage type: Crushing
+Speed Factor: 4
+Proficiency Type: Mace
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 6"
+
+
+
+
+//STORM STAR +4//
+COPY "rick_bigg_mod/items/BLUN28.itm" "override"
+	SAY NAME1 "Mace"
+	SAY UNIDENTIFIED_DESC "The mace is a direct descendant of the basic club, being nothing more than a wooden shaft with a stone or iron head mounted on the end. The head design varies: Some are spiked, others flanged, and still others have pyramidal knobs.
+
+STATISTICS:
+
+Damage: 1d6+1 (crushing)
+Speed Factor: 7
+Proficiency Type: Mace
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 10"
+
+	SAY NAME2 "Storm Star +4"
+	SAY DESC "This magical weapon is of ancient design, thought to have been devised in Netheril. It crackles with spectacular arcs of lightning when wielded.
+
+STATISTICS:
+
+THAC0: +4
+Damage: 1d6+5, +1d6 electrical damage
+Damage type: Crushing
+Speed Factor: 3
+Proficiency Type: Mace
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 5"
+
+
+
+
+
+
+//STORM STAR +5//
+COPY "rick_bigg_mod/items/BLUN29.itm" "override"
+	SAY NAME1 "Mace"
+	SAY UNIDENTIFIED_DESC "The mace is a direct descendant of the basic club, being nothing more than a wooden shaft with a stone or iron head mounted on the end. The head design varies: Some are spiked, others flanged, and still others have pyramidal knobs.
+
+STATISTICS:
+
+Damage: 1d6+1 (crushing)
+Speed Factor: 7
+Proficiency Type: Mace
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 10"
+
+	SAY NAME2 "Storm Star +5"
+	SAY DESC "Infused with the otherworldly starfall ore, the powers of this already formidable weapon are greatly enhanced.
+
+STATISTICS:
+
+Equipped abilities:
+– Electrical Resistance: +50%
+
+Combat abilities:
+– 20% chance of casting Chain Lightning (at level 20) on target with each successful attack
+
+THAC0: +5
+Damage: 1d6+6, +1d6 electrical damage
+Damage type: Crushing
+Speed Factor: 2
+Proficiency Type: Mace
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 4"
+
 
 
 
@@ -4593,6 +5253,94 @@ Requires:
  8 Strength
 
 Weight: 4"
+
+
+
+
+
+//BELM +3//
+COPY "rick_bigg_mod/items/SW1H30.itm" "override"
+	SAY NAME1 "Scimitar"
+	SAY UNIDENTIFIED_DESC "The long, curved, single-edged blade is characteristic of both the saber and the scimitar, even though their origins lie in different parts of Faerûn. Whereas the saber was intended chiefly for horsemen, mainly due to its versatility, the scimitar has a heavier oriental influence. The "shamshir," as it was originally called, is larger, more highly curved, and tapered to an elongated, sharp point. This makes the weapon slightly slower but more effective and deadly in combat.
+
+STATISTICS:
+
+Damage: 1d8+1 (slashing)
+Speed Factor: 5
+Proficiency Type: Scimitar/Wakizashi/Ninjatō
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 4"
+
+	SAY NAME2 "Belm +3"
+	SAY DESC "This enchanted scimitar bears the mark of Taka Kobe, an honored swordsmith of Kara-Tur, though how it came to be here is unknown. Perfectly balanced, it affords quick recovery in combat and even allows the wielder time for an additional attack.
+
+STATISTICS:
+
+Combat abilities:
+– 20% chance to have 1 extra attack for two rounds
+
+THAC0: +3
+Damage: 1d8+4 (slashing)
+Speed Factor: 0
+Proficiency Type: Scimitar/Wakizashi/Ninjatō
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 2"
+
+
+
+
+
+//SPECTRAL BLADE +5//
+COPY "rick_bigg_mod/items/SW1H69.itm" "override"
+	SAY NAME1 "Scimitar"
+	SAY UNIDENTIFIED_DESC "The long, curved, single-edged blade is characteristic of both the saber and the scimitar, even though their origins lie in different parts of Faerûn. Whereas the saber was intended chiefly for horsemen, mainly due to its versatility, the scimitar has a heavier oriental influence. The "shamshir," as it was originally called, is larger, more highly curved, and tapered to an elongated, sharp point. This makes the weapon slightly slower but more effective and deadly in combat.
+
+STATISTICS:
+
+Damage: 1d8+1 (slashing)
+Speed Factor: 5
+Proficiency Type: Scimitar/Wakizashi/Ninjatō
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 4"
+
+	SAY NAME2 "Spectral Blade +5"
+	SAY DESC "Drawing on the necromancy of the Skull of the Lich, Spectral Brand is now an instrument of unholy death that should never have been unleashed upon the realms.
+
+STATISTICS:
+
+Equipped abilities:
+– Negative Plane Protection
+
+Combat abilities:
+- -10% Slashing and Cold Damage Resistance on target for 2 rounds
+
+Charge abilities:
+– Armor Piercing Strike once per day
+  Special: +10 THAC0 bonus
+  Duration: 3 rounds
+
+– Summon Spectral Blade once per day
+  This dancing sword fights on behalf of the one who wields Spectral Brand for 4 rounds, attacking once per round and doing 1d8+3 slashing damage with each hit.
+
+THAC0: +5
+Damage: 1d8+6, +1d6 cold damage
+Damage type: Slashing
+Speed Factor: 0
+Proficiency Type: Scimitar/Wakizashi/Ninjatō
+Type: One-handed
+Requires:
+ 8 Strength
+
+Weight: 2"
 
 
 
