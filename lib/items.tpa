@@ -3816,11 +3816,10 @@ Combat abilities:
 	- 10% Mass Cure
 	- 15% Defensive Harmony
 	- 20% Holy Smite
-	- 50% Chant
 
 THAC0: +5
 Damage: 2d3+6 (crushing)
-Speed Factor: 0
+Speed Factor: 1
 Proficiency Type: War Hammer
 Type: One-handed
 Requires:
@@ -3899,6 +3898,49 @@ Requires:
  11 Strength
 
 Weight: 1"
+
+
+
+//ROOT OF THE PROBLEM +3//
+COPY "rick_bigg_mod/items/BLUN10.itm" "override"
+	SAY NAME1 "Club"
+	SAY UNIDENTIFIED_DESC "Most clubs are stout, hardwood sticks, narrow at the grip and wider at the end. This simple weapon has been used since people first began using tools. Anyone can find a good stout piece of wood and swing it; hence the club's widespread use.
+
+STATISTICS:
+
+Damage: 1d6 (crushing)
+Speed Factor: 4
+Proficiency Type: Club
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 3"
+
+	SAY NAME2 "Root of The Problem +3"
+	SAY DESC "This enchanted club is said to have existed since the time of the fall of Netheril and the birth of the great Anauroch Desert. While the toll on civilization was great, the true victims of this age were nature's creatures, condemned to stand and watch as their homes decayed and died. As habitats receded, those that remained were invaded by displaced hordes of creatures, the more impatient of which marched on unspoiled land taking whatever they wished. This particular weapon is said to have come from a dryad's tree, a final gift to nature's cause from a woodland spirit that could not hold back the invaders of her land. Hers was a bittersweet pain, as her wood might not have suffered so if it had not been so strong and lush. Less respecting scholars have since bestowed the item's ironic name, though the humor is not appreciated among nature's more devout followers.
+
+STATISTICS:
+
+Equipped abilities:
+- Casting speed bonus: +2
+- Caster level bonus: +2
+
+Charge Abilities:
+- Cast Nature's Beauty twice per day (at level 14)
+
+
+THAC0: +3, +5 vs. unnatural creatures
+Damage: 1d6+3, +5 vs. unnatural creatures
+Damage type: Crushing
+Speed Factor: 1
+Proficiency Type: Club
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 3"
+
 
 
 
@@ -4774,6 +4816,43 @@ Weight: 7"
 
 
 
+//JERROD'S MACE +3//
+COPY "rick_bigg_mod/items/WAMACE.itm" "override"
+	SAY NAME1 "Mace"
+	SAY UNIDENTIFIED_DESC "The mace is a direct descendant of the basic club, being nothing more than a wooden shaft with a stone or iron head mounted on the end. The head design varies: Some are spiked, others flanged, and still others have pyramidal knobs.
+
+STATISTICS:
+
+Damage: 1d6+1 (crushing)
+Speed Factor: 7
+Proficiency Type: Mace
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 10"
+
+	SAY NAME2 "Jerrod's Mace +3"
+	SAY DESC "This was the favored weapon of the priest of Tempus named Jerrod. Jerrod sacrificed his life to save the town of Easthaven from the powerful devil known as Belhifet.
+
+STATISTICS:
+
+Equipped abilities:
+– The wearer and any allies within their visual radius are immune to fear and morale failure
+
+THAC0: +3, +5 vs. demons and devils
+Damage: 1d6+4, +6 vs. demons and devils
+Damage type: Crushing
+Speed Factor: 4
+Proficiency Type: Mace
+Type: One-handed
+
+Weight: 6"
+
+
+
+
+
 //MACE OF DISRUPTION +2//
 COPY "rick_bigg_mod/items/BLUN12.itm" "override"
 	SAY NAME1 "Mace"
@@ -5180,6 +5259,80 @@ Weight: 2"
 
 
 
+//HAWKSIGHT +2//
+COPY "rick_bigg_mod/items/OHRSW1H1.itm" "override"
+	SAY NAME1 "Scimitar"
+	SAY UNIDENTIFIED_DESC "The long, curved, single-edged blade is characteristic of both the saber and the scimitar, even though their origins lie in different parts of Faerûn. Whereas the saber was intended chiefly for horsemen, mainly due to its versatility, the scimitar has a heavier oriental influence. The "shamshir," as it was originally called, is larger, more highly curved, and tapered to an elongated, sharp point. This makes the weapon slightly slower but more effective and deadly in combat.
+
+STATISTICS:
+
+Damage: 1d8+1 (slashing)
+Speed Factor: 5
+Proficiency Type: Scimitar/Wakizashi/Ninjatō
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 4"
+
+	SAY NAME2 "Hawksight +2"
+	SAY DESC "This scimitar has been magically enhanced to give it greater accuracy in combat. Any wielder who picks up the sword immediately feels their senses becoming keener, their reflexes sharper.
+
+STATISTICS:
+
+Equipped abilities:
+– Dexterity: +1
+- Thac0: +1
+
+THAC0: +2
+Damage: 1d8+3 (slashing)
+Speed Factor: 3
+Proficiency Type: Scimitar/Wakizashi/Ninjatō
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 3"
+
+
+
+
+
+//DERVISH CRESCENT +2//
+COPY "rick_bigg_mod/items/BDSW1H08.itm" "override"
+	SAY NAME1 "Scimitar"
+	SAY UNIDENTIFIED_DESC "The long, curved, single-edged blade is characteristic of both the saber and the scimitar, even though their origins lie in different parts of Faerûn. Whereas the saber was intended chiefly for horsemen, mainly due to its versatility, the scimitar has a heavier oriental influence. The "shamshir," as it was originally called, is larger, more highly curved, and tapered to an elongated, sharp point. This makes the weapon slightly slower but more effective and deadly in combat.
+
+STATISTICS:
+
+Damage: 1d8+1 (slashing)
+Speed Factor: 5
+Proficiency Type: Scimitar/Wakizashi/Ninjatō
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 4"
+
+	SAY NAME2 "Dervish Crescent +2"
+	SAY DESC "The length of this blade is etched with flames, genies, and whirlwinds. Small glittering particles along its length evoke a sandstorm. The style and quality of the blade indicates it was made in Calimshan.
+
+STATISTICS:
+
+-Charge abilities:
+– Fireshield (Red) two times per day (at level 10)
+
+THAC0: +2
+Damage: 1d8+3, +1 fire
+Damage Type: Slashing
+Speed Factor: 3
+Proficiency Type: Scimitar/Wakizashi/Ninjatō
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 3"
+
 
 
 
@@ -5295,6 +5448,44 @@ Weight: 2"
 
 
 
+//SOUL REAVER +4//
+COPY "rick_bigg_mod/items/SW2H08.itm" "override"
+	SAY NAME1 "Scimitar"
+	SAY UNIDENTIFIED_DESC "The long, curved, single-edged blade is characteristic of both the saber and the scimitar, even though their origins lie in different parts of Faerûn. Whereas the saber was intended chiefly for horsemen, mainly due to its versatility, the scimitar has a heavier oriental influence. The "shamshir," as it was originally called, is larger, more highly curved, and tapered to an elongated, sharp point. This makes the weapon slightly slower but more effective and deadly in combat.
+
+STATISTICS:
+
+Damage: 1d8+1 (slashing)
+Speed Factor: 5
+Proficiency Type: Scimitar/Wakizashi/Ninjatō
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 4"
+
+	SAY NAME2 "Soul Reaver +4"
+	SAY DESC "A social faux pas placed upstart Andor Licon in a duel with Baron Eeirk, heir to a warrior king. Though they seemed of even skill, Andor grew oddly weaker with each hit of the Baron's family blade. Panicking, he bade his bodyguards kill Eeirk. Despite his claims of morality, some noted that the young noble had positioned his men before the duel was even underway, and though he professed disdain for its dark magic, Andor made a tidy fortune off the sale of the evil blade. 
+
+STATISTICS:
+
+Combat abilities:
+– Each hit makes the target receive a cumulative 2 point penalty to their THAC0 for 2 turns
+
+THAC0: +4
+Damage: 1d8+5 (slashing)
+Speed Factor: 1
+Proficiency Type: Scimitar/Wakizashi/Ninjatō
+Type: One-handed
+Requires:
+ 8 Strength
+
+Weight: 2"
+
+
+
+
+
 
 //SPECTRAL BLADE +5//
 COPY "rick_bigg_mod/items/SW1H69.itm" "override"
@@ -5344,8 +5535,130 @@ Weight: 2"
 
 
 
+//MALAKAR +2//
+COPY "rick_bigg_mod/items/SW1H45.itm" "override"
+	SAY NAME1 "Katana"
+	SAY UNIDENTIFIED_DESC "The katana is a single-edged, slightly curved sword that ends with a chisel point. The katana is perhaps one of the finest swords ever made, the steps to its creation a long and secret process that is more art form than anything else. This blade is an important facet of Kara-Turan culture. To touch or wield a samurai's katana is to insult the samurai and to incite his wrath. For a gaijin, or foreigner, to own such a blade is a rare occurrence. Either the gaijin is a greatly honored friend of an important minister, or the gaijin has murdered a samurai.
+
+STATISTICS:
+
+Damage: 1d8 (slashing)
+Speed Factor: 4
+Proficiency Type: Katana
+Type: One-handed
+Requires:
+ 6 Strength
+
+Weight: 6"
+
+	SAY NAME2 "Malakar +2"
+	SAY DESC "This sleek katana radiates magical energy when carried. The Malakar, or "Dueling Steel," was used by a less-than-honorable samurai during duels against other samurai. As if of its own volition, it will swoop down and deflect the slashing attacks of other weapons. It is perfect for the warrior concerned about defense as well as offense.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +3 vs. slashing weapons
+
+THAC0: +2
+Damage: 1d8+2 (slashing)
+Speed Factor: 2
+Proficiency Type: Katana
+Type: One-handed
+Requires:
+ 6 Strength
+
+Weight: 4"
 
 
+
+//HINDO'S DOOM +3//
+COPY "rick_bigg_mod/items/SW1H70.itm" "override"
+	SAY NAME1 "Katana"
+	SAY UNIDENTIFIED_DESC "The katana is a single-edged, slightly curved sword that ends with a chisel point. The katana is perhaps one of the finest swords ever made, the steps to its creation a long and secret process that is more art form than anything else. This blade is an important facet of Kara-Turan culture. To touch or wield a samurai's katana is to insult the samurai and to incite his wrath. For a gaijin, or foreigner, to own such a blade is a rare occurrence. Either the gaijin is a greatly honored friend of an important minister, or the gaijin has murdered a samurai.
+
+STATISTICS:
+
+Damage: 1d8 (slashing)
+Speed Factor: 4
+Proficiency Type: Katana
+Type: One-handed
+Requires:
+ 6 Strength
+
+Weight: 6"
+
+	SAY NAME2 "Hindo's Doom +3"
+	SAY DESC "Hindo was a samurai of great renown, a staunch defender of his people against the evil undead that often ravaged his homelands. 
+
+STATISTICS:
+
+Equipped abilities:
+– Magic Resistance: +10%
+
+Charge abilities:
+– Lesser Restoration once per day
+  Range: Touch
+  Area of Effect: 1 creature
+
+THAC0: +3
+Damage: 1d8+3, +3 vs evil (slashing)
+Speed Factor: 1
+Proficiency Type: Katana
+Type: One-handed
+Requires:
+ 6 Strength
+
+Weight: 3"
+
+
+
+
+
+//HINDO'S DOOM +5//
+COPY "rick_bigg_mod/items/SW1H71.itm" "override"
+	SAY NAME1 "Katana"
+	SAY UNIDENTIFIED_DESC "The katana is a single-edged, slightly curved sword that ends with a chisel point. The katana is perhaps one of the finest swords ever made, the steps to its creation a long and secret process that is more art form than anything else. This blade is an important facet of Kara-Turan culture. To touch or wield a samurai's katana is to insult the samurai and to incite his wrath. For a gaijin, or foreigner, to own such a blade is a rare occurrence. Either the gaijin is a greatly honored friend of an important minister, or the gaijin has murdered a samurai.
+
+STATISTICS:
+
+Damage: 1d8 (slashing)
+Speed Factor: 4
+Proficiency Type: Katana
+Type: One-handed
+Requires:
+ 6 Strength
+
+Weight: 6"
+
+	SAY NAME2 "Hindo's Doom +5"
+	SAY DESC "Reunited with the hand of its original owner, Hindo's Doom is a katana worthy of the greatest of samurai. 
+
+STATISTICS:
+
+Equipped abilities:
+– Magic Resistance: +20%
+– Immunity to all forms of death magic
+- Defensive Harmony always active
+
+Charge abilities:
+– Greater Restoration once per day
+  Area of Effect: 1 creature
+
+THAC0: +5
+Damage: 1d8+5, +5 vs evil (slashing)
+Speed Factor: 0
+Proficiency Type: Katana
+Type: One-handed
+Requires:
+ 6 Strength
+
+Weight: 2"
+
+
+
+
+
+//HALBERDS//
 COPY_EXISTING 
 	"HALB07.ITM" "override/HALB03.ITM"
     "HALB07.ITM" "override/HALB12.ITM"
@@ -5354,6 +5667,7 @@ WRITE_ASCII 0x3a "IHALB03" #8
 
 COPY_EXISTING "HALB01.ITM" "override/HALB13.ITM"
 
+//AXES//
 COPY_EXISTING 
 	"AX1H11.ITM" "override/AX1H03.ITM"
 	"AX1H11.ITM" "override/AX1H17.ITM"
@@ -5390,6 +5704,7 @@ WRITE_ASCII 0x3a "IBLUN31" #8
 COPY_EXISTING "BLUN01.ITM" "override/BLUN38.ITM"
 COPY_EXISTING "BLUN04.ITM" "override/BLUN41.ITM"
 
+//DAGGERS//
 COPY_EXISTING 
 	"DAGG15.ITM" "override/DAGG03.ITM"
 	"DAGG15.ITM" "override/DAGG24.ITM"
@@ -5414,6 +5729,8 @@ COPY_EXISTING "BOW16.ITM" "override/BOW24.ITM"
 COPY_EXISTING "BOW18.ITM" "override/BOW08.ITM"
 COPY_EXISTING "BOW18.ITM" "override/BOW26.ITM"
 
+
+//HAMMERS//
 COPY_EXISTING 
 	"HAMM08.ITM" "override/HAMM08.ITM"
 	"HAMM08.ITM" "override/HAMM03.ITM"
@@ -5453,7 +5770,7 @@ COPY_EXISTING
 	"PLAT14.ITM" "override/PLAT19.ITM"
 WRITE_ASCII 0x3a "IPLAT23" #8
 
-COPY_EXISTING "SLNG04.ITM" "override/SLNG11.ITM"
+//SLINGS//
 COPY_EXISTING 
 	"SLNG04.ITM" "override/SLNG04.ITM"
 	"SLNG04.ITM" "override/SLNG10.ITM"
@@ -5465,9 +5782,11 @@ COPY_EXISTING
 	"SLNG05.ITM" "override/SLNG05.ITM"
 WRITE_ASCII 0x3a "ISLING10" #8	
 
+//SPEARS//
 COPY_EXISTING 
 	"SPER05.ITM" "override/SPER06.ITM"
 
+//STAVES//
 COPY_EXISTING 
 	"STAF18.ITM" "override/STAF18.ITM"
 	"STAF18.ITM" "override/STAF19.ITM"
@@ -5492,17 +5811,16 @@ COPY_EXISTING
 	"SW1H09.ITM" "override/SW1H09.ITM"
 	"SW1H09.ITM" "override/SW1H09_.ITM"
 	"SW1H09.ITM" "override/SW1H29.ITM"
-	"SW1H09.ITM" "override/SW1H76.ITM"
+	"SW1H09.ITM" "override/SW1H74.ITM"
 	WRITE_ASCII 0x3a "SW1H09" #8
 	
 COPY_EXISTING 
 	"BDSW1H23.ITM" "override/BDSW1H23.ITM"
 	"BDSW1H23.ITM" "override/SW1H23_.ITM"
-	"BDSW1H23.ITM" "override/SW1H29.ITM"
-	"SW1H09.ITM" "override/SW1H74.ITM"
-	WRITE_ASCII 0x3a "ISW1H09_" #8
-	
-	
+	"BDSW1H23.ITM" "override/SW1H76.ITM"
+	"BDSW1H23.ITM" "override/OHSW1H55.ITM"
+	WRITE_ASCII 0x3a "ISW1H76" #8
+		
 COPY_EXISTING 
 	"SW1H55.ITM" "override/SW1H75.ITM"
 
