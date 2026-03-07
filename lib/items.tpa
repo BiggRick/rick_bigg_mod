@@ -3595,7 +3595,7 @@ Requires:
 Weight: 8"
 
 	SAY NAME2 "Borok's Fist +2"
-	SAY DESC "Borok Thundercracker was a dwarven hero that led several campaigns against giants and other "tall vermin" that had plagued his people in a number of their communities. This hammer was his blessed weapon, which his elven allies called his "little iron fist," though not to his face.
+	SAY DESC "Borok Thundercracker was a dwarven hero that led several campaigns against giants and other 'tall vermin' that had plagued his people in a number of their communities. This hammer was his blessed weapon, which his elven allies called his 'little iron fist', though not to his face.
 
 STATISTICS:
 
@@ -4552,7 +4552,7 @@ Weight: 1"
 
 
 
-//HOJAR'S FAME +2//
+//AXE OF TROLL DECAPITATION +2//
 COPY "rick_bigg_mod/items/OHRAX1H1.itm" "override"
 	SAY NAME1 "Battle Axe"
 	SAY UNIDENTIFIED_DESC "The most common version of the battle axe is a stout pole about four feet in length with a single-edged, trumpet-shaped blade mounted on one end. This axe, in particular, appears to be very poorly made and slightly smaller than the average battle axe.
@@ -4568,16 +4568,18 @@ Requires:
 
 Weight: 6"
 
-	SAY NAME2 "Hojar's Fame +2"
-	SAY DESC "This axe has been magically enchanted to smother its target in flames with each strike. The enchantment was poor, however, and the effect does not always appear.
+	SAY NAME2 "Axe of Troll Decapitation +2"
+	SAY DESC "Runes along the length of this powerful weapon spell 'death to trolls' in multiple languages. Legend tells that the famous dwarf Durlag Trollkiller used this sword in his adventuring days, but lost it during a particularly brutal fight in the Troll Hills.
+
+Despite the item's name, it does not actually decapitate trolls. A rumor sprung up regarding its powers and despite evidence to the contrary, the sword has never shaken the nickname.
 
 STATISTICS:
 
 Combat abilities:
-– 25% chance of each hit inflicting an additional 1d8 points of fire damage
+– On a critical hit against a troll, the wearer gains +1 to Strength for 1 turn (non-cumulative)
 
-THAC0: +2
-Damage: 1d8+3 (slashing)
+THAC0: +2, +4 vs. trolls
+Damage: 1d8+3, +2 fire vs. trolls
 Speed Factor: 5
 Proficiency Type: Axe
 Type: One-handed
@@ -5074,7 +5076,7 @@ Requires:
 Weight: 15"
 
 	SAY NAME2 "Flail of Ages +3"
-	SAY DESC "This flail has been in the care of Lord de'Arnise for some time, a relic of his adventuring youth. It has been kept disassembled, the individual pieces stored in separate locations, and only used in the direst of emergencies. Lord de'Arnise was likely concerned about the powerful magic that the weapon radiated when compiled, and rightfully so. A trail of destruction has followed it through history, leading straight back to the original owners. The flail was the creation of the warlike rakshasa, a race of vengeful spirits that crave human meat, and used as an adaptable weapon that could suit any battle. During a particularly violent hunt, the flail was lost, only to be returned when they used their affinity for magic to locate its powerful aura. They discovered that the weapon had found its way into the hands of a great human warrior, and the battle that followed was truly splendid. They have since used the item as bait countless times, "losing" it again and again. Powerful items gravitate toward powerful people, and powerful people yield the most glorious battles.
+	SAY DESC "This flail has been in the care of Lord de'Arnise for some time, a relic of his adventuring youth. It has been kept disassembled, the individual pieces stored in separate locations, and only used in the direst of emergencies. Lord de'Arnise was likely concerned about the powerful magic that the weapon radiated when compiled, and rightfully so. A trail of destruction has followed it through history, leading straight back to the original owners. The flail was the creation of the warlike rakshasa, a race of vengeful spirits that crave human meat, and used as an adaptable weapon that could suit any battle. During a particularly violent hunt, the flail was lost, only to be returned when they used their affinity for magic to locate its powerful aura. They discovered that the weapon had found its way into the hands of a great human warrior, and the battle that followed was truly splendid. They have since used the item as bait countless times, 'losing' it again and again. Powerful items gravitate toward powerful people, and powerful people yield the most glorious battles.
 
 STATISTICS:
 
@@ -5225,7 +5227,7 @@ Weight: 8"
 //NAMARRA +2//
 COPY "rick_bigg_mod/items/SW1H36.itm" "override"
 	SAY NAME1 "Scimitar"
-	SAY UNIDENTIFIED_DESC "The long, curved, single-edged blade is characteristic of both the saber and the scimitar, even though their origins lie in different parts of Faerûn. Whereas the saber was intended chiefly for horsemen, mainly due to its versatility, the scimitar has a heavier oriental influence. The "shamshir," as it was originally called, is larger, more highly curved, and tapered to an elongated, sharp point. This makes the weapon slightly slower but more effective and deadly in combat.
+	SAY UNIDENTIFIED_DESC "The long, curved, single-edged blade is characteristic of both the saber and the scimitar, even though their origins lie in different parts of Faerûn. Whereas the saber was intended chiefly for horsemen, mainly due to its versatility, the scimitar has a heavier oriental influence. The 'shamshir', as it was originally called, is larger, more highly curved, and tapered to an elongated, sharp point. This makes the weapon slightly slower but more effective and deadly in combat.
 
 STATISTICS:
 
@@ -5262,7 +5264,7 @@ Weight: 2"
 //HAWKSIGHT +2//
 COPY "rick_bigg_mod/items/OHRSW1H1.itm" "override"
 	SAY NAME1 "Scimitar"
-	SAY UNIDENTIFIED_DESC "The long, curved, single-edged blade is characteristic of both the saber and the scimitar, even though their origins lie in different parts of Faerûn. Whereas the saber was intended chiefly for horsemen, mainly due to its versatility, the scimitar has a heavier oriental influence. The "shamshir," as it was originally called, is larger, more highly curved, and tapered to an elongated, sharp point. This makes the weapon slightly slower but more effective and deadly in combat.
+	SAY UNIDENTIFIED_DESC "The long, curved, single-edged blade is characteristic of both the saber and the scimitar, even though their origins lie in different parts of Faerûn. Whereas the saber was intended chiefly for horsemen, mainly due to its versatility, the scimitar has a heavier oriental influence. The 'shamshir', as it was originally called, is larger, more highly curved, and tapered to an elongated, sharp point. This makes the weapon slightly slower but more effective and deadly in combat.
 
 STATISTICS:
 
@@ -5301,7 +5303,7 @@ Weight: 3"
 //DERVISH CRESCENT +2//
 COPY "rick_bigg_mod/items/BDSW1H08.itm" "override"
 	SAY NAME1 "Scimitar"
-	SAY UNIDENTIFIED_DESC "The long, curved, single-edged blade is characteristic of both the saber and the scimitar, even though their origins lie in different parts of Faerûn. Whereas the saber was intended chiefly for horsemen, mainly due to its versatility, the scimitar has a heavier oriental influence. The "shamshir," as it was originally called, is larger, more highly curved, and tapered to an elongated, sharp point. This makes the weapon slightly slower but more effective and deadly in combat.
+	SAY UNIDENTIFIED_DESC "The long, curved, single-edged blade is characteristic of both the saber and the scimitar, even though their origins lie in different parts of Faerûn. Whereas the saber was intended chiefly for horsemen, mainly due to its versatility, the scimitar has a heavier oriental influence. The 'shamshir', as it was originally called, is larger, more highly curved, and tapered to an elongated, sharp point. This makes the weapon slightly slower but more effective and deadly in combat.
 
 STATISTICS:
 
@@ -5339,7 +5341,7 @@ Weight: 3"
 //TWINKLE +3//
 COPY "rick_bigg_mod/items/SW1H16.itm" "override"
 	SAY NAME1 "Scimitar"
-	SAY UNIDENTIFIED_DESC "The long, curved, single-edged blade is characteristic of both the saber and the scimitar, even though their origins lie in different parts of Faerûn. Whereas the saber was intended chiefly for horsemen, mainly due to its versatility, the scimitar has a heavier oriental influence. The "shamshir," as it was originally called, is larger, more highly curved, and tapered to an elongated, sharp point. This makes the weapon slightly slower but more effective and deadly in combat.
+	SAY UNIDENTIFIED_DESC "The long, curved, single-edged blade is characteristic of both the saber and the scimitar, even though their origins lie in different parts of Faerûn. Whereas the saber was intended chiefly for horsemen, mainly due to its versatility, the scimitar has a heavier oriental influence. The 'shamshir', as it was originally called, is larger, more highly curved, and tapered to an elongated, sharp point. This makes the weapon slightly slower but more effective and deadly in combat.
 
 STATISTICS:
 
@@ -5376,7 +5378,7 @@ Weight: 4"
 //ICINGDEATH +3//
 COPY "rick_bigg_mod/items/SW1H15.itm" "override"
 	SAY NAME1 "Scimitar"
-	SAY UNIDENTIFIED_DESC "The long, curved, single-edged blade is characteristic of both the saber and the scimitar, even though their origins lie in different parts of Faerûn. Whereas the saber was intended chiefly for horsemen, mainly due to its versatility, the scimitar has a heavier oriental influence. The "shamshir," as it was originally called, is larger, more highly curved, and tapered to an elongated, sharp point. This makes the weapon slightly slower but more effective and deadly in combat.
+	SAY UNIDENTIFIED_DESC "The long, curved, single-edged blade is characteristic of both the saber and the scimitar, even though their origins lie in different parts of Faerûn. Whereas the saber was intended chiefly for horsemen, mainly due to its versatility, the scimitar has a heavier oriental influence. The 'shamshir', as it was originally called, is larger, more highly curved, and tapered to an elongated, sharp point. This makes the weapon slightly slower but more effective and deadly in combat.
 
 STATISTICS:
 
@@ -5414,7 +5416,7 @@ Weight: 4"
 //BELM +3//
 COPY "rick_bigg_mod/items/SW1H30.itm" "override"
 	SAY NAME1 "Scimitar"
-	SAY UNIDENTIFIED_DESC "The long, curved, single-edged blade is characteristic of both the saber and the scimitar, even though their origins lie in different parts of Faerûn. Whereas the saber was intended chiefly for horsemen, mainly due to its versatility, the scimitar has a heavier oriental influence. The "shamshir," as it was originally called, is larger, more highly curved, and tapered to an elongated, sharp point. This makes the weapon slightly slower but more effective and deadly in combat.
+	SAY UNIDENTIFIED_DESC "The long, curved, single-edged blade is characteristic of both the saber and the scimitar, even though their origins lie in different parts of Faerûn. Whereas the saber was intended chiefly for horsemen, mainly due to its versatility, the scimitar has a heavier oriental influence. The 'shamshir', as it was originally called, is larger, more highly curved, and tapered to an elongated, sharp point. This makes the weapon slightly slower but more effective and deadly in combat.
 
 STATISTICS:
 
@@ -5451,7 +5453,7 @@ Weight: 2"
 //SOUL REAVER +4//
 COPY "rick_bigg_mod/items/SW2H08.itm" "override"
 	SAY NAME1 "Scimitar"
-	SAY UNIDENTIFIED_DESC "The long, curved, single-edged blade is characteristic of both the saber and the scimitar, even though their origins lie in different parts of Faerûn. Whereas the saber was intended chiefly for horsemen, mainly due to its versatility, the scimitar has a heavier oriental influence. The "shamshir," as it was originally called, is larger, more highly curved, and tapered to an elongated, sharp point. This makes the weapon slightly slower but more effective and deadly in combat.
+	SAY UNIDENTIFIED_DESC "The long, curved, single-edged blade is characteristic of both the saber and the scimitar, even though their origins lie in different parts of Faerûn. Whereas the saber was intended chiefly for horsemen, mainly due to its versatility, the scimitar has a heavier oriental influence. The 'shamshir', as it was originally called, is larger, more highly curved, and tapered to an elongated, sharp point. This makes the weapon slightly slower but more effective and deadly in combat.
 
 STATISTICS:
 
@@ -5490,7 +5492,7 @@ Weight: 2"
 //SPECTRAL BLADE +5//
 COPY "rick_bigg_mod/items/SW1H69.itm" "override"
 	SAY NAME1 "Scimitar"
-	SAY UNIDENTIFIED_DESC "The long, curved, single-edged blade is characteristic of both the saber and the scimitar, even though their origins lie in different parts of Faerûn. Whereas the saber was intended chiefly for horsemen, mainly due to its versatility, the scimitar has a heavier oriental influence. The "shamshir," as it was originally called, is larger, more highly curved, and tapered to an elongated, sharp point. This makes the weapon slightly slower but more effective and deadly in combat.
+	SAY UNIDENTIFIED_DESC "The long, curved, single-edged blade is characteristic of both the saber and the scimitar, even though their origins lie in different parts of Faerûn. Whereas the saber was intended chiefly for horsemen, mainly due to its versatility, the scimitar has a heavier oriental influence. The 'shamshir', as it was originally called, is larger, more highly curved, and tapered to an elongated, sharp point. This makes the weapon slightly slower but more effective and deadly in combat.
 
 STATISTICS:
 
@@ -5552,7 +5554,7 @@ Requires:
 Weight: 6"
 
 	SAY NAME2 "Malakar +2"
-	SAY DESC "This sleek katana radiates magical energy when carried. The Malakar, or "Dueling Steel," was used by a less-than-honorable samurai during duels against other samurai. As if of its own volition, it will swoop down and deflect the slashing attacks of other weapons. It is perfect for the warrior concerned about defense as well as offense.
+	SAY DESC "This sleek katana radiates magical energy when carried. The Malakar, or Dueling Steel, was used by a less-than-honorable samurai during duels against other samurai. As if of its own volition, it will swoop down and deflect the slashing attacks of other weapons. It is perfect for the warrior concerned about defense as well as offense.
 
 STATISTICS:
 
