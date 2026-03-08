@@ -1,100 +1,3 @@
-//CARSOMYR + 5//
-COPY "rick_bigg_mod/items/sw2h10.itm" "override"
-	SAY NAME1 "Two-Handed Sword"
-	SAY UNIDENTIFIED_DESC "The two-handed sword is a derivative of the long sword. Weaponsmiths have always looked for ways to improve existing weapons. In an effort to improve the long sword, the blade was lengthened. Eventually, the handle had to be extended and two hands became necessary to properly swing the sword. The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations.
-
-STATISTICS:
-
-Damage: 2d6 (slashing)
-Speed Factor: 10
-Proficiency Type: Two-handed Sword
-Type: Two-handed
-Requires:
- 14 Strength
-
-Weight: 15"
-
-	SAY NAME2 "Carsomyr +5"
-	SAY DESC "Carsomyr is a weapon of legend, perhaps one of the most powerful blades ever forged on Faerûn, though its origin and history is thought purposefully forgotten so that the sword itself shall never overshadow the importance of the struggles that must be fought today. It is infused with the very essence of virtue and requires as much from any Paladin who would hope to wield it. The evils of the realms must truly stand aside when this weapon is brought to bear, their magic dispelled with a word, steadfastly resisted with ease. Carsomyr also harbors a special distaste for the forces of evil and chaos, and such creatures must fear additional damage from its touch in battle.
-
-STATISTICS:
-
-Equipped abilities:
-– Magic Resistance: +50%
-
-Combat abilities:
-– Dispel Magic at level 30 on each hit
-
-Charge abilities:
-– Dispel Magic at level 20 three times per day
-  Range: 40 ft.
-  Area of Effect: 15-ft. radius
-
-THAC0: +5
-Damage: 2d6+5, +5 extra vs. evil
-Damage type: Slashing
-Speed Factor: 5
-Proficiency Type: Two-handed Sword
-Type: Two-handed
-Requires:
- 14 Strength
-
-Weight: 7"
-
-
-
-
-
-
-//CARSOMYR + 6//
-COPY "rick_bigg_mod/items/sw2h19.itm" "override"
-	SAY NAME1 "Two-Handed Sword"
-	SAY UNIDENTIFIED_DESC "The two-handed sword is a derivative of the long sword. Weaponsmiths have always looked for ways to improve existing weapons. In an effort to improve the long sword, the blade was lengthened. Eventually, the handle had to be extended and two hands became necessary to properly swing the sword. The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations.
-
-STATISTICS:
-
-Damage: 2d6 (slashing)
-Speed Factor: 10
-Proficiency Type: Two-handed Sword
-Type: Two-handed
-Requires:
- 14 Strength
-
-Weight: 15"
-
-	SAY NAME2 "Carsomyr +6"
-	SAY DESC "Even a holy relic as powerful as Carsomyr is made even greater when combined with the Eye of Tyr.
-
-STATISTICS:
-
-Equipped abilities:
-– Magic Resistance: +50%
-
-Combat abilities: 
-– Dispel Magic at level 40 on each hit
-
-Charge abilities:
-– Dispel Magic at level 30 three times per day
-  Range: 40 ft.
-  Area of Effect: 15-ft. radius
-
-THAC0: +6
-Damage: 2d6+6, +6 extra vs. evil
-Damage type: Slashing
-Speed Factor: 4
-Proficiency Type: Two-handed Sword 
-Type: Two-handed
-Requires:
- 14 Strength
-
-Weight: 6"
-
-
-
-
-
-
-
 
 
 //KIEL'S HELMET//
@@ -361,44 +264,6 @@ Requires:
 
 Weight: 15"
 
-
-
-
-//THE SHADOW'S BLADE +3//
-COPY "rick_bigg_mod/items/SW1H10.itm" "override"
-	SAY NAME1 "Short Sword"
-	SAY UNIDENTIFIED_DESC "The short sword is the first type of sword to come into existence. In the simplest of terms, a short sword can be considered a dagger with a blade so long that it can no longer be called a dagger. The term short sword does not exist in sword classifications. However, it has come to be used to describe a double-edged blade about two feet in length. The sword tip is usually pointed, ideal for thrusting.
-
-STATISTICS:
-
-Damage: 1d6 (piercing)
-Speed Factor: 3
-Proficiency Type: Short Sword
-Type: One-handed
-Requires:
- 5 Strength
-
-Weight: 3"
-
-	SAY NAME2 "The Shadow's Blade +3"
-	SAY DESC "The Shadow's Blade was created to be the perfect assassin's tool. It is highly sought after by any who settle differences with a blade, and many that possess it do not do so for long. It can be used only by thieves.
-
-STATISTICS:
-
-Equipped abilities:
-– Move Silently: +15%
-– Hide In Shadows: +15%
-– Backstab Multiplier: +1
-
-THAC0: +3
-Damage: 1d6+3 (piercing)
-Speed Factor: 0
-Proficiency Type: Short Sword
-Type: One-handed
-Requires:
- 5 Strength
-
-Weight: 3"
 
 
 
@@ -849,55 +714,6 @@ Equipped abilities:
 – May only be removed with a Remove Curse spell
 
 Weight: 0 " 
-
-
-
-
-
-
-//BERSERKERING SWORD +3//
-COPY "rick_bigg_mod/items/SW2H03.itm" "override"
-	SAY NAME1 "Two-Handed Sword"
-	SAY UNIDENTIFIED_DESC "The two-handed sword is a derivative of the long sword. Weaponsmiths have always looked for ways to improve existing weapons. In an effort to improve the long sword, the blade was lengthened. Eventually, the handle had to be extended and two hands became necessary to properly swing the sword. The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations.
-
-STATISTICS:
-
-Damage: 2d6 (slashing)
-Speed Factor: 10
-Proficiency Type: Two-handed Sword
-Type: Two-handed
-Requires:
- 14 Strength
-
-Weight: 15"
-
-SAY NAME2 "Berserkering Sword +3"
-	SAY DESC "This sword performs perfectly under every test, save the heat of battle. Upon entering combat, the wielder have a lot o chance to go berserk, killing everything within reach until either calming down or falling unconscious. A very powerful sword, but one must decide whether or not it is worth the risk.
-
-STATISTICS:
-
-Combat abilities:
-– Chance to go berserk 25% every hit (you have the same bonuses as a Berserker Rage, but cannot be controlled).
-
-THAC0: +3
-Damage: 2d6+3 (slashing)
-Speed Factor: 7
-Proficiency Type: Two-handed Sword
-Type: Two-handed
-Requires:
- 14 Strength
-
-Weight: 12" 
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -2336,6 +2152,46 @@ Weight: 3"
 
 
 
+//THE SHADOW'S BLADE +3//
+COPY "rick_bigg_mod/items/SW1H10.itm" "override"
+	SAY NAME1 "Short Sword"
+	SAY UNIDENTIFIED_DESC "The short sword is the first type of sword to come into existence. In the simplest of terms, a short sword can be considered a dagger with a blade so long that it can no longer be called a dagger. The term short sword does not exist in sword classifications. However, it has come to be used to describe a double-edged blade about two feet in length. The sword tip is usually pointed, ideal for thrusting.
+
+STATISTICS:
+
+Damage: 1d6 (piercing)
+Speed Factor: 3
+Proficiency Type: Short Sword
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 3"
+
+	SAY NAME2 "The Shadow's Blade +3"
+	SAY DESC "The Shadow's Blade was created to be the perfect assassin's tool. It is highly sought after by any who settle differences with a blade, and many that possess it do not do so for long. It can be used only by thieves.
+
+STATISTICS:
+
+Equipped abilities:
+– Move Silently: +15%
+– Hide In Shadows: +15%
+– Backstab Multiplier: +1
+
+THAC0: +3
+Damage: 1d6+3 (piercing)
+Speed Factor: 0
+Proficiency Type: Short Sword
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 3"
+
+
+
+
+
 //ARBANE +2//
 COPY "rick_bigg_mod/items/SW1H27.itm" "override"
 	SAY NAME1 "Short Sword"
@@ -2476,6 +2332,45 @@ Requires:
  5 Strength
 
 Weight: 2" 
+
+
+
+//BLACKRAZOR +4//
+COPY "rick_bigg_mod/items/MISCBC.itm" "override"
+	SAY NAME1 "Short Sword"
+	SAY UNIDENTIFIED_DESC "The short sword is the first type of sword to come into existence. In the simplest of terms, a short sword can be considered a dagger with a blade so long that it can no longer be called a dagger. The term short sword does not exist in sword classifications. However, it has come to be used to describe a double-edged blade about two feet in length. The sword tip is usually pointed, ideal for thrusting.
+
+STATISTICS:
+
+Damage: 1d6 (piercing)
+Speed Factor: 3
+Proficiency Type: Short Sword
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 3"
+
+	SAY NAME2 "Blackrazor +4"
+	SAY DESC "This sword radiates evil like a sour odor, and the owner never knows if <PRO_HESHE> wields the weapon or if it wields <PRO_HIMHER>. In addition to its combat abilities, Blackrazor slowly heals its owner with the drained strength of opponents.
+
+STATISTICS:
+
+Combat abilities:
+– With every hit, it has a 25% chance of draining 4 levels from the target and healing the wielder by 20 Hit Points as well as hasting <PRO_HIMHER> for 20 seconds and increasing <PRO_HISHER> Strength by 3 points for 20 seconds
+
+THAC0: +4
+Damage: 1d6+4 (piercing)
+Speed Factor: 1
+Proficiency Type: Short Sword
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 2" 
+
+
+
 
 
 //SWORD OF THE MASK +4//
@@ -4495,7 +4390,7 @@ Combat abilities:
 – Returns to the wielder's hand when thrown
 
 THAC0: +3
-Damage: 1d6+3
+Damage: 1d6+4
 Damage type (melee): Slashing
 Damage type (thrown): Missile
 Speed Factor: 1
@@ -4536,7 +4431,7 @@ Combat abilities:
 – Hit target must save vs. Death or be knocked down and take 2d6 extra damage
 
 THAC0: +4
-Damage: 1d6+4
+Damage: 1d6+5
 Damage type (melee): slashing
 Damage type (thrown): missile
 Speed Factor: 0
@@ -4547,6 +4442,48 @@ Requires:
 
 Weight: 1"
 
+
+
+
+
+//AXE OF THE RUIN +2//
+COPY "rick_bigg_mod/items/TB#AX1.itm" "override"
+	SAY NAME1 "Battle Axe"
+	SAY UNIDENTIFIED_DESC "The most common version of the battle axe is a stout pole about four feet in length with a single-edged, trumpet-shaped blade mounted on one end. This axe, in particular, appears to be very poorly made and slightly smaller than the average battle axe.
+
+STATISTICS:
+
+Damage: 1d8+1 (slashing)
+Speed Factor: 7
+Proficiency Type: Axe
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 6"
+
+	SAY NAME2 "Axe of the Ruin +2"
+	SAY DESC "This wide, heavy axe gives way to jagged teeth near its tip, a serrated edge designed to rip and tear flesh. Little is known of the weapon's origin, but the elaborate grip marked with worn runes hints that it may have been crafted in ancient Unther.
+
+STATISTICS:
+
+Equipped abilities:
+– Critical Hit Chance: +5%
+
+Combat abilities:
+– Deals an extra 2d4 points of slashing damage on a critical hit
+
+STATISTICS:
+
+THAC0: +2
+Damage: 1d8+3 (slashing)
+Speed Factor: 5
+Proficiency Type: Axe
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 10"
 
 
 
@@ -5573,6 +5510,128 @@ Weight: 4"
 
 
 
+
+
+//USUNO'S BLADE +3//
+COPY "rick_bigg_mod/items/SW1H67.itm" "override"
+	SAY NAME1 "Katana"
+	SAY UNIDENTIFIED_DESC "The katana is a single-edged, slightly curved sword that ends with a chisel point. The katana is perhaps one of the finest swords ever made, the steps to its creation a long and secret process that is more art form than anything else. This blade is an important facet of Kara-Turan culture. To touch or wield a samurai's katana is to insult the samurai and to incite his wrath. For a gaijin, or foreigner, to own such a blade is a rare occurrence. Either the gaijin is a greatly honored friend of an important minister, or the gaijin has murdered a samurai.
+
+STATISTICS:
+
+Damage: 1d8 (slashing)
+Speed Factor: 4
+Proficiency Type: Katana
+Type: One-handed
+Requires:
+ 6 Strength
+
+Weight: 6"
+
+	SAY NAME2 "Usuno's Blade +3"
+	SAY DESC "The daughter of a high ranking official within the bureaucratic society of Kara-Tur, Usuno rejected her family's station and carved a legend for herself among the yakuza of the underworld. The blade of this enchanted katana drips acid.
+
+STATISTICS:
+
+Combat abilities: 
+– 20% chance per hit that the target takes 1 extra point of acid damage per round during the next 3 rounds
+
+THAC0: +3
+Damage: 1d8+3, +2 acid
+Speed Factor: 1
+Proficiency Type: Katana
+Type: One-handed
+Requires:
+ 6 Strength
+
+Weight: 2"
+
+
+
+
+
+
+//YAMATO +4//
+COPY "rick_bigg_mod/items/SW1H66.itm" "override"
+	SAY NAME1 "Katana"
+	SAY UNIDENTIFIED_DESC "The katana is a single-edged, slightly curved sword that ends with a chisel point. The katana is perhaps one of the finest swords ever made, the steps to its creation a long and secret process that is more art form than anything else. This blade is an important facet of Kara-Turan culture. To touch or wield a samurai's katana is to insult the samurai and to incite his wrath. For a gaijin, or foreigner, to own such a blade is a rare occurrence. Either the gaijin is a greatly honored friend of an important minister, or the gaijin has murdered a samurai.
+
+STATISTICS:
+
+Damage: 1d8 (slashing)
+Speed Factor: 4
+Proficiency Type: Katana
+Type: One-handed
+Requires:
+ 6 Strength
+
+Weight: 6"
+
+	SAY NAME2 "Yamato +4"
+	SAY DESC "The name of the mighty Wu Jen who fashioned this 'companion sword' is long forgotten. However, the name Yamato, loosely translated, means 'Guardian' or 'Defender'.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +2
+
+THAC0: +4
+Damage: 1d8+4 (slashing)
+Speed Factor: 0
+Proficiency Type: Katana
+Type: One-handed
+Requires:
+ 6 Strength
+
+Weight: 2"
+
+
+
+
+//CELESTIAL FURY +4//
+COPY "rick_bigg_mod/items/SW1H51.itm" "override"
+	SAY NAME1 "Katana"
+	SAY UNIDENTIFIED_DESC "The katana is a single-edged, slightly curved sword that ends with a chisel point. The katana is perhaps one of the finest swords ever made, the steps to its creation a long and secret process that is more art form than anything else. This blade is an important facet of Kara-Turan culture. To touch or wield a samurai's katana is to insult the samurai and to incite his wrath. For a gaijin, or foreigner, to own such a blade is a rare occurrence. Either the gaijin is a greatly honored friend of an important minister, or the gaijin has murdered a samurai.
+
+STATISTICS:
+
+Damage: 1d8 (slashing)
+Speed Factor: 4
+Proficiency Type: Katana
+Type: One-handed
+Requires:
+ 6 Strength
+
+Weight: 6"
+
+	SAY NAME2 "Celestial Fury +4"
+	SAY DESC "Many centuries ago, a trumpet archon named Chin Yi fell in love with a mortal man in Shou Lung and swore to protect him from enemies should he ever ride to war. When that time came, however, Chin Yi's patron goddess Kwan Ying forbade her to intervene, not wishing to contribute to the bloodshed. When Chin Yi's beloved was cut down by a yuan-ti warlord, her grief was terrible and her wrath immediate: Ignoring Kwan Ying's warnings, she flew onto the battlefield and took up her beloved's katana, using the blade to cut down the warlord and all those who served him. She continued the slaughter of the yuan-ti army until Kwan Ying herself appeared before her, arms open and eyes full of sympathy. "If it will stop this slaughter, I will ease your pain and end your suffering."
+
+"I do not wish to end my suffering," replied Chin Yi. "I wish for my fury to sound throughout the ages, now and forever." Wanting to help her servant, but not wishing to unleash such powerful fury on the world, Kwan Ying bound Chin Yi's spirit to the blade of the man she had failed to protect and then hid the weapon in a warrior's tomb. The tomb was later infiltrated and the weapon stolen, and although Chin Yi's cries could no longer be heard through the steel of the blade, her vengeance was as brutal as ever.
+
+STATISTICS:
+
+Combat abilities:
+– Booming Thunder: Hit target must save vs. Spell or be stunned for 1 round
+– Shocking Blow: 5% chance of an extra 20 electrical damage to hit target
+
+Charge abilities:
+– Lightning Strike two times per day
+
+THAC0: +4
+Damage: 1d8+4 (slashing)
+Speed Factor: 0
+Proficiency Type: Katana
+Type: One-handed
+Requires:
+ 6 Strength
+
+Weight: 2"
+
+
+
+
+
 //HINDO'S DOOM +3//
 COPY "rick_bigg_mod/items/SW1H70.itm" "override"
 	SAY NAME1 "Katana"
@@ -5655,6 +5714,143 @@ Requires:
  6 Strength
 
 Weight: 2"
+
+
+
+
+
+
+
+//BERSERKERING SWORD +3//
+COPY "rick_bigg_mod/items/SW2H03.itm" "override"
+	SAY NAME1 "Two-Handed Sword"
+	SAY UNIDENTIFIED_DESC "The two-handed sword is a derivative of the long sword. Weaponsmiths have always looked for ways to improve existing weapons. In an effort to improve the long sword, the blade was lengthened. Eventually, the handle had to be extended and two hands became necessary to properly swing the sword. The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations.
+
+STATISTICS:
+
+Damage: 2d6 (slashing)
+Speed Factor: 10
+Proficiency Type: Two-handed Sword
+Type: Two-handed
+Requires:
+ 14 Strength
+
+Weight: 15"
+
+SAY NAME2 "Berserkering Sword +3"
+	SAY DESC "This sword performs perfectly under every test, save the heat of battle. Upon entering combat, the wielder have a lot o chance to go berserk, killing everything within reach until either calming down or falling unconscious. A very powerful sword, but one must decide whether or not it is worth the risk.
+
+STATISTICS:
+
+Combat abilities:
+– Chance to go berserk 25% every hit (you have the same bonuses as a Berserker Rage, but cannot be controlled).
+
+THAC0: +3
+Damage: 2d6+3 (slashing)
+Speed Factor: 7
+Proficiency Type: Two-handed Sword
+Type: Two-handed
+Requires:
+ 14 Strength
+
+Weight: 12" 
+
+
+
+
+
+
+//CARSOMYR + 5//
+COPY "rick_bigg_mod/items/sw2h10.itm" "override"
+	SAY NAME1 "Two-Handed Sword"
+	SAY UNIDENTIFIED_DESC "The two-handed sword is a derivative of the long sword. Weaponsmiths have always looked for ways to improve existing weapons. In an effort to improve the long sword, the blade was lengthened. Eventually, the handle had to be extended and two hands became necessary to properly swing the sword. The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations.
+
+STATISTICS:
+
+Damage: 2d6 (slashing)
+Speed Factor: 10
+Proficiency Type: Two-handed Sword
+Type: Two-handed
+Requires:
+ 14 Strength
+
+Weight: 15"
+
+	SAY NAME2 "Carsomyr +5"
+	SAY DESC "Carsomyr is a weapon of legend, perhaps one of the most powerful blades ever forged on Faerûn, though its origin and history is thought purposefully forgotten so that the sword itself shall never overshadow the importance of the struggles that must be fought today. It is infused with the very essence of virtue and requires as much from any Paladin who would hope to wield it. The evils of the realms must truly stand aside when this weapon is brought to bear, their magic dispelled with a word, steadfastly resisted with ease. Carsomyr also harbors a special distaste for the forces of evil and chaos, and such creatures must fear additional damage from its touch in battle.
+
+STATISTICS:
+
+Equipped abilities:
+– Magic Resistance: +50%
+
+Combat abilities:
+– Dispel Magic at level 30 on each hit
+
+Charge abilities:
+– Dispel Magic at level 20 three times per day
+  Range: 40 ft.
+  Area of Effect: 15-ft. radius
+
+THAC0: +5
+Damage: 2d6+5, +5 extra vs. evil
+Damage type: Slashing
+Speed Factor: 5
+Proficiency Type: Two-handed Sword
+Type: Two-handed
+Requires:
+ 14 Strength
+
+Weight: 7"
+
+
+
+
+
+
+//CARSOMYR + 6//
+COPY "rick_bigg_mod/items/sw2h19.itm" "override"
+	SAY NAME1 "Two-Handed Sword"
+	SAY UNIDENTIFIED_DESC "The two-handed sword is a derivative of the long sword. Weaponsmiths have always looked for ways to improve existing weapons. In an effort to improve the long sword, the blade was lengthened. Eventually, the handle had to be extended and two hands became necessary to properly swing the sword. The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations.
+
+STATISTICS:
+
+Damage: 2d6 (slashing)
+Speed Factor: 10
+Proficiency Type: Two-handed Sword
+Type: Two-handed
+Requires:
+ 14 Strength
+
+Weight: 15"
+
+	SAY NAME2 "Carsomyr +6"
+	SAY DESC "Even a holy relic as powerful as Carsomyr is made even greater when combined with the Eye of Tyr.
+
+STATISTICS:
+
+Equipped abilities:
+– Magic Resistance: +50%
+
+Combat abilities: 
+– Dispel Magic at level 40 on each hit
+
+Charge abilities:
+– Dispel Magic at level 30 three times per day
+  Range: 40 ft.
+  Area of Effect: 15-ft. radius
+
+THAC0: +6
+Damage: 2d6+6, +6 extra vs. evil
+Damage type: Slashing
+Speed Factor: 4
+Proficiency Type: Two-handed Sword 
+Type: Two-handed
+Requires:
+ 14 Strength
+
+Weight: 6"
+
 
 
 
