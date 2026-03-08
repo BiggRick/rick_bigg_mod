@@ -1,0 +1,20 @@
+DEFINE_PATCH_FUNCTION change_itm_icon
+    // 1 = melee
+	// 2 = ranged
+	// 3 = magical
+	// 4 = launcher
+	INT_VAR type = 1
+	STR_VAR icon_name = ""
+BEGIN
+    READ_LONG   0x64  head_off
+    READ_SHORT  0x68  num_head
+	PATCH_IF num_head > 0 THEN BEGIN
+	  FOR (i=0; i<num_head; i=i+1) BEGIN
+		  READ_BYTE head_off + ((i * 56)) "head_type"
+		  
+		  PATCH_IF head_type = type BEGIN
+			WRITE_EVALUATED_ASCII head_off + ((i * 56)) + 4 "%icon_name%" #8
+		  END
+	  END
+	END
+END
