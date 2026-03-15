@@ -1,0 +1,92 @@
+
+
+//THE EYES OF TRUTH//
+COPY "rick_bigg_mod/items/HELM05.itm" "override"
+	SAY NAME1 "Helmet"
+	SAY DESC "This class of open-face helmet, made of reinforced leather or metal, covers most of the head save the face and neck. These helmets commonly provide protection for the nose. 
+
+STATISTICS:
+
+Equipped abilities:
+– Protects against critical hits
+
+Weight: 2"
+
+	SAY NAME2 "The Eyes of Truth"
+	SAY DESC "Helm of Infravision: The Eyes of Truth 
+Being a scavenger of a sort, Babette Maelestrom had this helm created to aid her in her dungeon excursions. She would later attribute her gathered wealth solely to its power, though likely it was as much her keen eyes as anything.
+
+STATISTICS:
+
+Equipped abilities:
+- +1 THAC0
+– Infravision up to 120 ft.
+– Protects against critical hits
+
+Weight: 2"
+
+
+
+
+
+
+
+
+//HELM OF BALDURAN//
+COPY "rick_bigg_mod/items/HELM07.itm" "override"
+	SAY NAME1 "Helmet"
+	SAY UNIDENTIFIED_DESC "This class of open-face helmet, made of reinforced leather or metal, covers most of the head save the face and neck. These helmets commonly provide protection for the nose. 
+
+STATISTICS:
+
+Equipped abilities:
+– Protects against critical hits
+
+Weight: 2"
+
+	SAY NAME2 "Helm of Balduran"
+	SAY DESC "The fabled helm of Balduran, legendary founder of Baldur's Gate, has long been rumored to wield powerful protective magic. The exact nature of this magic, however, has not yet been determined.
+
+STATISTICS:
+
+Equipped abilities:
+– THAC0: +1
+– Armor Class: +1
+– Saving Throws: +1
+– Hit Points: +10
+- Infravision
+– Protects against critical hits
+
+Weight: 1"
+
+
+
+
+
+//KIEL'S HELMET//
+COPY "rick_bigg_mod/items/HELM14.itm" "override"
+	SAY NAME1 "Helm"
+	SAY UNIDENTIFIED_DESC "The sturdy, steel-banded helm is dented and scarred from heavy use. Dwarven runes are set into the metal above the brow.
+
+STATISTICS:
+
+Equipped abilities:
+– Protects against critical hits
+
+Weight: 2"
+
+	SAY NAME2 "Kiel's Helmet"
+	SAY DESC "This is the helmet worn by Kiel the Legion Killer, firstborn son of Durlag Trollkiller and Clan-prince of his father's ill-fated tower. It is said that anyone who wears it is granted immunity to all forms of fear and panic, be their origins natural or magical.
+
+STATISTICS:
+
+Equipped abilities:
+– Protects against critical hits
+– Protects against all forms of panic and boosts morale
+- +1 AC
+
+Weight: 2
+"
+
+
+

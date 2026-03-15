@@ -315,7 +315,7 @@ COPY_EXISTING "laurel.cre" "override"
 		STR_VAR proficiency = "PROFICIENCYSWORDANDSHIELD"
 	END
 	REMOVE_CRE_ITEM "sw1h01"
-	ADD_CRE_ITEM "sw1h02" #1 #0 #0 ~~ ~WEAPON~ EQUIP
+	ADD_CRE_ITEM "sw1h02" #1 #0 #0 ~NONE~ ~WEAPON~ EQUIP
 	
 	
 COPY_EXISTING "nevill.cre" "override"
@@ -479,7 +479,7 @@ COPY_EXISTING "canto.cre" "override"
 		STR_VAR proficiency = "PROFICIENCYSINGLEWEAPON"
 	END
 	REMOVE_CRE_ITEM "sw1h04"
-	ADD_CRE_ITEM "sw1h05" #1 #0 #0 ~~ ~WEAPON~ EQUIP
+	ADD_CRE_ITEM "sw1h05" #1 #0 #0 ~NONE~ ~WEAPON~ EQUIP
 	
 COPY_EXISTING "arghai.cre" "override"
 	WRITE_BYTE 0x234 7
@@ -589,7 +589,7 @@ COPY_EXISTING "berrun.cre" "override"
 		STR_VAR proficiency = "PROFICIENCYSPEAR"
 	END
 	REMOVE_CRE_ITEM "sper01"
-	ADD_CRE_ITEM "sper02" #1 #0 #0 ~~ ~WEAPON~ EQUIP
+	ADD_CRE_ITEM "sper02" #1 #0 #0 ~NONE~ ~WEAPON~ EQUIP TWOHANDED
 	
 COPY_EXISTING "nalin.cre" "override"
 	WRITE_BYTE 0x234 8
