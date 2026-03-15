@@ -1,0 +1,274 @@
+<<<<<<<< .../rick_bigg_mod/empty_file
+>>>>>>>>
+
+COPY ~.../rick_bigg_mod/empty_file~ ~weidu_external/rick_bigg_mod/effects.txt~
+
+DEFINE_PATCH_MACRO decode_ids BEGIN
+	PATCH_MATCH ~%value2%~
+		WITH 2 BEGIN
+			LOOKUP_IDS_SYMBOL_OF_INT type ~EA~ value1
+		END
+		3 BEGIN
+			LOOKUP_IDS_SYMBOL_OF_INT type ~GENERAL~ value1
+		END
+		4 BEGIN
+			LOOKUP_IDS_SYMBOL_OF_INT type ~RACE~ value1
+		END
+		5 BEGIN
+			LOOKUP_IDS_SYMBOL_OF_INT type ~CLASS~ value1
+		END
+		6 BEGIN
+			LOOKUP_IDS_SYMBOL_OF_INT type ~SPECIFIC~ value1
+		END
+		7 BEGIN
+			LOOKUP_IDS_SYMBOL_OF_INT type ~GENDER~ value1
+		END
+		8 BEGIN
+			LOOKUP_IDS_SYMBOL_OF_INT type ~ALIGNMEN~ value1
+		END
+		9 BEGIN
+			LOOKUP_IDS_SYMBOL_OF_INT type ~KIT~ value1
+		END
+		DEFAULT
+			SPRINT type ~file %value2% target %value1%~
+	END
+END
+
+DEFINE_PATCH_MACRO decode_damage_type BEGIN
+	READ_SHORT 0x22 ntype
+	PATCH_MATCH ~%ntype%~
+		WITH 0 BEGIN
+			SPRINT damagetype ~crushing~
+		END
+		1 BEGIN
+			SPRINT damagetype ~acid~
+		END
+		2 BEGIN
+			SPRINT damagetype ~cold~
+		END
+		4 BEGIN
+			SPRINT damagetype ~electricity~
+		END
+		8 BEGIN
+			SPRINT damagetype ~fire~
+		END
+		16 BEGIN
+			SPRINT damagetype ~piercing~
+		END
+		32 BEGIN
+			SPRINT damagetype ~poison~
+		END
+		64 BEGIN
+			SPRINT damagetype ~magic~
+		END
+		128 BEGIN
+			SPRINT damagetype ~missile~
+		END
+		256 BEGIN
+			SPRINT damagetype ~slashing~
+		END
+		512 BEGIN
+			SPRINT damagetype ~magicfire~
+		END
+		1024 BEGIN
+			SPRINT damagetype ~magiccold~
+		END
+		2048 BEGIN
+			SPRINT damagetype ~stunning~
+		END
+		DEFAULT
+			SPRINT damagetype ~type %ntype%~
+	END
+END
+
+DEFINE_PATCH_MACRO decode_damage BEGIN
+	READ_SHORT 0x1c bonus
+	PATCH_IF bonus = 0 BEGIN
+		SPRINT damage ~%ndice%d%tdice%~
+	END ELSE PATCH_IF ndice = 0 BEGIN
+		SPRINT damage ~%bonus%~
+	END ELSE BEGIN
+		SPRINT damage ~%ndice%d%tdice%+%bonus%~
+	END
+END
+
+COPY_EXISTING_REGEXP ~^.*\.eff$~ ~override~
+	READ_LONG  0x10 opcode
+	READ_LONG  0x14 ntarget
+	READ_LONG  0x1c value1
+	READ_LONG  0x20 value2
+	READ_LONG  0x24 ntiming
+	READ_LONG  0x28 duration
+	READ_SHORT 0x2c prob1
+	READ_SHORT 0x2e prob2
+	READ_LONG  0x38 ndice
+	READ_LONG  0x3c tdice
+	READ_LONG  0x40 nsave
+	READ_LONG  0x44 savebonus
+	READ_LONG  0x5c nresistance
+	READ_LONG  0x60 value3
+	
+	TEXT_SPRINT save ~save %nsave%~
+	TEXT_SPRINT resistance ~resistance %nresistance%~
+	TEXT_SPRINT chance ~probability: %prob2%-%prob1%~
+	
+	PATCH_MATCH ~%ntarget%~
+		WITH 0 BEGIN
+			TEXT_SPRINT target "Target none"
+		END
+		1 BEGIN
+			TEXT_SPRINT target "Target self"
+		END
+		2 BEGIN
+			TEXT_SPRINT target "Target preset target"
+		END
+		3 BEGIN
+			TEXT_SPRINT target "Target party"
+		END
+		4 BEGIN
+			TEXT_SPRINT target "Target everyone"
+		END
+		5 BEGIN
+			TEXT_SPRINT target "Target everyone except party"
+		END
+		6 BEGIN
+			TEXT_SPRINT target "Target caster group"
+		END
+		7 BEGIN
+			TEXT_SPRINT target "Target target group"
+		END
+		8 BEGIN
+			TEXT_SPRINT target "Target everyone except self"
+		END
+		9 BEGIN
+			TEXT_SPRINT target "Target original caster"
+		END
+		
+		DEFAULT
+			SPRINT target ~target %ntarget%~
+	END
+
+	PATCH_MATCH ~%ntiming%~
+		WITH 0 BEGIN
+			TEXT_SPRINT timing "Instant/limited %duration% seconds"
+		END
+		1 BEGIN
+			TEXT_SPRINT timing "Instant/Until death"
+		END
+		2 BEGIN
+			TEXT_SPRINT timing "Instant/While equipped"
+		END
+		3 BEGIN
+			TEXT_SPRINT timing "Delay/limited (after %duration% seconds for %duration% seconds)"
+		END
+		4 BEGIN
+			TEXT_SPRINT timing "Delay/permanent (after %duration% seconds)"
+		END
+		5 BEGIN
+			TEXT_SPRINT timing "Delay/while equipped (after %duration% seconds)"
+		END
+		6 BEGIN
+			TEXT_SPRINT timing "Delay/limited (after %duration% ticks for %duration% ticks)"
+		END
+		7 BEGIN
+			TEXT_SPRINT timing "Permanent after %duration% ticks"
+		END
+		8 BEGIN
+			TEXT_SPRINT timing "Delay/while equipped (after %duration% ticks)"
+		END
+		9 BEGIN
+			TEXT_SPRINT timing "Instant/Permanent"
+		END
+		10 BEGIN
+			TEXT_SPRINT timing "Instant/limited %duration% ticks"
+		END
+		4096 BEGIN
+			TEXT_SPRINT timing "%duration% ticks after game start"
+		END
+		DEFAULT
+			TEXT_SPRINT timing ~timing %ntiming% %duration%~
+	END
+
+	SPRINT save ~~
+	PATCH_IF nsave & BIT24 BEGIN
+		SPRINT save ~%save%bypass mirror image, ~
+		nsave = nsave & ` BIT24
+	END
+	PATCH_MATCH ~%nsave%~
+		WITH 0 BEGIN
+			TEXT_SPRINT save ~%save%no save~
+		END
+		1 BEGIN
+			TEXT_SPRINT save "%save%save vs spell"
+		END
+		2 BEGIN
+			TEXT_SPRINT save "%save%save vs breath"
+		END
+		4 BEGIN
+			TEXT_SPRINT save "%save%save vs paralyze/poison/death"
+		END
+		8 BEGIN
+			TEXT_SPRINT save "%save%save vs rod/staff/wand"
+		END
+		16 BEGIN
+			TEXT_SPRINT save "%save%save vs petry/polymorph"
+		END
+		DEFAULT
+			TEXT_SPRINT save ~save %nsave%~
+	END
+	PATCH_IF savebonus >= 0 AND nsave != 0 BEGIN
+		SPRINT save ~%save% at +%savebonus%~
+	END ELSE PATCH_IF nsave != 0 BEGIN
+		SPRINT save ~%save% at %savebonus%~
+	END
+	
+
+	PATCH_IF nresistance = 0 BEGIN
+		TEXT_SPRINT resistance ~No dispel / bypass MR~
+	END ELSE BEGIN
+		TEXT_SPRINT resistance ~~
+		PATCH_IF nresistance & BIT0 BEGIN
+			TEXT_SPRINT resistance ~%resistance%dispellable, ~
+			nresistance = nresistance & ` BIT0
+		END ELSE BEGIN
+			TEXT_SPRINT resistance ~%resistance%not dispellable, ~
+		END
+		PATCH_IF nresistance & BIT1 BEGIN
+			TEXT_SPRINT resistance ~%resistance%bypass MR, ~
+			nresistance = nresistance & ` BIT1
+		END ELSE BEGIN
+			TEXT_SPRINT resistance ~%resistance%not bypass MR, ~
+		END
+		PATCH_IF nresistance BEGIN
+			TEXT_SPRINT nresistance ~%resistance%flags %nresistance%~
+		END
+	END
+	
+	TEXT_SPRINT attributes ~[%target%] [%timing%] [%save%] [%resistance%] [%chance%]~
+
+	TEXT_SPRINT description ~~
+	PATCH_MATCH opcode
+		WITH 12 BEGIN
+			LAUNCH_PATCH_MACRO ~decode_damage_type~
+			LAUNCH_PATCH_MACRO ~decode_damage~
+			
+			TEXT_SPRINT description ~%SOURCE_FILE%: %damage% %damagetype% damage - [%target%] [%save%] [%resistance%] [%chance%]~
+		END
+		178 BEGIN
+			LAUNCH_PATCH_MACRO ~decode_ids~
+			TEXT_SPRINT description ~%SOURCE_FILE%: Thac0 bonus %value3% vs %type% - %attributes%~
+		END
+		179 BEGIN
+			LAUNCH_PATCH_MACRO ~decode_ids~
+			TEXT_SPRINT description ~%SOURCE_FILE%: Damage bonus %value3% vs %type% - %attributes%~
+		END
+		DEFAULT
+			// nothing
+	END
+	
+	PATCH_IF ~%description%~ STRING_COMPARE ~~ BEGIN
+		INNER_ACTION BEGIN
+			APPEND_OUTER ~weidu_external/rick_bigg_mod/effects.txt~ ~%description%~
+		END
+	END
+BUT_ONLY

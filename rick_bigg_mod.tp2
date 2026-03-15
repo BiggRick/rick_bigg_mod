@@ -9,21 +9,21 @@ VERSION ~0.0.1~
 ALWAYS
 
   ACTION_IF !(GAME_IS ~eet~) BEGIN
-	FAIL @100000001
+	FAIL ~This mod only supports Enhanced Edition Trilogy~
   END
 
   ACTION_IF !(MOD_IS_INSTALLED ~SPELL_REV/SETUP-SPELL_REV.TP2~ 0 ) BEGIN
-	FAIL @100000002
+	FAIL "This mod requires Spell Revisions to be installed"
   END
 
   // On EE games, convert tra files to utf-8 so that games don't crash for non-English
   ACTION_IF NOT VARIABLE_IS_SET cd_always THEN BEGIN
     OUTER_SET cd_always = 1
     
-    ACTION_DEFINE_ARRAY cdnoconvert BEGIN setup END // List of tra files that contain ONLY strings for the WeiDU installer and NOT game content
-    ACTION_DEFINE_ARRAY cdreload BEGIN descriptions items_description END // List of tra files that contain strings used for game content that get converted in the next step
+//    ACTION_DEFINE_ARRAY cdnoconvert BEGIN setup END // List of tra files that contain ONLY strings for the WeiDU installer and NOT game content
+//    ACTION_DEFINE_ARRAY cdreload BEGIN descriptions items_description END // List of tra files that contain strings used for game content that get converted in the next step
     
-    LAF HANDLE_CHARSETS INT_VAR infer_charset = 1 STR_VAR tra_path = EVAL ~%MOD_FOLDER%/lang~ noconvert_array = cdnoconvert reload_array = cdreload out_path = "weidu_external/rick_bigg_mod/tra" END
+//    LAF HANDLE_CHARSETS INT_VAR infer_charset = 1 STR_VAR tra_path = EVAL ~%MOD_FOLDER%/lang~ noconvert_array = cdnoconvert reload_array = cdreload out_path = "weidu_external/rick_bigg_mod/tra" END
   END
 END
 
@@ -32,27 +32,31 @@ END
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-LANGUAGE ~English~
-         ~english~
-         ~rick_bigg_mod/lang/english/descriptions.tra~
-         ~rick_bigg_mod/lang/english/items_descriptions.tra~
-         ~rick_bigg_mod/lang/english/setup.tra~
+// LANGUAGE ~English~
+//          ~english~
+//          ~rick_bigg_mod/lang/english/descriptions.tra~
+//          ~rick_bigg_mod/lang/english/items_descriptions.tra~
+//          ~rick_bigg_mod/lang/english/setup.tra~
 
-LANGUAGE ~Italian~
-         ~italian~
-         ~rick_bigg_mod/lang/italian/descriptions.tra~
-         ~rick_bigg_mod/lang/italian/items_descriptions.tra~
-         ~rick_bigg_mod/lang/italian/setup.tra~
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-BEGIN @100000000
+BEGIN ~Rick & Bigg Mod~
 DESIGNATED 100
 
-// SOD - be - gone
+INCLUDE ~rick_bigg_mod/lib/rick_bigg_mod.tpa~
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+BEGIN ~Siege of Dragonspear be gone~
+DESIGNATED 200
 COPY_EXISTING ~BDSODTRN.BCS~ ~override~
     DECOMPILE_AND_PATCH BEGIN
         REPLACE_TEXTUALLY ~StartMovie("SODCIN01")~ ~~
@@ -61,30 +65,16 @@ COPY_EXISTING ~BDSODTRN.BCS~ ~override~
 
 
 
-COPY ~rick_bigg_mod/copy~ ~override~
 
-COPY_EXISTING ~racetext.2da~ ~override~
-              ~bgractxt.2da~ ~override~
-              ~sodrace.2da~  ~override~
-	SET_2DA_ENTRY_LATER racetext 2 3 ( RESOLVE_STR_REF ( @200000001 ))
-	SET_2DA_ENTRY_LATER racetext 3 3 ( RESOLVE_STR_REF ( @200000002 ))
-	SET_2DA_ENTRY_LATER racetext 4 3 ( RESOLVE_STR_REF ( @200000003 ))
-	SET_2DA_ENTRY_LATER racetext 5 3 ( RESOLVE_STR_REF ( @200000004 ))
-	SET_2DA_ENTRY_LATER racetext 6 3 ( RESOLVE_STR_REF ( @200000005 ))
-	SET_2DA_ENTRY_LATER racetext 7 3 ( RESOLVE_STR_REF ( @200000006 ))
-	
-	SET_2DA_ENTRIES_NOW racetext 4
-	PRETTY_PRINT_2DA
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+BEGIN ~List EFF files~
+DESIGNATED 999
+NO_LOG_RECORD
 
-COPY_EXISTING ~weapprof.2da~ ~override~
-	SET_2DA_ENTRY_LATER weapprof 29 3 ( RESOLVE_STR_REF ( @200000007 ))
-	SET_2DA_ENTRY_LATER weapprof 30 3 ( RESOLVE_STR_REF ( @200000008 ))
-	SET_2DA_ENTRY_LATER weapprof 31 3 ( RESOLVE_STR_REF ( @200000009 ))
-	SET_2DA_ENTRY_LATER weapprof 32 3 ( RESOLVE_STR_REF ( @200000010 ))
-	
-	SET_2DA_ENTRIES_NOW weapprof 6
-	PRETTY_PRINT_2DA
-
-INCLUDE ~rick_bigg_mod/lib/items.tpa~
-INCLUDE ~rick_bigg_mod/lib/spells.tpa~
-INCLUDE ~rick_bigg_mod/lib/creatures.tpa~
+SILENT
+INCLUDE ~rick_bigg_mod/lib/debug_eff_files.tpa~
+VERBOSE
+AT_NOW ~weidu_external/rick_bigg_mod/effects.txt~
