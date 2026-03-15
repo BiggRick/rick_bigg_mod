@@ -1,0 +1,199 @@
+//DEFENDER OF EASTHEAVEN +4//
+COPY "rick_bigg_mod/items/WAFLAIL.itm" "override"
+	SAY NAME1 "Flail"
+	SAY UNIDENTIFIED_DESC "The flail is a sturdy wooden handle attached to an iron rod, a wooden rod with spikes, or a spiked iron ball. Between the handle and its implement is either a hinge or chain link. The weapon was originally used as a tool for threshing grain.
+
+STATISTICS:
+
+Damage: 2d4+1 (crushing)
+Speed Factor: 7
+Proficiency Type: Flail/Morning Star
+Type: One-handed
+Requires:
+ 13 Strength
+
+Weight: 15"
+
+	SAY NAME2 "Defender of Eastheaven +4"
+	SAY DESC "This flail was created a century ago to commemorate the defeat of the devil Belhifet. It was meant to always remain within the town of Easthaven to remind the people of the great evil that had been barely defeated. 
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +2
+– +10% resistance to slashing, piercing, and crushing damage
+
+THAC0: +4
+Damage: 2d4+5 (crushing)
+Speed Factor: 4
+Proficiency Type: Flail/Morning Star
+Type: One-handed
+Requires:
+ 13 Strength
+
+Weight: 11"
+
+
+
+
+
+
+//FLAIL OF AGES +3//
+COPY "rick_bigg_mod/items/BLUN14.itm" "override"
+	SAY NAME1 "Flail"
+	SAY UNIDENTIFIED_DESC "The flail is a sturdy wooden handle attached to an iron rod, a wooden rod with spikes, or a spiked iron ball. Between the handle and its implement is either a hinge or chain link. The weapon was originally used as a tool for threshing grain.
+
+STATISTICS:
+
+Damage: 2d4+1 (crushing)
+Speed Factor: 7
+Proficiency Type: Flail/Morning Star
+Type: One-handed
+Requires:
+ 13 Strength
+
+Weight: 15"
+
+	SAY NAME2 "Flail of Ages +3"
+	SAY DESC "This flail has been in the care of Lord de'Arnise for some time, a relic of his adventuring youth. It has been kept disassembled, the individual pieces stored in separate locations, and only used in the direst of emergencies. Lord de'Arnise was likely concerned about the powerful magic that the weapon radiated when compiled, and rightfully so. A trail of destruction has followed it through history, leading straight back to the original owners. The flail was the creation of the warlike rakshasa, a race of vengeful spirits that crave human meat, and used as an adaptable weapon that could suit any battle. During a particularly violent hunt, the flail was lost, only to be returned when they used their affinity for magic to locate its powerful aura. They discovered that the weapon had found its way into the hands of a great human warrior, and the battle that followed was truly splendid. They have since used the item as bait countless times, 'losing' it again and again. Powerful items gravitate toward powerful people, and powerful people yield the most glorious battles.
+
+STATISTICS:
+
+Combat abilities:
+– 33% chance of slowing target for 20 seconds
+- Magic Resistance: +5%
+
+THAC0: +3
+Damage: 2d4+4, +1 acid damage, +1 cold damage, +1 fire damage
+Damage type: Crushing
+Speed Factor: 4
+Proficiency Type: Flail/Morning Star
+Type: One-handed
+Requires:
+ 13 Strength
+
+Weight: 10"
+
+
+
+
+//FLAIL OF AGES +4//
+COPY "rick_bigg_mod/items/BLUN30C.itm" "override"
+	SAY NAME1 "Flail"
+	SAY UNIDENTIFIED_DESC "The flail is a sturdy wooden handle attached to an iron rod, a wooden rod with spikes, or a spiked iron ball. Between the handle and its implement is either a hinge or chain link. The weapon was originally used as a tool for threshing grain.
+
+STATISTICS:
+
+Damage: 2d4+1 (crushing)
+Speed Factor: 7
+Proficiency Type: Flail/Morning Star
+Type: One-handed
+Requires:
+ 13 Strength
+
+Weight: 15"
+
+	SAY NAME2 "Flail of Ages +4"
+	SAY DESC "This four-headed flail causes fire, cold, acid, and poison damage. If the fifth head for the Flail of Ages could be found, it would make this awesome weapon even more powerful.
+
+STATISTICS:
+
+Combat abilities:
+– 33% chance each hit that target will be slowed for 20 seconds
+- Magic Resistance: +10%
+
+THAC0: +4
+Damage: 2d4+5, +1 fire damage, +1 cold damage, +1 acid damage, +1 poison damage
+Damage type: Crushing
+Speed Factor: 3
+Proficiency Type: Flail/Morning Star
+Type: One-handed
+Requires:
+ 13 Strength
+
+Weight: 9"
+
+
+
+
+
+
+//FLAIL OF AGES +4//
+COPY "rick_bigg_mod/items/BLUN30D.itm" "override"
+	SAY NAME1 "Flail"
+	SAY UNIDENTIFIED_DESC "The flail is a sturdy wooden handle attached to an iron rod, a wooden rod with spikes, or a spiked iron ball. Between the handle and its implement is either a hinge or chain link. The weapon was originally used as a tool for threshing grain.
+
+STATISTICS:
+
+Damage: 2d4+1 (crushing)
+Speed Factor: 7
+Proficiency Type: Flail/Morning Star
+Type: One-handed
+Requires:
+ 13 Strength
+
+Weight: 15"
+
+	SAY NAME2 "Flail of Ages +4"
+	SAY DESC "This four-headed flail causes fire, cold, acid, and poison damage. If the fifth head for the Flail of Ages could be found, it would make this awesome weapon even more powerful.
+
+STATISTICS:
+
+Combat abilities:
+– 33% chance each hit that target will be slowed for 20 seconds
+- Magic Resistance: +10%
+
+THAC0: +4
+Damage: 2d4+5, +1 fire damage, +1 cold damage, +1 acid damage, +1 electrical damage
+Damage type: Crushing
+Speed Factor: 3
+Proficiency Type: Flail/Morning Star
+Type: One-handed
+Requires:
+ 13 Strength
+
+Weight: 9"
+
+
+
+
+
+
+//FLAIL OF AGES +5//
+COPY "rick_bigg_mod/items/BLUN30.itm" "override"
+	SAY NAME1 "Flail"
+	SAY UNIDENTIFIED_DESC "The flail is a sturdy wooden handle attached to an iron rod, a wooden rod with spikes, or a spiked iron ball. Between the handle and its implement is either a hinge or chain link. The weapon was originally used as a tool for threshing grain.
+
+STATISTICS:
+
+Damage: 2d4+1 (crushing)
+Speed Factor: 7
+Proficiency Type: Flail/Morning Star
+Type: One-handed
+Requires:
+ 13 Strength
+
+Weight: 15"
+
+	SAY NAME2 "Flail of Ages +5"
+	SAY DESC "With the addition of the fifth and final head to this weapon created by the evil rakshasa race, the true potential of the Flail of Ages is finally realized.
+
+STATISTICS:
+
+Equipped abilities:
+– Magic Resistance: +10%
+– Free Action
+
+Combat abilities: 
+– 33% chance each hit that target will be slowed for 20 seconds
+
+THAC0: +5
+Damage: 2d4+6, +2 acid damage, +2 cold damage, +2 fire damage, +2 poison damage, +2 electrical damage
+Damage type: Crushing
+Speed Factor: 2
+Proficiency Type: Flail/Morning Star
+Type: One-handed
+Requires:
+ 13 Strength
+
+Weight: 8"

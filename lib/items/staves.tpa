@@ -1,0 +1,152 @@
+//STAFF OF STRIKING +2 - 5000mo//
+COPY "rick_bigg_mod/items/STAF05.itm" "override"
+	SAY NAME1 "Staff"
+	SAY UNIDENTIFIED_DESC "The simplest and humblest of staff weapons, the quarterstaff is a length of wood ranging six to nine feet in length. High-quality quarterstaves are made of stout oak and are shod with metal at both ends. The quarterstaff must be wielded with both hands.
+
+STATISTICS:
+
+Damage: 1d6 (crushing)
+Speed Factor: 4
+Proficiency Type: Quarterstaff
+Type: Two-handed
+Requires:
+ 5 Strength
+
+Weight: 4"
+
+	SAY NAME2 "Staff of Striking +2"
+	SAY DESC "Staves of Striking are made by the gold elves of Drelagara on Evermeet. The staves have a life of their own and jump to attack in their bearer's hands. The elven craftsmen rarely sell them to other races, but these powerful melee weapons do surface occasionally in Faerûn.
+	
+Equipped abilities:
+– Set attacks per round to 2	
+	
+STATISTICS:
+
+THAC0: +2
+Damage: 1d6+2 (crushing)
+Speed Factor: 1
+Proficiency Type: Quarterstaff
+Type: Two-handed
+Requires:
+ 5 Strength
+
+Weight: 4"
+
+
+
+
+//STAFF SPEAR +2 - 3500mo//
+COPY "rick_bigg_mod/items/STAF07.itm" "override"
+	SAY NAME1 "Staff"
+	SAY UNIDENTIFIED_DESC "The simplest and humblest of staff weapons, the quarterstaff is a length of wood ranging six to nine feet in length. High-quality quarterstaves are made of stout oak and are shod with metal at both ends. The quarterstaff must be wielded with both hands.
+
+STATISTICS:
+
+Damage: 1d6 (crushing)
+Speed Factor: 4
+Proficiency Type: Quarterstaff
+Type: Two-handed
+Requires:
+ 5 Strength
+
+Weight: 4"
+
+	SAY NAME2 "Staff Spear +2"
+	SAY DESC "When this seemingly ordinary quarterstaff is examined magically, it has an aura of alteration. Upon command, a long sharp spear blade will shoot forth from its upper end, making the staff into a spear. Likely made by a wizard or priest hoping to increase their melee abilities, it is usable by anybody capable of handling a staff.
+
+STATISTICS:
+
+THAC0: +2
+Damage: 1d8+2 (piercing)
+Speed Factor: 4
+Proficiency Type: Quarterstaff
+Type: Two-handed
+Requires:
+ 5 Strength
+"
+
+
+
+
+//STAFF MACE +2 - 3500mo//
+COPY "rick_bigg_mod/items/STAF06.itm" "override"
+	SAY NAME1 "Staff"
+	SAY UNIDENTIFIED_DESC "The simplest and humblest of staff weapons, the quarterstaff is a length of wood ranging six to nine feet in length. High-quality quarterstaves are made of stout oak and are shod with metal at both ends. The quarterstaff must be wielded with both hands.
+
+STATISTICS:
+
+Damage: 1d6 (crushing)
+Speed Factor: 4
+Proficiency Type: Quarterstaff
+Type: Two-handed
+Requires:
+ 5 Strength
+
+Weight: 4"
+
+	SAY NAME2 "Staff Mace +2"
+	SAY DESC "This weapon appears to be a normal large walking staff, but it has a faint aura of alteration magic. Uttering the command word causes the staff to assume the attributes of a mace, allowing it to be wielded with one hand. This was likely designed for Clerics or Druids, though that does not preclude use by most others.
+
+STATISTICS:
+
+THAC0: +2
+Damage: 2d4+2 (crushing)
+Speed Factor: 2
+Proficiency Type: Quarterstaff
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 4
+"
+
+
+
+
+//STAFF OF THE WOODLANDS +5 - 20000mo//
+COPY "rick_bigg_mod/items/STAF14.itm" "override"
+	SAY NAME1 "Staff"
+	SAY UNIDENTIFIED_DESC "The simplest and humblest of staff weapons, the quarterstaff is a length of wood ranging six to nine feet in length. High-quality quarterstaves are made of stout oak and are shod with metal at both ends. The quarterstaff must be wielded with both hands.
+
+STATISTICS:
+
+Damage: 1d6 (crushing)
+Speed Factor: 4
+Proficiency Type: Quarterstaff
+Type: Two-handed
+Requires:
+ 5 Strength
+
+Weight: 4"
+
+	SAY NAME2 "Staff of the Woodlands +5"
+	SAY DESC "Known only as the 'Wild Man of the Wood', the man that carried this staff was a legendary figure near Trademeet until the day he died and returned to the soil. Those who saw him remember his dark, bark-like skin, a feature that would fade if the staff were set aside. He would harass irresponsible loggers and poachers, and old-timers tell of mercenaries chasing him with a dozen hunting dogs or more. The animals seemed ready to rip the poor druid to pieces, but he quickly turned them on their former masters. Rushing forward in hopes of ending his influence, the men-at-arms saw the final power of the staff, and as the vegetation trembled with the 'Wild Man's' magical calling, there formed a green, rotting mix of life and death that shambled overtop of the terrified soldiers, killing them all.
+
+STATISTICS:
+
+Equipped abilities: 
+– Barkskin on self
+– AC bonus: +2
+- Saving Throws bonus: +2
+- Caster level bonus: +2
+
+Charge abilities:
+– Summon 8-HD Shambling Mound twice per day
+  Range: 40 ft.
+  Duration: 100 seconds
+
+– Entangle at will
+
+Combat abilities:
+- Target is entangled (save vs Paralysis -4)
+
+THAC0: +5
+Damage: 1d6+5 (crushing)
+Speed Factor: 1
+Proficiency Type: Quarterstaff
+Type: Two-handed
+Requires:
+ 5 Strength
+
+Weight: 2
+"

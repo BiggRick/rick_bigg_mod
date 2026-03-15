@@ -1,6 +1,6 @@
 
 
-//THE EYES OF TRUTH//
+//THE EYES OF TRUTH - 1500mo//
 COPY "rick_bigg_mod/items/HELM05.itm" "override"
 	SAY NAME1 "Helmet"
 	SAY DESC "This class of open-face helmet, made of reinforced leather or metal, covers most of the head save the face and neck. These helmets commonly provide protection for the nose. 
@@ -23,7 +23,7 @@ Equipped abilities:
 – Infravision up to 120 ft.
 – Protects against critical hits
 
-Weight: 2"
+Weight: 32"
 
 
 
@@ -32,7 +32,8 @@ Weight: 2"
 
 
 
-//HELM OF BALDURAN//
+
+//HELM OF BALDURAN - 15000mo//
 COPY "rick_bigg_mod/items/HELM07.itm" "override"
 	SAY NAME1 "Helmet"
 	SAY UNIDENTIFIED_DESC "This class of open-face helmet, made of reinforced leather or metal, covers most of the head save the face and neck. These helmets commonly provide protection for the nose. 
@@ -63,7 +64,10 @@ Weight: 1"
 
 
 
-//KIEL'S HELMET//
+
+
+
+//KIEL'S HELMET - 4500mo//
 COPY "rick_bigg_mod/items/HELM14.itm" "override"
 	SAY NAME1 "Helm"
 	SAY UNIDENTIFIED_DESC "The sturdy, steel-banded helm is dented and scarred from heavy use. Dwarven runes are set into the metal above the brow.

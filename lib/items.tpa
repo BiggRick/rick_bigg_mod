@@ -11,6 +11,8 @@ END
 
 
 
+
+
 //KIEL'S BUCKLER +2 - 4000mo//
 COPY "rick_bigg_mod/items/SHLD20.itm" "override"
 	SAY NAME1 "Buckler"
@@ -82,7 +84,7 @@ Weight: 18
 
 
 
-//MOONBLADE +3 - valore 0//
+//MOONBLADE +3 - 0//
 COPY "rick_bigg_mod/items/sw1h13.itm" "override"
 	SAY NAME1 "Long Sword"
 	SAY UNIDENTIFIED_DESC "These swords are usually referred to as double-edged swords, war swords, or military swords. In many cases, the long sword has a single-edged blade. There is no single version of the long sword; the design and length vary from culture to culture and may vary within the same culture depending on the era. Among the most common characteristics of all long swords is their length, which ranges from thirty-five inches to forty-seven inches. In the latter case, the blade is known to take up forty inches of the total length. Most long swords have a double-edged blade and a sharp point at the tip. Despite the tip, the long sword is designed for slashing, not thrusting.
@@ -122,7 +124,10 @@ Weight: 3"
 
 
 
-//CLOAK OF BALDURAN - valore 12000mo//
+
+
+
+//CLOAK OF BALDURAN - 12000mo//
 COPY "rick_bigg_mod/items/CLCK05.itm" "override"
 	SAY NAME1 "Cloak"
 	SAY UNIDENTIFIED_DESC "The cloak can be made in every possible shape with just about every type of fabric. The most common forms are a circular piece of fabric with a hole in the center for the head, and fabric draped from neck, connected by a chain, brooch, cord, or pins.
@@ -150,7 +155,7 @@ Weight: 3"
 
 
 
-//RAINBOW AMULET - valore 4500mo//
+//RAINBOW AMULET - 4500mo//
 COPY "rick_bigg_mod/items/AMUL18.itm" "override"
 	SAY NAME1 "Amulet"
 	SAY UNIDENTIFIED_DESC "Amulets are usually magical devices that are commonly worn around the neck, suspended from a chain. The type of chain that comes with an amulet generally increases the item's aesthetic value, not its magical properties. Only one amulet can be dangled from the neck at a time.
@@ -179,7 +184,7 @@ Weight: 1"
 
 
 
-//PELLAN'S SHIELD +2//
+//PELLAN'S SHIELD +2 - 4500mo//
 COPY "rick_bigg_mod/items/SHLD19A.itm" "override"
 	SAY NAME1 "Large Shield"
 	SAY UNIDENTIFIED_DESC "	A large shield inlaid with a golden griffin. This shield, also known as the kite or tower shield, is a massive metal shield reaching nearly from the chin to the toe of the user. It must be firmly fastened to the forearm and the shield hand must firmly grip it at all times. Naturally, this precludes use of the shield hand for anything but holding the body shield in place. Strangely enough, this shield feels unusually light for its size.
@@ -213,7 +218,43 @@ Weight: 4"
 
 
 
-//DURLAG'S PRIDE//
+
+
+//PELLAN'S SHIELD +2 - 4500mo//
+COPY "rick_bigg_mod/items/SHLD19.itm" "override"
+	SAY NAME1 "Large Shield"
+	SAY UNIDENTIFIED_DESC "	A large shield inlaid with a golden griffin. This shield, also known as the kite or tower shield, is a massive metal shield reaching nearly from the chin to the toe of the user. It must be firmly fastened to the forearm and the shield hand must firmly grip it at all times. Naturally, this precludes use of the shield hand for anything but holding the body shield in place. Strangely enough, this shield feels unusually light for its size.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +1, an extra +1 vs. missile attacks
+
+Requires:
+ 10 Strength
+
+Weight: 4"
+
+	SAY NAME2 "Pellan's Shield +2"
+	SAY DESC "This dwarven-made shield was commissioned by Pellan of Tyr, a brash paladin known for unquestioning courage and an almost total lack of common sense. Upon hearing that a red dragon was ravaging the countryside, Pellan mounted his horse and rode off to do battle. As it happened, Pellan and his armor digested readily enough, but the shield gave the dragon severe stomach cramps. Subsequently coughed up, it lay in a hoard for years until retrieved by Pellan's son, a warrior who knew when to sneak.
+
+Superior craftsmanship is supplemented by a permanent lightness spell, which makes the shield very easy to wield.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +3, an extra +1 vs. missile attacks
+- Attack Speed Factor: +2
+
+Requires:
+ 10 Strength
+
+Weight: 4"
+
+
+
+
+//DURLAG'S PRIDE - 0//
 COPY "rick_bigg_mod/items/SW2H08_.itm" "override"
 	SAY NAME1 "Two-Handed Sword"
 	SAY UNIDENTIFIED_DESC "The two-handed sword is a derivative of the long sword. Weaponsmiths have always looked for ways to improve existing weapons. In an effort to improve the long sword, the blade was lengthened. Eventually, the handle had to be extended and two hands became necessary to properly swing the sword. The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations.
@@ -248,7 +289,7 @@ Weight: 15"
 
 
 
-//CLOACK OF THE HIGH FOREST//
+//CLOACK OF THE HIGH FOREST - 0//
 COPY "rick_bigg_mod/items/NPCLCK.itm" "override"
 	SAY NAME1 "Cloack"
 	SAY UNIDENTIFIED_DESC "The cloak can be made in every possible shape with just about every type of fabric. The most common forms are a circular piece of fabric with a hole in the center for the head, and fabric draped from neck, connected by a chain, brooch, cord, or pins.
@@ -272,7 +313,9 @@ Weight: 3"
 
 
 
-//RING OF WIZARDRY//
+
+
+//RING OF WIZARDRY - 10000mo//
 COPY "rick_bigg_mod/items/RING40.itm" "override"
 	SAY NAME1 "Ring"
 	SAY DESC "A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.
@@ -294,7 +337,7 @@ Weight: 0"
 
 
 
-//RING OF HUMAN INFLUENCE//
+//RING OF HUMAN INFLUENCE - 2500mo//
 COPY "rick_bigg_mod/items/RING30.itm" "override"
 	SAY NAME1 "Ring"
 	SAY DESC "A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.
@@ -312,7 +355,7 @@ Equipped abilities:
 – Charisma +1
 
 Charge abilities:
-– Charm Person once per day (Save vs. Spell at +3 negates)
+– Charm Person once per day (Save vs. Spell negates)
   Range: 60 ft.
   Duration: 100 seconds
   Area of Effect: 1 creature
@@ -322,7 +365,9 @@ Weight: 0"
 
 
 
-//RING OF INFRAVISION//
+
+
+//RING OF INFRAVISION - 1500mo//
 COPY "rick_bigg_mod/items/RING21.itm" "override"
 	SAY NAME1 "Ring"
 	SAY DESC "A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.
@@ -347,43 +392,16 @@ Weight: 0"
 
 
 
-//STAFF OF STRIKING +2//
-COPY "rick_bigg_mod/items/STAF05.itm" "override"
-	SAY NAME1 "Staff"
-	SAY UNIDENTIFIED_DESC "The simplest and humblest of staff weapons, the quarterstaff is a length of wood ranging six to nine feet in length. High-quality quarterstaves are made of stout oak and are shod with metal at both ends. The quarterstaff must be wielded with both hands.
-
-STATISTICS:
-
-Damage: 1d6 (crushing)
-Speed Factor: 4
-Proficiency Type: Quarterstaff
-Type: Two-handed
-Requires:
- 5 Strength
-
-Weight: 4"
-
-	SAY NAME2 "Staff of Striking +2"
-	SAY DESC "Staves of Striking are made by the gold elves of Drelagara on Evermeet. The staves have a life of their own and jump to attack in their bearer's hands. The elven craftsmen rarely sell them to other races, but these powerful melee weapons do surface occasionally in Faerûn.
-	
-Equipped abilities:
-– One extra attack per round	
-	
-STATISTICS:
-
-THAC0: +2
-Damage: 1d6+2 (crushing)
-Speed Factor: 1
-Proficiency Type: Quarterstaff
-Type: Two-handed
-Requires:
- 5 Strength
-
-Weight: 4"
 
 
 
-//SWORD OF BALDURAN +3//
+
+
+
+
+
+
+//SWORD OF BALDURAN +3 - 10000mo//
 COPY "rick_bigg_mod/items/SW1H18.itm" "override"
 	SAY NAME1 "Bastard Sword"
 	SAY UNIDENTIFIED_DESC "Also known as the hand-and-a-half sword, the bastard sword derives its name from the fact that it is halfway between the two-handed sword and the long sword. The bastard sword has a double-edged blade and a long grip, which can accommodate both hands if preferred. The overall length of the bastard sword ranges between four feet and four feet ten inches.
@@ -420,12 +438,12 @@ Type: One-handed
 Requires:
  12 Strength
 
-Weight: 12"
+Weight: 7"
 
 
 
 
-//CLOACK OF THE WOLF//
+//CLOACK OF THE WOLF - valore 5000mo//
 COPY "rick_bigg_mod/items/CLCK04.itm" "override"
 	SAY NAME1 "Cloack"
 	SAY UNIDENTIFIED_DESC "The cloak can be made in every possible shape with just about every type of fabric. The most common forms are a circular piece of fabric with a hole in the center for the head, and fabric draped from neck, connected by a chain, brooch, cord, or pins.
@@ -443,6 +461,11 @@ Charge abilities:
 – Polymorph into a Werewolf once per day
 
 Weight: 3"
+
+
+
+
+
 
 
 //SHIELD AMULET//
@@ -466,7 +489,10 @@ Weight: 1"
 
 
 
-//EVERYMEMORY//
+
+
+
+//EVERYMEMORY - 5000mo//
 COPY "rick_bigg_mod/items/AMUL16.itm" "override"
 	SAY NAME1 "Amulet"
 	SAY UNIDENTIFIED_DESC "Amulets are usually magical devices that are commonly worn around the neck, suspended from a chain. The type of chain that comes with an amulet generally increases the item's aesthetic value, not its magical properties. Only one amulet can be dangled from the neck at a time.
@@ -489,7 +515,7 @@ Weight: 1"
 
 
 
-//THE ONE GIFT LOST//
+//THE ONE GIFT LOST - 2500mo//
 COPY "rick_bigg_mod/items/AMUL01.itm" "override"
 	SAY NAME1 "Necklace"
 	SAY UNIDENTIFIED_DESC "A necklace is a piece of ornamental metal jewelry usually made of silver, gold, platinum, or other precious metal, and adorned with gems. A necklace is always worn on the neck and can be of any length.
@@ -500,8 +526,7 @@ Weight: 1"
 
 
 	SAY NAME2 "The One Gift Lost"
-	SAY DESC "Necklace of Missiles: The One Gift Lost
-The naming of this necklace originates from its only owner, Ikaida Mourneve, who quested to regain his kidnapped daughter. Not many would help the determined father, but a kind and generous mage bestowed this item on him to aid his cause. Alas, the necklace was lost when Ikaida dropped it into the Immerflow River while fending off bandits upon a suspension bridge. Fortunately, it is rumored that the item was not needed to reunite the family once again. 
+	SAY DESC "The naming of this necklace originates from its only owner, Ikaida Mourneve, who quested to regain his kidnapped daughter. Not many would help the determined father, but a kind and generous mage bestowed this item on him to aid his cause. Alas, the necklace was lost when Ikaida dropped it into the Immerflow River while fending off bandits upon a suspension bridge. Fortunately, it is rumored that the item was not needed to reunite the family once again. 
 
 STATISTICS:
 
@@ -516,7 +541,7 @@ Weight: 1"
 
 
 
-//ALGERNON'S CLOACK//
+//ALGERNON'S CLOACK - 500mo//
 COPY "rick_bigg_mod/items/CLCK08.itm" "override"
 	SAY NAME1 "Cloack"
 	SAY UNIDENTIFIED_DESC "The cloak can be made in every possible shape with just about every type of fabric. The most common forms are a circular piece of fabric with a hole in the center for the head, and fabric draped from neck, connected by a chain, brooch, cord, or pins.
@@ -535,7 +560,7 @@ Weight: 3"
 
 
 
-//BRACERS OF FRENZY//
+//BRACERS OF FRENZY - 4000mo//
 COPY "rick_bigg_mod/items/BRAC11.itm" "override"
 	SAY NAME1 "Bracers"
 	SAY UNIDENTIFIED_DESC "Bracers are thick bands of metal or leather that are strapped, belted, or tied to a character's forearm.
@@ -545,7 +570,7 @@ STATISTICS:
 Weight: 2"
 
 	SAY NAME2 "Bracers of Frenzy"
-	SAY DESC "These bracers are sometimes reserved for the most skilled Drow warriors. Once worn, the hands can move at unimaginable speed, but execution doesn't always match the speed of thought, penalizing the warrior's precision and defense. Many a Drow warrior have died over time believing they could wield these powerful artifacts.
+	SAY DESC "These bracers are reserved for the most formidable drow warriors. Once worn, the hands can move at unimaginable speed, but this comes at the expense of accuracy and defense. Over the centuries, many drow warriors have died in battle, overconfident in their ability to wield these powerful artifacts.
 
 STATISTICS:
 
@@ -558,7 +583,7 @@ Weight: 1"
 
 
 
-//BRACERS OF UNDEAD CONTROL//
+//BRACERS OF UNDEAD CONTROL - 2500mo//
 COPY "rick_bigg_mod/items/BRAC08.itm" "override"
 	SAY NAME1 "Bracers"
 	SAY UNIDENTIFIED_DESC "Gauntlets are armored gloves. They can be made of leather, metal plates, or chain mail. Every suit of armor is assumed to include gauntlets of an appropriate type. Magical gauntlets tend to be finer, lighter, and more easily worn than normal varieties.
@@ -574,8 +599,8 @@ Weight: 2"
 STATISTICS:
 
 Equipped abilities:
-– Wisdom: -4 penalty
-- Turn Undead: +2 cleric level
+– Wisdom: -3 penalty
+- Turn Undead: +3 cleric level
 
 
 Weight: 0"
@@ -584,7 +609,7 @@ Weight: 0"
 
 
 
-//ARMOR OF MISSILE ATTRACTION +2//
+//ARMOR OF MISSILE ATTRACTION +2 - 2500mo//
 COPY "rick_bigg_mod/items/LEAT06.itm" "override"
 	SAY NAME1 "Studded Leather Armor"
 	SAY UNIDENTIFIED_DESC "Studded leather armor has little in common with normal leather armor. Instead of a hardened shell, studded leather offers hundreds of metal rivets affixed to a supple backing. The numerous studs form a flexible coat of metal that helps to turn aside slashing and cutting attacks, while the leather is little more than a means of securing the rivets in place. 
@@ -617,7 +642,7 @@ Weight: 8"
 
 
 
-//RING OF CLUMSINESS//
+//RING OF CLUMSINESS - 1500mo//
 COPY "rick_bigg_mod/items/RING04.itm" "override"
 	SAY NAME1 "Ring"
 	SAY UNIDENTIFIED_DESC "A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.
@@ -627,7 +652,7 @@ STATISTICS:
 Weight: 0"
 
 	SAY NAME2 "Ring of Clumsiness"
-	SAY DESC "The most notorious owner of this ring made a substantial living exploiting its cursed nature. Gregoria the Foole, a Jester by trade, would use his incomparable sleight of hand to switch this ring with that of a patsy taken from his audience. The rest of his performance would involve the mocking of the newly clumsy individual, much to the delight of their comrades. The ring was removed (by a method known only to the wily Jester) only once the stooge had promised no reprisals for the treatment he had received, though Gregoria frequently still had to make a hasty retreat. What he didn't know was that the ring also held other hidden abilities, which were revealed by an angry mage during her final performance at Zhentil Keep... 
+	SAY DESC "The most notorious owner of this ring made a substantial living exploiting its cursed nature. Gregoria the Foole, a Jester by trade, would use his incomparable sleight of hand to switch this ring with that of a patsy taken from his audience. The rest of his performance would involve the mocking of the newly clumsy individual, much to the delight of their comrades. The ring was removed (by a method known only to the wily Jester) only once the stooge had promised no reprisals for the treatment he had received, though Gregoria frequently still had to make a hasty retreat. What he didn't know was that the ring also held hidden abilities, which were revealed by an angry mage during her final performance at Zhentil Keep... 
 
 
 STATISTICS:
@@ -637,7 +662,7 @@ Equipped abilities:
 – May only be removed with a Remove Curse spell
 
 Charge abilities twice a day:
-- Melf's Acid Arrow or Flame Arrow (both at level 10 - 50% chance of each) three times per day
+- Lighting Bolt (level 10) three times per day
 
 Weight: 0"
 
@@ -646,7 +671,7 @@ Weight: 0"
 
 
 
-//RING OF FOLLY//
+//RING OF FOLLY - 4000mo//
 COPY "rick_bigg_mod/items/RING23.itm" "override"
 	SAY NAME1 "Ring"
 	SAY UNIDENTIFIED_DESC "A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.
@@ -662,9 +687,9 @@ STATISTICS:
 
 Equipped abilities:
 – Intelligence: -50% penalty
-- The wearer can memorize one less spell per level
+- Worsens caster level by 2
 - Improves casting speed by 2
-- Improves caster level by 2
+- The wearer can memorize one more spell per level
 
 – May only be removed with a Remove Curse spell
 
@@ -672,7 +697,11 @@ Weight: 0 "
 
 
 
-//POTION OF STRENGTH//
+
+
+
+
+//POTION OF STRENGTH - valore 300mo//
 COPY "rick_bigg_mod/items/POTN03.itm" "override"
 	SAY NAME1 "Potion"
 	SAY UNIDENTIFIED_DESC "Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.
@@ -696,7 +725,7 @@ Weight: 1"
 
 
 
-//POTION OF EXCEPTIONAL STRENGTH//
+//POTION OF EXCEPTIONAL STRENGTH - valore 350mo//
 COPY "rick_bigg_mod/items/POTN12.itm" "override"
 	SAY NAME1 "Potion"
 	SAY UNIDENTIFIED_DESC "Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.
@@ -720,7 +749,7 @@ Weight: 1"
 
 
 
-//POTION OF EXTRAORDINARY STRENGTH//
+//POTION OF EXTRAORDINARY STRENGTH - 400mo//
 COPY "rick_bigg_mod/items/POTN04.itm" "override"
 	SAY NAME1 "Potion"
 	SAY UNIDENTIFIED_DESC "Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.
@@ -747,7 +776,7 @@ Weight: 1"
 
 
 
-//POTION OF SUPERIOR STRENGTH//
+//POTION OF SUPERIOR STRENGTH - valore 450mo//
 COPY "rick_bigg_mod/items/POTN05.itm" "override"
 	SAY NAME1 "Potion"
 	SAY UNIDENTIFIED_DESC "Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.
@@ -773,7 +802,7 @@ Weight: 1"
 
 
 
-//POTION OF PHENOMENAL STRENGTH//
+//POTION OF PHENOMENAL STRENGTH - 500mo//
 COPY "rick_bigg_mod/items/POTN06.itm" "override"
 	SAY NAME1 "Potion"
 	SAY UNIDENTIFIED_DESC "Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.
@@ -800,7 +829,7 @@ Weight: 1"
 
 
 
-//POTION OF OGRE STRENGTH//
+//POTION OF OGRE STRENGTH - 600mo//
 COPY "rick_bigg_mod/items/POTN07.itm" "override"
 	SAY NAME1 "Potion"
 	SAY UNIDENTIFIED_DESC "Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.
@@ -824,7 +853,7 @@ Weight: 1"
 
 
 
-//POTION OF GENIUS//
+//POTION OF GENIUS - valore 500mo//
 COPY "rick_bigg_mod/items/POTN29.itm" "override"
 	SAY NAME1 "Potion"
 	SAY UNIDENTIFIED_DESC "Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.
@@ -851,7 +880,7 @@ Weight: 1"
 
 
 
-//POTION OF INSIGHT//
+//POTION OF INSIGHT - 500mo//
 COPY "rick_bigg_mod/items/POTN43.itm" "override"
 	SAY NAME1 "Potion"
 	SAY UNIDENTIFIED_DESC "Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.
@@ -873,7 +902,11 @@ Weight: 1"
 
 
 
-//POTION OF MIND FOCUSING//
+
+
+
+
+//POTION OF MIND FOCUSING - 400mo//
 COPY "rick_bigg_mod/items/POTN37.itm" "override"
 	SAY NAME1 "Potion"
 	SAY UNIDENTIFIED_DESC "Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.
@@ -891,7 +924,7 @@ STATISTICS:
 Speed Factor: +4
 THAC0: +2
 
-Duration: 5 turns
+Duration: 10 turns
 
 Weight: 1" 
 
@@ -921,7 +954,7 @@ Cold Resistance: +50%
 Electrical Resistance: +50%
 Acid Resistance: +50%
 
-Duration: 2 hours
+Duration: 10 turns
 
 Weight: 1" 
 
@@ -4972,205 +5005,7 @@ Weight: 4"
 
 
 
-//DEFENDER OF EASTHEAVEN +4//
-COPY "rick_bigg_mod/items/WAFLAIL.itm" "override"
-	SAY NAME1 "Flail"
-	SAY UNIDENTIFIED_DESC "The flail is a sturdy wooden handle attached to an iron rod, a wooden rod with spikes, or a spiked iron ball. Between the handle and its implement is either a hinge or chain link. The weapon was originally used as a tool for threshing grain.
 
-STATISTICS:
-
-Damage: 2d4+1 (crushing)
-Speed Factor: 7
-Proficiency Type: Flail/Morning Star
-Type: One-handed
-Requires:
- 13 Strength
-
-Weight: 15"
-
-	SAY NAME2 "Defender of Eastheaven +4"
-	SAY DESC "This flail was created a century ago to commemorate the defeat of the devil Belhifet. It was meant to always remain within the town of Easthaven to remind the people of the great evil that had been barely defeated. 
-
-STATISTICS:
-
-Equipped abilities:
-– Armor Class: +2
-– +10% resistance to slashing, piercing, and crushing damage
-
-THAC0: +4
-Damage: 2d4+5 (crushing)
-Speed Factor: 4
-Proficiency Type: Flail/Morning Star
-Type: One-handed
-Requires:
- 13 Strength
-
-Weight: 11"
-
-
-
-
-
-
-//FLAIL OF AGES +3//
-COPY "rick_bigg_mod/items/BLUN14.itm" "override"
-	SAY NAME1 "Flail"
-	SAY UNIDENTIFIED_DESC "The flail is a sturdy wooden handle attached to an iron rod, a wooden rod with spikes, or a spiked iron ball. Between the handle and its implement is either a hinge or chain link. The weapon was originally used as a tool for threshing grain.
-
-STATISTICS:
-
-Damage: 2d4+1 (crushing)
-Speed Factor: 7
-Proficiency Type: Flail/Morning Star
-Type: One-handed
-Requires:
- 13 Strength
-
-Weight: 15"
-
-	SAY NAME2 "Flail of Ages +3"
-	SAY DESC "This flail has been in the care of Lord de'Arnise for some time, a relic of his adventuring youth. It has been kept disassembled, the individual pieces stored in separate locations, and only used in the direst of emergencies. Lord de'Arnise was likely concerned about the powerful magic that the weapon radiated when compiled, and rightfully so. A trail of destruction has followed it through history, leading straight back to the original owners. The flail was the creation of the warlike rakshasa, a race of vengeful spirits that crave human meat, and used as an adaptable weapon that could suit any battle. During a particularly violent hunt, the flail was lost, only to be returned when they used their affinity for magic to locate its powerful aura. They discovered that the weapon had found its way into the hands of a great human warrior, and the battle that followed was truly splendid. They have since used the item as bait countless times, 'losing' it again and again. Powerful items gravitate toward powerful people, and powerful people yield the most glorious battles.
-
-STATISTICS:
-
-Combat abilities:
-– 33% chance of slowing target for 20 seconds
-- Magic Resistance: +5%
-
-THAC0: +3
-Damage: 2d4+4, +1 acid damage, +1 cold damage, +1 fire damage
-Damage type: Crushing
-Speed Factor: 4
-Proficiency Type: Flail/Morning Star
-Type: One-handed
-Requires:
- 13 Strength
-
-Weight: 10"
-
-
-
-
-//FLAIL OF AGES +4//
-COPY "rick_bigg_mod/items/BLUN30C.itm" "override"
-	SAY NAME1 "Flail"
-	SAY UNIDENTIFIED_DESC "The flail is a sturdy wooden handle attached to an iron rod, a wooden rod with spikes, or a spiked iron ball. Between the handle and its implement is either a hinge or chain link. The weapon was originally used as a tool for threshing grain.
-
-STATISTICS:
-
-Damage: 2d4+1 (crushing)
-Speed Factor: 7
-Proficiency Type: Flail/Morning Star
-Type: One-handed
-Requires:
- 13 Strength
-
-Weight: 15"
-
-	SAY NAME2 "Flail of Ages +4"
-	SAY DESC "This four-headed flail causes fire, cold, acid, and poison damage. If the fifth head for the Flail of Ages could be found, it would make this awesome weapon even more powerful.
-
-STATISTICS:
-
-Combat abilities:
-– 33% chance each hit that target will be slowed for 20 seconds
-- Magic Resistance: +10%
-
-THAC0: +4
-Damage: 2d4+5, +1 fire damage, +1 cold damage, +1 acid damage, +1 poison damage
-Damage type: Crushing
-Speed Factor: 3
-Proficiency Type: Flail/Morning Star
-Type: One-handed
-Requires:
- 13 Strength
-
-Weight: 9"
-
-
-
-
-
-
-//FLAIL OF AGES +4//
-COPY "rick_bigg_mod/items/BLUN30D.itm" "override"
-	SAY NAME1 "Flail"
-	SAY UNIDENTIFIED_DESC "The flail is a sturdy wooden handle attached to an iron rod, a wooden rod with spikes, or a spiked iron ball. Between the handle and its implement is either a hinge or chain link. The weapon was originally used as a tool for threshing grain.
-
-STATISTICS:
-
-Damage: 2d4+1 (crushing)
-Speed Factor: 7
-Proficiency Type: Flail/Morning Star
-Type: One-handed
-Requires:
- 13 Strength
-
-Weight: 15"
-
-	SAY NAME2 "Flail of Ages +4"
-	SAY DESC "This four-headed flail causes fire, cold, acid, and poison damage. If the fifth head for the Flail of Ages could be found, it would make this awesome weapon even more powerful.
-
-STATISTICS:
-
-Combat abilities:
-– 33% chance each hit that target will be slowed for 20 seconds
-- Magic Resistance: +10%
-
-THAC0: +4
-Damage: 2d4+5, +1 fire damage, +1 cold damage, +1 acid damage, +1 electrical damage
-Damage type: Crushing
-Speed Factor: 3
-Proficiency Type: Flail/Morning Star
-Type: One-handed
-Requires:
- 13 Strength
-
-Weight: 9"
-
-
-
-
-
-
-//FLAIL OF AGES +5//
-COPY "rick_bigg_mod/items/BLUN30.itm" "override"
-	SAY NAME1 "Flail"
-	SAY UNIDENTIFIED_DESC "The flail is a sturdy wooden handle attached to an iron rod, a wooden rod with spikes, or a spiked iron ball. Between the handle and its implement is either a hinge or chain link. The weapon was originally used as a tool for threshing grain.
-
-STATISTICS:
-
-Damage: 2d4+1 (crushing)
-Speed Factor: 7
-Proficiency Type: Flail/Morning Star
-Type: One-handed
-Requires:
- 13 Strength
-
-Weight: 15"
-
-	SAY NAME2 "Flail of Ages +5"
-	SAY DESC "With the addition of the fifth and final head to this weapon created by the evil rakshasa race, the true potential of the Flail of Ages is finally realized.
-
-STATISTICS:
-
-Equipped abilities:
-– Magic Resistance: +10%
-– Free Action
-
-Combat abilities: 
-– 33% chance each hit that target will be slowed for 20 seconds
-
-THAC0: +5
-Damage: 2d4+6, +2 acid damage, +2 cold damage, +2 fire damage, +2 poison damage, +2 electrical damage
-Damage type: Crushing
-Speed Factor: 2
-Proficiency Type: Flail/Morning Star
-Type: One-handed
-Requires:
- 13 Strength
-
-Weight: 8"
 
 
 
@@ -5291,7 +5126,7 @@ Weight: 3"
 
 
 
-//ADJATHA THE DRINKER +3 - valore 8000mo//
+//ADJATHA THE DRINKER +3 - no good - valore 8000mo//
 COPY "rick_bigg_mod/items/SW1H35.itm" "override"
 	SAY NAME1 "Long Sword"
 	SAY UNIDENTIFIED_DESC "These swords are usually referred to as double-edged swords, war swords, or military swords. In many cases, the long sword has a single-edged blade. There is no single version of the long sword; the design and length vary from culture to culture and may vary within the same culture depending on the era. Among the most common characteristics of all long swords is their length, which ranges from thirty-five inches to forty-seven inches. In the latter case, the blade is known to take up forty inches of the total length. Most long swords have a double-edged blade and a sharp point at the tip. Despite the tip, the long sword is designed for slashing, not thrusting.
@@ -5328,6 +5163,148 @@ Requires:
  6 Strength
 
 Weight: 3"
+
+
+
+
+
+//PERIDAN +3 - valore 8000mo//
+COPY "rick_bigg_mod/items/SW1H32.itm" "override"
+	SAY NAME1 "Long Sword"
+	SAY UNIDENTIFIED_DESC "These swords are usually referred to as double-edged swords, war swords, or military swords. In many cases, the long sword has a single-edged blade. There is no single version of the long sword; the design and length vary from culture to culture and may vary within the same culture depending on the era. Among the most common characteristics of all long swords is their length, which ranges from thirty-five inches to forty-seven inches. In the latter case, the blade is known to take up forty inches of the total length. Most long swords have a double-edged blade and a sharp point at the tip. Despite the tip, the long sword is designed for slashing, not thrusting.
+
+STATISTICS:
+
+Damage: 1d8 (slashing)
+Speed Factor: 5
+Proficiency Type: Long Sword
+Type: One-handed
+Requires:
+ 6 Strength
+
+Weight: 4"
+
+	SAY NAME2 "Peridan +3"
+	SAY DESC "Few dare to create items such as this, for who does not fear the wrath of dragons, and what action would more tempt their reckoning? Yet, at a time lost in Faerûn's past, there was a need, and this sword was forged in answer. Tempered by a wizard's skill, this blade protects the wielder from the fear they should rightly feel while staring down a dragon's maw. It also bolsters with regeneration, dispels the trickery of illusions, and dares to do double damage against the greatest creatures of the realms.
+
+STATISTICS:
+
+Equipped abilities: 
+– Immunity to fear
+– Regenerate 1 Hit Point every 1 turn
+
+Charge abilities:
+– Protection from the Elements once per day
+
+THAC0: +3
+Damage: 1d8+3, double damage against dragons
+Damage type: Slashing
+Speed Factor: 2
+Proficiency Type: Long Sword
+Type: One-handed
+Requires:
+ 6 Strength
+
+Weight: 3"
+
+
+
+
+//EQUALIZER +3 - valore 15000mo//
+COPY "rick_bigg_mod/items/SW1H54.itm" "override"
+	SAY NAME1 "Long Sword"
+	SAY UNIDENTIFIED_DESC "These swords are usually referred to as double-edged swords, war swords, or military swords. In many cases, the long sword has a single-edged blade. There is no single version of the long sword; the design and length vary from culture to culture and may vary within the same culture depending on the era. Among the most common characteristics of all long swords is their length, which ranges from thirty-five inches to forty-seven inches. In the latter case, the blade is known to take up forty inches of the total length. Most long swords have a double-edged blade and a sharp point at the tip. Despite the tip, the long sword is designed for slashing, not thrusting.
+
+STATISTICS:
+
+Damage: 1d8 (slashing)
+Speed Factor: 5
+Proficiency Type: Long Sword
+Type: One-handed
+Requires:
+ 6 Strength
+
+Weight: 4"
+
+	SAY NAME2 "Equalizer +3"
+	SAY DESC "Such is the age of this sword that its true origin has been lost to time, but markings hint that it was possibly forged in the service of Helm. Also called the "Sword of Neutrality," it seems designed to seek and terminate extremes, to shift the universe closer to harmonious equilibrium. The further the behavior of a target from true balance, the more potent the damage they suffer.
+
+STATISTICS:
+
+Equipped abilities: 
+– Immunity to charm and confusion
+
+Combat abilities:
+– Each hit lowers the target's Magic Resistance by 15% for 4 rounds
+– Each hit penalizes the target's Armor Class by 2 for 4 rounds
+
+THAC0 & Damage:
+  vs. True Neutral, Chaotic Neutral, Lawful Neutral: +3 to hit, 1d8+3 damage
+  vs. Neutral Good, Neutral Evil: +4 to hit, 1d8+4 damage
+  vs. Other Alignments: +5 to hit, 1d8+5 damage
+Damage type: Slashing
+Speed Factor: 2
+Proficiency Type: Long Sword
+Type: One-handed
+Requires:
+ 6 Strength
+
+Weight: 3"
+
+
+
+//VIPER'S EDGE +4 - valore 12000mo//
+COPY "rick_bigg_mod/items/SW1P01.itm" "override"
+	SAY NAME1 "Long Sword"
+	SAY UNIDENTIFIED_DESC "These swords are usually referred to as double-edged swords, war swords, or military swords. In many cases, the long sword has a single-edged blade. There is no single version of the long sword; the design and length vary from culture to culture and may vary within the same culture depending on the era. Among the most common characteristics of all long swords is their length, which ranges from thirty-five inches to forty-seven inches. In the latter case, the blade is known to take up forty inches of the total length. Most long swords have a double-edged blade and a sharp point at the tip. Despite the tip, the long sword is designed for slashing, not thrusting.
+
+STATISTICS:
+
+Damage: 1d8 (slashing)
+Speed Factor: 5
+Proficiency Type: Long Sword
+Type: One-handed
+Requires:
+ 6 Strength
+
+Weight: 4"
+
+	SAY NAME2 "Viper's Edge +4"
+	SAY DESC "This immensely powerful relic is just as strongly enchanted as it is cursed. Its blade shimmers in a slick, intoxicating tinge of green, likely literally as well as metaphorically. The sword's grip and hilt are lined by curved thorns which make it hard to see how this weapon could be effectively wielded in battle. Judging by the dried crusts around them, many have still tried, and you cannot deny feeling a tempting curiosity on your part. Said to be originally the weapon of a medusa queen of a long forgotten age bestowed to whom by the gods of old themselves, the exact origins of this blade have been lost to time. Whatever its provenance, it has since traveled through many hands (albeit the majority not of the living persuasion). The common thread running through all these encounters was that their eventual end was rarely of a voluntary nature and nothing good ever came from them.
+
+STATISTICS:
+
+Cursed:
+– Constitution: -2
+– Maximum Hit Points: -10%
+– Intolerance to common healing potions
+
+Equipped abilities:
+– Dexterity: +2
+– +1 attack per round
+– Regeneration on critical health (below 10% health)
+
+Combat abilities:
+0-5 Petrify target (Save vs Petrify -4)
+6-25 Paralyze target for 7 seconds (Save vs Paralysis -4)
+26-70 Poison target (1 damage per second for twenty seconds)
+71-86 Poison self (1 damage per second for twenty seconds)
+86-95 Paralyze self for 7 seconds (Save vs Paralysis -4)
+96-100 Petrify self (Save vs Petrify -4)
+
+STATISTICS:
+
+THAC0: +4 bonus
+Damage: 1d8 +4 (slashing)
+Speed Factor: 1
+Proficiency Type: Long Sword
+Type: One-handed
+Requires:
+ 6 Strength
+
+Weight: 2
+"
+
 
 
 
@@ -5775,9 +5752,9 @@ Requires:
 Weight: 6"
 
 	SAY NAME2 "Celestial Fury +4"
-	SAY DESC "Many centuries ago, a trumpet archon named Chin Yi fell in love with a mortal man in Shou Lung and swore to protect him from enemies should he ever ride to war. When that time came, however, Chin Yi's patron goddess Kwan Ying forbade her to intervene, not wishing to contribute to the bloodshed. When Chin Yi's beloved was cut down by a yuan-ti warlord, her grief was terrible and her wrath immediate: Ignoring Kwan Ying's warnings, she flew onto the battlefield and took up her beloved's katana, using the blade to cut down the warlord and all those who served him. She continued the slaughter of the yuan-ti army until Kwan Ying herself appeared before her, arms open and eyes full of sympathy. 'If it will stop this slaughter, I will ease your pain and end your suffering.'
+	SAY DESC "Many centuries ago, a trumpet archon named Chin Yi fell in love with a mortal man in Shou Lung and swore to protect him from enemies should he ever ride to war. When that time came, however, Chin Yi's patron goddess Kwan Ying forbade her to intervene, not wishing to contribute to the bloodshed. When Chin Yi's beloved was cut down by a yuan-ti warlord, her grief was terrible and her wrath immediate: Ignoring Kwan Ying's warnings, she flew onto the battlefield and took up her beloved's katana, using the blade to cut down the warlord and all those who served him. She continued the slaughter of the yuan-ti army until Kwan Ying herself appeared before her, arms open and eyes full of sympathy. "If it will stop this slaughter, I will ease your pain and end your suffering."
 
-'I do not wish to end my suffering,' replied Chin Yi. 'I wish for my fury to sound throughout the ages, now and forever.' Wanting to help her servant, but not wishing to unleash such powerful fury on the world, Kwan Ying bound Chin Yi's spirit to the blade of the man she had failed to protect and then hid the weapon in a warrior's tomb. The tomb was later infiltrated and the weapon stolen, and although Chin Yi's cries could no longer be heard through the steel of the blade, her vengeance was as brutal as ever.
+"I do not wish to end my suffering," replied Chin Yi. "I wish for my fury to sound throughout the ages, now and forever." Wanting to help her servant, but not wishing to unleash such powerful fury on the world, Kwan Ying bound Chin Yi's spirit to the blade of the man she had failed to protect and then hid the weapon in a warrior's tomb. The tomb was later infiltrated and the weapon stolen, and although Chin Yi's cries could no longer be heard through the steel of the blade, her vengeance was as brutal as ever.
 
 STATISTICS:
 
@@ -6338,5 +6315,6 @@ Requires:
  14 Strength
 
 Weight: 6"
+
 
 
