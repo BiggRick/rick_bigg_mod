@@ -4,7 +4,7 @@ NEW RULES:
  94 = small sword (short sword, dagger)
  95 = large sword (long sword, bastard sword)
  96 = scimitar
- 97 = kara-tur swords (katana, wakizashi, ninja-to)
+ 97 = katana (incl. old Waki & Ninjato)
  98 = two handed sword
  99 = polearms (spear, halberd)
 100 = staves
@@ -27,7 +27,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY cd_prof_numeric_map BEGIN
 	 92 => 104 // axe
 	 93 => 98	// 2h sword > 2h sword
 	 94 => 97	// katana > kara-tur sword
-	 95 => 96 // scimitar/waki/ninjato > scimitars *or* kara-tur swords
+	 95 => 96 // scimitar/waki/ninjato > scimitars *or* katana
 	 96 => 94	// dagger > small sword
 	 97 => 102 // hammer
 	 98 => 99	// spear > polearms
@@ -239,7 +239,7 @@ ACTION_FOR_EACH file IN weapprof racethac BEGIN
 				SET_2DA_ENTRY (skip_rows +  6) col col_num ~%star_sswd%~ //  94 = small sword (short sword, dagger)
 				SET_2DA_ENTRY (skip_rows +  7) col col_num ~%star_bast%~ //  95 = large sword (long sword, bastard sword)
 				SET_2DA_ENTRY (skip_rows +  8) col col_num ~%star_scim%~ //  96 = scimitar
-				SET_2DA_ENTRY (skip_rows +  9) col col_num ~%star_kata%~ //  97 = kara-tur swords (katana, wakizashi, ninja-to)
+				SET_2DA_ENTRY (skip_rows +  9) col col_num ~%star_kata%~ //  97 = katana
 				SET_2DA_ENTRY (skip_rows + 11) col col_num ~%star_2hsw%~ //  98 = two handed sword
 				SET_2DA_ENTRY (skip_rows + 12) col col_num ~%star_sper%~ //  99 = polearms (spear, halberd)
 				SET_2DA_ENTRY (skip_rows + 13) col col_num ~%star_staf%~ // 100 = staves
@@ -261,7 +261,7 @@ ACTION_FOR_EACH file IN weapprof racethac BEGIN
 			SET_2DA_ENTRY (skip_rows +  6) label_col col_num SMALL_SWORD //  94 = small sword (short sword, dagger)
 			SET_2DA_ENTRY (skip_rows +  7) label_col col_num LARGE_SWORD //  95 = large sword (long sword, bastard sword)
 			SET_2DA_ENTRY (skip_rows +  8) label_col col_num SCIMITAR //  96 = scimitar
-			SET_2DA_ENTRY (skip_rows +  9) label_col col_num KATANA_WAKIZASHI_NINJATO //  97 = kara-tur swords (katana, wakizashi, ninja-to)
+			SET_2DA_ENTRY (skip_rows +  9) label_col col_num KATANA //  97 = katana
 			SET_2DA_ENTRY (skip_rows + 11) label_col col_num TWOHANDEDSWORD //  98 = two handed sword
 			SET_2DA_ENTRY (skip_rows + 12) label_col col_num SPEAR_HALBERD //  99 = polearms (spear, halberd)
 			SET_2DA_ENTRY (skip_rows + 13) label_col col_num STAFF // 100 = staves
@@ -312,8 +312,8 @@ ACTION_FOR_EACH file IN weapprof racethac BEGIN
 <DOTS4>
 
 <DOTS5>~)
-			SET cd_97_name = RESOLVE_STR_REF(~Oriental Swords~)
-			SET cd_97_desc = RESOLVE_STR_REF(~ORIENTAL SWORDS: This weapon class allows the character to use katanas, wakizashis and ninjatos.
+			SET cd_97_name = RESOLVE_STR_REF(~Katanas~)
+			SET cd_97_desc = RESOLVE_STR_REF(~Katanas: This weapon class allows the character to use katanas.
 
 <DOTS1>
 
@@ -487,7 +487,7 @@ COPY_EXISTING ~stats.ids~ ~override~
 	REPLACE_TEXTUALLY ~^\(94[ %TAB%]+\).+$~ ~\1PROFICIENCY_SMALL_SWORD~
 	REPLACE_TEXTUALLY ~^\(95[ %TAB%]+\).+$~ ~\1PROFICIENCY_LARGE_SWORD~
 	REPLACE_TEXTUALLY ~^\(96[ %TAB%]+\).+$~ ~\1PROFICIENCY_SCIMITAR~
-	REPLACE_TEXTUALLY ~^\(97[ %TAB%]+\).+$~ ~\1PROFICIENCY_KATANA_WAKIZASHI_NINJATO~
+	REPLACE_TEXTUALLY ~^\(97[ %TAB%]+\).+$~ ~\1PROFICIENCY_KATANA~
 	REPLACE_TEXTUALLY ~^\(98[ %TAB%]+\).+$~ ~\1PROFICIENCY_TWOHANDEDSWORD~
 	REPLACE_TEXTUALLY ~^\(99[ %TAB%]+\).+$~ ~\1PROFICIENCY_SPEAR_HALBERD~
 	REPLACE_TEXTUALLY ~^\(100[ %TAB%]+\).+$~ ~\1PROFICIENCY_STAFF~
@@ -510,7 +510,7 @@ APPEND ~stats.ids~ ~94 PROFICIENCYDAGGER
 96 PROFICIENCYSCIMITARWAKISASHININJATO
 96 PROFICIENCY_SCIMITAR
 97 PROFICIENCYKATANA
-97 PROFICIENCY_KATANA_WAKIZASHI_NINJATO
+97 PROFICIENCY_KATANA
 98 PROFICIENCYTWOHANDEDSWORD
 98 PROFICIENCY_TWOHANDEDSWORD
 99 PROFICIENCYHALBERD
