@@ -1,0 +1,526 @@
+/*
+NEW RULES:
+
+ 94 = small sword (short sword, dagger)
+ 95 = large sword (long sword, bastard sword)
+ 96 = scimitar
+ 97 = kara-tur swords (katana, wakizashi, ninja-to)
+ 98 = two handed sword
+ 99 = polearms (spear, halberd)
+100 = staves
+101 = maces (mace, club, morning star)
+102 = warhammers
+103 = flails
+104 = axe
+105 = bows (long, short)
+106 = crossbow
+107 = missile weapons (dart, sling)
+
+108 = unused (blackjack)
+
+*/
+
+ACTION_DEFINE_ASSOCIATIVE_ARRAY cd_prof_numeric_map BEGIN
+	 89 => 95	// bastard sword > large sword
+	 90 => 95	// long sword > large sword
+	 91 => 94	// short sword > small sword
+	 92 => 104 // axe
+	 93 => 98	// 2h sword > 2h sword
+	 94 => 97	// katana > kara-tur sword
+	 95 => 96 // scimitar/waki/ninjato > scimitars *or* kara-tur swords
+	 96 => 94	// dagger > small sword
+	 97 => 102 // hammer
+	 98 => 99	// spear > polearms
+	 99 => 99	// halberd > polearm
+	100 => 103 // flail/mstar to mstar *or* mace
+	101 => 101 // mace
+	102 => 100 // staff
+	103 => 106 // crossbow
+	104 => 105 // longbow > bow
+	105 => 105 // shortbow > bow
+	106 => 107 // dart > missile
+	107 => 107 // sling > missile
+	115 => 101 // club > mace
+END
+
+ACTION_DEFINE_ASSOCIATIVE_ARRAY cd_prof_text_map BEGIN
+	AXE						=> 104
+	BASTARDSWORD			=> 95
+	CLUB					=> 101
+	CROSSBOW				=> 106
+	DAGGER					=> 94
+	DART					=> 107
+	FLAILMORNINGSTAR		=> 103
+	HALBERD					=> 99
+	KATANA					=> 97
+	LONGBOW					=> 105
+	LONGSWORD				=> 95
+	MACE					=> 101
+	QUARTERSTAFF			=> 100
+	SCIMITARWAKISASHININJATO => 96
+	SHORTBOW				=> 105
+	SHORTSWORD				=> 94
+	SLING					=> 107
+	SPEAR					=> 99
+	TWOHANDEDSWORD			=> 98
+	WARHAMMER				=> 102
+END
+
+DEFINE_PATCH_MACRO ~prof_descripts~ BEGIN
+
+	SPRINT new_weap ""
+	PATCH_MATCH ~%prof%~ WITH
+		94 BEGIN
+			SPRINT new_weap ~Small Sword~
+		END
+		95 BEGIN
+			SPRINT new_weap ~Large Sword~
+		END
+		96 BEGIN
+			SPRINT new_weap ~Scimitar~
+		END
+		97 BEGIN
+			SPRINT new_weap ~Katana/Wakizashi/Ninjato~
+		END
+		98 BEGIN
+			SPRINT new_weap ~Two Handed Sword~
+		END
+		99 BEGIN
+			SPRINT new_weap ~Spear/Halberd~
+		END
+		100 BEGIN
+			SPRINT new_weap ~Staves~
+		END
+		101 BEGIN
+			SPRINT new_weap ~Club/Maces/Morning Stars~
+		END
+		102 BEGIN
+			SPRINT new_weap ~Warhammers~
+		END
+		103 BEGIN
+			SPRINT new_weap ~Flails~
+		END
+		104 BEGIN
+			SPRINT new_weap ~Axes~
+		END
+		105 BEGIN
+			SPRINT new_weap ~Bows~
+		END
+		106 BEGIN
+			SPRINT new_weap ~Crossbows~
+		END
+		107 BEGIN
+			SPRINT new_weap ~Darts/Slings~
+		END
+		DEFAULT
+			SPRINT new_weap ~~
+	END
+	PATCH_IF ("%new_weap%" STRING_COMPARE_CASE "") BEGIN // make sure new_weap is actually set before blindly patching
+		REPLACE_TEXTUALLY CASE_INSENSITIVE ~%prof_text_match%.+$~ ~%prof_text% %new_weap%~
+	END	
+
+END
+
+OUTER_SET club_except = 101
+INCLUDE ~rick_bigg_mod/lib/borrowed_from_cdtweaks/profs_common2.tpa~
+
+//item changes
+COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~ // item changes
+	READ_BYTE	0x31 current_prof ELSE 0
+	PATCH_IF ((current_prof = 115) OR ((current_prof > 88) AND (current_prof < 108))) BEGIN // sanity check
+		PHP_EACH cd_prof_numeric_map AS old => new BEGIN
+			PATCH_IF (current_prof = old) BEGIN
+				SET prof = new
+			END
+		END
+		PATCH_IF (current_prof = 100) BEGIN // flails / morning-stars
+		  READ_ASCII 0x22 anim (2)
+		  PATCH_IF ("%anim%" STRING_COMPARE_REGEXP "[Mm][SsCc2]" = 0) BEGIN // clubs/maces/morningstars
+			SET prof = 101
+		  END ELSE BEGIN
+			SET prof = 103
+		  END
+		END
+		PATCH_IF (current_prof = 100) BEGIN // scimitar / wakizashi / ninjato
+		  READ_ASCII 0x22 anim (2)
+		  PATCH_IF ("%anim%" STRING_COMPARE_REGEXP "[Ss][Cc]" = 0) BEGIN // scimitar
+			SET prof = 96
+		  END ELSE BEGIN
+			SET prof = 97 // scimitar
+		  END
+		END
+		WRITE_BYTE 0x31 prof // new prof
+		// update descriptions
+		PATCH_FOR_EACH offset IN 0x50 0x54 BEGIN
+			READ_STRREF ~%offset%~ desc
+			PATCH_IF ("%desc%" STRING_COMPARE_REGEXP ~<Invalid Strref -?[0-9]+>~) BEGIN // checking for valid content in string
+				INNER_PATCH_SAVE desc ~%desc%~ BEGIN
+					LAUNCH_PATCH_MACRO ~prof_descripts~
+				END
+				SAY_EVALUATED ~%offset%~ ~%desc%~ // write changes
+			END
+		END
+	END
+	BUT_ONLY
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ACTION_FOR_EACH file IN weapprof racethac BEGIN
+
+	ACTION_IF FILE_EXISTS_IN_GAME ~%file%.2da~ THEN BEGIN
+
+		COPY_EXISTING ~%file%.2da~ ~override~
+
+			PATCH_IF ("%file%" STRING_COMPARE_CASE "weapprof" = 0) THEN BEGIN
+				SET col_start = 4
+				SET skip_rows = 8
+				SET label_col = 0
+
+			END ELSE BEGIN
+				SET col_start = 2
+				SET skip_rows = 0
+				SET label_col = 1
+
+			END
+
+			READ_2DA_ENTRY 0 0 3 foo
+			SET_2DA_ENTRY 0 0 3 ~CD_DELETE_ME %foo%~
+
+
+			// for profs being merged, take the highest of both values
+			COUNT_2DA_COLS col_num
+			FOR (col = col_start; col < col_num; ++col) BEGIN
+				READ_2DA_ENTRY (skip_rows +  1) col col_num star_bast
+				READ_2DA_ENTRY (skip_rows +  2) col col_num star_lswd
+				READ_2DA_ENTRY (skip_rows +  3) col col_num star_sswd
+				READ_2DA_ENTRY (skip_rows +  4) col col_num star_axe_
+				READ_2DA_ENTRY (skip_rows +  5) col col_num star_2hsw
+				READ_2DA_ENTRY (skip_rows +  6) col col_num star_kata
+				READ_2DA_ENTRY (skip_rows +  7) col col_num star_scim
+				READ_2DA_ENTRY (skip_rows +  8) col col_num star_dagg
+				READ_2DA_ENTRY (skip_rows +  9) col col_num star_hamm
+				READ_2DA_ENTRY (skip_rows + 10) col col_num star_club
+				READ_2DA_ENTRY (skip_rows + 11) col col_num star_sper
+				READ_2DA_ENTRY (skip_rows + 12) col col_num star_halb
+				READ_2DA_ENTRY (skip_rows + 13) col col_num star_flai
+				READ_2DA_ENTRY (skip_rows + 14) col col_num star_mace
+				READ_2DA_ENTRY (skip_rows + 15) col col_num star_staf
+				READ_2DA_ENTRY (skip_rows + 16) col col_num star_xbow
+				READ_2DA_ENTRY (skip_rows + 17) col col_num star_lbow
+				READ_2DA_ENTRY (skip_rows + 18) col col_num star_sbow
+				READ_2DA_ENTRY (skip_rows + 19) col col_num star_dart
+				READ_2DA_ENTRY (skip_rows + 20) col col_num star_slng
+				PATCH_IF (star_lbow < star_sbow) BEGIN SET star_lbow = star_sbow END // bows
+				PATCH_IF (star_sswd < star_dagg) BEGIN SET star_sswd = star_dagg END // small swords
+				PATCH_IF (star_club < star_mace) BEGIN SET star_club = star_mace END // blunt
+				PATCH_IF (star_bast < star_lswd) BEGIN SET star_bast = star_lswd END // large swords
+				PATCH_IF (star_dart < star_slng) BEGIN SET star_dart = star_slng END // missile
+				PATCH_IF (star_sper < star_halb) BEGIN SET star_sper = star_halb END // spear
+				SET_2DA_ENTRY (skip_rows +  6) col col_num ~%star_sswd%~ //  94 = small sword (short sword, dagger)
+				SET_2DA_ENTRY (skip_rows +  7) col col_num ~%star_bast%~ //  95 = large sword (long sword, bastard sword)
+				SET_2DA_ENTRY (skip_rows +  8) col col_num ~%star_scim%~ //  96 = scimitar
+				SET_2DA_ENTRY (skip_rows +  9) col col_num ~%star_kata%~ //  97 = kara-tur swords (katana, wakizashi, ninja-to)
+				SET_2DA_ENTRY (skip_rows + 11) col col_num ~%star_2hsw%~ //  98 = two handed sword
+				SET_2DA_ENTRY (skip_rows + 12) col col_num ~%star_sper%~ //  99 = polearms (spear, halberd)
+				SET_2DA_ENTRY (skip_rows + 13) col col_num ~%star_staf%~ // 100 = staves
+				SET_2DA_ENTRY (skip_rows + 14) col col_num ~%star_club%~ // 101 = maces (mace, club, morning star)
+				SET_2DA_ENTRY (skip_rows + 15) col col_num ~%star_hamm%~ // 102 = warhammers
+				SET_2DA_ENTRY (skip_rows + 16) col col_num ~%star_flai%~ // 103 = flails
+				SET_2DA_ENTRY (skip_rows + 17) col col_num ~%star_axe_%~ // 104 = axe
+				SET_2DA_ENTRY (skip_rows + 18) col col_num ~%star_lbow%~ // 105 = bows (long, short)
+				SET_2DA_ENTRY (skip_rows + 19) col col_num ~%star_xbow%~ // 106 = crossbow
+				SET_2DA_ENTRY (skip_rows + 20) col col_num ~%star_dart%~ // 107 = missile weapons (dart, sling)
+				FOR (row = (skip_rows + 1) ; row < (skip_rows + 6) ; ++row) BEGIN // eliminate unused profs
+					SET_2DA_ENTRY row col col_num 0
+				END
+				SET_2DA_ENTRY skip_rows + 10 col col_num 0
+			END
+
+			// now read-and-shuffle other profs to correct lines
+			// final touchups to get descripts and row names correct; labels needed for both
+			SET_2DA_ENTRY (skip_rows +  6) label_col col_num SMALL_SWORD //  94 = small sword (short sword, dagger)
+			SET_2DA_ENTRY (skip_rows +  7) label_col col_num LARGE_SWORD //  95 = large sword (long sword, bastard sword)
+			SET_2DA_ENTRY (skip_rows +  8) label_col col_num SCIMITAR //  96 = scimitar
+			SET_2DA_ENTRY (skip_rows +  9) label_col col_num KATANA_WAKIZASHI_NINJATO //  97 = kara-tur swords (katana, wakizashi, ninja-to)
+			SET_2DA_ENTRY (skip_rows + 11) label_col col_num TWOHANDEDSWORD //  98 = two handed sword
+			SET_2DA_ENTRY (skip_rows + 12) label_col col_num SPEAR_HALBERD //  99 = polearms (spear, halberd)
+			SET_2DA_ENTRY (skip_rows + 13) label_col col_num STAFF // 100 = staves
+			SET_2DA_ENTRY (skip_rows + 14) label_col col_num MACE_CLUB_MORNING_STAR // 101 = maces (mace, club, morning star)
+			SET_2DA_ENTRY (skip_rows + 15) label_col col_num WARHAMMER // 102 = warhammers
+			SET_2DA_ENTRY (skip_rows + 16) label_col col_num FLAIL // 103 = flails
+			SET_2DA_ENTRY (skip_rows + 17) label_col col_num AXE // 104 = axe
+			SET_2DA_ENTRY (skip_rows + 18) label_col col_num BOW // 105 = bows (long, short)
+			SET_2DA_ENTRY (skip_rows + 19) label_col col_num CROSSBOW // 106 = crossbow
+			SET_2DA_ENTRY (skip_rows + 20) label_col col_num DART_SLING // 107 = missile weapons (dart, sling)
+			FOR (row = (skip_rows + 1) ; row < (skip_rows + 6) ; ++row) BEGIN // eliminate first profs
+				SET_2DA_ENTRY row label_col col_num UNUSED // ref
+			END
+			SET_2DA_ENTRY skip_rows + 10 label_col col_num UNUSED // ref
+			SET cd_94_name = RESOLVE_STR_REF(~Small Sword~)
+			SET cd_94_desc = RESOLVE_STR_REF(~SMALL SWORDS: This weapon class allows the character to use short swords and daggers. Druids can choose this category, but are restricted to daggers only.
+
+<DOTS1>
+
+<DOTS2>
+
+<DOTS3>
+
+<DOTS4>
+
+<DOTS5>~)
+			SET cd_95_name = RESOLVE_STR_REF(~Large Sword~)
+			SET cd_95_desc = RESOLVE_STR_REF(~LARGE SWORDS: This weapon class allows the character to use bastard swords and long swords. Thieves can choose this category, but are restricted to long swords only.
+
+<DOTS1>
+
+<DOTS2>
+
+<DOTS3>
+
+<DOTS4>
+
+<DOTS5>~)
+			SET cd_96_name = RESOLVE_STR_REF(~Scimitars~)
+			SET cd_96_desc = RESOLVE_STR_REF(~SCIMITARS: This weapon class allows the character to use scimitars.
+
+<DOTS1>
+
+<DOTS2>
+
+<DOTS3>
+
+<DOTS4>
+
+<DOTS5>~)
+			SET cd_97_name = RESOLVE_STR_REF(~Oriental Swords~)
+			SET cd_97_desc = RESOLVE_STR_REF(~ORIENTAL SWORDS: This weapon class allows the character to use katanas, wakizashis and ninjatos.
+
+<DOTS1>
+
+<DOTS2>
+
+<DOTS3>
+
+<DOTS4>
+
+<DOTS5>~)
+			SET cd_98_name = RESOLVE_STR_REF(~Two Handed Swords~)
+			SET cd_98_desc = RESOLVE_STR_REF(~TWO HANDED SWORDS: This weapon class allows the character to use two handed swords.
+
+<DOTS1>
+
+<DOTS2>
+
+<DOTS3>
+
+<DOTS4>
+
+<DOTS5>~)
+			SET cd_99_name = RESOLVE_STR_REF(~Polearms~)
+			SET cd_99_desc = RESOLVE_STR_REF(~POLEARMS: This weapon class allows the character to use spears and halberds. Druids can choose this category, but are restricted to spears only.
+
+<DOTS1>
+
+<DOTS2>
+
+<DOTS3>
+
+<DOTS4>
+
+<DOTS5>~)
+			SET cd_100_name = RESOLVE_STR_REF(~Staves~)
+			SET cd_100_desc = RESOLVE_STR_REF(~STAVES: This weapon class allows the character to use staves.
+
+<DOTS1>
+
+<DOTS2>
+
+<DOTS3>
+
+<DOTS4>
+
+<DOTS5>~)
+			SET cd_101_name = RESOLVE_STR_REF(~Maces~)
+			SET cd_101_desc = RESOLVE_STR_REF(~MACES: This weapon class allows the character to use clubs, maces and morning stars. Druids and thieves can choose this category, but are restricted to clubs only.
+
+<DOTS1>
+
+<DOTS2>
+
+<DOTS3>
+
+<DOTS4>
+
+<DOTS5>~)
+			SET cd_102_name = RESOLVE_STR_REF(~Warhammers~)
+			SET cd_102_desc = RESOLVE_STR_REF(~WARHAMMERS: This weapon class allows the character to use warhammers.
+
+<DOTS1>
+
+<DOTS2>
+
+<DOTS3>
+
+<DOTS4>
+
+<DOTS5>~)
+			SET cd_103_name = RESOLVE_STR_REF(~Flails~)
+			SET cd_103_desc = RESOLVE_STR_REF(~FLAILS: This weapon class allows the character to use flails.
+
+<DOTS1>
+
+<DOTS2>
+
+<DOTS3>
+
+<DOTS4>
+
+<DOTS5>~)
+			SET cd_104_name = RESOLVE_STR_REF(~Axes~)
+			SET cd_104_desc = RESOLVE_STR_REF(~AXES: This weapon class allows the character to use axes and throwing axes.
+
+<DOTS1>
+
+<DOTS2>
+
+<DOTS3>
+
+<DOTS4>
+
+<DOTS5>~)
+			SET cd_105_name = RESOLVE_STR_REF(~Bows~)
+			SET cd_105_desc = RESOLVE_STR_REF(~BOWS: This weapon class allows the character to use shortbows, longbows and composite longbows. Thieves can choose this category, but are restricted to shortbows only.
+
+<DOTS1>
+
+<DOTS2>
+
+<DOTS3>
+
+<DOTS4>
+
+<DOTS5>~)
+			SET cd_106_name = RESOLVE_STR_REF(~Crossbows~)
+			SET cd_106_desc = RESOLVE_STR_REF(~CROSSBOWS: This weapon class allows the character to use light and heavy crossbows. Thieves can choose this category, but are restricted to light crossbows only.
+
+<DOTS1>
+
+<DOTS2>
+
+<DOTS3>
+
+<DOTS4>
+
+<DOTS5>~)
+			SET cd_107_name = RESOLVE_STR_REF(~Missile weapons~)
+			SET cd_107_desc = RESOLVE_STR_REF(~MISSILE WEAPONS: This weapon class allows the character to use darts and slings.
+
+<DOTS1>
+
+<DOTS2>
+
+<DOTS3>
+
+<DOTS4>
+
+<DOTS5>~)
+			PATCH_IF (col_start = 4) BEGIN // descript updates only needed for weapprof
+				FOR (row = (skip_rows + 1) ; row < (skip_rows + 6) ; ++row) BEGIN // eliminate first profs
+					SET_2DA_ENTRY row 2 col_num 0 // ref
+					SET_2DA_ENTRY row 3 col_num 0 // ref
+				END
+				SET_2DA_ENTRY skip_rows + 10 2 col_num 0 // ref
+				SET_2DA_ENTRY skip_rows + 10 3 col_num 0 // ref
+				FOR (row = (skip_rows + 6) ; row < (skip_rows + 10) ; ++row) BEGIN // eliminate first profs
+					profcode = 80 + row
+					SET_2DA_ENTRY row 2 col_num EVALUATE_BUFFER ~cd_%profcode%_name~ // ref
+					SET_2DA_ENTRY row 3 col_num EVALUATE_BUFFER ~cd_%profcode%_desc~ // ref
+				END
+				FOR (row = (skip_rows + 11) ; row < (skip_rows + 21) ; ++row) BEGIN // eliminate first profs
+					profcode = 79 + row
+					SET_2DA_ENTRY row 2 col_num EVALUATE_BUFFER ~cd_%profcode%_name~ // ref
+					SET_2DA_ENTRY row 3 col_num EVALUATE_BUFFER ~cd_%profcode%_desc~ // ref
+				END
+			END
+			REPLACE_TEXTUALLY ~CD_DELETE_ME~ ~~
+			PRETTY_PRINT_2DA
+			BUT_ONLY
+
+	END
+
+END
+
+
+
+
+
+
+
+
+
+
+
+
+
+COPY_EXISTING ~stats.ids~ ~override~
+	REPLACE_TEXTUALLY ~^\(89\|9[0-9]\|115\)[ %TAB%]+.+$~ ~\1 UNUSEDPROF\1~
+	REPLACE_TEXTUALLY ~^\(100[ %TAB%]+\).+$~ ~\1PROFICIENCYBOW~
+	REPLACE_TEXTUALLY ~^\(101[ %TAB%]+\).+$~ ~\1PROFICIENCYSPIKED~
+	REPLACE_TEXTUALLY ~^\(102[ %TAB%]+\).+$~ ~\1PROFICIENCYSMALL_SWORD~
+	REPLACE_TEXTUALLY ~^\(103[ %TAB%]+\).+$~ ~\1PROFICIENCYLARGE_SWORD~
+	REPLACE_TEXTUALLY ~^\(104[ %TAB%]+\).+$~ ~\1PROFICIENCYAXE~
+	REPLACE_TEXTUALLY ~^\(105[ %TAB%]+\).+$~ ~\1PROFICIENCYBLUNT~
+	REPLACE_TEXTUALLY ~^\(106[ %TAB%]+\).+$~ ~\1PROFICIENCYMISSILE~
+	REPLACE_TEXTUALLY ~^\(107[ %TAB%]+\).+$~ ~\1PROFICIENCYSPEAR~
+
+// for old ids references, add dupe entries
+// extra append of new name is extraneous but makes compile/decompile easier
+APPEND ~stats.ids~ ~100 PROFICIENCYLONGBOW
+100 PROFICIENCYSHORTBOW
+100 PROFICIENCYBOW
+101 PROFICIENCYFLAILMORNINGSTAR
+101 PROFICIENCYSPIKED
+102 PROFICIENCYDAGGER
+102 PROFICIENCYSHORTSWORD
+102 PROFICIENCYSMALL_SWORD
+103 PROFICIENCYBASTARDSWORD
+103 PROFICIENCYKATANA
+103 PROFICIENCYLONGSWORD
+103 PROFICIENCYSCIMITARWAKISASHININJATO
+103 PROFICIENCYTWOHANDEDSWORD
+103 PROFICIENCYLARGE_SWORD
+105 PROFICIENCYMACE
+105 PROFICIENCYQUARTERSTAFF
+105 PROFICIENCYWARHAMMER
+105 EXTRAPROFICIENCY1
+105 PROFICIENCYCLUB
+105 PROFICIENCYBLUNT
+106 PROFICIENCYCROSSBOW
+106 PROFICIENCYDART
+106 PROFICIENCYSLING
+106 PROFICIENCYMISSILE
+107 PROFICIENCYHALBERD
+107 PROFICIENCYSPEAR~
+
+// adjust joinable NPCs who lose total pips when profs combine
+INCLUDE ~rick_bigg_mod/lib/borrowed_from_cdtweaks/profs_common3.tpa~
