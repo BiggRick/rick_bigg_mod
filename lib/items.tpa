@@ -11,7 +11,7 @@ END
 
 
 
-//KIEL'S BUCKLER +2//
+//KIEL'S BUCKLER +2 - 4000mo//
 COPY "rick_bigg_mod/items/SHLD20.itm" "override"
 	SAY NAME1 "Buckler"
 	SAY UNIDENTIFIED_DESC "A buckler, also known as a target shield, is a small round shield of wood or metal that fastens to the forearm. Because of its size, it is light and can be worn with very little restriction to movement.
@@ -48,9 +48,7 @@ Weight: 2
 
 
 
-
-
-//THE PRACTICAL DEFENSE + 3//
+//THE PRACTICAL DEFENSE + 3 - 7500mo//
 COPY "rick_bigg_mod/items/PLAT08.itm" "override"
 	SAY NAME1 "Plate Mail"
 	SAY UNIDENTIFIED_DESC "Plate mail is a combination of chain armor with metal plates covering the vital areas such as the chest, abdomen, and groin. Similar in construction to bronze plate mail, true plate mail comprises chain and leather.
@@ -84,7 +82,7 @@ Weight: 18
 
 
 
-//MOONBLADE +3//
+//MOONBLADE +3 - valore 0//
 COPY "rick_bigg_mod/items/sw1h13.itm" "override"
 	SAY NAME1 "Long Sword"
 	SAY UNIDENTIFIED_DESC "These swords are usually referred to as double-edged swords, war swords, or military swords. In many cases, the long sword has a single-edged blade. There is no single version of the long sword; the design and length vary from culture to culture and may vary within the same culture depending on the era. Among the most common characteristics of all long swords is their length, which ranges from thirty-five inches to forty-seven inches. In the latter case, the blade is known to take up forty inches of the total length. Most long swords have a double-edged blade and a sharp point at the tip. Despite the tip, the long sword is designed for slashing, not thrusting.
@@ -124,10 +122,35 @@ Weight: 3"
 
 
 
+//CLOAK OF BALDURAN - valore 12000mo//
+COPY "rick_bigg_mod/items/CLCK05.itm" "override"
+	SAY NAME1 "Cloak"
+	SAY UNIDENTIFIED_DESC "The cloak can be made in every possible shape with just about every type of fabric. The most common forms are a circular piece of fabric with a hole in the center for the head, and fabric draped from neck, connected by a chain, brooch, cord, or pins.
+
+STATISTICS:
+
+Weight: 3"
+
+	SAY NAME2 "Cloak of Balduran"
+	SAY DESC "This cloak was reputedly worn by Balduran, the founder of Baldur's Gate. Though it was never used in combat, it provides protection worthy of any great leader.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +1
+– Saving Throws: +1
+– Magic Resistance: +20%
+
+Weight: 3"
 
 
 
-//RAINBOW AMULET//
+
+
+
+
+
+//RAINBOW AMULET - valore 4500mo//
 COPY "rick_bigg_mod/items/AMUL18.itm" "override"
 	SAY NAME1 "Amulet"
 	SAY UNIDENTIFIED_DESC "Amulets are usually magical devices that are commonly worn around the neck, suspended from a chain. The type of chain that comes with an amulet generally increases the item's aesthetic value, not its magical properties. Only one amulet can be dangled from the neck at a time.
@@ -2212,13 +2235,12 @@ Requires:
 Weight: 3"
 
 	SAY NAME2 "Kundane +3"
-	SAY DESC "Disfigured as a child, Dramnek Olk was ostracized and ridiculed by his peers. In his loneliness he spent many hours alone on the hills overlooking Trademeet. A nearby wizard, Galloma, discovered the youth and found in him a kindred soul. The two fast became friends; master and apprentice. Galloma died before Dramnek's tutorage could be completed, however, and the youth found himself once more alone in the world. Eventually he made his way to the streets of Athkatla. There he became a cutpurse, augmenting his thieving skills with the little magic he'd learned from Galloma. Eventually he crafted this sword, which enhanced Dramnek's weak physical body. This weapon has no speed factor.
+	SAY DESC "Disfigured as a child, Dramnek Olk was ostracized and ridiculed by his peers. In his loneliness he spent many hours alone on the hills overlooking Trademeet. A nearby wizard, Galloma, discovered the youth and found in him a kindred soul. The two fast became friends; master and apprentice. Galloma died before Dramnek's tutorage could be completed, however, and the youth found himself once more alone in the world. Eventually he crafted this sword, which enhanced Dramnek's weak physical body. 
 
 STATISTICS:
 
 Charge abilities:
-– Haste once per day
-  Duration: 2 rounds
+– Tenser's Transformation once per day (caster level)
 
 THAC0: +3
 Damage: 1d6+3 (piercing)
@@ -2228,11 +2250,11 @@ Type: One-handed
 Requires:
  5 Strength
 
-Weight: 1" 
+Weight: 2" 
 
 
 //CUTTHROAT +4//
-COPY "rick_bigg_mod/items/SW1H25.itm" "override"
+COPY "rick_bigg_mod/items/SW1H28.itm" "override"
 	SAY NAME1 "Short Sword"
 	SAY UNIDENTIFIED_DESC "The short sword is the first type of sword to come into existence. In the simplest of terms, a short sword can be considered a dagger with a blade so long that it can no longer be called a dagger. The term short sword does not exist in sword classifications. However, it has come to be used to describe a double-edged blade about two feet in length. The sword tip is usually pointed, ideal for thrusting.
 
@@ -2267,6 +2289,8 @@ Weight: 2"
 
 
 
+
+
 //BLACKRAZOR +4//
 COPY "rick_bigg_mod/items/MISCBC.itm" "override"
 	SAY NAME1 "Short Sword"
@@ -2288,12 +2312,15 @@ Weight: 3"
 
 STATISTICS:
 
+Equipped abilities:
+- Magic resistance: +10%
+
 Combat abilities:
 – With every hit, it has a 25% chance of draining 4 levels from the target and healing the wielder by 20 Hit Points as well as hasting <PRO_HIMHER> for 20 seconds and increasing <PRO_HISHER> Strength by 3 points for 20 seconds
 
 THAC0: +4
 Damage: 1d6+4 (piercing)
-Speed Factor: 1
+Speed Factor: 0
 Proficiency Type: Short Sword
 Type: One-handed
 Requires:
@@ -2341,6 +2368,9 @@ Weight: 2"
 
 
 
+
+
+
 //SWORD OF THE MASK +5//
 COPY "rick_bigg_mod/items/SW1H59.itm" "override"
 	SAY NAME1 "Short Sword"
@@ -2358,15 +2388,15 @@ Requires:
 Weight: 3"
 
 	SAY NAME2 "Sword of the Mask +5"
-	SAY DESC "This blade is highly prized by those who serve the Shadowlord, as well as any who engage in shadowy business.
+	SAY DESC "Combined with the Heart of the Damned into a single lethal weapon, this deadly blade is the preferred tool of assassins and thieves. 
 
 STATISTICS:
 
 Equipped abilities:
 – Whenever the wielder is hit, there is a 10% chance is surrounded by 3 mirror images for 3 rounds
-
-Combat abilities:
-- 20% chance with every hit to drain 1 level from opponent
+- Non-detection
+- Backstab bonus: +1
+- Can backstab while invisible from front
 
 THAC0: +5
 Damage: 1d6+5 (piercing)
@@ -2377,6 +2407,11 @@ Requires:
  5 Strength
 
 Weight: 2" 
+
+
+
+
+
 
 
 //DAGGER OF VENOM +2//
@@ -2496,274 +2531,7 @@ Weight: 1"
 
 
 
-
-//IXIL'S SPIKE//
-COPY "rick_bigg_mod/items/DAGG23.itm" "override"
-	SAY NAME1 "Dagger"
-	SAY UNIDENTIFIED_DESC "The typical dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter.
-
-STATISTICS:
-
-Damage: 1d4 (piercing)
-Speed Factor: 2
-Proficiency Type: Dagger
-Type: One-handed
-Requires:
- 3 Strength
-
-Weight: 1"
-
-
-	SAY NAME2 "Ixil's Spike"
-	SAY DESC "This dagger is actually the tip of Ixil's Nail—an artifact of almost unimaginable power. Even this small piece of the legendary spear is a fierce weapon.
-
-STATISTICS
-
-Combat abilities:
-– 1 extra attack per round
-- Returns to the wielder's hand when thrown
-
-THAC0: +2
-Damage: 1d4+2
-Damage type (melee): Piercing
-Damage type (thrown): Missile
-Speed Factor: 0
-Proficiency Type: Dagger
-Type: One-handed
-Requires:
- 3 Strength
-
-Weight: 1" 
-
-
-//DUSKBLADE +2//
-COPY "rick_bigg_mod/items/HALB08.itm" "override"
-	SAY NAME1 "Halberd"
-	SAY UNIDENTIFIED_DESC "By far the oldest and most often used polearm, the halberd consists of a cleaver-like axe blade mounted on a staff averaging six feet in length. The axe blade is balanced at the rear with a fluke and surmounted by a sharp spike, usually of quadrangular design. The fluke is sometimes replaced by a hook used to dismount cavalry. A halberd can be best described as a cross between a spear and an axe.
-
-STATISTICS:
-
-Damage: 1d10 (piercing or slashing)
-Speed Factor: 9
-Proficiency Type: Halberd
-Type: Two-handed
-Requires:
- 13 Strength
-
-Weight: 15"
-
-
-	SAY NAME2 "Duskblade +2"
-	SAY DESC "Though once a simple halberd, this weapon spent many hundreds of years in a tomb next to the soul phylactery of a powerful lich. The creature was eventually erased from existence, purportedly by another of its kind, but such close proximity to that concentrated evil has imbued this blade with the very essence of night and the chill of darkness, energy that becomes deadly in combat. It is a foul weapon, and a warrior should use it with caution. 
-
-STATISTICS:
-
-THAC0: +2
-Damage: 1d10+2, +2 points of cold damage
-Damage type: Piercing
-Speed Factor: 7
-Proficiency Type: Halberd
-Type: Two-handed
-Requires:
- 13 Strength
-
-Weight: 12" 
-
-
-
-
-//DRAGON'S BANE +3//
-COPY "rick_bigg_mod/items/HALB04.itm" "override"
-	SAY NAME1 "Halberd"
-	SAY UNIDENTIFIED_DESC "By far the oldest and most often used polearm, the halberd consists of a cleaver-like axe blade mounted on a staff averaging six feet in length. The axe blade is balanced at the rear with a fluke and surmounted by a sharp spike, usually of quadrangular design. The fluke is sometimes replaced by a hook used to dismount cavalry. A halberd can be best described as a cross between a spear and an axe.
-
-STATISTICS:
-
-Damage: 1d10 (piercing or slashing)
-Speed Factor: 9
-Proficiency Type: Halberd
-Type: Two-handed
-Requires:
- 13 Strength
-
-Weight: 15"
-
-
-	SAY NAME2 "Dragon's Bane +3"
-	SAY DESC "This was the weapon of Thorvin Dukal, one of seven self-proclaimed Dragonslayers who spent years railing against what they called an insidious dragon infestation that threatened Faerûn. Thorvin had this weapon enchanted at great expense and used it on many occasions, though of dragons only a single white has fallen to it. The Dragonslayers met their match in a cantankerous ancient red who slew the entire group in an epic battle. This weapon did not end up in the beast's hoard, however, as the creature returned to its lair to recuperate and when it emerged, the field of combat was well scavenged.
-
-STATISTICS:
-
-THAC0: +3
-Damage: 1d10+3, +9 vs. dragons
-Damage type: Piercing
-Speed Factor: 6
-Proficiency Type: Halberd
-Type: Two-handed
-Requires:
- 13 Strength
-
-Weight: 12" 
-
-
-
-
-
-//DRAGON'S BREATH +5//
-COPY "rick_bigg_mod/items/HALB05.itm" "override"
-	SAY NAME1 "Halberd"
-	SAY UNIDENTIFIED_DESC "By far the oldest and most often used polearm, the halberd consists of a cleaver-like axe blade mounted on a staff averaging six feet in length. The axe blade is balanced at the rear with a fluke and surmounted by a sharp spike, usually of quadrangular design. The fluke is sometimes replaced by a hook used to dismount cavalry. A halberd can be best described as a cross between a spear and an axe.
-
-STATISTICS:
-
-Damage: 1d10 (piercing or slashing)
-Speed Factor: 9
-Proficiency Type: Halberd
-Type: Two-handed
-Requires:
- 13 Strength
-
-Weight: 15"
-
-
-	SAY NAME2 "Dragon's Breath +5"
-	SAY DESC "Trying to profit from the strength of greater beings, many years ago the mage Ullion founded a dragon-worshipping cult under the moniker Son of Drago. Attracting followers with promises of conquest, he sought to secure his authority by enchanting this symbolic weapon for his bodyguard, Jaramor Bold. When the Dragon's Breath strikes an opponent, it releases the harsh flames of a red dragon, the poisonous vapor of the green dragon, the blue dragon's lightning bolt, a spray of a black dragon's acid, and the white dragon's penetrating cold. Unfortunately, Ullion was the first to feel its effects, slain by the ambitious Jaramor, who sought to rule. There was no real power to be had without the mage, so the entire organization soon collapsed on itself. 
-
-STATISTICS:
-
-THAC0: +3
-Damage: 1d10 (strikes as a +5 weapon)
-Elemental damage: +1 cold damage, +1 fire damage, +1 electrical damage, +1 acid damage, +1 poison damage (bypass MR)
-Damage type: Piercing
-Speed Factor: 6
-Proficiency Type: Halberd
-Type: Two-handed
-Requires:
- 13 Strength
-
-Weight: 13" 
-
-
-
-
-
-//WAVE +4//
-COPY "rick_bigg_mod/items/HALB09.itm" "override"
-	SAY NAME1 "Halberd"
-	SAY UNIDENTIFIED_DESC "By far the oldest and most often used polearm, the halberd consists of a cleaver-like axe blade mounted on a staff averaging six feet in length. The axe blade is balanced at the rear with a fluke and surmounted by a sharp spike, usually of quadrangular design. The fluke is sometimes replaced by a hook used to dismount cavalry. A halberd can be best described as a cross between a spear and an axe.
-
-STATISTICS:
-
-Damage: 1d10 (piercing or slashing)
-Speed Factor: 9
-Proficiency Type: Halberd
-Type: Two-handed
-Requires:
- 13 Strength
-
-Weight: 15"
-
-
-	SAY NAME2 "Wave +4"
-	SAY DESC "Forged in antiquity by a cult devoted to the goddess Umberlee, this weapon of vengeance was designed to aid the cult's champion in retrieving a holy artifact from the fire giants of the Storm Horn Mountains. That was a lot of hope to place in one champion, and unfortunately the Wave had been lost ever since.
-
-STATISTICS:
-
-Combat abilities:  
-– 25% chance of draining the victim of water (+15 cold damage, bypass MR)
-– Slays fire elementals, efreet, and salamanders
-
-THAC0: +4
-Damage: 1d10+4 (piercing)
-Speed Factor: 5
-Proficiency Type: Halberd
-Type: Two-handed
-Requires:
- 13 Strength
-
-Weight: 11" 
-
-
-
-//RAVAGER +4//
-COPY "rick_bigg_mod/items/HALB10.itm" "override"
-	SAY NAME1 "Halberd"
-	SAY UNIDENTIFIED_DESC "By far the oldest and most often used polearm, the halberd consists of a cleaver-like axe blade mounted on a staff averaging six feet in length. The axe blade is balanced at the rear with a fluke and surmounted by a sharp spike, usually of quadrangular design. The fluke is sometimes replaced by a hook used to dismount cavalry. A halberd can be best described as a cross between a spear and an axe.
-
-STATISTICS:
-
-Damage: 1d10 (piercing or slashing)
-Speed Factor: 9
-Proficiency Type: Halberd
-Type: Two-handed
-Requires:
- 13 Strength
-
-Weight: 15"
-
-
-	SAY NAME2 "Ravager +4"
-	SAY DESC "Taking the blood-soaked shaft of this weapon in hand brings a sudden chill along your spine. The origins of this gruesome halberd are unknown, the myth says it can slay the opponents with a single blow—unless they can survive the sudden loss of their head.  
-
-STATISTICS:
-
-Combat abilities:
-– 15% chance of decapitating opponent with each successful attack (Save vs. Death -2 negates)
-
-THAC0: +4
-Damage: 1d10+4 (piercing)
-Speed Factor: 5
-Proficiency Type: Halberd
-Type: Two-handed
-Requires:
- 13 Strength
-
-Weight: 11" 
-
-
-
-
-
-//RAVAGER +6//
-COPY "rick_bigg_mod/items/HALB11.itm" "override"
-	SAY NAME1 "Halberd"
-	SAY UNIDENTIFIED_DESC "By far the oldest and most often used polearm, the halberd consists of a cleaver-like axe blade mounted on a staff averaging six feet in length. The axe blade is balanced at the rear with a fluke and surmounted by a sharp spike, usually of quadrangular design. The fluke is sometimes replaced by a hook used to dismount cavalry. A halberd can be best described as a cross between a spear and an axe.
-
-STATISTICS:
-
-Damage: 1d10 (piercing or slashing)
-Speed Factor: 9
-Proficiency Type: Halberd
-Type: Two-handed
-Requires:
- 13 Strength
-
-Weight: 15"
-
-
-	SAY NAME2 "Ravager +6"
-	SAY DESC "Combined with the Serpent Shaft, this dark halberd has also the ability to poison instantly the opponent without saving throw... unless he is still alive without his head.
-
-STATISTICS:
-
-Combat abilities:
-– Hit target suffer 3d6 points of poison damage (no save, bypass MR)
-– 15% chance of decapitating opponent with each successful attack (no save)
-
-THAC0: +6
-Damage: 1d10+6 (piercing)
-Speed Factor: 3
-Proficiency Type: Halberd
-Type: Two-handed
-Requires:
- 13 Strength
-
-Weight: 9" 
-
-
-
-
-//ELEMENT'S FURY +3//
+//ELEMENTS' FURY +3//
 COPY "rick_bigg_mod/items/BDDAGG01.itm" "override"
 "rick_bigg_mod/items/BDDAGG01.itm" "override/DAGG13.itm"
 	SAY NAME1 "Dagger"
@@ -2780,7 +2548,7 @@ Requires:
 
 Weight: 1"
 
-	SAY NAME2 "Element's Fury +3"
+	SAY NAME2 "Elements' Fury +3"
 	SAY DESC "The mage who crafted this strange dagger was obsessed with the four elemental planes and sought to create a means to join them together. Opening portals to all of them at once, he managed to join their energies together to enchant this relic, giving it properties of each plane.
 
 Unfortunately, he happened to be standing between the portals, holding the dagger in his hand; when the energies converged, they converged on him. It was the mage’s apprentice who discovered the dagger, clutched in his master’s charred and frozen hands.
@@ -2803,6 +2571,50 @@ Requires:
  3 Strength
 
 Weight: 1"
+
+
+
+
+
+
+//BONEBLADE +4/
+COPY "rick_bigg_mod/items/DAGG14.itm" "override"
+	SAY NAME1 "Dagger"
+	SAY UNIDENTIFIED_DESC "The typical dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter.
+
+STATISTICS:
+
+Damage: 1d4 (piercing)
+Speed Factor: 2
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 1"
+
+
+	SAY NAME2 "Boneblade +4"
+	SAY DESC "This seemingly simple dagger, steel blade and bone handle, is an incredibly powerful weapon. Forged by an unfortunate duergar smith centuries earlier, the handle was carved from a tooth of a black dragon and the blade was tempered in the acid of its creator. How it has made its way to you is anyone's guess.
+
+STATISTICS:
+
+Equipped abilities:
+- Acid resistance bonus: +30%
+
+THAC0: +4
+Damage: 1d4+4, +2 acid
+Speed Factor: 0
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 1"
+
+
+
+
 
 
 
@@ -2829,7 +2641,7 @@ Weight: 1"
 STATISTICS:
 
 Combat abilities:
-– Each successful hit casts Larloch's Minor Drain on the target (at Level 1)
+– Each successful hit casts Larloch's Minor Drain on the target (at level 1)
 
 THAC0: +4
 Damage: 1d4+4 (piercing)
@@ -3037,6 +2849,278 @@ Requires:
  3 Strength
 
 Weight: 1"
+
+
+
+
+
+//IXIL'S SPIKE//
+COPY "rick_bigg_mod/items/DAGG23.itm" "override"
+	SAY NAME1 "Dagger"
+	SAY UNIDENTIFIED_DESC "The typical dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter.
+
+STATISTICS:
+
+Damage: 1d4 (piercing)
+Speed Factor: 2
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 1"
+
+
+	SAY NAME2 "Ixil's Spike"
+	SAY DESC "This dagger is actually the tip of Ixil's Nail—an artifact of almost unimaginable power. Even this small piece of the legendary spear is a fierce weapon.
+
+STATISTICS
+
+Combat abilities:
+– 1 extra attack per round
+- Returns to the wielder's hand when thrown
+
+THAC0: +2
+Damage: 1d4+2
+Damage type (melee): Piercing
+Damage type (thrown): Missile
+Speed Factor: 0
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 1" 
+
+
+//DUSKBLADE +2//
+COPY "rick_bigg_mod/items/HALB08.itm" "override"
+	SAY NAME1 "Halberd"
+	SAY UNIDENTIFIED_DESC "By far the oldest and most often used polearm, the halberd consists of a cleaver-like axe blade mounted on a staff averaging six feet in length. The axe blade is balanced at the rear with a fluke and surmounted by a sharp spike, usually of quadrangular design. The fluke is sometimes replaced by a hook used to dismount cavalry. A halberd can be best described as a cross between a spear and an axe.
+
+STATISTICS:
+
+Damage: 1d10 (piercing or slashing)
+Speed Factor: 9
+Proficiency Type: Halberd
+Type: Two-handed
+Requires:
+ 13 Strength
+
+Weight: 15"
+
+
+	SAY NAME2 "Duskblade +2"
+	SAY DESC "Though once a simple halberd, this weapon spent many hundreds of years in a tomb next to the soul phylactery of a powerful lich. The creature was eventually erased from existence, purportedly by another of its kind, but such close proximity to that concentrated evil has imbued this blade with the very essence of night and the chill of darkness, energy that becomes deadly in combat. It is a foul weapon, and a warrior should use it with caution. 
+
+STATISTICS:
+
+THAC0: +2
+Damage: 1d10+2, +2 points of cold damage
+Damage type: Piercing
+Speed Factor: 7
+Proficiency Type: Halberd
+Type: Two-handed
+Requires:
+ 13 Strength
+
+Weight: 12" 
+
+
+
+
+//DRAGON'S BANE +3//
+COPY "rick_bigg_mod/items/HALB04.itm" "override"
+	SAY NAME1 "Halberd"
+	SAY UNIDENTIFIED_DESC "By far the oldest and most often used polearm, the halberd consists of a cleaver-like axe blade mounted on a staff averaging six feet in length. The axe blade is balanced at the rear with a fluke and surmounted by a sharp spike, usually of quadrangular design. The fluke is sometimes replaced by a hook used to dismount cavalry. A halberd can be best described as a cross between a spear and an axe.
+
+STATISTICS:
+
+Damage: 1d10 (piercing or slashing)
+Speed Factor: 9
+Proficiency Type: Halberd
+Type: Two-handed
+Requires:
+ 13 Strength
+
+Weight: 15"
+
+
+	SAY NAME2 "Dragon's Bane +3"
+	SAY DESC "This was the weapon of Thorvin Dukal, one of seven self-proclaimed Dragonslayers who spent years railing against what they called an insidious dragon infestation that threatened Faerûn. Thorvin had this weapon enchanted at great expense and used it on many occasions, though of dragons only a single white has fallen to it. The Dragonslayers met their match in a cantankerous ancient red who slew the entire group in an epic battle. This weapon did not end up in the beast's hoard, however, as the creature returned to its lair to recuperate and when it emerged, the field of combat was well scavenged.
+
+STATISTICS:
+
+THAC0: +3
+Damage: 1d10+3, +9 vs. dragons
+Damage type: Piercing
+Speed Factor: 6
+Proficiency Type: Halberd
+Type: Two-handed
+Requires:
+ 13 Strength
+
+Weight: 12" 
+
+
+
+
+
+//DRAGON'S BREATH +5//
+COPY "rick_bigg_mod/items/HALB05.itm" "override"
+	SAY NAME1 "Halberd"
+	SAY UNIDENTIFIED_DESC "By far the oldest and most often used polearm, the halberd consists of a cleaver-like axe blade mounted on a staff averaging six feet in length. The axe blade is balanced at the rear with a fluke and surmounted by a sharp spike, usually of quadrangular design. The fluke is sometimes replaced by a hook used to dismount cavalry. A halberd can be best described as a cross between a spear and an axe.
+
+STATISTICS:
+
+Damage: 1d10 (piercing or slashing)
+Speed Factor: 9
+Proficiency Type: Halberd
+Type: Two-handed
+Requires:
+ 13 Strength
+
+Weight: 15"
+
+
+	SAY NAME2 "Dragon's Breath +5"
+	SAY DESC "Trying to profit from the strength of greater beings, many years ago the mage Ullion founded a dragon-worshipping cult under the moniker Son of Drago. Attracting followers with promises of conquest, he sought to secure his authority by enchanting this symbolic weapon for his bodyguard, Jaramor Bold. When the Dragon's Breath strikes an opponent, it releases the harsh flames of a red dragon, the poisonous vapor of the green dragon, the blue dragon's lightning bolt, a spray of a black dragon's acid, and the white dragon's penetrating cold. Unfortunately, Ullion was the first to feel its effects, slain by the ambitious Jaramor, who sought to rule. There was no real power to be had without the mage, so the entire organization soon collapsed on itself. 
+
+STATISTICS:
+
+THAC0: +5
+Damage: 1d10
+Elemental damage: +1 cold damage, +1 fire damage, +1 electrical damage, +1 acid damage, +1 poison damage (bypass MR)
+Damage type: Piercing
+Speed Factor: 4
+Proficiency Type: Halberd
+Type: Two-handed
+Requires:
+ 13 Strength
+
+Weight: 13" 
+
+
+
+
+
+//WAVE +4//
+COPY "rick_bigg_mod/items/HALB09.itm" "override"
+	SAY NAME1 "Halberd"
+	SAY UNIDENTIFIED_DESC "By far the oldest and most often used polearm, the halberd consists of a cleaver-like axe blade mounted on a staff averaging six feet in length. The axe blade is balanced at the rear with a fluke and surmounted by a sharp spike, usually of quadrangular design. The fluke is sometimes replaced by a hook used to dismount cavalry. A halberd can be best described as a cross between a spear and an axe.
+
+STATISTICS:
+
+Damage: 1d10 (piercing or slashing)
+Speed Factor: 9
+Proficiency Type: Halberd
+Type: Two-handed
+Requires:
+ 13 Strength
+
+Weight: 15"
+
+
+	SAY NAME2 "Wave +4"
+	SAY DESC "Forged in antiquity by a cult devoted to the goddess Umberlee, this weapon of vengeance was designed to aid the cult's champion in retrieving a holy artifact from the fire giants of the Storm Horn Mountains. That was a lot of hope to place in one champion, and unfortunately the Wave had been lost ever since.
+
+STATISTICS:
+
+Combat abilities:  
+– 25% chance of draining the victim of water (+15 cold damage, bypass MR)
+– Slays fire elementals, efreet, and salamanders
+
+THAC0: +4
+Damage: 1d10+4 (piercing)
+Speed Factor: 5
+Proficiency Type: Halberd
+Type: Two-handed
+Requires:
+ 13 Strength
+
+Weight: 11" 
+
+
+
+//RAVAGER +4//
+COPY "rick_bigg_mod/items/HALB10.itm" "override"
+	SAY NAME1 "Halberd"
+	SAY UNIDENTIFIED_DESC "By far the oldest and most often used polearm, the halberd consists of a cleaver-like axe blade mounted on a staff averaging six feet in length. The axe blade is balanced at the rear with a fluke and surmounted by a sharp spike, usually of quadrangular design. The fluke is sometimes replaced by a hook used to dismount cavalry. A halberd can be best described as a cross between a spear and an axe.
+
+STATISTICS:
+
+Damage: 1d10 (piercing or slashing)
+Speed Factor: 9
+Proficiency Type: Halberd
+Type: Two-handed
+Requires:
+ 13 Strength
+
+Weight: 15"
+
+
+	SAY NAME2 "Ravager +4"
+	SAY DESC "Taking the blood-soaked shaft of this weapon in hand brings a sudden chill along your spine. The origins of this gruesome halberd are unknown, the myth says it can slay the opponents with a single blow—unless they can survive the sudden loss of their head.  
+
+STATISTICS:
+
+Combat abilities:
+– 15% chance of decapitating opponent with each successful attack (Save vs. Death -4 negates)
+
+THAC0: +4
+Damage: 1d10+4 (piercing)
+Speed Factor: 5
+Proficiency Type: Halberd
+Type: Two-handed
+Requires:
+ 13 Strength
+
+Weight: 11" 
+
+
+
+
+
+//RAVAGER +6//
+COPY "rick_bigg_mod/items/HALB11.itm" "override"
+	SAY NAME1 "Halberd"
+	SAY UNIDENTIFIED_DESC "By far the oldest and most often used polearm, the halberd consists of a cleaver-like axe blade mounted on a staff averaging six feet in length. The axe blade is balanced at the rear with a fluke and surmounted by a sharp spike, usually of quadrangular design. The fluke is sometimes replaced by a hook used to dismount cavalry. A halberd can be best described as a cross between a spear and an axe.
+
+STATISTICS:
+
+Damage: 1d10 (piercing or slashing)
+Speed Factor: 9
+Proficiency Type: Halberd
+Type: Two-handed
+Requires:
+ 13 Strength
+
+Weight: 15"
+
+
+	SAY NAME2 "Ravager +6"
+	SAY DESC "Combined with the Serpent Shaft, this dark halberd has also the ability to poison instantly the opponent without saving throw... unless he is still alive without his head.
+
+STATISTICS:
+
+Combat abilities:
+– Hit target suffer 3d6 points of poison damage (no save, bypass MR)
+– 15% chance of decapitating opponent with each successful attack (no save)
+
+THAC0: +6
+Damage: 1d10+6 (piercing)
+Speed Factor: 3
+Proficiency Type: Halberd
+Type: Two-handed
+Requires:
+ 13 Strength
+
+Weight: 9" 
+
+
+
+
+
 
 
 
@@ -3826,7 +3910,7 @@ Weight: 3"
 STATISTICS:
 
 Combat abilities:
-– 15% chance per hit target will take an additional 10 points of fire damage
+– 15% chance per hit target will take an additional 15 points of fire damage
 – 10% chance per hit a 15-ft. radius fireball will automatically detonate (5d6 fire damage; Save vs. Spell for half)
 
 THAC0: +3
@@ -3868,7 +3952,7 @@ Equipped abilities:
 – Fire Resistance: +40%
 
 Combat abilities:
-– 30% chance per hit target will take an additional 20 points of fire damage
+– 25% chance per hit target will take an additional 15 points of fire damage
 – 5% chance per hit a 15-ft. radius fireball will automatically detonate (10d6 fire damage; Save vs. Spell for half)
 
 THAC0: +5
@@ -4601,7 +4685,7 @@ Equipped abilities:
 - Magic Resistance: +10%
 
 Combat abilities:
-– 15% chance of decapitating opponent with each successful attack (Save vs. Death at -2 negates)
+– 15% chance of decapitating opponent with each successful attack (Save vs. Death at -4 negates)
 - 30% chance of casting Fire Shield on yourself (level 20)
 
 THAC0: +5 
@@ -5093,6 +5177,160 @@ Weight: 8"
 
 
 
+//THE BURNING EARTH +2 - valore 6000mo//
+COPY "rick_bigg_mod/items/SW1H24.itm" "override"
+	SAY NAME1 "Long Sword"
+	SAY UNIDENTIFIED_DESC "These swords are usually referred to as double-edged swords, war swords, or military swords. In many cases, the long sword has a single-edged blade. There is no single version of the long sword; the design and length vary from culture to culture and may vary within the same culture depending on the era. Among the most common characteristics of all long swords is their length, which ranges from thirty-five inches to forty-seven inches. In the latter case, the blade is known to take up forty inches of the total length. Most long swords have a double-edged blade and a sharp point at the tip. Despite the tip, the long sword is designed for slashing, not thrusting.
+
+STATISTICS:
+
+Damage: 1d8 (slashing)
+Speed Factor: 5
+Proficiency Type: Long Sword
+Type: One-handed
+Requires:
+ 6 Strength
+
+Weight: 4"
+
+	SAY NAME2 "The Burning Earth +2"
+	SAY DESC "There was a time before Neverwinter was warm and before the great Anauroch was dry... or so it is said. Few relics remain to prove such an age existed, and fewer still have an identifiable purpose. 'The Burning Earth' seems straightforward enough—it burns a victim with magical fire, and a cryptic rune seems to suggest that the power comes from the ground itself—but whomever constructed it remains a mystery. It looks a perfectly serviceable weapon, but something in the balance or grip is... wrong. It strains the forearm a touch, and does not fit the hand just right. It doesn't seem to hurt a warrior's performance, aside from the nagging doubt that the blade was not made for <PRO_HIMHER>... or any other humanoid.
+
+STATISTICS:
+
+THAC0: +2, +3 vs. regenerating creatures, +4 vs. cold-using creatures, +5 vs. undead
+Damage: 1d8+2, +1 fire damage, +3 vs. regenerating creatures, +4 vs. cold-using creatures, +5 vs. undead
+Damage type: Slashing
+Speed Factor: 2
+Proficiency Type: Long Sword
+Type: One-handed
+Requires:
+ 6 Strength
+
+Weight: 4"
+
+
+
+
+
+
+//BLADE OF ROSES +2 - valore 7000mo//
+COPY "rick_bigg_mod/items/SW1H40.itm" "override"
+	SAY NAME1 "Long Sword"
+	SAY UNIDENTIFIED_DESC "These swords are usually referred to as double-edged swords, war swords, or military swords. In many cases, the long sword has a single-edged blade. There is no single version of the long sword; the design and length vary from culture to culture and may vary within the same culture depending on the era. Among the most common characteristics of all long swords is their length, which ranges from thirty-five inches to forty-seven inches. In the latter case, the blade is known to take up forty inches of the total length. Most long swords have a double-edged blade and a sharp point at the tip. Despite the tip, the long sword is designed for slashing, not thrusting.
+
+STATISTICS:
+
+Damage: 1d8 (slashing)
+Speed Factor: 5
+Proficiency Type: Long Sword
+Type: One-handed
+Requires:
+ 6 Strength
+
+Weight: 4"
+
+	SAY NAME2 "Blade of Roses +2"
+	SAY DESC "This blade possesses an unearthly splendor, and it is likely that Sune, the goddess of beauty and passion, had a hand in its creation. The effect it has on the wielder is immediate, and more than once in its history has this sword been the secret behind a lackluster soldier's sudden elevation at court.
+
+STATISTICS:
+
+Equipped abilities: 
+– Charisma: +2
+
+THAC0: +2
+Damage: 1d8+2 (slashing)
+Speed Factor: 3
+Proficiency Type: Long Sword
+Type: One-handed
+Requires:
+ 6 Strength
+
+Weight: 3"
+
+
+
+
+
+
+//RAS THE DANCING BLADE +2 - valore 6000mo//
+COPY "rick_bigg_mod/items/SW1H33.itm" "override"
+	SAY NAME1 "Long Sword"
+	SAY UNIDENTIFIED_DESC "These swords are usually referred to as double-edged swords, war swords, or military swords. In many cases, the long sword has a single-edged blade. There is no single version of the long sword; the design and length vary from culture to culture and may vary within the same culture depending on the era. Among the most common characteristics of all long swords is their length, which ranges from thirty-five inches to forty-seven inches. In the latter case, the blade is known to take up forty inches of the total length. Most long swords have a double-edged blade and a sharp point at the tip. Despite the tip, the long sword is designed for slashing, not thrusting.
+
+STATISTICS:
+
+Damage: 1d8 (slashing)
+Speed Factor: 5
+Proficiency Type: Long Sword
+Type: One-handed
+Requires:
+ 6 Strength
+
+Weight: 4"
+
+	SAY NAME2 "Ras the Dancing Blade +2"
+	SAY DESC "Beroalf was a barbarian who traveled from the cold north in search of adventure. He sought treasures and glory, but soon all he wanted were companions to share in the excitement of battle, much like those he had left behind in his faraway village. Unfortunately, his coarse remarks and rudimentary hygiene repelled most travelers he met, until he expressed his thoughts to a sympathetic mage. The mage, for a price, constructed Ras, the dancing blade. Though not quite what Beroalf had in mind, he was thrilled nonetheless and wielded the sword for many years. How they were ultimately separated is not known.
+
+STATISTICS:
+
+Combat abilities:
+– Dancing sword can attack on its own for 4 rounds
+
+THAC0: +2
+Damage: 1d8+2 (slashing)
+Speed Factor: 3
+Proficiency Type: Long Sword
+Type: One-handed
+Requires:
+ 6 Strength
+
+Weight: 3"
+
+
+
+
+
+//ADJATHA THE DRINKER +3 - valore 8000mo//
+COPY "rick_bigg_mod/items/SW1H35.itm" "override"
+	SAY NAME1 "Long Sword"
+	SAY UNIDENTIFIED_DESC "These swords are usually referred to as double-edged swords, war swords, or military swords. In many cases, the long sword has a single-edged blade. There is no single version of the long sword; the design and length vary from culture to culture and may vary within the same culture depending on the era. Among the most common characteristics of all long swords is their length, which ranges from thirty-five inches to forty-seven inches. In the latter case, the blade is known to take up forty inches of the total length. Most long swords have a double-edged blade and a sharp point at the tip. Despite the tip, the long sword is designed for slashing, not thrusting.
+
+STATISTICS:
+
+Damage: 1d8 (slashing)
+Speed Factor: 5
+Proficiency Type: Long Sword
+Type: One-handed
+Requires:
+ 6 Strength
+
+Weight: 4"
+
+	SAY NAME2 "Adjatha the Drinker +3"
+	SAY DESC "This blade belonged to Dabbar, a long-dead servant of Bhaal that exercised control over his minions in the most brutal of ways. In addition to strengthening the mind against the guile of others, the sword absorbs life energy from an opponent with each successful hit, healing the user. Dabbar considered it a failure of his officers if he returned from battle in less than perfect health, and as the rest of the company watched, he would administer beatings until fully healed.
+
+STATISTICS:
+
+Equipped abilities:
+- +4 Saving Throws vs Enchantment School
+
+Combat abilities:
+– Each hit heals the wielder 1 Hit Point
+- 5% chance to deal extra 20 damage (magic)
+
+THAC0: +3
+Damage: 1d8+3 (slashing)
+Speed Factor: 2
+Proficiency Type: Long Sword
+Type: One-handed
+Requires:
+ 6 Strength
+
+Weight: 3"
+
+
+
 //NAMARRA +2//
 COPY "rick_bigg_mod/items/SW1H36.itm" "override"
 	SAY NAME1 "Scimitar"
@@ -5500,7 +5738,7 @@ Requires:
 Weight: 6"
 
 	SAY NAME2 "Yamato +4"
-	SAY DESC "The name of the mighty Wu Jen who fashioned this 'companion sword' is long forgotten. However, the name Yamato, loosely translated, means 'Guardian' or 'Defender'.
+	SAY DESC "The name of the mighty Wu Jen who fashioned this katana is long forgotten. However, the name Yamato, loosely translated, means 'Guardian' or 'Defender'.
 
 STATISTICS:
 
@@ -5653,6 +5891,46 @@ Weight: 2"
 
 
 
+
+//SPIDER'S BANE +2//
+COPY "rick_bigg_mod/items/SW2H06.itm" "override"
+	SAY NAME1 "Two-Handed Sword"
+	SAY UNIDENTIFIED_DESC "The two-handed sword is a derivative of the long sword. Weaponsmiths have always looked for ways to improve existing weapons. In an effort to improve the long sword, the blade was lengthened. Eventually, the handle had to be extended and two hands became necessary to properly swing the sword. The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations.
+
+STATISTICS:
+
+Damage: 2d6 (slashing)
+Speed Factor: 10
+Proficiency Type: Two-handed Sword
+Type: Two-handed
+Requires:
+ 14 Strength
+
+Weight: 15"
+
+SAY NAME2 "Spider's Bane +2"
+	SAY DESC "This sword was originally forged by the dwarves of the Orothiar tribe in Cloakwood. They created the blade to help foster goodwill between them and the Grand Dukes of Baldur's Gate. Wielded by the Grand Dukes for about a century, the sword was eventually lost, ironically in a fight against ettercaps and spiders. Who wields the blade is now unknown, but its recovery would aid greatly in fighting the current spider infestation that plagues the Cloakwood.
+
+STATISTICS:
+
+Equipped abilities:
+– Protects the wielder from any magics that affect movement, such as Hold and Web.
+
+THAC0: +2, +4 vs Spiders and Ettercaps
+Damage: 2d6+2, +4 vs Spiders and Ettercaps
+Damage Type: Slashing
+Speed Factor: 8
+Proficiency Type: Two-handed Sword
+Type: Two-handed
+Requires:
+ 14 Strength
+
+Weight: 10" 
+
+
+
+
+
 //BERSERKERING SWORD +3//
 COPY "rick_bigg_mod/items/SW2H03.itm" "override"
 	SAY NAME1 "Two-Handed Sword"
@@ -5689,6 +5967,284 @@ Weight: 12"
 
 
 
+
+
+
+//FLAME OF THE NORTH +2//
+COPY "rick_bigg_mod/items/SW2H12.itm" "override"
+	SAY NAME1 "Two-Handed Sword"
+	SAY UNIDENTIFIED_DESC "The two-handed sword is a derivative of the long sword. Weaponsmiths have always looked for ways to improve existing weapons. In an effort to improve the long sword, the blade was lengthened. Eventually, the handle had to be extended and two hands became necessary to properly swing the sword. The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations.
+
+STATISTICS:
+
+Damage: 2d6 (slashing)
+Speed Factor: 10
+Proficiency Type: Two-handed Sword
+Type: Two-handed
+Requires:
+ 14 Strength
+
+Weight: 15"
+
+SAY NAME2 "Flame of the North +2"
+	SAY DESC "The title does not refer to the blade itself, but rather to the woman who originally wielded it in the icy hinterlands of Faerûn. Her name was Carerra, and she was a veritable firestorm that swept across arctic trolls and the northern orcish tribes. She was a hated enemy of many a shaman whose magic often floundered against her fury. After a lifetime of raucous battle, it was old age that eventually claimed her. The sword was passed to her granddaughter, an adventurer, who presumably brought it to Amn.
+
+STATISTICS:
+
+Equipped abilities:
+– Magic Resistance: +10%
+
+THAC0: +2, +4 vs. evil
+Damage: 1d10+2, +4 vs. evil
+Damage type: Slashing
+Speed Factor: 8
+Proficiency Type: Two-handed sword
+Type: Two-handed
+Requires:
+ 14 Strength
+
+Weight: 10" 
+
+
+
+
+
+
+
+//SWORD OF CHAOS +2//
+COPY "rick_bigg_mod/items/SW2H16.itm" "override"
+	SAY NAME1 "Two-Handed Sword"
+	SAY UNIDENTIFIED_DESC "The two-handed sword is a derivative of the long sword. Weaponsmiths have always looked for ways to improve existing weapons. In an effort to improve the long sword, the blade was lengthened. Eventually, the handle had to be extended and two hands became necessary to properly swing the sword. The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations.
+
+STATISTICS:
+
+Damage: 2d6 (slashing)
+Speed Factor: 10
+Proficiency Type: Two-handed Sword
+Type: Two-handed
+Requires:
+ 14 Strength
+
+Weight: 15"
+
+SAY NAME2 "Sword of Chaos +2"
+	SAY DESC "The blade of Sarevok, brother of <CHARNAME>, used in the battle they fought in faraway Baldur's Gate. <CHARNAME> prevailed, destroying Sarevok's plans and rescuing the Sword Coast from the brink of war. The sword itself defies identification, likely forged specifically for Sarevok to best focus the infernal energy he hoped to control. Much of its power died with him.
+
+STATISTICS:
+
+Equipped abilities:
+- +10% Magic Resistance
+
+Combat abilities:
+– Each hit drains 1 Hit Point from the target and transfers it to the wielder. This will not heal beyond the wielder's maximum.
+
+THAC0: +2
+Damage: 1d10+2 (slashing)
+Speed Factor: 8
+Proficiency Type: Two-handed Sword
+Type: Two-handed
+Requires:
+ 14 Strength
+
+Weight: 10" 
+
+
+
+//SILVER SWORD +3//
+COPY "rick_bigg_mod/items/SW2H15.itm" "override"
+	SAY NAME1 "Two-Handed Sword"
+	SAY UNIDENTIFIED_DESC "The two-handed sword is a derivative of the long sword. Weaponsmiths have always looked for ways to improve existing weapons. In an effort to improve the long sword, the blade was lengthened. Eventually, the handle had to be extended and two hands became necessary to properly swing the sword. The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations.
+
+STATISTICS:
+
+Damage: 2d6 (slashing)
+Speed Factor: 10
+Proficiency Type: Two-handed Sword
+Type: Two-handed
+Requires:
+ 14 Strength
+
+Weight: 15"
+
+SAY NAME2 "Silver Sword +3"
+	SAY DESC "This vorpal Silver Sword radiates a dark aura when you examine it, and the blade is so finely sharpened it could likely sever a head in a single blow.
+
+STATISTICS:
+
+Combat abilities:
+– 15% chance per hit that target must save vs. Death at -4 or die
+
+THAC0: +3
+Damage: 1d10+3 (slashing)
+Speed Factor: 7
+Proficiency Type: Two-handed Sword
+Type: Two-handed
+Requires:
+ 14 Strength
+
+Weight: 15"
+
+
+
+//PSION'S BLADE +3//
+COPY "rick_bigg_mod/items/SW2H21.itm" "override"
+	SAY NAME1 "Two-Handed Sword"
+	SAY UNIDENTIFIED_DESC "The two-handed sword is a derivative of the long sword. Weaponsmiths have always looked for ways to improve existing weapons. In an effort to improve the long sword, the blade was lengthened. Eventually, the handle had to be extended and two hands became necessary to properly swing the sword. The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations.
+
+STATISTICS:
+
+Damage: 2d6 (slashing)
+Speed Factor: 10
+Proficiency Type: Two-handed Sword
+Type: Two-handed
+Requires:
+ 14 Strength
+
+Weight: 15"
+
+SAY NAME2 "Psion's Blade +3"
+	SAY DESC "Some believe this massive blade to be of drow origin, though others dispute this claim. However, all agree this great sword was fashioned with a single purpose... to rid the world of the illithid. Those who wield the Psion's Blade are immune to the mind flayer's psionic attacks. The bewildering gaze of umber hulks, often found serving the illithid, are similarly rendered harmless.
+
+STATISTICS:
+
+Equipped abilities:
+– Immunity to confusion and all psionic attacks
+
+THAC0: +3
+Damage: 2d6+3 (slashing)
+Speed Factor: 7
+Proficiency Type: Two-handed Sword
+Type: Two-handed
+Requires:
+ 14 Strength
+
+Weight: 11"
+
+
+
+
+
+//WORLD'S EDGE +4//
+COPY "rick_bigg_mod/items/SW2H09.itm" "override"
+	SAY NAME1 "Two-Handed Sword"
+	SAY UNIDENTIFIED_DESC "The two-handed sword is a derivative of the long sword. Weaponsmiths have always looked for ways to improve existing weapons. In an effort to improve the long sword, the blade was lengthened. Eventually, the handle had to be extended and two hands became necessary to properly swing the sword. The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations.
+
+STATISTICS:
+
+Damage: 2d6 (slashing)
+Speed Factor: 10
+Proficiency Type: Two-handed Sword
+Type: Two-handed
+Requires:
+ 14 Strength
+
+Weight: 15"
+
+SAY NAME2 "World's Edge +4"
+	SAY DESC "This is a legendary weapon of heroic proportions, especially among the far-northern tribes of barbarians. Champion after champion has wielded this blade against countless enemies, and the blood it has spilled could fill a small sea. History will not admit that such a blade could be forged and each consecutive owner seems to tie its origin to whatever creation myth they believe. The most grandiose of these tales is that of a great chieftain who sailed to the cliffs that supposedly bordered the world. There he reached into the void, and his will shaped the blade from nothing. Whatever the truth, in the right hands this sword is a fearsome thing.
+
+STATISTICS:
+
+Equipped abilities:
+- Immunity to fatigue
+- Doubles movement rate
+- +5% chance to score a critical hit
+
+Combat abilities:
+- On a critical hit the wielder gains 2 extra attacks per round for twelve seconds
+
+THAC0: +4
+Damage: 1d10+4 (slashing)
+Speed Factor: 6
+Proficiency Type: Two-handed Sword
+Type: Two-handed
+Requires:
+ 13 Strength
+
+Weight: 7" 
+
+
+
+
+//GRAM THE SWORD OF GRIEF +5//
+COPY "rick_bigg_mod/items/SW2H17.itm" "override"
+	SAY NAME1 "Two-Handed Sword"
+	SAY UNIDENTIFIED_DESC "The two-handed sword is a derivative of the long sword. Weaponsmiths have always looked for ways to improve existing weapons. In an effort to improve the long sword, the blade was lengthened. Eventually, the handle had to be extended and two hands became necessary to properly swing the sword. The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations.
+
+STATISTICS:
+
+Damage: 2d6 (slashing)
+Speed Factor: 10
+Proficiency Type: Two-handed Sword
+Type: Two-handed
+Requires:
+ 14 Strength
+
+Weight: 15"
+
+SAY NAME2 "Gram the Sword of Grief +5"
+	SAY DESC "This is one of the many weapons of the great hero Siegfried. The blade is particularly sharp and well-balanced, and in a certain light one can see the faint image of a serpent within the hilt.
+
+STATISTICS:
+
+Equipped abilities:
+– Magic Resistance: +5%
+
+Combat abilities:
+– Inflicts 10 points of bleeding damage per hit (two point per round)
+
+THAC0: +5
+Damage: 2d6+5 (slashing)
+Speed Factor: 5
+Proficiency Type: Two-handed Sword
+Type: Two-handed
+Requires:
+ 14 Strength
+
+Weight: 9" 
+
+
+
+
+
+
+//GRAM THE SWORD OF GRIEF +6//
+COPY "rick_bigg_mod/items/SW2H18.itm" "override"
+	SAY NAME1 "Two-Handed Sword"
+	SAY UNIDENTIFIED_DESC "The two-handed sword is a derivative of the long sword. Weaponsmiths have always looked for ways to improve existing weapons. In an effort to improve the long sword, the blade was lengthened. Eventually, the handle had to be extended and two hands became necessary to properly swing the sword. The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations.
+
+STATISTICS:
+
+Damage: 2d6 (slashing)
+Speed Factor: 10
+Proficiency Type: Two-handed Sword
+Type: Two-handed
+Requires:
+ 14 Strength
+
+Weight: 15"
+
+SAY NAME2 "Gram the Sword of Grief +6"
+	SAY DESC "Siegfried's fearsome blade is even more powerful with the Heart of the Damned set into its pommel.
+
+STATISTICS:
+
+Equipped abilities:
+– Magic Resistance: +10%
+
+Combat abilities:
+– Inflicts 10 points of bleeding damage per hit (two point per round)
+– 20% chance to drain 2 points of Strength from the target and transfer them to the wielder for 5 rounds
+
+THAC0: +6
+Damage: 2d6+6 (slashing)
+Speed Factor: 4
+Proficiency Type: Two-handed Sword
+Type: Two-handed
+Requires:
+ 14 Strength
+
+Weight: 9" 
 
 
 
