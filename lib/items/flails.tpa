@@ -1,4 +1,45 @@
-//DEFENDER OF EASTHEAVEN +4//
+//FESTERING FLAIL +2 - 5500mo//
+COPY "rick_bigg_mod/items/TB#FLAIL.itm" "override"
+	SAY NAME1 "Flail"
+	SAY UNIDENTIFIED_DESC "The flail is a sturdy wooden handle attached to an iron rod, a wooden rod with spikes, or a spiked iron ball. Between the handle and its implement is either a hinge or chain link. The weapon was originally used as a tool for threshing grain.
+
+STATISTICS:
+
+Damage: 2d4+1 (crushing)
+Speed Factor: 7
+Proficiency Type: Flail/Morning Star
+Type: One-handed
+Requires:
+ 13 Strength
+
+Weight: 15"
+
+	SAY NAME2 "Festering Flail +2"
+	SAY DESC "The razor-sharp tip of this spear easily cuts through armor and down to the bone. Victims of its devastating attacks bleed heavily as their wounds instantly fester and weep, dazing them with pain and making it difficult to continue the battle.
+
+STATISTICS:
+
+Combat abilities:
+– Inflicts 2 points of bleeding damage per hit (1 point per round)
+- Critical Hit Chance: +5% with this weapon 
+– On a critical hit, the target is infected by disease (-2 penalty to Strength and Dexterity for 1 turn, non-cumulative)
+
+THAC0: +2
+Damage: 2d4+3 (piercing)
+Speed Factor: 5
+Proficiency Type: Flail/Morning Star
+Type: One-handed
+Requires:
+ 13 Strength
+
+Weight: 13"
+
+
+
+
+
+
+//DEFENDER OF EASTHEAVEN +4 - 15000mo//
 COPY "rick_bigg_mod/items/WAFLAIL.itm" "override"
 	SAY NAME1 "Flail"
 	SAY UNIDENTIFIED_DESC "The flail is a sturdy wooden handle attached to an iron rod, a wooden rod with spikes, or a spiked iron ball. Between the handle and its implement is either a hinge or chain link. The weapon was originally used as a tool for threshing grain.
@@ -20,7 +61,7 @@ Weight: 15"
 STATISTICS:
 
 Equipped abilities:
-– Armor Class: +2
+
 – +10% resistance to slashing, piercing, and crushing damage
 
 THAC0: +4
@@ -38,7 +79,7 @@ Weight: 11"
 
 
 
-//FLAIL OF AGES +3//
+//FLAIL OF AGES +3 - 12000mo//
 COPY "rick_bigg_mod/items/BLUN14.itm" "override"
 	SAY NAME1 "Flail"
 	SAY UNIDENTIFIED_DESC "The flail is a sturdy wooden handle attached to an iron rod, a wooden rod with spikes, or a spiked iron ball. Between the handle and its implement is either a hinge or chain link. The weapon was originally used as a tool for threshing grain.
@@ -77,7 +118,7 @@ Weight: 10"
 
 
 
-//FLAIL OF AGES +4//
+//FLAIL OF AGES +4 - 15000mo//
 COPY "rick_bigg_mod/items/BLUN30C.itm" "override"
 	SAY NAME1 "Flail"
 	SAY UNIDENTIFIED_DESC "The flail is a sturdy wooden handle attached to an iron rod, a wooden rod with spikes, or a spiked iron ball. Between the handle and its implement is either a hinge or chain link. The weapon was originally used as a tool for threshing grain.
@@ -118,7 +159,7 @@ Weight: 9"
 
 
 
-//FLAIL OF AGES +4//
+//FLAIL OF AGES +4 - 15000mo//
 COPY "rick_bigg_mod/items/BLUN30D.itm" "override"
 	SAY NAME1 "Flail"
 	SAY UNIDENTIFIED_DESC "The flail is a sturdy wooden handle attached to an iron rod, a wooden rod with spikes, or a spiked iron ball. Between the handle and its implement is either a hinge or chain link. The weapon was originally used as a tool for threshing grain.
@@ -159,7 +200,7 @@ Weight: 9"
 
 
 
-//FLAIL OF AGES +5//
+//FLAIL OF AGES +5 - 23000//
 COPY "rick_bigg_mod/items/BLUN30.itm" "override"
 	SAY NAME1 "Flail"
 	SAY UNIDENTIFIED_DESC "The flail is a sturdy wooden handle attached to an iron rod, a wooden rod with spikes, or a spiked iron ball. Between the handle and its implement is either a hinge or chain link. The weapon was originally used as a tool for threshing grain.

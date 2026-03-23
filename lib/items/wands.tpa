@@ -1,0 +1,414 @@
+// ALL ONLY NAGE AND BARD EXCEPT WEHERE WRITTINE DIFFERENTLY//
+
+
+//WAND OF FIRE - 2500mo//
+COPY "rick_bigg_mod/items/WAND05.itm" "override"
+	SAY NAME1 "Wand"
+	SAY UNIDENTIFIED_DESC "Wands are 1 1/4 ft. long and slender. They are made of ivory, bone, or wood and are usually tipped with something—metal, crystal, stone, and so on. They are fragile and tend to break easily. Because of this, they are often kept in cases. 
+
+STATISTICS:
+
+Weight: 1"
+
+
+	SAY NAME2 "Wand of Fire"
+	SAY DESC "The wand will cough forth a huge, burning ball of fire that streaks out to the desired range (to a maximum of 90 ft.) and bursts in a fiery, violent blast, just like the Fireball spell. The Fireball inflicts 6d6 points of damage, but all 1s rolled are counted as 2s. The victim(s) may make a Save vs. Wand in order to take only half damage. 
+
+STATISTICS:
+
+Cast Fireball once per day:
+  Damage: 6d6 fire (Save vs. Wand for half)
+  Range: 90 ft.
+  Area of Effect: 15-ft. radius
+
+Requires:
+ 9 Intelligence
+
+Weight: 1" 
+
+
+
+
+
+//WAND OF MAGIC MISSILES - 1500mo - usabile da tutti//
+COPY "rick_bigg_mod/items/WAND03.itm" "override"
+	SAY NAME1 "Wand"
+	SAY UNIDENTIFIED_DESC "Wands are 1 1/4 ft. long and slender. They are made of ivory, bone, or wood and are usually tipped with something—metal, crystal, stone, and so on. They are fragile and tend to break easily. Because of this, they are often kept in cases. 
+
+STATISTICS:
+
+Weight: 1"
+
+
+	SAY NAME2 "Wand of Magic Missiles"
+	SAY DESC "When activated, the wand will eject three missiles of magical energy that darts forth and unerringly strikes its target. This includes enemy creatures in a melee. The target creature must be seen or otherwise detected to be hit, however, so near-total concealment, such as that offered by arrow slits, can render the spell ineffective. The missiles will inflict 1d4+1 points of damage.
+
+STATISTICS:
+
+Charge abilities:
+– 3 magic missiles will strike the target
+  Damage: 1d4+1 each
+  Range: 100 ft.
+  Area of Effect: 1 creature
+
+Requires:
+ 9 Intelligence
+
+Weight: 1" 
+
+
+
+
+
+//WAND OF FEAR - 2000mo//
+COPY "rick_bigg_mod/items/WAND02.itm" "override"
+	SAY NAME1 "Wand"
+	SAY UNIDENTIFIED_DESC "Wands are 1 1/4 ft. long and slender. They are made of ivory, bone, or wood and are usually tipped with something—metal, crystal, stone, and so on. They are fragile and tend to break easily. Because of this, they are often kept in cases. 
+
+STATISTICS:
+
+Weight: 1"
+
+
+	SAY NAME2 "Wand of Fear"
+	SAY DESC "A Wand of Fear strikes terror into the heart of any creature within its target area. This panic is not universal, however, as the stout of heart have been known to resist its magic.
+
+STATISTICS:
+
+Cast Fear once per day:
+  Causes enemies to run in fear unless they save vs. Wand
+  Range: 100 ft.
+  Area of Effect: 15-ft. radius
+  Duration: 15 rounds
+
+Requires:
+ 9 Intelligence
+
+Weight: 1" 
+
+
+
+
+
+//WAND OF PARALYZATION - 3000mo//
+COPY "rick_bigg_mod/items/WAND04.itm" "override"
+	SAY NAME1 "Wand"
+	SAY UNIDENTIFIED_DESC "Wands are 1 1/4 ft. long and slender. They are made of ivory, bone, or wood and are usually tipped with something—metal, crystal, stone, and so on. They are fragile and tend to break easily. Because of this, they are often kept in cases. 
+
+STATISTICS:
+
+Weight: 1"
+
+
+	SAY NAME2 "Wand of Paralyzation"
+	SAY DESC "When used, this wand shoots forth a thin ray of bluish color to a maximum range of 100 ft. When a creature is touched by the ray, it must save vs. Wand in order to avoid being stunned for 1 turn.
+
+STATISTICS:
+
+Cast Stun once per day:
+  Stun target (Save vs. Wand at -2 penalty negates)
+  Range: 100 ft.
+  Area of Effect: 1 creature
+  Duration: 1 turn
+
+Requires:
+ 9 Intelligence
+
+Weight: 1" 
+
+
+
+
+
+
+
+
+//WAND OF FROST - 4000mo//
+COPY "rick_bigg_mod/items/WAND06.itm" "override"
+	SAY NAME1 "Wand"
+	SAY UNIDENTIFIED_DESC "Wands are 1 1/4 ft. long and slender. They are made of ivory, bone, or wood and are usually tipped with something—metal, crystal, stone, and so on. They are fragile and tend to break easily. Because of this, they are often kept in cases. 
+
+STATISTICS:
+
+Weight: 1"
+
+
+	SAY NAME2 "Wand of Frost"
+	SAY DESC "A wand of frost cast a cold spell. Crystallized particles of snow and ice fan out from the wand's tip, defining an area wherein the temperature drops to -100 degrees F.
+
+STATISTICS:
+
+Cast Cold Ray once per day:
+  Damage: 10d6 cold (Save vs. Wand for half)
+  Range: 100 ft.
+  Area of Effect: 17-ft. cone with 90-deg. arc
+
+Requires:
+ 9 Intelligence
+
+Weight: 1" 
+
+
+
+
+
+
+
+
+//WAND OF LIGHTNING - 2500mo//
+COPY "rick_bigg_mod/items/WAND07.itm" "override"
+	SAY NAME1 "Wand"
+	SAY UNIDENTIFIED_DESC "Wands are 1 1/4 ft. long and slender. They are made of ivory, bone, or wood and are usually tipped with something—metal, crystal, stone, and so on. They are fragile and tend to break easily. Because of this, they are often kept in cases. 
+
+STATISTICS:
+
+Weight: 1"
+
+
+	SAY NAME2 "Wand of Lightning"
+	SAY DESC "The possessor of the wand can discharge six bolts of lightning, each directed at a target of the user's choosing. As it passes through a creature, a bolt does 1d6 points of damage with a Save vs. Wand for half.
+
+STATISTICS:
+
+Charge abilities:
+– Six Lightning Bolts
+  Damage: 1d6 electrical (Save vs. Wand for half)
+  Range: 100 ft.
+  Area of Effect: Path of bolts
+
+Requires:
+ 9 Intelligence
+
+Weight: 1" 
+
+
+
+
+
+
+//WAND OF SLEEP - 2000mo//
+COPY "rick_bigg_mod/items/WAND08.itm" "override"
+	SAY NAME1 "Wand"
+	SAY UNIDENTIFIED_DESC "Wands are 1 1/4 ft. long and slender. They are made of ivory, bone, or wood and are usually tipped with something—metal, crystal, stone, and so on. They are fragile and tend to break easily. Because of this, they are often kept in cases. 
+
+STATISTICS:
+
+Weight: 1"
+
+
+	SAY NAME2 "Wand of Sleep"
+	SAY DESC "This wand will emit a gold beam of energy at its targets up to a maximum range of 80 ft., affecting a 15-ft. radius. If the target creatures fail their Save vs. Wand, they will fall into a deep, comatose sleep for 2 turns.
+
+STATISTICS:
+
+Cast Sleep once per day:
+  Sleep (Save vs. Wand negates)
+  Range: 80 ft.
+  Area of Effect: 15-ft. radius
+  Duration: 2 turns
+
+Requires:
+ 9 Intelligence
+
+Weight: 1" 
+
+
+
+
+
+
+//WAND OF POLYMORPHING - 4500mo//
+COPY "rick_bigg_mod/items/WAND09.itm" "override"
+	SAY NAME1 "Wand"
+	SAY UNIDENTIFIED_DESC "Wands are 1 1/4 ft. long and slender. They are made of ivory, bone, or wood and are usually tipped with something—metal, crystal, stone, and so on. They are fragile and tend to break easily. Because of this, they are often kept in cases. 
+
+STATISTICS:
+
+Weight: 1"
+
+
+	SAY NAME2 "Wand of Polymorphing"
+	SAY DESC "This wand emits a thin, green beam that darts forth to a maximum distance of 5 ft. Any creature touched by this beam must make a Save vs. Wand or be polymorphed into a squirrel.
+
+STATISTICS:
+
+Cast Polymorph once per day:
+  Polymorph target into squirrel (Save vs. Wand negates)
+  Range: 5 ft.
+  Area of Effect: 1 creature
+  Duration: Permanent (until dispelled)
+
+Requires:
+ 9 Intelligence
+
+Weight: 1" 
+
+
+
+
+
+
+
+//WAND OF MONSTER SUMMONING - 3000mo//
+COPY "rick_bigg_mod/items/WAND10.itm" "override"
+	SAY NAME1 "Wand"
+	SAY UNIDENTIFIED_DESC "Wands are 1 1/4 ft. long and slender. They are made of ivory, bone, or wood and are usually tipped with something—metal, crystal, stone, and so on. They are fragile and tend to break easily. Because of this, they are often kept in cases. 
+
+STATISTICS:
+
+Weight: 1"
+
+
+	SAY NAME2 "Wand of Monster Summoning"
+	SAY DESC "This wand will summon 12 HD of monsters, which appear within the area of effect and attack the user's enemies. They remain until the spell duration expires or the monsters are slain. These creatures vanish when slain. If no opponent exists to fight and the wizard can communicate with them, the summoned monsters can perform other services for the summoning wizard.
+
+STATISTICS:
+
+Cast Monster Summoning once per day:
+  Summon 12 HD of monsters
+  Range: 20 ft.
+  Duration: 2 turns
+
+Requires:
+ 9 Intelligence
+
+Weight: 1" 
+
+
+
+
+
+//WAND OF THE HEAVENS - 4000mo - solo chierici//
+COPY "rick_bigg_mod/items/WAND11.itm" "override"
+	SAY NAME1 "Wand"
+	SAY UNIDENTIFIED_DESC "Wands are 1 1/4 ft. long and slender. They are made of ivory, bone, or wood and are usually tipped with something—metal, crystal, stone, and so on. They are fragile and tend to break easily. Because of this, they are often kept in cases. 
+
+STATISTICS:
+
+Weight: 1"
+
+
+	SAY NAME2 "Wand of the Heavens"
+	SAY DESC "This wand will cause a pillar of flame to shoot out of the sky and strike the chosen target. The flames will do 8d6 damage to the target (with 1s taken as 2s), unless the target makes a Save vs. Wand in which case <PRO_HESHE> will take half.
+
+STATISTICS:
+
+Cast Flame Strike once per day:
+  Damage: 10d6 fire (Save vs. Wand for half)
+  Range: 120 ft.
+  Area of Effect: 1 creature
+
+Requires:
+ 9 Intelligence
+
+Weight: 1" 
+
+
+
+
+
+
+//WAND OF THE CLOUDKILL - 4500mo//
+COPY "rick_bigg_mod/items/WAND13.itm" "override"
+	SAY NAME1 "Wand"
+	SAY UNIDENTIFIED_DESC "Wands are 1 1/4 ft. long and slender. They are made of ivory, bone, or wood and are usually tipped with something—metal, crystal, stone, and so on. They are fragile and tend to break easily. Because of this, they are often kept in cases. 
+
+STATISTICS:
+
+Weight: 1"
+
+
+	SAY NAME2 "Wand of the Cloudkill"
+	SAY DESC "This wand emits a vapor bubble that travels toward the target, exploding into a deadly cloud of noxious gas that expands to fill an area roughly 15 ft. in radius. The cloud will instantly kill any creature with 4 HD or less with no Saving Throw. Any creature within 5 to 6 HD must make a Saving Throw or be slain. Creatures with greater than 6 HD simply take 1d10 damage for every round that they remain within the cloud. The cloud will dissipate after 1d4 turns.
+
+STATISTICS:
+
+Cast Cloudkill once per day:
+  Damage: 1d10 poison per round
+  Special: Slays creatures with 1-4 HD; creatures with 5-6 HD must save vs. Poison at -4 or die
+  Range: 60 ft.
+  Area of Effect: 15-ft. radius
+  Duration: 1d4 turns
+
+Requires:
+ 9 Intelligence
+
+Weight: 1" 
+
+
+
+
+
+//ROD OF ABSORPTION - 8500mo//
+COPY "rick_bigg_mod/items/RODS01.itm" "override"
+	SAY NAME1 "Wand"
+	SAY UNIDENTIFIED_DESC "Rods are about three feet long and as thick as your thumb. They are normally found in cases or similar storage places. Rods can be fashioned from metal, wood, ivory, or bone. They can be plain or decorated and carved, tipped, or not. Rods are powered by charges, unless noted otherwise in the description of a particular rod. Each time the rod is used, one or more charge may be expended.
+
+STATISTICS:
+
+Weight: 3"
+
+
+	SAY NAME2 "Rod of Absorption"
+	SAY DESC "This rod acts as a magnet, drawing magical spells of any nature (priest or wizard) into itself. It then absorbs and nullifies their effects. To activate this absorption ability, the user must use the wand, after which time they will be protected for 20 rounds or until the absorption disappears.
+
+STATISTICS:
+
+Cast Spell Trap once per day
+
+Weight: 3" 
+
+
+
+
+
+
+
+
+//WAND OF CURSING - usabile da tutti - 7000mo//
+COPY "rick_bigg_mod/items/WAND19.itm" "override"
+	SAY NAME1 "Wand"
+	SAY UNIDENTIFIED_DESC "Wands are 1 1/4 ft. long and slender. They are made of ivory, bone, or wood and are usually tipped with something—metal, crystal, stone, and so on. They are fragile and tend to break easily. Because of this, they are often kept in cases. 
+
+STATISTICS:
+
+Weight: 1"
+
+
+	SAY NAME2 "Wand of Cursing"
+	SAY DESC "This wand instantly renders the target blind, deaf, and mute. But perhaps the most dangerous aspect of this terrible device is that anyone can use it.
+
+STATISTICS:
+
+Charge abilities:
+– Cast Blindness, Deafness, and Silence (Save vs. Spell -4 negates all effects) once per day
+  Duration: 1 turn
+  Area of Effect: 1 creature
+
+Weight: 1" 
+
+
+
+
+
+//ROD OF REVERSAL - 7500mo//
+COPY "rick_bigg_mod/items/RODS06.itm" "override"
+	SAY NAME1 "Rod"
+	SAY UNIDENTIFIED_DESC "Rods are about three feet long and as thick as your thumb. They are normally found in cases or similar storage places. Rods can be fashioned from metal, wood, ivory, or bone. They can be plain or decorated and carved, tipped, or not. Rods are powered by charges, unless noted otherwise in the description of a particular rod. Each time the rod is used, one or more charge may be expended.
+
+STATISTICS:
+
+Weight: 3"
+
+
+	SAY NAME2 "Rod of Reversal"
+	SAY DESC "This powerful item allows anyone to quickly remove the magical defenses of an enemy mage. It is particularly prized by wizard slayers.
+
+STATISTICS:
+
+Charge abilities:
+– Ruby Ray of Reversal
+  Special: Removes one spell protection from the target
+  Area of Effect: 1 creature
+
+Weight: 5" 

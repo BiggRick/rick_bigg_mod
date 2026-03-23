@@ -1,0 +1,308 @@
+//THE SHADOW'S BLADE +3 - 6500mo - solo ladri//
+COPY "rick_bigg_mod/items/SW1H10.itm" "override"
+	SAY NAME1 "Short Sword"
+	SAY UNIDENTIFIED_DESC "The short sword is the first type of sword to come into existence. In the simplest of terms, a short sword can be considered a dagger with a blade so long that it can no longer be called a dagger. The term short sword does not exist in sword classifications. However, it has come to be used to describe a double-edged blade about two feet in length. The sword tip is usually pointed, ideal for thrusting.
+
+STATISTICS:
+
+Damage: 1d6 (piercing)
+Speed Factor: 3
+Proficiency Type: Short Sword
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 3"
+
+	SAY NAME2 "The Shadow's Blade +3"
+	SAY DESC "The Shadow's Blade was created to be the perfect assassin's tool. It is highly sought after by any who settle differences with a blade, and many that possess it do not do so for long. It can be used only by thieves.
+
+STATISTICS:
+
+Equipped abilities:
+– Backstab Multiplier: +1
+
+THAC0: +3
+Damage: 1d6+3 (piercing)
+Speed Factor: 0
+Proficiency Type: Short Sword
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 3"
+
+
+
+
+
+//ARBANE +2 - 4500mo//
+COPY "rick_bigg_mod/items/SW1H27.itm" "override"
+	SAY NAME1 "Short Sword"
+	SAY UNIDENTIFIED_DESC "The short sword is the first type of sword to come into existence. In the simplest of terms, a short sword can be considered a dagger with a blade so long that it can no longer be called a dagger. The term short sword does not exist in sword classifications. However, it has come to be used to describe a double-edged blade about two feet in length. The sword tip is usually pointed, ideal for thrusting.
+
+STATISTICS:
+
+Damage: 1d6 (piercing)
+Speed Factor: 3
+Proficiency Type: Short Sword
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 3"
+
+	SAY NAME2 "Arbane +2"
+	SAY DESC "One of many created in the name of the mage who first discovered how to enchant a blade in this manner, this was the weapon of the outlaw Garno, and many a cleric died at its edge. Garno became disillusioned with the gods when his family was put to the torch by clerics of Loviatar and spent his life seeking revenge. Despite his focused hatred of the devout, it is thought that one of the gods of chaos had a hand in Garno's acquisition of this sword, delighting in the havoc that followed the young man.
+
+STATISTICS:
+
+Equipped abilities:
+– Immunity to hold and paralysis
+
+THAC0: +2
+Damage: 1d6+2 (piercing)
+Speed Factor: 1
+Proficiency Type: Short Sword
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 2" 
+
+
+
+
+
+//ILBRATHA +2 - 5000mo//
+COPY "rick_bigg_mod/items/SW1H26.itm" "override"
+	SAY NAME1 "Short Sword"
+	SAY UNIDENTIFIED_DESC "The short sword is the first type of sword to come into existence. In the simplest of terms, a short sword can be considered a dagger with a blade so long that it can no longer be called a dagger. The term short sword does not exist in sword classifications. However, it has come to be used to describe a double-edged blade about two feet in length. The sword tip is usually pointed, ideal for thrusting.
+
+STATISTICS:
+
+Damage: 1d6 (piercing)
+Speed Factor: 3
+Proficiency Type: Short Sword
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 3"
+
+	SAY NAME2 "Ilbratha +2"
+	SAY DESC "This ancient bronze sword is set with six matching bloodstones and was apparently forged for Azoun the First, a long-dead king of Cormyr. It saw little use and eventually found its way to a favored of the king's guards. Despite the aid of its illusionary magic, that unnamed soldier fell in a later battle, and the sword was lost to brigands or scavengers.
+
+STATISTICS:
+
+Charge abilities:
+– Mirror Image once per day
+  Duration: 1 turn
+
+THAC0: +2
+Damage: 1d6+2 (piercing)
+Speed Factor: 1
+Proficiency Type: Short Sword
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 2" 
+
+
+
+
+
+
+
+//KUNDANE +3 - 7000mo//
+COPY "rick_bigg_mod/items/SW1H25.itm" "override"
+	SAY NAME1 "Short Sword"
+	SAY UNIDENTIFIED_DESC "The short sword is the first type of sword to come into existence. In the simplest of terms, a short sword can be considered a dagger with a blade so long that it can no longer be called a dagger. The term short sword does not exist in sword classifications. However, it has come to be used to describe a double-edged blade about two feet in length. The sword tip is usually pointed, ideal for thrusting.
+
+STATISTICS:
+
+Damage: 1d6 (piercing)
+Speed Factor: 3
+Proficiency Type: Short Sword
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 3"
+
+	SAY NAME2 "Kundane +3"
+	SAY DESC "Disfigured as a child, Dramnek Olk was ostracized and ridiculed by his peers. In his loneliness he spent many hours alone on the hills overlooking Trademeet. A nearby wizard, Galloma, discovered the youth and found in him a kindred soul. The two fast became friends; master and apprentice. Galloma died before Dramnek's tutorage could be completed, however, and the youth found himself once more alone in the world. Eventually he crafted this sword, which enhanced Dramnek's weak physical body. 
+
+STATISTICS:
+
+Charge abilities:
+– Tenser's Transformation once per day (caster level)
+
+THAC0: +3
+Damage: 1d6+3 (piercing)
+Speed Factor: 0
+Proficiency Type: Short Sword
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 2" 
+
+
+
+
+//CUTTHROAT +4 - 9000mo//
+COPY "rick_bigg_mod/items/SW1H28.itm" "override"
+	SAY NAME1 "Short Sword"
+	SAY UNIDENTIFIED_DESC "The short sword is the first type of sword to come into existence. In the simplest of terms, a short sword can be considered a dagger with a blade so long that it can no longer be called a dagger. The term short sword does not exist in sword classifications. However, it has come to be used to describe a double-edged blade about two feet in length. The sword tip is usually pointed, ideal for thrusting.
+
+STATISTICS:
+
+Damage: 1d6 (piercing)
+Speed Factor: 3
+Proficiency Type: Short Sword
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 3"
+
+	SAY NAME2 "Cutthroat +4"
+	SAY DESC "This weapon has a bloody history, having been used to exercise its namesake many times. Popular among the assassin trade for its size and enchantment, it has been in the possession of many of the realms' more dangerous citizens, though seldom remaining in one place for any length of time.
+
+STATISTICS:
+
+Combat abilities:
+– Critical Hit Chance: +10% with this weapon
+
+THAC0: +4
+Damage: 1d6+4 (piercing)
+Speed Factor: 0
+Proficiency Type: Short Sword
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 2" 
+
+
+
+
+
+//BLACKRAZOR +4 - 13000mo - no buoni//
+COPY "rick_bigg_mod/items/MISCBC.itm" "override"
+	SAY NAME1 "Short Sword"
+	SAY UNIDENTIFIED_DESC "The short sword is the first type of sword to come into existence. In the simplest of terms, a short sword can be considered a dagger with a blade so long that it can no longer be called a dagger. The term short sword does not exist in sword classifications. However, it has come to be used to describe a double-edged blade about two feet in length. The sword tip is usually pointed, ideal for thrusting.
+
+STATISTICS:
+
+Damage: 1d6 (piercing)
+Speed Factor: 3
+Proficiency Type: Short Sword
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 3"
+
+	SAY NAME2 "Blackrazor +4"
+	SAY DESC "This sword radiates evil like a sour odor, and the owner never knows if <PRO_HESHE> wields the weapon or if it wields <PRO_HIMHER>. In addition to its combat abilities, Blackrazor slowly heals its owner with the drained strength of opponents.
+
+STATISTICS:
+
+Equipped abilities:
+- Magic resistance: +10%
+
+Combat abilities:
+– With every hit, it has a 20% chance of draining 4 levels from the target and healing the wielder by 20 Hit Points as well as hasting <PRO_HIMHER> for 20 seconds and increasing <PRO_HISHER> Strength by 3 points for 20 seconds
+
+THAC0: +4
+Damage: 1d6+4 (piercing)
+Speed Factor: 0
+Proficiency Type: Short Sword
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 2" 
+
+
+
+
+
+//SWORD OF THE MASK +4 - 9000mo//
+COPY "rick_bigg_mod/items/SW1H58.itm" "override"
+	SAY NAME1 "Short Sword"
+	SAY UNIDENTIFIED_DESC "The short sword is the first type of sword to come into existence. In the simplest of terms, a short sword can be considered a dagger with a blade so long that it can no longer be called a dagger. The term short sword does not exist in sword classifications. However, it has come to be used to describe a double-edged blade about two feet in length. The sword tip is usually pointed, ideal for thrusting.
+
+STATISTICS:
+
+Damage: 1d6 (piercing)
+Speed Factor: 3
+Proficiency Type: Short Sword
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 3"
+
+	SAY NAME2 "Sword of the Mask +4"
+	SAY DESC "This blade is highly prized by those who serve the Shadowlord, as well as any who engage in shadowy business.
+
+STATISTICS:
+
+Equipped abilities:
+– Whenever the wielder is hit, there is a 10% chance is surrounded by 3 mirror images for 3 rounds
+
+THAC0: +4
+Damage: 1d6+4 (piercing)
+Speed Factor: 0
+Proficiency Type: Short Sword
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 2" 
+
+
+
+
+
+
+//SWORD OF THE MASK +5 - 15000mo//
+COPY "rick_bigg_mod/items/SW1H59.itm" "override"
+	SAY NAME1 "Short Sword"
+	SAY UNIDENTIFIED_DESC "The short sword is the first type of sword to come into existence. In the simplest of terms, a short sword can be considered a dagger with a blade so long that it can no longer be called a dagger. The term short sword does not exist in sword classifications. However, it has come to be used to describe a double-edged blade about two feet in length. The sword tip is usually pointed, ideal for thrusting.
+
+STATISTICS:
+
+Damage: 1d6 (piercing)
+Speed Factor: 3
+Proficiency Type: Short Sword
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 3"
+
+	SAY NAME2 "Sword of the Mask +5"
+	SAY DESC "Combined with the Heart of the Damned into a single lethal weapon, this deadly blade is the preferred tool of assassins and thieves. 
+
+STATISTICS:
+
+Equipped abilities:
+– Whenever the wielder is hit, there is a 10% chance is surrounded by 3 mirror images for 3 rounds
+- Non-detection
+- Backstab bonus: +1
+- Can backstab while invisible from front
+
+THAC0: +5
+Damage: 1d6+5 (piercing)
+Speed Factor: 0
+Proficiency Type: Short Sword
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 2" 

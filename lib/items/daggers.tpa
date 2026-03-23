@@ -1,0 +1,315 @@
+//DAGGER OF VENOM +2 - 5000mo - no buoni//
+COPY "rick_bigg_mod/items/MISC75.itm" "override"
+	SAY NAME1 "Dagger"
+	SAY UNIDENTIFIED_DESC "The typical dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter.
+
+STATISTICS:
+
+Damage: 1d4 (piercing)
+Speed Factor: 2
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 1"
+
+	SAY NAME2 "Dagger of Venom +2"
+	SAY DESC "This dagger is a potent blade favored by assassins all across the realms. This particular dagger of venom was created for use by the Shadow Thieves of Amn. Every time it hits an opponent, it secretes a venom into the bloodstream of the creature. The venom works quickly and efficiently.
+
+STATISTICS:
+
+Combat abilities:
+– Hit target suffers 1 point of poison damage per second for 15 seconds (Save vs. Poison negates)
+
+THAC0: +2 
+Damage: 1d4+2 (piercing)
+Speed Factor: 0
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 2" 
+
+
+
+
+
+//NEB'S NASTY CUTTER +3 - 7500mo - no buoni//
+COPY "rick_bigg_mod/items/NEBDAG.itm" "override"
+	SAY NAME1 "Dagger"
+	SAY UNIDENTIFIED_DESC "The typical dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter.
+
+STATISTICS:
+
+Damage: 1d4 (piercing)
+Speed Factor: 2
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 1"
+
+
+	SAY NAME2 "Neb's Nasty Cutter +3"
+	SAY DESC "This is a vicious weapon used by Neb, covered with old blood and coated in a poison that is both quick-acting and extremely deadly. Only the truly evil would dare to use this item on their own.
+
+STATISTICS:
+
+Combat abilities:
+– Target must save vs. Poison (-2 penalty) or suffer 2 points of damage per second for 10 seconds
+
+THAC0: +3
+Damage: 1d4+3 (piercing)
+Speed Factor: 0
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 1" 
+
+
+
+
+//STILETTO OF DEMARCHESS +3 - 6000mo//
+COPY "rick_bigg_mod/items/DAGG17.itm" "override"
+	SAY NAME1 "Dagger"
+	SAY UNIDENTIFIED_DESC "The typical dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter.
+
+STATISTICS:
+
+Damage: 1d4 (piercing)
+Speed Factor: 2
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 1"
+
+
+	SAY NAME2 "Stiletto of Demarchess +3"
+	SAY DESC "Most who take up the trade of murder for hire do so for reasons other than personal pleasure, but not so the Lady Demarche. She took special pleasure in the torture of her targets... which is why she made this dagger. With but one touch of its polished blade, an opponent was rendered immobile, incapable of so much as screaming, yet the victim could watch and feel all that happened to them. While her opponent was thus held, the Lady would slowly bleed them, sometimes taking several hours before allowing her subject to succumb to the final agony of death. The Lady finally fell victim to her own evil; disarmed by a rival and struck by her own stiletto, her fate was soon sealed.
+
+STATISTICS:
+
+Combat abilities: 
+– 30% chance per hit that the target must save vs. Death or be held for 2 rounds
+
+THAC0: +3
+Damage: 1d4+3 (piercing)
+Speed Factor: 0 
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 1" 
+
+
+
+
+
+
+
+//ELEMENTS' FURY +3 - 6500mo//
+COPY "rick_bigg_mod/items/BDDAGG01.itm" "override"
+"rick_bigg_mod/items/BDDAGG01.itm" "override/DAGG13.itm"
+	SAY NAME1 "Dagger"
+	SAY UNIDENTIFIED_DESC "The typical dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter.
+
+STATISTICS:
+
+Damage: 1d4 (piercing)
+Speed Factor: 2
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 1"
+
+	SAY NAME2 "Elements' Fury +3"
+	SAY DESC "The mage who crafted this strange dagger was obsessed with the four elemental planes and sought to create a means to join them together. Opening portals to all of them at once, he managed to join their energies together to enchant this relic, giving it properties of each plane.
+
+Unfortunately, he happened to be standing between the portals, holding the dagger in his hand; when the energies converged, they converged on him. It was the mage’s apprentice who discovered the dagger, clutched in his master’s charred and frozen hands.
+
+STATISTICS:
+
+Combat abilities:
+– Deals an extra 1d4 cold damage to fire elementals
+– Deals an extra 1d4 fire damage to water elementals
+– Deals an extra 1d4 acid damage to earth elementals
+– Deals an extra 1d4 electrical damage to air elementals
+
+THAC0: +3
+Damage: 1d4+3, +1 fire, cold, electrical and acid damage (random)
+Damage type: Piercing
+Speed Factor: 0 
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 1"
+
+
+
+
+
+
+//BONEBLADE +4 - 7500mo/
+COPY "rick_bigg_mod/items/DAGG14.itm" "override"
+	SAY NAME1 "Dagger"
+	SAY UNIDENTIFIED_DESC "The typical dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter.
+
+STATISTICS:
+
+Damage: 1d4 (piercing)
+Speed Factor: 2
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 1"
+
+
+	SAY NAME2 "Boneblade +4"
+	SAY DESC "This seemingly simple dagger, steel blade and bone handle, is an incredibly powerful weapon. Forged by an unfortunate duergar smith centuries earlier, the handle was carved from a tooth of a black dragon and the blade was tempered in the acid of its creator. How it has made its way to you is anyone's guess.
+
+STATISTICS:
+
+Equipped abilities:
+- Acid resistance bonus: +20%
+
+THAC0: +4
+Damage: 1d4+4, +2 acid
+Speed Factor: 0
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 1"
+
+
+
+
+
+
+
+//LIFE STEALER +4 - 8000mo/
+COPY "rick_bigg_mod/items/DAGG20.itm" "override"
+	SAY NAME1 "Dagger"
+	SAY UNIDENTIFIED_DESC "The typical dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter.
+
+STATISTICS:
+
+Damage: 1d4 (piercing)
+Speed Factor: 2
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 1"
+
+
+	SAY NAME2 "Life-Stealer +4"
+	SAY DESC "This dagger weighs heavily in your hand and is warm to the touch. Merely having it on your person makes you feel uneasy for some reason. The gem mounted in the hilt seems to have an inner light of some sort, though how it can have such illumination and still be so deathly black at its core, you do not know.
+
+STATISTICS:
+
+Combat abilities:
+– Each successful hit casts Larloch's Minor Drain on the target (at level 1)
+
+THAC0: +4
+Damage: 1d4+4 (piercing)
+Speed Factor: 0
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 1"
+
+
+
+//DAGGER OF THE STAR +4 - 8000mo/
+COPY "rick_bigg_mod/items/DAGG21.itm" "override"
+	SAY NAME1 "Dagger"
+	SAY UNIDENTIFIED_DESC "The typical dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter.
+
+STATISTICS:
+
+Damage: 1d4 (piercing)
+Speed Factor: 2
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 1"
+
+
+	SAY NAME2 "Dagger of the Star +4"
+	SAY DESC "Rumored to have been dropped from the Heavens by a careless lesser deity, this dagger is a favorite among thieves and assassins, as it will sometimes magically hide its user from the victim's sight.
+
+STATISTICS:
+   
+Combat abilities:
+– 10% chance of making the user go invisible for 1 turn after each successful attack
+
+THAC0: +4
+Damage: 1d4+4 (piercing)
+Speed Factor: 0
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 1"
+
+
+//DAGGER OF THE STAR +5 - valore 15000mo/
+COPY "rick_bigg_mod/items/DAGG22.itm" "override"
+	SAY NAME1 "Dagger"
+	SAY UNIDENTIFIED_DESC "The typical dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter.
+
+STATISTICS:
+
+Damage: 1d4 (piercing)
+Speed Factor: 2
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 1"
+
+
+	SAY NAME2 "Dagger of the Star +5"
+	SAY DESC "With the star sapphires encrusting its hilt, this small blade is one of the most dangerous weapons in the realms.
+
+STATISTICS:
+
+Equipped abilities:
+- Electricity resistance: +50%
+   
+Combat abilities:
+– 20% chance of making the user go invisible for 1 turn after each successful attack
+– Star Bolt: each successful hit causes an extra 1d6 electrical damage
+
+THAC0: +5
+Damage: 1d4+5 (piercing)
+Speed Factor: 0
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 1"
