@@ -96,7 +96,7 @@ Weight: 3"
 STATISTICS:
 
 Charge abilities:
-– Mirror Image once per day
+– Mirror Image twice per day
   Duration: 1 turn
 
 THAC0: +2
@@ -115,7 +115,7 @@ Weight: 2"
 
 
 
-//KUNDANE +3 - 7000mo//
+//WHISTLING SWORD +3 - 7000mo//
 COPY "rick_bigg_mod/items/SW1H25.itm" "override"
 	SAY NAME1 "Short Sword"
 	SAY UNIDENTIFIED_DESC "The short sword is the first type of sword to come into existence. In the simplest of terms, a short sword can be considered a dagger with a blade so long that it can no longer be called a dagger. The term short sword does not exist in sword classifications. However, it has come to be used to describe a double-edged blade about two feet in length. The sword tip is usually pointed, ideal for thrusting.
@@ -131,13 +131,14 @@ Requires:
 
 Weight: 3"
 
-	SAY NAME2 "Kundane +3"
-	SAY DESC "Disfigured as a child, Dramnek Olk was ostracized and ridiculed by his peers. In his loneliness he spent many hours alone on the hills overlooking Trademeet. A nearby wizard, Galloma, discovered the youth and found in him a kindred soul. The two fast became friends; master and apprentice. Galloma died before Dramnek's tutorage could be completed, however, and the youth found himself once more alone in the world. Eventually he crafted this sword, which enhanced Dramnek's weak physical body. 
+	SAY NAME2 "Whistling Sword +3"
+	SAY DESC "Amidst the plains of the Eastern Shaar there lived a small human blacksmith, whose nearly dwarven height did not do his soul justice. Though a skilled weaponsmith, his true gift was his ability to whistle a heartfelt song that could cause a grown man to cry like a newborn. Only a reclusive Mage shared and enjoyed time with the diminutive man, however, as others could only see his small size as a source of amusement. Deaf to the smith's song because of their own prejudices, their ridicule slowly grew into cruel torment which eventually persuaded the light-hearted man to leave his home forever. Before he left he forged this weapon as a gift for his one friend, who also enchanted it during the making. Thus the blade sweetly whistles to its wielder when unsheathed. It was not long after that the Mage also deserted the small town in disgust, taking the sword with him on his journeys.
 
 STATISTICS:
 
-Charge abilities:
-– Tenser's Transformation once per day (caster level)
+Equipped abilities:
+– +1 Luck
+- Immunity to Sleep
 
 THAC0: +3
 Damage: 1d6+3 (piercing)
@@ -190,7 +191,7 @@ Weight: 2"
 
 
 
-//BLACKRAZOR +4 - 13000mo - no buoni//
+//BLACKRAZOR +4 - 20000mo - no buoni//
 COPY "rick_bigg_mod/items/MISCBC.itm" "override"
 	SAY NAME1 "Short Sword"
 	SAY UNIDENTIFIED_DESC "The short sword is the first type of sword to come into existence. In the simplest of terms, a short sword can be considered a dagger with a blade so long that it can no longer be called a dagger. The term short sword does not exist in sword classifications. However, it has come to be used to describe a double-edged blade about two feet in length. The sword tip is usually pointed, ideal for thrusting.
