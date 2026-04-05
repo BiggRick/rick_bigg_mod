@@ -36,6 +36,42 @@ Weight: 2"
 
 
 
+
+//LONGTOOTH +2 - 4000mo//
+COPY "rick_bigg_mod/items/DAGG04.itm" "override"
+	SAY NAME1 "Dagger"
+	SAY UNIDENTIFIED_DESC "The typical dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter.
+
+STATISTICS:
+
+Damage: 1d4 (piercing)
+Speed Factor: 2
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 1"
+
+	SAY NAME2 "Longtooth +2"
+	SAY DESC "Discovered relatively recently by adventurers in the south, the abilities of this weapon went unknown for several years. Magical tomes eventually revealed its extensive history as an assassin's tool, and it was dubbed the Grave Binder. It was stolen soon after.
+
+STATISTICS:
+
+THAC0: +2
+Damage: 1d6+2, +2 piercing damage
+Damage type: Piercing
+Speed Factor: 0
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 1" 
+
+
+
+
 //NEB'S NASTY CUTTER +3 - 7500mo - no buoni//
 COPY "rick_bigg_mod/items/NEBDAG.itm" "override"
 	SAY NAME1 "Dagger"
@@ -313,3 +349,183 @@ Requires:
  3 Strength
 
 Weight: 1"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//PIRATE DAGGER +1 - 2500mo//
+COPY "rick_bigg_mod/items/TB#DAG01.itm" "override"
+	SAY NAME1 "Dagger"
+	SAY UNIDENTIFIED_DESC "The typical throwing dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter than the dagger. Unlike a dagger, this one has a smaller handle and is balanced differently.
+
+STATISTICS:
+
+Damage: 1d4 (missile)
+Speed Factor: 2
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 0"
+
+	SAY NAME2 "Pirate Dagger +1"
+	SAY DESC "This special throwing dagger is often used by the most sadistic pirates of the Sea of Swords to avoid losing precious ammunition.
+	First, the prisoners are thrown into the sea, then bets are placed on who can hit and kill them.
+	The most common problems in this game are sharks and sea monsters, which are often faster than the pirates themselves...
+
+STATISTICS:
+
+
+Combat abilities:
+– Returns to the wielder's hand when thrown
+
+THAC0: +1
+Damage: 1d4+1
+Damage type (melee): Piercing
+Damage type (thrown): Missile
+Speed Factor: 1
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 0"
+
+
+
+
+//BOOMERANG DAGGER +2 - 3500mo/
+COPY "rick_bigg_mod/items/DAGG11.itm" "override"
+	SAY NAME1 "Dagger"
+	SAY UNIDENTIFIED_DESC "The typical throwing dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter than the dagger. Unlike a dagger, this one has a smaller handle and is balanced differently.
+
+STATISTICS:
+
+Damage: 1d4 (piercing)
+Speed Factor: 2
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 1"
+
+
+	SAY NAME2 "Boomerang Dagger +2"
+	SAY DESC "Fullen Woolspinner, an ambitious halfling from a well-to-do family, left his home to spend several years adventuring. During his travels, he ended up staying with a family of dwarven weaponsmiths. Much impressed by their throwing axes, which always returned to the hands of their wielder, Fullen sought to make a dagger that could do the same. With the help of his dwarven friends, he succeeded, creating several of the famous Fullen Boomerang daggers.
+
+STATISTICS:
+
+Combat abilities:
+– Returns to the wielder's hand when thrown
+
+THAC0: +2
+Damage: 1d4+2
+Damage type (melee): Piercing
+Damage type (thrown): Missile
+Speed Factor: 0
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 1"
+
+
+
+
+
+
+
+//FIRETOOTH +3 - 6500mo//
+COPY "rick_bigg_mod/items/DAGG12.itm" "override"
+	SAY NAME1 "Dagger"
+	SAY UNIDENTIFIED_DESC "The typical throwing dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter than the dagger. Unlike a dagger, this one has a smaller handle and is balanced differently.
+
+STATISTICS:
+
+Damage: 1d4 (missile)
+Speed Factor: 2
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 0"
+
+	SAY NAME2 "Firetooth +3"
+	SAY DESC "This throwing knife is imbued with magical fire, and was supposedly carved from an extracted red dragon tooth. Tavern tales suggest that the beast is still alive, her anger fueling the enchantment within the weapon. Though fanciful, the story is consistent, and it is said the dagger returns to the thrower as though on wings.
+
+STATISTICS:
+
+Combat abilities:
+– Returns to the wielder's hand when thrown
+
+THAC0: +3
+Damage: 1d4+3, +1d6 fire damage
+Damage type (melee): Piercing
+Damage type (thrown): Missile
+Speed Factor: 0
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 1"
+
+
+
+
+
+//IXIL'S SPIKE +3 - 7000mo//
+COPY "rick_bigg_mod/items/DAGG23.itm" "override"
+	SAY NAME1 "Dagger"
+	SAY UNIDENTIFIED_DESC "The typical dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter.
+
+STATISTICS:
+
+Damage: 1d4 (piercing)
+Speed Factor: 2
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 1"
+
+
+	SAY NAME2 "Ixil's Spike +3"
+	SAY DESC "This dagger is actually the tip of Ixil's Nail—an artifact of almost unimaginable power. Even this small piece of the legendary spear is a fierce weapon.
+
+STATISTICS
+
+Combat abilities:
+– 1 extra attack per round
+- Returns to the wielder's hand when thrown
+
+THAC0: +3
+Damage: 1d4+3
+Damage type (melee): Piercing
+Damage type (thrown): Missile
+Speed Factor: 0
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 1" 

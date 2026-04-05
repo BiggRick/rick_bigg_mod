@@ -1,0 +1,151 @@
+//KIEL'S MORNING STAR +3 - valore 7500mo//
+COPY "rick_bigg_mod/items/BLUN09.itm" "override"
+	SAY NAME1 "Morning Star"
+	SAY UNIDENTIFIED_DESC "The morning star is a wooden shaft topped with a metal head covered by a spiked iron sheath. Morning stars have an overall length of about four feet. Some have a round, oval, or cylindrical shaped head studded with spikes. Extending from most morning star heads, regardless of design, is a long point for thrusting.
+
+STATISTICS:
+
+Damage: 2d4 (crushing)
+Speed Factor: 7
+Proficiency Type: Flail/Morning Star
+Type: One-handed
+Requires:
+ 11 Strength
+
+Weight: 12"
+
+	SAY NAME2 "Kiel's Morning Star +3"
+	SAY DESC "This is the morning star of Kiel the Legion Killer, firstborn son of Durlag Trollkiller and Clan-prince of his father's ill-fated tower. He was wielding it in his final hour as he rushed to warn his father of the doppelgangers' infiltration of their Clan-home. It is said that the intensity of his rage in these final moments permanently imprinted itself upon the weapon.
+
+STATISTICS:
+
+Equipped abilities:
+– Chance to score a critical hit: +5% (with this weapon only)
+
+Combat abilities:
+– On a critical hit, the wielder gains +5 THAC0 for 3 rounds (non-cumulative)
+
+THAC0: +3
+Damage: 2d4+3 (crushing)
+Speed Factor: 4
+Proficiency Type: Flail/Morning Star
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 10"
+
+
+
+
+//THE SLEEPER +2 - 4500mo//
+COPY "rick_bigg_mod/items/BLUN16.itm" "override"
+	SAY NAME1 "Morning Star"
+	SAY UNIDENTIFIED_DESC "The morning star is a wooden shaft topped with a metal head covered by a spiked iron sheath. Morning stars have an overall length of about four feet. Some have a round, oval, or cylindrical shaped head studded with spikes. Extending from most morning star heads, regardless of design, is a long point for thrusting.
+
+STATISTICS:
+
+Damage: 2d4 (crushing)
+Speed Factor: 7
+Proficiency Type: Flail/Morning Star
+Type: One-handed
+Requires:
+ 11 Strength
+
+Weight: 12"
+
+	SAY NAME2 "The Sleeper +2"
+	SAY DESC "This belonged to Ssitalc, an uncharacteristically evil elf known as the Slaver of the Sword Coast. Until his sudden death several years ago, Ssitalc commanded a large force of human, dwarven, and gnomish brigands, using the Sleeper to keep them in line. It has a chance to incapacitate any human, dwarf, gnome, or halfling by inducing deep slumber, though elves are conveniently immune.
+
+STATISTICS:
+
+Combat abilities:
+– Any human or demihuman, excluding elves, hit by the Sleeper must save vs. Poison with a +2 bonus or fall asleep for 3 rounds
+
+THAC0: +2
+Damage: 2d4 +2 (crushing)
+Speed Factor: 5
+Proficiency Type: Flail/Morning Star
+Type: One-handed
+Requires:
+ 11 Strength
+
+Weight: 10"
+
+
+
+//EVERARD'S MORNING STAR +4 - 10000mo//
+COPY "rick_bigg_mod/items/WASTAR.itm" "override"
+	SAY NAME1 "Morning Star"
+	SAY UNIDENTIFIED_DESC "The morning star is a wooden shaft topped with a metal head covered by a spiked iron sheath. Morning stars have an overall length of about four feet. Some have a round, oval, or cylindrical shaped head studded with spikes. Extending from most morning star heads, regardless of design, is a long point for thrusting.
+
+STATISTICS:
+
+Damage: 2d4 (crushing)
+Speed Factor: 7
+Proficiency Type: Flail/Morning Star
+Type: One-handed
+Requires:
+ 11 Strength
+
+Weight: 12"
+
+	SAY NAME2 "Everard's Morning Star +4"
+	SAY DESC "This morning star was the personal weapon of the cleric Everard. Everard was a powerful priest of Tempus who sacrificed his life in the battle against the devil Belhifet.
+
+STATISTICS:
+
+Equipped abilities:
+– Wisdom bonus: +2
+- Casting speed bonus: +2
+- Caster level bonus: +2
+
+THAC0: +4
+Damage: 2d4+4 (crushing)
+Speed Factor: 3
+Proficiency Type: Flail/Morning Star
+Type: One-handed
+Requires:
+ 11 Strength
+
+Weight: 8"
+
+
+
+//ICE STAR +5 - 14000mo//
+COPY "rick_bigg_mod/items/BLUN35.itm" "override"
+	SAY NAME1 "Morning Star"
+	SAY UNIDENTIFIED_DESC "The morning star is a wooden shaft topped with a metal head covered by a spiked iron sheath. Morning stars have an overall length of about four feet. Some have a round, oval, or cylindrical shaped head studded with spikes. Extending from most morning star heads, regardless of design, is a long point for thrusting.
+
+STATISTICS:
+
+Damage: 2d4 (crushing)
+Speed Factor: 7
+Proficiency Type: Flail/Morning Star
+Type: One-handed
+Requires:
+ 11 Strength
+
+Weight: 12"
+
+	SAY NAME2 "Ice Star +5"
+	SAY DESC "The head of this morning star appears to be forged from unbreakable ice-blue crystal. The handle is chill to the touch, and the wielder is surrounded by a soothing nimbus of cool air which protects against even magical fire.
+
+STATISTICS:
+
+Equipped abilities:
+– Fire Resistance: +50%
+
+Charge abilities:
+– Cone of Cold (at level 15) two times per day
+
+THAC0: +5
+Damage: 2d4+5, +4d4 cold damage
+Damage type: Crushing
+Speed Factor: 2
+Proficiency Type: Flail/Morning Star
+Type: One-handed
+Requires:
+ 11 Strength
+
+Weight: 7"

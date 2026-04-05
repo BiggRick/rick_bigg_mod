@@ -1,0 +1,495 @@
+//RETURNING THROWING AXE +1 - 2500mo//
+COPY "rick_bigg_mod/items/AX1H05.itm" "override"
+	SAY NAME1 "Throwing Axe"
+	SAY UNIDENTIFIED_DESC "The hand axe or throwing axe is also known as a hatchet. The axe blade has a sharp steel tip counterbalanced by a pointed fluke. The short handle has a point on the bottom, and the head may have a spike on the top.
+
+STATISTICS:
+
+Damage: 1d6+1
+Damage type (melee): Slashing
+Damage type (thrown): Missile
+Speed Factor: 4
+Proficiency Type: Axe
+Type: One-handed
+Requires:
+ 4 Strength
+
+Weight: 1"
+
+	SAY NAME2 "Returning Throwing Axe +1"
+	SAY DESC "This throwing axe has not only been finely balanced for use as a missile weapon but has also been the subject of significant magical enhancement. As a result, it is both more damaging and more accurate than any non-magical weapon of a similar style.
+
+STATISTICS:
+
+Combat abilities:
+– Returns to the wielder's hand when thrown
+
+THAC0: +1
+Damage: 1d6+2
+Damage type (melee): Slashing
+Damage type (thrown): Missile
+Speed Factor: 3
+Proficiency Type: Axe
+Type: One-handed
+Requires:
+ 4 Strength
+
+Weight: 4"
+
+
+
+
+
+
+
+//HANGARD'S AXE +2//
+COPY "rick_bigg_mod/items/AX1H08.itm" "override"
+	SAY NAME1 "Throwing Axe"
+	SAY UNIDENTIFIED_DESC "The hand axe or throwing axe is also known as a hatchet. The axe blade has a sharp steel tip counterbalanced by a pointed fluke. The short handle has a point on the bottom, and the head may have a spike on the top.
+
+STATISTICS:
+
+Damage: 1d6+1
+Damage type (melee): Slashing
+Damage type (thrown): Missile
+Speed Factor: 2
+Proficiency Type: Axe
+Type: One-handed
+Requires:
+ 4 Strength
+
+Weight: 1"
+
+	SAY NAME2 "Hangard's Axe +2"
+	SAY DESC "This throwing axe has not only been finely balanced for use as a missile weapon but has also been the subject of significant magical enhancement. As a result, it is both more damaging and more accurate than any non-magical weapon of a similar style.
+
+STATISTICS:
+
+Combat abilities:
+– Returns to the wielder's hand when thrown
+
+THAC0: +2
+Damage: 1d6+3
+Damage type (melee): Slashing
+Damage type (thrown): Missile
+Speed Factor: 2
+Proficiency Type: Axe
+Type: One-handed
+Requires:
+ 4 Strength
+
+Weight: 4"
+
+
+
+
+
+
+//AZUREDGE +2 - 8000mo - no evil//
+COPY "rick_bigg_mod/items/AX1H10.itm" "override"
+	SAY NAME1 "Throwing Axe"
+	SAY UNIDENTIFIED_DESC "The hand axe or throwing axe is also known as a hatchet. The axe blade has a sharp steel tip counterbalanced by a pointed fluke. The short handle has a point on the bottom, and the head may have a spike on the top.
+
+STATISTICS:
+
+Damage: 1d6+1
+Damage type (melee): Slashing
+Damage type (thrown): Missile
+Speed Factor: 4
+Proficiency Type: Axe
+Type: One-handed
+Requires:
+ 4 Strength
+
+Weight: 1"
+
+	SAY NAME2 "Azuredge +2"
+	SAY DESC "Gulen Rockfire, Slayer of Undead, crafted this powerful throwing axe expressly for reinforcing his claim to his namesake. Blessed by a cross-section of gods, this weapon does phenomenal damage against creatures unwisely rebelling against their deceased status and can potentially destroy them in a single blow. Obviously Gulen no longer carries Azuredge, and it is rumored that he died fighting a powerful vampire years ago, only to rise as one himself. This may have softened his stance regarding the undead, at the very least prompting a change of name.
+
+STATISTICS:
+
+Equipped abilities: 
+- Enchantment vs undead +5
+
+Combat abilities:
+– Returns to the wielder's hand when thrown
+
+Thac0: +2
+Damage: 1d6+3, +2d6 vs. undead
+Damage type (melee): Slashing
+Damage type (thrown): Missile
+Speed Factor: 2
+Proficiency Type: Axe
+Type: One-handed
+Requires:
+ 4 Strength
+
+Weight: 2"
+
+
+
+
+
+
+//RYFTHOME AXE +3 - valore 7000mo//
+COPY "rick_bigg_mod/items/AX1H09.itm" "override"
+	SAY NAME1 "Throwing Axe"
+	SAY UNIDENTIFIED_DESC "The hand axe or throwing axe is also known as a hatchet. The axe blade has a sharp steel tip counterbalanced by a pointed fluke. The short handle has a point on the bottom, and the head may have a spike on the top.
+
+STATISTICS:
+
+Damage: 1d6+1
+Damage type (melee): Slashing
+Damage type (thrown): Missile
+Speed Factor: 2
+Proficiency Type: Axe
+Type: One-handed
+Requires:
+ 4 Strength
+
+Weight: 1"
+
+	SAY NAME2 "Ryfthome Axe +3"
+	SAY DESC "This axe of hurling is one of the most heavily enchanted weapons of its type. Its markings are vaguely dwarven, but no dwarf yet encountered on Faerûn has claimed a kinship with the maker. This causes some to speculate that it may not be the product of a terrestrial dwarven hand, rather some extraplanar variant. Dwarves laugh this off, of course, claiming the maker likely has no time for nosy scholars. 
+
+STATISTICS:
+
+Equipped abilities:
+– Chance to score a critical hit: +5% (with this weapon only)
+
+Combat abilities:
+– Returns to the wielder's hand when thrown
+
+THAC0: +3
+Damage: 1d6+4
+Damage type (melee): Slashing
+Damage type (thrown): Missile
+Speed Factor: 1
+Proficiency Type: Axe
+Type: One-handed
+Requires:
+ 4 Strength
+
+Weight: 2"
+
+
+
+
+
+
+//K'LOGARATH +3// - valore 12000mo
+COPY "rick_bigg_mod/items/AX1H16.itm" "override"
+	SAY NAME1 "Throwing Axe"
+	SAY UNIDENTIFIED_DESC "The hand axe or throwing axe is also known as a hatchet. The axe blade has a sharp steel tip counterbalanced by a pointed fluke. The short handle has a point on the bottom, and the head may have a spike on the top.
+
+STATISTICS:
+
+Damage: 1d6+1
+Damage type (melee): Slashing
+Damage type (thrown): Missile
+Speed Factor: 4
+Proficiency Type: Axe
+Type: One-handed
+Requires:
+ 4 Strength
+
+Weight: 1"
+
+	SAY NAME2 "K'logarath +3"
+	SAY DESC "The origins of this throwing axe are known only to denizens of the Underdark. What is known is that clans of duergar have gone to war simply to possess this artifact. 
+
+STATISTICS:
+
+Equipped abilities:
+– 1 extra attack per round
+
+Combat abilities: 
+– Returns to the wielder's hand when thrown
+– 33% chance hit target must take 2d6 extra crushing damage
+
+THAC0: +3
+Damage: 1d6+4
+Damage type (melee): slashing
+Damage type (thrown): missile
+Speed Factor: 1
+Proficiency Type: Axe
+Type: One-handed
+Requires:
+ 4 Strength
+
+Weight: 1"
+
+
+
+
+
+
+
+
+//WIZARD SLAYER +2 - 7500mo//
+COPY "rick_bigg_mod/items/AX1H07.itm" "override"
+	SAY NAME1 "Battle Axe"
+	SAY UNIDENTIFIED_DESC "The most common version of the battle axe is a stout pole about four feet in length with a single-edged, trumpet-shaped blade mounted on one end. This axe, in particular, appears to be very poorly made and slightly smaller than the average battle axe.
+
+STATISTICS:
+
+Damage: 1d8+1 (slashing)
+Speed Factor: 7
+Proficiency Type: Axe
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 6"
+
+	SAY NAME2 "Wizard Slayer +2"
+	SAY DESC "Bala was a foul-tempered prince of a gully dwarf clan, which was enslaved by a cruel elven mage in Thesk. Though Bala managed to escape the more cowardly traits of his race, he was even more filthy and obnoxious than the average gully dwarf. Sickened of his enslavement, Bala crept into the mage's lair and cracked the elf's skull open. Although rumor has it that it was the dwarf's stench that overcame the mage, it was, in fact, his enchanted axe that dispelled the elf's magical defenses. It is obvious from the poor workmanship that Bala himself crafted the axe. The mystery lies in where its power originates. After a lengthy career of mage-slaying, Bala died, never having revealed his secret to those who were willing to risk a lice infestation by approaching him. Some say that the axe was powered by Bala's intense hatred of wizards.
+
+STATISTICS:
+
+Combat abilities:
+– Hit target is affected by Miscast Magic for 100 seconds (80% chance of spellcasting failure, Save vs. Spell at -2 negates)
+
+THAC0: +2
+Damage: 1d8+3 (slashing)
+Speed Factor: 5
+Proficiency Type: Axe
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 4"
+
+
+
+
+
+//AXE OF THE RUIN +3 - valore 6000mo//
+COPY "rick_bigg_mod/items/TB#AX1.itm" "override"
+	SAY NAME1 "Battle Axe"
+	SAY UNIDENTIFIED_DESC "The most common version of the battle axe is a stout pole about four feet in length with a single-edged, trumpet-shaped blade mounted on one end. This axe, in particular, appears to be very poorly made and slightly smaller than the average battle axe.
+
+STATISTICS:
+
+Damage: 1d8+1 (slashing)
+Speed Factor: 7
+Proficiency Type: Axe
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 6"
+
+	SAY NAME2 "Axe of the Ruin +3"
+	SAY DESC "This wide, heavy axe gives way to jagged teeth near its tip, a serrated edge designed to rip and tear flesh. Little is known of the weapon's origin, but the elaborate grip marked with worn runes hints that it may have been crafted in ancient Unther.
+
+STATISTICS:
+
+Equipped abilities:
+– Critical Hit Chance: +5%
+
+Combat abilities:
+– Deals an extra 2d4 points of crushing damage on a critical hit
+
+STATISTICS:
+
+THAC0: +3
+Damage: 1d8+4 (slashing)
+Speed Factor: 4
+Proficiency Type: Axe
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 5"
+
+
+
+
+
+//AXE OF TROLL DECAPITATION +2 - 4500mo//
+COPY "rick_bigg_mod/items/OHRAX1H1.itm" "override"
+	SAY NAME1 "Battle Axe"
+	SAY UNIDENTIFIED_DESC "The most common version of the battle axe is a stout pole about four feet in length with a single-edged, trumpet-shaped blade mounted on one end. This axe, in particular, appears to be very poorly made and slightly smaller than the average battle axe.
+
+STATISTICS:
+
+Damage: 1d8+1 (slashing)
+Speed Factor: 7
+Proficiency Type: Axe
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 6"
+
+	SAY NAME2 "Axe of Troll Decapitation +2"
+	SAY DESC "Runes along the length of this powerful weapon spell 'death to trolls' in multiple languages. Legend tells that the famous dwarf Durlag Trollkiller used this sword in his adventuring days, but lost it during a particularly brutal fight in the Troll Hills.
+
+STATISTICS:
+
+Combat abilities:
+– On a critical hit against a troll, the wearer gains +1 to Strength for 1 turn (non-cumulative)
+
+THAC0: +2, +4 vs. trolls
+Damage: 1d8+3, +2 fire vs. trolls
+Speed Factor: 5
+Proficiency Type: Axe
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 6"
+
+
+
+
+
+
+
+
+
+//FROSTREAVER +3 - valore 7000mo//
+COPY "rick_bigg_mod/items/AX1H13.itm" "override"
+	SAY NAME1 "Battle Axe"
+	SAY UNIDENTIFIED_DESC "The most common version of the battle axe is a stout pole about four feet in length with a single-edged, trumpet-shaped blade mounted on one end. This axe, in particular, appears to be very poorly made and slightly smaller than the average battle axe.
+
+STATISTICS:
+
+Damage: 1d8+1 (slashing)
+Speed Factor: 7
+Proficiency Type: Axe
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 6"
+
+	SAY NAME2 "Frostreaver +3"
+	SAY DESC "This was the axe of Illgarth, a frost giant that terrorized northern communities long ago. It is not known where he acquired the weapon, but he took a perverse pleasure in unleashing it upon small folk, particularly halflings. Ice maimed those not killed, and the giant would laugh coldly if he recognized his handiwork from a previous visit. Ultimately a group did manage to kill him, and at the request of his victims, Frostreaver was buried with him. 
+
+STATISTICS:
+
+THAC0: +3 
+Damage: 1d8+4, +3 cold damage
+Damage type: Slashing
+Speed Factor: 4
+Proficiency Type: Axe
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 6"
+
+
+
+
+//STONEFIRE +4 - valore 8000mo//
+COPY "rick_bigg_mod/items/AX1H12.itm" "override"
+	SAY NAME1 "Battle Axe"
+	SAY UNIDENTIFIED_DESC "The most common version of the battle axe is a stout pole about four feet in length with a single-edged, trumpet-shaped blade mounted on one end. This axe, in particular, appears to be very poorly made and slightly smaller than the average battle axe.
+
+STATISTICS:
+
+Damage: 1d8+1 (slashing)
+Speed Factor: 7
+Proficiency Type: Axe
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 6"
+
+	SAY NAME2 "Stonefire +4"
+	SAY DESC "The Stonefires were an old lineage of dwarves, and the eldest male of the line carried this axe, an heirloom of utmost importance. Unfortunately, they were decimated in 1150 DR, falling in a mere two years to a mysterious plague. Ulgan, keeper of the axe, fled in hopes of escaping the inevitable, but he died several weeks later. His body was found in the Cloakwood Forest, but the axe was missing.
+
+STATISTICS:
+
+THAC0: +4 
+Damage: 1d8+5, +1d4 fire damage
+Damage type: Slashing
+Speed Factor: 3
+Proficiency Type: Axe
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 6"
+
+
+
+
+//AXE OF THE UNYIELDING +3//
+COPY "rick_bigg_mod/items/AX1H14.itm" "override"
+	SAY NAME1 "Battle Axe"
+	SAY UNIDENTIFIED_DESC "The most common version of the battle axe is a stout pole about four feet in length with a single-edged, trumpet-shaped blade mounted on one end. This axe, in particular, appears to be very poorly made and slightly smaller than the average battle axe.
+
+STATISTICS:
+
+Damage: 1d8+1 (slashing)
+Speed Factor: 7
+Proficiency Type: Axe
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 6"
+
+	SAY NAME2 "Axe of the Unyielding +3"
+	SAY DESC "This axe was last seen in the gnarled fists of Glimred Heavyhand, an aging dwarven hero who disappeared in the deepest caverns beneath the Marching Mountains.  
+
+STATISTICS:
+
+Equipped abilities: 
+– Armor Class: +2
+– Saving Throws: +2
+
+THAC0: +3
+Damage: 1d8+4 (slashing)
+Speed Factor: 4
+Proficiency Type: Axe
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 7"
+
+
+//AXE OF THE UNYIELDING +5//
+COPY "rick_bigg_mod/items/AX1H15.itm" "override"
+	SAY NAME1 "Battle Axe"
+	SAY UNIDENTIFIED_DESC "The most common version of the battle axe is a stout pole about four feet in length with a single-edged, trumpet-shaped blade mounted on one end. This axe, in particular, appears to be very poorly made and slightly smaller than the average battle axe.
+
+STATISTICS:
+
+Damage: 1d8+1 (slashing)
+Speed Factor: 7
+Proficiency Type: Axe
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 6"
+
+	SAY NAME2 "Axe of the Unyielding +5"
+	SAY DESC "Enhanced by the magic of the balor's claw, the Axe of the Unyielding is now the most fearsome of weapons—a vorpal-edged axe capable of severing an opponent's head with a single blow. 
+
+STATISTICS:
+
+Equipped abilities: 
+– Armor Class: +2
+– Saving Throws: +2
+- Magic Resistance: +10%
+
+Combat abilities:
+– 15% chance of decapitating opponent with each successful attack (Save vs. Death at -4 negates)
+
+THAC0: +5 
+Damage: 1d8+5 (slashing)
+Speed Factor: 2
+Proficiency Type: Axe
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 5"

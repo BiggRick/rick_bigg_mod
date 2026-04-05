@@ -1,0 +1,228 @@
+//BONE CLUB +2, +4 VS UNDEAD - 4500mo//
+COPY "rick_bigg_mod/items/BLUN23.itm" "override"
+	SAY NAME1 "Club"
+	SAY UNIDENTIFIED_DESC "Most clubs are stout, hardwood sticks, narrow at the grip and wider at the end. This simple weapon has been used since people first began using tools. Anyone can find a good stout piece of wood and swing it; hence the club's widespread use.
+
+STATISTICS:
+
+Damage: 1d6 (crushing)
+Speed Factor: 4
+Proficiency Type: Club
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 3"
+
+	SAY NAME2 "Bone Club +2, +4 vs undead"
+	SAY DESC "This vicious club was created hundreds of years ago, reportedly by a shaman on a quest for revenge. His family had fallen to undead, and so personal was his rage that he amputated his own leg, using the femur for the body of the weapon. Magical runes empower it, though it is likely the sheer force of the shaman's hatred would have served on its own. 
+
+STATISTICS:
+
+THAC0: +2, +4 vs. undead
+Damage: 1d6+2, +4 vs. undead
+Damage type: Crushing
+Speed Factor: 2
+Proficiency Type: Club
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 3"
+
+
+
+
+//WYVERN'S TAIL +3 - 5500mo//
+COPY "rick_bigg_mod/items/BLUN17.itm" "override"
+	SAY NAME1 "Club"
+	SAY UNIDENTIFIED_DESC "Most clubs are stout, hardwood sticks, narrow at the grip and wider at the end. This simple weapon has been used since people first began using tools. Anyone can find a good stout piece of wood and swing it; hence the club's widespread use.
+
+STATISTICS:
+
+Damage: 1d6 (crushing)
+Speed Factor: 4
+Proficiency Type: Club
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 3"
+
+	SAY NAME2 "Wyvern's Tail +3"
+	SAY DESC "The large spike at the head of this club is actually the lethal stinger of a wyvern. The fighter/mage Sedej created this weapon, using his magical abilities to keep the stinger capable of producing poison. The magic he used has actually made the Wyvern's Tail a living weapon that pulses with life in the hands of its wielder.
+ 
+STATISTICS:
+
+Combat abilities:
+– Hit target must save vs. Poison or take 5 Hit Points of poison damage
+
+THAC0: +3
+Damage: 1d6+3 (crushing)
+Speed Factor: 1
+Proficiency Type: Club
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 3"
+
+
+
+
+
+
+//ROOT OF THE PROBLEM +3 - valore 8000mo - solo druidi//
+COPY "rick_bigg_mod/items/BLUN10.itm" "override"
+	SAY NAME1 "Club"
+	SAY UNIDENTIFIED_DESC "Most clubs are stout, hardwood sticks, narrow at the grip and wider at the end. This simple weapon has been used since people first began using tools. Anyone can find a good stout piece of wood and swing it; hence the club's widespread use.
+
+STATISTICS:
+
+Damage: 1d6 (crushing)
+Speed Factor: 4
+Proficiency Type: Club
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 3"
+
+	SAY NAME2 "Root of The Problem +3"
+	SAY DESC "This enchanted club is said to have existed since the time of the fall of Netheril and the birth of the great Anauroch Desert. While the toll on civilization was great, the true victims of this age were nature's creatures, condemned to stand and watch as their homes decayed and died. As habitats receded, those that remained were invaded by displaced hordes of creatures, the more impatient of which marched on unspoiled land taking whatever they wished. This particular weapon is said to have come from a dryad's tree, a final gift to nature's cause from a woodland spirit that could not hold back the invaders of her land. Hers was a bittersweet pain, as her wood might not have suffered so if it had not been so strong and lush. Less respecting scholars have since bestowed the item's ironic name, though the humor is not appreciated among nature's more devout followers.
+
+STATISTICS:
+
+Equipped abilities:
+- Casting speed bonus: +2
+- Caster level bonus: +2
+
+Charge Abilities:
+- Cast Nature's Beauty twice per day (at level 14)
+
+THAC0: +3, +5 vs. unnatural creatures
+Damage: 1d6+3, +5 vs. unnatural creatures
+Damage type: Crushing
+Speed Factor: 1
+Proficiency Type: Club
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 3"
+
+
+
+
+//BLACKBLOOD +4 - valore 8500mo//
+COPY "rick_bigg_mod/items/BLUN22.itm" "override"
+	SAY NAME1 "Club"
+	SAY UNIDENTIFIED_DESC "Most clubs are stout, hardwood sticks, narrow at the grip and wider at the end. This simple weapon has been used since people first began using tools. Anyone can find a good stout piece of wood and swing it; hence the club's widespread use.
+
+STATISTICS:
+
+Damage: 1d6 (crushing)
+Speed Factor: 4
+Proficiency Type: Club
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 3"
+
+	SAY NAME2 "Blackblood +4"
+	SAY DESC "This oak club is coated with darkened, dried globs of a tar-like substance. During battle, this substance glows black with an inner light and becomes thick and fluid. When the club strikes an opponent, it delivers additional acid damage from the liquid splashing over the victim.
+
+STATISTICS:
+
+THAC0: +4
+Damage: 1d6+4, +3 acid damage
+Damage type: Crushing
+Speed Factor: 1
+Proficiency Type: Club
+Type: One-handed
+Requires:
+ 5 Strength
+ 
+ Weight: 3"
+ 
+ 
+ 
+ 
+//CLUB DETONATION +3 - 8000mo//
+COPY "rick_bigg_mod/items/BLUN26.itm" "override"
+	SAY NAME1 "Club"
+	SAY UNIDENTIFIED_DESC "Most clubs are stout, hardwood sticks, narrow at the grip and wider at the end. This simple weapon has been used since people first began using tools. Anyone can find a good stout piece of wood and swing it; hence the club's widespread use.
+
+STATISTICS:
+
+Damage: 1d6 (crushing)
+Speed Factor: 4
+Proficiency Type: Club
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 3"
+
+	SAY NAME2 "Club of Detonation +3"
+	SAY DESC "This crude wooden club burns with the raging spirit of the demon forever trapped within by the powerful enchantments placed on the weapon. Occasionally, however, the demon's wrath escapes in a fiery blast.
+
+STATISTICS:
+
+Combat abilities:
+– 15% chance per hit target will take an additional 15 points of fire damage
+– 10% chance per hit a 15-ft. radius fireball will automatically detonate (5d6 fire damage; Save vs. Spell for half)
+
+THAC0: +3
+Damage: 1d6+3, +3 fire damage
+Damage type: Crushing
+Speed Factor: 1
+Proficiency Type: Club
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 3"
+
+
+
+
+//CLUB DETONATION +5 - 14000mo//
+COPY "rick_bigg_mod/items/BLUN27.itm" "override"
+	SAY NAME1 "Club"
+	SAY UNIDENTIFIED_DESC "Most clubs are stout, hardwood sticks, narrow at the grip and wider at the end. This simple weapon has been used since people first began using tools. Anyone can find a good stout piece of wood and swing it; hence the club's widespread use.
+
+STATISTICS:
+
+Damage: 1d6 (crushing)
+Speed Factor: 4
+Proficiency Type: Club
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 3"
+
+	SAY NAME2 "Club of Detonation +5"
+	SAY DESC "The enchantments from the ring of fire resistance makes the demon spirit trapped within this weapon easier to control—though the wrath of the creature may occasionally still be released without warning.
+
+STATISTICS:
+
+Equipped abilities:
+– Fire Resistance: +40%
+
+Combat abilities:
+– 25% chance per hit target will take an additional 15 points of fire damage
+– 5% chance per hit a 15-ft. radius fireball will automatically detonate (10d6 fire damage; Save vs. Spell for half)
+
+THAC0: +5
+Damage: 1d6+5, +5 fire damage
+Damage type: Crushing
+Speed Factor: 1
+Proficiency Type: Club
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 1"

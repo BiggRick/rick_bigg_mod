@@ -1,0 +1,328 @@
+//THE BURNING EARTH +2 - valore 6000mo//
+COPY "rick_bigg_mod/items/SW1H24.itm" "override"
+	SAY NAME1 "Long Sword"
+	SAY UNIDENTIFIED_DESC "These swords are usually referred to as double-edged swords, war swords, or military swords. In many cases, the long sword has a single-edged blade. There is no single version of the long sword; the design and length vary from culture to culture and may vary within the same culture depending on the era. Among the most common characteristics of all long swords is their length, which ranges from thirty-five inches to forty-seven inches. In the latter case, the blade is known to take up forty inches of the total length. Most long swords have a double-edged blade and a sharp point at the tip. Despite the tip, the long sword is designed for slashing, not thrusting.
+
+STATISTICS:
+
+Damage: 1d8 (slashing)
+Speed Factor: 5
+Proficiency Type: Long Sword
+Type: One-handed
+Requires:
+ 6 Strength
+
+Weight: 4"
+
+	SAY NAME2 "The Burning Earth +2"
+	SAY DESC "There was a time before Neverwinter was warm and before the great Anauroch was dry... or so it is said. Few relics remain to prove such an age existed, and fewer still have an identifiable purpose. 'The Burning Earth' seems straightforward enough—it burns a victim with magical fire, and a cryptic rune seems to suggest that the power comes from the ground itself—but whomever constructed it remains a mystery. It looks a perfectly serviceable weapon, but something in the balance or grip is... wrong. It strains the forearm a touch, and does not fit the hand just right. It doesn't seem to hurt a warrior's performance, aside from the nagging doubt that the blade was not made for <PRO_HIMHER>... or any other humanoid.
+
+STATISTICS:
+
+Equipped abilities:
+Cold resistance: +20%
+
+THAC0: +2, +3 vs. regenerating creatures, +4 vs. undead
+Damage: 1d8+2, +2 fire damage, +3 vs. regenerating creatures, +4 vs. undead
+Damage type: Slashing
+Speed Factor: 3
+Proficiency Type: Long Sword
+Type: One-handed
+Requires:
+ 6 Strength
+
+Weight: 4"
+
+
+
+
+
+
+
+
+//RAS THE DANCING BLADE +2 - valore 6000mo//
+COPY "rick_bigg_mod/items/SW1H33.itm" "override"
+	SAY NAME1 "Long Sword"
+	SAY UNIDENTIFIED_DESC "These swords are usually referred to as double-edged swords, war swords, or military swords. In many cases, the long sword has a single-edged blade. There is no single version of the long sword; the design and length vary from culture to culture and may vary within the same culture depending on the era. Among the most common characteristics of all long swords is their length, which ranges from thirty-five inches to forty-seven inches. In the latter case, the blade is known to take up forty inches of the total length. Most long swords have a double-edged blade and a sharp point at the tip. Despite the tip, the long sword is designed for slashing, not thrusting.
+
+STATISTICS:
+
+Damage: 1d8 (slashing)
+Speed Factor: 5
+Proficiency Type: Long Sword
+Type: One-handed
+Requires:
+ 6 Strength
+
+Weight: 4"
+
+	SAY NAME2 "Ras the Dancing Blade +2"
+	SAY DESC "Beroalf was a barbarian who traveled from the cold north in search of adventure. He sought treasures and glory, but soon all he wanted were companions to share in the excitement of battle, much like those he had left behind in his faraway village. Unfortunately, his coarse remarks and rudimentary hygiene repelled most travelers he met, until he expressed his thoughts to a sympathetic mage. The mage, for a price, constructed Ras, the dancing blade. Though not quite what Beroalf had in mind, he was thrilled nonetheless and wielded the sword for many years. How they were ultimately separated is not known.
+
+STATISTICS:
+
+Combat abilities:
+– Dancing sword can attack on its own for 4 rounds
+
+THAC0: +2
+Damage: 1d8+2 (slashing)
+Speed Factor: 3
+Proficiency Type: Long Sword
+Type: One-handed
+Requires:
+ 6 Strength
+
+Weight: 3"
+
+
+
+
+//NAMARRA +2 - 5500mo//
+COPY "rick_bigg_mod/items/SW1H36.itm" "override"
+	SAY NAME1 "Long Sword"
+	SAY UNIDENTIFIED_DESC "These swords are usually referred to as double-edged swords, war swords, or military swords. In many cases, the long sword has a single-edged blade. There is no single version of the long sword; the design and length vary from culture to culture and may vary within the same culture depending on the era. Among the most common characteristics of all long swords is their length, which ranges from thirty-five inches to forty-seven inches. In the latter case, the blade is known to take up forty inches of the total length. Most long swords have a double-edged blade and a sharp point at the tip. Despite the tip, the long sword is designed for slashing, not thrusting.
+
+STATISTICS:
+
+Damage: 1d8 (slashing)
+Speed Factor: 5
+Proficiency Type: Long Sword
+Type: One-handed
+Requires:
+ 6 Strength
+
+Weight: 4"
+
+	SAY NAME2 "Namarra +2"
+	SAY DESC "Also known as Neversleep, this ancient blade is thought to have been present at some of the most influential conflicts in Faerûn's history. Sightings have been noted as far north as Thay and as south as the jungles of Chult, though documentation is oddly lacking regarding the details. It is perhaps a result of the sword's ability to silence all sound within a large radius, removing the effectiveness of attacking mages but also preventing any discussion that might have followed. 
+
+STATISTICS:
+
+Charge abilities:
+– Silence, 15' Radius three times per day (Save vs. Spell at -5 to negate)
+  Duration: 1 turn
+
+THAC0: +2
+Damage: 1d8+3 (slashing)
+Speed Factor: 3
+Proficiency Type: Long Sword
+Type: One-handed
+Requires:
+ 6 Strength
+
+Weight: 2"
+
+
+//ADJATHA THE DRINKER +3 - no good - valore 8000mo//
+COPY "rick_bigg_mod/items/SW1H35.itm" "override"
+	SAY NAME1 "Long Sword"
+	SAY UNIDENTIFIED_DESC "These swords are usually referred to as double-edged swords, war swords, or military swords. In many cases, the long sword has a single-edged blade. There is no single version of the long sword; the design and length vary from culture to culture and may vary within the same culture depending on the era. Among the most common characteristics of all long swords is their length, which ranges from thirty-five inches to forty-seven inches. In the latter case, the blade is known to take up forty inches of the total length. Most long swords have a double-edged blade and a sharp point at the tip. Despite the tip, the long sword is designed for slashing, not thrusting.
+
+STATISTICS:
+
+Damage: 1d8 (slashing)
+Speed Factor: 5
+Proficiency Type: Long Sword
+Type: One-handed
+Requires:
+ 6 Strength
+
+Weight: 4"
+
+	SAY NAME2 "Adjatha the Drinker +3"
+	SAY DESC "This blade belonged to Dabbar, a long-dead servant of Bhaal that exercised control over his minions in the most brutal of ways. In addition to strengthening the mind against the guile of others, the sword absorbs life energy from an opponent with each successful hit, healing the user. Dabbar considered it a failure of his officers if he returned from battle in less than perfect health, and as the rest of the company watched, he would administer beatings until fully healed.
+
+STATISTICS:
+
+Equipped abilities:
+- +2 Saving Throws vs Enchantment School
+
+Combat abilities:
+– Each hit heals the wielder 1 Hit Point
+- 5% chance to deal extra 20 damage (magic)
+
+THAC0: +3
+Damage: 1d8+3 (slashing)
+Speed Factor: 2
+Proficiency Type: Long Sword
+Type: One-handed
+Requires:
+ 6 Strength
+
+Weight: 3"
+
+
+
+
+
+
+
+
+
+
+//BLADE OF SEARING +4 - valore 7500mo//
+COPY "rick_bigg_mod/items/SW1H39.itm" "override"
+	SAY NAME1 "Long Sword"
+	SAY UNIDENTIFIED_DESC "These swords are usually referred to as double-edged swords, war swords, or military swords. In many cases, the long sword has a single-edged blade. There is no single version of the long sword; the design and length vary from culture to culture and may vary within the same culture depending on the era. Among the most common characteristics of all long swords is their length, which ranges from thirty-five inches to forty-seven inches. In the latter case, the blade is known to take up forty inches of the total length. Most long swords have a double-edged blade and a sharp point at the tip. Despite the tip, the long sword is designed for slashing, not thrusting.
+
+STATISTICS:
+
+Damage: 1d8 (slashing)
+Speed Factor: 5
+Proficiency Type: Long Sword
+Type: One-handed
+Requires:
+ 6 Strength
+
+Weight: 4"
+
+	SAY NAME2 "Blade of Searing +4"
+	SAY DESC "The benefits inherent in this sword are plain to see: It is exceptionally accurate, and a lick of acid follows every blow, searing the target in addition to the normal damage received. It is an efficient troll-killer, though it has not yet been heralded as such in song or legend.
+
+STATISTICS:
+
+THAC0: +4
+Damage: 1d8+4, +3 acid damage
+Damage type: Slashing
+Speed Factor: 1
+Proficiency Type: Long Sword
+Type: One-handed
+Requires:
+ 6 Strength
+
+Weight: 3"
+
+
+
+
+
+
+//EQUALIZER +3 - valore 15000mo//
+COPY "rick_bigg_mod/items/SW1H54.itm" "override"
+	SAY NAME1 "Long Sword"
+	SAY UNIDENTIFIED_DESC "These swords are usually referred to as double-edged swords, war swords, or military swords. In many cases, the long sword has a single-edged blade. There is no single version of the long sword; the design and length vary from culture to culture and may vary within the same culture depending on the era. Among the most common characteristics of all long swords is their length, which ranges from thirty-five inches to forty-seven inches. In the latter case, the blade is known to take up forty inches of the total length. Most long swords have a double-edged blade and a sharp point at the tip. Despite the tip, the long sword is designed for slashing, not thrusting.
+
+STATISTICS:
+
+Damage: 1d8 (slashing)
+Speed Factor: 5
+Proficiency Type: Long Sword
+Type: One-handed
+Requires:
+ 6 Strength
+
+Weight: 4"
+
+	SAY NAME2 "Equalizer +3"
+	SAY DESC "Such is the age of this sword that its true origin has been lost to time, but markings hint that it was possibly forged in the service of Helm. Also called the "Sword of Neutrality," it seems designed to seek and terminate extremes, to shift the universe closer to harmonious equilibrium. The further the behavior of a target from true balance, the more potent the damage they suffer.
+
+STATISTICS:
+
+Equipped abilities: 
+– Immunity to charm and confusion
+
+Combat abilities:
+– Each hit lowers the target's Magic Resistance by 15% for 4 rounds
+– Each hit penalizes the target's Armor Class by 2 for 4 rounds
+
+THAC0 & Damage:
+  vs. True Neutral, Chaotic Neutral, Lawful Neutral: +3 to hit, 1d8+3 damage
+  vs. Neutral Good, Neutral Evil: +4 to hit, 1d8+4 damage
+  vs. Other Alignments: +5 to hit, 1d8+5 damage
+Damage type: Slashing
+Speed Factor: 2
+Proficiency Type: Long Sword
+Type: One-handed
+Requires:
+ 6 Strength
+
+Weight: 3"
+
+
+
+
+
+
+
+
+
+//FOEBANE +3 - valore 6000mo //
+COPY "rick_bigg_mod/items/SW1H63.itm" "override"
+	SAY NAME1 "Long Sword"
+	SAY UNIDENTIFIED_DESC "These swords are usually referred to as double-edged swords, war swords, or military swords. In many cases, the long sword has a single-edged blade. There is no single version of the long sword; the design and length vary from culture to culture and may vary within the same culture depending on the era. Among the most common characteristics of all long swords is their length, which ranges from thirty-five inches to forty-seven inches. In the latter case, the blade is known to take up forty inches of the total length. Most long swords have a double-edged blade and a sharp point at the tip. Despite the tip, the long sword is designed for slashing, not thrusting.
+
+STATISTICS:
+
+Damage: 1d8 (slashing)
+Speed Factor: 5
+Proficiency Type: Long Sword
+Type: One-handed
+Requires:
+ 6 Strength
+
+Weight: 4"
+
+	SAY NAME2 "Foebane +3"
+	SAY DESC "The archmage Demron created this powerful blade for Captain Fflar of Myth Drannor. When the elven city fell, the sword was lost beneath the rubble of the once-great metropolis.
+
+STATISTICS:
+
+THAC0: +3
+Damage: 1d8+3, +6 damage vs. undead, shapeshifters, demons, and devils
+Damage type: Slashing
+Speed Factor: 2
+Proficiency Type: Long Sword
+Type: One-handed
+Requires:
+ 6 Strength
+
+Weight: 3
+"
+
+
+
+
+//FOEBANE +5 - valore 15000mo //
+COPY "rick_bigg_mod/items/SW1H63.itm" "override"
+	SAY NAME1 "Long Sword"
+	SAY UNIDENTIFIED_DESC "These swords are usually referred to as double-edged swords, war swords, or military swords. In many cases, the long sword has a single-edged blade. There is no single version of the long sword; the design and length vary from culture to culture and may vary within the same culture depending on the era. Among the most common characteristics of all long swords is their length, which ranges from thirty-five inches to forty-seven inches. In the latter case, the blade is known to take up forty inches of the total length. Most long swords have a double-edged blade and a sharp point at the tip. Despite the tip, the long sword is designed for slashing, not thrusting.
+
+STATISTICS:
+
+Damage: 1d8 (slashing)
+Speed Factor: 5
+Proficiency Type: Long Sword
+Type: One-handed
+Requires:
+ 6 Strength
+
+Weight: 4"
+
+	SAY NAME2 "Foebane +5"
+	SAY DESC "Reunited with Fflar's scabbard, Foebane is an even greater weapon than the legends claimed.
+
+STATISTICS:
+
+Equipped abilities:
+– Saving Throws: +2
+- Magic Resistance: +10%
+– When below 25% of hit points, gain one Stoneskin per round (duration one round)
+
+THAC0: +5
+Damage: 1d8+5, +6 damage vs. undead, shapeshifters, demons, and devils
+Damage type: Slashing
+Speed Factor: 1
+Proficiency Type: Long Sword
+Type: One-handed
+Requires:
+ 6 Strength
+
+Weight: 3
+"
+
+
+
+
+
+
+

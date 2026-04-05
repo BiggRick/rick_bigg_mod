@@ -35,7 +35,7 @@ Weight: 2"
 
 
 
-//SPEAR OF THE UNICORN +2 - 4500mo - no evil//
+//SPEAR OF THE UNICORN +2 - 5500mo - no evil//
 COPY "rick_bigg_mod/items/SPER07.itm" "override"
 	SAY NAME1 "Spear"
 	SAY UNIDENTIFIED_DESC "One of the earliest weapons, dating back to the most primitive of times, the first spears were simply wooden poles or sticks sharpened at one end. When the civilized races mastered metals, spearheads were made from iron and steel. Having reached this end, weaponsmiths began experimenting with different types of spearheads, thus leading to the development of certain polearm types.
@@ -59,7 +59,7 @@ STATISTICS:
 
 Equipped abilities: 
 – Immunity to charm and hold
-– Save vs. Death: +3
+– Save vs. Death: +2
 
 THAC0: +2
 Damage: 1d6+2 (piercing)
@@ -148,7 +148,7 @@ Weight: 3"
 
 
 
-//SPEAR OF WITHERING +4 - no druidi - valore 9000mo//
+//SPEAR OF WITHERING +4 - no druidi - valore 10000mo//
 COPY "rick_bigg_mod/items/SPER10.itm" "override"
 	SAY NAME1 "Spear"
 	SAY UNIDENTIFIED_DESC "One of the earliest weapons, dating back to the most primitive of times, the first spears were simply wooden poles or sticks sharpened at one end. When the civilized races mastered metals, spearheads were made from iron and steel. Having reached this end, weaponsmiths began experimenting with different types of spearheads, thus leading to the development of certain polearm types.
@@ -174,7 +174,7 @@ Charge Abilities:
 - Cast Poison once per day (at level 15)
 
 THAC0: +4
-Damage: 1d8+4, + 4 poison damage
+Damage: 1d8+4, +4 poison damage
 Damage type: Piercing
 Speed Factor: 2
 Proficiency Type: Spear
@@ -185,7 +185,7 @@ Requires:
 Weight: 5" 
 
 
-//SPEAR OF KULDAHAR +4 - valore 10000mo//
+//SPEAR OF KULDAHAR +4 - valore 12000mo//
 COPY "rick_bigg_mod/items/WASPEAR.itm" "override"
 	SAY NAME1 "Spear"
 	SAY UNIDENTIFIED_DESC "One of the earliest weapons, dating back to the most primitive of times, the first spears were simply wooden poles or sticks sharpened at one end. When the civilized races mastered metals, spearheads were made from iron and steel. Having reached this end, weaponsmiths began experimenting with different types of spearheads, thus leading to the development of certain polearm types.
@@ -280,8 +280,10 @@ Weight: 5"
 
 STATISTICS:
 
-Combat abilities:
+Equipped abilities:
 – 1 extra attack per round
+
+Combat abilities:
 – Hit target is pinned for 3 rounds and takes an additional 1d6+5 piercing damage each round (Save vs. Paralysis -4 negates)
 
 THAC0: +6

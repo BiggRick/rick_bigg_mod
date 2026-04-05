@@ -1,0 +1,271 @@
+//ARDULIA'S FALL +2 - 5500mo//
+COPY "rick_bigg_mod/items/BLUN20.itm" "override"
+	SAY NAME1 "Mace"
+	SAY UNIDENTIFIED_DESC "The mace is a direct descendant of the basic club, being nothing more than a wooden shaft with a stone or iron head mounted on the end. The head design varies: Some are spiked, others flanged, and still others have pyramidal knobs.
+
+STATISTICS:
+
+Damage: 1d6+1 (crushing)
+Speed Factor: 7
+Proficiency Type: Mace
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 10"
+
+	SAY NAME2 "Ardulia's Fall +2"
+	SAY DESC "Ardulia the Agile was a man whose speed and skill at knife play made him exceptionally lethal in battle, and he repeatedly proved it by leading raids on settlements along the Sword Coast. He would often challenge the village leader for possession of the town, and with his speed, the duels were always quickly decided in his favor. Ardulia met his match one spring morn however, when he battled the priest Itgan, who wielded this mace. Ardulia seemed to stagger under each blow, slowing his pace to recoup and regain his breath. Without his speed, Ardulia was lost, and fell to the measured attacks of Itgan.
+
+STATISTICS:
+
+Combat abilities:
+– Hit target must save vs. Spell or be slowed for 2 rounds
+
+THAC0: +2
+Damage: 1d6+3 (crushing)
+Speed Factor: 5
+Proficiency Type: Mace
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 7"
+
+
+
+
+
+
+
+//MAULER'S ARM +2 - 4500mo//
+COPY "rick_bigg_mod/items/BLUN19.itm" "override"
+	SAY NAME1 "Mace"
+	SAY UNIDENTIFIED_DESC "The mace is a direct descendant of the basic club, being nothing more than a wooden shaft with a stone or iron head mounted on the end. The head design varies: Some are spiked, others flanged, and still others have pyramidal knobs.
+
+STATISTICS:
+
+Damage: 1d6+1 (crushing)
+Speed Factor: 7
+Proficiency Type: Mace
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 10"
+
+	SAY NAME2 "Mauler's Arm +2"
+	SAY DESC "Jurrg the Mauler was proud chieftain of a northern tribe, but feared he would be the last of his family to lead. His son Kullen was sickly and clearly couldn't meet the traditional requirements of strength for a chieftain. Jurrg knew that wise leadership took more than brawn, however, so he bargained to enchant this mace such that it would cover Kullen's weakness. Who Jurrg made the deal with is unknown, but the cost was apparently high. Kullen came to rule soon after.
+
+STATISTICS:
+
+Equipped Ability:
+– Strength: 18/50
+
+THAC0: +2
+Damage: 1d6+3 (crushing)
+Speed Factor: 5
+Proficiency Type: Mace
+Type: One-handed
+
+Weight: 7"
+
+
+
+//JERROD'S MACE +3 - valore 9000mo//
+COPY "rick_bigg_mod/items/WAMACE.itm" "override"
+	SAY NAME1 "Mace"
+	SAY UNIDENTIFIED_DESC "The mace is a direct descendant of the basic club, being nothing more than a wooden shaft with a stone or iron head mounted on the end. The head design varies: Some are spiked, others flanged, and still others have pyramidal knobs.
+
+STATISTICS:
+
+Damage: 1d6+1 (crushing)
+Speed Factor: 7
+Proficiency Type: Mace
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 10"
+
+	SAY NAME2 "Jerrod's Mace +3"
+	SAY DESC "This was the favored weapon of the priest of Tempus named Jerrod. Jerrod sacrificed his life to save the town of Easthaven from the powerful devil known as Belhifet.
+
+STATISTICS:
+
+Equipped abilities:
+– The wearer and any allies within their visual radius are immune to fear and morale failure
+
+THAC0: +3, +5 vs. demons and devils
+Damage: 1d6+4, +6 vs. demons and devils
+Damage type: Crushing
+Speed Factor: 4
+Proficiency Type: Mace
+Type: One-handed
+
+Weight: 6"
+
+
+
+
+
+//MACE OF DISRUPTION +2 - valore 8000mo//
+COPY "rick_bigg_mod/items/BLUN12.itm" "override"
+	SAY NAME1 "Mace"
+	SAY UNIDENTIFIED_DESC "The mace is a direct descendant of the basic club, being nothing more than a wooden shaft with a stone or iron head mounted on the end. The head design varies: Some are spiked, others flanged, and still others have pyramidal knobs.
+
+STATISTICS:
+
+Damage: 1d6+1 (crushing)
+Speed Factor: 7
+Proficiency Type: Mace
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 10"
+
+	SAY NAME2 "Mace of Disruption +2"
+	SAY DESC "This heavy mace was created for a very specific purpose: to slay undead. Any such creature hit by it not only feels the sting of the weapon, but also has a chance of being simply blasted from existence. There are legends that speak of a priest so holy a single glancing touch could send a vampire to oblivion, but whether the weapon empowered her or she empowered it is a topic for theologians.
+
+STATISTICS:
+
+Equipped abilities:
+- Immunity to hold
+
+Combat abilities: 
+– Undead must save vs. Death at -2 or be utterly destroyed
+
+THAC0: +2
+Damage: 1d6+3, 1d6+3 extra vs. undead
+Damage type: Crushing
+Speed Factor: 5
+Proficiency Type: Mace
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 7"
+
+
+
+
+
+//MACE OF DISRUPTION +4 - valore 12000mo//
+COPY "rick_bigg_mod/items/BLUN25.itm" "override"
+	SAY NAME1 "Mace"
+	SAY UNIDENTIFIED_DESC "The mace is a direct descendant of the basic club, being nothing more than a wooden shaft with a stone or iron head mounted on the end. The head design varies: Some are spiked, others flanged, and still others have pyramidal knobs.
+
+STATISTICS:
+
+Damage: 1d6+1 (crushing)
+Speed Factor: 7
+Proficiency Type: Mace
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 10"
+
+	SAY NAME2 "Mace of Disruption +4"
+	SAY DESC "This heavy mace was created for a very specific purpose: to slay undead. Any such creature hit by it not only feels the sting of the weapon, but also has a chance of being simply blasted from existence. There are legends that speak of a priest so holy a single glancing touch could send a vampire to oblivion, but whether the weapon empowered her or she empowered it is a topic for theologians.
+
+Now that the mace has been coated with illithium, it is even more potent, conferring to its user immunity to the life-draining powers of the more powerful undead.
+
+STATISTICS:
+
+Equipped abilities:
+- Immunity to hold
+– Immunity to level drain
+
+Combat abilities:
+– Undead must save vs. Death at -4 or be utterly destroyed
+
+THAC0: +4
+Damage: 1d6+5, 1d6+5 extra vs. undead
+Damage type: Crushing
+Speed Factor: 4
+Proficiency Type: Mace
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 6"
+
+
+
+
+//STORM STAR +4 - valore 8000mo//
+COPY "rick_bigg_mod/items/BLUN28.itm" "override"
+	SAY NAME1 "Mace"
+	SAY UNIDENTIFIED_DESC "The mace is a direct descendant of the basic club, being nothing more than a wooden shaft with a stone or iron head mounted on the end. The head design varies: Some are spiked, others flanged, and still others have pyramidal knobs.
+
+STATISTICS:
+
+Damage: 1d6+1 (crushing)
+Speed Factor: 7
+Proficiency Type: Mace
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 10"
+
+	SAY NAME2 "Storm Star +4"
+	SAY DESC "This magical weapon is of ancient design, thought to have been devised in Netheril. It crackles with spectacular arcs of lightning when wielded.
+
+STATISTICS:
+
+THAC0: +4
+Damage: 1d6+5, +1d6 electrical damage
+Damage type: Crushing
+Speed Factor: 3
+Proficiency Type: Mace
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 5"
+
+
+
+
+
+
+//STORM STAR +5 - valore 15000mo//
+COPY "rick_bigg_mod/items/BLUN29.itm" "override"
+	SAY NAME1 "Mace"
+	SAY UNIDENTIFIED_DESC "The mace is a direct descendant of the basic club, being nothing more than a wooden shaft with a stone or iron head mounted on the end. The head design varies: Some are spiked, others flanged, and still others have pyramidal knobs.
+
+STATISTICS:
+
+Damage: 1d6+1 (crushing)
+Speed Factor: 7
+Proficiency Type: Mace
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 10"
+
+	SAY NAME2 "Storm Star +5"
+	SAY DESC "Infused with the otherworldly starfall ore, the powers of this already formidable weapon are greatly enhanced.
+
+STATISTICS:
+
+Equipped abilities:
+– Electrical Resistance: +50%
+
+Combat abilities:
+– 20% chance of casting Chain Lightning (at level 20) on target with each successful attack
+
+THAC0: +5
+Damage: 1d6+6, +1d6 electrical damage
+Damage type: Crushing
+Speed Factor: 2
+Proficiency Type: Mace
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 4"

@@ -1,0 +1,322 @@
+//THE KNEECAPPER +2 - valoe 6000mo//
+COPY "rick_bigg_mod/items/HAMM04.itm" "override"
+	SAY NAME1 "Hammer"
+	SAY UNIDENTIFIED_DESC "A massive warhammer inscribed with dwarven runes.
+
+STATISTICS:
+
+Damage: 2d3+1 (crushing)
+Speed Factor: 4
+Proficiency Type: War Hammer
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 8"
+
+	SAY NAME2 "The Kneecapper +2"
+	SAY DESC "The Kneecapper, or The Capper as it is affectionately known in dwarven circles, is rumored to have been forged by Clangeddin himself. He gave it to a small clan of homeless dwarves that they might carve a place for themselves amongst the giants and ogres in their area. The hammer has been passed from hero to hero, occasionally finding its way into non-dwarven hands.
+
+STATISTICS:
+
+THAC0: +2, +4 vs. giant humanoids
+Damage: 2d3+3, +5 vs. giant humanoids
+Damage type: Crushing
+Speed Factor: 3
+Proficiency Type: War Hammer
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 6"
+
+
+
+
+
+
+
+//BOROK'S FIST +2 - 4500mo//
+COPY "rick_bigg_mod/items/HAMM05.itm" "override"
+	SAY NAME1 "Hammer"
+	SAY UNIDENTIFIED_DESC "A massive warhammer inscribed with dwarven runes.
+
+STATISTICS:
+
+Damage: 2d3+1 (crushing)
+Speed Factor: 4
+Proficiency Type: War Hammer
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 8"
+
+	SAY NAME2 "Borok's Fist +2"
+	SAY DESC "Borok Thundercracker was a dwarven hero that led several campaigns against giants and other 'tall vermin' that had plagued his people in a number of their communities. This hammer was his blessed weapon, which his elven allies called his 'little iron fist', though not to his face.
+
+STATISTICS:
+
+Equipped abilities:
+– Chance to score a critical hit: +5% with this weapon only
+
+THAC0: +2
+Damage: 2d3+3
+Damage type: Crushing
+Speed Factor: 2
+Proficiency Type: War Hammer
+Type: One-handed
+Requires:
+ 9 Strength
+
+Weight: 5"
+
+
+
+
+
+//DREAD HAMMER +3 - valore 7000mo - no buoni//
+COPY "rick_bigg_mod/items/BDHAMM06.itm" "override"
+	SAY NAME1 "Hammer"
+	SAY UNIDENTIFIED_DESC "A massive warhammer inscribed with dwarven runes.
+
+STATISTICS:
+
+Damage: 2d3+1 (crushing)
+Speed Factor: 4
+Proficiency Type: War Hammer
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 8"
+
+	SAY NAME2 "Dread Hammer +3"
+	SAY DESC "Once the property of dwarven cleric of Abbathor, Gurn Coldhearth, this mighty war hammer was infused with dark magics soon after Coldhearth's transformation into a lich. The brown leather of the handle and gray metal of the head are purest black now, seemingly forged of a darkness so deep no light can escape it. Any hand that holds it soon grows cold and numb, but those strong enough to endure the discomfort will wield a weapon of formidable power.
+
+STATISTICS:
+
+Equipped abilities:
+– On a critical miss, the wielder takes 1d4 points of cold damage
+
+Combat abilities:
+– Deals an extra 2d4 points of cold damage vs. good-aligned
+
+THAC0: +3
+Damage: 2d3+4, +2 cold
+Damage Type: Crushing
+Speed Factor: 1
+Proficiency Type: War Hammer
+Type: One-handed
+Requires:
+ 9 Strength
+
+Weight: 5"
+
+
+
+
+
+
+
+//HAMMER OF THUNDERBOLTS +3 - 7500mo//
+COPY "rick_bigg_mod/items/HAMM07.itm" "override"
+	SAY NAME1 "Hammer"
+	SAY UNIDENTIFIED_DESC "A massive warhammer inscribed with dwarven runes.
+
+STATISTICS:
+
+Damage: 2d3+1 (crushing)
+Speed Factor: 4
+Proficiency Type: War Hammer
+Type: One-handed
+Requires:
+ 9 Strength
+
+Weight: 6"
+
+	SAY NAME2 "Hammer of Thunderbolts +3"
+	SAY DESC "A dwarven smith, Silverblade, forged this hammer and two other items: a girdle of frost giant strength and a pair of gauntlets of ogre power. His intention was to gift them to his son, who was then a high officer in the dwarven armies, fighting the giant and ogre tribes of the area. Unfortunately, Silverblade's son died just after the completion of the three items and before they could be gifted to him. In grief, Silverblade himself donned the girdle and the gauntlets. Taking up the Hammer of Thunderbolts, he went to battle against the giant folk. He died valiantly.
+
+STATISTICS:
+
+THAC0: +3
+Damage: 2d3+4, +3 electrical 
+Damage type: Crushing
+Speed Factor: 1
+Proficiency Type: War Hammer
+Type: One-handed
+Requires:
+ 18 Strength
+
+Weight: 4"
+
+
+
+
+
+
+
+
+//AEGIS-FANG +3 - valore 13000mo//
+COPY "rick_bigg_mod/items/AEGIS.itm" "override"
+	SAY NAME1 "Hammer"
+	SAY UNIDENTIFIED_DESC "A massive warhammer inscribed with dwarven runes.
+
+STATISTICS:
+
+Damage: 2d3+1 (crushing)
+Speed Factor: 4
+Proficiency Type: War Hammer
+Type: One-handed
+Requires:
+ 9 Strength
+
+Weight: 6"
+
+	SAY NAME2 "Aegis-Fang +3"
+	SAY DESC "This weapon was made specifically for Wulfgar by Bruenor Battlehammer, and the strongest of its enchantments only function while in the young warrior's hands. Anyone else wields Aegis-Fang as a war hammer +3.
+
+STATISTICS:
+
+Equipped abilities:
+– Chance to score a ranged critical hit: +10% with this weapon only
+
+Combat abilities (thrown):
+– On critical hit opponent is knocked back and stunned with no save (large creatures such as a dragons or giants will not be knocked back or stunned)
+
+THAC0: +3
+Damage: 2d3+4 (crushing)
+Speed Factor: 1
+Proficiency Type: War Hammer
+Type: One-handed
+Requires:
+ 18 Strength
+
+Weight: 3"
+
+COPY_EXISTING "AEGIS.ITM" "override/AEGIS2.ITM"
+
+	
+	
+	
+	
+	
+	
+//CROM FAEYR +5 - valore 25000mo//
+COPY "rick_bigg_mod/items/HAMM09.itm" "override"
+	SAY NAME1 "Hammer"
+	SAY UNIDENTIFIED_DESC "A massive warhammer inscribed with dwarven runes.
+
+STATISTICS:
+
+Damage: 2d3+1 (crushing)
+Speed Factor: 4
+Proficiency Type: War Hammer
+Type: One-handed
+Requires:
+ 9 Strength
+
+Weight: 6"
+
+	SAY NAME2 "Crom Faeyr +5"
+	SAY DESC "This is the true name that the dwarven weaponsmith, Silverblade, gave to the weapon he intended to create for his son. Alas, his son died before the weapon was ever completed, but here it stands complete... forged from the combined magic of the original hammer with the gauntlets of ogre power and a girdle of frost giant strength. Crom Faeyr gifts its users with all the powers of the original Hammer of Thunderbolts, in addition to enormous strength and the ability to kill golems, ettins, and trolls in one blow.
+
+STATISTICS:
+
+Equipped abilities:
+– Strength: 25
+
+Combat abilities:
+– Slays flesh golems, stone golems and clay golems
+
+THAC0: +5
+Damage: 2d3+6, +6 electrical
+Damage type: Crushing
+Speed Factor: 1
+Proficiency Type: War Hammer
+Type: One-handed
+
+Weight: 4"
+
+
+
+
+//RUNEHAMMER +4 - valore 9000mo - no evil//
+COPY "rick_bigg_mod/items/HAMM10.itm" "override"
+	SAY NAME1 "Hammer"
+	SAY UNIDENTIFIED_DESC "A massive warhammer inscribed with dwarven runes.
+
+STATISTICS:
+
+Damage: 2d3+1 (crushing)
+Speed Factor: 4
+Proficiency Type: War Hammer
+Type: One-handed
+Requires:
+ 9 Strength
+
+Weight: 6"
+
+	SAY NAME2 "Runehammer +4"
+	SAY DESC "This darksteel hammer has a rune of power inscribed upon its head and has protects against Negative Plane.
+
+STATISTICS:
+
+Equipped abilities:
+– Negative Plane Protection   
+
+THAC0: +4
+Damage: 2d3+5 (crushing)
+Speed Factor: 1
+Proficiency Type: War Hammer
+Type: One-handed
+Requires:
+ 16 Strength
+
+Weight: 3"
+
+
+
+
+
+//RUNEHAMMER +5 - valore 18000mo - no evil//
+COPY "rick_bigg_mod/items/HAMM11.itm" "override"
+	SAY NAME1 "Hammer"
+	SAY UNIDENTIFIED_DESC "A massive warhammer inscribed with dwarven runes.
+
+STATISTICS:
+
+Damage: 2d3+1 (crushing)
+Speed Factor: 4
+Proficiency Type: War Hammer
+Type: One-handed
+Requires:
+ 9 Strength
+
+Weight: 6"
+
+	SAY NAME2 "Runehammer +5"
+	SAY DESC "The rune of Clangeddin is now inscribed on the head of this hammer, granting even greater powers to any who wield the weapon.
+
+STATISTICS:
+
+Equipped abilities
+– Negative Plane Protection
+
+Combat abilities:
+– On hit activate the following spells:
+	- 5% Sunray
+	- 10% Mass Cure
+	- 15% Defensive Harmony
+	- 20% Holy Smite
+
+THAC0: +5
+Damage: 2d3+6 (crushing)
+Speed Factor: 1
+Proficiency Type: War Hammer
+Type: One-handed
+Requires:
+ 16 Strength
+
+Weight: 2"
