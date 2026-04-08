@@ -12,7 +12,7 @@ Speed Factor: 4
 Proficiency Type: Axe
 Type: One-handed
 Requires:
- 4 Strength
+ 9 Strength
 
 Weight: 1"
 
@@ -32,7 +32,7 @@ Speed Factor: 3
 Proficiency Type: Axe
 Type: One-handed
 Requires:
- 4 Strength
+ 9 Strength
 
 Weight: 4"
 
@@ -56,7 +56,7 @@ Speed Factor: 2
 Proficiency Type: Axe
 Type: One-handed
 Requires:
- 4 Strength
+ 9 Strength
 
 Weight: 1"
 
@@ -76,7 +76,7 @@ Speed Factor: 2
 Proficiency Type: Axe
 Type: One-handed
 Requires:
- 4 Strength
+ 9 Strength
 
 Weight: 4"
 
@@ -99,7 +99,7 @@ Speed Factor: 4
 Proficiency Type: Axe
 Type: One-handed
 Requires:
- 4 Strength
+ 9 Strength
 
 Weight: 1"
 
@@ -122,7 +122,7 @@ Speed Factor: 2
 Proficiency Type: Axe
 Type: One-handed
 Requires:
- 4 Strength
+ 9 Strength
 
 Weight: 2"
 
@@ -145,7 +145,7 @@ Speed Factor: 2
 Proficiency Type: Axe
 Type: One-handed
 Requires:
- 4 Strength
+ 9 Strength
 
 Weight: 1"
 
@@ -168,7 +168,7 @@ Speed Factor: 1
 Proficiency Type: Axe
 Type: One-handed
 Requires:
- 4 Strength
+ 9 Strength
 
 Weight: 2"
 
@@ -191,7 +191,7 @@ Speed Factor: 4
 Proficiency Type: Axe
 Type: One-handed
 Requires:
- 4 Strength
+ 9 Strength
 
 Weight: 1"
 
@@ -215,9 +215,45 @@ Speed Factor: 1
 Proficiency Type: Axe
 Type: One-handed
 Requires:
- 4 Strength
+ 9 Strength
 
 Weight: 1"
+
+
+
+
+
+//BATTLE AXE +2 - 2500mo//
+COPY "rick_bigg_mod/items/AX1H11.itm" "override"
+	SAY NAME1 "Battle Axe"
+	SAY UNIDENTIFIED_DESC "The most common version of the battle axe is a stout pole about four feet in length with a single-edged, trumpet-shaped blade mounted on one end. This axe, in particular, appears to be very poorly made and slightly smaller than the average battle axe.
+
+STATISTICS:
+
+Damage: 1d8+1 (slashing)
+Speed Factor: 7
+Proficiency Type: Axe
+Type: One-handed
+Requires:
+ 13 Strength
+
+Weight: 7"
+
+	SAY NAME2 "Battle Axe +2"
+	SAY DESC "The most common version of the battle axe is a stout pole about four feet in length with a single-edged, trumpet-shaped blade mounted on one end. Battle axes are also called broad axes. Magical battle axes are normally crafted by dwarves to help defend their warriors against their harsher neighbors. This magical axe has seen many battles, but its enchantments and craftsmanship make it a very capable weapon still.
+
+STATISTICS:
+
+THAC0: +2
+Damage: 1d8+3 (slashing)
+Speed Factor: 5
+Proficiency Type: Axe
+Type: One-handed
+Requires:
+ 13 Strength
+
+Weight: 5"
+
 
 
 
@@ -238,9 +274,9 @@ Speed Factor: 7
 Proficiency Type: Axe
 Type: One-handed
 Requires:
- 10 Strength
+ 13 Strength
 
-Weight: 6"
+Weight: 7"
 
 	SAY NAME2 "Wizard Slayer +2"
 	SAY DESC "Bala was a foul-tempered prince of a gully dwarf clan, which was enslaved by a cruel elven mage in Thesk. Though Bala managed to escape the more cowardly traits of his race, he was even more filthy and obnoxious than the average gully dwarf. Sickened of his enslavement, Bala crept into the mage's lair and cracked the elf's skull open. Although rumor has it that it was the dwarf's stench that overcame the mage, it was, in fact, his enchanted axe that dispelled the elf's magical defenses. It is obvious from the poor workmanship that Bala himself crafted the axe. The mystery lies in where its power originates. After a lengthy career of mage-slaying, Bala died, never having revealed his secret to those who were willing to risk a lice infestation by approaching him. Some say that the axe was powered by Bala's intense hatred of wizards.
@@ -256,9 +292,9 @@ Speed Factor: 5
 Proficiency Type: Axe
 Type: One-handed
 Requires:
- 10 Strength
+ 13 Strength
 
-Weight: 4"
+Weight: 7"
 
 
 
@@ -276,9 +312,9 @@ Speed Factor: 7
 Proficiency Type: Axe
 Type: One-handed
 Requires:
- 10 Strength
+ 13 Strength
 
-Weight: 6"
+Weight: 7"
 
 	SAY NAME2 "Axe of the Ruin +3"
 	SAY DESC "This wide, heavy axe gives way to jagged teeth near its tip, a serrated edge designed to rip and tear flesh. Little is known of the weapon's origin, but the elaborate grip marked with worn runes hints that it may have been crafted in ancient Unther.
@@ -299,9 +335,9 @@ Speed Factor: 4
 Proficiency Type: Axe
 Type: One-handed
 Requires:
- 10 Strength
+ 13 Strength
 
-Weight: 5"
+Weight: 7"
 
 
 
@@ -319,9 +355,9 @@ Speed Factor: 7
 Proficiency Type: Axe
 Type: One-handed
 Requires:
- 10 Strength
+ 13 Strength
 
-Weight: 6"
+Weight: 7"
 
 	SAY NAME2 "Axe of Troll Decapitation +2"
 	SAY DESC "Runes along the length of this powerful weapon spell 'death to trolls' in multiple languages. Legend tells that the famous dwarf Durlag Trollkiller used this sword in his adventuring days, but lost it during a particularly brutal fight in the Troll Hills.
@@ -337,9 +373,9 @@ Speed Factor: 5
 Proficiency Type: Axe
 Type: One-handed
 Requires:
- 10 Strength
+ 13 Strength
 
-Weight: 6"
+Weight: 7"
 
 
 
@@ -361,9 +397,9 @@ Speed Factor: 7
 Proficiency Type: Axe
 Type: One-handed
 Requires:
- 10 Strength
+ 13 Strength
 
-Weight: 6"
+Weight: 7"
 
 	SAY NAME2 "Frostreaver +3"
 	SAY DESC "This was the axe of Illgarth, a frost giant that terrorized northern communities long ago. It is not known where he acquired the weapon, but he took a perverse pleasure in unleashing it upon small folk, particularly halflings. Ice maimed those not killed, and the giant would laugh coldly if he recognized his handiwork from a previous visit. Ultimately a group did manage to kill him, and at the request of his victims, Frostreaver was buried with him. 
@@ -377,9 +413,9 @@ Speed Factor: 4
 Proficiency Type: Axe
 Type: One-handed
 Requires:
- 10 Strength
+ 13 Strength
 
-Weight: 6"
+Weight: 7"
 
 
 
@@ -396,9 +432,9 @@ Speed Factor: 7
 Proficiency Type: Axe
 Type: One-handed
 Requires:
- 10 Strength
+ 13 Strength
 
-Weight: 6"
+Weight: 7"
 
 	SAY NAME2 "Stonefire +4"
 	SAY DESC "The Stonefires were an old lineage of dwarves, and the eldest male of the line carried this axe, an heirloom of utmost importance. Unfortunately, they were decimated in 1150 DR, falling in a mere two years to a mysterious plague. Ulgan, keeper of the axe, fled in hopes of escaping the inevitable, but he died several weeks later. His body was found in the Cloakwood Forest, but the axe was missing.
@@ -412,14 +448,14 @@ Speed Factor: 3
 Proficiency Type: Axe
 Type: One-handed
 Requires:
- 10 Strength
+ 13 Strength
 
-Weight: 6"
-
-
+Weight: 7"
 
 
-//AXE OF THE UNYIELDING +3//
+
+
+//AXE OF THE UNYIELDING +3 - 12000mo//
 COPY "rick_bigg_mod/items/AX1H14.itm" "override"
 	SAY NAME1 "Battle Axe"
 	SAY UNIDENTIFIED_DESC "The most common version of the battle axe is a stout pole about four feet in length with a single-edged, trumpet-shaped blade mounted on one end. This axe, in particular, appears to be very poorly made and slightly smaller than the average battle axe.
@@ -431,9 +467,9 @@ Speed Factor: 7
 Proficiency Type: Axe
 Type: One-handed
 Requires:
- 10 Strength
+ 13 Strength
 
-Weight: 6"
+Weight: 7"
 
 	SAY NAME2 "Axe of the Unyielding +3"
 	SAY DESC "This axe was last seen in the gnarled fists of Glimred Heavyhand, an aging dwarven hero who disappeared in the deepest caverns beneath the Marching Mountains.  
@@ -441,6 +477,7 @@ Weight: 6"
 STATISTICS:
 
 Equipped abilities: 
+- Immunity to Stun
 – Armor Class: +2
 – Saving Throws: +2
 
@@ -450,12 +487,12 @@ Speed Factor: 4
 Proficiency Type: Axe
 Type: One-handed
 Requires:
- 10 Strength
+ 13 Strength
 
 Weight: 7"
 
 
-//AXE OF THE UNYIELDING +5//
+//AXE OF THE UNYIELDING +5 - 20000mo//
 COPY "rick_bigg_mod/items/AX1H15.itm" "override"
 	SAY NAME1 "Battle Axe"
 	SAY UNIDENTIFIED_DESC "The most common version of the battle axe is a stout pole about four feet in length with a single-edged, trumpet-shaped blade mounted on one end. This axe, in particular, appears to be very poorly made and slightly smaller than the average battle axe.
@@ -467,16 +504,18 @@ Speed Factor: 7
 Proficiency Type: Axe
 Type: One-handed
 Requires:
- 10 Strength
+ 13 Strength
 
-Weight: 6"
+Weight: 7"
 
 	SAY NAME2 "Axe of the Unyielding +5"
-	SAY DESC "Enhanced by the magic of the balor's claw, the Axe of the Unyielding is now the most fearsome of weapons—a vorpal-edged axe capable of severing an opponent's head with a single blow. 
+	SAY DESC "This axe was last seen in the gnarled fists of Glimred Heavyhand, an aging dwarven hero who disappeared in the deepest caverns beneath the Marching Mountains.
+	Enhanced by the magic of the balor's claw, the Axe of the Unyielding is now the most fearsome of weapons—a vorpal-edged axe capable of severing an opponent's head with a single blow. 
 
 STATISTICS:
 
 Equipped abilities: 
+-Immunity to Stun
 – Armor Class: +2
 – Saving Throws: +2
 - Magic Resistance: +10%
@@ -490,6 +529,6 @@ Speed Factor: 2
 Proficiency Type: Axe
 Type: One-handed
 Requires:
- 10 Strength
+ 13 Strength
 
-Weight: 5"
+Weight: 7"

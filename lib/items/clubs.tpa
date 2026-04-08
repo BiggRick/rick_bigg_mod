@@ -1,3 +1,78 @@
+//CLUB +1 - valore 1000mo//
+COPY "rick_bigg_mod/items/BLUN36.itm" "override"
+	SAY NAME1 "Club"
+	SAY UNIDENTIFIED_DESC "Most clubs are stout, hardwood sticks, narrow at the grip and wider at the end. This simple weapon has been used since people first began using tools. Anyone can find a good stout piece of wood and swing it; hence the club's widespread use.
+
+STATISTICS:
+
+Damage: 1d6 (crushing)
+Speed Factor: 5
+Proficiency Type: Club
+Type: One-handed
+Requires:
+ 7 Strength
+
+Weight: 3"
+
+	SAY NAME2 "Club +1"
+	SAY DESC "From chair legs to felled trees, clubs are the universal weapons of everyone from tavern brawlers to hill giants. A little extra weight, maybe a spike or two, and a little enchantment never hurt. Which is to say, it always hurts.
+
+STATISTICS:
+
+THAC0: +1
+Damage: 1d6+1 (crushing)
+Speed Factor: 4
+Proficiency Type: Club
+Type: One-handed
+Requires:
+ 7 Strength
+
+Weight: 3"
+
+
+
+
+
+
+//CLUB +2 - valore 2000mo//
+COPY "rick_bigg_mod/items/OHBLUN51.itm" "override"
+	SAY NAME1 "Club"
+	SAY UNIDENTIFIED_DESC "Most clubs are stout, hardwood sticks, narrow at the grip and wider at the end. This simple weapon has been used since people first began using tools. Anyone can find a good stout piece of wood and swing it; hence the club's widespread use.
+
+STATISTICS:
+
+Damage: 1d6 (crushing)
+Speed Factor: 5
+Proficiency Type: Club
+Type: One-handed
+Requires:
+ 7 Strength
+
+Weight: 3"
+
+	SAY NAME2 "Club +2"
+	SAY DESC "Most clubs are stout, hardwood sticks, narrow at the grip and wider at the end. This simple weapon has been used since people first began using tools. Anyone can find a good stout piece of wood and swing it; hence the club's widespread use. This particular club has been magically enhanced.
+
+STATISTICS:
+
+THAC0: +2
+Damage: 1d6+2 (crushing)
+Speed Factor: 3
+Proficiency Type: Club
+Type: One-handed
+Requires:
+ 7 Strength
+
+Weight: 1"
+
+
+
+
+
+
+
+
+
 //BONE CLUB +2, +4 VS UNDEAD - 4500mo//
 COPY "rick_bigg_mod/items/BLUN23.itm" "override"
 	SAY NAME1 "Club"
@@ -6,11 +81,11 @@ COPY "rick_bigg_mod/items/BLUN23.itm" "override"
 STATISTICS:
 
 Damage: 1d6 (crushing)
-Speed Factor: 4
+Speed Factor: 5
 Proficiency Type: Club
 Type: One-handed
 Requires:
- 5 Strength
+ 7 Strength
 
 Weight: 3"
 
@@ -22,11 +97,11 @@ STATISTICS:
 THAC0: +2, +4 vs. undead
 Damage: 1d6+2, +4 vs. undead
 Damage type: Crushing
-Speed Factor: 2
+Speed Factor: 3
 Proficiency Type: Club
 Type: One-handed
 Requires:
- 5 Strength
+ 7 Strength
 
 Weight: 3"
 
@@ -41,11 +116,11 @@ COPY "rick_bigg_mod/items/BLUN17.itm" "override"
 STATISTICS:
 
 Damage: 1d6 (crushing)
-Speed Factor: 4
+Speed Factor: 5
 Proficiency Type: Club
 Type: One-handed
 Requires:
- 5 Strength
+ 7 Strength
 
 Weight: 3"
 
@@ -59,11 +134,11 @@ Combat abilities:
 
 THAC0: +3
 Damage: 1d6+3 (crushing)
-Speed Factor: 1
+Speed Factor: 2
 Proficiency Type: Club
 Type: One-handed
 Requires:
- 5 Strength
+ 7 Strength
 
 Weight: 3"
 
@@ -80,11 +155,11 @@ COPY "rick_bigg_mod/items/BLUN10.itm" "override"
 STATISTICS:
 
 Damage: 1d6 (crushing)
-Speed Factor: 4
+Speed Factor: 5
 Proficiency Type: Club
 Type: One-handed
 Requires:
- 5 Strength
+ 7 Strength
 
 Weight: 3"
 
@@ -103,11 +178,11 @@ Charge Abilities:
 THAC0: +3, +5 vs. unnatural creatures
 Damage: 1d6+3, +5 vs. unnatural creatures
 Damage type: Crushing
-Speed Factor: 1
+Speed Factor: 2
 Proficiency Type: Club
 Type: One-handed
 Requires:
- 5 Strength
+ 7 Strength
 
 Weight: 3"
 
@@ -122,11 +197,11 @@ COPY "rick_bigg_mod/items/BLUN22.itm" "override"
 STATISTICS:
 
 Damage: 1d6 (crushing)
-Speed Factor: 4
+Speed Factor: 5
 Proficiency Type: Club
 Type: One-handed
 Requires:
- 5 Strength
+ 7 Strength
 
 Weight: 3"
 
@@ -142,7 +217,7 @@ Speed Factor: 1
 Proficiency Type: Club
 Type: One-handed
 Requires:
- 5 Strength
+ 7 Strength
  
  Weight: 3"
  
@@ -157,11 +232,11 @@ COPY "rick_bigg_mod/items/BLUN26.itm" "override"
 STATISTICS:
 
 Damage: 1d6 (crushing)
-Speed Factor: 4
+Speed Factor: 5
 Proficiency Type: Club
 Type: One-handed
 Requires:
- 5 Strength
+ 7 Strength
 
 Weight: 3"
 
@@ -177,11 +252,11 @@ Combat abilities:
 THAC0: +3
 Damage: 1d6+3, +3 fire damage
 Damage type: Crushing
-Speed Factor: 1
+Speed Factor: 2
 Proficiency Type: Club
 Type: One-handed
 Requires:
- 5 Strength
+ 7 Strength
 
 Weight: 3"
 
@@ -196,16 +271,17 @@ COPY "rick_bigg_mod/items/BLUN27.itm" "override"
 STATISTICS:
 
 Damage: 1d6 (crushing)
-Speed Factor: 4
+Speed Factor: 5
 Proficiency Type: Club
 Type: One-handed
 Requires:
- 5 Strength
+ 7 Strength
 
 Weight: 3"
 
 	SAY NAME2 "Club of Detonation +5"
-	SAY DESC "The enchantments from the ring of fire resistance makes the demon spirit trapped within this weapon easier to control—though the wrath of the creature may occasionally still be released without warning.
+	SAY DESC "This crude wooden club burns with the raging spirit of the demon forever trapped within by the powerful enchantments placed on the weapon. Occasionally, however, the demon's wrath escapes in a fiery blast.
+	The enchantments from the ring of fire resistance makes the demon spirit trapped within this weapon easier to control—though the wrath of the creature may occasionally still be released without warning.
 
 STATISTICS:
 
@@ -223,6 +299,6 @@ Speed Factor: 1
 Proficiency Type: Club
 Type: One-handed
 Requires:
- 5 Strength
+ 7 Strength
 
 Weight: 1"

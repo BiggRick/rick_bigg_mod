@@ -1,3 +1,39 @@
+//SHORT SWORD +2 - 1800mo//
+COPY "rick_bigg_mod/items/SW1H09.itm" "override"
+	SAY NAME1 "Short Sword"
+	SAY UNIDENTIFIED_DESC "The short sword is the first type of sword to come into existence. In the simplest of terms, a short sword can be considered a dagger with a blade so long that it can no longer be called a dagger. The term short sword does not exist in sword classifications. However, it has come to be used to describe a double-edged blade about two feet in length. The sword tip is usually pointed, ideal for thrusting.
+
+STATISTICS:
+
+Damage: 1d6 (piercing)
+Speed Factor: 3
+Proficiency Type: Short Sword
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 3"
+
+	SAY NAME2 "Short Sword +2"
+	SAY DESC "This short sword has been forged by hands both magical and highly skilled. Neither nick nor stain mar the flawless blade. When used in battle, the blade radiates magic and gifts the wielder with increased skill.
+
+STATISTICS:
+
+THAC0: +2
+Damage: 1d6+2 (piercing)
+Speed Factor: 1
+Proficiency Type: Short Sword
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 2"
+
+
+
+
+
+
 //THE SHADOW'S BLADE +3 - 6500mo - solo ladri//
 COPY "rick_bigg_mod/items/SW1H10.itm" "override"
 	SAY NAME1 "Short Sword"
@@ -271,7 +307,7 @@ Weight: 2"
 
 
 
-//SWORD OF THE MASK +5 - 15000mo//
+//SWORD OF THE MASK +5 - 16000mo//
 COPY "rick_bigg_mod/items/SW1H59.itm" "override"
 	SAY NAME1 "Short Sword"
 	SAY UNIDENTIFIED_DESC "The short sword is the first type of sword to come into existence. In the simplest of terms, a short sword can be considered a dagger with a blade so long that it can no longer be called a dagger. The term short sword does not exist in sword classifications. However, it has come to be used to describe a double-edged blade about two feet in length. The sword tip is usually pointed, ideal for thrusting.
@@ -288,7 +324,8 @@ Requires:
 Weight: 3"
 
 	SAY NAME2 "Sword of the Mask +5"
-	SAY DESC "Combined with the Heart of the Damned into a single lethal weapon, this deadly blade is the preferred tool of assassins and thieves. 
+	SAY DESC "This blade is highly prized by those who serve the Shadowlord, as well as any who engage in shadowy business.
+	Combined with the Heart of the Damned into a single lethal weapon, this deadly blade is the preferred tool of assassins and thieves. 
 
 STATISTICS:
 

@@ -1,3 +1,79 @@
+//SPEAR +1 - 1250mo//
+COPY "rick_bigg_mod/items/SPER02.itm" "override"
+	SAY NAME1 "Spear"
+	SAY UNIDENTIFIED_DESC "One of the earliest weapons, dating back to the most primitive of times, the first spears were simply wooden poles or sticks sharpened at one end. When the civilized races mastered metals, spearheads were made from iron and steel. Having reached this end, weaponsmiths began experimenting with different types of spearheads, thus leading to the development of certain polearm types.
+
+STATISTICS:
+
+Damage: 1d8 (piercing)
+Speed Factor: 6
+Proficiency Type: Spear
+Type: Two-handed
+Requires:
+ 7 Strength
+
+Weight: 5"
+
+
+	SAY NAME2 "Spear +1"
+	SAY DESC "One of the earliest weapons, dating back to the most primitive of times, the first spears were simply wooden poles or sticks sharpened at one end. When the civilized races mastered metals, spearheads were made from iron and steel. Having reached this end, weaponsmiths began experimenting with different types of spearheads, thus leading to the development of certain polearm types. This spear is slightly different though, as it has been imbued with certain magical properties.
+
+STATISTICS:
+
+THAC0: +1
+Damage: 1d8+1 (piercing)
+Speed Factor: 5
+Proficiency Type: Spear
+Type: Two-handed
+Requires:
+ 7 Strength
+
+Weight: 5"
+
+
+
+
+
+
+
+//SPEAR +2 - 2500mo//
+COPY "rick_bigg_mod/items/SPER05.itm" "override"
+	SAY NAME1 "Spear"
+	SAY UNIDENTIFIED_DESC "One of the earliest weapons, dating back to the most primitive of times, the first spears were simply wooden poles or sticks sharpened at one end. When the civilized races mastered metals, spearheads were made from iron and steel. Having reached this end, weaponsmiths began experimenting with different types of spearheads, thus leading to the development of certain polearm types.
+
+STATISTICS:
+
+Damage: 1d8 (piercing)
+Speed Factor: 6
+Proficiency Type: Spear
+Type: Two-handed
+Requires:
+ 7 Strength
+
+Weight: 5"
+
+
+	SAY NAME2 "Spear +2"
+	SAY DESC "One of the earliest weapons, dating back to the most primitive of times, the first spears were simply wooden poles or sticks sharpened at one end. When the civilized races mastered metals, spearheads were made from iron and steel. Having reached this end, weaponsmiths began experimenting with different types of spearheads, thus leading to the development of certain polearm types. Another line of tinkering led to the integration of magic with spears. Tribal shamans would enchant the spears so that they would hit more often and do greater damage to their wielder's opponents.
+
+STATISTICS:
+
+THAC0: +2
+Damage: 1d8+2 (piercing)
+Speed Factor: 4
+Proficiency Type: Spear 
+Type: Two-handed
+Requires:
+ 7 Strength
+
+Weight: 3"
+
+
+
+
+
+
+
 //BACKBITER SPEAR +3 - 2000mo//
 COPY "rick_bigg_mod/items/SPER03.itm" "override"
 	SAY NAME1 "Spear"
@@ -10,7 +86,7 @@ Speed Factor: 6
 Proficiency Type: Spear
 Type: Two-handed
 Requires:
- 5 Strength
+ 7 Strength
 
 Weight: 5"
 
@@ -29,7 +105,7 @@ Speed Factor: 3
 Proficiency Type: Spear
 Type: Two-handed
 Requires:
- 5 Strength
+ 7 Strength
 
 Weight: 2" 
 
@@ -42,12 +118,12 @@ COPY "rick_bigg_mod/items/SPER07.itm" "override"
 
 STATISTICS:
 
-Damage: 1d6 (piercing)
+Damage: 1d8 (piercing)
 Speed Factor: 6
 Proficiency Type: Spear
 Type: Two-handed
 Requires:
- 5 Strength
+ 7 Strength
 
 Weight: 5"
 
@@ -62,12 +138,12 @@ Equipped abilities:
 – Save vs. Death: +2
 
 THAC0: +2
-Damage: 1d6+2 (piercing)
+Damage: 1d8+2 (piercing)
 Speed Factor: 4
 Proficiency Type: Spear
 Type: Two-handed
 Requires:
- 5 Strength
+ 7 Strength
 
 Weight: 3" 
 
@@ -86,7 +162,7 @@ Speed Factor: 6
 Proficiency Type: Spear
 Type: Two-handed
 Requires:
- 5 Strength
+ 7 Strength
 
 Weight: 5"
 
@@ -103,7 +179,7 @@ Speed Factor: 5
 Proficiency Type: Spear
 Type: Two-handed
 Requires:
- 5 Strength
+ 7 Strength
 
 Weight: 3" 
 
@@ -124,7 +200,7 @@ Speed Factor: 6
 Proficiency Type: Spear
 Type: Two-handed
 Requires:
- 5 Strength
+ 7 Strength
 
 Weight: 5"
 
@@ -141,7 +217,7 @@ Speed Factor: 3
 Proficiency Type: Spear
 Type: Two-handed
 Requires:
- 5 Strength
+ 7 Strength
 
 Weight: 3" 
 
@@ -160,7 +236,7 @@ Speed Factor: 6
 Proficiency Type: Spear
 Type: Two-handed
 Requires:
- 5 Strength
+ 7 Strength
 
 Weight: 5"
 
@@ -180,7 +256,7 @@ Speed Factor: 2
 Proficiency Type: Spear
 Type: Two-handed
 Requires:
- 5 Strength
+ 7 Strength
 
 Weight: 5" 
 
@@ -197,7 +273,7 @@ Speed Factor: 6
 Proficiency Type: Spear
 Type: Two-handed
 Requires:
- 5 Strength
+ 7 Strength
 
 Weight: 5"
 
@@ -217,7 +293,7 @@ Speed Factor: 2
 Proficiency Type: Spear 
 Type: Two-handed
 Requires:
- 5 Strength
+ 7 Strength
 
 Weight: 3" 
 
@@ -235,7 +311,7 @@ Speed Factor: 6
 Proficiency Type: Spear
 Type: Two-handed
 Requires:
- 5 Strength
+ 7 Strength
 
 Weight: 5"
 
@@ -251,14 +327,14 @@ Speed Factor: 1
 Proficiency Type: Spear 
 Type: Two-handed
 Requires:
- 5 Strength
+ 7 Strength
 
 Weight: 2" 
 
 
 
 
-//IXIL'S NAIL +6 - 19000mo//
+//IXIL'S NAIL +6 - 18000mo//
 COPY "rick_bigg_mod/items/SPER12.itm" "override"
 	SAY NAME1 "Spear"
 	SAY UNIDENTIFIED_DESC "One of the earliest weapons, dating back to the most primitive of times, the first spears were simply wooden poles or sticks sharpened at one end. When the civilized races mastered metals, spearheads were made from iron and steel. Having reached this end, weaponsmiths began experimenting with different types of spearheads, thus leading to the development of certain polearm types.
@@ -270,13 +346,14 @@ Speed Factor: 6
 Proficiency Type: Spear
 Type: Two-handed
 Requires:
- 5 Strength
+ 7 Strength
 
 Weight: 5"
 
 
 	SAY NAME2 "Ixil's Nail +6"
-	SAY DESC "With shaft and tip reunited, Ixil's Spike is a fearsome weapon. During the battle, the head can detach to pin opponents to the ground even as a new head magically reforms on the end of the spear.
+	SAY DESC "For many generations, this magical shaft has been separated from Ixil's Spike, the enchanted head of the legendary spear.
+	With shaft and tip reunited, Ixil's Spike is a fearsome weapon. During the battle, the head can detach to pin opponents to the ground even as a new head magically reforms on the end of the spear.
 
 STATISTICS:
 
@@ -284,7 +361,7 @@ Equipped abilities:
 – 1 extra attack per round
 
 Combat abilities:
-– Hit target is pinned for 3 rounds and takes an additional 1d6+5 piercing damage each round (Save vs. Paralysis -4 negates)
+– Hit target is pinned for 3 rounds and takes an additional 1d4+6 piercing damage each round (Save vs. Paralysis -4 negates)
 
 THAC0: +6
 Damage: 1d8+6 (piercing)
@@ -292,6 +369,6 @@ Speed Factor: 1
 Proficiency Type: Spear 
 Type: Two-handed
 Requires:
- 5 Strength
+ 7 Strength
 
 Weight: 2" 

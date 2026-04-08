@@ -1,3 +1,74 @@
+//DAGGER +1 - 500mo //
+COPY "rick_bigg_mod/items/DAGG02.itm" "override"
+	SAY NAME1 "Dagger"
+	SAY UNIDENTIFIED_DESC "The typical dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter.
+
+STATISTICS:
+
+Damage: 1d4 (piercing)
+Speed Factor: 2
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 1"
+
+	SAY NAME2 "Dagger +1"
+	SAY DESC "The typical dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter. This dagger is magical, improving speed, accuracy, and damage.
+
+STATISTICS:
+
+THAC0: +1
+Damage: 1d4+1 (piercing)
+Speed Factor: 1
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 1" 
+
+
+
+
+
+//DAGGER +2 - 1500mo //
+COPY "rick_bigg_mod/items/DAGG15.itm" "override"
+	SAY NAME1 "Dagger"
+	SAY UNIDENTIFIED_DESC "The typical dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter.
+
+STATISTICS:
+
+Damage: 1d4 (piercing)
+Speed Factor: 2
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 1"
+
+	SAY NAME2 "Dagger +2"
+	SAY DESC "The typical dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter. This particular dagger is magical, having special bonuses to its speed, accuracy, and damage. Also, since it is magical, it is capable of striking opponents that are immune to normal weapons, such as vampires, elementals, and mummies.
+
+STATISTICS:
+
+THAC0: +2
+Damage: 1d4+2 (piercing)
+Speed Factor: 0
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 1" 
+
+
+
+
+
+
 //DAGGER OF VENOM +2 - 5000mo - no buoni//
 COPY "rick_bigg_mod/items/MISC75.itm" "override"
 	SAY NAME1 "Dagger"
@@ -224,6 +295,7 @@ Equipped abilities:
 
 THAC0: +4
 Damage: 1d4+4, +2 acid
+Damage type: Piercing
 Speed Factor: 0
 Proficiency Type: Dagger
 Type: One-handed
@@ -329,19 +401,20 @@ Weight: 1"
 
 
 	SAY NAME2 "Dagger of the Star +5"
-	SAY DESC "With the star sapphires encrusting its hilt, this small blade is one of the most dangerous weapons in the realms.
+	SAY DESC "Rumored to have been dropped from the Heavens by a careless lesser deity, this dagger is a favorite among thieves and assassins, as it will sometimes magically hide its user from the victim's sight.
+	With the star sapphires encrusting its hilt, this small blade is one of the most dangerous weapons in the realms.
 
 STATISTICS:
 
 Equipped abilities:
-- Electricity resistance: +50%
+- Immunity to Time Stop
    
 Combat abilities:
 – 20% chance of making the user go invisible for 1 turn after each successful attack
-– Star Bolt: each successful hit causes an extra 1d6 electrical damage
 
 THAC0: +5
-Damage: 1d4+5 (piercing)
+Damage: 1d4+5, +5 Magical
+Damage type: Piercing
 Speed Factor: 0
 Proficiency Type: Dagger
 Type: One-handed

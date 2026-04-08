@@ -1,3 +1,40 @@
+//MORNING STAR +2 - valore 2800mo//
+COPY "rick_bigg_mod/items/BLUN15.itm" "override"
+	SAY NAME1 "Morning Star"
+	SAY UNIDENTIFIED_DESC "The morning star is a wooden shaft topped with a metal head covered by a spiked iron sheath. Morning stars have an overall length of about four feet. Some have a round, oval, or cylindrical shaped head studded with spikes. Extending from most morning star heads, regardless of design, is a long point for thrusting.
+
+STATISTICS:
+
+Damage: 1d8+1 (crushing or piercing)
+Speed Factor: 7
+Proficiency Type: Flail/Morning Star
+Type: One-handed
+Requires:
+ 13 Strength
+
+Weight: 12"
+
+	SAY NAME2 "Morning Star +2"
+	SAY DESC "The morning star is a wooden shaft topped with a metal head covered by a spiked iron sheath. Morning stars have an overall length of about four feet. Enchantments have made this morning star lighter, faster, and far more deadly than a normal weapon of this kind.
+
+STATISTICS:
+
+THAC0: +2
+Damage: 1d8+2 (crushing or piercing)
+Speed Factor: 5
+Proficiency Type: Flail/Morning Star
+Type: One-handed
+Requires:
+ 13 Strength
+
+Weight: 10"
+
+
+
+
+
+
+
 //KIEL'S MORNING STAR +3 - valore 7500mo//
 COPY "rick_bigg_mod/items/BLUN09.itm" "override"
 	SAY NAME1 "Morning Star"
@@ -5,12 +42,12 @@ COPY "rick_bigg_mod/items/BLUN09.itm" "override"
 
 STATISTICS:
 
-Damage: 2d4 (crushing)
+Damage: 1d8+1 (crushing or piercing)
 Speed Factor: 7
 Proficiency Type: Flail/Morning Star
 Type: One-handed
 Requires:
- 11 Strength
+ 13 Strength
 
 Weight: 12"
 
@@ -26,7 +63,7 @@ Combat abilities:
 – On a critical hit, the wielder gains +5 THAC0 for 3 rounds (non-cumulative)
 
 THAC0: +3
-Damage: 2d4+3 (crushing)
+Damage: 1d8+4 (crushing or piercing)
 Speed Factor: 4
 Proficiency Type: Flail/Morning Star
 Type: One-handed
@@ -45,12 +82,12 @@ COPY "rick_bigg_mod/items/BLUN16.itm" "override"
 
 STATISTICS:
 
-Damage: 2d4 (crushing)
+Damage: 1d8+1 (crushing or piercing)
 Speed Factor: 7
 Proficiency Type: Flail/Morning Star
 Type: One-handed
 Requires:
- 11 Strength
+ 13 Strength
 
 Weight: 12"
 
@@ -63,12 +100,12 @@ Combat abilities:
 – Any human or demihuman, excluding elves, hit by the Sleeper must save vs. Poison with a +2 bonus or fall asleep for 3 rounds
 
 THAC0: +2
-Damage: 2d4 +2 (crushing)
+Damage: 1d8+3 (crushing or piercing)
 Speed Factor: 5
 Proficiency Type: Flail/Morning Star
 Type: One-handed
 Requires:
- 11 Strength
+ 13 Strength
 
 Weight: 10"
 
@@ -81,12 +118,12 @@ COPY "rick_bigg_mod/items/WASTAR.itm" "override"
 
 STATISTICS:
 
-Damage: 2d4 (crushing)
+Damage: 1d8+1 (crushing or piercing)
 Speed Factor: 7
 Proficiency Type: Flail/Morning Star
 Type: One-handed
 Requires:
- 11 Strength
+ 13 Strength
 
 Weight: 12"
 
@@ -101,12 +138,12 @@ Equipped abilities:
 - Caster level bonus: +2
 
 THAC0: +4
-Damage: 2d4+4 (crushing)
+Damage: 1d8+5 (crushing or piercing)
 Speed Factor: 3
 Proficiency Type: Flail/Morning Star
 Type: One-handed
 Requires:
- 11 Strength
+ 13 Strength
 
 Weight: 8"
 
@@ -119,12 +156,12 @@ COPY "rick_bigg_mod/items/BLUN35.itm" "override"
 
 STATISTICS:
 
-Damage: 2d4 (crushing)
+Damage: 1d8+1 (crushing or piercing)
 Speed Factor: 7
 Proficiency Type: Flail/Morning Star
 Type: One-handed
 Requires:
- 11 Strength
+ 13 Strength
 
 Weight: 12"
 
@@ -140,12 +177,12 @@ Charge abilities:
 – Cone of Cold (at level 15) two times per day
 
 THAC0: +5
-Damage: 2d4+5, +4d4 cold damage
-Damage type: Crushing
+Damage: 1d8+6, +4d4 cold damage
+Damage type: Crushing or Piercing
 Speed Factor: 2
 Proficiency Type: Flail/Morning Star
 Type: One-handed
 Requires:
- 11 Strength
+ 13 Strength
 
 Weight: 7"

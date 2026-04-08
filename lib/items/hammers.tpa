@@ -1,4 +1,40 @@
-//THE KNEECAPPER +2 - valoe 6000mo//
+//WAR HAMMER +2 - valore 2500mo//
+COPY "rick_bigg_mod/items/HAMM08.itm" "override"
+	SAY NAME1 "Hammer"
+	SAY UNIDENTIFIED_DESC "Mounted knights cannot effectively use long pole weapons while on horseback and, as a result, many weapons have been fitted with shorter shafts so they may be wielded with just one hand. Maces and flails are two examples of this—the war hammer is another. The horseman's war hammer is the descendent of the Lucerne hammer. It is made entirely of steel, with rondels protecting and strengthening the grip. (Rondels are small disks of metal, often shaped into decorative designs.) The shaft is about eighteen inches long.
+
+STATISTICS:
+
+Damage: 2d3+1 (crushing)
+Speed Factor: 6
+Proficiency Type: War Hammer
+Type: One-handed
+Requires:
+ 13 Strength
+
+Weight: 6"
+
+	SAY NAME2 "War Hammer +2"
+	SAY DESC "Mounted knights cannot effectively use pole arms while on horseback, and as a result, many weapons have been altered so they may be used one-handed. The horseman's war hammer is made entirely of steel and has a shaft about eighteen inches long. Powerful magical energy flows through this weapon, though its origins are nondescript.
+
+STATISTICS:
+
+THAC0: +2
+Damage: 2d3+3
+Damage type: Crushing
+Speed Factor: 4
+Proficiency Type: War Hammer
+Type: One-handed
+Requires:
+ 13 Strength
+
+Weight: 6"
+
+
+
+
+
+//THE KNEECAPPER +2 - valore 6000mo//
 COPY "rick_bigg_mod/items/HAMM04.itm" "override"
 	SAY NAME1 "Hammer"
 	SAY UNIDENTIFIED_DESC "A massive warhammer inscribed with dwarven runes.
@@ -6,11 +42,11 @@ COPY "rick_bigg_mod/items/HAMM04.itm" "override"
 STATISTICS:
 
 Damage: 2d3+1 (crushing)
-Speed Factor: 4
+Speed Factor: 6
 Proficiency Type: War Hammer
 Type: One-handed
 Requires:
- 10 Strength
+ 13 Strength
 
 Weight: 8"
 
@@ -22,11 +58,11 @@ STATISTICS:
 THAC0: +2, +4 vs. giant humanoids
 Damage: 2d3+3, +5 vs. giant humanoids
 Damage type: Crushing
-Speed Factor: 3
+Speed Factor: 5
 Proficiency Type: War Hammer
 Type: One-handed
 Requires:
- 10 Strength
+ 13 Strength
 
 Weight: 6"
 
@@ -44,11 +80,11 @@ COPY "rick_bigg_mod/items/HAMM05.itm" "override"
 STATISTICS:
 
 Damage: 2d3+1 (crushing)
-Speed Factor: 4
+Speed Factor: 6
 Proficiency Type: War Hammer
 Type: One-handed
 Requires:
- 10 Strength
+ 13 Strength
 
 Weight: 8"
 
@@ -63,11 +99,11 @@ Equipped abilities:
 THAC0: +2
 Damage: 2d3+3
 Damage type: Crushing
-Speed Factor: 2
+Speed Factor: 4
 Proficiency Type: War Hammer
 Type: One-handed
 Requires:
- 9 Strength
+ 13 Strength
 
 Weight: 5"
 
@@ -83,11 +119,11 @@ COPY "rick_bigg_mod/items/BDHAMM06.itm" "override"
 STATISTICS:
 
 Damage: 2d3+1 (crushing)
-Speed Factor: 4
+Speed Factor: 6
 Proficiency Type: War Hammer
 Type: One-handed
 Requires:
- 10 Strength
+ 13 Strength
 
 Weight: 8"
 
@@ -105,11 +141,11 @@ Combat abilities:
 THAC0: +3
 Damage: 2d3+4, +2 cold
 Damage Type: Crushing
-Speed Factor: 1
+Speed Factor: 3
 Proficiency Type: War Hammer
 Type: One-handed
 Requires:
- 9 Strength
+ 13 Strength
 
 Weight: 5"
 
@@ -127,11 +163,11 @@ COPY "rick_bigg_mod/items/HAMM07.itm" "override"
 STATISTICS:
 
 Damage: 2d3+1 (crushing)
-Speed Factor: 4
+Speed Factor: 6
 Proficiency Type: War Hammer
 Type: One-handed
 Requires:
- 9 Strength
+ 13 Strength
 
 Weight: 6"
 
@@ -143,7 +179,7 @@ STATISTICS:
 THAC0: +3
 Damage: 2d3+4, +3 electrical 
 Damage type: Crushing
-Speed Factor: 1
+Speed Factor: 3
 Proficiency Type: War Hammer
 Type: One-handed
 Requires:
@@ -166,11 +202,11 @@ COPY "rick_bigg_mod/items/AEGIS.itm" "override"
 STATISTICS:
 
 Damage: 2d3+1 (crushing)
-Speed Factor: 4
+Speed Factor:6
 Proficiency Type: War Hammer
 Type: One-handed
 Requires:
- 9 Strength
+ 13 Strength
 
 Weight: 6"
 
@@ -187,7 +223,7 @@ Combat abilities (thrown):
 
 THAC0: +3
 Damage: 2d3+4 (crushing)
-Speed Factor: 1
+Speed Factor: 3
 Proficiency Type: War Hammer
 Type: One-handed
 Requires:
@@ -211,11 +247,11 @@ COPY "rick_bigg_mod/items/HAMM09.itm" "override"
 STATISTICS:
 
 Damage: 2d3+1 (crushing)
-Speed Factor: 4
+Speed Factor: 6
 Proficiency Type: War Hammer
 Type: One-handed
 Requires:
- 9 Strength
+ 13 Strength
 
 Weight: 6"
 
@@ -236,6 +272,8 @@ Damage type: Crushing
 Speed Factor: 1
 Proficiency Type: War Hammer
 Type: One-handed
+Requires:
+ 18 Strength
 
 Weight: 4"
 
@@ -250,11 +288,11 @@ COPY "rick_bigg_mod/items/HAMM10.itm" "override"
 STATISTICS:
 
 Damage: 2d3+1 (crushing)
-Speed Factor: 4
+Speed Factor: 6
 Proficiency Type: War Hammer
 Type: One-handed
 Requires:
- 9 Strength
+ 13 Strength
 
 Weight: 6"
 
@@ -268,11 +306,11 @@ Equipped abilities:
 
 THAC0: +4
 Damage: 2d3+5 (crushing)
-Speed Factor: 1
+Speed Factor: 2
 Proficiency Type: War Hammer
 Type: One-handed
 Requires:
- 16 Strength
+ 18 Strength
 
 Weight: 3"
 
@@ -288,16 +326,17 @@ COPY "rick_bigg_mod/items/HAMM11.itm" "override"
 STATISTICS:
 
 Damage: 2d3+1 (crushing)
-Speed Factor: 4
+Speed Factor: 6
 Proficiency Type: War Hammer
 Type: One-handed
 Requires:
- 9 Strength
+ 13 Strength
 
 Weight: 6"
 
 	SAY NAME2 "Runehammer +5"
-	SAY DESC "The rune of Clangeddin is now inscribed on the head of this hammer, granting even greater powers to any who wield the weapon.
+	SAY DESC "This darksteel hammer has a rune of power inscribed upon its head and has protects against Negative Plane.
+	The rune of Clangeddin is now inscribed on the head of this hammer, granting even greater powers to any who wield the weapon.
 
 STATISTICS:
 
@@ -317,6 +356,6 @@ Speed Factor: 1
 Proficiency Type: War Hammer
 Type: One-handed
 Requires:
- 16 Strength
+ 18 Strength
 
 Weight: 2"

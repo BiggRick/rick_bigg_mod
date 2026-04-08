@@ -1,3 +1,38 @@
+//STAFF +2- 1500mo//
+COPY "rick_bigg_mod/items/STAF18.itm" "override"
+	SAY NAME1 "Staff"
+	SAY UNIDENTIFIED_DESC "The simplest and humblest of staff weapons, the quarterstaff is a length of wood ranging six to nine feet in length. High-quality quarterstaves are made of stout oak and are shod with metal at both ends. The quarterstaff must be wielded with both hands.
+
+STATISTICS:
+
+Damage: 1d6 (crushing)
+Speed Factor: 4
+Proficiency Type: Quarterstaff
+Type: Two-handed
+Requires:
+ 5 Strength
+
+Weight: 4"
+
+	SAY NAME2 "Staff +2"
+	SAY DESC "The simplest of staff weapons is the quarterstaff, a length of wood six to nine feet in length. High quality quarterstaves are made of stout oak and are shod with metal at both ends. Powerful enchantments during the making of this staff have improved its accuracy and the damage it can cause, but they bear no signature.
+
+STATISTICS:
+
+THAC0: +2
+Damage: 1d6+2 (crushing)
+Speed Factor: 2
+Proficiency Type: Quarterstaff
+Type: Two-handed
+Requires:
+ 5 Strength
+
+Weight: 3"
+
+
+
+
+
 //STAFF OF STRIKING +2 - 5000mo//
 COPY "rick_bigg_mod/items/STAF05.itm" "override"
 	SAY NAME1 "Staff"
@@ -106,6 +141,40 @@ Weight: 4
 //ROD OF SMITING +2 - solo maghi e chierici - 7500mo//
 COPY "rick_bigg_mod/items/RODS04.itm" "override"
 	SAY NAME1 "Staff"
+	SAY UNIDENTIFIED_DESC "Rods are about three feet long and as thick as your thumb. They are normally found in cases or similar storage places. Rods can be fashioned from metal, wood, ivory, or bone. They can be plain or decorated and carved, tipped, or not. Rods are powered by charges, unless noted otherwise in the description of a particular rod. Each time the rod is used, one or more charge may be expended.
+
+STATISTICS:
+
+Weight: 3"
+
+	SAY NAME2 "Rod of Smiting +2"
+	SAY DESC "This long, thin rod can be wielded as a staff. This rod has been designed to destroy golems. Any golem struck by the rod must make a Saving Throw or be destroyed. In the hands of any other than a cleric or mage, the rod becomes unusable.
+
+STATISTICS:
+
+Equipped abilities:
+- Strikes golem as +5
+
+Combat abilities:
+– Struck golems must save vs. Death or be destroyed
+
+THAC0: +2
+Damage: 1d6+2, +10 vs. golems
+Damage type: Crushing
+Speed Factor: 2
+Proficiency Type: Quarterstaff
+Type: Two-handed
+
+Weight: 3
+"
+
+
+
+
+
+//STAFF OF THUNDER AND LIGHTNING +2 - solo druidi - 6000mo//
+COPY "rick_bigg_mod/items/STAF13.itm" "override"
+	SAY NAME1 "Staff"
 	SAY UNIDENTIFIED_DESC "The simplest and humblest of staff weapons, the quarterstaff is a length of wood ranging six to nine feet in length. High-quality quarterstaves are made of stout oak and are shod with metal at both ends. The quarterstaff must be wielded with both hands.
 
 STATISTICS:
@@ -119,24 +188,33 @@ Requires:
 
 Weight: 4"
 
-	SAY NAME2 "Rod of Smiting +2"
-	SAY DESC "This long, thin rod can be wielded as a staff. This rod has been designed to destroy golems. Any golem struck by the rod must make a Saving Throw or be destroyed. In the hands of any other than a cleric or mage, the rod becomes unusable.
+	SAY NAME2 "Staff of Thunder and Lighning +2"
+	SAY DESC "There are stories that tell of these staves sprouting in the growth around druid groves when the forest is threatened. Fanciful tales, but truth or not, this staff is a powerful tool. It draws energy from storms, and there is a chance that any blow might trigger a thunderclap that knocks enemies down. It casts Lightning Bolt, and if circumstances warrant it, it can summon a lightning storm to blast enemies to dust. Some abilities are limited by charges.
 
 STATISTICS:
 
+Cast Lightning Bolt once per day
+  Damage: 10d6 electrical (Save vs. Spell at -4 for half)
+  Area of Effect: Path of bolt
+  Range: 25 ft.
+
+Cast Call Lightning once per day
+  Damage: 6d6 electrical per strike (Save vs. Breath at -2 for half), three strikes
+  Range: 80 ft.
+  
 Combat abilities:
-– Struck golems must save vs. Death or be destroyed
+– Thunderclap: 25% chance of stunning hit target for 2 rounds (Save vs. Spell negates)
 
 THAC0: +2
-Damage: 1d6+2, +9 vs. golems
-Damage type: Crushing
+Damage: 1d6+2 (crushing)
 Speed Factor: 2
 Proficiency Type: Quarterstaff
 Type: Two-handed
+Requires:
+ 5 Strength
 
-Weight: 3
+Weight: 4
 "
-
 
 
 
@@ -179,6 +257,36 @@ Proficiency Type: Quarterstaff
 Type: Two-handed
 Requires:
  5 Strength
+
+Weight: 3
+"
+
+
+
+
+//ROD OF TERROR +3 - 7000mo//
+COPY "rick_bigg_mod/items/RODS05.itm" "override"
+	SAY NAME1 "Rod"
+	SAY UNIDENTIFIED_DESC "Rods are about three feet long and as thick as your thumb. They are normally found in cases or similar storage places. Rods can be fashioned from metal, wood, ivory, or bone. They can be plain or decorated and carved, tipped, or not. Rods are powered by charges, unless noted otherwise in the description of a particular rod. Each time the rod is used, one or more charge may be expended.
+
+STATISTICS:
+
+Weight: 3"
+
+	SAY NAME2 "Rod of Terror +3"
+	SAY DESC "When activated, this rod may be used as a Staff +3. Any creature hit by the rod must make a Saving Throw vs. Spell or flee in terror, fearing the wielder as if he or she were a flesh-eating demon from the Abyss. There is a drawback to using this rod, however: Each time the rod is used, there is a 10% chance that the wielder is scared instead.
+
+STATISTICS:
+
+Combat abilities:
+– 90% target must save vs. Spell or flee in terror for 4 rounds
+– 10% wielder must save vs. Spell or flee in terror for 4 rounds
+
+THAC0: +3
+Damage: 1d6+3 (crushing)
+Speed Factor: 1
+Proficiency Type: Quarterstaff
+Type: Two-handed
 
 Weight: 3
 "
@@ -564,4 +672,90 @@ Requires:
  5 Strength
 
 Weight: 2
+"
+
+
+
+
+
+
+//STAFF OF THE RAM +4 - 11000mo//
+COPY "rick_bigg_mod/items/STAF21.itm" "override"
+	SAY NAME1 "Staff"
+	SAY UNIDENTIFIED_DESC "The simplest and humblest of staff weapons, the quarterstaff is a length of wood ranging six to nine feet in length. High-quality quarterstaves are made of stout oak and are shod with metal at both ends. The quarterstaff must be wielded with both hands.
+
+STATISTICS:
+
+Damage: 1d6 (crushing)
+Speed Factor: 4
+Proficiency Type: Quarterstaff
+Type: Two-handed
+Requires:
+ 5 Strength
+
+Weight: 4"
+
+	SAY NAME2 "Staff of the Ram +4"
+	SAY DESC "Likely created by the same unknown archmage who is responsible for the Ring of the Ram, this powerful staff is designed to destroy anything it hits.
+
+STATISTICS:
+
+Combat abilities: 
+– 10% chance opponent is knocked back and stunned (large creatures such as a dragons or giants will not be knocked back or stunned)
+
+THAC0: +4
+Damage: 1d6+4, +8 crushing damage
+Damage Type: Crushing
+Speed Factor: 1
+Proficiency Type: Quarterstaff
+Type: Two-handed
+Requires:
+ 5 Strength
+
+Weight: 3
+"
+
+
+
+
+
+
+//STAFF OF THE RAM +6 - 20000mo//
+COPY "rick_bigg_mod/items/STAF22.itm" "override"
+	SAY NAME1 "Staff"
+	SAY UNIDENTIFIED_DESC "The simplest and humblest of staff weapons, the quarterstaff is a length of wood ranging six to nine feet in length. High-quality quarterstaves are made of stout oak and are shod with metal at both ends. The quarterstaff must be wielded with both hands.
+
+STATISTICS:
+
+Damage: 1d6 (crushing)
+Speed Factor: 4
+Proficiency Type: Quarterstaff
+Type: Two-handed
+Requires:
+ 5 Strength
+
+Weight: 4"
+
+	SAY NAME2 "Staff of the Ram +6"
+	SAY DESC "Likely created by the same unknown archmage who is responsible for the Ring of the Ram, this powerful staff is designed to destroy anything it hits.
+	Roranach's Horn augments the Staff of the Ram's already noteworthy abilities, creating a weapon few opponents are able to stand against.
+
+STATISTICS:
+
+Equipped abilities:
+- +5% chance to score a critical hit
+
+Combat abilities: 
+– 15% chance opponent is knocked back and stunned (large creatures such as a dragons or giants will not be knocked back or stunned)
+
+THAC0: +6
+Damage: 1d6+6, +12 crushing damage, +2d4 piercing damage
+Damage Type: Crushing
+Speed Factor: 1
+Proficiency Type: Quarterstaff
+Type: Two-handed
+Requires:
+ 5 Strength
+
+Weight: 3
 "

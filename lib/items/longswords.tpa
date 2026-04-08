@@ -1,3 +1,38 @@
+//LONG SWORD +2 - valore 2250mo//
+COPY "rick_bigg_mod/items/SW1H41.itm" "override"
+	SAY NAME1 "Long Sword"
+	SAY UNIDENTIFIED_DESC "These swords are usually referred to as double-edged swords, war swords, or military swords. In many cases, the long sword has a single-edged blade. There is no single version of the long sword; the design and length vary from culture to culture and may vary within the same culture depending on the era. Among the most common characteristics of all long swords is their length, which ranges from thirty-five inches to forty-seven inches. In the latter case, the blade is known to take up forty inches of the total length. Most long swords have a double-edged blade and a sharp point at the tip. Despite the tip, the long sword is designed for slashing, not thrusting.
+
+STATISTICS:
+
+Damage: 1d8 (slashing or piercing)
+Speed Factor: 5
+Proficiency Type: Long Sword
+Type: One-handed
+Requires:
+ 9 Strength
+
+Weight: 4"
+
+	SAY NAME2 "Long Sword +2"
+	SAY DESC "A sword of standardized enchantment, powerful though it is. The great southern nations are said to have once had legions of their soldiers armed in such a fashion, a force that must have appeared truly imposing on the battlefield. The days of such extravagance are long past though.
+
+STATISTICS:
+
+THAC0: +2
+Damage: 1d8+2 (slashing or piercing)
+Speed Factor: 3
+Proficiency Type: Long Sword
+Type: One-handed
+Requires:
+ 9 Strength
+
+Weight: 3"
+
+
+
+
+
 //THE BURNING EARTH +2 - valore 6000mo//
 COPY "rick_bigg_mod/items/SW1H24.itm" "override"
 	SAY NAME1 "Long Sword"
@@ -5,12 +40,12 @@ COPY "rick_bigg_mod/items/SW1H24.itm" "override"
 
 STATISTICS:
 
-Damage: 1d8 (slashing)
+Damage: 1d8 (slashing or piercing)
 Speed Factor: 5
 Proficiency Type: Long Sword
 Type: One-handed
 Requires:
- 6 Strength
+ 9 Strength
 
 Weight: 4"
 
@@ -24,12 +59,12 @@ Cold resistance: +20%
 
 THAC0: +2, +3 vs. regenerating creatures, +4 vs. undead
 Damage: 1d8+2, +2 fire damage, +3 vs. regenerating creatures, +4 vs. undead
-Damage type: Slashing
+Damage type: Slashing or Piercing
 Speed Factor: 3
 Proficiency Type: Long Sword
 Type: One-handed
 Requires:
- 6 Strength
+ 9 Strength
 
 Weight: 4"
 
@@ -47,12 +82,12 @@ COPY "rick_bigg_mod/items/SW1H33.itm" "override"
 
 STATISTICS:
 
-Damage: 1d8 (slashing)
+Damage: 1d8 (slashing or piercing)
 Speed Factor: 5
 Proficiency Type: Long Sword
 Type: One-handed
 Requires:
- 6 Strength
+ 9 Strength
 
 Weight: 4"
 
@@ -65,12 +100,12 @@ Combat abilities:
 – Dancing sword can attack on its own for 4 rounds
 
 THAC0: +2
-Damage: 1d8+2 (slashing)
+Damage: 1d8+2 (slashing or piercing)
 Speed Factor: 3
 Proficiency Type: Long Sword
 Type: One-handed
 Requires:
- 6 Strength
+ 9 Strength
 
 Weight: 3"
 
@@ -84,12 +119,12 @@ COPY "rick_bigg_mod/items/SW1H36.itm" "override"
 
 STATISTICS:
 
-Damage: 1d8 (slashing)
+Damage: 1d8 (slashing or piercing)
 Speed Factor: 5
 Proficiency Type: Long Sword
 Type: One-handed
 Requires:
- 6 Strength
+ 9 Strength
 
 Weight: 4"
 
@@ -103,12 +138,12 @@ Charge abilities:
   Duration: 1 turn
 
 THAC0: +2
-Damage: 1d8+3 (slashing)
+Damage: 1d8+3 (slashing or piercing)
 Speed Factor: 3
 Proficiency Type: Long Sword
 Type: One-handed
 Requires:
- 6 Strength
+ 9 Strength
 
 Weight: 2"
 
@@ -120,12 +155,12 @@ COPY "rick_bigg_mod/items/SW1H35.itm" "override"
 
 STATISTICS:
 
-Damage: 1d8 (slashing)
+Damage: 1d8 (slashing or piercing)
 Speed Factor: 5
 Proficiency Type: Long Sword
 Type: One-handed
 Requires:
- 6 Strength
+ 9 Strength
 
 Weight: 4"
 
@@ -142,12 +177,12 @@ Combat abilities:
 - 5% chance to deal extra 20 damage (magic)
 
 THAC0: +3
-Damage: 1d8+3 (slashing)
+Damage: 1d8+3 (slashing or piercing)
 Speed Factor: 2
 Proficiency Type: Long Sword
 Type: One-handed
 Requires:
- 6 Strength
+ 9 Strength
 
 Weight: 3"
 
@@ -167,12 +202,12 @@ COPY "rick_bigg_mod/items/SW1H39.itm" "override"
 
 STATISTICS:
 
-Damage: 1d8 (slashing)
+Damage: 1d8 (slashing or piercing)
 Speed Factor: 5
 Proficiency Type: Long Sword
 Type: One-handed
 Requires:
- 6 Strength
+ 9 Strength
 
 Weight: 4"
 
@@ -183,12 +218,12 @@ STATISTICS:
 
 THAC0: +4
 Damage: 1d8+4, +3 acid damage
-Damage type: Slashing
+Damage type: Slashing or Piercing
 Speed Factor: 1
 Proficiency Type: Long Sword
 Type: One-handed
 Requires:
- 6 Strength
+ 9 Strength
 
 Weight: 3"
 
@@ -204,12 +239,12 @@ COPY "rick_bigg_mod/items/SW1H54.itm" "override"
 
 STATISTICS:
 
-Damage: 1d8 (slashing)
+Damage: 1d8 (slashing or piercing)
 Speed Factor: 5
 Proficiency Type: Long Sword
 Type: One-handed
 Requires:
- 6 Strength
+ 9 Strength
 
 Weight: 4"
 
@@ -229,12 +264,12 @@ THAC0 & Damage:
   vs. True Neutral, Chaotic Neutral, Lawful Neutral: +3 to hit, 1d8+3 damage
   vs. Neutral Good, Neutral Evil: +4 to hit, 1d8+4 damage
   vs. Other Alignments: +5 to hit, 1d8+5 damage
-Damage type: Slashing
+Damage type: Slashing or Piercing
 Speed Factor: 2
 Proficiency Type: Long Sword
 Type: One-handed
 Requires:
- 6 Strength
+ 9 Strength
 
 Weight: 3"
 
@@ -253,12 +288,12 @@ COPY "rick_bigg_mod/items/SW1H63.itm" "override"
 
 STATISTICS:
 
-Damage: 1d8 (slashing)
+Damage: 1d8 (slashing or piercing)
 Speed Factor: 5
 Proficiency Type: Long Sword
 Type: One-handed
 Requires:
- 6 Strength
+ 9 Strength
 
 Weight: 4"
 
@@ -269,12 +304,12 @@ STATISTICS:
 
 THAC0: +3
 Damage: 1d8+3, +6 damage vs. undead, shapeshifters, demons, and devils
-Damage type: Slashing
+Damage type: Slashing or Piercing
 Speed Factor: 2
 Proficiency Type: Long Sword
 Type: One-handed
 Requires:
- 6 Strength
+ 9 Strength
 
 Weight: 3
 "
@@ -289,12 +324,12 @@ COPY "rick_bigg_mod/items/SW1H63.itm" "override"
 
 STATISTICS:
 
-Damage: 1d8 (slashing)
+Damage: 1d8 (slashing or piercing)
 Speed Factor: 5
 Proficiency Type: Long Sword
 Type: One-handed
 Requires:
- 6 Strength
+ 9 Strength
 
 Weight: 4"
 
@@ -310,12 +345,12 @@ Equipped abilities:
 
 THAC0: +5
 Damage: 1d8+5, +6 damage vs. undead, shapeshifters, demons, and devils
-Damage type: Slashing
+Damage type: Slashing or Piercing
 Speed Factor: 1
 Proficiency Type: Long Sword
 Type: One-handed
 Requires:
- 6 Strength
+ 9 Strength
 
 Weight: 3
 "

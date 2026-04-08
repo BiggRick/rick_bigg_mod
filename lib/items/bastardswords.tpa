@@ -1,3 +1,89 @@
+//BASTARD SWORD +1 - 1500mo//
+COPY "rick_bigg_mod/items/SW1H02.itm" "override"
+	SAY NAME1 "Bastard Sword"
+	SAY UNIDENTIFIED_DESC "Also known as the hand-and-a-half sword, the bastard sword derives its name from the fact that it is halfway between the two-handed sword and the long sword. The bastard sword has a double-edged blade and a long grip, which can accommodate both hands if preferred. The overall length of the bastard sword ranges between four feet and four feet ten inches.
+
+STATISTICS:
+
+Damage: 2d4+1 (slashing)
+Speed Factor: 8
+Proficiency Type: Bastard Sword
+Type: One-handed
+Requires:
+ 15 Strength
+
+Weight: 10"
+
+	SAY NAME2 "Bastard Sword +1"
+	SAY DESC "Not only has a smith made this sword so that it is better balanced and more durable than a standard blade, powerful enchantments have also been placed on it. It is faster, more accurate, and hits for far more damage than the standard of its type. 
+
+STATISTICS:
+
+THAC0: +1
+Damage: 2d4+2 (slashing)
+Speed Factor: 7
+Proficiency Type: Bastard Sword
+Type: One-handed
+Requires:
+ 15 Strength
+
+Weight: 9"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//BASTARD SWORD +2 - 2500mo//
+COPY "rick_bigg_mod/items/SW1H42.itm" "override"
+	SAY NAME1 "Bastard Sword"
+	SAY UNIDENTIFIED_DESC "Also known as the hand-and-a-half sword, the bastard sword derives its name from the fact that it is halfway between the two-handed sword and the long sword. The bastard sword has a double-edged blade and a long grip, which can accommodate both hands if preferred. The overall length of the bastard sword ranges between four feet and four feet ten inches.
+
+STATISTICS:
+
+Damage: 2d4+1 (slashing)
+Speed Factor: 8
+Proficiency Type: Bastard Sword
+Type: One-handed
+Requires:
+ 15 Strength
+
+Weight: 10"
+
+	SAY NAME2 "Bastard Sword +2"
+	SAY DESC "Not only has a smith made this sword so that it is better balanced and more durable than a standard blade, powerful enchantments have also been placed on it. It is faster, more accurate, and hits for far more damage than the standard of its type. 
+
+STATISTICS:
+
+THAC0: +2
+Damage: 2d4+3 (slashing)
+Speed Factor: 6
+Proficiency Type: Bastard Sword
+Type: One-handed
+Requires:
+ 15 Strength
+
+Weight: 8"
+
+
+
+
+
+
+
+
+
+
 //SWORD OF BALDURAN +2 - 8000mo//
 COPY "rick_bigg_mod/items/SW1H18.itm" "override"
 	SAY NAME1 "Bastard Sword"
@@ -5,12 +91,12 @@ COPY "rick_bigg_mod/items/SW1H18.itm" "override"
 
 STATISTICS:
 
-Damage: 2d4 (slashing)
+Damage: 2d4+1 (slashing)
 Speed Factor: 8
 Proficiency Type: Bastard Sword
 Type: One-handed
 Requires:
- 11 Strength
+ 15 Strength
 
 Weight: 10"
 
@@ -24,13 +110,13 @@ Equipped abilities:
 - Charisma: +1
 
 THAC0: +2
-Damage: 2d4 +2
+Damage: 2d4+3
 Damage type: Slashing
 Speed Factor: 6
 Proficiency Type: Bastard Sword
 Type: One-handed
 Requires:
- 11 Strength
+ 15 Strength
 
 Weight: 7"
 
@@ -46,12 +132,12 @@ COPY "rick_bigg_mod/items/SW1H31.itm" "override"
 
 STATISTICS:
 
-Damage: 2d4 (slashing)
+Damage: 2d4+1 (slashing)
 Speed Factor: 8
 Proficiency Type: Bastard Sword
 Type: One-handed
 Requires:
- 11 Strength
+ 15 Strength
 
 Weight: 10"
 
@@ -68,13 +154,13 @@ Charge abilities:
  Area: 15-ft. radius
 
 THAC0: +2, +4 vs. evil creatures
-Damage: 2d4+2, +4 vs. evil creatures, does double damage against undead
+Damage: 2d4+3, +4 vs. evil creatures, does double damage against undead
 Damage type: Slashing
 Speed Factor: 6
 Proficiency Type: Bastard Sword
 Type: One-handed
 Requires:
- 11 Strength
+ 15 Strength
 
 Weight: 8
 "
@@ -89,12 +175,12 @@ COPY "rick_bigg_mod/items/SW1H32.itm" "override"
 
 STATISTICS:
 
-Damage: 2d4 (slashing)
+Damage: 2d4+1 (slashing)
 Speed Factor: 8
 Proficiency Type: Bastard Sword
 Type: One-handed
 Requires:
- 11 Strength
+ 15 Strength
 
 Weight: 10"
 
@@ -111,13 +197,13 @@ Charge abilities:
 – Protection from the Elements once per day
 
 THAC0: +3
-Damage: 2d4+3, +5 against dragons
+Damage: 2d4+4, +5 against dragons
 Damage type: Slashing
 Speed Factor: 5
 Proficiency Type: Bastard Sword
 Type: One-handed
 Requires:
- 11 Strength
+ 15 Strength
 
 Weight: 7"
 
@@ -135,12 +221,12 @@ COPY "rick_bigg_mod/items/OHDSW03.itm" "override"
 
 STATISTICS:
 
-Damage: 2d4 (slashing)
+Damage: 2d4+1 (slashing)
 Speed Factor: 8
 Proficiency Type: Bastard Sword
 Type: One-handed
 Requires:
- 11 Strength
+ 15 Strength
 
 Weight: 10"
 
@@ -158,13 +244,13 @@ Charge Abilities:
   Area of Effect: 15-ft. radius
 
 THAC0: +3
-Damage: 2d4+3, +3 fire damage
+Damage: 2d4+4, +3 fire damage
 Damage type: Slashing
 Speed Factor: 5
 Proficiency Type: Bastard Sword
 Type: One-handed
 Requires:
- 11 Strength
+ 15 Strength
 
 Weight: 7
 "
@@ -181,12 +267,12 @@ COPY "rick_bigg_mod/items/SW1H38.itm" "override"
 
 STATISTICS:
 
-Damage: 2d4 (slashing)
+Damage: 2d4+1 (slashing)
 Speed Factor: 8
 Proficiency Type: Bastard Sword
 Type: One-handed
 Requires:
- 11 Strength
+ 15 Strength
 
 Weight: 10"
 
@@ -199,12 +285,12 @@ Combat abilities:
 – 2 extra damage every round until 10 Hit Points of damage done
 
 THAC0: +4
-Damage: 2d4+4 (slashing)
+Damage: 2d4+5 (slashing)
 Speed Factor: 4
 Proficiency Type: Bastard Sword
 Type: One-handed
 Requires:
- 11 Strength
+ 15 Strength
 
 Weight: 5
 "
@@ -220,12 +306,12 @@ COPY "rick_bigg_mod/items/SW1P01.itm" "override"
 
 STATISTICS:
 
-Damage: 2d4 (slashing)
+Damage: 2d4+1 (slashing)
 Speed Factor: 8
 Proficiency Type: Bastard Sword
 Type: One-handed
 Requires:
- 11 Strength
+ 15 Strength
 
 Weight: 10"
 
@@ -255,12 +341,12 @@ Combat abilities:
 STATISTICS:
 
 THAC0: +4 bonus
-Damage: 2d4 +4 (slashing)
+Damage: 2d4+5 (slashing)
 Speed Factor: 4
 Proficiency Type: Bastard Sword
 Type: One-handed
 Requires:
- 11 Strength
+ 15 Strength
 
 Weight: 6
 "
@@ -277,12 +363,12 @@ COPY "rick_bigg_mod/items/SW1H60.itm" "override"
 
 STATISTICS:
 
-Damage: 2d4 (slashing)
+Damage: 2d4+1 (slashing)
 Speed Factor: 8
 Proficiency Type: Bastard Sword
 Type: One-handed
 Requires:
- 11 Strength
+ 15 Strength
 
 Weight: 10"
 
@@ -295,32 +381,32 @@ Equipped abilities:
 – Acid resistance: +50%
 
 THAC0: +4
-Damage: 2d4+4, +1d6 acid damage
+Damage: 2d4+5, +1d6 acid damage
 Damage type: Slashing
 Speed Factor: 4
 Proficiency Type: Bastard Sword
 Type: One-handed
 Requires:
- 11 Strength
+ 15 Strength
 
 Weight: 7"
 
 
 
 
-//ANGURVADAL +5 - valore 15000mo//
+//ANGURVADAL +5 - valore 21000mo//
 COPY "rick_bigg_mod/items/SW1H61.itm" "override"
 	SAY NAME1 "Bastard Sword"
 	SAY UNIDENTIFIED_DESC "Also known as the hand-and-a-half sword, the bastard sword derives its name from the fact that it is halfway between the two-handed sword and the long sword. The bastard sword has a double-edged blade and a long grip, which can accommodate both hands if preferred. The overall length of the bastard sword ranges between four feet and four feet ten inches.
 
 STATISTICS:
 
-Damage: 2d4 (slashing)
+Damage: 2d4+1 (slashing)
 Speed Factor: 8
 Proficiency Type: Bastard Sword
 Type: One-handed
 Requires:
- 11 Strength
+ 15 Strength
 
 Weight: 10"
 
@@ -336,12 +422,12 @@ Combat abilities:
 - 5% chance cast Black Dragon's Breath (24d4+12 acid damage save vs. Breath for half, enemies only)
 
 THAC0: +5
-Damage: 2d4+5, +1d6 acid damage
+Damage: 2d4+6, +1d6 acid damage
 Damage type: Slashing
 Speed Factor: 3
 Proficiency Type: Bastard Sword
 Type: One-handed
 Requires:
- 11 Strength
+ 15 Strength
 
 Weight: 7"
