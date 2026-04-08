@@ -1,0 +1,128 @@
+
+COPY ~rick_bigg_mod/2da/weapon_rules.2da~ ~weidu_external~
+	READ_2DA_ENTRIES_NOW ~weapon_rules~ 22
+BUT_ONLY
+
+
+
+DEFINE_PATCH_MACRO decode_type BEGIN
+	PATCH_MATCH ~%stype%~
+		WITH MELEE BEGIN
+			type = 1
+		END
+		RANGED BEGIN
+			type = 2
+		END
+		LAUNCH BEGIN
+			type = 4
+		END
+		DEFAULT
+			PATCH_FAIL ~unknown type %stype%~
+	END
+END
+
+DEFINE_PATCH_FUNCTION melee_only RET is_matched BEGIN
+	is_matched = 1
+	FOR (head = 0; head < head_cnt; head += 1) BEGIN
+		cur_off = head * 0x38 + head_off
+		READ_BYTE cur_off weapon_type
+		PATCH_IF weapon_type = 2 BEGIN
+			is_matched = 0
+		END
+	END
+END
+
+DEFINE_PATCH_FUNCTION thrown RET is_matched BEGIN
+	is_matched = 0
+	FOR (head = 0; head < head_cnt; head += 1) BEGIN
+		cur_off = head * 0x38 + head_off
+		READ_BYTE cur_off weapon_type
+		PATCH_IF weapon_type = 2 BEGIN
+			is_matched = 1
+		END
+	END
+END
+
+DEFINE_PATCH_FUNCTION flail RET is_matched BEGIN
+	is_matched = 0
+	READ_ASCII 0x22 anim (2)
+	PATCH_IF ("%anim%" STRING_COMPARE_REGEXP "[Ff][Ll013]" = 0) BEGIN
+		is_matched = 1
+	END
+END
+
+DEFINE_PATCH_FUNCTION morning_st RET is_matched BEGIN
+	is_matched = 0
+	READ_ASCII 0x22 anim (2)
+	PATCH_IF ("%anim%" STRING_COMPARE_REGEXP "[Mm][SsCc2]" = 0) BEGIN
+		is_matched = 1
+	END
+END
+
+DEFINE_PATCH_FUNCTION heavy_xbow RET is_matched BEGIN
+	READ_LONG 0x1e unusability
+	is_matched = unusability BAND BIT22
+END
+
+DEFINE_PATCH_FUNCTION light_xbow RET is_matched BEGIN
+	READ_LONG 0x1e unusability
+	is_matched = NOT (unusability BAND BIT6)
+END
+
+DEFINE_PATCH_FUNCTION comp_lbow RET is_matched BEGIN
+	READ_LONG 0x1e unusability
+	is_matched = unusability BAND BIT22
+END
+
+DEFINE_PATCH_FUNCTION long_bow RET is_matched BEGIN
+	READ_LONG 0x1e unusability
+	is_matched = NOT (unusability BAND BIT6)
+END
+
+COPY_EXISTING_REGEXP ~^.*\.itm$~ ~override~
+
+	READ_LONG 0x64 head_off
+	READ_SHORT 0x68 head_cnt
+	
+	FOR (head = 0; head < head_cnt; head += 1) BEGIN
+		cur_off = head * 0x38 + head_off
+		READ_BYTE cur_off weapon_type
+
+		general_rules_row = 0
+		special_rules_row = 0
+	
+		FOR (maybe = 1; maybe < weapon_rules AND special_rules_row = 0; maybe += 1 ) BEGIN
+			READ_2DA_ENTRY_FORMER weapon_rules maybe 0 comment_special
+			READ_2DA_ENTRY_FORMER weapon_rules maybe 1 maybe_file
+			READ_2DA_ENTRY_FORMER weapon_rules maybe 3 stype
+			LAUNCH_PATCH_MACRO decode_type
+			
+			PATCH_IF ~%maybe_file%~ STRING_EQUAL_CASE ~%SOURCE_RES%~ AND type = weapon_type BEGIN
+				special_rules_row = maybe
+			END
+		END
+
+		READ_BYTE 0x31 proficiency
+		FOR (maybe = 1; maybe < weapon_rules AND general_rules_row = 0; maybe += 1 ) BEGIN
+			READ_2DA_ENTRY_FORMER weapon_rules maybe 0 comment_general
+			READ_2DA_ENTRY_FORMER weapon_rules maybe 1 maybe_proficiency
+			READ_2DA_ENTRY_FORMER weapon_rules maybe 2 special_rule
+			READ_2DA_ENTRY_FORMER weapon_rules maybe 3 stype
+			
+			LAUNCH_PATCH_MACRO decode_type
+			
+			PATCH_IF IS_AN_INT ~%maybe_proficiency%~ AND maybe_proficiency = proficiency AND type = weapon_type BEGIN
+				general_rules_row = maybe
+			END
+			
+			PATCH_IF general_rules_row > 0 AND NOT (~%special_rule%~ STRING_EQUAL_CASE ~__~) BEGIN
+				LAUNCH_PATCH_FUNCTION ~%special_rule%~ RET is_matched = is_matched END
+				PATCH_IF NOT is_matched BEGIN
+					general_rules_row = 0
+				END
+			END
+		END
+		
+		// now to simply apply them :)
+	END
+BUT_ONLY

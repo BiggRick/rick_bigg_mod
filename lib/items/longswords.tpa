@@ -249,7 +249,7 @@ Requires:
 Weight: 4"
 
 	SAY NAME2 "Equalizer +3"
-	SAY DESC "Such is the age of this sword that its true origin has been lost to time, but markings hint that it was possibly forged in the service of Helm. Also called the "Sword of Neutrality," it seems designed to seek and terminate extremes, to shift the universe closer to harmonious equilibrium. The further the behavior of a target from true balance, the more potent the damage they suffer.
+	SAY DESC "Such is the age of this sword that its true origin has been lost to time, but markings hint that it was possibly forged in the service of Helm. Also called the 'Sword of Neutrality', it seems designed to seek and terminate extremes, to shift the universe closer to harmonious equilibrium. The further the behavior of a target from true balance, the more potent the damage they suffer.
 
 STATISTICS:
 

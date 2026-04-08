@@ -277,7 +277,7 @@ Requires:
 Weight: 10"
 
 	SAY NAME2 "Jhor the Bleeder +4"
-	SAY DESC "This blade belonged to Ho Mang, a traveler from Kara-Tur who accepted dubious service at courts throughout Faerûn. Skilled in "persuasion," he would use this sword to perform the "Death Of A Thousand Cuts," an ancient ritual from his homeland involving a lengthy series of small, painful incisions. The properties of the blade prevent blood from clotting, and the victim slowly bleeds to death. The sword was stolen, and its whereabouts have been a mystery until now.
+	SAY DESC "This blade belonged to Ho Mang, a traveler from Kara-Tur who accepted dubious service at courts throughout Faerûn. Skilled in 'persuasion',he would use this sword to perform the 'Death Of A Thousand Cuts', an ancient ritual from his homeland involving a lengthy series of small, painful incisions. The properties of the blade prevent blood from clotting, and the victim slowly bleeds to death. The sword was stolen, and its whereabouts have been a mystery until now.
 
 STATISTICS:
 
