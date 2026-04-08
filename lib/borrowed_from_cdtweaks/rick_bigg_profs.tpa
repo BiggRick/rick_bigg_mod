@@ -1,10 +1,9 @@
 /*
 NEW RULES:
 
- 94 = small sword (short sword, dagger)
- 95 = large sword (long sword, bastard sword)
- 96 = scimitar
- 97 = katana (incl. old Waki & Ninjato)
+ 95 = small sword (short sword, dagger)
+ 96 = large sword (long sword, bastard sword)
+ 97 = curved sword (scimitar, katana, wakizashi, ninjato)
  98 = two handed sword
  99 = polearms (spear, halberd)
 100 = staves
@@ -21,14 +20,14 @@ NEW RULES:
 */
 
 ACTION_DEFINE_ASSOCIATIVE_ARRAY cd_prof_numeric_map BEGIN
-	 89 => 95	// bastard sword > large sword
-	 90 => 95	// long sword > large sword
-	 91 => 94	// short sword > small sword
+	 89 => 96	// bastard sword > large sword
+	 90 => 96	// long sword > large sword
+	 91 => 95	// short sword > small sword
 	 92 => 104 // axe
 	 93 => 98	// 2h sword > 2h sword
-	 94 => 97	// katana > kara-tur sword
-	 95 => 96 // scimitar/waki/ninjato > scimitars *or* katana
-	 96 => 94	// dagger > small sword
+	 94 => 97	// katana > curved sword
+	 95 => 97 // scimitar/waki/ninjato > curved sword
+	 96 => 95	// dagger > small sword
 	 97 => 102 // hammer
 	 98 => 99	// spear > polearms
 	 99 => 99	// halberd > polearm
@@ -45,21 +44,21 @@ END
 
 ACTION_DEFINE_ASSOCIATIVE_ARRAY cd_prof_text_map BEGIN
 	AXE						=> 104
-	BASTARDSWORD			=> 95
+	BASTARDSWORD			=> 96
 	CLUB					=> 101
 	CROSSBOW				=> 106
-	DAGGER					=> 94
+	DAGGER					=> 95
 	DART					=> 107
 	FLAILMORNINGSTAR		=> 103
 	HALBERD					=> 99
 	KATANA					=> 97
 	LONGBOW					=> 105
-	LONGSWORD				=> 95
+	LONGSWORD				=> 96
 	MACE					=> 101
 	QUARTERSTAFF			=> 100
-	SCIMITARWAKISASHININJATO => 96
+	SCIMITARWAKISASHININJATO => 97
 	SHORTBOW				=> 105
-	SHORTSWORD				=> 94
+	SHORTSWORD				=> 95
 	SLING					=> 107
 	SPEAR					=> 99
 	TWOHANDEDSWORD			=> 98
@@ -70,17 +69,14 @@ DEFINE_PATCH_MACRO ~prof_descripts~ BEGIN
 
 	SPRINT new_weap ""
 	PATCH_MATCH ~%prof%~ WITH
-		94 BEGIN
+		95 BEGIN
 			SPRINT new_weap ~Small Sword~
 		END
-		95 BEGIN
+		96 BEGIN
 			SPRINT new_weap ~Large Sword~
 		END
-		96 BEGIN
-			SPRINT new_weap ~Scimitar~
-		END
 		97 BEGIN
-			SPRINT new_weap ~Oriental Sword~
+			SPRINT new_weap ~Curved Sword~
 		END
 		98 BEGIN
 			SPRINT new_weap ~Two Handed Sword~
@@ -139,14 +135,6 @@ COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~ // item changes
 			SET prof = 101
 		  END ELSE BEGIN
 			SET prof = 103
-		  END
-		END
-		PATCH_IF (current_prof = 100) BEGIN // scimitar / wakizashi / ninjato
-		  READ_ASCII 0x22 anim (2)
-		  PATCH_IF ("%anim%" STRING_COMPARE_REGEXP "[Ss][Cc]" = 0) BEGIN // scimitar
-			SET prof = 96
-		  END ELSE BEGIN
-			SET prof = 97 // scimitar
 		  END
 		END
 		WRITE_BYTE 0x31 prof // new prof
@@ -234,12 +222,12 @@ ACTION_FOR_EACH file IN weapprof racethac BEGIN
 				PATCH_IF (star_sswd < star_dagg) BEGIN SET star_sswd = star_dagg END // small swords
 				PATCH_IF (star_club < star_mace) BEGIN SET star_club = star_mace END // blunt
 				PATCH_IF (star_bast < star_lswd) BEGIN SET star_bast = star_lswd END // large swords
+				PATCH_IF (star_scim < star_kata) BEGIN SET star_kata = star_scim END // large swords
 				PATCH_IF (star_dart < star_slng) BEGIN SET star_dart = star_slng END // missile
 				PATCH_IF (star_sper < star_halb) BEGIN SET star_sper = star_halb END // spear
-				SET_2DA_ENTRY (skip_rows +  6) col col_num ~%star_sswd%~ //  94 = small sword (short sword, dagger)
-				SET_2DA_ENTRY (skip_rows +  7) col col_num ~%star_bast%~ //  95 = large sword (long sword, bastard sword)
-				SET_2DA_ENTRY (skip_rows +  8) col col_num ~%star_scim%~ //  96 = scimitar
-				SET_2DA_ENTRY (skip_rows +  9) col col_num ~%star_kata%~ //  97 = katana
+				SET_2DA_ENTRY (skip_rows +  7) col col_num ~%star_sswd%~ //  95 = small sword (short sword, dagger)
+				SET_2DA_ENTRY (skip_rows +  8) col col_num ~%star_bast%~ //  96 = large sword (long sword, bastard sword)
+				SET_2DA_ENTRY (skip_rows +  9) col col_num ~%star_kata%~ //  97 = curved sword (scimitar, katana, wakizashi, ninjato)
 				SET_2DA_ENTRY (skip_rows + 11) col col_num ~%star_2hsw%~ //  98 = two handed sword
 				SET_2DA_ENTRY (skip_rows + 12) col col_num ~%star_sper%~ //  99 = polearms (spear, halberd)
 				SET_2DA_ENTRY (skip_rows + 13) col col_num ~%star_staf%~ // 100 = staves
@@ -250,7 +238,7 @@ ACTION_FOR_EACH file IN weapprof racethac BEGIN
 				SET_2DA_ENTRY (skip_rows + 18) col col_num ~%star_lbow%~ // 105 = bows (long, short)
 				SET_2DA_ENTRY (skip_rows + 19) col col_num ~%star_xbow%~ // 106 = crossbow
 				SET_2DA_ENTRY (skip_rows + 20) col col_num ~%star_dart%~ // 107 = missile weapons (dart, sling)
-				FOR (row = (skip_rows + 1) ; row < (skip_rows + 6) ; ++row) BEGIN // eliminate unused profs
+				FOR (row = (skip_rows + 1) ; row < (skip_rows + 7) ; ++row) BEGIN // eliminate unused profs
 					SET_2DA_ENTRY row col col_num 0
 				END
 				SET_2DA_ENTRY skip_rows + 10 col col_num 0
@@ -258,26 +246,25 @@ ACTION_FOR_EACH file IN weapprof racethac BEGIN
 
 			// now read-and-shuffle other profs to correct lines
 			// final touchups to get descripts and row names correct; labels needed for both
-			SET_2DA_ENTRY (skip_rows +  6) label_col col_num SMALL_SWORD //  94 = small sword (short sword, dagger)
-			SET_2DA_ENTRY (skip_rows +  7) label_col col_num LARGE_SWORD //  95 = large sword (long sword, bastard sword)
-			SET_2DA_ENTRY (skip_rows +  8) label_col col_num SCIMITAR //  96 = scimitar
-			SET_2DA_ENTRY (skip_rows +  9) label_col col_num KATANA //  97 = katana
-			SET_2DA_ENTRY (skip_rows + 11) label_col col_num TWOHANDEDSWORD //  98 = two handed sword
-			SET_2DA_ENTRY (skip_rows + 12) label_col col_num SPEAR_HALBERD //  99 = polearms (spear, halberd)
-			SET_2DA_ENTRY (skip_rows + 13) label_col col_num STAFF // 100 = staves
+			SET_2DA_ENTRY (skip_rows +  7) label_col col_num SMALL_SWORD           //  94 = small sword (short sword, dagger)
+			SET_2DA_ENTRY (skip_rows +  8) label_col col_num LARGE_SWORD           //  95 = large sword (long sword, bastard sword)
+			SET_2DA_ENTRY (skip_rows +  9) label_col col_num CURVED_SWORD          //  97 = curved sword (scimitar, katana, wakizashi, ninjato)
+			SET_2DA_ENTRY (skip_rows + 11) label_col col_num TWOHANDEDSWORD        //  98 = two handed sword
+			SET_2DA_ENTRY (skip_rows + 12) label_col col_num SPEAR_HALBERD         //  99 = polearms (spear, halberd)
+			SET_2DA_ENTRY (skip_rows + 13) label_col col_num STAFF                 // 100 = staves
 			SET_2DA_ENTRY (skip_rows + 14) label_col col_num MACE_CLUB_MORNINGSTAR // 101 = maces (mace, club, morning star)
-			SET_2DA_ENTRY (skip_rows + 15) label_col col_num WARHAMMER // 102 = warhammers
-			SET_2DA_ENTRY (skip_rows + 16) label_col col_num FLAIL // 103 = flails
-			SET_2DA_ENTRY (skip_rows + 17) label_col col_num AXE // 104 = axe
-			SET_2DA_ENTRY (skip_rows + 18) label_col col_num BOW // 105 = bows (long, short)
-			SET_2DA_ENTRY (skip_rows + 19) label_col col_num CROSSBOW // 106 = crossbow
-			SET_2DA_ENTRY (skip_rows + 20) label_col col_num DART_SLING // 107 = missile weapons (dart, sling)
-			FOR (row = (skip_rows + 1) ; row < (skip_rows + 6) ; ++row) BEGIN // eliminate first profs
+			SET_2DA_ENTRY (skip_rows + 15) label_col col_num WARHAMMER             // 102 = warhammers
+			SET_2DA_ENTRY (skip_rows + 16) label_col col_num FLAIL                 // 103 = flails
+			SET_2DA_ENTRY (skip_rows + 17) label_col col_num AXE                   // 104 = axe
+			SET_2DA_ENTRY (skip_rows + 18) label_col col_num BOW                   // 105 = bows (long, short)
+			SET_2DA_ENTRY (skip_rows + 19) label_col col_num CROSSBOW              // 106 = crossbow
+			SET_2DA_ENTRY (skip_rows + 20) label_col col_num DART_SLING            // 107 = missile weapons (dart, sling)
+			FOR (row = (skip_rows + 1) ; row < (skip_rows + 7) ; ++row) BEGIN // eliminate first profs
 				SET_2DA_ENTRY row label_col col_num UNUSED // ref
 			END
 			SET_2DA_ENTRY skip_rows + 10 label_col col_num UNUSED // ref
-			SET cd_94_name = RESOLVE_STR_REF(~Small Sword~)
-			SET cd_94_desc = RESOLVE_STR_REF(~SMALL SWORDS: This weapon class allows the character to use short swords and daggers. Druids can choose this category, but are restricted to daggers only.
+			SET cd_95_name = RESOLVE_STR_REF(~Small Sword~)
+			SET cd_95_desc = RESOLVE_STR_REF(~SMALL SWORDS: This weapon class allows the character to use short swords and daggers. Druids can choose this category, but are restricted to daggers only.
 
 <DOTS1>
 
@@ -288,8 +275,8 @@ ACTION_FOR_EACH file IN weapprof racethac BEGIN
 <DOTS4>
 
 <DOTS5>~)
-			SET cd_95_name = RESOLVE_STR_REF(~Large Sword~)
-			SET cd_95_desc = RESOLVE_STR_REF(~LARGE SWORDS: This weapon class allows the character to use bastard swords and long swords. Thieves can choose this category, but are restricted to long swords only.
+			SET cd_96_name = RESOLVE_STR_REF(~Large Sword~)
+			SET cd_96_desc = RESOLVE_STR_REF(~LARGE SWORDS: This weapon class allows the character to use bastard swords and long swords. Thieves can choose this category, but are restricted to long swords only.
 
 <DOTS1>
 
@@ -300,20 +287,8 @@ ACTION_FOR_EACH file IN weapprof racethac BEGIN
 <DOTS4>
 
 <DOTS5>~)
-			SET cd_96_name = RESOLVE_STR_REF(~Scimitars~)
-			SET cd_96_desc = RESOLVE_STR_REF(~SCIMITARS: This weapon class allows the character to use scimitars.
-
-<DOTS1>
-
-<DOTS2>
-
-<DOTS3>
-
-<DOTS4>
-
-<DOTS5>~)
-			SET cd_97_name = RESOLVE_STR_REF(~Katanas~)
-			SET cd_97_desc = RESOLVE_STR_REF(~Katanas: This weapon class allows the character to use katanas.
+			SET cd_97_name = RESOLVE_STR_REF(~Curved Sword~)
+			SET cd_97_desc = RESOLVE_STR_REF(~CURVED SWORDS: This weapon class allows the character to use scimitars and katanas.
 
 <DOTS1>
 
@@ -445,13 +420,13 @@ ACTION_FOR_EACH file IN weapprof racethac BEGIN
 
 <DOTS5>~)
 			PATCH_IF (col_start = 4) BEGIN // descript updates only needed for weapprof
-				FOR (row = (skip_rows + 1) ; row < (skip_rows + 6) ; ++row) BEGIN // eliminate first profs
+				FOR (row = (skip_rows + 1) ; row < (skip_rows + 7) ; ++row) BEGIN // eliminate first profs
 					SET_2DA_ENTRY row 2 col_num 0 // ref
 					SET_2DA_ENTRY row 3 col_num 0 // ref
 				END
 				SET_2DA_ENTRY skip_rows + 10 2 col_num 0 // ref
 				SET_2DA_ENTRY skip_rows + 10 3 col_num 0 // ref
-				FOR (row = (skip_rows + 6) ; row < (skip_rows + 10) ; ++row) BEGIN // eliminate first profs
+				FOR (row = (skip_rows + 7) ; row < (skip_rows + 10) ; ++row) BEGIN // eliminate first profs
 					profcode = 80 + row
 					SET_2DA_ENTRY row 2 col_num EVALUATE_BUFFER ~cd_%profcode%_name~ // ref
 					SET_2DA_ENTRY row 3 col_num EVALUATE_BUFFER ~cd_%profcode%_desc~ // ref
@@ -484,10 +459,9 @@ END
 
 COPY_EXISTING ~stats.ids~ ~override~
 	REPLACE_TEXTUALLY ~^\(89\|9[0-9]\|115\)[ %TAB%]+.+$~ ~\1 UNUSEDPROF\1~
-	REPLACE_TEXTUALLY ~^\(94[ %TAB%]+\).+$~ ~\1PROFICIENCY_SMALL_SWORD~
-	REPLACE_TEXTUALLY ~^\(95[ %TAB%]+\).+$~ ~\1PROFICIENCY_LARGE_SWORD~
-	REPLACE_TEXTUALLY ~^\(96[ %TAB%]+\).+$~ ~\1PROFICIENCY_SCIMITAR~
-	REPLACE_TEXTUALLY ~^\(97[ %TAB%]+\).+$~ ~\1PROFICIENCY_KATANA~
+	REPLACE_TEXTUALLY ~^\(95[ %TAB%]+\).+$~ ~\1PROFICIENCY_SMALL_SWORD~
+	REPLACE_TEXTUALLY ~^\(96[ %TAB%]+\).+$~ ~\1PROFICIENCY_LARGE_SWORD~
+	REPLACE_TEXTUALLY ~^\(97[ %TAB%]+\).+$~ ~\1PROFICIENCY_CURVED_SWORD~
 	REPLACE_TEXTUALLY ~^\(98[ %TAB%]+\).+$~ ~\1PROFICIENCY_TWOHANDEDSWORD~
 	REPLACE_TEXTUALLY ~^\(99[ %TAB%]+\).+$~ ~\1PROFICIENCY_SPEAR_HALBERD~
 	REPLACE_TEXTUALLY ~^\(100[ %TAB%]+\).+$~ ~\1PROFICIENCY_STAFF~
@@ -501,16 +475,15 @@ COPY_EXISTING ~stats.ids~ ~override~
 
 // for old ids references, add dupe entries
 // extra append of new name is extraneous but makes compile/decompile easier
-APPEND ~stats.ids~ ~94 PROFICIENCYDAGGER
-94 PROFICIENCYSHORTSWORD
-94 PROFICIENCY_SMALL_SWORD
-95 PROFICIENCYBASTARDSWORD
-95 PROFICIENCYLONGSWORD
-95 PROFICIENCYLARGE_SWORD
-96 PROFICIENCYSCIMITARWAKISASHININJATO
-96 PROFICIENCY_SCIMITAR
+APPEND ~stats.ids~ ~95 PROFICIENCYDAGGER
+95 PROFICIENCYSHORTSWORD
+95 PROFICIENCY_SMALL_SWORD
+96 PROFICIENCYBASTARDSWORD
+96 PROFICIENCYLONGSWORD
+96 PROFICIENCYLARGE_SWORD
+97 PROFICIENCYSCIMITARWAKISASHININJATO
 97 PROFICIENCYKATANA
-97 PROFICIENCY_KATANA
+97 PROFICIENCY_CURVED_SWORD
 98 PROFICIENCYTWOHANDEDSWORD
 98 PROFICIENCY_TWOHANDEDSWORD
 99 PROFICIENCYHALBERD
