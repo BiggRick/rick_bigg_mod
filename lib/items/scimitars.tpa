@@ -1,3 +1,76 @@
+//SCIMITAR +1 - 1500mo//
+COPY "rick_bigg_mod/items/SW1H22.itm" "override"
+	SAY NAME1 "Scimitar"
+	SAY UNIDENTIFIED_DESC "The long, curved, single-edged blade is characteristic of both the saber and the scimitar, even though their origins lie in different parts of Faerûn. Whereas the saber was intended chiefly for horsemen, mainly due to its versatility, the scimitar has a heavier oriental influence. The 'shamshir', as it was originally called, is larger, more highly curved, and tapered to an elongated, sharp point. This makes the weapon slightly slower but more effective and deadly in combat.
+
+STATISTICS:
+
+Damage: 2d4 (slashing)
+Speed Factor: 6
+Proficiency Type: Scimitar/Wakizashi/Ninjatō
+Type: One-handed
+Requires:
+ 13 Strength
+
+Weight: 4"
+
+	SAY NAME2 "Scimitar +1"
+	SAY DESC "The scimitar, or "shamshir" as it was originally called, has a single-edged blade with a significant curve and is tapered to an elongated, sharp point. It is perhaps slower than other weapons of the same type, though it compensates by the amount of damage it is capable of. 
+	This particular weapon has been enhanced magically to complement the skill of the wielder.
+
+STATISTICS:
+
+THAC0: +1
+Damage: 2d4+1 (slashing)
+Speed Factor: 5
+Proficiency Type: Scimitar/Wakizashi/Ninjatō
+Type: One-handed
+Requires:
+ 13 Strength
+
+Weight: 3"
+
+
+
+
+
+//SCIMITAR +2 - 2500mo//
+COPY "rick_bigg_mod/items/BDSW1H23.itm" "override"
+	SAY NAME1 "Scimitar"
+	SAY UNIDENTIFIED_DESC "The long, curved, single-edged blade is characteristic of both the saber and the scimitar, even though their origins lie in different parts of Faerûn. Whereas the saber was intended chiefly for horsemen, mainly due to its versatility, the scimitar has a heavier oriental influence. The 'shamshir', as it was originally called, is larger, more highly curved, and tapered to an elongated, sharp point. This makes the weapon slightly slower but more effective and deadly in combat.
+
+STATISTICS:
+
+Damage: 2d4 (slashing)
+Speed Factor: 6
+Proficiency Type: Scimitar/Wakizashi/Ninjatō
+Type: One-handed
+Requires:
+ 13 Strength
+
+Weight: 4"
+
+	SAY NAME2 "Scimitar +2"
+	SAY DESC "The scimitar, or "shamshir" as it was originally called, has a single-edged blade with a significant curve and is tapered to an elongated, sharp point. It is perhaps slower than other weapons of the same type, though it compensates by the amount of damage it is capable of. 
+	This particular weapon has been enhanced magically to complement the skill of the wielder.
+
+STATISTICS:
+
+THAC0: +2
+Damage: 2d4+2 (slashing)
+Speed Factor: 4
+Proficiency Type: Scimitar/Wakizashi/Ninjatō
+Type: One-handed
+Requires:
+ 13 Strength
+
+Weight: 3"
+
+
+
+
+
+
 //HAWKSIGHT +2 - 5000mo//
 COPY "rick_bigg_mod/items/OHRSW1H1.itm" "override"
 	SAY NAME1 "Scimitar"
@@ -151,7 +224,7 @@ Weight: 4"
 
 
 
-//BELM +3//
+//BELM +3 - 8000mo//
 COPY "rick_bigg_mod/items/SW1H30.itm" "override"
 	SAY NAME1 "Scimitar"
 	SAY UNIDENTIFIED_DESC "The long, curved, single-edged blade is characteristic of both the saber and the scimitar, even though their origins lie in different parts of Faerûn. Whereas the saber was intended chiefly for horsemen, mainly due to its versatility, the scimitar has a heavier oriental influence. The 'shamshir', as it was originally called, is larger, more highly curved, and tapered to an elongated, sharp point. This makes the weapon slightly slower but more effective and deadly in combat.
@@ -227,7 +300,47 @@ Weight: 2"
 
 
 
-//SPECTRAL BLADE +5//
+//SPECTRAL BLADE +4 - 9500mo/
+COPY "rick_bigg_mod/items/SW1H68.itm" "override"
+	SAY NAME1 "Scimitar"
+	SAY UNIDENTIFIED_DESC "The long, curved, single-edged blade is characteristic of both the saber and the scimitar, even though their origins lie in different parts of Faerûn. Whereas the saber was intended chiefly for horsemen, mainly due to its versatility, the scimitar has a heavier oriental influence. The 'shamshir', as it was originally called, is larger, more highly curved, and tapered to an elongated, sharp point. This makes the weapon slightly slower but more effective and deadly in combat.
+
+STATISTICS:
+
+Damage: 2d4 (slashing)
+Speed Factor: 6
+Proficiency Type: Scimitar/Wakizashi/Ninjatō
+Type: One-handed
+Requires:
+ 13 Strength
+
+Weight: 4"
+
+	SAY NAME2 "Spectral Blade +4"
+	SAY DESC "Legend has it that the souls of those who fall beneath this dark blade are forever enslaved, and can be summoned to fight invisibly at the side of the very one who defeated them.
+	
+STATISTICS:
+
+Charge abilities:
+– Summon Spectral Blade once per day
+  This dancing sword fights on behalf of the one who wields Spectral Brand for 4 rounds, attacking once per round and doing 1d8+3 slashing damage with each hit.
+
+THAC0: +4
+Damage: 2d4+4, +1d8 cold damage
+Damage type: Slashing
+Speed Factor: 2
+Proficiency Type: Scimitar/Wakizashi/Ninjatō
+Type: One-handed
+Requires:
+ 13 Strength
+
+Weight: 2"
+
+
+
+
+
+//SPECTRAL BLADE +5 - 16000mo//
 COPY "rick_bigg_mod/items/SW1H69.itm" "override"
 	SAY NAME1 "Scimitar"
 	SAY UNIDENTIFIED_DESC "The long, curved, single-edged blade is characteristic of both the saber and the scimitar, even though their origins lie in different parts of Faerûn. Whereas the saber was intended chiefly for horsemen, mainly due to its versatility, the scimitar has a heavier oriental influence. The 'shamshir', as it was originally called, is larger, more highly curved, and tapered to an elongated, sharp point. This makes the weapon slightly slower but more effective and deadly in combat.
@@ -244,7 +357,8 @@ Requires:
 Weight: 4"
 
 	SAY NAME2 "Spectral Blade +5"
-	SAY DESC "Drawing on the necromancy of the Skull of the Lich, Spectral Brand is now an instrument of unholy death that should never have been unleashed upon the realms.
+	SAY DESC "Legend has it that the souls of those who fall beneath this dark blade are forever enslaved, and can be summoned to fight invisibly at the side of the very one who defeated them.
+	Drawing on the necromancy of the Skull of the Lich, Spectral Brand is now an instrument of unholy death that should never have been unleashed upon the realms.
 
 STATISTICS:
 
@@ -255,20 +369,16 @@ Combat abilities:
 - -10% Slashing and Cold Damage Resistance on target for 2 rounds
 
 Charge abilities:
-– Armor Piercing Strike once per day
-  Special: +10 THAC0 bonus
-  Duration: 3 rounds
-
 – Summon Spectral Blade once per day
   This dancing sword fights on behalf of the one who wields Spectral Brand for 4 rounds, attacking once per round and doing 1d8+3 slashing damage with each hit.
 
 THAC0: +5
-Damage: 2d4+6, +1d6 cold damage
+Damage: 2d4+5, +1d8 cold damage
 Damage type: Slashing
-Speed Factor: 0
+Speed Factor: 1
 Proficiency Type: Scimitar/Wakizashi/Ninjatō
 Type: One-handed
 Requires:
- 8 Strength
+ 13 Strength
 
 Weight: 2"
