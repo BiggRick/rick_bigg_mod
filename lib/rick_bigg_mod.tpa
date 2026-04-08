@@ -9,5 +9,6 @@ INCLUDE ~rick_bigg_mod/lib/creatures.tpa~
 
 INCLUDE ~rick_bigg_mod/lib/races.tpa~
 INCLUDE ~rick_bigg_mod/lib/styles.tpa~
+INCLUDE ~rick_bigg_mod/lib/weapon_rules.tpa~
 INCLUDE ~rick_bigg_mod/lib/weaponproficiencies.tpa~
 
