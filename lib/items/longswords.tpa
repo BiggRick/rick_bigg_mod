@@ -360,4 +360,51 @@ Weight: 3
 
 
 
+//EMERALD SWORD +5 - valore 15000mo //
+COPY "rick_bigg_mod/items/BDSW1H05.itm" "override"
+	SAY NAME1 "Long Sword"
+	SAY UNIDENTIFIED_DESC "These swords are usually referred to as double-edged swords, war swords, or military swords. In many cases, the long sword has a single-edged blade. There is no single version of the long sword; the design and length vary from culture to culture and may vary within the same culture depending on the era. Among the most common characteristics of all long swords is their length, which ranges from thirty-five inches to forty-seven inches. In the latter case, the blade is known to take up forty inches of the total length. Most long swords have a double-edged blade and a sharp point at the tip. Despite the tip, the long sword is designed for slashing, not thrusting.
+
+STATISTICS:
+
+Damage: 1d8 (slashing or piercing)
+Speed Factor: 5
+Proficiency Type: Long Sword
+Type: One-handed
+Requires:
+ 9 Strength
+
+Weight: 4"
+
+	SAY NAME2 "Emerald Sword +5"
+	SAY DESC "
+
+STATISTICS:
+
+Equipped abilities:
+– Lore: +50
+- Immunity to Hold and Charme
+- Negative Plane protection
+- Saving Throws vs. Necromancy: +4
+
+Combat abilities:
+- On a critical miss cast Enhanced Bard Song
+
+THAC0: +5
+Damage: 1d8+5, +5 vs. Undead and Necromancers
+Damage type: Slashing or Piercing
+Speed Factor: 1
+Proficiency Type: Long Sword
+Type: One-handed
+Requires:
+ 9 Strength
+
+Weight: 3
+"
+
+
+
+
+
+
 

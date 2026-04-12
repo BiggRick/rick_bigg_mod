@@ -1,3 +1,148 @@
+//PLATE MAIL +1 - 4000mo//
+COPY "rick_bigg_mod/items/PLAT10.itm" "override"
+	SAY NAME1 "Plate Mail"
+	SAY UNIDENTIFIED_DESC "Plate mail is a combination of chain armor with metal plates covering the vital areas such as the chest, abdomen, and groin. Similar in construction to bronze plate mail, true plate mail comprises chain and leather.
+
+STATISTICS:
+
+Armor Class: 3 (0 vs. slashing, 2 vs. piercing and missile)
+Speed Factor: -3
+
+Requires:
+ 14 Strength
+
+Weight: 50"
+
+	SAY NAME2 "Plate Mail +1"
+	SAY DESC "Plate mail is a combination of chain armor with metal plates covering the vital areas such as the chest, abdomen and groin. Similar in construction to bronze plate mail, true plate mail comprises chain and leather. 
+	In addition, this suit of plate mail is enchanted and gives additional bonuses to the wearer's Armor Class.
+
+STATISTICS:
+
+Armor Class: 2 (-1 vs. slashing, 1 vs. piercing and missile)
+Speed Factor: -3
+
+Requires:
+ 14 Strength
+
+Weight: 40
+"
+
+
+
+
+//PLATE MAIL +2 - 5500mo//
+COPY "rick_bigg_mod/items/OHPLAT50.itm" "override"
+	SAY NAME1 "Plate Mail"
+	SAY UNIDENTIFIED_DESC "Plate mail is a combination of chain armor with metal plates covering the vital areas such as the chest, abdomen, and groin. Similar in construction to bronze plate mail, true plate mail comprises chain and leather.
+
+STATISTICS:
+
+Armor Class: 3 (0 vs. slashing, 2 vs. piercing and missile)
+Speed Factor: -3
+
+Requires:
+ 14 Strength
+
+Weight: 50"
+
+	SAY NAME2 "Plate Mail +2"
+	SAY DESC "Plate mail is a combination of chain armor with metal plates covering the vital areas such as the chest, abdomen and groin. Similar in construction to bronze plate mail, true plate mail comprises chain and leather. 
+	In addition, this suit of plate mail is enchanted and gives additional bonuses to the wearer's Armor Class.
+
+STATISTICS:
+
+Armor Class: 1 (-2 vs. slashing, 0 vs. piercing and missile)
+Speed Factor: -3
+
+Requires:
+ 14 Strength
+
+Weight: 30
+"
+
+
+
+
+
+
+//ANKHEG PLATE MAIL +1 - 6000mo//
+COPY "rick_bigg_mod/items/PLAT06_.itm" "override"
+	SAY NAME1 "Plate Mail"
+	SAY UNIDENTIFIED_DESC "Plate mail is a combination of chain armor with metal plates covering the vital areas such as the chest, abdomen, and groin. Similar in construction to bronze plate mail, true plate mail comprises chain and leather.
+
+STATISTICS:
+
+Armor Class: 3 (0 vs. slashing, 2 vs. piercing and missile)
+Speed Factor: -3
+
+Requires:
+ 14 Strength
+
+Weight: 50"
+
+	SAY NAME2 "Ankheg Plate Mail +1"
+	SAY DESC "This plate mail has been expertly crafted by Taerom Fuiruim of Beregost. Sheathed in the chitinous scales of the ankheg, it provides a greater degree of protection than traditional plate mail and is not susceptible to rust. As any world-weary adventurer will tell you, however, the best appreciated aspect of ankheg mail is its light weight and low encumbrance. Monsters come and go, but fatigue is a constant enemy.
+
+STATISTICS:
+
+Armor Class: 2 (-1 vs. slashing, 1 vs. piercing and missile)
+Speed Factor: -3
+
+Requires:
+ 8 Strength
+
+Weight: 20
+"
+
+
+
+
+
+
+//ANKHEG PLATE MAIL +1 - 7500mo//
+COPY "rick_bigg_mod/items/PLAT06.itm" "override"
+	SAY NAME1 "Plate Mail"
+	SAY UNIDENTIFIED_DESC "Plate mail is a combination of chain armor with metal plates covering the vital areas such as the chest, abdomen, and groin. Similar in construction to bronze plate mail, true plate mail comprises chain and leather.
+
+STATISTICS:
+
+Armor Class: 3 (0 vs. slashing, 2 vs. piercing and missile)
+Speed Factor: -3
+
+Requires:
+ 14 Strength
+
+Weight: 50"
+
+	SAY NAME2 "Ankheg Plate Mail +2"
+	SAY DESC "This plate mail has been expertly crafted. Sheathed in the chitinous scales of the ankheg, it provides a greater degree of protection than traditional plate mail and is not susceptible to rust. As any world-weary adventurer will tell you, however, the best appreciated aspect of ankheg mail is its light weight and low encumbrance. 
+	Monsters come and go, but fatigue is a constant enemy.
+	
+STATISTICS:
+
+Armor Class: 1 (-2 vs. slashing, 0 vs. piercing and missile)
+Speed Factor: -3
+
+Requires:
+ 8 Strength
+
+Weight: 20
+"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //THE PRACTICAL DEFENSE + 2 - 7500mo//
 COPY "rick_bigg_mod/items/PLAT08.itm" "override"
 	SAY NAME1 "Plate Mail"
@@ -5,7 +150,7 @@ COPY "rick_bigg_mod/items/PLAT08.itm" "override"
 
 STATISTICS:
 
-Armor Class: 3 (0 vs. slashing, 1 vs. piercing and missile)
+Armor Class: 3 (0 vs. slashing, 2 vs. piercing and missile)
 Speed Factor: -3
 
 Requires:
@@ -22,7 +167,7 @@ STATISTICS:
 Equipped abilities:
 - +1 Charisma
 
-Armor Class: 1 (-2 vs. slashing, -1 vs. piercing and missile)
+Armor Class: 1 (-2 vs. slashing, 0 vs. piercing and missile)
 Speed Factor: -1
 
 Requires:
@@ -34,16 +179,50 @@ Weight: 18
 
 
 
+//DELVER'S PLATE MAIL +2 - 7500mo//
+COPY "rick_bigg_mod/items/PLAT11.itm" "override"
+	SAY NAME1 "Plate Mail"
+	SAY UNIDENTIFIED_DESC "Plate mail is a combination of chain armor with metal plates covering the vital areas such as the chest, abdomen, and groin. Similar in construction to bronze plate mail, true plate mail comprises chain and leather.
+
+STATISTICS:
+
+Armor Class: 3 (0 vs. slashing, 2 vs. piercing and missile)
+Speed Factor: -3
+
+Requires:
+ 14 Strength
+
+Weight: 50"
+
+	SAY NAME2 "Delver's Plate Mail +2"
+	SAY DESC "This armor has been worn by many a fine soldier, but among the best known, and for whom it was named, was Delver Kinlake. He was a vagabond whose strong sword arm and keen wits made him a respected general to the Lords of Waterdeep. 
+	A gift from Lord Baeron, the armor served Delver well for thirty years, and after his death, it passed to his eldest son. It has since made its way into the hands of a variety of adventurers.
+	
+STATISTICS:
+
+Equipped abilities:
+– Save vs. Spell and save vs. Wand: +2
+
+Armor Class: 1 (-2 vs. slashing, 0 vs. piercing and missile)
+Speed Factor: -3
+
+Requires:
+ 14 Strength
+
+Weight: 25
+"
 
 
-//DOOMPLATE +3 - 8500mo//
+
+
+//DOOMPLATE +3 - 8000mo//
 COPY "rick_bigg_mod/items/PLAT12.itm" "override"
 	SAY NAME1 "Plate Mail"
 	SAY UNIDENTIFIED_DESC "Plate mail is a combination of chain armor with metal plates covering the vital areas such as the chest, abdomen, and groin. Similar in construction to bronze plate mail, true plate mail comprises chain and leather.
 
 STATISTICS:
 
-Armor Class: 3 (0 vs. slashing, 1 vs. piercing and missile)
+Armor Class: 3 (0 vs. slashing, 2 vs. piercing and missile)
 Speed Factor: -3
 
 Requires:
@@ -57,15 +236,89 @@ Weight: 50"
 STATISTICS:
 
 Equipped abilities:
-- +2 all Saving Throws
 - -1 Luck
 - 20% chance to cast Cloak of Fear when hit
 
-Armor Class: 0 (-3 vs. slashing, -2 vs. piercing and missile)
+Armor Class: 0 (-3 vs. slashing, -1 vs. piercing and missile)
 Speed Factor: -3
 
 Requires:
  14 Strength
 
 Weight: 27
+"
+
+
+
+
+
+//RED DRAGON SCALE +4 - 13000mo//
+COPY "rick_bigg_mod/items/PLAT18.itm" "override"
+	SAY NAME1 "Plate Mail"
+	SAY UNIDENTIFIED_DESC "Plate mail is a combination of chain armor with metal plates covering the vital areas such as the chest, abdomen, and groin. Similar in construction to bronze plate mail, true plate mail comprises chain and leather.
+
+STATISTICS:
+
+Armor Class: 3 (0 vs. slashing, 2 vs. piercing and missile)
+Speed Factor: -3
+
+Requires:
+ 14 Strength
+
+Weight: 50"
+
+	SAY NAME2 "Red Dragon Scale +4"
+	SAY DESC "Dragon scale armor is light of weight, strong, and resistant to fire. Because of these properties, it is much sought after, but finding, let alone slaying, a powerful ancient dragon is near impossible. It is usually easier to search for an existing suit, such as this one. One should be careful wearing it near dragons, however, particularly red ones.
+
+STATISTICS:
+
+Equipped abilities:
+– Fire Resistance: +50%
+- Saving throws vs. Breath: +2
+
+Armor Class: -1 (-4 vs. slashing, -2 vs. piercing and missile)
+Speed Factor: -3
+
+Requires:
+ 14 Strength
+
+Weight: 27
+"
+
+
+
+
+
+
+//BLUE DRAGON SCALE +5 - 15000mo//
+COPY "rick_bigg_mod/items/PLAT20.itm" "override"
+	SAY NAME1 "Plate Mail"
+	SAY UNIDENTIFIED_DESC "Plate mail is a combination of chain armor with metal plates covering the vital areas such as the chest, abdomen, and groin. Similar in construction to bronze plate mail, true plate mail comprises chain and leather.
+
+STATISTICS:
+
+Armor Class: 3 (0 vs. slashing, 2 vs. piercing and missile)
+Speed Factor: -3
+
+Requires:
+ 14 Strength
+
+Weight: 50"
+
+	SAY NAME2 "Blue Dragon Scale +5"
+	SAY DESC "The light but durable scales of the blue dragon provide excellent protection against weapons and all forms of electricity.
+	
+STATISTICS:
+
+Equipped abilities:
+– Electrical Resistance: +60%
+- AC bonus vs. Piercing and Missile: +3
+
+Armor Class: -2 (-5 vs. slashing, -6 vs. piercing and missile)
+Speed Factor: -3
+
+Requires:
+ 14 Strength
+
+Weight: 25
 "
