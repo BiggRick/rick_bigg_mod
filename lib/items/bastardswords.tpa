@@ -431,3 +431,47 @@ Requires:
  15 Strength
 
 Weight: 7"
+
+
+
+
+
+
+//ANDURIL +5 - valore 19000mo//
+COPY "rick_bigg_mod/items/SW1H65.itm" "override"
+	SAY NAME1 "Bastard Sword"
+	SAY UNIDENTIFIED_DESC "Also known as the hand-and-a-half sword, the bastard sword derives its name from the fact that it is halfway between the two-handed sword and the long sword. The bastard sword has a double-edged blade and a long grip, which can accommodate both hands if preferred. The overall length of the bastard sword ranges between four feet and four feet ten inches.
+
+STATISTICS:
+
+Damage: 2d4+1 (slashing)
+Speed Factor: 8
+Proficiency Type: Bastard Sword
+Type: One-handed
+Requires:
+ 15 Strength
+
+Weight: 10"
+
+	SAY NAME2 "Anduril +5"
+	SAY DESC "
+
+STATISTICS:
+
+Equipped abilities:
+– Magic resistance: +20%
+- Critical hit chance: +15% (only with this weapon)
+
+Combat abilities:
+- On a critical hit deals 10 Magic damage
+
+THAC0: always hits
+Damage: 2d4+6
+Damage type: Slashing
+Speed Factor: 3
+Proficiency Type: Bastard Sword
+Type: One-handed
+Requires:
+ 15 Strength
+
+Weight: 5"
