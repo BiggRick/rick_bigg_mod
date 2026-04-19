@@ -134,7 +134,7 @@ Weight: 4"
 STATISTICS:
 
 Charge abilities:
-– Silence, 15' Radius three times per day (Save vs. Spell at -5 to negate)
+– Silence, 15' Radius once per day (Save vs. Wand at -4 to negate)
   Duration: 1 turn
 
 THAC0: +2
@@ -195,7 +195,7 @@ Weight: 3"
 
 
 
-//BLADE OF SEARING +4 - valore 7500mo//
+//SLASHING BLADE +4 - valore 7500mo//
 COPY "rick_bigg_mod/items/SW1H39.itm" "override"
 	SAY NAME1 "Long Sword"
 	SAY UNIDENTIFIED_DESC "These swords are usually referred to as double-edged swords, war swords, or military swords. In many cases, the long sword has a single-edged blade. There is no single version of the long sword; the design and length vary from culture to culture and may vary within the same culture depending on the era. Among the most common characteristics of all long swords is their length, which ranges from thirty-five inches to forty-seven inches. In the latter case, the blade is known to take up forty inches of the total length. Most long swords have a double-edged blade and a sharp point at the tip. Despite the tip, the long sword is designed for slashing, not thrusting.
@@ -211,13 +211,17 @@ Requires:
 
 Weight: 4"
 
-	SAY NAME2 "Blade of Searing +4"
-	SAY DESC "The benefits inherent in this sword are plain to see: It is exceptionally accurate, and a lick of acid follows every blow, searing the target in addition to the normal damage received. It is an efficient troll-killer, though it has not yet been heralded as such in song or legend.
+	SAY NAME2 "Slashing Blade +4"
+	SAY DESC ": The benefits inherent in this sword are plain to see: it is extremely sharp, and all the enchantments placed on it enhance its cutting abilities.
+Some say it was even capable of cutting through full plate armor.
 
 STATISTICS:
 
+Combat abilities:
+- +4 THAC0 (only with this weapon)
+
 THAC0: +4
-Damage: 1d8+4, +3 acid damage
+Damage: 1d8+4
 Damage type: Slashing or Piercing
 Speed Factor: 1
 Proficiency Type: Long Sword
@@ -232,7 +236,7 @@ Weight: 3"
 
 
 
-//EQUALIZER +3 - valore 15000mo//
+//EQUALIZER +3 - valore 13000mo//
 COPY "rick_bigg_mod/items/SW1H54.itm" "override"
 	SAY NAME1 "Long Sword"
 	SAY UNIDENTIFIED_DESC "These swords are usually referred to as double-edged swords, war swords, or military swords. In many cases, the long sword has a single-edged blade. There is no single version of the long sword; the design and length vary from culture to culture and may vary within the same culture depending on the era. Among the most common characteristics of all long swords is their length, which ranges from thirty-five inches to forty-seven inches. In the latter case, the blade is known to take up forty inches of the total length. Most long swords have a double-edged blade and a sharp point at the tip. Despite the tip, the long sword is designed for slashing, not thrusting.
@@ -382,9 +386,7 @@ Weight: 4"
 STATISTICS:
 
 Equipped abilities:
-– Lore: +50
 - Immunity to Hold and Charme
-- Negative Plane protection
 - Saving Throws vs. Necromancy: +4
 
 Combat abilities:

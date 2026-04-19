@@ -246,7 +246,7 @@ Weight: 3"
 STATISTICS:
 
 Combat abilities:
-– 15% chance per hit target will take an additional 15 points of fire damage
+– 15% chance per hit target will take an additional 10 points of fire damage
 – 10% chance per hit a 15-ft. radius fireball will automatically detonate (5d6 fire damage; Save vs. Spell for half)
 
 THAC0: +3
@@ -289,8 +289,8 @@ Equipped abilities:
 – Fire Resistance: +40%
 
 Combat abilities:
-– 25% chance per hit target will take an additional 15 points of fire damage
-– 5% chance per hit a 15-ft. radius fireball will automatically detonate (10d6 fire damage; Save vs. Spell for half)
+– 25% chance per hit target will take an additional 10 points of fire damage
+– 5% chance per hit a 15-ft. radius fireball will automatically detonate (5d6 fire damage; Save vs. Spell for half)
 
 THAC0: +5
 Damage: 1d6+5, +5 fire damage

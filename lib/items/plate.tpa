@@ -7,7 +7,6 @@ STATISTICS:
 
 Armor Class: 3 (0 vs. slashing, 2 vs. piercing and missile)
 Speed Factor: -3
-
 Requires:
  14 Strength
 
@@ -21,7 +20,6 @@ STATISTICS:
 
 Armor Class: 2 (-1 vs. slashing, 1 vs. piercing and missile)
 Speed Factor: -3
-
 Requires:
  14 Strength
 
@@ -40,7 +38,6 @@ STATISTICS:
 
 Armor Class: 3 (0 vs. slashing, 2 vs. piercing and missile)
 Speed Factor: -3
-
 Requires:
  14 Strength
 
@@ -54,7 +51,6 @@ STATISTICS:
 
 Armor Class: 1 (-2 vs. slashing, 0 vs. piercing and missile)
 Speed Factor: -3
-
 Requires:
  14 Strength
 
@@ -75,7 +71,6 @@ STATISTICS:
 
 Armor Class: 3 (0 vs. slashing, 2 vs. piercing and missile)
 Speed Factor: -3
-
 Requires:
  14 Strength
 
@@ -88,7 +83,6 @@ STATISTICS:
 
 Armor Class: 2 (-1 vs. slashing, 1 vs. piercing and missile)
 Speed Factor: -3
-
 Requires:
  8 Strength
 
@@ -109,7 +103,6 @@ STATISTICS:
 
 Armor Class: 3 (0 vs. slashing, 2 vs. piercing and missile)
 Speed Factor: -3
-
 Requires:
  14 Strength
 
@@ -123,7 +116,6 @@ STATISTICS:
 
 Armor Class: 1 (-2 vs. slashing, 0 vs. piercing and missile)
 Speed Factor: -3
-
 Requires:
  8 Strength
 
@@ -152,7 +144,6 @@ STATISTICS:
 
 Armor Class: 3 (0 vs. slashing, 2 vs. piercing and missile)
 Speed Factor: -3
-
 Requires:
  14 Strength
 
@@ -169,9 +160,8 @@ Equipped abilities:
 
 Armor Class: 1 (-2 vs. slashing, 0 vs. piercing and missile)
 Speed Factor: -1
-
 Requires:
- 14 Strength
+ 10 Strength
 
 Weight: 18
 %
@@ -188,7 +178,6 @@ STATISTICS:
 
 Armor Class: 3 (0 vs. slashing, 2 vs. piercing and missile)
 Speed Factor: -3
-
 Requires:
  14 Strength
 
@@ -205,7 +194,6 @@ Equipped abilities:
 
 Armor Class: 1 (-2 vs. slashing, 0 vs. piercing and missile)
 Speed Factor: -3
-
 Requires:
  14 Strength
 
@@ -224,7 +212,6 @@ STATISTICS:
 
 Armor Class: 3 (0 vs. slashing, 2 vs. piercing and missile)
 Speed Factor: -3
-
 Requires:
  14 Strength
 
@@ -241,12 +228,47 @@ Equipped abilities:
 
 Armor Class: 0 (-3 vs. slashing, -1 vs. piercing and missile)
 Speed Factor: -3
-
 Requires:
  14 Strength
 
 Weight: 27
 "
+
+
+
+
+
+//GORGON PLATE +3 - 10000mo//
+COPY "rick_bigg_mod/items/PLAT13.itm" "override"
+	SAY NAME1 "Plate Mail"
+	SAY UNIDENTIFIED_DESC "Plate mail is a combination of chain armor with metal plates covering the vital areas such as the chest, abdomen, and groin. Similar in construction to bronze plate mail, true plate mail comprises chain and leather.
+
+STATISTICS:
+
+Armor Class: 3 (0 vs. slashing, 2 vs. piercing and missile)
+Speed Factor: -3
+Requires:
+ 14 Strength
+
+Weight: 50"
+
+	SAY NAME2 "Gorgon Plate +3"
+	SAY DESC "Hunting gorgons is a highly dangerous drow sport. Often, after a successful hunt, the blood of the gorgon is taken and used in the creation of a new suit of plate. This special type of drow plate is actually able to withstand the light of the surface world. 
+
+STATISTICS:
+
+Equipped abilities:
+– Acid Resistance: +20%
+
+Armor Class: 0 (-3 vs. slashing, -1 vs. piercing and missile)
+Speed Factor: -3
+Requires:
+ 14 Strength
+
+Weight: 30
+"
+
+
 
 
 
@@ -261,7 +283,6 @@ STATISTICS:
 
 Armor Class: 3 (0 vs. slashing, 2 vs. piercing and missile)
 Speed Factor: -3
-
 Requires:
  14 Strength
 
@@ -274,15 +295,13 @@ STATISTICS:
 
 Equipped abilities:
 – Fire Resistance: +50%
-- Saving throws vs. Breath: +2
 
-Armor Class: -1 (-4 vs. slashing, -2 vs. piercing and missile)
-Speed Factor: -3
-
+Armor Class: -1 (-4 vs. slashing, -2 vs. piercing, -4 vs. missile)
+Speed Factor: -2
 Requires:
- 14 Strength
+ 10 Strength
 
-Weight: 27
+Weight: 25
 "
 
 
@@ -299,7 +318,6 @@ STATISTICS:
 
 Armor Class: 3 (0 vs. slashing, 2 vs. piercing and missile)
 Speed Factor: -3
-
 Requires:
  14 Strength
 
@@ -311,14 +329,49 @@ Weight: 50"
 STATISTICS:
 
 Equipped abilities:
-– Electrical Resistance: +60%
-- AC bonus vs. Piercing and Missile: +3
+– Electrical Resistance: +50%
 
-Armor Class: -2 (-5 vs. slashing, -6 vs. piercing and missile)
+Armor Class: -2 (-5 vs. slashing, -3 vs. piercing, -5 vs. missile)
+Speed Factor: -2
+Requires:
+ 10 Strength
+
+Weight: 21
+"
+
+
+
+
+
+
+
+//ENKIDU'S PLATE +5 - 16000mo//
+COPY "rick_bigg_mod/items/PLAT21.itm" "override"
+	SAY NAME1 "Plate Mail"
+	SAY UNIDENTIFIED_DESC "Plate mail is a combination of chain armor with metal plates covering the vital areas such as the chest, abdomen, and groin. Similar in construction to bronze plate mail, true plate mail comprises chain and leather.
+
+STATISTICS:
+
+Armor Class: 3 (0 vs. slashing, 2 vs. piercing and missile)
 Speed Factor: -3
-
 Requires:
  14 Strength
 
-Weight: 25
+Weight: 50"
+
+	SAY NAME2 "Enkidu's Plate +5"
+	SAY DESC "This armor was created for Enkidu, a famed warrior from Kara-Tur. While none dared challenge him in fair combat, Enkidu was often subject to cowardly sneak attacks from assassins, ninjas and Wu-Jen.
+
+STATISTICS:
+
+Equipped abilities:
+– Magic Resistance: +5%
+– Immunity to backstab
+
+Armor Class: -2 (-5 vs. slashing, -3 vs. piercing and missile)
+Speed Factor: -3
+Requires:
+ 14 Strength
+
+Weight: 30
 "

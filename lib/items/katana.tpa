@@ -190,7 +190,7 @@ Weight: 3"
 
 
 
-//YAMATO +4 - 8500mo//
+//YAMATO +4 - 10000mo//
 COPY "rick_bigg_mod/items/SW1H66.itm" "override"
 	SAY NAME1 "Katana"
 	SAY UNIDENTIFIED_DESC "The katana is a single-edged, slightly curved sword that ends with a chisel point. The katana is perhaps one of the finest swords ever made, the steps to its creation a long and secret process that is more art form than anything else. This blade is an important facet of Kara-Turan culture. To touch or wield a samurai's katana is to insult the samurai and to incite his wrath. For a gaijin, or foreigner, to own such a blade is a rare occurrence. Either the gaijin is a greatly honored friend of an important minister, or the gaijin has murdered a samurai.
@@ -211,9 +211,8 @@ Weight: 6"
 
 STATISTICS:
 
-Equipped abilities:
-– Armor Class: +1
-- Saving Throws: +1
+Combat abilities:
+- 20% chance to improve your AC by 2 for 2 rounds
 
 THAC0: +4
 Damage: 1d8+4 (slashing)
@@ -253,7 +252,7 @@ STATISTICS:
 
 Combat abilities:
 – Booming Thunder: Hit target must save vs. Wand or be stunned for 1 round
-– Shocking Blow: 10% chance of an extra 20 electrical damage to hit target
+– Shocking Blow: 20% chance of an extra 20 electrical damage to hit target
 
 Charge abilities:
 – Lightning Strike two times per day (10d6 electricity damage, save vs. Wand for half)
@@ -272,7 +271,7 @@ Weight: 2"
 
 
 
-//HINDO'S DOOM +3 - 8000mo//
+//HINDO'S DOOM +3 - 8000mo - NO EVIL//
 COPY "rick_bigg_mod/items/SW1H70.itm" "override"
 	SAY NAME1 "Katana"
 	SAY UNIDENTIFIED_DESC "The katana is a single-edged, slightly curved sword that ends with a chisel point. The katana is perhaps one of the finest swords ever made, the steps to its creation a long and secret process that is more art form than anything else. This blade is an important facet of Kara-Turan culture. To touch or wield a samurai's katana is to insult the samurai and to incite his wrath. For a gaijin, or foreigner, to own such a blade is a rare occurrence. Either the gaijin is a greatly honored friend of an important minister, or the gaijin has murdered a samurai.
@@ -315,7 +314,7 @@ Weight: 3"
 
 
 
-//HINDO'S DOOM +5 - 18000mo//
+//HINDO'S DOOM +5 - 17000mo - NO EVIL//
 COPY "rick_bigg_mod/items/SW1H71.itm" "override"
 	SAY NAME1 "Katana"
 	SAY UNIDENTIFIED_DESC "The katana is a single-edged, slightly curved sword that ends with a chisel point. The katana is perhaps one of the finest swords ever made, the steps to its creation a long and secret process that is more art form than anything else. This blade is an important facet of Kara-Turan culture. To touch or wield a samurai's katana is to insult the samurai and to incite his wrath. For a gaijin, or foreigner, to own such a blade is a rare occurrence. Either the gaijin is a greatly honored friend of an important minister, or the gaijin has murdered a samurai.
@@ -332,14 +331,15 @@ Requires:
 Weight: 6"
 
 	SAY NAME2 "Hindo's Doom +5"
-	SAY DESC "Reunited with the hand of its original owner, Hindo's Doom is a katana worthy of the greatest of samurai. 
+	SAY DESC "Hindo was a samurai of great renown, a staunch defender of his people against the evil undead that often ravaged his homelands.
+	Reunited with the hand of its original owner, Hindo's Doom is a katana worthy of the greatest of samurai. 
 
 STATISTICS:
 
 Equipped abilities:
 – Magic Resistance: +20%
 – Immunity to all forms of death magic
-- Defensive Harmony always active
+- Magic circle against evil always active
 
 Charge abilities:
 – Greater Restoration once per day

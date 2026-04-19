@@ -7,7 +7,6 @@ STATISTICS:
 
 Armor Class: 1 (-2 vs. slashing, -1 vs. piercing and missile)
 Speed Factor: -3
-
 Requires:
  16 Strength
 
@@ -20,7 +19,6 @@ STATISTICS:
 
 Armor Class: 0 (-3 vs. slashing, -2 vs. piercing and missile)
 Speed Factor: -3
-
 Requires:
  16 Strength
 
@@ -38,7 +36,6 @@ STATISTICS:
 
 Armor Class: 1 (-2 vs. slashing, -1 vs. piercing and missile)
 Speed Factor: -3
-
 Requires:
  16 Strength
 
@@ -52,7 +49,6 @@ STATISTICS:
 
 Armor Class: -1 (-4 vs. slashing, -3 vs. piercing and missile)
 Speed Factor: -3
-
 Requires:
  16 Strength
 
@@ -75,7 +71,6 @@ STATISTICS:
 
 Armor Class: 1 (-2 vs. slashing, -1 vs. piercing and missile)
 Speed Factor: -3
-
 Requires:
  16 Strength
 
@@ -91,7 +86,6 @@ STATISTICS:
 
 Armor Class: -1 (-4 vs. slashing, -3 vs. piercing and missile)
 Speed Factor: -3
-
 Requires:
  16 Strength
 
@@ -111,7 +105,6 @@ STATISTICS:
 
 Armor Class: 1 (-2 vs. slashing, -1 vs. piercing and missile)
 Speed Factor: -3
-
 Requires:
  16 Strength
 
@@ -123,12 +116,10 @@ Weight: 70"
 STATISTICS:
 
 Equipped Abilities:
-- Strength: +1
 - Immunity to fear and panic
 
 Armor Class: -1 (-4 vs. slashing, -3 vs. piercing and missile)
 Speed Factor: -3
-
 Requires:
  16 Strength
 
@@ -149,7 +140,6 @@ STATISTICS:
 
 Armor Class: 1 (-2 vs. slashing, -1 vs. piercing and missile)
 Speed Factor: -3
-
 Requires:
  16 Strength
 
@@ -161,12 +151,11 @@ Weight: 70"
 STATISTICS:
 
 Equipped Abilities:
-- +10% Magic Resistance
+- +5% Magic Resistance
 - 20% chance to drain one level from attackers (save vs. Death at -4 negates)
 
 Armor Class: -2 (-5 vs. slashing, -4 vs. piercing and missile)
 Speed Factor: -3
-
 Requires:
  16 Strength
 
@@ -187,7 +176,6 @@ STATISTICS:
 
 Armor Class: 1 (-2 vs. slashing, -1 vs. piercing and missile)
 Speed Factor: -3
-
 Requires:
  16 Strength
 
@@ -204,7 +192,6 @@ Equipped abilities:
 
 Armor Class: -2 (-5 vs. slashing, -4 vs. piercing and missile)
 Speed Factor: -3
-
 Requires:
  16 Strength
 
@@ -227,7 +214,6 @@ STATISTICS:
 
 Armor Class: 1 (-2 vs. slashing, -1 vs. piercing and missile)
 Speed Factor: -3
-
 Requires:
  16 Strength
 
@@ -239,12 +225,11 @@ Weight: 70"
 STATISTICS:
 
 Equipped Abilities:
-- Fire damage resistance: +40%
+- Fire damage resistance: +20%
 - Crushing damage resistance: +10%
 
 Armor Class: -3 (-6 vs. slashing, -5 vs. piercing and missile)
 Speed Factor: -3
-
 Requires:
  16 Strength
 
@@ -264,7 +249,6 @@ STATISTICS:
 
 Armor Class: 1 (-2 vs. slashing, -1 vs. piercing and missile)
 Speed Factor: -3
-
 Requires:
  16 Strength
 
@@ -284,7 +268,6 @@ Equipped abilities:
 
 Armor Class: -4 (-7 vs. slashing, -6 vs. piercing and missile)
 Speed Factor: -1
-
 Requires:
  16 Strength
 

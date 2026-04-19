@@ -1,1 +1,576 @@
-nc
+//TWO-HANDED SWORD +1 - 2000mo//
+COPY "rick_bigg_mod/items/SW2H02.itm" "override"
+	SAY NAME1 "Two-Handed Sword"
+	SAY UNIDENTIFIED_DESC "The two-handed sword is a derivative of the long sword. Weaponsmiths have always looked for ways to improve existing weapons. In an effort to improve the long sword, the blade was lengthened. Eventually, the handle had to be extended and two hands became necessary to properly swing the sword. The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations.
+
+STATISTICS:
+
+Damage: 2d6 (slashing)
+Speed Factor: 10
+Proficiency Type: Two-handed Sword
+Type: Two-handed
+Requires:
+ 15 Strength
+
+Weight: 15"
+
+SAY NAME2 "Two-handed Sword +1"
+	SAY DESC "The two-handed sword is a derivative of the long sword. Weaponsmiths have always looked for ways to improve existing weapons. In an effort to improve the long sword, the blade was lengthened. Eventually, the handle had to be extended and two hands became necessary to properly swing the sword. The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations. This one is particularly good at its job as it has been enchanted with a few magical properties.
+
+STATISTICS:
+
+THAC0: +1
+Damage: 2d6+1 (slashing)
+Speed Factor: 9
+Proficiency Type: Two-handed Sword
+Type: Two-handed
+Requires:
+ 15 Strength
+
+Weight: 12" 
+
+
+
+
+
+
+//SPIDER'S BANE +2 - 6000mo//
+COPY "rick_bigg_mod/items/SW2H06.itm" "override"
+	SAY NAME1 "Two-Handed Sword"
+	SAY UNIDENTIFIED_DESC "The two-handed sword is a derivative of the long sword. Weaponsmiths have always looked for ways to improve existing weapons. In an effort to improve the long sword, the blade was lengthened. Eventually, the handle had to be extended and two hands became necessary to properly swing the sword. The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations.
+
+STATISTICS:
+
+Damage: 2d6 (slashing)
+Speed Factor: 10
+Proficiency Type: Two-handed Sword
+Type: Two-handed
+Requires:
+ 15 Strength
+
+Weight: 15"
+
+SAY NAME2 "Spider's Bane +2"
+	SAY DESC "This sword was originally forged by the dwarves of the Orothiar tribe in Cloakwood. They created the blade to help foster goodwill between them and the Grand Dukes of Baldur's Gate. Wielded by the Grand Dukes for about a century, the sword was eventually lost, ironically in a fight against ettercaps and spiders. Who wields the blade is now unknown, but its recovery would aid greatly in fighting the current spider infestation that plagues the Cloakwood.
+
+STATISTICS:
+
+Equipped abilities:
+– Protects the wielder from any magics that affect movement, such as Hold and Web.
+
+THAC0: +2, +4 vs Spiders and Ettercaps
+Damage: 2d6+2, +4 vs Spiders and Ettercaps
+Damage Type: Slashing
+Speed Factor: 8
+Proficiency Type: Two-handed Sword
+Type: Two-handed
+Requires:
+ 15 Strength
+
+Weight: 10" 
+
+
+
+
+
+//BERSERKERING SWORD +3 - 3000mo//
+COPY "rick_bigg_mod/items/SW2H03.itm" "override"
+	SAY NAME1 "Two-Handed Sword"
+	SAY UNIDENTIFIED_DESC "The two-handed sword is a derivative of the long sword. Weaponsmiths have always looked for ways to improve existing weapons. In an effort to improve the long sword, the blade was lengthened. Eventually, the handle had to be extended and two hands became necessary to properly swing the sword. The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations.
+
+STATISTICS:
+
+Damage: 2d6 (slashing)
+Speed Factor: 10
+Proficiency Type: Two-handed Sword
+Type: Two-handed
+Requires:
+ 15 Strength
+
+Weight: 15"
+
+SAY NAME2 "Berserkering Sword +3"
+	SAY DESC "This sword performs perfectly under every test, save the heat of battle. Upon entering combat, the wielder have a lot o chance to go berserk, killing everything within reach until either calming down or falling unconscious. A very powerful sword, but one must decide whether or not it is worth the risk.
+
+STATISTICS:
+
+Combat abilities:
+– Chance to go berserk 25% every hit (same bonuses as a Berserker Rage, but cannot be controlled).
+
+THAC0: +3
+Damage: 2d6+3 (slashing)
+Speed Factor: 7
+Proficiency Type: Two-handed Sword
+Type: Two-handed
+Requires:
+ 15 Strength
+
+Weight: 12" 
+
+
+
+
+
+
+//FLAME OF THE NORTH +2 - 7500mo//
+COPY "rick_bigg_mod/items/SW2H12.itm" "override"
+	SAY NAME1 "Two-Handed Sword"
+	SAY UNIDENTIFIED_DESC "The two-handed sword is a derivative of the long sword. Weaponsmiths have always looked for ways to improve existing weapons. In an effort to improve the long sword, the blade was lengthened. Eventually, the handle had to be extended and two hands became necessary to properly swing the sword. The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations.
+
+STATISTICS:
+
+Damage: 2d6 (slashing)
+Speed Factor: 10
+Proficiency Type: Two-handed Sword
+Type: Two-handed
+Requires:
+ 15 Strength
+
+Weight: 15"
+
+SAY NAME2 "Flame of the North +2"
+	SAY DESC "The title does not refer to the blade itself, but rather to the woman who originally wielded it in the icy hinterlands of Faerûn. Her name was Carerra, and she was a veritable firestorm that swept across arctic trolls and the northern orcish tribes. She was a hated enemy of many a shaman whose magic often floundered against her fury. After a lifetime of raucous battle, it was old age that eventually claimed her. The sword was passed to her granddaughter, an adventurer, who presumably brought it to Amn.
+
+STATISTICS:
+
+Equipped abilities:
+– Protection From Evil
+
+THAC0: +2, +4 vs. evil
+Damage: 2d6+2, +4 vs. evil
+Damage type: Slashing
+Speed Factor: 8
+Proficiency Type: Two-handed sword
+Type: Two-handed
+Requires:
+ 15 Strength
+
+Weight: 10" 
+
+
+
+
+
+
+
+//SWORD OF CHAOS +2 - 5500mo//
+COPY "rick_bigg_mod/items/SW2H16.itm" "override"
+	SAY NAME1 "Two-Handed Sword"
+	SAY UNIDENTIFIED_DESC "The two-handed sword is a derivative of the long sword. Weaponsmiths have always looked for ways to improve existing weapons. In an effort to improve the long sword, the blade was lengthened. Eventually, the handle had to be extended and two hands became necessary to properly swing the sword. The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations.
+
+STATISTICS:
+
+Damage: 2d6 (slashing)
+Speed Factor: 10
+Proficiency Type: Two-handed Sword
+Type: Two-handed
+Requires:
+ 15 Strength
+
+Weight: 15"
+
+SAY NAME2 "Sword of Chaos +2"
+	SAY DESC "The blade of Sarevok, brother of <CHARNAME>, used in the battle they fought in faraway Baldur's Gate. <CHARNAME> prevailed, destroying Sarevok's plans and rescuing the Sword Coast from the brink of war. The sword itself defies identification, likely forged specifically for Sarevok to best focus the infernal energy he hoped to control. Much of its power died with him.
+
+STATISTICS:
+
+Equipped abilities:
+- +10% Magic Resistance
+
+Combat abilities:
+– Each hit drains 1 Hit Point from the target and transfers it to the wielder. This will not heal beyond the wielder's maximum.
+
+THAC0: +2
+Damage: 2d6+2 (slashing)
+Speed Factor: 8
+Proficiency Type: Two-handed Sword
+Type: Two-handed
+Requires:
+ 15 Strength
+
+Weight: 10" 
+
+
+
+
+
+
+//SILVER SWORD +3 - 10000mo - no buoni//
+COPY "rick_bigg_mod/items/SW2H15.itm" "override"
+	SAY NAME1 "Two-Handed Sword"
+	SAY UNIDENTIFIED_DESC "The two-handed sword is a derivative of the long sword. Weaponsmiths have always looked for ways to improve existing weapons. In an effort to improve the long sword, the blade was lengthened. Eventually, the handle had to be extended and two hands became necessary to properly swing the sword. The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations.
+
+STATISTICS:
+
+Damage: 2d6 (slashing)
+Speed Factor: 10
+Proficiency Type: Two-handed Sword
+Type: Two-handed
+Requires:
+ 15 Strength
+
+Weight: 15"
+
+SAY NAME2 "Silver Sword +3"
+	SAY DESC "This vorpal Silver Sword radiates a dark aura when you examine it, and the blade is so finely sharpened it could likely sever a head in a single blow.
+
+STATISTICS:
+
+Combat abilities:
+– 15% chance per hit that target must save vs. Death at -4 or die
+
+THAC0: +3
+Damage: 2d6+3 (slashing)
+Speed Factor: 7
+Proficiency Type: Two-handed Sword
+Type: Two-handed
+Requires:
+ 15 Strength
+
+Weight: 15"
+
+
+
+
+
+
+//DEMON SLAYER +4 - 12000mo//
+COPY "rick_bigg_mod/items/SW2H07.itm" "override"
+	SAY NAME1 "Two-Handed Sword"
+	SAY UNIDENTIFIED_DESC "The two-handed sword is a derivative of the long sword. Weaponsmiths have always looked for ways to improve existing weapons. In an effort to improve the long sword, the blade was lengthened. Eventually, the handle had to be extended and two hands became necessary to properly swing the sword. The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations.
+
+STATISTICS:
+
+Damage: 2d6 (slashing)
+Speed Factor: 10
+Proficiency Type: Two-handed Sword
+Type: Two-handed
+Requires:
+ 15 Strength
+
+Weight: 15"
+
+SAY NAME2 "Demon Slayer +4"
+	SAY DESC "A block of metal, too big to be called a sword. Massive, thick, heavy, and far too rough. Indeed, it was a heap of raw iron. When it slams into the enemies, it cuts or destroys indiscriminately, using the sheer weight of the weapon. This "sword" requires enormous strength, uncommon among the vast majority of warriors. A dark aura surrounds the blade, as if it had been repeatedly imbued with evil.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +1, an extra +1 vs. missile attacks
+
+Combat abilities:
+- Extended range 3
+- Demons and Devils must save vs. Death at -4 or be utterly destroyed
+
+THAC0: +4
+Damage: 2d12+4 (slashing or crushing)
+Speed Factor: 10
+Proficiency Type: Two-handed Sword
+Type: Two-handed
+Requires:
+ 20 Strength
+
+Weight: 45"
+
+
+
+//PSION'S BLADE +3 - 9000mo//
+COPY "rick_bigg_mod/items/SW2H21.itm" "override"
+	SAY NAME1 "Two-Handed Sword"
+	SAY UNIDENTIFIED_DESC "The two-handed sword is a derivative of the long sword. Weaponsmiths have always looked for ways to improve existing weapons. In an effort to improve the long sword, the blade was lengthened. Eventually, the handle had to be extended and two hands became necessary to properly swing the sword. The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations.
+
+STATISTICS:
+
+Damage: 2d6 (slashing)
+Speed Factor: 10
+Proficiency Type: Two-handed Sword
+Type: Two-handed
+Requires:
+ 15 Strength
+
+Weight: 15"
+
+SAY NAME2 "Psion's Blade +3"
+	SAY DESC "Some believe this massive blade to be of drow origin, though others dispute this claim. However, all agree this great sword was fashioned with a single purpose... to rid the world of the illithid. Those who wield the Psion's Blade are immune to the mind flayer's psionic attacks. The bewildering gaze of umber hulks, often found serving the illithid, are similarly rendered harmless.
+
+STATISTICS:
+
+Equipped abilities:
+– Immunity to confusion and all psionic attacks
+
+THAC0: +3
+Damage: 2d6+3 (slashing)
+Speed Factor: 7
+Proficiency Type: Two-handed Sword
+Type: Two-handed
+Requires:
+ 15 Strength
+
+Weight: 11"
+
+
+
+
+
+//WORLD'S EDGE +4 - 18000mo//
+COPY "rick_bigg_mod/items/SW2H09.itm" "override"
+	SAY NAME1 "Two-Handed Sword"
+	SAY UNIDENTIFIED_DESC "The two-handed sword is a derivative of the long sword. Weaponsmiths have always looked for ways to improve existing weapons. In an effort to improve the long sword, the blade was lengthened. Eventually, the handle had to be extended and two hands became necessary to properly swing the sword. The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations.
+
+STATISTICS:
+
+Damage: 2d6 (slashing)
+Speed Factor: 10
+Proficiency Type: Two-handed Sword
+Type: Two-handed
+Requires:
+ 15 Strength
+
+Weight: 15"
+
+SAY NAME2 "World's Edge +4"
+	SAY DESC "This is a legendary weapon of heroic proportions, especially among the far-northern tribes of barbarians. Champion after champion has wielded this blade against countless enemies, and the blood it has spilled could fill a small sea. History will not admit that such a blade could be forged and each consecutive owner seems to tie its origin to whatever creation myth they believe. The most grandiose of these tales is that of a great chieftain who sailed to the cliffs that supposedly bordered the world. There he reached into the void, and his will shaped the blade from nothing. Whatever the truth, in the right hands this sword is a fearsome thing.
+
+STATISTICS:
+
+Equipped abilities:
+- Immunity to fatigue
+- Doubles movement rate
+- +5% chance to score a critical hit
+
+Combat abilities:
+- On a critical hit the wielder gains 2 extra attacks per round for twelve seconds
+
+THAC0: +4
+Damage: 2d6+4 (slashing)
+Speed Factor: 6
+Proficiency Type: Two-handed Sword
+Type: Two-handed
+Requires:
+ 15 Strength
+
+Weight: 7" 
+
+
+
+
+//GRAM THE SWORD OF GRIEF +5 - no buoni - 15000mo//
+COPY "rick_bigg_mod/items/SW2H17.itm" "override"
+	SAY NAME1 "Two-Handed Sword"
+	SAY UNIDENTIFIED_DESC "The two-handed sword is a derivative of the long sword. Weaponsmiths have always looked for ways to improve existing weapons. In an effort to improve the long sword, the blade was lengthened. Eventually, the handle had to be extended and two hands became necessary to properly swing the sword. The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations.
+
+STATISTICS:
+
+Damage: 2d6 (slashing)
+Speed Factor: 10
+Proficiency Type: Two-handed Sword
+Type: Two-handed
+Requires:
+ 15 Strength
+
+Weight: 15"
+
+SAY NAME2 "Gram the Sword of Grief +5"
+	SAY DESC "This is one of the many weapons of the great hero Siegfried. The blade is particularly sharp and well-balanced, and in a certain light one can see the faint image of a serpent within the hilt.
+
+STATISTICS:
+
+Equipped abilities:
+– Magic Resistance: +5%
+
+Combat abilities:
+– Inflicts 10 points of bleeding damage per hit (two point per round)
+
+THAC0: +5
+Damage: 2d6+5 (slashing)
+Speed Factor: 5
+Proficiency Type: Two-handed Sword
+Type: Two-handed
+Requires:
+ 15 Strength
+
+Weight: 9" 
+
+
+
+
+
+
+//GRAM THE SWORD OF GRIEF +6 - 20000mo//
+COPY "rick_bigg_mod/items/SW2H18.itm" "override"
+	SAY NAME1 "Two-Handed Sword"
+	SAY UNIDENTIFIED_DESC "The two-handed sword is a derivative of the long sword. Weaponsmiths have always looked for ways to improve existing weapons. In an effort to improve the long sword, the blade was lengthened. Eventually, the handle had to be extended and two hands became necessary to properly swing the sword. The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations.
+
+STATISTICS:
+
+Damage: 2d6 (slashing)
+Speed Factor: 10
+Proficiency Type: Two-handed Sword
+Type: Two-handed
+Requires:
+ 15 Strength
+
+Weight: 15"
+
+SAY NAME2 "Gram the Sword of Grief +6"
+	SAY DESC "Siegfried's fearsome blade is even more powerful with the Heart of the Damned set into its pommel.
+
+STATISTICS:
+
+Equipped abilities:
+– Magic Resistance: +10%
+
+Combat abilities:
+– Inflicts 10 points of bleeding damage per hit (two point per round)
+– 20% chance to drain 2 points of Strength from the target and transfer them to the wielder for 5 rounds
+
+THAC0: +6
+Damage: 2d6+6 (slashing)
+Speed Factor: 4
+Proficiency Type: Two-handed Sword
+Type: Two-handed
+Requires:
+ 15 Strength
+
+Weight: 9" 
+
+
+
+
+
+
+
+//CARSOMYR + 5 - 25000mo//
+COPY "rick_bigg_mod/items/sw2h10.itm" "override"
+	SAY NAME1 "Two-Handed Sword"
+	SAY UNIDENTIFIED_DESC "The two-handed sword is a derivative of the long sword. Weaponsmiths have always looked for ways to improve existing weapons. In an effort to improve the long sword, the blade was lengthened. Eventually, the handle had to be extended and two hands became necessary to properly swing the sword. The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations.
+
+STATISTICS:
+
+Damage: 2d6 (slashing)
+Speed Factor: 10
+Proficiency Type: Two-handed Sword
+Type: Two-handed
+Requires:
+ 15 Strength
+
+Weight: 15"
+
+	SAY NAME2 "Carsomyr +5"
+	SAY DESC "Carsomyr is a weapon of legend, perhaps one of the most powerful blades ever forged on Faerûn, though its origin and history is thought purposefully forgotten so that the sword itself shall never overshadow the importance of the struggles that must be fought today. It is infused with the very essence of virtue and requires as much from any Paladin who would hope to wield it. The evils of the realms must truly stand aside when this weapon is brought to bear, their magic dispelled with a word, steadfastly resisted with ease. Carsomyr also harbors a special distaste for the forces of evil and chaos, and such creatures must fear additional damage from its touch in battle.
+
+STATISTICS:
+
+Equipped abilities:
+– Magic Resistance: +50%
+
+Combat abilities:
+– Dispel Magic at level 30 on each hit
+
+Charge abilities:
+– Dispel Magic at level 20 three times per day
+  Range: 40 ft.
+  Area of Effect: 15-ft. radius
+
+THAC0: +5
+Damage: 2d6+5, +5 extra vs. evil
+Damage type: Slashing
+Speed Factor: 5
+Proficiency Type: Two-handed Sword
+Type: Two-handed
+Requires:
+ 15 Strength
+
+Weight: 7"
+
+
+
+
+
+
+//CARSOMYR + 6 - 30000mo//
+COPY "rick_bigg_mod/items/sw2h19.itm" "override"
+	SAY NAME1 "Two-Handed Sword"
+	SAY UNIDENTIFIED_DESC "The two-handed sword is a derivative of the long sword. Weaponsmiths have always looked for ways to improve existing weapons. In an effort to improve the long sword, the blade was lengthened. Eventually, the handle had to be extended and two hands became necessary to properly swing the sword. The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations.
+
+STATISTICS:
+
+Damage: 2d6 (slashing)
+Speed Factor: 10
+Proficiency Type: Two-handed Sword
+Type: Two-handed
+Requires:
+ 15 Strength
+
+Weight: 15"
+
+	SAY NAME2 "Carsomyr +6"
+	SAY DESC "Carsomyr is a weapon of legend, perhaps one of the most powerful blades ever forged on Faerûn, though its origin and history is thought purposefully forgotten so that the sword itself shall never overshadow the importance of the struggles that must be fought today. It is infused with the very essence of virtue and requires as much from any Paladin who would hope to wield it. The evils of the realms must truly stand aside when this weapon is brought to bear, their magic dispelled with a word, steadfastly resisted with ease. Carsomyr also harbors a special distaste for the forces of evil and chaos, and such creatures must fear additional damage from its touch in battle.
+	
+	Even a holy relic as powerful as Carsomyr is made even greater when combined with the Eye of Tyr.
+
+STATISTICS:
+
+Equipped abilities:
+– Magic Resistance: +50%
+
+Combat abilities: 
+– Dispel Magic at level 40 on each hit
+
+Charge abilities:
+– Dispel Magic at level 30 three times per day
+  Range: 40 ft.
+  Area of Effect: 15-ft. radius
+ 
+
+THAC0: +6
+Damage: 2d6+6, +6 extra vs. evil
+Damage type: Slashing
+Speed Factor: 4
+Proficiency Type: Two-handed Sword 
+Type: Two-handed
+Requires:
+ 15 Strength
+
+Weight: 6"
+
+
+
+//IR'REVRYKRAL + 5 - 18000mo//
+COPY "rick_bigg_mod/items/OHREAVER.itm" "override"
+	SAY NAME1 "Two-Handed Sword"
+	SAY UNIDENTIFIED_DESC "The two-handed sword is a derivative of the long sword. Weaponsmiths have always looked for ways to improve existing weapons. In an effort to improve the long sword, the blade was lengthened. Eventually, the handle had to be extended and two hands became necessary to properly swing the sword. The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations.
+
+STATISTICS:
+
+Damage: 2d6 (slashing)
+Speed Factor: 10
+Proficiency Type: Two-handed Sword
+Type: Two-handed
+Requires:
+ 15 Strength
+
+Weight: 15"
+
+	SAY NAME2 "Ir'revrykal +5"
+	SAY DESC "This dark, two-handed sword radiates evil from a distance. The weapon is not just unholy, but unearthly as well. Long thought to be just a myth, the blade's infamy pervades the accounts of learned bards and ancient sages. According to these accounts, the githyanki wizard-smith Ir'mlar forged the blade many centuries ago in dark caverns deep beneath Tu'narath. This githyanki city floats in the Astral Plane upon the petrified corpse of a dead god known only as 'the One in the Void.' To craft the sword, Ir'mlar allegedly used the One's own bones, which consist of a metallic substance unknown on the Prime Material Plane. The smith then imbued the weapon with a fiendish entity whom some seers claim was a mighty prince of the lower plane of Carceri. Others claim the sword contains the One in the Void's own spirit, banished within the blade for crimes committed against other gods in past ages. In any case, Ir'revrykal possesses such an enmity against good that only blackguards committed to evil may wield it. Circular runes etched on the blade proclaim its name in ancient tir'su, the githyanki language. The runes translate roughly as 'Pain-Servant.'
+
+STATISTICS:
+
+Equipped abilities:
+– Immunity to confusion and all psionic attacks
+
+Combat abilities:
+– 15% chance per hit that target must save vs. Death at -4 or die
+- Slays Mind Flayers
+
+THAC0: +5
+Damage: 2D6+5, +5 extra vs. good creatures
+Damage type: Slashing
+Speed Factor: 5
+Proficiency Type: Two-handed Sword
+Type: Two-handed
+Requires:
+ 15 Strength
+
+Weight: 10"

@@ -262,7 +262,7 @@ Weight: 5"
 
 
 
-//WIZARD SLAYER +2 - 7500mo//
+//WIZARD SLAYER +2 - 6000mo//
 COPY "rick_bigg_mod/items/AX1H07.itm" "override"
 	SAY NAME1 "Battle Axe"
 	SAY UNIDENTIFIED_DESC "The most common version of the battle axe is a stout pole about four feet in length with a single-edged, trumpet-shaped blade mounted on one end. This axe, in particular, appears to be very poorly made and slightly smaller than the average battle axe.
@@ -284,7 +284,7 @@ Weight: 7"
 STATISTICS:
 
 Combat abilities:
-– Hit target is affected by Miscast Magic for 100 seconds (80% chance of spellcasting failure, Save vs. Spell at -2 negates)
+– Hit target is affected by Miscast Magic for 100 seconds (80% chance of spellcasting failure, Save vs. Wand at -2 negates)
 
 THAC0: +2
 Damage: 1d8+3 (slashing)

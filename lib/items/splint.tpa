@@ -1,0 +1,266 @@
+//SPLINT MAIL +1 - 2500mo//
+COPY "rick_bigg_mod/items/CHAN05.itm" "override"
+	SAY NAME1 "Splint Mail"
+	SAY UNIDENTIFIED_DESC "Splint mail is a variant of banded mail in which the metal strips are applied vertically to the backing of chain, leather, or cloth rather than horizontally as in banded mail. Since the body does not swivel in mid-torso as much as it flexes back to front, splint mail is more restrictive in battle. 
+
+STATISTICS:
+
+Armor Class: 4 (3 vs. piercing and missile)
+Speed Factor: -2
+Requires:
+ 10 Strength
+
+Weight: 40"
+
+	SAY NAME2 "Splint Mail +1"
+	SAY DESC "Splint mail is a variant of banded mail in which the metal strips are applied vertically to the backing of chain, leather, or cloth rather than horizontally as in banded mail. Since the body does not swivel in mid-torso as much as it flexes back to front, splint mail is more restrictive in battle. This suit of armor is enchanted, granting the wearer an additional bonus of +1 to their Armor Class.
+
+STATISTICS:
+
+Armor Class: 3 (2 vs. piercing and missile)
+Speed Factor: -2
+Requires:
+ 10 Strength
+
+Weight: 20
+"
+
+
+
+
+
+//SPLINT MAIL +2 - 4500mo//
+COPY "rick_bigg_mod/items/OHCHAN50.itm" "override"
+	SAY NAME1 "Splint Mail"
+	SAY UNIDENTIFIED_DESC "Splint mail is a variant of banded mail in which the metal strips are applied vertically to the backing of chain, leather, or cloth rather than horizontally as in banded mail. Since the body does not swivel in mid-torso as much as it flexes back to front, splint mail is more restrictive in battle. 
+
+STATISTICS:
+
+Armor Class: 4 (3 vs. piercing and missile)
+Speed Factor: -2
+
+Requires:
+ 10 Strength
+
+Weight: 40"
+
+	SAY NAME2 "Splint Mail +2"
+	SAY DESC "Splint mail is a variant of banded mail in which the metal strips are applied vertically to the backing of chain, leather, or cloth rather than horizontally as in banded mail. Since the body does not swivel in mid-torso as much as it flexes back to front, splint mail is more restrictive in battle. This suit of armor is enchanted, granting the wearer an additional bonus of +2 to their Armor Class.
+
+STATISTICS:
+
+Armor Class: 2 (1 vs. piercing and missile)
+Speed Factor: -2
+Requires:
+ 10 Strength
+
+Weight: 20
+"
+
+
+
+
+//STALWART SPLINT +2 - 5500mo//
+COPY "rick_bigg_mod/items/BDCHAN06.itm" "override"
+	SAY NAME1 "Splint Mail"
+	SAY UNIDENTIFIED_DESC "Splint mail is a variant of banded mail in which the metal strips are applied vertically to the backing of chain, leather, or cloth rather than horizontally as in banded mail. Since the body does not swivel in mid-torso as much as it flexes back to front, splint mail is more restrictive in battle. 
+
+STATISTICS:
+
+Armor Class: 4 (3 vs. piercing and missile)
+Speed Factor: -2
+
+Requires:
+ 10 Strength
+
+Weight: 40"
+
+	SAY NAME2 "Stalwart Splint +2"
+	SAY DESC "Noted dwarven smith Hedda Perigot crafted this suit of armor in response to a challenge. Fellow smiths discussed their disdain of working with non-metal or stone materials at the tavern one night, and Hedda bragged that she had no such difficulties. The smiths challenged her to create a hybrid suit of half-metal, half-armor. Hedda set to work making the lightest, most flexible steel plates she could and affixing them to a well-made leather breastplate. The result was a shimmering suit of splint mail that weighed less than a normal suit and proved most useful against slashing attacks. Hedda won the bet, and free drinks for a month.
+
+STATISTICS:
+
+Equipped abilities:
+– Slashing Resistance: +10%
+
+Armor Class: 2 (1 vs. piercing and missile)
+Speed Factor: -2
+Requires:
+ 10 Strength
+
+Weight: 20
+"
+
+
+
+
+
+
+
+//COMMANDER SPLINT MAIL +2 - 6500mo//
+COPY "rick_bigg_mod/items/BDCHAN04.itm" "override"
+	SAY NAME1 "Splint Mail"
+	SAY UNIDENTIFIED_DESC "Splint mail is a variant of banded mail in which the metal strips are applied vertically to the backing of chain, leather, or cloth rather than horizontally as in banded mail. Since the body does not swivel in mid-torso as much as it flexes back to front, splint mail is more restrictive in battle. 
+
+STATISTICS:
+
+Armor Class: 4 (3 vs. piercing and missile)
+Speed Factor: -2
+Requires:
+ 10 Strength
+
+Weight: 40"
+
+	SAY NAME2 "Commander Splint Mail +2"
+	SAY DESC "As soon as you put it on, this armor exudes a powerful aura of confidence and courage that immediately influences all allies at your side. Its origins are uncertain, but it appears to have belonged to a great Tethyrian leader.
+
+STATISTICS:
+
+Equipped abilities:
+– The wearer and any allies within <PRO_HISHER> visual radius are immune to fear and morale failure
+
+Armor Class: 2 (1 vs. piercing and missile)
+Speed Factor: -2
+Requires:
+ 10 Strength
+
+Weight: 20
+"
+
+
+
+
+
+//ASHEN SCALES +3 - 7000mo//
+COPY "rick_bigg_mod/items/CHAN17.itm" "override"
+	SAY NAME1 "Splint Mail"
+	SAY UNIDENTIFIED_DESC "Splint mail is a variant of banded mail in which the metal strips are applied vertically to the backing of chain, leather, or cloth rather than horizontally as in banded mail. Since the body does not swivel in mid-torso as much as it flexes back to front, splint mail is more restrictive in battle. 
+
+STATISTICS:
+
+Armor Class: 4 (3 vs. piercing and missile)
+Speed Factor: -2
+Requires:
+ 10 Strength
+
+Weight: 40"
+
+	SAY NAME2 "Ashen Scales +3"
+	SAY DESC "Instead of metal strips, this armor uses wyvern scales bound to a chain backing by means of a magical fire. The resulting armor is ash-gray in color and more flexible than standard splint mail. A ranger, Usher Skacan, made this armor after slaying several wyverns that were killing all the deer and elk in his forest.
+
+STATISTICS:
+
+Equipped abilities:
+– Poison damage resistance: +50%
+
+Armor Class: 1 (0 vs. piercing and missile)
+Speed Factor: -1
+Requires:
+ 10 Strength
+
+Weight: 18
+"
+
+
+
+
+//CRIMSON SPLINT +3 - 9000mo//
+COPY "rick_bigg_mod/items/CHAN11.itm" "override"
+	SAY NAME1 "Splint Mail"
+	SAY UNIDENTIFIED_DESC "Splint mail is a variant of banded mail in which the metal strips are applied vertically to the backing of chain, leather, or cloth rather than horizontally as in banded mail. Since the body does not swivel in mid-torso as much as it flexes back to front, splint mail is more restrictive in battle. 
+
+STATISTICS:
+
+Armor Class: 4 (3 vs. piercing and missile)
+Speed Factor: -2
+Requires:
+ 10 Strength
+
+Weight: 40"
+
+	SAY NAME2 "Crimson Splint +3"
+	SAY DESC "The dark red metal used to make this armor is said to come from a hidden mine in the Cloudpeaks. At one time the Bloodway, a band of evil adventurers, all wore armor of this kind, but the other suits have long been lost.
+
+STATISTICS:
+
+
+Armor Class: 1 (-3 vs. piercing and missile)
+Speed Factor: -2
+Requires:
+ 10 Strength
+
+Weight: 20
+"
+
+
+
+
+
+//SHADOW DRAGON SCALE +4 - 11000mo//
+COPY "rick_bigg_mod/items/LEAT19.itm" "override"
+	SAY NAME1 "Splint Mail"
+	SAY UNIDENTIFIED_DESC "Splint mail is a variant of banded mail in which the metal strips are applied vertically to the backing of chain, leather, or cloth rather than horizontally as in banded mail. Since the body does not swivel in mid-torso as much as it flexes back to front, splint mail is more restrictive in battle. 
+
+STATISTICS:
+
+Armor Class: 4 (3 vs. piercing and missile)
+Speed Factor: -2
+Requires:
+ 10 Strength
+
+Weight: 40"
+
+	SAY NAME2 "Shadow Dragon Scale +4"
+	SAY DESC "This suit of armor is formed from interlocking shadow dragon scales. Elegant workmanship and practical considerations make this armor both beautiful and useful. The shadow dragon scales grant the wearer a powerful protection against negative plane.
+
+STATISTICS:
+
+Equipped abilities:
+– Immunity to level drain
+
+Armor Class: 0 (-1 vs. piercing, -3 vs. missile)
+Speed Factor: -1
+Requires:
+ 10 Strength
+
+Weight: 10
+"
+
+
+
+
+//WHITE DRAGON SCALE +5 - 12000mo//
+COPY "rick_bigg_mod/items/CHAN20.itm" "override"
+	SAY NAME1 "Splint Mail"
+	SAY UNIDENTIFIED_DESC "Splint mail is a variant of banded mail in which the metal strips are applied vertically to the backing of chain, leather, or cloth rather than horizontally as in banded mail. Since the body does not swivel in mid-torso as much as it flexes back to front, splint mail is more restrictive in battle. 
+
+STATISTICS:
+
+Armor Class: 4 (3 vs. piercing and missile)
+Speed Factor: -2
+Requires:
+ 10 Strength
+
+Weight: 40"
+
+	SAY NAME2 "White Dragon Scale +5"
+	SAY DESC "Not surprisingly, this armor created from the scales of a young ice dragon provides the wearer with protection from cold and ice.
+
+STATISTICS:
+
+Equipped abilities:
+– Cold Resistance: +50%
+
+Armor Class: -1 (-2 vs. piercing, -4 vs. missile)
+Speed Factor: -1
+Requires:
+ 10 Strength
+
+Weight: 15
+"
+
+
+
+
+
+

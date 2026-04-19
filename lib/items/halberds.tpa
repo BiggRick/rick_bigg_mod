@@ -96,7 +96,7 @@ Weight: 15"
 STATISTICS:
 
 Charge abilities:
-– Blindness two times per day (Save vs. Spell negates)
+– Blindness two times per day (Save vs. Wand negates)
   Duration: 2 hours
   Area of Effect: 5-ft. radius
 
@@ -175,7 +175,7 @@ Weight: 15"
 STATISTICS:
 
 THAC0: +3
-Damage: 1d10+3, +9 vs. dragons
+Damage: 1d10+3, +6 extra damage vs. dragons
 Damage type: Piercing
 Speed Factor: 6
 Proficiency Type: Halberd
@@ -210,9 +210,6 @@ Weight: 15"
 	SAY DESC "Trying to profit from the strength of greater beings, many years ago the mage Ullion founded a dragon-worshipping cult under the moniker Son of Drago. Attracting followers with promises of conquest, he sought to secure his authority by enchanting this symbolic weapon for his bodyguard, Jaramor Bold. When the Dragon's Breath strikes an opponent, it releases the harsh flames of a red dragon, the poisonous vapor of the green dragon, the blue dragon's lightning bolt, a spray of a black dragon's acid, and the white dragon's penetrating cold. Unfortunately, Ullion was the first to feel its effects, slain by the ambitious Jaramor, who sought to rule. There was no real power to be had without the mage, so the entire organization soon collapsed on itself. 
 
 STATISTICS:
-
-Equipped abilities:
-- Attack speed factor: +2
 
 THAC0: +5
 Damage: 1d10

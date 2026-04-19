@@ -250,7 +250,7 @@ Charge Abilities:
 - Cast Poison once per day (at level 15)
 
 THAC0: +4
-Damage: 1d8+4, +4 poison damage
+Damage: 1d8+4, +3 poison damage
 Damage type: Piercing
 Speed Factor: 2
 Proficiency Type: Spear
@@ -261,7 +261,7 @@ Requires:
 Weight: 5" 
 
 
-//SPEAR OF KULDAHAR +4 - valore 12000mo//
+//SPEAR OF KULDAHAR +4 - valore 14000mo//
 COPY "rick_bigg_mod/items/WASPEAR.itm" "override"
 	SAY NAME1 "Spear"
 	SAY UNIDENTIFIED_DESC "One of the earliest weapons, dating back to the most primitive of times, the first spears were simply wooden poles or sticks sharpened at one end. When the civilized races mastered metals, spearheads were made from iron and steel. Having reached this end, weaponsmiths began experimenting with different types of spearheads, thus leading to the development of certain polearm types.
@@ -361,7 +361,7 @@ Equipped abilities:
 – 1 extra attack per round
 
 Combat abilities:
-– Hit target is pinned for 3 rounds and takes an additional 1d4+6 piercing damage each round (Save vs. Paralysis -4 negates)
+– Hit target is pinned for 3 rounds and takes an additional 1d4+6 piercing damage each round (Save vs. Wand -4 negates)
 
 THAC0: +6
 Damage: 1d8+6 (piercing)

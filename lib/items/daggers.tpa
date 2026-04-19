@@ -204,7 +204,7 @@ Weight: 1"
 STATISTICS:
 
 Combat abilities: 
-– 30% chance per hit that the target must save vs. Death or be held for 2 rounds
+– 25% chance per hit that the target must save vs. Wand or be held for 2 rounds
 
 THAC0: +3
 Damage: 1d4+3 (piercing)
@@ -290,11 +290,11 @@ Weight: 1"
 
 STATISTICS:
 
-Equipped abilities:
-- Acid resistance bonus: +20%
+Combat abilities:
+- Extended range 1
 
 THAC0: +4
-Damage: 1d4+4, +2 acid
+Damage: 1d6+4
 Damage type: Piercing
 Speed Factor: 0
 Proficiency Type: Dagger

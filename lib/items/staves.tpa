@@ -203,7 +203,7 @@ Cast Call Lightning once per day
   Range: 80 ft.
   
 Combat abilities:
-– Thunderclap: 25% chance of stunning hit target for 2 rounds (Save vs. Spell negates)
+– Thunderclap: 25% chance of stunning hit target for 2 rounds (Save vs. Wand negates)
 
 THAC0: +2
 Damage: 1d6+2 (crushing)
@@ -274,13 +274,13 @@ STATISTICS:
 Weight: 3"
 
 	SAY NAME2 "Rod of Terror +3"
-	SAY DESC "When activated, this rod may be used as a Staff +3. Any creature hit by the rod must make a Saving Throw vs. Spell or flee in terror, fearing the wielder as if he or she were a flesh-eating demon from the Abyss. There is a drawback to using this rod, however: Each time the rod is used, there is a 10% chance that the wielder is scared instead.
+	SAY DESC "When activated, this rod may be used as a Staff +3. Any creature hit by the rod must make a Saving Throw vs. Wand or flee in terror, fearing the wielder as if he or she were a flesh-eating demon from the Abyss. There is a drawback to using this rod, however: Each time the rod is used, there is a 10% chance that the wielder is scared instead.
 
 STATISTICS:
 
 Combat abilities:
-– 90% target must save vs. Spell or flee in terror for 4 rounds
-– 10% wielder must save vs. Spell or flee in terror for 4 rounds
+– 80% target must save vs. Wand or flee in terror for 4 rounds
+– 20% wielder must save vs. Wand or flee in terror for 4 rounds
 
 THAC0: +3
 Damage: 1d6+3 (crushing)

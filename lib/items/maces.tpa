@@ -20,7 +20,7 @@ Weight: 10"
 STATISTICS:
 
 Combat abilities:
-– Hit target must save vs. Spell or be slowed for 2 rounds
+– Hit target must save vs. Wand or be slowed for 2 rounds
 
 THAC0: +2
 Damage: 1d6+3 (crushing)
@@ -60,7 +60,7 @@ Weight: 10"
 STATISTICS:
 
 Equipped Ability:
-– Strength: 18/50
+– Strength: 18/95
 
 THAC0: +2
 Damage: 1d6+3 (crushing)
@@ -210,12 +210,8 @@ Weight: 3"
 
 STATISTICS:
 
-Combat abilities:
-- Target must save vs. Spell or panic for 4 rounds
-- Target must save vs. Death or be held for 4 rounds
-
 THAC0: +5
-Damage: 6d4 (save vs. Breath for half), no Strength bonus
+Damage: 10d4 (save vs. Wand for half), no Strength bonus
 Damage type: Magical
 Speed Factor: 0
 Proficiency Type: Mace
@@ -287,9 +283,6 @@ Weight: 10"
 	Infused with the otherworldly starfall ore, the powers of this already formidable weapon are greatly enhanced.
 
 STATISTICS:
-
-Equipped abilities:
-– Electrical Resistance: +50%
 
 Combat abilities:
 – 20% chance of casting Chain Lightning (at level 20) on target with each successful attack

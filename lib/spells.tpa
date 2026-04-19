@@ -44,3 +44,27 @@ Defensive Harmony grants affected creatures a defensive bonus by enhancing the c
 "
 
 
+
+
+//MAGIC CIRCLE AGAINST EVIL//
+COPY "rick_bigg_mod/spell/SPPR408.spl" "override"
+	SAY NAME1 "Magic Circle against Evil"
+	SAY UNIDENTIFIED_DESC 
+"Magic Circle against Evil
+Level: 4
+School: Abjuration
+Sphere: Protection
+Range: Personal
+Duration: 5 turns
+Casting Time: 5
+Area of Effect: 30' radius
+Saving Throw: None
+
+Upon casting this spell, the priest causes all friendly creatures within the area of effect to be affected by the spell Protection from Evil. Creatures leaving the area are still subject to the spell's effect; those entering the area after the casting is completed are not.
+"
+
+
+
+
+
+

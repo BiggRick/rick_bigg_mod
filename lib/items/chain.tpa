@@ -1,0 +1,256 @@
+//CHAIN MAIL +1 - 2000mo//
+COPY "rick_bigg_mod/items/CHAN02.itm" "override"
+	SAY NAME1 "Chain Mail"
+	SAY UNIDENTIFIED_DESC "Chain mail is made of interlocking metal rings. It is always worn over a layer of padded fabric or soft leather to prevent chafing and lessen the impact of blows. 
+
+STATISTICS:
+
+Armor Class: 5 (3 vs. slashing, 4 vs. piercing and missile)
+Speed Factor: -2
+Requires:
+ 8 Strength
+
+Weight: 40
+"
+
+	SAY NAME2 "Chain Mail +1"
+	SAY DESC "Chain mail is made of interlocking metal rings. It is always worn over a layer of padded fabric or soft leather to prevent chafing and lessen the impact of blows.  Extra protection is given by magical enchantments placed on this armor.
+
+STATISTICS:
+
+Armor Class: 4 (2 vs. slashing, 3 vs. piercing and missile)
+Speed Factor: -2
+Requires:
+ 8 Strength
+
+Weight: 20
+"
+
+
+//CHAIN MAIL +2 - 4000mo//
+COPY "rick_bigg_mod/items/CHAN08.itm" "override"
+	SAY NAME1 "Chain Mail"
+	SAY UNIDENTIFIED_DESC "Chain mail is made of interlocking metal rings. It is always worn over a layer of padded fabric or soft leather to prevent chafing and lessen the impact of blows. 
+
+STATISTICS:
+
+Armor Class: 5 (3 vs. slashing, 4 vs. piercing and missile)
+Speed Factor: -2
+Requires:
+ 8 Strength
+
+Weight: 40
+"
+
+	SAY NAME2 "Chain Mail +2"
+	SAY DESC "Chain mail is made of interlocking metal rings. It is always worn over a layer of padded fabric or soft leather to prevent chafing and lessen the impact of blows.  Extra protection is given by magical enchantments placed on this armor.
+
+STATISTICS:
+
+Armor Class: 3 (1 vs. slashing, 2 vs. piercing and missile)
+Speed Factor: -2
+Requires:
+ 8 Strength
+
+Weight: 15
+"
+
+
+//DARKMAIL +3 - 6500mo//
+COPY "rick_bigg_mod/items/CHAN09.itm" "override"
+	SAY NAME1 "Chain Mail"
+	SAY UNIDENTIFIED_DESC "Chain mail is made of interlocking metal rings. It is always worn over a layer of padded fabric or soft leather to prevent chafing and lessen the impact of blows. 
+
+STATISTICS:
+
+Armor Class: 5 (3 vs. slashing, 4 vs. piercing and missile)
+Speed Factor: -2
+Requires:
+ 8 Strength
+
+Weight: 40
+"
+
+	SAY NAME2 "Darkmail +3"
+	SAY DESC "Whether by design or through exposure to intense heat in battle, the chain links of this armor are coal black throughout. While legends usually speak of knights in shining armor facing great beasts, the fire resistant enchantment on this suit suggests equally great, if unheralded, battles with fire-breathing creatures.
+
+STATISTICS:
+
+Equipped abilities:
+– Fire Resistance: +25%
+
+Armor Class: 2 (0 vs. slashing, 1 vs. piercing and missile)
+Speed Factor: -2
+Requires:
+ 8 Strength
+
+Weight: 10
+"
+
+
+
+
+
+
+
+
+
+
+
+//ELVEN CHAIN MAIL +1 - 5000mo//
+COPY "rick_bigg_mod/items/CHAN12.itm" "override"
+	SAY NAME1 "Chain Mail"
+	SAY UNIDENTIFIED_DESC "Chain mail is made of interlocking metal rings. It is always worn over a layer of padded fabric or soft leather to prevent chafing and lessen the impact of blows. 
+
+STATISTICS:
+
+Armor Class: 5 (3 vs. slashing, 4 vs. piercing and missile)
+Speed Factor: -2
+Requires:
+ 8 Strength
+
+Weight: 40
+"
+
+	SAY NAME2 "Elven Chain Mail +1"
+	SAY DESC "The delicate yet sturdy craftsmanship of the elven races allows them to design many beautiful yet utilitarian goods. Among these is elven chain mail, which is so finely wrought that it can be worn under normal clothing without revealing its presence. This and its lightness allows it to be worn by Thieves and Fighter/Mages with few restrictions. Extra protection is given by magical enchantments placed on this armor.
+
+STATISTICS:
+
+Equipped abilities:
+– Open Locks: -5%
+– Find Traps: -5%
+– Pick Pockets: -20%
+– Move Silently: -10%
+– Spellcasting is not disabled
+
+Armor Class: 4 (2 vs. slashing, 3 vs. piercing and missile)
+Requires:
+ 4 Strength
+
+Weight: 8
+"
+
+
+
+
+
+//ELVEN CHAIN MAIL +2 - 5000mo//
+COPY "rick_bigg_mod/items/CHAN13.itm" "override"
+	SAY NAME1 "Chain Mail"
+	SAY UNIDENTIFIED_DESC "Chain mail is made of interlocking metal rings. It is always worn over a layer of padded fabric or soft leather to prevent chafing and lessen the impact of blows. 
+
+STATISTICS:
+
+Armor Class: 5 (3 vs. slashing, 4 vs. piercing and missile)
+Speed Factor: -2
+Requires:
+ 8 Strength
+
+Weight: 40
+"
+
+	SAY NAME2 "Elven Chain Mail +2"
+	SAY DESC "The delicate yet sturdy craftsmanship of the elven races allows them to design many beautiful yet utilitarian goods. Among these is elven chain mail, which is so finely wrought that it can be worn under normal clothing without revealing its presence. This and its lightness allows it to be worn by Thieves and Fighter/Mages with few restrictions. Extra protection is given by magical enchantments placed on this armor.
+
+STATISTICS:
+
+Equipped abilities:
+– Open Locks: -5%
+– Find Traps: -5%
+– Pick Pockets: -20%
+– Move Silently: -10%
+– Spellcasting is not disabled
+
+Armor Class: 3 (1 vs. slashing, 2 vs. piercing and missile)
+Requires:
+ 4 Strength
+
+Weight: 6
+"
+
+
+
+
+//DARK ELVEN CHAIN MAIL +3 - 9000mo//
+COPY "rick_bigg_mod/items/CLOLTH.itm" "override"
+	SAY NAME1 "Chain Mail"
+	SAY UNIDENTIFIED_DESC "Chain mail is made of interlocking metal rings. It is always worn over a layer of padded fabric or soft leather to prevent chafing and lessen the impact of blows. 
+
+STATISTICS:
+
+Armor Class: 5 (3 vs. slashing, 4 vs. piercing and missile)
+Speed Factor: -2
+Requires:
+ 8 Strength
+
+Weight: 40
+"
+
+	SAY NAME2 "Dark Elven Chain Mail +3"
+	SAY DESC "Dark Elven Chain is the drow version of Elven Chain issued to war parties and raiders visiting the surface, where traditional drow Adamantine armor will quickly deteriorate and turn to Adamantine Dust. Its lightness allows it to be worn by Thieves and Fighter/Mages with few restrictions. This particular armor has been enchanted to make drow raiders even more evasive during their raids.
+
+STATISTICS:
+
+Equipped abilities:
+– Open Locks: -5%
+– Find Traps: -5%
+– Pick Pockets: -20%
+– Spellcasting is not disabled
+- Saving Throws vs Breath: +3
+
+Armor Class: 2 (0 vs. slashing, 1 vs. piercing and missile)
+Requires:
+ 4 Strength
+
+Weight: 5
+"
+
+
+
+
+
+
+
+//BLADESINGER CHAIN +4 - 15000mo//
+COPY "rick_bigg_mod/items/CHAN16.itm" "override"
+	SAY NAME1 "Chain Mail"
+	SAY UNIDENTIFIED_DESC "Chain mail is made of interlocking metal rings. It is always worn over a layer of padded fabric or soft leather to prevent chafing and lessen the impact of blows. 
+
+STATISTICS:
+
+Armor Class: 5 (3 vs. slashing, 4 vs. piercing and missile)
+Speed Factor: -2
+Requires:
+ 8 Strength
+
+Weight: 40
+"
+
+	SAY NAME2 "Bladesinger Chain +4"
+	SAY DESC "The lore of this suit is difficult to determine, either due to the exotic circumstances from which it sprang or the wish of its previous owner to conceal its location. Secrecy would certainly be desirable, as even rumors of such a mail as this could provoke deadly interest. It is the pinnacle of elven craft and a truly blessed item.
+
+STATISTICS:
+
+Equipped abilities:
+– Open Locks: -5%
+– Find Traps: -5%
+– Pick Pockets: -20%
+– Move Silently: -10%
+– Spellcasting is not disabled
+- Melee weapon THAC0: +2
+- Melee weapon damage: +2
+
+Armor Class: 1 (-1 vs. slashing, 0 vs. piercing and missile)
+Requires:
+ 4 Strength
+
+Weight: 5
+"
+
+
+
+
+
+
+
