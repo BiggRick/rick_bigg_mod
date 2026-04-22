@@ -745,11 +745,12 @@ STATISTICS:
 Equipped abilities:
 - +5% chance to score a critical hit
 
-Combat abilities: 
+Combat abilities:
+– Deals extra 10 points of piercing damage on a critical hit
 – 15% chance opponent is knocked back and stunned (large creatures such as a dragons or giants will not be knocked back or stunned)
 
 THAC0: +6
-Damage: 1d6+6, +12 crushing damage, +2d4 piercing damage
+Damage: 1d6+6, +12 crushing damage
 Damage Type: Crushing
 Speed Factor: 1
 Proficiency Type: Quarterstaff

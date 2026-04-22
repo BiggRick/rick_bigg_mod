@@ -15,6 +15,7 @@ Weight: 70"
 	SAY NAME2 "Full Plate Mail +1"
 	SAY DESC "Full plate armor is the best armor a warrior can buy, both in appearance and protection. The perfectly fitted, interlocking plates are specially angled to deflect arrows and blows, and the entire suit is carefully adorned with rich engraving and embossed detail. 
 	With its magical enchantments, this suit of full plate is ideal for warriors.
+	
 STATISTICS:
 
 Armor Class: 0 (-3 vs. slashing, -2 vs. piercing and missile)
@@ -24,6 +25,41 @@ Requires:
 
 Weight: 50
 "
+
+
+
+
+//FULL PLATE MAIL +1 - 9000mo//
+COPY "rick_bigg_mod/items/WA2PLAT.itm" "override"
+	SAY NAME1 "Full Plate Mail"
+	SAY UNIDENTIFIED_DESC "Full plate armor is the best armor a warrior can buy, both in appearance and protection. The perfectly fitted, interlocking plates are specially angled to deflect arrows and blows, and the entire suit is carefully adorned with rich engraving and embossed detail.
+
+STATISTICS:
+
+Armor Class: 1 (-2 vs. slashing, -1 vs. piercing and missile)
+Speed Factor: -3
+Requires:
+ 16 Strength
+
+Weight: 70"
+
+	SAY NAME2 "Full Plate Mail +1"
+	SAY DESC "This plate was worn by the famous hero Balduran. It was lost at sea on Balduran's last voyage.
+	
+STATISTICS:
+
+Equipped abilities:
+- Constitution: +1
+- Immunity to fatigue
+
+Armor Class: 0 (-3 vs. slashing, -2 vs. piercing and missile)
+Speed Factor: -3
+Requires:
+ 16 Strength
+
+Weight: 50
+"
+
 
 
 

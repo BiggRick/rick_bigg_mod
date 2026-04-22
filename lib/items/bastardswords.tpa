@@ -102,7 +102,7 @@ Weight: 10"
 STATISTICS:
 
 THAC0: +2, +4 vs. shapeshifters
-Damage: 2d4+3, +4 vs. shapeshifters
+Damage: 2d4+3, +5 vs. shapeshifters
 Speed Factor: 6
 Proficiency Type: Bastard Sword
 Type: One-handed
@@ -143,13 +143,14 @@ Weight: 10"
 STATISTICS:
 
 Equipped abilities:
-– Magic Resistance: +10%
-- Intelligence, Wisdom and Charisma: +1
+– Save vs. Wand: +2
 - Lore: +40
-- Infravision
 
-THAC0: +2
-Damage: 2d4+3
+Charge abilities:
+- Cast True Strike twice per day
+
+THAC0: +2, +3 vs. Monsters
+Damage: 2d4+3, +4 vs. Monsters
 Damage type: Slashing
 Speed Factor: 6
 Proficiency Type: Bastard Sword
@@ -466,7 +467,7 @@ Weight: 7"
 
 
 
-//ANDURIL +5 - valore 19000mo//
+//ANDURIL +5 - no evil - valore 17000mo//
 COPY "rick_bigg_mod/items/SW1H65.itm" "override"
 	SAY NAME1 "Bastard Sword"
 	SAY UNIDENTIFIED_DESC "Also known as the hand-and-a-half sword, the bastard sword derives its name from the fact that it is halfway between the two-handed sword and the long sword. The bastard sword has a double-edged blade and a long grip, which can accommodate both hands if preferred. The overall length of the bastard sword ranges between four feet and four feet ten inches.

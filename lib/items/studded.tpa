@@ -1,0 +1,128 @@
+//STUDDED LEATHER ARMOR +1 - 1500mo//
+COPY "rick_bigg_mod/items/LEAT05.itm" "override"
+	SAY NAME1 "Studded Leather Armor"
+	SAY UNIDENTIFIED_DESC "Studded leather armor has little in common with normal leather armor. Instead of a hardened shell, studded leather offers hundreds of metal rivets affixed to a supple backing. The numerous studs form a flexible coat of metal that helps to turn aside slashing and cutting attacks, while the leather is little more than a means of securing the rivets in place. 
+
+STATISTICS:
+
+Armor Class: 7 (5 vs. slashing, 6 vs. piercing and missile)
+Speed Factor: -1
+Requires:
+ 6 Strength
+
+Weight: 25
+"
+
+	SAY NAME2 "Studded Leather Armor +1"
+	SAY DESC "Chain mail is made of interlocking metal rings. It is always worn over a layer of padded fabric or soft leather to prevent chafing and lessen the impact of blows.  Extra protection is given by magical enchantments placed on this armor.
+
+STATISTICS:
+
+Armor Class: 6 (4 vs. slashing, 5 vs. piercing and missile)
+Speed Factor: -1
+Requires:
+ 6 Strength
+
+Weight: 15
+"
+
+
+
+
+//STUDDED LEATHER ARMOR +2 - 3000mo//
+COPY "rick_bigg_mod/items/.itm" "override"
+	SAY NAME1 "Studded Leather Armor"
+	SAY UNIDENTIFIED_DESC "Studded leather armor has little in common with normal leather armor. Instead of a hardened shell, studded leather offers hundreds of metal rivets affixed to a supple backing. The numerous studs form a flexible coat of metal that helps to turn aside slashing and cutting attacks, while the leather is little more than a means of securing the rivets in place. 
+
+STATISTICS:
+
+Armor Class: 7 (5 vs. slashing, 6 vs. piercing and missile)
+Speed Factor: -1
+Requires:
+ 6 Strength
+
+Weight: 25
+"
+
+	SAY NAME2 "Studded Leather Armor +2"
+	SAY DESC "Chain mail is made of interlocking metal rings. It is always worn over a layer of padded fabric or soft leather to prevent chafing and lessen the impact of blows.  Extra protection is given by magical enchantments placed on this armor.
+
+STATISTICS:
+
+Armor Class: 5 (3 vs. slashing, 4 vs. piercing and missile)
+Speed Factor: -1
+Requires:
+ 6 Strength
+
+Weight: 10
+"
+
+
+
+
+
+//ARMOR OF MISSILE ATTRACTION +2 - 3500mo//
+COPY "rick_bigg_mod/items/LEAT06.itm" "override"
+	SAY NAME1 "Studded Leather Armor"
+	SAY UNIDENTIFIED_DESC "Studded leather armor has little in common with normal leather armor. Instead of a hardened shell, studded leather offers hundreds of metal rivets affixed to a supple backing. The numerous studs form a flexible coat of metal that helps to turn aside slashing and cutting attacks, while the leather is little more than a means of securing the rivets in place. 
+
+STATISTICS:
+
+Armor Class: 7 (5 vs. slashing, 6 vs. piercing and missile)
+Speed Factor: -1
+Requires:
+ 6 Strength
+
+Weight: 25
+"
+
+	SAY NAME2 "Armor of Missile Attraction +2"
+	SAY DESC "This odd-looking suit of studded leather cannot be removed once put on, except under intervention by a priest. While improving a great protection against all melee weapons, this armor actually becomes a target for missile weapons, and hence so does its wearer. The choice is simple: deadly arrows or deadly swords. 
+
+STATISTICS:
+
+Equipped abilities:
+– May only be removed with a Remove Curse spell
+– Crushing Damage Resistance: +10%
+– Slashing Damage Resistance: +10%
+– Piercing Damage Resistance: +10%
+
+Armor Class: 5 (3 vs. slashing, 4 vs. piercing, 15 vs. missile)
+Speed Factor: -1
+Requires:
+ 6 Strength
+
+Weight: 10"
+
+
+
+
+
+//SHADOW ARMOR +3 - solo ladri - 7000mo//
+COPY "rick_bigg_mod/items/LEAT08.itm" "override"
+	SAY NAME1 "Studded Leather Armor"
+	SAY UNIDENTIFIED_DESC "Studded leather armor has little in common with normal leather armor. Instead of a hardened shell, studded leather offers hundreds of metal rivets affixed to a supple backing. The numerous studs form a flexible coat of metal that helps to turn aside slashing and cutting attacks, while the leather is little more than a means of securing the rivets in place. 
+
+STATISTICS:
+
+Armor Class: 7 (5 vs. slashing, 6 vs. piercing and missile)
+Speed Factor: -1
+Requires:
+ 6 Strength
+
+Weight: 25
+"
+
+	SAY NAME2 "Shadow Armor +3"
+	SAY DESC "This is a +3 studded leather armor that melds into shadows, created for use by the Shadowmasters of Amn. The Shadowmasters are of the highest order within the Shadow Thieves' hierarchy.
+
+STATISTICS:
+
+Equipped abilities:
+– Hide In Shadows: +25%
+
+Armor Class: 4 (2 vs. slashing, 3 vs. piercing and missile)
+Requires:
+ 6 Strength
+
+Weight: 8"

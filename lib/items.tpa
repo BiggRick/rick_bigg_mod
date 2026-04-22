@@ -548,35 +548,7 @@ Weight: 0"
 
 
 
-//ARMOR OF MISSILE ATTRACTION +2 - 2500mo//
-COPY "rick_bigg_mod/items/LEAT06.itm" "override"
-	SAY NAME1 "Studded Leather Armor"
-	SAY UNIDENTIFIED_DESC "Studded leather armor has little in common with normal leather armor. Instead of a hardened shell, studded leather offers hundreds of metal rivets affixed to a supple backing. The numerous studs form a flexible coat of metal that helps to turn aside slashing and cutting attacks, while the leather is little more than a means of securing the rivets in place. 
 
-STATISTICS:
-
-Armor Class: 7 (5 vs. slashing, 6 vs. piercing and missile)
-Requires:
- 6 Strength
-
-Weight: 25"
-
-	SAY NAME2 "Armor of Missile Attraction +2"
-	SAY DESC "This odd-looking suit of studded leather cannot be removed once put on, except under intervention by a priest. While improving a great protection against all melee weapons, this armor actually becomes a target for missile weapons, and hence so does its wearer. The choice is simple: deadly arrows or deadly swords. 
-
-STATISTICS:
-
-Equipped abilities:
-– May only be removed with a Remove Curse spell
-– Crushing Damage Resistance: +10%
-– Slashing Damage Resistance: +10%
-– Piercing Damage Resistance: +10%
-
-Armor Class: 5 (3 vs. slashing, 4 vs. piercing, 15 vs. missile)
-Requires:
- 6 Strength
-
-Weight: 8"
 
 
 

@@ -56,6 +56,46 @@ Weight: 15
 "
 
 
+
+
+
+
+//MAIL OF THE DEAD +2 - 6000mo//
+COPY "rick_bigg_mod/items/TB#CHAN.itm" "override"
+	SAY NAME1 "Chain Mail"
+	SAY UNIDENTIFIED_DESC "Chain mail is made of interlocking metal rings. It is always worn over a layer of padded fabric or soft leather to prevent chafing and lessen the impact of blows. 
+
+STATISTICS:
+
+Armor Class: 5 (3 vs. slashing, 4 vs. piercing and missile)
+Speed Factor: -2
+Requires:
+ 8 Strength
+
+Weight: 40
+"
+
+	SAY NAME2 "Mail of the Dead +2"
+	SAY DESC "A mage can make an extremely effective assassin, as Vorusta illustrated over four hundred years ago. He would create skeleton warriors equipped with this enchanted armor and a powerful blade, and give their circlet of power to the target as a friendly gift. When the killing machine was through with its work, Vorusta retrieved the equipment and started the entire process over.
+
+STATISTICS:
+
+Equipped abilities:
+- Magic Resistance: +10%
+- Slashing Resistance: +5%
+- Piercing Resistance: +5%
+- Missile Resistance: +5%
+- Crushing Resistance: -5%
+
+Armor Class: 3 (1 vs. slashing, 2 vs. piercing and missile)
+Speed Factor: -2
+Requires:
+ 8 Strength
+
+Weight: 15
+"
+
+
 //DARKMAIL +3 - 6500mo//
 COPY "rick_bigg_mod/items/CHAN09.itm" "override"
 	SAY NAME1 "Chain Mail"
@@ -80,6 +120,112 @@ Equipped abilities:
 – Fire Resistance: +25%
 
 Armor Class: 2 (0 vs. slashing, 1 vs. piercing and missile)
+Speed Factor: -2
+Requires:
+ 8 Strength
+
+Weight: 10
+"
+
+
+
+//JESTER'S CHAIN +3 - solo bardi - 9000mo//
+COPY "rick_bigg_mod/items/CHAN10.itm" "override"
+	SAY NAME1 "Chain Mail"
+	SAY UNIDENTIFIED_DESC "Chain mail is made of interlocking metal rings. It is always worn over a layer of padded fabric or soft leather to prevent chafing and lessen the impact of blows. 
+
+STATISTICS:
+
+Armor Class: 5 (3 vs. slashing, 4 vs. piercing and missile)
+Speed Factor: -2
+Requires:
+ 8 Strength
+
+Weight: 40
+"
+
+	SAY NAME2 "Jester's Chain +3"
+	SAY DESC "Friends of Dekirh Fasthands, a bard who insisted on playing the rowdiest towns on the Sword Coast, gave him this suit of magical chain as a gift. The chain mail was given to protect Dekirh from the drunken spectators who often threw rotting produce, chairs, and even knives at Dekirh. The bard appreciated the gift but painted it with wild colors to better fit into his show.
+
+STATISTICS:
+
+Equipped abilities:
+- Reflects missiles back at their user
+
+Armor Class: 2 (0 vs. slashing, 1 vs. piercing and missile)
+Speed Factor: -2
+Requires:
+ 8 Strength
+
+Weight: 10
+"
+
+
+
+//MITHRIL CHAIN MAIL +4 - 12000mo//
+COPY "rick_bigg_mod/items/CHAN06.itm" "override"
+	SAY NAME1 "Chain Mail"
+	SAY UNIDENTIFIED_DESC "Chain mail is made of interlocking metal rings. It is always worn over a layer of padded fabric or soft leather to prevent chafing and lessen the impact of blows. 
+
+STATISTICS:
+
+Armor Class: 5 (3 vs. slashing, 4 vs. piercing and missile)
+Speed Factor: -2
+Requires:
+ 8 Strength
+
+Weight: 40
+"
+
+	SAY NAME2 "Mithril Chain Mail +4"
+	SAY DESC "This is the personal armor of Drizzt, the famous dark elf Ranger. It was forged for him by his friend Bruenor.
+
+STATISTICS:
+
+Equipped abilities:
+– Open Locks: -5%
+– Find Traps: -5%
+– Pick Pockets: -20%
+– Move Silently: -10%
+- Hide in Shadows: -10%
+– Spellcasting is not disabled
+
+Armor Class: 1 (-1 vs. slashing, -3 vs. piercing and missile)
+Requires:
+ 8 Strength
+
+Weight: 10
+"
+
+
+
+
+//ARMOR OF FAITH +4 - solo ranger / 10000mo//
+COPY "rick_bigg_mod/items/CHAN18.itm" "override"
+	SAY NAME1 "Chain Mail"
+	SAY UNIDENTIFIED_DESC "Chain mail is made of interlocking metal rings. It is always worn over a layer of padded fabric or soft leather to prevent chafing and lessen the impact of blows. 
+
+STATISTICS:
+
+Armor Class: 5 (3 vs. slashing, 4 vs. piercing and missile)
+Speed Factor: -2
+Requires:
+ 8 Strength
+
+Weight: 40
+"
+
+	SAY NAME2 "Armor of Faith +4"
+	SAY DESC "This was the armor of Seffer Ekr, and a sign of the goddess Mielikki's favor. She had rewarded the ranger's loyalty with the promise that he would never die in battle, and he defied death for many years, holding orcish hordes back from his home forest. A heart attack claimed him when his time was done, not an enemy's blade.
+
+STATISTICS:
+
+Equipped abilities:
+– Saving Throws: +1
+- Caster Level: +4
+– The wearer can memorize 1 extra spell per level
+
+Armor Class: 1 (-1 vs. slashing, 0 vs. piercing and missile)
 Speed Factor: -2
 Requires:
  8 Strength
@@ -122,6 +268,7 @@ Equipped abilities:
 – Find Traps: -5%
 – Pick Pockets: -20%
 – Move Silently: -10%
+- Hide in Shadows: -10%
 – Spellcasting is not disabled
 
 Armor Class: 4 (2 vs. slashing, 3 vs. piercing and missile)
@@ -160,6 +307,7 @@ Equipped abilities:
 – Find Traps: -5%
 – Pick Pockets: -20%
 – Move Silently: -10%
+- Hide in Shadows: -10%
 – Spellcasting is not disabled
 
 Armor Class: 3 (1 vs. slashing, 2 vs. piercing and missile)
@@ -237,11 +385,12 @@ Equipped abilities:
 – Find Traps: -5%
 – Pick Pockets: -20%
 – Move Silently: -10%
+- Hide in Shadows: -10%
 – Spellcasting is not disabled
 - Melee weapon THAC0: +2
 - Melee weapon damage: +2
 
-Armor Class: 1 (-1 vs. slashing, 0 vs. piercing and missile)
+Armor Class: 1 (-4 vs. slashing, 0 vs. piercing and missile)
 Requires:
  4 Strength
 
@@ -253,4 +402,79 @@ Weight: 5
 
 
 
+//SYLVAN CHAIN +4 - 14000mo//
+COPY "rick_bigg_mod/items/CHAN14.itm" "override"
+	SAY NAME1 "Chain Mail"
+	SAY UNIDENTIFIED_DESC "Chain mail is made of interlocking metal rings. It is always worn over a layer of padded fabric or soft leather to prevent chafing and lessen the impact of blows. 
 
+STATISTICS:
+
+Armor Class: 5 (3 vs. slashing, 4 vs. piercing and missile)
+Speed Factor: -2
+Requires:
+ 8 Strength
+
+Weight: 40
+"
+
+	SAY NAME2 "Sylvan Chain +4"
+	SAY DESC "This light but strong mail is of sylvan elf construction, and therefore its elegance is only exceeded by its rarity. Normally granted only to especially brave elves, seldom is this armor be found outside of a wood elf tribe, and rarer still on someone not of elven lineage.
+
+STATISTICS:
+
+Equipped abilities:
+– Open Locks: -5%
+– Find Traps: -5%
+– Pick Pockets: -20%
+– Move Silently: -10%
+- Hide in Shadows: -10%
+– Spellcasting is not disabled
+- Dexterity: +2
+
+Armor Class: 1 (-1 vs. slashing, 0 vs. piercing and missile)
+Requires:
+ 4 Strength
+
+Weight: 5
+"
+
+
+
+
+//ASLYFERUND ELVEN CHAIN +5 - 20000mo//
+COPY "rick_bigg_mod/items/CHAN19.itm" "override"
+	SAY NAME1 "Chain Mail"
+	SAY UNIDENTIFIED_DESC "Chain mail is made of interlocking metal rings. It is always worn over a layer of padded fabric or soft leather to prevent chafing and lessen the impact of blows. 
+
+STATISTICS:
+
+Armor Class: 5 (3 vs. slashing, 4 vs. piercing and missile)
+Speed Factor: -2
+Requires:
+ 8 Strength
+
+Weight: 40
+"
+
+	SAY NAME2 "Aslyferund Elven Chain +5"
+	SAY DESC "While in exile from Myth Drannor, Aslyferund learned the secret of fashioning powerful elven armor by gilding and heavily enchanting normal elven chain. Alas, his refusal to divulge the secret lead to his murder by a rival smith.
+
+STATISTICS:
+
+Equipped abilities:
+– Immunity to normal weapons
+– Open Locks: -5%
+– Find Traps: -5%
+– Pick Pockets: -20%
+– Move Silently: -10%
+- Hide in Shadows: -10%
+– Spellcasting is not disabled
+- Immunity to normal weapons
+- Magic Resistance: +20%
+
+Armor Class: 0 (-2 vs. slashing, -1 vs. piercing and missile)
+Requires:
+ 4 Strength
+
+Weight: 10
+"

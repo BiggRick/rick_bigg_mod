@@ -204,7 +204,7 @@ Weight: 1"
 STATISTICS:
 
 Combat abilities: 
-– 25% chance per hit that the target must save vs. Wand or be held for 2 rounds
+– 25% chance per hit that the target must save vs. Paralysis or be held for 2 rounds
 
 THAC0: +3
 Damage: 1d4+3 (piercing)
@@ -406,9 +406,6 @@ Weight: 1"
 
 STATISTICS:
 
-Equipped abilities:
-- Immunity to Time Stop
-   
 Combat abilities:
 – 20% chance of making the user go invisible for 1 turn after each successful attack
 
