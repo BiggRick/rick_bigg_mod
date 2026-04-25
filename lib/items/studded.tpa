@@ -30,7 +30,7 @@ Weight: 15
 
 
 //STUDDED LEATHER ARMOR +2 - 3000mo//
-COPY "rick_bigg_mod/items/.itm" "override"
+COPY "rick_bigg_mod/items/LEAT07.itm" "override"
 	SAY NAME1 "Studded Leather Armor"
 	SAY UNIDENTIFIED_DESC "Studded leather armor has little in common with normal leather armor. Instead of a hardened shell, studded leather offers hundreds of metal rivets affixed to a supple backing. The numerous studs form a flexible coat of metal that helps to turn aside slashing and cutting attacks, while the leather is little more than a means of securing the rivets in place. 
 
@@ -98,6 +98,45 @@ Weight: 10"
 
 
 
+
+//TELBAR'S STUDDED LEATHER +2 - 4500mo//
+COPY "rick_bigg_mod/items/TB#LEA15.itm" "override"
+	SAY NAME1 "Studded Leather Armor"
+	SAY UNIDENTIFIED_DESC "Studded leather armor has little in common with normal leather armor. Instead of a hardened shell, studded leather offers hundreds of metal rivets affixed to a supple backing. The numerous studs form a flexible coat of metal that helps to turn aside slashing and cutting attacks, while the leather is little more than a means of securing the rivets in place. 
+
+STATISTICS:
+
+Armor Class: 7 (5 vs. slashing, 6 vs. piercing and missile)
+Speed Factor: -1
+Requires:
+ 6 Strength
+
+Weight: 25
+"
+
+	SAY NAME2 "Telbar's Studded Leather +2"
+	SAY DESC "This armor was the property of the famous rogue Telbar. How or why it left his possession is not known. 
+It is well known that as long as he was in possession of this armor, fortune rarely turned its back on him.
+
+STATISTICS:
+
+Equipped abilites: 
+Luck: +1
+
+Armor Class: 5 (3 vs. slashing, 4 vs. piercing and missile)
+Speed Factor: -1
+Requires:
+ 6 Strength
+
+Weight: 10
+"
+
+
+
+
+
+
+
 //SHADOW ARMOR +3 - solo ladri - 7000mo//
 COPY "rick_bigg_mod/items/LEAT08.itm" "override"
 	SAY NAME1 "Studded Leather Armor"
@@ -122,7 +161,161 @@ Equipped abilities:
 – Hide In Shadows: +25%
 
 Armor Class: 4 (2 vs. slashing, 3 vs. piercing and missile)
+Speed Factor: -1
 Requires:
  6 Strength
 
 Weight: 8"
+
+
+
+
+
+
+//ORC LEATHER +3 - 5000mo//
+COPY "rick_bigg_mod/items/LEAT16.itm" "override"
+	SAY NAME1 "Studded Leather Armor"
+	SAY UNIDENTIFIED_DESC "Studded leather armor has little in common with normal leather armor. Instead of a hardened shell, studded leather offers hundreds of metal rivets affixed to a supple backing. The numerous studs form a flexible coat of metal that helps to turn aside slashing and cutting attacks, while the leather is little more than a means of securing the rivets in place. 
+
+STATISTICS:
+
+Armor Class: 7 (5 vs. slashing, 6 vs. piercing and missile)
+Speed Factor: -1
+Requires:
+ 6 Strength
+
+Weight: 25
+"
+
+	SAY NAME2 "Orc Leather +3"
+	SAY DESC "This ghastly armor was taken from an orc camp destroyed by barbarians. Instead of standard metal rivets, like normal studded leather, this orc leather is instead laced with hundreds of fire-hardened bones. Finger bones, ribs, and skulls cover the armor, acting much like the traditional metal rivets. Powerful orcish enchantments give the armor special resistance to missile attacks, but the repulsiveness of the armor reduces the wearer's Charisma.
+
+STATISTICS:
+
+Equipped abilities:
+– Charisma: 2
+– +20% resistance to missile damage
+
+Armor Class: 4 (2 vs. slashing, 3 vs. piercing and missile)
+Speed Factor: -1
+Requires:
+ 6 Strength
+
+Weight: 8"
+
+
+
+
+
+
+//THE NIGHT'S EMBRACE +4 - 10000mo//
+COPY "rick_bigg_mod/items/LEAT17.itm" "override"
+	SAY NAME1 "Studded Leather Armor"
+	SAY UNIDENTIFIED_DESC "Studded leather armor has little in common with normal leather armor. Instead of a hardened shell, studded leather offers hundreds of metal rivets affixed to a supple backing. The numerous studs form a flexible coat of metal that helps to turn aside slashing and cutting attacks, while the leather is little more than a means of securing the rivets in place. 
+
+STATISTICS:
+
+Armor Class: 7 (5 vs. slashing, 6 vs. piercing and missile)
+Speed Factor: -1
+Requires:
+ 6 Strength
+
+Weight: 25
+"
+
+	SAY NAME2 "The Night's Embrace +4"
+	SAY DESC "A thief from Iriaebor who feared being captured by the city guard was known to have favored this armor. She designed the suit so that if she were ever incapacitated in any way, she would be rendered temporarily invisible. The armor did its job, and the thief had a long and successful career in the city. When she retired, she gifted the armor to her younger brother, and it has changed hands many times since then.
+
+STATISTICS:
+
+Equipped abilities:
+– If the wearer is rendered helpless (e.g. by a Hold Person spell), <PRO_HESHE> becomes invisible for 1 turn
+- AC bonus at night: +2
+- Saving Throws bonus at night: +2
+
+Armor Class: 3 (1 vs. slashing, 2 vs. piercing and missile)
+Speed Factor: -1
+Requires:
+ 6 Strength
+
+Weight: 7"
+
+
+
+
+//SHADOW DRAGON SCALE - 12000mo//
+COPY "rick_bigg_mod/items/LEAT19.itm" "override"
+	SAY NAME1 "Studded Leather Armor"
+	SAY UNIDENTIFIED_DESC "Studded leather armor has little in common with normal leather armor. Instead of a hardened shell, studded leather offers hundreds of metal rivets affixed to a supple backing. The numerous studs form a flexible coat of metal that helps to turn aside slashing and cutting attacks, while the leather is little more than a means of securing the rivets in place. 
+
+STATISTICS:
+
+Armor Class: 7 (5 vs. slashing, 6 vs. piercing and missile)
+Speed Factor: -1
+Requires:
+ 7 Strength
+
+Weight: 25"
+
+	SAY NAME2 "Shadow Dragon Scale"
+	SAY DESC "This suit of armor is formed from interlocking shadow dragon scales. Elegant workmanship and practical considerations make this armor both beautiful and useful. The shadow dragon scales grant the wearer a powerful protection against negative plane.
+
+STATISTICS:
+
+Equipped abilities:
+– Immunity to level drain
+
+Armor Class: 2 (0 vs. slashing, 1 vs. piercing, -1 vs. missile)
+Speed Factor: -1
+Requires:
+ 7 Strength
+
+Weight: 10
+"
+
+
+
+//ARMOR OF THE VIPER +5 - 8000mo//
+COPY "rick_bigg_mod/items/LEAT18.itm" "override"
+	SAY NAME1 "Studded Leather Armor"
+	SAY UNIDENTIFIED_DESC "Studded leather armor has little in common with normal leather armor. Instead of a hardened shell, studded leather offers hundreds of metal rivets affixed to a supple backing. The numerous studs form a flexible coat of metal that helps to turn aside slashing and cutting attacks, while the leather is little more than a means of securing the rivets in place. 
+
+STATISTICS:
+
+Armor Class: 7 (5 vs. slashing, 6 vs. piercing and missile)
+Speed Factor: -1
+Requires:
+ 6 Strength
+
+Weight: 25
+"
+
+	SAY NAME2 "Armor of the Viper +5"
+	SAY DESC "This armor's namesake is a serpent only in manner, referring to the drow assassin Raroh. Poison was his trademark, and when he discovered this suit's susceptibility to venom, he gifted it to Avlorm, a promising novice assassin within his own guild. When Avlorm's power eventually threatened his own, Raroh easily dispatched him, thanks to the weakness of the armor he still wore.
+
+STATISTICS:
+
+Equipped abilities:
+– Dexterity: +2
+- Poison damage resistance: -30%
+
+Armor Class: 2 (0 vs. slashing, 1 vs. piercing and missile)
+Speed Factor: -1
+Requires:
+ 6 Strength
+
+Weight: 6"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
