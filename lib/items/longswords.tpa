@@ -191,46 +191,6 @@ Weight: 3"
 
 
 
-//SPELL BREAKER +3 - valore 9000mo//
-COPY "rick_bigg_mod/items/BDSW1H25.itm" "override"
-	SAY NAME1 "Long Sword"
-	SAY UNIDENTIFIED_DESC "These swords are usually referred to as double-edged swords, war swords, or military swords. In many cases, the long sword has a single-edged blade. There is no single version of the long sword; the design and length vary from culture to culture and may vary within the same culture depending on the era. Among the most common characteristics of all long swords is their length, which ranges from thirty-five inches to forty-seven inches. In the latter case, the blade is known to take up forty inches of the total length. Most long swords have a double-edged blade and a sharp point at the tip. Despite the tip, the long sword is designed for slashing, not thrusting.
-
-STATISTICS:
-
-Damage: 1d8 (slashing or piercing)
-Speed Factor: 5
-Proficiency Type: Long Sword
-Type: One-handed
-Requires:
- 9 Strength
-
-Weight: 4"
-
-	SAY NAME2 "Spell Breaker +3"
-	SAY DESC "Power can corrupt even the noblest of mages, and the long-lived elves of Faerûn have seen what devastating consequences can occur when a mage loses control. This elegant longsword, its silver hilt decorated with clear blue gems, was crafted to deal with arcane spellcasters who have abused their gift. The sword assists any hunter who tracks down out-of-control mages, and falls off the hand of anyone but wizard slayers.
-
-STATISTICS:
-
-Equipped abilities: 
-– Save vs. Spell: +4
-
-Combat abilities:
-– Miscast Spell chance on hit: +25%
-
-Charge abilities:
-- Pierce Shield once per day
-
-THAC0: +3
-Damage: 1d8+3 (slashing)
-Speed Factor: 2
-Proficiency Type: Long Sword
-Type: One-handed
-Requires:
- 9 Strength
-
-Weight: 3"
-
 
 
 
@@ -321,45 +281,6 @@ Weight: 3"
 
 
 
-
-
-//MASTER SWORD +4 - no good - valore 14000mo//
-COPY "rick_bigg_mod/items/TB#LINK.itm" "override"
-	SAY NAME1 "Long Sword"
-	SAY UNIDENTIFIED_DESC "These swords are usually referred to as double-edged swords, war swords, or military swords. In many cases, the long sword has a single-edged blade. There is no single version of the long sword; the design and length vary from culture to culture and may vary within the same culture depending on the era. Among the most common characteristics of all long swords is their length, which ranges from thirty-five inches to forty-seven inches. In the latter case, the blade is known to take up forty inches of the total length. Most long swords have a double-edged blade and a sharp point at the tip. Despite the tip, the long sword is designed for slashing, not thrusting.
-
-STATISTICS:
-
-Damage: 1d8 (slashing or piercing)
-Speed Factor: 5
-Proficiency Type: Long Sword
-Type: One-handed
-Requires:
- 9 Strength
-
-Weight: 4"
-
-	SAY NAME2 "Master Sword +4"
-	SAY DESC "
-
-STATISTICS:
-
-Equipped abilities: 
-– +25% Magic damage resistance
-
-Charge abilities:
-- Charged Beam three times per day: 10d10 magical damage (Save vs. Wand at-4 for half)
-
-THAC0: +4
-Damage: 1d8+4, 1d8+4 extra vs. Fiends
-Damage type: Slashing or Piercing
-Speed Factor: 1
-Proficiency Type: Long Sword
-Type: One-handed
-Requires:
- 9 Strength
-
-Weight: 2"
 
 
 
@@ -460,7 +381,11 @@ Requires:
 Weight: 4"
 
 	SAY NAME2 "Emerald Sword +5"
-	SAY DESC "
+	SAY DESC "Many are the legendary tales sung about the Emerald Sword, forged under virgin skies in the Forest of Unicorns. Though his name was forgotten under the rain of a thousand flames, eternal glory was won by the Warrior of Ice, who left the village of Dwarves and quested for this blade beyond the gates of infinity, flying on wings of destiny to the dark tower of abyss, where he won triumph for his magic steel against Dargor, Shadowlord of the Black Mountain.
+	
+	Tempered by the wisdom of the kings, he faced the bloody rage of the titans at the dawn of victory, and brought the power of the dragonflame against the Queen of the dark horizons, freeing the land of immortals from the pride of the tyrant. Only echoes of tragedy are found in the wizard's last rhymes - when demons awoke, the steelgods of the last apocalypse captured the tears of a dying angel and cried the unholy warcry. Flames of revenge burned for the last winged unicorn, until only the symphony of the enchanged lands could be heard riding in the winds of eternity.
+	
+	It is a mystery how this blade made to Volo's hand - perhaps trolls in the dark stole it, or perhaps only the poem's evil page can tell.
 
 STATISTICS:
 

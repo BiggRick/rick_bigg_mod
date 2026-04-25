@@ -251,7 +251,7 @@ Requires:
 Weight: 15"
 
 SAY NAME2 "Demon Slayer +4"
-	SAY DESC "A block of metal, too big to be called a sword. Massive, thick, heavy, and far too rough. Indeed, it was a heap of raw iron. When it slams into the enemies, it cuts or destroys indiscriminately, using the sheer weight of the weapon. This "sword" requires enormous strength, uncommon among the vast majority of warriors. A dark aura surrounds the blade, as if it had been repeatedly imbued with evil.
+	SAY DESC "A block of metal, too big to be called a sword. Massive, thick, heavy, and far too rough. Indeed, it was a heap of raw iron. When it slams into the enemies, it cuts or destroys indiscriminately, using the sheer weight of the weapon. This 'sword' requires enormous strength, uncommon among the vast majority of warriors. A dark aura surrounds the blade, as if it had been repeatedly imbued with evil.
 
 STATISTICS:
 

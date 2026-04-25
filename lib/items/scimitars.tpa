@@ -15,7 +15,7 @@ Requires:
 Weight: 4"
 
 	SAY NAME2 "Scimitar +1"
-	SAY DESC "The scimitar, or "shamshir" as it was originally called, has a single-edged blade with a significant curve and is tapered to an elongated, sharp point. It is perhaps slower than other weapons of the same type, though it compensates by the amount of damage it is capable of. 
+	SAY DESC "The scimitar, or 'shamshir' as it was originally called, has a single-edged blade with a significant curve and is tapered to an elongated, sharp point. It is perhaps slower than other weapons of the same type, though it compensates by the amount of damage it is capable of. 
 	This particular weapon has been enhanced magically to complement the skill of the wielder.
 
 STATISTICS:
@@ -51,7 +51,7 @@ Requires:
 Weight: 4"
 
 	SAY NAME2 "Scimitar +2"
-	SAY DESC "The scimitar, or "shamshir" as it was originally called, has a single-edged blade with a significant curve and is tapered to an elongated, sharp point. It is perhaps slower than other weapons of the same type, though it compensates by the amount of damage it is capable of. 
+	SAY DESC "The scimitar, or 'shamshir' as it was originally called, has a single-edged blade with a significant curve and is tapered to an elongated, sharp point. It is perhaps slower than other weapons of the same type, though it compensates by the amount of damage it is capable of. 
 	This particular weapon has been enhanced magically to complement the skill of the wielder.
 
 STATISTICS:
