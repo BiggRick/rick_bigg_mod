@@ -8,7 +8,7 @@ STATISTICS:
 Armor Class: 3 (0 vs. slashing, 2 vs. piercing and missile)
 Speed Factor: -3
 Requires:
- 14 Strength
+ 13 Strength
 
 Weight: 50"
 
@@ -21,7 +21,7 @@ STATISTICS:
 Armor Class: 2 (-1 vs. slashing, 1 vs. piercing and missile)
 Speed Factor: -3
 Requires:
- 14 Strength
+ 13 Strength
 
 Weight: 40
 "
@@ -39,7 +39,7 @@ STATISTICS:
 Armor Class: 3 (0 vs. slashing, 2 vs. piercing and missile)
 Speed Factor: -3
 Requires:
- 14 Strength
+ 13 Strength
 
 Weight: 50"
 
@@ -52,7 +52,7 @@ STATISTICS:
 Armor Class: 1 (-2 vs. slashing, 0 vs. piercing and missile)
 Speed Factor: -3
 Requires:
- 14 Strength
+ 13 Strength
 
 Weight: 30
 "
@@ -62,7 +62,11 @@ Weight: 30
 
 
 
-//ANKHEG PLATE MAIL +1 - 6000mo//
+
+
+
+
+//ANKHEG SCALE - 6000mo//
 COPY "rick_bigg_mod/items/PLAT06_.itm" "override"
 	SAY NAME1 "Plate Mail"
 	SAY UNIDENTIFIED_DESC "Plate mail is a combination of chain armor with metal plates covering the vital areas such as the chest, abdomen, and groin. Similar in construction to bronze plate mail, true plate mail comprises chain and leather.
@@ -72,19 +76,19 @@ STATISTICS:
 Armor Class: 3 (0 vs. slashing, 2 vs. piercing and missile)
 Speed Factor: -3
 Requires:
- 14 Strength
+ 13 Strength
 
 Weight: 50"
 
-	SAY NAME2 "Ankheg Plate Mail +1"
+	SAY NAME2 "Ankheg Scale"
 	SAY DESC "This plate mail has been expertly crafted by Taerom Fuiruim of Beregost. Sheathed in the chitinous scales of the ankheg, it provides a greater degree of protection than traditional plate mail and is not susceptible to rust. As any world-weary adventurer will tell you, however, the best appreciated aspect of ankheg mail is its light weight and low encumbrance. Monsters come and go, but fatigue is a constant enemy.
 
 STATISTICS:
 
-Armor Class: 2 (-1 vs. slashing, 1 vs. piercing and missile)
-Speed Factor: -3
+Armor Class: 3 (1 vs. slashing, 2 vs. piercing and missile)
+Speed Factor: -2
 Requires:
- 8 Strength
+ 9 Strength
 
 Weight: 20
 "
@@ -94,7 +98,7 @@ Weight: 20
 
 
 
-//ANKHEG PLATE MAIL +1 - 7500mo//
+//ANKHEG SCALE - 6000mo//
 COPY "rick_bigg_mod/items/PLAT06.itm" "override"
 	SAY NAME1 "Plate Mail"
 	SAY UNIDENTIFIED_DESC "Plate mail is a combination of chain armor with metal plates covering the vital areas such as the chest, abdomen, and groin. Similar in construction to bronze plate mail, true plate mail comprises chain and leather.
@@ -104,33 +108,23 @@ STATISTICS:
 Armor Class: 3 (0 vs. slashing, 2 vs. piercing and missile)
 Speed Factor: -3
 Requires:
- 14 Strength
+ 13 Strength
 
 Weight: 50"
 
-	SAY NAME2 "Ankheg Plate Mail +2"
+	SAY NAME2 "Ankheg Scale"
 	SAY DESC "This plate mail has been expertly crafted. Sheathed in the chitinous scales of the ankheg, it provides a greater degree of protection than traditional plate mail and is not susceptible to rust. As any world-weary adventurer will tell you, however, the best appreciated aspect of ankheg mail is its light weight and low encumbrance. 
 	Monsters come and go, but fatigue is a constant enemy.
 	
 STATISTICS:
 
-Armor Class: 1 (-2 vs. slashing, 0 vs. piercing and missile)
-Speed Factor: -3
+Armor Class: 3 (1 vs. slashing, 2 vs. piercing and missile)
+Speed Factor: -2
 Requires:
- 8 Strength
+ 9 Strength
 
 Weight: 20
 "
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -145,7 +139,7 @@ STATISTICS:
 Armor Class: 3 (0 vs. slashing, 2 vs. piercing and missile)
 Speed Factor: -3
 Requires:
- 14 Strength
+ 13 Strength
 
 Weight: 50"
 
@@ -158,7 +152,7 @@ STATISTICS:
 Equipped abilities:
 - +1 Charisma
 
-Armor Class: 1 (-2 vs. slashing, 0 vs. piercing and missile)
+Armor Class: 2 (-2 vs. slashing, 0 vs. piercing and missile)
 Speed Factor: -1
 Requires:
  10 Strength
@@ -179,7 +173,7 @@ STATISTICS:
 Armor Class: 3 (0 vs. slashing, 2 vs. piercing and missile)
 Speed Factor: -3
 Requires:
- 14 Strength
+ 13 Strength
 
 Weight: 50"
 
@@ -195,7 +189,7 @@ Equipped abilities:
 Armor Class: 1 (-2 vs. slashing, 0 vs. piercing and missile)
 Speed Factor: -3
 Requires:
- 14 Strength
+ 13 Strength
 
 Weight: 25
 "
@@ -213,7 +207,7 @@ STATISTICS:
 Armor Class: 3 (0 vs. slashing, 2 vs. piercing and missile)
 Speed Factor: -3
 Requires:
- 14 Strength
+ 13 Strength
 
 Weight: 50"
 
@@ -229,7 +223,7 @@ Equipped abilities:
 Armor Class: 0 (-3 vs. slashing, -1 vs. piercing and missile)
 Speed Factor: -3
 Requires:
- 14 Strength
+ 13 Strength
 
 Weight: 27
 "
@@ -248,7 +242,7 @@ STATISTICS:
 Armor Class: 3 (0 vs. slashing, 2 vs. piercing and missile)
 Speed Factor: -3
 Requires:
- 14 Strength
+ 13 Strength
 
 Weight: 50"
 
@@ -264,7 +258,7 @@ Equipped abilities:
 Armor Class: 0 (-3 vs. slashing, -1 vs. piercing and missile)
 Speed Factor: -3
 Requires:
- 14 Strength
+ 13 Strength
 
 Weight: 30
 "
@@ -273,34 +267,33 @@ Weight: 30
 
 
 
-
-
-//RED DRAGON SCALE +4 - 13000mo//
-COPY "rick_bigg_mod/items/PLAT18.itm" "override"
+//FALLORAIN'S PLATE +4 - 14000mo//
+COPY "rick_bigg_mod/items/PLAT17.itm" "override"
 	SAY NAME1 "Plate Mail"
-	SAY UNIDENTIFIED_DESC "Plate mail is a combination of chain armor with metal plates covering the vital areas such as the chest, abdomen, and groin. Similar in construction to bronze plate mail, true plate mail comprises chain and leather.
+	SAY UNIDENTIFIED_DESC "FPlate mail is a combination of chain armor with metal plates covering the vital areas such as the chest, abdomen, and groin. Similar in construction to bronze plate mail, true plate mail comprises chain and leather.
 
 STATISTICS:
 
 Armor Class: 3 (0 vs. slashing, 2 vs. piercing and missile)
 Speed Factor: -3
 Requires:
- 14 Strength
+ 13 Strength
 
 Weight: 50"
 
-	SAY NAME2 "Red Dragon Scale +4"
-	SAY DESC "Dragon scale armor is light of weight, strong, and resistant to fire. Because of these properties, it is much sought after, but finding, let alone slaying, a powerful ancient dragon is near impossible. It is usually easier to search for an existing suit, such as this one. One should be careful wearing it near dragons, however, particularly red ones.
+	SAY NAME2 "Fallorain's Plate +4"
+	SAY DESC "Captain Fallorain, leader of Calimshan's 12th cavalry brigade, wore this enchanted armor for the last time during the Battle of the Spider Swamp. There he lost his life and army trying to rid an unrecorded evil from the area. 
 
 STATISTICS:
 
 Equipped abilities:
-– Fire Resistance: +50%
+– Protection From Evil
+– Immunity to poison and disease
 
-Armor Class: -1 (-4 vs. slashing, -2 vs. piercing, -4 vs. missile)
-Speed Factor: -2
+Armor Class: -1 (-4 vs. slashing, -2 vs. piercing and missile)
+Speed Factor: -3
 Requires:
- 10 Strength
+ 13 Strength
 
 Weight: 25
 "
@@ -309,35 +302,35 @@ Weight: 25
 
 
 
-
-//BLUE DRAGON SCALE +5 - 15000mo//
-COPY "rick_bigg_mod/items/PLAT20.itm" "override"
-	SAY NAME1 "Plate Mail"
-	SAY UNIDENTIFIED_DESC "Plate mail is a combination of chain armor with metal plates covering the vital areas such as the chest, abdomen, and groin. Similar in construction to bronze plate mail, true plate mail comprises chain and leather.
+//MAGMA BULWARK +4 - 15000mo//
+COPY "rick_bigg_mod/items/TB#PLAT1.itm" "override"
+	SAY NAME1 "Full Plate Mail"
+	SAY UNIDENTIFIED_DESC "Full plate armor is the best armor a warrior can buy, both in appearance and protection. The perfectly fitted, interlocking plates are specially angled to deflect arrows and blows, and the entire suit is carefully adorned with rich engraving and embossed detail.
 
 STATISTICS:
 
 Armor Class: 3 (0 vs. slashing, 2 vs. piercing and missile)
 Speed Factor: -3
 Requires:
- 14 Strength
+ 13 Strength
 
 Weight: 50"
 
-	SAY NAME2 "Blue Dragon Scale +5"
-	SAY DESC "The light but durable scales of the blue dragon provide excellent protection against weapons and all forms of electricity.
-	
+	SAY NAME2 "Magma Bulwark +4"
+	SAY DESC "Forged by the fire giant Varboti as a gift for a Cormyrian general who made peace with his clan, this red-and-black armor lends its wearer a molten aspect while providing protection against all but the most powerful blows and fire damage. Due to its incredibly strong but thin material, it also weighs far less than ordinary plate mail.
+
 STATISTICS:
 
-Equipped abilities:
-– Electrical Resistance: +50%
+Equipped Abilities:
+- Fire damage resistance: +20%
+- Crushing damage resistance: +10%
 
-Armor Class: -2 (-5 vs. slashing, -3 vs. piercing, -5 vs. missile)
-Speed Factor: -2
+Armor Class: -1 (-4 vs. slashing, -2 vs. piercing and missile)
+Speed Factor: -3
 Requires:
- 10 Strength
+ 13 Strength
 
-Weight: 21
+Weight: 35
 "
 
 
@@ -345,8 +338,7 @@ Weight: 21
 
 
 
-
-//ENKIDU'S PLATE +5 - 16000mo//
+//ENKIDU'S PLATE +5 - 17000mo//
 COPY "rick_bigg_mod/items/PLAT21.itm" "override"
 	SAY NAME1 "Plate Mail"
 	SAY UNIDENTIFIED_DESC "Plate mail is a combination of chain armor with metal plates covering the vital areas such as the chest, abdomen, and groin. Similar in construction to bronze plate mail, true plate mail comprises chain and leather.
@@ -356,7 +348,7 @@ STATISTICS:
 Armor Class: 3 (0 vs. slashing, 2 vs. piercing and missile)
 Speed Factor: -3
 Requires:
- 14 Strength
+ 13 Strength
 
 Weight: 50"
 
@@ -366,13 +358,13 @@ Weight: 50"
 STATISTICS:
 
 Equipped abilities:
-– Magic Resistance: +5%
+– Piercing damage resistance: +10%
 – Immunity to backstab
 
 Armor Class: -2 (-5 vs. slashing, -3 vs. piercing and missile)
 Speed Factor: -3
 Requires:
- 14 Strength
+ 13 Strength
 
 Weight: 30
 "

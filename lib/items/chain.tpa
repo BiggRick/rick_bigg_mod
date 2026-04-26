@@ -8,7 +8,7 @@ STATISTICS:
 Armor Class: 5 (3 vs. slashing, 4 vs. piercing and missile)
 Speed Factor: -2
 Requires:
- 8 Strength
+ 9 Strength
 
 Weight: 40
 "
@@ -21,7 +21,7 @@ STATISTICS:
 Armor Class: 4 (2 vs. slashing, 3 vs. piercing and missile)
 Speed Factor: -2
 Requires:
- 8 Strength
+ 9 Strength
 
 Weight: 20
 "
@@ -37,7 +37,7 @@ STATISTICS:
 Armor Class: 5 (3 vs. slashing, 4 vs. piercing and missile)
 Speed Factor: -2
 Requires:
- 8 Strength
+ 9 Strength
 
 Weight: 40
 "
@@ -50,7 +50,40 @@ STATISTICS:
 Armor Class: 3 (1 vs. slashing, 2 vs. piercing and missile)
 Speed Factor: -2
 Requires:
- 8 Strength
+ 9 Strength
+
+Weight: 15
+"
+
+
+
+
+//STALWART CHAIN +2 - 5500mo//
+COPY "rick_bigg_mod/items/BDCHAN06.itm" "override"
+	SAY NAME1 "Chain Mail"
+	SAY UNIDENTIFIED_DESC "Chain mail is made of interlocking metal rings. It is always worn over a layer of padded fabric or soft leather to prevent chafing and lessen the impact of blows. 
+
+STATISTICS:
+
+Armor Class: 5 (3 vs. slashing, 4 vs. piercing and missile)
+Speed Factor: -2
+Requires:
+ 9 Strength
+
+Weight: 40"
+
+	SAY NAME2 "Stalwart Chain +2"
+	SAY DESC "Noted dwarven smith Hedda Perigot crafted this suit of armor in response to a challenge. Fellow smiths discussed their disdain of working with non-metal or stone materials at the tavern one night, and Hedda bragged that she had no such difficulties. The smiths challenged her to create a hybrid suit of half-metal, half-armor. Hedda set to work making the lightest, most flexible steel plates she could and affixing them to a well-made leather breastplate. The result was a shimmering suit of chain mail that weighed less than a normal suit and proved most useful against slashing attacks. Hedda won the bet, and free drinks for a month.
+
+STATISTICS:
+
+Equipped abilities:
+– Slashing Resistance: +10%
+
+Armor Class: 3 (1 vs. slashing, 2 vs. piercing and missile)
+Speed Factor: -2
+Requires:
+ 9 Strength
 
 Weight: 15
 "
@@ -70,7 +103,7 @@ STATISTICS:
 Armor Class: 5 (3 vs. slashing, 4 vs. piercing and missile)
 Speed Factor: -2
 Requires:
- 8 Strength
+ 9 Strength
 
 Weight: 40
 "
@@ -90,10 +123,12 @@ Equipped abilities:
 Armor Class: 3 (1 vs. slashing, 2 vs. piercing and missile)
 Speed Factor: -2
 Requires:
- 8 Strength
+ 9 Strength
 
 Weight: 15
 "
+
+
 
 
 //DARKMAIL +3 - 6500mo//
@@ -106,7 +141,7 @@ STATISTICS:
 Armor Class: 5 (3 vs. slashing, 4 vs. piercing and missile)
 Speed Factor: -2
 Requires:
- 8 Strength
+ 9 Strength
 
 Weight: 40
 "
@@ -122,7 +157,76 @@ Equipped abilities:
 Armor Class: 2 (0 vs. slashing, 1 vs. piercing and missile)
 Speed Factor: -2
 Requires:
- 8 Strength
+ 9 Strength
+
+Weight: 10
+"
+
+
+
+
+
+//COMMANDER CHAIN MAIL +3 - 7500mo//
+COPY "rick_bigg_mod/items/BDCHAN04.itm" "override"
+	SAY NAME1 "Chain Mail"
+	SAY UNIDENTIFIED_DESC "Chain mail is made of interlocking metal rings. It is always worn over a layer of padded fabric or soft leather to prevent chafing and lessen the impact of blows. 
+
+STATISTICS:
+
+Armor Class: 5 (3 vs. slashing, 4 vs. piercing and missile)
+Speed Factor: -2
+Requires:
+ 9 Strength
+
+Weight: 40"
+
+	SAY NAME2 "Commander Chain Mail +3"
+	SAY DESC "As soon as you put it on, this chain mail exudes a powerful aura of confidence and courage that immediately influences all allies at your side. Its origins are uncertain, but it appears to have belonged to a great Tethyrian leader.
+
+STATISTICS:
+
+Equipped abilities:
+– Charisma: +1
+– The wearer and any allies within <PRO_HISHER> visual radius are immune to fear and morale failure
+
+Armor Class: 2 (0 vs. slashing, 1 vs. piercing and missile)
+Speed Factor: -2
+Requires:
+ 9 Strength
+
+Weight: 10
+"
+
+
+
+
+
+//ASHEN CHAIN +3 - 7000mo//
+COPY "rick_bigg_mod/items/CHAN17.itm" "override"
+	SAY NAME1 "Chain Mail"
+	SAY UNIDENTIFIED_DESC "Chain mail is made of interlocking metal rings. It is always worn over a layer of padded fabric or soft leather to prevent chafing and lessen the impact of blows. 
+
+STATISTICS:
+
+Armor Class: 5 (3 vs. slashing, 4 vs. piercing and missile)
+Speed Factor: -2
+Requires:
+ 9 Strength
+
+Weight: 40"
+
+	SAY NAME2 "Ashen Chain +3"
+	SAY DESC "Instead of metal strips, this armor uses wyvern scales bound to a chain backing by means of a magical fire. The resulting armor is ash-gray in color and more flexible than standard chain mail. A ranger, Usher Skacan, made this armor after slaying several wyverns that were killing all the deer and elk in his forest.
+
+STATISTICS:
+
+Equipped abilities:
+– Poison damage resistance: +50%
+
+Armor Class: 2 (0 vs. slashing, 1 vs. piercing and missile)
+Speed Factor: -1
+Requires:
+ 9 Strength
 
 Weight: 10
 "
@@ -139,7 +243,7 @@ STATISTICS:
 Armor Class: 5 (3 vs. slashing, 4 vs. piercing and missile)
 Speed Factor: -2
 Requires:
- 8 Strength
+ 9 Strength
 
 Weight: 40
 "
@@ -155,7 +259,7 @@ Equipped abilities:
 Armor Class: 2 (0 vs. slashing, 1 vs. piercing and missile)
 Speed Factor: -2
 Requires:
- 8 Strength
+ 9 Strength
 
 Weight: 10
 "
@@ -172,7 +276,7 @@ STATISTICS:
 Armor Class: 5 (3 vs. slashing, 4 vs. piercing and missile)
 Speed Factor: -2
 Requires:
- 8 Strength
+ 9 Strength
 
 Weight: 40
 "
@@ -192,7 +296,7 @@ Equipped abilities:
 
 Armor Class: 1 (-1 vs. slashing, -3 vs. piercing and missile)
 Requires:
- 8 Strength
+ 9 Strength
 
 Weight: 10
 "
@@ -210,7 +314,7 @@ STATISTICS:
 Armor Class: 5 (3 vs. slashing, 4 vs. piercing and missile)
 Speed Factor: -2
 Requires:
- 8 Strength
+ 9 Strength
 
 Weight: 40
 "
@@ -228,13 +332,79 @@ Equipped abilities:
 Armor Class: 1 (-1 vs. slashing, 0 vs. piercing and missile)
 Speed Factor: -2
 Requires:
- 8 Strength
+ 9 Strength
 
 Weight: 10
 "
 
 
 
+
+//CRIMSON CHAIN +4 - 12000mo//
+COPY "rick_bigg_mod/items/CHAN11.itm" "override"
+	SAY NAME1 "Chain Mail"
+	SAY UNIDENTIFIED_DESC "Chain mail is made of interlocking metal rings. It is always worn over a layer of padded fabric or soft leather to prevent chafing and lessen the impact of blows. 
+
+STATISTICS:
+
+Armor Class: 5 (3 vs. slashing, 4 vs. piercing and missile)
+Speed Factor: -2
+Requires:
+ 9 Strength
+
+Weight: 40"
+
+	SAY NAME2 "Crimson Chain +4"
+	SAY DESC "The dark red metal used to make this chain is said to come from a hidden mine in the Cloudpeaks. At one time the Bloodway, a band of evil adventurers, all wore armor of this kind, but the other suits have long been lost.
+
+STATISTICS:
+
+Equipped abilities:
+- Crushing Damage Resistance: +15%
+
+Armor Class: 1 (-1 vs. slashing, -0 vs. piercing and missile)
+Speed Factor: -2
+Requires:
+ 9 Strength
+
+Weight: 10
+"
+
+
+
+
+
+
+
+//WHITE DRAGON SCALE - 14000mo//
+COPY "rick_bigg_mod/items/CHAN20.itm" "override"
+	SAY NAME1 "Chain Mail"
+	SAY UNIDENTIFIED_DESC "Chain mail is made of interlocking metal rings. It is always worn over a layer of padded fabric or soft leather to prevent chafing and lessen the impact of blows. 
+
+STATISTICS:
+
+Armor Class: 5 (3 vs. slashing, 4 vs. piercing and missile)
+Speed Factor: -2
+Requires:
+ 9 Strength
+
+Weight: 40"
+
+	SAY NAME2 "White Dragon Scale"
+	SAY DESC "Not surprisingly, this armor created from the scales of a young ice dragon provides the wearer with protection from cold and ice.
+
+STATISTICS:
+
+Equipped abilities:
+– Cold Resistance: +50%
+
+Armor Class: 0 (-2 vs. slashing, -1 vs. piercing, -3 vs. missile)
+Speed Factor: -2
+Requires:
+ 10 Strength
+
+Weight: 15
+"
 
 
 
@@ -253,7 +423,7 @@ STATISTICS:
 Armor Class: 5 (3 vs. slashing, 4 vs. piercing and missile)
 Speed Factor: -2
 Requires:
- 8 Strength
+ 9 Strength
 
 Weight: 40
 "
@@ -292,7 +462,7 @@ STATISTICS:
 Armor Class: 5 (3 vs. slashing, 4 vs. piercing and missile)
 Speed Factor: -2
 Requires:
- 8 Strength
+ 9 Strength
 
 Weight: 40
 "
@@ -330,7 +500,7 @@ STATISTICS:
 Armor Class: 5 (3 vs. slashing, 4 vs. piercing and missile)
 Speed Factor: -2
 Requires:
- 8 Strength
+ 9 Strength
 
 Weight: 40
 "
@@ -344,6 +514,8 @@ Equipped abilities:
 – Open Locks: -5%
 – Find Traps: -5%
 – Pick Pockets: -20%
+– Move Silently: -10%
+- Hide in Shadows: -10%
 – Spellcasting is not disabled
 - Saving Throws vs Breath: +3
 
@@ -370,7 +542,7 @@ STATISTICS:
 Armor Class: 5 (3 vs. slashing, 4 vs. piercing and missile)
 Speed Factor: -2
 Requires:
- 8 Strength
+ 9 Strength
 
 Weight: 40
 "
@@ -412,7 +584,7 @@ STATISTICS:
 Armor Class: 5 (3 vs. slashing, 4 vs. piercing and missile)
 Speed Factor: -2
 Requires:
- 8 Strength
+ 9 Strength
 
 Weight: 40
 "
@@ -426,10 +598,8 @@ Equipped abilities:
 – Open Locks: -5%
 – Find Traps: -5%
 – Pick Pockets: -20%
-– Move Silently: -10%
-- Hide in Shadows: -10%
 – Spellcasting is not disabled
-- Dexterity: +2
+- Dexterity: +1
 
 Armor Class: 1 (-1 vs. slashing, 0 vs. piercing and missile)
 Requires:
@@ -451,7 +621,7 @@ STATISTICS:
 Armor Class: 5 (3 vs. slashing, 4 vs. piercing and missile)
 Speed Factor: -2
 Requires:
- 8 Strength
+ 9 Strength
 
 Weight: 40
 "

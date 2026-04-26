@@ -8,7 +8,7 @@ STATISTICS:
 Armor Class: 1 (-2 vs. slashing, -1 vs. piercing and missile)
 Speed Factor: -3
 Requires:
- 16 Strength
+ 15 Strength
 
 Weight: 70"
 
@@ -21,7 +21,7 @@ STATISTICS:
 Armor Class: 0 (-3 vs. slashing, -2 vs. piercing and missile)
 Speed Factor: -3
 Requires:
- 16 Strength
+ 15 Strength
 
 Weight: 50
 "
@@ -29,7 +29,7 @@ Weight: 50
 
 
 
-//FULL PLATE MAIL +1 - 9000mo//
+//PLATE OF BALDURAN +2 - 12000mo//
 COPY "rick_bigg_mod/items/WA2PLAT.itm" "override"
 	SAY NAME1 "Full Plate Mail"
 	SAY UNIDENTIFIED_DESC "Full plate armor is the best armor a warrior can buy, both in appearance and protection. The perfectly fitted, interlocking plates are specially angled to deflect arrows and blows, and the entire suit is carefully adorned with rich engraving and embossed detail.
@@ -39,11 +39,11 @@ STATISTICS:
 Armor Class: 1 (-2 vs. slashing, -1 vs. piercing and missile)
 Speed Factor: -3
 Requires:
- 16 Strength
+ 15 Strength
 
 Weight: 70"
 
-	SAY NAME2 "Full Plate Mail +1"
+	SAY NAME2 "Plate of Balduran +2"
 	SAY DESC "This plate was worn by the famous hero Balduran. It was lost at sea on Balduran's last voyage.
 	
 STATISTICS:
@@ -52,10 +52,10 @@ Equipped abilities:
 - Constitution: +1
 - Immunity to fatigue
 
-Armor Class: 0 (-3 vs. slashing, -2 vs. piercing and missile)
+Armor Class: -1 (-4 vs. slashing, -3 vs. piercing and missile)
 Speed Factor: -3
 Requires:
- 16 Strength
+ 15 Strength
 
 Weight: 50
 "
@@ -73,7 +73,7 @@ STATISTICS:
 Armor Class: 1 (-2 vs. slashing, -1 vs. piercing and missile)
 Speed Factor: -3
 Requires:
- 16 Strength
+ 15 Strength
 
 Weight: 70"
 
@@ -86,7 +86,7 @@ STATISTICS:
 Armor Class: -1 (-4 vs. slashing, -3 vs. piercing and missile)
 Speed Factor: -3
 Requires:
- 16 Strength
+ 15 Strength
 
 Weight: 50
 "
@@ -108,7 +108,7 @@ STATISTICS:
 Armor Class: 1 (-2 vs. slashing, -1 vs. piercing and missile)
 Speed Factor: -3
 Requires:
- 16 Strength
+ 15 Strength
 
 Weight: 70"
 
@@ -123,7 +123,7 @@ STATISTICS:
 Armor Class: -1 (-4 vs. slashing, -3 vs. piercing and missile)
 Speed Factor: -3
 Requires:
- 16 Strength
+ 15 Strength
 
 Weight: 45
 "
@@ -132,7 +132,7 @@ Weight: 45
 
 
 
-//ARMOR OF THE HEART +2 - no evil - 16000mo//
+//ARMOR OF THE HEART +3 - no evil - 14000mo//
 COPY "rick_bigg_mod/items/PLAT16.itm" "override"
 	SAY NAME1 "Full Plate Mail"
 	SAY UNIDENTIFIED_DESC "Full plate armor is the best armor a warrior can buy, both in appearance and protection. The perfectly fitted, interlocking plates are specially angled to deflect arrows and blows, and the entire suit is carefully adorned with rich engraving and embossed detail.
@@ -142,11 +142,11 @@ STATISTICS:
 Armor Class: 1 (-2 vs. slashing, -1 vs. piercing and missile)
 Speed Factor: -3
 Requires:
- 16 Strength
+ 15 Strength
 
 Weight: 70"
 
-	SAY NAME2 "Armor of the Heart +2"
+	SAY NAME2 "Armor of the Heart +3"
 	SAY DESC "Few suits of armor in all the realms are the equal of this full plate. All that remains of the origin of the Hart are folktales and legends. The most popular of these is that an impossible battle was once fought against an army of orcs surging through the Three Trees Pass. Arngor of the Oak led the armies of men and elves, and it is said that he dueled with the orc commander till the sun set and the land was bathed in a bloody mist. Finally the orc fell, but Arngor had sustained wounds too vast for any to save him. His blood soaked through the armor he wore, infusing it with his courage and nobility. Thus the Armor of the Hart became known to men.
 
 STATISTICS:
@@ -154,12 +154,12 @@ STATISTICS:
 Equipped Abilities:
 - Immunity to fear and panic
 
-Armor Class: -1 (-4 vs. slashing, -3 vs. piercing and missile)
+Armor Class: -2 (-5 vs. slashing, -4 vs. piercing and missile)
 Speed Factor: -3
 Requires:
- 16 Strength
+ 15 Strength
 
-Weight: 45
+Weight: 40
 "
 
 
@@ -177,7 +177,7 @@ STATISTICS:
 Armor Class: 1 (-2 vs. slashing, -1 vs. piercing and missile)
 Speed Factor: -3
 Requires:
- 16 Strength
+ 15 Strength
 
 Weight: 70"
 
@@ -193,7 +193,7 @@ Equipped Abilities:
 Armor Class: -2 (-5 vs. slashing, -4 vs. piercing and missile)
 Speed Factor: -3
 Requires:
- 16 Strength
+ 15 Strength
 
 Weight: 35
 "
@@ -202,9 +202,8 @@ Weight: 35
 
 
 
-
-//FALLORAIN'S PLATE +3 - 14000mo//
-COPY "rick_bigg_mod/items/PLAT17.itm" "override"
+//RED DRAGON SCALE - 15000mo//
+COPY "rick_bigg_mod/items/PLAT18.itm" "override"
 	SAY NAME1 "Full Plate Mail"
 	SAY UNIDENTIFIED_DESC "Full plate armor is the best armor a warrior can buy, both in appearance and protection. The perfectly fitted, interlocking plates are specially angled to deflect arrows and blows, and the entire suit is carefully adorned with rich engraving and embossed detail.
 
@@ -213,36 +212,32 @@ STATISTICS:
 Armor Class: 1 (-2 vs. slashing, -1 vs. piercing and missile)
 Speed Factor: -3
 Requires:
- 16 Strength
+ 15 Strength
 
 Weight: 70"
 
-	SAY NAME2 "Fallorain's Plate +3"
-	SAY DESC "Captain Fallorain, leader of Calimshan's 12th cavalry brigade, wore this enchanted armor for the last time during the Battle of the Spider Swamp. There he lost his life and army trying to rid an unrecorded evil from the area. 
+	SAY NAME2 "Red Dragon Scale"
+	SAY DESC "Dragon scale armor is light of weight, strong, and resistant to fire. Because of these properties, it is much sought after, but finding, let alone slaying, a powerful ancient dragon is near impossible. It is usually easier to search for an existing suit, such as this one. One should be careful wearing it near dragons, however, particularly red ones.
 
 STATISTICS:
 
 Equipped abilities:
-– Protection From Evil
-– Immunity to poison and disease
+– Fire Resistance: +50%
 
-Armor Class: -2 (-5 vs. slashing, -4 vs. piercing and missile)
+Armor Class: -3 (-6 vs. slashing, -4 vs. piercing, -6 vs. missile)
 Speed Factor: -3
 Requires:
- 16 Strength
+ 15 Strength
 
-Weight: 45
+Weight: 25
 "
 
 
 
 
 
-
-
-
-//MAGMA BULWARK +4 - 18000mo//
-COPY "rick_bigg_mod/items/TB#PLAT1.itm" "override"
+//BLUE DRAGON SCALE - 18000mo//
+COPY "rick_bigg_mod/items/PLAT20.itm" "override"
 	SAY NAME1 "Full Plate Mail"
 	SAY UNIDENTIFIED_DESC "Full plate armor is the best armor a warrior can buy, both in appearance and protection. The perfectly fitted, interlocking plates are specially angled to deflect arrows and blows, and the entire suit is carefully adorned with rich engraving and embossed detail.
 
@@ -251,26 +246,30 @@ STATISTICS:
 Armor Class: 1 (-2 vs. slashing, -1 vs. piercing and missile)
 Speed Factor: -3
 Requires:
- 16 Strength
+ 15 Strength
 
 Weight: 70"
 
-	SAY NAME2 "Magma Bulwark +4"
-	SAY DESC "Forged by the fire giant Varboti as a gift for a Cormyrian general who made peace with his clan, this red-and-black armor lends its wearer a molten aspect while providing protection against all but the most powerful blows and fire damage. Due to its incredibly strong but thin material, it also weighs far less than ordinary plate mail.
-
+	SAY NAME2 "Blue Dragon Scale"
+	SAY DESC "The light but durable scales of the blue dragon provide excellent protection against weapons and all forms of electricity.
+	
 STATISTICS:
 
-Equipped Abilities:
-- Fire damage resistance: +20%
-- Crushing damage resistance: +10%
+Equipped abilities:
+– Electrical Resistance: +60%
 
-Armor Class: -3 (-6 vs. slashing, -5 vs. piercing and missile)
+Armor Class: -4 (-7 vs. slashing, -5 vs. piercing, -7 vs. missile)
 Speed Factor: -3
 Requires:
- 16 Strength
+ 15 Strength
 
-Weight: 40
+Weight: 25
 "
+
+
+
+
+
 
 
 
@@ -286,7 +285,7 @@ STATISTICS:
 Armor Class: 1 (-2 vs. slashing, -1 vs. piercing and missile)
 Speed Factor: -3
 Requires:
- 16 Strength
+ 15 Strength
 
 Weight: 70"
 
@@ -305,7 +304,7 @@ Equipped abilities:
 Armor Class: -4 (-7 vs. slashing, -6 vs. piercing and missile)
 Speed Factor: -1
 Requires:
- 16 Strength
+ 15 Strength
 
 Weight: 15
 "
