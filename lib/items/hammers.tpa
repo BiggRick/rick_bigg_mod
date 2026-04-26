@@ -86,7 +86,7 @@ Type: One-handed
 Requires:
  13 Strength
 
-Weight: 9"
+Weight: 6"
 
 	SAY NAME2 "Borok's Fist +2"
 	SAY DESC "Borok was a human hero that led several campaigns against orc and goblin that had plagued his people in a number of their communities. This hammer was his blessed weapon, which his elven allies called his 'little iron fist'.
@@ -123,7 +123,7 @@ Speed Factor: 6
 Proficiency Type: War Hammer
 Type: One-handed
 Requires:
- 13 Strength
+ 15 Strength
 
 Weight: 9"
 
@@ -167,7 +167,7 @@ Speed Factor: 6
 Proficiency Type: War Hammer
 Type: One-handed
 Requires:
- 13 Strength
+ 15 Strength
 
 Weight: 9"
 
@@ -206,7 +206,7 @@ Speed Factor:6
 Proficiency Type: War Hammer
 Type: One-handed
 Requires:
- 13 Strength
+ 15 Strength
 
 Weight: 9"
 
@@ -251,7 +251,7 @@ Speed Factor: 6
 Proficiency Type: War Hammer
 Type: One-handed
 Requires:
- 13 Strength
+ 15 Strength
 
 Weight: 9"
 
@@ -292,7 +292,7 @@ Speed Factor: 6
 Proficiency Type: War Hammer
 Type: One-handed
 Requires:
- 13 Strength
+ 15 Strength
 
 Weight: 9"
 
@@ -330,7 +330,7 @@ Speed Factor: 6
 Proficiency Type: War Hammer
 Type: One-handed
 Requires:
- 18 Strength
+ 15 Strength
 
 Weight: 9"
 

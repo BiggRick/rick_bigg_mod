@@ -8,7 +8,7 @@ STATISTICS:
 Armor Class: 7 (5 vs. slashing, 6 vs. piercing and missile)
 Speed Factor: -1
 Requires:
- 6 Strength
+ 7 Strength
 
 Weight: 25
 "
@@ -21,7 +21,7 @@ STATISTICS:
 Armor Class: 6 (4 vs. slashing, 5 vs. piercing and missile)
 Speed Factor: -1
 Requires:
- 6 Strength
+ 7 Strength
 
 Weight: 15
 "
@@ -39,7 +39,7 @@ STATISTICS:
 Armor Class: 7 (5 vs. slashing, 6 vs. piercing and missile)
 Speed Factor: -1
 Requires:
- 6 Strength
+ 7 Strength
 
 Weight: 25
 "
@@ -52,7 +52,7 @@ STATISTICS:
 Armor Class: 5 (3 vs. slashing, 4 vs. piercing and missile)
 Speed Factor: -1
 Requires:
- 6 Strength
+ 7 Strength
 
 Weight: 10
 "
@@ -71,7 +71,7 @@ STATISTICS:
 Armor Class: 7 (5 vs. slashing, 6 vs. piercing and missile)
 Speed Factor: -1
 Requires:
- 6 Strength
+ 7 Strength
 
 Weight: 25
 "
@@ -90,7 +90,7 @@ Equipped abilities:
 Armor Class: 5 (3 vs. slashing, 4 vs. piercing, 15 vs. missile)
 Speed Factor: -1
 Requires:
- 6 Strength
+ 7 Strength
 
 Weight: 10"
 
@@ -109,7 +109,7 @@ STATISTICS:
 Armor Class: 7 (5 vs. slashing, 6 vs. piercing and missile)
 Speed Factor: -1
 Requires:
- 6 Strength
+ 7 Strength
 
 Weight: 25
 "
@@ -126,7 +126,7 @@ Luck: +1
 Armor Class: 5 (3 vs. slashing, 4 vs. piercing and missile)
 Speed Factor: -1
 Requires:
- 6 Strength
+ 7 Strength
 
 Weight: 10
 "
@@ -147,7 +147,7 @@ STATISTICS:
 Armor Class: 7 (5 vs. slashing, 6 vs. piercing and missile)
 Speed Factor: -1
 Requires:
- 6 Strength
+ 7 Strength
 
 Weight: 25
 "
@@ -163,7 +163,7 @@ Equipped abilities:
 Armor Class: 4 (2 vs. slashing, 3 vs. piercing and missile)
 Speed Factor: -1
 Requires:
- 6 Strength
+ 7 Strength
 
 Weight: 8"
 
@@ -182,7 +182,7 @@ STATISTICS:
 Armor Class: 7 (5 vs. slashing, 6 vs. piercing and missile)
 Speed Factor: -1
 Requires:
- 6 Strength
+ 7 Strength
 
 Weight: 25
 "
@@ -199,7 +199,41 @@ Equipped abilities:
 Armor Class: 4 (2 vs. slashing, 3 vs. piercing and missile)
 Speed Factor: -1
 Requires:
- 6 Strength
+ 7 Strength
+
+Weight: 8"
+
+
+
+
+//KRUNTUR'S ARMOR +4 - valore 6000mo//
+COPY "rick_bigg_mod/items/BDCHAN02.itm" "override"
+	SAY NAME1 "Studded Leather Armor"
+	SAY UNIDENTIFIED_DESC "Studded leather armor has little in common with normal leather armor. Instead of a hardened shell, studded leather offers hundreds of metal rivets affixed to a supple backing. The numerous studs form a flexible coat of metal that helps to turn aside slashing and cutting attacks, while the leather is little more than a means of securing the rivets in place. 
+
+STATISTICS:
+
+Armor Class: 7 (5 vs. slashing, 6 vs. piercing and missile)
+Speed Factor: -1
+Requires:
+ 7 Strength
+
+Weight: 25
+"
+
+	SAY NAME2 "Orc Leather +3"
+	SAY DESC "Once worn by the dekanter goblin warlord Kruntur, this armor is of an unusually high quality considering the race of its owner. Kruntur prized this armor to such a degree that, upon his death, he refused to leave it. To this day, more than a hundred years later, his spirit still permeates the armor, whispering threats to all who dare wear it and generally making a nuisance of himself. He cannot directly harm the wearer, however the chance to have such fine protection might well make up for the aggravation the armor brings with it.
+
+STATISTICS:
+
+Equipped abilities:
+– Wisdom: -1
+– Immunity to stun
+
+Armor Class: 3 (1 vs. slashing, 2 vs. piercing and missile)
+Speed Factor: -1
+Requires:
+ 7 Strength
 
 Weight: 8"
 
@@ -218,7 +252,7 @@ STATISTICS:
 Armor Class: 7 (5 vs. slashing, 6 vs. piercing and missile)
 Speed Factor: -1
 Requires:
- 6 Strength
+ 7 Strength
 
 Weight: 25
 "
@@ -236,7 +270,7 @@ Equipped abilities:
 Armor Class: 3 (1 vs. slashing, 2 vs. piercing and missile)
 Speed Factor: -1
 Requires:
- 6 Strength
+ 7 Strength
 
 Weight: 7"
 
@@ -285,7 +319,7 @@ STATISTICS:
 Armor Class: 7 (5 vs. slashing, 6 vs. piercing and missile)
 Speed Factor: -1
 Requires:
- 6 Strength
+ 7 Strength
 
 Weight: 25
 "
@@ -302,7 +336,7 @@ Equipped abilities:
 Armor Class: 2 (0 vs. slashing, 1 vs. piercing and missile)
 Speed Factor: -1
 Requires:
- 6 Strength
+ 7 Strength
 
 Weight: 6"
 

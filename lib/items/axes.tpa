@@ -6,13 +6,13 @@ COPY "rick_bigg_mod/items/AX1H05.itm" "override"
 STATISTICS:
 
 Damage: 1d6+1
-Damage type (melee): Slashing
-Damage type (thrown): Missile
+Damage type (melee): slashing or crushing
+Damage type (thrown): missile
 Speed Factor: 4
 Proficiency Type: Axe
 Type: One-handed
 Requires:
- 9 Strength
+ 11 Strength
 
 Weight: 1"
 
@@ -26,13 +26,13 @@ Combat abilities:
 
 THAC0: +1
 Damage: 1d6+2
-Damage type (melee): Slashing
-Damage type (thrown): Missile
+Damage type (melee): slashing or crushing
+Damage type (thrown): missile
 Speed Factor: 3
 Proficiency Type: Axe
 Type: One-handed
 Requires:
- 9 Strength
+ 11 Strength
 
 Weight: 4"
 
@@ -50,13 +50,13 @@ COPY "rick_bigg_mod/items/AX1H08.itm" "override"
 STATISTICS:
 
 Damage: 1d6+1
-Damage type (melee): Slashing
-Damage type (thrown): Missile
+Damage type (melee): slashing or crushing
+Damage type (thrown): missile
 Speed Factor: 2
 Proficiency Type: Axe
 Type: One-handed
 Requires:
- 9 Strength
+ 11 Strength
 
 Weight: 1"
 
@@ -70,13 +70,13 @@ Combat abilities:
 
 THAC0: +2
 Damage: 1d6+3
-Damage type (melee): Slashing
-Damage type (thrown): Missile
+Damage type (melee): slashing or crushing
+Damage type (thrown): missile
 Speed Factor: 2
 Proficiency Type: Axe
 Type: One-handed
 Requires:
- 9 Strength
+ 11 Strength
 
 Weight: 4"
 
@@ -93,13 +93,13 @@ COPY "rick_bigg_mod/items/AX1H10.itm" "override"
 STATISTICS:
 
 Damage: 1d6+1
-Damage type (melee): Slashing
-Damage type (thrown): Missile
+Damage type (melee): slashing or crushing
+Damage type (thrown): missile
 Speed Factor: 4
 Proficiency Type: Axe
 Type: One-handed
 Requires:
- 9 Strength
+ 11 Strength
 
 Weight: 1"
 
@@ -116,13 +116,13 @@ Combat abilities:
 
 Thac0: +2
 Damage: 1d6+3, +2d6 vs. undead
-Damage type (melee): Slashing
-Damage type (thrown): Missile
+Damage type (melee): slashing or crushing
+Damage type (thrown): missile
 Speed Factor: 2
 Proficiency Type: Axe
 Type: One-handed
 Requires:
- 9 Strength
+ 11 Strength
 
 Weight: 2"
 
@@ -139,13 +139,13 @@ COPY "rick_bigg_mod/items/AX1H09.itm" "override"
 STATISTICS:
 
 Damage: 1d6+1
-Damage type (melee): Slashing
-Damage type (thrown): Missile
+Damage type (melee): slashing or crushing
+Damage type (thrown): missile
 Speed Factor: 2
 Proficiency Type: Axe
 Type: One-handed
 Requires:
- 9 Strength
+ 11 Strength
 
 Weight: 1"
 
@@ -162,13 +162,13 @@ Combat abilities:
 
 THAC0: +3
 Damage: 1d6+4
-Damage type (melee): Slashing
-Damage type (thrown): Missile
+Damage type (melee): slashing or crushing
+Damage type (thrown): missile
 Speed Factor: 1
 Proficiency Type: Axe
 Type: One-handed
 Requires:
- 9 Strength
+ 11 Strength
 
 Weight: 2"
 
@@ -185,13 +185,13 @@ COPY "rick_bigg_mod/items/AX1H16.itm" "override"
 STATISTICS:
 
 Damage: 1d6+1
-Damage type (melee): Slashing
-Damage type (thrown): Missile
+Damage type (melee): slashing or crushing
+Damage type (thrown): missile
 Speed Factor: 4
 Proficiency Type: Axe
 Type: One-handed
 Requires:
- 9 Strength
+ 11 Strength
 
 Weight: 1"
 
@@ -209,13 +209,13 @@ Combat abilities:
 
 THAC0: +3
 Damage: 1d6+4
-Damage type (melee): slashing
+Damage type (melee): slashing or crushing
 Damage type (thrown): missile
 Speed Factor: 1
 Proficiency Type: Axe
 Type: One-handed
 Requires:
- 9 Strength
+ 11 Strength
 
 Weight: 1"
 
@@ -230,7 +230,7 @@ COPY "rick_bigg_mod/items/AX1H11.itm" "override"
 
 STATISTICS:
 
-Damage: 1d8+1 (slashing)
+Damage: 1d8+1 (slashing or crushing)
 Speed Factor: 7
 Proficiency Type: Axe
 Type: One-handed
@@ -245,7 +245,7 @@ Weight: 7"
 STATISTICS:
 
 THAC0: +2
-Damage: 1d8+3 (slashing)
+Damage: 1d8+3 (slashing or crushing)
 Speed Factor: 5
 Proficiency Type: Axe
 Type: One-handed
@@ -269,7 +269,7 @@ COPY "rick_bigg_mod/items/AX1H07.itm" "override"
 
 STATISTICS:
 
-Damage: 1d8+1 (slashing)
+Damage: 1d8+1 (slashing or crushing)
 Speed Factor: 7
 Proficiency Type: Axe
 Type: One-handed
@@ -287,7 +287,7 @@ Combat abilities:
 – Hit target is affected by Miscast Magic for 100 seconds (80% chance of spellcasting failure, Save vs. Wand at -2 negates)
 
 THAC0: +2
-Damage: 1d8+3 (slashing)
+Damage: 1d8+3 (slashing or crushing)
 Speed Factor: 5
 Proficiency Type: Axe
 Type: One-handed
@@ -307,7 +307,7 @@ COPY "rick_bigg_mod/items/TB#AX1.itm" "override"
 
 STATISTICS:
 
-Damage: 1d8+1 (slashing)
+Damage: 1d8+1 (slashing or crushing)
 Speed Factor: 7
 Proficiency Type: Axe
 Type: One-handed
@@ -330,7 +330,7 @@ Combat abilities:
 STATISTICS:
 
 THAC0: +3
-Damage: 1d8+4 (slashing)
+Damage: 1d8+4 (slashing or crushing)
 Speed Factor: 4
 Proficiency Type: Axe
 Type: One-handed
@@ -350,7 +350,7 @@ COPY "rick_bigg_mod/items/OHRAX1H1.itm" "override"
 
 STATISTICS:
 
-Damage: 1d8+1 (slashing)
+Damage: 1d8+1 (slashing or crushing)
 Speed Factor: 7
 Proficiency Type: Axe
 Type: One-handed
@@ -392,7 +392,7 @@ COPY "rick_bigg_mod/items/AX1H13.itm" "override"
 
 STATISTICS:
 
-Damage: 1d8+1 (slashing)
+Damage: 1d8+1 (slashing or crushing)
 Speed Factor: 7
 Proficiency Type: Axe
 Type: One-handed
@@ -408,7 +408,7 @@ STATISTICS:
 
 THAC0: +3 
 Damage: 1d8+4, +3 cold damage
-Damage type: Slashing
+Damage type: slashing or crushing
 Speed Factor: 4
 Proficiency Type: Axe
 Type: One-handed
@@ -427,7 +427,7 @@ COPY "rick_bigg_mod/items/AX1H12.itm" "override"
 
 STATISTICS:
 
-Damage: 1d8+1 (slashing)
+Damage: 1d8+1 (slashing or crushing)
 Speed Factor: 7
 Proficiency Type: Axe
 Type: One-handed
@@ -443,7 +443,7 @@ STATISTICS:
 
 THAC0: +4 
 Damage: 1d8+5, +1d4 fire damage
-Damage type: Slashing
+Damage type: slashing or crushing
 Speed Factor: 3
 Proficiency Type: Axe
 Type: One-handed
@@ -462,7 +462,7 @@ COPY "rick_bigg_mod/items/AX1H14.itm" "override"
 
 STATISTICS:
 
-Damage: 1d8+1 (slashing)
+Damage: 1d8+1 (slashing or crushing)
 Speed Factor: 7
 Proficiency Type: Axe
 Type: One-handed
@@ -482,7 +482,7 @@ Equipped abilities:
 – Saving Throws: +2
 
 THAC0: +3
-Damage: 1d8+4 (slashing)
+Damage: 1d8+4 (slashing or crushing)
 Speed Factor: 4
 Proficiency Type: Axe
 Type: One-handed
@@ -499,7 +499,7 @@ COPY "rick_bigg_mod/items/AX1H15.itm" "override"
 
 STATISTICS:
 
-Damage: 1d8+1 (slashing)
+Damage: 1d8+1 (slashing or crushing)
 Speed Factor: 7
 Proficiency Type: Axe
 Type: One-handed
@@ -524,7 +524,7 @@ Combat abilities:
 – 15% chance of decapitating opponent with each successful attack (Save vs. Death at -4 negates)
 
 THAC0: +5 
-Damage: 1d8+5 (slashing)
+Damage: 1d8+5 (slashing or crushing)
 Speed Factor: 2
 Proficiency Type: Axe
 Type: One-handed
