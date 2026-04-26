@@ -1,6 +1,6 @@
 
 COPY ~rick_bigg_mod/2da/weapon_rules.2da~ ~weidu_external~
-	READ_2DA_ENTRIES_NOW ~weapon_rules~ 22
+	READ_2DA_ENTRIES_NOW ~weapon_rules~ 19
 BUT_ONLY
 
 
@@ -79,10 +79,82 @@ DEFINE_PATCH_FUNCTION long_bow RET is_matched BEGIN
 	is_matched = NOT (unusability BAND BIT6)
 END
 
-COPY_EXISTING_REGEXP ~^.*\.itm$~ ~override~
+ACTION_DEFINE_ASSOCIATIVE_ARRAY damage_type_value BEGIN
+	PIERCING    => 1
+	CRUSHING    => 2
+	SLASHING    => 3
+	MISSILE     => 4
+	CRUSH_PIERC => 6
+	SLASH_PIERC => 7
+END
+
+ACTION_DEFINE_ASSOCIATIVE_ARRAY damage_type_description BEGIN
+	PIERCING    => Piercing
+	CRUSHING    => Crushing
+	SLASHING    => Slashing
+	MISSILE     => Missile
+	CRUSH_PIERC => ~Crushing or Piercing~
+	SLASH_PIERC => ~Slashing or Piercing~
+END
+
+DEFINE_PATCH_FUNCTION get_from_2da
+	INT_VAR column_number = 0
+			use_enchantment = 0
+	RET value
+	BEGIN
+		SPRINT value ~_~
+		PATCH_IF special_rules_row > 0 BEGIN
+			READ_2DA_ENTRY_FORMER weapon_rules special_rules_row column_number value
+		END
+		PATCH_IF general_rules_row > 0 AND (~%value%~ STRING_EQUAL_CASE ~_~) BEGIN
+			READ_2DA_ENTRY_FORMER weapon_rules general_rules_row column_number value
+			
+			PATCH_IF IS_AN_INT ~%value%~ AND use_enchantment BEGIN
+				value = value + enchantment * use_enchantment
+			END
+		END
+END
+
+
+DEFINE_PATCH_FUNCTION write_from_2da
+	INT_VAR column_number = 0
+			use_enchantment = 0
+			offset = 0
+	RET
+		value
+	BEGIN
+		LAUNCH_PATCH_FUNCTION get_from_2da
+			INT_VAR column_number = column_number
+				use_enchantment = use_enchantment
+			RET
+				value
+		END
+		PATCH_IF IS_AN_INT ~%value%~ BEGIN
+			PATCH_IF size = 4 BEGIN
+				WRITE_LONG offset value
+			END ELSE PATCH_IF size = 2 BEGIN
+				WRITE_SHORT offset value
+			END ELSE PATCH_IF size = 1 BEGIN
+				WRITE_BYTE offset value
+			END
+		END
+END
+
+COPY_EXISTING_REGEXP ~^.*\.itm~ ~override~
 
 	READ_LONG 0x64 head_off
 	READ_SHORT 0x68 head_cnt
+	cannot_backstab = 0
+	READ_BYTE 0x31 proficiency
+	READ_LONG 0x60 enchantment
+	has_melee = 0
+	has_thrown = 0
+	has_launcher = 0
+	SPRINT cleric ~_~
+	SPRINT druid ~_~
+	SPRINT thief ~_~
+	SPRINT bard ~_~
+	SPRINT mage ~_~
 	
 	FOR (head = 0; head < head_cnt; head += 1) BEGIN
 		cur_off = head * 0x38 + head_off
@@ -90,21 +162,23 @@ COPY_EXISTING_REGEXP ~^.*\.itm$~ ~override~
 
 		general_rules_row = 0
 		special_rules_row = 0
+		SPRINT comment_general ~~
+		SPRINT comment_special ~~
 	
 		FOR (maybe = 1; maybe < weapon_rules AND special_rules_row = 0; maybe += 1 ) BEGIN
-			READ_2DA_ENTRY_FORMER weapon_rules maybe 0 comment_special
+			READ_2DA_ENTRY_FORMER weapon_rules maybe 0 comment
 			READ_2DA_ENTRY_FORMER weapon_rules maybe 1 maybe_file
 			READ_2DA_ENTRY_FORMER weapon_rules maybe 3 stype
 			LAUNCH_PATCH_MACRO decode_type
 			
 			PATCH_IF ~%maybe_file%~ STRING_EQUAL_CASE ~%SOURCE_RES%~ AND type = weapon_type BEGIN
 				special_rules_row = maybe
+				SPRINT comment_special ~%comment%~
 			END
 		END
 
-		READ_BYTE 0x31 proficiency
 		FOR (maybe = 1; maybe < weapon_rules AND general_rules_row = 0; maybe += 1 ) BEGIN
-			READ_2DA_ENTRY_FORMER weapon_rules maybe 0 comment_general
+			READ_2DA_ENTRY_FORMER weapon_rules maybe 0 comment
 			READ_2DA_ENTRY_FORMER weapon_rules maybe 1 maybe_proficiency
 			READ_2DA_ENTRY_FORMER weapon_rules maybe 2 special_rule
 			READ_2DA_ENTRY_FORMER weapon_rules maybe 3 stype
@@ -113,16 +187,160 @@ COPY_EXISTING_REGEXP ~^.*\.itm$~ ~override~
 			
 			PATCH_IF IS_AN_INT ~%maybe_proficiency%~ AND maybe_proficiency = proficiency AND type = weapon_type BEGIN
 				general_rules_row = maybe
+				SPRINT comment_general ~%comment%~
+				has_melee = has_melee OR type = 1
+				has_thrown = has_thrown OR type = 2
+				has_launcher = has_launcher OR type = 4
 			END
 			
-			PATCH_IF general_rules_row > 0 AND NOT (~%special_rule%~ STRING_EQUAL_CASE ~__~) BEGIN
+			PATCH_IF general_rules_row > 0 AND NOT (~%special_rule%~ STRING_EQUAL_CASE ~_~) BEGIN
 				LAUNCH_PATCH_FUNCTION ~%special_rule%~ RET is_matched = is_matched END
 				PATCH_IF NOT is_matched BEGIN
 					general_rules_row = 0
+					SPRINT comment_general ~~
 				END
 			END
 		END
 		
-		// now to simply apply them :)
+		PATCH_IF general_rules_row > 0 OR special_rules_row > 0 BEGIN
+			LAUNCH_PATCH_FUNCTION write_from_2da
+				INT_VAR column_number = 4
+					use_enchantment = 0
+					offset = 0x0e + cur_off
+					size = 2
+				RET range = value
+			END
+			LAUNCH_PATCH_FUNCTION write_from_2da
+				INT_VAR column_number = 5
+					use_enchantment = 1
+					offset = 0x14 + cur_off
+					size = 2
+				RET	thac0 = value
+			END
+			LAUNCH_PATCH_FUNCTION write_from_2da
+				INT_VAR column_number = 6
+					use_enchantment = 0
+					offset = 0x18 + cur_off
+					size = 1
+				RET	dice_number = value
+			END
+			LAUNCH_PATCH_FUNCTION write_from_2da
+				INT_VAR column_number = 7
+					use_enchantment = 0
+					offset = 0x16 + cur_off
+					size = 1
+				RET	dice_type = value
+			END
+			LAUNCH_PATCH_FUNCTION write_from_2da
+				INT_VAR column_number = 8
+					use_enchantment = 1
+					offset = 0x1a + cur_off
+					size = 2
+				RET	damage = value
+			END
+			LAUNCH_PATCH_FUNCTION get_from_2da
+				INT_VAR column_number = 9
+					use_enchantment = 0
+				RET
+					damage_type = value
+			END
+			LAUNCH_PATCH_FUNCTION get_from_2da
+				INT_VAR column_number = 10
+					use_enchantment = 0
+				RET
+					backstab_flag = value
+			END
+			LAUNCH_PATCH_FUNCTION get_from_2da
+				INT_VAR column_number = 11
+					use_enchantment = 0 - 1
+				RET
+					speed_factor = value
+			END
+			LAUNCH_PATCH_FUNCTION get_from_2da
+				INT_VAR column_number = 12
+					use_enchantment = 0
+				RET
+					min_speed_factor = value
+			END
+			PATCH_IF IS_AN_INT ~%speed_factor%~ BEGIN
+				PATCH_IF IS_AN_INT ~%min_speed_factor%~ AND speed_factor < min_speed_factor BEGIN
+					speed_factor = min_speed_factor
+				END ELSE PATCH_IF speed_factor < 0 BEGIN
+					speed_factor = 0
+				END
+				WRITE_BYTE cur_off + 0x12 speed_factor
+			END
+			LAUNCH_PATCH_FUNCTION write_from_2da
+				INT_VAR column_number = 13
+					use_enchantment = 0
+					offset = 0x26
+					size = 1
+				RET	min_strength = value
+			END
+			LAUNCH_PATCH_FUNCTION get_from_2da
+				INT_VAR column_number = 14
+					use_enchantment = 0
+				RET
+					cleric = value
+			END
+			LAUNCH_PATCH_FUNCTION get_from_2da
+				INT_VAR column_number = 15
+					use_enchantment = 0
+				RET
+					druid = value
+			END
+			LAUNCH_PATCH_FUNCTION get_from_2da
+				INT_VAR column_number = 16
+					use_enchantment = 0
+				RET
+					thief = value
+			END
+			LAUNCH_PATCH_FUNCTION get_from_2da
+				INT_VAR column_number = 17
+					use_enchantment = 0
+				RET
+					bard = value
+			END
+			LAUNCH_PATCH_FUNCTION get_from_2da
+				INT_VAR column_number = 18
+					use_enchantment = 0
+				RET
+					mage = value
+			END
+			
+			PATCH_IF IS_AN_INT ~%backstab_flag%~ AND IS_AN_INT ~%thief%~ AND thief AND NOT backstab_flag AND has_melee = 1 BEGIN
+				cannot_backstab = 1
+			END
+			PATCH_IF ~%damage_type%~ STRING_COMPARE_CASE ~_~ BEGIN
+				WRITE_SHORT cur_off + 0x1c $damage_type_value(~%damage_type%~)
+			END
+		END
+	END
+	PATCH_IF cannot_backstab BEGIN
+		LAUNCH_PATCH_FUNCTION ADD_ITEM_EQEFFECT
+			INT_VAR opcode = 0x107
+				parameter1 = 0
+				parameter2 = 1
+				target = 1
+				timing = 2
+		END
+	END
+	
+	PATCH_IF IS_AN_INT ~%cleric%~ AND IS_AN_INT ~%druid%~ AND IS_AN_INT ~%thief%~ AND IS_AN_INT ~%bard%~ AND IS_AN_INT ~%mage%~ BEGIN
+		READ_LONG 0x1e unusability
+		
+		clericbits = BIT7 BOR BIT8 BOR BIT10 BOR BIT14 BOR BIT15
+		druidbits = BIT12 BOR BIT30
+		thiefbits = BIT9 BOR BIT16 BOR BIT17 BOR BIT19 BOR BIT22
+		bardbits = BIT6
+		magebits = BIT18
+		
+		unusability = cleric ? unusability BAND BNOT clericbits : unusability BOR clericbits
+		unusability = druid  ? unusability BAND BNOT  druidbits : unusability BOR  druidbits
+		unusability = thief  ? unusability BAND BNOT  thiefbits : unusability BOR  thiefbits
+		unusability = bard   ? unusability BAND BNOT   bardbits : unusability BOR   bardbits
+		unusability = mage   ? unusability BAND BNOT   magebits : unusability BOR   magebits
+		
+		WRITE_LONG 0x1e unusability
 	END
 BUT_ONLY
