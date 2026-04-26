@@ -1,6 +1,11 @@
 INCLUDE ~rick_bigg_mod/lib/change_itm_icon.tpa~
 
 
+// fix for bows/xbows/slings with nonsense Enchantment
+COPY_EXISTING ~xbow03.itm~ ~override~
+	WRITE_LONG 0x60 2
+
+
 
 ACTION_BASH_FOR ~rick_bigg_mod/lib/items~ ~^.*\.tpa$~ BEGIN
 	ACTION_IF ~%BASH_FOR_RES%~ STRING_EQUAL_CASE ~items_override~ BEGIN
