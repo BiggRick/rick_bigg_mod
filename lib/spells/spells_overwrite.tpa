@@ -1,0 +1,15 @@
+
+// EXAMPLE - duplicate fireball
+
+LAUNCH_ACTION_FUNCTION "duplicate_spell_change_save"
+	INT_VAR
+		save_bonus = 0 - 4
+	STR_VAR
+		source_file = "SPWI304D"
+		destination_file = "TB#304D"
+		destination_save = "WAND" // DEATH, POLYMORPH, BREATH, WAND, SPELL
+END
+
+
+
+
