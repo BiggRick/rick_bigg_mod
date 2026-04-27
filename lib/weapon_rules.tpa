@@ -1,6 +1,6 @@
 
 COPY ~rick_bigg_mod/2da/weapon_rules.2da~ ~weidu_external~
-	READ_2DA_ENTRIES_NOW ~weapon_rules~ 19
+	READ_2DA_ENTRIES_NOW ~weapon_rules~ 20
 BUT_ONLY
 
 
@@ -116,6 +116,16 @@ DEFINE_PATCH_FUNCTION get_from_2da
 END
 
 
+DEFINE_PATCH_FUNCTION get_base_from_2da
+	INT_VAR column_number = 0
+	RET value
+	BEGIN
+		SPRINT value ~_~
+		PATCH_IF general_rules_row > 0 BEGIN
+			READ_2DA_ENTRY_FORMER weapon_rules general_rules_row column_number value
+		END
+END
+
 DEFINE_PATCH_FUNCTION write_from_2da
 	INT_VAR column_number = 0
 			use_enchantment = 0
@@ -140,8 +150,74 @@ DEFINE_PATCH_FUNCTION write_from_2da
 		END
 END
 
-COPY_EXISTING_REGEXP ~^.*\.itm~ ~override~
 
+DEFINE_PATCH_FUNCTION redescribe_weapon
+	INT_VAR thac0 = 0
+		dice_number = 0
+		dice_type = 0
+		damage = 0
+		speed_factor = 0
+		min_strength = 0
+BEGIN
+
+	PATCH_IF thac0 = 0 BEGIN
+		SPRINT thac0_string ~\1~
+	END ELSE PATCH_IF thac0 > 0 BEGIN
+		SPRINT thac0_string ~THAC0: +%thac0%\1~
+	END ELSE BEGIN
+		SPRINT thac0_string ~THAC0: %thac0%\1~
+	END
+	PATCH_IF INDEX_BUFFER( ~THAC0:[^,%WNL%]*\(,?.*\)$~ ) > 0 BEGIN
+		REPLACE_TEXTUALLY ~^THAC0:[^,%WNL%]*\(,?.*\)$~ ~%thac0_string%~
+	END ELSE BEGIN
+		REPLACE_TEXTUALLY ~^Damage:\(\)~ ~%thac0_string%%WNL%Damage:~
+	END
+	
+	PATCH_IF damage = 0 AND dice_type * dice_number = 0 BEGIN
+		SPRINT damage_string ~~
+	END ELSE BEGIN
+		PATCH_IF dice_type * dice_number = 0 AND NOT has_launcher BEGIN
+			SPRINT damage_string ~Damage: %damage%\1%WNL%~
+		END PATCH_IF dice_type * dice_number = 0 AND has_launcher BEGIN
+			SPRINT damage_string ~Damage: +%damage%\1%WNL%~
+		END ELSE PATCH_IF damage > 0 BEGIN
+			SPRINT damage_string ~Damage: %dice_number%d%dice_type%+%damage%\1%WNL%~
+		END ELSE PATCH_IF damage < 0 BEGIN
+			SPRINT damage_string ~Damage: %dice_number%d%dice_type%%damage%\1%WNL%~
+		END ELSE PATCH_IF damage = 0 BEGIN
+			SPRINT damage_string ~Damage: %dice_number%d%dice_type%\1%WNL%~
+		END
+		
+		PATCH_IF has_melee AND has_thrown BEGIN
+			SPRINT damage_string ~%damage_string%Damage type (melee): %melee_damage_type_desc%%WNL%Damage Type (thrown): %thrown_damage_type_desc%~
+		END ELSE BEGIN
+			SPRINT damage_string ~%damage_string%Damage type: %damage_type_desc%~
+		END
+	END
+	
+	REPLACE_TEXTUALLY ~^Damage type: .*$~ ~~
+	REPLACE_TEXTUALLY ~^Damage type (.*): .*$~ ~~
+	
+	PATCH_IF INDEX_BUFFER( ~Damage:[^,%WNL%]*\(,?.*\)$~ ) > 0 BEGIN
+		REPLACE_TEXTUALLY ~^Damage:[^,%WNL%]*\(,?.*\)$~ ~%damage_string%~
+	END ELSE BEGIN
+		REPLACE_TEXTUALLY ~^Speed Factor:\(\)~ ~%damage_string%%WNL%Speed Factor:~
+	END
+	
+	REPLACE_TEXTUALLY ~^Speed Factor:.*$~ ~Speed Factor: %speed_factor%~
+	
+	PATCH_IF INDEX_BUFFER ( ~Requires:[^_]* [0-9]+ Strength$~ ) > 0 BEGIN
+		REPLACE_TEXTUALLY ~^Requires:\([^_]*\) [0-9]+ Strength$~ ~Requires:\1 %min_strength% Strength~
+	END ELSE PATCH_IF INDEX_BUFFER ( ~Requires:$~ ) > 0 BEGIN
+		REPLACE_TEXTUALLY ~^Requires:$~ ~Requires:%WNL% %min_strength% Strength~
+	END ELSE BEGIN
+		REPLACE_TEXTUALLY ~^Type:\(.*\)$~ ~Type:\1%WNL%Requires:%WNL% %min_strength% Strength~
+	END
+END
+
+
+
+COPY_EXISTING_REGEXP ~^.*\.itm~ ~override~
 	READ_LONG 0x64 head_off
 	READ_SHORT 0x68 head_cnt
 	cannot_backstab = 0
@@ -150,11 +226,15 @@ COPY_EXISTING_REGEXP ~^.*\.itm~ ~override~
 	has_melee = 0
 	has_thrown = 0
 	has_launcher = 0
+	description = 0
 	SPRINT cleric ~_~
 	SPRINT druid ~_~
 	SPRINT thief ~_~
 	SPRINT bard ~_~
 	SPRINT mage ~_~
+	SPRINT damage_type_desc ~~
+	SPRINT melee_damage_type_desc ~~
+	SPRINT thrown_damage_type_desc ~~
 	
 	FOR (head = 0; head < head_cnt; head += 1) BEGIN
 		cur_off = head * 0x38 + head_off
@@ -217,12 +297,20 @@ COPY_EXISTING_REGEXP ~^.*\.itm~ ~override~
 					size = 2
 				RET	thac0 = value
 			END
+			LAUNCH_PATCH_FUNCTION get_base_from_2da
+				INT_VAR column_number = 5
+				RET	thac0_base = value
+			END
 			LAUNCH_PATCH_FUNCTION write_from_2da
 				INT_VAR column_number = 6
 					use_enchantment = 0
 					offset = 0x18 + cur_off
 					size = 1
 				RET	dice_number = value
+			END
+			LAUNCH_PATCH_FUNCTION get_base_from_2da
+				INT_VAR column_number = 6
+				RET	dice_number_base = value
 			END
 			LAUNCH_PATCH_FUNCTION write_from_2da
 				INT_VAR column_number = 7
@@ -231,6 +319,10 @@ COPY_EXISTING_REGEXP ~^.*\.itm~ ~override~
 					size = 1
 				RET	dice_type = value
 			END
+			LAUNCH_PATCH_FUNCTION get_base_from_2da
+				INT_VAR column_number = 7
+				RET	dice_type_base = value
+			END
 			LAUNCH_PATCH_FUNCTION write_from_2da
 				INT_VAR column_number = 8
 					use_enchantment = 1
@@ -238,11 +330,19 @@ COPY_EXISTING_REGEXP ~^.*\.itm~ ~override~
 					size = 2
 				RET	damage = value
 			END
+			LAUNCH_PATCH_FUNCTION get_base_from_2da
+				INT_VAR column_number = 8
+				RET	damage_base = value
+			END
 			LAUNCH_PATCH_FUNCTION get_from_2da
 				INT_VAR column_number = 9
 					use_enchantment = 0
 				RET
 					damage_type = value
+			END
+			LAUNCH_PATCH_FUNCTION get_base_from_2da
+				INT_VAR column_number = 9
+				RET	damage_type_base = value
 			END
 			LAUNCH_PATCH_FUNCTION get_from_2da
 				INT_VAR column_number = 10
@@ -255,6 +355,10 @@ COPY_EXISTING_REGEXP ~^.*\.itm~ ~override~
 					use_enchantment = 0 - 1
 				RET
 					speed_factor = value
+			END
+			LAUNCH_PATCH_FUNCTION get_base_from_2da
+				INT_VAR column_number = 11
+				RET	speed_factor_base = value
 			END
 			LAUNCH_PATCH_FUNCTION get_from_2da
 				INT_VAR column_number = 12
@@ -276,6 +380,10 @@ COPY_EXISTING_REGEXP ~^.*\.itm~ ~override~
 					offset = 0x26
 					size = 1
 				RET	min_strength = value
+			END
+			LAUNCH_PATCH_FUNCTION get_base_from_2da
+				INT_VAR column_number = 13
+				RET	min_strength_base = value
 			END
 			LAUNCH_PATCH_FUNCTION get_from_2da
 				INT_VAR column_number = 14
@@ -307,12 +415,26 @@ COPY_EXISTING_REGEXP ~^.*\.itm~ ~override~
 				RET
 					mage = value
 			END
+			LAUNCH_PATCH_FUNCTION get_from_2da
+				INT_VAR column_number = 19
+					use_enchantment = 0
+				RET
+					description = value
+			END
 			
 			PATCH_IF IS_AN_INT ~%backstab_flag%~ AND IS_AN_INT ~%thief%~ AND thief AND NOT backstab_flag AND has_melee = 1 BEGIN
 				cannot_backstab = 1
 			END
 			PATCH_IF ~%damage_type%~ STRING_COMPARE_CASE ~_~ BEGIN
 				WRITE_SHORT cur_off + 0x1c $damage_type_value(~%damage_type%~)
+				
+				SPRINT damage_type_desc $damage_type_description(~%damage_type%~)
+				
+				PATCH_IF type = 1 BEGIN
+					SPRINT melee_damage_type_desc $damage_type_description(~%damage_type%~)
+				END ELSE PATCH_IF type = 2 BEGIN
+					SPRINT thrown_damage_type_desc $damage_type_description(~%damage_type%~)
+				END
 			END
 		END
 	END
@@ -342,5 +464,36 @@ COPY_EXISTING_REGEXP ~^.*\.itm~ ~override~
 		unusability = mage   ? unusability BAND BNOT   magebits : unusability BOR   magebits
 		
 		WRITE_LONG 0x1e unusability
+	END
+	
+	PATCH_IF description BEGIN
+		READ_STRREF UNIDENTIFIED_DESC desc
+		PATCH_IF ("%desc%" STRING_COMPARE_REGEXP ~<Invalid Strref -?[0-9]+>~) BEGIN // checking for valid content in string
+			INNER_PATCH_SAVE desc ~%desc%~ BEGIN
+				LAUNCH_PATCH_FUNCTION ~redescribe_weapon~
+					INT_VAR thac0 = thac0_base
+						dice_number = dice_number_base
+						dice_type = dice_type_base
+						damage = damage_base
+						speed_factor = speed_factor_base
+						min_strength = min_strength_base
+				END
+			END
+			SAY_EVALUATED UNIDENTIFIED_DESC ~%desc%~ // write changes
+		END
+		READ_STRREF DESC desc
+		PATCH_IF ("%desc%" STRING_COMPARE_REGEXP ~<Invalid Strref -?[0-9]+>~) BEGIN // checking for valid content in string
+			INNER_PATCH_SAVE desc ~%desc%~ BEGIN
+				LAUNCH_PATCH_FUNCTION ~redescribe_weapon~
+					INT_VAR thac0 = thac0
+						dice_number = dice_number
+						dice_type = dice_type
+						damage = damage
+						speed_factor = speed_factor
+						min_strength = min_strength
+				END
+			END
+			SAY_EVALUATED DESC ~%desc%~ // write changes
+		END
 	END
 BUT_ONLY
