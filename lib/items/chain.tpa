@@ -539,7 +539,7 @@ Weight: 8
 "
 
 	SAY NAME2 "Melodic Chain +3"
-	SAY DESC "The Bards of Melody were a small band of half-elf bardic warriors who entertained and defended scattered elven communities throughout Calimshan. Enchantments allowed only minstrels to wear their armor, the magical links sliding together to produce beautiful melodies as they danced or fought. Unfortunately, the Bards of Melody were disbanded hundreds of years ago, and the secret of "playing" the armor faded with them.
+	SAY DESC "The Bards of Melody were a small band of half-elf bardic warriors who entertained and defended scattered elven communities throughout Calimshan. Enchantments allowed only minstrels to wear their armor, the magical links sliding together to produce beautiful melodies as they danced or fought. Unfortunately, the Bards of Melody were disbanded hundreds of years ago, and the secret of 'playing' the armor faded with them.
 
 STATISTICS:
 
