@@ -241,7 +241,11 @@ Requires:
 Weight: 3"
 
 	SAY NAME2 "Club of Detonation +3"
-	SAY DESC "This crude wooden club burns with the raging spirit of the demon forever trapped within by the powerful enchantments placed on the weapon. Occasionally, however, the demon's wrath escapes in a fiery blast.
+	SAY DESC "At first glance, this weapon appears to be nothing more than a charred, gnarled branch recovered from a forest fire. However, the heat radiating from it is far too intense to be natural. The Club of Detonation is actually a vessel of imprisonment; bound within its blackened, iron-hard wood is the screaming spirit of a powerful demon from the Abyss. The constant, rhythmic thumping felt through the hilt is the demon’s own heartbeat, pulsing with an insatiable desire to escape. Every time the club strikes an opponent, there's a chance that the demon’s rage flares up, causing a violent breach in the physical world that manifests as a localized explosion. 
+	
+	
+	
+	This crude wooden club burns with the raging spirit of the demon forever trapped within by the powerful enchantments placed on the weapon. Occasionally, however, the demon's wrath escapes in a fiery blast.
 
 STATISTICS:
 
@@ -280,7 +284,8 @@ Requires:
 Weight: 3"
 
 	SAY NAME2 "Club of Detonation +5"
-	SAY DESC "This crude wooden club burns with the raging spirit of the demon forever trapped within by the powerful enchantments placed on the weapon. Occasionally, however, the demon's wrath escapes in a fiery blast.
+	SAY DESC "At first glance, this weapon appears to be nothing more than a charred, gnarled branch recovered from a forest fire. However, the heat radiating from it is far too intense to be natural. The Club of Detonation is actually a vessel of imprisonment; bound within its blackened, iron-hard wood is the screaming spirit of a powerful demon from the Abyss. The constant, rhythmic thumping felt through the hilt is the demon’s own heartbeat, pulsing with an insatiable desire to escape. Every time the club strikes an opponent, there's a chance that the demon’s rage flares up, causing a violent breach in the physical world that manifests as a localized explosion. 
+	
 	The enchantments from the ring of fire resistance makes the demon spirit trapped within this weapon easier to control—though the wrath of the creature may occasionally still be released without warning.
 
 STATISTICS:

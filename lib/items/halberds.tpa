@@ -282,7 +282,7 @@ Weight: 15"
 
 
 	SAY NAME2 "Ravager +4"
-	SAY DESC "Taking the blood-soaked shaft of this weapon in hand brings a sudden chill along your spine. The origins of this gruesome halberd are unknown, the myth says it can slay the opponents with a single blow—unless they can survive the sudden loss of their head.  
+	SAY DESC "The Ravager is a weapon of singular, terrifying purpose. Its name is not merely a title, but a literal description of its effect on the battlefield. Forged in the depths of the Abyss by master smiths whose names are now forgotten, this halberd was designed to be the ultimate harvester of souls. The blade is forged from a dense, light-absorbing obsidian alloy, etched with pulsating crimson runes that glow with a malevolent light whenever blood is drawn.
 
 STATISTICS:
 
@@ -321,8 +321,9 @@ Weight: 15"
 
 
 	SAY NAME2 "Ravager +6"
-	SAY DESC "Taking the blood-soaked shaft of this weapon in hand brings a sudden chill along your spine. The origins of this gruesome halberd are unknown, the myth says it can slay the opponents with a single blow—unless they can survive the sudden loss of their head. 
-	Combined with the Serpent Shaft, this dark halberd has also the ability to poison instantly the opponent without saving throw... unless he is still alive without his head.
+	SAY DESC "The Ravager is a weapon of singular, terrifying purpose. Its name is not merely a title, but a literal description of its effect on the battlefield. Forged in the depths of the Abyss by master smiths whose names are now forgotten, this halberd was designed to be the ultimate harvester of souls. The blade is forged from a dense, light-absorbing obsidian alloy, etched with pulsating crimson runes that glow with a malevolent light whenever blood is drawn.
+	
+	Combined with the Serpent Shaft, this dark halberd has become one of the deadliest weapons in the Realms.
 
 STATISTICS:
 

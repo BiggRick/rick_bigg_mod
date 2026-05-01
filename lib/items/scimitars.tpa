@@ -316,7 +316,7 @@ Requires:
 Weight: 4"
 
 	SAY NAME2 "Spectral Blade +4"
-	SAY DESC "Legend has it that the souls of those who fall beneath this dark blade are forever enslaved, and can be summoned to fight invisibly at the side of the very one who defeated them.
+	SAY DESC "The origins of this ethereal blade are as elusive as the weapon itself. Legends whispered among the nomads of the Calim Desert speak of a dervish who struck a bargain with a spirit of the Ethereal Plane, seeking a weapon that no armor could turn aside. The result was Spectral Brand, a scimitar that exists only partially in the physical world.
 	
 STATISTICS:
 
@@ -356,8 +356,9 @@ Requires:
 Weight: 4"
 
 	SAY NAME2 "Spectral Blade +5"
-	SAY DESC "Legend has it that the souls of those who fall beneath this dark blade are forever enslaved, and can be summoned to fight invisibly at the side of the very one who defeated them.
-	Drawing on the necromancy of the Skull of the Lich, Spectral Brand is now an instrument of unholy death that should never have been unleashed upon the realms.
+	SAY DESC "The origins of this ethereal blade are as elusive as the weapon itself. Legends whispered among the nomads of the Calim Desert speak of a dervish who struck a bargain with a spirit of the Ethereal Plane, seeking a weapon that no armor could turn aside. The result was Spectral Brand, a scimitar that exists only partially in the physical world.
+	
+	Drawing on the necromancy of the Skull of the Lich, Spectral Brand now unleash is real dark power.
 
 STATISTICS:
 

@@ -285,7 +285,8 @@ Requires:
 Weight: 3"
 
 	SAY NAME2 "Sword of the Mask +4"
-	SAY DESC "This blade is highly prized by those who serve the Shadowlord, as well as any who engage in shadowy business.
+	SAY DESC "This wicked, obsidian-hued blade was forged in the hidden sanctums of the Shadow Thieves, dedicated to Mask, the Lord of Shadows.
+	The enchantment laid upon this sword is one of reactive deception. Unlike other blades that demand the wielder's initiative, the Short Sword of the Mask possesses a defensive instinct born of divine shadow. It is said that the blade "watches" over its master; when a foe manages to land a blow, the sword instantly leeches the kinetic energy of the strike to fracture the wielder's image into multiple shimmering phantasms.
 
 STATISTICS:
 
@@ -324,7 +325,9 @@ Requires:
 Weight: 3"
 
 	SAY NAME2 "Sword of the Mask +5"
-	SAY DESC "This blade is highly prized by those who serve the Shadowlord, as well as any who engage in shadowy business.
+	SAY DESC "This wicked, obsidian-hued blade was forged in the hidden sanctums of the Shadow Thieves, dedicated to Mask, the Lord of Shadows.
+	The enchantment laid upon this sword is one of reactive deception. Unlike other blades that demand the wielder's initiative, the Short Sword of the Mask possesses a defensive instinct born of divine shadow. It is said that the blade "watches" over its master; when a foe manages to land a blow, the sword instantly leeches the kinetic energy of the strike to fracture the wielder's image into multiple shimmering phantasms.
+	
 	Combined with the Heart of the Damned into a single lethal weapon, this deadly blade is the preferred tool of assassins and thieves. 
 
 STATISTICS:

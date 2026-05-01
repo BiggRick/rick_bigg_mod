@@ -302,7 +302,7 @@ Requires:
 Weight: 4"
 
 	SAY NAME2 "Foebane +3"
-	SAY DESC "The archmage Demron created this powerful blade for Captain Fflar of Myth Drannor. When the elven city fell, the sword was lost beneath the rubble of the once-great metropolis.
+	SAY DESC "Foebane was forged during the height of the ancient wars between the surface elves and the drow of the Underdark. It was commissioned by Fflar, a high-ranking elven, and created by the archmage Demron, with a single, brutal purpose: to be the ultimate bane of all extraplanar and monstrous threats and defend from their assault Myth Drannor. The blade is etched with glowing runes that hum with a low, predatory vibration when in the presence of creatures not native to the Prime Material Plane. However, wehn the elven city fell, the sword was lost beneath the rubble of the once-great metropolis, and been separated from its magical scabbard.
 
 STATISTICS:
 
@@ -338,7 +338,9 @@ Requires:
 Weight: 4"
 
 	SAY NAME2 "Foebane +5"
-	SAY DESC "Reunited with Fflar's scabbard, Foebane is an even greater weapon than the legends claimed.
+	SAY DESC "Foebane was forged during the height of the ancient wars between the surface elves and the drow of the Underdark. It was commissioned by Fflar, a high-ranking elven, and created by the archmage Demron, with a single, brutal purpose: to be the ultimate bane of all extraplanar and monstrous threats and defend from their assault Myth Drannor. The blade is etched with glowing runes that hum with a low, predatory vibration when in the presence of creatures not native to the Prime Material Plane. However, wehn the elven city fell, the sword was lost beneath the rubble of the once-great metropolis, and been separated from its magical scabbard.
+	
+	Reunited with Fflar's scabbard, Foebane is now again the greater weapon the legends claimed.
 
 STATISTICS:
 

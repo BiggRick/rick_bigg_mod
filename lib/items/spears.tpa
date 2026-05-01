@@ -317,7 +317,9 @@ Weight: 5"
 
 
 	SAY NAME2 "Ixil's Nail +5"
-	SAY DESC "For many generations, this magical shaft has been separated from Ixil's Spike, the enchanted head of the legendary spear. However, even incomplete, this artifact is still a weapon of great power. 
+	SAY DESC "This spear is a weapon of terrifying elegance, crafted from a single, seamless rod of blackened obsidian, while the head is a jagged, crystalline spike known as the "Nail of Ixil"—a fragment of an ancient, sentient mountain that was shattered by a divine blow.
+	
+	For many generations, this magical shaft has been separated from Ixil's Spike, the enchanted head of this legendary spear. However, even incomplete, this artifact is still a weapon of great power. 
 
 STATISTICS:
 
@@ -352,7 +354,8 @@ Weight: 5"
 
 
 	SAY NAME2 "Ixil's Nail +6"
-	SAY DESC "For many generations, this magical shaft has been separated from Ixil's Spike, the enchanted head of the legendary spear.
+	SAY DESC "This spear is a weapon of terrifying elegance, crafted from a single, seamless rod of blackened obsidian, while the head is a jagged, crystalline spike known as the "Nail of Ixil"—a fragment of an ancient, sentient mountain that was shattered by a divine blow.
+	
 	With shaft and tip reunited, Ixil's Spike is a fearsome weapon. During the battle, the head can detach to pin opponents to the ground even as a new head magically reforms on the end of the spear.
 
 STATISTICS:

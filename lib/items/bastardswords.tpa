@@ -427,7 +427,9 @@ Requires:
 Weight: 10"
 
 	SAY NAME2 "Angurvadal +4"
-	SAY DESC "Also known as the Stream of Anguish, this is the legendary corrosive blade of Frithiof. 
+	SAY DESC "Angurvadal, often translated as the "Stream of Anguish," is a blade of ancient and terrible renown. While common legends speak of it as a noble heirloom of Northern heroes, those who have held the blade in the heat of battle know a darker truth. Etched within its heat-darkened steel are ancient runes that bind more than just solar fire; they act as a cage for the restless spirit of an ancient Black Dragon.
+	
+"No one knows what would happen if the real power of this sword were unleashed."	
 
 STATISTICS:
 
@@ -464,8 +466,9 @@ Requires:
 Weight: 10"
 
 	SAY NAME2 "Angurvadal +5"
-	SAY DESC "Also known as the Stream of Anguish, this is the legendary corrosive blade of Frithiof. 
-	The true power of this sword has been unleashed by the Liquid Mercury.
+	SAY DESC "Angurvadal, often translated as the "Stream of Anguish," is a blade of ancient and terrible renown. While common legends speak of it as a noble heirloom of Northern heroes, those who have held the blade in the heat of battle know a darker truth. Etched within its heat-darkened steel are ancient runes that bind more than just solar fire; they act as a cage for the restless spirit of an ancient Black Dragon.
+	
+	The fury of the Dragon has been unleashed by the Liquid Mercury, and now Angurvadal is the ultimate instrument of destruction.
 
 STATISTICS:
 

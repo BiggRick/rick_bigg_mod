@@ -695,7 +695,7 @@ Requires:
 Weight: 4"
 
 	SAY NAME2 "Staff of the Magi +5"
-	SAY DESC "This type of staff is thoroughly linked to the image of the spellcasting profession, rare though it is. It is among the most powerful tools that a wizard can possess, the culmination of complex enchantments and endless study. This particular example can strike from range, grants immunity to Time Stop, and offers protection from evil. It can also cast Spell Trap and Magical Strike, a powerful attack that bypasses enemies' protections. The quintessential Mage item.
+	SAY DESC "This type of staff is thoroughly linked to the image of the spellcasting profession, rare though it is. It is among the most powerful tools that a wizard can possess, the culmination of complex enchantments and endless study. This fantastic weapon can strike from range, grants immunity to Time Stop, and offers protection from evil. It can also cast Spell Trap and Magical Strike, a powerful attack that bypasses enemies' protections. The quintessential Mage item.
 
 STATISTICS:
 
@@ -748,7 +748,7 @@ Requires:
 Weight: 4"
 
 	SAY NAME2 "Staff of the Ram +4"
-	SAY DESC "Likely created by the same unknown archmage who is responsible for the Ring of the Ram, this powerful staff is designed to destroy anything it hits.
+	SAY DESC "The Staff of the Ram is a weapon of deceptive simplicity and earth-shattering force. Crafted from the wood of an iron-oak tree that grew atop the highest peak of the Mount Tozal, the staff was tempered in the crushing depths of the Elemental Plane of Earth. The name of the weapon comes from its unique enchantment: the tip of the staff is capped with an invisible, magical force shaped like a charging ram’s head. When the wielder strikes, this force is unleashed with a thunderous roar, magnifying the physical blow a hundredfold.
 
 STATISTICS:
 
@@ -789,7 +789,8 @@ Requires:
 Weight: 4"
 
 	SAY NAME2 "Staff of the Ram +6"
-	SAY DESC "Likely created by the same unknown archmage who is responsible for the Ring of the Ram, this powerful staff is designed to destroy anything it hits.
+	SAY DESC "The Staff of the Ram is a weapon of deceptive simplicity and earth-shattering force. Crafted from the wood of an iron-oak tree that grew atop the highest peak of the Mount Tozal, the staff was tempered in the crushing depths of the Elemental Plane of Earth. The name of the weapon comes from its unique enchantment: the tip of the staff is capped with an invisible, magical force shaped like a charging ram’s head. When the wielder strikes, this force is unleashed with a thunderous roar, magnifying the physical blow a hundredfold.
+	
 	Roranach's Horn augments the Staff of the Ram's already noteworthy abilities, creating a weapon few opponents are able to stand against.
 
 STATISTICS:

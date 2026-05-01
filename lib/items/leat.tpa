@@ -1,0 +1,263 @@
+//LEATHER ARMOR +1 - 1200mo//
+COPY "rick_bigg_mod/items/LEAT02.itm" "override"
+	SAY NAME1 "Leather Armor"
+	SAY UNIDENTIFIED_DESC "Basic armor made of thick, wax or water-hardened leather. It is sturdy protection, not supple like boots or a cloak. Soft garment leathers like that would offer no more protection than common clothing. 
+
+STATISTICS:
+
+Armor Class: 9 (7 vs. slashing, 9 vs. piercing and missile, 8 vs. crushing)
+Requires:
+ 5 Strength
+
+Weight: 15
+"
+
+	SAY NAME2 "Leather Armor +1"
+	SAY DESC "Basic armor made of thick, wax or water-hardened leather. It is sturdy protection, not supple like boots or a cloak. Soft garment leathers like that would offer no more protection than common clothing. Magical enchantments have improved the protective abilities of this particular suit.
+
+STATISTICS:
+
+Armor Class: 8 (6 vs. slashing, 8 vs. piercing and missile, 7 vs. crushing)
+Requires:
+ 5 Strength
+
+Weight: 10"
+
+
+
+
+
+
+//LEATHER ARMOR +2 - 2000mo//
+COPY "rick_bigg_mod/items/LEAT11.itm" "override"
+	SAY NAME1 "Leather Armor"
+	SAY UNIDENTIFIED_DESC "Basic armor made of thick, wax or water-hardened leather. It is sturdy protection, not supple like boots or a cloak. Soft garment leathers like that would offer no more protection than common clothing. 
+
+STATISTICS:
+
+Armor Class: 9 (7 vs. slashing, 9 vs. piercing and missile, 8 vs. crushing)
+Requires:
+ 5 Strength
+
+Weight: 15
+"
+
+	SAY NAME2 "Leather Armor +2"
+	SAY DESC "Basic armor made of thick, wax or water-hardened leather. It is sturdy protection, not supple like boots or a cloak. Soft garment leathers like that would offer no more protection than common clothing. Magical enchantments have improved the protective abilities of this particular suit.
+
+STATISTICS:
+
+Armor Class: 7 (5 vs. slashing, 7 vs. piercing and missile, 6 vs. crushing)
+Requires:
+ 5 Strength
+
+Weight: 8"
+
+
+
+
+
+//KARAJAH'S LIFE AND DEATH +3 - 5500mo//
+COPY "rick_bigg_mod/items/TB#LEKA.itm" "override"
+	SAY NAME1 "Leather Armor"
+	SAY UNIDENTIFIED_DESC "Basic armor made of thick, wax or water-hardened leather. It is sturdy protection, not supple like boots or a cloak. Soft garment leathers like that would offer no more protection than common clothing. 
+
+STATISTICS:
+
+Armor Class: 9 (7 vs. slashing, 9 vs. piercing and missile, 8 vs. crushing)
+Requires:
+ 5 Strength
+
+Weight: 15
+"
+
+	SAY NAME2 "Karajah's Life and Death +3"
+	SAY DESC "Karajah was Calimshan's champion of pit fighting for a full decade, and seemingly unbeatable. His success, or so he claimed, was due to the mobility that his light armor afforded him. He may well have been unaware of the suit's other qualities, but his peers ignored his claims of ignorance when enchantments were discovered. The armor survived the subsequent beating, whereas Karajah did not. 
+
+STATISTICS:
+
+Armor Class: 6 (4 vs. slashing, 6 vs. piercing and missile, 1 vs. crushing)
+Requires:
+ 5 Strength
+
+Weight: 5"
+
+
+
+
+
+
+//AEGER'S LEATHER +2 - 5000mo//
+COPY "rick_bigg_mod/items/LEAT20.itm" "override"
+	SAY NAME1 "Leather Armor"
+	SAY UNIDENTIFIED_DESC "Basic armor made of thick, wax or water-hardened leather. It is sturdy protection, not supple like boots or a cloak. Soft garment leathers like that would offer no more protection than common clothing. 
+
+STATISTICS:
+
+Armor Class: 9 (7 vs. slashing, 9 vs. piercing and missile, 8 vs. crushing)
+Requires:
+ 5 Strength
+
+Weight: 15
+"
+
+	SAY NAME2 "Aeger's Leather +2"
+	SAY DESC "This heavy and thick bear hide is all that remains of the fabled Aeger. Several hundred years ago, the Aeger, a giant bear, terrorized hundreds of small villages up and down the Sword Coast. The bear was invulnerable to fire and cold. Finally the young men and women of several villages banded together, forming a militia almost two hundred people strong. The Aeger was surrounded and finally slain. Less than a dozen villagers survived, and they carved the Aeger's hide amongst themselves. Out of one of the pieces this armor was created.
+
+STATISTICS:
+
+Equipped abilities:
+- Fire Resistance: +30%
+- Cold Resistance: +30%
+
+Armor Class: 7 (5 vs. slashing, 7 vs. piercing and missile, 6 vs. crushing)
+Requires:
+ 5 Strength
+
+Weight: 15"
+
+
+
+
+
+
+
+//SKIN OF THE GHOUL +3 - no druidi - 6000mo//
+COPY "rick_bigg_mod/items/LEAT13.itm" "override"
+	SAY NAME1 "Leather Armor"
+	SAY UNIDENTIFIED_DESC "Basic armor made of thick, wax or water-hardened leather. It is sturdy protection, not supple like boots or a cloak. Soft garment leathers like that would offer no more protection than common clothing. 
+
+STATISTICS:
+
+Armor Class: 9 (7 vs. slashing, 9 vs. piercing and missile, 8 vs. crushing)
+Requires:
+ 5 Strength
+
+Weight: 15
+"
+
+	SAY NAME2 "Skin of the Ghoul +3"
+	SAY DESC "A clever thief, Damien Oneknife always tried to gain from the assets of his enemies, no matter the circumstances. After an intense battle with several ghouls in which two of his companions perished, Damien decided to even the odds in future encounters. He skinned one of the undead creatures and brought the hide to a halfling armorer talented in enchanting leather. When the suit was finished, it was magically protective against physical attacks and paralysis. Not very epic perhaps, but practical. 
+
+STATISTICS:
+
+Equipped abilities:
+– Save vs. Death: +3
+
+Armor Class: 6 (4 vs. slashing, 6 vs. piercing and missile, 5 vs. crushing)
+Requires:
+ 5 Strength
+
+Weight: 5"
+
+
+
+
+
+//PROTECTOR OF THE SECOND +4 - solo ranger e ladri - 8500mo//
+COPY "rick_bigg_mod/items/TB#LEPR.itm" "override"
+	SAY NAME1 "Leather Armor"
+	SAY UNIDENTIFIED_DESC "Basic armor made of thick, wax or water-hardened leather. It is sturdy protection, not supple like boots or a cloak. Soft garment leathers like that would offer no more protection than common clothing. 
+
+STATISTICS:
+
+Armor Class: 9 (7 vs. slashing, 9 vs. piercing and missile, 8 vs. crushing)
+Requires:
+ 5 Strength
+
+Weight: 15
+"
+
+	SAY NAME2 "Protector of the Second +4"
+	SAY DESC "The Mist of Shadows were an elite group of elven Rangers that roamed the Cormanthor wood and were the bane of bandits and monsters alike. This particular armor was worn by Indeera Lakhan, one of the group's most highly decorated officers and second in command. The suit is named for her, though how it came to part her company is unknown. 
+
+STATISTICS:
+
+Equipped abilities:
+– Hide In Shadows: +20%
+- Move Silently: +20%
+
+Charge abilities:
+- Cast Non Detection and Know Opponent three times per day each
+
+Armor Class: 5 (3 vs. slashing, 5 vs. piercing, 2 vs. missile, 4 vs. crushing)
+Requires:
+ 5 Strength
+
+Weight: 4"
+
+
+
+
+
+
+//HUMAN FLESH +5 - solo malvagi - 15000mo//
+COPY "rick_bigg_mod/items/LEAT21.itm" "override"
+	SAY NAME1 "Leather Armor"
+	SAY UNIDENTIFIED_DESC "Basic armor made of thick, wax or water-hardened leather. It is sturdy protection, not supple like boots or a cloak. Soft garment leathers like that would offer no more protection than common clothing. 
+
+STATISTICS:
+
+Armor Class: 9 (7 vs. slashing, 9 vs. piercing and missile, 8 vs. crushing)
+Requires:
+ 5 Strength
+
+Weight: 15
+"
+
+	SAY NAME2 "Human Flesh +5"
+	SAY DESC "Made from human skin and treated with the blood of a noble dragon, this armor emits the stench of bitter death. The malevolent armor can only be used by a truly evil person.
+
+STATISTICS:
+
+Equipped abilities:
+– Saving Throws: +4
+– Magic Resistance: +20%
+
+Charge abilities:
+- Cast Invisibility at will
+
+Armor Class: 4 (2 vs. slashing, 4 vs. piercing and missile, 3 vs. crushing)
+Requires:
+ 5 Strength
+
+Weight: 5"
+
+
+
+
+
+
+
+//ARMOR OF THE VIPER +4 - 8000mo//
+COPY "rick_bigg_mod/items/LEAT18.itm" "override"
+	SAY NAME1 "Studded Leather Armor"
+	SAY UNIDENTIFIED_DESC "Studded leather armor has little in common with normal leather armor. Instead of a hardened shell, studded leather offers hundreds of metal rivets affixed to a supple backing. The numerous studs form a flexible coat of metal that helps to turn aside slashing and cutting attacks, while the leather is little more than a means of securing the rivets in place. 
+
+STATISTICS:
+
+Armor Class: 7 (5 vs. slashing, 6 vs. piercing and missile)
+Speed Factor: -1
+Requires:
+ 7 Strength
+
+Weight: 25
+"
+
+	SAY NAME2 "Armor of the Viper +5"
+	SAY DESC "This armor's namesake is a serpent only in manner, referring to the drow assassin Raroh. Poison was his trademark, and when he discovered this suit's susceptibility to venom, he gifted it to Avlorm, a promising novice assassin within his own guild. When Avlorm's power eventually threatened his own, Raroh easily dispatched him, thanks to the weakness of the armor he still wore.
+
+STATISTICS:
+
+Equipped abilities:
+– Dexterity: +2
+- Haste
+- Saving Throws vs. Death: -2
+- Poison damage resistance: -30%
+
+Armor Class: 2 (0 vs. slashing, 1 vs. piercing and missile)
+Speed Factor: -1
+Requires:
+ 7 Strength
+
+Weight: 6"

@@ -3,12 +3,73 @@
 
 LAUNCH_ACTION_FUNCTION "duplicate_spell_change_save"
 	INT_VAR
-		save_bonus = 0 - 4
+		save_bonus = 0 - 2
 	STR_VAR
-		source_file = "SPWI304D"
-		destination_file = "TB#304D"
+		source_file = "SPWI304"
+		destination_file = "TB#WI304"
 		destination_save = "WAND" // DEATH, POLYMORPH, BREATH, WAND, SPELL
 END
+
+
+LAUNCH_ACTION_FUNCTION "duplicate_spell_change_save"
+	INT_VAR
+		save_bonus = 0 - 4
+	STR_VAR
+		source_file = "SPPR707"
+		destination_file = "TB#PR707"
+		destination_save = "WAND" // DEATH, POLYMORPH, BREATH, WAND, SPELL
+END
+
+
+LAUNCH_ACTION_FUNCTION "duplicate_spell_change_save"
+	INT_VAR
+		save_bonus = 0
+	STR_VAR
+		source_file = "SPPR313"
+		destination_file = "TB#PR313"
+		destination_save = "WAND" // DEATH, POLYMORPH, BREATH, WAND, SPELL
+END
+
+
+LAUNCH_ACTION_FUNCTION "duplicate_spell_change_save"
+	INT_VAR
+		save_bonus = 0 - 2
+	STR_VAR
+		source_file = "SPWI221"
+		destination_file = "TB#WI221"
+		destination_save = "WAND" // DEATH, POLYMORPH, BREATH, WAND, SPELL
+END
+
+
+LAUNCH_ACTION_FUNCTION "duplicate_spell_change_save"
+	INT_VAR
+		save_bonus = 0 - 4
+	STR_VAR
+		source_file = "SPWI615A"
+		destination_file = "TB#W615A"
+		destination_save = "WAND" // DEATH, POLYMORPH, BREATH, WAND, SPELL
+END
+
+
+LAUNCH_ACTION_FUNCTION "duplicate_spell_change_save"
+	INT_VAR
+		save_bonus = 0 - 4
+	STR_VAR
+		source_file = "SPWI615B"
+		destination_file = "TB#W615B"
+		destination_save = "WAND" // DEATH, POLYMORPH, BREATH, WAND, SPELL
+END
+
+
+LAUNCH_ACTION_FUNCTION "duplicate_spell_change_save"
+	INT_VAR
+		save_bonus = 0 - 4
+	STR_VAR
+		source_file = "SPWI308"
+		destination_file = "TB#WI308"
+		destination_save = "WAND" // DEATH, POLYMORPH, BREATH, WAND, SPELL
+END
+
 
 
 

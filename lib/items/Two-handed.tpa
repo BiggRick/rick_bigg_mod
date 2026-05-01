@@ -371,7 +371,7 @@ Requires:
 Weight: 15"
 
 SAY NAME2 "Gram the Sword of Grief +5"
-	SAY DESC "This is one of the many weapons of the great hero Siegfried. The blade is particularly sharp and well-balanced, and in a certain light one can see the faint image of a serpent within the hilt.
+	SAY DESC "The origins of this massive blade are shrouded in the mists of ancient sagas. It is a weapon forged in the crucible of tragedy and tempered in blood and tears of the forsaken. Throughout its blood-soaked history, Gram has passed through the hands of many who sought power, only to find that the sword demanded a heavy toll on their soul.
 
 STATISTICS:
 
@@ -413,7 +413,9 @@ Requires:
 Weight: 15"
 
 SAY NAME2 "Gram the Sword of Grief +6"
-	SAY DESC "Siegfried's fearsome blade is even more powerful with the Heart of the Damned set into its pommel.
+	SAY DESC "The origins of this massive blade are shrouded in the mists of ancient sagas. It is a weapon forged in the crucible of tragedy and tempered in blood and tears of the forsaken. Throughout its blood-soaked history, Gram has passed through the hands of many who sought power, only to find that the sword demanded a heavy toll on their soul.
+	
+	This fearsome blade shows its real power with the Heart of the Damned set into its pommel.
 
 STATISTICS:
 

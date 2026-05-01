@@ -365,7 +365,7 @@ Weight: 1"
 
 
 	SAY NAME2 "Dagger of the Star +4"
-	SAY DESC "Rumored to have been dropped from the Heavens by a careless lesser deity, this dagger is a favorite among thieves and assassins, as it will sometimes magically hide its user from the victim's sight.
+	SAY DESC "Legend says this blade was forged from the heart of a fallen star, cooled in the ethereal mists of the Astral Plane. Its steel is unnaturally dark, shimmering with tiny, trapped points of light that mirror the constellations of the night sky. For centuries, it was held by the Shadow-Walkers, a sect of elite elven assassins who believed the dagger was a gift from Sehanine Moonbow herself.
 
 STATISTICS:
    
@@ -383,7 +383,7 @@ Requires:
 Weight: 1"
 
 
-//DAGGER OF THE STAR +5 - valore 15000mo/
+//DAGGER OF THE STAR +5 - valore 16000mo/
 COPY "rick_bigg_mod/items/DAGG22.itm" "override"
 	SAY NAME1 "Dagger"
 	SAY UNIDENTIFIED_DESC "The typical dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter.
@@ -401,13 +401,16 @@ Weight: 1"
 
 
 	SAY NAME2 "Dagger of the Star +5"
-	SAY DESC "Rumored to have been dropped from the Heavens by a careless lesser deity, this dagger is a favorite among thieves and assassins, as it will sometimes magically hide its user from the victim's sight.
+	SAY DESC "Legend says this blade was forged from the heart of a fallen star, cooled in the ethereal mists of the Astral Plane. Its steel is unnaturally dark, shimmering with tiny, trapped points of light that mirror the constellations of the night sky. For centuries, it was held by the Shadow-Walkers, a sect of elite elven assassins who believed the dagger was a gift from Sehanine Moonbow herself.
 	With the star sapphires encrusting its hilt, this small blade is one of the most dangerous weapons in the realms.
 
 STATISTICS:
 
 Combat abilities:
 – 20% chance of making the user go invisible for 1 turn after each successful attack
+
+Charge abilities:
+- Cast Time Stop once per day
 
 THAC0: +5
 Damage: 1d4+5, +5 Magical

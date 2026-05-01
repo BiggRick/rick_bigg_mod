@@ -297,7 +297,9 @@ Requires:
 Weight: 9"
 
 	SAY NAME2 "Runehammer +4"
-	SAY DESC "This darksteel hammer has a rune of power inscribed upon its head and has protects against Negative Plane.
+	SAY DESC "The Runehammer is an ancient relic blessed by Clangeddin, forged in the deepest vaults of the Spine of the World. Unlike weapons that rely on brute enchantments, the power of this warhammer is derived from the complex network of glowing sigils etched across its cold-forged mithril head. These are not merely decorative engravings; they are "Living Runes" of the high dwarven tongue, each one bound to a specific aspect of protection and purification.
+	
+	However, these runes must be activated in some way to reveal the hammer's true power.
 
 STATISTICS:
 
@@ -335,8 +337,9 @@ Requires:
 Weight: 9"
 
 	SAY NAME2 "Runehammer +5"
-	SAY DESC "This darksteel hammer has a rune of power inscribed upon its head and has protects against Negative Plane.
-	The rune of Clangeddin is now inscribed on the head of this hammer, granting even greater powers to any who wield the weapon.
+	SAY DESC "The Runehammer is an ancient relic blessed by Clangeddin, forged in the deepest vaults of the Spine of the World. Unlike weapons that rely on brute enchantments, the power of this warhammer is derived from the complex network of glowing sigils etched across its cold-forged mithril head. These are not merely decorative engravings; they are "Living Runes" of the high dwarven tongue, each one bound to a specific aspect of protection and purification.
+	
+	The rune of Clangeddin is now inscribed on the head of this hammer, and activate all others runes, revealing the true power of the weapon.
 
 STATISTICS:
 

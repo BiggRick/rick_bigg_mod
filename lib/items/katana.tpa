@@ -288,7 +288,7 @@ Requires:
 Weight: 6"
 
 	SAY NAME2 "Hindo's Doom +3"
-	SAY DESC "Hindo was a samurai of great renown, a staunch defender of his people against the evil undead that often ravaged his homelands. 
+	SAY DESC "This elegant yet intimidating katana belonged to the legendary Prince Hindo of Tu Lung. A master of both the blade and the spirit, Hindo was a man of unwavering discipline who sought to protect his kingdom from the encroaching shadows of the Kara-Tur underworld. However, the sword earned its dark moniker—Hindo’s Doom—not from any flaw in its steel, but from the tragic fate of its master. 
 
 STATISTICS:
 
@@ -331,7 +331,8 @@ Requires:
 Weight: 6"
 
 	SAY NAME2 "Hindo's Doom +5"
-	SAY DESC "Hindo was a samurai of great renown, a staunch defender of his people against the evil undead that often ravaged his homelands.
+	SAY DESC "This elegant yet intimidating katana belonged to the legendary Prince Hindo of Tu Lung. A master of both the blade and the spirit, Hindo was a man of unwavering discipline who sought to protect his kingdom from the encroaching shadows of the Kara-Tur underworld. However, the sword earned its dark moniker—Hindo’s Doom—not from any flaw in its steel, but from the tragic fate of its master.
+	
 	Reunited with the hand of its original owner, Hindo's Doom is a katana worthy of the greatest of samurai. 
 
 STATISTICS:

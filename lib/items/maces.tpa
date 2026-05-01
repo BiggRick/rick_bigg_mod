@@ -210,6 +210,9 @@ Weight: 3"
 
 STATISTICS:
 
+Combat abilities:
+- On hit target suffers Ray of Enfeeblement
+
 THAC0: +5
 Damage: 10d4 (save vs. Wand for half), no Strength bonus
 Damage type: Magical
@@ -242,7 +245,7 @@ Requires:
 Weight: 10"
 
 	SAY NAME2 "Storm Star +4"
-	SAY DESC "This magical weapon is of ancient design, thought to have been devised in Netheril. It crackles with spectacular arcs of lightning when wielded.
+	SAY DESC "The Storm Star is a weapon born of the tempest, forged in a place where the Elemental Plane of Air bleeds into the Material Plane. Legend has it that the first of these maces was gifted by Akadi, Queen of the Air, to a mortal champion who defended her shrines. The head of the mace is crafted from a strange, silver-blue alloy that crackles with spectacular arcs of lightning when wielded.
 
 STATISTICS:
 
@@ -279,7 +282,8 @@ Requires:
 Weight: 10"
 
 	SAY NAME2 "Storm Star +5"
-	SAY DESC "This magical weapon is of ancient design, thought to have been devised in Netheril. It crackles with spectacular arcs of lightning when wielded.
+	SAY DESC "The Storm Star is a weapon born of the tempest, forged in a place where the Elemental Plane of Air bleeds into the Material Plane. Legend has it that the first of these maces was gifted by Akadi, Queen of the Air, to a mortal champion who defended her shrines. The head of the mace is crafted from a strange, silver-blue alloy that crackles with spectacular arcs of lightning when wielded.
+	
 	Infused with the otherworldly starfall ore, the powers of this already formidable weapon are greatly enhanced.
 
 STATISTICS:
