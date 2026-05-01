@@ -5,8 +5,8 @@ LAUNCH_ACTION_FUNCTION "duplicate_spell_change_save"
 	INT_VAR
 		save_bonus = 0 - 4
 	STR_VAR
-		source_file = "SPWI304D"
-		destination_file = "TB#304D"
+		source_file = "SPWI304"
+		destination_file = "TB#304"
 		destination_save = "WAND" // DEATH, POLYMORPH, BREATH, WAND, SPELL
 END
 
