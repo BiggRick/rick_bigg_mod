@@ -24,7 +24,7 @@ COPY ~rick_bigg_mod/2da/items_overwrite.2da~ ~weidu_external~
     END
 BUT_ONLY
 
-COPY_EXISTING_REGEXP ~^.*\.sto$~ ~override~
+COPY_EXISTING_REGEXP ~^inn26.*\.sto$~ ~override~
     GET_OFFSET_ARRAY items_array STO_V10_ITEMS_SOLD
 
     FOR (row = 1; row < items_overwrite; row += 1) BEGIN
@@ -49,12 +49,13 @@ COPY_EXISTING_REGEXP ~^.*\.sto$~ ~override~
             READ_2DA_ENTRY_FORMER items_overwrite row 0 new_item
             READ_2DA_ENTRY_FORMER items_overwrite row 1 item_to_replace
 
-            PATCH_IF ~%new_item%~ STRING_EQUAL_CASE ~%item_name%~ BEGIN
-                SET $store_item_detail(~%new_item%~ ~replace~) = 1
-                SET $store_item_detail(~%new_item%~ ~at_position~) = 0
-            END
+            PATCH_IF ~%item_to_replace%~ STRING_EQUAL_CASE ~%item_name%~ OR 
+                    (~%new_item%~ STRING_EQUAL_CASE ~%item_name%~ AND NOT $store_item_detail(~%new_item%~ ~replace~)) BEGIN
+                PATCH_IF ~%new_item%~ STRING_EQUAL_CASE ~%item_name%~ BEGIN
+                    SET $store_item_detail(~%new_item%~ ~replace~) = 1
+                    SET $store_item_detail(~%new_item%~ ~at_position~) = 0
+                END
 
-            PATCH_IF ~%item_to_replace%~ STRING_EQUAL_CASE ~%item_name%~ BEGIN
                 READ_SHORT item_off + 0xa  charge1
                 READ_SHORT item_off + 0xc  charge2
                 READ_SHORT item_off + 0xe  charge3

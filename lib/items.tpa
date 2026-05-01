@@ -1,5 +1,3 @@
-INCLUDE ~rick_bigg_mod/lib/change_itm_icon.tpa~
-
 
 // fix for bows/xbows/slings with nonsense Enchantment
 COPY_EXISTING ~xbow03.itm~ ~override~
