@@ -5,6 +5,46 @@ BUT_ONLY
 
 
 
+
+//deletes the equipping effect the with specified opcode from the item. need parameters: opcode_to_delete
+DEFINE_PATCH_FUNCTION ~DELETE_ITEM_EQEFFECT_BY_VALUES~ BEGIN
+  PATCH_IF (BUFFER_LENGTH > 0x71) THEN BEGIN
+    READ_LONG 0x64 ___#abil_off
+    READ_SHORT 0x68 ___#abil_num
+    READ_LONG 0x6a ___#fx_off
+    READ_SHORT 0x6e ___#eqfx_off
+    READ_SHORT 0x70 ___#eqfx_num
+    FOR (___#index1 = 0 ; ___#index1 < ___#eqfx_num ; ___#index1 = ___#index1 + 1) BEGIN //cycle though global effects
+	  ___#curoff = (___#fx_off + (___#index1 + ___#eqfx_off) * 0x30)
+      READ_SHORT  ___#curoff ___#opcode
+      READ_SHORT  ___#curoff + 0x04 ___#value1
+      READ_SHORT  ___#curoff + 0x08 ___#value2
+      PATCH_IF ( (___#opcode = opcode_to_delete) OR (opcode_to_delete = (0 - 1)) )
+	       AND ( (___#value1 = value1_to_delete) OR (value1_to_delete = (0 - 1)) )
+	       AND ( (___#value2 = value2_to_delete) OR (value2_to_delete = (0 - 1)) )
+	  BEGIN
+
+        DELETE_BYTES ___#curoff 0x30
+        SET ___#eqfx_num = (___#eqfx_num - 1)
+        WRITE_SHORT 0x70 ___#eqfx_num
+
+        //correcting 1st effect indexes
+        FOR (___#index2 = 0 ; ___#index2 < ___#abil_num ; ___#index2 = ___#index2 + 1) BEGIN
+          READ_SHORT (___#abil_off + ___#index2 * 0x38 + 0x20) ___#1effect_index
+          PATCH_IF (___#1effect_index > ___#index1) BEGIN //if abilility after current effect
+            WRITE_SHORT (___#abil_off + ___#index2 * 0x38 + 0x20) (___#1effect_index - 1) //decrease 1 effect ___#index1 by 1
+          END
+        END
+        //no offsets to correct
+        SET ___#index1 = (___#index1 - 1)
+      END
+    END //end of searching
+  END
+END
+
+
+
+
 DEFINE_PATCH_MACRO decode_type BEGIN
 	PATCH_MATCH ~%stype%~
 		WITH MELEE BEGIN
@@ -194,7 +234,7 @@ END
 
 
 
-COPY_EXISTING_REGEXP ~^.*\.itm~ ~override~
+COPY_EXISTING_REGEXP ~^bow05.*\.itm~ ~override~
 	READ_SHORT 0x1c category
 	PATCH_IF (category >= 15 AND category <= 30 ) OR category = 57 OR category = 69 BEGIN
 		READ_LONG 0x64 head_off
@@ -460,6 +500,10 @@ COPY_EXISTING_REGEXP ~^.*\.itm~ ~override~
 			unusability = mage   ? unusability BAND BNOT   magebits : unusability BOR   magebits
 			
 			WRITE_LONG 0x1e unusability
+			
+			PATCH_IF druid BEGIN
+				LAUNCH_PATCH_FUNCTION DELETE_ITEM_EQEFFECT_BY_VALUES INT_VAR opcode_to_delete = 319 value1_to_delete = 11 value2_to_delete = 5 END
+			END
 		END
 		
 		PATCH_IF description BEGIN

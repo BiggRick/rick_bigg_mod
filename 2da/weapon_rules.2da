@@ -34,8 +34,11 @@ SLING       107         _          RANGED 40    0           1           4       
 
 GESEN       BOW19       _          RANGED _     4           0           0         2            _           _        _            _                _            _       _      _       _     _      _
 GESEN       BOW19       _          LAUNCH _     4           _           _         2            _           _        _            _                _            _       _      _       _     _      _
-RODMIGHT    RODS02      _          MELEE  _     _           0           0         0            _           _        _            _                _            _       _      _       _     _      0
+RODMIGHT    RODS02      _          MELEE  _     _           0           0         0            _           _        0            _                _            _       _      _       _     _      0
 STRONGARM   BOW11       _          LAUNCH _     _           _           _         6            _           _        _            _                19           _       _      _       _     _      _
 STAFMAGI    STAF11      _          MELEE  6     5           _           _         0            _           _        _            _                _            _       _      _       _     _      _
 DRAGONBREA  HALB05      _          MELEE  _     _           _           _         0            _           _        _            _                _            _       _      _       _     _      _
-DEMONSLAYER SW2H07      _          MELEE  _     _           2           12        _            _           _        10           _                20           _       _      _       _     _      _
+DEMONSLAYER SW2H07      _          MELEE  3     _           2           12        _            _           _        10           _                20           _       _      _       _     _      _
+BELM        SW1H30      _          MELEE  _     _           _           _         _            _           _        0            _                _            _       _      _       _     _      _
+SPELLBREAK  BDSW1H25    _          MELEE  _     _           _           _         _            _           _        _            _                _            na      na     na      na    na     _
+STAFFSTRIKE STAF05      _          MELEE  _     _           _           _         _            _           _        0            _                _            _       _      _       _     _      _
