@@ -70,10 +70,17 @@ COPY_EXISTING ~BDSODTRN.BCS~ ~override~
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-/* BEGIN ~Test Weapon Rules~
+BEGIN ~Test Weapon Rules~
 DESIGNATED 300
+FORBID_COMPONENT ~rick_bigg_mod/rick_bigg_mod.tp2~ 100 ~duplicate~
 
-INCLUDE ~rick_bigg_mod/lib/weapon_rules.tpa~ */
+INCLUDE ~rick_bigg_mod/lib/weapon_rules.tpa~
+
+BEGIN ~Test Item Replace~
+DESIGNATED 301
+FORBID_COMPONENT ~rick_bigg_mod/rick_bigg_mod.tp2~ 100 ~duplicate~
+
+INCLUDE ~rick_bigg_mod/lib/replace_items.tpa~
 
 
 

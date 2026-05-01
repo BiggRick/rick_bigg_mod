@@ -67,49 +67,49 @@ END
 
 DEFINE_PATCH_MACRO ~prof_descripts~ BEGIN
 
-	SPRINT new_weap ""
+	TEXT_SPRINT new_weap ""
 	PATCH_MATCH ~%prof%~ WITH
 		95 BEGIN
-			SPRINT new_weap ~Small Sword~
+			TEXT_SPRINT new_weap ~Small Sword~
 		END
 		96 BEGIN
-			SPRINT new_weap ~Large Sword~
+			TEXT_SPRINT new_weap ~Large Sword~
 		END
 		97 BEGIN
-			SPRINT new_weap ~Curved Sword~
+			TEXT_SPRINT new_weap ~Curved Sword~
 		END
 		98 BEGIN
-			SPRINT new_weap ~Two Handed Sword~
+			TEXT_SPRINT new_weap ~Two Handed Sword~
 		END
 		99 BEGIN
-			SPRINT new_weap ~Polearm~
+			TEXT_SPRINT new_weap ~Polearm~
 		END
 		100 BEGIN
-			SPRINT new_weap ~Staff~
+			TEXT_SPRINT new_weap ~Staff~
 		END
 		101 BEGIN
-			SPRINT new_weap ~Mace~
+			TEXT_SPRINT new_weap ~Mace~
 		END
 		102 BEGIN
-			SPRINT new_weap ~Warhammer~
+			TEXT_SPRINT new_weap ~Warhammer~
 		END
 		103 BEGIN
-			SPRINT new_weap ~Flail~
+			TEXT_SPRINT new_weap ~Flail~
 		END
 		104 BEGIN
-			SPRINT new_weap ~Axe~
+			TEXT_SPRINT new_weap ~Axe~
 		END
 		105 BEGIN
-			SPRINT new_weap ~Bow~
+			TEXT_SPRINT new_weap ~Bow~
 		END
 		106 BEGIN
-			SPRINT new_weap ~Crossbow~
+			TEXT_SPRINT new_weap ~Crossbow~
 		END
 		107 BEGIN
-			SPRINT new_weap ~Missile Weapon~
+			TEXT_SPRINT new_weap ~Missile Weapon~
 		END
 		DEFAULT
-			SPRINT new_weap ~~
+			TEXT_SPRINT new_weap ~~
 	END
 	PATCH_IF ("%new_weap%" STRING_COMPARE_CASE "") BEGIN // make sure new_weap is actually set before blindly patching
 		REPLACE_TEXTUALLY CASE_INSENSITIVE ~Proficiency\( Type\)?[:-] *.+$~ ~Proficiency Type: %new_weap%~

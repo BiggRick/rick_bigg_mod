@@ -30,7 +30,7 @@ DEFINE_PATCH_MACRO decode_ids BEGIN
 			LOOKUP_IDS_SYMBOL_OF_INT type ~KIT~ value1
 		END
 		DEFAULT
-			SPRINT type ~file %value2% target %value1%~
+			TEXT_SPRINT type ~file %value2% target %value1%~
 	END
 END
 
@@ -38,57 +38,57 @@ DEFINE_PATCH_MACRO decode_damage_type BEGIN
 	READ_SHORT 0x22 ntype
 	PATCH_MATCH ~%ntype%~
 		WITH 0 BEGIN
-			SPRINT damagetype ~crushing~
+			TEXT_SPRINT damagetype ~crushing~
 		END
 		1 BEGIN
-			SPRINT damagetype ~acid~
+			TEXT_SPRINT damagetype ~acid~
 		END
 		2 BEGIN
-			SPRINT damagetype ~cold~
+			TEXT_SPRINT damagetype ~cold~
 		END
 		4 BEGIN
-			SPRINT damagetype ~electricity~
+			TEXT_SPRINT damagetype ~electricity~
 		END
 		8 BEGIN
-			SPRINT damagetype ~fire~
+			TEXT_SPRINT damagetype ~fire~
 		END
 		16 BEGIN
-			SPRINT damagetype ~piercing~
+			TEXT_SPRINT damagetype ~piercing~
 		END
 		32 BEGIN
-			SPRINT damagetype ~poison~
+			TEXT_SPRINT damagetype ~poison~
 		END
 		64 BEGIN
-			SPRINT damagetype ~magic~
+			TEXT_SPRINT damagetype ~magic~
 		END
 		128 BEGIN
-			SPRINT damagetype ~missile~
+			TEXT_SPRINT damagetype ~missile~
 		END
 		256 BEGIN
-			SPRINT damagetype ~slashing~
+			TEXT_SPRINT damagetype ~slashing~
 		END
 		512 BEGIN
-			SPRINT damagetype ~magicfire~
+			TEXT_SPRINT damagetype ~magicfire~
 		END
 		1024 BEGIN
-			SPRINT damagetype ~magiccold~
+			TEXT_SPRINT damagetype ~magiccold~
 		END
 		2048 BEGIN
-			SPRINT damagetype ~stunning~
+			TEXT_SPRINT damagetype ~stunning~
 		END
 		DEFAULT
-			SPRINT damagetype ~type %ntype%~
+			TEXT_SPRINT damagetype ~type %ntype%~
 	END
 END
 
 DEFINE_PATCH_MACRO decode_damage BEGIN
 	READ_SHORT 0x1c bonus
 	PATCH_IF bonus = 0 BEGIN
-		SPRINT damage ~%ndice%d%tdice%~
+		TEXT_SPRINT damage ~%ndice%d%tdice%~
 	END ELSE PATCH_IF ndice = 0 BEGIN
-		SPRINT damage ~%bonus%~
+		TEXT_SPRINT damage ~%bonus%~
 	END ELSE BEGIN
-		SPRINT damage ~%ndice%d%tdice%+%bonus%~
+		TEXT_SPRINT damage ~%ndice%d%tdice%+%bonus%~
 	END
 END
 
@@ -145,7 +145,7 @@ COPY_EXISTING_REGEXP ~^.*\.eff$~ ~override~
 		END
 		
 		DEFAULT
-			SPRINT target ~target %ntarget%~
+			TEXT_SPRINT target ~target %ntarget%~
 	END
 
 	PATCH_MATCH ~%ntiming%~
@@ -189,9 +189,9 @@ COPY_EXISTING_REGEXP ~^.*\.eff$~ ~override~
 			TEXT_SPRINT timing ~timing %ntiming% %duration%~
 	END
 
-	SPRINT save ~~
+	TEXT_SPRINT save ~~
 	PATCH_IF nsave & BIT24 BEGIN
-		SPRINT save ~%save%bypass mirror image, ~
+		TEXT_SPRINT save ~%save%bypass mirror image, ~
 		nsave = nsave & ` BIT24
 	END
 	PATCH_MATCH ~%nsave%~
@@ -217,9 +217,9 @@ COPY_EXISTING_REGEXP ~^.*\.eff$~ ~override~
 			TEXT_SPRINT save ~save %nsave%~
 	END
 	PATCH_IF savebonus >= 0 AND nsave != 0 BEGIN
-		SPRINT save ~%save% at +%savebonus%~
+		TEXT_SPRINT save ~%save% at +%savebonus%~
 	END ELSE PATCH_IF nsave != 0 BEGIN
-		SPRINT save ~%save% at %savebonus%~
+		TEXT_SPRINT save ~%save% at %savebonus%~
 	END
 	
 

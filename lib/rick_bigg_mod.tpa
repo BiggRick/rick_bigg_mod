@@ -6,6 +6,9 @@ INCLUDE ~rick_bigg_mod/lib/items.tpa~
 INCLUDE ~rick_bigg_mod/lib/spells.tpa~
 INCLUDE ~rick_bigg_mod/lib/creatures.tpa~
 INCLUDE ~rick_bigg_mod/lib/eff.tpa~
+INCLUDE ~rick_bigg_mod/lib/stores.tpa~
+
+INCLUDE ~rick_bigg_mod/lib/replace_items.tpa~
 
 
 INCLUDE ~rick_bigg_mod/lib/races.tpa~

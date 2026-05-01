@@ -3,7 +3,7 @@ BASTARD_SW  89          _          MELEE  1     0           2           4       
 LONG_SWORD  90          _          MELEE  1     0           1           8         0            SLASH_PIERC 1        5            1                9            1       0      1       1     0      1
 SHORTSWORD  91          _          MELEE  1     0           1           6         0            PIERCING    1        3            0                5            1       0      1       1     0      1
 BATTLE_AXE  92          !thrown    MELEE  1     0           1           8         1            SLASHING    0        7            1                13           1       0      0       1     0      1
-THROWN_AXE  92          thrown     RANGED 1     0           1           6         1            SLASHING    0        4            1                9            1       0      0       1     0      1
+THROWN_AXE  92          thrown     RANGED 1     0           1           6         1            MISSILE     0        4            1                9            1       0      0       1     0      1
 2HSWORD     93          _          MELEE  2     0           2           6         0            SLASHING    0        10           1                17           0       0      0       0     0      1
 KATANA      94          _          MELEE  1     0           1           8         0            SLASHING    0        4            0                9            1       0      1       1     0      1
 SCIMITAR    95          _          MELEE  1     0           2           4         0            SLASHING    0        6            1                13           1       0      1       1     0      1
@@ -42,3 +42,5 @@ DEMONSLAYER SW2H07      _          MELEE  3     _           2           12      
 BELM        SW1H30      _          MELEE  _     _           _           _         _            _           _        0            _                _            _       _      _       _     _      _
 SPELLBREAK  BDSW1H25    _          MELEE  _     _           _           _         _            _           _        _            _                _            na      na     na      na    na     _
 STAFFSTRIKE STAF05      _          MELEE  _     _           _           _         _            _           _        0            _                _            _       _      _       _     _      _
+LONGOOTH    DAGG04      _          MELEE  1     _           1           6         _            _           _        _            _                _            _       _      _       _     _      _
+BONEBLADE   DAGG14      _          MELEE  1     _           1           6         _            _           _        _            _                _            _       _      _       _     _      _

@@ -117,7 +117,7 @@ DEFINE_PATCH_FUNCTION get_from_2da
 			use_enchantment = 0
 	RET value
 	BEGIN
-		SPRINT value ~_~
+		TEXT_SPRINT value ~_~
 		PATCH_IF special_rules_row > 0 BEGIN
 			READ_2DA_ENTRY_FORMER weapon_rules special_rules_row column_number value
 		END
@@ -135,7 +135,7 @@ DEFINE_PATCH_FUNCTION get_base_from_2da
 	INT_VAR column_number = 0
 	RET value
 	BEGIN
-		SPRINT value ~_~
+		TEXT_SPRINT value ~_~
 		PATCH_IF general_rules_row > 0 BEGIN
 			READ_2DA_ENTRY_FORMER weapon_rules general_rules_row column_number value
 		END
@@ -176,11 +176,11 @@ DEFINE_PATCH_FUNCTION redescribe_weapon
 BEGIN
 
 	PATCH_IF thac0 = 0 BEGIN
-		SPRINT thac0_string ~\1~
+		TEXT_SPRINT thac0_string ~\1~
 	END ELSE PATCH_IF thac0 > 0 BEGIN
-		SPRINT thac0_string ~THAC0: +%thac0%\1~
+		TEXT_SPRINT thac0_string ~THAC0: +%thac0%\1~
 	END ELSE BEGIN
-		SPRINT thac0_string ~THAC0: %thac0%\1~
+		TEXT_SPRINT thac0_string ~THAC0: %thac0%\1~
 	END
 	PATCH_IF INDEX_BUFFER( ~THAC0:[^,%WNL%]*\(,?.*\)$~ ) > 0 BEGIN
 		REPLACE_TEXTUALLY ~^THAC0:[^,%WNL%]*\(,?.*\)$~ ~%thac0_string%~
@@ -189,26 +189,26 @@ BEGIN
 	END
 	
 	PATCH_IF damage = 0 AND dice_type * dice_number = 0 BEGIN
-		SPRINT damage_string ~~
+		TEXT_SPRINT damage_string ~~
 	END ELSE BEGIN
 		PATCH_IF dice_type * dice_number = 0 AND NOT has_launcher BEGIN
-			SPRINT damage_string ~Damage: %damage%\1%WNL%~
+			TEXT_SPRINT damage_string ~Damage: %damage%\1%WNL%~
 		END PATCH_IF dice_type * dice_number = 0 AND has_launcher BEGIN
-			SPRINT damage_string ~Damage: +%damage%\1%WNL%~
+			TEXT_SPRINT damage_string ~Damage: +%damage%\1%WNL%~
 		END ELSE PATCH_IF damage > 0 BEGIN
-			SPRINT damage_string ~Damage: %dice_number%d%dice_type%+%damage%\1%WNL%~
+			TEXT_SPRINT damage_string ~Damage: %dice_number%d%dice_type%+%damage%\1%WNL%~
 		END ELSE PATCH_IF damage < 0 BEGIN
-			SPRINT damage_string ~Damage: %dice_number%d%dice_type%%damage%\1%WNL%~
+			TEXT_SPRINT damage_string ~Damage: %dice_number%d%dice_type%%damage%\1%WNL%~
 		END ELSE PATCH_IF damage = 0 BEGIN
-			SPRINT damage_string ~Damage: %dice_number%d%dice_type%\1%WNL%~
+			TEXT_SPRINT damage_string ~Damage: %dice_number%d%dice_type%\1%WNL%~
 		END
 		
 		PATCH_IF has_launcher BEGIN
-			SPRINT damage_string ~%damage_string%Damage type: %launcher_damage_type_desc%~
+			TEXT_SPRINT damage_string ~%damage_string%Damage type: %launcher_damage_type_desc%~
 		END ELSE PATCH_IF has_thrown BEGIN
-			SPRINT damage_string ~%damage_string%Damage type: %thrown_damage_type_desc%~
+			TEXT_SPRINT damage_string ~%damage_string%Damage type: %thrown_damage_type_desc%~
 		END ELSE BEGIN
-			SPRINT damage_string ~%damage_string%Damage type: %melee_damage_type_desc%~
+			TEXT_SPRINT damage_string ~%damage_string%Damage type: %melee_damage_type_desc%~
 		END
 	END
 	
@@ -234,7 +234,7 @@ END
 
 
 
-COPY_EXISTING_REGEXP ~^bow05.*\.itm~ ~override~
+COPY_EXISTING_REGEXP ~^.*\.itm~ ~override~
 	READ_SHORT 0x1c category
 	PATCH_IF (category >= 15 AND category <= 30 ) OR category = 57 OR category = 69 BEGIN
 		READ_LONG 0x64 head_off
@@ -246,15 +246,15 @@ COPY_EXISTING_REGEXP ~^bow05.*\.itm~ ~override~
 		has_thrown = 0
 		has_launcher = 0
 		description = 0
-		SPRINT cleric ~_~
-		SPRINT druid ~_~
-		SPRINT thief ~_~
-		SPRINT bard ~_~
-		SPRINT mage ~_~
-		SPRINT damage_type_desc ~~
-		SPRINT melee_damage_type_desc ~~
-		SPRINT thrown_damage_type_desc ~~
-		SPRINT launcher_damage_type_desc ~~
+		TEXT_SPRINT cleric ~_~
+		TEXT_SPRINT druid ~_~
+		TEXT_SPRINT thief ~_~
+		TEXT_SPRINT bard ~_~
+		TEXT_SPRINT mage ~_~
+		TEXT_SPRINT damage_type_desc ~~
+		TEXT_SPRINT melee_damage_type_desc ~~
+		TEXT_SPRINT thrown_damage_type_desc ~~
+		TEXT_SPRINT launcher_damage_type_desc ~~
 		
 		FOR (head = 0; head < head_cnt; head += 1) BEGIN
 			cur_off = head * 0x38 + head_off
@@ -262,8 +262,8 @@ COPY_EXISTING_REGEXP ~^bow05.*\.itm~ ~override~
 
 			general_rules_row = 0
 			special_rules_row = 0
-			SPRINT comment_general ~~
-			SPRINT comment_special ~~
+			TEXT_SPRINT comment_general ~~
+			TEXT_SPRINT comment_special ~~
 		
 			FOR (maybe = 1; maybe < weapon_rules AND special_rules_row = 0; maybe += 1 ) BEGIN
 				READ_2DA_ENTRY_FORMER weapon_rules maybe 0 comment
@@ -273,7 +273,7 @@ COPY_EXISTING_REGEXP ~^bow05.*\.itm~ ~override~
 				
 				PATCH_IF ~%maybe_file%~ STRING_EQUAL_CASE ~%SOURCE_RES%~ AND type = weapon_type BEGIN
 					special_rules_row = maybe
-					SPRINT comment_special ~%comment%~
+					TEXT_SPRINT comment_special ~%comment%~
 				END
 			END
 
@@ -287,7 +287,7 @@ COPY_EXISTING_REGEXP ~^bow05.*\.itm~ ~override~
 				
 				PATCH_IF IS_AN_INT ~%maybe_proficiency%~ AND maybe_proficiency = proficiency AND type = weapon_type BEGIN
 					general_rules_row = maybe
-					SPRINT comment_general ~%comment%~
+					TEXT_SPRINT comment_general ~%comment%~
 					has_melee = has_melee OR type = 1
 					has_thrown = has_thrown OR type = 2
 					has_launcher = has_launcher OR type = 4
@@ -303,7 +303,7 @@ COPY_EXISTING_REGEXP ~^bow05.*\.itm~ ~override~
 					END
 					PATCH_IF NOT is_matched BEGIN
 						general_rules_row = 0
-						SPRINT comment_general ~~
+						TEXT_SPRINT comment_general ~~
 					END
 				END
 			END
@@ -454,14 +454,14 @@ COPY_EXISTING_REGEXP ~^bow05.*\.itm~ ~override~
 				PATCH_IF ~%damage_type%~ STRING_COMPARE_CASE ~_~ BEGIN
 					WRITE_SHORT cur_off + 0x1c $damage_type_value(~%damage_type%~)
 					
-					SPRINT damage_type_desc $damage_type_description(~%damage_type%~)
+					TEXT_SPRINT damage_type_desc $damage_type_description(~%damage_type%~)
 					
 					PATCH_IF type = 1 BEGIN
-						SPRINT melee_damage_type_desc $damage_type_description(~%damage_type%~)
+						TEXT_SPRINT melee_damage_type_desc $damage_type_description(~%damage_type%~)
 					END ELSE PATCH_IF type = 2 BEGIN
-						SPRINT thrown_damage_type_desc $damage_type_description(~%damage_type%~)
+						TEXT_SPRINT thrown_damage_type_desc $damage_type_description(~%damage_type%~)
 					END ELSE PATCH_IF type = 4 BEGIN
-						SPRINT launcher_damage_type_desc $damage_type_description(~%damage_type%~)
+						TEXT_SPRINT launcher_damage_type_desc $damage_type_description(~%damage_type%~)
 					END
 				END
 			END

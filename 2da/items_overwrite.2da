@@ -1,0 +1,31 @@
+NEW_FILE    BAD_FILE      ICON      TYPE      COMMENT
+AX1H11      AX1H03        IAX1H03   1         AXE_OF_MAULETAR_+2
+AX1H11      AX1H11        IAX1H03   1         AXE_+2
+AX1H11      AX1H17        IAX1H03   1         AXE_+3
+AX1H04      AX1H18        _         _         THROWN_AXE+1
+AX1H04      BDAX1H04      _         _         THROWN_AXE+1
+AX1H01      AX1H19        _         _         GOLDEN_AXE
+
+BLUN13      BLUN39        IBLUN32   1         FLAIL+2
+BLUN13      BLUN32        IBLUN32   1         FLAIL+3
+BLUN13      BLUN13        IBLUN32   1         FLAIL+3
+
+BLUN21      BLUN11        IBLUN11   1         MACE+2
+BLUN21      BLUN33        IBLUN11   1         MACE+3
+BLUN21      BLUN21        IBLUN11   1         MACE+2
+BLUN04      BLUN41        _         _         STUPIFIER
+
+OHBLUN51    BLUN31        IBLUN31   1         CLUB+2
+OHBLUN51    BLUN37        IBLUN31   1         CLUB+3
+OHBLUN51    BOHBLUN51     IBLUN31   1         CLUB+2
+BLUN01      BLUN38        _         _         NIGHT_CLUB
+
+DAGG15      DAGG03        IDAGG03   1         DAGGER+2
+DAGG15      DAGG24        IDAGG03   1         DAGGER+3
+DAGG15      DAGG09        IDAGG03   1         WEREBANE
+DAGG15      DAGG15        IDAGG03   1         DAGGER+2
+
+HALB07      HALB03        IHALB03   1         HALBERD+2
+HALB07      HALB07        IHALB03   1         HALBERD+2
+HALB07      HALB12        IHALB03   1         HALBERD+3
+HALB13      HALB01        _         _         CHESLEY_CRUSHER
