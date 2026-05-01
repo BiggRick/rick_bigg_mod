@@ -21,7 +21,7 @@ DEFINE_PATCH_MACRO decode_type BEGIN
 	END
 END
 
-DEFINE_PATCH_FUNCTION melee_only RET is_matched BEGIN
+DEFINE_PATCH_FUNCTION not_thrown RET is_matched BEGIN
 	is_matched = 1
 	FOR (head = 0; head < head_cnt; head += 1) BEGIN
 		cur_off = head * 0x38 + head_off
@@ -188,15 +188,17 @@ BEGIN
 			SPRINT damage_string ~Damage: %dice_number%d%dice_type%\1%WNL%~
 		END
 		
-		PATCH_IF has_melee AND has_thrown BEGIN
-			SPRINT damage_string ~%damage_string%Damage type (melee): %melee_damage_type_desc%%WNL%Damage Type (thrown): %thrown_damage_type_desc%~
+		PATCH_IF has_launcher BEGIN
+			SPRINT damage_string ~%damage_string%Damage type: %launcher_damage_type_desc%~
+		END ELSE PATCH_IF has_thrown BEGIN
+			SPRINT damage_string ~%damage_string%Damage type: %thrown_damage_type_desc%~
 		END ELSE BEGIN
-			SPRINT damage_string ~%damage_string%Damage type: %damage_type_desc%~
+			SPRINT damage_string ~%damage_string%Damage type: %melee_damage_type_desc%~
 		END
 	END
 	
-	REPLACE_TEXTUALLY ~^Damage type: .*$~ ~~
-	REPLACE_TEXTUALLY ~^Damage type (.*): .*$~ ~~
+	REPLACE_TEXTUALLY ~^Damage type: .*[%WNL%]+~ ~~
+	REPLACE_TEXTUALLY ~^Damage type (.*): .*[%WNL%]+~ ~~
 	
 	PATCH_IF INDEX_BUFFER( ~Damage:[^,%WNL%]*\(,?.*\)$~ ) > 0 BEGIN
 		REPLACE_TEXTUALLY ~^Damage:[^,%WNL%]*\(,?.*\)$~ ~%damage_string%~
@@ -237,6 +239,7 @@ COPY_EXISTING_REGEXP ~^.*\.itm~ ~override~
 		SPRINT damage_type_desc ~~
 		SPRINT melee_damage_type_desc ~~
 		SPRINT thrown_damage_type_desc ~~
+		SPRINT launcher_damage_type_desc ~~
 		
 		FOR (head = 0; head < head_cnt; head += 1) BEGIN
 			cur_off = head * 0x38 + head_off
@@ -436,6 +439,8 @@ COPY_EXISTING_REGEXP ~^.*\.itm~ ~override~
 						SPRINT melee_damage_type_desc $damage_type_description(~%damage_type%~)
 					END ELSE PATCH_IF type = 2 BEGIN
 						SPRINT thrown_damage_type_desc $damage_type_description(~%damage_type%~)
+					END ELSE PATCH_IF type = 4 BEGIN
+						SPRINT launcher_damage_type_desc $damage_type_description(~%damage_type%~)
 					END
 				END
 			END
@@ -447,6 +452,14 @@ COPY_EXISTING_REGEXP ~^.*\.itm~ ~override~
 					parameter2 = 1
 					target = 1
 					timing = 2
+			END
+		END
+		
+		PATCH_IF has_melee AND has_thrown BEGIN
+			has_melee = 0
+			
+			LAUNCH_PATCH_FUNCTION DELETE_ITEM_HEADER
+				INT_VAR header_type = 1
 			END
 		END
 		
