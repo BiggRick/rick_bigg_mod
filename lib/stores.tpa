@@ -1,0 +1,5 @@
+ACTION_BASH_FOR ~rick_bigg_mod/lib/stores~ ~^.*\.tpa$~ BEGIN
+    PRINT ~EXECUTE %BASH_FOR_FILESPEC%~
+    INCLUDE ~%BASH_FOR_FILESPEC%~
+END
+

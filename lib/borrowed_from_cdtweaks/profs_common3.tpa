@@ -6,7 +6,7 @@ ACTION_PHP_EACH JOINABLE_NPC_ARRAY AS file => dv BEGIN
   ACTION_IF !IS_AN_INT dv BEGIN // joinable NPC
 
     COPY_EXISTING ~%file%~ ~override~
-      SPRINT source ~%SOURCE_FILE%~
+      TEXT_SPRINT source ~%SOURCE_FILE%~
       READ_LONG  0x1cc biography ELSE 0
       READ_LONG 0x2c4 fx_off ELSE 0
       READ_LONG 0x2c8 fx_num ELSE 0
