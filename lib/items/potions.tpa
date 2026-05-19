@@ -572,7 +572,7 @@ Weight: 1"
 	SAY DESC "This powerful elixir enhances the wizard's abilities: first it increases the casting level, the casting speed factor and then adds 25% damage to each magical attack performed. The effect lasts for 10 turns.
 
 STATISTICS:
-Caster level: +4
+Casting level: +4
 Casting speed factor: +4
 Magic Damage: +25%
 Duration: 10 turns

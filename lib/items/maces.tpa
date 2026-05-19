@@ -196,7 +196,7 @@ Weight: 6"
 
 
 
-//ROD OF LORDLY MIGHT +5 - valore 10000mo//
+//ROD OF ATROPHY +5 - valore 10000mo//
 COPY "rick_bigg_mod/items/RODS02.itm" "override"
 	SAY NAME1 "Rod"
 	SAY UNIDENTIFIED_DESC "Rods are about three feet long and as thick as your thumb. They are normally found in cases or similar storage places. Rods can be fashioned from metal, wood, ivory, or bone. They can be plain or decorated and carved, tipped, or not. Rods are powered by charges, unless noted otherwise in the description of a particular rod. Each time the rod is used, one or more charge may be expended.
@@ -205,8 +205,8 @@ STATISTICS:
 
 Weight: 3"
 
-	SAY NAME2 "Rod of Lordly Might +5"
-	SAY DESC "Also called the Wrath of Three Kings, though not associated with any named king in particular, this powerful weapon was created by an archmage with the aim of not needing the strength or skill of a warrior to be effective in close combat.
+	SAY NAME2 "Rod of Atrophy +5"
+	SAY DESC "This mace, forged from a strange, translucent alloy that seems to hum with an unsettling vibration, was never intended for traditional warfare. Legends say it was crafted by a cabal of wizard-smiths who sought a weapon that could strike the spirit rather than the flesh. The head of the mace does not truly hit its target in the physical sense; instead, it passes through armor and bone like a ghostly mist, discharging a surge of pure arcane energy directly into the victim's life force. While it leaves no bruises or broken bones, those struck by the Ethereal Lash feel their very essence beginning to unravel, leaving them fragile and drained as the weapon systematically deconstructs their magical and physical defenses.
 
 STATISTICS:
 

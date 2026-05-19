@@ -127,7 +127,7 @@ Weight: 8"
 
 
 
-//SWORD OF BALDURAN +2 - 8000mo//
+//SWORD OF BALDURAN +2 - 7000mo//
 COPY "rick_bigg_mod/items/SW1H18.itm" "override"
 	SAY NAME1 "Bastard Sword"
 	SAY UNIDENTIFIED_DESC "Also known as the hand-and-a-half sword, the bastard sword derives its name from the fact that it is halfway between the two-handed sword and the long sword. The bastard sword has a double-edged blade and a long grip, which can accommodate both hands if preferred. The overall length of the bastard sword ranges between four feet and four feet ten inches.
@@ -145,13 +145,10 @@ Requires:
 Weight: 10"
 
 	SAY NAME2 "Sword of Balduran +2"
-	SAY DESC "This mighty weapon is the legendary sword of the hero Balduran. Made entirely of gold, yet stronger than steel, this sword is imbued with a great magical power. It accompanied the hero through all his battles, including his final, sad adventure.
+	SAY DESC "This elegant sword was once the prized sidearm of Balduran, the legendary founder of Baldur's Gate. For centuries, historians wondered what became of the great explorer’s personal effects after his final, ill-fated voyage to the mysterious Anchorome. It is now clear that the blade was lost during that tragic journey, abandoned amidst the chaos of his crew's transformation and the eventual shipwreck. 
+	Though weathered by salt and time, the sword’s enchantments remain potent. It was forged with a specific purpose: to defend civilization against the unthinkable horrors that lurk in the dark corners of the world. The blade seems to seek out the weak points of unnatural creatures, vibrating with a cold intensity when drawn in the presence of aberrations and monstrosities.
 
 STATISTICS:
-
-Equipped abilities:
-– Save vs. Wand: +2
-- Lore: +40
 
 Charge abilities:
 - Cast True Strike twice per day
@@ -515,7 +512,6 @@ Weight: 10"
 STATISTICS:
 
 Equipped abilities:
-– Magic resistance: +10%
 - Critical hit chance: +10% (only with this weapon)
 
 Combat abilities:

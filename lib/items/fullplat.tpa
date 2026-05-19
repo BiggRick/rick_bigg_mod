@@ -98,7 +98,7 @@ Weight: 50
 
 
 
-//PRIDE OF THE LEGION +2 - 10000mo//
+//PRIDE OF THE LEGION +2 - 11000mo//
 COPY "rick_bigg_mod/items/PLAT15.itm" "override"
 	SAY NAME1 "Full Plate Mail"
 	SAY UNIDENTIFIED_DESC "Full plate armor is the best armor a warrior can buy, both in appearance and protection. The perfectly fitted, interlocking plates are specially angled to deflect arrows and blows, and the entire suit is carefully adorned with rich engraving and embossed detail.
@@ -116,7 +116,7 @@ Weight: 70"
 	SAY DESC "Captain Fallorain, leader of Calimshan's 12th cavalry brigade, wore this enchanted armor for the last time during the Battle of the Spider Swamp. There he lost his life and army trying to rid an unrecorded evil from the area. 
 
 Equipped abilities:
-– Saving Throws vs Death bonus: +2
+– Protection from evil
 
 STATISTICS:
 
@@ -187,7 +187,7 @@ Weight: 70"
 STATISTICS:
 
 Equipped Abilities:
-- +5% Magic Resistance
+- Protection from good
 - 20% chance to drain one level from attackers (save vs. Death at -4 negates)
 
 Armor Class: -2 (-5 vs. slashing, -4 vs. piercing and missile)
@@ -299,7 +299,6 @@ STATISTICS:
 Equipped abilities:
 – Dexterity: +1
 – Doubles movement rate
-- Free action
 
 Armor Class: -4 (-7 vs. slashing, -6 vs. piercing and missile)
 Speed Factor: -1

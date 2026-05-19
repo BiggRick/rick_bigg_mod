@@ -22,37 +22,7 @@ INCLUDE ~rick_bigg_mod/lib/items/items_overwrite.tpa~
 
 
 
-//KIEL'S BUCKLER +2 - 4000mo//
-COPY "rick_bigg_mod/items/SHLD20.itm" "override"
-	SAY NAME1 "Buckler"
-	SAY UNIDENTIFIED_DESC "A buckler, also known as a target shield, is a small round shield of wood or metal that fastens to the forearm. Because of its size, it is light and can be worn with very little restriction to movement.
 
-STATISTICS:
-
-Equipped abilities:
-– Armor Class: +1
-– No protection against missile and piercing attacks
-
-Requires:
- 4 Strength
-
-Weight: 2"
-
-	SAY NAME2 "Kiel's Buckler +2"
-	SAY DESC "This is the buckler of Kiel the Legion Killer, firstborn son of Durlag Trollkiller and Clan-prince of his father's ill-fated tower. Its light weight and excellent craftsmanship increase the Dexterity of all who bear it by a single point.
-
-STATISTICS:
-
-Equipped abilities:
-– Dexterity: +1
-– Armor Class: +3
-– No protection against missile and piercing attacks
-
-Requires:
- 4 Strength
-
-Weight: 2
-"
 
 
 
@@ -601,7 +571,7 @@ STATISTICS:
 
 Equipped abilities:
 – Intelligence: -50% penalty
-- Worsens caster level by 2
+- Worsens casting level by 2
 - Improves casting speed by 2
 - The wearer can memorize one more spell per level
 

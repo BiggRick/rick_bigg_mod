@@ -1,0 +1,187 @@
+//BUCKLER +2 - 1500mo//
+COPY "rick_bigg_mod/items/OHSHLD50.itm" "override"
+	SAY NAME1 "Buckler"
+	SAY UNIDENTIFIED_DESC "A buckler, also known as a target shield, is a small round shield of wood or metal that fastens to the forearm. Because of its size, it is light and can be worn with very little restriction to movement.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +1
+– No protection against missile and piercing attacks
+
+Requires:
+ 6 Strength
+
+Weight: 2
+"
+
+	SAY NAME2 "Buckler +2"
+	SAY DESC "A buckler is a small shield of wood or metal that fastens to the forearm. Because of its size it is light and can be worn with very little restriction to movement. This buckler has some form of generic enchantment, making it more resistant to blows.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +3
+– No protection against missile and piercing attacks
+
+Requires:
+ 6 Strength
+
+Weight: 2
+"
+
+
+
+
+//KIEL'S BUCKLER +2 - 4000mo//
+COPY "rick_bigg_mod/items/SHLD20.itm" "override"
+	SAY NAME1 "Buckler"
+	SAY UNIDENTIFIED_DESC "A buckler, also known as a target shield, is a small round shield of wood or metal that fastens to the forearm. Because of its size, it is light and can be worn with very little restriction to movement.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +1
+– No protection against missile and piercing attacks
+
+Requires:
+ 6 Strength
+
+Weight: 2"
+
+	SAY NAME2 "Kiel's Buckler +2"
+	SAY DESC "This is the buckler of Kiel the Legion Killer, firstborn son of Durlag Trollkiller and Clan-prince of his father's ill-fated tower. Its light weight and excellent craftsmanship increase the Dexterity of all who bear it by a single point.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +3
+– No protection against missile and piercing attacks
+– Dexterity: +1
+
+Requires:
+ 6 Strength
+
+Weight: 2
+"
+
+
+
+
+
+//STEADFAST +2 - 5500mo//
+COPY "rick_bigg_mod/items/SHLD20.itm" "override"
+	SAY NAME1 "Buckler"
+	SAY UNIDENTIFIED_DESC "A buckler, also known as a target shield, is a small round shield of wood or metal that fastens to the forearm. Because of its size, it is light and can be worn with very little restriction to movement.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +1
+– No protection against missile and piercing attacks
+
+Requires:
+ 6 Strength
+
+Weight: 2"
+
+	SAY NAME2 "Steadfast +2"
+	SAY DESC "Forged in the deep volcanic smithies of the North, this heavy iron buckler is a masterpiece of dwarven craftsmanship. Master smiths bound runes of grounding into the metal, giving the small shield the immense density and absorbing power of a full-sized bulwark. Though it remains small enough to keep the wielder's arm agile, it repels enemy strikes with the solid, immovable authority of a medium shield.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +3
+– No protection against missile and piercing attacks
+- Physical Damage Resistance: +10% (crushing, slashing, piercing, and missile)
+
+Requires:
+ 6 Strength
+
+Weight: 2
+"
+
+
+
+
+
+//BUCKLER OF FIRE AND ICE +3 - 7000mo//
+COPY "rick_bigg_mod/items/BDSHLD01.itm" "override"
+	SAY NAME1 "Buckler"
+	SAY UNIDENTIFIED_DESC "A buckler, also known as a target shield, is a small round shield of wood or metal that fastens to the forearm. Because of its size, it is light and can be worn with very little restriction to movement.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +1
+– No protection against missile and piercing attacks
+
+Requires:
+ 6 Strength
+
+Weight: 2"
+
+	SAY NAME2 "Buckler of Fire and Ice +3"
+	SAY DESC "Crafted by a rogue elementalist, this small buckler fuses volatile glacial ice with burning brass. It was famously wielded by the mercenary Kaelen the Nimble, who survived a chaotic ambush in the Amnish wilderness by weaving through enemy lines; though a stray arrow cracked his shoulder due to the shield's small size, every bandit who struck his defense was instantly incinerated or frozen solid. While it cannot deflect fast arrows or piercing spears, it grants incredible mobility in close combat. Any attacker who strikes the shield is instantly burned by intense heat and frozen by supernatural cold.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +4
+– No protection against missile and piercing attacks
+
+Combat abilities:
+- Attackers receive 1 Fire and Cold damage every successful hit
+
+Requires:
+ 6 Strength
+
+Weight: 2
+"
+
+
+
+
+//TARLOC'S CONTINGENCY +3 - 9500mo - solo maghi//
+COPY "rick_bigg_mod/items/SHLD08P.itm" "override"
+	SAY NAME1 "Buckler"
+	SAY UNIDENTIFIED_DESC "A buckler, also known as a target shield, is a small round shield of wood or metal that fastens to the forearm. Because of its size, it is light and can be worn with very little restriction to movement.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +1
+– No protection against missile and piercing attacks
+
+Requires:
+ 6 Strength
+
+Weight: 2"
+
+	SAY NAME2 "Tarloc's Contingency +3"
+	SAY DESC "Some say a positive mindset is key to victory. The creator of this shield, a dark elven sorcerer in life and feared lich in undeath, clearly had a different idea. Considering the comparative weakness of those concerned with the arcane arts and lack of suitable armour unacceptable, he set out to create the perfect piece of equipment if worst came to worst—a likely scenario for a wizard stuck in close range combat. Ever since, the powerful enchantments on this shield have frequently saved the lives of countless of owners in a pinch or allowed them to escape by the skin of their teeth, equally frequently at the cost of sacrificing their traveling companions.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +4
+– No protection against missile and piercing attacks
+– 20% chance to recover spells when seriously injured
+– Encases user in Otiluke's Resilient Sphere if rendered helpless
+- When critically injured cast Reflected Image
+– At start of combat always cast Clairvoyance 
+
+Requires:
+ 6 Strength
+
+Weight: 2
+"
+
+
+
+
+
+
+
+
+

@@ -72,7 +72,7 @@ Weight: 3"
 
 
 
-//ARBANE +2 - 4500mo//
+//ARBANE +2 - 5500mo//
 COPY "rick_bigg_mod/items/SW1H27.itm" "override"
 	SAY NAME1 "Short Sword"
 	SAY UNIDENTIFIED_DESC "The short sword is the first type of sword to come into existence. In the simplest of terms, a short sword can be considered a dagger with a blade so long that it can no longer be called a dagger. The term short sword does not exist in sword classifications. However, it has come to be used to describe a double-edged blade about two feet in length. The sword tip is usually pointed, ideal for thrusting.
@@ -227,7 +227,7 @@ Weight: 2"
 
 
 
-//BLACKRAZOR +4 - 20000mo - no buoni//
+//BLACKRAZOR +4 - 15000mo - solo malvagi//
 COPY "rick_bigg_mod/items/MISCBC.itm" "override"
 	SAY NAME1 "Short Sword"
 	SAY UNIDENTIFIED_DESC "The short sword is the first type of sword to come into existence. In the simplest of terms, a short sword can be considered a dagger with a blade so long that it can no longer be called a dagger. The term short sword does not exist in sword classifications. However, it has come to be used to describe a double-edged blade about two feet in length. The sword tip is usually pointed, ideal for thrusting.
@@ -247,9 +247,6 @@ Weight: 3"
 	SAY DESC "This sword radiates evil like a sour odor, and the owner never knows if <PRO_HESHE> wields the weapon or if it wields <PRO_HIMHER>. In addition to its combat abilities, Blackrazor slowly heals its owner with the drained strength of opponents.
 
 STATISTICS:
-
-Equipped abilities:
-- Magic resistance: +10%
 
 Combat abilities:
 – With every hit, it has a 20% chance of draining 4 levels from the target and healing the wielder by 20 Hit Points as well as hasting <PRO_HIMHER> for 20 seconds and increasing <PRO_HISHER> Strength by 3 points for 20 seconds
@@ -285,13 +282,12 @@ Requires:
 Weight: 3"
 
 	SAY NAME2 "Sword of the Mask +4"
-	SAY DESC "This wicked, obsidian-hued blade was forged in the hidden sanctums of the Shadow Thieves, dedicated to Mask, the Lord of Shadows.
-	The enchantment laid upon this sword is one of reactive deception. Unlike other blades that demand the wielder's initiative, the Short Sword of the Mask possesses a defensive instinct born of divine shadow. It is said that the blade "watches" over its master; when a foe manages to land a blow, the sword instantly leeches the kinetic energy of the strike to fracture the wielder's image into multiple shimmering phantasms.
+	SAY DESC "
 
 STATISTICS:
 
 Equipped abilities:
-– Whenever the wielder is hit, there is a 10% chance is surrounded by 3 mirror images for 3 rounds
+– Backstab bonus: +1
 
 THAC0: +4
 Damage: 1d6+4 (piercing)
@@ -325,18 +321,18 @@ Requires:
 Weight: 3"
 
 	SAY NAME2 "Sword of the Mask +5"
-	SAY DESC "This wicked, obsidian-hued blade was forged in the hidden sanctums of the Shadow Thieves, dedicated to Mask, the Lord of Shadows.
-	The enchantment laid upon this sword is one of reactive deception. Unlike other blades that demand the wielder's initiative, the Short Sword of the Mask possesses a defensive instinct born of divine shadow. It is said that the blade "watches" over its master; when a foe manages to land a blow, the sword instantly leeches the kinetic energy of the strike to fracture the wielder's image into multiple shimmering phantasms.
+	SAY DESC "
 	
 	Combined with the Heart of the Damned into a single lethal weapon, this deadly blade is the preferred tool of assassins and thieves. 
 
 STATISTICS:
 
 Equipped abilities:
-– Whenever the wielder is hit, there is a 10% chance is surrounded by 3 mirror images for 3 rounds
 - Non-detection
 - Backstab bonus: +1
-- Can backstab while invisible from front
+
+Combat abilities:
+– 15% chance of making the user go invisible for 1 turn after each successful attack
 
 THAC0: +5
 Damage: 1d6+5 (piercing)

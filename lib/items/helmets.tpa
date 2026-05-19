@@ -1,7 +1,62 @@
 
 
-//THE EYES OF TRUTH - 1500mo//
+//HELM OF INFRAVISION - 1500mo//
 COPY "rick_bigg_mod/items/HELM05.itm" "override"
+	SAY NAME1 "Helmet"
+	SAY DESC "This class of decorative helmet, made of reinforced leather or metal, covers the face and head. Eye slits and breathing holes come highly recommended.
+
+STATISTICS:
+
+Equipped abilities:
+– Protects against critical hits
+
+Weight: 2"
+
+	SAY NAME2 "Helm of Infravision"
+	SAY DESC "Being a scavenger of a sort, Babette Maelestrom had this helm created to aid her in her dungeon excursions. She would later attribute her gathered wealth solely to its power, though likely it was as much her keen eyes as anything.
+
+STATISTICS:
+
+Equipped abilities:
+- +1 THAC0
+– Infravision up to 120 ft.
+– Protects against critical hits
+
+Weight: 2"
+
+
+
+
+//HELM OF HORNS - 2000mo//
+COPY "rick_bigg_mod/items/TB#HEHO.itm" "override"
+	SAY NAME1 "Helmet"
+	SAY DESC "This class of decorative helmet, made of reinforced leather or metal, covers the face and head. Eye slits and breathing holes come highly recommended. 
+
+STATISTICS:
+
+Equipped abilities:
+– Protects against critical hits
+
+Weight: 2"
+
+	SAY NAME2 "Helm of Horns"
+	SAY DESC "This simple iron helmet is lined with jagged, protruding spikes. While crudely made, it is enchanted with a minor retaliatory charm. Whenever the wearer is struck, there is a chance that the helmet’s spikes will magically lengthen or lash out, punishing the attacker for their aggression.
+
+STATISTICS:
+
+Equipped abilities:
+– Protects against critical hits
+
+Combat abilities:
+- 15% chance every hit to deal 3 Piercing Damage to attacker
+
+Weight: 3"
+
+
+
+
+//HELM OF DEFENSE - 5000mo//
+COPY "rick_bigg_mod/items/HELM04.itm" "override"
 	SAY NAME1 "Helmet"
 	SAY DESC "This class of open-face helmet, made of reinforced leather or metal, covers most of the head save the face and neck. These helmets commonly provide protection for the nose. 
 
@@ -12,28 +67,52 @@ Equipped abilities:
 
 Weight: 2"
 
-	SAY NAME2 "The Eyes of Truth"
-	SAY DESC "Helm of Infravision: The Eyes of Truth 
-Being a scavenger of a sort, Babette Maelestrom had this helm created to aid her in her dungeon excursions. She would later attribute her gathered wealth solely to its power, though likely it was as much her keen eyes as anything.
+	SAY NAME2 "Helm of Defense"
+	SAY DESC "This iron helm has a rough, spiked texture, giving it a formidable and jagged silhouette. Despite its harsh exterior, the helm's interior is lined with masterfully crafted padding that adjusts to the wearer's head as if it were custom-made. More than a simple piece of armor, the helm is imbued with powerful enchantments that extend protection far beyond the brow, shielding the wearer's entire form from harm.
 
 STATISTICS:
 
 Equipped abilities:
-- +1 THAC0
-– Infravision up to 120 ft.
+– Armor Class: +1
+– Slashing Damage Resistance: +5%
+– Piercing Damage Resistance: +5%
+– Missile Damage Resistance: +5%
+– Crushing Damage Resistance: +5%
 – Protects against critical hits
 
-Weight: 32"
+Weight: 3"
 
 
 
 
+//HELM OF GLORY - 3500mo//
+COPY "rick_bigg_mod/items/HELM03.itm" "override"
+	SAY NAME1 "Helmet"
+	SAY DESC "This class of open-face helmet, made of reinforced leather or metal, covers most of the head save the face and neck. These helmets commonly provide protection for the nose. 
+
+STATISTICS:
+
+Equipped abilities:
+– Protects against critical hits
+
+Weight: 2"
+
+	SAY NAME2 "Helm of Glory"
+	SAY DESC "Named for its original owner, Sir Tain the Noble, this helm saw many great battles in his possession. It was eventually passed on to Sir Tain's squire, who had served him faithfully for almost ten years. Alas, the young man had neither the strength, nor the skill to uphold his master's legacy. It is rumored he lost his life in the pursuit of a worthy, but ultimately futile cause, and the helm has had many owners since. 
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +1
+– Charisma: +1
+– Protects against critical hits
+
+Weight: 2
 
 
 
 
-
-//HELM OF BALDURAN - 15000mo//
+//HELM OF BALDURAN - 8000mo//
 COPY "rick_bigg_mod/items/HELM07.itm" "override"
 	SAY NAME1 "Helmet"
 	SAY UNIDENTIFIED_DESC "This class of open-face helmet, made of reinforced leather or metal, covers most of the head save the face and neck. These helmets commonly provide protection for the nose. 
@@ -63,11 +142,7 @@ Weight: 1"
 
 
 
-
-
-
-
-//KIEL'S HELMET - 4500mo//
+//KIEL'S HELMET - 4000mo//
 COPY "rick_bigg_mod/items/HELM14.itm" "override"
 	SAY NAME1 "Helm"
 	SAY UNIDENTIFIED_DESC "The sturdy, steel-banded helm is dented and scarred from heavy use. Dwarven runes are set into the metal above the brow.
@@ -85,12 +160,844 @@ Weight: 2"
 STATISTICS:
 
 Equipped abilities:
-– Protects against critical hits
 – Protects against all forms of panic and boosts morale
-- +1 AC
+– Protects against critical hits
 
 Weight: 2
 "
+
+
+
+
+//THE GUARDIAN DEVIL - no good - valore 6500mo//
+COPY "rick_bigg_mod/items/BDHELM04.itm" "override"
+	SAY NAME1 "Helmet"
+	SAY UNIDENTIFIED_DESC "This class of decorative helmet, made of reinforced leather or metal, covers the face and head. Eye slits and breathing holes come highly recommended. 
+
+STATISTICS:
+
+Equipped abilities:
+– Protects against critical hits
+
+Weight: 2"
+
+	SAY NAME2 "The Guardian Devil"
+	SAY DESC "This dark, obsidian-wrought helmet feels unnaturally warm to the touch, and faint, guttural whispers can be heard emanating from within the visor. It is said that a minor Tanar'ri was bound into the metal by a desperate warlock who sought protection at any cost. The demon within does not serve out of loyalty, but out of a perverse desire to keep its "host" alive just to witness more suffering. When the wearer is struck in combat, the entity's rage flares, briefly lashing out to reinforce the wearer's physical form with abyssal energy.
+
+STATISTICS:
+
+Equipped abilities:
+- Magic Resistance: +5%
+– Protects against critical hits
+
+Combat abilities:
+- 20% chance every hit to receive +2 Melee THAC0 and Damage bonus for 6 seconds 
+
+Weight: 2"
+
+
+
+
+
+
+
+//MIRROR HELM - valore 6500mo//
+COPY "rick_bigg_mod/items/TB#HEMI.itm" "override"
+	SAY NAME1 "Helmet"
+	SAY UNIDENTIFIED_DESC "This class of decorative helmet, made of reinforced leather or metal, covers the face and head. Eye slits and breathing holes come highly recommended. 
+
+STATISTICS:
+
+Equipped abilities:
+– Protects against critical hits
+
+Weight: 2"
+
+	SAY NAME2 "Mirror Helm"
+	SAY DESC "This magnificent helmet is crafted from a polished, silvery alloy that shines with a brilliance bordering on the supernatural. Its surface is so flawlessly reflective that it acts as a perfect mirror, catching the light and casting shimmering patterns upon the surroundings. Legends whisper that the helm was cooled in the waters of a moonlit lake and tempered with the essence of a Gaze Reflection spell, granting its wearer a defense that few mages or monsters can bypass.
+
+STATISTICS:
+
+Equipped abilities:
+– Protects from all gaze-based attacks
+
+Weight: 2"
+
+
+
+
+
+
+
+
+//DRAGON HELM - valore 7000mo//
+COPY "rick_bigg_mod/items/HELM21.itm" "override"
+	SAY NAME1 "Helmet"
+	SAY UNIDENTIFIED_DESC "This class of decorative helmet, made of reinforced leather or metal, covers the face and head. Eye slits and breathing holes come highly recommended. 
+
+STATISTICS:
+
+Equipped abilities:
+– Protects against critical hits
+
+Weight: 2"
+
+	SAY NAME2 "Dragon Helm"
+	SAY DESC "The skillful hand of the warlock Wormsor carefully worked several dragon scales into this powerful helmet. Red, white, and green scales overlap, protecting the wearer from normal blows as well as fire, cold, electricity acid and poison. It is hard to determine whether the benefits originate within the scales or the spells of the mage.
+
+STATISTICS:
+
+Equipped abilities:
+– Protects against critical hits
+- Armor Class: +1
+– Cold Resistance: +25%
+– Fire Resistance: +25%
+– Electrical Resistance: +25%
+- Acid Resistance: +25%
+- Poison Resistance: +25%
+
+Weight: 2"
+
+
+
+
+
+
+//SKULL OF DEATH - no buoni - valore 14000mo//
+COPY "rick_bigg_mod/items/HELM17.itm" "override"
+	SAY NAME1 "Helmet"
+	SAY UNIDENTIFIED_DESC "This grim helmet is fashioned from the bleached skull of a large humanoid, reinforced with iron plates. 
+
+STATISTICS:
+
+Equipped abilities:
+– Protects against critical hits
+
+Weight: 2"
+
+	SAY NAME2 "Skull of Death"
+	SAY DESC "The mad necromancer-lich N'Ashtar Nikadeemus forged this helmet from the bones of his own parents. His highest ranked general would wear it when he rode into battle, using it to instantly slay the commanders of the opposing army. After that, the skeletal armies of N'Ashtar would overrun their demoralized enemies. When N'Ashtar finally fell, the Skull of Death was supposedly destroyed.
+
+STATISTICS:
+
+Equipped abilities:
+– Protects against critical hits
+- Magic Resistance: +10%
+- Charisma: -3
+
+Combat abilities:
+- 5% chance attacker must save vs. Death (-2 penalty) or die
+
+Weight: 2"
+
+
+
+
+//HELM OF BRILLIANCE - valore 13000mo//
+COPY "rick_bigg_mod/items/HELM16.itm" "override"
+	SAY NAME1 "Helmet"
+	SAY UNIDENTIFIED_DESC "This class of decorative helmet, made of reinforced leather or metal, covers the face and head. Eye slits and breathing holes come highly recommended. 
+
+STATISTICS:
+
+Equipped abilities:
+– Protects against critical hits
+
+Weight: 2"
+
+	SAY NAME2 "Helm of Brilliance"
+	SAY DESC "This helm is made of polished steel and set with diamonds, rubies, and fire opals. The gems glow with an internal light, the source of which can only be magical. The helm makes the wearer resistant to fire as well as giving the wearer the ability to cast Solar Brilliance. Due to the nature of this spell, it bypasses most spell protections.
+
+STATISTICS:
+
+Equipped abilities:
+– Fire Resistance: +40%
+– Protects against critical hits
+
+Charge abilities:
+– Solar Brilliance twice per day
+  Damage: 6d6 fire (no save, bypass spell resistance and magical protections)
+  Range: 90 ft.
+  Area: 15-ft. radius
+
+Weight: 2"
+
+
+
+
+
+//VHAILOR'S HELM - valore 7000mo//
+COPY "rick_bigg_mod/items/WA2HELM.itm" "override"
+	SAY NAME1 "Helmet"
+	SAY UNIDENTIFIED_DESC "This class of decorative helmet, made of reinforced leather or metal, covers the face and head. Eye slits and breathing holes come highly recommended. 
+
+STATISTICS:
+
+Equipped abilities:
+– Protects against critical hits
+
+Weight: 2"
+
+	SAY NAME2 "Vhailor's Helm"
+	SAY DESC "This helmet was worn by a mysterious warrior named Vhailor. The warrior was destroyed while helping a creature known as the 'Nameless One'.
+
+STATISTICS:
+
+Equipped abilities:
+– Protects against critical hits
+- Armor Class: +2
+– Strength: +1
+
+Weight: 2"
+
+
+
+
+
+//RORANACH'S HORN - valore 3000mo//
+COPY "rick_bigg_mod/items/COMPON05.itm" "override"
+	SAY NAME1 "Helmet"
+	SAY UNIDENTIFIED_DESC "This headpiece is of an atypical and bizarre design, crudely fashioned from the massive, spiraled horn of an unknown beast. Its appearance is unsettling and primitive, far removed from standard smithing. Despite its strange, organic origin, the helm feels nearly indestructible to the touch. 
+
+STATISTICS:
+
+Equipped abilities:
+– Protects against critical hits
+
+Weight: 2"
+
+	SAY NAME2 "Roranach's Horn"
+	SAY DESC "Crafted from the severed horn of a colossal, prehistoric beast, this helm retains the primordial resilience of the creature from which it was taken. The thick, calcified layers have been hollowed out and reinforced with steel rivets, turning a trophy of the hunt into a formidable piece of protection. Its natural density is so great that it effortlessly absorbs the impact of blunt trauma, turning aside heavy maces and war hammers that would shatter ordinary iron.
+
+STATISTICS:
+
+Equipped abilities:
+– Protects against critical hits
+– Armor Class vs. Crushing: +4
+
+Weight: 3"
+
+
+
+
+
+
+
+
+
+//HELM OF THE ROCK - valore 5000mo//
+COPY "rick_bigg_mod/items/HELM31.itm" "override"
+	SAY NAME1 "Helmet"
+	SAY UNIDENTIFIED_DESC "This class of decorative helmet, made of reinforced leather or metal, covers the face and head. Eye slits and breathing holes come highly recommended. 
+
+STATISTICS:
+
+Equipped abilities:
+– Protects against critical hits
+
+Weight: 2"
+
+	SAY NAME2 "Helm of the Rock"
+	SAY DESC "This ancient crown, carved from the deep bedrock of the Tethir Mountains, is a relic of the legendary giant-slayers of old. Imbued with the primal weight of the earth itself, the helm anchors the wearer’s mind and body against the most jarring assaults. Those who wear it claim to feel as immovable as a mountain; no blow, however thunderous, can rattle their resolve or cloud their senses."
+
+STATISTICS:
+
+Equipped abilities:
+– Protects against critical hits
+- Armor Class: +1
+– Immunity to Stun
+
+Weight: 2"
+
+
+
+
+
+//HELM OF THE ROCK UPGRADED - valore 16000mo//
+COPY "rick_bigg_mod/items/HELM32.itm" "override"
+	SAY NAME1 "Helmet"
+	SAY UNIDENTIFIED_DESC "This class of decorative helmet, made of reinforced leather or metal, covers the face and head. Eye slits and breathing holes come highly recommended. 
+
+STATISTICS:
+
+Equipped abilities:
+– Protects against critical hits
+
+Weight: 2"
+
+	SAY NAME2 "Helm of the Rock"
+	SAY DESC "This ancient crown, carved from the deep bedrock of the Tethir Mountains, is a relic of the legendary giant-slayers of old. Imbued with the primal weight of the earth itself, the helm anchors the wearer’s mind and body against the most jarring assaults. Those who wear it claim to feel as immovable as a mountain; no blow, however thunderous, can rattle their resolve or cloud their senses.
+	
+	With the addition of the horns, the Helm of the Rock is even more powerful. Generals and military leaders can command both fear and respect simply by wearing this helm.
+
+STATISTICS:
+
+Equipped abilities:
+– Protects against critical hits
+- Armor Class: +2
+– Immunity to Stun
+
+Charge abilities:
+– Aura of Command three times per day
+  Range: 15 ft.
+  Duration: 1 turn
+  Saving Throw: none
+  Area of Effect: all creatures in sight
+  Effect: all enemies suffer a -4 penalty to hit and damage rolls and a -4 penalty to Armor Class for 1 turn; enemies with 18 or fewer Hit Dice are panicked as well.
+
+Weight: 2"
+
+
+
+
+//CIRCLET OF THE ALPHA PACK - valore 6000mo - solo druidi//
+COPY "rick_bigg_mod/items/BDHELM16.itm" "override"
+	SAY NAME1 "Circlet"
+	SAY UNIDENTIFIED_DESC "This thin circlet of gold appears too simple and plain to be a crown. Although unadorned with gems, there are arcane and cryptic symbols etched along the surface.
+
+STATISTICS:
+
+Weight: 1"
+
+	SAY NAME2 "Circlet of the Alpha Pack"
+	SAY DESC "Woven from living ironwood roots and adorned with the fangs of apex predators, this circlet connects the wearer's mind directly to the primal heartbeat of the wild. Druids who don this crown do not merely summon beasts—they elevate them. The magic woven into the band projects a constant aura of primal energy, causing any animal ally nearby to swell with unnatural size, fury, and vigor.
+
+STATISTICS:
+
+Equipped abilities:
+– Casting Level: +2
+- Summoned animals are under the effect of Magic Fang
+
+Weight: 1"
+
+
+
+
+
+//CIRCLET OF THE ALPHA PACK - valore 12000mo - solo druidi//
+COPY "rick_bigg_mod/items/TB#HE16A.itm" "override"
+	SAY NAME1 "Circlet"
+	SAY UNIDENTIFIED_DESC "This thin circlet of gold appears too simple and plain to be a crown. Although unadorned with gems, there are arcane and cryptic symbols etched along the surface.
+
+STATISTICS:
+
+Weight: 1"
+
+	SAY NAME2 "Circlet of the Alpha Pack"
+	SAY DESC "Woven from living ironwood roots and adorned with the fangs of apex predators, this circlet connects the wearer's mind directly to the primal heartbeat of the wild. Druids who don this crown do not merely summon beasts—they elevate them. The magic woven into the band projects a constant aura of primal energy, causing any animal ally nearby to swell with unnatural size, fury, and vigor.
+	
+	With the Gem of the Nature's Fury, this circlet is drastically empowered in its abilities.
+
+STATISTICS:
+
+Equipped abilities:
+– Casting Level: +4
+- Casting Speed: +2
+- Summoned animals are under the effect of Magic Fang and Animal Growth
+
+Charge abilities:
+- Cast Wonderous Recall twice per day
+
+Weight: 1"
+
+
+
+
+
+//THIEVES'HOOD - solo ladri - valore 5500mo//
+COPY "rick_bigg_mod/items/HELM29.itm" "override"
+	SAY NAME1 "Hood"
+	SAY UNIDENTIFIED_DESC "This hood is simple in design and appears to offer minor protection. 
+
+STATISTICS:
+
+Weight: 1"
+
+	SAY NAME2 "Thieves'Hood"
+	SAY DESC "Crafted from a thick, enchanted fabric that hums with a faint protective aura, this hood sharpens the wearer's senses to an supernatural degree. The magic woven into its threads grants the user a heightened awareness of their immediate surroundings, shielding their blind spots from lethal strikes and piercing through illusions designed to deceive the eye.
+
+STATISTICS:
+
+Equipped abilities:
+– Immunity to backstab
+- Detect Illusion: +15%
+
+Weight: 1"
+
+
+
+
+
+//THIEVES'HOOD - valore 9500mo//
+COPY "rick_bigg_mod/items/HELM30.itm" "override"
+	SAY NAME1 "Hood"
+	SAY UNIDENTIFIED_DESC "This hood is simple in design and appears to offer minor protection. 
+
+STATISTICS:
+
+Weight: 1"
+
+	SAY NAME2 "Thieves'Hood"
+	SAY DESC "Crafted from a thick, enchanted fabric that hums with a faint protective aura, this hood sharpens the wearer's senses to an supernatural degree. The magic woven into its threads grants the user a heightened awareness of their immediate surroundings, shielding their blind spots from lethal strikes and piercing through illusions designed to deceive the eye.
+	
+	Combined with the Sandthief's Ring, its protective properties have now been further augmented.
+	
+STATISTICS:
+
+Equipped abilities:
+– Immunity to backstab
+- Detect Illusion: +30%
+- Hide in Shadows: +25%
+- Move silently: +25%
+
+Combat abilities:
+- Whenever the wielder is hit, there is a 20% chance he/she is surrounded by 3 mirror images for 3 rounds
+
+Weight: 1"
+
+
+
+
+
+//THIEVES'HOOD - valore 9500mo//
+COPY "rick_bigg_mod/items/HELM30.itm" "override"
+	SAY NAME1 "Hood"
+	SAY UNIDENTIFIED_DESC "This hood is simple in design and appears to offer minor protection. 
+
+STATISTICS:
+
+Weight: 1"
+
+	SAY NAME2 "Thieves'Hood"
+	SAY DESC "Crafted from a thick, enchanted fabric that hums with a faint protective aura, this hood sharpens the wearer's senses to an supernatural degree. The magic woven into its threads grants the user a heightened awareness of their immediate surroundings, shielding their blind spots from lethal strikes and piercing through illusions designed to deceive the eye.
+	
+	Combined with the Sandthief's Ring, its protective properties have now been further augmented.
+	
+STATISTICS:
+
+Equipped abilities:
+– Immunity to backstab
+- Detect Illusion: +30%
+- Hide in Shadows: +25%
+- Move silently: +25%
+
+Combat abilities:
+- Whenever the wielder is hit, there is a 20% chance he/she is surrounded by 3 mirror images for 3 rounds
+
+Weight: 1"
+
+
+
+
+
+//BARD HAT - valore 6500mo - solo bardi//
+COPY "rick_bigg_mod/items/BDHELM11.itm" "override"
+	SAY NAME1 "Cap"
+	SAY UNIDENTIFIED_DESC "This soft cap looks neither durable nor practical. Its stylish appearance marks it as strictly decorative.
+
+STATISTICS:
+
+Weight: 0"
+
+	SAY NAME2 "Bard Hat"
+	SAY DESC "This ostentatious peacock-blue hat is festooned with green and purple feathers. Once the possession of an unfailingly chipper bard, the hat was stolen when the bard couldn't resist showing off the hat in a seedy tavern and bragging about its magical powers. In truth the hat has only moderate enchantments on it, but its stylish appearance makes it a coveted choice for many bards.
+
+STATISTICS:
+
+Equipped abilities:
+- Charisma: +1
+– Immunity to silence and deafness
+– Bard song effects linger on for 3 additional rounds after the bard stops singing
+
+Weight: 0"
+
+
+
+
+
+//WIZARD HAT - valore 6000mo - solo maghi//
+COPY "rick_bigg_mod/items/BDHELM12.itm" "override"
+	SAY NAME1 "Cap"
+	SAY UNIDENTIFIED_DESC "This soft cap looks neither durable nor practical. Its stylish appearance marks it as strictly decorative.
+
+STATISTICS:
+
+Weight: 0"
+
+	SAY NAME2 "Wizard Hat"
+	SAY DESC "This classic pointed wizard's hat has the wearer's title emblazoned across it in rather gaudy sequins. The wizzard's hat makes the wearer much powerful, and allow him to cast Dimension Jump at will. A wizard who runs away from combat lives to run away another day, after all.
+
+STATISTICS:
+
+Equipped abilities:
+- Intelligence: +1
+– Casting Level: +2
+
+Charge abilities:
+- Cast Dimension Jump at will
+
+Weight: 0"
+
+
+
+
+
+
+
+
+//CIRCLET OF NETHERIL - valore 2500mo - solo maghi//
+COPY "rick_bigg_mod/items/COMPON17.itm" "override"
+	SAY NAME1 "Circlet"
+	SAY UNIDENTIFIED_DESC "This thin circlet of gold appears too simple and plain to be a crown. Although unadorned with gems, there are arcane and cryptic symbols etched along the surface.
+
+STATISTICS:
+
+Weight: 1"
+
+	SAY NAME2 "Circlet of Netheril"
+	SAY DESC "This elegant golden band is etched with shifting runes from the long-fallen empire of Netheril. Crafted with maestry, the artifact's raw power flows entirely from the enchanted metal and its ancient inscriptions. It aligns itself with the wearer's consciousness, sharpening their focus and significantly enhancing their mastery over the Weave.
+
+STATISTICS:
+
+Equipped abilities:
+– Casting Level: +2
+
+Weight: 1"
+
+
+
+
+
+//CIRCLET OF NETHERIL UPGRADED - valore 16000mo - solo maghi//
+COPY "rick_bigg_mod/items/HELM28.itm" "override"
+	SAY NAME1 "Circlet"
+	SAY UNIDENTIFIED_DESC "This thin circlet of gold appears too simple and plain to be a crown. Although unadorned with gems, there are arcane and cryptic symbols etched along the surface.
+
+STATISTICS:
+
+Weight: 1"
+
+	SAY NAME2 "Circlet of Netheril"
+	SAY DESC "This elegant golden band is etched with shifting runes from the long-fallen empire of Netheril. Crafted with maestry, the artifact's raw power flows entirely from the enchanted metal and its ancient inscriptions. It aligns itself with the wearer's consciousness, sharpening their focus and significantly enhancing their mastery over the Weave.
+	
+	Combined with the bronze ioun stone, the Circlet of Netheril is a great boon to any practitioner of the arcane arts. Of course, something so valuable is likely to attract unwanted attention from rival mages... 
+
+STATISTICS:
+
+Equipped abilities:
+– Casting Level: +2
+- Casting Speed: +1
+– The wearer can memorize 1 extra 7th-level spell, 1 extra 8th-level spell, and 1 extra 9th-level spell
+
+Weight: 1"
+
+
+
+
+
+
+
+
+
+
+
+//SILVER IOUN STONE - valore 5000mo//
+COPY "rick_bigg_mod/items/HELM25.itm" "override"
+	SAY NAME1 "Ioun Stone"
+	SAY UNIDENTIFIED_DESC "This is a small stone that floats in an orbit around the owner's head. Simply equip the stone to set it in its orbit. These obviously magical stones have different properties depending on their color.
+
+STATISTICS:
+
+Weight: 0"
+
+	SAY NAME2 "Silver Ioun Stone"
+	SAY DESC "A vibrant stone that orbits the wearer's head, shielding their mind against mental manipulation.It sharpens the user's perception and divine connection while granting deep clarity to resist charms.
+
+STATISTICS:
+
+Equipped abilities:
+– Wisdom: +1
+- Save vs. Enchantment: +3
+
+Weight: 0"
+
+
+
+
+
+
+
+//BRONZE IOUN STONE - valore 5000mo//
+COPY "rick_bigg_mod/items/HELM23.itm" "override"
+	SAY NAME1 "Ioun Stone"
+	SAY UNIDENTIFIED_DESC "This is a small stone that floats in an orbit around the owner's head. Simply equip the stone to set it in its orbit. These obviously magical stones have different properties depending on their color.
+
+STATISTICS:
+
+Weight: 0"
+
+	SAY NAME2 "Bronze Ioun Stone"
+	SAY DESC "A brilliant stone that orbits the user's brow, infusing their mind with vast clarity and reason.It expands the wearer's intellect while granting a massive repository of forgotten lore to identify rare artifacts.
+
+STATISTICS:
+
+Equipped abilities:
+– Intelligence: +1
+- Lore: +30
+
+Weight: 0"
+
+
+
+
+
+
+//PALE GREEN IOUN STONE - valore 7000mo//
+COPY "rick_bigg_mod/items/HELM20.itm" "override"
+	SAY NAME1 "Ioun Stone"
+	SAY UNIDENTIFIED_DESC "This is a small stone that floats in an orbit around the owner's head. Simply equip the stone to set it in its orbit. These obviously magical stones have different properties depending on their color.
+
+STATISTICS:
+
+Weight: 0"
+
+	SAY NAME2 "Pale Green Ioun Stone"
+	SAY DESC "This shimmering gemstone circles the user's head, generating a constant field of anti-arcane energy.It dilutes the potency of incoming spells, granting the wearer a permanent ten percent chance to completely shrug off magic.
+
+STATISTICS:
+
+Equipped abilities:
+– Magic Resistance: +10%
+
+Weight: 0"
+
+
+
+
+
+
+
+
+//OBSIDIAN IOUN STONE - valore 6500mo//
+COPY "rick_bigg_mod/items/HELM24.itm" "override"
+	SAY NAME1 "Ioun Stone"
+	SAY UNIDENTIFIED_DESC "This is a small stone that floats in an orbit around the owner's head. Simply equip the stone to set it in its orbit. These obviously magical stones have different properties depending on their color.
+
+STATISTICS:
+
+Weight: 0"
+
+	SAY NAME2 "Obsidian Ioun Stone"
+	SAY DESC "This vital gemstone pulses with life force as it orbits, bolstering the wearer's physical stamina and health. Should foul venom breach their defenses, the stone instantly neutralizes the toxin's advance to save their life.
+
+STATISTICS:
+
+Equipped abilities:
+– Constitution: +1
+– If the wielder becomes poisoned, the stone automatically casts Slow Poison on <PRO_HIMHER>
+
+Weight: 0"
+
+
+
+
+
+
+//PEARLY WHITE IOUN STONE - valore 5500mo//
+COPY "rick_bigg_mod/items/HELM18.itm" "override"
+	SAY NAME1 "Ioun Stone"
+	SAY UNIDENTIFIED_DESC "This is a small stone that floats in an orbit around the owner's head. Simply equip the stone to set it in its orbit. These obviously magical stones have different properties depending on their color.
+
+STATISTICS:
+
+Weight: 0"
+
+	SAY NAME2 "Pearly White Ioun Stone"
+	SAY DESC "Legend tells us that this particular type of ioun stone is crafted with the enslaved soul of a troll. This pearly white ioun stone will grant the wearer the ability to regenerate like a troll.
+
+STATISTICS:
+
+Equipped abilities:
+– Regenerate 1 Hit Point every round
+
+Weight: 0"
+
+
+
+
+
+
+
+//DUSTY ROSE IOUN STONE - valore 6000mo//
+COPY "rick_bigg_mod/items/HELM19.itm" "override"
+	SAY NAME1 "Ioun Stone"
+	SAY UNIDENTIFIED_DESC "This is a small stone that floats in an orbit around the owner's head. Simply equip the stone to set it in its orbit. These obviously magical stones have different properties depending on their color.
+
+STATISTICS:
+
+Weight: 0"
+
+	SAY NAME2 "Dusty Rose Ioun Stone"
+	SAY DESC "This nimble gemstone dances around the user's head, granting preternatural reflexes and quickness.It heightens the wearer's agility, allowing them to swiftly dive clear of devastating dragon breath and area explosions.
+
+STATISTICS:
+
+Equipped abilities:
+– Dexterity: +1
+- Save vs. Breath: +2
+
+Weight: 0"
+
+
+
+
+
+
+//LAVENDER IOUN STONE - valore 5500mo//
+COPY "rick_bigg_mod/items/HELM26.itm" "override"
+	SAY NAME1 "Ioun Stone"
+	SAY UNIDENTIFIED_DESC "This is a small stone that floats in an orbit around the owner's head. Simply equip the stone to set it in its orbit. These obviously magical stones have different properties depending on their color.
+
+STATISTICS:
+
+Weight: 0"
+
+	SAY NAME2 "Lavender Ioun Stone"
+	SAY DESC "This resilient gemstone circles the user's head, weaving a protective aura that deflects incoming physical blows.It anchors the wearer's life force to the material plane, granting powerful defiance against lethal death magic.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +1
+– Save vs. Death: +4
+
+Weight: 0"
+
+
+
+
+
+//GOLDEN IOUN STONE - valore 8000mo//
+COPY "rick_bigg_mod/items/HELM27.itm" "override"
+	SAY NAME1 "Ioun Stone"
+	SAY UNIDENTIFIED_DESC "This is a small stone that floats in an orbit around the owner's head. Simply equip the stone to set it in its orbit. These obviously magical stones have different properties depending on their color.
+
+STATISTICS:
+
+Weight: 0"
+
+	SAY NAME2 "Golden Ioun Stone"
+	SAY DESC "This profound gemstone orbits the user's brow, expanding their mind to grasp the highest tiers of arcane theory.It unlocks additional mental capacity, allowing high-level wizards to memorize extra powerful spells.
+
+STATISTICS:
+
+Equipped abilities:
+– Can memorize one extra 7th-level and 8th-level wizard spell
+
+Weight: 0"
+
+
+
+
+
+//GOLDEN IOUN STONE - valore 8000mo - solo maghi e bardi//
+COPY "rick_bigg_mod/items/HELM27.itm" "override"
+	SAY NAME1 "Ioun Stone"
+	SAY UNIDENTIFIED_DESC "This is a small stone that floats in an orbit around the owner's head. Simply equip the stone to set it in its orbit. These obviously magical stones have different properties depending on their color.
+
+STATISTICS:
+
+Weight: 0"
+
+	SAY NAME2 "Golden Ioun Stone"
+	SAY DESC "This profound gemstone orbits the user's brow, expanding their mind to grasp the highest tiers of arcane theory.It unlocks additional mental capacity, allowing high-level wizards to memorize extra powerful spells.
+
+STATISTICS:
+
+Equipped abilities:
+– Can memorize one extra 7th-level and 8th-level wizard spell
+
+Weight: 0"
+
+
+
+
+
+
+
+// TIGER-EYE IOUN STONE - valore 10000mo - //
+COPY "rick_bigg_mod/items/HELM34.itm" "override"
+	SAY NAME1 "Ioun Stone"
+	SAY UNIDENTIFIED_DESC "This is a small stone that floats in an orbit around the owner's head. Simply equip the stone to set it in its orbit. These obviously magical stones have different properties depending on their color.
+
+STATISTICS:
+
+Weight: 0"
+
+	SAY NAME2 "Tiger-Eye Ioun Stone"
+	SAY DESC "This heavily enchanted gemstone orbits the user's head, projecting a dense kinetic barrier against physical attacks. It significantly misdirects enemy strikes, granting a massive three-point bonus to the wearer's defensive armor class.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +3
+
+Weight: 0"
+
+
+
+
+
+
+// MALLA'S SOUL IOUN STONE - valore 10000mo - no good //
+COPY "rick_bigg_mod/items/AMSOUL01.itm" "override"
+	SAY NAME1 "Ioun Stone"
+	SAY UNIDENTIFIED_DESC "This is a small stone that floats in an orbit around the owner's head. Simply equip the stone to set it in its orbit. These obviously magical stones have different properties depending on their color.
+
+STATISTICS:
+
+Weight: 0"
+
+	SAY NAME2 "Malla's Soul Ioun Stone"
+	SAY DESC "The small gem that holds the soul of the innocent young woman, Malla, has the magical ability to float about the forehead and act as an ioun stone of incredible power. Only those of little conscience would consider using this device, however.
+
+STATISTICS:
+
+Equipped abilities:
+– Strength: +3
+
+Weight: 0"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

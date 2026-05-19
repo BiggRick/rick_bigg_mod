@@ -311,7 +311,7 @@ Weight: 10
 
 
 
-//GRANDMASTER'S ARMOR +5 - solo ladri e assassini (no spadaccini) - 16000mo//
+//GRANDMASTER'S ARMOR +5 - solo ladri e assassini (no spadaccini) - 10000mo//
 COPY "rick_bigg_mod/items/LEAT24.itm" "override"
 	SAY NAME1 "Studded Leather Armor"
 	SAY UNIDENTIFIED_DESC "Studded leather armor has little in common with normal leather armor. Instead of a hardened shell, studded leather offers hundreds of metal rivets affixed to a supple backing. The numerous studs form a flexible coat of metal that helps to turn aside slashing and cutting attacks, while the leather is little more than a means of securing the rivets in place. 
@@ -327,12 +327,12 @@ Weight: 25
 "
 
 	SAY NAME2 "Grandmaster's Armor +5"
-	SAY DESC "This extraordinary suit of armor is the pinnacle of the leatherworker's craft, commissioned by the legendary Grandmaster of the Shadow Thieves of Athkatla. It was designed for an operative who required the protection of heavy plate but the silence and flexibility of a second skin. The Grandmaster's Armor is more than just a defensive garment; it is a masterpiece of kinetic enchantment. The suit is magically attuned to the wearer's movements, anticipating every dodge and roll, and actually enhancing the user's natural speed. It is whispered that the first master who wore this armor could walk through a room full of dry leaves without making a sound, and dance between raindrops during a storm.  
+	SAY DESC "This legendary suit of leather armor was allegedly crafted for an assassin who found the shadows too restrictive. Imbued with the essence of a thousand redirected gazes, the armor vibrates with a faint, unsettling hum. While most rogues fear the direct approach, the wearer of this suit finds that the "front" is merely a matter of perspective.Its most fearsome enchantment, known as "The Faceless Strike," allows the wearer to bypass a victim's natural instinct to defend. If the wearer is invisible or hidden in shadows, they do not need to seek their enemy's back; the armor warps the attacker's presence so completely that even a strike delivered face-to-face is felt as a lethal, unsuspecting backstab.
 
 STATISTICS:
 
 Equipped abilities:
-– Doubles Movement Rate
+- Can deal backstab damage from the front as long as the user is invisible
 
 Armor Class: 2 (0 vs. slashing, 1 vs. piercing and missile)
 Speed Factor: -1

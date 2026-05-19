@@ -651,7 +651,6 @@ Equipped abilities:
 – Barkskin on self
 – AC bonus: +2
 - Saving Throws bonus: +2
-- Caster level bonus: +2
 
 Charge abilities:
 – Summon 8-HD Shambling Mound twice per day
@@ -678,7 +677,7 @@ Weight: 2
 
 
 
-//STAFF OF THE MAGI +5 - 25000mo - solo maghi puri//
+//STAFF OF THE MAGI +5 - 25000mo - solo maghi//
 COPY "rick_bigg_mod/items/STAF11.itm" "override"
 	SAY NAME1 "Staff"
 	SAY UNIDENTIFIED_DESC "The simplest and humblest of staff weapons, the quarterstaff is a length of wood ranging six to nine feet in length. High-quality quarterstaves are made of stout oak and are shod with metal at both ends. The quarterstaff must be wielded with both hands.
@@ -695,13 +694,13 @@ Requires:
 Weight: 4"
 
 	SAY NAME2 "Staff of the Magi +5"
-	SAY DESC "This type of staff is thoroughly linked to the image of the spellcasting profession, rare though it is. It is among the most powerful tools that a wizard can possess, the culmination of complex enchantments and endless study. This fantastic weapon can strike from range, grants immunity to Time Stop, and offers protection from evil. It can also cast Spell Trap and Magical Strike, a powerful attack that bypasses enemies' protections. The quintessential Mage item.
+	SAY DESC "This type of staff is thoroughly linked to the image of the spellcasting profession, rare though it is. It is among the most powerful tools that a wizard can possess, the culmination of complex enchantments and endless study. This fantastic weapon can strike from range, grants immunity to Time Stop, and cast Magical Strike, a powerful attack that bypasses mages' protections. The quintessential Mage item.
 
 STATISTICS:
 
 Equipped abilities:
 - Immunity to Time Stop
-– Protection From Evil
+- Immunity to Charm
 
 Combat abilities:
 – Extended range
@@ -711,13 +710,14 @@ Combat abilities:
 
 Charge abilities:
 – Magical Strike three times per day 
-  Inflicts 6d6 magical damage, bypasses all protections
+  Damage: 6d6 (magical), bypasses all protections
+  Range: 40 ft.
   
-– Spell Trap once per day
-
+- Dimension Jump at will
+  
 THAC0: +5
-Damage: 1d6 (crushing)
-Speed Factor: 1
+Damage: 1d6+5 (magical)
+Speed Factor: 0
 Proficiency Type: Quarterstaff
 Type: Two-handed
 Requires:

@@ -326,7 +326,7 @@ STATISTICS:
 
 Equipped abilities:
 – Saving Throws: +1
-- Caster Level: +4
+- Casting Level: +4
 – The wearer can memorize 1 extra spell per level
 
 Armor Class: 1 (-1 vs. slashing, 0 vs. piercing and missile)
@@ -486,7 +486,7 @@ Weight: 6
 
 
 
-//DARK ELVEN CHAIN MAIL +3 - 9000mo//
+//DARK ELVEN CHAIN MAIL +2 - 7500mo//
 COPY "rick_bigg_mod/items/CLOLTH.itm" "override"
 	SAY NAME1 "Chain Mail"
 	SAY UNIDENTIFIED_DESC "This chainmail clearly bears the hand of a great elvensmith, with their typical beauty and delicate sturdy craftsmanship.
@@ -500,7 +500,7 @@ Requires:
 Weight: 8
 "
 
-	SAY NAME2 "Dark Elven Chain Mail +3"
+	SAY NAME2 "Dark Elven Chain Mail +2"
 	SAY DESC "Dark Elven Chain is the drow version of Elven Chain issued to war parties and raiders visiting the surface, where traditional drow Adamantine armor will quickly deteriorate and turn to Adamantine Dust. Its lightness allows it to be worn by Thieves and Fighter/Mages with few restrictions. This particular armor has been enchanted to make drow raiders even more evasive during their raids.
 
 STATISTICS:
@@ -513,7 +513,7 @@ Equipped abilities:
 - Hide in Shadows: -10%
 - Saving Throws vs Breath: +3
 
-Armor Class: 2 (0 vs. slashing, 1 vs. piercing and missile)
+Armor Class: 3 (1 vs. slashing, 2 vs. piercing and missile)
 Requires:
  5 Strength
 
@@ -524,7 +524,7 @@ Weight: 5
 
 
 
-//MELODIC CHAIN +3 - 8000mo - solo bardi//
+//MELODIC CHAIN +2 - 8000mo - solo bardi//
 COPY "rick_bigg_mod/items/CHAN15.itm" "override"
 	SAY NAME1 "Chain Mail"
 	SAY UNIDENTIFIED_DESC "This chainmail clearly bears the hand of a great elvensmith, with their typical beauty and delicate sturdy craftsmanship.
@@ -538,7 +538,7 @@ Requires:
 Weight: 8
 "
 
-	SAY NAME2 "Melodic Chain +3"
+	SAY NAME2 "Melodic Chain +2"
 	SAY DESC "The Bards of Melody were a small band of half-elf bardic warriors who entertained and defended scattered elven communities throughout Calimshan. Enchantments allowed only minstrels to wear their armor, the magical links sliding together to produce beautiful melodies as they danced or fought. Unfortunately, the Bards of Melody were disbanded hundreds of years ago, and the secret of 'playing' the armor faded with them.
 
 STATISTICS:
@@ -551,11 +551,11 @@ Equipped abilities:
 - Hide in Shadows: -10%
 - +1 Luck on allies and -1 Luck on enemies
 
-Armor Class: 2 (0 vs. slashing, 1 vs. piercing and missile)
+Armor Class: 3 (1 vs. slashing, 2 vs. piercing and missile)
 Requires:
  5 Strength
 
-Weight: 5
+Weight: 6
 "
 
 
@@ -564,7 +564,7 @@ Weight: 5
 
 
 
-//BLADESINGER CHAIN +4 - 15000mo//
+//BLADESINGER CHAIN +3 - 12000mo//
 COPY "rick_bigg_mod/items/CHAN16.itm" "override"
 	SAY NAME1 "Chain Mail"
 	SAY UNIDENTIFIED_DESC "This chainmail clearly bears the hand of a great elvensmith, with their typical beauty and delicate sturdy craftsmanship.
@@ -578,7 +578,7 @@ Requires:
 Weight: 8
 "
 
-	SAY NAME2 "Bladesinger Chain +4"
+	SAY NAME2 "Bladesinger Chain +3"
 	SAY DESC "The lore of this suit is difficult to determine, either due to the exotic circumstances from which it sprang or the wish of its previous owner to conceal its location. Secrecy would certainly be desirable, as even rumors of such a mail as this could provoke deadly interest. It is the pinnacle of elven craft and a truly blessed item.
 
 STATISTICS:
@@ -592,7 +592,7 @@ Equipped abilities:
 - Melee weapon THAC0: +2
 - Melee weapon damage: +2
 
-Armor Class: 1 (-4 vs. slashing, 0 vs. piercing and missile)
+Armor Class: 2 (0 vs. slashing, 1 vs. piercing and missile)
 Requires:
  5 Strength
 
@@ -627,7 +627,7 @@ Equipped abilities:
 – Open Locks: -5%
 – Find Traps: -5%
 – Pick Pockets: -20%
-- Dexterity: +2
+- Dexterity: +1
 
 Armor Class: 1 (-1 vs. slashing, 0 vs. piercing and missile)
 Requires:
@@ -639,7 +639,7 @@ Weight: 5
 
 
 
-//ASLYFERUND ELVEN CHAIN +5 - 20000mo//
+//ASLYFERUND ELVEN CHAIN +5 - 18000mo//
 COPY "rick_bigg_mod/items/CHAN19.itm" "override"
 	SAY NAME1 "Chain Mail"
 	SAY UNIDENTIFIED_DESC "This chainmail clearly bears the hand of a great elvensmith, with their typical beauty and delicate sturdy craftsmanship.
@@ -666,7 +666,6 @@ Equipped abilities:
 – Move Silently: -10%
 - Hide in Shadows: -10%
 - Immunity to normal weapons
-- Magic Resistance: +10%
 
 Armor Class: 0 (-2 vs. slashing, -1 vs. piercing and missile)
 Requires:

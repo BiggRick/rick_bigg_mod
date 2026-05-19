@@ -375,9 +375,6 @@ SAY NAME2 "Gram the Sword of Grief +5"
 
 STATISTICS:
 
-Equipped abilities:
-– Magic Resistance: +5%
-
 Combat abilities:
 – Inflicts 10 points of bleeding damage per hit (two point per round)
 
@@ -420,7 +417,7 @@ SAY NAME2 "Gram the Sword of Grief +6"
 STATISTICS:
 
 Equipped abilities:
-– Magic Resistance: +10%
+- Protection from good
 
 Combat abilities:
 – Inflicts 10 points of bleeding damage per hit (two point per round)
@@ -555,7 +552,7 @@ Requires:
 Weight: 15"
 
 	SAY NAME2 "Ir'revrykal +5"
-	SAY DESC "This dark, two-handed sword radiates evil from a distance. The weapon is not just unholy, but unearthly as well. Long thought to be just a myth, the blade's infamy pervades the accounts of learned bards and ancient sages. According to these accounts, the githyanki wizard-smith Ir'mlar forged the blade many centuries ago in dark caverns deep beneath Tu'narath. This githyanki city floats in the Astral Plane upon the petrified corpse of a dead god known only as 'the One in the Void.' To craft the sword, Ir'mlar allegedly used the One's own bones, which consist of a metallic substance unknown on the Prime Material Plane. The smith then imbued the weapon with a fiendish entity whom some seers claim was a mighty prince of the lower plane of Carceri. Others claim the sword contains the One in the Void's own spirit, banished within the blade for crimes committed against other gods in past ages. In any case, Ir'revrykal possesses such an enmity against good that only blackguards committed to evil may wield it. Circular runes etched on the blade proclaim its name in ancient tir'su, the githyanki language. The runes translate roughly as 'Pain-Servant.'
+	SAY DESC "This massive silver blade radiates a cold luminescence that seems to vibrate in sync with the currents of the Astral Plane. Forged by the greatest weapon-smiths of the Githyanki people, Ir'revrykal is not merely a sword, but a symbol of millennial resistance and vengeance. The runes etched along its flat surface are not prayers, but equations of pure mental force designed to shatter the psychic cohesion of the enemy.While its true nature remains shrouded in mystery, Githyanki legends recount that it was tempered in the blood of Illithids during the great uprising that liberated their kin. It is the ultimate "Cerebro-Killer" weapon: its blade does not simply sever flesh, but shears the very connections between mind and body, making it the living nightmare of any Mind Flayer that dares cross its path. For a Githyanki warrior, to wield Ir'revrykal is to brandish the absolute will of the Eternal Queen against the brain-eaters.
 
 STATISTICS:
 
@@ -567,7 +564,7 @@ Combat abilities:
 - Slays Mind Flayers
 
 THAC0: +5
-Damage: 2D6+5, +5 extra vs. good creatures
+Damage: 2d6+5
 Damage type: Slashing
 Speed Factor: 5
 Proficiency Type: Two-handed Sword

@@ -365,10 +365,10 @@ Weight: 7"
 STATISTICS:
 
 Combat abilities:
-– On a critical hit against a troll, the wearer gains +1 to Strength for 1 turn (non-cumulative)
+- On hit two extra Fire Damage vs. trolls after 6 seconds 
 
 THAC0: +2, +4 vs. trolls
-Damage: 1d8+3, +2 fire vs. trolls
+Damage: 1d8+3, +2 Fire Damage vs. trolls 
 Speed Factor: 5
 Proficiency Type: Axe
 Type: One-handed

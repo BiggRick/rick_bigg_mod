@@ -299,7 +299,7 @@ Weight: 2"
 
 
 
-//SPECTRAL BLADE +4 - 9500mo/
+//SPECTRAL BRAND +4 - 9500mo/
 COPY "rick_bigg_mod/items/SW1H68.itm" "override"
 	SAY NAME1 "Scimitar"
 	SAY UNIDENTIFIED_DESC "The long, curved, single-edged blade is characteristic of both the saber and the scimitar, even though their origins lie in different parts of Faerûn. Whereas the saber was intended chiefly for horsemen, mainly due to its versatility, the scimitar has a heavier oriental influence. The 'shamshir', as it was originally called, is larger, more highly curved, and tapered to an elongated, sharp point. This makes the weapon slightly slower but more effective and deadly in combat.
@@ -315,7 +315,7 @@ Requires:
 
 Weight: 4"
 
-	SAY NAME2 "Spectral Blade +4"
+	SAY NAME2 "Spectral Brand +4"
 	SAY DESC "The origins of this ethereal blade are as elusive as the weapon itself. Legends whispered among the nomads of the Calim Desert speak of a dervish who struck a bargain with a spirit of the Ethereal Plane, seeking a weapon that no armor could turn aside. The result was Spectral Brand, a scimitar that exists only partially in the physical world.
 	
 STATISTICS:
@@ -339,7 +339,7 @@ Weight: 2"
 
 
 
-//SPECTRAL BLADE +5 - 16000mo//
+//SPECTRAL BRAND +5 - 16000mo//
 COPY "rick_bigg_mod/items/SW1H69.itm" "override"
 	SAY NAME1 "Scimitar"
 	SAY UNIDENTIFIED_DESC "The long, curved, single-edged blade is characteristic of both the saber and the scimitar, even though their origins lie in different parts of Faerûn. Whereas the saber was intended chiefly for horsemen, mainly due to its versatility, the scimitar has a heavier oriental influence. The 'shamshir', as it was originally called, is larger, more highly curved, and tapered to an elongated, sharp point. This makes the weapon slightly slower but more effective and deadly in combat.
@@ -355,7 +355,7 @@ Requires:
 
 Weight: 4"
 
-	SAY NAME2 "Spectral Blade +5"
+	SAY NAME2 "Spectral Brand +5"
 	SAY DESC "The origins of this ethereal blade are as elusive as the weapon itself. Legends whispered among the nomads of the Calim Desert speak of a dervish who struck a bargain with a spirit of the Ethereal Plane, seeking a weapon that no armor could turn aside. The result was Spectral Brand, a scimitar that exists only partially in the physical world.
 	
 	Drawing on the necromancy of the Skull of the Lich, Spectral Brand now unleash is real dark power.
@@ -366,7 +366,7 @@ Equipped abilities:
 – Negative Plane Protection
 
 Combat abilities:
-- -10% Slashing and Cold Damage Resistance on target for 2 rounds
+– Each hit makes the target receive a cumulative 10% penality to their Slashing Resistance and Cold Resistance for 2 rounds
 
 Charge abilities:
 – Summon Spectral Blade once per day

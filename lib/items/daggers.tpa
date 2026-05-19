@@ -69,7 +69,7 @@ Weight: 1"
 
 
 
-//DAGGER OF VENOM +2 - 5000mo - no buoni//
+//DAGGER OF VENOM +2 - 6000mo - no buoni//
 COPY "rick_bigg_mod/items/MISC75.itm" "override"
 	SAY NAME1 "Dagger"
 	SAY UNIDENTIFIED_DESC "The typical dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter.
@@ -247,13 +247,13 @@ Unfortunately, he happened to be standing between the portals, holding the dagge
 STATISTICS:
 
 Combat abilities:
-– Deals an extra 1d4 cold damage to fire elementals
-– Deals an extra 1d4 fire damage to water elementals
-– Deals an extra 1d4 acid damage to earth elementals
-– Deals an extra 1d4 electrical damage to air elementals
+– Deals an extra 4d4 cold damage to fire elementals
+– Deals an extra 4d4 fire damage to water elementals
+– Deals an extra 4d4 acid damage to earth elementals
+– Deals an extra 4d4 electrical damage to air elementals
 
 THAC0: +3
-Damage: 1d4+3, +1 fire, cold, electrical and acid damage (random)
+Damage: 1d4+3, +2 fire, cold, electrical and acid damage (random)
 Damage type: Piercing
 Speed Factor: 0 
 Proficiency Type: Dagger
@@ -365,12 +365,12 @@ Weight: 1"
 
 
 	SAY NAME2 "Dagger of the Star +4"
-	SAY DESC "Legend says this blade was forged from the heart of a fallen star, cooled in the ethereal mists of the Astral Plane. Its steel is unnaturally dark, shimmering with tiny, trapped points of light that mirror the constellations of the night sky. For centuries, it was held by the Shadow-Walkers, a sect of elite elven assassins who believed the dagger was a gift from Sehanine Moonbow herself.
+	SAY DESC "Forged from a fallen meteor that streaked across the Amnian sky, this blade does not merely reflect the light of the stars—it drinks it. Once a simple curiosity of starlight, your modifications have awakened the dormant celestial power within the metal. Furthermore, the dagger acts as a lightning rod for hostile sorcery, grounding harmful spells before they can touch the wielder, while lashing out with a searing brilliance that burns the flesh with pure magical force.
 
 STATISTICS:
    
-Combat abilities:
-– 10% chance of making the user go invisible for 1 turn after each successful attack
+Equipped abilities:
+- Magical Damage Resitance: +30%
 
 THAC0: +4
 Damage: 1d4+4 (piercing)
@@ -401,16 +401,18 @@ Weight: 1"
 
 
 	SAY NAME2 "Dagger of the Star +5"
-	SAY DESC "Legend says this blade was forged from the heart of a fallen star, cooled in the ethereal mists of the Astral Plane. Its steel is unnaturally dark, shimmering with tiny, trapped points of light that mirror the constellations of the night sky. For centuries, it was held by the Shadow-Walkers, a sect of elite elven assassins who believed the dagger was a gift from Sehanine Moonbow herself.
-	With the star sapphires encrusting its hilt, this small blade is one of the most dangerous weapons in the realms.
+	SAY DESC "Forged from a fallen meteor that streaked across the Amnian sky, this blade does not merely reflect the light of the stars—it drinks it. Once a simple curiosity of starlight, your modifications have awakened the dormant celestial power within the metal. Furthermore, the dagger acts as a lightning rod for hostile sorcery, grounding harmful spells before they can touch the wielder, while lashing out with a searing brilliance that burns the flesh with pure magical force.
+	
+	With the star sapphires encrusting its hilt, every strike from this dagger carves away at the very essence of a foe’s magical defenses, leaving them vulnerable to the arcane. 
 
 STATISTICS:
 
-Combat abilities:
-– 20% chance of making the user go invisible for 1 turn after each successful attack
+Equipped abilities:
+- Magical Damage Resitance: +50%
 
-Charge abilities:
-- Cast Time Stop once per day
+Combat abilities:
+- Each hit makes the target receive a cumulative 10% point penalty to their Magic Resistance for 4 rounds
+- Each hit makes the target receive a cumulative 1 point penalty to their Saving Throws for 4 rounds
 
 THAC0: +5
 Damage: 1d4+5, +5 Magical
