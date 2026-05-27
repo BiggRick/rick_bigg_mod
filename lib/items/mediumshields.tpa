@@ -1,0 +1,250 @@
+//MEDIUM SHIELD +1 - 1500mo//
+COPY "rick_bigg_mod/items/SHLD04A.itm" "override"
+	SAY NAME1 "Medium Shield"
+	SAY UNIDENTIFIED_DESC "A medium shield is carried in the same manner as a small shield. Unlike the small shield, however, its weight prevents the character from using <PRO_HISHER> shield hand for anything other than carrying the medium shield. Medium shields are usually made of metal, range from three to four feet in diameter, and can be of any shape, from round to square to a dragon's spread wings. A typical medieval shield resembles a triangle with one point facing downward.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +1
+
+Requires:
+ 12 Strength
+
+Weight: 7
+"
+
+	SAY NAME2 "Medium Shield +1"
+	SAY DESC "A medium shield is carried in the same manner as a small shield. Unlike the small shield, however, its weight prevents the character from using <PRO_HISHER> shield hand for anything other than carrying the medium shield. This penalty is offset by the fact that this shield is magical, granting an additional protection to its wearer.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +2
+
+Requires:
+ 12 Strength
+
+Weight: 6
+"
+
+
+
+
+//MEDIUM SHIELD +2 - 2500mo//
+COPY "rick_bigg_mod/items/SHLD29A.itm" "override"
+	SAY NAME1 "Medium Shield"
+	SAY UNIDENTIFIED_DESC "A medium shield is carried in the same manner as a small shield. Unlike the small shield, however, its weight prevents the character from using <PRO_HISHER> shield hand for anything other than carrying the medium shield. Medium shields are usually made of metal, range from three to four feet in diameter, and can be of any shape, from round to square to a dragon's spread wings. A typical medieval shield resembles a triangle with one point facing downward.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +1
+
+Requires:
+ 12 Strength
+
+Weight: 7
+"
+
+	SAY NAME2 "Medium Shield +2"
+	SAY DESC "A medium shield is carried in the same manner as a small shield. Unlike the small shield, however, its weight prevents the character from using <PRO_HISHER> shield hand for anything other than carrying the medium shield. This penalty is offset by the fact that this shield is magical, granting an additional protection to its wearer.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +3
+
+Requires:
+ 12 Strength
+
+Weight: 5
+"
+
+
+
+
+//SHIELD OF BALDURAN +2 - 6500mo//
+COPY "rick_bigg_mod/items/SHLD06P.itm" "override"
+	SAY NAME1 "Medium Shield"
+	SAY UNIDENTIFIED_DESC "A medium shield is carried in the same manner as a small shield. Unlike the small shield, however, its weight prevents the character from using <PRO_HISHER> shield hand for anything other than carrying the medium shield. Medium shields are usually made of metal, range from three to four feet in diameter, and can be of any shape, from round to square to a dragon's spread wings. A typical medieval shield resembles a triangle with one point facing downward.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +1
+
+Requires:
+ 12 Strength
+
+Weight: 7
+"
+
+	SAY NAME2 "Shield of Balduran +2"
+	SAY DESC "This is the shield carried by Balduran, the legendary founder of Baldur's Gate. It was long believed that this artifact, along with his famed sword, was forever lost during the hero's ill-fated final voyage, which ended in a tragic shipwreck on a remote, uncharted island. This powerful shield grants the wielder absolute freedom of movement on the battlefield. Furthermore, its protective runes are attuned to the wild, bolstering defenses against the most savage monsters and aberrations of the Realms.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +3, +2 extra vs. Monsters
+- Saving Throws vs. Monsters: +2
+- Free Action
+
+Requires:
+ 12 Strength
+
+Weight: 5
+"
+
+
+
+
+
+//SHIELD OF EGONS +2 - solo paladini e chierici no malvagi- 4500mo//
+COPY "rick_bigg_mod/items/BDSHLD03.itm" "override"
+	SAY NAME1 "Medium Shield"
+	SAY UNIDENTIFIED_DESC "A medium shield is carried in the same manner as a small shield. Unlike the small shield, however, its weight prevents the character from using <PRO_HISHER> shield hand for anything other than carrying the medium shield. Medium shields are usually made of metal, range from three to four feet in diameter, and can be of any shape, from round to square to a dragon's spread wings. A typical medieval shield resembles a triangle with one point facing downward.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +1
+
+Requires:
+ 12 Strength
+
+Weight: 7
+"
+
+	SAY NAME2 "Shield of Egons +2"
+	SAY DESC "The Egons were a family of well-respected Lathander worshippers that earned their fortune protecting those weaker than themselves. Though the Egon line has ended, its influence is still felt in the form of this shield, which is imbued with some of the power of the Morninglord himself.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +3, +2 extra vs. Undead
+- Saving Throws vs. Undead: +2
+- Turn Undead: +2 cleric level
+
+Requires:
+ 12 Strength
+
+Weight: 5
+"
+
+
+
+
+
+//DRAGONSCALE SHIELD +2 - 8000mo//
+COPY "rick_bigg_mod/items/SHLD21.itm" "override"
+	SAY NAME1 "Medium Shield"
+	SAY UNIDENTIFIED_DESC "A medium shield is carried in the same manner as a small shield. Unlike the small shield, however, its weight prevents the character from using <PRO_HISHER> shield hand for anything other than carrying the medium shield. Medium shields are usually made of metal, range from three to four feet in diameter, and can be of any shape, from round to square to a dragon's spread wings. A typical medieval shield resembles a triangle with one point facing downward.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +1
+
+Requires:
+ 12 Strength
+
+Weight: 7
+"
+
+	SAY NAME2 "Dragonscale Shield +2"
+	SAY DESC "Another powerful item created by the warlock Wormsor, this impressive shield consists of red dragon skin stretched over a reinforced steel frame. A striking mosaic of green, white, black, and blue dragon scales adorns the red background. When looked at from the right angle, the pattern of these multi-colored scales reveals the fearsome face of an ancient dragon.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +3
+– Fire Resistance: +20%
+– Cold Resistance: +10%
+– Acid Resistance: +10%
+– Electrical Resistance: +10%
+– Poison Resistance: +10%
+- Immunity to Wing Buffet, Sleep and Unconsciousness
+
+Requires:
+ 12 Strength
+
+Weight: 5
+"
+
+
+
+
+
+//SENTINEL +3 - 8000mo//
+COPY "rick_bigg_mod/items/SHLD22.itm" "override"
+	SAY NAME1 "Medium Shield"
+	SAY UNIDENTIFIED_DESC "A medium shield is carried in the same manner as a small shield. Unlike the small shield, however, its weight prevents the character from using <PRO_HISHER> shield hand for anything other than carrying the medium shield. Medium shields are usually made of metal, range from three to four feet in diameter, and can be of any shape, from round to square to a dragon's spread wings. A typical medieval shield resembles a triangle with one point facing downward.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +1
+
+Requires:
+ 12 Strength
+
+Weight: 7
+"
+
+	SAY NAME2 "Sentinel +3"
+	SAY DESC "A century ago, astronomers noted an unexpected comet coming to earth offshore of the Sword Coast. An odd occurrence, it was made stranger by the lightweight fragments of metal found days later by blacksmith Huffum Fuiruim, who cared little about celestial events. He fashioned the bulk of it into this shield, though the forging took months and the aid of several enchanters. 'From the heavens? Nay, from my hammer!'
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +4
+– Physical Resistance: +5%
+
+Requires:
+ 12 Strength
+
+Weight: 4
+"
+
+
+
+
+//KAZRAH'S SHIELD +3 - 11000mo//
+COPY "rick_bigg_mod/items/OHBSHLD1.itm" "override"
+	SAY NAME1 "Medium Shield"
+	SAY UNIDENTIFIED_DESC "A medium shield is carried in the same manner as a small shield. Unlike the small shield, however, its weight prevents the character from using <PRO_HISHER> shield hand for anything other than carrying the medium shield. Medium shields are usually made of metal, range from three to four feet in diameter, and can be of any shape, from round to square to a dragon's spread wings. A typical medieval shield resembles a triangle with one point facing downward.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +1
+
+Requires:
+ 12 Strength
+
+Weight: 7
+"
+
+	SAY NAME2 "Kazrah's Shield +3"
+	SAY DESC "Legends say this shield was once used by a stalwart adventurer to capture the soul of a massive blue dragon he was battling. Some of these legends claim the adventurer was named Kazrah. Others claim Kazrah was the captured dragon. Whatever the truth, this light blue shield bears the terrible visage of a snarling blue dragon that—one time per day—actually billows lightning from its mouth.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +4
+– Electricity Resistance: +30%
+
+Combat abilities:
+- 10% chance that Shocking Grasp is cast on hitter
+
+Requires:
+ 12 Strength
+
+Weight: 4
+"
+
+
+
+
+

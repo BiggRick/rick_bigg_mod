@@ -1,0 +1,289 @@
+//SMALL SHIELD +1 - 1000mo//
+COPY "rick_bigg_mod/items/SHLD02A.itm" "override"
+	SAY NAME1 "Small Shield"
+	SAY UNIDENTIFIED_DESC "A small shield is usually round and is carried on the forearm, gripped with the shield hand. Its light weight as compared to a medium shield permits the user to carry other items in that hand, although <PRO_HESHE> cannot wield or carry another weapon. 
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +1
+– No protection against missile attacks
+
+Requires:
+ 8 Strength
+
+Weight: 3
+"
+
+	SAY NAME2 "Small Shield +1"
+	SAY DESC "A small shield is usually round and is carried on the forearm, gripped with the shield hand. Its light weight as compared to a medium shield permits the user to carry other items in that hand, although <PRO_HESHE> cannot wield or carry another weapon. This particular shield is enchanted, granting an additional protection to its wearer.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +2
+– No protection against missile attacks
+
+Requires:
+ 8 Strength
+
+Weight: 3
+"
+
+
+
+
+//SMALL SHIELD +2 - 1800mo//
+COPY "rick_bigg_mod/items/SHLD28A.itm" "override"
+	SAY NAME1 "Small Shield"
+	SAY UNIDENTIFIED_DESC "A small shield is usually round and is carried on the forearm, gripped with the shield hand. Its light weight as compared to a medium shield permits the user to carry other items in that hand, although <PRO_HESHE> cannot wield or carry another weapon. 
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +1
+– No protection against missile attacks
+
+Requires:
+ 8 Strength
+
+Weight: 3
+"
+
+	SAY NAME2 "Small Shield +2"
+	SAY DESC "A small shield is usually round and is carried on the forearm, gripped with the shield hand. Its light weight as compared to a medium shield permits the user to carry other items in that hand, although <PRO_HESHE> cannot wield or carry another weapon. This particular shield is enchanted, granting an additional protection to its wearer.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +3
+– No protection against missile attacks
+
+Requires:
+ 8 Strength
+
+Weight: 2
+"
+
+
+
+
+
+
+//SUNCATCHER +2 - 3500mo//
+COPY "rick_bigg_mod/items/BDSHLD02.itm" "override"
+	SAY NAME1 "Small Shield"
+	SAY UNIDENTIFIED_DESC "A small shield is usually round and is carried on the forearm, gripped with the shield hand. Its light weight as compared to a medium shield permits the user to carry other items in that hand, although <PRO_HESHE> cannot wield or carry another weapon. 
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +1
+– No protection against missile attacks
+
+Requires:
+ 8 Strength
+
+Weight: 3
+"
+
+	SAY NAME2 "Suncatcher +2"
+	SAY DESC "Barnassus, a cleric of Lathander, created a polished bronze shield hundreds of years ago in order to battle a medusa rumored to be lurking in the catacombs beneath his city. Barnassus tracked the medusa to her lair and realized, almost too late, that what he faced was no ordinary medusa but one that had also succumbed to the curse of vampirism. Barnassus closed his eyes and charged forward, ready to take down his enemy or die trying. Lathander rewarded Barnassus's bravery by filling the room with sunlight while the priest slew the medusa.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +3
+– 15% chance that anyone attacking the wielder in melee takes 1d4 points of fire damage and becomes blinded for 2 rounds (Save vs. Spell halves damage and negates blindness)
+– No protection against missile attacks
+
+Requires:
+ 8 Strength
+
+Weight: 2
+"
+
+
+
+
+//SHIELD OF HARMONY +2 - 6000mo//
+COPY "rick_bigg_mod/items/SHLD25.itm" "override"
+	SAY NAME1 "Small Shield"
+	SAY UNIDENTIFIED_DESC "A small shield is usually round and is carried on the forearm, gripped with the shield hand. Its light weight as compared to a medium shield permits the user to carry other items in that hand, although <PRO_HESHE> cannot wield or carry another weapon. 
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +1
+– No protection against missile attacks
+
+Requires:
+ 8 Strength
+
+Weight: 3
+"
+
+	SAY NAME2 "Shield of Harmony +2"
+	SAY DESC "Audn of the Field, Knight-Champion for the wizard Kekkim, carried this shield for most of his life. It protects the bearer from most forms of mind control, a benefit for a wizard who needed warrior allies to stay faithfully at his side. Both Kekkim and Audn have long since returned to the earth, leaving the shield to whomever might recover it from Kekkim's tower.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +3
+– No protection against missile attacks
+– Immunity to charm, confusion, domination, and hold
+
+Requires:
+ 8 Strength
+
+Weight: 2
+"
+
+
+
+
+//REFLECTION SHIELD +2 - 11000mo//
+COPY "rick_bigg_mod/items/SHLD24A.itm" "override"
+	SAY NAME1 "Small Shield"
+	SAY UNIDENTIFIED_DESC "A small shield is usually round and is carried on the forearm, gripped with the shield hand. Its light weight as compared to a medium shield permits the user to carry other items in that hand, although <PRO_HESHE> cannot wield or carry another weapon. 
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +1
+– No protection against missile attacks
+
+Requires:
+ 8 Strength
+
+Weight: 3
+"
+
+	SAY NAME2 "Reflection Shield +2"
+	SAY DESC "Thought only a decoration from some forgotten festhall, this shield languished in the backroom of a shop until a young noble purchased it as parade armor. Its dormant, supreme enchantments were discovered when a later attempt on his life was foiled, as the shield violently reflected each attack back at the would-be assassins, leaving them obliterated by their own malice. Subsequent study by master arcanists has linked its flawless forge-fire to the mythic elven excavations of Myth Rhynn. The shield does not merely block incoming strikes; it commands reality to turn the attacker's own lethality against themselves.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +3
+– No protection against missile attacks
+– Reflects missiles back at their user
+
+Requires:
+ 8 Strength
+
+Weight: 2
+"
+
+
+
+
+//SHIELD OF THE FROZEN FIST +3 - 10000mo//
+COPY "rick_bigg_mod/items/TB#SHFF.itm" "override"
+	SAY NAME1 "Small Shield"
+	SAY UNIDENTIFIED_DESC "A small shield is usually round and is carried on the forearm, gripped with the shield hand. Its light weight as compared to a medium shield permits the user to carry other items in that hand, although <PRO_HESHE> cannot wield or carry another weapon. 
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +1
+– No protection against missile attacks
+
+Requires:
+ 8 Strength
+
+Weight: 3
+"
+
+	SAY NAME2 "Shield of the Frozen Fist +3"
+	SAY DESC "This small shield was shaped from the living heartwood of an ancient, fallen twilight oak. Found deep within a sacred grove after a corrupting blight was finally purged, it stands as a silent testament to the enduring power of the wilderness. Unlike common wood, the shield has taken on a deep, crystalline blue coloration, permanently frozen solid by primeval winter magic.The shield remains alive beneath its frosty glaze, its blue outer face covered in a layer of perennial rime that never melts. It pulses with a faint, warm heartbeat, fiercely protecting anyone who fights to preserve the balance of nature.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +4
+– No protection against missile attacks
+- Cold Resistance: +40%
+- All melee attacks deal an additional 1d4 points of cold damage
+
+Requires:
+ 8 Strength
+
+Weight: 2
+"
+
+
+
+
+
+//ROSEWOOD SHIELD +3 - 75000mo//
+COPY "rick_bigg_mod/items/TB#SHRW.itm" "override"
+	SAY NAME1 "Small Shield"
+	SAY UNIDENTIFIED_DESC "A small shield is usually round and is carried on the forearm, gripped with the shield hand. Its light weight as compared to a medium shield permits the user to carry other items in that hand, although <PRO_HESHE> cannot wield or carry another weapon. 
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +1
+– No protection against missile attacks
+
+Requires:
+ 8 Strength
+
+Weight: 3
+"
+
+	SAY NAME2 "Rosewood Shield +3"
+	SAY DESC "Crafted from the dense, fragrant heartwood of a rare giant rosewood tree, this small shield is a masterpiece of druidic preservation. The wood itself has been hardened through ancient rituals, making it as resilient as forged iron while remaining remarkably light. Intricate carvings of blooming wild roses and twisting vines decorate its polished surface, smelling faintly of summer rain and sweet nectar.Imbued with the protective spirit of the deep woods, the shield acts as a natural lightning rod and elemental grounder. It actively absorbs and dissipates raw environmental forces, ensuring that the wielder stands unyielding against the wrath of the elements.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +4
+– No protection against missile attacks
+- Fire Resistance: +30%
+- Cold Resistance: +30%
+- Electricity Resistance: +30%
+
+Requires:
+ 8 Strength
+
+Weight: 2
+"
+
+
+
+//SHIELD OF BLINDNESS +3 - 13000mo//
+COPY "rick_bigg_mod/items/TB#SHBL.itm" "override"
+	SAY NAME1 "Small Shield"
+	SAY UNIDENTIFIED_DESC "A small shield is usually round and is carried on the forearm, gripped with the shield hand. Its light weight as compared to a medium shield permits the user to carry other items in that hand, although <PRO_HESHE> cannot wield or carry another weapon. 
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +1
+– No protection against missile attacks
+
+Requires:
+ 8 Strength
+
+Weight: 3
+"
+
+	SAY NAME2 "Shield of Blindness +3"
+	SAY DESC "This small, lightweight shield is crafted from an unidentifiable abyssal alloy that seems to absorb the surrounding light. In the center of its polished, obsidian surface lies a perfectly preserved central eye of a Beholder, frozen in a perpetual, hateful stare. Forged by an insane drow bladesinger, the shield reacts violently to aggression. Whenever an enemy lands a blow upon the wielder, the central eye flashes with a brilliant, blinding violet light, casting a powerful word of distortion directly into the mind of the attacker.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +4
+– No protection against missile and piercing attacks
+
+Combat abilities:
+- 5% chance to cast Power Word Blind on hitter
+
+Requires:
+ 8 Strength
+
+Weight: 2
+"

@@ -127,7 +127,7 @@ Weight: 8"
 
 
 
-//SWORD OF BALDURAN +2 - 7000mo//
+//SWORD OF BALDURAN +3 - 8000mo//
 COPY "rick_bigg_mod/items/SW1H18.itm" "override"
 	SAY NAME1 "Bastard Sword"
 	SAY UNIDENTIFIED_DESC "Also known as the hand-and-a-half sword, the bastard sword derives its name from the fact that it is halfway between the two-handed sword and the long sword. The bastard sword has a double-edged blade and a long grip, which can accommodate both hands if preferred. The overall length of the bastard sword ranges between four feet and four feet ten inches.
@@ -144,7 +144,7 @@ Requires:
 
 Weight: 10"
 
-	SAY NAME2 "Sword of Balduran +2"
+	SAY NAME2 "Sword of Balduran +3"
 	SAY DESC "This elegant sword was once the prized sidearm of Balduran, the legendary founder of Baldur's Gate. For centuries, historians wondered what became of the great explorer’s personal effects after his final, ill-fated voyage to the mysterious Anchorome. It is now clear that the blade was lost during that tragic journey, abandoned amidst the chaos of his crew's transformation and the eventual shipwreck. 
 	Though weathered by salt and time, the sword’s enchantments remain potent. It was forged with a specific purpose: to defend civilization against the unthinkable horrors that lurk in the dark corners of the world. The blade seems to seek out the weak points of unnatural creatures, vibrating with a cold intensity when drawn in the presence of aberrations and monstrosities.
 
@@ -153,10 +153,10 @@ STATISTICS:
 Charge abilities:
 - Cast True Strike twice per day
 
-THAC0: +2, +3 vs. Monsters
-Damage: 2d4+3, +4 vs. Monsters
+THAC0: +3, +4 vs. Monsters
+Damage: 2d4+4, +5 vs. Monsters
 Damage type: Slashing
-Speed Factor: 6
+Speed Factor: 5
 Proficiency Type: Bastard Sword
 Type: One-handed
 
