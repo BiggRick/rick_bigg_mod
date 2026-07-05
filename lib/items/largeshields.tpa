@@ -1,0 +1,212 @@
+COPY_EXISTING "SHLD05A.ITM" "override"
+WRITE_ASCII 0x58 "CSHLD06" #8
+
+COPY_EXISTING "SHLD15A.ITM" "override"
+WRITE_ASCII 0x58 "CSHLD06" #8
+
+COPY_EXISTING "SHLD16A.ITM" "override"
+WRITE_ASCII 0x58 "CSHLD06" #8
+
+
+
+
+
+
+
+
+
+
+
+//PELLAN'S SHIELD +2 - 4500mo//
+COPY "rick_bigg_mod/items/SHLD19A.itm" "override"
+	SAY NAME1 "Large Shield"
+	SAY UNIDENTIFIED_DESC "	A large shield inlaid with a golden griffin. This shield, also known as the kite or tower shield, is a massive metal shield reaching nearly from the chin to the toe of the user. It must be firmly fastened to the forearm and the shield hand must firmly grip it at all times. Naturally, this precludes use of the shield hand for anything but holding the body shield in place. Strangely enough, this shield feels unusually light for its size.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +1, an extra +1 vs. missile attacks
+
+Requires:
+ 15 Strength
+
+Weight: 15"
+
+	SAY NAME2 "Pellan's Shield +2"
+	SAY DESC "This dwarven-made shield was commissioned by Pellan of Tyr, a brash paladin known for unquestioning courage and an almost total lack of common sense. Upon hearing that a BLACK dragon was ravaging the countryside, Pellan mounted his horse and rode off to do battle. As it happened, Pellan and his armor digested readily enough, but the shield gave the dragon severe stomach cramps. Subsequently coughed up, it lay in a hoard for years until retrieved by Pellan's son, a warrior who knew when to sneak.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +3, an extra +1 vs. missile attacks
+- Acid Resistance: +40%
+
+Requires:
+ 15 Strength
+
+Weight: 10"
+
+
+
+
+//THE BLOODIED GUARDIAN +2 - 5500mo//
+COPY "rick_bigg_mod/items/BDSHLD08.itm" "override"
+	SAY NAME1 "Large Shield"
+	SAY UNIDENTIFIED_DESC "	A large shield inlaid with a golden griffin. This shield, also known as the kite or tower shield, is a massive metal shield reaching nearly from the chin to the toe of the user. It must be firmly fastened to the forearm and the shield hand must firmly grip it at all times. Naturally, this precludes use of the shield hand for anything but holding the body shield in place. Strangely enough, this shield feels unusually light for its size.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +1, an extra +1 vs. missile attacks
+
+Requires:
+ 15 Strength
+
+Weight: 15"
+
+	SAY NAME2 "The Bloodied Guardian +2"
+	SAY DESC "This shield was carried by a mercenary working with the Order of the Steel Fang. The warriors of the order were impressed with the mercenary's tenacity and courage. She charged into battle without hesitation and seemed to fight all the harder when she was wounded. When their quest was completed, the Order of the Steel Fang gifted a battleaxe to the mercenary as thanks for her service. In turn she gave the order her shield as a sign of respect. The shield stayed in the order for years until it was lost on a battlefield.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +3, an extra +1 vs. missile attacks
+
+Combat abilities:
+– When the wielder's Hit Points drop below 50%, <PRO_HESHE> gains +1 to Strength for 5 rounds
+
+Requires:
+ 15 Strength
+
+Weight: 10"
+
+
+
+
+//SHIELD OF THE LOST +2 - 7000mo//
+COPY "rick_bigg_mod/items/SHLD26A.itm" "override"
+	SAY NAME1 "Large Shield"
+	SAY UNIDENTIFIED_DESC "	A large shield inlaid with a golden griffin. This shield, also known as the kite or tower shield, is a massive metal shield reaching nearly from the chin to the toe of the user. It must be firmly fastened to the forearm and the shield hand must firmly grip it at all times. Naturally, this precludes use of the shield hand for anything but holding the body shield in place. Strangely enough, this shield feels unusually light for its size.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +1, an extra +1 vs. missile attacks
+
+Requires:
+ 15 Strength
+
+Weight: 15"
+
+	SAY NAME2 "Shield of the Lost +2"
+	SAY DESC "This odd shield was constructed by nomads that once inhabited the forest of Mir, a group long since absorbed into "civilized" society and forgotten. Examination reveals fine weaving of ironwood roots and liquid silver, granting the heavy aegis absolute protection against foul magic."
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +3, an extra +1 vs. missile attacks
+- Magic Resistance: +10%
+
+Requires:
+ 15 Strength
+
+Weight: 12"
+
+
+
+
+//SHIELD OF DEVOTION +3 - 9000mo - solo paladini//
+COPY "rick_bigg_mod/items/SHLD09P.itm" "override"
+	SAY NAME1 "Large Shield"
+	SAY UNIDENTIFIED_DESC "	A large shield inlaid with a golden griffin. This shield, also known as the kite or tower shield, is a massive metal shield reaching nearly from the chin to the toe of the user. It must be firmly fastened to the forearm and the shield hand must firmly grip it at all times. Naturally, this precludes use of the shield hand for anything but holding the body shield in place. Strangely enough, this shield feels unusually light for its size.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +1, an extra +1 vs. missile attacks
+
+Requires:
+ 15 Strength
+
+Weight: 15"
+
+	SAY NAME2 "Shield of Devotion +3"
+	SAY DESC "This shield can be traced to a line of Paladins of Velen, who carried shields like this one into battle on mounted expeditions to the Nelanther Isles under the blessing of Torm. Celebrated in lore for their memorable armour as the Red Riders, their ceaseless dedication and resilience was a vital force in establishing peace to the region. Although long since dispersed, their legacy is highly sought after as traces of their original blessing still infuse these sets of armour, granting the wearer divine favour and increased stamina.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +4, an extra +1 vs. missile attacks
+– Casting Level: +4
+– Hit Points: +10%
+– Immunity to fatigue
+
+Requires:
+ 15 Strength
+
+Weight: 8"
+
+
+
+
+//FORTRESS SHIELD +3 - 12000mo//
+COPY "rick_bigg_mod/items/SHLD23.itm" "override"
+	SAY NAME1 "Large Shield"
+	SAY UNIDENTIFIED_DESC "	A large shield inlaid with a golden griffin. This shield, also known as the kite or tower shield, is a massive metal shield reaching nearly from the chin to the toe of the user. It must be firmly fastened to the forearm and the shield hand must firmly grip it at all times. Naturally, this precludes use of the shield hand for anything but holding the body shield in place. Strangely enough, this shield feels unusually light for its size.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +1, an extra +1 vs. missile attacks
+
+Requires:
+ 15 Strength
+
+Weight: 15"
+
+	SAY NAME2 "Fortress Shield +3"
+	SAY DESC "This shield, as tall as a man, is aptly named. With it, Phil Pious, a paladin of the Most Noble Order of the Radiant Heart, once held a marauding battalion of hobgoblin and kobold archers at bay till they exhausted their arrows. As the shield is almost as useful in melee as it is at range, he then slew each and every creature.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +4, an extra +7 vs. missile attacks
+
+Requires:
+ 15 Strength
+
+Weight: 8"
+
+
+
+//DARKSTEEL SHIELD +3 - 12000mo//
+COPY "rick_bigg_mod/items/SHLD31.itm" "override"
+	SAY NAME1 "Large Shield"
+	SAY UNIDENTIFIED_DESC "	A large shield inlaid with a golden griffin. This shield, also known as the kite or tower shield, is a massive metal shield reaching nearly from the chin to the toe of the user. It must be firmly fastened to the forearm and the shield hand must firmly grip it at all times. Naturally, this precludes use of the shield hand for anything but holding the body shield in place. Strangely enough, this shield feels unusually light for its size.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +1, an extra +1 vs. missile attacks
+
+Requires:
+ 15 Strength
+
+Weight: 15"
+
+	SAY NAME2 "Darksteel Shield +3"
+	SAY DESC "Fashioned from dwarven darksteel, this heavily enchanted shield provides more protection than most suits of armor. Legend holds that it was meant to be presented as a gift to the dwarvish hero Glimred Heavyhand, but he disappeared on his ill-fated quest into the bowels of the Marching Mountains before the work was completed. To ensure his survival in the brutal melee of the deep, the smiths wove powerful wards into the metal to turn away the most lethal blows. With Glimred gone, the shield was sold to the highest bidder—though the dwarven smiths refused to divulge the mysterious buyer's identity.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +4, an extra +1 vs. missile attacks, an extra +2 vs. piercing, crushing and slashing attacks
+
+Requires:
+ 15 Strength
+
+Weight: 8"
+
+
+
+

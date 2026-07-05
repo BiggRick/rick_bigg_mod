@@ -136,7 +136,7 @@ Weight: 5
 
 
 
-//DRAGONSCALE SHIELD +2 - 8000mo//
+//DRAGONSCALE SHIELD +2 - 9000mo//
 COPY "rick_bigg_mod/items/SHLD21.itm" "override"
 	SAY NAME1 "Medium Shield"
 	SAY UNIDENTIFIED_DESC "A medium shield is carried in the same manner as a small shield. Unlike the small shield, however, its weight prevents the character from using <PRO_HISHER> shield hand for anything other than carrying the medium shield. Medium shields are usually made of metal, range from three to four feet in diameter, and can be of any shape, from round to square to a dragon's spread wings. A typical medieval shield resembles a triangle with one point facing downward.
@@ -237,6 +237,39 @@ Equipped abilities:
 
 Combat abilities:
 - 10% chance that Shocking Grasp is cast on hitter
+
+Requires:
+ 12 Strength
+
+Weight: 4
+"
+
+
+
+//SHIELD OF THE ORDER +3 - 11000mo - no malvagi//
+COPY "rick_bigg_mod/items/SHLD32.itm" "override"
+	SAY NAME1 "Medium Shield"
+	SAY UNIDENTIFIED_DESC "A medium shield is carried in the same manner as a small shield. Unlike the small shield, however, its weight prevents the character from using <PRO_HISHER> shield hand for anything other than carrying the medium shield. Medium shields are usually made of metal, range from three to four feet in diameter, and can be of any shape, from round to square to a dragon's spread wings. A typical medieval shield resembles a triangle with one point facing downward.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +1
+
+Requires:
+ 12 Strength
+
+Weight: 7
+"
+
+	SAY NAME2 "Shield of the Order +3"
+	SAY DESC "Peragath the Valiant, a great champion of the Order of the Radiant Heart, carried this shield into battle against a horde of invading tanar'ri pouring through a gate to the Astral Plane. Gripped by holy fervor, the mighty paladin single-handedly drove back the horde, then foolishly leapt through the astral gate to finish them off. The gate collapsed, and both Peragath and the shield were forever lost in the planes.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +4
+– Saving Throws: +2
 
 Requires:
  12 Strength

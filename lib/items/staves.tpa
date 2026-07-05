@@ -220,7 +220,7 @@ Weight: 4
 
 
 
-//STAFF OF CURING +2 - solo chierici e druidi - 5500mo//
+//STAFF OF CURING +2 - solo chierici paladini druidi e ranger- 5500mo//
 COPY "rick_bigg_mod/items/STAF10.itm" "override"
 	SAY NAME1 "Staff"
 	SAY UNIDENTIFIED_DESC "The simplest and humblest of staff weapons, the quarterstaff is a length of wood ranging six to nine feet in length. High-quality quarterstaves are made of stout oak and are shod with metal at both ends. The quarterstaff must be wielded with both hands.
@@ -500,8 +500,8 @@ Weight: 2
 
 
 
-//STAFF OF COMMAND +3 - solo maghi, bardi, chierici e druidi - 10000mo//
-COPY "rick_bigg_mod/items/STAF17.itm" "override"
+//STAFF OF COMMAND +3 - 10000mo//
+COPY "rick_bigg_mod/items/STAF09.itm" "override"
 	SAY NAME1 "Staff"
 	SAY UNIDENTIFIED_DESC "The simplest and humblest of staff weapons, the quarterstaff is a length of wood ranging six to nine feet in length. High-quality quarterstaves are made of stout oak and are shod with metal at both ends. The quarterstaff must be wielded with both hands.
 
@@ -517,13 +517,13 @@ Requires:
 Weight: 4"
 
 	SAY NAME2 "Staff of Command +3"
-	SAY DESC "The staff allows the user to dominate another creature. This item is of the kind used by nefarious people seeking to sway others to follow their ways. Its origins are unknown and have been lost in the mists of time.
+	SAY DESC "Whispers in the dark corners of Faerûn speak of a slender, obsidian rod that hungers for the autonomy of others. Its origins are entirely lost to the mists of time; no sage can name the wizard who forged it, nor the kingdom where it first brought monarchs to their knees. What is certain is its lineage of blood and subjugation.This artifact has historically gravitated toward the hands of tyrants, cult leaders, and nefarious schemers. It does not merely compel obedience; it unravels the victim's agency, weaving the wielder's intent directly into their mind. Those who hold the staff feel a surge of magnetic presence, a dark charisma that bends the weak-willed before a single spell is even cast. It remains a relic of pure, unadulterated control.
 
 STATISTICS:
 
 Equipped abilities:
-- +1 Charisma
-- +3 Saving Throws vs Enchantment School
+- Charisma: +1
+- Saving Throws vs Enchantment School: +2
 
 Charge abilities:
 – Domination (Save vs. Wand -4 negates) three times per day

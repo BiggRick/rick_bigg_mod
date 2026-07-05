@@ -230,7 +230,7 @@ Weight: 2"
 
 
 
-//DRAGON HELM - valore 7000mo//
+//DRAGON HELM - valore 6000mo//
 COPY "rick_bigg_mod/items/HELM21.itm" "override"
 	SAY NAME1 "Helmet"
 	SAY UNIDENTIFIED_DESC "This class of decorative helmet, made of reinforced leather or metal, covers the face and head. Eye slits and breathing holes come highly recommended. 
@@ -243,18 +243,18 @@ Equipped abilities:
 Weight: 2"
 
 	SAY NAME2 "Dragon Helm"
-	SAY DESC "The skillful hand of the warlock Wormsor carefully worked several dragon scales into this powerful helmet. Red, white, and green scales overlap, protecting the wearer from normal blows as well as fire, cold, electricity acid and poison. It is hard to determine whether the benefits originate within the scales or the spells of the mage.
-
+	SAY DESC "The skillful hand of the warlock Wormsor carefully worked a base of red dragon scales to forge this powerful helmet, integrating it with scales of the other colors. The overlapping red, white, blue, black, and green scales protect the wearer from normal blows as well as fire, cold, electricity, acid, and poison. It is hard to determine whether the benefits originate within the scales or the spells of the mage.
+	
 STATISTICS:
 
 Equipped abilities:
 – Protects against critical hits
 - Armor Class: +1
-– Cold Resistance: +25%
-– Fire Resistance: +25%
-– Electrical Resistance: +25%
-- Acid Resistance: +25%
-- Poison Resistance: +25%
+– Fire Resistance: +20%
+– Cold Resistance: +10%
+– Electrical Resistance: +10%
+- Acid Resistance: +10%
+- Poison Resistance: +10%
 
 Weight: 2"
 
@@ -696,7 +696,39 @@ Weight: 1"
 
 
 
-//CASQUE OF NECRON - valore 14000mo - solo maghi - only evil//
+//CASQUE OF NECRON - valore 14000mo - solo maghi - no good//
+COPY "rick_bigg_mod/items/OHHCASQ.itm" "override"
+	SAY NAME1 "Casque"
+	SAY UNIDENTIFIED_DESC "This iron casque radiates a faint, unsettling aura of dark, unnatural malice.
+
+STATISTICS:
+
+Weight: 1"
+
+	SAY NAME2 "Casque of Necron"
+	SAY DESC "Whispered only In Tenebris by the most depraved cultists, the true origin of this obsidian helm is written within Nekron's Bloody Rhymes. Chroniclers speak of its forging during the ancient Aeons of Raging Darkness, when the sky opened to unleash the Rain of a Thousand Flames, an apocalyptic event that marked the beginning of the Dark Reign of Fire. As the artifact was quenched in the blood of innocents, an Unholy Warcry echoed across the planes, summoning the Gargoyles, Angels of Darkness from their eternal slumber. They marched forth from the Bloody Red Dungeons of Dar-Kunor to subjugate the mortal realms under a ruthless Reign of Terror. This horrific crown was created to fulfill The Mystic Prophecy of the Demonknight, ensuring that all creation would plunge blindly From Chaos to Eternity. 
+	
+STATISTICS:
+
+Equipped abilities:
+- Casting Speed: +1
+- Fire Resistance: +20%
+- Cold Resistance: +20%
+- Electricity Resistance: +20%
+- Acid Resistance: +20%
+- Poison Resistance: +20%
+- Magical Damage Resistance: +20%
+- Magic Resistance: +10%
+
+Charge abilities:
+- Cast Wail of Banshee once per day
+
+Weight: 3"
+
+
+
+
+//THE AMPLIF - valore 14000mo - solo maghi - only evil//
 COPY "rick_bigg_mod/items/OHHCASQ.itm" "override"
 	SAY NAME1 "Circlet"
 	SAY UNIDENTIFIED_DESC "This thin circlet of gold appears too simple and plain to be a crown. Although unadorned with gems, there are arcane and cryptic symbols etched along the surface.
@@ -712,7 +744,13 @@ STATISTICS:
 
 Equipped abilities:
 - Casting Speed: +1
-- Magical Damage: +25%
+- Fire Resistance: +20%
+- Cold Resistance: +20%
+- Electricity Resistance: +20%
+- Acid Resistance: +20%
+- Poison Resistance: +20%
+- Magical Damage Resistance: +20%
+- Magic Resistance: +10%
 
 Charge abilities:
 - Cast Wail of Banshee once per day
@@ -740,7 +778,7 @@ STATISTICS:
 
 Equipped abilities:
 – Wisdom: +1
-- Save vs. Enchantment: +3
+- Saving Throws vs. Enchantment School: +3
 
 Weight: 0"
 

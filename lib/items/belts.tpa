@@ -1,0 +1,41 @@
+//GIRDLE OF AVOIDANCE - 9000mo//
+COPY "rick_bigg_mod/items/OHRBELT2.itm" "override"
+	SAY NAME1 "Girdle"
+	SAY UNIDENTIFIED_DESC "Girdles are generally similar to belts. Unlike belts, girdles are not used to hold up pants and dungarees, but to carry pouches, scabbards, and the like. 
+
+STATISTICS:
+
+Weight: 2"
+
+	SAY NAME2 "Girdle of Avoidance"
+	SAY DESC "Crafted during the Time of Troubles by Malakor, a paranoid wizard of Mystra, this leather girdle was designed purely for survival. Obsessed with the fear of assassination, Malakor wove shifting illusionary magic into the leather. When the wearer is struck, the belt releases a distortionary pulse, causing the user's form to blur wildly. Though Malakor was eventually poisoned—a threat the belt could not prevent—his creation remains highly sought-after by adventurers.
+
+STATISTICS:
+
+Combat abilities:
+– 10% chance when hit to cast Blur on wearer
+
+Weight: 2"
+
+
+//GIRDLE OF ABSORPTION  - 14000mo//
+COPY "rick_bigg_mod/items/BDBELT04.itm" "override"
+	SAY NAME1 "Girdle"
+	SAY UNIDENTIFIED_DESC "Girdles are generally similar to belts. Unlike belts, girdles are not used to hold up pants and dungarees, but to carry pouches, scabbards, and the like. 
+
+STATISTICS:
+
+Weight: 2"
+
+	SAY NAME2 "Girdle of Absorption"
+	SAY DESC "This thick leather belt belonged to Arathor, a frontline commander known for his agile fighting style. Realizing that heavy plate mail slowed his reflexes against crushing blows, he commissioned this girdle to aid his close-quarters footwork. Imbued with kinetic shielding, the belt accelerates the wearer's defensive movements and hardens its magical barrier the moment a strike connects. While highly effective at deflecting blades and blunt weapons up close, the enchantment requires physical contact to activate, leaving the wearer entirely exposed to flying projectiles.
+
+STATISTICS:
+
+Equipped abilities:
+- Armor Class: +1 (no protection against Missile attacks)
+
+Combat abilities:
+– Armor Class +2 cumulative for 9 seconds when hit (no protection against Missile attacks)
+
+Weight: 2"

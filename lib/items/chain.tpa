@@ -511,7 +511,7 @@ Equipped abilities:
 – Pick Pockets: -20%
 – Move Silently: -10%
 - Hide in Shadows: -10%
-- Saving Throws vs Breath: +3
+- Saving Throws vs Breath: +2
 
 Armor Class: 3 (1 vs. slashing, 2 vs. piercing and missile)
 Requires:
@@ -564,7 +564,7 @@ Weight: 6
 
 
 
-//BLADESINGER CHAIN +3 - 12000mo//
+//BLADESINGER CHAIN +3 - 15000mo//
 COPY "rick_bigg_mod/items/CHAN16.itm" "override"
 	SAY NAME1 "Chain Mail"
 	SAY UNIDENTIFIED_DESC "This chainmail clearly bears the hand of a great elvensmith, with their typical beauty and delicate sturdy craftsmanship.
@@ -589,7 +589,7 @@ Equipped abilities:
 – Pick Pockets: -20%
 – Move Silently: -10%
 - Hide in Shadows: -10%
-- Melee weapon THAC0: +2
+- Melee weapon THAC0: +1
 - Melee weapon damage: +2
 
 Armor Class: 2 (0 vs. slashing, 1 vs. piercing and missile)

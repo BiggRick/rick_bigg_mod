@@ -1,0 +1,627 @@
+//AMULET OF PROTECTION +1 - 3000mo//
+COPY "rick_bigg_mod/items/AMUL14.itm" "override"
+	SAY NAME1 "Amulet"
+	SAY UNIDENTIFIED_DESC "Amulets are usually magical devices that are commonly worn around the neck, suspended from a chain. The type of chain that comes with an amulet generally increases the item's aesthetic value, not its magical properties. Only one amulet can be dangled from the neck at a time.
+
+STATISTICS:
+
+Weight: 1"
+
+	SAY NAME2 "Amulet of Protection +1"
+	SAY DESC "This amulet improves the wearer's Armor Class and Saving Throws versus all forms of attack. The magical properties of the amulet prevent it from being worn with other magical items of protection like rings and cloaks.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +1
+– Saving Throws: +1
+
+Weight: 1"
+
+
+
+
+//AMULET OF PROTECTION +2 - 7000mo//
+COPY "rick_bigg_mod/items/BDAMUL25.itm" "override"
+	SAY NAME1 "Amulet"
+	SAY UNIDENTIFIED_DESC "Amulets are usually magical devices that are commonly worn around the neck, suspended from a chain. The type of chain that comes with an amulet generally increases the item's aesthetic value, not its magical properties. Only one amulet can be dangled from the neck at a time.
+
+STATISTICS:
+
+Weight: 1"
+
+	SAY NAME2 "Amulet of Protection +2"
+	SAY DESC "This amulet powerful improves the wearer's Armor Class and Saving Throws versus all forms of attack. The magical properties of the amulet prevent it from being worn with other magical items of protection like rings and cloaks.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +2
+– Saving Throws: +2
+
+Weight: 1"
+
+
+
+
+//AMULET OF PROTECTION +3 - 12000mo//
+COPY "rick_bigg_mod/items/TB#AMUL3.itm" "override"
+	SAY NAME1 "Amulet"
+	SAY UNIDENTIFIED_DESC "Amulets are usually magical devices that are commonly worn around the neck, suspended from a chain. The type of chain that comes with an amulet generally increases the item's aesthetic value, not its magical properties. Only one amulet can be dangled from the neck at a time.
+
+STATISTICS:
+
+Weight: 1"
+
+	SAY NAME2 "Amulet of Protection +3"
+	SAY DESC "This amulet godly improves the wearer's Armor Class and Saving Throws versus all forms of attack. The magical properties of the amulet prevent it from being worn with other magical items of protection like rings and cloaks.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +3
+– Saving Throws: +3
+
+Weight: 1"
+
+
+
+
+//SHIELD AMULET - 1250mo//
+COPY "rick_bigg_mod/items/AMUL15.itm" "override"
+	SAY NAME1 "Amulet"
+	SAY UNIDENTIFIED_DESC "Amulets are usually magical devices that are commonly worn around the neck, suspended from a chain. The type of chain that comes with an amulet generally increases the item's aesthetic value, not its magical properties. Only one amulet can be dangled from the neck at a time.
+
+STATISTICS:
+
+Weight: 1"
+
+	SAY NAME2 "Shield Amulet"
+	SAY DESC "This amulet can be activated by a simple command word and a touch once per day. The effect is a duplication of the 1st-level wizard spell Shield.
+
+STATISTICS:
+
+Charge abilities:
+– Shield once per day
+
+Weight: 1"
+
+
+
+
+
+
+//EVERYMEMORY - 5000mo//
+COPY "rick_bigg_mod/items/AMUL16.itm" "override"
+	SAY NAME1 "Amulet"
+	SAY UNIDENTIFIED_DESC "Amulets are usually magical devices that are commonly worn around the neck, suspended from a chain. The type of chain that comes with an amulet generally increases the item's aesthetic value, not its magical properties. Only one amulet can be dangled from the neck at a time.
+
+STATISTICS:
+
+Weight: 1"
+
+	SAY NAME2 "Everymemory"
+	SAY DESC "Long ago, a grand wizard from Amn was rumored to have defied Mystra's limitations on the magical arts. Legends spoke of this wizard being able to cast spells without the limitation of memorization. In the end it was found that his powers stemmed from the several magical amulets that he had made for himself. His proclaimed Everlasting Memory was a hoax, though his rings continue to be one of the most sought after items in the realms.
+
+STATISTICS:
+
+Equipped abilities:
+– Can memorize double the amount of 1st-level wizard spells
+
+Weight: 1"
+
+
+
+
+
+//NECKLACE OF MISSILES - 2500mo//
+COPY "rick_bigg_mod/items/AMUL01.itm" "override"
+	SAY NAME1 "Necklace"
+	SAY UNIDENTIFIED_DESC "A necklace is a piece of ornamental metal jewelry usually made of silver, gold, platinum, or other precious metal, and adorned with gems. A necklace is always worn on the neck and can be of any length.
+
+STATISTICS:
+
+Weight: 1"
+
+
+	SAY NAME2 "Necklace of Missiles"
+	SAY DESC "This golden necklace is strung with small, glowing beads. Each bead is a miniature, condensed sphere of volatile arcane energy. When the wearer grasps a bead and casts it toward a target, it detaches and flies through the air, expanding rapidly until it erupts into a massive sphere of flame upon impact. Due to its dangerous nature, the artifact must be handled with extreme care to prevent accidental detonation.
+
+STATISTICS:
+
+Charge abilities:
+– Missile Blast once per day
+  Damage: 5d6 fire (Save vs. Wand at -2 for half)
+  Range: 50 ft.
+  Area of Effect: 15-ft. radius
+
+Weight: 1" 
+
+
+
+
+
+
+//RAINBOW AMULET - 4500mo//
+COPY "rick_bigg_mod/items/AMUL18.itm" "override"
+	SAY NAME1 "Amulet"
+	SAY UNIDENTIFIED_DESC "Amulets are usually magical devices that are commonly worn around the neck, suspended from a chain. The type of chain that comes with an amulet generally increases the item's aesthetic value, not its magical properties. Only one amulet can be dangled from the neck at a time.
+
+STATISTICS:
+
+Weight: 1"
+
+
+	SAY NAME2 "Rainbow Amulet"
+	SAY DESC "The story goes that Evander Delight, an extravagant gold prospector from Sembia, followed every rainbow, convinced he would find the legendary pot of gold. He never reached the end of any rainbow and, of course, never found any gold. However, during his travels, he found an amulet next to the corpse of an old gypsy woman. Since then, he became one of the richest men in the region, and no one dared mock him
+
+STATISTICS:
+
+Equipped abilities:
+– Saving Throws vs Breath: +2
+– Luck +2
+
+Weight: 1"
+
+
+
+
+
+
+
+//GREENSTONE AMULET - 6000mo//
+COPY "rick_bigg_mod/items/AMUL17.itm" "override"
+	SAY NAME1 "Amulet"
+	SAY UNIDENTIFIED_DESC "Amulets are usually magical devices that are commonly worn around the neck, suspended from a chain. The type of chain that comes with an amulet generally increases the item's aesthetic value, not its magical properties. Only one amulet can be dangled from the neck at a time.
+
+STATISTICS:
+
+Weight: 1"
+
+
+	SAY NAME2 "Greenstone Amulet"
+	SAY DESC "This heavy gold setting holds a pulsing emerald greenstone. When activated, the gem releases a cold psychic static that encases the wearer's mind like an iron fortress, instantly devouring mental assaults, dominance, and terrifying illusionary whispers. It acts as an impenetrable shield against madness and manipulation, protecting the soul from being shattered or controlled by external forces.
+
+STATISTICS:
+
+Charge abilities:
+– Immunity to charm, confusion, fear, domination, ESP, Detect Alignment, hold, stun, psionics, sleep, and feeblemind once per day
+  Duration: 1 turn
+
+Weight: 1"
+
+
+
+
+
+
+
+
+//AMULET OF WHISPERS - 10000mo//
+COPY "rick_bigg_mod/items/BDAMUL01.itm" "override"
+	SAY NAME1 "Amulet"
+	SAY UNIDENTIFIED_DESC "Amulets are usually magical devices that are commonly worn around the neck, suspended from a chain. The type of chain that comes with an amulet generally increases the item's aesthetic value, not its magical properties. Only one amulet can be dangled from the neck at a time.
+
+STATISTICS:
+
+Weight: 1"
+
+
+	SAY NAME2 "Amulet of Whispers"
+	SAY DESC "The archmage Ulcaster enjoyed making long speeches in front of his students, filibustering on any number of subjects from arcane theory to the ethics of conjuration. Most of his students enjoyed the lectures, but one of his pupils decided that he would personally stand up to interrupt the stream of words from Ulcaster's mouth.
+
+At the next lecture, the pupil stood up and shouted, "I won't listen to you any longer!" To his horror, no sound issued from his throat. Ulcaster had twisted the chain of an amulet he wore, which rendered every student in the lecture hall utterly silent. The archmage was unaffected, and so carried on his lecture uninhibited.
+
+STATISTICS:
+
+Equipped abilities:
+– Vocalize
+
+Charge abilities:
+– Power Word Silence once per day
+
+Weight: 1"
+
+
+
+
+
+
+//AMULET OF VALOR - 2500mo//
+COPY "rick_bigg_mod/items/BDMISC32.itm" "override"
+	SAY NAME1 "Amulet"
+	SAY UNIDENTIFIED_DESC "Amulets are usually magical devices that are commonly worn around the neck, suspended from a chain. The type of chain that comes with an amulet generally increases the item's aesthetic value, not its magical properties. Only one amulet can be dangled from the neck at a time.
+
+STATISTICS:
+
+Weight: 1"
+
+
+	SAY NAME2 "Amulet of Valor"
+	SAY DESC "Forged in Waterdeep for champions who turned the tide of hopeless battles, this heavy silver medallion has dulled over the years. Yet, the relic still hums with the echoes of clashing steel, bleeding a faint heat into the wearer's chest. It sharpens battle reflexes and guides every strike with the unyielding resolve of the heroes who wore it before.
+
+STATISTICS:
+
+Equipped abilities: 
+– THAC0: +2
+
+Weight: 1"
+
+
+
+
+
+//THE CLAW OF KAZGAROTH - no good - 7500mo//
+COPY "rick_bigg_mod/items/MISC2.itm" "override"
+	SAY NAME1 "Claw"
+	SAY UNIDENTIFIED_DESC "This appears to be the claw of some great beast, perhaps a dragon of sorts.
+
+STATISTICS:
+
+Weight: 1"
+
+
+	SAY NAME2 "The Claw of Kazgaroth"
+	SAY DESC "Little is known about this item, other than that the claw itself was taken from the corpse of the great beast Kazgaroth. It has multiple enchantments that all become activated when the claw is worn as a ring. The image of the wearer becomes blurred and more difficult to hit with weapons or target with spells. It has one drawback, however, as it seems to fuel its power with the blood of its wearer. Because of this, the wearer of the claw will often be more sickly and therefore more susceptible to poisons.
+
+STATISTICS:
+
+Equipped abilities:
+– Constitution: -2
+– Armor Class: +2, an extra +3 vs. missile attacks
+– Save vs. Death: -2
+– Save vs. Wand: +2
+– Save vs. Polymorph: +2
+– Save vs. Breath: +2
+– Save vs. Spell: +2
+– May only be removed with a Remove Curse spell
+
+Weight: 1"
+
+
+
+
+
+//AMULET OF SELDARINE - 9000mo//
+COPY "rick_bigg_mod/items/AMUL27.itm" "override"
+	SAY NAME1 "Amulet"
+	SAY UNIDENTIFIED_DESC "Amulets are usually magical devices that are commonly worn around the neck, suspended from a chain. The type of chain that comes with an amulet generally increases the item's aesthetic value, not its magical properties. Only one amulet can be dangled from the neck at a time.
+
+STATISTICS:
+
+Weight: 1"
+
+
+	SAY NAME2 "Amulet of Seldarine"
+	SAY DESC "Bestowed by Queen Ellesime for saving the Tree of Life from defilement, this silver amulet glows with a soft starlight radiance. Blessed by the elven pantheon, it wraps the wearer in a protective veil of ancient high magic. This sacred barrier deflects hostile sorcery and shields the mind from insidious enchantments. 
+ 
+STATISTICS:
+
+Equipped abilities:
+– Saving Throws: +1
+– Magic Resistance: +10%
+
+Weight: 1"
+
+
+
+
+
+//PERIAPT OF LIFE PROTECTION - 4000mo//
+COPY "rick_bigg_mod/items/AMUL23.itm" "override"
+	SAY NAME1 "Amulet"
+	SAY UNIDENTIFIED_DESC "Amulets are usually magical devices that are commonly worn around the neck, suspended from a chain. The type of chain that comes with an amulet generally increases the item's aesthetic value, not its magical properties. Only one amulet can be dangled from the neck at a time.
+
+STATISTICS:
+
+Weight: 1"
+
+	SAY NAME2 "Periapt of Life Protection"
+	SAY DESC "A heart-sized sapphire sits at the end of a thin silver wire. When worn, this periapt radiates life energy, infusing the wearer with power. The inscription on the back reads: "Against Death we must all fail, but with this gem we may still prevail!"
+
+STATISTICS:
+
+Equipped abilities:
+- Immunity to Death (all form like Death Magic or Vorpal effects)
+
+Weight: 1"
+
+
+
+
+//PERIAPT OF PROOF AGAINST POISON - 2500mo//
+COPY "rick_bigg_mod/items/AMUL22.itm" "override"
+	SAY NAME1 "Amulet"
+	SAY UNIDENTIFIED_DESC "Amulets are usually magical devices that are commonly worn around the neck, suspended from a chain. The type of chain that comes with an amulet generally increases the item's aesthetic value, not its magical properties. Only one amulet can be dangled from the neck at a time.
+
+STATISTICS:
+
+Weight: 1"
+
+	SAY NAME2 "Periapt of Life Protection"
+	SAY DESC "A majestic, glowing gemstone suspended from a heavy, intricately woven golden chain. Crafted in the distant lands of Kara-Tur, this amulet was worn by imperial eunuchs during the Emperor's food-tasting rituals, safeguarding the throne from the realm's deadliest toxins.
+
+STATISTICS:
+
+Equipped abilities:
+– Immunity to poison
+
+Weight: 1"
+
+
+
+
+
+//AMULET OF SPELL WARDING - 2500mo//
+COPY "rick_bigg_mod/items/AMUL25.itm" "override"
+	SAY NAME1 "Amulet"
+	SAY UNIDENTIFIED_DESC "Amulets are usually magical devices that are commonly worn around the neck, suspended from a chain. The type of chain that comes with an amulet generally increases the item's aesthetic value, not its magical properties. Only one amulet can be dangled from the neck at a time.
+
+STATISTICS:
+
+Weight: 1"
+
+	SAY NAME2 "Amulet of Spell Warding"
+	SAY DESC "A favorite item of protection for a mage entering a magical duel, this amulet provides protection against spells, but does not interfere with the mage's own spellcasting.
+
+STATISTICS:
+
+Equipped abilities:
+– Save vs. Spell: +3
+
+Weight: 1"
+
+
+
+
+
+//KALIGUN'S AMULET OF MAGIC RESISTANCE - 8000mo//
+COPY "rick_bigg_mod/items/AMUL20.itm" "override"
+	SAY NAME1 "Amulet"
+	SAY UNIDENTIFIED_DESC "Amulets are usually magical devices that are commonly worn around the neck, suspended from a chain. The type of chain that comes with an amulet generally increases the item's aesthetic value, not its magical properties. Only one amulet can be dangled from the neck at a time.
+
+STATISTICS:
+
+Weight: 1"
+
+	SAY NAME2 "Kaligun's Amulet of Magic Resistance"
+	SAY DESC "This particular amulet has the initials KP on its back surface. KP, or Kaligun Poonil, was the general of a small force sent into the woodlands to clear out Red Wizards. Being particularly fearful of magic, he wore this amulet into battle. Overconfident in the protection offered by this amulet, Kaligun finally died when he foolishly ambushed three high-level Red Wizards who lowered his Magic Resistance before destroying him with their spells.
+
+STATISTICS:
+
+Equipped abilities:
+– Magic Resistance: +15%
+
+Weight: 1"
+
+
+
+
+
+
+//MIND SHIELD AMULET - 4000mo//
+COPY "rick_bigg_mod/items/AMUL19.itm" "override"
+	SAY NAME1 "Amulet"
+	SAY UNIDENTIFIED_DESC "Amulets are usually magical devices that are commonly worn around the neck, suspended from a chain. The type of chain that comes with an amulet generally increases the item's aesthetic value, not its magical properties. Only one amulet can be dangled from the neck at a time.
+
+STATISTICS:
+
+Weight: 1"
+
+	SAY NAME2 "Mind Shield Amulet"
+	SAY DESC "Commissioned by the Athkatla city council, this heavy copper talisman was originally forged for High Inspector Brevane, a legendary investigator famous for hunting down rogue spellcasters in the city's underbelly. Designed to withstand the desperate, mind-bending retaliation of cornered Cowled Wizard defectors and dark enchanters, the amulet hums with a grounding pulse that anchors the wearer's consciousness. It forms an ironclad barrier against mental subversion, ensuring that Council agents cannot be turned against their own allies by devious charms or insidious mental compulsions.
+	
+STATISTICS:
+
+Equipped abilities:
+– Saving Throws vs. Enchantment school: +2
+– Immunity to Charm
+
+Weight: 1"
+
+
+
+
+
+//NECKLACE OF FORM STABILITY - 3000mo//
+COPY "rick_bigg_mod/items/AMUL24.itm" "override"
+	SAY NAME1 "Amulet"
+	SAY UNIDENTIFIED_DESC "Amulets are usually magical devices that are commonly worn around the neck, suspended from a chain. The type of chain that comes with an amulet generally increases the item's aesthetic value, not its magical properties. Only one amulet can be dangled from the neck at a time.
+
+STATISTICS:
+
+Weight: 1"
+
+	SAY NAME2 "Necklace of Form Stability"
+	SAY DESC "Dydaar'a of the Altered was a witch of great temper who rewarded the slightest insult with harsh punishment. Often this meant several weeks transformed into some form of wild beast, which of course earned her many enemies. It is recorded that she once fought a mage named Maxell who had previously suffered such a fate. For his return, he had prepared this necklace, designed to prevent her changing his form, but he could not shield those around him as well. Apparently an impromptu army of farmers-turned-bears eventually overwhelmed him.
+
+STATISTICS:
+
+Equipped abilities:
+– Save vs. Polymorph: +5
+
+Weight: 1"
+
+
+
+
+
+//ARCHER EYE - solo ranger - 6500mo//
+COPY "rick_bigg_mod/items/BDAMUL02.itm" "override"
+	SAY NAME1 "Amulet"
+	SAY UNIDENTIFIED_DESC "Amulets are usually magical devices that are commonly worn around the neck, suspended from a chain. The type of chain that comes with an amulet generally increases the item's aesthetic value, not its magical properties. Only one amulet can be dangled from the neck at a time.
+
+STATISTICS:
+
+Weight: 1"
+
+	SAY NAME2 "Archer Eye"
+	SAY DESC "This silver pendant, shaped like a wolf howling at the moon, once belonged to Christopher, a legendary Ranger of the Tethir Forest. Tales claim Christopher could pierce an apple from a mile away, even in the pitch-black darkness of a moonless night. Infused with the blessing of the wild, the amulet guides the wearer's hand, seamlessly aligning the trajectory of arrows and bolts toward the vital points of their prey. Only a true warden of the woods can attune to its magic; in the hands of anyone else, the central stone remains dull and weightless.
+
+STATISTICS:
+
+Equipped abilities:
+– Chance to score a critical hit: +5% (ranged attacks only)
+– Dexterity: +2
+
+Weight: 1"
+
+
+
+
+//AMULET OF ABSOLUTE FAITH - solo chierici - 4000mo//
+COPY "rick_bigg_mod/items/BDAMUL11.itm" "override"
+	SAY NAME1 "Amulet"
+	SAY UNIDENTIFIED_DESC "Amulets are usually magical devices that are commonly worn around the neck, suspended from a chain. The type of chain that comes with an amulet generally increases the item's aesthetic value, not its magical properties. Only one amulet can be dangled from the neck at a time.
+
+STATISTICS:
+
+Weight: 1"
+
+	SAY NAME2 "Amulet of Absolute Faith"
+	SAY DESC "Forged from a pristine, translucent crystal that catches the light, this white gold amulet responds only to absolute conviction, caring nothing for the morals of its master. It amplifies the inner power of any priest who wears it. In the hands of a peaceful healer, it glows with a warm, brilliant light to repel the restless dead. In the grasp of a dark champion, its pale surface shifts into an icy, spectral glare to bend the unliving to their will, filling both with unwavering divine favor.
+
+STATISTICS:
+
+Equipped abilities:
+– Bless on wearer
+– Wisdom: +1
+- Turn Undead: +2 Cleric level
+
+Weight: 1"
+
+
+
+
+//RUBY PENDANT OF BEGUILING - 5000mo//
+COPY "rick_bigg_mod/items/REGISAMU.itm" "override"
+	SAY NAME1 "Amulet"
+	SAY UNIDENTIFIED_DESC "Amulets are usually magical devices that are commonly worn around the neck, suspended from a chain. The type of chain that comes with an amulet generally increases the item's aesthetic value, not its magical properties. Only one amulet can be dangled from the neck at a time.
+
+STATISTICS:
+
+Weight: 1"
+
+	SAY NAME2 "Ruby Pendant of Beguiling"
+	SAY DESC "This iconic magical artifact was stolen by the halfling Regis from Pasha Pook, the thieves' guildmaster of Calimport. Featuring a deep-crimson ruby on a gold chain, Regis used its hypnotic sway to survive the dangers of Faerûn. By gently swinging the gem, he could soothe angry kings, trick merchants, and charm enemies into seeing his point of view, making them believe his ideas were actually their own.
+
+STATISTICS:
+
+Charge abilities:
+– Dire Charm once per day (Save vs. Wand at -5 negates)
+  Range: 35 ft.
+  Duration: 1 turn
+  Area of Effect: 1 creature
+
+Weight: 1"
+
+
+
+
+
+//HEART OF THE FOREST - solo druidi - 8000mo//
+COPY "rick_bigg_mod/items/BDAMUL26.itm" "override"
+	SAY NAME1 "Amulet"
+	SAY UNIDENTIFIED_DESC "Amulets are usually magical devices that are commonly worn around the neck, suspended from a chain. The type of chain that comes with an amulet generally increases the item's aesthetic value, not its magical properties. Only one amulet can be dangled from the neck at a time.
+
+STATISTICS:
+
+Weight: 1"
+
+	SAY NAME2 "Heart of the Forest"
+	SAY DESC "This ancient amulet is crafted from a petrified seed of the first Great Oak, encased in a delicate web of living, indestructible roots. Blessed by Rillifane Rallathil and Silvanus, the amulet pulses with the pure, untamed heartbeat of nature. It rejects all who do not share a deep connection with the wilderness, functioning only for true protectors of the balance. When worn by a druid, it shields their body with a bark-like aura of protection and channels the raw energy of the earth, expanding their spiritual vessel to grant deeper access to divine magic.
+
+STATISTICS:
+
+Equipped abilities: 
+– Armor Class: +2
+– Can memorize one extra divine spell of each level from 1st to 5th
+
+Weight: 1"
+
+
+
+
+//AMULETS OF CHEETAH SPEED - valore 8000mo//
+COPY "rick_bigg_mod/items/AMUL26.itm" "override"
+	SAY NAME1 "Amulet"
+	SAY UNIDENTIFIED_DESC "Amulets are usually magical devices that are commonly worn around the neck, suspended from a chain. The type of chain that comes with an amulet generally increases the item's aesthetic value, not its magical properties. Only one amulet can be dangled from the neck at a time.
+
+STATISTICS:
+
+Weight: 1"
+
+	SAY NAME2 "Amulet of Cheetah Speed"
+	SAY DESC "This ancient amulet is crafted from a petrified seed of the first Great Oak, encased in a delicate web of living, indestructible roots. Blessed by Rillifane Rallathil and Silvanus, the amulet pulses with the pure, untamed heartbeat of nature. It rejects all who do not share a deep connection with the wilderness, functioning only for true protectors of the balance. When worn by a druid, it shields their body with a bark-like aura of protection and channels the raw energy of the earth, expanding their spiritual vessel to grant deeper access to divine magic.
+
+STATISTICS:
+
+Equipped abilities: 
+– Haste
+– Speed Factor: +2
+
+Weight: 1"
+
+
+
+
+
+//GUILDMASTER'S AMULET - solo ladri - valore 16000mo//
+COPY "rick_bigg_mod/items/AMUL28.itm" "override"
+	SAY NAME1 "Amulet"
+	SAY UNIDENTIFIED_DESC "Amulets are usually magical devices that are commonly worn around the neck, suspended from a chain. The type of chain that comes with an amulet generally increases the item's aesthetic value, not its magical properties. Only one amulet can be dangled from the neck at a time.
+
+STATISTICS:
+
+Weight: 1"
+
+	SAY NAME2 "Guildmaster's Amulet"
+	SAY DESC "This exquisite, dark-silver medallion is given only to those who reach the absolute pinnacle of the thieves' guild hierarchy—the Guildmasters and Master Thieves. Imbued with powerful illusion and abjuration magic, the amulet acts as an extension of the rogue's own honed senses. It grants the wearer uncanny reflexes to avoid strikes, sharpens their hands for complex locks, and heightens their awareness of deadly traps. Most importantly, it completely severs the wearer from the sensory world when they slip into the shadows, leaving absolute silence that even the most powerful divination magic cannot pierce.
+ 
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +3
+– Open Locks: +20%
+– Find Traps: +20%
+– While hidden or invisible, the wearer is non-detectable by magical means such as Detect Invisibility and scrying
+
+Weight: 1"
+
+
+
+
+//AMULET OF CHEETAH'S SPEED - valore 14000mo//
+COPY "rick_bigg_mod/items/AMUL26.itm" "override"
+	SAY NAME1 "Amulet"
+	SAY UNIDENTIFIED_DESC "Amulets are usually magical devices that are commonly worn around the neck, suspended from a chain. The type of chain that comes with an amulet generally increases the item's aesthetic value, not its magical properties. Only one amulet can be dangled from the neck at a time.
+
+STATISTICS:
+
+Weight: 1"
+
+	SAY NAME2 "Amulet of Cheetah's Speed"
+	SAY DESC "This delicate silver amulet depicts a falcon mid-flight, pulsing with a faint, rhythmic vibration. Commissioned by a notorious Calimshite rogue, the artifact infuses the wearer's limbs with unnatural swiftness and drastically shortens reaction times. Once per day, the amulet can release a surge of overwhelming adrenaline, blurring the user's movements and allowing them to strike and maneuver at impossible speeds.
+
+STATISTICS:
+
+Equipped abilities:
+– Speed Factor: +4
+
+Charge abilities:
+– Improved Haste once per day (double movement, attack per round and some effects)
+  Duration: 5 rounds
+  Area of Effect: the user
+
+Weight: 2"
+
+
+
+
+
+
+
+
+
+
+

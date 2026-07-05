@@ -1,0 +1,327 @@
+//BOOTS OF SPEED - 3000mo//
+COPY "rick_bigg_mod/items/BOOT01.itm" "override"
+	SAY NAME1 "Boots"
+	SAY UNIDENTIFIED_DESC "Boots are normally handmade by cobblers. Common boots are made by using a form, but good boots are designed for the foot of an individual. 
+
+STATISTICS:
+
+Weight: 4"
+
+	SAY NAME2 "Boots of Speed"
+	SAY DESC "These enchanted boots are the favored gear of deadly assassins who specialize in hunting down their prey. Wearers move with such supernatural speed that targets rarely have time to react, even when fleeing on horseback. Over time, the terrifying reputation of these hunters has spread across the lands. Though their individual names remain unknown, everyone fears the final words heard by the victims of one of them: 'You can hide, but you cannot run!'
+
+STATISTICS:
+
+Equipped abilities:
+– Doubles movement rate
+
+Weight: 4"
+
+
+
+//BOOTS OF STEALTH - 1500mo//
+COPY "rick_bigg_mod/items/BOOT02.itm" "override"
+	SAY NAME1 "Boots"
+	SAY UNIDENTIFIED_DESC "Boots are normally handmade by cobblers. Common boots are made by using a form, but good boots are designed for the foot of an individual. 
+
+STATISTICS:
+
+Weight: 4"
+
+	SAY NAME2 "Boots of Stealth"
+	SAY DESC "In ages past, a king named Rhigaerd was renowned for the spies he kept. So skillful were they that no nook or cranny escaped their eyes, and maps were held for entire castles and towns. Eventually betrayed from within, the tools of their trade were taken and dispersed, ensuring that none could amass such a band again.
+
+STATISTICS:
+
+Equipped abilities:
+– Move Silently: +30%
+– Hide In Shadows: +15%
+
+Weight: 4"
+
+
+
+
+//BOOTS OF THE NORTH - 1250mo//
+COPY "rick_bigg_mod/items/BOOT03.itm" "override"
+	SAY NAME1 "Boots"
+	SAY UNIDENTIFIED_DESC "Boots are normally handmade by cobblers. Common boots are made by using a form, but good boots are designed for the foot of an individual. 
+
+STATISTICS:
+
+Weight: 4"
+
+	SAY NAME2 "Boots of the North"
+	SAY DESC "Stranded by his company for a sack of gold, Daviol the Frozen was left for dead in the midst of the Great Glacier. His dying curse echoed across the barren wastelands to the ear of Auril, goddess of winter. She smiled upon him, and his bare body was protected and preserved by his newly enchanted Boots of the North. With them, he crossed the ice land in pursuit of his would-be murderers. Driven by rage, Daviol took his revenge upon his previous friends as they warmed themselves in a tavern of the closest city. After his thirst for blood was quenched, he continued to travel the frozen land, never to be seen again.
+
+STATISTICS:
+
+Equipped abilities:
+– Cold Resistance: +50%
+
+Weight: 4"
+
+
+
+
+
+//BOOTS OF AVOIDANCE - 2500mo//
+COPY "rick_bigg_mod/items/BOOT04.itm" "override"
+	SAY NAME1 "Boots"
+	SAY UNIDENTIFIED_DESC "Boots are normally handmade by cobblers. Common boots are made by using a form, but good boots are designed for the foot of an individual. 
+
+STATISTICS:
+
+Weight: 4"
+
+	SAY NAME2 "Boots of Avoidance"
+	SAY DESC "The magic of these boots was specifically designed to detect incoming missiles and aid the wearer in avoiding them. They were originally commissioned by the instructor of an archery academy who had tired of suffering "accidents" at the hands of his inexperienced students.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +5 vs. missile attacks
+
+Weight: 4"
+
+
+
+
+
+//BOOTS OF GROUNDING - 1750mo//
+COPY "rick_bigg_mod/items/BOOT05.itm" "override"
+	SAY NAME1 "Boots"
+	SAY UNIDENTIFIED_DESC "Boots are normally handmade by cobblers. Common boots are made by using a form, but good boots are designed for the foot of an individual. 
+
+STATISTICS:
+
+Weight: 4"
+
+	SAY NAME2 "Boots of Grounding"
+	SAY DESC "Untold years ago, the Fortress of the Starspire Peninsula was placed under the direct torment of Talos when a favored Stormherald was murdered there. Talos promised the destruction of the city by earthquakes, its isolation by tidal waves, and the death of its citizens by storms. One pair of these boots was bestowed to ensure that none but a single man would survive to tell the story of his wrath. Later, travelers seeking fortune in the ruined city came upon an aged man, maddened by the continuous destruction around him; the boots he wore would carry to many a distant land the legend of a city consumed by a god's rage. 
+
+STATISTICS:
+
+Equipped abilities:
+– Electrical Resistance: +50%
+
+Weight: 4"
+
+
+
+
+//BOOTS OF ELVENKIND - solo ladri e ranger - 5000mo//
+COPY "rick_bigg_mod/items/BOOT07.itm" "override"
+	SAY NAME1 "Boots"
+	SAY UNIDENTIFIED_DESC "Boots are normally handmade by cobblers. Common boots are made by using a form, but good boots are designed for the foot of an individual. 
+
+STATISTICS:
+
+Weight: 4"
+
+	SAY NAME2 "Boots of Elvenkind"
+	SAY DESC "Crafted from supple, midnight-blue leather that seems to absorb the surrounding light, these exquisite boots are a testament to elven craftsmanship. They are incredibly lightweight, conforming perfectly to the wearer's feet as if they were a second skin. The soles are lined with a rare, magically treated moss-fiber that completely dampens the sound of footsteps, allowing the wearer to glide across any surface in absolute silence. Enchanted with ancient elven magic, they enhance the user's natural agility, making every movement fluid, precise, and effortless.
+
+STATISTICS:
+
+Equipped abilities :
+– Move Silently: +40%
+- Dexterity: +1
+
+Weight: 3"
+
+
+
+
+//BOOTS OF PHASING - 2000mo//
+COPY "rick_bigg_mod/items/BOOT08.itm" "override"
+	SAY NAME1 "Boots"
+	SAY UNIDENTIFIED_DESC "Boots are normally handmade by cobblers. Common boots are made by using a form, but good boots are designed for the foot of an individual. 
+
+STATISTICS:
+
+Weight: 4"
+
+	SAY NAME2 "Boots of Phasing"
+	SAY DESC "This item is cursed and can only be removed with a remove curse spell. Whether by mistake or malicious purposes the creator of these boots enchanted them with dangerous magic. When worn the wearer is constantly teleported from opponent to opponent, until either the wearer or all opponents in sight are slain. However, due to the boots' ability to phase the wearer receives a +2 AC bonus.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +2
+– May only be removed with a Remove Curse spell
+
+Combat abilities:
+– Wearer phases to a random enemy every 2 rounds (when an enemy is within sight)
+
+Weight: 4"
+
+
+
+
+//LUCKY BOOTS - 1500mo//
+COPY "rick_bigg_mod/items/BOOT09.itm" "override"
+	SAY NAME1 "Boots"
+	SAY UNIDENTIFIED_DESC "Boots are normally handmade by cobblers. Common boots are made by using a form, but good boots are designed for the foot of an individual. 
+
+STATISTICS:
+
+Weight: 4"
+
+	SAY NAME2 "Lucky Boots"
+	SAY DESC "These elegant boots seem to hum with a faint, pleasant aura of fortune. Rumored to have been stitched together by a halfling cobbler who inadvertently blessed them with a stroke of chaotic good luck, they ensure that fate always leans slightly in the wearer's favor. Whether avoiding a deadly trap or landing a crucial blow, the person wearing these boots will find that fortune smiles upon them in the darkest of times.
+
+STATISTICS:
+
+Equipped abilities:
+– Luck: +1
+
+Weight: 3"
+
+
+
+
+
+//STAR-STREWN BOOTS - 3500mo//
+COPY "rick_bigg_mod/items/BOOT10.itm" "override"
+	SAY NAME1 "Boots"
+	SAY UNIDENTIFIED_DESC "Boots are normally handmade by cobblers. Common boots are made by using a form, but good boots are designed for the foot of an individual. 
+
+STATISTICS:
+
+Weight: 4"
+
+	SAY NAME2 "Star-Strewn Boots"
+	SAY DESC "These boots belonged to Crommus the Minstrel many centuries ago. When Artipheon the mage slew Crommus and severed the bard's voice, some of Artipheon's power infused Crommus's boots. The once ordinary midnight-blue leather boots now glitter as if hundreds of twinkling stars were embedded in the material.
+
+STATISTICS:
+
+Equipped abilities:
+– Magic Resistance: +5%
+
+Weight: 4"
+
+
+
+
+
+//OSTENTATIOUS BOOTS - 1500mo//
+COPY "rick_bigg_mod/items/BDBOOT02.itm" "override"
+	SAY NAME1 "Boots"
+	SAY UNIDENTIFIED_DESC "Boots are normally handmade by cobblers. Common boots are made by using a form, but good boots are designed for the foot of an individual. 
+
+STATISTICS:
+
+Weight: 4"
+
+	SAY NAME2 "Ostentatious Boots"
+	SAY DESC "These iridescent scaled boots gleam with a hundred shades of color. On a trade voyage across the Alamber Sea, a ship passed by a pitched battle between sahuagin marauders and a colony of merfolk. The ship's bard leaned over the rail and played a rousing ballad of courage. Bolstered, the merfolk overcame and drove off the vicious sahuagin. One of the mermaids swam up to the ship and handed the bard a glittering shed mermaid tail, telling him that any item fashioned from the scales would gain a valuable enchantment. The bard had the tail made into a pair of boots that have been passed on to his descendants, though their flashy nature makes the wearer quite memorable.
+
+STATISTICS:
+
+Equipped abilities: 
+– Charisma: +1
+
+Weight: 4"
+
+
+
+//BOOTS OF THE WEST - 1500mo//
+COPY "rick_bigg_mod/items/MISC8J.itm" "override"
+	SAY NAME1 "Boots"
+	SAY UNIDENTIFIED_DESC "Boots are normally handmade by cobblers. Common boots are made by using a form, but good boots are designed for the foot of an individual. 
+
+STATISTICS:
+
+Weight: 4"
+
+	SAY NAME2 "Boots of the West"
+	SAY DESC "These boots were once owned by the famous woodsman, Randy of the West. Crafted from durable leather worn smooth by decades of travel, they carry the practical resilience of their former master. The boots are infused with a subtle nature magic that fortifies the wearer's body, protecting them completely from the plagues and infections common to the deep wilderness.
+
+STATISTICS:
+
+Equipped abilities:
+– Immunity to disease
+
+Weight: 4"
+
+
+
+//BOOTS OF FREEDOM - 4500mo//
+COPY "rick_bigg_mod/items/BDBOOT01.itm" "override"
+	SAY NAME1 "Boots"
+	SAY UNIDENTIFIED_DESC "Boots are normally handmade by cobblers. Common boots are made by using a form, but good boots are designed for the foot of an individual. 
+
+STATISTICS:
+
+Weight: 4"
+
+	SAY NAME2 "Boots of Freedom"
+	SAY DESC "These boots belonged to a legendary escaped slave from the Underdark, who spent decades running from the drow. Infused with his desperate will to remain unchained, the leather pulses with a defiant energy that rejects all forms of confinement. No magical snare, paralyzing gaze, or muddy marsh can impede the wearer's step, granting the ultimate freedom of movement.
+
+STATISTICS:
+
+Equipped abilities:
+– Free Action
+
+Weight: 3"
+
+
+
+
+//BOOTS OF ETHEREALNESS - 6500mo//
+COPY "rick_bigg_mod/items/BOOT11.itm" "override"
+	SAY NAME1 "Boots"
+	SAY UNIDENTIFIED_DESC "Boots are normally handmade by cobblers. Common boots are made by using a form, but good boots are designed for the foot of an individual. 
+
+STATISTICS:
+
+Weight: 4"
+
+	SAY NAME2 "Boots of Etherealness"
+	SAY DESC "Infused with the essence of the Ethereal Plane, these boots allow the wearer to partially untether their physical form from the Prime Material Plane during combat. When struck in battle, the magic reacts defensively, shifting the user between dimensions to avoid physical harm.
+
+STATISTICS:
+
+Combat abilities:
+- 5% chance on hit to become Immune to Normal Weapons and get 10% Physical Damage Resistance (both for 5 rounds)
+
+Weight: 3"
+
+
+
+
+
+//GARGOYLE BOOTS - 12000mo//
+COPY "rick_bigg_mod/items/BOOT12.itm" "override"
+	SAY NAME1 "Boots"
+	SAY UNIDENTIFIED_DESC "Boots are normally handmade by cobblers. Common boots are made by using a form, but good boots are designed for the foot of an individual. 
+
+STATISTICS:
+
+Weight: 4"
+
+	SAY NAME2 "Gargoyle Boots"
+	SAY DESC "Crafted from the petrified hide of a gargoyle, these heavy, ash-colored boots ground their wearer with the immovable resilience of living stone. The elemental magic bound within the leather permanently shields vital points from deadly critical strikes. Furthermore, when the wearer is heavily wounded and facing death, the boots violently release their remaining power—instantly encasing the user's flesh in a thick layers of granite that completely absorbs the next three physical attacks.
+
+STATISTICS:
+
+Equipped abilities:
+– Protects agains critical hits
+
+Combat abilities:
+- User gets three Stoneskins if they drop below 25% HP for 5 rounds
+
+Weight: 5"
+
+
+
+
+
+
+
+
+
+
+
+

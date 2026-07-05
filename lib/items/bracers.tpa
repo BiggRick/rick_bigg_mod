@@ -1,0 +1,580 @@
+//BRACERS OF DEFENSE AC 7 - 3000mo//
+COPY "rick_bigg_mod/items/BRAC02.itm" "override"
+	SAY NAME1 "Bracers"
+	SAY UNIDENTIFIED_DESC "Bracers are thick bands of metal or leather that are strapped, belted, or tied to a character's forearm.
+
+STATISTICS:
+
+Weight: 2"
+
+	SAY NAME2 "Bracers of Defense AC 7"
+	SAY DESC "Crafted from premium, supple leather and lined with fine metal accents, these lightweight armguards are subtly reinforced with a basic warding enchantment. They set the user's base Armor Class to 7, offering an elegant and comfortable upgrade for wealthy individuals who refuse the bulk of traditional armor.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: 7
+
+Weight: 2"
+
+
+
+//BRACERS OF DEFENSE AC 6 - 4000mo//
+COPY "rick_bigg_mod/items/BRAC03.itm" "override"
+	SAY NAME1 "Bracers"
+	SAY UNIDENTIFIED_DESC "Bracers are thick bands of metal or leather that are strapped, belted, or tied to a character's forearm.
+
+STATISTICS:
+
+Weight: 2"
+
+	SAY NAME2 "Bracers of Defense AC 6"
+	SAY DESC "Forged from pristine, polished brass with a flawless mirror finish, these elegant bracers command immediate respect. A hidden, protective magical resonance within the metal helps turn aside incoming blades, dropping the wearer's base Armor Class to 6 for a highly reliable defensive boost.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: 6
+
+Weight: 2"
+
+
+
+
+//BRACERS OF DEFENSE AC 5 - 5000mo//
+COPY "rick_bigg_mod/items/BRAC13.itm" "override"
+	SAY NAME1 "Bracers"
+	SAY UNIDENTIFIED_DESC "Bracers are thick bands of metal or leather that are strapped, belted, or tied to a character's forearm.
+
+STATISTICS:
+
+Weight: 2"
+
+	SAY NAME2 "Bracers of Defense AC 5"
+	SAY DESC "A masterwork of hardened steel alloys and dense, protective weave, these heavy-duty bracers are engineered to withstand extreme impacts. Imbued with a concentrated abjuration charm, they lower the base Armor Class to 5, providing a sturdy defense capable of blunting heavy physical strikes.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: 5
+
+Weight: 2"
+
+
+
+
+//BRACERS OF DEFENSE AC 4 - 6000mo//
+COPY "rick_bigg_mod/items/BRAC14.itm" "override"
+	SAY NAME1 "Bracers"
+	SAY UNIDENTIFIED_DESC "Bracers are thick bands of metal or leather that are strapped, belted, or tied to a character's forearm.
+
+STATISTICS:
+
+Weight: 2"
+
+	SAY NAME2 "Bracers of Defense AC 4"
+	SAY DESC "Laced with precious metals and finished with exquisite detailing, these stunning bracers serve as both elite battlefield protection and a massive status symbol. Infused with a potent defensive enchantment, they reduce the base Armor Class to 4, making them remarkably effective against formidable foes.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: 4
+
+Weight: 2"
+
+
+
+
+
+//BRACERS OF DEFENSE AC 3 - 7000mo//
+COPY "rick_bigg_mod/items/BRAC15.itm" "override"
+	SAY NAME1 "Bracers"
+	SAY UNIDENTIFIED_DESC "Bracers are thick bands of metal or leather that are strapped, belted, or tied to a character's forearm.
+
+STATISTICS:
+
+Weight: 2"
+
+	SAY NAME2 "Bracers of Defense AC 3"
+	SAY DESC "The absolute pinnacle of luxury artifice, these breathtaking masterwork armguards flow like liquid platinum along the forearms. Blessed with a supreme, flawless protective magic that reinforces the exceptional metalwork, they lower the base Armor Class to 3, marking the wearer as an elite combatant with unparalleled defense.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: 3
+
+Weight: 2"
+
+
+
+
+
+//BRACERS OF ARCHERY - 4000mo//
+COPY "rick_bigg_mod/items/BRAC04.itm" "override"
+	SAY NAME1 "Bracers"
+	SAY UNIDENTIFIED_DESC "Bracers are thick bands of metal or leather that are strapped, belted, or tied to a character's forearm.
+
+STATISTICS:
+
+Weight: 2"
+
+	SAY NAME2 "Bracers of Archery"
+	SAY DESC "During a dangerous meeting with a rival ruler, the king of the Great Dale requested the protection of his best Archers in addition to his usual guard. The Archers, each equipped with an enchanted bow and bracers, hid within range of the gathering. As predicted, enemy troops attempted to seize the king and force their will over his rule, but none had anticipated the amazing accuracy and lethality of the hidden Archers. The king was able to escape unharmed; in fact, none of the ambush members even lived to approach him. 
+
+STATISTICS:
+
+Equipped abilities:
+– THAC0: +2 with missile weapons
+- Damage: +1 with missile weapons
+
+Weight: 2"
+
+
+
+
+
+//GAUNTLETS OF OGRE POWER - 7000mo//
+COPY "rick_bigg_mod/items/BRAC06.itm" "override"
+	SAY NAME1 "Gauntlets"
+	SAY UNIDENTIFIED_DESC "Gauntlets are armored gloves. They can be made of leather, metal plates, or chain mail. Every suit of armor is assumed to include gauntlets of an appropriate type. Magical gauntlets tend to be finer, lighter, and more easily worn than normal varieties.
+
+STATISTICS:
+
+Weight: 2"
+
+	SAY NAME2 "Gauntlets of Ogre Power"
+	SAY DESC "Gauntlets of Ogre Power, also know as The Hands of Takkok are exactly that: his very hands. He lost them when he attacked a strange man crossing the Spine of the World. The mysterious man turned out to be a mage of incredible power, and he used Takkok's hands to create this pair of ogre skin gauntlets.
+
+STATISTICS:
+
+Equipped abilities:
+– Strength: 18/00
+
+Weight: 2"
+
+
+
+
+//GAUNTLETS OF DEXTERITY - 6000mo//
+COPY "rick_bigg_mod/items/BRAC07.itm" "override"
+	SAY NAME1 "Gauntlets"
+	SAY UNIDENTIFIED_DESC "Gauntlets are armored gloves. They can be made of leather, metal plates, or chain mail. Every suit of armor is assumed to include gauntlets of an appropriate type. Magical gauntlets tend to be finer, lighter, and more easily worn than normal varieties.
+
+STATISTICS:
+
+Weight: 2"
+
+	SAY NAME2 "Gauntlets of Dexterity"
+	SAY DESC "This pair of gauntlets was likely developed in Kara-Tur to aid masters of the martial arts. Legends speak of such masters from the Far East bringing these items with them on their journeys, though details remain sketchy. 
+
+STATISTICS:
+
+Equipped abilities:
+– Dexterity: 18
+
+Weight: 2"
+
+
+
+
+//GAUNTLETS OF STRIKING - solo combattenti - 4500mo//
+COPY "rick_bigg_mod/items/BRAC09.itm" "override"
+	SAY NAME1 "Gauntlets"
+	SAY UNIDENTIFIED_DESC "Gauntlets are armored gloves. They can be made of leather, metal plates, or chain mail. Every suit of armor is assumed to include gauntlets of an appropriate type. Magical gauntlets tend to be finer, lighter, and more easily worn than normal varieties.
+
+STATISTICS:
+
+Weight: 2"
+
+	SAY NAME2 "Gauntlets of Striking"
+	SAY DESC "These finely articulated steel gauntlets are enchanted with a subtle, predatory magic. Instead of granting supernatural speed, the enchantment focuses purely on guiding the warrior's strikes toward vital vulnerabilities. When locked in combat, the wearer instinctively senses the weak points in an enemy's armor, turning standard blows into devastating, lethal strikes.
+
+STATISTICS:
+
+Equipped abilities:
+– Critical hit chance: +5% chance (only with melee weapon)
+
+Weight: 2"
+
+
+
+
+
+//GAUNTLETS OF WEAPON EXPERTISE - solo combattenti - 4000mo//
+COPY "rick_bigg_mod/items/BRAC10.itm" "override"
+	SAY NAME1 "Gauntlets"
+	SAY UNIDENTIFIED_DESC "Gauntlets are armored gloves. They can be made of leather, metal plates, or chain mail. Every suit of armor is assumed to include gauntlets of an appropriate type. Magical gauntlets tend to be finer, lighter, and more easily worn than normal varieties.
+
+STATISTICS:
+
+Weight: 2"
+
+	SAY NAME2 "Gauntlets of Weapon Expertise"
+	SAY DESC "Highly sought after among novice warriors, these items were once the property of the royal family of Threskel. Imparting a portion of the prince's legendary skill, these gauntlets grant the bearer mastery over all forms of melee weapons. The majority of their many previous owners seem to have come to bloody ends though: The gloves grant the ability of experience, but not the wisdom.
+
+STATISTICS:
+
+Equipped abilities:
+– THAC0: +1 with melee weapons
+- Damage: +2 with melee weapons
+
+Weight: 2"
+
+
+
+
+
+//BRACERS OF FRENZY - 3500mo//
+COPY "rick_bigg_mod/items/BRAC11.itm" "override"
+	SAY NAME1 "Bracers"
+	SAY UNIDENTIFIED_DESC "Bracers are thick bands of metal or leather that are strapped, belted, or tied to a character's forearm.
+
+STATISTICS:
+
+Weight: 2"
+
+	SAY NAME2 "Bracers of Frenzy"
+	SAY DESC "These bracers are reserved for the most formidable drow warriors. Once donned, they allow the wearer's hands to move at unimaginable speed, though this comes at the expense of accuracy and defense. Over the centuries, many drow have fallen in battle, blinded by overconfidence in their ability to wield these powerful artifacts.
+
+STATISTICS:
+
+Equipped abilities:
+- One extra attack per round
+– Armor Class: -4 penalty
+- Thac0: -4 penalty
+
+Weight: 2"
+
+
+
+//GAUNTLETS OF UNDEAD CONTROL - 2500mo - no buoni//
+COPY "rick_bigg_mod/items/BRAC08.itm" "override"
+	SAY NAME1 SAY NAME1 "Gauntlets"
+	SAY UNIDENTIFIED_DESC "Gauntlets are armored gloves. They can be made of leather, metal plates, or chain mail. Every suit of armor is assumed to include gauntlets of an appropriate type. Magical gauntlets tend to be finer, lighter, and more easily worn than normal varieties.
+
+STATISTICS:
+
+Weight: 2"
+
+	SAY NAME2 "Gauntlets of Undead Control"
+	SAY DESC "These powerful gauntlets were created by the clerics of Myrkul in Kagarr, who were intent on controlling an undead horde that was destabilizing the region. The gauntlets draw their power from the wearer's sanity, completely detaching them from reality while granting them the ability to empathize with the undead.
+
+STATISTICS:
+
+Equipped abilities:
+– Wisdom: -2 penalty
+- Turn Undead: +4 cleric level
+
+Weight: 2"
+
+
+
+
+//GLOVES OF PICKPOCKETING - 2500mo - no buoni//
+COPY "rick_bigg_mod/items/BRAC17.itm" "override"
+	SAY NAME1 SAY NAME1 "Gauntlets"
+	SAY UNIDENTIFIED_DESC "Gauntlets are armored gloves. They can be made of leather, metal plates, or chain mail. Every suit of armor is assumed to include gauntlets of an appropriate type. Magical gauntlets tend to be finer, lighter, and more easily worn than normal varieties.
+
+STATISTICS:
+
+Weight: 2"
+
+	SAY NAME2 "Gloves of Pickpocketing"
+	SAY DESC "A few years back, Fong Moo, a famous cutpurse known in both Baldur's Gate and Athkatla, was found dead on the road between the Gate and Beregost. Seems he'd stolen an artifact from a powerful mage and tried escaping, with little success. His possessions went to a nephew, who took up the same trade as his uncle and became especially good at pickpocketing. Whether these gloves were magical before falling into Fong's hands or if they are somehow imbued with the master's essence is not known.
+
+STATISTICS:
+
+Equipped abilities:
+– Pick Pockets: +25%
+
+Weight: 2"
+
+
+
+
+
+//GLOVES OF PERSEVERANCE - 3500mo - solo chierici e paladini - no malvagi//
+COPY "rick_bigg_mod/items/BDBRAC15.itm" "override"
+	SAY NAME1 SAY NAME1 "Gauntlets"
+	SAY UNIDENTIFIED_DESC "Gauntlets are armored gloves. They can be made of leather, metal plates, or chain mail. Every suit of armor is assumed to include gauntlets of an appropriate type. Magical gauntlets tend to be finer, lighter, and more easily worn than normal varieties.
+
+STATISTICS:
+
+Weight: 2"
+
+	SAY NAME2 "Gloves of Perseverance"
+	SAY DESC "These storied bracers were once worn by High Cleric Kaelen the Unbroken during the Siege of the Dead Fields. Surrounded by a tide of fiends and plagued by sheer exhaustion, Kaelen missed a decisive strike that should have sealed his doom. Yet, his faith never wavered; in that moment of failure, the bracers flared with divine light, granting him the strength to endure and turn the tide of battle. The metal still carries the echo of his resilience, shielding holy warriors when their own strength falters.
+
+STATISTICS:
+
+Combat abilities:
+– When the wearer suffers a critical miss, <PRO_HESHE> is affected by the Aid spell
+
+Weight: 2"
+
+
+
+
+
+
+
+
+GAUNTLETS OF THE DUELLIST - 1500mo - no maghi, chierici e druidi //
+COPY "rick_bigg_mod/items/BRAC18.itm" "override"
+	SAY NAME1 SAY NAME1 "Gauntlets"
+	SAY UNIDENTIFIED_DESC "Gauntlets are armored gloves. They can be made of leather, metal plates, or chain mail. Every suit of armor is assumed to include gauntlets of an appropriate type. Magical gauntlets tend to be finer, lighter, and more easily worn than normal varieties.
+
+STATISTICS:
+
+Weight: 2"
+
+	SAY NAME2 "Gauntlets of the Duellist"
+	SAY DESC "Designed specifically for the art of single combat, these supple leather gloves feature reinforced steel plates along the back of the hands and fingers. They are engineered to help a fighter parry swift rapier thrusts and sudden sword slashes without sacrificing grip or flexibility. For a skilled duellist, these gauntlets act as a secondary shield, easily turning a lethal strike into a harmless glance.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +2 vs. slashing and piercing attacks
+
+Weight: 2"
+
+
+
+
+
+GLOVES OF HEALING - 6500mo - solo paladini e chierici buoni //
+COPY "rick_bigg_mod/items/BRAC20.itm" "override"
+	SAY NAME1 SAY NAME1 "Gauntlets"
+	SAY UNIDENTIFIED_DESC "Gauntlets are armored gloves. They can be made of leather, metal plates, or chain mail. Every suit of armor is assumed to include gauntlets of an appropriate type. Magical gauntlets tend to be finer, lighter, and more easily worn than normal varieties.
+
+STATISTICS:
+
+Weight: 2"
+
+	SAY NAME2 "Gloves of Healing"
+	SAY DESC "These gloves are crafted for anointed members of the Most Noble Order of the Radiant Heart, serving as a reliable aid during long crusades. Woven with threads blessed in the High Hall, they allow a warrior of the Light to call upon a powerful miracle of restoration when all other spells have failed. To ensure this blessing is never twisted by evil, the gloves are bound by a strict divine ward. They will remain inert and useless for anyone who does not walk the path of a righteous cleric or a devoted paladin.
+
+STATISTICS:
+
+Equipped abilities:
+- Armor Class: +1
+
+Charge abilities:
+– Cast Heal once per day
+
+Weight: 2"
+
+
+
+
+
+//BRACERS OF BLINDING STRIKE - solo combattenti - 5000mo//
+COPY "rick_bigg_mod/items/BRAC16.itm" "override"
+	SAY NAME1 "Bracers"
+	SAY UNIDENTIFIED_DESC "Bracers are thick bands of metal or leather that are strapped, belted, or tied to a character's forearm.
+
+STATISTICS:
+
+Weight: 2"
+
+	SAY NAME2 "Bracers of Blinding Strike"
+	SAY DESC "Vorn, a ruthless drow warrior of House Barrison Del'Armgo, often said, "Attack swiftly and your enemy will be so overwhelmed that the battle will be yours." He lived this principle through these bracers. Before engaging in bloody ambush, he would unlock the magic of the Blinding Strike and quickly rush at his enemy. More often than not, his opponent would fall within the first few seconds of battle.
+
+STATISTICS:
+
+Charge abilities:
+– Set attack per round to 5 once per day
+  Duration: 3 rounds
+  Area of Effect: the user
+  
+Requires:
+16 Dexterity
+
+Weight: 2"
+
+
+
+
+
+
+
+
+//GAUNTLETS OF CRUSHING - solo comabattenti - 8000mo//
+COPY "rick_bigg_mod/items/BRAC19.itm" "override"
+	SAY NAME1 "Gauntlets"
+	SAY UNIDENTIFIED_DESC "Gauntlets are armored gloves. They can be made of leather, metal plates, or chain mail. Every suit of armor is assumed to include gauntlets of an appropriate type. Magical gauntlets tend to be finer, lighter, and more easily worn than normal varieties.
+
+STATISTICS:
+
+Weight: 2"
+
+	SAY NAME2 "Gauntlets of Crushing"
+	SAY DESC "Forged from heavy meteoric iron during the Time of Troubles, these brutal gauntlets thrum with dense, kinetic energy. They physically guide the wearer's arms, granting a permanent surge of muscle power.A volatile transmutation enchantment sleeps within the metal. Unpredictably in melee combat, the gauntlets release a devastating shockwave upon impact. This force instantly crushes bone and internal organs with the weight of a falling boulder.
+
+STATISTICS:
+
+Equipped abilities:
+– Strength: +1
+
+Combat abilities:
+- 10% chanche to deal 4 extra crushing damage (only in melee)
+
+Requires: 
+17 Strength
+
+Weight: 2"
+
+
+
+
+
+
+//BARD'S GLOVES - solo bardi - 5500mo//
+COPY "rick_bigg_mod/items/BRAC24.itm" "override"
+	SAY NAME1 "Gauntlets"
+	SAY UNIDENTIFIED_DESC "Gauntlets are armored gloves. They can be made of leather, metal plates, or chain mail. Every suit of armor is assumed to include gauntlets of an appropriate type. Magical gauntlets tend to be finer, lighter, and more easily worn than normal varieties.
+
+STATISTICS:
+
+Weight: 2"
+
+	SAY NAME2 "Bard's Gloves"
+	SAY DESC "A pair of exquisite, fingerless gloves seamlessly woven from shifting, iridescent threads that hum with a faint, innate power. This artifact responds exclusively to the unique soul and versatile nature of a true Bard. The gloves react intuitively to the wearer's intent, completely eliminating friction during complex gestures to unlock hidden arcane potential and quicken the flow of magic, while a permanent, ancient ward woven into the palms repels hostile sorcery.
+
+STATISTICS:
+
+Equipped abilities:
+– Casting level: +1
+- Casting speed: +1
+- Magic resistance: +5%
+
+Weight: 2"
+
+
+
+//WONDROUS GLOVES - solo bardi - 13000mo//
+COPY "rick_bigg_mod/items/BRAC25.itm" "override"
+	SAY NAME1 "Gauntlets"
+	SAY UNIDENTIFIED_DESC "Gauntlets are armored gloves. They can be made of leather, metal plates, or chain mail. Every suit of armor is assumed to include gauntlets of an appropriate type. Magical gauntlets tend to be finer, lighter, and more easily worn than normal varieties.
+
+STATISTICS:
+
+Weight: 2"
+
+	SAY NAME2 "Wondrous Gloves"
+	SAY DESC "A pair of exquisite, fingerless gloves seamlessly woven from shifting, iridescent threads that hum with a faint, innate power. This artifact responds exclusively to the unique soul and versatile nature of a true Bard. The gloves react intuitively to the wearer's intent, completely eliminating friction during complex gestures to unlock hidden arcane potential and quicken the flow of magic, while a permanent, ancient ward woven into the palms repels hostile sorcery.
+	
+	When enhanced to their wondrous form, the woven matrix awakens completely, extending an absolute shield that anchors the wearer's physical form against paralyzing effects and all forms of structural damage.
+
+STATISTICS:
+
+Equipped abilities:
+– Casting level: +2
+- Casting speed: +2
+- All resistances: +5%
+- Immunity to hold
+
+Weight: 2"
+
+
+
+
+
+
+//PALADIN'S BRACERS - solo paladini - 3500mo//
+COPY "rick_bigg_mod/items/BRAC22.itm" "override"
+	SAY NAME1 "Bracers"
+	SAY UNIDENTIFIED_DESC "Bracers are thick bands of metal or leather that are strapped, belted, or tied to a character's forearm.
+
+STATISTICS:
+
+Weight: 2"
+
+	SAY NAME2 "Paladin's Bracers"
+	SAY DESC "Forged in the holy fires of Mount Celestia, these heavy platinum bracers were once worn by Sir Gareth the Undaunted, a legendary holy warrior who single-handedly defended a mountain pass against a horde of fiends. Imbued with the unwavering righteousness of the Triad, the bracers pulse with a warm, comforting light. Only those who have sworn the sacred oaths of the paladin can channel the true power trapped within the metal. In the hands of the pure, these bracers strike absolute terror into the hearts of evil beings.
+
+STATISTICS:
+
+Combat abilities:
+– Damage: +2 vs. evil (only with melee weapon)
+
+Weight: 2"
+
+
+
+
+
+//BLESSED BRACERS - solo paladini - 15000mo//
+COPY "rick_bigg_mod/items/BRAC23.itm" "override"
+	SAY NAME1 "Bracers"
+	SAY UNIDENTIFIED_DESC "Bracers are thick bands of metal or leather that are strapped, belted, or tied to a character's forearm.
+
+STATISTICS:
+
+Weight: 2"
+
+	SAY NAME2 "Blessed Bracers"
+	SAY DESC "Forged in the holy fires of Mount Celestia, these heavy platinum bracers were once worn by Sir Gareth the Undaunted, a legendary holy warrior who single-handedly defended a mountain pass against a horde of fiends. Imbued with the unwavering righteousness of the Triad, the bracers pulse with a warm, comforting light. Only those who have sworn the sacred oaths of the paladin can channel the true power trapped within the metal. In the hands of the pure, these bracers strike absolute terror into the hearts of evil beings.
+	
+	Through recent empowerment, their holy essence has been further awakened, granting the wearer a permanent surge of physical and heroic might.
+
+STATISTICS:
+
+Equipped abilities:
+- Strength: +1
+- Dexterity: +1
+- Constitution: +1
+
+Combat abilities:
+– Damage: +4 vs. evil (only with melee weapon)
+
+Weight: 2"
+
+
+
+
+
+//THE AMPLIFIERS - solo maghi - 8500mo//
+COPY "rick_bigg_mod/items/BRAC26.itm" "override"
+	SAY NAME1 "Bracers"
+	SAY UNIDENTIFIED_DESC "Bracers are thick bands of metal or leather that are strapped, belted, or tied to a character's forearm.
+
+STATISTICS:
+
+Weight: 2"
+
+	SAY NAME2 "The Amplifiers"
+	SAY DESC "Crafted by the legendary eastern sorcerer Zhao the Undying, these two-pound bracers bind directly to the wearer's lifeforce but remain completely inert unless worn by a true mage. The artifacts directly siphon raw magic from the environment and channel it straight into the caster's veins. This constant surge dramatically elevates the user's casting potency to new heights. As a result, every form of offensive magic is violently supercharged, making fire, lightning, and arcane bolts exceptionally destruc
+
+STATISTICS:
+
+Equipped abilities:
+- Casting level: +4
+
+Combat abilities:
+– Magical damage (all form): +10%
+
+Weight: 2"
+
+
+
+
+//GAUNTLETS OF WAR ALACRITY - solo combattenti - 12000mo//
+COPY "rick_bigg_mod/items/BRAC21.itm" "override"
+	SAY NAME1 "Bracers"
+	SAY UNIDENTIFIED_DESC "Gauntlets are armored gloves. They can be made of leather, metal plates, or chain mail. Every suit of armor is assumed to include gauntlets of an appropriate type. Magical gauntlets tend to be finer, lighter, and more easily worn than normal varieties.
+
+STATISTICS:
+
+Weight: 2"
+
+	SAY NAME2 "Gauntlets of War Alacrity"
+	SAY DESC "These jagged, abyssal leather gauntlets once belonged to Vorash-Kha, a terrifying anomaly known in the Blood War as the Marilith King. Born from the shattered soul of a tyrannical warlord, Vorash-Kha ruled the abyssal trenches with six arms that moved in perfect, lethal synchronization. It is said these gauntlets were forged from the very scales he shed during his bloody ascension. When slipped onto a mortal's hands, the residual essence of the demon king infuses the wearer's muscles, granting them the precise, terrifying reflexes of a multi-armed master of blades.
+
+STATISTICS:
+
+Equipped abilities:
+- Speed factor: +4
+- 1/2 extra attack per round
+
+Weight: 2"

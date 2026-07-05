@@ -345,6 +345,43 @@ Weight: 5"
 
 
 
+//SYLVANUS'S WRATH - solo druidi - 15000mo//
+COPY "rick_bigg_mod/items/LEAT23.itm" "override"
+	SAY NAME1 "Studded Leather Armor"
+	SAY UNIDENTIFIED_DESC "Studded leather armor has little in common with normal leather armor. Instead of a hardened shell, studded leather offers hundreds of metal rivets affixed to a supple backing. The numerous studs form a flexible coat of metal that helps to turn aside slashing and cutting attacks, while the leather is little more than a means of securing the rivets in place. 
+
+STATISTICS:
+
+Armor Class: 7 (5 vs. slashing, 6 vs. piercing and missile)
+Speed Factor: -1
+Requires:
+ 7 Strength
+
+Weight: 25
+"
+
+	SAY NAME2 "Sylvanus's Wrath +5"
+	SAY DESC "The Oak Father is a god of balance, but nature’s balance is rarely peaceful. It is maintained through sharp claws, devastating storms, and the unyielding fury of the wild against the encroachment of civilization. This ancient, living breastplate was grown—not forged—in the deepest groves of the High Forest during a time when standard metal armor failed the great Archdruids of old.
+
+STATISTICS:
+
+Equipped abilities:
+- Casting Speed: +1
+- Total HP: -10%
+
+Charge abilities:
+- Fury of the Nature once per day 
+  When cast, the druid can begin casting a new spell the instant he is finished casting his current spell
+  Duration: 3 rounds
+  Casting Time: 1 round
+  Area of Effect: Caster
+
+Armor Class: 2 (0 vs. slashing, 1 vs. piercing and missile)
+Speed Factor: -1
+Requires:
+ 7 Strength
+
+Weight: 5"
 
 
 

@@ -199,8 +199,8 @@ Charge abilities:
  Range: 20 ft.
  Area: 15-ft. radius
 
-THAC0: +2, +4 vs. evil creatures
-Damage: 2d4+3, +4 vs. evil creatures, does double damage against undead
+THAC0: +2, +4 vs. evil
+Damage: 2d4+3, +4 vs. evil, does double damage against undead
 Damage type: Slashing
 Speed Factor: 6
 Proficiency Type: Bastard Sword
@@ -233,13 +233,12 @@ Requires:
 Weight: 10"
 
 	SAY NAME2 "Peridan +3"
-	SAY DESC "Few dare to create items such as this, for who does not fear the wrath of dragons, and what action would more tempt their reckoning? Yet, at a time lost in Faerûn's past, there was a need, and this sword was forged in answer. Tempered by a wizard's skill, this blade protects the wielder from the fear they should rightly feel while staring down a dragon's maw. It also bolsters with regeneration, and protects against dragon's breath.
+	SAY DESC "Few dare to create items such as this, for who does not fear the wrath of dragons, and what action would more tempt their reckoning? Yet, at a time lost in Faerûn's past, there was a need, and this sword was forged in answer. Tempered by a wizard's skill, this blade protects the wielder from the fear they should rightly feel while staring down a dragon's maw. It also protects against dragon's breath.
 
 STATISTICS:
 
 Equipped abilities: 
 – Immunity to fear
-– Regenerate 1 Hit Point every 1 turn
 
 Charge abilities:
 – Protection from the Elements once per day
@@ -406,7 +405,7 @@ Weight: 6
 
 
 
-//ANGURVADAL +4 - valore 9000mo//
+//ANGURVADAL +4 - valore 7500mo//
 COPY "rick_bigg_mod/items/SW1H60.itm" "override"
 	SAY NAME1 "Bastard Sword"
 	SAY UNIDENTIFIED_DESC "Also known as the hand-and-a-half sword, the bastard sword derives its name from the fact that it is halfway between the two-handed sword and the long sword. The bastard sword has a double-edged blade and a long grip, which can accommodate both hands if preferred. The overall length of the bastard sword ranges between four feet and four feet ten inches.
@@ -431,7 +430,7 @@ Weight: 10"
 STATISTICS:
 
 THAC0: +4
-Damage: 2d4+5, +1d6 acid damage
+Damage: 2d4+5, +1d4 acid damage
 Damage type: Slashing
 Speed Factor: 4
 Proficiency Type: Bastard Sword
@@ -445,7 +444,7 @@ Weight: 7"
 
 
 
-//ANGURVADAL +5 - valore 21000mo//
+//ANGURVADAL +5 - valore 18000mo//
 COPY "rick_bigg_mod/items/SW1H61.itm" "override"
 	SAY NAME1 "Bastard Sword"
 	SAY UNIDENTIFIED_DESC "Also known as the hand-and-a-half sword, the bastard sword derives its name from the fact that it is halfway between the two-handed sword and the long sword. The bastard sword has a double-edged blade and a long grip, which can accommodate both hands if preferred. The overall length of the bastard sword ranges between four feet and four feet ten inches.
@@ -473,7 +472,7 @@ Combat abilities:
 - 5% chance cast Black Dragon's Breath (24d4+12 acid damage save vs. Breath for half, enemies only)
 
 THAC0: +5
-Damage: 2d4+6, +2d6 acid damage
+Damage: 2d4+6, +1d8 acid damage
 Damage type: Slashing
 Speed Factor: 3
 Proficiency Type: Bastard Sword
