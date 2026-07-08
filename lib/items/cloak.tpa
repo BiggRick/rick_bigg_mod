@@ -21,31 +21,6 @@ Weight: 3"
 
 
 
-
-
-//CLOACK OF PROTECTION +2 - valore 7000mo//
-COPY "rick_bigg_mod/items/CLCK02.itm" "override"
-	SAY NAME1 "Cloack"
-	SAY UNIDENTIFIED_DESC "The cloak can be made in every possible shape with just about every type of fabric. The most common forms are a circular piece of fabric with a hole in the center for the head, and fabric draped from neck, connected by a chain, brooch, cord, or pins.
-
-STATISTICS:
-
-Weight: 3"
-
-	SAY NAME2 "Cloack of Protection +2"
-	SAY DESC "This simple cloak has been imbued with powerful magical properties to help protect its wearer. It does so by affecting both Saving Throws and Armor Class. It is ideal for Mages and others who cannot wear bulkier or more restrictive types of armor.
-
-STATISTICS:
-
-Equipped abilities:
-– Armor Class: +2
-– Saving Throws: +2
-
-Weight: 3"
-
-
-
-
 //CLOAK OF DISPLACEMENT - 4000mo//
 COPY "rick_bigg_mod/items/CLCK03.itm" "override"
 	SAY NAME1 "Cloak"

@@ -99,7 +99,7 @@ Requires:
 Weight: 15"
 
 	SAY NAME2 "Shield of the Lost +2"
-	SAY DESC "This odd shield was constructed by nomads that once inhabited the forest of Mir, a group long since absorbed into "civilized" society and forgotten. Examination reveals fine weaving of ironwood roots and liquid silver, granting the heavy aegis absolute protection against foul magic."
+	SAY DESC "This odd shield was constructed by nomads that once inhabited the forest of Mir, a group long since absorbed into 'civilized' society and forgotten. Examination reveals fine weaving of ironwood roots and liquid silver, granting the heavy aegis absolute protection against foul magic.
 
 STATISTICS:
 
