@@ -6,6 +6,6 @@ CHAIN             9       0          2        1         1          0          1 
 PLATE             13      0          3        1         1          0          1           0           1                  0         0          0        0         N      0      N       N        N     N
 PLATE_FULL        15      0          3        1         1          0          0           0           0                  0         0          0        0         N      0      N       N        N     N
 SHIELD_BUCKLER    8       0          0        =0        =0         0          1           1           1                  1         1          1        1         0      0      0       0        0     1
-SHIELD_SMALL      10      5          0        0         =0         0          1           1           1                  0         1          0        0         0      0      0       0        0     N
-SHIELD_MEDIUM     14      10         0        0         0          0          1           0           1                  0         0          0        0         N      0      N       N        N     N
+SHIELD_SMALL      10      5          0        0         =0         0          1           1           1                  1         1          0        0         0      0      0       0        0     N
+SHIELD_MEDIUM     14      10         0        0         0          0          1           1           1                  0         0          0        0         N      0      N       N        N     N
 SHIELD_LARGE      16      15         0        0         0          0          1           0           0                  0         0          0        0         N      0      N       N        N     N
