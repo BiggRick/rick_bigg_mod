@@ -94,6 +94,18 @@ DEFINE_PATCH_FUNCTION runic RET is_matched BEGIN
 	is_matched = INDEX (~dwarven runes~ ~%unidentified_description%~) > 0
 END
 
+DEFINE_PATCH_FUNCTION arrow RET is_matched BEGIN
+	is_matched = 5 == SHORT_AT 0x1c
+END
+
+DEFINE_PATCH_FUNCTION bolt RET is_matched BEGIN
+	is_matched = 31 == SHORT_AT 0x1c
+END
+
+DEFINE_PATCH_FUNCTION bullet RET is_matched BEGIN
+	is_matched = 14 == SHORT_AT 0x1c
+END
+
 ACTION_DEFINE_ASSOCIATIVE_ARRAY damage_type_value BEGIN
 	PIERCING    => 1
 	CRUSHING    => 2
@@ -258,7 +270,7 @@ END
 COPY_EXISTING_REGEXP ~^.*\.itm$~ ~override~
 	READ_SHORT 0x1c category
 	READ_LONG 0x18 flags
-	PATCH_IF ((category >= 15 AND category <= 30 ) OR category = 57 OR category = 69) AND (LONG_AT 0x18 BAND BIT2) BEGIN
+	PATCH_IF ((category >= 15 AND category <= 30 ) OR category = 57 OR category = 69 OR category = 14 OR category = 5 OR category = 31) AND (LONG_AT 0x18 BAND BIT2) BEGIN
 		READ_LONG 0x64 head_off
 		READ_SHORT 0x68 head_cnt
 		cannot_backstab = 0
@@ -307,7 +319,7 @@ COPY_EXISTING_REGEXP ~^.*\.itm$~ ~override~
 				
 				LAUNCH_PATCH_MACRO decode_type
 				
-				PATCH_IF IS_AN_INT ~%maybe_proficiency%~ AND maybe_proficiency = proficiency AND type = weapon_type BEGIN
+				PATCH_IF IS_AN_INT ~%maybe_proficiency%~ AND (maybe_proficiency = proficiency OR maybe_proficiency < 80) AND type = weapon_type BEGIN
 					general_rules_row = maybe
 					TEXT_SPRINT comment_general ~%comment%~
 					has_melee = has_melee OR type = 1
