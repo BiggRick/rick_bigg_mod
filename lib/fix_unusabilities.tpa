@@ -1,4 +1,4 @@
- OUTER_SET ignore_ma = BIT10 BOR BIT29
+OUTER_SET ignore_ma = BIT10 BOR BIT29
 OUTER_SET ignore_u1 = BIT0 BOR BIT1 BOR BIT2 BOR BIT3 BOR BIT4 BOR BIT5 BOR BIT6 BOR BIT7
 OUTER_SET ignore_u2 = BIT0 BOR BIT1 BOR BIT3 BOR BIT5 BOR BIT6 BOR BIT7
 OUTER_SET ignore_u3 = BIT7
@@ -7,6 +7,12 @@ OUTER_SET ignore_u4 = BIT2 BOR BIT3 BOR BIT4 BOR BIT5
 
 COPY_EXISTING_REGEXP ~^.*\.itm$~ ~override~
     PATCH_IF (LONG_AT 0x18 BAND BIT2) BEGIN
+        // usable by trueclass fighters, not an armor or a shield
+        PATCH_IF NOT (LONG_AT 0x1e BAND BIT11) AND NOT (BYTE_AT 0x2d BAND BIT6) AND NOT (SHORT_AT 0x1c == 12 OR SHORT_AT 0x1c == 2)  BEGIN
+            // usable by Wizard Slayers
+            WRITE_SHORT 0x2f (BYTE_AT 0x2f BAND (BNOT BIT1))
+        END
+
         READ_LONG 0x1e main_unusabilities
         READ_BYTE 0x29 unusability_1
         READ_BYTE 0x2b unusability_2
