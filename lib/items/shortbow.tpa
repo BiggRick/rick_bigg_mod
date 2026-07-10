@@ -1,6 +1,6 @@
 //SHORTBOW +1 - 1200mo//
 COPY "rick_bigg_mod/items/BOW06.itm" "override"
-	SAY NAME1 "Boots"
+	SAY NAME1 "Shortbow"
 	SAY UNIDENTIFIED_DESC "Shortbows were the first bows to be developed, although they were not called such. This is more of a default term that refers to anything which is not a longbow. Shortbow staves are about five feet long on the average. As the years passed, attempts were made to increase bow ranges. Bows were either given longer staves or flexibility was increased with no change to the length. The former resulted in what is now called the longbow.
 
 STATISTICS:
@@ -22,6 +22,45 @@ STATISTICS:
 THAC0: +1
 Damage: +1
 Speed Factor: 5
+Proficiency Type: Shortbow
+Type: Two-handed
+Requires:
+ 3 Strength
+
+Weight: 2"
+
+
+
+
+//SHORTBOW OF GESEN +3 - 11000mo//
+COPY "rick_bigg_mod/items/BOW19.itm" "override"
+	SAY NAME1 "Shortbow"
+	SAY UNIDENTIFIED_DESC "Shortbows were the first bows to be developed, although they were not called such. This is more of a default term that refers to anything which is not a longbow. Shortbow staves are about five feet long on the average. As the years passed, attempts were made to increase bow ranges. Bows were either given longer staves or flexibility was increased with no change to the length. The former resulted in what is now called the longbow.
+
+STATISTICS:
+
+Speed Factor: 6
+Proficiency Type: Shortbow
+Type: Two-handed
+Requires:
+ 3 Strength
+
+Weight: 2"
+
+	SAY NAME2 "Shortbow of Gesen +3"
+	SAY DESC "The finest bow crafted by Gesen Khan, this weapon draws energy from another plane, firing spears of lightning instead of arrows... and therefore never requiring ammunition of any kind. It is said that Gesen prepared to retire from his craft after selling the invaluable weapon, only to have the bow wrested from his grasp by a thief who used it to end Gesen's own life. A side effect of the bow bestows protection from electricity upon the user.
+
+STATISTICS:
+
+Equipped abilities:
+– Chance to score a ranged critical hit: +10% with this weapon only
+
+Combat abilities:
+– On critical hit opponent is stunned for a round (save vs. Wand at -4)
+
+THAC0: +3
+Damage: +3
+Speed Factor: 3
 Proficiency Type: Shortbow
 Type: Two-handed
 Requires:
