@@ -1,13 +1,13 @@
-//CLOACK OF PROTECTION +1 - valore 3500mo//
+//CLOAK OF PROTECTION +1 - valore 3500mo//
 COPY "rick_bigg_mod/items/CLCK01.itm" "override"
-	SAY NAME1 "Cloack"
+	SAY NAME1 "Cloak"
 	SAY UNIDENTIFIED_DESC "The cloak can be made in every possible shape with just about every type of fabric. The most common forms are a circular piece of fabric with a hole in the center for the head, and fabric draped from neck, connected by a chain, brooch, cord, or pins.
 
 STATISTICS:
 
 Weight: 3"
 
-	SAY NAME2 "Cloack of Protection +1"
+	SAY NAME2 "Cloak of Protection +1"
 	SAY DESC "This simple cloak has been imbued with magical properties to help protect its wearer. It does so by affecting both Saving Throws and Armor Class. It is ideal for Mages and others who cannot wear bulkier or more restrictive types of armor.
 
 STATISTICS:
@@ -21,18 +21,16 @@ Weight: 3"
 
 
 
-
-
-//CLOACK OF PROTECTION +2 - valore 7000mo//
+//CLOAK OF PROTECTION +2 - valore 7000mo//
 COPY "rick_bigg_mod/items/CLCK02.itm" "override"
-	SAY NAME1 "Cloack"
+	SAY NAME1 "Cloak"
 	SAY UNIDENTIFIED_DESC "The cloak can be made in every possible shape with just about every type of fabric. The most common forms are a circular piece of fabric with a hole in the center for the head, and fabric draped from neck, connected by a chain, brooch, cord, or pins.
 
 STATISTICS:
 
 Weight: 3"
 
-	SAY NAME2 "Cloack of Protection +2"
+	SAY NAME2 "Cloak of Protection +2"
 	SAY DESC "This simple cloak has been imbued with powerful magical properties to help protect its wearer. It does so by affecting both Saving Throws and Armor Class. It is ideal for Mages and others who cannot wear bulkier or more restrictive types of armor.
 
 STATISTICS:
@@ -45,16 +43,16 @@ Weight: 3"
 
 
 
-//CLOACK OF PROTECTION +3 - valore 14000mo//
-COPY "rick_bigg_mod/items/CLCK02.itm" "override"
-	SAY NAME1 "Cloack"
+//CLOAK OF PROTECTION +3 - valore 14000mo//
+COPY "rick_bigg_mod/items/CLCK31.itm" "override"
+	SAY NAME1 "Cloak"
 	SAY UNIDENTIFIED_DESC "The cloak can be made in every possible shape with just about every type of fabric. The most common forms are a circular piece of fabric with a hole in the center for the head, and fabric draped from neck, connected by a chain, brooch, cord, or pins.
 
 STATISTICS:
 
 Weight: 3"
 
-	SAY NAME2 "Cloack of Protection +3"
+	SAY NAME2 "Cloak of Protection +3"
 	SAY DESC "This simple cloak has been imbued with powerful magical properties to help protect its wearer. It does so by affecting both Saving Throws and Armor Class. It is ideal for Mages and others who cannot wear bulkier or more restrictive types of armor.
 	
 	Now that it has been enhanced from its previous state, its defensive capabilities are stronger than ever before.
@@ -66,8 +64,6 @@ Equipped abilities:
 – Saving Throws: +3
 
 Weight: 3"
-
-
 
 
 
@@ -95,16 +91,16 @@ Weight: 3"
 
 
 
-//CLOACK OF THE WOLF - valore 5000mo//
+//CLOAK OF THE WOLF - valore 5000mo//
 COPY "rick_bigg_mod/items/CLCK04.itm" "override"
-	SAY NAME1 "Cloack"
+	SAY NAME1 "Cloak"
 	SAY UNIDENTIFIED_DESC "The cloak can be made in every possible shape with just about every type of fabric. The most common forms are a circular piece of fabric with a hole in the center for the head, and fabric draped from neck, connected by a chain, brooch, cord, or pins.
 
 STATISTICS:
 
 Weight: 3"
 
-	SAY NAME2 "Cloack of the Wolf"
+	SAY NAME2 "Cloak of the Wolf"
 	SAY DESC "A great amount of irony surrounds the creation of this magical cloak. Relair was a mage who overestimated the amount of control he had over magic, and in the course of creating this garment, he apparently inflicted lycanthropy upon himself. The wearer can change form whenever <PRO_HESHE> wishes. Relair was not so lucky.
 
 STATISTICS:

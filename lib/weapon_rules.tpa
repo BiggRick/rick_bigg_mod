@@ -81,17 +81,29 @@ END
 
 DEFINE_PATCH_FUNCTION heavy RET is_matched BEGIN
 	READ_LONG 0x1e unusability
-	is_matched = unusability BAND BIT6
+	is_matched = unusability BAND BIT22
 END
 
 DEFINE_PATCH_FUNCTION composite RET is_matched BEGIN
 	READ_LONG 0x1e unusability
-	is_matched = unusability BAND BIT22
+	is_matched = unusability BAND BIT6
 END
 
 DEFINE_PATCH_FUNCTION runic RET is_matched BEGIN
 	READ_STRREF UNIDENTIFIED_DESC unidentified_description
 	is_matched = INDEX (~dwarven runes~ ~%unidentified_description%~) > 0
+END
+
+DEFINE_PATCH_FUNCTION arrow RET is_matched BEGIN
+	is_matched = 5 == SHORT_AT 0x1c
+END
+
+DEFINE_PATCH_FUNCTION bolt RET is_matched BEGIN
+	is_matched = 31 == SHORT_AT 0x1c
+END
+
+DEFINE_PATCH_FUNCTION bullet RET is_matched BEGIN
+	is_matched = 14 == SHORT_AT 0x1c
 END
 
 ACTION_DEFINE_ASSOCIATIVE_ARRAY damage_type_value BEGIN
@@ -173,6 +185,7 @@ DEFINE_PATCH_FUNCTION redescribe_weapon
 		damage = 0
 		speed_factor = 0
 		min_strength = 0
+	STR_VAR attacks_per_round = "_"
 BEGIN
 
 	PATCH_IF thac0 = 0 BEGIN
@@ -230,13 +243,34 @@ BEGIN
 	END ELSE BEGIN
 		REPLACE_TEXTUALLY ~^Type:\(.*\)$~ ~Type:\1%WNL%Requires:%WNL% %min_strength% Strength~
 	END
+
+	PATCH_IF IS_AN_INT ~%attacks_per_round%~ BEGIN
+		PATCH_IF attacks_per_round > 0 BEGIN
+			PATCH_IF attacks_per_round > 5 BEGIN
+				base_attacks = (attacks_per_round - 6) * 2 + 1
+				TEXT_SPRINT attacks_string ~- %base_attacks%/2 attacks per round~
+			END ELSE BEGIN
+				TEXT_SPRINT attacks_string ~- %attacks_per_round% attacks per round~
+			END
+			PATCH_IF INDEX_BUFFER (~^– .*\(attack\|shot\)s? per round$~) > 0 BEGIN
+				REPLACE_TEXTUALLY ~^– .*\(attack\|shot\)s? per round$~ ~%attacks_string%~
+			END ELSE PATCH_IF INDEX_BUFFER (~^Combat abilities:$~) > 0 BEGIN
+				REPLACE_TEXTUALLY ~^Combat abilities:$~ ~Combat abilities:%WNL%%attacks_string%~
+			END ELSE BEGIN
+				REPLACE_TEXTUALLY ~^STATISTICS:\([%WNL%]+\)~ ~STATISTICS:\1Combat abilities:%WNL%%attacks_string%%WNL%%WNL%~
+			END
+		END ELSE BEGIN
+			REPLACE_TEXTUALLY ~^– .*\(attack\|shot\)s? per round$~ ~~
+		END
+	END
 END
 
 
 
-COPY_EXISTING_REGEXP ~^.*\.itm~ ~override~
+COPY_EXISTING_REGEXP ~^.*\.itm$~ ~override~
 	READ_SHORT 0x1c category
-	PATCH_IF (category >= 15 AND category <= 30 ) OR category = 57 OR category = 69 BEGIN
+	READ_LONG 0x18 flags
+	PATCH_IF ((category >= 15 AND category <= 30 ) OR category = 57 OR category = 69 OR category = 14 OR category = 5 OR category = 31) AND (LONG_AT 0x18 BAND BIT2) BEGIN
 		READ_LONG 0x64 head_off
 		READ_SHORT 0x68 head_cnt
 		cannot_backstab = 0
@@ -285,7 +319,7 @@ COPY_EXISTING_REGEXP ~^.*\.itm~ ~override~
 				
 				LAUNCH_PATCH_MACRO decode_type
 				
-				PATCH_IF IS_AN_INT ~%maybe_proficiency%~ AND maybe_proficiency = proficiency AND type = weapon_type BEGIN
+				PATCH_IF IS_AN_INT ~%maybe_proficiency%~ AND (maybe_proficiency = proficiency OR maybe_proficiency < 80) AND type = weapon_type BEGIN
 					general_rules_row = maybe
 					TEXT_SPRINT comment_general ~%comment%~
 					has_melee = has_melee OR type = 1
@@ -441,8 +475,20 @@ COPY_EXISTING_REGEXP ~^.*\.itm~ ~override~
 					RET
 						mage = value
 				END
+				LAUNCH_PATCH_FUNCTION get_base_from_2da
+					INT_VAR column_number = 19
+						use_enchantment = 0
+					RET
+						attacks_per_round_base = value
+				END
 				LAUNCH_PATCH_FUNCTION get_from_2da
 					INT_VAR column_number = 19
+						use_enchantment = 0
+					RET
+						attacks_per_round = value
+				END
+				LAUNCH_PATCH_FUNCTION get_from_2da
+					INT_VAR column_number = 20
 						use_enchantment = 0
 					RET
 						description = value
@@ -501,8 +547,22 @@ COPY_EXISTING_REGEXP ~^.*\.itm~ ~override~
 			
 			WRITE_LONG 0x1e unusability
 			
-			PATCH_IF druid BEGIN
-				LAUNCH_PATCH_FUNCTION DELETE_ITEM_EQEFFECT_BY_VALUES INT_VAR opcode_to_delete = 319 value1_to_delete = 11 value2_to_delete = 5 END
+			LAUNCH_PATCH_FUNCTION DELETE_ITEM_EQEFFECT_BY_VALUES INT_VAR opcode_to_delete = 319 value1_to_delete = 11 value2_to_delete = 5 END
+			LAUNCH_PATCH_FUNCTION DELETE_ITEM_EQEFFECT_BY_VALUES INT_VAR opcode_to_delete = 319 value1_to_delete = 21 value2_to_delete = 5 END
+			
+		END
+
+		PATCH_IF IS_AN_INT ~%attacks_per_round%~ BEGIN
+			LAUNCH_PATCH_FUNCTION DELETE_ITEM_EQEFFECT_BY_VALUES INT_VAR opcode_to_delete = 1 value1_to_delete = (0 - 1) value2_to_delete = (0 - 1) END
+			
+			PATCH_IF attacks_per_round > 0 BEGIN
+				LAUNCH_PATCH_FUNCTION ADD_ITEM_EQEFFECT
+					INT_VAR opcode = 1
+						parameter1 = attacks_per_round
+						parameter2 = 1
+						target = 1
+						timing = 2
+				END
 			END
 		END
 		
@@ -517,6 +577,8 @@ COPY_EXISTING_REGEXP ~^.*\.itm~ ~override~
 							damage = damage_base
 							speed_factor = speed_factor_base
 							min_strength = min_strength_base
+						STR_VAR
+							attacks_per_round = EVALUATE_BUFFER ~%attacks_per_round_base%~
 					END
 				END
 				SAY_EVALUATED UNIDENTIFIED_DESC ~%desc%~ // write changes
@@ -531,6 +593,8 @@ COPY_EXISTING_REGEXP ~^.*\.itm~ ~override~
 							damage = damage
 							speed_factor = speed_factor
 							min_strength = min_strength
+						STR_VAR
+							attacks_per_round = EVALUATE_BUFFER ~%attacks_per_round%~
 					END
 				END
 				SAY_EVALUATED DESC ~%desc%~ // write changes

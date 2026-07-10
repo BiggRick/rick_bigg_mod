@@ -167,7 +167,7 @@ Requires:
 Weight: 12"
 
 	SAY NAME2 "Ice Star +5"
-	SAY DESC "The Ice Star is a weapon of frigid and relentless power, said to have been pulled from the deepest crevasse of the Reghed Glacier in the frozen north of Icewind Dale. According to ancient skalds, the mace was not forged in a traditional fire, but shaped by the crushing pressure of moving ice and enchanted by a coven of winter hags to serve as a beacon for the coming of an eternal winter. Its head is a spiked sphere of "Everfrost"—a substance as hard as adamantine that never thaws, even when held over a roaring forge.
+	SAY DESC "The Ice Star is a weapon of frigid and relentless power, said to have been pulled from the deepest crevasse of the Reghed Glacier in the frozen north of Icewind Dale. According to ancient skalds, the mace was not forged in a traditional fire, but shaped by the crushing pressure of moving ice and enchanted by a coven of winter hags to serve as a beacon for the coming of an eternal winter. Its head is a spiked sphere of 'Everfrost'—a substance as hard as adamantine that never thaws, even when held over a roaring forge.
 	
 	The most terrifying aspect of the weapon, however, is its ability to channel the primordial winter; at the wielder's command, the mace can exhale a devastating Cone of Cold, a blast of absolute zero that flash-freezes all enemies caught in its path.
 

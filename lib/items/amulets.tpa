@@ -210,7 +210,7 @@ Weight: 1"
 	SAY NAME2 "Amulet of Whispers"
 	SAY DESC "The archmage Ulcaster enjoyed making long speeches in front of his students, filibustering on any number of subjects from arcane theory to the ethics of conjuration. Most of his students enjoyed the lectures, but one of his pupils decided that he would personally stand up to interrupt the stream of words from Ulcaster's mouth.
 
-At the next lecture, the pupil stood up and shouted, "I won't listen to you any longer!" To his horror, no sound issued from his throat. Ulcaster had twisted the chain of an amulet he wore, which rendered every student in the lecture hall utterly silent. The archmage was unaffected, and so carried on his lecture uninhibited.
+At the next lecture, the pupil stood up and shouted, 'I won't listen to you any longer!' To his horror, no sound issued from his throat. Ulcaster had twisted the chain of an amulet he wore, which rendered every student in the lecture hall utterly silent. The archmage was unaffected, and so carried on his lecture uninhibited.
 
 STATISTICS:
 
@@ -252,7 +252,7 @@ Weight: 1"
 
 
 //THE CLAW OF KAZGAROTH - no good - 7500mo//
-COPY "rick_bigg_mod/items/MISC2.itm" "override"
+COPY "rick_bigg_mod/items/MISC72.itm" "override"
 	SAY NAME1 "Claw"
 	SAY UNIDENTIFIED_DESC "This appears to be the claw of some great beast, perhaps a dragon of sorts.
 
@@ -317,7 +317,7 @@ STATISTICS:
 Weight: 1"
 
 	SAY NAME2 "Periapt of Life Protection"
-	SAY DESC "A heart-sized sapphire sits at the end of a thin silver wire. When worn, this periapt radiates life energy, infusing the wearer with power. The inscription on the back reads: "Against Death we must all fail, but with this gem we may still prevail!"
+	SAY DESC "A heart-sized sapphire sits at the end of a thin silver wire. When worn, this periapt radiates life energy, infusing the wearer with power. The inscription on the back reads: 'Against Death we must all fail, but with this gem we may still prevail!'
 
 STATISTICS:
 

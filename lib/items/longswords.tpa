@@ -272,8 +272,8 @@ Weight: 3"
 
 //MASTER SWORD +4 - no evil - valore 12000mo//
 COPY "rick_bigg_mod/items/TB#LINK.itm" "override"
-  SAY NAME1 "Long Sword"
-  SAY UNIDENTIFIED_DESC "These swords are usually referred to as double-edged swords, war swords, or military swords. In many cases, the long sword has a single-edged blade. There is no single version of the long sword; the design and length vary from culture to culture and may vary within the same culture depending on the era. Among the most common characteristics of all long swords is their length, which ranges from thirty-five inches to forty-seven inches. In the latter case, the blade is known to take up forty inches of the total length. Most long swords have a double-edged blade and a sharp point at the tip. Despite the tip, the long sword is designed for slashing, not thrusting.
+	SAY NAME1 "Long Sword"
+	SAY UNIDENTIFIED_DESC "These swords are usually referred to as double-edged swords, war swords, or military swords. In many cases, the long sword has a single-edged blade. There is no single version of the long sword; the design and length vary from culture to culture and may vary within the same culture depending on the era. Among the most common characteristics of all long swords is their length, which ranges from thirty-five inches to forty-seven inches. In the latter case, the blade is known to take up forty inches of the total length. Most long swords have a double-edged blade and a sharp point at the tip. Despite the tip, the long sword is designed for slashing, not thrusting.
 
 STATISTICS:
 
@@ -286,8 +286,8 @@ Requires:
 
 Weight: 4"
 
-  SAY NAME2 "Master Sword +4"
-  SAY DESC "Queen Ellesime presents this legendary blade to you with deep solemnity. It is not a weapon born of Faerûn, but a multi-dimensional relic retrieved from the Astral Sea by the high mages of Suldanessellar.According to planar scrolls, this is the "Blade of Evil's Bane" from a distant realm known as Hyrule. It achieved its ultimate form when it was blessed by Princess Zelda, the mortal incarnation of a goddess. The weapon was destined for her chosen champion—a courageous elven youth named Link, the Hero of Legend. Together, Link and Zelda used the sword's sacred light to defeat the demonic kings who threatened their world. For generations after, the blade rested in a stone pedestal deep within a sacred grove, waiting for a worthy successor.Even separated from Hyrule, the sword retains its purpose. Its edge burns with a divine radiance that inflicts devastating wounds upon fiends. Furthermore, it can channel the wielder's inner life force into a piercing beam of pure magic. Ellesime bestows it upon you now, recognizing that your spirit echoes the legendary courage of Link.
+	SAY NAME2 "Master Sword +4"
+	SAY DESC ~Queen Ellesime presents this legendary blade to you with deep solemnity. It is not a weapon born of Faerûn, but a multi-dimensional relic retrieved from the Astral Sea by the high mages of Suldanessellar.According to planar scrolls, this is the "Blade of Evil's Bane" from a distant realm known as Hyrule. It achieved its ultimate form when it was blessed by Princess Zelda, the mortal incarnation of a goddess. The weapon was destined for her chosen champion—a courageous elven youth named Link, the Hero of Legend. Together, Link and Zelda used the sword's sacred light to defeat the demonic kings who threatened their world. For generations after, the blade rested in a stone pedestal deep within a sacred grove, waiting for a worthy successor. Even separated from Hyrule, the sword retains its purpose. Its edge burns with a divine radiance that inflicts devastating wounds upon fiends. Furthermore, it can channel the wielder's inner life force into a piercing beam of pure magic. Ellesime bestows it upon you now, recognizing that your spirit echoes the legendary courage of Link.
 
 STATISTICS:
 
@@ -303,7 +303,7 @@ Type: One-handed
 Requires:
 9 Strength
 
-Weight: 2"
+Weight: 2~
 
 
 
@@ -465,7 +465,7 @@ Weight: 4"
 	SAY NAME2 "Emerald Sword +5"
 	SAY DESC "Many are the legendary tales sung about the Emerald Sword, forged under virgin skies in the Forest of Unicorns. Though his name was forgotten under the rain of a thousand flames, eternal glory was won by the Warrior of Ice, who left the village of Dwarves and quested for this blade beyond the gates of infinity, flying on wings of destiny to the dark tower of abyss, where he won triumph for his magic steel against Dargor, Shadowlord of the Black Mountain.
 	
-	Tempered by the wisdom of the kings, he faced the bloody rage of the titans at the dawn of victory, and brought the power of the dragonflame against the Queen of the dark horizons, freeing the land of immortals from the pride of the tyrant. Only echoes of tragedy are found in the wizard's last rhymes - when demons awoke, the steelgods of the last apocalypse captured the tears of a dying angel and cried the unholy warcry. Flames of revenge burned for the last winged unicorn, until only the symphony of the enchanged lands could be heard riding in the winds of eternity.
+	Tempered by the wisdom of the kings, he faced the bloody rage of the titans at the dawn of victory, and brought the power of the dragonflame against the Queen of the dark horizons, freeing the land of immortals from the pride of the tyrant. Only echoes of tragedy are found in the wizard's last rhymes - when demons awoke, the steelgods of the last apocalypse captured the tears of a dying angel. Flames of revenge burned for the last winged unicorn, until only the symphony of the enchanged lands could be heard riding in the winds of eternity.
 	
 	It is a mystery how this blade made to Volo's hand - perhaps trolls in the dark stole it, or perhaps only the poem's evil page can tell.
 

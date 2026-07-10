@@ -107,7 +107,7 @@ Equipped abilities:
 – Charisma: +1
 – Protects against critical hits
 
-Weight: 2
+Weight: 2"
 
 
 
@@ -182,7 +182,7 @@ Equipped abilities:
 Weight: 2"
 
 	SAY NAME2 "The Guardian Devil"
-	SAY DESC "This dark, obsidian-wrought helmet feels unnaturally warm to the touch, and faint, guttural whispers can be heard emanating from within the visor. It is said that a minor Tanar'ri was bound into the metal by a desperate warlock who sought protection at any cost. The demon within does not serve out of loyalty, but out of a perverse desire to keep its "host" alive just to witness more suffering. When the wearer is struck in combat, the entity's rage flares, briefly lashing out to reinforce the wearer's physical form with abyssal energy.
+	SAY DESC "This dark, obsidian-wrought helmet feels unnaturally warm to the touch, and faint, guttural whispers can be heard emanating from within the visor. It is said that a minor Tanar'ri was bound into the metal by a desperate warlock who sought protection at any cost. The demon within does not serve out of loyalty, but out of a perverse desire to keep its 'host' alive just to witness more suffering. When the wearer is struck in combat, the entity's rage flares, briefly lashing out to reinforce the wearer's physical form with abyssal energy.
 
 STATISTICS:
 
@@ -398,7 +398,7 @@ Equipped abilities:
 Weight: 2"
 
 	SAY NAME2 "Helm of the Rock"
-	SAY DESC "This ancient crown, carved from the deep bedrock of the Tethir Mountains, is a relic of the legendary giant-slayers of old. Imbued with the primal weight of the earth itself, the helm anchors the wearer’s mind and body against the most jarring assaults. Those who wear it claim to feel as immovable as a mountain; no blow, however thunderous, can rattle their resolve or cloud their senses."
+	SAY DESC "This ancient crown, carved from the deep bedrock of the Tethir Mountains, is a relic of the legendary giant-slayers of old. Imbued with the primal weight of the earth itself, the helm anchors the wearer’s mind and body against the most jarring assaults. Those who wear it claim to feel as immovable as a mountain; no blow, however thunderous, can rattle their resolve or cloud their senses.
 
 STATISTICS:
 

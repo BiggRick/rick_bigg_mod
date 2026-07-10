@@ -327,7 +327,7 @@ Weight: 25
 "
 
 	SAY NAME2 "Grandmaster's Armor +5"
-	SAY DESC "This legendary suit of leather armor was allegedly crafted for an assassin who found the shadows too restrictive. Imbued with the essence of a thousand redirected gazes, the armor vibrates with a faint, unsettling hum. While most rogues fear the direct approach, the wearer of this suit finds that the "front" is merely a matter of perspective.Its most fearsome enchantment, known as "The Faceless Strike," allows the wearer to bypass a victim's natural instinct to defend. If the wearer is invisible or hidden in shadows, they do not need to seek their enemy's back; the armor warps the attacker's presence so completely that even a strike delivered face-to-face is felt as a lethal, unsuspecting backstab.
+	SAY DESC "This legendary suit of leather armor was allegedly crafted for an assassin who found the shadows too restrictive. Imbued with the essence of a thousand redirected gazes, the armor vibrates with a faint, unsettling hum. While most rogues fear the direct approach, the wearer of this suit finds that the 'front' is merely a matter of perspective. Its most fearsome enchantment, known as 'The Faceless Strike', allows the wearer to bypass a victim's natural instinct to defend. If the wearer is invisible or hidden in shadows, they do not need to seek their enemy's back; the armor warps the attacker's presence so completely that even a strike delivered face-to-face is felt as a lethal, unsuspecting backstab.
 
 STATISTICS:
 

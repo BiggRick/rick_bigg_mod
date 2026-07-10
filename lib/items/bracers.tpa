@@ -249,7 +249,7 @@ Weight: 2"
 
 //GAUNTLETS OF UNDEAD CONTROL - 2500mo - no buoni//
 COPY "rick_bigg_mod/items/BRAC08.itm" "override"
-	SAY NAME1 SAY NAME1 "Gauntlets"
+	SAY NAME1 "Gauntlets"
 	SAY UNIDENTIFIED_DESC "Gauntlets are armored gloves. They can be made of leather, metal plates, or chain mail. Every suit of armor is assumed to include gauntlets of an appropriate type. Magical gauntlets tend to be finer, lighter, and more easily worn than normal varieties.
 
 STATISTICS:
@@ -272,7 +272,7 @@ Weight: 2"
 
 //GLOVES OF PICKPOCKETING - 2500mo - no buoni//
 COPY "rick_bigg_mod/items/BRAC17.itm" "override"
-	SAY NAME1 SAY NAME1 "Gauntlets"
+	SAY NAME1 "Gauntlets"
 	SAY UNIDENTIFIED_DESC "Gauntlets are armored gloves. They can be made of leather, metal plates, or chain mail. Every suit of armor is assumed to include gauntlets of an appropriate type. Magical gauntlets tend to be finer, lighter, and more easily worn than normal varieties.
 
 STATISTICS:
@@ -295,7 +295,7 @@ Weight: 2"
 
 //GLOVES OF PERSEVERANCE - 3500mo - solo chierici e paladini - no malvagi//
 COPY "rick_bigg_mod/items/BDBRAC15.itm" "override"
-	SAY NAME1 SAY NAME1 "Gauntlets"
+	SAY NAME1 "Gauntlets"
 	SAY UNIDENTIFIED_DESC "Gauntlets are armored gloves. They can be made of leather, metal plates, or chain mail. Every suit of armor is assumed to include gauntlets of an appropriate type. Magical gauntlets tend to be finer, lighter, and more easily worn than normal varieties.
 
 STATISTICS:
@@ -308,7 +308,7 @@ Weight: 2"
 STATISTICS:
 
 Combat abilities:
-– When the wearer suffers a critical miss, <PRO_HESHE> is affected by the Aid spell
+– When the wearer suffers a critical miss, they are affected by the Aid spell
 
 Weight: 2"
 
@@ -319,9 +319,9 @@ Weight: 2"
 
 
 
-GAUNTLETS OF THE DUELLIST - 1500mo - no maghi, chierici e druidi //
+//GAUNTLETS OF THE DUELLIST - 1500mo - no maghi, chierici e druidi //
 COPY "rick_bigg_mod/items/BRAC18.itm" "override"
-	SAY NAME1 SAY NAME1 "Gauntlets"
+	SAY NAME1 "Gauntlets"
 	SAY UNIDENTIFIED_DESC "Gauntlets are armored gloves. They can be made of leather, metal plates, or chain mail. Every suit of armor is assumed to include gauntlets of an appropriate type. Magical gauntlets tend to be finer, lighter, and more easily worn than normal varieties.
 
 STATISTICS:
@@ -342,9 +342,9 @@ Weight: 2"
 
 
 
-GLOVES OF HEALING - 6500mo - solo paladini e chierici buoni //
+//GLOVES OF HEALING - 6500mo - solo paladini e chierici buoni //
 COPY "rick_bigg_mod/items/BRAC20.itm" "override"
-	SAY NAME1 SAY NAME1 "Gauntlets"
+	SAY NAME1 "Gauntlets"
 	SAY UNIDENTIFIED_DESC "Gauntlets are armored gloves. They can be made of leather, metal plates, or chain mail. Every suit of armor is assumed to include gauntlets of an appropriate type. Magical gauntlets tend to be finer, lighter, and more easily worn than normal varieties.
 
 STATISTICS:
@@ -378,7 +378,7 @@ STATISTICS:
 Weight: 2"
 
 	SAY NAME2 "Bracers of Blinding Strike"
-	SAY DESC "Vorn, a ruthless drow warrior of House Barrison Del'Armgo, often said, "Attack swiftly and your enemy will be so overwhelmed that the battle will be yours." He lived this principle through these bracers. Before engaging in bloody ambush, he would unlock the magic of the Blinding Strike and quickly rush at his enemy. More often than not, his opponent would fall within the first few seconds of battle.
+	SAY DESC "Vorn, a ruthless drow warrior of House Barrison Del'Armgo, often said, 'Attack swiftly and your enemy will be so overwhelmed that the battle will be yours.' He lived this principle through these bracers. Before engaging in bloody ambush, he would unlock the magic of the Blinding Strike and quickly rush at his enemy. More often than not, his opponent would fall within the first few seconds of battle.
 
 STATISTICS:
 
