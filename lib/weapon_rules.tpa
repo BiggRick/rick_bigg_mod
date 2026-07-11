@@ -546,7 +546,7 @@ COPY_EXISTING_REGEXP ~^.*\.itm$~ ~override~
 			thiefbits = BIT9 BOR BIT16 BOR BIT17 BOR BIT19 BOR BIT22
 			bardbits = BIT6
 			magebits = BIT18
-			shortiesbit = BIT24 BOR BIT26 BOR BIT28
+			shortiesbit = BIT26 BOR BIT28
 			
 			unusability = cleric ? unusability BAND BNOT clericbits : unusability BOR clericbits
 			unusability = druid  ? unusability BAND BNOT  druidbits : unusability BOR  druidbits

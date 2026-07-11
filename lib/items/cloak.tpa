@@ -404,7 +404,7 @@ STATISTICS:
 Weight: 3"
 
 	SAY NAME2 "Cloak of Invulnerability"
-	SAY DESC "Though it feels much like normal cloth, this shimmering cloak has on occasion been described as "woven water." Its true enchantment becomes apparent when the wearer is attacked directly by magic, and all damage caused by spell effects is deflected harmlessly away.
+	SAY DESC "Though it feels much like normal cloth, this shimmering cloak has on occasion been described as 'woven water'. Its true enchantment becomes apparent when the wearer is attacked directly by magic, and all damage caused by spell effects is deflected harmlessly away.
 
 STATISTICS:
 
@@ -544,7 +544,7 @@ Weight: 3"
 
 
 
-
+/*
 //RANGER CLOAK - 4500mo - solo ranger//
 COPY "rick_bigg_mod/items/TB#CLCKR.itm" "override"
 	SAY NAME1 "Cloak"
@@ -568,10 +568,10 @@ Charge abilities:
 - Cast Haste once per day
 
 Weight: 3"
+*/
 
 
-
-
+/*
 //RANGER CLOAK - 4500mo - solo ranger//
 COPY "rick_bigg_mod/items/COMPON16.itm" "override"
 	SAY NAME1 "Cloak"
@@ -592,7 +592,7 @@ Equipped abilities:
 - Missile Resistance: +20%
 
 Weight: 3"
-
+*/
 
 
 

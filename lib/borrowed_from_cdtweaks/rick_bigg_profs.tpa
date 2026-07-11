@@ -264,7 +264,7 @@ ACTION_FOR_EACH file IN weapprof racethac BEGIN
 			END
 			SET_2DA_ENTRY skip_rows + 10 label_col col_num UNUSED // ref
 			SET cd_95_name = RESOLVE_STR_REF(~Small Sword~)
-			SET cd_95_desc = RESOLVE_STR_REF(~SMALL SWORDS: This weapon class allows the character to use short swords and daggers. Druids can choose this category, but are restricted to daggers only.
+			SET cd_95_desc = RESOLVE_STR_REF(~SMALL SWORDS: This weapon class allows the character to use short swords and daggers. Druids can choose this category, but are restricted to daggers only. Thieves can backstab with these weapons.
 
 <DOTS1>
 
@@ -276,7 +276,7 @@ ACTION_FOR_EACH file IN weapprof racethac BEGIN
 
 <DOTS5>~)
 			SET cd_96_name = RESOLVE_STR_REF(~Large Sword~)
-			SET cd_96_desc = RESOLVE_STR_REF(~LARGE SWORDS: This weapon class allows the character to use bastard swords and long swords. Thieves can choose this category, but are restricted to long swords only.
+			SET cd_96_desc = RESOLVE_STR_REF(~LARGE SWORDS: This weapon class allows the character to use bastard swords and long swords. Only fighters, rangers and paladins can wield bastard swords, unless they are a gnome or halfling. Thieves can backstab with long swords.
 
 <DOTS1>
 
@@ -300,7 +300,7 @@ ACTION_FOR_EACH file IN weapprof racethac BEGIN
 
 <DOTS5>~)
 			SET cd_98_name = RESOLVE_STR_REF(~Two Handed Swords~)
-			SET cd_98_desc = RESOLVE_STR_REF(~TWO HANDED SWORDS: This weapon class allows the character to use two handed swords.
+			SET cd_98_desc = RESOLVE_STR_REF(~TWO HANDED SWORDS: This weapon class allows the character to use two handed swords. *IMPORTANT*: gnomes and halflings and choose this category but they are unable to wield any such weapons.
 
 <DOTS1>
 
@@ -312,7 +312,7 @@ ACTION_FOR_EACH file IN weapprof racethac BEGIN
 
 <DOTS5>~)
 			SET cd_99_name = RESOLVE_STR_REF(~Polearms~)
-			SET cd_99_desc = RESOLVE_STR_REF(~POLEARMS: This weapon class allows the character to use spears and halberds. Druids can choose this category, but are restricted to spears only.
+			SET cd_99_desc = RESOLVE_STR_REF(~POLEARMS: This weapon class allows the character to use spears and halberds. Only fighters, rangers and paladins can wield halberds, unless they are a gnome or halfling.
 
 <DOTS1>
 
@@ -336,7 +336,7 @@ ACTION_FOR_EACH file IN weapprof racethac BEGIN
 
 <DOTS5>~)
 			SET cd_101_name = RESOLVE_STR_REF(~Maces~)
-			SET cd_101_desc = RESOLVE_STR_REF(~MACES: This weapon class allows the character to use clubs, maces and morning stars. Druids and thieves can choose this category, but are restricted to clubs only.
+			SET cd_101_desc = RESOLVE_STR_REF(~MACES: This weapon class allows the character to use clubs, maces and morning stars. Druids and thieves can choose this category, but are restricted to clubs only. Bards cannot wield morning stars.
 
 <DOTS1>
 
@@ -384,7 +384,7 @@ ACTION_FOR_EACH file IN weapprof racethac BEGIN
 
 <DOTS5>~)
 			SET cd_105_name = RESOLVE_STR_REF(~Bows~)
-			SET cd_105_desc = RESOLVE_STR_REF(~BOWS: This weapon class allows the character to use shortbows, longbows and composite longbows. Thieves can choose this category, but are restricted to shortbows only.
+			SET cd_105_desc = RESOLVE_STR_REF(~BOWS: This weapon class allows the character to use shortbows, longbows and composite longbows. Thieves, druids, gnomes and halflings can choose this category, but are restricted to shortbows only. Only fighters, rangers and paladins can wield composite longbows.
 
 <DOTS1>
 
@@ -396,7 +396,7 @@ ACTION_FOR_EACH file IN weapprof racethac BEGIN
 
 <DOTS5>~)
 			SET cd_106_name = RESOLVE_STR_REF(~Crossbows~)
-			SET cd_106_desc = RESOLVE_STR_REF(~CROSSBOWS: This weapon class allows the character to use light and heavy crossbows. Thieves can choose this category, but are restricted to light crossbows only.
+			SET cd_106_desc = RESOLVE_STR_REF(~CROSSBOWS: This weapon class allows the character to use light and heavy crossbows. Only fighters, rangers and paladins can wield heavy crossbows.
 
 <DOTS1>
 
