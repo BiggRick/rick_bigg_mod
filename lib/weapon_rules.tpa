@@ -285,6 +285,7 @@ COPY_EXISTING_REGEXP ~^.*\.itm$~ ~override~
 		TEXT_SPRINT thief ~_~
 		TEXT_SPRINT bard ~_~
 		TEXT_SPRINT mage ~_~
+		TEXT_SPRINT shorties ~_~
 		TEXT_SPRINT damage_type_desc ~~
 		TEXT_SPRINT melee_damage_type_desc ~~
 		TEXT_SPRINT thrown_damage_type_desc ~~
@@ -475,20 +476,26 @@ COPY_EXISTING_REGEXP ~^.*\.itm$~ ~override~
 					RET
 						mage = value
 				END
-				LAUNCH_PATCH_FUNCTION get_base_from_2da
+				LAUNCH_PATCH_FUNCTION get_from_2da
 					INT_VAR column_number = 19
+						use_enchantment = 0
+					RET
+						shorties = value
+				END
+				LAUNCH_PATCH_FUNCTION get_base_from_2da
+					INT_VAR column_number = 20
 						use_enchantment = 0
 					RET
 						attacks_per_round_base = value
 				END
 				LAUNCH_PATCH_FUNCTION get_from_2da
-					INT_VAR column_number = 19
+					INT_VAR column_number = 20
 						use_enchantment = 0
 					RET
 						attacks_per_round = value
 				END
 				LAUNCH_PATCH_FUNCTION get_from_2da
-					INT_VAR column_number = 20
+					INT_VAR column_number = 21
 						use_enchantment = 0
 					RET
 						description = value
@@ -511,6 +518,7 @@ COPY_EXISTING_REGEXP ~^.*\.itm$~ ~override~
 					END
 				END
 			END
+
 		END
 		PATCH_IF cannot_backstab BEGIN
 			LAUNCH_PATCH_FUNCTION ADD_ITEM_EQEFFECT
@@ -530,7 +538,7 @@ COPY_EXISTING_REGEXP ~^.*\.itm$~ ~override~
 			END
 		END
 		
-		PATCH_IF IS_AN_INT ~%cleric%~ AND IS_AN_INT ~%druid%~ AND IS_AN_INT ~%thief%~ AND IS_AN_INT ~%bard%~ AND IS_AN_INT ~%mage%~ AND NOT (LONG_AT 0x1e BAND BIT11) BEGIN
+		PATCH_IF IS_AN_INT ~%cleric%~ AND IS_AN_INT ~%druid%~ AND IS_AN_INT ~%thief%~ AND IS_AN_INT ~%bard%~ AND IS_AN_INT ~%mage%~ AND NOT (LONG_AT 0x1e BAND BIT11) AND IS_AN_INT ~%shorties%~ BEGIN
 			READ_LONG 0x1e unusability
 			
 			clericbits = BIT7 BOR BIT8 BOR BIT10 BOR BIT14 BOR BIT15
@@ -538,18 +546,17 @@ COPY_EXISTING_REGEXP ~^.*\.itm$~ ~override~
 			thiefbits = BIT9 BOR BIT16 BOR BIT17 BOR BIT19 BOR BIT22
 			bardbits = BIT6
 			magebits = BIT18
+			shortiesbit = BIT24 BOR BIT26 BOR BIT28
 			
 			unusability = cleric ? unusability BAND BNOT clericbits : unusability BOR clericbits
 			unusability = druid  ? unusability BAND BNOT  druidbits : unusability BOR  druidbits
 			unusability = thief  ? unusability BAND BNOT  thiefbits : unusability BOR  thiefbits
 			unusability = bard   ? unusability BAND BNOT   bardbits : unusability BOR   bardbits
 			unusability = mage   ? unusability BAND BNOT   magebits : unusability BOR   magebits
+			unusability = shorties ? unusability BAND BNOT shortiesbit : unusability BOR shortiesbit
 			
 			WRITE_LONG 0x1e unusability
-			
-			LAUNCH_PATCH_FUNCTION DELETE_ITEM_EQEFFECT_BY_VALUES INT_VAR opcode_to_delete = 319 value1_to_delete = 11 value2_to_delete = 5 END
-			LAUNCH_PATCH_FUNCTION DELETE_ITEM_EQEFFECT_BY_VALUES INT_VAR opcode_to_delete = 319 value1_to_delete = 21 value2_to_delete = 5 END
-			
+
 		END
 
 		PATCH_IF IS_AN_INT ~%attacks_per_round%~ BEGIN

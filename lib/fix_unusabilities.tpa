@@ -3,6 +3,8 @@ OUTER_SET ignore_u1 = BIT0 BOR BIT1 BOR BIT2 BOR BIT3 BOR BIT4 BOR BIT5 BOR BIT6
 OUTER_SET ignore_u2 = BIT0 BOR BIT1 BOR BIT3 BOR BIT5 BOR BIT6 BOR BIT7
 OUTER_SET ignore_u3 = BIT7
 OUTER_SET ignore_u4 = BIT2 BOR BIT3 BOR BIT4 BOR BIT5
+OUTER_SET cleric_ranger = BIT7 BOR BIT21
+OUTER_SET alignment = BIT0 BOR BIT1 BOR BIT2 BOR BIT3 BOR BIT4 BOR BIT5
 
 
 COPY_EXISTING_REGEXP ~^.*\.itm$~ ~override~
@@ -13,46 +15,18 @@ COPY_EXISTING_REGEXP ~^.*\.itm$~ ~override~
             WRITE_SHORT 0x2f (BYTE_AT 0x2f BAND (BNOT BIT1))
         END
 
-        READ_LONG 0x1e main_unusabilities
-        READ_BYTE 0x29 unusability_1
-        READ_BYTE 0x2b unusability_2
-        READ_BYTE 0x2d unusability_3
-        READ_BYTE 0x2f unusability_4
-
-        total_relevant_unus = 0
-
-        FOR (bit = 0; bit < 32; bit += 1) BEGIN
-            total_relevant_unus = total_relevant_unus + ((main_unusabilities BAND EVALUATE_BUFFER ~BIT%bit%~) > 0)
-        END
-
-        FOR (byte = 1; byte <= 4; byte += 1) BEGIN
-            FOR (bit = 0; bit < 9; bit += 1) BEGIN
-                total_relevant_unus = total_relevant_unus + ((EVALUATE_BUFFER ~unusability_%byte%~ BAND EVALUATE_BUFFER ~BIT%bit%~) > 0)
-            END
-        END
-
         LAUNCH_PATCH_FUNCTION DELETE_ITEM_EQEFFECT_BY_VALUES INT_VAR opcode_to_delete = 319 value1_to_delete = 11 value2_to_delete = 5 END
         LAUNCH_PATCH_FUNCTION DELETE_ITEM_EQEFFECT_BY_VALUES INT_VAR opcode_to_delete = 319 value1_to_delete = 21 value2_to_delete = 5 END
 
-        PATCH_IF total_relevant_unus > 20 BEGIN
-            WRITE_LONG 0x1e main_unusabilities BOR ignore_ma
-            WRITE_BYTE 0x29 unusability_1 BOR ignore_u1
-            WRITE_BYTE 0x2b unusability_2 BOR ignore_u2
-            WRITE_BYTE 0x2d unusability_3 BOR ignore_u3
-            WRITE_BYTE 0x2f unusability_4 BOR ignore_u4
-            LAUNCH_PATCH_FUNCTION ADD_ITEM_EQEFFECT
-                INT_VAR opcode = 319
-                    parameter1 = 21
-                    parameter2 = 5
-                    target = 1
-                    timing = 2
-            END
-        END ELSE BEGIN
-            WRITE_LONG 0x1e main_unusabilities BAND BNOT ignore_ma
-            WRITE_BYTE 0x29 unusability_1 BAND BNOT ignore_u1
-            WRITE_BYTE 0x2b unusability_2 BAND BNOT ignore_u2
-            WRITE_BYTE 0x2d unusability_3 BAND BNOT ignore_u3
-            WRITE_BYTE 0x2f unusability_4 BAND BNOT ignore_u4
+        WRITE_BYTE 0x29 BYTE_AT 0x29 BAND BNOT ignore_u1
+        WRITE_BYTE 0x2b BYTE_AT 0x2b BAND BNOT ignore_u2
+        WRITE_BYTE 0x2d BYTE_AT 0x2d BAND BNOT ignore_u3
+        WRITE_BYTE 0x2f BYTE_AT 0x2f BAND BNOT ignore_u4
+        
+        PATCH_IF (LONG_AT 0x1e BAND cleric_ranger) == cleric_ranger BEGIN
+            WRITE_LONG 0x1e LONG_AT 0x1e BOR BIT10
+        END ELSE PATCH_IF (BNOT LONG_AT 0x1e BAND cleric_ranger) == cleric_ranger BEGIN
+            WRITE_LONG 0x1e LONG_AT 0x1e BAND BNOT BIT10
         END
     END
 BUT_ONLY
