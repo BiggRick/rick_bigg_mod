@@ -1,13 +1,13 @@
-//CLOACK OF PROTECTION +1 - valore 3500mo//
+//CLOAK OF PROTECTION +1 - valore 3500mo//
 COPY "rick_bigg_mod/items/CLCK01.itm" "override"
-	SAY NAME1 "Cloack"
+	SAY NAME1 "Cloak"
 	SAY UNIDENTIFIED_DESC "The cloak can be made in every possible shape with just about every type of fabric. The most common forms are a circular piece of fabric with a hole in the center for the head, and fabric draped from neck, connected by a chain, brooch, cord, or pins.
 
 STATISTICS:
 
 Weight: 3"
 
-	SAY NAME2 "Cloack of Protection +1"
+	SAY NAME2 "Cloak of Protection +1"
 	SAY DESC "This simple cloak has been imbued with magical properties to help protect its wearer. It does so by affecting both Saving Throws and Armor Class. It is ideal for Mages and others who cannot wear bulkier or more restrictive types of armor.
 
 STATISTICS:
@@ -18,6 +18,52 @@ Equipped abilities:
 
 Weight: 3"
 
+
+
+
+//CLOAK OF PROTECTION +2 - valore 7000mo//
+COPY "rick_bigg_mod/items/CLCK02.itm" "override"
+	SAY NAME1 "Cloak"
+	SAY UNIDENTIFIED_DESC "The cloak can be made in every possible shape with just about every type of fabric. The most common forms are a circular piece of fabric with a hole in the center for the head, and fabric draped from neck, connected by a chain, brooch, cord, or pins.
+
+STATISTICS:
+
+Weight: 3"
+
+	SAY NAME2 "Cloak of Protection +2"
+	SAY DESC "This simple cloak has been imbued with powerful magical properties to help protect its wearer. It does so by affecting both Saving Throws and Armor Class. It is ideal for Mages and others who cannot wear bulkier or more restrictive types of armor.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +2
+– Saving Throws: +2
+
+Weight: 3"
+
+
+
+//CLOAK OF PROTECTION +3 - valore 14000mo//
+COPY "rick_bigg_mod/items/CLCK31.itm" "override"
+	SAY NAME1 "Cloak"
+	SAY UNIDENTIFIED_DESC "The cloak can be made in every possible shape with just about every type of fabric. The most common forms are a circular piece of fabric with a hole in the center for the head, and fabric draped from neck, connected by a chain, brooch, cord, or pins.
+
+STATISTICS:
+
+Weight: 3"
+
+	SAY NAME2 "Cloak of Protection +3"
+	SAY DESC "This simple cloak has been imbued with powerful magical properties to help protect its wearer. It does so by affecting both Saving Throws and Armor Class. It is ideal for Mages and others who cannot wear bulkier or more restrictive types of armor.
+	
+	Now that it has been enhanced from its previous state, its defensive capabilities are stronger than ever before.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +3
+– Saving Throws: +3
+
+Weight: 3"
 
 
 
@@ -45,22 +91,26 @@ Weight: 3"
 
 
 
-//CLOACK OF THE WOLF - valore 5000mo//
+//CLOAK OF THE WOLF - valore 5000mo//
 COPY "rick_bigg_mod/items/CLCK04.itm" "override"
-	SAY NAME1 "Cloack"
+	SAY NAME1 "Cloak"
 	SAY UNIDENTIFIED_DESC "The cloak can be made in every possible shape with just about every type of fabric. The most common forms are a circular piece of fabric with a hole in the center for the head, and fabric draped from neck, connected by a chain, brooch, cord, or pins.
 
 STATISTICS:
 
 Weight: 3"
 
-	SAY NAME2 "Cloack of the Wolf"
+	SAY NAME2 "Cloak of the Wolf"
 	SAY DESC "A great amount of irony surrounds the creation of this magical cloak. Relair was a mage who overestimated the amount of control he had over magic, and in the course of creating this garment, he apparently inflicted lycanthropy upon himself. The wearer can change form whenever <PRO_HESHE> wishes. Relair was not so lucky.
 
 STATISTICS:
 
+Equipped abilities:
+- Armor Class: +1
+
 Charge abilities:
 – Polymorph into a Werewolf once per day
+  Duration: 2 turns
 
 Weight: 3"
 
@@ -227,7 +277,7 @@ STATISTICS:
 Weight: 3"
 
 	SAY NAME2 "Matick's Shroud"
-	SAY DESC "This heavy, shimmering cloak was crafted by the legendary archmage Matick, the brilliant wizard credited with inventing the ubiquitous Magic Missile spell. During his research into raw Evocation, Matick became terrified that his own deadly creation would be turned against him by jealous rivals.To safeguard his life, he spent decades weaving this shroud to perfectly ground out the specific frequencies of his signature spell. Ironically, the master of offensive magic created the ultimate defensive garment, ensuring no apprentice could ever destroy the teacher with his own creation.
+	SAY DESC "This cloak was crafted by the legendary archmage Matick, the brilliant wizard credited with inventing the ubiquitous Magic Missile spell. During his research into raw Evocation, Matick became terrified that his own deadly creation would be turned against him by jealous rivals.To safeguard his life, he spent decades weaving this shroud to perfectly ground out the specific frequencies of his signature spell. Ironically, the master of offensive magic created the ultimate defensive garment, ensuring no apprentice could ever destroy the teacher with his own creation.
 
 STATISTICS:
 
@@ -238,5 +288,336 @@ Equipped abilities:
 - Cold Resistance: +20%
 - Electricity Resistance: +20%
 - Magical Damage Resistance: +20%
+
+Weight: 3"
+
+
+
+
+//CLOAK OF THE SEWERS - 4500mo//
+COPY "rick_bigg_mod/items/CLCK27.itm" "override"
+	SAY NAME1 "Cloak"
+	SAY UNIDENTIFIED_DESC "The cloak can be made in every possible shape with just about every type of fabric. The most common forms are a circular piece of fabric with a hole in the center for the head, and fabric draped from neck, connected by a chain, brooch, cord, or pins.
+
+STATISTICS:
+
+Weight: 3"
+
+	SAY NAME2 "Cloak of the Sewers"
+	SAY DESC "For a sewer-dweller like Ivan, survival meant going where others refused. Hiding from thugs, Ivan went so deep into the sewers beneath Atkhatla that he found natural caves, some of which opened to the ocean. Within one cave, Ivan discovered what he thought was a ruined cloak, all torn and stained. He tossed it into the fire he started, but it would not burn. Curious, he donned it, and with some prying, he discovered its hidden abilities. With the right command, he could shift into a mustard jelly.
+
+STATISTICS:
+
+Equipped abilities:
+– Immunity to disease
+
+Charge abilities:
+– Polymorph into a Mustard Jelly once per day
+  Duration: 2 turns
+"
+
+
+
+
+
+
+//CLOAK OF THE STRANGE BEAST - 3000mo//
+COPY "rick_bigg_mod/items/BDLOINCL.itm" "override"
+	SAY NAME1 "Cloak"
+	SAY UNIDENTIFIED_DESC "The cloak can be made in every possible shape with just about every type of fabric. The most common forms are a circular piece of fabric with a hole in the center for the head, and fabric draped from neck, connected by a chain, brooch, cord, or pins.
+
+STATISTICS:
+
+Weight: 3"
+
+	SAY NAME2 "Cloak of the Strange Beast"
+	SAY DESC "This thick pelt can be worn as a cloak by human-sized creatures, or a loincloth by larger creatures. The beast that contributed its hide for this item is a mystery, but long slashes in skin indicate it was stabbed to death with sharp objects. Due to its enchanted nature, a faint pulse of ancient life force still courses through the thick fur, knitting the wearer's wounds and gradually restoring their vitality over time. However, its crude and monstrous appearance makes the wearer look deeply unsettling, severely hindering their social interactions.
+
+STATISTICS:
+
+Equipped abilities:
+– Regenerate 1 Hit Point every round
+– Charisma: -2
+
+Weight: 3
+"
+
+
+
+
+//SABLE CLOAK - 4000mo//
+COPY "rick_bigg_mod/items/BDCLCK02.itm" "override"
+	SAY NAME1 "Cloak"
+	SAY UNIDENTIFIED_DESC "The cloak can be made in every possible shape with just about every type of fabric. The most common forms are a circular piece of fabric with a hole in the center for the head, and fabric draped from neck, connected by a chain, brooch, cord, or pins.
+
+STATISTICS:
+
+Weight: 3"
+
+	SAY NAME2 "Sable Cloak"
+	SAY DESC "An intrepid explorer commissioned this luxurious sable cloak before venturing into the perilous Spine of the World, where an ancient white dragon was rumored to hunt. Woven with protective abjurations, the dark fur shielded her perfectly from the dragon's icy breath and the numbing winds of the north. After returning safely to the warmth of the south, she sold the magical garment, claiming she no longer had use for the cold.
+
+STATISTICS:
+
+Equipped abilities:
+– Cold Resistance: +40%
+– Immunity to slow
+
+Weight: 3
+"
+
+
+
+
+//CLOAK OF THE STARS - 4000mo//
+COPY "rick_bigg_mod/items/CLCK25.itm" "override"
+	SAY NAME1 "Cloak"
+	SAY UNIDENTIFIED_DESC "The cloak can be made in every possible shape with just about every type of fabric. The most common forms are a circular piece of fabric with a hole in the center for the head, and fabric draped from neck, connected by a chain, brooch, cord, or pins.
+
+STATISTICS:
+
+Weight: 3"
+
+	SAY NAME2 "Cloak of the Stars"
+	SAY DESC "Created by ancient elven astrologers during a rare alignment of the Tears of Selûne, this celestial relic is permanently infused with the protective essence of the night sky. The silver constellation patterns along the trim hold a defensive enchantment linked directly to the cosmos, causing the fabric to flash with a sharp burst of astral energy whenever the wearer is struck in combat.
+	
+Equipped abilities:
+– Magic resistance: +5%
+
+Combat abilities:
+- 10% chance on hit to deal 10 magic damage to attacker
+
+Weight: 3
+"
+
+
+
+
+
+//CLOAK OF INVULNERABILITY - 8500mo//
+COPY "rick_bigg_mod/items/CLCK26.itm" "override"
+	SAY NAME1 "Cloak"
+	SAY UNIDENTIFIED_DESC "The cloak can be made in every possible shape with just about every type of fabric. The most common forms are a circular piece of fabric with a hole in the center for the head, and fabric draped from neck, connected by a chain, brooch, cord, or pins.
+
+STATISTICS:
+
+Weight: 3"
+
+	SAY NAME2 "Cloak of Invulnerability"
+	SAY DESC "Though it feels much like normal cloth, this shimmering cloak has on occasion been described as "woven water." Its true enchantment becomes apparent when the wearer is attacked directly by magic, and all damage caused by spell effects is deflected harmlessly away.
+
+STATISTICS:
+
+Charge abilities:
+– Deflects all spell damage. This includes offensive spells like Magic Missile, but not disabling (non-damage) spells such as Hold Person once per day
+   Duration: 1 turn
+
+Weight: 3
+"
+
+
+
+
+//CLOAK OF REFLECTION - 5000mo//
+COPY "rick_bigg_mod/items/CLCK24.itm" "override"
+	SAY NAME1 "Cloak"
+	SAY UNIDENTIFIED_DESC "The cloak can be made in every possible shape with just about every type of fabric. The most common forms are a circular piece of fabric with a hole in the center for the head, and fabric draped from neck, connected by a chain, brooch, cord, or pins.
+
+STATISTICS:
+
+Weight: 3"
+
+	SAY NAME2 "Cloak of Reflection"
+	SAY DESC "Vorn Druidslayer crafted this cloak and used it with great success in his campaign to eliminate the druids from all the woods south of Baldur's Gate. His campaign ended abruptly when he encountered a flock of wyverns, who were attracted by the cloak's sheen. They killed Vorn and used the cloak to cover their nest, serving to protect their young during electrical storms.
+
+STATISTICS:
+
+Equipped abilities:
+– Electrical Resistance: 40%
+– Reflects all electrical damage back to the source
+
+Weight: 3
+"
+
+
+
+//CLOAK OF ELVENKIND - 4500mo - solo ladri e ranger//
+COPY "rick_bigg_mod/items/CLCK23.itm" "override"
+	SAY NAME1 "Cloak"
+	SAY UNIDENTIFIED_DESC "The cloak can be made in every possible shape with just about every type of fabric. The most common forms are a circular piece of fabric with a hole in the center for the head, and fabric draped from neck, connected by a chain, brooch, cord, or pins.
+
+STATISTICS:
+
+Weight: 3"
+
+	SAY NAME2 "Cloak of Elvenkind"
+	SAY DESC "This green cloak resembles a normal cloak. Wearing it makes any person able to hide in shadows with astonishing ability. Its enchanted fabric also hardens against incoming strikes, deflecting blows with ease. As per the Thief ability though, the moment the wearer attacks or otherwise makes his/her presence known, the wearer must leave the shadows.
+
+STATISTICS:
+
+Equipped abilities:
+– Hide In Shadows: +40%
+- Armor Class: +1
+
+Weight: 3
+"
+
+
+
+//CLOAK OF THE DARK MOON - 5500mo - no buoni//
+COPY "rick_bigg_mod/items/OHRCLCK4.itm" "override"
+	SAY NAME1 "Cloak"
+	SAY UNIDENTIFIED_DESC "The cloak can be made in every possible shape with just about every type of fabric. The most common forms are a circular piece of fabric with a hole in the center for the head, and fabric draped from neck, connected by a chain, brooch, cord, or pins.
+
+STATISTICS:
+
+Weight: 3"
+
+	SAY NAME2 "Cloak of the Dark Moon"
+	SAY DESC "Those who worship Shar, the Mistress of the Night, often draw upon their dark goddess's absolute void to craft artifacts of silencing power. This cloak is whispered to have been woven by the Order of the Dark Moon, an elite sect of monastic assassins operating in her shadow. At first glance, the fabric seems to actively devour the light, appearing as a formless tear in reality. Only under closer inspection does the garment reveal an endlessly shifting texture, mimicking the cold, silent depths of the Shadowfell. When donned, the fabric shifts and resizes instantly, molding itself perfectly to the wearer's form like a second skin of living shadow.
+
+STATISTICS:
+
+Equipped abilities (at night):
+– Armor Class: +2 
+– Saving Throws: +2 
+- Magic Resistance: +10% 
+– Immunity to blindness
+- Infravision
+
+Charge abilities:
+– Cloak of Fear once per day
+
+Weight: 3
+"
+
+
+
+//CLOAK OF BRAVERY - 9500mo - no good//
+COPY "rick_bigg_mod/items/CLCK30.itm" "override"
+	SAY NAME1 "Cloak"
+	SAY UNIDENTIFIED_DESC "The cloak can be made in every possible shape with just about every type of fabric. The most common forms are a circular piece of fabric with a hole in the center for the head, and fabric draped from neck, connected by a chain, brooch, cord, or pins.
+
+STATISTICS:
+
+Weight: 3"
+
+	SAY NAME2 "Cloak of Bravery"
+	SAY DESC "This cloak is an evil thing, albeit powerful. Woven from the poorly stitched together skin of innocent nymphs, the garment still carries the tragic echoes of its victims' final moments. The vile nature of its creation forces an unnatural coldness upon the wearer, effectively freezing their emotions and purging all capacity for terror.  Despite its horrific origins, the macabre magic binding the flesh infuses the host with a surge of raw, unyielding vitality, enhancing their physical capabilities beyond normal limits.
+
+STATISTICS:
+
+Equipped abilities:
+– Immunity to fear and panic
+- Strength: +1
+- Dexterity: +1
+- Constitution: +1
+
+Weight: 3"
+
+
+
+
+
+//ARMOR CLOAK - 7500mo - solo maghi//
+COPY "rick_bigg_mod/items/CLCK29.itm" "override"
+	SAY NAME1 "Cloak"
+	SAY UNIDENTIFIED_DESC "The cloak can be made in every possible shape with just about every type of fabric. The most common forms are a circular piece of fabric with a hole in the center for the head, and fabric draped from neck, connected by a chain, brooch, cord, or pins.
+
+STATISTICS:
+
+Weight: 3"
+
+	SAY NAME2 "Armor Cloak"
+	SAY DESC "This robe was created by your apprentices, working busily away within the planar sphere. Despite their clear inexperience, the young mages managed to craft an incredibly powerful garment. By weaving defensive wards and planar energies into the fabric, they created an item that offers remarkable protection against both physical attacks and hostile magic.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: 4
+- Saving Throws: +1
+- Magic Resistance: +5%
+
+Weight: 3"
+
+
+
+
+
+
+//RANGER CLOAK - 4500mo - solo ranger//
+COPY "rick_bigg_mod/items/TB#CLCKR.itm" "override"
+	SAY NAME1 "Cloak"
+	SAY UNIDENTIFIED_DESC "The cloak can be made in every possible shape with just about every type of fabric. The most common forms are a circular piece of fabric with a hole in the center for the head, and fabric draped from neck, connected by a chain, brooch, cord, or pins.
+
+STATISTICS:
+
+Weight: 3"
+
+	SAY NAME2 "Ranger Cloak"
+	SAY DESC "This robe was created by your apprentices, working busily away within the planar sphere. Despite their clear inexperience, the young mages managed to craft an incredibly powerful garment. By weaving defensive wards and planar energies into the fabric, they created an item that offers remarkable protection against both physical attacks and hostile magic.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +1
+- Saving Throws: +1
+- Missile Resistance: +20%
+
+Charge abilities:
+- Cast Haste once per day
+
+Weight: 3"
+
+
+
+
+//RANGER CLOAK - 4500mo - solo ranger//
+COPY "rick_bigg_mod/items/COMPON16.itm" "override"
+	SAY NAME1 "Cloak"
+	SAY UNIDENTIFIED_DESC "The cloak can be made in every possible shape with just about every type of fabric. The most common forms are a circular piece of fabric with a hole in the center for the head, and fabric draped from neck, connected by a chain, brooch, cord, or pins.
+
+STATISTICS:
+
+Weight: 3"
+
+	SAY NAME2 "Whirlwind Shroud"
+	SAY DESC "This ethereal garment looks as though it were spun from storm clouds and twilight. It was originally crafted for Sylas Dawnrunner, a high-elves fletcher who defended the mountain passes of the Cloud Peaks. Blessed by Shaundakul, the Rider of the Winds, the cloak is constantly surrounded by a faint, nearly silent vortex of rushing air.This localized gale acts as a secondary shield for the warden: it shifts just enough to deflect incoming arrows, hardens to absorb physical blows, and diffuses magical energies directed at the wearer. Despite its thick appearance, it feels weightless to the touch, though it carries a tangible structural presence when protecting its host. The chaotic, free-spirited nature of the wind spirits bound to the fabric will only answer the call of a Ranger who understands the true balance of the wild.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +1
+- Saving Throws: +1
+- Missile Resistance: +20%
+
+Weight: 3"
+
+
+
+
+//WHIRLWIND CLOAK - 12000mo - solo ranger//
+COPY "rick_bigg_mod/items/CLCK32.itm" "override"
+	SAY NAME1 "Cloak"
+	SAY UNIDENTIFIED_DESC "The cloak can be made in every possible shape with just about every type of fabric. The most common forms are a circular piece of fabric with a hole in the center for the head, and fabric draped from neck, connected by a chain, brooch, cord, or pins.
+
+STATISTICS:
+
+Weight: 3"
+
+	SAY NAME2 "Whirlwind Cloak"
+	SAY DESC "
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +2
+- Saving Throws: +2
+- Missile Resistance: +60%
+
+Charge abilities:
+– Improved Haste three times per day (double movement, attack per round and some effects)
+  Duration: 5 rounds
+  Area of Effect: the user
 
 Weight: 3"

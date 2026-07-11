@@ -1,1 +1,35 @@
-// jgfhv
+//MANABOW +2 - solo Wizard Slayer - 5500mo//
+COPY "rick_bigg_mod/items/BOW13.itm" "override"
+	SAY NAME1 "Longbow"
+	SAY UNIDENTIFIED_DESC "The longbow is similar to the shortbow, except that the staff is about as tall as the archer is—usually six to six-and-a-half feet. It has better range and accuracy than the shortbow, but a slower Speed Factor.
+
+STATISTICS:
+
+THAC0: +1
+Damage: +1
+Speed Factor: 7
+Proficiency Type: Longbow
+Type: Two-handed
+Requires:
+ 6 Strength
+
+Weight: 3"
+
+	SAY NAME2 "Manabow +2"
+	SAY DESC "Kestsa was given this longbow many years ago by the Cowled Wizards as reward for his exemplary service in the Athkatla city guard. He was tireless in bringing to justice those who unlawfully used magic. The bow served him well in his cause, enhancing his already noteworthy talents.
+	
+STATISTICS:
+
+Combat abilities:
+- Hit arcane casters:
+  Receive an extra 25% chance to Miscast Magic
+  Forget one spell (highest level first)
+
+THAC0: +3
+Speed Factor: 2
+Proficiency Type: Longbow
+Type: Two-handed
+Requires:
+ 6 Strength
+
+Weight: 2"
