@@ -24,6 +24,7 @@ ALWAYS
 //    ACTION_DEFINE_ARRAY cdreload BEGIN descriptions items_description END // List of tra files that contain strings used for game content that get converted in the next step
     
 //    LAF HANDLE_CHARSETS INT_VAR infer_charset = 1 STR_VAR tra_path = EVAL ~%MOD_FOLDER%/lang~ noconvert_array = cdnoconvert reload_array = cdreload out_path = "weidu_external/rick_bigg_mod/tra" END
+    INCLUDE ~rick_bigg_mod/lib/common_functions.tpa~
   END
 END
 
@@ -74,15 +75,7 @@ BEGIN ~Test Weapon Rules~
 DESIGNATED 300
 FORBID_COMPONENT ~rick_bigg_mod/rick_bigg_mod.tp2~ 100 ~duplicate~
 
-INCLUDE ~rick_bigg_mod/lib/weapon_rules.tpa~
-INCLUDE ~rick_bigg_mod/lib/fix_unusabilities.tpa~
-
-BEGIN ~Test Item Replace~
-DESIGNATED 301
-FORBID_COMPONENT ~rick_bigg_mod/rick_bigg_mod.tp2~ 100 ~duplicate~
-
-INCLUDE ~rick_bigg_mod/lib/replace_items.tpa~
-
+INCLUDE ~rick_bigg_mod/lib/item_rules.tpa~
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////

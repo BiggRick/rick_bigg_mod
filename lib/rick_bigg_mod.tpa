@@ -13,7 +13,7 @@ INCLUDE ~rick_bigg_mod/lib/replace_items.tpa~
 
 INCLUDE ~rick_bigg_mod/lib/races.tpa~
 INCLUDE ~rick_bigg_mod/lib/styles.tpa~
-INCLUDE ~rick_bigg_mod/lib/weapon_rules.tpa~
+
+INCLUDE ~rick_bigg_mod/lib/item_rules.tpa~
 INCLUDE ~rick_bigg_mod/lib/weaponproficiencies.tpa~
-INCLUDE ~rick_bigg_mod/lib/fix_unusabilities.tpa~
 

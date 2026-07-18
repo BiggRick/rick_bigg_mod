@@ -1,0 +1,91 @@
+
+COPY ~rick_bigg_mod/2da/armor_rules.2da~ ~weidu_external~
+	READ_2DA_ENTRIES_NOW ~armor_rules~ 22
+BUT_ONLY
+
+COPY ~rick_bigg_mod/2da/armor_list.2da~ ~weidu_external~
+	READ_2DA_ENTRIES_NOW ~armor_list~ 3
+BUT_ONLY
+
+DEFINE_PATCH_FUNCTION get_from_armor_2da
+	INT_VAR column_number = 0
+	RET value
+	BEGIN
+		TEXT_SPRINT value ~_~
+		PATCH_IF special_rules_row > 0 BEGIN
+			READ_2DA_ENTRY_FORMER armor_rules special_rules_row column_number value
+		END
+		PATCH_IF general_rules_row > 0 AND (~%value%~ STRING_EQUAL_CASE ~_~) BEGIN
+			READ_2DA_ENTRY_FORMER armor_rules general_rules_row column_number value
+		END
+END
+
+
+DEFINE_PATCH_FUNCTION get_base_from_armor_2da
+	INT_VAR column_number = 0
+	RET value
+	BEGIN
+		TEXT_SPRINT value ~_~
+		PATCH_IF general_rules_row > 0 BEGIN
+			READ_2DA_ENTRY_FORMER armor_rules general_rules_row column_number value
+		END
+END
+
+
+DEFINE_PATCH_FUNCTION redescribe_armor
+BEGIN
+END
+
+
+
+
+
+
+DEFINE_PATCH_MACRO armor_rules BEGIN
+	READ_SHORT 0x1c category
+	PATCH_IF (category == 2 OR category == 12) AND (LONG_AT 0x18 BAND BIT2) BEGIN
+		general_rules_row = 0
+		special_rules_row = 0
+		found_armor_list = 0
+		TEXT_SPRINT armor_type ~~
+
+		FOR (maybe = 1; maybe < armor_list AND found_armor_list = 0; maybe += 1 ) BEGIN
+			READ_2DA_ENTRY_FORMER armor_list maybe 0 maybe_file
+			PATCH_IF ~%maybe_file%~ STRING_EQUAL_CASE ~%SOURCE_RES%~ BEGIN
+				found_armor_list = 1
+				READ_2DA_ENTRY_FORMER armor_list maybe 1 armor_type
+			END
+		END
+
+		FOR (maybe = 1; maybe < armor_rules AND (special_rules_row * general_rules_row) = 0; maybe += 1 ) BEGIN
+			READ_2DA_ENTRY_FORMER armor_rules maybe 1 maybe_file
+			
+			PATCH_IF ~%maybe_file%~ STRING_EQUAL_CASE ~%SOURCE_RES%~ BEGIN
+				special_rules_row = maybe
+			END ELSE PATCH_IF ~%maybe_file%~ STRING_EQUAL_CASE ~%armor_type%~ BEGIN
+				general_rules_row = maybe
+			END
+		END
+
+		PATCH_IF special_rules_row > 0 OR general_rules_row > 0 BEGIN
+
+			LAUNCH_PATCH_FUNCTION get_from_armor_2da
+				INT_VAR column_number = 3
+				RET min_strength = value
+			END
+			LAUNCH_PATCH_FUNCTION get_base_from_armor_2da
+				INT_VAR column_number = 4
+				RET base_ac = value
+			END
+			LAUNCH_PATCH_FUNCTION get_from_armor_2da
+				INT_VAR column_number = 5
+				RET physical_resistance = value
+			END
+			LAUNCH_PATCH_FUNCTION get_base_from_armor_2da
+				INT_VAR column_number = 5
+				RET base_physical_resistance = value
+			END
+
+		END
+	END
+END

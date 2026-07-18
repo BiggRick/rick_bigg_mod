@@ -6,46 +6,10 @@ BUT_ONLY
 
 
 
-//deletes the equipping effect the with specified opcode from the item. need parameters: opcode_to_delete
-DEFINE_PATCH_FUNCTION ~DELETE_ITEM_EQEFFECT_BY_VALUES~ BEGIN
-  PATCH_IF (BUFFER_LENGTH > 0x71) THEN BEGIN
-    READ_LONG 0x64 ___#abil_off
-    READ_SHORT 0x68 ___#abil_num
-    READ_LONG 0x6a ___#fx_off
-    READ_SHORT 0x6e ___#eqfx_off
-    READ_SHORT 0x70 ___#eqfx_num
-    FOR (___#index1 = 0 ; ___#index1 < ___#eqfx_num ; ___#index1 = ___#index1 + 1) BEGIN //cycle though global effects
-	  ___#curoff = (___#fx_off + (___#index1 + ___#eqfx_off) * 0x30)
-      READ_SHORT  ___#curoff ___#opcode
-      READ_SHORT  ___#curoff + 0x04 ___#value1
-      READ_SHORT  ___#curoff + 0x08 ___#value2
-      PATCH_IF ( (___#opcode = opcode_to_delete) OR (opcode_to_delete = (0 - 1)) )
-	       AND ( (___#value1 = value1_to_delete) OR (value1_to_delete = (0 - 1)) )
-	       AND ( (___#value2 = value2_to_delete) OR (value2_to_delete = (0 - 1)) )
-	  BEGIN
-
-        DELETE_BYTES ___#curoff 0x30
-        SET ___#eqfx_num = (___#eqfx_num - 1)
-        WRITE_SHORT 0x70 ___#eqfx_num
-
-        //correcting 1st effect indexes
-        FOR (___#index2 = 0 ; ___#index2 < ___#abil_num ; ___#index2 = ___#index2 + 1) BEGIN
-          READ_SHORT (___#abil_off + ___#index2 * 0x38 + 0x20) ___#1effect_index
-          PATCH_IF (___#1effect_index > ___#index1) BEGIN //if abilility after current effect
-            WRITE_SHORT (___#abil_off + ___#index2 * 0x38 + 0x20) (___#1effect_index - 1) //decrease 1 effect ___#index1 by 1
-          END
-        END
-        //no offsets to correct
-        SET ___#index1 = (___#index1 - 1)
-      END
-    END //end of searching
-  END
-END
 
 
 
-
-DEFINE_PATCH_MACRO decode_type BEGIN
+DEFINE_PATCH_MACRO decode_attack_type BEGIN
 	PATCH_MATCH ~%stype%~
 		WITH MELEE BEGIN
 			type = 1
@@ -124,7 +88,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY damage_type_description BEGIN
 	SLASH_PIERC => ~Slashing or Piercing~
 END
 
-DEFINE_PATCH_FUNCTION get_from_2da
+DEFINE_PATCH_FUNCTION get_from_weapon_2da
 	INT_VAR column_number = 0
 			use_enchantment = 0
 	RET value
@@ -143,7 +107,7 @@ DEFINE_PATCH_FUNCTION get_from_2da
 END
 
 
-DEFINE_PATCH_FUNCTION get_base_from_2da
+DEFINE_PATCH_FUNCTION get_base_from_weapon_2da
 	INT_VAR column_number = 0
 	RET value
 	BEGIN
@@ -153,14 +117,14 @@ DEFINE_PATCH_FUNCTION get_base_from_2da
 		END
 END
 
-DEFINE_PATCH_FUNCTION write_from_2da
+DEFINE_PATCH_FUNCTION write_from_weapon_2da
 	INT_VAR column_number = 0
 			use_enchantment = 0
 			offset = 0
 	RET
 		value
 	BEGIN
-		LAUNCH_PATCH_FUNCTION get_from_2da
+		LAUNCH_PATCH_FUNCTION get_from_weapon_2da
 			INT_VAR column_number = column_number
 				use_enchantment = use_enchantment
 			RET
@@ -267,7 +231,10 @@ END
 
 
 
-COPY_EXISTING_REGEXP ~^.*\.itm$~ ~override~
+
+
+
+DEFINE_PATCH_MACRO weapon_rules BEGIN
 	READ_SHORT 0x1c category
 	READ_LONG 0x18 flags
 	PATCH_IF ((category >= 15 AND category <= 30 ) OR category = 57 OR category = 69 OR category = 14 OR category = 5 OR category = 31) AND (LONG_AT 0x18 BAND BIT2) BEGIN
@@ -299,12 +266,12 @@ COPY_EXISTING_REGEXP ~^.*\.itm$~ ~override~
 			special_rules_row = 0
 			TEXT_SPRINT comment_general ~~
 			TEXT_SPRINT comment_special ~~
-		
+
 			FOR (maybe = 1; maybe < weapon_rules AND special_rules_row = 0; maybe += 1 ) BEGIN
 				READ_2DA_ENTRY_FORMER weapon_rules maybe 0 comment
 				READ_2DA_ENTRY_FORMER weapon_rules maybe 1 maybe_file
 				READ_2DA_ENTRY_FORMER weapon_rules maybe 3 stype
-				LAUNCH_PATCH_MACRO decode_type
+				LAUNCH_PATCH_MACRO decode_attack_type
 				
 				PATCH_IF ~%maybe_file%~ STRING_EQUAL_CASE ~%SOURCE_RES%~ AND type = weapon_type BEGIN
 					special_rules_row = maybe
@@ -318,7 +285,7 @@ COPY_EXISTING_REGEXP ~^.*\.itm$~ ~override~
 				READ_2DA_ENTRY_FORMER weapon_rules maybe 2 special_rule
 				READ_2DA_ENTRY_FORMER weapon_rules maybe 3 stype
 				
-				LAUNCH_PATCH_MACRO decode_type
+				LAUNCH_PATCH_MACRO decode_attack_type
 				
 				PATCH_IF IS_AN_INT ~%maybe_proficiency%~ AND (maybe_proficiency = proficiency OR maybe_proficiency < 80) AND type = weapon_type BEGIN
 					general_rules_row = maybe
@@ -344,84 +311,84 @@ COPY_EXISTING_REGEXP ~^.*\.itm$~ ~override~
 			END
 			
 			PATCH_IF general_rules_row > 0 OR special_rules_row > 0 BEGIN
-				LAUNCH_PATCH_FUNCTION write_from_2da
+				LAUNCH_PATCH_FUNCTION write_from_weapon_2da
 					INT_VAR column_number = 4
 						use_enchantment = 0
 						offset = 0x0e + cur_off
 						size = 2
 					RET range = value
 				END
-				LAUNCH_PATCH_FUNCTION write_from_2da
+				LAUNCH_PATCH_FUNCTION write_from_weapon_2da
 					INT_VAR column_number = 5
 						use_enchantment = 1
 						offset = 0x14 + cur_off
 						size = 2
 					RET	thac0 = value
 				END
-				LAUNCH_PATCH_FUNCTION get_base_from_2da
+				LAUNCH_PATCH_FUNCTION get_base_from_weapon_2da
 					INT_VAR column_number = 5
 					RET	thac0_base = value
 				END
-				LAUNCH_PATCH_FUNCTION write_from_2da
+				LAUNCH_PATCH_FUNCTION write_from_weapon_2da
 					INT_VAR column_number = 6
 						use_enchantment = 0
 						offset = 0x18 + cur_off
 						size = 1
 					RET	dice_number = value
 				END
-				LAUNCH_PATCH_FUNCTION get_base_from_2da
+				LAUNCH_PATCH_FUNCTION get_base_from_weapon_2da
 					INT_VAR column_number = 6
 					RET	dice_number_base = value
 				END
-				LAUNCH_PATCH_FUNCTION write_from_2da
+				LAUNCH_PATCH_FUNCTION write_from_weapon_2da
 					INT_VAR column_number = 7
 						use_enchantment = 0
 						offset = 0x16 + cur_off
 						size = 1
 					RET	dice_type = value
 				END
-				LAUNCH_PATCH_FUNCTION get_base_from_2da
+				LAUNCH_PATCH_FUNCTION get_base_from_weapon_2da
 					INT_VAR column_number = 7
 					RET	dice_type_base = value
 				END
-				LAUNCH_PATCH_FUNCTION write_from_2da
+				LAUNCH_PATCH_FUNCTION write_from_weapon_2da
 					INT_VAR column_number = 8
 						use_enchantment = 1
 						offset = 0x1a + cur_off
 						size = 2
 					RET	damage = value
 				END
-				LAUNCH_PATCH_FUNCTION get_base_from_2da
+				LAUNCH_PATCH_FUNCTION get_base_from_weapon_2da
 					INT_VAR column_number = 8
 					RET	damage_base = value
 				END
-				LAUNCH_PATCH_FUNCTION get_from_2da
+				LAUNCH_PATCH_FUNCTION get_from_weapon_2da
 					INT_VAR column_number = 9
 						use_enchantment = 0
 					RET
 						damage_type = value
 				END
-				LAUNCH_PATCH_FUNCTION get_base_from_2da
+				LAUNCH_PATCH_FUNCTION get_base_from_weapon_2da
 					INT_VAR column_number = 9
 					RET	damage_type_base = value
 				END
-				LAUNCH_PATCH_FUNCTION get_from_2da
+				LAUNCH_PATCH_FUNCTION get_from_weapon_2da
 					INT_VAR column_number = 10
 						use_enchantment = 0
 					RET
 						backstab_flag = value
 				END
-				LAUNCH_PATCH_FUNCTION get_from_2da
+				LAUNCH_PATCH_FUNCTION get_from_weapon_2da
 					INT_VAR column_number = 11
 						use_enchantment = 0 - 1
 					RET
 						speed_factor = value
 				END
-				LAUNCH_PATCH_FUNCTION get_base_from_2da
+				LAUNCH_PATCH_FUNCTION get_base_from_weapon_2da
 					INT_VAR column_number = 11
 					RET	speed_factor_base = value
 				END
-				LAUNCH_PATCH_FUNCTION get_from_2da
+				LAUNCH_PATCH_FUNCTION get_from_weapon_2da
 					INT_VAR column_number = 12
 						use_enchantment = 0
 					RET
@@ -435,66 +402,66 @@ COPY_EXISTING_REGEXP ~^.*\.itm$~ ~override~
 					END
 					WRITE_BYTE cur_off + 0x12 speed_factor
 				END
-				LAUNCH_PATCH_FUNCTION write_from_2da
+				LAUNCH_PATCH_FUNCTION write_from_weapon_2da
 					INT_VAR column_number = 13
 						use_enchantment = 0
 						offset = 0x26
 						size = 1
 					RET	min_strength = value
 				END
-				LAUNCH_PATCH_FUNCTION get_base_from_2da
+				LAUNCH_PATCH_FUNCTION get_base_from_weapon_2da
 					INT_VAR column_number = 13
 					RET	min_strength_base = value
 				END
-				LAUNCH_PATCH_FUNCTION get_from_2da
+				LAUNCH_PATCH_FUNCTION get_from_weapon_2da
 					INT_VAR column_number = 14
 						use_enchantment = 0
 					RET
 						cleric = value
 				END
-				LAUNCH_PATCH_FUNCTION get_from_2da
+				LAUNCH_PATCH_FUNCTION get_from_weapon_2da
 					INT_VAR column_number = 15
 						use_enchantment = 0
 					RET
 						druid = value
 				END
-				LAUNCH_PATCH_FUNCTION get_from_2da
+				LAUNCH_PATCH_FUNCTION get_from_weapon_2da
 					INT_VAR column_number = 16
 						use_enchantment = 0
 					RET
 						thief = value
 				END
-				LAUNCH_PATCH_FUNCTION get_from_2da
+				LAUNCH_PATCH_FUNCTION get_from_weapon_2da
 					INT_VAR column_number = 17
 						use_enchantment = 0
 					RET
 						bard = value
 				END
-				LAUNCH_PATCH_FUNCTION get_from_2da
+				LAUNCH_PATCH_FUNCTION get_from_weapon_2da
 					INT_VAR column_number = 18
 						use_enchantment = 0
 					RET
 						mage = value
 				END
-				LAUNCH_PATCH_FUNCTION get_from_2da
+				LAUNCH_PATCH_FUNCTION get_from_weapon_2da
 					INT_VAR column_number = 19
 						use_enchantment = 0
 					RET
 						shorties = value
 				END
-				LAUNCH_PATCH_FUNCTION get_base_from_2da
+				LAUNCH_PATCH_FUNCTION get_base_from_weapon_2da
 					INT_VAR column_number = 20
 						use_enchantment = 0
 					RET
 						attacks_per_round_base = value
 				END
-				LAUNCH_PATCH_FUNCTION get_from_2da
+				LAUNCH_PATCH_FUNCTION get_from_weapon_2da
 					INT_VAR column_number = 20
 						use_enchantment = 0
 					RET
 						attacks_per_round = value
 				END
-				LAUNCH_PATCH_FUNCTION get_from_2da
+				LAUNCH_PATCH_FUNCTION get_from_weapon_2da
 					INT_VAR column_number = 21
 						use_enchantment = 0
 					RET
@@ -608,4 +575,4 @@ COPY_EXISTING_REGEXP ~^.*\.itm$~ ~override~
 			END
 		END
 	END
-BUT_ONLY
+END
