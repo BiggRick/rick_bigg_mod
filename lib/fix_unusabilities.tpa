@@ -28,5 +28,28 @@ DEFINE_PATCH_MACRO ~fix_unusabilities~ BEGIN
         END ELSE PATCH_IF (BNOT LONG_AT 0x1e BAND cleric_ranger) == cleric_ranger BEGIN
             WRITE_LONG 0x1e LONG_AT 0x1e BAND BNOT BIT10
         END
+
+        // Helmet-specific rules for droppable items (type 0x07)
+        PATCH_IF (SHORT_AT 0x1c == 0x07) BEGIN
+            // If Thief can't use it, but Fighter can, make it unusable by Fighter/Thief and Fighter/Mage/Thief
+            PATCH_IF (LONG_AT 0x1e BAND BIT22) AND NOT (LONG_AT 0x1e BAND BIT11) BEGIN
+                WRITE_LONG 0x1e LONG_AT 0x1e BOR BIT17 BOR BIT18
+            END
+
+            // If Thief can't use it, but Cleric can, make it unusable by Cleric
+            PATCH_IF (LONG_AT 0x1e BAND BIT22) AND NOT (LONG_AT 0x1e BAND BIT15) BEGIN
+                WRITE_LONG 0x1e LONG_AT 0x1e BOR BIT15
+            END
+
+            // If Mage can't use it, but Fighter can, make it unusable by Fighter/Mage, Fighter/Mage/Cleric, and Fighter/Mage/Thief
+            PATCH_IF (LONG_AT 0x1e BAND BIT14) AND NOT (LONG_AT 0x1e BAND BIT11) BEGIN
+                WRITE_LONG 0x1e LONG_AT 0x1e BOR BIT13 BOR BIT19 BOR BIT18
+            END
+
+            // If Druid can't use it, but Fighter can, make it unusable by Fighter/Druid
+            PATCH_IF (LONG_AT 0x1e BAND BIT21) AND NOT (LONG_AT 0x1e BAND BIT11) BEGIN
+                WRITE_LONG 0x1e LONG_AT 0x1e BOR BIT12
+            END
+        END
     END
 END
