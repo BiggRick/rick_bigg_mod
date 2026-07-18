@@ -31,23 +31,33 @@ DEFINE_PATCH_MACRO ~fix_unusabilities~ BEGIN
 
         // Helmet-specific rules for droppable items (type 0x07)
         PATCH_IF (SHORT_AT 0x1c == 0x07) BEGIN
+            // if it grants Critical Hit Protection, Druids can't use it
+            PATCH_IF NOT (LONG_AT 0x18 BAND BIT25) BEGIN
+                WRITE_LONG 0x1e LONG_AT 0x1e BOR BIT30
+            END
+
             // If Thief can't use it, but Fighter can, make it unusable by Fighter/Thief and Fighter/Mage/Thief
             PATCH_IF (LONG_AT 0x1e BAND BIT22) AND NOT (LONG_AT 0x1e BAND BIT11) BEGIN
-                WRITE_LONG 0x1e LONG_AT 0x1e BOR BIT17 BOR BIT18
+                WRITE_LONG 0x1e LONG_AT 0x1e BOR BIT6 BOR BIT17
             END
 
             // If Thief can't use it, but Cleric can, make it unusable by Cleric
-            PATCH_IF (LONG_AT 0x1e BAND BIT22) AND NOT (LONG_AT 0x1e BAND BIT15) BEGIN
-                WRITE_LONG 0x1e LONG_AT 0x1e BOR BIT15
+            PATCH_IF (LONG_AT 0x1e BAND BIT22) AND NOT (LONG_AT 0x1e BAND BIT7) BEGIN
+                WRITE_LONG 0x1e LONG_AT 0x1e BOR BIT9
+            END
+
+            // If Mage can't use it, but Cleric can, make it unusable by Cleric/Mage
+            PATCH_IF (LONG_AT 0x1e BAND BIT18) AND NOT (LONG_AT 0x1e BAND BIT7) BEGIN
+                WRITE_LONG 0x1e LONG_AT 0x1e BOR BIT8
             END
 
             // If Mage can't use it, but Fighter can, make it unusable by Fighter/Mage, Fighter/Mage/Cleric, and Fighter/Mage/Thief
-            PATCH_IF (LONG_AT 0x1e BAND BIT14) AND NOT (LONG_AT 0x1e BAND BIT11) BEGIN
-                WRITE_LONG 0x1e LONG_AT 0x1e BOR BIT13 BOR BIT19 BOR BIT18
+            PATCH_IF (LONG_AT 0x1e BAND BIT18) AND NOT (LONG_AT 0x1e BAND BIT11) BEGIN
+                WRITE_LONG 0x1e LONG_AT 0x1e BOR BIT13 BOR BIT15 BOR BIT16
             END
 
             // If Druid can't use it, but Fighter can, make it unusable by Fighter/Druid
-            PATCH_IF (LONG_AT 0x1e BAND BIT21) AND NOT (LONG_AT 0x1e BAND BIT11) BEGIN
+            PATCH_IF (LONG_AT 0x1e BAND BIT30) AND NOT (LONG_AT 0x1e BAND BIT11) BEGIN
                 WRITE_LONG 0x1e LONG_AT 0x1e BOR BIT12
             END
         END

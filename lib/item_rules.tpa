@@ -2,7 +2,7 @@ INCLUDE ~rick_bigg_mod/lib/weapon_rules.tpa~
 INCLUDE ~rick_bigg_mod/lib/armor_rules.tpa~
 INCLUDE ~rick_bigg_mod/lib/fix_unusabilities.tpa~
 
-COPY_EXISTING_REGEXP ~^plat.*\.itm$~ ~override~
+COPY_EXISTING_REGEXP ~^.*\.itm$~ ~override~
 	LAUNCH_PATCH_MACRO ~weapon_rules~
 	LAUNCH_PATCH_MACRO ~armor_rules~
 	LAUNCH_PATCH_MACRO ~fix_unusabilities~
