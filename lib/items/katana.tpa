@@ -132,10 +132,10 @@ Weight: 6"
 STATISTICS:
 
 Equipped abilities: 
-– Critical Hit Chance: +5% (with this weapon only)
+– Critical Hit Chance: +5% with this weapon 
 
 Combat abilities:
-– 15% chance per kill of hasting the wielder for 3 rounds
+– 50% chance per kill of hasting the wielder for 3 rounds
 
 THAC0: +2
 Damage: 1d8+2 (slashing)
@@ -251,11 +251,8 @@ Weight: 6"
 STATISTICS:
 
 Combat abilities:
-– Booming Thunder: Hit target must save vs. Wand or be stunned for 1 round
-– Shocking Blow: 20% chance of an extra 20 electrical damage to hit target
-
-Charge abilities:
-– Lightning Strike two times per day (10d6 electricity damage, save vs. Wand for half)
+– Hit target must save vs. Wand or be stunned for 1 round
+– 20% chance of an extra 20 Electricity damage to hit target
 
 THAC0: +4
 Damage: 1d8+4 (slashing)

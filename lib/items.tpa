@@ -802,11 +802,11 @@ Weight: 0"
 
 
 	SAY NAME2 "Bolt of Lightning"
-	SAY DESC "This bolt seems to crackle with energy as it is held in the hand. When shot from the crossbow, it seems to leap towards its target, leaving behind an electrical sulfuric smell. As it hits, there is a crackle as the energy stored is released into the target's wound.
+	SAY DESC "This bolt seems to crackle with energy as it is held in the hand. When shot from the crossbow, it seems to leap towards its target, leaving behind an Electricity sulfuric smell. As it hits, there is a crackle as the energy stored is released into the target's wound.
 
 STATISTICS:
 
-Damage: 1d8, +4d4 electrical damage (Save vs. Breath for half)
+Damage: 1d8, +4d4 Electricity damage (Save vs. Breath for half)
 Damage type: Missile
 Launcher: Crossbow
 

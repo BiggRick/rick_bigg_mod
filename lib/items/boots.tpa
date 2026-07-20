@@ -75,7 +75,7 @@ STATISTICS:
 Weight: 4"
 
 	SAY NAME2 "Boots of Avoidance"
-	SAY DESC "The magic of these boots was specifically designed to detect incoming missiles and aid the wearer in avoiding them. They were originally commissioned by the instructor of an archery academy who had tired of suffering 'accidents' at the hands of his inexperienced students.
+	SAY DESC "The magic of these boots was specifically designed to detect incoming missiles and aid the wearer in avoiding them. They were originally commissioned by the instructor of an archery academy who had tired of suffering "accidents" at the hands of his inexperienced students.
 
 STATISTICS:
 
@@ -103,7 +103,7 @@ Weight: 4"
 STATISTICS:
 
 Equipped abilities:
-– Electrical Resistance: +50%
+– Electricity Resistance: +50%
 
 Weight: 4"
 

@@ -234,7 +234,7 @@ Weight: 15"
 
 
 
-//DEMON SLAYER +4 - 12000mo//
+//DEMON SLAYER +5 - solo berserk - 12000mo//
 COPY "rick_bigg_mod/items/SW2H07.itm" "override"
 	SAY NAME1 "Two-Handed Sword"
 	SAY UNIDENTIFIED_DESC "The two-handed sword is a derivative of the long sword. Weaponsmiths have always looked for ways to improve existing weapons. In an effort to improve the long sword, the blade was lengthened. Eventually, the handle had to be extended and two hands became necessary to properly swing the sword. The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations.
@@ -250,7 +250,7 @@ Requires:
 
 Weight: 15"
 
-SAY NAME2 "Demon Slayer +4"
+SAY NAME2 "Demon Slayer +5"
 	SAY DESC "A block of metal, too big to be called a sword. Massive, thick, heavy, and far too rough. Indeed, it was a heap of raw iron. When it slams into the enemies, it cuts or destroys indiscriminately, using the sheer weight of the weapon. This 'sword' requires enormous strength, uncommon among the vast majority of warriors. A dark aura surrounds the blade, as if it had been repeatedly imbued with evil.
 
 STATISTICS:
@@ -261,9 +261,10 @@ Equipped abilities:
 Combat abilities:
 - Extended range 3
 - Demons and Devils must save vs. Death at -4 or be utterly destroyed
+– While enraged, deals an extra 2d8 points of magical damage and slows the target for 1 round (no save) on a critical hit
 
-THAC0: +4
-Damage: 2d12+4 (slashing)
+THAC0: +5
+Damage: 2d12+5 (slashing)
 Speed Factor: 10
 Proficiency Type: Two-handed Sword
 Type: Two-handed
@@ -336,7 +337,7 @@ STATISTICS:
 Equipped abilities:
 - Immunity to fatigue
 - Doubles movement rate
-- +5% chance to score a critical hit
+- Critical Hit Chance: +5% with this weapon 
 
 Combat abilities:
 - On a critical hit the wielder gains 2 extra attacks per round for twelve seconds
@@ -417,7 +418,7 @@ SAY NAME2 "Gram the Sword of Grief +6"
 STATISTICS:
 
 Equipped abilities:
-- Protection from good
+- Protection from Good
 
 Combat abilities:
 – Inflicts 10 points of bleeding damage per hit (two point per round)

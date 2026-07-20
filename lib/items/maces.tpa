@@ -250,7 +250,7 @@ Weight: 10"
 STATISTICS:
 
 THAC0: +4
-Damage: 1d6+5, +1d6 electrical damage
+Damage: 1d6+5, +1d6 Electricity damage
 Damage type: Crushing
 Speed Factor: 2
 Proficiency Type: Mace
@@ -289,10 +289,10 @@ Weight: 10"
 STATISTICS:
 
 Combat abilities:
-– 20% chance of casting Chain Lightning (at level 20) on target with each successful attack
+– 15% chance of casting Chain Lightning (at level 20) on target with each successful attack
 
 THAC0: +5
-Damage: 1d6+6, +1d6 electrical damage
+Damage: 1d6+6, +1d6 Electricity damage
 Damage type: Crushing
 Speed Factor: 1
 Proficiency Type: Mace

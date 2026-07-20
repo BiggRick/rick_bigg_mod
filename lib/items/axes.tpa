@@ -205,7 +205,7 @@ Equipped abilities:
 
 Combat abilities: 
 – Returns to the wielder's hand when thrown
-– 33% chance hit target must take 2d6 extra crushing damage
+– 25% chance hit target must take 2d6 extra crushing damage
 
 THAC0: +3
 Damage: 1d6+4
@@ -455,7 +455,7 @@ Weight: 7"
 
 
 
-//AXE OF THE UNYIELDING +3 - 12000mo//
+//AXE OF THE UNYIELDING +3 - 9500mo//
 COPY "rick_bigg_mod/items/AX1H14.itm" "override"
 	SAY NAME1 "Battle Axe"
 	SAY UNIDENTIFIED_DESC "The most common version of the battle axe is a stout pole about four feet in length with a single-edged, trumpet-shaped blade mounted on one end. This axe, in particular, appears to be very poorly made and slightly smaller than the average battle axe.
@@ -479,7 +479,6 @@ STATISTICS:
 Equipped abilities: 
 - Immunity to Stun
 – Armor Class: +2
-– Saving Throws: +2
 
 THAC0: +3
 Damage: 1d8+4 (slashing)
@@ -492,7 +491,7 @@ Requires:
 Weight: 7"
 
 
-//AXE OF THE UNYIELDING +5 - 20000mo//
+//AXE OF THE UNYIELDING +5 - no good - 18000mo//
 COPY "rick_bigg_mod/items/AX1H15.itm" "override"
 	SAY NAME1 "Battle Axe"
 	SAY UNIDENTIFIED_DESC "The most common version of the battle axe is a stout pole about four feet in length with a single-edged, trumpet-shaped blade mounted on one end. This axe, in particular, appears to be very poorly made and slightly smaller than the average battle axe.
@@ -516,10 +515,9 @@ Weight: 7"
 STATISTICS:
 
 Equipped abilities: 
--Immunity to Stun
+- Immunity to Stun
 – Armor Class: +2
-– Saving Throws: +2
-- Magic Resistance: +10%
+– Strength: 20
 
 Combat abilities:
 – 15% chance of decapitating opponent with each successful attack (Save vs. Death at -4 negates)

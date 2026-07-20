@@ -100,9 +100,11 @@ Weight: 15"
 
 STATISTICS:
 
+Equipped abilities:
+- Armor Class: +1 vs. Slashing, Piercing and Crushing
+
 Combat abilities:
 – 33% chance of slowing target for 20 seconds
-- Magic Resistance: +5%
 
 THAC0: +3
 Damage: 1d10+3, +1 acid damage, +1 cold damage, +1 fire damage
@@ -141,9 +143,11 @@ Weight: 15"
 
 STATISTICS:
 
+Equipped abilities:
+- Armor Class: +1 vs. Slashing, Piercing and Crushing
+
 Combat abilities:
 – 33% chance each hit that target will be slowed for 20 seconds
-- Magic Resistance: +10%
 
 THAC0: +4
 Damage: 1d10+4, +1 fire damage, +1 cold damage, +1 acid damage, +1 poison damage
@@ -184,12 +188,14 @@ Weight: 15"
 
 STATISTICS:
 
+Equipped abilities:
+- Armor Class: +1 vs. Slashing, Piercing and Crushing
+
 Combat abilities:
 – 33% chance each hit that target will be slowed for 20 seconds
-- Magic Resistance: +10%
 
 THAC0: +4
-Damage: 1d10+4, +1 fire damage, +1 cold damage, +1 acid damage, +1 electrical damage
+Damage: 1d10+4, +1 fire damage, +1 cold damage, +1 acid damage, +1 Electricity damage
 Damage type: Crushing or Piercing
 Speed Factor: 3
 Proficiency Type: Flail/Morning Star
@@ -228,14 +234,14 @@ Weight: 15"
 STATISTICS:
 
 Equipped abilities:
-– Magic Resistance: +10%
+- Armor Class: +2 vs. Slashing, Piercing and Crushing
 – Free Action
 
 Combat abilities: 
 – 33% chance each hit that target will be slowed for 20 seconds
 
 THAC0: +5
-Damage: 1d10+5, +2 acid damage, +2 cold damage, +2 fire damage, +2 poison damage, +2 electrical damage
+Damage: 1d10+5, +2 acid damage, +2 cold damage, +2 fire damage, +2 poison damage, +2 Electricity damage
 Damage type: Crushing or Piercing
 Speed Factor: 2
 Proficiency Type: Flail/Morning Star

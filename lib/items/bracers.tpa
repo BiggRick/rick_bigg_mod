@@ -192,7 +192,7 @@ Weight: 2"
 STATISTICS:
 
 Equipped abilities:
-– Critical hit chance: +5% chance (only with melee weapon)
+– Critical Hit Chance: +5% (only with melee weapons)
 
 Weight: 2"
 
@@ -239,7 +239,7 @@ Weight: 2"
 STATISTICS:
 
 Equipped abilities:
-- One extra attack per round
+- 1 extra attack per round
 – Armor Class: -4 penalty
 - Thac0: -4 penalty
 
@@ -263,7 +263,7 @@ STATISTICS:
 
 Equipped abilities:
 – Wisdom: -2 penalty
-- Turn Undead: +4 cleric level
+- Turn Undead: +4
 
 Weight: 2"
 
@@ -399,7 +399,7 @@ Weight: 2"
 
 
 
-//GAUNTLETS OF CRUSHING - solo comabattenti - 8000mo//
+//GAUNTLETS OF CRUSHING - solo guerrieri - 8000mo//
 COPY "rick_bigg_mod/items/BRAC19.itm" "override"
 	SAY NAME1 "Gauntlets"
 	SAY UNIDENTIFIED_DESC "Gauntlets are armored gloves. They can be made of leather, metal plates, or chain mail. Every suit of armor is assumed to include gauntlets of an appropriate type. Magical gauntlets tend to be finer, lighter, and more easily worn than normal varieties.
@@ -549,10 +549,8 @@ Weight: 2"
 STATISTICS:
 
 Equipped abilities:
-- Casting level: +4
-
-Combat abilities:
-– Magical damage (all form): +10%
+- Casting level: +2
+– Magical damage (all form): +20%
 
 Weight: 2"
 

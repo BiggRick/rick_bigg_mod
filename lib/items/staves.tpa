@@ -194,12 +194,12 @@ Weight: 4"
 STATISTICS:
 
 Cast Lightning Bolt once per day
-  Damage: 10d6 electrical (Save vs. Spell at -4 for half)
+  Damage: 10d6 Electricity (Save vs. Spell at -4 for half)
   Area of Effect: Path of bolt
   Range: 25 ft.
 
 Cast Call Lightning once per day
-  Damage: 6d6 electrical per strike (Save vs. Breath at -2 for half), three strikes
+  Damage: 6d6 Electricity per strike (Save vs. Breath at -2 for half), three strikes
   Range: 80 ft.
   
 Combat abilities:
@@ -796,7 +796,7 @@ Weight: 4"
 STATISTICS:
 
 Equipped abilities:
-- +5% chance to score a critical hit
+- Critical Hit Chance: +5% with this weapon 
 
 Combat abilities:
 – Deals extra 10 points of piercing damage on a critical hit

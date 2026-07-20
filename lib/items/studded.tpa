@@ -221,7 +221,7 @@ Requires:
 Weight: 25
 "
 
-	SAY NAME2 "Orc Leather +3"
+	SAY NAME2 "Kruntur's Armor +4"
 	SAY DESC "Once worn by the dekanter goblin warlord Kruntur, this armor is of an unusually high quality considering the race of its owner. Kruntur prized this armor to such a degree that, upon his death, he refused to leave it. To this day, more than a hundred years later, his spirit still permeates the armor, whispering threats to all who dare wear it and generally making a nuisance of himself. He cannot directly harm the wearer, however the chance to have such fine protection might well make up for the aggravation the armor brings with it.
 
 STATISTICS:
@@ -311,7 +311,7 @@ Weight: 10
 
 
 
-//GRANDMASTER'S ARMOR +5 - solo ladri e assassini (no spadaccini) - 10000mo//
+//GRANDMASTER'S ARMOR +5 - solo assassini - 12000mo//
 COPY "rick_bigg_mod/items/LEAT24.itm" "override"
 	SAY NAME1 "Studded Leather Armor"
 	SAY UNIDENTIFIED_DESC "Studded leather armor has little in common with normal leather armor. Instead of a hardened shell, studded leather offers hundreds of metal rivets affixed to a supple backing. The numerous studs form a flexible coat of metal that helps to turn aside slashing and cutting attacks, while the leather is little more than a means of securing the rivets in place. 

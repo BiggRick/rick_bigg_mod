@@ -48,7 +48,7 @@ Requires:
 Weight: 2"
 
 	SAY NAME2 "Shortbow of Gesen +3"
-	SAY DESC "The finest bow crafted by Gesen Khan, this weapon draws energy from another plane, firing spears of lightning instead of arrows... and therefore never requiring ammunition of any kind. It is said that Gesen prepared to retire from his craft after selling the invaluable weapon, only to have the bow wrested from his grasp by a thief who used it to end Gesen's own life. A side effect of the bow bestows protection from electricity upon the user.
+	SAY DESC "Once held by the legendary nomadic leader Gesen Khan, this weapon was forged to dominate the endless steppes. The bow aligns perfectly with the archer's vision, granting unmatched precision on the battlefield. When a critical strike is landed, the arrow unleashes a concussive shockwave that leaves the target instantly stunned and helpless.
 
 STATISTICS:
 

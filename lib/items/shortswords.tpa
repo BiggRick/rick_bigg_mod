@@ -210,7 +210,7 @@ Weight: 3"
 
 STATISTICS:
 
-Combat abilities:
+Equipped abilities:
 – Critical Hit Chance: +10% with this weapon
 
 THAC0: +4
@@ -282,7 +282,7 @@ Requires:
 Weight: 3"
 
 	SAY NAME2 "Sword of the Mask +4"
-	SAY DESC "
+	SAY DESC "Forged in the shadow-veiled temples of Mask, the Lord of Shadows, this slender short sword was blessed for a legendary Master Thief of the Shadow Thieves of Athkatla. The blade absorbs local light, rendering it nearly invisible in the dark. Legends claim the steel was quenched in the blood of a Cyricist spy, granting the wielder an uncanny, divine instinct for betrayal and sudden strikes from behind.
 
 STATISTICS:
 
@@ -321,9 +321,9 @@ Requires:
 Weight: 3"
 
 	SAY NAME2 "Sword of the Mask +5"
-	SAY DESC "
+	SAY DESC "Forged in the shadow-veiled temples of Mask, the Lord of Shadows, this slender short sword was blessed for a legendary Master Thief of the Shadow Thieves of Athkatla. The blade absorbs local light, rendering it nearly invisible in the dark. Legends claim the steel was quenched in the blood of a Cyricist spy, granting the wielder an uncanny, divine instinct for betrayal and sudden strikes from behind.
 	
-	Combined with the Heart of the Damned into a single lethal weapon, this deadly blade is the preferred tool of assassins and thieves. 
+	Combined with the Heart of the Damned into a single lethal weapon, this deadly blade is the ultimate weapons for assassins and thieves.
 
 STATISTICS:
 

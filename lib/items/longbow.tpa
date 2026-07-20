@@ -1,4 +1,148 @@
-//MANABOW +2 - solo Wizard Slayer - 5500mo//
+//LONGBOW +1 - 1800mo//
+COPY "rick_bigg_mod/items/BOW04.itm" "override"
+	SAY NAME1 "Longbow"
+	SAY UNIDENTIFIED_DESC "The longbow is similar to the shortbow, except that the staff is about as tall as the archer is—usually six to six-and-a-half feet. It has better range and accuracy than the shortbow, but a slower Speed Factor.
+
+STATISTICS:
+
+THAC0: +1
+Speed Factor: 7
+Proficiency Type: Longbow
+Type: Two-handed
+Requires:
+ 6 Strength
+
+Weight: 3"
+
+	SAY NAME2 "Longbow +1"
+	SAY DESC "The longbow is similar to the shortbow, except that the staff is about as tall as the archer is—usually six to six-and-a-half feet. It has better range and accuracy than the shortbow, but a slower Speed Factor. This one has been enhanced with magical properties, giving it an air of perfection.
+
+STATISTICS:
+
+THAC0: +2
+Damage: +1
+Speed Factor: 6
+Proficiency Type: Longbow
+Type: Two-handed
+Requires:
+ 6 Strength
+
+Weight: 3"
+
+
+
+
+//LONGBOW +2 - 2800mo//
+COPY "rick_bigg_mod/items/BOW17.itm" "override"
+	SAY NAME1 "Longbow"
+	SAY UNIDENTIFIED_DESC "The longbow is similar to the shortbow, except that the staff is about as tall as the archer is—usually six to six-and-a-half feet. It has better range and accuracy than the shortbow, but a slower Speed Factor.
+
+STATISTICS:
+
+THAC0: +1
+Speed Factor: 7
+Proficiency Type: Longbow
+Type: Two-handed
+Requires:
+ 6 Strength
+
+Weight: 3"
+
+	SAY NAME2 "Longbow +2"
+	SAY DESC "The longbow is similar to the shortbow, except that the staff is about as tall as the archer is—usually six to six-and-a-half feet. It has better range and accuracy than the shortbow, but a slower Speed Factor. This one has been enhanced with magical properties, giving it an air of perfection.
+
+STATISTICS:
+
+THAC0: +3
+Damage: +2
+Speed Factor: 5
+Proficiency Type: Longbow
+Type: Two-handed
+Requires:
+ 6 Strength
+
+Weight: 3"
+
+
+
+
+//THE DEAD SHOT +2 - 4000mo//
+COPY "rick_bigg_mod/items/BOW07.itm" "override"
+	SAY NAME1 "Longbow"
+	SAY UNIDENTIFIED_DESC "The longbow is similar to the shortbow, except that the staff is about as tall as the archer is—usually six to six-and-a-half feet. It has better range and accuracy than the shortbow, but a slower Speed Factor.
+
+STATISTICS:
+
+THAC0: +1
+Speed Factor: 7
+Proficiency Type: Longbow
+Type: Two-handed
+Requires:
+ 6 Strength
+
+Weight: 3"
+
+	SAY NAME2 "The Dead Shot +2"
+	SAY DESC "Driven by years of rivalry, the dukes of Spandeliyon and Delthuntle decided to organize a private contest that would proclaim the better archer between them. Both boasted the power of their magical bows, but that wasn't enough for Edwall Dest, Duke of Spandeliyon. He arranged for the theft of his opponent's bow, and on the day of the contest, he couldn't help gloat in his advantage. The Duke of Delthuntle, known only as Raymond, demanded a demonstration of Edwall's skill on a scarecrow that he had placed. Edwall Dest drew his longbow and released the arrow with determination, not stopping to think how uncannily the target resembled himself. The missile split the large voodoo doll's head in twain, and at that moment, Edwall's head did much the same.
+
+STATISTICS:
+
+Equipped abilities:
+Critical Hit Chance: +5% with this weapon 
+
+THAC0: +3
+Damage: +2
+Speed Factor: 5
+Proficiency Type: Longbow
+Type: Two-handed
+Requires:
+ 6 Strength
+
+Weight: 2"
+
+
+
+
+
+
+//ELVEN COURT BOW +3 - valore 7500mo //
+COPY "rick_bigg_mod/items/BOW12.itm" "override"
+	SAY NAME1 "Longbow"
+	SAY UNIDENTIFIED_DESC "The longbow is similar to the shortbow, except that the staff is about as tall as the archer is—usually six to six-and-a-half feet. It has better range and accuracy than the shortbow, but a slower Speed Factor.
+
+STATISTICS:
+
+THAC0: +1
+Speed Factor: 7
+Proficiency Type: Longbow
+Type: Two-handed
+Requires:
+ 6 Strength
+
+Weight: 3"
+
+	SAY NAME2 "Elven Court Bow +3"
+	SAY DESC "This yew bow is more a work of art than a weapon of war: Fine engravings dance over the polished wood, and the bowstring gleams of gold, almost singing when drawn. This was a ceremonial bow in the Elven Court for a thousand years, though that is scarcely a single lifetime in elven terms. Every 50 years or so it was granted to someone who had performed a great service, the recipient eventually choosing who would hold it next. Two centuries ago, a human, Yin Pon, rescued an elven prince and was gifted the bow, which he carried with him to Baldur's Gate, where it was subsequently lost.
+
+STATISTICS:
+
+THAC0: +8
+Damage: +3
+Speed Factor: 4
+Proficiency Type: Longbow
+Type: Two-handed
+Requires:
+ 6 Strength
+
+Weight: 2"
+
+
+
+
+
+
+
+//MANA BOW +2 - solo Wizard Slayer - 5500mo//
 COPY "rick_bigg_mod/items/BOW13.itm" "override"
 	SAY NAME1 "Longbow"
 	SAY UNIDENTIFIED_DESC "The longbow is similar to the shortbow, except that the staff is about as tall as the archer is—usually six to six-and-a-half feet. It has better range and accuracy than the shortbow, but a slower Speed Factor.
@@ -15,7 +159,7 @@ Requires:
 
 Weight: 3"
 
-	SAY NAME2 "Manabow +2"
+	SAY NAME2 "Mana Bow +2"
 	SAY DESC "Kestsa was given this longbow many years ago by the Cowled Wizards as reward for his exemplary service in the Athkatla city guard. He was tireless in bringing to justice those who unlawfully used magic. The bow served him well in his cause, enhancing his already noteworthy talents.
 	
 STATISTICS:
@@ -26,7 +170,45 @@ Combat abilities:
   Forget one spell (highest level first)
 
 THAC0: +3
-Speed Factor: 2
+Damage: +2
+Speed Factor: 5
+Proficiency Type: Longbow
+Type: Two-handed
+Requires:
+ 6 Strength
+
+Weight: 2"
+
+
+
+
+//TAULMARIL +3 - valore 9000mo //
+COPY "rick_bigg_mod/items/CATTIBOW.itm" "override"
+	SAY NAME1 "Longbow"
+	SAY UNIDENTIFIED_DESC "The longbow is similar to the shortbow, except that the staff is about as tall as the archer is—usually six to six-and-a-half feet. It has better range and accuracy than the shortbow, but a slower Speed Factor.
+
+STATISTICS:
+
+THAC0: +1
+Speed Factor: 7
+Proficiency Type: Longbow
+Type: Two-handed
+Requires:
+ 6 Strength
+
+Weight: 3"
+
+	SAY NAME2 "Taulmaril +3"
+	SAY DESC "
+
+STATISTICS:
+
+Equipped abilities:
+- 1 extra attack per round
+
+THAC0: +4
+Damage: +3, +1d8 electricity damage
+Speed Factor: 4
 Proficiency Type: Longbow
 Type: Two-handed
 Requires:

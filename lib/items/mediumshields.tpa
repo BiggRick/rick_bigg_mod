@@ -124,7 +124,7 @@ STATISTICS:
 Equipped abilities:
 – Armor Class: +3, +2 extra vs. Undead
 - Saving Throws vs. Undead: +2
-- Turn Undead: +2 cleric level
+- Turn Undead: +2 
 
 Requires:
  12 Strength
@@ -162,7 +162,7 @@ Equipped abilities:
 – Fire Resistance: +20%
 – Cold Resistance: +10%
 – Acid Resistance: +10%
-– Electrical Resistance: +10%
+– Electricity Resistance: +10%
 – Poison Resistance: +10%
 - Immunity to Wing Buffet, Sleep and Unconsciousness
 
@@ -199,7 +199,6 @@ STATISTICS:
 
 Equipped abilities:
 – Armor Class: +4
-– Physical Resistance: +5%
 
 Requires:
  12 Strength

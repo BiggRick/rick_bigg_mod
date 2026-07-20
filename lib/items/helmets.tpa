@@ -27,7 +27,7 @@ Weight: 2"
 
 
 
-//HELM OF HORNS - 2000mo//
+//HELM OF HORNS - solo guerrieri - 1500mo//
 COPY "rick_bigg_mod/items/TB#HEHO.itm" "override"
 	SAY NAME1 "Helmet"
 	SAY DESC "This class of decorative helmet, made of reinforced leather or metal, covers the face and head. Eye slits and breathing holes come highly recommended. 
@@ -169,7 +169,7 @@ Weight: 2
 
 
 
-//THE GUARDIAN DEVIL - no good - valore 6500mo//
+//THE GUARDIAN DEVIL - no good - solo guerrieri - valore 5000mo//
 COPY "rick_bigg_mod/items/BDHELM04.itm" "override"
 	SAY NAME1 "Helmet"
 	SAY UNIDENTIFIED_DESC "This class of decorative helmet, made of reinforced leather or metal, covers the face and head. Eye slits and breathing holes come highly recommended. 
@@ -252,7 +252,7 @@ Equipped abilities:
 - Armor Class: +1
 – Fire Resistance: +20%
 – Cold Resistance: +10%
-– Electrical Resistance: +10%
+– Electricity Resistance: +10%
 - Acid Resistance: +10%
 - Poison Resistance: +10%
 
@@ -326,7 +326,7 @@ Weight: 2"
 
 
 
-//VHAILOR'S HELM - valore 7000mo//
+//VHAILOR'S HELM - solo guerrieri  - no caotici - valore 7000mo//
 COPY "rick_bigg_mod/items/WA2HELM.itm" "override"
 	SAY NAME1 "Helmet"
 	SAY UNIDENTIFIED_DESC "This class of decorative helmet, made of reinforced leather or metal, covers the face and head. Eye slits and breathing holes come highly recommended. 
@@ -354,7 +354,7 @@ Weight: 2"
 
 
 
-//RORANACH'S HORN - valore 3000mo//
+//RORANACH'S HORN - solo guerrieri - valore 3000mo//
 COPY "rick_bigg_mod/items/COMPON05.itm" "override"
 	SAY NAME1 "Helmet"
 	SAY UNIDENTIFIED_DESC "This headpiece is of an atypical and bizarre design, crudely fashioned from the massive, spiraled horn of an unknown beast. Its appearance is unsettling and primitive, far removed from standard smithing. Despite its strange, organic origin, the helm feels nearly indestructible to the touch. 
@@ -385,7 +385,7 @@ Weight: 3"
 
 
 
-//HELM OF THE ROCK - valore 5000mo//
+//HELM OF THE ROCK - solo guerrieri - valore 5000mo//
 COPY "rick_bigg_mod/items/HELM31.itm" "override"
 	SAY NAME1 "Helmet"
 	SAY UNIDENTIFIED_DESC "This class of decorative helmet, made of reinforced leather or metal, covers the face and head. Eye slits and breathing holes come highly recommended. 
@@ -413,7 +413,7 @@ Weight: 2"
 
 
 
-//HELM OF THE ROCK UPGRADED - valore 16000mo//
+//HELM OF THE ROCK UPGRADED - solo guerrieri - valore 15000mo//
 COPY "rick_bigg_mod/items/HELM32.itm" "override"
 	SAY NAME1 "Helmet"
 	SAY UNIDENTIFIED_DESC "This class of decorative helmet, made of reinforced leather or metal, covers the face and head. Eye slits and breathing holes come highly recommended. 
@@ -528,38 +528,7 @@ Weight: 1"
 
 
 
-//THIEVES'HOOD - valore 9500mo//
-COPY "rick_bigg_mod/items/HELM30.itm" "override"
-	SAY NAME1 "Hood"
-	SAY UNIDENTIFIED_DESC "This hood is simple in design and appears to offer minor protection. 
-
-STATISTICS:
-
-Weight: 1"
-
-	SAY NAME2 "Thieves'Hood"
-	SAY DESC "Crafted from a thick, enchanted fabric that hums with a faint protective aura, this hood sharpens the wearer's senses to an supernatural degree. The magic woven into its threads grants the user a heightened awareness of their immediate surroundings, shielding their blind spots from lethal strikes and piercing through illusions designed to deceive the eye.
-	
-	Combined with the Sandthief's Ring, its protective properties have now been further augmented.
-	
-STATISTICS:
-
-Equipped abilities:
-– Immunity to backstab
-- Detect Illusion: +30%
-- Hide in Shadows: +25%
-- Move silently: +25%
-
-Combat abilities:
-- Whenever the wielder is hit, there is a 20% chance he/she is surrounded by 3 mirror images for 3 rounds
-
-Weight: 1"
-
-
-
-
-
-//THIEVES'HOOD - valore 9500mo//
+//THIEVES'HOOD - solo ladri tutti - valore 9500mo//
 COPY "rick_bigg_mod/items/HELM30.itm" "override"
 	SAY NAME1 "Hood"
 	SAY UNIDENTIFIED_DESC "This hood is simple in design and appears to offer minor protection. 
@@ -655,7 +624,7 @@ STATISTICS:
 Weight: 1"
 
 	SAY NAME2 "Circlet of Netheril"
-	SAY DESC "This elegant golden band is etched with shifting runes from the long-fallen empire of Netheril. Crafted with maestry, the artifact's raw power flows entirely from the enchanted metal and its ancient inscriptions. It aligns itself with the wearer's consciousness, sharpening their focus and significantly enhancing their mastery over the Weave.
+	SAY DESC "This elegant golden band is etched with shifting runes from the long-fallen empire of Netheril. Crafted with maestry, the artifact's raw power flows entirely from the enchanted metal and its ancient inscriptions. It aligns itself with the wearer's consciousness, sharpening their focus and enhancing their mastery over the Weave.
 
 STATISTICS:
 
@@ -678,7 +647,7 @@ STATISTICS:
 Weight: 1"
 
 	SAY NAME2 "Circlet of Netheril"
-	SAY DESC "This elegant golden band is etched with shifting runes from the long-fallen empire of Netheril. Crafted with maestry, the artifact's raw power flows entirely from the enchanted metal and its ancient inscriptions. It aligns itself with the wearer's consciousness, sharpening their focus and significantly enhancing their mastery over the Weave.
+	SAY DESC "This elegant golden band is etched with shifting runes from the long-fallen empire of Netheril. Crafted with maestry, the artifact's raw power flows entirely from the enchanted metal and its ancient inscriptions. It aligns itself with the wearer's consciousness, sharpening their focus and enhancing their mastery over the Weave.
 	
 	Combined with the bronze ioun stone, the Circlet of Netheril is a great boon to any practitioner of the arcane arts. Of course, something so valuable is likely to attract unwanted attention from rival mages... 
 
@@ -700,38 +669,6 @@ Weight: 1"
 COPY "rick_bigg_mod/items/OHHCASQ.itm" "override"
 	SAY NAME1 "Casque"
 	SAY UNIDENTIFIED_DESC "This iron casque radiates a faint, unsettling aura of dark, unnatural malice.
-
-STATISTICS:
-
-Weight: 1"
-
-	SAY NAME2 "Casque of Necron"
-	SAY DESC "Whispered only In Tenebris by the most depraved cultists, the true origin of this obsidian helm is written within Nekron's Bloody Rhymes. Chroniclers speak of its forging during the ancient Aeons of Raging Darkness, when the sky opened to unleash the Rain of a Thousand Flames, an apocalyptic event that marked the beginning of the Dark Reign of Fire. As the artifact was quenched in the blood of innocents, an Unholy Warcry echoed across the planes, summoning the Gargoyles, Angels of Darkness from their eternal slumber. They marched forth from the Bloody Red Dungeons of Dar-Kunor to subjugate the mortal realms under a ruthless Reign of Terror. This horrific crown was created to fulfill The Mystic Prophecy of the Demonknight, ensuring that all creation would plunge blindly From Chaos to Eternity. 
-	
-STATISTICS:
-
-Equipped abilities:
-- Casting Speed: +1
-- Fire Resistance: +20%
-- Cold Resistance: +20%
-- Electricity Resistance: +20%
-- Acid Resistance: +20%
-- Poison Resistance: +20%
-- Magical Damage Resistance: +20%
-- Magic Resistance: +10%
-
-Charge abilities:
-- Cast Wail of Banshee once per day
-
-Weight: 3"
-
-
-
-
-//THE AMPLIF - valore 14000mo - solo maghi - only evil//
-COPY "rick_bigg_mod/items/OHHCASQ.itm" "override"
-	SAY NAME1 "Circlet"
-	SAY UNIDENTIFIED_DESC "This thin circlet of gold appears too simple and plain to be a crown. Although unadorned with gems, there are arcane and cryptic symbols etched along the surface.
 
 STATISTICS:
 
@@ -931,29 +868,6 @@ STATISTICS:
 Equipped abilities:
 – Armor Class: +1
 – Save vs. Death: +4
-
-Weight: 0"
-
-
-
-
-
-//GOLDEN IOUN STONE - valore 8000mo//
-COPY "rick_bigg_mod/items/HELM27.itm" "override"
-	SAY NAME1 "Ioun Stone"
-	SAY UNIDENTIFIED_DESC "This is a small stone that floats in an orbit around the owner's head. Simply equip the stone to set it in its orbit. These obviously magical stones have different properties depending on their color.
-
-STATISTICS:
-
-Weight: 0"
-
-	SAY NAME2 "Golden Ioun Stone"
-	SAY DESC "This profound gemstone orbits the user's brow, expanding their mind to grasp the highest tiers of arcane theory.It unlocks additional mental capacity, allowing high-level wizards to memorize extra powerful spells.
-
-STATISTICS:
-
-Equipped abilities:
-– Can memorize one extra 7th-level and 8th-level wizard spell
 
 Weight: 0"
 
