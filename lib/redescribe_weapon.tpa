@@ -1,0 +1,88 @@
+
+
+DEFINE_PATCH_FUNCTION redescribe_weapon
+	INT_VAR thac0 = 0
+		dice_number = 0
+		dice_type = 0
+		damage = 0
+		speed_factor = 0
+		min_strength = 0
+	STR_VAR attacks_per_round = "_"
+BEGIN
+
+	PATCH_IF thac0 = 0 BEGIN
+		TEXT_SPRINT thac0_string ~\1~
+	END ELSE PATCH_IF thac0 > 0 BEGIN
+		TEXT_SPRINT thac0_string ~THAC0: +%thac0%\1~
+	END ELSE BEGIN
+		TEXT_SPRINT thac0_string ~THAC0: %thac0%\1~
+	END
+	PATCH_IF INDEX_BUFFER( ~THAC0:[^,%WNL%]*\(,?.*\)$~ ) > 0 BEGIN
+		REPLACE_TEXTUALLY ~^THAC0:[^,%WNL%]*\(,?.*\)$~ ~%thac0_string%~
+	END ELSE BEGIN
+		REPLACE_TEXTUALLY ~^Damage:\(\)~ ~%thac0_string%%WNL%Damage:~
+	END
+	
+	PATCH_IF damage = 0 AND dice_type * dice_number = 0 BEGIN
+		TEXT_SPRINT damage_string ~~
+	END ELSE BEGIN
+		PATCH_IF dice_type * dice_number = 0 AND NOT has_launcher BEGIN
+			TEXT_SPRINT damage_string ~Damage: %damage%\1%WNL%~
+		END PATCH_IF dice_type * dice_number = 0 AND has_launcher BEGIN
+			TEXT_SPRINT damage_string ~Damage: +%damage%\1%WNL%~
+		END ELSE PATCH_IF damage > 0 BEGIN
+			TEXT_SPRINT damage_string ~Damage: %dice_number%d%dice_type%+%damage%\1%WNL%~
+		END ELSE PATCH_IF damage < 0 BEGIN
+			TEXT_SPRINT damage_string ~Damage: %dice_number%d%dice_type%%damage%\1%WNL%~
+		END ELSE PATCH_IF damage = 0 BEGIN
+			TEXT_SPRINT damage_string ~Damage: %dice_number%d%dice_type%\1%WNL%~
+		END
+		
+		PATCH_IF has_launcher BEGIN
+			TEXT_SPRINT damage_string ~%damage_string%Damage type: %launcher_damage_type_desc%~
+		END ELSE PATCH_IF has_thrown BEGIN
+			TEXT_SPRINT damage_string ~%damage_string%Damage type: %thrown_damage_type_desc%~
+		END ELSE BEGIN
+			TEXT_SPRINT damage_string ~%damage_string%Damage type: %melee_damage_type_desc%~
+		END
+	END
+	
+	REPLACE_TEXTUALLY ~^Damage type: .*[%WNL%]+~ ~~
+	REPLACE_TEXTUALLY ~^Damage type (.*): .*[%WNL%]+~ ~~
+	
+	PATCH_IF INDEX_BUFFER( ~Damage:[^,%WNL%]*\(,?.*\)$~ ) > 0 BEGIN
+		REPLACE_TEXTUALLY ~^Damage:[^,%WNL%]*\(,?.*\)$~ ~%damage_string%~
+	END ELSE BEGIN
+		REPLACE_TEXTUALLY ~^Speed Factor:\(\)~ ~%damage_string%%WNL%Speed Factor:~
+	END
+	
+	REPLACE_TEXTUALLY ~^Speed Factor:.*$~ ~Speed Factor: %speed_factor%~
+	
+	PATCH_IF INDEX_BUFFER ( ~Requires:[^_]* [0-9]+ Strength$~ ) > 0 BEGIN
+		REPLACE_TEXTUALLY ~^Requires:\([^_]*\) [0-9]+ Strength$~ ~Requires:\1 %min_strength% Strength~
+	END ELSE PATCH_IF INDEX_BUFFER ( ~Requires:$~ ) > 0 BEGIN
+		REPLACE_TEXTUALLY ~^Requires:$~ ~Requires:%WNL% %min_strength% Strength~
+	END ELSE BEGIN
+		REPLACE_TEXTUALLY ~^Type:\(.*\)$~ ~Type:\1%WNL%Requires:%WNL% %min_strength% Strength~
+	END
+
+	PATCH_IF IS_AN_INT ~%attacks_per_round%~ BEGIN
+		PATCH_IF attacks_per_round > 0 BEGIN
+			PATCH_IF attacks_per_round > 5 BEGIN
+				base_attacks = (attacks_per_round - 6) * 2 + 1
+				TEXT_SPRINT attacks_string ~- %base_attacks%/2 attacks per round~
+			END ELSE BEGIN
+				TEXT_SPRINT attacks_string ~- %attacks_per_round% attacks per round~
+			END
+			PATCH_IF INDEX_BUFFER (~^– .*\(attack\|shot\)s? per round$~) > 0 BEGIN
+				REPLACE_TEXTUALLY ~^– .*\(attack\|shot\)s? per round$~ ~%attacks_string%~
+			END ELSE PATCH_IF INDEX_BUFFER (~^Combat abilities:$~) > 0 BEGIN
+				REPLACE_TEXTUALLY ~^Combat abilities:$~ ~Combat abilities:%WNL%%attacks_string%~
+			END ELSE BEGIN
+				REPLACE_TEXTUALLY ~^STATISTICS:\([%WNL%]+\)~ ~STATISTICS:\1Combat abilities:%WNL%%attacks_string%%WNL%%WNL%~
+			END
+		END ELSE BEGIN
+			REPLACE_TEXTUALLY ~^– .*\(attack\|shot\)s? per round$~ ~~
+		END
+	END
+END

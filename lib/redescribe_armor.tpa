@@ -1,0 +1,4 @@
+
+DEFINE_PATCH_FUNCTION redescribe_armor
+BEGIN
+END

@@ -31,13 +31,42 @@ DEFINE_PATCH_FUNCTION get_base_from_armor_2da
 		END
 END
 
+INCLUDE ~rick_bigg_mod/lib/redescribe_armor.tpa~
 
-DEFINE_PATCH_FUNCTION redescribe_armor
+OUTER_SET dummy_value = 0 - 1000
+
+DEFINE_PATCH_FUNCTION scan_update_item_effect
+	INT_VAR opcode = dummy_value
+	    parameter1 = dummy_value
+		parameter2 = dummy_value
+		touch_parameter_12 = 0
+		newvalue = dummy_value
+	RET
+		value
 BEGIN
+	value = dummy_value
+	GET_OFFSET_ARRAY fx_array ITM_V10_GEN_EFFECTS 
+  	PHP_EACH ab_array AS int => ab_off BEGIN
+		READ_SHORT fx_off fx_type
+		READ_SHORT fx_off + 4 par1
+		READ_SHORT fx_off + 8 par2
+
+		PATCH_IF fx_off = opcode AND (par1 = parameter1 OR parameter1 = dummy_value) AND (par2 = parameter2 OR parameter2 = dummy_value) BEGIN
+			READ_LONG fx_off + 4 * touch_parameter_12 value
+			WRITE_LONG fx_off + 4 * touch_parameter_12 newvalue
+		END
+    END
+
+	PATCH_IF value = dummy_value AND newvalue != dummy_value BEGIN
+		LAUNCH_PATCH_FUNCTION ADD_ITEM_EQEFFECT
+			INT_VAR opcode = opcode
+				parameter1 = (touch_parameter_12 = 1 ? newvalue : parameter1)
+				parameter2 = (touch_parameter_12 = 2 ? newvalue : parameter2)
+				target = 1
+				timing = 2
+		END
+	END
 END
-
-
-
 
 
 
@@ -86,6 +115,169 @@ DEFINE_PATCH_MACRO armor_rules BEGIN
 				RET base_physical_resistance = value
 			END
 
+			// column 6 - slashing_ac - both
+			LAUNCH_PATCH_FUNCTION get_from_armor_2da
+				INT_VAR column_number = 6
+				RET slashing_ac = value
+			END
+			LAUNCH_PATCH_FUNCTION get_base_from_armor_2da
+				INT_VAR column_number = 6
+				RET base_slashing_ac = value
+			END
+			// column 7 - piercing_ac - both
+			LAUNCH_PATCH_FUNCTION get_from_armor_2da
+				INT_VAR column_number = 7
+				RET piercing_ac = value
+			END
+			LAUNCH_PATCH_FUNCTION get_base_from_armor_2da
+				INT_VAR column_number = 6
+				RET base_piercing_ac = value
+			END
+			// column 8 - missile_ac - both
+			LAUNCH_PATCH_FUNCTION get_from_armor_2da
+				INT_VAR column_number = 7
+				RET missile_ac = value
+			END
+			LAUNCH_PATCH_FUNCTION get_base_from_armor_2da
+				INT_VAR column_number = 7
+				RET base_missile_ac = value
+			END
+			// column 9 - crushing_ac - both
+			LAUNCH_PATCH_FUNCTION get_from_armor_2da
+				INT_VAR column_number = 8
+				RET crushing_ac = value
+			END
+			LAUNCH_PATCH_FUNCTION get_base_from_armor_2da
+				INT_VAR column_number = 8
+				RET base_crushing_ac = value
+			END
+			// column 10 - cleric - no base
+			LAUNCH_PATCH_FUNCTION get_from_armor_2da
+				INT_VAR column_number = 9
+				RET cleric = value
+			END
+			// column 11 - ranger - no base
+			LAUNCH_PATCH_FUNCTION get_from_armor_2da
+				INT_VAR column_number = 10
+				RET ranger = value
+			END
+			// column 12 - berzerker__wizard_slayer - no base
+			LAUNCH_PATCH_FUNCTION get_from_armor_2da
+				INT_VAR column_number = 11
+				RET berzerker__wizard_slayer = value
+			END
+			// column 13 - druid - no base
+			LAUNCH_PATCH_FUNCTION get_from_armor_2da
+				INT_VAR column_number = 12
+				RET druid = value
+			END
+			// column 14 - thief - no base
+			LAUNCH_PATCH_FUNCTION get_from_armor_2da
+				INT_VAR column_number = 13
+				RET thief = value
+			END
+			// column 15 - bard - no base
+			LAUNCH_PATCH_FUNCTION get_from_armor_2da
+				INT_VAR column_number = 14
+				RET bard = value
+			END
+			// column 16 - mage_mc - no base
+			LAUNCH_PATCH_FUNCTION get_from_armor_2da
+				INT_VAR column_number = 15
+				RET mage_mc = value
+			END
+			// column 17 - locks - both
+			LAUNCH_PATCH_FUNCTION get_from_armor_2da
+				INT_VAR column_number = 16
+				RET locks = value
+			END
+			LAUNCH_PATCH_FUNCTION get_base_from_armor_2da
+				INT_VAR column_number = 16
+				RET base_locks = value
+			END
+			// column 18 - traps - both
+			LAUNCH_PATCH_FUNCTION get_from_armor_2da
+				INT_VAR column_number = 17
+				RET traps = value
+			END
+			LAUNCH_PATCH_FUNCTION get_base_from_armor_2da
+				INT_VAR column_number = 17
+				RET base_traps = value
+			END
+			// column 19 - pick_pockets - both
+			LAUNCH_PATCH_FUNCTION get_from_armor_2da
+				INT_VAR column_number = 18
+				RET pick_pockets = value
+			END
+			LAUNCH_PATCH_FUNCTION get_base_from_armor_2da
+				INT_VAR column_number = 18
+				RET base_pick_pockets = value
+			END
+			// column 20 - move_silently - both
+			LAUNCH_PATCH_FUNCTION get_from_armor_2da
+				INT_VAR column_number = 19
+				RET move_silently = value
+			END
+			LAUNCH_PATCH_FUNCTION get_base_from_armor_2da
+				INT_VAR column_number = 19
+				RET base_move_silently = value
+			END
+			// column 21 - hide - both
+			LAUNCH_PATCH_FUNCTION get_from_armor_2da
+				INT_VAR column_number = 20
+				RET hide = value
+			END
+			LAUNCH_PATCH_FUNCTION get_base_from_armor_2da
+				INT_VAR column_number = 20
+				RET base_hide = value
+			END
+			// column 22 - arcane_spells - both
+			LAUNCH_PATCH_FUNCTION get_from_armor_2da
+				INT_VAR column_number = 21
+				RET arcane_spells = value
+			END
+			LAUNCH_PATCH_FUNCTION get_base_from_armor_2da
+				INT_VAR column_number = 21
+				RET base_arcane_spells = value
+			END
+
+
+			LAUNCH_PATCH_FUNCTION scan_update_item_effect
+				INT_VAR
+					opcode = 0
+					parameter2 = 16
+					touch_parameter_12 = 1
+				RET
+					magic_ac = value
+			END
+			LAUNCH_PATCH_FUNCTION scan_update_item_effect
+				INT_VAR
+					opcode = 0
+					parameter2 = 8
+					touch_parameter_12 = 1
+					newvalue = slashing_ac
+			END
+			LAUNCH_PATCH_FUNCTION scan_update_item_effect
+				INT_VAR
+					opcode = 0
+					parameter2 = 4
+					touch_parameter_12 = 1
+					newvalue = missile_ac
+			END
+			LAUNCH_PATCH_FUNCTION scan_update_item_effect
+				INT_VAR
+					opcode = 0
+					parameter2 = 2
+					touch_parameter_12 = 1
+					newvalue = piercing_ac
+			END
+			LAUNCH_PATCH_FUNCTION scan_update_item_effect
+				INT_VAR
+					opcode = 0
+					parameter2 = 1
+					touch_parameter_12 = 1
+					newvalue = crushing_ac
+			END
 		END
 	END
 END
