@@ -57,7 +57,7 @@ Weight: 12"
 STATISTICS:
 
 Equipped abilities:
-– Chance to score a critical hit: +5% (with this weapon only)
+– Critical Hit Chance: +5% with this weapon 
 
 Combat abilities:
 – On a critical hit, the wielder gains +5 THAC0 for 3 rounds (non-cumulative)
@@ -136,7 +136,7 @@ Equipped abilities:
 – Strength bonus: +1
 
 Combat abilities:
-- Each hit makes the target receive a cumulative 2 point penalty to their AC for 4 rounds
+- Each hit makes the target receive a cumulative 1 point penalty to their AC for 4 rounds
 
 THAC0: +4
 Damage: 1d8+5 (crushing or piercing)

@@ -1,0 +1,251 @@
+//MAGE ROBE OF COLD RESISTANCE - valore 800mo//
+COPY "rick_bigg_mod/items/CLCK09.itm" "override"
+	SAY NAME1 "Mage Robe"
+	SAY UNIDENTIFIED_DESC "Since the age of Netheril, mages have learned to bestow a wide variety of magical properties upon the everyday objects that surround them. A favorite item of such enchantment is the common robe. It is lightweight, affordable, and holds its enchantment well, thereby making it ideal equipment for a mage. Due to their magical heritage, however, only single-, dual-, and multi-class mages may wear these enchanted robes.
+
+STATISTICS:
+
+Weight: 3"
+
+	SAY NAME2 "Mage Robe of Cold Resistance"
+	SAY DESC "These are a common sight in the Sword Coast region, especially as one travels north toward Neverwinter and the Icewind Dales. Many young mages receive it as a gift from their instructors upon successfully completing their first five years of study. As with other such robes, they can only be worn by those of the wizardly profession.
+
+STATISTICS:
+
+Equipped abilities:
+- Armor Class: 9
+– Cold Resistance: +25%
+
+Weight: 3"
+
+
+
+
+//MAGE ROBE OF FIRE RESISTANCE - valore 800mo//
+COPY "rick_bigg_mod/items/CLCK10.itm" "override"
+	SAY NAME1 "Mage Robe"
+	SAY UNIDENTIFIED_DESC "Since the age of Netheril, mages have learned to bestow a wide variety of magical properties upon the everyday objects that surround them. A favorite item of such enchantment is the common robe. It is lightweight, affordable, and holds its enchantment well, thereby making it ideal equipment for a mage. Due to their magical heritage, however, only single-, dual-, and multi-class mages may wear these enchanted robes.
+
+STATISTICS:
+
+Weight: 3"
+
+	SAY NAME2 "Mage Robe of Fire Resistance"
+	SAY DESC "Due to the extremely volatile nature of most magics, Mage Robes of Fire Resistance are not uncommon among young acolytes and their wizardly tutors. As with other such robes, they cannot be worn except by wizards.
+
+STATISTICS:
+
+Equipped abilities:
+- Armor Class: 9
+– Fire Resistance: +25%
+
+Weight: 3"
+
+
+
+
+
+//MAGE ROBE OF ELECTRIC RESISTANCE - valore 800mo//
+COPY "rick_bigg_mod/items/CLCK11.itm" "override"
+	SAY NAME1 "Mage Robe"
+	SAY UNIDENTIFIED_DESC "Since the age of Netheril, mages have learned to bestow a wide variety of magical properties upon the everyday objects that surround them. A favorite item of such enchantment is the common robe. It is lightweight, affordable, and holds its enchantment well, thereby making it ideal equipment for a mage. Due to their magical heritage, however, only single-, dual-, and multi-class mages may wear these enchanted robes.
+
+STATISTICS:
+
+Weight: 3"
+
+	SAY NAME2 "Mage Robe of Electric Resistance"
+	SAY DESC "While seen with less frequency than some other mage robes, those of Electrical Resistance can hardly be considered a rarity. Some are worn by paranoiacs seeking protection from a ragged mountain storm, but many more are worn by mages seeking to protect themselves from the intrigues of others of their kind. As with all such robes, a Mage Robe of Electrical Resistance can only be worn by those of the wizardly profession.
+
+STATISTICS:
+
+Equipped abilities:
+- Armor Class: 9
+– Electricity Resistance: +25%
+
+Weight: 3"
+
+
+
+
+//KNAVE'S ROBE - valore 1200mo//
+COPY "rick_bigg_mod/items/CLCK12.itm" "override"
+	SAY NAME1 "Mage Robe"
+	SAY UNIDENTIFIED_DESC "Since the age of Netheril, mages have learned to bestow a wide variety of magical properties upon the everyday objects that surround them. A favorite item of such enchantment is the common robe. It is lightweight, affordable, and holds its enchantment well, thereby making it ideal equipment for a mage. Due to their magical heritage, however, only single-, dual-, and multi-class mages may wear these enchanted robes.
+
+STATISTICS:
+
+Weight: 3"
+
+	SAY NAME2 "Knave's Robe"
+	SAY DESC "A favorite among Mage/Thieves, the Knave's Robe has been enchanted to shield its wearer from the knifes and poisons of any darkened alley. As with others of its type, however, its use is restricted to students of the arcane.
+
+STATISTICS:
+
+Equipped abilities:
+- Armor Class: +1 vs. piercing and missile attacks
+– Save vs. Death: +2
+
+Weight: 4"
+
+
+
+
+//TRAVELER'S ROBE - valore 1200mo//
+COPY "rick_bigg_mod/items/CLCK13.itm" "override"
+	SAY NAME1 "Mage Robe"
+	SAY UNIDENTIFIED_DESC "Since the age of Netheril, mages have learned to bestow a wide variety of magical properties upon the everyday objects that surround them. A favorite item of such enchantment is the common robe. It is lightweight, affordable, and holds its enchantment well, thereby making it ideal equipment for a mage. Due to their magical heritage, however, only single-, dual-, and multi-class mages may wear these enchanted robes.
+
+STATISTICS:
+
+Weight: 3"
+
+	SAY NAME2 "Traveler's Robe"
+	SAY DESC "This mage robe has been perfected for use by any rambling, itinerant mage that travels from town to town. Its enchantments provide protection from the bandit's blades and from the jealous mage that lies in ambush with his Stinking Cloud. As with other robes of its kind, the Traveler's Robe can only be worn by wizards. 
+
+STATISTICS:
+
+Equipped abilities:
+- Armor Class: 8
+– Armor Class: +1 vs. slashing and missile attacks
+– Save vs. Breath: +2
+
+Weight: 4"
+
+
+
+
+//ADVENTURER'S ROBE - valore 1200mo//
+COPY "rick_bigg_mod/items/CLCK14.itm" "override"
+	SAY NAME1 "Mage Robe"
+	SAY UNIDENTIFIED_DESC "Since the age of Netheril, mages have learned to bestow a wide variety of magical properties upon the everyday objects that surround them. A favorite item of such enchantment is the common robe. It is lightweight, affordable, and holds its enchantment well, thereby making it ideal equipment for a mage. Due to their magical heritage, however, only single-, dual-, and multi-class mages may wear these enchanted robes.
+
+STATISTICS:
+
+Weight: 3"
+
+	SAY NAME2 "Adventurer's Robe"
+	SAY DESC "This robe has been specially enchanted to meet the eclectic needs of the adventuring mage. Aside from shielding the wearer from various forms of crushing damage, it also provides protection from the basilisk's petrifying gaze and polymorphing powers of rival mages. As with other such robes, the Adventurer's Robe can only be worn by those engaged in the wizardly profession.
+
+STATISTICS:
+
+Equipped abilities:
+- Armor Class: 8
+– Armor Class: +1 vs. crushing and missile attacks
+– Save vs. Petrification/Polymorph: +2
+
+Weight: 4"
+
+
+
+
+//ROBE OF THE GOOD ARCHMAGI - valore 10000mo//
+COPY "rick_bigg_mod/items/CLCK15.itm" "override"
+	SAY NAME1 "Mage Robe"
+	SAY UNIDENTIFIED_DESC "Since the age of Netheril, mages have learned to bestow a wide variety of magical properties upon the everyday objects that surround them. A favorite item of such enchantment is the common robe. It is lightweight, affordable, and holds its enchantment well, thereby making it ideal equipment for a mage. Due to their magical heritage, however, only single-, dual-, and multi-class mages may wear these enchanted robes.
+
+STATISTICS:
+
+Weight: 3"
+
+	SAY NAME2 "Robe of the Good Archmagi"
+	SAY DESC "This powerful mage robe offers protection from all forms of physical attack while at the same time increasing one's Magic Resistance and Saving Throws. Due to the nature of its enchantment, it can only be worn by wizards of good alignment.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: 6
+– Saving Throws: +1
+– Magic Resistance: +10%
+- Casting Level: +2
+
+Weight: 6"
+
+
+
+
+
+
+//ROBE OF THE NEUTRAL ARCHMAGI - valore 10000mo//
+COPY "rick_bigg_mod/items/CLCK16.itm" "override"
+	SAY NAME1 "Mage Robe"
+	SAY UNIDENTIFIED_DESC "Since the age of Netheril, mages have learned to bestow a wide variety of magical properties upon the everyday objects that surround them. A favorite item of such enchantment is the common robe. It is lightweight, affordable, and holds its enchantment well, thereby making it ideal equipment for a mage. Due to their magical heritage, however, only single-, dual-, and multi-class mages may wear these enchanted robes.
+
+STATISTICS:
+
+Weight: 3"
+
+	SAY NAME2 "Robe of the Neutral Archmagi"
+	SAY DESC "This powerful mage robe offers protection from all forms of physical attack while at the same time increasing one's Magic Resistance and Saving Throws. Due to the nature of its enchantment, it can only be worn by wizards of neutral alignment.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: 6
+– Saving Throws: +1
+– Magic Resistance: +10%
+- Casting Level: +2
+
+Weight: 6"
+
+
+
+
+
+//ROBE OF THE EVIL ARCHMAGI - valore 10000mo//
+COPY "rick_bigg_mod/items/CLCK17.itm" "override"
+	SAY NAME1 "Mage Robe"
+	SAY UNIDENTIFIED_DESC "Since the age of Netheril, mages have learned to bestow a wide variety of magical properties upon the everyday objects that surround them. A favorite item of such enchantment is the common robe. It is lightweight, affordable, and holds its enchantment well, thereby making it ideal equipment for a mage. Due to their magical heritage, however, only single-, dual-, and multi-class mages may wear these enchanted robes.
+
+STATISTICS:
+
+Weight: 3"
+
+	SAY NAME2 "Robe of the Evil Archmagi"
+	SAY DESC "This powerful mage robe offers protection from all forms of physical attack while at the same time increasing one's Magic Resistance and Saving Throws. Due to the nature of its enchantment, it can only be worn by wizards of evil alignment.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: 6
+– Saving Throws: +1
+– Magic Resistance: +10%
+- Casting Level: +2
+
+Weight: 6"
+
+
+
+
+
+//ROBE OF THE RED FLAMES - valore 5500mo//
+COPY "rick_bigg_mod/items/BDROBE05.itm" "override"
+	SAY NAME1 "Mage Robe"
+	SAY UNIDENTIFIED_DESC "Since the age of Netheril, mages have learned to bestow a wide variety of magical properties upon the everyday objects that surround them. A favorite item of such enchantment is the common robe. It is lightweight, affordable, and holds its enchantment well, thereby making it ideal equipment for a mage. Due to their magical heritage, however, only single-, dual-, and multi-class mages may wear these enchanted robes.
+
+STATISTICS:
+
+Weight: 3"
+
+	SAY NAME2 "Robe of the Red Flames"
+	SAY DESC "This heavy crimson robe trimmed in gold signifies the importance of the wearer. Once the property of Edwin Odesseiron, Red Wizard of Thay, the robe was designed to further enhance his already significant magical prowess. Anyone who dons the Robe of Red Flames will deal additional damage whenever they use fire-based magic and will be less likely hurt by it.
+
+STATISTICS:
+
+Equipped abilities:
+- Armor Class: 7
+– Fire Resistance: +40%
+– All fire damage inflicted by the wearer is increased by 20%
+
+Weight: 4"
+
+
+
+
+
+
+
+
+
+
+

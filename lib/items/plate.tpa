@@ -163,7 +163,7 @@ Weight: 18
 
 
 
-//DELVER'S PLATE MAIL +2 - 7500mo//
+//DELVER'S PLATE MAIL +2 - solo berserk - 7500mo//
 COPY "rick_bigg_mod/items/PLAT11.itm" "override"
 	SAY NAME1 "Plate Mail"
 	SAY UNIDENTIFIED_DESC "Plate mail is a combination of chain armor with metal plates covering the vital areas such as the chest, abdomen, and groin. Similar in construction to bronze plate mail, true plate mail comprises chain and leather.
@@ -184,7 +184,7 @@ Weight: 50"
 STATISTICS:
 
 Equipped abilities:
-– Save vs. Spell and save vs. Wand: +2
+– When enraged, regenerate 1 HP every 3 seconds
 
 Armor Class: 1 (-2 vs. slashing, 0 vs. piercing and missile)
 Speed Factor: -3

@@ -1,3 +1,336 @@
+//CLOVERLEAF - 1500mo//
+COPY "rick_bigg_mod/items/TB#BELTC.itm" "override"
+	SAY NAME1 "Girdle"
+	SAY UNIDENTIFIED_DESC "Girdles are generally similar to belts. Unlike belts, girdles are not used to hold up pants and dungarees, but to carry pouches, scabbards, and the like. 
+
+STATISTICS:
+
+Weight: 2"
+
+	SAY NAME2 "Cloverleaf"
+	SAY DESC "This vibrant cloth belt is woven with dried four-leaf clovers, a traditional symbol of good fortune among halfling communities. It was originally crafted by a gentle halfling elder from the Gullykin village to protect a young, reckless explorer heading into the wilderness. Legends say that while wearing it, the youth narrowly avoided rampaging ankhegs and survived several lethal traps by sheer, unexplained coincidence.
+
+STATISTICS:
+
+Equipped abilities:
+– Luck: +1
+
+Weight: 2"
+
+
+
+//GOLDEN GIRDLE OF URNST - 1500mo//
+COPY "rick_bigg_mod/items/BELT02.itm" "override"
+	SAY NAME1 "Girdle"
+	SAY UNIDENTIFIED_DESC "Girdles are generally similar to belts. Unlike belts, girdles are not used to hold up pants and dungarees, but to carry pouches, scabbards, and the like. 
+
+STATISTICS:
+
+Weight: 2"
+
+	SAY NAME2 "Golden Girdle of Urnst"
+	SAY DESC "Created to protect a powerful wizard against malevolent warriors, this magical garment is made of red silk strewn with golden flakes. It is enchanted to give protection against slashing weapons of any type.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +4 vs. slashing attacks
+
+Weight: 2"
+
+
+
+//GIRDLE OF BLUNTNESS - 1500mo//
+COPY "rick_bigg_mod/items/BELT03.itm" "override"
+	SAY NAME1 "Girdle"
+	SAY UNIDENTIFIED_DESC "Girdles are generally similar to belts. Unlike belts, girdles are not used to hold up pants and dungarees, but to carry pouches, scabbards, and the like. 
+
+STATISTICS:
+
+Weight: 2"
+
+	SAY NAME2 "Girdle of Bluntness"
+	SAY DESC "Having lost friends and loved ones to a series of raids by hill giants, Garrar the Powerful made it his mission to cleanse his homeland of their presence. It is not known where he acquired this item, but with it he single-handedly dispatched dozens of the creatures, all the while protected from the blows of their clubs. The remaining giants fled to neighboring lands—lands that lacked a similar champion and did not fare as well.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +4 vs. crushing attacks
+
+Weight: 2"
+
+
+
+
+
+//GIRDLE OF PIERCING - 1500mo//
+COPY "rick_bigg_mod/items/BELT04.itm" "override"
+	SAY NAME1 "Girdle"
+	SAY UNIDENTIFIED_DESC "Girdles are generally similar to belts. Unlike belts, girdles are not used to hold up pants and dungarees, but to carry pouches, scabbards, and the like. 
+
+STATISTICS:
+
+Weight: 2"
+
+	SAY NAME2 "Girdle of Piercing"
+	SAY DESC "An infamous highwayman in his day, Pandar of Scardale made quite a name for himself vexing the elves of Cormanthor forest. To their annoyance, he continually used the wood to escape the law—and with the aid of this girdle, the elves' arrows as well. Unfortunately for Pandar, pit traps and starvation proved a slower, but effective, substitution.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +3 vs. missile and piercing attacks
+
+Weight: 2"
+
+
+
+
+
+//BELT OF THE CUNNING ROGUE - 1800mo - solo ladri//
+COPY "rick_bigg_mod/items/BDBELT03.itm" "override"
+	SAY NAME1 "Girdle"
+	SAY UNIDENTIFIED_DESC "Girdles are generally similar to belts. Unlike belts, girdles are not used to hold up pants and dungarees, but to carry pouches, scabbards, and the like. 
+
+STATISTICS:
+
+Weight: 2"
+
+	SAY NAME2 "Belt of the Cunning Rogue"
+	SAY DESC "This dark, oiled leather belt was crafted by a master dungeon delver who specialized in bypassing ancient defenses. It originally belonged to a notorious rogue famous for infiltrating lethal elven ruins and untying the most complex wire triggers. The heavy buckle conceals a secret compartment filled with specialized tension picks and delicate counter-weights, allowing a skilled thief to work safely in the shadows.
+
+STATISTICS:
+
+Equipped abilities:
+– Disarm Traps: +15%
+- Set Traps: +15%
+
+Weight: 2"
+
+
+
+
+//GIRDLE OF THE UNYIELDING FORM - 3500mo//
+COPY "rick_bigg_mod/items/TB#BELTM.itm" "override"
+	SAY NAME1 "Girdle"
+	SAY UNIDENTIFIED_DESC "Girdles are generally similar to belts. Unlike belts, girdles are not used to hold up pants and dungarees, but to carry pouches, scabbards, and the like. 
+
+STATISTICS:
+
+Weight: 2"
+
+	SAY NAME2 "Girdle of the Unyielding Form"
+	SAY DESC "This thick leather girdle was forged in the deep caverns of the Underdark, commissioned by a duergar king who feared the petrifying gaze of basilisk infestations. Woven into the iron-reinforced seams are crushed shards of iron golem cores and residual magic from an antimagic eye. The wearer feels an unnatural density settling into their bones, making their physical shape completely immutable to hostile magic while simultaneously unweaving minor spells targeted at them.
+
+STATISTICS:
+
+Equipped abilities:
+– Save vs. Transmutation: +4
+- Magic Resistance: +5%
+
+Weight: 2"
+
+
+
+
+
+
+
+//GIRDLE OF HILL GIANT STRENGTH - solo combattenti - 10000mo//
+COPY "rick_bigg_mod/items/BELT06.itm" "override"
+	SAY NAME1 "Girdle"
+	SAY UNIDENTIFIED_DESC "Girdles are generally similar to belts. Unlike belts, girdles are not used to hold up pants and dungarees, but to carry pouches, scabbards, and the like. 
+
+STATISTICS:
+
+Weight: 2"
+
+	SAY NAME2 "Girdle of Hill Giant Strength"
+	SAY DESC "Forged from crude iron and thick, reinforced leather, this heavy belt radiates the brute force of the foothills. It channels the primal, unyielding power of the hill giants, flooding the wearer's muscles with immense physical strength. While lacking the elemental protections of its more powerful counterparts, the artifact ensures its user can easily crush rock and bone alike through sheer, overwhelming muscle.
+
+STATISTICS:
+
+Equipped abilities:
+– Strength: 19
+
+Weight: 2"
+
+
+
+
+//GIRDLE OF STONE GIANT STRENGTH - solo combattenti - 12000mo//
+COPY "rick_bigg_mod/items/BELT07.itm" "override"
+	SAY NAME1 "Girdle"
+	SAY UNIDENTIFIED_DESC "Girdles are generally similar to belts. Unlike belts, girdles are not used to hold up pants and dungarees, but to carry pouches, scabbards, and the like. 
+
+STATISTICS:
+
+Weight: 2"
+
+	SAY NAME2 "Girdle of Stone Giant Strength"
+	SAY DESC "Carved from deep-mountain basalt and bound in heavy iron, this solid belt carries the tectonic weight of the peaks. It infuses the wearer with the monolithic power of the stone giants, granting the muscle needed to shatter boulders with bare hands. Imbued with the mountain's stubborn nature, the artifact grounds the user, turning their skin as resilient as bedrock to deflect oncoming weapons.
+
+STATISTICS:
+
+Equipped abilities:
+– Strength: 19
+- Physical Damage Resistance: +5%
+
+Weight: 2"
+
+
+
+
+//GIRDLE OF FROST GIANT STRENGTH - solo combattenti - 12000mo//
+COPY "rick_bigg_mod/items/BELT08.itm" "override"
+	SAY NAME1 "Girdle"
+	SAY UNIDENTIFIED_DESC "Girdles are generally similar to belts. Unlike belts, girdles are not used to hold up pants and dungarees, but to carry pouches, scabbards, and the like. 
+
+STATISTICS:
+
+Weight: 2"
+
+	SAY NAME2 "Girdle of Frost Giant Strength"
+	SAY DESC "Forged from frozen iron and ice-drake hide, this massive belt radiates the raw power of the Great Glacier. It directly channels the legendary might of the frost giants, surging through the wearer's veins to grant colossal physical strength. The heavy enchantments layered within the material also act as a shield, hardening the flesh against crushing weapons and creating a dense barrier against absolute zero temperatures.
+
+STATISTICS:
+
+Equipped abilities:
+– Strength: 20
+- Physical Resistance: +5%
+- Cold Resistance: +20%
+
+Weight: 2"
+
+
+
+//GIRDLE OF FIRE GIANT STRENGTH - solo combattenti - 12000mo//
+COPY "rick_bigg_mod/items/BELT11.itm" "override"
+	SAY NAME1 "Girdle"
+	SAY UNIDENTIFIED_DESC "Girdles are generally similar to belts. Unlike belts, girdles are not used to hold up pants and dungarees, but to carry pouches, scabbards, and the like. 
+
+STATISTICS:
+
+Weight: 2"
+
+	SAY NAME2 "Girdle of Fire Giant Strength"
+	SAY DESC "Forged in volcanic depths from blackened steel and magma-tempered brass, this heavy belt pulses with intense, suffocating heat. It unleashes the fierce, militaristic power of the fire giants, flooding the wearer's veins with colossal physical strength. Embodying the indomitable nature of the forge, the artifact hardens the user's body against physical strikes and forms an absolute barrier against searing flames.
+
+STATISTICS:
+
+Equipped abilities:
+– Strength: 20
+- Physical Resistance: +5%
+- Fire Resistance: +20%
+
+Weight: 2"
+
+
+
+
+
+//GIRDLE OF FORTITUDE - 8000mo//
+COPY "rick_bigg_mod/items/BELT09.itm" "override"
+	SAY NAME1 "Girdle"
+	SAY UNIDENTIFIED_DESC "Girdles are generally similar to belts. Unlike belts, girdles are not used to hold up pants and dungarees, but to carry pouches, scabbards, and the like. 
+
+STATISTICS:
+
+Weight: 2"
+
+	SAY NAME2 "Girdle of Fortitude"
+	SAY DESC "This girdle greatly increases the wearer's Constitution. King Violos used it when leading an expedition against marsh trolls. He'd been severely sickened the past winter and was no longer the healthy man he once was. The belt gave extra years to his life and inspired his men to renew their confidence in their king once more.
+
+STATISTICS:
+
+Charge abilities:
+Equipped abilities:
+– Constitution: 18
+
+Weight: 2"
+
+
+
+
+
+
+
+//BELT OF THE SKILLFUL BLADE - solo spadaccini - 11000mo//
+COPY "rick_bigg_mod/items/BDBELT02.itm" "override"
+	SAY NAME1 "Girdle"
+	SAY UNIDENTIFIED_DESC "Girdles are generally similar to belts. Unlike belts, girdles are not used to hold up pants and dungarees, but to carry pouches, scabbards, and the like. 
+
+STATISTICS:
+
+Weight: 2"
+
+	SAY NAME2 "Belt of the Skillful Blade"
+	SAY DESC "A blacksmith in Cormyr is responsible for designing this item. Say'an Keenedge was renowned for designing the sharpest, best balanced, and most beautiful blades in the country. She was also a bit of a hothead and grew furious when she saw less-skilled fighters wielding her weapons. For her finest work she handed out one of these belts free with purchase, in order that her weapons never be mishandled.
+
+STATISTICS:
+
+Equipped abilities:
+- 1/2 extra attack per round
+– THAC0 with the off hand: +2
+– Slashing Damage: +10%
+- Piercing Damage: +10%
+- Armor Class vs. Slashing: +2
+- Armor Class vs. Piercing: +2
+
+Weight: 2"
+
+
+
+
+//GIRDLE OF ABSORPTION  - 2500mo//
+COPY "rick_bigg_mod/items/BDBELT04.itm" "override"
+	SAY NAME1 "Girdle"
+	SAY UNIDENTIFIED_DESC "Girdles are generally similar to belts. Unlike belts, girdles are not used to hold up pants and dungarees, but to carry pouches, scabbards, and the like. 
+
+STATISTICS:
+
+Weight: 2"
+
+	SAY NAME2 "Girdle of Absorption"
+	SAY DESC "This peculiar girdle was commissioned centuries ago by a cautious archmage weary of falling victim to rival spellcasters. The supple leather is intricately woven with silver threads and etched with shimmering abjuration runes. When struck by hostile arcane energy, these runes flare to life, drawing the brunt of the destructive force into the belt's enchanted weave before it can harm the wearer.
+
+STATISTICS:
+
+Equipped abilities:
+- Magical Damage Resistance: +40%
+
+Weight: 2"
+
+
+
+
+
+
+//GIRDLE OF INERTIAL BARRIER - 6500mo//
+COPY "rick_bigg_mod/items/BELT10.itm" "override"
+	SAY NAME1 "Girdle"
+	SAY UNIDENTIFIED_DESC "Girdles are generally similar to belts. Unlike belts, girdles are not used to hold up pants and dungarees, but to carry pouches, scabbards, and the like. 
+
+STATISTICS:
+
+Weight: 2"
+
+	SAY NAME2 "Girdle of Inertial Barrier"
+	SAY DESC "When worn, this belt creates a dense curtain of air around the wearer. This curtain or barrier provides superior protection against breath attacks. By the scorch marks on the worn leather, it is obvious that this belt has been worn at least once against a dragon.
+
+STATISTICS:
+
+Equipped abilities:
+– Save vs. Breath: +4
+- Immunity to Wing Buffet, Sleep and Unconsciousness
+
+Weight: 2"
+
+
+
+
+
+
+
 //GIRDLE OF AVOIDANCE - 9000mo//
 COPY "rick_bigg_mod/items/OHRBELT2.itm" "override"
 	SAY NAME1 "Girdle"
@@ -18,24 +351,9 @@ Combat abilities:
 Weight: 2"
 
 
-//GIRDLE OF ABSORPTION  - 14000mo//
-COPY "rick_bigg_mod/items/BDBELT04.itm" "override"
-	SAY NAME1 "Girdle"
-	SAY UNIDENTIFIED_DESC "Girdles are generally similar to belts. Unlike belts, girdles are not used to hold up pants and dungarees, but to carry pouches, scabbards, and the like. 
 
-STATISTICS:
 
-Weight: 2"
 
-	SAY NAME2 "Girdle of Absorption"
-	SAY DESC "This thick leather belt belonged to Arathor, a frontline commander known for his agile fighting style. Realizing that heavy plate mail slowed his reflexes against crushing blows, he commissioned this girdle to aid his close-quarters footwork. Imbued with kinetic shielding, the belt accelerates the wearer's defensive movements and hardens its magical barrier the moment a strike connects. While highly effective at deflecting blades and blunt weapons up close, the enchantment requires physical contact to activate, leaving the wearer entirely exposed to flying projectiles.
 
-STATISTICS:
 
-Equipped abilities:
-- Armor Class: +1 (no protection against Missile attacks)
 
-Combat abilities:
-– Armor Class +2 cumulative for 9 seconds when hit (no protection against Missile attacks)
-
-Weight: 2"

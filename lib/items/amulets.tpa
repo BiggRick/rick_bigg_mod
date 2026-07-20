@@ -159,7 +159,7 @@ STATISTICS:
 
 Equipped abilities:
 – Saving Throws vs Breath: +2
-– Luck +2
+– Luck +1
 
 Weight: 1"
 
@@ -269,11 +269,11 @@ STATISTICS:
 Equipped abilities:
 – Constitution: -2
 – Armor Class: +2, an extra +3 vs. missile attacks
-– Save vs. Death: -2
-– Save vs. Wand: +2
-– Save vs. Polymorph: +2
+– Save vs. Death/Paralysis/Poison: -2
 – Save vs. Breath: +2
+– Save vs. Petrification/Polymorph: +2
 – Save vs. Spell: +2
+– Save vs. Wand: +2
 – May only be removed with a Remove Curse spell
 
 Weight: 1"
@@ -338,7 +338,7 @@ STATISTICS:
 
 Weight: 1"
 
-	SAY NAME2 "Periapt of Life Protection"
+	SAY NAME2 "Periapt of Proof Against Poison"
 	SAY DESC "A majestic, glowing gemstone suspended from a heavy, intricately woven golden chain. Crafted in the distant lands of Kara-Tur, this amulet was worn by imperial eunuchs during the Emperor's food-tasting rituals, safeguarding the throne from the realm's deadliest toxins.
 
 STATISTICS:
@@ -438,7 +438,7 @@ Weight: 1"
 STATISTICS:
 
 Equipped abilities:
-– Save vs. Polymorph: +5
+– Save vs. Petrification/Polymorph: +5
 
 Weight: 1"
 
@@ -446,7 +446,7 @@ Weight: 1"
 
 
 
-//ARCHER EYE - solo ranger - 6500mo//
+//ARCHER EYE - solo ranger - 5500mo//
 COPY "rick_bigg_mod/items/BDAMUL02.itm" "override"
 	SAY NAME1 "Amulet"
 	SAY UNIDENTIFIED_DESC "Amulets are usually magical devices that are commonly worn around the neck, suspended from a chain. The type of chain that comes with an amulet generally increases the item's aesthetic value, not its magical properties. Only one amulet can be dangled from the neck at a time.
@@ -461,8 +461,8 @@ Weight: 1"
 STATISTICS:
 
 Equipped abilities:
-– Chance to score a critical hit: +5% (ranged attacks only)
-– Dexterity: +2
+– Chance to score a critical hit: +5% (only with ranged weapons)
+– Dexterity: +1
 
 Weight: 1"
 
@@ -486,7 +486,7 @@ STATISTICS:
 Equipped abilities:
 – Bless on wearer
 – Wisdom: +1
-- Turn Undead: +2 Cleric level
+- Turn Undead: +2
 
 Weight: 1"
 
@@ -534,31 +534,8 @@ Weight: 1"
 STATISTICS:
 
 Equipped abilities: 
-– Armor Class: +2
+– Armor Class: +1
 – Can memorize one extra divine spell of each level from 1st to 5th
-
-Weight: 1"
-
-
-
-
-//AMULETS OF CHEETAH SPEED - valore 8000mo//
-COPY "rick_bigg_mod/items/AMUL26.itm" "override"
-	SAY NAME1 "Amulet"
-	SAY UNIDENTIFIED_DESC "Amulets are usually magical devices that are commonly worn around the neck, suspended from a chain. The type of chain that comes with an amulet generally increases the item's aesthetic value, not its magical properties. Only one amulet can be dangled from the neck at a time.
-
-STATISTICS:
-
-Weight: 1"
-
-	SAY NAME2 "Amulet of Cheetah Speed"
-	SAY DESC "This ancient amulet is crafted from a petrified seed of the first Great Oak, encased in a delicate web of living, indestructible roots. Blessed by Rillifane Rallathil and Silvanus, the amulet pulses with the pure, untamed heartbeat of nature. It rejects all who do not share a deep connection with the wilderness, functioning only for true protectors of the balance. When worn by a druid, it shields their body with a bark-like aura of protection and channels the raw energy of the earth, expanding their spiritual vessel to grant deeper access to divine magic.
-
-STATISTICS:
-
-Equipped abilities: 
-– Haste
-– Speed Factor: +2
 
 Weight: 1"
 
@@ -613,13 +590,32 @@ Charge abilities:
   Duration: 5 rounds
   Area of Effect: the user
 
-Weight: 2"
+Weight: 1"
 
 
 
 
 
+//AMULET OF POWER - solo maghi e bardi - valore 13000mo//
+COPY "rick_bigg_mod/items/AMUL21.itm" "override"
+	SAY NAME1 "Amulet"
+	SAY UNIDENTIFIED_DESC "Amulets are usually magical devices that are commonly worn around the neck, suspended from a chain. The type of chain that comes with an amulet generally increases the item's aesthetic value, not its magical properties. Only one amulet can be dangled from the neck at a time.
 
+STATISTICS:
+
+Weight: 1"
+
+	SAY NAME2 "Amulet of Power"
+	SAY DESC "This amulet bears the signature enchantments of Conster Damon, an archmage who fell in the Year of the Dracorage (1018 DR). The crispness of its etchings may have faded with fire and time, but it still echoes his famous, defiant cries: "Your magic denied!" "I will be heard!" "Defeat comes swiftly!" "Take nothing from me!"Damon designed the amulet not merely to shield himself, but to amplify his arcane supremacy, allowing him to weave spells with devastating speed and overwhelming force. It has seen much use and changed hands many times through blood and battle.
+
+STATISTICS:
+
+Equipped abilities:
+– Casting Level: +2
+– Casting Speed: +1
+– Magical damage (all form): +10%
+
+Weight: 1"
 
 
 

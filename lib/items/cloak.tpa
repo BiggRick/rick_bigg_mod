@@ -428,13 +428,13 @@ STATISTICS:
 Weight: 3"
 
 	SAY NAME2 "Cloak of Reflection"
-	SAY DESC "Vorn Druidslayer crafted this cloak and used it with great success in his campaign to eliminate the druids from all the woods south of Baldur's Gate. His campaign ended abruptly when he encountered a flock of wyverns, who were attracted by the cloak's sheen. They killed Vorn and used the cloak to cover their nest, serving to protect their young during electrical storms.
+	SAY DESC "Vorn Druidslayer crafted this cloak and used it with great success in his campaign to eliminate the druids from all the woods south of Baldur's Gate. His campaign ended abruptly when he encountered a flock of wyverns, who were attracted by the cloak's sheen. They killed Vorn and used the cloak to cover their nest, serving to protect their young during Electricity storms.
 
 STATISTICS:
 
 Equipped abilities:
-– Electrical Resistance: 40%
-– Reflects all electrical damage back to the source
+– Electricity Resistance: 40%
+– Reflects all Electricity damage back to the source
 
 Weight: 3
 "
@@ -519,7 +519,7 @@ Weight: 3"
 
 
 
-//ARMOR CLOAK - 7500mo - solo maghi//
+//ARMOR CLOAK - 7500mo//
 COPY "rick_bigg_mod/items/CLCK29.itm" "override"
 	SAY NAME1 "Cloak"
 	SAY UNIDENTIFIED_DESC "The cloak can be made in every possible shape with just about every type of fabric. The most common forms are a circular piece of fabric with a hole in the center for the head, and fabric draped from neck, connected by a chain, brooch, cord, or pins.
@@ -545,34 +545,7 @@ Weight: 3"
 
 
 
-//RANGER CLOAK - 4500mo - solo ranger//
-COPY "rick_bigg_mod/items/TB#CLCKR.itm" "override"
-	SAY NAME1 "Cloak"
-	SAY UNIDENTIFIED_DESC "The cloak can be made in every possible shape with just about every type of fabric. The most common forms are a circular piece of fabric with a hole in the center for the head, and fabric draped from neck, connected by a chain, brooch, cord, or pins.
-
-STATISTICS:
-
-Weight: 3"
-
-	SAY NAME2 "Ranger Cloak"
-	SAY DESC "This robe was created by your apprentices, working busily away within the planar sphere. Despite their clear inexperience, the young mages managed to craft an incredibly powerful garment. By weaving defensive wards and planar energies into the fabric, they created an item that offers remarkable protection against both physical attacks and hostile magic.
-
-STATISTICS:
-
-Equipped abilities:
-– Armor Class: +1
-- Saving Throws: +1
-- Missile Resistance: +20%
-
-Charge abilities:
-- Cast Haste once per day
-
-Weight: 3"
-
-
-
-
-//RANGER CLOAK - 4500mo - solo ranger//
+//RANGER SHROUD - 3500mo - solo ranger//
 COPY "rick_bigg_mod/items/COMPON16.itm" "override"
 	SAY NAME1 "Cloak"
 	SAY UNIDENTIFIED_DESC "The cloak can be made in every possible shape with just about every type of fabric. The most common forms are a circular piece of fabric with a hole in the center for the head, and fabric draped from neck, connected by a chain, brooch, cord, or pins.
@@ -581,8 +554,8 @@ STATISTICS:
 
 Weight: 3"
 
-	SAY NAME2 "Whirlwind Shroud"
-	SAY DESC "This ethereal garment looks as though it were spun from storm clouds and twilight. It was originally crafted for Sylas Dawnrunner, a high-elves fletcher who defended the mountain passes of the Cloud Peaks. Blessed by Shaundakul, the Rider of the Winds, the cloak is constantly surrounded by a faint, nearly silent vortex of rushing air.This localized gale acts as a secondary shield for the warden: it shifts just enough to deflect incoming arrows, hardens to absorb physical blows, and diffuses magical energies directed at the wearer. Despite its thick appearance, it feels weightless to the touch, though it carries a tangible structural presence when protecting its host. The chaotic, free-spirited nature of the wind spirits bound to the fabric will only answer the call of a Ranger who understands the true balance of the wild.
+	SAY NAME2 "Ranger Shroud"
+	SAY DESC "This cloak was once worn by Galathil, a legendary elven ranger who spent centuries patrolling the deadliest depths of the Forest of Tethyr. Treated with the protective sap of ancient ironwood trees, the enchanted fabric possesses a natural elasticity that subtly misdirects incoming projectiles, slowing down arrows before they can strike.
 
 STATISTICS:
 
@@ -596,7 +569,7 @@ Weight: 3"
 
 
 
-//WHIRLWIND CLOAK - 12000mo - solo ranger//
+//WHIRLWIND SHROUD - 12000mo - solo ranger//
 COPY "rick_bigg_mod/items/CLCK32.itm" "override"
 	SAY NAME1 "Cloak"
 	SAY UNIDENTIFIED_DESC "The cloak can be made in every possible shape with just about every type of fabric. The most common forms are a circular piece of fabric with a hole in the center for the head, and fabric draped from neck, connected by a chain, brooch, cord, or pins.
@@ -605,8 +578,10 @@ STATISTICS:
 
 Weight: 3"
 
-	SAY NAME2 "Whirlwind Cloak"
-	SAY DESC "
+	SAY NAME2 "Whirlwind Shroud"
+	SAY DESC "This cloak was once worn by Galathil, a legendary elven ranger who spent centuries patrolling the deadliest depths of the Forest of Tethyr. Treated with the protective sap of ancient ironwood trees, the enchanted fabric possesses a natural elasticity that subtly misdirects incoming projectiles, slowing down arrows before they can strike.
+	
+	Fastened with a clasp blessed by Aerdrie Faenya, the elven goddess of the air, the garment now reveals its true power.
 
 STATISTICS:
 
@@ -619,5 +594,32 @@ Charge abilities:
 – Improved Haste three times per day (double movement, attack per round and some effects)
   Duration: 5 rounds
   Area of Effect: the user
+
+Weight: 3"
+
+
+
+
+//LIFE SHROUD - 10000mo - solo chierici no evil//
+COPY "rick_bigg_mod/items/BDCLCK03.itm" "override"
+	SAY NAME1 "Cloak"
+	SAY UNIDENTIFIED_DESC "The cloak can be made in every possible shape with just about every type of fabric. The most common forms are a circular piece of fabric with a hole in the center for the head, and fabric draped from neck, connected by a chain, brooch, cord, or pins.
+
+STATISTICS:
+
+Weight: 3"
+
+	SAY NAME2 "Life Shroud"
+	SAY DESC "Fashioned by the high clerics of the Morninglord during the catastrophic Siege of Tulanth, this cloak was consecrated for a single purpose: to survive the wrath of the infamous necromancer Abi-Dalzim. As the mage’s horrific wilting spells turned entire armies into dust, the lightbringers channeled their collective divine essence into this garment, creating an absolute shield against arcane necromancy. Infused with pure holy energy, the shroud amplifies its wearer's divine spellcasting and burns undead horrors with radiant fury. Because it is bound to the magic of absolute light, the cloak becomes heavy as lead and entirely useless in the hands of any neutral or evil being.
+
+STATISTICS:
+
+Equipped abilities:
+- Turn Undead: +3
+- Immunity to arcane necromancy
+
+Charge abilities:
+- Turn Undead three times per day
+  Duration: 3 rounds
 
 Weight: 3"

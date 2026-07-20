@@ -16,14 +16,14 @@ Half-elves have the following traits:
 @200000003 = "DWARVES: Dwarves are short and stocky, easily identifiable by their size and shape. They have ruddy cheeks, dark eyes, and dark hair. Dwarves tend to be dour and taciturn. They are given to hard work and care little for most humor. They enjoy beer, ale, mead, but most of all, they love gold. There are four racial divisions of dwarves within the realms: shield dwarves, gold dwarves, wild dwarves, and duergar.
 
 Dwarves have the following traits:
-- +2 bonus to Saving Throws vs. Paralysis/Poison/Death and vs. Polymorph, with additional bonuses based on Constitution.
+- +2 bonus to Saving Throws vs. Paralysis/Poison/Death and vs. Petrification/Polymorph, with additional bonuses based on Constitution.
 - Infravision.
 - +10% Open Locks, +15% Find Traps, +15% Set Traps, -10% Move Silently, -5% Hide in Shadows.
 - +1 Constitution, -1 Dexterity, -1 Charisma."
 @200000004 = "HALFLINGS: Halflings are short, generally plump people, very much like small humans. Their faces are round and broad and often quite florid. Their hair is typically curly, and the tops of their feet are covered with coarse hair. Overall they prefer the comforts of home to dangerous adventuring. They enjoy good living, rough humor, and homespun tales. There are three racial divisions of halflings within the realms: the hairfoot, tallfellow, and stout.
 
 Halflings have the following traits:
-- +2 bonus to Saving Throws vs. Paralysis/Poison/Death and vs. Polymorph, with additional bonuses based on Constitution.
+- +2 bonus to Saving Throws vs. Paralysis/Poison/Death and vs. Petrification/Polymorph, with additional bonuses based on Constitution.
 - +1 THAC0 bonus with Slings and Darts.
 - +5% Open Locks, +5% Find Traps, +5% Pick Pockets, +10% Move Silently, +15% Hide in Shadows.
 - +1 Dexterity, -1 Strength, -1 Wisdom."

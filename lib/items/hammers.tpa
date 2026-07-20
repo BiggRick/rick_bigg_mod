@@ -94,7 +94,7 @@ Weight: 6"
 STATISTICS:
 
 Equipped abilities:
-– Chance to score a critical hit: +5% with this weapon only
+– Critical Hit Chance: +5% with this weapon 
 
 THAC0: +2
 Damage: 2d3+3
@@ -111,7 +111,7 @@ Weight: 4"
 
 
 
-//DREAD HAMMER +3 - valore 7000mo - no buoni//
+//DREAD HAMMER +3 - valore 5500mo - no buoni//
 COPY "rick_bigg_mod/items/BDHAMM06.itm" "override"
 	SAY NAME1 "Hammer"
 	SAY UNIDENTIFIED_DESC "A massive warhammer inscribed with dwarven runes.
@@ -177,7 +177,7 @@ Weight: 9"
 STATISTICS:
 
 THAC0: +3
-Damage: 2d3+4, +3 electrical 
+Damage: 2d3+4, +3 Electricity 
 Damage type: Crushing
 Speed Factor: 3
 Proficiency Type: War Hammer
@@ -216,7 +216,7 @@ Weight: 9"
 STATISTICS:
 
 Equipped abilities:
-– Chance to score a ranged critical hit: +10% with this weapon only
+– Critical Hit Chance: +10% with this weapon (only with ranged attack)
 
 Combat abilities (thrown):
 – On critical hit opponent is knocked back and stunned for a round (save vs. Wand at -4)
@@ -267,7 +267,7 @@ Combat abilities:
 – Slays flesh golems, stone golems and clay golems
 
 THAC0: +5
-Damage: 2d3+6, +5 electrical
+Damage: 2d3+6, +5 Electricity
 Damage type: Crushing
 Speed Factor: 1
 Proficiency Type: War Hammer

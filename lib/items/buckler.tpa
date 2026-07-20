@@ -70,7 +70,7 @@ Weight: 2
 
 
 //STEADFAST +2 - 5500mo//
-COPY "rick_bigg_mod/items/SHLD20.itm" "override"
+COPY "rick_bigg_mod/items/BDSHLD06.itm" "override"
 	SAY NAME1 "Buckler"
 	SAY UNIDENTIFIED_DESC "A buckler, also known as a target shield, is a small round shield of wood or metal that fastens to the forearm. Because of its size, it is light and can be worn with very little restriction to movement.
 
@@ -93,7 +93,6 @@ STATISTICS:
 Equipped abilities:
 – Armor Class: +3
 – No protection against missile and piercing attacks
-- Physical Damage Resistance: +10% (crushing, slashing, piercing, and missile)
 
 Requires:
  6 Strength

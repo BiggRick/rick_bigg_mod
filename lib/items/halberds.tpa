@@ -213,7 +213,7 @@ STATISTICS:
 
 THAC0: +5
 Damage: 1d10
-Elemental damage: +1 cold damage, +1 fire damage, +1 electrical damage, +1 acid damage, +1 poison damage (bypass MR)
+Elemental damage: +1 cold damage, +1 fire damage, +1 Electricity damage, +1 acid damage, +1 poison damage (bypass MR)
 Damage type: Piercing
 Speed Factor: 4
 Proficiency Type: Halberd

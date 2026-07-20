@@ -430,7 +430,7 @@ Weight: 10"
 STATISTICS:
 
 THAC0: +4
-Damage: 2d4+5, +1d4 acid damage
+Damage: 2d4+5, +3 acid damage
 Damage type: Slashing
 Speed Factor: 4
 Proficiency Type: Bastard Sword
@@ -472,7 +472,7 @@ Combat abilities:
 - 5% chance cast Black Dragon's Breath (24d4+12 acid damage save vs. Breath for half, enemies only)
 
 THAC0: +5
-Damage: 2d4+6, +1d8 acid damage
+Damage: 2d4+6, +3 acid damage
 Damage type: Slashing
 Speed Factor: 3
 Proficiency Type: Bastard Sword
@@ -511,7 +511,7 @@ Weight: 10"
 STATISTICS:
 
 Equipped abilities:
-- Critical hit chance: +10% (only with this weapon)
+- Critical Hit Chance: +5% with this weapon 
 
 Combat abilities:
 - On a critical hit deals 10 Magic damage

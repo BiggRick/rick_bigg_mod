@@ -250,10 +250,10 @@ Combat abilities:
 – Deals an extra 4d4 cold damage to fire elementals
 – Deals an extra 4d4 fire damage to water elementals
 – Deals an extra 4d4 acid damage to earth elementals
-– Deals an extra 4d4 electrical damage to air elementals
+– Deals an extra 4d4 Electricity damage to air elementals
 
 THAC0: +3
-Damage: 1d4+3, +2 fire, cold, electrical and acid damage (random)
+Damage: 1d4+3, +2 fire, cold, Electricity and acid damage (random)
 Damage type: Piercing
 Speed Factor: 0 
 Proficiency Type: Dagger

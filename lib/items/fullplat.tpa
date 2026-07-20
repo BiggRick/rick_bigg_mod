@@ -116,7 +116,7 @@ Weight: 70"
 	SAY DESC "Captain Fallorain, leader of Calimshan's 12th cavalry brigade, wore this enchanted armor for the last time during the Battle of the Spider Swamp. There he lost his life and army trying to rid an unrecorded evil from the area. 
 
 Equipped abilities:
-– Protection from evil
+– Protection from Evil
 
 STATISTICS:
 
@@ -187,7 +187,7 @@ Weight: 70"
 STATISTICS:
 
 Equipped Abilities:
-- Protection from good
+- Protection from Good
 - 20% chance to drain one level from attackers (save vs. Death at -4 negates)
 
 Armor Class: -2 (-5 vs. slashing, -4 vs. piercing and missile)
@@ -256,7 +256,7 @@ Weight: 70"
 STATISTICS:
 
 Equipped abilities:
-– Electrical Resistance: +60%
+– Electricity Resistance: +60%
 
 Armor Class: -4 (-7 vs. slashing, -5 vs. piercing, -7 vs. missile)
 Speed Factor: -3
