@@ -273,6 +273,10 @@ DEFINE_PATCH_MACRO armor_rules BEGIN
 				INT_VAR column_number = 21
 				RET base_arcane_spells = value
 			END
+			LAUNCH_PATCH_FUNCTION get_from_armor_2da
+				INT_VAR column_number = 22
+				RET description = value
+			END
 
 
 
@@ -445,6 +449,69 @@ DEFINE_PATCH_MACRO armor_rules BEGIN
 				WRITE_LONG 0x1e unusability
 
 				WRITE_BYTE 0x2f berzerker__wizard_slayer ? (BYTE_AT 0x2f BAND BNOT armor_berzwsbits) : (BYTE_AT 0x2f BOR armor_berzwsbits)
+			END
+
+
+
+
+
+
+
+
+		
+			PATCH_IF description BEGIN
+				READ_STRREF UNIDENTIFIED_DESC desc
+				PATCH_IF ("%desc%" STRING_COMPARE_REGEXP ~<Invalid Strref -?[0-9]+>~) BEGIN // checking for valid content in string
+					INNER_PATCH_SAVE desc ~%desc%~ BEGIN
+						LAUNCH_PATCH_FUNCTION ~redescribe_armor~
+							INT_VAR
+								min_strength = min_strength
+								arcane_spells = base_arcane_spells
+							STR_VAR
+								armor_class = EVALUATE_BUFFER ~%base_ac%~
+								physical_resistance = EVALUATE_BUFFER ~%base_physical_resistance%~
+								slashing_ac = EVALUATE_BUFFER ~%base_slashing_ac%~
+								piercing_ac = EVALUATE_BUFFER ~%base_piercing_ac%~
+								missile_ac = EVALUATE_BUFFER ~%base_missile_ac%~
+								crushing_ac = EVALUATE_BUFFER ~%base_crushing_ac%~
+								locks = EVALUATE_BUFFER ~%base_locks%~
+								traps = EVALUATE_BUFFER ~%base_traps%~
+								pick_pockets = EVALUATE_BUFFER ~%base_pick_pockets%~
+								move_silently = EVALUATE_BUFFER ~%base_move_silently%~
+								hide = EVALUATE_BUFFER ~%base_hide%~
+						END
+					END
+					SAY_EVALUATED UNIDENTIFIED_DESC ~%desc%~ // write changes
+				END
+				READ_STRREF DESC desc
+				PATCH_IF ("%desc%" STRING_COMPARE_REGEXP ~<Invalid Strref -?[0-9]+>~) BEGIN // checking for valid content in string
+					PATCH_IF magic_ac = dummy_value BEGIN
+						TEXT_SPRINT armor_class EVALUATE_BUFFER ~+%magic_ac_mod%~
+					END ELSE BEGIN
+						TEXT_SPRINT armor_class EVALUATE_BUFFER ~%magic_ac%~
+					END
+
+					INNER_PATCH_SAVE desc ~%desc%~ BEGIN
+						LAUNCH_PATCH_FUNCTION ~redescribe_armor~
+							INT_VAR
+								min_strength = min_strength
+								arcane_spells = arcane_spells
+							STR_VAR
+								armor_class = EVALUATE_BUFFER ~%armor_class%~
+								physical_resistance = EVALUATE_BUFFER ~%physical_resistance%~
+								slashing_ac = EVALUATE_BUFFER ~%slashing_ac%~
+								piercing_ac = EVALUATE_BUFFER ~%piercing_ac%~
+								missile_ac = EVALUATE_BUFFER ~%missile_ac%~
+								crushing_ac = EVALUATE_BUFFER ~%crushing_ac%~
+								locks = EVALUATE_BUFFER ~%locks%~
+								traps = EVALUATE_BUFFER ~%traps%~
+								pick_pockets = EVALUATE_BUFFER ~%pick_pockets%~
+								move_silently = EVALUATE_BUFFER ~%move_silently%~
+								hide = EVALUATE_BUFFER ~%hide%~
+						END
+					END
+					SAY_EVALUATED DESC ~%desc%~ // write changes
+				END
 			END
 		END
 	END

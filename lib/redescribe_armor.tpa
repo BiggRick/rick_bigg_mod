@@ -1,4 +1,100 @@
+/*
+if   armor_class is a number then it's an armor, otherwise armor_class is a string like "+3" and this is a shield.
+
+
+example description of an Armor:
+```
+This light but strong mail is of sylvan elf construction, and therefore its elegance is only exceeded by its rarity. Normally granted only to especially brave elves, seldom is this armor be found outside of a wood elf tribe, and rarer still on someone not of elven lineage.
+
+STATISTICS:
+
+Equipped abilities:
+– Open Locks: -5%
+– Find Traps: -5%
+– Pick Pockets: -20%
+– Move Silently: -10%
+– Spellcasting is not disabled
+
+Armor Class: 3 (1 vs. slashing, 5 vs. crushing)
+Requires:
+ 5 Strength
+
+Weight: 10
+```
+
+Equipped Abilities might be missing:
+```
+Chain mail is made of interlocking metal rings. It is always worn over a layer of padded fabric or soft leather to prevent chafing and lessen the impact of blows. 
+
+STATISTICS:
+
+Armor Class: 5 (3 vs. slashing, 7 vs. crushing)
+Requires:
+ 8 Strength
+
+Weight: 40
+```
+
+
+example description of a Shield:
+```
+Audn of the Field, Knight-Champion for the wizard Kekkim, carried this shield for most of his life. It protects the bearer from most forms of mind control, a benefit for a wizard who needed warrior allies to stay faithfully at his side. Both Kekkim and Audn have long since returned to the earth, leaving the shield to whomever might recover it from Kekkim's tower.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +3
+– No protection against missile attacks
+– Immunity to charm, confusion, domination, and hold
+
+Requires:
+ 4 Strength
+
+Weight: 2
+```
+or
+```
+Fashioned from dwarven darksteel, this heavily enchanted shield provides more protection than most suits of armor. Legend holds that it was meant to be presented as a gift to the dwarvish hero Glimred Heavyhand, but he disappeared on his ill-fated quest into the bowels of the Marching Mountains before the work was completed. With Glimred gone, the shield was sold to the highest bidder—though the dwarven smiths refused to divulge the mysterious buyer's identity. 
+
+STATISTICS:
+
+Equipped abilities:
+– Cold Resistance: +10%
+– Fire Resistance: +10%
+– Acid Resistance: +10%
+– Poison Resistance: +10%
+
+Armor Class: +5, an extra +1 vs. missile attacks
+Requires:
+ 15 Strength
+
+Weight: 8
+```
+
+
+
+
+*/
+
 
 DEFINE_PATCH_FUNCTION redescribe_armor
+    INT_VAR
+        min_strength = 0
+        arcane_spells = 0 // add or replace Equipped Ability:     Spellcasting is disabled/not disabled   (disabled if the value is 0, not disabled if the value is 1)
+    STR_VAR
+        physical_resistance = 0 // if not "N" and not zero, add or replace Equipped Ability:   – Physical Resistance: +5%
+        armor_class = 0 // it can be either a plain number for Armors and a string "+1" for Shields
+        slashing_ac = 0 // if it is the string "=0" write equipped ability "No protection against slashing attacks", if it is 0 write nothing, otherwise for shields write "an extra +x vs. missile attacks" and for armors write it in parentheses "(3 vs. slashing)" - note that if armor_class is 5 and slashing_ac is 2 you need to write 3 and not 7 as the math is reversed
+        piercing_ac = 0 // same as slashing_ac, but "piercing attacks"
+        missile_ac = 0 // same as slashing_ac, but "missile attacks"
+        crushing_ac = 0 // same as slashing_ac, but "crushing attacks"
+        locks = 0 // if "N" write equipped ability "Lockpicking and Picking Pockets not allowed"; else if not zero add/replace Equipped Ability "- Open Locks: +-x%"
+        traps = 0 // if not zero and not "N" add/replace Equipped Ability "– Find Traps: +-x%"
+        pick_pockets = 0 // if not zero and not "N" add/replace Equipped Ability "– Pick Pockets: +-x%"
+        move_silently = 0 // if "N" write equipped ability "Stealth not allowed"; else if not zero add/replace Equipped Ability "– Move Silently: +-x%"
+        hide = 0 // if not zero and not "N" add/replace Equipped Ability "– Hide in Shadows: +-x%"
 BEGIN
+
+// COPILOT - implement this method as described, looking at examples redescribe_weapon.tpa for sample synthax of the language.
+
 END
