@@ -1,13 +1,14 @@
 /*
-Armor piece description redescriber.
-Handles actual armor (AC is a number, armor_class shows damage type variants in parentheses).
+Shield description redescriber.
+Handles shields (AC is a string like "+3", armor_class goes under "Equipped abilities").
+Removes "Armor Class: xxx" that appears before "Requires:" line.
 */
 
-DEFINE_PATCH_FUNCTION redescribe_armor
+DEFINE_PATCH_FUNCTION redescribe_shield
     INT_VAR
         min_strength = 0
-        armor_class = 0
         arcane_spells = 0
+        armor_class = 0
     STR_VAR
         physical_resistance = 0
         slashing_ac = 0
@@ -21,59 +22,10 @@ DEFINE_PATCH_FUNCTION redescribe_armor
         hide = 0
 BEGIN
 
-	// Build Armor Class description: "Armor Class: 5 (1 vs. slashing, 3 vs. piercing)"
-    TEXT_SPRINT ac_string ~Armor Class: %armor_class%~
-
-	// Add damage type modifiers in parentheses
-	PATCH_IF NOT (~%slashing_ac%~ STRING_EQUAL_CASE ~0~) AND NOT (~%slashing_ac%~ STRING_EQUAL_CASE ~N~) AND NOT (~%slashing_ac%~ STRING_EQUAL_CASE ~=0~) BEGIN
-		PATCH_IF NOT (~%ac_string%~ STRING_EQUAL_CASE ~~) BEGIN
-			TEXT_SPRINT ac_string ~%ac_string% (%slashing_ac% vs. slashing~
-		END
-	END
-
-	PATCH_IF NOT (~%piercing_ac%~ STRING_EQUAL_CASE ~0~) AND NOT (~%piercing_ac%~ STRING_EQUAL_CASE ~N~) AND NOT (~%piercing_ac%~ STRING_EQUAL_CASE ~=0~) BEGIN
-		PATCH_IF NOT (~%ac_string%~ STRING_EQUAL_CASE ~~) BEGIN
-			PATCH_IF INDEX_BUFFER(~\($~) > 0 BEGIN
-				TEXT_SPRINT ac_string ~%ac_string%, %piercing_ac% vs. piercing~
-			END ELSE BEGIN
-				TEXT_SPRINT ac_string ~%ac_string% (%piercing_ac% vs. piercing~
-			END
-		END
-	END
-
-	PATCH_IF NOT (~%missile_ac%~ STRING_EQUAL_CASE ~0~) AND NOT (~%missile_ac%~ STRING_EQUAL_CASE ~N~) AND NOT (~%missile_ac%~ STRING_EQUAL_CASE ~=0~) BEGIN
-		PATCH_IF NOT (~%ac_string%~ STRING_EQUAL_CASE ~~) BEGIN
-			PATCH_IF INDEX_BUFFER(~\($~) > 0 BEGIN
-				TEXT_SPRINT ac_string ~%ac_string%, %missile_ac% vs. missile~
-			END ELSE BEGIN
-				TEXT_SPRINT ac_string ~%ac_string% (%missile_ac% vs. missile~
-			END
-		END
-	END
-
-	PATCH_IF NOT (~%crushing_ac%~ STRING_EQUAL_CASE ~0~) AND NOT (~%crushing_ac%~ STRING_EQUAL_CASE ~N~) AND NOT (~%crushing_ac%~ STRING_EQUAL_CASE ~=0~) BEGIN
-		PATCH_IF NOT (~%ac_string%~ STRING_EQUAL_CASE ~~) BEGIN
-			PATCH_IF INDEX_BUFFER(~\($~) > 0 BEGIN
-				TEXT_SPRINT ac_string ~%ac_string%, %crushing_ac% vs. crushing)~
-			END ELSE BEGIN
-				TEXT_SPRINT ac_string ~%ac_string% (%crushing_ac% vs. crushing)~
-			END
-		END ELSE BEGIN
-			TEXT_SPRINT ac_string ~%ac_string%)~
-		END
-	END ELSE PATCH_IF INDEX_BUFFER(~\($~) > 0 BEGIN
-		TEXT_SPRINT ac_string ~%ac_string%)~
-	END
-
-	// Update or inject Armor Class line
-	PATCH_IF NOT (~%ac_string%~ STRING_EQUAL_CASE ~~) BEGIN
-		PATCH_IF INDEX_BUFFER( ~^Armor Class:.*$~ ) > 0 BEGIN
-			REPLACE_TEXTUALLY ~^Armor Class:.*$~ ~%ac_string%~
-		END ELSE PATCH_IF INDEX_BUFFER( ~^Weight:~ ) > 0 BEGIN
-			REPLACE_TEXTUALLY ~^Weight:~ ~%ac_string%%WNL%Weight:~
-		END ELSE BEGIN
-			REPLACE_TEXTUALLY ~^Requires:~ ~%ac_string%%WNL%Requires:~
-		END
+	// Remove "Armor Class:" lines that appear before "Requires:" (old style)
+	// Only keep Armor Class under Equipped abilities
+	PATCH_IF INDEX_BUFFER( ~^Armor Class: [^+%WNL%][^%WNL%]*$~ ) > 0 BEGIN
+		REPLACE_TEXTUALLY ~^Armor Class: [^+%WNL%][^%WNL%]*%WNL%~ ~~
 	END
 
 	// Handle minimum strength requirement
@@ -87,14 +39,55 @@ BEGIN
 		END
 	END
 
-	// Handle equipped abilities
+	// Build equipped abilities string (AC will be first)
 	TEXT_SPRINT abilities_string ~~
+
+	// Armor Class - shields only, goes in Equipped abilities
+	TEXT_SPRINT abilities_string ~%abilities_string%– Armor Class: +%armor_class%~
+
+	// Add damage type modifiers on same line
+	PATCH_IF NOT (~%slashing_ac%~ STRING_EQUAL_CASE ~0~) AND NOT (~%slashing_ac%~ STRING_EQUAL_CASE ~N~) BEGIN
+		PATCH_IF ~%slashing_ac%~ STRING_EQUAL_CASE ~=0~ BEGIN
+			TEXT_SPRINT abilities_string ~%abilities_string%, no protection against slashing attacks~
+		END ELSE BEGIN
+			TEXT_SPRINT abilities_string ~%abilities_string%, an extra +%slashing_ac% vs. slashing attacks~
+		END
+	END
+
+	PATCH_IF NOT (~%piercing_ac%~ STRING_EQUAL_CASE ~0~) AND NOT (~%piercing_ac%~ STRING_EQUAL_CASE ~N~) BEGIN
+		PATCH_IF ~%piercing_ac%~ STRING_EQUAL_CASE ~=0~ BEGIN
+			TEXT_SPRINT abilities_string ~%abilities_string%, no protection against piercing attacks~
+		END ELSE BEGIN
+			TEXT_SPRINT abilities_string ~%abilities_string%, an extra +%piercing_ac% vs. piercing attacks~
+		END
+	END
+
+	PATCH_IF NOT (~%missile_ac%~ STRING_EQUAL_CASE ~0~) AND NOT (~%missile_ac%~ STRING_EQUAL_CASE ~N~) BEGIN
+		PATCH_IF ~%missile_ac%~ STRING_EQUAL_CASE ~=0~ BEGIN
+			TEXT_SPRINT abilities_string ~%abilities_string%, no protection against missile attacks~
+		END ELSE BEGIN
+			TEXT_SPRINT abilities_string ~%abilities_string%, an extra +%missile_ac% vs. missile attacks~
+		END
+	END
+
+	PATCH_IF NOT (~%crushing_ac%~ STRING_EQUAL_CASE ~0~) AND NOT (~%crushing_ac%~ STRING_EQUAL_CASE ~N~) BEGIN
+		PATCH_IF ~%crushing_ac%~ STRING_EQUAL_CASE ~=0~ BEGIN
+			TEXT_SPRINT abilities_string ~%abilities_string%, no protection against crushing attacks~
+		END ELSE BEGIN
+			TEXT_SPRINT abilities_string ~%abilities_string%, an extra +%crushing_ac% vs. crushing attacks~
+		END
+	END
+
+	TEXT_SPRINT abilities_string ~%abilities_string%%WNL%~
+
+	// Always remove old Armor Class lines from equipped abilities
+	REPLACE_TEXTUALLY ~^– Armor Class:[^%WNL%]*%WNL%~ ~~
 
 	// Physical Resistance
 	PATCH_IF NOT (~%physical_resistance%~ STRING_EQUAL_CASE ~0~) AND NOT (~%physical_resistance%~ STRING_EQUAL_CASE ~N~) BEGIN
 		TEXT_SPRINT abilities_string ~%abilities_string%– Physical Resistance: +%physical_resistance%%WNL%~
 	END
-	// Always remove old Physical Resistance line (whether added or not)
+	// Always remove old Physical Resistance line
 	REPLACE_TEXTUALLY ~^– Physical Resistance:[^%WNL%]*%WNL%~ ~~
 
 	// Spellcasting

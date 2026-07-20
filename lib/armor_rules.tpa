@@ -42,6 +42,7 @@ DEFINE_PATCH_FUNCTION get_base_from_armor_2da
 END
 
 INCLUDE ~rick_bigg_mod/lib/redescribe_armor.tpa~
+INCLUDE ~rick_bigg_mod/lib/redescribe_shield.tpa~
 
 OUTER_SET dummy_value = 0 - 1000
 
@@ -460,10 +461,16 @@ DEFINE_PATCH_MACRO armor_rules BEGIN
 
 		
 			PATCH_IF description BEGIN
+				PATCH_IF category == 2 BEGIN
+					TEXT_SPRINT function ~redescribe_armor~
+				END ELSE BEGIN
+					TEXT_SPRINT function ~redescribe_shield~
+				END
+
 				READ_STRREF UNIDENTIFIED_DESC desc
 				PATCH_IF ("%desc%" STRING_COMPARE_REGEXP ~<Invalid Strref -?[0-9]+>~) BEGIN // checking for valid content in string
 					INNER_PATCH_SAVE desc ~%desc%~ BEGIN
-						LAUNCH_PATCH_FUNCTION ~redescribe_armor~
+						LAUNCH_PATCH_FUNCTION ~%function%~
 							INT_VAR
 								min_strength = min_strength
 								arcane_spells = base_arcane_spells
@@ -486,13 +493,13 @@ DEFINE_PATCH_MACRO armor_rules BEGIN
 				READ_STRREF DESC desc
 				PATCH_IF ("%desc%" STRING_COMPARE_REGEXP ~<Invalid Strref -?[0-9]+>~) BEGIN // checking for valid content in string
 					PATCH_IF magic_ac = dummy_value BEGIN
-						TEXT_SPRINT armor_class EVALUATE_BUFFER ~+%magic_ac_mod%~
+						TEXT_SPRINT armor_class EVALUATE_BUFFER ~%magic_ac_mod%~
 					END ELSE BEGIN
 						TEXT_SPRINT armor_class EVALUATE_BUFFER ~%magic_ac%~
 					END
 
 					INNER_PATCH_SAVE desc ~%desc%~ BEGIN
-						LAUNCH_PATCH_FUNCTION ~redescribe_armor~
+						LAUNCH_PATCH_FUNCTION ~%function%~
 							INT_VAR
 								min_strength = min_strength
 								arcane_spells = arcane_spells
