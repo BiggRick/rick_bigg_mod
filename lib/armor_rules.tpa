@@ -7,6 +7,16 @@ COPY ~rick_bigg_mod/2da/armor_list.2da~ ~weidu_external~
 	READ_2DA_ENTRIES_NOW ~armor_list~ 3
 BUT_ONLY
 
+			
+OUTER_SET armor_clericbits = BIT7 BOR BIT14
+OUTER_SET armor_druidbits = BIT12 BOR BIT30
+OUTER_SET armor_thiefbits = BIT9 BOR BIT17 BOR BIT22
+OUTER_SET armor_rangerbits = BIT21
+OUTER_SET armor_berzwsbits = BIT0 BOR BIT1
+OUTER_SET armor_bardbits = BIT6
+OUTER_SET armor_magemcbits = BIT8 BOR BIT13 BOR BIT15 BOR BIT16 BOR BIT19
+
+
 DEFINE_PATCH_FUNCTION get_from_armor_2da
 	INT_VAR column_number = 0
 	RET value
@@ -35,35 +45,58 @@ INCLUDE ~rick_bigg_mod/lib/redescribe_armor.tpa~
 
 OUTER_SET dummy_value = 0 - 1000
 
-DEFINE_PATCH_FUNCTION scan_update_item_effect
+DEFINE_PATCH_FUNCTION scan_update_item_effect_parameter1
 	INT_VAR opcode = dummy_value
-	    parameter1 = dummy_value
 		parameter2 = dummy_value
-		touch_parameter_12 = 0
 		newvalue = dummy_value
+		update = 0
+		add = 0
+		remove = 0
 	RET
 		value
 BEGIN
 	value = dummy_value
+	index = dummy_value
 	GET_OFFSET_ARRAY fx_array ITM_V10_GEN_EFFECTS 
-  	PHP_EACH ab_array AS int => ab_off BEGIN
+  	PHP_EACH fx_array AS int => fx_off BEGIN
 		READ_SHORT fx_off fx_type
 		READ_SHORT fx_off + 4 par1
 		READ_SHORT fx_off + 8 par2
-
-		PATCH_IF fx_off = opcode AND (par1 = parameter1 OR parameter1 = dummy_value) AND (par2 = parameter2 OR parameter2 = dummy_value) BEGIN
-			READ_LONG fx_off + 4 * touch_parameter_12 value
-			WRITE_LONG fx_off + 4 * touch_parameter_12 newvalue
+		PATCH_IF fx_type = opcode AND (par2 = parameter2 OR parameter2 = dummy_value) BEGIN
+			READ_LONG fx_off + 4 value
+			index = int
+			PATCH_IF update BEGIN
+				WRITE_LONG fx_off + 4 newvalue
+			END
 		END
     END
 
-	PATCH_IF value = dummy_value AND newvalue != dummy_value BEGIN
+	PATCH_IF value = dummy_value AND add BEGIN
 		LAUNCH_PATCH_FUNCTION ADD_ITEM_EQEFFECT
 			INT_VAR opcode = opcode
-				parameter1 = (touch_parameter_12 = 1 ? newvalue : parameter1)
-				parameter2 = (touch_parameter_12 = 2 ? newvalue : parameter2)
+				parameter1 = newvalue
+				parameter2 = parameter2
 				target = 1
 				timing = 2
+		END
+	END
+
+	PATCH_IF remove AND index >= 0  BEGIN
+		READ_LONG 0x64 ___#abil_off
+		READ_SHORT 0x68 ___#abil_num
+		READ_LONG 0x6a ___#fx_off
+		READ_SHORT 0x6e ___#eqfx_off
+		READ_SHORT 0x70 ___#eqfx_num
+		DELETE_BYTES (___#fx_off + (index + ___#eqfx_off) * 0x30) 0x30
+		SET ___#eqfx_num = (___#eqfx_num - 1)
+		WRITE_SHORT 0x70 ___#eqfx_num
+
+		//correcting 1st effect indexes
+		FOR (___#index2 = 0 ; ___#index2 < ___#abil_num ; ___#index2 = ___#index2 + 1) BEGIN
+			READ_SHORT (___#abil_off + ___#index2 * 0x38 + 0x20) ___#1effect_index
+			PATCH_IF (___#1effect_index > index) BEGIN //if abilility after current effect
+				WRITE_SHORT (___#abil_off + ___#index2 * 0x38 + 0x20) (___#1effect_index - 1) //decrease 1 effect index by 1
+			END
 		END
 	END
 END
@@ -99,34 +132,34 @@ DEFINE_PATCH_MACRO armor_rules BEGIN
 		PATCH_IF special_rules_row > 0 OR general_rules_row > 0 BEGIN
 
 			LAUNCH_PATCH_FUNCTION get_from_armor_2da
-				INT_VAR column_number = 3
+				INT_VAR column_number = 2
 				RET min_strength = value
 			END
 			LAUNCH_PATCH_FUNCTION get_base_from_armor_2da
-				INT_VAR column_number = 4
+				INT_VAR column_number = 3
 				RET base_ac = value
 			END
 			LAUNCH_PATCH_FUNCTION get_from_armor_2da
-				INT_VAR column_number = 5
+				INT_VAR column_number = 4
 				RET physical_resistance = value
 			END
 			LAUNCH_PATCH_FUNCTION get_base_from_armor_2da
-				INT_VAR column_number = 5
+				INT_VAR column_number = 4
 				RET base_physical_resistance = value
 			END
 
 			// column 6 - slashing_ac - both
 			LAUNCH_PATCH_FUNCTION get_from_armor_2da
-				INT_VAR column_number = 6
+				INT_VAR column_number = 5
 				RET slashing_ac = value
 			END
 			LAUNCH_PATCH_FUNCTION get_base_from_armor_2da
-				INT_VAR column_number = 6
+				INT_VAR column_number = 5
 				RET base_slashing_ac = value
 			END
 			// column 7 - piercing_ac - both
 			LAUNCH_PATCH_FUNCTION get_from_armor_2da
-				INT_VAR column_number = 7
+				INT_VAR column_number = 6
 				RET piercing_ac = value
 			END
 			LAUNCH_PATCH_FUNCTION get_base_from_armor_2da
@@ -242,41 +275,176 @@ DEFINE_PATCH_MACRO armor_rules BEGIN
 			END
 
 
-			LAUNCH_PATCH_FUNCTION scan_update_item_effect
+
+
+
+
+			LAUNCH_PATCH_FUNCTION scan_update_item_effect_parameter1
 				INT_VAR
 					opcode = 0
 					parameter2 = 16
-					touch_parameter_12 = 1
 				RET
 					magic_ac = value
 			END
-			LAUNCH_PATCH_FUNCTION scan_update_item_effect
+			LAUNCH_PATCH_FUNCTION scan_update_item_effect_parameter1
+				INT_VAR
+					opcode = 0
+					parameter2 = 0
+				RET
+					magic_ac_mod = value
+			END
+			LAUNCH_PATCH_FUNCTION scan_update_item_effect_parameter1
 				INT_VAR
 					opcode = 0
 					parameter2 = 8
-					touch_parameter_12 = 1
-					newvalue = slashing_ac
+					newvalue = (~%slashing_ac%~ STRING_EQUAL_CASE ~=0~ ? 0 - magic_ac_mod : slashing_ac)
+					update = 1
+					add = (~%slashing_ac%~ STRING_EQUAL_CASE ~=0~ ? 0 - magic_ac_mod : slashing_ac) != 0
+					remove = (~%slashing_ac%~ STRING_EQUAL_CASE ~=0~ ? 0 - magic_ac_mod : slashing_ac) == 0
 			END
-			LAUNCH_PATCH_FUNCTION scan_update_item_effect
-				INT_VAR
-					opcode = 0
-					parameter2 = 4
-					touch_parameter_12 = 1
-					newvalue = missile_ac
-			END
-			LAUNCH_PATCH_FUNCTION scan_update_item_effect
+			LAUNCH_PATCH_FUNCTION scan_update_item_effect_parameter1
 				INT_VAR
 					opcode = 0
 					parameter2 = 2
-					touch_parameter_12 = 1
-					newvalue = piercing_ac
+					newvalue = (~%missile_ac%~ STRING_EQUAL_CASE ~=0~ ? 0 - magic_ac_mod : missile_ac)
+					update = 1
+					add = (~%missile_ac%~ STRING_EQUAL_CASE ~=0~ ? 0 - magic_ac_mod : missile_ac) != 0
+					remove = (~%missile_ac%~ STRING_EQUAL_CASE ~=0~ ? 0 - magic_ac_mod : missile_ac) == 0
 			END
-			LAUNCH_PATCH_FUNCTION scan_update_item_effect
+			LAUNCH_PATCH_FUNCTION scan_update_item_effect_parameter1
+				INT_VAR
+					opcode = 0
+					parameter2 = 4
+					newvalue = (~%piercing_ac%~ STRING_EQUAL_CASE ~=0~ ? 0 - magic_ac_mod : piercing_ac)
+					update = 1
+					add = (~%piercing_ac%~ STRING_EQUAL_CASE ~=0~ ? 0 - magic_ac_mod : piercing_ac) != 0
+					remove = (~%piercing_ac%~ STRING_EQUAL_CASE ~=0~ ? 0 - magic_ac_mod : piercing_ac) == 0
+			END
+			LAUNCH_PATCH_FUNCTION scan_update_item_effect_parameter1
 				INT_VAR
 					opcode = 0
 					parameter2 = 1
-					touch_parameter_12 = 1
-					newvalue = crushing_ac
+					newvalue = (~%crushing_ac%~ STRING_EQUAL_CASE ~=0~ ? 0 - magic_ac_mod : crushing_ac)
+					update = 1
+					add = (~%crushing_ac%~ STRING_EQUAL_CASE ~=0~ ? 0 - magic_ac_mod : crushing_ac) != 0
+					remove = (~%crushing_ac%~ STRING_EQUAL_CASE ~=0~ ? 0 - magic_ac_mod : crushing_ac) == 0
+			END
+
+
+
+
+			WRITE_BYTE 0x26 min_strength
+
+
+
+
+			PATCH_IF IS_AN_INT ~%physical_resistance%~ BEGIN
+				FOR (opcode = 0x56; opcode <= 0x59; opcode += 1) BEGIN
+					LAUNCH_PATCH_FUNCTION scan_update_item_effect_parameter1
+						INT_VAR
+							opcode = opcode
+							parameter2 = 0
+							newvalue = physical_resistance
+							update = 1
+							add = physical_resistance
+							remove = NOT physical_resistance
+					END
+				END
+			END
+
+
+
+			PATCH_IF IS_AN_INT ~%locks%~ AND IS_AN_INT ~%pick_pockets%~ BEGIN
+				LAUNCH_PATCH_FUNCTION DELETE_ITEM_EQEFFECT_BY_VALUES INT_VAR opcode_to_delete = 0x90 value1_to_delete = (0 - 1) value2_to_delete = 1 END
+
+				LAUNCH_PATCH_FUNCTION scan_update_item_effect_parameter1
+					INT_VAR
+						opcode = 0x5c
+						newvalue = pick_pockets
+						parameter2 = 0
+						update = 1
+						add = pick_pockets
+						remove = 0
+				END
+				LAUNCH_PATCH_FUNCTION scan_update_item_effect_parameter1
+					INT_VAR
+						opcode = 0x5a
+						newvalue = locks
+						parameter2 = 0
+						update = 1
+						add = locks
+						remove = 0
+				END
+			END ELSE BEGIN
+				LAUNCH_PATCH_FUNCTION scan_update_item_effect_parameter1
+					INT_VAR
+						opcode = 0x90
+						newvalue = 0
+						parameter2 = 1
+						update = 0
+						add = 1
+						remove = 0
+				END
+			END
+
+			PATCH_IF IS_AN_INT ~%hide%~ AND IS_AN_INT ~%move_silently%~ BEGIN
+				LAUNCH_PATCH_FUNCTION DELETE_ITEM_EQEFFECT_BY_VALUES INT_VAR opcode_to_delete = 0x90 value1_to_delete = (0 - 1) value2_to_delete = 0 END
+
+				LAUNCH_PATCH_FUNCTION scan_update_item_effect_parameter1
+					INT_VAR
+						opcode = 0x113
+						newvalue = hide
+						parameter2 = 0
+						update = 1
+						add = hide
+						remove = 0
+				END
+				LAUNCH_PATCH_FUNCTION scan_update_item_effect_parameter1
+					INT_VAR
+						opcode = 0x3b
+						newvalue = move_silently
+						parameter2 = 0
+						update = 1
+						add = move_silently
+						remove = 0
+				END
+			END ELSE BEGIN
+				LAUNCH_PATCH_FUNCTION scan_update_item_effect_parameter1
+					INT_VAR
+						opcode = 0x90
+						newvalue = 0
+						parameter2 = 0
+						update = 0
+						add = 1
+						remove = 0
+				END
+			END
+
+			LAUNCH_PATCH_FUNCTION scan_update_item_effect_parameter1
+				INT_VAR
+					opcode = 0x91
+					newvalue = 0
+					parameter2 = 0
+					update = 0
+					add = NOT arcane_spells
+					remove = arcane_spells
+			END
+
+
+
+			PATCH_IF IS_AN_INT ~%cleric%~ AND IS_AN_INT ~%druid%~ AND IS_AN_INT ~%thief%~ AND IS_AN_INT ~%bard%~ AND IS_AN_INT ~%mage_mc%~ AND IS_AN_INT ~%ranger%~ AND NOT (LONG_AT 0x1e BAND BIT11) AND IS_AN_INT ~%berzerker__wizard_slayer%~ BEGIN
+				READ_LONG 0x1e unusability
+				
+				unusability = cleric ? unusability BAND BNOT armor_clericbits : unusability BOR armor_clericbits
+				unusability = ranger ? unusability BAND BNOT armor_rangerbits : unusability BOR armor_rangerbits
+				unusability = druid  ? unusability BAND BNOT  armor_druidbits : unusability BOR  armor_druidbits
+				unusability = thief  ? unusability BAND BNOT  armor_thiefbits : unusability BOR  armor_thiefbits
+				unusability = bard   ? unusability BAND BNOT   armor_bardbits : unusability BOR   armor_bardbits
+				unusability = mage_mc? unusability BAND BNOT armor_magemcbits : unusability BOR armor_magemcbits
+				
+				WRITE_LONG 0x1e unusability
+
+				WRITE_BYTE 0x2f berzerker__wizard_slayer ? (BYTE_AT 0x2f BAND BNOT armor_berzwsbits) : (BYTE_AT 0x2f BOR armor_berzwsbits)
 			END
 		END
 	END

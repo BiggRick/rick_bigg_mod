@@ -7,6 +7,14 @@ BUT_ONLY
 INCLUDE ~rick_bigg_mod/lib/redescribe_weapon.tpa~
 
 
+			
+OUTER_SET weapon_clericbits = BIT7 BOR BIT8 BOR BIT10 BOR BIT14 BOR BIT15
+OUTER_SET weapon_druidbits = BIT12 BOR BIT30
+OUTER_SET weapon_thiefbits = BIT9 BOR BIT16 BOR BIT17 BOR BIT19 BOR BIT22
+OUTER_SET weapon_bardbits = BIT6
+OUTER_SET weapon_magebits = BIT18
+OUTER_SET weapon_shortiesbit = BIT26 BOR BIT28
+
 
 
 DEFINE_PATCH_MACRO decode_attack_type BEGIN
@@ -421,19 +429,12 @@ DEFINE_PATCH_MACRO weapon_rules BEGIN
 		PATCH_IF IS_AN_INT ~%cleric%~ AND IS_AN_INT ~%druid%~ AND IS_AN_INT ~%thief%~ AND IS_AN_INT ~%bard%~ AND IS_AN_INT ~%mage%~ AND NOT (LONG_AT 0x1e BAND BIT11) AND IS_AN_INT ~%shorties%~ BEGIN
 			READ_LONG 0x1e unusability
 			
-			clericbits = BIT7 BOR BIT8 BOR BIT10 BOR BIT14 BOR BIT15
-			druidbits = BIT12 BOR BIT30
-			thiefbits = BIT9 BOR BIT16 BOR BIT17 BOR BIT19 BOR BIT22
-			bardbits = BIT6
-			magebits = BIT18
-			shortiesbit = BIT26 BOR BIT28
-			
-			unusability = cleric ? unusability BAND BNOT clericbits : unusability BOR clericbits
-			unusability = druid  ? unusability BAND BNOT  druidbits : unusability BOR  druidbits
-			unusability = thief  ? unusability BAND BNOT  thiefbits : unusability BOR  thiefbits
-			unusability = bard   ? unusability BAND BNOT   bardbits : unusability BOR   bardbits
-			unusability = mage   ? unusability BAND BNOT   magebits : unusability BOR   magebits
-			unusability = shorties ? unusability BAND BNOT shortiesbit : unusability BOR shortiesbit
+			unusability = cleric ? unusability BAND BNOT weapon_clericbits : unusability BOR weapon_clericbits
+			unusability = druid  ? unusability BAND BNOT  weapon_druidbits : unusability BOR  weapon_druidbits
+			unusability = thief  ? unusability BAND BNOT  weapon_thiefbits : unusability BOR  weapon_thiefbits
+			unusability = bard   ? unusability BAND BNOT   weapon_bardbits : unusability BOR   weapon_bardbits
+			unusability = mage   ? unusability BAND BNOT   weapon_magebits : unusability BOR   weapon_magebits
+			unusability = shorties ? unusability BAND BNOT weapon_shortiesbit : unusability BOR weapon_shortiesbit
 			
 			WRITE_LONG 0x1e unusability
 
