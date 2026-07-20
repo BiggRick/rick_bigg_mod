@@ -1,11 +1,13 @@
-ARMOR_TYPE        MIN_STR DAMAGE_RES SLASH_AC PIERCE_AC MISSILE_AC BLUNT_AC   CLERICS     RANGERS     BERZ_WIS_SLAYER    DRUIDS    THIEVES    BARDS    MAGE_MC   LOCKS  TRAPS  POCKETS MOVE_SIL HIDE  ARCANE
-LEATHER           5       0          2        0         0          1          1           1           1                  1         1          1        1         0      0      -10     -10      -10   1
-CHAIN_ELVEN       5       0          2        1         1          0          1           1           1                  0         1          1        1         -5     -5     -20     -10      -10   1
-LEATHER_STUDDED   7       0          2        0         0          1          1           1           1                  1         1          0        0         -5     -5     -20     -15      -20   N
-CHAIN             9       0          2        1         1          0          1           1           1                  0         0          0        0         N      0      N       -25      -30   N
-PLATE             13      0          3        1         1          0          1           0           1                  0         0          0        0         N      0      N       N        N     N
-PLATE_FULL        15      0          3        1         1          0          0           0           0                  0         0          0        0         N      0      N       N        N     N
-SHIELD_BUCKLER    8       0          0        =0        =0         0          1           1           1                  1         1          1        1         0      0      0       0        0     1
-SHIELD_SMALL      10      5          0        0         =0         0          1           1           1                  1         1          0        0         0      0      0       0        0     N
-SHIELD_MEDIUM     14      10         0        0         0          0          1           1           1                  0         0          0        0         N      0      N       N        N     N
-SHIELD_LARGE      16      15         0        0         0          0          1           0           0                  0         0          0        0         N      0      N       N        N     N
+NAME         ARMOR_TYPE        MIN_STR BASE_AC DAMAGE_RES SLASH_AC PIERCE_AC MISSILE_AC BLUNT_AC   CLERICS     RANGERS     BERZ_WIS_SLAYER    DRUIDS    THIEVES    BARDS    MAGE_MC   LOCKS  TRAPS  POCKETS MOVE_SIL HIDE  ARCANE
+X            LEATHER           5       9       N          2        0         0          1          1           1           1                  1         1          1        1         0      0      -10     -10      -10   1
+X            CHAIN_ELVEN       5       5       N          2        1         1          0          1           1           1                  0         1          1        1         -5     -5     -20     -10      -10   1
+X            LEATHER_STUDDED   7       7       N          2        0         0          1          1           1           1                  1         1          0        0         -5     -5     -20     -15      -20   0
+X            CHAIN             9       5       N          2        1         1          0          1           1           1                  0         0          0        0         N      0      N       -25      -30   0
+X            PLATE             13      3       N          3        1         1          0          1           0           1                  0         0          0        0         N      0      N       N        N     0
+X            PLATE_FULL        15      1       N          3        2         2          0          0           0           0                  0         0          0        0         N      0      N       N        N     0
+X            SHIELD_BUCKLER    6       N       0          0        =0        =0         0          1           1           1                  1         1          1        1         0      0      0       0        0     1
+X            SHIELD_SMALL      8       N       5          0        0         =0         0          1           1           1                  1         1          0        0         0      0      0       0        0     0
+X            SHIELD_MEDIUM     12      N       10         0        0         0          0          1           1           1                  0         0          0        0         N      0      N       N        N     0
+X            SHIELD_LARGE      15      N       15         0        0         1          0          1           0           0                  0         0          0        0         N      0      N       N        N     0
+
+RED_DRAGON   PLAT18            _       _       _          _        _         4          _          _           _           _                  1         _          _        _         _      _      _       _        _     _

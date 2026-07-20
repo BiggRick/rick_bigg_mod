@@ -1,5 +1,3 @@
-INCLUDE "rick_bigg_mod/lib/add_cre_proficiency.tpa"
-
 ACTION_BASH_FOR ~rick_bigg_mod/lib/creatures~ ~^.*\.tpa$~ BEGIN
     PRINT ~EXECUTE %BASH_FOR_FILESPEC%~
     INCLUDE ~%BASH_FOR_FILESPEC%~

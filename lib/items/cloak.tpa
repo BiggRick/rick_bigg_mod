@@ -404,7 +404,7 @@ STATISTICS:
 Weight: 3"
 
 	SAY NAME2 "Cloak of Invulnerability"
-	SAY DESC "Though it feels much like normal cloth, this shimmering cloak has on occasion been described as "woven water." Its true enchantment becomes apparent when the wearer is attacked directly by magic, and all damage caused by spell effects is deflected harmlessly away.
+	SAY DESC "Though it feels much like normal cloth, this shimmering cloak has on occasion been described as 'woven water'. Its true enchantment becomes apparent when the wearer is attacked directly by magic, and all damage caused by spell effects is deflected harmlessly away.
 
 STATISTICS:
 
@@ -544,8 +544,7 @@ Weight: 3"
 
 
 
-
-//RANGER SHROUD - 3500mo - solo ranger//
+//RANGER CLOAK - 4500mo - solo ranger//
 COPY "rick_bigg_mod/items/COMPON16.itm" "override"
 	SAY NAME1 "Cloak"
 	SAY UNIDENTIFIED_DESC "The cloak can be made in every possible shape with just about every type of fabric. The most common forms are a circular piece of fabric with a hole in the center for the head, and fabric draped from neck, connected by a chain, brooch, cord, or pins.
@@ -565,7 +564,6 @@ Equipped abilities:
 - Missile Resistance: +20%
 
 Weight: 3"
-
 
 
 
