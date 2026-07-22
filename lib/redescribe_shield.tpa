@@ -31,14 +31,21 @@ BEGIN
 
 	// Handle minimum strength requirement
 	PATCH_IF NOT (~%min_strength%~ STRING_EQUAL_CASE ~0~) BEGIN
-		// First, remove any OLD requirements that might have been added in a previous run
-		REPLACE_TEXTUALLY ~^Requires:%WNL% %min_strength% Strength%WNL%~ ~~
+		// First, remove ANY old requirement lines (handles duplicates)
+		REPLACE_TEXTUALLY ~^Requires:[%WNL%]* [0-9]+ Strength%WNL%~ ~~
 		
-		PATCH_IF INDEX_BUFFER( ~Requires:[^_]* [0-9]+ Strength$~ ) > 0 BEGIN
-			REPLACE_TEXTUALLY ~^Requires:\([^_]*\) [0-9]+ Strength$~ ~Requires:\1 %min_strength% Strength~
-		END ELSE PATCH_IF INDEX_BUFFER( ~Requires:$~ ) > 0 BEGIN
-			REPLACE_TEXTUALLY ~^Requires:$~ ~Requires:%WNL% %min_strength% Strength~
+		// Now add the correct requirement
+		PATCH_IF INDEX_BUFFER( ~^Requires:~ ) > 0 BEGIN
+			// Requires section exists, check if it has anything after it
+			PATCH_IF INDEX_BUFFER( ~^Requires:%WNL%$~ ) > 0 BEGIN
+				// Requires: with nothing after it, add strength
+				REPLACE_TEXTUALLY ~^Requires:$~ ~Requires:%WNL% %min_strength% Strength~
+			END ELSE BEGIN
+				// Requires has other content, add strength as new line
+				REPLACE_TEXTUALLY ~^Requires:%WNL%~ ~Requires:%WNL% %min_strength% Strength%WNL%~
+			END
 		END ELSE BEGIN
+			// No Requires section, create one
 			REPLACE_TEXTUALLY ~^Weight:~ ~Requires:%WNL% %min_strength% Strength%WNL%Weight:~
 		END
 	END
@@ -164,8 +171,16 @@ BEGIN
 	TEXT_SPRINT abilities_string ~%ac_string%%WNL%~
 
 	// Always remove old Armor Class lines and old "No protection against" lines from equipped abilities
+	// Be aggressive - remove all occurrences
 	REPLACE_TEXTUALLY ~^– Armor Class:[^%WNL%]*%WNL%~ ~~
 	REPLACE_TEXTUALLY ~^– No protection against [^%WNL%]*%WNL%~ ~~
+	REPLACE_TEXTUALLY ~– No protection against [^%WNL%]*%WNL%~ ~~
+	REPLACE_TEXTUALLY ~– No protection against [^%WNL%]*$~ ~~
+	
+	// Clean up any extra blank lines left behind from removed entries
+	// Remove multiple consecutive blank lines (keep max 1 blank line between sections)
+	REPLACE_TEXTUALLY ~%WNL%%WNL%%WNL%~ ~%WNL%%WNL%~
+	REPLACE_TEXTUALLY ~%WNL%%WNL%%WNL%~ ~%WNL%%WNL%~
 
 	// Physical Resistance
 	PATCH_IF NOT (~%physical_resistance%~ STRING_EQUAL_CASE ~0~) AND NOT (~%physical_resistance%~ STRING_EQUAL_CASE ~N~) BEGIN
