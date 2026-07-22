@@ -8,6 +8,7 @@ DEFINE_PATCH_FUNCTION redescribe_armor
         min_strength = 0
         armor_class = 0
         arcane_spells = 0
+		speed_factor = 0
     STR_VAR
         physical_resistance = 0
         slashing_ac = 0
@@ -96,6 +97,13 @@ BEGIN
 	END
 	// Always remove old Physical Resistance line (whether added or not)
 	REPLACE_TEXTUALLY ~^– Physical Resistance:[^%WNL%]*%WNL%~ ~~
+
+	// Speed Factor
+	PATCH_IF NOT (~%speed_factor%~ STRING_EQUAL_CASE ~0~) BEGIN
+		TEXT_SPRINT abilities_string ~%abilities_string%– Speed Factor: %speed_factor%%WNL%~
+	END
+	// Always remove old Speed Factor line
+	REPLACE_TEXTUALLY ~^– Speed Factor:[^%WNL%]*%WNL%~ ~~
 
 	// Spellcasting
 	PATCH_IF NOT (~%arcane_spells%~ STRING_EQUAL_CASE ~0~) BEGIN
