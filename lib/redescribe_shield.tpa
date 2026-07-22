@@ -50,11 +50,9 @@ BEGIN
 		END
 	END
 
-	// Build equipped abilities string (AC will be first)
-	TEXT_SPRINT abilities_string ~~
-
-	// Armor Class - shields only, goes in Equipped abilities with damage type modifiers grouped
-	TEXT_SPRINT ac_string ~– Armor Class: +%armor_class%~
+	// Build Armor Class description (formatted as "+X" for shields, like armor version)
+	// Format: "Armor Class: +X, modifiers"
+	TEXT_SPRINT ac_string ~Armor Class: +%armor_class%~
 	TEXT_SPRINT ac_mods_string ~~
 	
 	// Process all damage types and group them intelligently
@@ -163,24 +161,30 @@ BEGIN
 		END
 	END
 	
-	// Build final AC string
+	// Build final AC string with modifiers
 	PATCH_IF NOT (~%ac_mods_string%~ STRING_EQUAL_CASE ~~) BEGIN
-		TEXT_SPRINT ac_string ~%ac_string%, %ac_mods_string%~
+		TEXT_SPRINT ac_string ~%ac_string% (%ac_mods_string%)~
 	END
-	
-	TEXT_SPRINT abilities_string ~%ac_string%%WNL%~
 
-	// Always remove old Armor Class lines and old "No protection against" lines from equipped abilities
-	// Be aggressive - remove all occurrences
+	// Update or inject Armor Class line (BEFORE Requires, like armor does)
+	PATCH_IF NOT (~%ac_string%~ STRING_EQUAL_CASE ~~) BEGIN
+		PATCH_IF INDEX_BUFFER( ~^Armor Class:.*$~ ) > 0 BEGIN
+			REPLACE_TEXTUALLY ~^Armor Class:.*$~ ~%ac_string%~
+		END ELSE PATCH_IF INDEX_BUFFER( ~^Weight:~ ) > 0 BEGIN
+			REPLACE_TEXTUALLY ~^Weight:~ ~%ac_string%%WNL%Weight:~
+		END ELSE BEGIN
+			REPLACE_TEXTUALLY ~^Requires:~ ~%ac_string%%WNL%Requires:~
+		END
+	END
+
+	// Remove old AC lines from Equipped abilities section
 	REPLACE_TEXTUALLY ~^– Armor Class:[^%WNL%]*%WNL%~ ~~
 	REPLACE_TEXTUALLY ~^– No protection against [^%WNL%]*%WNL%~ ~~
 	REPLACE_TEXTUALLY ~– No protection against [^%WNL%]*%WNL%~ ~~
 	REPLACE_TEXTUALLY ~– No protection against [^%WNL%]*$~ ~~
 	
-	// Clean up any extra blank lines left behind from removed entries
-	// Remove multiple consecutive blank lines (keep max 1 blank line between sections)
-	REPLACE_TEXTUALLY ~%WNL%%WNL%%WNL%~ ~%WNL%%WNL%~
-	REPLACE_TEXTUALLY ~%WNL%%WNL%%WNL%~ ~%WNL%%WNL%~
+	// Build equipped abilities string (WITHOUT AC - AC is before Requires now)
+	TEXT_SPRINT abilities_string ~~
 
 	// Physical Resistance
 	PATCH_IF NOT (~%physical_resistance%~ STRING_EQUAL_CASE ~0~) AND NOT (~%physical_resistance%~ STRING_EQUAL_CASE ~N~) BEGIN

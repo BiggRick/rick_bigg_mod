@@ -207,10 +207,10 @@ BEGIN
 	// Remove "No protection against" lines
 	REPLACE_TEXTUALLY ~^– No protection against [^%WNL%]*%WNL%~ ~~
 	
-	// Clean up any extra blank lines left behind from removed entries
-	// Remove multiple consecutive blank lines (keep max 1 blank line between sections)
-	REPLACE_TEXTUALLY ~%WNL%%WNL%%WNL%~ ~%WNL%%WNL%~
-	REPLACE_TEXTUALLY ~%WNL%%WNL%%WNL%~ ~%WNL%%WNL%~
+	// Clean up empty lines within equipped abilities list (remove blank lines before "–" items)
+	REPLACE_TEXTUALLY ~%WNL%%WNL%– ~ ~%WNL%– ~
+	// Also handle Linux newlines (LNL)
+	REPLACE_TEXTUALLY ~%LNL%%LNL%– ~ ~%LNL%– ~
 
 	// Update equipped abilities section
 	PATCH_IF NOT (~%abilities_string%~ STRING_EQUAL_CASE ~~) BEGIN
@@ -225,5 +225,10 @@ BEGIN
 		// No abilities to add, remove Equipped abilities section entirely
 		REPLACE_TEXTUALLY ~^Equipped abilities:[%WNL%]*– .*$~ ~~
 	END
+
+	// A pre-existing equipped ability line (not regenerated here) can remain after section rewrite.
+	// Collapse accidental blank separators before list items in the final text.
+	REPLACE_TEXTUALLY ~%WNL%%WNL%– ~ ~%WNL%– ~
+	REPLACE_TEXTUALLY ~%LNL%%LNL%– ~ ~%LNL%– ~
 
 END
