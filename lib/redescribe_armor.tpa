@@ -22,48 +22,76 @@ DEFINE_PATCH_FUNCTION redescribe_armor
         hide = 0
 BEGIN
 
-	// Build Armor Class description: "Armor Class: 5 (1 vs. slashing, 3 vs. piercing)"
+	// Build Armor Class description with smart grouping
+	// Format: "Armor Class: X (Y vs. type, Z vs. type and type)"
     TEXT_SPRINT ac_string ~Armor Class: %armor_class%~
 
-	// Add damage type modifiers in parentheses
+	// Determine which AC modifiers exist and calculate their display values
+	TEXT_SPRINT ac_mods_string ~~
+	
+	// Process slashing
 	PATCH_IF NOT (~%slashing_ac%~ STRING_EQUAL_CASE ~0~) AND NOT (~%slashing_ac%~ STRING_EQUAL_CASE ~N~) AND NOT (~%slashing_ac%~ STRING_EQUAL_CASE ~=0~) BEGIN
-		PATCH_IF NOT (~%ac_string%~ STRING_EQUAL_CASE ~~) BEGIN
-			TEXT_SPRINT ac_string ~%ac_string% (%slashing_ac% vs. slashing~
-		END
+		SET slashing_val = armor_class - slashing_ac
+		TEXT_SPRINT ac_mods_string ~%slashing_val% vs. slashing~
 	END
-
+	
+	// Process piercing and missile together (group if they're the same)
+	SET piercing_val = 0 - 1000
+	SET missile_val = 0 - 1000
+	TEXT_SPRINT piercing_exists ~~
+	TEXT_SPRINT missile_exists ~~
+	
 	PATCH_IF NOT (~%piercing_ac%~ STRING_EQUAL_CASE ~0~) AND NOT (~%piercing_ac%~ STRING_EQUAL_CASE ~N~) AND NOT (~%piercing_ac%~ STRING_EQUAL_CASE ~=0~) BEGIN
-		PATCH_IF NOT (~%ac_string%~ STRING_EQUAL_CASE ~~) BEGIN
-			PATCH_IF INDEX_BUFFER(~\($~) > 0 BEGIN
-				TEXT_SPRINT ac_string ~%ac_string%, %piercing_ac% vs. piercing~
-			END ELSE BEGIN
-				TEXT_SPRINT ac_string ~%ac_string% (%piercing_ac% vs. piercing~
-			END
-		END
+		SET piercing_val = armor_class - piercing_ac
+		TEXT_SPRINT piercing_exists ~1~
 	END
-
+	
 	PATCH_IF NOT (~%missile_ac%~ STRING_EQUAL_CASE ~0~) AND NOT (~%missile_ac%~ STRING_EQUAL_CASE ~N~) AND NOT (~%missile_ac%~ STRING_EQUAL_CASE ~=0~) BEGIN
-		PATCH_IF NOT (~%ac_string%~ STRING_EQUAL_CASE ~~) BEGIN
-			PATCH_IF INDEX_BUFFER(~\($~) > 0 BEGIN
-				TEXT_SPRINT ac_string ~%ac_string%, %missile_ac% vs. missile~
-			END ELSE BEGIN
-				TEXT_SPRINT ac_string ~%ac_string% (%missile_ac% vs. missile~
-			END
-		END
+		SET missile_val = armor_class - missile_ac
+		TEXT_SPRINT missile_exists ~1~
 	END
-
-	PATCH_IF NOT (~%crushing_ac%~ STRING_EQUAL_CASE ~0~) AND NOT (~%crushing_ac%~ STRING_EQUAL_CASE ~N~) AND NOT (~%crushing_ac%~ STRING_EQUAL_CASE ~=0~) BEGIN
-		PATCH_IF NOT (~%ac_string%~ STRING_EQUAL_CASE ~~) BEGIN
-			PATCH_IF INDEX_BUFFER(~\($~) > 0 BEGIN
-				TEXT_SPRINT ac_string ~%ac_string%, %crushing_ac% vs. crushing)~
+	
+	// Add piercing and/or missile to string
+	PATCH_IF ~%piercing_exists%~ STRING_EQUAL_CASE ~1~ BEGIN
+		PATCH_IF piercing_val = missile_val AND ~%missile_exists%~ STRING_EQUAL_CASE ~1~ BEGIN
+			// Group them: "X vs. piercing and missile"
+			PATCH_IF NOT (~%ac_mods_string%~ STRING_EQUAL_CASE ~~) BEGIN
+				TEXT_SPRINT ac_mods_string ~%ac_mods_string%, %piercing_val% vs. piercing and missile~
 			END ELSE BEGIN
-				TEXT_SPRINT ac_string ~%ac_string% (%crushing_ac% vs. crushing)~
+				TEXT_SPRINT ac_mods_string ~%piercing_val% vs. piercing and missile~
 			END
 		END ELSE BEGIN
-			TEXT_SPRINT ac_string ~%ac_string%)~
+			// Add separately
+			PATCH_IF NOT (~%ac_mods_string%~ STRING_EQUAL_CASE ~~) BEGIN
+				TEXT_SPRINT ac_mods_string ~%ac_mods_string%, %piercing_val% vs. piercing~
+			END ELSE BEGIN
+				TEXT_SPRINT ac_mods_string ~%piercing_val% vs. piercing~
+			END
 		END
-	END ELSE PATCH_IF INDEX_BUFFER(~\($~) > 0 BEGIN
-		TEXT_SPRINT ac_string ~%ac_string%)~
+	END
+	
+	PATCH_IF ~%missile_exists%~ STRING_EQUAL_CASE ~1~ AND NOT (piercing_val = missile_val AND ~%piercing_exists%~ STRING_EQUAL_CASE ~1~) BEGIN
+		// Only add missile if not already grouped with piercing
+		PATCH_IF NOT (~%ac_mods_string%~ STRING_EQUAL_CASE ~~) BEGIN
+			TEXT_SPRINT ac_mods_string ~%ac_mods_string%, %missile_val% vs. missile~
+		END ELSE BEGIN
+			TEXT_SPRINT ac_mods_string ~%missile_val% vs. missile~
+		END
+	END
+	
+	// Process crushing
+	PATCH_IF NOT (~%crushing_ac%~ STRING_EQUAL_CASE ~0~) AND NOT (~%crushing_ac%~ STRING_EQUAL_CASE ~N~) AND NOT (~%crushing_ac%~ STRING_EQUAL_CASE ~=0~) BEGIN
+		SET crushing_val = armor_class - crushing_ac
+		PATCH_IF NOT (~%ac_mods_string%~ STRING_EQUAL_CASE ~~) BEGIN
+			TEXT_SPRINT ac_mods_string ~%ac_mods_string%, %crushing_val% vs. crushing~
+		END ELSE BEGIN
+			TEXT_SPRINT ac_mods_string ~%crushing_val% vs. crushing~
+		END
+	END
+	
+	// Build final AC string with modifiers
+	PATCH_IF NOT (~%ac_mods_string%~ STRING_EQUAL_CASE ~~) BEGIN
+		TEXT_SPRINT ac_string ~%ac_string% (%ac_mods_string%)~
 	END
 
 	// Update or inject Armor Class line
@@ -79,8 +107,12 @@ BEGIN
 
 	// Handle minimum strength requirement
 	PATCH_IF NOT (~%min_strength%~ STRING_EQUAL_CASE ~0~) BEGIN
-		PATCH_IF INDEX_BUFFER( ~Requires:[^_]* [0-9]+ Strength$~ ) > 0 BEGIN
-			REPLACE_TEXTUALLY ~^Requires:\([^_]*\) [0-9]+ Strength$~ ~Requires:\1 %min_strength% Strength~
+		// First, remove any OLD requirements  that might have been added in a previous run
+		REPLACE_TEXTUALLY ~^Requires:%WNL% %min_strength% Strength%WNL%~ ~~
+		REPLACE_TEXTUALLY ~^Requires: %min_strength% Strength$~ ~~
+		
+		PATCH_IF INDEX_BUFFER( ~Requires: [0-9]+ Strength$~ ) > 0 BEGIN
+			REPLACE_TEXTUALLY ~^Requires: [0-9]+ Strength$~ ~Requires: %min_strength% Strength~
 		END ELSE PATCH_IF INDEX_BUFFER( ~Requires:$~ ) > 0 BEGIN
 			REPLACE_TEXTUALLY ~^Requires:$~ ~Requires:%WNL% %min_strength% Strength~
 		END ELSE BEGIN
@@ -105,22 +137,32 @@ BEGIN
 	// Always remove old Speed Factor line
 	REPLACE_TEXTUALLY ~^– Speed Factor:[^%WNL%]*%WNL%~ ~~
 
-	// Spellcasting
-	PATCH_IF NOT (~%arcane_spells%~ STRING_EQUAL_CASE ~0~) BEGIN
-		PATCH_IF ~%arcane_spells%~ STRING_EQUAL_CASE ~1~ BEGIN
-			TEXT_SPRINT abilities_string ~%abilities_string%– Spellcasting is not disabled%WNL%~
-		END ELSE BEGIN
-			TEXT_SPRINT abilities_string ~%abilities_string%– Spellcasting is disabled%WNL%~
-		END
+	// Spellcasting - always show disabled/not disabled
+	PATCH_IF (~%arcane_spells%~ STRING_EQUAL_CASE ~0~) BEGIN
+		TEXT_SPRINT abilities_string ~%abilities_string%– Arcane Spellcasting is disabled%WNL%~
+	END ELSE BEGIN
+		TEXT_SPRINT abilities_string ~%abilities_string%– Arcane Spellcasting is not disabled%WNL%~
 	END
 	// Always remove old Spellcasting lines
-	REPLACE_TEXTUALLY ~^– Spellcasting is [^%WNL%]*%WNL%~ ~~
+	REPLACE_TEXTUALLY ~^– (Spellcasting|Arcane Spellcasting) is [^%WNL%]*%WNL%~ ~~
 
 	// Lockpicking and Pick Pockets
-	PATCH_IF ~%locks%~ STRING_EQUAL_CASE ~N~ BEGIN
-		TEXT_SPRINT abilities_string ~%abilities_string%– Lockpicking and Picking Pockets not allowed%WNL%~
-	END ELSE PATCH_IF NOT (~%locks%~ STRING_EQUAL_CASE ~0~) BEGIN
-		TEXT_SPRINT abilities_string ~%abilities_string%– Open Locks: %locks%%WNL%~
+	TEXT_SPRINT locks_check ~%locks%~
+	TEXT_SPRINT pockets_check ~%pick_pockets%~
+	PATCH_IF (~%locks_check%~ STRING_EQUAL_CASE ~N~) OR (~%pockets_check%~ STRING_EQUAL_CASE ~N~) BEGIN
+		// If either is disabled (N), show "disabled"
+		TEXT_SPRINT abilities_string ~%abilities_string%– Lockpicking and Picking Pockets is disabled%WNL%~
+	END ELSE PATCH_IF (NOT (~%locks_check%~ STRING_EQUAL_CASE ~0~) OR NOT (~%pockets_check%~ STRING_EQUAL_CASE ~0~)) BEGIN
+		// If either has a modifier, show the modifiers
+		PATCH_IF NOT (~%locks_check%~ STRING_EQUAL_CASE ~0~) BEGIN
+			TEXT_SPRINT abilities_string ~%abilities_string%– Open Locks: %locks%%%WNL%~
+		END
+		PATCH_IF NOT (~%pockets_check%~ STRING_EQUAL_CASE ~0~) BEGIN
+			TEXT_SPRINT abilities_string ~%abilities_string%– Pick Pockets: %pick_pockets%%%WNL%~
+		END
+	END ELSE BEGIN
+		// Neither locked nor modified, show "not disabled"
+		TEXT_SPRINT abilities_string ~%abilities_string%– Lockpicking and Picking Pockets is not disabled%WNL%~
 	END
 	// Always remove old locks lines
 	REPLACE_TEXTUALLY ~^– Lockpicking and Picking Pockets [^%WNL%]*%WNL%~ ~~
@@ -128,33 +170,32 @@ BEGIN
 
 	// Find Traps
 	PATCH_IF NOT (~%traps%~ STRING_EQUAL_CASE ~0~) AND NOT (~%traps%~ STRING_EQUAL_CASE ~N~) BEGIN
-		TEXT_SPRINT abilities_string ~%abilities_string%– Find Traps: %traps%%WNL%~
+		TEXT_SPRINT abilities_string ~%abilities_string%– Find Traps: %traps%%%WNL%~
 	END
 	// Always remove old Find Traps line
 	REPLACE_TEXTUALLY ~^– Find Traps:[^%WNL%]*%WNL%~ ~~
 
-	// Pick Pockets
-	PATCH_IF NOT (~%pick_pockets%~ STRING_EQUAL_CASE ~0~) AND NOT (~%pick_pockets%~ STRING_EQUAL_CASE ~N~) BEGIN
-		TEXT_SPRINT abilities_string ~%abilities_string%– Pick Pockets: %pick_pockets%%WNL%~
+	// Move Silently and Hide in Shadows (grouped as "Stealth")
+	TEXT_SPRINT move_silently_check ~%move_silently%~
+	TEXT_SPRINT hide_check ~%hide%~
+	PATCH_IF (~%move_silently_check%~ STRING_EQUAL_CASE ~N~) OR (~%hide_check%~ STRING_EQUAL_CASE ~N~) BEGIN
+		// If either is disabled (N), show "disabled"
+		TEXT_SPRINT abilities_string ~%abilities_string%– Stealth is disabled%WNL%~
+	END ELSE PATCH_IF (NOT (~%move_silently_check%~ STRING_EQUAL_CASE ~0~) OR NOT (~%hide_check%~ STRING_EQUAL_CASE ~0~)) BEGIN
+		// If either has a modifier, show the modifiers
+		PATCH_IF NOT (~%move_silently_check%~ STRING_EQUAL_CASE ~0~) BEGIN
+			TEXT_SPRINT abilities_string ~%abilities_string%– Move Silently: %move_silently%%%WNL%~
+		END
+		PATCH_IF NOT (~%hide_check%~ STRING_EQUAL_CASE ~0~) BEGIN
+			TEXT_SPRINT abilities_string ~%abilities_string%– Hide in Shadows: %hide%%%WNL%~
+		END
+	END ELSE BEGIN
+		// Neither locked nor modified, show "not disabled"
+		TEXT_SPRINT abilities_string ~%abilities_string%– Stealth is not disabled%WNL%~
 	END
-	// Always remove old Pick Pockets line
-	REPLACE_TEXTUALLY ~^– Pick Pockets:[^%WNL%]*%WNL%~ ~~
-
-	// Move Silently
-	PATCH_IF ~%move_silently%~ STRING_EQUAL_CASE ~N~ BEGIN
-		TEXT_SPRINT abilities_string ~%abilities_string%– Stealth not allowed%WNL%~
-	END ELSE PATCH_IF NOT (~%move_silently%~ STRING_EQUAL_CASE ~0~) BEGIN
-		TEXT_SPRINT abilities_string ~%abilities_string%– Move Silently: %move_silently%%WNL%~
-	END
-	// Always remove old Move Silently lines
+	// Always remove old Stealth/Move Silently/Hide lines
 	REPLACE_TEXTUALLY ~^– Stealth [^%WNL%]*%WNL%~ ~~
 	REPLACE_TEXTUALLY ~^– Move Silently:[^%WNL%]*%WNL%~ ~~
-
-	// Hide in Shadows
-	PATCH_IF NOT (~%hide%~ STRING_EQUAL_CASE ~0~) AND NOT (~%hide%~ STRING_EQUAL_CASE ~N~) BEGIN
-		TEXT_SPRINT abilities_string ~%abilities_string%– Hide in Shadows: %hide%%WNL%~
-	END
-	// Always remove old Hide line
 	REPLACE_TEXTUALLY ~^– Hide in Shadows:[^%WNL%]*%WNL%~ ~~
 
 	// Remove "No protection against" lines
