@@ -190,7 +190,7 @@ BEGIN
 
 	// Physical Resistance
 	PATCH_IF NOT (~%physical_resistance%~ STRING_EQUAL_CASE ~0~) AND NOT (~%physical_resistance%~ STRING_EQUAL_CASE ~N~) BEGIN
-		TEXT_SPRINT abilities_string ~%abilities_string%– Physical Resistance: +%physical_resistance%%WNL%~
+		TEXT_SPRINT abilities_string ~%abilities_string%– Physical Resistance: +%physical_resistance%%%WNL%~
 	END
 	// Always remove old Physical Resistance line
 	REPLACE_TEXTUALLY ~^– Physical Resistance:[^%WNL%]*%WNL%~ ~~
@@ -279,5 +279,6 @@ BEGIN
 
 	// remove extraneous empty lines
 	REPLACE_TEXTUALLY ~[%WNL%][%WNL%]+Armor Class: ~ ~%WNL%%WNL%Armor Class: ~
-	REPLACE_TEXTUALLY ~[%WNL%][%WNL%]+[–-] ~ ~%WNL%%WNL%- ~
+	REPLACE_TEXTUALLY ~\(%WNL%\)+%WNL%– ~ ~%WNL%– ~
+	REPLACE_TEXTUALLY ~%LNL%+%LNL%– ~ ~%LNL%– ~
 END

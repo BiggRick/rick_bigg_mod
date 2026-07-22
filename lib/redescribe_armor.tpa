@@ -230,7 +230,7 @@ BEGIN
 
 	// A pre-existing equipped ability line (not regenerated here) can remain after section rewrite.
 	// Collapse accidental blank separators before list items in the final text.
-	REPLACE_TEXTUALLY ~%WNL%%WNL%– ~ ~%WNL%– ~
-	REPLACE_TEXTUALLY ~%LNL%%LNL%– ~ ~%LNL%– ~
+	REPLACE_TEXTUALLY ~\(%WNL%\)+%WNL%– ~ ~%WNL%– ~
+	REPLACE_TEXTUALLY ~%LNL%+%LNL%– ~ ~%LNL%– ~
 
 END
