@@ -98,10 +98,12 @@ BEGIN
 	PATCH_IF NOT (~%ac_string%~ STRING_EQUAL_CASE ~~) BEGIN
 		PATCH_IF INDEX_BUFFER( ~^Armor Class:.*$~ ) > 0 BEGIN
 			REPLACE_TEXTUALLY ~^Armor Class:.*$~ ~%ac_string%~
-		END ELSE PATCH_IF INDEX_BUFFER( ~^Weight:~ ) > 0 BEGIN
-			REPLACE_TEXTUALLY ~^Weight:~ ~%ac_string%%WNL%Weight:~
 		END ELSE BEGIN
-			REPLACE_TEXTUALLY ~^Requires:~ ~%ac_string%%WNL%Requires:~
+			PATCH_IF INDEX_BUFFER( ~^Requires:~ ) > 0 BEGIN
+				REPLACE_TEXTUALLY ~^Requires:~ ~%ac_string%%WNL%Requires:~
+			END ELSE PATCH_IF INDEX_BUFFER( ~^Weight:~ ) > 0 BEGIN
+				REPLACE_TEXTUALLY ~^Weight:~ ~%ac_string%%WNL%Weight:~
+			END
 		END
 	END
 
