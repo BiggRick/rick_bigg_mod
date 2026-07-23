@@ -178,8 +178,7 @@ Requires:
 Weight: 50"
 
 	SAY NAME2 "Delver's Plate Mail +2"
-	SAY DESC "This armor has been worn by many a fine soldier, but among the best known, and for whom it was named, was Delver Kinlake. He was a vagabond whose strong sword arm and keen wits made him a respected general to the Lords of Waterdeep. 
-	A gift from Lord Baeron, the armor served Delver well for thirty years, and after his death, it passed to his eldest son. It has since made its way into the hands of a variety of adventurers.
+	SAY DESC "This unique plate armor is a masterpiece of ancient magic, best remembered as the bulwark of Kaelen Vance—a legendary warrior whose unstoppable momentum in battle became the stuff of bards' tales. The intricate runes etched inside the steel remain dormant until the wearer enters a battle rage. Once awakened, the armor draws upon this surge of inner conviction, weaving a field of continuous physical restoration that knits flesh and mends bone while the fury lasts. 
 	
 STATISTICS:
 
@@ -359,7 +358,7 @@ STATISTICS:
 
 Equipped abilities:
 – Piercing damage resistance: +10%
-– Immunity to backstab
+– Immunity to Backstab
 
 Armor Class: -2 (-5 vs. slashing, -3 vs. piercing and missile)
 Speed Factor: -3

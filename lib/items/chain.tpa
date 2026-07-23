@@ -511,7 +511,7 @@ Equipped abilities:
 – Pick Pockets: -20%
 – Move Silently: -10%
 - Hide in Shadows: -10%
-- Saving Throws vs Breath: +2
+- Saving Throws vs Breath: +3
 
 Armor Class: 3 (1 vs. slashing, 2 vs. piercing and missile)
 Requires:
@@ -659,13 +659,12 @@ Weight: 8
 STATISTICS:
 
 Equipped abilities:
-– Immunity to normal weapons
 – Open Locks: -5%
 – Find Traps: -5%
 – Pick Pockets: -20%
 – Move Silently: -10%
 - Hide in Shadows: -10%
-- Immunity to normal weapons
+- Set Magical Damage Resistance to 90%
 
 Armor Class: 0 (-2 vs. slashing, -1 vs. piercing and missile)
 Requires:

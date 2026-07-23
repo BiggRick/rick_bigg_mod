@@ -139,7 +139,7 @@ Weight: 4"
 
 
 
-//ROBE OF THE GOOD ARCHMAGI - valore 10000mo//
+//ROBE OF THE GOOD ARCHMAGI - solo maghi puri - valore 10000mo//
 COPY "rick_bigg_mod/items/CLCK15.itm" "override"
 	SAY NAME1 "Mage Robe"
 	SAY UNIDENTIFIED_DESC "Since the age of Netheril, mages have learned to bestow a wide variety of magical properties upon the everyday objects that surround them. A favorite item of such enchantment is the common robe. It is lightweight, affordable, and holds its enchantment well, thereby making it ideal equipment for a mage. Due to their magical heritage, however, only single-, dual-, and multi-class mages may wear these enchanted robes.
@@ -166,7 +166,7 @@ Weight: 6"
 
 
 
-//ROBE OF THE NEUTRAL ARCHMAGI - valore 10000mo//
+//ROBE OF THE NEUTRAL ARCHMAGI - solo maghi puri - valore 10000mo//
 COPY "rick_bigg_mod/items/CLCK16.itm" "override"
 	SAY NAME1 "Mage Robe"
 	SAY UNIDENTIFIED_DESC "Since the age of Netheril, mages have learned to bestow a wide variety of magical properties upon the everyday objects that surround them. A favorite item of such enchantment is the common robe. It is lightweight, affordable, and holds its enchantment well, thereby making it ideal equipment for a mage. Due to their magical heritage, however, only single-, dual-, and multi-class mages may wear these enchanted robes.
@@ -192,7 +192,7 @@ Weight: 6"
 
 
 
-//ROBE OF THE EVIL ARCHMAGI - valore 10000mo//
+//ROBE OF THE EVIL ARCHMAGI - solo maghi puri - valore 10000mo//
 COPY "rick_bigg_mod/items/CLCK17.itm" "override"
 	SAY NAME1 "Mage Robe"
 	SAY UNIDENTIFIED_DESC "Since the age of Netheril, mages have learned to bestow a wide variety of magical properties upon the everyday objects that surround them. A favorite item of such enchantment is the common robe. It is lightweight, affordable, and holds its enchantment well, thereby making it ideal equipment for a mage. Due to their magical heritage, however, only single-, dual-, and multi-class mages may wear these enchanted robes.
@@ -218,7 +218,7 @@ Weight: 6"
 
 
 
-//ROBE OF THE RED FLAMES - valore 5500mo//
+//ROBE OF THE RED FLAMES - solo maghi - valore 5500mo//
 COPY "rick_bigg_mod/items/BDROBE05.itm" "override"
 	SAY NAME1 "Mage Robe"
 	SAY UNIDENTIFIED_DESC "Since the age of Netheril, mages have learned to bestow a wide variety of magical properties upon the everyday objects that surround them. A favorite item of such enchantment is the common robe. It is lightweight, affordable, and holds its enchantment well, thereby making it ideal equipment for a mage. Due to their magical heritage, however, only single-, dual-, and multi-class mages may wear these enchanted robes.
@@ -241,11 +241,117 @@ Weight: 4"
 
 
 
+//ROBE OF ELEMENTAL ABSORPTION - solo maghi - valore 2500mo//
+COPY "rick_bigg_mod/items/ohnrobe2.itm" "override"
+	SAY NAME1 "Mage Robe"
+	SAY UNIDENTIFIED_DESC "Since the age of Netheril, mages have learned to bestow a wide variety of magical properties upon the everyday objects that surround them. A favorite item of such enchantment is the common robe. It is lightweight, affordable, and holds its enchantment well, thereby making it ideal equipment for a mage. Due to their magical heritage, however, only single-, dual-, and multi-class mages may wear these enchanted robes.
+
+STATISTICS:
+
+Weight: 3"
+
+	SAY NAME2 "Robe of Elemental Absorption"
+	SAY DESC "Crafted by the eccentric Dragon Coast mage, Evard of Westgate, this silken vestment was designed to endure the chaotic elemental clashes of local spell-duels. Infused with crushed residue of minor mephit hearts, the cloth acts as a grounding sponge for raw natural energies, dulling the bite of sudden sparks, freezing gales, and searing flames alike. While it lacks the reality-bending power of archmage regalia, it provides a reliable, steady ward for any traveling scholar navigating the hazardous roads of the Heartlands.
+
+STATISTICS:
+
+Equipped abilities:
+- Armor Class: 8
+– Fire Resistance: +25%
+– Cold Resistance: +25%
+– Electrical Resistance: +25%
+- Saving Throws: +1
+
+Weight: 4"
 
 
 
 
 
+
+
+//DIVINER'S VEST - solo maghi - valore 6000mo//
+COPY "rick_bigg_mod/items/BDROBE04.itm" "override"
+	SAY NAME1 "Mage Robe"
+	SAY UNIDENTIFIED_DESC "Since the age of Netheril, mages have learned to bestow a wide variety of magical properties upon the everyday objects that surround them. A favorite item of such enchantment is the common robe. It is lightweight, affordable, and holds its enchantment well, thereby making it ideal equipment for a mage. Due to their magical heritage, however, only single-, dual-, and multi-class mages may wear these enchanted robes.
+
+STATISTICS:
+
+Weight: 3"
+
+	SAY NAME2 "Diviner's Vest"
+	SAY DESC "Created by Vaelen, a paranoid master seer from Luskan, this enchanted silk garment infuses the wearer's mind with cosmic awareness. By granting a constant state of Clairvoyance, it instantly reveals the layout of unknown regions. This supernatural foresight allows the wearer to anticipate danger before it strikes—granting uncanny luck against deadly hazards and completely eliminating the threat of unseen backstabs.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: 7
+- Save vs. Breath: +2
+- Luck: +1
+– Immunity to Backstab
+
+Weight: 4"
+
+
+
+
+
+
+
+
+//ROBE OF THE SHATTERED ONE - solo maghi puri - valore 18000mo//
+COPY "rick_bigg_mod/items/BDROBE01.itm" "override"
+	SAY NAME1 "Mage Robe"
+	SAY UNIDENTIFIED_DESC "Since the age of Netheril, mages have learned to bestow a wide variety of magical properties upon the everyday objects that surround them. A favorite item of such enchantment is the common robe. It is lightweight, affordable, and holds its enchantment well, thereby making it ideal equipment for a mage. Due to their magical heritage, however, only single-, dual-, and multi-class mages may wear these enchanted robes.
+
+STATISTICS:
+
+Weight: 3"
+
+	SAY NAME2 "Robe of the Shattered One"
+	SAY DESC "This flowing vestment once belonged to Jon Irenicus. Embroidered across the chest is a broken circle in faded elven gold runes, symbolizing his exile from Suldanessellar and his severed connection to the Tree of Life. The robe emanates an aura of cold arrogance and immense power, visibly distorting reality around the wearer. The corrupted essence imprinted within the fabric protects the user from any form of spiritual manipulation and spatial banishment, leaving the wearer's magic untethered and amplified.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: 6
+– Saving Throws: +1
+– Magic Resistance: +10%
+- Casting Level: +2
+- Immunity to Imprisonment and Maze
+- Immunity to Level Drain
+
+Weight: 6"
+
+
+
+
+
+//ROBE OF VECNA - solo maghi puri - valore 25000mo//
+COPY "rick_bigg_mod/items/WA2ROBE.itm" "override"
+	SAY NAME1 "Mage Robe"
+	SAY UNIDENTIFIED_DESC "Since the age of Netheril, mages have learned to bestow a wide variety of magical properties upon the everyday objects that surround them. A favorite item of such enchantment is the common robe. It is lightweight, affordable, and holds its enchantment well, thereby making it ideal equipment for a mage. Due to their magical heritage, however, only single-, dual-, and multi-class mages may wear these enchanted robes.
+
+STATISTICS:
+
+Weight: 3"
+
+	SAY NAME2 "Robe of Vecna"
+	SAY DESC "Born as a simple garment worn by the powerful lich, this robe absorbed centuries of leaking arcane radiation during the Whispered One's darkest rituals. The fabric now hums with a terrifying, absolute authority, serving as a direct conduit to Vecna's godlike genius and boundless intellect. It wraps the wearer in an impenetrable shield against hostile sorcery, completely isolating them from deathly energies. Yet, such supreme mental clarity demands a heavy toll, as the artifact slowly drains the physical vitality of any mortal ambitious enough to claim its power.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: 6
+- Saving Throws: +1
+– Magic Resistance: +20%
+– Casting Speed: +2
+- Casting Level: +4
+- Intelligence: 25
+- Immunity to Level Drain
+- Strength, Dexterity and Constitution: -1
+
+Weight: 3"
 
 
 

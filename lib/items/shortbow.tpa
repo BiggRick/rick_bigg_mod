@@ -32,6 +32,74 @@ Weight: 2"
 
 
 
+//SHORTBOW +2 - 2000mo//
+COPY "rick_bigg_mod/items/BOW18.itm" "override"
+	SAY NAME1 "Shortbow"
+	SAY UNIDENTIFIED_DESC "Shortbows were the first bows to be developed, although they were not called such. This is more of a default term that refers to anything which is not a longbow. Shortbow staves are about five feet long on the average. As the years passed, attempts were made to increase bow ranges. Bows were either given longer staves or flexibility was increased with no change to the length. The former resulted in what is now called the longbow.
+
+STATISTICS:
+
+Speed Factor: 6
+Proficiency Type: Shortbow
+Type: Two-handed
+Requires:
+ 3 Strength
+
+Weight: 2"
+
+	SAY NAME2 "Shortbow +2"
+	SAY DESC "Shortbows were the first bows to be developed, although they were not called such. This is more of a default term that refers to anything which is not a longbow. This is more of a default term that refers to anything which is not a longbow. Shortbow staves are about five feet long on the average. As the years passed, attempts were made to increase bow ranges. Bows were either given longer staves or flexibility was increased with no change to the length. The former resulted in what is now called the longbow. 
+	This is a magical shortbow, giving the user an additional +1 to hit and damage.
+
+STATISTICS:
+
+THAC0: +2
+Damage: +2
+Speed Factor: 4
+Proficiency Type: Shortbow
+Type: Two-handed
+Requires:
+ 3 Strength
+
+Weight: 2"
+
+
+
+//TUIGAN BOW +2 - 3500mo//
+COPY "rick_bigg_mod/items/BOW14.itm" "override"
+	SAY NAME1 "Shortbow"
+	SAY UNIDENTIFIED_DESC "Shortbows were the first bows to be developed, although they were not called such. This is more of a default term that refers to anything which is not a longbow. Shortbow staves are about five feet long on the average. As the years passed, attempts were made to increase bow ranges. Bows were either given longer staves or flexibility was increased with no change to the length. The former resulted in what is now called the longbow.
+
+STATISTICS:
+
+Speed Factor: 6
+Proficiency Type: Shortbow
+Type: Two-handed
+Requires:
+ 3 Strength
+
+Weight: 2"
+
+	SAY NAME2 "Tuigan Bow +2"
+	SAY DESC "The Tuigans are a nomadic people widely dispersed across the steppe regions of Faerûn but bound together by a common bloodline. The bows they make are specially tailored for their mobile warriors, and the process used is carefully guarded, but the result is well known: Any bow of Tuigan origin can be fired faster than is possible with a normal one. This masterwork variant is blessed by steppe spirits. When the archer lands a perfect, critical strike, these spirits grant their favor, temporarily twisting fate to smile upon the wielder.
+
+STATISTICS:
+
+Combat abilities:
+– After scoring a critical hit, the wielder is affected by the Luck spell
+
+THAC0: +2
+Damage: +2
+Speed Factor: 4
+Proficiency Type: Shortbow
+Type: Two-handed
+Requires:
+ 3 Strength
+
+Weight: 2"
+
+
+
 //SHORTBOW OF GESEN +3 - 11000mo//
 COPY "rick_bigg_mod/items/BOW19.itm" "override"
 	SAY NAME1 "Shortbow"
