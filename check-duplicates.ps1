@@ -74,5 +74,7 @@ function Print-Section($title, $type) {
 Print-Section "duplicate COPY" "COPY"
 Print-Section "duplicate SAY NAME2" "SAY NAME2"
 
-Read-Host -Prompt "Press Enter to continue"
+Write-Host ""
+Write-Host "=== Scan Complete ===" -ForegroundColor Cyan
+Read-Host -Prompt "Press Enter to close this window"
 
