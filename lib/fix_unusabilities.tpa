@@ -8,7 +8,9 @@ OUTER_SET alignment = BIT0 BOR BIT1 BOR BIT2 BOR BIT3 BOR BIT4 BOR BIT5
 
 
 DEFINE_PATCH_MACRO ~fix_unusabilities~ BEGIN
+    // if droppable
     PATCH_IF (LONG_AT 0x18 BAND BIT2) BEGIN
+
         // usable by trueclass fighters, not an armor or a shield
         PATCH_IF NOT (LONG_AT 0x1e BAND BIT11) AND NOT (BYTE_AT 0x2d BAND BIT6) AND NOT (SHORT_AT 0x1c == 12 OR SHORT_AT 0x1c == 2)  BEGIN
             // usable by Wizard Slayers

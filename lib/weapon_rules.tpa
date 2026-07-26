@@ -426,7 +426,7 @@ DEFINE_PATCH_MACRO weapon_rules BEGIN
 			END
 		END
 		
-		PATCH_IF IS_AN_INT ~%cleric%~ AND IS_AN_INT ~%druid%~ AND IS_AN_INT ~%thief%~ AND IS_AN_INT ~%bard%~ AND IS_AN_INT ~%mage%~ AND NOT (LONG_AT 0x1e BAND BIT11) AND IS_AN_INT ~%shorties%~ BEGIN
+		PATCH_IF IS_AN_INT ~%cleric%~ AND IS_AN_INT ~%druid%~ AND IS_AN_INT ~%thief%~ AND IS_AN_INT ~%bard%~ AND IS_AN_INT ~%mage%~ AND IS_AN_INT ~%shorties%~  AND NOT (LONG_AT 0x1e BAND BIT11) AND NOT (BYTE_AT 0x2d BAND BIT6) BEGIN
 			READ_LONG 0x1e unusability
 			
 			unusability = cleric ? unusability BAND BNOT weapon_clericbits : unusability BOR weapon_clericbits
