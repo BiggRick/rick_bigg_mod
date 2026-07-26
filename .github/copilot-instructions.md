@@ -10,13 +10,13 @@ Quick commands
 
 - Validate duplicates (simple checks):
   - Run the PowerShell helper to detect duplicate COPY / SAY NAME2 entries:
-    powershell -NoProfile -ExecutionPolicy Bypass -File .\check-duplicates.ps1
+    powershell -NoProfile -ExecutionPolicy Bypass -File .\powershell\check-duplicates.ps1
 
 - Fix double quotes:
   - After editing any `.tpa` file and before committing, run:
-    powershell -NoProfile -ExecutionPolicy Bypass -File .\check-tpa-quotes.ps1
+    powershell -NoProfile -ExecutionPolicy Bypass -File .\powershell\check-tpa-quotes.ps1
   - The command invokes `..\weidu --traify <file> --out ..\weidu_external\traify` for every `.tpa` below `lib\` and exits with code `1` when WeiDU cannot parse a file, including when WeiDU reports a fatal error but returns `0`.
-  - To validate only edited or staged files, pass their paths after `-Files`: `powershell -NoProfile -ExecutionPolicy Bypass -File .\check-tpa-quotes.ps1 -Files ".\lib\items\amulets.tpa", ".\lib\items\boots.tpa"`.
+  - To validate only edited or staged files, pass their paths after `-Files`: `powershell -NoProfile -ExecutionPolicy Bypass -File .\powershell\check-tpa-quotes.ps1 -Files ".\lib\items\amulets.tpa", ".\lib\items\boots.tpa"`.
   - Fix each reported value by replacing its inner double quotes with single quotes, or by delimiting the entire value with `~...~`.
   - If the check fails only because of nested double quotes, fix those delimiters automatically and rerun it. Report other parsing errors without modifying them.
 
@@ -35,7 +35,7 @@ High-level architecture
 
 - 2da/, eff/, spell/: Game-specific data tables, effect files, and spell files.
 
-- check-duplicates.ps1: Repo-level validation script that scans *.tp* files for duplicate COPY statements and duplicate SAY NAME2 strings.
+- powershell/check-duplicates.ps1: Repo-level validation script that scans *.tp* files for duplicate COPY statements and duplicate SAY NAME2 strings.
 
 Key conventions and patterns
 
@@ -66,8 +66,8 @@ Author / contact
 Notes for Copilot sessions
 
 - Prefer editing or adding modular .tpa includes under lib/ rather than modifying rick_bigg_mod.tp2 unless a new top-level component/installation flow is required.
-- Use check-duplicates.ps1 as a quick pre-commit check for duplicate COPY / SAY NAME2 issues.
-- After editing any `.tpa` file or before committing, run `powershell -NoProfile -ExecutionPolicy Bypass -File .\check-tpa-quotes.ps1`. For a targeted check, pass edited or staged `.tpa` paths after `-Files`. Do not leave double quotes inside a double-quoted `SAY` value; use single quotes internally or delimit the full value with `~...~`.
+- Use powershell/check-duplicates.ps1 as a quick pre-commit check for duplicate COPY / SAY NAME2 issues.
+- After editing any `.tpa` file or before committing, run `powershell -NoProfile -ExecutionPolicy Bypass -File .\powershell\check-tpa-quotes.ps1`. For a targeted check, pass edited or staged `.tpa` paths after `-Files`. Do not leave double quotes inside a double-quoted `SAY` value; use single quotes internally or delimit the full value with `~...~`.
 - Avoid changing game asset filenames or COPY targets without updating all references in .tpa/.tp2 and 2da/TRA files.
 
 Summary

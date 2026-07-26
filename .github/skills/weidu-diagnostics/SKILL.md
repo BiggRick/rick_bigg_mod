@@ -66,15 +66,15 @@ diagnostic statements after the cause is fixed.
 
 ## Rules to apply
 When you edit a TPA file to add or remove diagnostic messages or while trying to fix a problem, do *not* execute the rules:
-- check-duplicates.ps1
-- check-tpa-quotes.ps1
+- powershell/check-duplicates.ps1
+- powershell/check-tpa-quotes.ps1
 
 ## Validate edited scripts
 
 After editing a `.tpa` file, run:
 
 ```powershell
-powershell -NoProfile -ExecutionPolicy Bypass -File .\check-tpa-quotes.ps1 -Files ".\lib\item_rules.tpa", ".\lib\redescribe_armor.tpa"
+powershell -NoProfile -ExecutionPolicy Bypass -File .\powershell\check-tpa-quotes.ps1 -Files ".\lib\item_rules.tpa", ".\lib\redescribe_armor.tpa"
 ```
 
 The script verifies that WeiDU can parse the changed files and catches nested
