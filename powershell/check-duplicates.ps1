@@ -77,4 +77,3 @@ Print-Section "duplicate SAY NAME2" "SAY NAME2"
 Write-Host ""
 Write-Host "=== Scan Complete ===" -ForegroundColor Cyan
 Read-Host -Prompt "Press Enter to close this window"
-

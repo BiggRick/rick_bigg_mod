@@ -7,6 +7,7 @@ DEFINE_PATCH_FUNCTION redescribe_weapon
 		damage = 0
 		speed_factor = 0
 		min_strength = 0
+		range = 0
 	STR_VAR attacks_per_round = "_"
 BEGIN
 
@@ -58,6 +59,18 @@ BEGIN
 	
 	REPLACE_TEXTUALLY ~^Speed Factor:.*$~ ~Speed Factor: %speed_factor%~
 	
+	REPLACE_TEXTUALLY ~^Range:.*[%WNL%]+~ ~~
+	PATCH_IF range >= 26 BEGIN
+		TEXT_SPRINT range_string ~Range: %range% yards (visual range)~
+	END ELSE PATCH_IF range >= 2 BEGIN
+		TEXT_SPRINT range_string ~Range: %range% yards~
+	END ELSE PATCH_IF range == 1 BEGIN
+		TEXT_SPRINT range_string ~Range: %range% yard~
+	END ELSE PATCH_IF range == 0 BEGIN
+		TEXT_SPRINT range_string ~Range: Adjacent~
+	END
+	REPLACE_TEXTUALLY ~^Type:\(.*\)$~ ~Type:\1%WNL%%range_string%~
+
 	PATCH_IF INDEX_BUFFER ( ~Requires:[^_]* [0-9]+ Strength$~ ) > 0 BEGIN
 		REPLACE_TEXTUALLY ~^Requires:\([^_]*\) [0-9]+ Strength$~ ~Requires:\1 %min_strength% Strength~
 	END ELSE PATCH_IF INDEX_BUFFER ( ~Requires:$~ ) > 0 BEGIN

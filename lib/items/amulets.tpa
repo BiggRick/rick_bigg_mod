@@ -606,7 +606,7 @@ STATISTICS:
 Weight: 1"
 
 	SAY NAME2 "Amulet of Power"
-	SAY DESC "This amulet bears the signature enchantments of Conster Damon, an archmage who fell in the Year of the Dracorage (1018 DR). The crispness of its etchings may have faded with fire and time, but it still echoes his famous, defiant cries: "Your magic denied!" "I will be heard!" "Defeat comes swiftly!" "Take nothing from me!"Damon designed the amulet not merely to shield himself, but to amplify his arcane supremacy, allowing him to weave spells with devastating speed and overwhelming force. It has seen much use and changed hands many times through blood and battle.
+	SAY DESC "This amulet bears the signature enchantments of Conster Damon, an archmage who fell in the Year of the Dracorage (1018 DR). The crispness of its etchings may have faded with fire and time, but it still echoes his famous, defiant cries: 'Your magic denied!' 'I will be heard!' 'Defeat comes swiftly!' 'Take nothing from me!' Damon designed the amulet not merely to shield himself, but to amplify his arcane supremacy, allowing him to weave spells with devastating speed and overwhelming force. It has seen much use and changed hands many times through blood and battle.
 
 STATISTICS:
 
@@ -616,7 +616,6 @@ Equipped abilities:
 – Magical damage (all form): +10%
 
 Weight: 1"
-
 
 
 

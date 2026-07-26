@@ -11,6 +11,12 @@ This guide documents the process for installing a WeiDU component from a WeiDU m
   - `dialog.tlk` (dialogue file)
   - `override/` directory (where mod files get copied)
 
+## Repository Script Layout
+
+- `powershell/` contains the repository PowerShell helpers (`.ps1` files).
+- Root-level `.bat` launchers remain at the repository root. For example,
+  `check-duplicates.bat` invokes `powershell/check-duplicates.ps1`.
+
 ## Installation Process
 
 ### Step 1: Identify the Component Number

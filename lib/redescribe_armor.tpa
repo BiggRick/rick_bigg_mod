@@ -217,15 +217,17 @@ BEGIN
 	// Update equipped abilities section
 	PATCH_IF NOT (~%abilities_string%~ STRING_EQUAL_CASE ~~) BEGIN
 		PATCH_IF INDEX_BUFFER( ~^Equipped abilities:~ ) > 0 BEGIN
-			REPLACE_TEXTUALLY ~^Equipped abilities:[%WNL%]*– .*$~ ~Equipped abilities:%WNL%%abilities_string%~
+			REPLACE_TEXTUALLY ~^Equipped abilities:[%WNL%]*~ ~Equipped abilities:%WNL%%abilities_string%~
 		END ELSE PATCH_IF INDEX_BUFFER( ~^STATISTICS:~ ) > 0 BEGIN
 			REPLACE_TEXTUALLY ~^STATISTICS:\([%WNL%]+\)~ ~STATISTICS:\1Equipped abilities:%WNL%%abilities_string%%WNL%~
 		END ELSE BEGIN
 			REPLACE_TEXTUALLY ~^Weight:~ ~Equipped abilities:%WNL%%abilities_string%%WNL%Weight:~
 		END
 	END ELSE BEGIN
-		// No abilities to add, remove Equipped abilities section entirely
-		REPLACE_TEXTUALLY ~^Equipped abilities:[%WNL%]*– .*$~ ~~
+		// Remove the section only if no pre-existing ability lines remain.
+		PATCH_IF INDEX_BUFFER( ~^Equipped abilities:[%WNL%]*– ~) = 0 BEGIN
+			REPLACE_TEXTUALLY ~^Equipped abilities:[%WNL%]*~ ~~
+		END
 	END
 
 	// A pre-existing equipped ability line (not regenerated here) can remain after section rewrite.
