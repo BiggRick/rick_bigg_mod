@@ -1,6 +1,6 @@
 
 COPY ~rick_bigg_mod/2da/armor_rules.2da~ ~weidu_external~
-	READ_2DA_ENTRIES_NOW ~armor_rules~ 22
+	READ_2DA_ENTRIES_NOW ~armor_rules~ 23
 BUT_ONLY
 
 COPY ~rick_bigg_mod/2da/armor_list.2da~ ~weidu_external~
@@ -9,7 +9,8 @@ BUT_ONLY
 
 			
 OUTER_SET armor_clericbits = BIT7 BOR BIT14
-OUTER_SET armor_druidbits = BIT12 BOR BIT30
+OUTER_SET armor_druidbits = BIT30
+OUTER_SET armor_fighter_druidbits = BIT12
 OUTER_SET armor_thiefbits = BIT9 BOR BIT17 BOR BIT22
 OUTER_SET armor_rangerbits = BIT21
 OUTER_SET armor_berzwsbits = BIT0 BOR BIT1
@@ -205,84 +206,89 @@ DEFINE_PATCH_MACRO armor_rules BEGIN
 				INT_VAR column_number = 12
 				RET druid = value
 			END
-			// column 14 - thief - no base
+			// column 14 - fighter/druid - no base
 			LAUNCH_PATCH_FUNCTION get_from_armor_2da
 				INT_VAR column_number = 13
-				RET thief = value
+				RET fighter_druid = value
 			END
-			// column 15 - bard - no base
+			// column 15 - thief - no base
 			LAUNCH_PATCH_FUNCTION get_from_armor_2da
 				INT_VAR column_number = 14
-				RET bard = value
+				RET thief = value
 			END
-			// column 16 - mage_mc - no base
+			// column 16 - bard - no base
 			LAUNCH_PATCH_FUNCTION get_from_armor_2da
 				INT_VAR column_number = 15
-				RET mage_mc = value
+				RET bard = value
 			END
-			// column 17 - locks - both
+			// column 17 - mage_mc - no base
 			LAUNCH_PATCH_FUNCTION get_from_armor_2da
 				INT_VAR column_number = 16
+				RET mage_mc = value
+			END
+			// column 18 - locks - both
+			LAUNCH_PATCH_FUNCTION get_from_armor_2da
+				INT_VAR column_number = 17
 				RET locks = value
 			END
 			LAUNCH_PATCH_FUNCTION get_base_from_armor_2da
-				INT_VAR column_number = 16
+				INT_VAR column_number = 17
 				RET base_locks = value
 			END
-			// column 18 - traps - both
+			// column 19 - traps - both
 			LAUNCH_PATCH_FUNCTION get_from_armor_2da
-				INT_VAR column_number = 17
+				INT_VAR column_number = 18
 				RET traps = value
 			END
 			LAUNCH_PATCH_FUNCTION get_base_from_armor_2da
-				INT_VAR column_number = 17
+				INT_VAR column_number = 18
 				RET base_traps = value
 			END
-			// column 19 - pick_pockets - both
+			// column 20 - pick_pockets - both
 			LAUNCH_PATCH_FUNCTION get_from_armor_2da
-				INT_VAR column_number = 18
+				INT_VAR column_number = 19
 				RET pick_pockets = value
 			END
 			LAUNCH_PATCH_FUNCTION get_base_from_armor_2da
-				INT_VAR column_number = 18
+				INT_VAR column_number = 19
 				RET base_pick_pockets = value
 			END
-			// column 20 - move_silently - both
+			// column 21 - move_silently - both
 			LAUNCH_PATCH_FUNCTION get_from_armor_2da
-				INT_VAR column_number = 19
+				INT_VAR column_number = 20
 				RET move_silently = value
 			END
 			LAUNCH_PATCH_FUNCTION get_base_from_armor_2da
-				INT_VAR column_number = 19
+				INT_VAR column_number = 20
 				RET base_move_silently = value
 			END
-			// column 21 - hide - both
+			// column 22 - hide - both
 			LAUNCH_PATCH_FUNCTION get_from_armor_2da
-				INT_VAR column_number = 20
+				INT_VAR column_number = 21
 				RET hide = value
 			END
 			LAUNCH_PATCH_FUNCTION get_base_from_armor_2da
-				INT_VAR column_number = 20
+				INT_VAR column_number = 21
 				RET base_hide = value
 			END
 			LAUNCH_PATCH_FUNCTION get_from_armor_2da
-				INT_VAR column_number = 21
+				INT_VAR column_number = 22
 				RET arcane_spells = value
 			END
 			LAUNCH_PATCH_FUNCTION get_base_from_armor_2da
-				INT_VAR column_number = 21
+				INT_VAR column_number = 22
 				RET base_arcane_spells = value
 			END
 			LAUNCH_PATCH_FUNCTION get_from_armor_2da
-				INT_VAR column_number = 22
+				INT_VAR column_number = 23
 				RET description = value
 			END
 			LAUNCH_PATCH_FUNCTION get_from_armor_2da
-				INT_VAR column_number = 23
+				INT_VAR column_number = 24
 				RET speed_factor = value
 			END
 			LAUNCH_PATCH_FUNCTION get_base_from_armor_2da
-				INT_VAR column_number = 23
+				INT_VAR column_number = 24
 				RET base_speed_factor = value
 			END
 
@@ -454,12 +460,13 @@ DEFINE_PATCH_MACRO armor_rules BEGIN
 
 
 
-			PATCH_IF IS_AN_INT ~%cleric%~ AND IS_AN_INT ~%druid%~ AND IS_AN_INT ~%thief%~ AND IS_AN_INT ~%bard%~ AND IS_AN_INT ~%mage_mc%~ AND IS_AN_INT ~%ranger%~ AND NOT (LONG_AT 0x1e BAND BIT11) AND IS_AN_INT ~%berzerker__wizard_slayer%~ BEGIN
+			PATCH_IF IS_AN_INT ~%cleric%~ AND IS_AN_INT ~%druid%~ AND IS_AN_INT ~%fighter_druid%~ AND IS_AN_INT ~%thief%~ AND IS_AN_INT ~%bard%~ AND IS_AN_INT ~%mage_mc%~ AND IS_AN_INT ~%ranger%~ AND NOT (LONG_AT 0x1e BAND BIT11) AND IS_AN_INT ~%berzerker__wizard_slayer%~ BEGIN
 				READ_LONG 0x1e unusability
 				
 				unusability = cleric ? unusability BAND BNOT armor_clericbits : unusability BOR armor_clericbits
 				unusability = ranger ? unusability BAND BNOT armor_rangerbits : unusability BOR armor_rangerbits
 				unusability = druid  ? unusability BAND BNOT  armor_druidbits : unusability BOR  armor_druidbits
+				unusability = fighter_druid ? unusability BAND BNOT armor_fighter_druidbits : unusability BOR armor_fighter_druidbits
 				unusability = thief  ? unusability BAND BNOT  armor_thiefbits : unusability BOR  armor_thiefbits
 				unusability = bard   ? unusability BAND BNOT   armor_bardbits : unusability BOR   armor_bardbits
 				unusability = mage_mc? unusability BAND BNOT armor_magemcbits : unusability BOR armor_magemcbits
