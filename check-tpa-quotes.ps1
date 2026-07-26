@@ -25,7 +25,7 @@ if (-not (Test-Path -LiteralPath $weidu -PathType Leaf)) {
 
 $failedFiles = @()
 if ($Files) {
-    $files = @(
+    $tpaFiles = @(
         foreach ($file in $Files) {
             $resolvedFile = Resolve-Path -LiteralPath $file -ErrorAction Stop
             if ((Get-Item -LiteralPath $resolvedFile).Extension -ne ".tpa") {
@@ -37,14 +37,14 @@ if ($Files) {
     )
 }
 else {
-    $files = Get-ChildItem -LiteralPath $target -Recurse -Filter *.tpa -File
+    $tpaFiles = Get-ChildItem -LiteralPath $target -Recurse -Filter *.tpa -File
 }
 
 $maxJobs = [Math]::Ceiling([Environment]::ProcessorCount * 0.75)
 $jobs = @()
 $pendingFiles = [System.Collections.Queue]::new()
-foreach ($item in $files) {
-    $pendingFiles.Enqueue($item.ToString())
+foreach ($item in $tpaFiles) {
+    $pendingFiles.Enqueue($item.FullName)
 }
 
 while ($pendingFiles.Count -gt 0 -or $jobs.Count -gt 0) {
@@ -96,7 +96,7 @@ while ($pendingFiles.Count -gt 0 -or $jobs.Count -gt 0) {
 }
 
 if ($failedFiles.Count -eq 0) {
-    Write-Host "WeiDU validated $($files.Count) TPA file(s) successfully using up to $maxJobs parallel jobs."
+    Write-Host "WeiDU validated $($tpaFiles.Count) TPA file(s) successfully using up to $maxJobs parallel jobs."
     exit 0
 }
 
