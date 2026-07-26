@@ -26,8 +26,8 @@ COMP_L_BOW  104         composite  LAUNCH 26    1           0           0       
 LONG_BOW    104         !composite LAUNCH 26    1           0           0         0            MISSILE     0        7            1                12           1       0      0       1     0      0        7        1
 SHORT_BOW   105         _          LAUNCH 26    0           0           0         0            MISSILE     0        6            1                6            1       1      1       1     0      1        7        1
 DART        106         _          RANGED 10    0           1           3         0            MISSILE     0        2            0                3            1       1      1       1     1      1        3        1
-BULLETS     50          bullet     RANGED 15    0           1           4         0            MISSILE     0        0            0                0            1       0      1       1     0      1        0        1     
-SLING       107         _          LAUNCH 15    0           0           0         0            MISSILE     0        6            1                3            1       1      1       1     1      1        0        1
+BULLETS     50          bullet     RANGED 15    0           1           4         0            MISSILE     0        0            0                0            1       1      1       1     0      1        0        1     
+SLING       107         _          LAUNCH 15    0           0           0         0            MISSILE     0        6            1                3            1       1      1       1     0      1        0        1
 
 RODMIGHT    RODS02      _          MELEE  _     _           0           0         0            _           _        0            0                _            _       _      _       _     _      _        _        0
 STRONGARM   BOW11       _          LAUNCH _     _           _           _         6            _           _        _            _                19           _       _      _       _     _      _        _        _
@@ -46,3 +46,4 @@ SLASHING_BLADE SW1H39   _          MELEE  _     8           _           _       
 IXIL        DAGG23      _          RANGED _     _           _           _         _            _           _        _            _                _            _       _      _       _     _      _        3        _
 IXIL        SPER12      _          MELEE  _     _           _           _         _            _           _        _            _                _            _       _      _       _     _      _        2        _
 CATTIBOW    CATTIBOW    _          LAUNCH _     _           _           _         _            _           _        _            _                _            _       _      _       _     _      _        2        _
+ELVENCOURT  BOW12       _          LAUNCH _     8           _           _         _            _           _        _            _                _            _       _      _       _     _      _        2        _
