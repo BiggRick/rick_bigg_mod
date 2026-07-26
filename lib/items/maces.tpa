@@ -219,6 +219,7 @@ Damage type: Magical
 Speed Factor: 0
 Proficiency Type: Mace
 Type: One-handed
+Range: 1 yard
 Requires:
  3 Strength
 

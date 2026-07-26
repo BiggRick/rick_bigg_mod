@@ -239,6 +239,10 @@ DEFINE_PATCH_MACRO weapon_rules BEGIN
 						size = 2
 					RET range = value
 				END
+				LAUNCH_PATCH_FUNCTION get_base_from_weapon_2da
+					INT_VAR column_number = 4
+					RET range_base = value
+				END
 				LAUNCH_PATCH_FUNCTION write_from_weapon_2da
 					INT_VAR column_number = 5
 						use_enchantment = 1
@@ -454,23 +458,24 @@ DEFINE_PATCH_MACRO weapon_rules BEGIN
 			END
 		END
 		
-		PATCH_IF description BEGIN
-			READ_STRREF UNIDENTIFIED_DESC desc
-			PATCH_IF ("%desc%" STRING_COMPARE_REGEXP ~<Invalid Strref -?[0-9]+>~) BEGIN // checking for valid content in string
-				INNER_PATCH_SAVE desc ~%desc%~ BEGIN
-					LAUNCH_PATCH_FUNCTION ~redescribe_weapon~
-						INT_VAR thac0 = thac0_base
-							dice_number = dice_number_base
-							dice_type = dice_type_base
-							damage = damage_base
-							speed_factor = speed_factor_base
-							min_strength = min_strength_base
-						STR_VAR
-							attacks_per_round = EVALUATE_BUFFER ~%attacks_per_round_base%~
-					END
+		READ_STRREF UNIDENTIFIED_DESC desc
+		PATCH_IF ("%desc%" STRING_COMPARE_REGEXP ~<Invalid Strref -?[0-9]+>~) BEGIN // checking for valid content in string
+			INNER_PATCH_SAVE desc ~%desc%~ BEGIN
+				LAUNCH_PATCH_FUNCTION ~redescribe_weapon~
+					INT_VAR thac0 = thac0_base
+						dice_number = dice_number_base
+						dice_type = dice_type_base
+						damage = damage_base
+						speed_factor = speed_factor_base
+						min_strength = min_strength_base
+						range = range_base
+					STR_VAR
+						attacks_per_round = EVALUATE_BUFFER ~%attacks_per_round_base%~
 				END
-				SAY_EVALUATED UNIDENTIFIED_DESC ~%desc%~ // write changes
 			END
+			SAY_EVALUATED UNIDENTIFIED_DESC ~%desc%~ // write changes
+		END
+		PATCH_IF description BEGIN
 			READ_STRREF DESC desc
 			PATCH_IF ("%desc%" STRING_COMPARE_REGEXP ~<Invalid Strref -?[0-9]+>~) BEGIN // checking for valid content in string
 				INNER_PATCH_SAVE desc ~%desc%~ BEGIN
@@ -481,6 +486,7 @@ DEFINE_PATCH_MACRO weapon_rules BEGIN
 							damage = damage
 							speed_factor = speed_factor
 							min_strength = min_strength
+							range = range
 						STR_VAR
 							attacks_per_round = EVALUATE_BUFFER ~%attacks_per_round%~
 					END
