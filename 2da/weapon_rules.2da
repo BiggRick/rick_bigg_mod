@@ -18,15 +18,15 @@ MORNING_STA 100         !flail     MELEE  1     0           1           8       
 MACE        101         _          MELEE  1     0           1           6         1            CRUSHING    0        6            1                11           1       0      0       1     0      1        0        1
 CLUB        115         _          MELEE  1     0           1           6         1            CRUSHING    0        5            1                7            1       1      1       1     0      1        0        1
 STAFF       102         _          MELEE  2     0           1           6         0            CRUSHING    0        4            1                5            1       1      1       1     1      1        0        1
-BOLTS       50          bolt       RANGED 100   0           1           8         0            MISSILE     0        0            0                0            1       0      1       1     0      1        0        1     
-HEAVY_XBOW  103         heavy      LAUNCH 100   0           0           0         4            MISSILE     0        10           1                12           0       0      0       0     0      1        0        1
+BOLTS       50          bolt       RANGED 35    0           1           8         0            MISSILE     0        0            0                0            1       0      1       1     0      1        0        1     
+HEAVY_XBOW  103         heavy      LAUNCH 35    0           0           0         4            MISSILE     0        10           1                12           0       0      0       0     0      1        0        1
 LIGHT_XBOW  103         !heavy     LAUNCH 30    0           0           0         2            MISSILE     0        5            1                8            1       0      1       1     0      1        0        1
 ARROWS      50          arrow      RANGED 40    0           1           6         0            MISSILE     0        0            0                0            1       0      1       1     0      1        0        1     
 COMP_L_BOW  104         composite  LAUNCH 40    1           0           0         1            MISSILE     0        7            1                15           0       0      0       0     0      0        7        1
 LONG_BOW    104         !composite LAUNCH 40    1           0           0         0            MISSILE     0        7            1                12           1       0      0       1     0      0        7        1
 SHORT_BOW   105         _          LAUNCH 25    0           0           0         0            MISSILE     0        6            1                6            1       1      1       1     0      1        7        1
 DART        106         _          RANGED 15    0           1           3         0            MISSILE     0        2            0                3            1       1      1       1     1      1        3        1
-BULLETS     50          bullet     RANGED 100   0           1           4         0            MISSILE     0        0            0                0            1       0      1       1     0      1        0        1     
+BULLETS     50          bullet     RANGED 20    0           1           4         0            MISSILE     0        0            0                0            1       0      1       1     0      1        0        1     
 SLING       107         _          LAUNCH 20    0           0           0         0            MISSILE     0        6            1                3            1       1      1       1     1      1        0        1
 
 RODMIGHT    RODS02      _          MELEE  _     _           0           0         0            _           _        0            0                _            _       _      _       _     _      _        _        0
