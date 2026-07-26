@@ -362,6 +362,49 @@ Weight: 3"
 
 
 
+//DEFENDER +5 - valore 13000mo //
+COPY "rick_bigg_mod/items/SW1H77.itm" "override"
+	SAY NAME1 "Long Sword"
+	SAY UNIDENTIFIED_DESC "These swords are usually referred to as double-edged swords, war swords, or military swords. In many cases, the long sword has a single-edged blade. There is no single version of the long sword; the design and length vary from culture to culture and may vary within the same culture depending on the era. Among the most common characteristics of all long swords is their length, which ranges from thirty-five inches to forty-seven inches. In the latter case, the blade is known to take up forty inches of the total length. Most long swords have a double-edged blade and a sharp point at the tip. Despite the tip, the long sword is designed for slashing, not thrusting.
+
+STATISTICS:
+
+Damage: 1d8 (slashing or piercing)
+Speed Factor: 5
+Proficiency Type: Long Sword
+Type: One-handed
+Requires:
+ 9 Strength
+
+Weight: 4"
+
+	SAY NAME2 "Defender +5"
+	SAY DESC "When you are old enough to read these words - Their meaning will unfold
+	These words are all that's left - and though we've never met my only son I hope you know
+That I would have been there to watch you grow - But my call was heard and I did go
+Now your mission lies ahead of you - As it did mine so long ago
+To help the helpless ones who all look up to you - And to defend them to the end
+
+Ride like the wind - Fight proud my son
+You're the defender - GOD HAS SENT
+
+STATISTICS:
+
+Equipped abilities: 
+- Armor Class vs. Slashing, Piercing and Crushing: +3
+
+THAC0: +5
+Damage: 1d8+5
+Damage type: Slashing or Piercing
+Speed Factor: 1
+Proficiency Type: Long Sword
+Type: One-handed
+Requires:
+ 9 Strength
+
+Weight: 2
+"
+
 
 
 
@@ -426,9 +469,9 @@ Weight: 4"
 STATISTICS:
 
 Equipped abilities:
+- Protection from undead, shapeshifters, demons and devils 
 – Saving Throws: +2
-- Magic Resistance: +10%
-– When below 25% of hit points, gain one Stoneskin per round (duration one round)
+- Magic Resistance: +20%
 
 THAC0: +5
 Damage: 1d8+5, +6 damage vs. undead, shapeshifters, demons and devils

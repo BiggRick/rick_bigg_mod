@@ -72,6 +72,44 @@ Weight: 7"
 
 
 
+
+
+
+
+//SKULLACRASHER +3 - 5000mo//
+COPY "rick_bigg_mod/items/BLUN18.itm" "override"
+	SAY NAME1 "Mace"
+	SAY UNIDENTIFIED_DESC "The mace is a direct descendant of the basic club, being nothing more than a wooden shaft with a stone or iron head mounted on the end. The head design varies: Some are spiked, others flanged, and still others have pyramidal knobs.
+
+STATISTICS:
+
+Damage: 1d6+1 (crushing)
+Speed Factor: 6
+Proficiency Type: Mace
+Type: One-handed
+Requires:
+ 11 Strength
+
+Weight: 10"
+
+	SAY NAME2 "Skullcrasher +3"
+	SAY DESC "This mace is permanently bloodstained, a telltale trace of its many years spent bashing heads. The weapon would have been the bane of humanoids throughout its history, but those that wielded it seem to have been purposely left out of historic record.
+
+STATISTICS:
+
+THAC0: +3
+Damage: 1d6+4, +5 extra vs. humanoids
+Damage type: Crushing
+Speed Factor: 3
+Proficiency Type: Mace
+Type: One-handed
+Requires:
+ 11 Strength
+
+Weight: 6"
+
+
+
 //JERROD'S MACE +3 - valore 9000mo//
 COPY "rick_bigg_mod/items/WAMACE.itm" "override"
 	SAY NAME1 "Mace"
@@ -102,6 +140,8 @@ Damage type: Crushing
 Speed Factor: 3
 Proficiency Type: Mace
 Type: One-handed
+Requires:
+ 11 Strength
 
 Weight: 6"
 

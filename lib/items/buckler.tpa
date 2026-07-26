@@ -1,3 +1,37 @@
+//BUCKLER +1 - 750mo//
+COPY "rick_bigg_mod/items/SHLD17.itm" "override"
+	SAY NAME1 "Buckler"
+	SAY UNIDENTIFIED_DESC "A buckler, also known as a target shield, is a small round shield of wood or metal that fastens to the forearm. Because of its size, it is light and can be worn with very little restriction to movement.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +1
+– No protection against missile and piercing attacks
+
+Requires:
+ 6 Strength
+
+Weight: 2
+"
+	SAY NAME2 "Buckler +1"
+	SAY DESC "A buckler is a small shield of wood or metal that fastens to the forearm. Because of its size it is light and can be worn with very little restriction to movement. This buckler has some form of generic enchantment, making it more resistant to blows.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +2
+– No protection against missile and piercing attacks
+
+Requires:
+ 6 Strength
+
+Weight: 2
+"
+
+
+
+
 //BUCKLER +2 - 1500mo//
 COPY "rick_bigg_mod/items/OHSHLD50.itm" "override"
 	SAY NAME1 "Buckler"
@@ -14,7 +48,6 @@ Requires:
 
 Weight: 2
 "
-
 	SAY NAME2 "Buckler +2"
 	SAY DESC "A buckler is a small shield of wood or metal that fastens to the forearm. Because of its size it is light and can be worn with very little restriction to movement. This buckler has some form of generic enchantment, making it more resistant to blows.
 

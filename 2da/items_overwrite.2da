@@ -1,51 +1,134 @@
 NEW_FILE    BAD_FILE      ICON      TYPE      COMMENT
-AX1H11      AX1H03        IAX1H03   1         AXE_OF_MAULETAR_+2
-AX1H11      AX1H11        IAX1H03   1         AXE_+2
-AX1H11      AX1H17        IAX1H03   1         AXE_+3
+AX1H11      AX1H03        _		    1         AXE_OF_MAULETAR_+2
+AX1H11      AX1H11        _         1         AXE_+2
+AX1H11      AX1H17        _         1         AXE_+3
+
 AX1H04      AX1H18        _         _         THROWN_AXE+1
 AX1H04      BDAX1H04      _         _         THROWN_AXE+1
+
 AX1H01      AX1H19        _         _         GOLDEN_AXE
 
 BLUN13      BLUN39        IBLUN32   1         FLAIL+2
 BLUN13      BLUN32        IBLUN32   1         FLAIL+3
 BLUN13      BLUN13        IBLUN32   1         FLAIL+3
 
+HAMM08		HAMM03		  _     	1		  ASHIDEENA+2
+HAMM08		HAMM12		  _         1		  HAMMER+3
+
+HAMM02		HAMM13		  _			1		  HAMMER_OF_DAWN+1
+
 BLUN21      BLUN11        IBLUN11   1         MACE+2
 BLUN21      BLUN33        IBLUN11   1         MACE+3
 BLUN21      BLUN21        IBLUN11   1         MACE+2
-BLUN04      BLUN41        _         _         STUPIFIER
+
+BLUN04      BLUN41        _         _         STUPIFIER+1
+
+BLUN15		BLUN34		  _         _		  MORNING_STAR+3
 
 OHBLUN51    BLUN31        IBLUN31   1         CLUB+2
 OHBLUN51    BLUN37        IBLUN31   1         CLUB+3
-OHBLUN51    BOHBLUN51     IBLUN31   1         CLUB+2
+OHBLUN51    OHBLUN51      IBLUN31   1         CLUB+2
+OHBLUN51	BLUN24		  IBLUN31   1		  GHASHER+2
+
 BLUN01      BLUN38        _         _         NIGHT_CLUB
 
 BOW16       BOW24         _         _         CL.BOW+3
-BOW18       BOW08         _         _         S.BOW+2
+
 BOW18       BOW26         _         _         S.BOW+3
 
 BOW17       BOW17         IBOW07    4         L.BOW+2
 BOW17       BOW25         IBOW07    4         L.BOW+2
 
-CHAN01      CHAN04        _         _         SPLINT
-CHAN02      CHAN05        _         _         SPLINT+1
-CHAN08      CHAN03        ICHAN08   _         CHAIN+2
-CHAN08      CHAN08        ICHAN08   _         CHAIN+2
-CHAN08      CHAN21        ICHAN08   _         CHAIN+3
-CHAN08      CHAN07        ICHAN08   _         CHAIN+3
+DAGG15      DAGG03        _         1         DAGGER+2
+DAGG15      DAGG24        _         1         DAGGER+3
+DAGG15      DAGG09        _         1         WEREBANE
 
-DAGG15      DAGG03        IDAGG03   1         DAGGER+2
-DAGG15      DAGG24        IDAGG03   1         DAGGER+3
-DAGG15      DAGG09        IDAGG03   1         WEREBANE
-DAGG15      DAGG15        IDAGG03   1         DAGGER+2
+HALB07      HALB03        _         1         SURYS+2
+HALB07      HALB12        _         1         HALBERD+3
 
-HALB07      HALB03        IHALB03   1         HALBERD+2
-HALB07      HALB07        IHALB03   1         HALBERD+2
-HALB07      HALB12        IHALB03   1         HALBERD+3
-HALB01      HALB13        _         _         CHESLEY_CRUSHER
+HALB01      HALB13        _         1         CHESLEY_CRUSHER
+
+SPER05      SPER06        _         1         SPEAR+3
+
+STAF18		STAF19		  _			1		  CLERIC+3
+STAF18	    STAF08		  _			1		  MARTIAL+3
+STAF18	    STAF08_		  _			1		  AULE+3
+STAF18	    STAF24		  _			1		  STAFF+3
+
+STAF01		STAF25		  _			1		  OSSIFIER
+
+SW1H42		SW1H03	      _		    1		  KONDAR+1
+SW1H42		SW1H72		  _			1		  BASTARD_SWORD+3
+
+SW1H05		SW1H06		  _			1		  VARSACONA+2
+SW1H05		SW1H79		  _			1		  HARROWER+1
+
+SW1H41		SW1H73		  _			1		  LONG_SWORD+3
+SW1H41		SW1H53		  _			1		  SWORD_OF_FLAME+1
+SW1H41		SW1H37		  _			1		  TARAGARTH+1
+SW1H41		SW1H40		  _			1		  BLADE_OF_ROSES+3
+
+BDSW1H23	SW1H23		  _			1		  RASHAD_TALON+2
+BDSW1H23	SW1H76		  _			1		  SCIMITAR+3
+BDSW1H23	OHSW1H55	  _			1		  SCIMITAR+2_ALTERNATIVE
+
+SW1H55		OHSW1H51	  _         1		  WAKIZASHI+2
+SW1H55		OHSW1H52	  _         1		  WAKIZASHI+3
+SW1H55		OHSW1H53	  _         1		  NINJATO+2
+SW1H55		OHSW1H54	  _         1		  NINJATO+3
+SW1H55		SW1H75  	  _         1		  KATANA+3
+
+SW1H43		SW1H48		  _		    1		  NINJATO
+SW1H43		SW1H49		  _		    1		  NINJATO+1
+SW1H43		TTSWORD8	  _		    1		  WAKIZASHI
+SW1H43		SW1H46		  _		    1		  WAKIZASHI
+SW1H43		SW1H47		  _		    1		  WAKIZASHI+1
+SW1H43		TTSWORD9	  _		    1		  NINJATO
+
+SW1H09		SW1H09_		  _			1		  WHISTLING_SWORD
+SW1H09		SW1H29		  _			1		  SHORT_SWORD+2_ALTERNATIVE
+SW1H09		SW1H74		  _			1		  SHORT_SWORD+3
+
+SW2H11		SW2H07A		  _			1		  WORLD'S_EDGE
+SW2H11		SW2H07_		  _			1		  WORLD'S_EDGE_ALTERNATIVE
+SW2H11		SW2H20		  _			1		  TWO-HANDED_SWORD+3
 
 BDHELM04	HELM02		  _			_		  HELM_OF_OPPOSITE_ALIGNEMENT
 HELM01		HELM33		  _         _		  HELM_MERCENARY_BALTHAZAR	
+
+
+PLAT14		PLAT05		  _			_		  PLATE_OF_THE_DARK+1
+PLAT14		PLAT19		  _			_		  FULL_PLATE+2_ALTERNATIVE
+PLAT14		PLAT09		  _			_		  MITHRAL_PLATE+2
+
+PLAT01		PLAT07		  _			_		  PLATE_MAIL_ALTERNATIVE
+
+PLAT10		PLAT02		  _			_		  FALLORAIN'S_PLATE
+PLAT10		PLAT24		  _			_		  MAGMA_BULWARK
+
+CHAN01      CHAN04        _         _         SPLINT
+CHAN02      CHAN05        _         _         SPLINT+1
+CHAN08      CHAN03        _		    _         CHAIN+2
+CHAN08      CHAN08        _		    _         CHAIN+2
+CHAN08      CHAN21        _		    _         CHAIN+3
+CHAN08      CHAN07        _		    _         CHAIN+3
+
+LEAT04		LEAT10		  _			_		  HIDE_ARMOR
+LEAT04		DLEAT10		  _			_		  HIDE_ARMOR_ALTERNATIVE
+
+LEAT05		BDLEAT08	  _			_		  HIDE_ARMOR+1
+LEAT05		OHLEAT50	  _			_		  HIDE_ARMOR+1_ALTERNATIVE
+
+LEAT07		OHLEAT51	  _			_		  HIDE_ARMOR+2
+LEAT07		OHLEAT52	  _			_		  HIDE_ARMOR+3
+
+LEAT11		LEAT03		  _			_		  PROTECTOR_OF_THE_SECOND+2
+LEAT11		LEAT12		  _			_		  LEAT+3
+
+LEAT07		LEAT07_		  -			_		  TELBAR+2
+LEAT07		LEAT12		  -			_		  STUDDED+3
+LEAT07		OHLEAT53	  _			_		  STUDDED+3_ALTERNATIVE
+LEAT07		LEAT15		  -			_		  STUDDED+2_ALTERNATIVE
 
 SHLD01A		SHLD01		  ISHLD01	_		  SMALL SHIELD	
 SHLD11A		SHLD11		  ISHLD11	_

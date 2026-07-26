@@ -199,7 +199,7 @@ Requires:
 Weight: 3"
 
 	SAY NAME2 "Taulmaril +3"
-	SAY DESC "
+	SAY DESC "This bow once belonged to Catti-Brie, a skilled archer from Silverymoon. Born and raised among the educated and refined circles of the city, she learned the art of archery as both a discipline and a necessity. The bow was crafted from fine yew by master bowyers and enchanted with lightning magic to protect her during her travels. Over the years, she wielded it with great skill, earning a reputation as one of the finest archers of her time. Those who held Taulmaril after her spoke of how the weapon seemed to respond to a confident hand, striking true and fast.
 
 STATISTICS:
 
@@ -215,3 +215,81 @@ Requires:
  6 Strength
 
 Weight: 2"
+
+
+
+
+//TARALASH +2 - valore 4500mo //
+COPY "rick_bigg_mod/items/BOW22.itm" "override"
+	SAY NAME1 "Longbow"
+	SAY UNIDENTIFIED_DESC "The longbow is similar to the shortbow, except that the staff is about as tall as the archer is—usually six to six-and-a-half feet. It has better range and accuracy than the shortbow, but a slower Speed Factor.
+
+STATISTICS:
+
+THAC0: +1
+Speed Factor: 7
+Proficiency Type: Longbow
+Type: Two-handed
+Requires:
+ 6 Strength
+
+Weight: 3"
+
+	SAY NAME2 "Taralash +2"
+	SAY DESC "Taralash is an ancient longbow, its origins lost to time but its craftsmanship speaks of masters long dead. The bow's limbs seem to shimmer with an otherworldly magic, as if the air around it moves more slowly. Warriors who have wielded it speak of arrows that seem to lag in the air, their paths crossing the battlefield with an eerie deliberateness that leaves foes struggling to react.
+
+STATISTICS:
+
+Combat abilities:
+- Struck target must save vs. Wand or be slowed for 5 rounds
+
+THAC0: +3
+Damage: +2
+Speed Factor: 5
+Proficiency Type: Longbow
+Type: Two-handed
+Requires:
+ 6 Strength
+
+Weight: 2"
+
+
+
+//TARALASH +3 - valore 12000mo //
+COPY "rick_bigg_mod/items/BOW23.itm" "override"
+	SAY NAME1 "Longbow"
+	SAY UNIDENTIFIED_DESC "The longbow is similar to the shortbow, except that the staff is about as tall as the archer is—usually six to six-and-a-half feet. It has better range and accuracy than the shortbow, but a slower Speed Factor.
+
+STATISTICS:
+
+THAC0: +1
+Speed Factor: 7
+Proficiency Type: Longbow
+Type: Two-handed
+Requires:
+ 6 Strength
+
+Weight: 3"
+
+	SAY NAME2 "Taralash +3"
+	SAY DESC "Taralash is an ancient longbow, its origins lost to time but its craftsmanship speaks of masters long dead. The bow's limbs seem to shimmer with an otherworldly magic, as if the air around it moves more slowly. Warriors who have wielded it speak of arrows that seem to lag in the air, their paths crossing the battlefield with an eerie deliberateness that leaves foes struggling to react.
+
+This weapon was further enhanced with the legendary Bowstring of Gond to grant the wielder Free Action, allowing them to act unimpeded by paralysis or movement-impairing effects.
+
+STATISTICS:
+
+Equipped abilities:
+- Free Action to wielder
+
+Combat abilities:
+- Struck target must save vs. Wand at -4 or be slowed for 5 rounds
+
+THAC0: +4
+Damage: +3
+Speed Factor: 4
+Proficiency Type: Longbow
+Type: Two-handed
+Requires:
+ 6 Strength
+
+Weight: 1"

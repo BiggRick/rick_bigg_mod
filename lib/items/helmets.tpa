@@ -450,55 +450,9 @@ Weight: 2"
 
 
 
-//CIRCLET OF THE ALPHA PACK - valore 6000mo - solo druidi//
-COPY "rick_bigg_mod/items/BDHELM16.itm" "override"
-	SAY NAME1 "Circlet"
-	SAY UNIDENTIFIED_DESC "This thin circlet of gold appears too simple and plain to be a crown. Although unadorned with gems, there are arcane and cryptic symbols etched along the surface.
-
-STATISTICS:
-
-Weight: 1"
-
-	SAY NAME2 "Circlet of the Alpha Pack"
-	SAY DESC "Woven from living ironwood roots and adorned with the fangs of apex predators, this circlet connects the wearer's mind directly to the primal heartbeat of the wild. Druids who don this crown do not merely summon beasts—they elevate them. The magic woven into the band projects a constant aura of primal energy, causing any animal ally nearby to swell with unnatural size, fury, and vigor.
-
-STATISTICS:
-
-Equipped abilities:
-– Casting Level: +2
-- Summoned animals are under the effect of Magic Fang
-
-Weight: 1"
 
 
 
-
-
-//CIRCLET OF THE ALPHA PACK - valore 12000mo - solo druidi//
-COPY "rick_bigg_mod/items/TB#HE16A.itm" "override"
-	SAY NAME1 "Circlet"
-	SAY UNIDENTIFIED_DESC "This thin circlet of gold appears too simple and plain to be a crown. Although unadorned with gems, there are arcane and cryptic symbols etched along the surface.
-
-STATISTICS:
-
-Weight: 1"
-
-	SAY NAME2 "Circlet of the Alpha Pack"
-	SAY DESC "Woven from living ironwood roots and adorned with the fangs of apex predators, this circlet connects the wearer's mind directly to the primal heartbeat of the wild. Druids who don this crown do not merely summon beasts—they elevate them. The magic woven into the band projects a constant aura of primal energy, causing any animal ally nearby to swell with unnatural size, fury, and vigor.
-	
-	With the Gem of the Nature's Fury, this circlet is drastically empowered in its abilities.
-
-STATISTICS:
-
-Equipped abilities:
-– Casting Level: +4
-- Casting Speed: +2
-- Summoned animals are under the effect of Magic Fang and Animal Growth
-
-Charge abilities:
-- Cast Wonderous Recall twice per day
-
-Weight: 1"
 
 
 

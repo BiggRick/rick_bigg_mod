@@ -1,3 +1,22 @@
+//KATANA - 50mo//
+COPY "rick_bigg_mod/items/SW1H43.itm" "override"
+	SAY NAME1 "Katana"
+	SAY DESC "The katana is a single-edged, slightly curved sword that ends with a chisel point. The katana is perhaps one of the finest swords ever made, the steps to its creation a long and secret process that is more art form than anything else. This blade is an important facet of Kara-Turan culture. To touch or wield a samurai's katana is to insult the samurai and to incite his wrath. For a gaijin, or foreigner, to own such a blade is a rare occurrence. Either the gaijin is a greatly honored friend of an important minister, or the gaijin has murdered a samurai.
+
+STATISTICS:
+
+Damage: 1d8 (slashing)
+Speed Factor: 4
+Proficiency Type: Katana
+Type: One-handed
+Requires:
+ 9 Strength
+
+Weight: 6"
+
+
+
+
 //KATANA +1 - 2000mo//
 COPY "rick_bigg_mod/items/SW1H44.itm" "override"
 	SAY NAME1 "Katana"
