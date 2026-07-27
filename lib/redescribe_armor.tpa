@@ -129,7 +129,7 @@ BEGIN
 	// Physical Resistance
 	PATCH_IF NOT (~%physical_resistance%~ STRING_EQUAL_CASE ~N~) BEGIN
         PATCH_IF NOT (~%physical_resistance%~ STRING_EQUAL_CASE ~0~) BEGIN
-		    TEXT_SPRINT abilities_string ~%abilities_string%- Physical Resistance: +%physical_resistance%%%physical_resistance_special%%WNL%~
+		    TEXT_SPRINT abilities_string ~%abilities_string%Physical Resistance: +%physical_resistance%%%physical_resistance_special%%WNL%~
         END
         // Always remove old Physical Resistance line
         REPLACE_TEXTUALLY ~^- Physical Resistance:.*$~ ~~
@@ -137,16 +137,16 @@ BEGIN
 
 	// Speed Factor
 	PATCH_IF NOT (~%speed_factor%~ STRING_EQUAL_CASE ~0~) BEGIN
-		TEXT_SPRINT abilities_string ~%abilities_string%- Speed Factor: %speed_factor%%speed_factor_special%%WNL%~
+		TEXT_SPRINT abilities_string ~%abilities_string%Speed Factor: %speed_factor%%speed_factor_special%%WNL%~
 	END
 	// Always remove old Speed Factor line
 	REPLACE_TEXTUALLY ~^- Speed Factor:.*$~ ~~
 
 	// Spellcasting - always show disabled/not disabled
 	PATCH_IF (~%arcane_spells%~ STRING_EQUAL_CASE ~0~) BEGIN
-		TEXT_SPRINT abilities_string ~%abilities_string%- Arcane Spellcasting is disabled%arcane_spells_special%%WNL%~
+		TEXT_SPRINT abilities_string ~%abilities_string%Arcane Spellcasting: disabled%arcane_spells_special%%WNL%~
 	END ELSE BEGIN
-		TEXT_SPRINT abilities_string ~%abilities_string%- Arcane Spellcasting is not disabled%arcane_spells_special%%WNL%~
+		TEXT_SPRINT abilities_string ~%abilities_string%Arcane Spellcasting: enabled%arcane_spells_special%%WNL%~
 	END
 	// Always remove old Spellcasting lines
 	REPLACE_TEXTUALLY ~^- (Spellcasting|Arcane Spellcasting) is .*$~ ~~
@@ -167,24 +167,24 @@ BEGIN
 		TEXT_SPRINT pockets_display ~%pick_pockets%%~
 	END
 	PATCH_IF (~%locks_check%~ STRING_EQUAL_CASE ~N~) OR (~%pockets_check%~ STRING_EQUAL_CASE ~N~) BEGIN
-		TEXT_SPRINT abilities_string ~%abilities_string%- Lockpicking and Picking Pockets is disabled%thieving_special%%WNL%~
+		TEXT_SPRINT abilities_string ~%abilities_string%Thieving: disabled%thieving_special%%WNL%~
 	END ELSE PATCH_IF (~%locks_check%~ STRING_EQUAL_CASE ~0~) AND (~%pockets_check%~ STRING_EQUAL_CASE ~0~) BEGIN
-		TEXT_SPRINT abilities_string ~%abilities_string%- Lockpicking and Picking Pockets is enabled (no modifiers)%thieving_special%%WNL%~
+		TEXT_SPRINT abilities_string ~%abilities_string%Thieving: enabled (no modifiers)%thieving_special%%WNL%~
 	END ELSE PATCH_IF (~%locks_check%~ STRING_EQUAL_CASE ~0~) BEGIN
-		TEXT_SPRINT abilities_string ~%abilities_string%- Lockpicking and Picking Pockets is enabled (%pockets_display% to Pick Pockets)%thieving_special%%WNL%~
+		TEXT_SPRINT abilities_string ~%abilities_string%Thieving: enabled (%pockets_display% to Pick Pockets)%thieving_special%%WNL%~
 	END ELSE PATCH_IF (~%pockets_check%~ STRING_EQUAL_CASE ~0~) BEGIN
-		TEXT_SPRINT abilities_string ~%abilities_string%- Lockpicking and Picking Pockets is enabled (%locks_display% to Open Locks)%thieving_special%%WNL%~
+		TEXT_SPRINT abilities_string ~%abilities_string%Thieving: enabled (%locks_display% to Open Locks)%thieving_special%%WNL%~
 	END ELSE BEGIN
-		TEXT_SPRINT abilities_string ~%abilities_string%- Lockpicking and Picking Pockets is enabled (%locks_display% to Open Locks, %pockets_display% to Pick Pockets)%thieving_special%%WNL%~
+		TEXT_SPRINT abilities_string ~%abilities_string%Thieving: enabled (%locks_display% to Open Locks, %pockets_display% to Pick Pockets)%thieving_special%%WNL%~
 	END
 	// Always remove old locks lines
-	REPLACE_TEXTUALLY ~^- Lockpicking and Picking Pockets .*$~ ~~
+	REPLACE_TEXTUALLY ~^- Thieving .*$~ ~~
 	REPLACE_TEXTUALLY ~^- Open Locks:.*$~ ~~
 	REPLACE_TEXTUALLY ~^- Pick Pockets:.*$~ ~~
 
 	// Find Traps
 	PATCH_IF NOT (~%traps%~ STRING_EQUAL_CASE ~0~) AND NOT (~%traps%~ STRING_EQUAL_CASE ~N~) BEGIN
-		TEXT_SPRINT abilities_string ~%abilities_string%- Find Traps: %traps%%%traps_special%%WNL%~
+		TEXT_SPRINT abilities_string ~%abilities_string%Find Traps: %traps%%%traps_special%%WNL%~
 	END
 	// Always remove old Find Traps line
 	REPLACE_TEXTUALLY ~^- Find Traps:.*$~ ~~
@@ -205,15 +205,15 @@ BEGIN
 		TEXT_SPRINT hide_display ~%hide%%~
 	END
 	PATCH_IF (~%move_silently_check%~ STRING_EQUAL_CASE ~N~) OR (~%hide_check%~ STRING_EQUAL_CASE ~N~) BEGIN
-		TEXT_SPRINT abilities_string ~%abilities_string%- Stealth is disabled%stealth_special%%WNL%~
+		TEXT_SPRINT abilities_string ~%abilities_string%Stealth: disabled%stealth_special%%WNL%~
 	END ELSE PATCH_IF (~%move_silently_check%~ STRING_EQUAL_CASE ~0~) AND (~%hide_check%~ STRING_EQUAL_CASE ~0~) BEGIN
-		TEXT_SPRINT abilities_string ~%abilities_string%- Stealth is enabled (no modifiers)%stealth_special%%WNL%~
+		TEXT_SPRINT abilities_string ~%abilities_string%Stealth: enabled (no modifiers)%stealth_special%%WNL%~
 	END ELSE PATCH_IF (~%move_silently_check%~ STRING_EQUAL_CASE ~0~) BEGIN
-		TEXT_SPRINT abilities_string ~%abilities_string%- Stealth is enabled (%hide_display% to Hide In Shadows)%stealth_special%%WNL%~
+		TEXT_SPRINT abilities_string ~%abilities_string%Stealth: enabled (%hide_display% to Hide In Shadows)%stealth_special%%WNL%~
 	END ELSE PATCH_IF (~%hide_check%~ STRING_EQUAL_CASE ~0~) BEGIN
-		TEXT_SPRINT abilities_string ~%abilities_string%- Stealth is enabled (%move_silently_display% to Move Silently)%stealth_special%%WNL%~
+		TEXT_SPRINT abilities_string ~%abilities_string%Stealth: enabled (%move_silently_display% to Move Silently)%stealth_special%%WNL%~
 	END ELSE BEGIN
-		TEXT_SPRINT abilities_string ~%abilities_string%- Stealth is enabled (%move_silently_display% to Move Silently, %hide_display% to Hide In Shadows)%stealth_special%%WNL%~
+		TEXT_SPRINT abilities_string ~%abilities_string%Stealth: enabled (%move_silently_display% to Move Silently, %hide_display% to Hide In Shadows)%stealth_special%%WNL%~
 	END
 	// Always remove old Stealth/Move Silently/Hide lines
 	REPLACE_TEXTUALLY ~^- Stealth .*$~ ~~
@@ -225,16 +225,7 @@ BEGIN
 
 	// Update equipped abilities section
 	PATCH_IF NOT (~%abilities_string%~ STRING_EQUAL_CASE ~~) BEGIN
-		PATCH_IF INDEX_BUFFER( ~^Equipped abilities:~ ) > 0 BEGIN
-			REPLACE_TEXTUALLY ~Equipped abilities:[%WNL%]*~ ~Equipped abilities:%WNL%%abilities_string%~
-		END ELSE PATCH_IF INDEX_BUFFER( ~^STATISTICS:~ ) > 0 BEGIN
-			REPLACE_TEXTUALLY ~^STATISTICS:\([%WNL%]+\)~ ~STATISTICS:\1Equipped abilities:%WNL%%abilities_string%%WNL%~
-		END ELSE BEGIN
-			REPLACE_TEXTUALLY ~^Weight:~ ~Equipped abilities:%WNL%%abilities_string%%WNL%Weight:~
-		END
-	END ELSE BEGIN
-		// No abilities to add, remove Equipped abilities section entirely
-		REPLACE_TEXTUALLY ~%WNL%Equipped abilities:[%WNL%]*- .*$~ ~%WNL%~
+        REPLACE_TEXTUALLY ~%WNL%Requires:%WNL%~ ~%WNL%%abilities_string%Requires:%WNL%~
 	END
 
 	LAUNCH_PATCH_MACRO common_postprocess
