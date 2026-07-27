@@ -117,11 +117,13 @@ BEGIN
 	TEXT_SPRINT abilities_string ~~
 
 	// Physical Resistance
-	PATCH_IF NOT (~%physical_resistance%~ STRING_EQUAL_CASE ~0~) AND NOT (~%physical_resistance%~ STRING_EQUAL_CASE ~N~) BEGIN
-		TEXT_SPRINT abilities_string ~%abilities_string%- Physical Resistance: +%physical_resistance%%%WNL%~
+	PATCH_IF NOT (~%physical_resistance%~ STRING_EQUAL_CASE ~N~) BEGIN
+        PATCH_IF NOT (~%physical_resistance%~ STRING_EQUAL_CASE ~0~) BEGIN
+		    TEXT_SPRINT abilities_string ~%abilities_string%- Physical Resistance: +%physical_resistance%%%WNL%~
+        END
+        // Always remove old Physical Resistance line
+        REPLACE_TEXTUALLY ~^- Physical Resistance:.*$~ ~~
 	END
-	// Always remove old Physical Resistance line
-	REPLACE_TEXTUALLY ~^- Physical Resistance:.*$~ ~~
 
 	// Speed Factor
 	PATCH_IF NOT (~%speed_factor%~ STRING_EQUAL_CASE ~0~) BEGIN

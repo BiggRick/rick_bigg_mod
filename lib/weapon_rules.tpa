@@ -114,7 +114,6 @@ DEFINE_PATCH_FUNCTION get_from_weapon_2da
 		END
 END
 
-
 DEFINE_PATCH_FUNCTION get_base_from_weapon_2da
 	INT_VAR column_number = 0
 	RET value
@@ -124,7 +123,6 @@ DEFINE_PATCH_FUNCTION get_base_from_weapon_2da
 			READ_2DA_ENTRY_FORMER weapon_rules general_rules_row column_number value
 		END
 END
-
 
 DEFINE_PATCH_FUNCTION get_special_from_weapon_2da
 	INT_VAR column_number = 0

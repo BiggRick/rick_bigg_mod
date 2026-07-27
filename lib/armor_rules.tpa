@@ -42,6 +42,21 @@ DEFINE_PATCH_FUNCTION get_base_from_armor_2da
 		END
 END
 
+DEFINE_PATCH_FUNCTION get_special_from_armor_2da
+	INT_VAR column_number = 0
+	RET value
+BEGIN
+	TEXT_SPRINT value ~~
+	PATCH_IF special_rules_row > 0 BEGIN
+		READ_2DA_ENTRY_FORMER armor_rules special_rules_row column_number value
+		PATCH_IF ~%value%~ STRING_EQUAL_CASE ~_~ BEGIN
+			TEXT_SPRINT value ~~
+		END ELSE BEGIN
+			TEXT_SPRINT value ~ (*)~
+		END
+	END
+END
+
 INCLUDE ~rick_bigg_mod/lib/redescribe_armor.tpa~
 
 OUTER_SET dummy_value = 0 - 1000
