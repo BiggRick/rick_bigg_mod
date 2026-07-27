@@ -10,6 +10,7 @@ DEFINE_PATCH_FUNCTION redescribe_weapon
 		range = 0
 	STR_VAR attacks_per_round = "_"
 BEGIN
+	REPLACE_TEXTUALLY ~^[–—] ~ ~- ~
 
 	PATCH_IF thac0 = 0 BEGIN
 		TEXT_SPRINT thac0_string ~\1~
@@ -87,15 +88,15 @@ BEGIN
 			END ELSE BEGIN
 				TEXT_SPRINT attacks_string ~- %attacks_per_round% attacks per round~
 			END
-			PATCH_IF INDEX_BUFFER (~^– .*\(attack\|shot\)s? per round$~) > 0 BEGIN
-				REPLACE_TEXTUALLY ~^– .*\(attack\|shot\)s? per round$~ ~%attacks_string%~
+			PATCH_IF INDEX_BUFFER (~^- .*\(attack\|shot\)s? per round$~) > 0 BEGIN
+				REPLACE_TEXTUALLY ~^- .*\(attack\|shot\)s? per round$~ ~%attacks_string%~
 			END ELSE PATCH_IF INDEX_BUFFER (~^Combat abilities:$~) > 0 BEGIN
 				REPLACE_TEXTUALLY ~^Combat abilities:$~ ~Combat abilities:%WNL%%attacks_string%~
 			END ELSE BEGIN
 				REPLACE_TEXTUALLY ~^STATISTICS:\([%WNL%]+\)~ ~STATISTICS:\1Combat abilities:%WNL%%attacks_string%%WNL%%WNL%~
 			END
 		END ELSE BEGIN
-			REPLACE_TEXTUALLY ~^– .*\(attack\|shot\)s? per round$~ ~~
+			REPLACE_TEXTUALLY ~^- .*\(attack\|shot\)s? per round$~ ~~
 		END
 	END
 END
