@@ -285,12 +285,12 @@ BEGIN
 	REPLACE_TEXTUALLY ~^- Hide in Shadows:.*$~ ~~
 
 	// Clean up empty lines within equipped abilities list (remove blank lines before "-" items)
-	REPLACE_TEXTUALLY ~\(%WNL%\)+%WNL%- ~ ~%WNL%- ~
+	REPLACE_TEXTUALLY ~[%WNL%]+- ~ ~%WNL%- ~
 
 	// Update equipped abilities section
 	PATCH_IF NOT (~%abilities_string%~ STRING_EQUAL_CASE ~~) BEGIN
 		PATCH_IF INDEX_BUFFER( ~^Equipped abilities:~ ) > 0 BEGIN
-			REPLACE_TEXTUALLY ~^Equipped abilities:[%WNL%]*- .*$~ ~Equipped abilities:%WNL%%abilities_string%~
+			REPLACE_TEXTUALLY ~Equipped abilities:[%WNL%]*~ ~Equipped abilities:%WNL%%abilities_string%~
 		END ELSE PATCH_IF INDEX_BUFFER( ~^STATISTICS:~ ) > 0 BEGIN
 			REPLACE_TEXTUALLY ~^STATISTICS:\([%WNL%]+\)~ ~STATISTICS:\1Equipped abilities:%WNL%%abilities_string%%WNL%~
 		END ELSE BEGIN
@@ -303,8 +303,9 @@ BEGIN
 
 	// A pre-existing equipped ability line (not regenerated here) can remain after section rewrite.
 	// Collapse accidental blank separators before list items in the final text.
-	REPLACE_TEXTUALLY ~\(%WNL%\)+%WNL%- ~ ~%WNL%- ~
+	REPLACE_TEXTUALLY ~[%WNL%]+- ~ ~%WNL%- ~
 
-	// in case a double empty line is missing before "Armor Class:"
-	REPLACE_TEXTUALLY ~\([^%WNL%]\)%WNL%Armor Class: ~ ~\1%WNL%%WNL%Armor Class: ~
+	// Remove empty headers and normalize the separator before Armor Class.
+	REPLACE_TEXTUALLY ~Equipped abilities:[%WNL%]+Armor Class:~ ~Armor Class:~
+	REPLACE_TEXTUALLY ~[%WNL%]+Armor Class:~ ~%WNL%%WNL%Armor Class:~
 END
