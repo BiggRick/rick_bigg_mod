@@ -1,0 +1,14 @@
+/* Shared pre-processing and post-processing helpers for armor / shield item descriptions.
+
+Functions provided when included:
+  common_preprocess           – WNL↔LNL swap + em/en dash cleanup (no params)
+*/
+
+// ── Pre-processing ───────────────────────────────────────────────────────
+DEFINE_PATCH_FUNCTION common_preprocess BEGIN
+	// Ensure we work with WNL line endings only
+	REPLACE_TEXTUALLY ~%WNL%~ ~%LNL%~
+	REPLACE_TEXTUALLY ~%LNL%~ ~%WNL%~
+	// strip stray em / en dashes (UTF-8 copy-paste artifact)
+	REPLACE_TEXTUALLY ~^\(–\|—\) ~ ~- ~
+END

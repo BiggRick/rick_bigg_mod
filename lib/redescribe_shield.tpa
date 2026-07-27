@@ -22,12 +22,7 @@ DEFINE_PATCH_FUNCTION redescribe_shield
         move_silently = 0
         hide = 0
 BEGIN
-	// WNL only
-	REPLACE_TEXTUALLY ~%WNL%~ ~%LNL%~
-	REPLACE_TEXTUALLY ~%LNL%~ ~%WNL%~
-	// no em/en dashes
-	REPLACE_TEXTUALLY ~^\(–\|—\) ~ ~- ~
-
+	LAUNCH_PATCH_FUNCTION common_preprocess END
 	// Remove "Armor Class:" lines that appear before "Requires:" (old style)
 	// Only keep Armor Class under Equipped abilities
 	PATCH_IF INDEX_BUFFER( ~^Armor Class: [^+%WNL%][^%WNL%]*$~ ) > 0 BEGIN
