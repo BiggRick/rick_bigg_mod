@@ -133,9 +133,9 @@ BEGIN
 
 	// Physical Resistance
 	PATCH_IF NOT (~%physical_resistance%~ STRING_EQUAL_CASE ~0~) AND NOT (~%physical_resistance%~ STRING_EQUAL_CASE ~N~) BEGIN
-		TEXT_SPRINT abilities_string ~%abilities_string%– Physical Resistance: +%physical_resistance%%WNL%~
+		TEXT_SPRINT abilities_string ~%abilities_string%– Physical Resistance: +%physical_resistance%%%WNL%~
 	END
-	// Always remove old Physical Resistance line (whether added or not)
+	// Always remove old Physical Resistance line
 	REPLACE_TEXTUALLY ~^– Physical Resistance:[^%WNL%]*%WNL%~ ~~
 
 	// Speed Factor
@@ -157,24 +157,33 @@ BEGIN
 	// Lockpicking and Pick Pockets
 	TEXT_SPRINT locks_check ~%locks%~
 	TEXT_SPRINT pockets_check ~%pick_pockets%~
-	PATCH_IF (~%locks_check%~ STRING_EQUAL_CASE ~N~) OR (~%pockets_check%~ STRING_EQUAL_CASE ~N~) BEGIN
-		// If either is disabled (N), show "disabled"
-		TEXT_SPRINT abilities_string ~%abilities_string%– Lockpicking and Picking Pockets is disabled%WNL%~
-	END ELSE PATCH_IF (NOT (~%locks_check%~ STRING_EQUAL_CASE ~0~) OR NOT (~%pockets_check%~ STRING_EQUAL_CASE ~0~)) BEGIN
-		// If either has a modifier, show the modifiers
-		PATCH_IF NOT (~%locks_check%~ STRING_EQUAL_CASE ~0~) BEGIN
-			TEXT_SPRINT abilities_string ~%abilities_string%– Open Locks: %locks%%%WNL%~
-		END
-		PATCH_IF NOT (~%pockets_check%~ STRING_EQUAL_CASE ~0~) BEGIN
-			TEXT_SPRINT abilities_string ~%abilities_string%– Pick Pockets: %pick_pockets%%%WNL%~
-		END
+	TEXT_SPRINT locks_display ~%locks%~
+	TEXT_SPRINT pockets_display ~%pick_pockets%~
+	PATCH_IF NOT ("%locks%" STRING_COMPARE_REGEXP "^[+-]" = 0) BEGIN
+		TEXT_SPRINT locks_display ~+%locks%%~
 	END ELSE BEGIN
-		// Neither locked nor modified, show "not disabled"
-		TEXT_SPRINT abilities_string ~%abilities_string%– Lockpicking and Picking Pockets is not disabled%WNL%~
+		TEXT_SPRINT locks_display ~%locks%%~
+	END
+	PATCH_IF NOT ("%pick_pockets%" STRING_COMPARE_REGEXP "^[+-]" = 0) BEGIN
+		TEXT_SPRINT pockets_display ~+%pick_pockets%~
+	END ELSE BEGIN
+		TEXT_SPRINT pockets_display ~%pick_pockets%%~
+	END
+	PATCH_IF (~%locks_check%~ STRING_EQUAL_CASE ~N~) OR (~%pockets_check%~ STRING_EQUAL_CASE ~N~) BEGIN
+		TEXT_SPRINT abilities_string ~%abilities_string%– Lockpicking and Picking Pockets is disabled%WNL%~
+	END ELSE PATCH_IF (~%locks_check%~ STRING_EQUAL_CASE ~0~) AND (~%pockets_check%~ STRING_EQUAL_CASE ~0~) BEGIN
+		TEXT_SPRINT abilities_string ~%abilities_string%– Lockpicking and Picking Pockets is enabled (no modifiers)%WNL%~
+	END ELSE PATCH_IF (~%locks_check%~ STRING_EQUAL_CASE ~0~) BEGIN
+		TEXT_SPRINT abilities_string ~%abilities_string%– Lockpicking and Picking Pockets is enabled (%pockets_display% to Pick Pockets)%WNL%~
+	END ELSE PATCH_IF (~%pockets_check%~ STRING_EQUAL_CASE ~0~) BEGIN
+		TEXT_SPRINT abilities_string ~%abilities_string%– Lockpicking and Picking Pockets is enabled (%locks_display% to Open Locks)%WNL%~
+	END ELSE BEGIN
+		TEXT_SPRINT abilities_string ~%abilities_string%– Lockpicking and Picking Pockets is enabled (%locks_display% to Open Locks, %pockets_display% to Pick Pockets)%WNL%~
 	END
 	// Always remove old locks lines
 	REPLACE_TEXTUALLY ~^– Lockpicking and Picking Pockets [^%WNL%]*%WNL%~ ~~
 	REPLACE_TEXTUALLY ~^– Open Locks:[^%WNL%]*%WNL%~ ~~
+	REPLACE_TEXTUALLY ~^– Pick Pockets:[^%WNL%]*%WNL%~ ~~
 
 	// Find Traps
 	PATCH_IF NOT (~%traps%~ STRING_EQUAL_CASE ~0~) AND NOT (~%traps%~ STRING_EQUAL_CASE ~N~) BEGIN
@@ -186,20 +195,28 @@ BEGIN
 	// Move Silently and Hide in Shadows (grouped as "Stealth")
 	TEXT_SPRINT move_silently_check ~%move_silently%~
 	TEXT_SPRINT hide_check ~%hide%~
-	PATCH_IF (~%move_silently_check%~ STRING_EQUAL_CASE ~N~) OR (~%hide_check%~ STRING_EQUAL_CASE ~N~) BEGIN
-		// If either is disabled (N), show "disabled"
-		TEXT_SPRINT abilities_string ~%abilities_string%– Stealth is disabled%WNL%~
-	END ELSE PATCH_IF (NOT (~%move_silently_check%~ STRING_EQUAL_CASE ~0~) OR NOT (~%hide_check%~ STRING_EQUAL_CASE ~0~)) BEGIN
-		// If either has a modifier, show the modifiers
-		PATCH_IF NOT (~%move_silently_check%~ STRING_EQUAL_CASE ~0~) BEGIN
-			TEXT_SPRINT abilities_string ~%abilities_string%– Move Silently: %move_silently%%%WNL%~
-		END
-		PATCH_IF NOT (~%hide_check%~ STRING_EQUAL_CASE ~0~) BEGIN
-			TEXT_SPRINT abilities_string ~%abilities_string%– Hide in Shadows: %hide%%%WNL%~
-		END
+	TEXT_SPRINT move_silently_display ~%move_silently%~
+	TEXT_SPRINT hide_display ~%hide%~
+	PATCH_IF NOT ("%move_silently%" STRING_COMPARE_REGEXP "^[+-]" = 0) BEGIN
+		TEXT_SPRINT move_silently_display ~+%move_silently%%~
 	END ELSE BEGIN
-		// Neither locked nor modified, show "not disabled"
-		TEXT_SPRINT abilities_string ~%abilities_string%– Stealth is not disabled%WNL%~
+		TEXT_SPRINT move_silently_display ~%move_silently%%~
+	END
+	PATCH_IF NOT ("%hide%" STRING_COMPARE_REGEXP "^[+-]" = 0) BEGIN
+		TEXT_SPRINT hide_display ~+%hide%%~
+	END ELSE BEGIN
+		TEXT_SPRINT hide_display ~%hide%%~
+	END
+	PATCH_IF (~%move_silently_check%~ STRING_EQUAL_CASE ~N~) OR (~%hide_check%~ STRING_EQUAL_CASE ~N~) BEGIN
+		TEXT_SPRINT abilities_string ~%abilities_string%– Stealth is disabled%WNL%~
+	END ELSE PATCH_IF (~%move_silently_check%~ STRING_EQUAL_CASE ~0~) AND (~%hide_check%~ STRING_EQUAL_CASE ~0~) BEGIN
+		TEXT_SPRINT abilities_string ~%abilities_string%– Stealth is enabled (no modifiers)%WNL%~
+	END ELSE PATCH_IF (~%move_silently_check%~ STRING_EQUAL_CASE ~0~) BEGIN
+		TEXT_SPRINT abilities_string ~%abilities_string%– Stealth is enabled (%hide_display% to Hide In Shadows)%WNL%~
+	END ELSE PATCH_IF (~%hide_check%~ STRING_EQUAL_CASE ~0~) BEGIN
+		TEXT_SPRINT abilities_string ~%abilities_string%– Stealth is enabled (%move_silently_display% to Move Silently)%WNL%~
+	END ELSE BEGIN
+		TEXT_SPRINT abilities_string ~%abilities_string%– Stealth is enabled (%move_silently_display% to Move Silently, %hide_display% to Hide In Shadows)%WNL%~
 	END
 	// Always remove old Stealth/Move Silently/Hide lines
 	REPLACE_TEXTUALLY ~^– Stealth [^%WNL%]*%WNL%~ ~~
