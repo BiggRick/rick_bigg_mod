@@ -10,7 +10,9 @@ DEFINE_PATCH_FUNCTION redescribe_weapon
 		range = 0
 	STR_VAR attacks_per_round = "_"
 BEGIN
-	LAUNCH_PATCH_FUNCTION common_preprocess END
+	LAUNCH_PATCH_MACRO common_preprocess
+	
+	LAUNCH_PATCH_MACRO minimum_strength
 
 	PATCH_IF thac0 = 0 BEGIN
 		TEXT_SPRINT thac0_string ~\1~
@@ -72,14 +74,6 @@ BEGIN
 	END
 	REPLACE_TEXTUALLY ~^Type:\(.*\)$~ ~Type:\1%WNL%%range_string%~
 
-	PATCH_IF INDEX_BUFFER ( ~Requires:[^_]* [0-9]+ Strength$~ ) > 0 BEGIN
-		REPLACE_TEXTUALLY ~^Requires:\([^_]*\) [0-9]+ Strength$~ ~Requires:\1 %min_strength% Strength~
-	END ELSE PATCH_IF INDEX_BUFFER ( ~Requires:$~ ) > 0 BEGIN
-		REPLACE_TEXTUALLY ~^Requires:$~ ~Requires:%WNL% %min_strength% Strength~
-	END ELSE BEGIN
-		REPLACE_TEXTUALLY ~^Type:\(.*\)$~ ~Type:\1%WNL%Requires:%WNL% %min_strength% Strength~
-	END
-
 	PATCH_IF IS_AN_INT ~%attacks_per_round%~ BEGIN
 		PATCH_IF attacks_per_round > 0 BEGIN
 			PATCH_IF attacks_per_round > 5 BEGIN
@@ -99,4 +93,6 @@ BEGIN
 			REPLACE_TEXTUALLY ~^- .*\(attack\|shot\)s? per round$~ ~~
 		END
 	END
+
+	LAUNCH_PATCH_MACRO common_postprocess
 END

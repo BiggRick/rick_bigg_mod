@@ -1,14 +1,48 @@
-/* Shared pre-processing and post-processing helpers for armor / shield item descriptions.
-
-Functions provided when included:
-  common_preprocess           – WNL↔LNL swap + em/en dash cleanup (no params)
-*/
-
-// ── Pre-processing ───────────────────────────────────────────────────────
-DEFINE_PATCH_FUNCTION common_preprocess BEGIN
+DEFINE_PATCH_MACRO common_preprocess BEGIN
 	// Ensure we work with WNL line endings only
 	REPLACE_TEXTUALLY ~%WNL%~ ~%LNL%~
 	REPLACE_TEXTUALLY ~%LNL%~ ~%WNL%~
 	// strip stray em / en dashes (UTF-8 copy-paste artifact)
 	REPLACE_TEXTUALLY ~^\(–\|—\) ~ ~- ~
 END
+
+
+DEFINE_PATCH_MACRO minimum_strength BEGIN
+	// Handle minimum strength requirement
+	PATCH_IF NOT (~%min_strength%~ STRING_EQUAL_CASE ~0~) BEGIN
+		// First, remove ANY old requirement lines (handles duplicates)
+		REPLACE_TEXTUALLY ~^Requires:[%WNL%]* [0-9]+ Strength%WNL%~ ~~
+		
+		// Now add the correct requirement
+		PATCH_IF INDEX_BUFFER( ~^Requires:~ ) > 0 BEGIN
+			// Requires section exists, check if it has anything after it
+			PATCH_IF INDEX_BUFFER( ~^Requires:%WNL%$~ ) > 0 BEGIN
+				// Requires: with nothing after it, add strength
+				REPLACE_TEXTUALLY ~^Requires:$~ ~Requires:%WNL% %min_strength% Strength~
+			END ELSE BEGIN
+				// Requires has other content, add strength as new line
+				REPLACE_TEXTUALLY ~^Requires:%WNL%~ ~Requires:%WNL% %min_strength% Strength%WNL%~
+			END
+		END ELSE BEGIN
+			// No Requires section, create one
+			REPLACE_TEXTUALLY ~^Weight:~ ~Requires:%WNL% %min_strength% Strength%WNL%Weight:~
+		END
+	END
+END
+
+DEFINE_PATCH_MACRO armor_shield_shared_logic BEGIN
+END
+
+
+
+DEFINE_PATCH_MACRO common_postprocess BEGIN
+	// A pre-existing equipped ability line (not regenerated here) can remain after section rewrite.
+	// Collapse accidental blank separators before list items in the final text.
+	REPLACE_TEXTUALLY ~[%WNL%]+- ~ ~%WNL%- ~
+
+	// Remove empty headers and normalize the separator before Armor Class.
+	REPLACE_TEXTUALLY ~Equipped abilities:[%WNL%]+Armor Class:~ ~Armor Class:~
+	REPLACE_TEXTUALLY ~[%WNL%]+Requires:~ ~%WNL%Requires:~
+	REPLACE_TEXTUALLY ~[%WNL%]+Armor Class:~ ~%WNL%%WNL%Armor Class:~
+END
+

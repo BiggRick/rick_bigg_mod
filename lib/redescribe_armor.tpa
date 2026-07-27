@@ -21,7 +21,9 @@ DEFINE_PATCH_FUNCTION redescribe_armor
         move_silently = 0
         hide = 0
 BEGIN
-	LAUNCH_PATCH_FUNCTION common_preprocess END
+	LAUNCH_PATCH_MACRO common_preprocess
+	
+	LAUNCH_PATCH_MACRO minimum_strength
 
 	// Build Armor Class description with smart grouping
 	// Format: "Armor Class: X (Y vs. type, Z vs. type and type)"
@@ -105,27 +107,6 @@ BEGIN
 			END ELSE PATCH_IF INDEX_BUFFER( ~^Weight:~ ) > 0 BEGIN
 				REPLACE_TEXTUALLY ~^Weight:~ ~%ac_string%%WNL%Weight:~
 			END
-		END
-	END
-
-	// Handle minimum strength requirement
-	PATCH_IF NOT (~%min_strength%~ STRING_EQUAL_CASE ~0~) BEGIN
-		// First, remove ANY old requirement lines (handles duplicates)
-		REPLACE_TEXTUALLY ~^Requires:[%WNL%]* [0-9]+ Strength%WNL%~ ~~
-		
-		// Now add the correct requirement
-		PATCH_IF INDEX_BUFFER( ~^Requires:~ ) > 0 BEGIN
-			// Requires section exists, check if it has anything after it
-			PATCH_IF INDEX_BUFFER( ~^Requires:%WNL%$~ ) > 0 BEGIN
-				// Requires: with nothing after it, add strength
-				REPLACE_TEXTUALLY ~^Requires:$~ ~Requires:%WNL% %min_strength% Strength~
-			END ELSE BEGIN
-				// Requires has other content, add strength as new line
-				REPLACE_TEXTUALLY ~^Requires:%WNL%~ ~Requires:%WNL% %min_strength% Strength%WNL%~
-			END
-		END ELSE BEGIN
-			// No Requires section, create one
-			REPLACE_TEXTUALLY ~^Weight:~ ~Requires:%WNL% %min_strength% Strength%WNL%Weight:~
 		END
 	END
 
@@ -246,11 +227,5 @@ BEGIN
 		END
 	END
 
-	// A pre-existing equipped ability line (not regenerated here) can remain after section rewrite.
-	// Collapse accidental blank separators before list items in the final text.
-	REPLACE_TEXTUALLY ~\(%WNL%\)+%WNL%- ~ ~%WNL%- ~
-
-	// in case a double empty line is missing before "Armor Class:"
-	REPLACE_TEXTUALLY ~\([^%WNL%]\)%WNL%Armor Class: ~ ~\1%WNL%%WNL%Armor Class: ~
-
+	LAUNCH_PATCH_MACRO common_postprocess
 END

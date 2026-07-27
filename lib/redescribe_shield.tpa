@@ -22,7 +22,10 @@ DEFINE_PATCH_FUNCTION redescribe_shield
         move_silently = 0
         hide = 0
 BEGIN
-	LAUNCH_PATCH_FUNCTION common_preprocess END
+	LAUNCH_PATCH_MACRO common_preprocess
+	
+	LAUNCH_PATCH_MACRO minimum_strength
+
 	// Remove "Armor Class:" lines that appear before "Requires:" (old style)
 	// Only keep Armor Class under Equipped abilities
 	PATCH_IF INDEX_BUFFER( ~^Armor Class: [^+%WNL%][^%WNL%]*$~ ) > 0 BEGIN
@@ -311,11 +314,5 @@ BEGIN
 		REPLACE_TEXTUALLY ~%WNL%Equipped abilities:[%WNL%]*- .*$~ ~%WNL%~
 	END
 
-	// A pre-existing equipped ability line (not regenerated here) can remain after section rewrite.
-	// Collapse accidental blank separators before list items in the final text.
-	REPLACE_TEXTUALLY ~[%WNL%]+- ~ ~%WNL%- ~
-
-	// Remove empty headers and normalize the separator before Armor Class.
-	REPLACE_TEXTUALLY ~Equipped abilities:[%WNL%]+Armor Class:~ ~Armor Class:~
-	REPLACE_TEXTUALLY ~[%WNL%]+Armor Class:~ ~%WNL%%WNL%Armor Class:~
+	LAUNCH_PATCH_MACRO common_postprocess
 END
