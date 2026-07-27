@@ -125,6 +125,22 @@ DEFINE_PATCH_FUNCTION get_base_from_weapon_2da
 		END
 END
 
+
+DEFINE_PATCH_FUNCTION get_special_from_weapon_2da
+	INT_VAR column_number = 0
+	RET value
+BEGIN
+	TEXT_SPRINT value ~~
+	PATCH_IF special_rules_row > 0 BEGIN
+		READ_2DA_ENTRY_FORMER weapon_rules special_rules_row column_number value
+		PATCH_IF ~%value%~ STRING_EQUAL_CASE ~_~ BEGIN
+			TEXT_SPRINT value ~~
+		END ELSE BEGIN
+			TEXT_SPRINT value ~ (*)~
+		END
+	END
+END
+
 DEFINE_PATCH_FUNCTION write_from_weapon_2da
 	INT_VAR column_number = 0
 			use_enchantment = 0
@@ -243,6 +259,10 @@ DEFINE_PATCH_MACRO weapon_rules BEGIN
 					INT_VAR column_number = 4
 					RET range_base = value
 				END
+				LAUNCH_PATCH_FUNCTION get_special_from_weapon_2da
+					INT_VAR column_number = 4
+					RET range_special = value
+				END
 				LAUNCH_PATCH_FUNCTION write_from_weapon_2da
 					INT_VAR column_number = 5
 						use_enchantment = 1
@@ -254,12 +274,20 @@ DEFINE_PATCH_MACRO weapon_rules BEGIN
 					INT_VAR column_number = 5
 					RET	thac0_base = value
 				END
+				LAUNCH_PATCH_FUNCTION get_special_from_weapon_2da
+					INT_VAR column_number = 5
+					RET	thac0_special = value
+				END
 				LAUNCH_PATCH_FUNCTION write_from_weapon_2da
 					INT_VAR column_number = 6
 						use_enchantment = 0
 						offset = 0x18 + cur_off
 						size = 1
 					RET	dice_number = value
+				END
+				LAUNCH_PATCH_FUNCTION get_special_from_weapon_2da
+					INT_VAR column_number = 6
+					RET dice_number_special = value
 				END
 				LAUNCH_PATCH_FUNCTION get_base_from_weapon_2da
 					INT_VAR column_number = 6
@@ -276,6 +304,10 @@ DEFINE_PATCH_MACRO weapon_rules BEGIN
 					INT_VAR column_number = 7
 					RET	dice_type_base = value
 				END
+				LAUNCH_PATCH_FUNCTION get_special_from_weapon_2da
+					INT_VAR column_number = 7
+					RET dice_type_special = value
+				END
 				LAUNCH_PATCH_FUNCTION write_from_weapon_2da
 					INT_VAR column_number = 8
 						use_enchantment = 1
@@ -286,6 +318,10 @@ DEFINE_PATCH_MACRO weapon_rules BEGIN
 				LAUNCH_PATCH_FUNCTION get_base_from_weapon_2da
 					INT_VAR column_number = 8
 					RET	damage_base = value
+				END
+				LAUNCH_PATCH_FUNCTION get_special_from_weapon_2da
+					INT_VAR column_number = 8
+					RET damage_bonus_special = value
 				END
 				LAUNCH_PATCH_FUNCTION get_from_weapon_2da
 					INT_VAR column_number = 9
@@ -313,6 +349,10 @@ DEFINE_PATCH_MACRO weapon_rules BEGIN
 					INT_VAR column_number = 11
 					RET	speed_factor_base = value
 				END
+				LAUNCH_PATCH_FUNCTION get_special_from_weapon_2da
+					INT_VAR column_number = 11
+					RET speed_factor_special = value
+				END
 				LAUNCH_PATCH_FUNCTION get_from_weapon_2da
 					INT_VAR column_number = 12
 						use_enchantment = 0
@@ -337,6 +377,10 @@ DEFINE_PATCH_MACRO weapon_rules BEGIN
 				LAUNCH_PATCH_FUNCTION get_base_from_weapon_2da
 					INT_VAR column_number = 13
 					RET	min_strength_base = value
+				END
+				LAUNCH_PATCH_FUNCTION get_special_from_weapon_2da
+					INT_VAR column_number = 13
+					RET min_strength_special = value
 				END
 				LAUNCH_PATCH_FUNCTION get_from_weapon_2da
 					INT_VAR column_number = 14
@@ -385,6 +429,10 @@ DEFINE_PATCH_MACRO weapon_rules BEGIN
 						use_enchantment = 0
 					RET
 						attacks_per_round = value
+				END
+				LAUNCH_PATCH_FUNCTION get_special_from_weapon_2da
+					INT_VAR column_number = 20
+					RET attacks_per_round_special = value
 				END
 				LAUNCH_PATCH_FUNCTION get_from_weapon_2da
 					INT_VAR column_number = 21
@@ -477,7 +525,12 @@ DEFINE_PATCH_MACRO weapon_rules BEGIN
 		END
 		PATCH_IF description BEGIN
 			READ_STRREF DESC desc
+
 			PATCH_IF ("%desc%" STRING_COMPARE_REGEXP ~<Invalid Strref -?[0-9]+>~) BEGIN // checking for valid content in string
+				TEXT_SPRINT ~damage_special~ ~ (*)~
+				PATCH_IF ~%damage_bonus_special%%dice_type_special%%dice_number_special%~ STRING_EQUAL_CASE ~~ BEGIN
+					TEXT_SPRINT ~damage_special~ ~~
+				END
 				INNER_PATCH_SAVE desc ~%desc%~ BEGIN
 					LAUNCH_PATCH_FUNCTION ~redescribe_weapon~
 						INT_VAR thac0 = thac0
@@ -488,7 +541,13 @@ DEFINE_PATCH_MACRO weapon_rules BEGIN
 							min_strength = min_strength
 							range = range
 						STR_VAR
+							range_special = EVALUATE_BUFFER ~%range_special%~
+							thac0_special = EVALUATE_BUFFER ~%thac0_special%~
+							damage_special = EVALUATE_BUFFER ~%damage_special%~
+							speed_factor_special = EVALUATE_BUFFER ~%speed_factor_special%~
+							min_strength_special = EVALUATE_BUFFER ~%min_strength_special%~
 							attacks_per_round = EVALUATE_BUFFER ~%attacks_per_round%~
+							attacks_per_round_special = EVALUATE_BUFFER ~%attacks_per_round_special%~
 					END
 				END
 				SAY_EVALUATED DESC ~%desc%~ // write changes

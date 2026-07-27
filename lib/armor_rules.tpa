@@ -43,7 +43,6 @@ DEFINE_PATCH_FUNCTION get_base_from_armor_2da
 END
 
 INCLUDE ~rick_bigg_mod/lib/redescribe_armor.tpa~
-INCLUDE ~rick_bigg_mod/lib/redescribe_shield.tpa~
 
 OUTER_SET dummy_value = 0 - 1000
 
@@ -483,21 +482,16 @@ DEFINE_PATCH_MACRO armor_rules BEGIN
 
 
 
-		
-			PATCH_IF category == 2 BEGIN
-				TEXT_SPRINT function ~redescribe_armor~
-			END ELSE BEGIN
-				TEXT_SPRINT function ~redescribe_shield~
-			END
 
 			READ_STRREF UNIDENTIFIED_DESC desc
 			PATCH_IF ("%desc%" STRING_COMPARE_REGEXP ~<Invalid Strref -?[0-9]+>~) BEGIN // checking for valid content in string
 				INNER_PATCH_SAVE desc ~%desc%~ BEGIN
-					LAUNCH_PATCH_FUNCTION ~%function%~
+					LAUNCH_PATCH_FUNCTION redescribe_armor
 						INT_VAR
 							min_strength = min_strength
 							arcane_spells = base_arcane_spells
 							speed_factor = base_speed_factor
+							shield = category == 12
 						STR_VAR
 							armor_class = EVALUATE_BUFFER ~%base_ac%~
 							physical_resistance = EVALUATE_BUFFER ~%base_physical_resistance%~
@@ -524,11 +518,12 @@ DEFINE_PATCH_MACRO armor_rules BEGIN
 					END
 
 					INNER_PATCH_SAVE desc ~%desc%~ BEGIN
-						LAUNCH_PATCH_FUNCTION ~%function%~
+						LAUNCH_PATCH_FUNCTION redescribe_armor
 							INT_VAR
 								min_strength = min_strength
 								arcane_spells = arcane_spells
 								speed_factor = speed_factor
+								shield = category == 12
 							STR_VAR
 								armor_class = EVALUATE_BUFFER ~%armor_class%~
 								physical_resistance = EVALUATE_BUFFER ~%physical_resistance%~
