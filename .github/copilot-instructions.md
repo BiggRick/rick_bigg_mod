@@ -69,6 +69,9 @@ Notes for Copilot sessions
 - Use powershell/check-duplicates.ps1 as a quick pre-commit check for duplicate COPY / SAY NAME2 issues.
 - After editing any `.tpa` file or before committing, run `powershell -NoProfile -ExecutionPolicy Bypass -File .\powershell\check-tpa-quotes.ps1`. For a targeted check, pass edited or staged `.tpa` paths after `-Files`. Do not leave double quotes inside a double-quoted `SAY` value; use single quotes internally or delimit the full value with `~...~`.
 - Avoid changing game asset filenames or COPY targets without updating all references in .tpa/.tp2 and 2da/TRA files.
+- Hard rule: In `*.tp*` files, use ASCII hyphens (`-`) only; never use en dashes or em dashes. Exceptions:
+  - In an item's lore/description grammar takes precedence.
+  - the user explicitly asked to use en or em dashes for a specific scope (for example, as a regexp to remove existing en/em dashes).
 
 Summary
 

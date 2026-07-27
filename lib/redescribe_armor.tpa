@@ -21,7 +21,7 @@ DEFINE_PATCH_FUNCTION redescribe_armor
         move_silently = 0
         hide = 0
 BEGIN
-	REPLACE_TEXTUALLY ~^[–—] ~ ~- ~
+	REPLACE_TEXTUALLY ~^\(–\|—\) ~ ~- ~
 
 	// Build Armor Class description with smart grouping
 	// Format: "Armor Class: X (Y vs. type, Z vs. type and type)"
@@ -222,7 +222,7 @@ BEGIN
 	// Always remove old Stealth/Move Silently/Hide lines
 	REPLACE_TEXTUALLY ~^- Stealth [^%WNL%]*%WNL%~ ~~
 	REPLACE_TEXTUALLY ~^- Move Silently:[^%WNL%]*%WNL%~ ~~
-	REPLACE_TEXTUALLY ~^- Hide in Shadows:[^%WNL%]*%WNL%~ ~~
+	REPLACE_TEXTUALLY ~^- Hide [Ii]n Shadows:[^%WNL%]*%WNL%~ ~~
 
 	// Remove "No protection against" lines
 	REPLACE_TEXTUALLY ~^- No protection against [^%WNL%]*%WNL%~ ~~
