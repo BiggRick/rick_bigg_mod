@@ -15,7 +15,7 @@ DEFINE_PATCH_FUNCTION redescribe_weapon
 		damage_special = ~~
 		speed_factor_special = ~~
 		min_strength_special = ~~
-		attacks_special = ~~
+		attacks_per_round_special = ~~
 BEGIN
 	LAUNCH_PATCH_MACRO common_preprocess
 	
@@ -89,12 +89,13 @@ BEGIN
 			END ELSE BEGIN
 				TEXT_SPRINT attacks_string ~- %attacks_per_round% attacks per round~
 			END
-			PATCH_IF INDEX_BUFFER (~^- .*\(attack\|shot\)s? per round$~) > 0 BEGIN
-				REPLACE_TEXTUALLY ~^- .*\(attack\|shot\)s? per round$~ ~%attacks_string%%attacks_special%~
-			END ELSE PATCH_IF INDEX_BUFFER (~^Combat abilities:$~) > 0 BEGIN
-				REPLACE_TEXTUALLY ~^Combat abilities:$~ ~Combat abilities:%WNL%%attacks_string%%attacks_special%%WNL%%WN L%~
+
+			PATCH_IF INDEX_BUFFER (~%WNL%- .*\(attack\|shot\)s? per round%WNL%~) > 0 BEGIN
+				REPLACE_TEXTUALLY ~%WNL%- .*\(attack\|shot\)s? per round%WNL%~ ~%WNL%%attacks_string%%attacks_per_round_special%%WNL%~
+			END ELSE PATCH_IF INDEX_BUFFER (~%WNL%Combat abilities:%WNL%~) > 0 BEGIN
+				REPLACE_TEXTUALLY ~%WNL%Combat abilities:%WNL%~ ~%WNL%Combat abilities:%WNL%%attacks_string%%attacks_per_round_special%%WNL%%WNL%%WNL%~
 			END ELSE BEGIN
-				REPLACE_TEXTUALLY ~^STATISTICS:\([%WNL%]+\)~ ~STATISTICS:\1Combat abilities:%WNL%%attacks_string%%attacks_special%%WNL%%WNL%~
+				REPLACE_TEXTUALLY ~%WNL%STATISTICS:\([%WNL%]+\)~ ~%WNL%STATISTICS:\1Combat abilities:%WNL%%attacks_string%%attacks_per_round_special%%WNL%%WNL%~
 			END
 		END ELSE BEGIN
 			REPLACE_TEXTUALLY ~^- .*\(attack\|shot\)s? per round$~ ~~
