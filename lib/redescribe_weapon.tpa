@@ -81,24 +81,17 @@ BEGIN
 	END
 	REPLACE_TEXTUALLY ~^Type:\(.*\)$~ ~Type:\1%WNL%%range_string%%range_special%~
 
+	REPLACE_TEXTUALLY ~^- .*\(attack\|shot\)s? per round$~ ~~
 	PATCH_IF IS_AN_INT ~%attacks_per_round%~ BEGIN
 		PATCH_IF attacks_per_round > 0 BEGIN
 			PATCH_IF attacks_per_round > 5 BEGIN
 				base_attacks = (attacks_per_round - 6) * 2 + 1
-				TEXT_SPRINT attacks_string ~- %base_attacks%/2 attacks per round~
+				TEXT_SPRINT attacks_string ~%base_attacks%/2 attacks per round~
 			END ELSE BEGIN
-				TEXT_SPRINT attacks_string ~- %attacks_per_round% attacks per round~
+				TEXT_SPRINT attacks_string ~%attacks_per_round% attacks per round~
 			END
 
-			PATCH_IF INDEX_BUFFER (~%WNL%- .*\(attack\|shot\)s? per round%WNL%~) > 0 BEGIN
-				REPLACE_TEXTUALLY ~%WNL%- .*\(attack\|shot\)s? per round%WNL%~ ~%WNL%%attacks_string%%attacks_per_round_special%%WNL%~
-			END ELSE PATCH_IF INDEX_BUFFER (~%WNL%Combat abilities:%WNL%~) > 0 BEGIN
-				REPLACE_TEXTUALLY ~%WNL%Combat abilities:%WNL%~ ~%WNL%Combat abilities:%WNL%%attacks_string%%attacks_per_round_special%%WNL%%WNL%%WNL%~
-			END ELSE BEGIN
-				REPLACE_TEXTUALLY ~%WNL%STATISTICS:\([%WNL%]+\)~ ~%WNL%STATISTICS:\1Combat abilities:%WNL%%attacks_string%%attacks_per_round_special%%WNL%%WNL%~
-			END
-		END ELSE BEGIN
-			REPLACE_TEXTUALLY ~^- .*\(attack\|shot\)s? per round$~ ~~
+			REPLACE_TEXTUALLY ~^Type:\(.*\)$~ ~Type:\1%WNL%%attacks_string%%attacks_per_round_special%~
 		END
 	END
 

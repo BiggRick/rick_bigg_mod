@@ -152,6 +152,14 @@ DEFINE_PATCH_MACRO armor_rules BEGIN
 				RET min_strength = value
 			END
 			LAUNCH_PATCH_FUNCTION get_base_from_armor_2da
+				INT_VAR column_number = 2
+				RET base_min_strength = value
+			END
+			LAUNCH_PATCH_FUNCTION get_special_from_armor_2da
+				INT_VAR column_number = 2
+				RET min_strength_special = value
+			END
+			LAUNCH_PATCH_FUNCTION get_base_from_armor_2da
 				INT_VAR column_number = 3
 				RET base_ac = value
 			END
@@ -163,6 +171,10 @@ DEFINE_PATCH_MACRO armor_rules BEGIN
 				INT_VAR column_number = 4
 				RET base_physical_resistance = value
 			END
+			LAUNCH_PATCH_FUNCTION get_special_from_armor_2da
+				INT_VAR column_number = 4
+				RET physical_resistance_special = value
+			END
 
 			// column 6 - slashing_ac - both
 			LAUNCH_PATCH_FUNCTION get_from_armor_2da
@@ -173,6 +185,10 @@ DEFINE_PATCH_MACRO armor_rules BEGIN
 				INT_VAR column_number = 5
 				RET base_slashing_ac = value
 			END
+			LAUNCH_PATCH_FUNCTION get_special_from_armor_2da
+				INT_VAR column_number = 5
+				RET special_slashing_ac = value
+			END
 			// column 7 - piercing_ac - both
 			LAUNCH_PATCH_FUNCTION get_from_armor_2da
 				INT_VAR column_number = 6
@@ -181,6 +197,10 @@ DEFINE_PATCH_MACRO armor_rules BEGIN
 			LAUNCH_PATCH_FUNCTION get_base_from_armor_2da
 				INT_VAR column_number = 6
 				RET base_piercing_ac = value
+			END
+			LAUNCH_PATCH_FUNCTION get_special_from_armor_2da
+				INT_VAR column_number = 6
+				RET special_piercing_ac = value
 			END
 			// column 8 - missile_ac - both
 			LAUNCH_PATCH_FUNCTION get_from_armor_2da
@@ -191,6 +211,10 @@ DEFINE_PATCH_MACRO armor_rules BEGIN
 				INT_VAR column_number = 7
 				RET base_missile_ac = value
 			END
+			LAUNCH_PATCH_FUNCTION get_special_from_armor_2da
+				INT_VAR column_number = 7
+				RET special_missile_ac = value
+			END
 			// column 9 - crushing_ac - both
 			LAUNCH_PATCH_FUNCTION get_from_armor_2da
 				INT_VAR column_number = 8
@@ -199,6 +223,10 @@ DEFINE_PATCH_MACRO armor_rules BEGIN
 			LAUNCH_PATCH_FUNCTION get_base_from_armor_2da
 				INT_VAR column_number = 8
 				RET base_crushing_ac = value
+			END
+			LAUNCH_PATCH_FUNCTION get_special_from_armor_2da
+				INT_VAR column_number = 8
+				RET special_crushing_ac = value
 			END
 			// column 10 - cleric - no base
 			LAUNCH_PATCH_FUNCTION get_from_armor_2da
@@ -249,6 +277,10 @@ DEFINE_PATCH_MACRO armor_rules BEGIN
 				INT_VAR column_number = 17
 				RET base_locks = value
 			END
+			LAUNCH_PATCH_FUNCTION get_special_from_armor_2da
+				INT_VAR column_number = 17
+				RET special_locks = value
+			END
 			// column 19 - traps - both
 			LAUNCH_PATCH_FUNCTION get_from_armor_2da
 				INT_VAR column_number = 18
@@ -257,6 +289,10 @@ DEFINE_PATCH_MACRO armor_rules BEGIN
 			LAUNCH_PATCH_FUNCTION get_base_from_armor_2da
 				INT_VAR column_number = 18
 				RET base_traps = value
+			END
+			LAUNCH_PATCH_FUNCTION get_special_from_armor_2da
+				INT_VAR column_number = 18
+				RET special_traps = value
 			END
 			// column 20 - pick_pockets - both
 			LAUNCH_PATCH_FUNCTION get_from_armor_2da
@@ -267,6 +303,10 @@ DEFINE_PATCH_MACRO armor_rules BEGIN
 				INT_VAR column_number = 19
 				RET base_pick_pockets = value
 			END
+			LAUNCH_PATCH_FUNCTION get_special_from_armor_2da
+				INT_VAR column_number = 19
+				RET special_pick_pockets = value
+			END
 			// column 21 - move_silently - both
 			LAUNCH_PATCH_FUNCTION get_from_armor_2da
 				INT_VAR column_number = 20
@@ -275,6 +315,10 @@ DEFINE_PATCH_MACRO armor_rules BEGIN
 			LAUNCH_PATCH_FUNCTION get_base_from_armor_2da
 				INT_VAR column_number = 20
 				RET base_move_silently = value
+			END
+			LAUNCH_PATCH_FUNCTION get_special_from_armor_2da
+				INT_VAR column_number = 20
+				RET special_move_silently = value
 			END
 			// column 22 - hide - both
 			LAUNCH_PATCH_FUNCTION get_from_armor_2da
@@ -285,6 +329,10 @@ DEFINE_PATCH_MACRO armor_rules BEGIN
 				INT_VAR column_number = 21
 				RET base_hide = value
 			END
+			LAUNCH_PATCH_FUNCTION get_special_from_armor_2da
+				INT_VAR column_number = 21
+				RET special_hide = value
+			END
 			LAUNCH_PATCH_FUNCTION get_from_armor_2da
 				INT_VAR column_number = 22
 				RET arcane_spells = value
@@ -292,6 +340,10 @@ DEFINE_PATCH_MACRO armor_rules BEGIN
 			LAUNCH_PATCH_FUNCTION get_base_from_armor_2da
 				INT_VAR column_number = 22
 				RET base_arcane_spells = value
+			END
+			LAUNCH_PATCH_FUNCTION get_special_from_armor_2da
+				INT_VAR column_number = 22
+				RET special_arcane_spells = value
 			END
 			LAUNCH_PATCH_FUNCTION get_from_armor_2da
 				INT_VAR column_number = 23
@@ -304,6 +356,10 @@ DEFINE_PATCH_MACRO armor_rules BEGIN
 			LAUNCH_PATCH_FUNCTION get_base_from_armor_2da
 				INT_VAR column_number = 24
 				RET base_speed_factor = value
+			END
+			LAUNCH_PATCH_FUNCTION get_special_from_armor_2da
+				INT_VAR column_number = 24
+				RET special_speed_factor = value
 			END
 
 
@@ -503,7 +559,7 @@ DEFINE_PATCH_MACRO armor_rules BEGIN
 				INNER_PATCH_SAVE desc ~%desc%~ BEGIN
 					LAUNCH_PATCH_FUNCTION redescribe_armor
 						INT_VAR
-							min_strength = min_strength
+							min_strength = base_min_strength
 							arcane_spells = base_arcane_spells
 							speed_factor = base_speed_factor
 							shield = category == 12
@@ -531,6 +587,18 @@ DEFINE_PATCH_MACRO armor_rules BEGIN
 					END ELSE BEGIN
 						TEXT_SPRINT armor_class EVALUATE_BUFFER ~%magic_ac%~
 					END
+					TEXT_SPRINT ~ac_special~ ~ (*)~
+					PATCH_IF ~%special_slashing_ac%%special_piercing_ac%%special_crushing_ac%%special_missile_ac%~ STRING_EQUAL_CASE ~~ BEGIN
+						TEXT_SPRINT ~ac_special~ ~~
+					END
+					TEXT_SPRINT ~thieving_special~ ~ (*)~
+					PATCH_IF ~%special_locks%%special_pick_pockets%~ STRING_EQUAL_CASE ~~ BEGIN
+						TEXT_SPRINT ~thieving_special~ ~~
+					END
+					TEXT_SPRINT ~stealth_special~ ~ (*)~
+					PATCH_IF ~%special_move_silently%%special_hide%~ STRING_EQUAL_CASE ~~ BEGIN
+						TEXT_SPRINT ~stealth_special~ ~~
+					END
 
 					INNER_PATCH_SAVE desc ~%desc%~ BEGIN
 						LAUNCH_PATCH_FUNCTION redescribe_armor
@@ -551,6 +619,15 @@ DEFINE_PATCH_MACRO armor_rules BEGIN
 								pick_pockets = EVALUATE_BUFFER ~%pick_pockets%~
 								move_silently = EVALUATE_BUFFER ~%move_silently%~
 								hide = EVALUATE_BUFFER ~%hide%~
+
+								min_strength_special = EVALUATE_BUFFER ~%min_strength_special%~
+								physical_resistance_special = EVALUATE_BUFFER ~%physical_resistance_special%~
+								ac_special = EVALUATE_BUFFER ~%ac_special%~
+								arcane_spells_special = EVALUATE_BUFFER ~%special_arcane_spells%~
+								traps_special = EVALUATE_BUFFER ~%special_traps%~
+								thieving_special = EVALUATE_BUFFER ~%thieving_special%~
+								stealth_special = EVALUATE_BUFFER ~%stealth_special%~
+								speed_factor_special = EVALUATE_BUFFER ~%special_speed_factor%~
 						END
 					END
 					SAY_EVALUATED DESC ~%desc%~ // write changes
