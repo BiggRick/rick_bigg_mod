@@ -126,22 +126,6 @@ BEGIN
 	// Build equipped abilities string (WITHOUT AC - AC is before Requires now)
 	TEXT_SPRINT abilities_string ~~
 
-	// Physical Resistance
-	PATCH_IF NOT (~%physical_resistance%~ STRING_EQUAL_CASE ~N~) BEGIN
-        PATCH_IF NOT (~%physical_resistance%~ STRING_EQUAL_CASE ~0~) BEGIN
-		    TEXT_SPRINT abilities_string ~%abilities_string%Physical Resistance: +%physical_resistance%%%physical_resistance_special%%WNL%~
-        END
-        // Always remove old Physical Resistance line
-        REPLACE_TEXTUALLY ~^- Physical Resistance:.*$~ ~~
-	END
-
-	// Speed Factor
-	PATCH_IF NOT (~%speed_factor%~ STRING_EQUAL_CASE ~0~) BEGIN
-		TEXT_SPRINT abilities_string ~%abilities_string%Speed Factor: %speed_factor%%speed_factor_special%%WNL%~
-	END
-	// Always remove old Speed Factor line
-	REPLACE_TEXTUALLY ~^- Speed Factor:.*$~ ~~
-
 	// Spellcasting - always show disabled/not disabled
 	PATCH_IF (~%arcane_spells%~ STRING_EQUAL_CASE ~0~) BEGIN
 		TEXT_SPRINT abilities_string ~%abilities_string%Arcane Spellcasting: disabled%arcane_spells_special%%WNL%~
@@ -149,7 +133,24 @@ BEGIN
 		TEXT_SPRINT abilities_string ~%abilities_string%Arcane Spellcasting: enabled%arcane_spells_special%%WNL%~
 	END
 	// Always remove old Spellcasting lines
-	REPLACE_TEXTUALLY ~^- (Spellcasting|Arcane Spellcasting) is .*$~ ~~
+	REPLACE_TEXTUALLY ~%WNL%\(Spellcasting\|Arcane Spellcasting\) is [^%WNL%]+%WNL%~ ~%WNL%~
+	REPLACE_TEXTUALLY ~%WNL%- \(Spellcasting\|Arcane Spellcasting\) is [^%WNL%]+%WNL%~ ~%WNL%~
+
+	// Physical Resistance
+	PATCH_IF NOT (~%physical_resistance%~ STRING_EQUAL_CASE ~N~) BEGIN
+        PATCH_IF NOT (~%physical_resistance%~ STRING_EQUAL_CASE ~0~) BEGIN
+		    TEXT_SPRINT abilities_string ~%abilities_string%Physical Resistance: +%physical_resistance%%%physical_resistance_special%%WNL%~
+        END
+        // Always remove old Physical Resistance line
+        REPLACE_TEXTUALLY ~^\(- \)?Physical Resistance:.*$~ ~~
+	END
+
+	// Speed Factor
+	PATCH_IF NOT (~%speed_factor%~ STRING_EQUAL_CASE ~0~) BEGIN
+		TEXT_SPRINT abilities_string ~%abilities_string%Speed Factor: %speed_factor%%speed_factor_special%%WNL%~
+	END
+	// Always remove old Speed Factor line
+	REPLACE_TEXTUALLY ~^\(- \)?Speed Factor:.*$~ ~~
 
 	// Lockpicking and Pick Pockets
 	TEXT_SPRINT locks_check ~%locks%~
@@ -178,16 +179,16 @@ BEGIN
 		TEXT_SPRINT abilities_string ~%abilities_string%Thieving: enabled (%locks_display% to Open Locks, %pockets_display% to Pick Pockets)%thieving_special%%WNL%~
 	END
 	// Always remove old locks lines
-	REPLACE_TEXTUALLY ~^- Thieving .*$~ ~~
-	REPLACE_TEXTUALLY ~^- Open Locks:.*$~ ~~
-	REPLACE_TEXTUALLY ~^- Pick Pockets:.*$~ ~~
+	REPLACE_TEXTUALLY ~^\(- \)?Thieving .*$~ ~~
+	REPLACE_TEXTUALLY ~^\(- \)?Open Locks:.*$~ ~~
+	REPLACE_TEXTUALLY ~^\(- \)?Pick Pockets:.*$~ ~~
 
 	// Find Traps
 	PATCH_IF NOT (~%traps%~ STRING_EQUAL_CASE ~0~) AND NOT (~%traps%~ STRING_EQUAL_CASE ~N~) BEGIN
 		TEXT_SPRINT abilities_string ~%abilities_string%Find Traps: %traps%%%traps_special%%WNL%~
 	END
 	// Always remove old Find Traps line
-	REPLACE_TEXTUALLY ~^- Find Traps:.*$~ ~~
+	REPLACE_TEXTUALLY ~^\(- \)?Find Traps:.*$~ ~~
 
 	// Move Silently and Hide in Shadows (grouped as "Stealth")
 	TEXT_SPRINT move_silently_check ~%move_silently%~
@@ -216,17 +217,26 @@ BEGIN
 		TEXT_SPRINT abilities_string ~%abilities_string%Stealth: enabled (%move_silently_display% to Move Silently, %hide_display% to Hide In Shadows)%stealth_special%%WNL%~
 	END
 	// Always remove old Stealth/Move Silently/Hide lines
-	REPLACE_TEXTUALLY ~^- Stealth .*$~ ~~
-	REPLACE_TEXTUALLY ~^- Move Silently:.*$~ ~~
-	REPLACE_TEXTUALLY ~^- Hide in Shadows:.*$~ ~~
+	REPLACE_TEXTUALLY ~^\(- \)?Stealth .*$~ ~~
+	REPLACE_TEXTUALLY ~^\(- \)?Move Silently:.*$~ ~~
+	REPLACE_TEXTUALLY ~^\(- \)?Hide in Shadows:.*$~ ~~
 
 	// Clean up empty lines within equipped abilities list (remove blank lines before "-" items)
-	REPLACE_TEXTUALLY ~[%WNL%]+- ~ ~%WNL%- ~
+	REPLACE_TEXTUALLY ~\(%WNL%\)+- ~ ~%WNL%- ~
 
 	// Update equipped abilities section
 	PATCH_IF NOT (~%abilities_string%~ STRING_EQUAL_CASE ~~) BEGIN
-        REPLACE_TEXTUALLY ~%WNL%Requires:%WNL%~ ~%WNL%%abilities_string%Requires:%WNL%~
+        REPLACE_TEXTUALLY ~%WNL%Requires:%WNL%~ ~%WNL%%WNL%%abilities_string%%WNL%Requires:%WNL%~
 	END
 
 	LAUNCH_PATCH_MACRO common_postprocess
+
+	FOR (i = 0; i < 10; i += 1) BEGIN
+		// Remove empty headers and normalize the separator before Armor Class.
+		REPLACE_TEXTUALLY ~Equipped abilities:[%WNL%]+Armor Class:~ ~Armor Class:~
+
+		REPLACE_TEXTUALLY ~Armor Class:\([^%WNL%]+\)[%WNL%]+Arcane Spellcasting:~ ~Armor Class:\1%WNL%Arcane Spellcasting:~
+		REPLACE_TEXTUALLY ~[%WNL%]+Requires:~ ~%WNL%Requires:~
+		REPLACE_TEXTUALLY ~[%WNL%]+Armor Class:~ ~%WNL%%WNL%Armor Class:~
+	END
 END
