@@ -1,6 +1,6 @@
 @echo off
 cd /d "%~dp0"
 
-ollama launch copilot --model qwen3.6
+powershell C:\Users\Utente\GHCPCLI-Local\copilot-local.ps1 -Backend ollama   -Model qwen3.6
 
 pause
