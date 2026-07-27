@@ -10,7 +10,11 @@ DEFINE_PATCH_FUNCTION redescribe_weapon
 		range = 0
 	STR_VAR attacks_per_round = "_"
 BEGIN
-	REPLACE_TEXTUALLY ~^[–—] ~ ~- ~
+	// WNL only
+	REPLACE_TEXTUALLY ~%WNL%~ ~%LNL%~
+	REPLACE_TEXTUALLY ~%LNL%~ ~%WNL%~
+	// no em/en dashes
+	REPLACE_TEXTUALLY ~^\(–\|—\) ~ ~- ~
 
 	PATCH_IF thac0 = 0 BEGIN
 		TEXT_SPRINT thac0_string ~\1~

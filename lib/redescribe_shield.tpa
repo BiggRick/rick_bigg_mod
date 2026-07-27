@@ -22,13 +22,16 @@ DEFINE_PATCH_FUNCTION redescribe_shield
         move_silently = 0
         hide = 0
 BEGIN
-	// em/en dashes are evil
-	REPLACE_TEXTUALLY ~^[–—] ~ ~- ~
+	// WNL only
+	REPLACE_TEXTUALLY ~%WNL%~ ~%LNL%~
+	REPLACE_TEXTUALLY ~%LNL%~ ~%WNL%~
+	// no em/en dashes
+	REPLACE_TEXTUALLY ~^\(–\|—\) ~ ~- ~
 
 	// Remove "Armor Class:" lines that appear before "Requires:" (old style)
 	// Only keep Armor Class under Equipped abilities
 	PATCH_IF INDEX_BUFFER( ~^Armor Class: [^+%WNL%][^%WNL%]*$~ ) > 0 BEGIN
-		REPLACE_TEXTUALLY ~^Armor Class: [^+%WNL%][^%WNL%]*%WNL%~ ~~
+		REPLACE_TEXTUALLY ~^Armor Class: .*$~ ~~
 	END
 
 	// Handle minimum strength requirement
@@ -182,10 +185,9 @@ BEGIN
 	END
 
 	// Remove old AC lines from Equipped abilities section
-	REPLACE_TEXTUALLY ~^- Armor Class:[^%WNL%]*%WNL%~ ~~
-	REPLACE_TEXTUALLY ~^- No protection against [^%WNL%]*%WNL%~ ~~
-	REPLACE_TEXTUALLY ~- No protection against [^%WNL%]*%WNL%~ ~~
-	REPLACE_TEXTUALLY ~- No protection against [^%WNL%]*$~ ~~
+	REPLACE_TEXTUALLY ~^- Armor Class:.*$~ ~~
+	REPLACE_TEXTUALLY ~^- No protection against .*$~ ~~
+	REPLACE_TEXTUALLY ~- No protection against .*$~ ~~
 	
 	// Build equipped abilities string (WITHOUT AC - AC is before Requires now)
 	TEXT_SPRINT abilities_string ~~
@@ -195,14 +197,14 @@ BEGIN
 		TEXT_SPRINT abilities_string ~%abilities_string%- Physical Resistance: +%physical_resistance%%%WNL%~
 	END
 	// Always remove old Physical Resistance line
-	REPLACE_TEXTUALLY ~^- Physical Resistance:[^%WNL%]*%WNL%~ ~~
+	REPLACE_TEXTUALLY ~^- Physical Resistance:.*$~ ~~
 
 	// Speed Factor
 	PATCH_IF NOT (~%speed_factor%~ STRING_EQUAL_CASE ~0~) BEGIN
 		TEXT_SPRINT abilities_string ~%abilities_string%- Speed Factor: %speed_factor%%WNL%~
 	END
 	// Always remove old Speed Factor line
-	REPLACE_TEXTUALLY ~^- Speed Factor:[^%WNL%]*%WNL%~ ~~
+	REPLACE_TEXTUALLY ~^- Speed Factor:.*$~ ~~
 
 	// Spellcasting - always show disabled/not disabled
 	PATCH_IF (~%arcane_spells%~ STRING_EQUAL_CASE ~0~) BEGIN
@@ -211,7 +213,7 @@ BEGIN
 		TEXT_SPRINT abilities_string ~%abilities_string%- Arcane Spellcasting is not disabled%WNL%~
 	END
 	// Always remove old Spellcasting lines
-	REPLACE_TEXTUALLY ~^- (Spellcasting|Arcane Spellcasting) is [^%WNL%]*%WNL%~ ~~
+	REPLACE_TEXTUALLY ~^- (Spellcasting|Arcane Spellcasting) is .*$~ ~~
 
 	// Lockpicking and Pick Pockets
 	TEXT_SPRINT locks_check ~%locks%~
@@ -240,16 +242,16 @@ BEGIN
 		TEXT_SPRINT abilities_string ~%abilities_string%- Lockpicking and Picking Pockets is enabled (%locks_display% to Open Locks, %pockets_display% to Pick Pockets)%WNL%~
 	END
 	// Always remove old locks lines
-	REPLACE_TEXTUALLY ~^- Lockpicking and Picking Pockets [^%WNL%]*%WNL%~ ~~
-	REPLACE_TEXTUALLY ~^- Open Locks:[^%WNL%]*%WNL%~ ~~
-	REPLACE_TEXTUALLY ~^- Pick Pockets:[^%WNL%]*%WNL%~ ~~
+	REPLACE_TEXTUALLY ~^- Lockpicking and Picking Pockets .*$~ ~~
+	REPLACE_TEXTUALLY ~^- Open Locks:.*$~ ~~
+	REPLACE_TEXTUALLY ~^- Pick Pockets:.*$~ ~~
 
 	// Find Traps
 	PATCH_IF NOT (~%traps%~ STRING_EQUAL_CASE ~0~) AND NOT (~%traps%~ STRING_EQUAL_CASE ~N~) BEGIN
 		TEXT_SPRINT abilities_string ~%abilities_string%- Find Traps: %traps%%%WNL%~
 	END
 	// Always remove old Find Traps line
-	REPLACE_TEXTUALLY ~^- Find Traps:[^%WNL%]*%WNL%~ ~~
+	REPLACE_TEXTUALLY ~^- Find Traps:.*$~ ~~
 
 	// Move Silently and Hide in Shadows (grouped as "Stealth")
 	TEXT_SPRINT move_silently_check ~%move_silently%~
@@ -278,9 +280,12 @@ BEGIN
 		TEXT_SPRINT abilities_string ~%abilities_string%- Stealth is enabled (%move_silently_display% to Move Silently, %hide_display% to Hide In Shadows)%WNL%~
 	END
 	// Always remove old Stealth/Move Silently/Hide lines
-	REPLACE_TEXTUALLY ~^- Stealth [^%WNL%]*%WNL%~ ~~
-	REPLACE_TEXTUALLY ~^- Move Silently:[^%WNL%]*%WNL%~ ~~
-	REPLACE_TEXTUALLY ~^- Hide in Shadows:[^%WNL%]*%WNL%~ ~~
+	REPLACE_TEXTUALLY ~^- Stealth .*$~ ~~
+	REPLACE_TEXTUALLY ~^- Move Silently:.*$~ ~~
+	REPLACE_TEXTUALLY ~^- Hide in Shadows:.*$~ ~~
+
+	// Clean up empty lines within equipped abilities list (remove blank lines before "-" items)
+	REPLACE_TEXTUALLY ~\(%WNL%\)+%WNL%- ~ ~%WNL%- ~
 
 	// Update equipped abilities section
 	PATCH_IF NOT (~%abilities_string%~ STRING_EQUAL_CASE ~~) BEGIN
@@ -293,11 +298,13 @@ BEGIN
 		END
 	END ELSE BEGIN
 		// No abilities to add, remove Equipped abilities section entirely
-		REPLACE_TEXTUALLY ~^Equipped abilities:[%WNL%]*- .*$~ ~~
+		REPLACE_TEXTUALLY ~%WNL%Equipped abilities:[%WNL%]*- .*$~ ~%WNL%~
 	END
 
-	// remove extraneous empty lines
-	REPLACE_TEXTUALLY ~[%WNL%][%WNL%]+Armor Class: ~ ~%WNL%%WNL%Armor Class: ~
+	// A pre-existing equipped ability line (not regenerated here) can remain after section rewrite.
+	// Collapse accidental blank separators before list items in the final text.
 	REPLACE_TEXTUALLY ~\(%WNL%\)+%WNL%- ~ ~%WNL%- ~
-	REPLACE_TEXTUALLY ~%LNL%+%LNL%- ~ ~%LNL%- ~
+
+	// in case a double empty line is missing before "Armor Class:"
+	REPLACE_TEXTUALLY ~\([^%WNL%]\)%WNL%Armor Class: ~ ~\1%WNL%%WNL%Armor Class: ~
 END
