@@ -227,7 +227,7 @@ Weight: 2"
 
 
 
-//BLACKRAZOR +4 - 15000mo - solo malvagi//
+//BLACKRAZOR +4 - 14000mo - solo malvagi//
 COPY "rick_bigg_mod/items/MISCBC.itm" "override"
 	SAY NAME1 "Short Sword"
 	SAY UNIDENTIFIED_DESC "The short sword is the first type of sword to come into existence. In the simplest of terms, a short sword can be considered a dagger with a blade so long that it can no longer be called a dagger. The term short sword does not exist in sword classifications. However, it has come to be used to describe a double-edged blade about two feet in length. The sword tip is usually pointed, ideal for thrusting.
@@ -248,8 +248,11 @@ Weight: 3"
 
 STATISTICS:
 
+Equipped abilities:
+- Immunity to Level Drain
+
 Combat abilities:
-– With every hit, it has a 20% chance of draining 4 levels from the target and healing the wielder by 20 Hit Points as well as hasting <PRO_HIMHER> for 20 seconds and increasing <PRO_HISHER> Strength by 3 points for 20 seconds
+– With every hit, it has a 20% chance of draining 2 levels from the target and healing the wielder by 20 Hit Points as well as hasting <PRO_HIMHER> for 12 seconds and increasing <PRO_HISHER> Strength by 2 points for 12 seconds
 
 THAC0: +4
 Damage: 1d6+4 (piercing)

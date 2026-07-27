@@ -347,7 +347,7 @@ Weight: 1"
 
 
 
-//DAGGER OF THE STAR +4 - 8000mo/
+//DAGGER OF THE STAR +4 - 6000mo/
 COPY "rick_bigg_mod/items/DAGG21.itm" "override"
 	SAY NAME1 "Dagger"
 	SAY UNIDENTIFIED_DESC "The typical dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter.
@@ -369,11 +369,9 @@ Weight: 1"
 
 STATISTICS:
    
-Equipped abilities:
-- Magical Damage Resitance: +30%
-
 THAC0: +4
-Damage: 1d4+4 (piercing)
+Damage: 1d4+4, +2 magical damage
+Damage type: Piercing
 Speed Factor: 0
 Proficiency Type: Dagger
 Type: One-handed
@@ -383,7 +381,7 @@ Requires:
 Weight: 1"
 
 
-//DAGGER OF THE STAR +5 - valore 16000mo/
+//DAGGER OF THE STAR +5 - valore 14000mo/
 COPY "rick_bigg_mod/items/DAGG22.itm" "override"
 	SAY NAME1 "Dagger"
 	SAY UNIDENTIFIED_DESC "The typical dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter.
@@ -407,15 +405,12 @@ Weight: 1"
 
 STATISTICS:
 
-Equipped abilities:
-- Magical Damage Resitance: +50%
-
 Combat abilities:
 - Each hit makes the target receive a cumulative 10% point penalty to their Magic Resistance for 4 rounds
 - Each hit makes the target receive a cumulative 1 point penalty to their Saving Throws for 4 rounds
 
 THAC0: +5
-Damage: 1d4+5, +5 Magical
+Damage: 1d4+5, +4 magical damage
 Damage type: Piercing
 Speed Factor: 0
 Proficiency Type: Dagger

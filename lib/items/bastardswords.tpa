@@ -84,7 +84,7 @@ Weight: 8"
 
 
 
-//KONDAR +2 - 5000mo//
+//KONDAR +2 - 4000mo//
 COPY "rick_bigg_mod/items/TB#KOND.itm" "override"
 	SAY NAME1 "Bastard Sword"
 	SAY UNIDENTIFIED_DESC "Also known as the hand-and-a-half sword, the bastard sword derives its name from the fact that it is halfway between the two-handed sword and the long sword. The bastard sword has a double-edged blade and a long grip, which can accommodate both hands if preferred. The overall length of the bastard sword ranges between four feet and four feet ten inches.
@@ -127,7 +127,7 @@ Weight: 8"
 
 
 
-//SWORD OF BALDURAN +3 - 8000mo//
+//SWORD OF BALDURAN +3 - 9000mo//
 COPY "rick_bigg_mod/items/SW1H18.itm" "override"
 	SAY NAME1 "Bastard Sword"
 	SAY UNIDENTIFIED_DESC "Also known as the hand-and-a-half sword, the bastard sword derives its name from the fact that it is halfway between the two-handed sword and the long sword. The bastard sword has a double-edged blade and a long grip, which can accommodate both hands if preferred. The overall length of the bastard sword ranges between four feet and four feet ten inches.
@@ -149,6 +149,10 @@ Weight: 10"
 	Though weathered by salt and time, the sword’s enchantments remain potent. It was forged with a specific purpose: to defend civilization against the unthinkable horrors that lurk in the dark corners of the world. The blade seems to seek out the weak points of unnatural creatures, vibrating with a cold intensity when drawn in the presence of aberrations and monstrosities.
 
 STATISTICS:
+
+Equipped abilities:
+- Magic Resistance: +10%
+- Charisma: +1
 
 Charge abilities:
 - Cast True Strike twice per day
@@ -262,50 +266,7 @@ Weight: 7"
 
 
 
-//BRASS BLADE +3 - valore 8000mo //
-COPY "rick_bigg_mod/items/OHDSW03.itm" "override"
-	SAY NAME1 "Bastard Sword"
-	SAY UNIDENTIFIED_DESC "Also known as the hand-and-a-half sword, the bastard sword derives its name from the fact that it is halfway between the two-handed sword and the long sword. The bastard sword has a double-edged blade and a long grip, which can accommodate both hands if preferred. The overall length of the bastard sword ranges between four feet and four feet ten inches.
-
-STATISTICS:
-
-Damage: 2d4+1 (slashing)
-Speed Factor: 8
-Proficiency Type: Bastard Sword
-Type: One-handed
-
-Requires:
- 13 Strength
-
-Weight: 10"
-
-	SAY NAME2 "Brass Blade +3"
-	SAY DESC "This flaming, magical bastard sword was forged in the Elemental Plane of Fire's City of Brass. It was stolen from the city many centuries ago, leaving a long trail of dead behind it as the sultan who oversaw its construction attempted to hunt it down. Over time, his anger cooled and his memory faded, and the sword was left to continually change hands between mortals.
-
-STATISTICS:
-
-Equipped Abilities:
-– Fire Resistance: +30%
-
-THAC0: +3
-Damage: 2d4+4, +3 fire damage
-Damage type: Slashing
-Speed Factor: 5
-Proficiency Type: Bastard Sword
-Type: One-handed
-
-Requires:
- 13 Strength
-
-Weight: 7
-"
-
-
-
-
-
-
-//JHOR THE BLEEDER + 4 - valore 9000mo //
+//JHOR THE BLEEDER + 4 - valore 8500mo //
 COPY "rick_bigg_mod/items/SW1H38.itm" "override"
 	SAY NAME1 "Bastard Sword"
 	SAY UNIDENTIFIED_DESC "Also known as the hand-and-a-half sword, the bastard sword derives its name from the fact that it is halfway between the two-handed sword and the long sword. The bastard sword has a double-edged blade and a long grip, which can accommodate both hands if preferred. The overall length of the bastard sword ranges between four feet and four feet ten inches.

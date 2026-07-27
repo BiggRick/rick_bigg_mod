@@ -607,10 +607,6 @@ COPY_EXISTING "nalin.cre" "override"
 
 //CREATURES CHANGE WEAPON//
 
-COPY_EXISTING "trrak01.cre" "override"
-REMOVE_CRE_ITEM "sw1h04"
-	ADD_CRE_ITEM "ohdsw03" #1 #0 #0 ~NONE~ ~WEAPON~ EQUIP
-	
 COPY_EXISTING "kalah.cre" "override"
 REMOVE_CRE_ITEM "blun02"
 	ADD_CRE_ITEM "BDBLUN05" #1 #0 #0 ~NONE~ ~WEAPON~ EQUIP
