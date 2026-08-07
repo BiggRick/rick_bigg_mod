@@ -13,7 +13,11 @@ INCLUDE ~rick_bigg_mod/lib/replace_items.tpa~
 
 INCLUDE ~rick_bigg_mod/lib/races.tpa~
 INCLUDE ~rick_bigg_mod/lib/styles.tpa~
-
+/*
 INCLUDE ~rick_bigg_mod/lib/item_rules.tpa~
 INCLUDE ~rick_bigg_mod/lib/weaponproficiencies.tpa~
+*/
 
+ACTION_BASH_FOR ~rick_bigg_mod/extend_bottom~ ~^.*\.baf$~ BEGIN
+    EXTEND_BOTTOM ~%BASH_FOR_RES%.bcs~ ~%BASH_FOR_FILESPEC%~
+END
