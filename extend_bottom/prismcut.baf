@@ -1,0 +1,40 @@
+
+IF
+    True()
+THEN
+    RESPONSE #100
+        CutSceneId("tb#gwf01")
+        Wait(4)
+        JumpToPoint([1267.2549])
+        MoveToPoint([785.2712])
+END
+
+IF
+    True()
+THEN
+    RESPONSE #100
+        CutSceneId("tb#gwf02")
+        Wait(4)
+        JumpToPoint([1267.2699])
+        MoveToPoint([785.2772])
+END
+
+IF
+    True()
+THEN
+    RESPONSE #100
+        CutSceneId("tb#gwf03")
+        Wait(4)
+        JumpToPoint([1367.2549])
+        MoveToPoint([885.2712])
+END
+
+IF
+    True()
+THEN
+    RESPONSE #100
+        CutSceneId("tb#gwf04")
+        Wait(4)
+        JumpToPoint([1367.2699])
+        MoveToPoint([885.2772])
+END
