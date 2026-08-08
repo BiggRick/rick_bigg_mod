@@ -1,0 +1,26 @@
+COPY_EXISTING ~cohrvale.cre~ ~override/tb#dbr01.cre~
+    SAY NAME1 ~Mercenary~
+    SAY NAME2 ~Mercenary~
+    WRITE_ASCII DIALOG ~~ #8
+    WRITE_ASCIIE DEATHVAR ~%DEST_RES%~ #32
+    WRITE_ASCII SCRIPT_RACE ~tb#dbr~ #8
+    WRITE_BYTE 0x270 128
+
+COPY_EXISTING ~OHNRWME2.cre~   ~override/tb#dbr02.cre~
+    SAY NAME1 ~Marksman~
+    SAY NAME2 ~Marksman~
+    WRITE_ASCIIE DEATHVAR ~%DEST_RES%~ #32
+    WRITE_ASCII DIALOG ~~ #8
+    WRITE_ASCII SCRIPT_OVERRIDE ~tb#dbr~ #8
+    WRITE_BYTE 0x270 128
+    REMOVE_CRE_ITEM ~POTN52~
+
+COPY_EXISTING ~jemby.cre~   ~override/tb#dbr03.cre~
+    SAY NAME1 ~Mage~
+    SAY NAME2 ~Mage~
+    WRITE_ASCIIE DEATHVAR ~%DEST_RES%~ #32
+    WRITE_ASCII DIALOG ~~ #8
+    WRITE_ASCII SCRIPT_CLASS ~tb#dbr~ #8
+    WRITE_BYTE 0x270 128
+
+

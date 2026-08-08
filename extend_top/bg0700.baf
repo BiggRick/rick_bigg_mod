@@ -1,0 +1,14 @@
+
+IF
+    Dead("Aldeth")  // Aldeth Sashenstar
+    Global("tb#SpawnDabronAllies","GLOBAL",0)
+THEN
+    RESPONSE #100
+        SetGlobal("tb#SpawnDabronAllies","GLOBAL",1)
+        CreateCreature("tb#dbr01",[738.1784],S)
+        CreateCreature("tb#dbr01",[838.1784],S)
+        CreateCreature("tb#dbr02",[738.1584],S)
+        CreateCreature("tb#dbr03",[788.1584],S)
+        CreateCreature("tb#dbr02",[838.1684],S)
+        Continue()
+END

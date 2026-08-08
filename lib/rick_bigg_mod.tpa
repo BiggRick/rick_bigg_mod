@@ -23,3 +23,7 @@ COMPILE ~rick_bigg_mod/compile~
 ACTION_BASH_FOR ~rick_bigg_mod/extend_bottom~ ~^.*\.baf$~ BEGIN
     EXTEND_BOTTOM ~%BASH_FOR_RES%.bcs~ ~%BASH_FOR_FILESPEC%~
 END
+
+ACTION_BASH_FOR ~rick_bigg_mod/extend_top~ ~^.*\.baf$~ BEGIN
+    EXTEND_TOP ~%BASH_FOR_RES%.bcs~ ~%BASH_FOR_FILESPEC%~
+END

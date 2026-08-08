@@ -14,3 +14,4 @@ COPY_EXISTING ~bandit.cre~   ~override/tb#gwf03.cre~
     WRITE_ASCII DIALOG ~~ #8
     WRITE_ASCII SCRIPT_RACE ~tb#gwf~ #8
     WRITE_BYTE 0x270 128
+    REMOVE_CRE_ITEM ~misc86~
