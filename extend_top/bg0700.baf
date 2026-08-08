@@ -6,9 +6,9 @@ THEN
     RESPONSE #100
         SetGlobal("tb#SpawnDabronAllies","GLOBAL",1)
         CreateCreature("tb#dbr01",[738.1784],S)
-        CreateCreature("tb#dbr01",[838.1784],S)
-        CreateCreature("tb#dbr02",[738.1584],S)
-        CreateCreature("tb#dbr03",[788.1584],S)
-        CreateCreature("tb#dbr02",[838.1684],S)
+        CreateCreature("tb#dbr02",[838.1784],S)
+        CreateCreature("tb#dbr03",[738.1584],S)
+        CreateCreature("tb#dbr04",[788.1584],S)
+        CreateCreature("tb#dbr05",[838.1684],S)
         Continue()
 END
