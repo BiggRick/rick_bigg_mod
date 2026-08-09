@@ -1,0 +1,5 @@
+COPY_EXISTING ~ironelit.cre~ ~override/tb#trn01.cre~
+    WRITE_ASCII DIALOG ~~ #8
+    WRITE_ASCIIE DEATHVAR ~%DEST_RES%~ #32
+    WRITE_ASCII SCRIPT_OVERRIDE ~tb#trn~ #8
+    WRITE_BYTE 0x270 128

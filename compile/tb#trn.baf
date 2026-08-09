@@ -1,0 +1,16 @@
+IF
+    Global("tb#TranzigHostile","LOCALS",0)
+    Allegiance("Tranzig", ENEMY)
+THEN RESPONSE #100
+    Enemy()
+    SetGlobal("tb#TranzigHostile","LOCALS",1)
+END
+
+IF
+    Global("tb#TranzigHostile","LOCALS",1)
+    Global("bd_tranzig_let_go","global",1)
+THEN RESPONSE #100
+    ChangeEnemyAlly(Myself,NEUTRAL)
+    SetGlobal("tb#TranzigHostile","LOCALS",2)
+    EscapeArea()
+END
