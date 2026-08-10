@@ -2,6 +2,9 @@
 COPY ~rick_bigg_mod/copy~ ~override~
 
 
+INCLUDE ~rick_bigg_mod/lib/borrowed_from_cdtweaks/joinable_npc_array.tpa~
+
+
 INCLUDE ~rick_bigg_mod/lib/items.tpa~
 INCLUDE ~rick_bigg_mod/lib/spells.tpa~
 INCLUDE ~rick_bigg_mod/lib/creatures.tpa~

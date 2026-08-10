@@ -1,0 +1,94 @@
+<<<<<<<< .../script-all-creatures.baf
+
+IF
+    Global("tb#scalpInit","LOCALS",0)
+    General(Myself, HUMANOID)
+    HasItem("MISC86", Myself)
+THEN RESPONSE #100
+    DestroyItem("MISC86")
+    SetGlobal("tb#scalpInit","LOCALS",1)
+    Continue()
+END
+
+IF
+    Global("tb#scalpInit","LOCALS",0)
+    General(Myself, HUMANOID)
+    !HasItem("MISC86", Myself)
+THEN RESPONSE #100
+    SetGlobal("tb#scalpInit","LOCALS",51)
+    Continue()
+END
+
+IF
+    Global("tb#scalpInit","LOCALS",1)
+    Global("metVai","GLOBAL",1)
+    !Global("tb#vaiLeft","GLOBAL",1)
+THEN RESPONSE #100
+    CreateItem("MISC86", 1, 0, 0)
+    SetGlobal("tb#scalpInit","LOCALS",2)
+    Continue()
+END
+
+IF
+    Global("tb#scalpInit","LOCALS",2)
+    Global("tb#vaiLeft","GLOBAL",1)
+THEN RESPONSE #100
+    DestroyItem("MISC86")
+    SetGlobal("tb#scalpInit","LOCALS",3)
+    Continue()
+END
+
+IF
+    Global("tb#scalpInit","LOCALS",51)
+    Global("metVai","GLOBAL",1)
+    !Global("tb#vaiLeft","GLOBAL",1)
+THEN RESPONSE #100
+    CreateItem("tb#scalp", 1, 0, 0)
+    SetGlobal("tb#scalpInit","LOCALS",52)
+    Continue()
+END
+
+IF
+    Global("tb#scalpInit","LOCALS",52)
+    Global("tb#vaiLeft","GLOBAL",1)
+THEN RESPONSE #100
+    DestroyItem("tb#scalp")
+    SetGlobal("tb#scalpInit","LOCALS",53)
+    Continue()
+END
+>>>>>>>>
+
+COPY_EXISTING ~misc86.itm~ ~override/tb#scalp.itm~
+    SAY NAME1 ~Humanoid scalp~
+    SAY NAME2 ~Humanoid scalp~
+    SAY UNIDENTIFIED_DESC ~This is the scalp of a humanoid. Unscrupulous people might try to pass it off as a bandit scalp.
+
+STATISTICS:
+
+Weight: 0~
+
+SILENT
+COPY_EXISTING_REGEXP GLOB ~^.*\.cre$~ ~override~
+  found = 0
+  FOR (iter = 0; iter < 2; ++iter) BEGIN
+    offset = SCRIPT_DEFAULT
+    WHILE (offset >= SCRIPT_OVERRIDE && !found) BEGIN
+      READ_ASCII offset script
+      TO_UPPER script
+      PATCH_IF $done (EVALUATE_BUFFER ~%script%~) STRING_EQUAL_CASE ~%name%~ THEN BEGIN
+        found = 1
+      END ELSE PATCH_IF !FILE_EXISTS_IN_GAME ~%script%.bcs~ || ~%script%~ STRING_EQUAL_CASE ~none~ || ~%script%~ STRING_EQUAL_CASE ~~ || ~%script%~ STRING_EQUAL_CASE ~ ~ THEN BEGIN
+         offset -= 8
+      END ELSE PATCH_IF iter = 1 BEGIN
+        SPRINT $done (EVALUATE_BUFFER ~%script%~) ~%name%~
+        INNER_ACTION BEGIN
+          EXTEND_BOTTOM ~%script%.bcs~ ~.../script-all-creatures.baf~
+        END
+        found = 1
+      END ELSE BEGIN
+        offset -= 8
+      END
+    END
+  END
+BUT_ONLY
+VERBOSE

@@ -1,6 +1,4 @@
 
-INCLUDE ~rick_bigg_mod/lib/borrowed_from_cdtweaks/joinable_npc_array.tpa~
-
 ACTION_PHP_EACH JOINABLE_NPC_ARRAY AS file => dv BEGIN
 
   ACTION_IF !IS_AN_INT dv BEGIN // joinable NPC
