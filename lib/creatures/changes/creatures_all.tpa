@@ -750,7 +750,9 @@ REMOVE_CRE_ITEM "LEAT04"
 	
 
 
-	
+COPY_EXISTING "tranzi.cre" "override"
+	WRITE_BYTE 0x234 7 // 7th level
+	WRITE_ASCII SCRIPT_GENERAL ~SHOUTDLG~ #8
 	
 
 	
