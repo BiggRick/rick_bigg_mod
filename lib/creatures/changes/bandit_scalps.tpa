@@ -3,15 +3,26 @@
 
 IF
     Global("tb#scalpInit","LOCALS",0)
-    HasItem("MISC86", Myself)
+    OR (4)
+        HasItem("MISC86", Myself)
+        Race(Myself, HOBGOBLIN)
+        Race(Myself, GNOLL)
+        Race(Myself, OGRE)
 THEN RESPONSE #100
-    DestroyItem("MISC86")
     SetGlobal("tb#scalpInit","LOCALS",1)
+    DestroyItem("MISC86")
 END
 
 IF
     Global("tb#scalpInit","LOCALS",0)
-    General(Myself, HUMANOID)
+    OR (7)
+        Race(Myself, HUMAN)
+        Race(Myself, ELF)
+        Race(Myself, HALF_ELF)
+        Race(Myself, DWARF)
+        Race(Myself, HALFLING)
+        Race(Myself, GNOME)
+        Race(Myself, HALFORC)
     !HasItem("MISC86", Myself)
 THEN RESPONSE #100
     SetGlobal("tb#scalpInit","LOCALS",51)
@@ -30,8 +41,8 @@ IF
     Global("tb#scalpInit","LOCALS",2)
     Global("tb#vaiLeft","GLOBAL",1)
 THEN RESPONSE #100
-    DestroyItem("MISC86")
     SetGlobal("tb#scalpInit","LOCALS",3)
+    DestroyItem("MISC86")
 END
 
 IF
@@ -52,9 +63,8 @@ IF
         Global("tb#vaiLeft","GLOBAL",1)
         Global("tb#collectInnocentScalps","GLOBAL", 1)
 THEN RESPONSE #100
-    DestroyItem("tb#scalp")
-
     SetGlobal("tb#scalpInit","LOCALS",53)
+    DestroyItem("tb#scalp")
 END
 >>>>>>>>
 
@@ -72,6 +82,30 @@ COPY_EXISTING ~misc86.itm~ ~override/tb#scalp.itm~
 STATISTICS:
 
 Weight: 0~
+    WRITE_ASCII 0x3a ~TB#SCALP~ #8
+
+
+COPY_EXISTING ~vax.cre~ ~override~  // TBD - quest kagain
+            ~zal.cre~ ~override~
+            ~tranzi.cre~ ~override~
+            ~teven.cre~ ~override~
+            ~taugos.cre~ ~override~
+            ~raiken.cre~ ~override~
+            ~credus.cre~ ~override~
+            ~venkt.cre~ ~override~
+            ~COKSMTH.cre~ ~override~
+            ~IRONGU.cre~ ~override~
+            ~IRONGU01.cre~ ~override~
+            ~IRONGU02.cre~ ~override~
+            ~IRONGU03.cre~ ~override~
+            ~IRONGU03.cre~ ~override~
+            ~IRONGUAR.cre~ ~override~
+            ~IRON5.cre~ ~override~
+            ~HAREIS.cre~ ~override~
+            ~NATASH.cre~ ~override~
+            ~DAVAEO.cre~ ~override~
+ // to check - bg1 npc project in lion's way
+    ADD_CRE_ITEM ~MISC86~ #1 #0 #0 ~NONE~ ~INV~
 
 SILENT
 COPY_EXISTING_REGEXP GLOB ~^.*\.cre$~ ~override~
