@@ -16,10 +16,6 @@ INCLUDE ~rick_bigg_mod/lib/replace_items.tpa~
 
 INCLUDE ~rick_bigg_mod/lib/races.tpa~
 INCLUDE ~rick_bigg_mod/lib/styles.tpa~
-/*
-INCLUDE ~rick_bigg_mod/lib/item_rules.tpa~
-INCLUDE ~rick_bigg_mod/lib/weaponproficiencies.tpa~
-*/
 
 COMPILE ~rick_bigg_mod/compile~
 
@@ -30,3 +26,6 @@ END
 ACTION_BASH_FOR ~rick_bigg_mod/extend_top~ ~^.*\.baf$~ BEGIN
     EXTEND_TOP ~%BASH_FOR_RES%.bcs~ ~%BASH_FOR_FILESPEC%~
 END
+
+INCLUDE ~rick_bigg_mod/lib/item_rules.tpa~
+INCLUDE ~rick_bigg_mod/lib/weaponproficiencies.tpa~
