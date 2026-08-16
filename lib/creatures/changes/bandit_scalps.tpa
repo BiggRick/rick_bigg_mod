@@ -32,6 +32,7 @@ IF
     Global("tb#scalpInit","LOCALS",1)
     Global("metVai","GLOBAL",1)
     !Global("tb#vaiLeft","GLOBAL",1)
+    GlobalLT("chapter","GLOBAL",5)
 THEN RESPONSE #100
     CreateItem("MISC86", 1, 0, 0)
     SetGlobal("tb#scalpInit","LOCALS",2)
@@ -39,7 +40,9 @@ END
 
 IF
     Global("tb#scalpInit","LOCALS",2)
-    Global("tb#vaiLeft","GLOBAL",1)
+    OR(2)
+        Global("tb#vaiLeft","GLOBAL",1)
+        GlobalGT("chapter","GLOBAL",4)
 THEN RESPONSE #100
     SetGlobal("tb#scalpInit","LOCALS",3)
     DestroyItem("MISC86")
@@ -50,6 +53,7 @@ IF
     Global("metVai","GLOBAL",1)
     !Global("tb#vaiLeft","GLOBAL",1)
     !Global("tb#collectInnocentScalps","GLOBAL", 1)
+    GlobalLT("chapter","GLOBAL",5)
     !InPartySlot(Myself, 0)
     NOT_A_PG
 THEN RESPONSE #100
@@ -59,9 +63,10 @@ END
 
 IF
     Global("tb#scalpInit","LOCALS",52)
-    OR (2)
+    OR (3)
         Global("tb#vaiLeft","GLOBAL",1)
         Global("tb#collectInnocentScalps","GLOBAL", 1)
+        GlobalGT("chapter","GLOBAL",4)
 THEN RESPONSE #100
     SetGlobal("tb#scalpInit","LOCALS",53)
     DestroyItem("tb#scalp")
@@ -73,6 +78,10 @@ COPY - ~.../script-all-creatures.baf~ ~.../script-all-creatures.baf~
         REPLACE_TEXTUALLY ~NOT_A_PG~ ~NOT_A_PG !Name("%dv%",Myself)~
     END
     REPLACE_TEXTUALLY ~NOT_A_PG~ ~~
+
+
+COPY_EXISTING ~misc86.itm~ ~override~
+    WRITE_LONG 0x34 25
 
 COPY_EXISTING ~misc86.itm~ ~override/tb#scalp.itm~
     SAY NAME1 ~Humanoid scalp~
