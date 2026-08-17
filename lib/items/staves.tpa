@@ -241,7 +241,7 @@ Cast Call Lightning once per day
   Range: 80 ft.
   
 Combat abilities:
-– Thunderclap: 25% chance of stunning hit target for 2 rounds (Save vs. Wand negates)
+– Thunderclap: 25% chance of stunning hit target for 2 rounds (save vs. Rod negates)
 
 THAC0: +2
 Damage: 1d6+2 (crushing)
@@ -312,13 +312,13 @@ STATISTICS:
 Weight: 3"
 
 	SAY NAME2 "Rod of Terror +3"
-	SAY DESC "When activated, this rod may be used as a Staff +3. Any creature hit by the rod must make a Saving Throw vs. Wand or flee in terror, fearing the wielder as if he or she were a flesh-eating demon from the Abyss. There is a drawback to using this rod, however: Each time the rod is used, there is a 10% chance that the wielder is scared instead.
+	SAY DESC "When activated, this rod may be used as a Staff +3. Any creature hit by the rod must make a Saving Throw vs. Rod or flee in terror, fearing the wielder as if he or she were a flesh-eating demon from the Abyss. There is a drawback to using this rod, however: Each time the rod is used, there is a 10% chance that the wielder is scared instead.
 
 STATISTICS:
 
 Combat abilities:
-– 80% target must save vs. Wand or flee in terror for 4 rounds
-– 20% wielder must save vs. Wand or flee in terror for 4 rounds
+– 80% target must save vs. Rod or flee in terror for 4 rounds
+– 20% wielder must save vs. Rod or flee in terror for 4 rounds
 
 THAC0: +3
 Damage: 1d6+3 (crushing)
@@ -564,7 +564,7 @@ Equipped abilities:
 - Saving Throws vs Enchantment School: +2
 
 Charge abilities:
-– Domination (Save vs. Wand -4 negates) three times per day
+– Domination (save vs. Rod -4 negates) three times per day
   Range: 40 ft.
   Duration: 12 hours
   Area of Effect: 1 creature
@@ -792,10 +792,10 @@ Weight: 4"
 STATISTICS:
 
 Combat abilities: 
-– 10% chance opponent is knocked back and stunned (large creatures such as a dragons or giants will not be knocked back or stunned)
+– 15% chance opponent is knocked back and stunned (save vs. Rod at -4 negates)
 
 THAC0: +4
-Damage: 1d6+4, +8 crushing damage
+Damage: 1d6+4
 Damage Type: Crushing
 Speed Factor: 1
 Proficiency Type: Quarterstaff
@@ -835,14 +835,14 @@ Weight: 4"
 STATISTICS:
 
 Equipped abilities:
-- Critical Hit Chance: +5% with this weapon 
+- Critical hit chance: +5% with this weapon 
 
 Combat abilities:
 – Deals extra 10 points of piercing damage on a critical hit
-– 15% chance opponent is knocked back and stunned (large creatures such as a dragons or giants will not be knocked back or stunned)
+– 15% chance opponent is knocked back and stunned
 
 THAC0: +6
-Damage: 1d6+6, +12 crushing damage
+Damage: 1d6+6
 Damage Type: Crushing
 Speed Factor: 1
 Proficiency Type: Quarterstaff

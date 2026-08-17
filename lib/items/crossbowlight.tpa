@@ -1,0 +1,302 @@
+//LIGHT CROSSBOW +1 - 1500mo//
+COPY "rick_bigg_mod/items/XBOW05.itm" "override"
+	SAY NAME1 "Light Crossbow"
+	SAY UNIDENTIFIED_DESC "A crossbow is a bow mounted crosswise on a wooden or metal shaft, the latter called a tiller. The bow is usually made of ash or yew. The crossbow fires a quarrel (also called a bolt).
+
+STATISTICS:
+
+Damage: +2 (missile)
+Speed Factor: 5
+Proficiency Type: Crossbow
+Type: Two-handed
+Requires:
+ 8 Strength
+
+Weight: 7"
+
+SAY NAME2 "Light Crossbow +1"
+	SAY DESC "A crossbow is a bow mounted crosswise on a wooden or metal shaft, the latter called a tiller. The bow is usually made of ash or yew. The crossbow fires a quarrel (also called a bolt). This light crossbow has been enchanted.
+
+STATISTICS:
+
+THAC0: +1
+Damage: +3 (missile)
+Speed Factor: 4
+Proficiency Type: Crossbow
+Type: Two-handed
+Requires:
+ 8 Strength
+
+Weight: 6" 
+
+
+
+
+//LIGHT CROSSBOW +2 - 2500mo//
+COPY "rick_bigg_mod/items/XBOW09.itm" "override"
+	SAY NAME1 "Light Crossbow"
+	SAY UNIDENTIFIED_DESC "A crossbow is a bow mounted crosswise on a wooden or metal shaft, the latter called a tiller. The bow is usually made of ash or yew. The crossbow fires a quarrel (also called a bolt).
+
+STATISTICS:
+
+Damage: +2 (missile)
+Speed Factor: 5
+Proficiency Type: Crossbow
+Type: Two-handed
+Requires:
+ 8 Strength
+
+Weight: 7"
+
+SAY NAME2 "Light Crossbow +2"
+	SAY DESC "A crossbow is a bow mounted crosswise on a wooden or metal shaft, the latter called a tiller. The bow is usually made of ash or yew. The crossbow fires a quarrel (also called a bolt). This light crossbow has been enchanted.
+
+STATISTICS:
+
+THAC0: +2
+Damage: +4 (missile)
+Speed Factor: 3
+Proficiency Type: Crossbow
+Type: Two-handed
+Requires:
+ 8 Strength
+
+Weight: 5" 
+
+
+
+
+//THE ARMY SCYTHE +2 - 6000mo//
+COPY "rick_bigg_mod/items/XBOW06.itm" "override"
+	SAY NAME1 "Light Crossbow"
+	SAY UNIDENTIFIED_DESC "A crossbow is a bow mounted crosswise on a wooden or metal shaft, the latter called a tiller. The bow is usually made of ash or yew. The crossbow fires a quarrel (also called a bolt).
+
+STATISTICS:
+
+Damage: +2 (missile)
+Speed Factor: 5
+Proficiency Type: Crossbow
+Type: Two-handed
+Requires:
+ 8 Strength
+
+Weight: 7"
+
+SAY NAME2 "The Army Scythe +2"
+	SAY DESC "A short-lived outpost of humans in the Frozen Forest unearthed this weapon, and many others, from the ruins of an ancient settlement deep within that cold land. Never knowing the names of their extinct benefactors, the colonists used these "tools" to carve a large territory for themselves, though in the end it was for naught. Crushed by a superior number of hobgoblins, these unfortunate souls have joined the ancients in their anonymity.
+
+STATISTICS:
+
+Combat abilities:
+– 1/2 extra attack per round 
+
+THAC0: +2
+Damage: +4 (missile)
+Speed Factor: 3
+Proficiency Type: Crossbow
+Type: Two-handed
+Requires:
+ 8 Strength
+
+Weight: 5" 
+
+
+
+
+
+
+//NACARADAN'S CROSSBOW +2 - 4500mo//
+COPY "rick_bigg_mod/items/XBOW10.itm" "override"
+	SAY NAME1 "Light Crossbow"
+	SAY UNIDENTIFIED_DESC "A crossbow is a bow mounted crosswise on a wooden or metal shaft, the latter called a tiller. The bow is usually made of ash or yew. The crossbow fires a quarrel (also called a bolt).
+
+STATISTICS:
+
+Damage: +2 (missile)
+Speed Factor: 5
+Proficiency Type: Crossbow
+Type: Two-handed
+Requires:
+ 8 Strength
+
+Weight: 7"
+
+SAY NAME2 "Nacaradan's Crossbow +2"
+	SAY DESC "Bower Necaradan crafted this masterpiece almost thirty years ago, lacing strong enchantments within both the wood and the string. It is said he only fired it once, just to see if it performed as true as he had hoped. He was reportedly not disappointed, but a local nobleman sought the bow soon after, and it eventually fell into the hands of bandits.
+
+STATISTICS:
+
+THAC0: +2
+Damage: +6 (missile)
+Speed Factor: 3
+Proficiency Type: Crossbow
+Type: Two-handed
+Requires:
+ 8 Strength
+
+Weight: 5" 
+
+
+
+
+//CROSSBOW OF AFFLICTION +2 - 5500mo//
+COPY "rick_bigg_mod/items/XBOW13.itm" "override"
+	SAY NAME1 "Light Crossbow"
+	SAY UNIDENTIFIED_DESC "A crossbow is a bow mounted crosswise on a wooden or metal shaft, the latter called a tiller. The bow is usually made of ash or yew. The crossbow fires a quarrel (also called a bolt).
+
+STATISTICS:
+
+Damage: +2 (missile)
+Speed Factor: 5
+Proficiency Type: Crossbow
+Type: Two-handed
+Requires:
+ 8 Strength
+
+Weight: 7"
+
+SAY NAME2 "Crossbow of Affliction +2"
+	SAY DESC "A devastating weapon, this crossbow unfortunately draws its power directly from the wielder. Some bowmen have used it regardless, and many to great effect, but the drawbacks must be carefully considered. Its most famous owner, Guil de Lyons, made good use of it fighting bandits in remote areas of Faerûn, but he ultimately fell when he lacked the strength to defend against a rare assailant that got within striking distance.
+
+STATISTICS:
+
+Equipped abilities:
+- Strength: -2
+
+Combat abilities:
+- Target must save vs. Wand (at -2) or suffer 1 point penalty to Strength for 2 rounds
+
+THAC0: +2
+Damage: +4 (missile)
+Speed Factor: 3
+Proficiency Type: Crossbow
+Type: Two-handed
+Requires:
+ 8 Strength
+
+Weight: 5" 
+
+
+
+
+
+//ASTRAL CROSSBOW +3 - no evil - 11000mo//
+COPY "rick_bigg_mod/items/BDXBOW01.itm" "override"
+	SAY NAME1 "Light Crossbow"
+	SAY UNIDENTIFIED_DESC "A crossbow is a bow mounted crosswise on a wooden or metal shaft, the latter called a tiller. The bow is usually made of ash or yew. The crossbow fires a quarrel (also called a bolt).
+
+STATISTICS:
+
+Damage: +2 (missile)
+Speed Factor: 5
+Proficiency Type: Crossbow
+Type: Two-handed
+Requires:
+ 8 Strength
+
+Weight: 7"
+
+SAY NAME2 "Astral Crossbow +3"
+	SAY DESC "Legends speak of a deva who crafted this weapon out of bits of soul from astral travelers, willingly given to the deva to forge a weapon of good. The deva passed the crossbow down to a champion of good on the mortal Plane, who wielded it for many years before falling under a glabrezu's claws.
+
+STATISTICS:
+
+Equipped abilities:
+- Protection from evil
+
+Combat abilities:
+- 20% chance that Evil targets must save vs. Wand (at -2) or be held for 5 round
+
+THAC0: +2
+Damage: +4, +3 extra damage vs. Evil
+Damage Type: missile
+Speed Factor: 3
+Proficiency Type: Crossbow
+Type: Two-handed
+Requires:
+ 8 Strength
+
+Weight: 5" 
+
+
+
+
+
+
+//PYREHEART REPEATER +2 - 5000mo//
+COPY "rick_bigg_mod/items/XBOW15.itm" "override"
+	SAY NAME1 "Light Crossbow"
+	SAY UNIDENTIFIED_DESC "A crossbow is a bow mounted crosswise on a wooden or metal shaft, the latter called a tiller. The bow is usually made of ash or yew. The crossbow fires a quarrel (also called a bolt).
+
+STATISTICS:
+
+Damage: +2 (missile)
+Speed Factor: 5
+Proficiency Type: Crossbow
+Type: Two-handed
+Requires:
+ 8 Strength
+
+Weight: 7"
+
+SAY NAME2 "Pyreheart Repeater +2"
+	SAY DESC "Commissioned by the eccentric Red Wizard of Thay, Justinian the Vain, this weapon was created to solve his complete lack of combat skills. Justinian wanted a weapon that would guarantee total destruction with every shot. To achieve this, an enchanter bound the crossbow to the Elemental Plane of Fire. This binding ensures that any physical bolt loaded into the mechanism is instantly enshrouded in hungry, mystical flames. Justinian was later killed by his own bodyguard, who grew tired of the wizard's constant boasting. The weapon has changed hands many times since, highly prized by marksmen who wish to turn ordinary ammunition into deadly searing missiles.
+
+STATISTICS:
+
+THAC0: +2
+Damage: +4, +2 fire damage
+Damage type: Missile
+Speed Factor: 3
+Proficiency Type: Crossbow
+Type: Two-handed
+Requires:
+ 8 Strength
+
+Weight: 5" 
+
+
+
+
+
+//PYREHEART REPEATER +3 - 13000mo//
+COPY "rick_bigg_mod/items/XBOW16.itm" "override"
+	SAY NAME1 "Light Crossbow"
+	SAY UNIDENTIFIED_DESC "A crossbow is a bow mounted crosswise on a wooden or metal shaft, the latter called a tiller. The bow is usually made of ash or yew. The crossbow fires a quarrel (also called a bolt).
+
+STATISTICS:
+
+Damage: +2 (missile)
+Speed Factor: 5
+Proficiency Type: Crossbow
+Type: Two-handed
+Requires:
+ 8 Strength
+
+Weight: 7"
+
+SAY NAME2 "Pyreheart Repeater +3"
+	SAY DESC "Commissioned by the eccentric Red Wizard of Thay, Justinian the Vain, this weapon was created to solve his complete lack of combat skills. Justinian wanted a weapon that would guarantee total destruction with every shot. To achieve this, an enchanter bound the crossbow to the Elemental Plane of Fire. This binding ensures that any physical bolt loaded into the mechanism is instantly enshrouded in hungry, mystical flames. Justinian was later killed by his own bodyguard, who grew tired of the wizard's constant boasting. The weapon has changed hands many times since, highly prized by marksmen who wish to turn ordinary ammunition into deadly searing missiles.
+	
+	The magical bowstring of Gond makes the Pyreheart more accurate and powerful, unlocking its divine potential to call down a devastating Flame Strike.
+
+STATISTICS:
+
+Equipped abilities:
+– 1/2 extra attack per round
+
+Combat abilities:
+– 15% chance per hit of casting Flame Strike (at level 15) on the target
+
+THAC0: +3
+Damage: +5, +2 fire damage
+Damage type: Missile
+Speed Factor: 2
+Proficiency Type: Crossbow
+Type: Two-handed
+Requires:
+ 8 Strength
+
+Weight: 5" 
+
+

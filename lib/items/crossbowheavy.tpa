@@ -1,0 +1,215 @@
+//HEAVY CROSSBOW +1 - 2000mo//
+COPY "rick_bigg_mod/items/XBOW02.itm" "override"
+	SAY NAME1 "Heavy Crossbow"
+	SAY UNIDENTIFIED_DESC "A crossbow is a bow mounted crosswise on a wooden or metal shaft, the latter called a tiller. The bow is usually made of ash or yew. The crossbow fires a quarrel (also called a bolt). 
+
+STATISTICS:
+
+Damage: +4 (missile)
+Speed Factor: 9
+Proficiency Type: Crossbow
+Type: Two-handed
+Requires:
+ 12 Strength
+
+Weight: 14"
+
+SAY NAME2 "Heavy Crossbow +1"
+	SAY DESC "A crossbow is a bow mounted crosswise on a wooden or metal shaft, the latter called a tiller. The bow is usually made of ash or yew. The crossbow fires a quarrel (also called a bolt). This heavy crossbow has been enchanted.
+
+STATISTICS:
+
+THAC0: +1
+Damage: +5 (missile)
+Speed Factor: 8
+Proficiency Type: Crossbow
+Type: Two-handed
+Requires:
+ 12 Strength
+
+Weight: 12" 
+
+
+
+
+
+
+//HEAVY CROSSBOW +2 - 3000mo//
+COPY "rick_bigg_mod/items/XBOW07.itm" "override"
+	SAY NAME1 "Heavy Crossbow"
+	SAY UNIDENTIFIED_DESC "A crossbow is a bow mounted crosswise on a wooden or metal shaft, the latter called a tiller. The bow is usually made of ash or yew. The crossbow fires a quarrel (also called a bolt). 
+
+STATISTICS:
+
+Damage: +4 (missile)
+Speed Factor: 9
+Proficiency Type: Crossbow
+Type: Two-handed
+Requires:
+ 12 Strength
+
+Weight: 14"
+
+SAY NAME2 "Heavy Crossbow +2"
+	SAY DESC "A crossbow is a bow mounted crosswise on a wooden or metal shaft, the latter called a tiller. The bow is usually made of ash or yew. The crossbow fires a quarrel (also called a bolt). This heavy crossbow has been enchanted.
+
+STATISTICS:
+
+THAC0: +2
+Damage: +6 (missile)
+Speed Factor: 7
+Proficiency Type: Crossbow
+Type: Two-handed
+Requires:
+ 12 Strength
+
+Weight: 11" 
+
+
+
+
+//THE GUIDE +2 - 6000mo//
+COPY "rick_bigg_mod/items/XBOW03.itm" "override"
+	SAY NAME1 "Heavy Crossbow"
+	SAY UNIDENTIFIED_DESC "A crossbow is a bow mounted crosswise on a wooden or metal shaft, the latter called a tiller. The bow is usually made of ash or yew. The crossbow fires a quarrel (also called a bolt). 
+
+STATISTICS:
+
+Damage: +4 (missile)
+Speed Factor: 9
+Proficiency Type: Crossbow
+Type: Two-handed
+Requires:
+ 12 Strength
+
+Weight: 14"
+
+SAY NAME2 "The Guide +2"
+	SAY DESC "A favored siege weapon of King Shastir Longeve, crossbows of this type were designed for the systematic removal of defensive forces thought safe behind the battlements of castles. Scant few of these weapons survive to this day, mainly due to the eventual annihilation of the king's forces by a coalition of subjugated lands.
+
+STATISTICS:
+
+THAC0: +5
+Damage: +6 (missile)
+Speed Factor: 7
+Proficiency Type: Crossbow
+Type: Two-handed
+Requires:
+ 12 Strength
+
+Weight: 11" 
+
+
+
+
+//HEAVY CROSSBOW OF DOOM +2 - 7000mo//
+COPY "rick_bigg_mod/items/BDXBOW02.itm" "override"
+	SAY NAME1 "Heavy Crossbow"
+	SAY UNIDENTIFIED_DESC "A crossbow is a bow mounted crosswise on a wooden or metal shaft, the latter called a tiller. The bow is usually made of ash or yew. The crossbow fires a quarrel (also called a bolt). 
+
+STATISTICS:
+
+Damage: +4 (missile)
+Speed Factor: 9
+Proficiency Type: Crossbow
+Type: Two-handed
+Requires:
+ 12 Strength
+
+Weight: 14"
+
+SAY NAME2 "Heavy Crossbow of Doom +2"
+	SAY DESC "The Heavy Crossbow of Doom was forged by duergar smiths in the deep Underdark, infused with necrotic energy. Commissioned by the vengeful drow priestess Zilvra Fey-Branche to execute traitors from a distance, the weapon whispers faintly when loaded. Upon impact, its bolts unleash a suffocating aura of despair, sapping the victim's will to fight. After the bloody fall of her house, the crossbow remained lost in the depths, highly prized by Underdark assassins for its ability to break a target's spirit before the final blow.
+
+STATISTICS:
+
+Combat abilities:
+– Cast Doom on the target (Save vs. Wand at -4 negates)
+
+THAC0: +2
+Damage: +6
+Damage type: Missile
+Speed Factor: 7
+Proficiency Type: Crossbow
+Type: Two-handed
+Requires:
+ 12 Strength
+
+Weight: 11" 
+
+
+
+
+//VITRIOL CROSSBOW +3 - 9000mo//
+COPY "rick_bigg_mod/items/XBOW14.itm" "override"
+	SAY NAME1 "Heavy Crossbow"
+	SAY UNIDENTIFIED_DESC "A crossbow is a bow mounted crosswise on a wooden or metal shaft, the latter called a tiller. The bow is usually made of ash or yew. The crossbow fires a quarrel (also called a bolt). 
+
+STATISTICS:
+
+Damage: +4 (missile)
+Speed Factor: 9
+Proficiency Type: Crossbow
+Type: Two-handed
+Requires:
+ 12 Strength
+
+Weight: 14"
+
+SAY NAME2 "Vitriol Crossbow +3"
+	SAY DESC "A marvel of engineering, this crossbow coats bolts in a highly corrosive, acidic compound and releases them with deadly precision. It is enchanted as well, likely to protect the intricate mechanisms from being dissolved by its own lethal payload. It bears the hallmarks of the inventor's god, Gond.
+
+STATISTICS:
+
+THAC0: +3
+Damage: +7, +3 acid damage
+Damage type: Missile
+Speed Factor: 6
+Proficiency Type: Crossbow
+Type: Two-handed
+Requires:
+ 12 Strength
+
+Weight: 10" 
+
+
+
+
+
+//TITAN'S DRAW +3 - 11000mo//
+COPY "rick_bigg_mod/items/XBOW08.itm" "override"
+	SAY NAME1 "Heavy Crossbow"
+	SAY UNIDENTIFIED_DESC "A crossbow is a bow mounted crosswise on a wooden or metal shaft, the latter called a tiller. The bow is usually made of ash or yew. The crossbow fires a quarrel (also called a bolt). 
+
+STATISTICS:
+
+Damage: +4 (missile)
+Speed Factor: 9
+Proficiency Type: Crossbow
+Type: Two-handed
+Requires:
+ 12 Strength
+
+Weight: 14"
+
+SAY NAME2 "Titan's Draw +3"
+	SAY DESC "Carved from the calcified rib bone of a prehistoric behemoth, this monstrous weapon utilizes the impossibly thick tresses of a frost giant matron for its bowstring. The structural tension is so immense that lesser warriors cannot even budge the loading crank, requiring the muscle of a titan just to chamber a bolt. When fired, the kinetic force is terrifying; the projectile strikes with the impact of a falling meteor, shattering bones and hurling grown men backward, leaving them utterly dazed on the battlefield.
+
+STATISTICS:
+
+Equipped abilities:
+- Critical hit chance: +5% with this weapon 
+
+Combat abilities:
+- On a Critical hit opponent is knocked back and stunned for one round (Save vs. Wand at -4 negates)
+
+THAC0: +3
+Damage: +7, +4 crushing damage
+Damage type: Missile
+Speed Factor: 6
+Proficiency Type: Crossbow
+Type: Two-handed
+Requires:
+ 20 Strength
+
+Weight: 28" 

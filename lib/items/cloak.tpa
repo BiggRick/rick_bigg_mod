@@ -1,4 +1,4 @@
-//CLOAK OF PROTECTION +1 - valore 3500mo//
+//CLOAK OF PROTECTION +1 - valore 3000mo//
 COPY "rick_bigg_mod/items/CLCK01.itm" "override"
 	SAY NAME1 "Cloak"
 	SAY UNIDENTIFIED_DESC "The cloak can be made in every possible shape with just about every type of fabric. The most common forms are a circular piece of fabric with a hole in the center for the head, and fabric draped from neck, connected by a chain, brooch, cord, or pins.
@@ -43,7 +43,7 @@ Weight: 3"
 
 
 
-//CLOAK OF PROTECTION +3 - valore 14000mo//
+//CLOAK OF PROTECTION +3 - valore 15000mo//
 COPY "rick_bigg_mod/items/CLCK31.itm" "override"
 	SAY NAME1 "Cloak"
 	SAY UNIDENTIFIED_DESC "The cloak can be made in every possible shape with just about every type of fabric. The most common forms are a circular piece of fabric with a hole in the center for the head, and fabric draped from neck, connected by a chain, brooch, cord, or pins.

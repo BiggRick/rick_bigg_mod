@@ -1,0 +1,236 @@
+//SLING +1 - 750mo//
+COPY "rick_bigg_mod/items/SLNG01.itm" "override"
+	SAY NAME1 "Sling"
+	SAY UNIDENTIFIED_DESC "Slings have existed since the beginning of recorded history. The basic sling consists of a leather or fabric strap with a pouch for holding the missile. The weapon is held by both ends of the strap and twirled around the wielder's head. When top speed is attained, the missile is launched by releasing one of the strap's ends. 
+
+STATISTICS:
+
+Speed Factor: 6
+Proficiency Type: Sling
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 0"
+
+SAY NAME2 "Sling +1"
+	SAY DESC "Slings have existed since the beginning of recorded history. The basic sling consists of a leather or fabric strap with a pouch for holding the missile, however this one has been imbued with a magical enchantment. The weapon is held by both ends of the strap and twirled around the wielder's head. When top speed is attained, the missile is launched by releasing one of the strap's ends.
+
+STATISTICS:
+
+THAC0: +1
+Damage: +1 (missile)
+Speed Factor: 5
+Proficiency Type: Sling
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 0" 
+
+
+
+
+
+
+//SLING +2 - 1500mo//
+COPY "rick_bigg_mod/items/SLNG04.itm" "override"
+	SAY NAME1 "Sling"
+	SAY UNIDENTIFIED_DESC "Slings have existed since the beginning of recorded history. The basic sling consists of a leather or fabric strap with a pouch for holding the missile. The weapon is held by both ends of the strap and twirled around the wielder's head. When top speed is attained, the missile is launched by releasing one of the strap's ends. 
+
+STATISTICS:
+
+Speed Factor: 6
+Proficiency Type: Sling
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 0"
+
+SAY NAME2 "Sling +2"
+	SAY DESC "Slings have existed since the beginning of recorded history. The basic sling consists of a leather or fabric strap with a pouch for holding the missile, however this one has been imbued with a magical enchantment. The weapon is held by both ends of the strap and twirled around the wielder's head. When top speed is attained, the missile is launched by releasing one of the strap's ends.
+
+STATISTICS:
+
+THAC0: +2
+Damage: +2 (missile)
+Speed Factor: 4
+Proficiency Type: Sling
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 0" 
+
+
+
+
+//SLING OF SEEKING +2 - 3500mo//
+COPY "rick_bigg_mod/items/SLNG07.itm" "override"
+	SAY NAME1 "Sling"
+	SAY UNIDENTIFIED_DESC "Slings have existed since the beginning of recorded history. The basic sling consists of a leather or fabric strap with a pouch for holding the missile. The weapon is held by both ends of the strap and twirled around the wielder's head. When top speed is attained, the missile is launched by releasing one of the strap's ends. 
+
+STATISTICS:
+
+Speed Factor: 6
+Proficiency Type: Sling
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 0"
+
+SAY NAME2 "Sling of Seeking +2"
+	SAY DESC "This bizarre weapon was blessed by an eccentric gnome mage who was deeply terrified of aggressive squirrels. The enchanted leather pouch possesses a chaotic mind of its own, aggressively pulling the wielder's arm toward any target it deems offensive. It actively corrects the bullet's trajectory mid-air with an unnatural, twitchy precision, obsessively seeking out the most embarrassing gaps in an enemy's armor.
+STATISTICS:
+
+THAC0: +4
+Damage: +2 (missile)
+Speed Factor: 4
+Proficiency Type: Sling
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 0" 
+
+
+
+
+
+//ARLA'S DRAGONBANE +2 - 4500mo//
+COPY "rick_bigg_mod/items/SLNG05.itm" "override"
+	SAY NAME1 "Sling"
+	SAY UNIDENTIFIED_DESC "Slings have existed since the beginning of recorded history. The basic sling consists of a leather or fabric strap with a pouch for holding the missile. The weapon is held by both ends of the strap and twirled around the wielder's head. When top speed is attained, the missile is launched by releasing one of the strap's ends. 
+
+STATISTICS:
+
+Speed Factor: 6
+Proficiency Type: Sling
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 0"
+
+SAY NAME2 "Arla's Dragonbane +2"
+	SAY DESC "None know better than halflings the value of a well-placed stone when confronting a larger foe. This particular weapon was the property of a young woman named Arla Surestep, one of the few small folk that leave the hearth to seek adventure. Legend speaks of the diminutive Arla using this sling to place a well-sharpened pebble through the skull of a green dragon in mid-flight, though the same tale in another tavern places the stone squarely in the creature's hindquarters for more humorous than lethal effect. It would seem that halflings prefer entertainment over accuracy when it comes to their history.
+	
+STATISTICS:
+
+THAC0: +2, +6 extra damage vs. dragons
+Damage: +2 (missile)
+Speed Factor: 4
+Proficiency Type: Sling
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 0" 
+
+
+
+
+
+//SLING OF ARVOREEN +3 - 6500mo//
+COPY "rick_bigg_mod/items/SLNG06.itm" "override"
+	SAY NAME1 "Sling"
+	SAY UNIDENTIFIED_DESC "Slings have existed since the beginning of recorded history. The basic sling consists of a leather or fabric strap with a pouch for holding the missile. The weapon is held by both ends of the strap and twirled around the wielder's head. When top speed is attained, the missile is launched by releasing one of the strap's ends. 
+
+STATISTICS:
+
+Speed Factor: 6
+Proficiency Type: Sling
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 0"
+
+SAY NAME2 "Sling of Arvoreen +3"
+	SAY DESC "This sling is blessed by the halfling god Arvoreen. The weapon was granted to the heroic Tuckerby Lettleworp after the Battle of Moor Road, in which an invading army of yuan-ti were slain by Lettleworp's forces, saving his halfling village. The sling has the ability to rend the senses of the wielder's enemies with a wall of sound said to be the voice of the god himself.
+	
+STATISTICS:
+
+Equipped abilities:
+– 1/2 extra attack per round
+
+THAC0: +3
+Damage: +3 (missile)
+Speed Factor: 1
+Proficiency Type: Sling
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 0" 
+
+
+
+
+
+//RAINBOW SLING +3 - 9000mo//
+COPY "rick_bigg_mod/items/OHNSLNG1.itm" "override"
+	SAY NAME1 "Sling"
+	SAY UNIDENTIFIED_DESC "Slings have existed since the beginning of recorded history. The basic sling consists of a leather or fabric strap with a pouch for holding the missile. The weapon is held by both ends of the strap and twirled around the wielder's head. When top speed is attained, the missile is launched by releasing one of the strap's ends. 
+
+STATISTICS:
+
+Speed Factor: 6
+Proficiency Type: Sling
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 0"
+
+SAY NAME2 "Rainbow Sling +3"
+	SAY DESC "Crafted in ancient Cormanthyr, this elegant weapon is woven from enchanted starlight and rare Moonwood. During the tragic fall of Myth Drannor, its elven bearer sacrificed his life force to infuse the sling with elemental power, ensuring it would never serve evil. When fired, the sling transforms ordinary bullets into streaks of iridescent light. It strikes enemies with physical force combined with a chaotic, multi-colored explosion of fire, frost, lightning, acid, and venom.
+	
+STATISTICS:
+
+THAC0: +3 
+Damage: +3, +1 fire, cold, electricity, acid and poison damage
+Damage Type: Missile
+Speed Factor: 3
+Proficiency Type: Sling
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 0" 
+
+
+
+
+//RAINBOW SLING +3 - 9000mo//
+COPY "rick_bigg_mod/items/OHNSLNG1.itm" "override"
+	SAY NAME1 "Sling"
+	SAY UNIDENTIFIED_DESC "Slings have existed since the beginning of recorded history. The basic sling consists of a leather or fabric strap with a pouch for holding the missile. The weapon is held by both ends of the strap and twirled around the wielder's head. When top speed is attained, the missile is launched by releasing one of the strap's ends. 
+
+STATISTICS:
+
+Speed Factor: 6
+Proficiency Type: Sling
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 0"
+
+SAY NAME2 "Rainbow Sling +3"
+	SAY DESC "Crafted in ancient Cormanthyr, this elegant weapon is woven from enchanted starlight and rare Moonwood. During the tragic fall of Myth Drannor, its elven bearer sacrificed his life force to infuse the sling with elemental power, ensuring it would never serve evil. When fired, the sling transforms ordinary bullets into streaks of iridescent light. It strikes enemies with physical force combined with a chaotic, multi-colored explosion of fire, frost, lightning, acid, and venom.
+	
+STATISTICS:
+
+THAC0: +3 
+Damage: +3, +1 fire, cold, electricity, acid and poison damage
+Damage Type: Missile
+Speed Factor: 3
+Proficiency Type: Sling
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 0" 

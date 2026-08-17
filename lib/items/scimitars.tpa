@@ -282,7 +282,7 @@ Weight: 4"
 STATISTICS:
 
 Combat abilities:
-– Each hit makes the target receive a cumulative 1 point penalty to their THAC0 for 2 turns
+– 33% chance target receive a cumulative 1 point penalty to their THAC0 for 2 turns
 
 THAC0: +4
 Damage: 2d4+4 (slashing)

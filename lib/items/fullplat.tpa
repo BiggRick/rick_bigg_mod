@@ -98,38 +98,6 @@ Weight: 50
 
 
 
-//PRIDE OF THE LEGION +2 - 11000mo//
-COPY "rick_bigg_mod/items/PLAT15.itm" "override"
-	SAY NAME1 "Full Plate Mail"
-	SAY UNIDENTIFIED_DESC "Full plate armor is the best armor a warrior can buy, both in appearance and protection. The perfectly fitted, interlocking plates are specially angled to deflect arrows and blows, and the entire suit is carefully adorned with rich engraving and embossed detail.
-
-STATISTICS:
-
-Armor Class: 1 (-2 vs. slashing, -1 vs. piercing and missile)
-Speed Factor: -3
-Requires:
- 15 Strength
-
-Weight: 70"
-
-	SAY NAME2 "Pride of the Legion +2"
-	SAY DESC "Captain Fallorain, leader of Calimshan's 12th cavalry brigade, wore this enchanted armor for the last time during the Battle of the Spider Swamp. There he lost his life and army trying to rid an unrecorded evil from the area. 
-
-Equipped abilities:
-– Protection from Evil
-
-STATISTICS:
-
-Armor Class: -1 (-4 vs. slashing, -3 vs. piercing and missile)
-Speed Factor: -3
-Requires:
- 15 Strength
-
-Weight: 45
-"
-
-
-
 
 
 //ARMOR OF THE HEART +3 - no evil - 14000mo//
@@ -224,7 +192,7 @@ STATISTICS:
 Equipped abilities:
 – Fire Resistance: +50%
 
-Armor Class: -3 (-6 vs. slashing, -4 vs. piercing, -6 vs. missile)
+Armor Class: -2 (-5 vs. slashing, -3 vs. piercing, -5 vs. missile)
 Speed Factor: -3
 Requires:
  15 Strength
@@ -251,14 +219,14 @@ Requires:
 Weight: 70"
 
 	SAY NAME2 "Blue Dragon Scale"
-	SAY DESC "The light but durable scales of the blue dragon provide excellent protection against weapons and all forms of electricity.
+	SAY DESC "This exceptional armor is meticulously fashioned from the supple yet resilient scales of a blue dragon.The magical nature of the hide provides superb protection against physical strikes while naturally absorbing severe electrical shocks.Its unique draconic properties ensure that the wearer remains safe from both sharpened steel and the deadliest lightning bolts.
 	
 STATISTICS:
 
 Equipped abilities:
 – Electricity Resistance: +60%
 
-Armor Class: -4 (-7 vs. slashing, -5 vs. piercing, -7 vs. missile)
+Armor Class: -3 (-6 vs. slashing, -4 vs. piercing, -6 vs. missile)
 Speed Factor: -3
 Requires:
  15 Strength

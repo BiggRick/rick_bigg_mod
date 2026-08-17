@@ -72,5 +72,25 @@ END
 
 
 
+LAUNCH_ACTION_FUNCTION "duplicate_spell_change_save"
+	INT_VAR
+		save_bonus = 0 - 4
+	STR_VAR
+		source_file = "SPPR113"
+		destination_file = "BDXBOW02"
+		destination_save = "WAND" // DEATH, POLYMORPH, BREATH, WAND, SPELL
+END
+
+
+
+LAUNCH_ACTION_FUNCTION "duplicate_spell_change_save"
+	INT_VAR
+		save_bonus = 0 - 4
+	STR_VAR
+		source_file = "SPPR503"
+		destination_file = "RING27"
+		destination_save = "WAND" // DEATH, POLYMORPH, BREATH, WAND, SPELL
+END
+
 
 

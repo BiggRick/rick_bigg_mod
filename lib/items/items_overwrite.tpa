@@ -2,26 +2,7 @@ INCLUDE ~rick_bigg_mod/lib/change_itm_icon.tpa~
 
 
 
-//SLINGS//
-COPY_EXISTING 
-	"SLNG04.ITM" "override/SLNG04.ITM"
-	"SLNG04.ITM" "override/SLNG10.ITM"
-	"SLNG04.ITM" "override/SLNG11.ITM"
-WRITE_ASCII 0x3a "ISLING04" #8
-LAUNCH_PATCH_FUNCTION change_itm_icon
-	INT_VAR type = 4
-	STR_VAR icon_name = "ISLING04"
-END
 
-COPY_EXISTING "SLNG04.ITM" "override/SLNG11.ITM"
-
-COPY_EXISTING 
-	"SLNG05.ITM" "override/SLNG05.ITM"
-WRITE_ASCII 0x3a "ISLING10" #8	
-LAUNCH_PATCH_FUNCTION change_itm_icon
-	INT_VAR type = 4
-	STR_VAR icon_name = "ISLING10"
-END
 
 
 

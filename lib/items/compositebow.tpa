@@ -1,1 +1,192 @@
-// gfhn
+//COMPOSITE LONGBOW +1 - valore 2500mo //
+COPY "rick_bigg_mod/items/BOW02.itm" "override"
+	SAY NAME1 "Composite Longbow"
+	SAY UNIDENTIFIED_DESC "Composite bows are longbows or shortbows whose staves are made from more than one type of material. This gives greater flexibility and makes arrows fired from this bow deliver more damage. These were developed after the normal longbow.
+
+STATISTICS:
+
+THAC0: +1
+Damage: +1 (missile)
+Speed Factor: 7
+Proficiency Type: Longbow
+Type: Two-handed
+Requires:
+ 15 Strength
+
+Weight: 10"
+
+	SAY NAME2 "Composite Longbow +1"
+	SAY DESC "Composite bows are made from layered materials for greater flexibility and power. This particular bow has been subtly infused with arcane enchantments. Magic woven into the staff generates a localized slipstream upon release, guiding the arrow with supernatural precision and driving it deeper into the target. While it still requires a practiced, strong arm to draw, the enchantment ensures deadly accuracy and devastating impact.
+
+STATISTICS:
+
+THAC0: +2
+Damage: +2 (missile)
+Speed Factor: 6
+Proficiency Type: Longbow
+Type: Two-handed
+Requires:
+ 15 Strength
+
+Weight: 9"
+
+
+
+
+//COMPOSITE LONGBOW +2 - valore 3500mo //
+COPY "rick_bigg_mod/items/BOW16.itm" "override"
+	SAY NAME1 "Composite Longbow"
+	SAY UNIDENTIFIED_DESC "Composite bows are longbows or shortbows whose staves are made from more than one type of material. This gives greater flexibility and makes arrows fired from this bow deliver more damage. These were developed after the normal longbow.
+
+STATISTICS:
+
+THAC0: +1
+Damage: +1 (missile)
+Speed Factor: 7
+Proficiency Type: Longbow
+Type: Two-handed
+Requires:
+ 15 Strength
+
+Weight: 10"
+
+	SAY NAME2 "Composite Longbow +2"
+	SAY DESC "Composite bows are made from layered materials for superior flexibility and power. This weapon has been deeply infused with potent arcane enchantments. The magic humming within the staff unleashes a violent slipstream upon release, forcefully driving the arrow with supernatural precision and piercing the thickest armor. While it still requires a practiced, strong arm to bend, the powerful enchantment ensures flawless accuracy and devastating impact.
+
+STATISTICS:
+
+THAC0: +3
+Damage: +3 (missile)
+Speed Factor: 5
+Proficiency Type: Longbow
+Type: Two-handed
+Requires:
+ 15 Strength
+
+Weight: 8"
+
+
+
+
+
+
+
+
+//HEARTSEEKER +2 - valore 5000mo //
+COPY "rick_bigg_mod/items/BOW10.itm" "override"
+	SAY NAME1 "Composite Longbow"
+	SAY UNIDENTIFIED_DESC "Composite bows are longbows or shortbows whose staves are made from more than one type of material. This gives greater flexibility and makes arrows fired from this bow deliver more damage. These were developed after the normal longbow.
+
+STATISTICS:
+
+THAC0: +1
+Damage: +1 (missile)
+Speed Factor: 7
+Proficiency Type: Longbow
+Type: Two-handed
+Requires:
+ 15 Strength
+
+Weight: 10"
+
+	SAY NAME2 "Heartseeker +2"
+	SAY DESC "Legends say that craftsman Pinn O'Reffen fashioned this bow from the heart of a treant, though how he came to possess such material is unknown. He certainly did not anticipate the enchantment within, magic that makes the archer's aim almost infallible for a short period every day. Pinn claimed his skill was responsible, but it is more likely that some aspect of the soul of the treant is still within the wood. 
+
+STATISTICS:
+
+Charge abilities:
+– Aim: +7 to hit once per day
+  Duration: 18 seconds
+
+THAC0: +3
+Damage: +3 (missile)
+Speed Factor: 5
+Proficiency Type: Longbow
+Type: Two-handed
+Requires:
+ 15 Strength
+
+Weight: 8"
+
+
+
+
+
+
+
+//ELVEN COURT BOW +3 - valore 13000mo //
+COPY "rick_bigg_mod/items/BOW12.itm" "override"
+	SAY NAME1 "Composite Longbow"
+	SAY UNIDENTIFIED_DESC "Composite bows are longbows or shortbows whose staves are made from more than one type of material. This gives greater flexibility and makes arrows fired from this bow deliver more damage. These were developed after the normal longbow.
+
+STATISTICS:
+
+THAC0: +1
+Damage: +1 (missile)
+Speed Factor: 7
+Proficiency Type: Longbow
+Type: Two-handed
+Requires:
+ 15 Strength
+
+Weight: 10"
+
+	SAY NAME2 "Elven Court Bow +3"
+	SAY DESC "This yew bow is more a work of art than a weapon of war: Fine engravings dance over the polished wood, and the bowstring gleams of gold, almost singing when drawn. This was a ceremonial bow in the Elven Court for a thousand years, though that is scarcely a single lifetime in elven terms. Every 50 years or so it was granted to someone who had performed a great service, the recipient eventually choosing who would hold it next. Two centuries ago, a human, Yin Pon, rescued an elven prince and was gifted the bow, which he carried with him to Baldur's Gate, where it was subsequently lost.
+
+STATISTICS:
+
+Combat abilities:
+- Protection from Monsters
+
+THAC0: +8
+Damage: +4, +3 extra vs. Monsters
+Speed Factor: 4
+Proficiency Type: Longbow
+Type: Two-handed
+Requires:
+ 15 Strength
+
+Weight: 7"
+
+
+
+
+
+
+//BOW OF THE BANSHEE +3 - no good - valore 14000mo //
+COPY "rick_bigg_mod/items/BDBOW04.itm" "override"
+	SAY NAME1 "Composite Longbow"
+	SAY UNIDENTIFIED_DESC "Composite bows are longbows or shortbows whose staves are made from more than one type of material. This gives greater flexibility and makes arrows fired from this bow deliver more damage. These were developed after the normal longbow.
+
+STATISTICS:
+
+THAC0: +1
+Damage: +1 (missile)
+Speed Factor: 7
+Proficiency Type: Longbow
+Type: Two-handed
+Requires:
+ 15 Strength
+
+Weight: 10"
+
+	SAY NAME2 "Bow of the Banshee +3"
+	SAY DESC "The bowstring of this horrific weapon is woven from the vocal cords of tortured maidens, ensuring that every arrow loosed mimics the agonizing shriek of a banshee. Crafted in the Abyss, this longbow was famously wielded by the Sisters of the Shrouded Hunt—an order of elven rangers completely possessed by howling demons. They used the weapon to slaughter innocent settlements, feeding the fiends with the raw terror of their victims. The defiled wood continuously weeps a black, toxic sap, and the pure malice bound within it will instantly melt the flesh of any good-aligned archer who dares to touch it.
+
+STATISTICS:
+
+Combat abilities:
+- 10% chance to force target to save vs. Wand or die as if hit by Wail of the Banshee
+- 20% chance target must save vs. Wand at -4 or panic for 5 rounds
+- Deals 6 extra point of magic damage to panicked targets
+
+THAC0: +4
+Damage: +4
+Speed Factor: 4
+Proficiency Type: Longbow
+Type: Two-handed
+Requires:
+ 15 Strength
+
+Weight: 7"

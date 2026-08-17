@@ -340,12 +340,12 @@ Equipped abilities:
 – Regeneration on critical health (below 10% health)
 
 Combat abilities:
-0-5 Petrify target (Save vs Petrify -4)
-6-25 Paralyze target for 7 seconds (Save vs Wand -4)
+0-5 Petrify target (Save vs Petrification at -4 negates)
+6-25 Paralyze target for 7 seconds (Save vs. Rod at -4 negates)
 26-70 Poison target (1 damage per second for twenty seconds)
 71-86 Poison self (1 damage per second for twenty seconds)
-86-95 Paralyze self for 7 seconds (Save vs Wand -4)
-96-100 Petrify self (Save vs Petrify -4)
+86-95 Paralyze self for 7 seconds (Save vs. Rod -4 negates)
+96-100 Petrify self (Save vs. Petrification at -4 negates)
 
 STATISTICS:
 
@@ -472,7 +472,7 @@ Weight: 10"
 STATISTICS:
 
 Equipped abilities:
-- Critical Hit Chance: +5% with this weapon 
+- Critical hit chance: +5% with this weapon 
 
 Combat abilities:
 - On a critical hit deals 10 Magic damage

@@ -564,7 +564,7 @@ Weight: 6
 
 
 
-//BLADESINGER CHAIN +3 - 15000mo//
+//BLADESINGER CHAIN +3 - 13000mo//
 COPY "rick_bigg_mod/items/CHAN16.itm" "override"
 	SAY NAME1 "Chain Mail"
 	SAY UNIDENTIFIED_DESC "This chainmail clearly bears the hand of a great elvensmith, with their typical beauty and delicate sturdy craftsmanship.
@@ -579,7 +579,7 @@ Weight: 8
 "
 
 	SAY NAME2 "Bladesinger Chain +3"
-	SAY DESC "The lore of this suit is difficult to determine, either due to the exotic circumstances from which it sprang or the wish of its previous owner to conceal its location. Secrecy would certainly be desirable, as even rumors of such a mail as this could provoke deadly interest. It is the pinnacle of elven craft and a truly blessed item.
+	SAY DESC "Forged by master elven smiths for the legendary Bladesingers, this armor moves with fluid grace, humming a soft, harmonic melody during combat. Its links are magically bound to effortlessly deflect aggressive sword strokes and piercing rapiers, making it the pinnacle of elven craft and a truly blessed item.
 
 STATISTICS:
 
@@ -589,10 +589,8 @@ Equipped abilities:
 – Pick Pockets: -20%
 – Move Silently: -10%
 - Hide in Shadows: -10%
-- Melee weapon THAC0: +1
-- Melee weapon damage: +2
 
-Armor Class: 2 (0 vs. slashing, 1 vs. piercing and missile)
+Armor Class: 2 (-2 vs. slashing, -1 vs. piercing, 1 vs. missile)
 Requires:
  5 Strength
 
@@ -654,7 +652,7 @@ Weight: 8
 "
 
 	SAY NAME2 "Aslyferund Elven Chain +5"
-	SAY DESC "While in exile from Myth Drannor, Aslyferund learned the secret of fashioning powerful elven armor by gilding and heavily enchanting normal elven chain. Alas, his refusal to divulge the secret lead to his murder by a rival smith.
+	SAY DESC "Crafted in exile after the fall of Myth Drannor, this magnificent suit of elven chainmail is the tragic masterpiece of the elven smith Aslyferund. Driven by a desire to surpass his peers, he discovered a secret method to gild traditional mithral links with a rare, enchanted gold alloy, binding them with heavy layers of abjuration magic.The resulting armor offers unparalleled protection against elemental and magical forces while still allowing the casting of spells. Sadly, Aslyferund’s refusal to share his secret led to his brutal murder by a jealous rival. The secret died with him, leaving this armor as the only one of its kind in Faerûn.
 
 STATISTICS:
 
@@ -664,7 +662,7 @@ Equipped abilities:
 – Pick Pockets: -20%
 – Move Silently: -10%
 - Hide in Shadows: -10%
-- Set Magical Damage Resistance to 90%
+- All non physical damage resistances: +20%
 
 Armor Class: 0 (-2 vs. slashing, -1 vs. piercing and missile)
 Requires:

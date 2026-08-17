@@ -22,6 +22,26 @@ INCLUDE ~rick_bigg_mod/lib/items/items_overwrite.tpa~
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //MOONBLADE +3 - 0//
 COPY "rick_bigg_mod/items/sw1h13.itm" "override"
 	SAY NAME1 "Long Sword"
@@ -59,84 +79,6 @@ Weight: 3"
 
 
 
-
-
-//OLD SLIPPERS - 0mo//
-COPY "rick_bigg_mod/items/PLOT01P.itm" "override"
-	SAY NAME1 "Old Slippers"
-	SAY UNIDENTIFIED_DESC "It is a miracle that this moldy, misshapen footwear has not already dissolved into a pile of rancid dust.
-
-STATISTICS:
-
-Weight: 1"
-
-	SAY NAME2 "Old Slippers"
-	SAY DESC "It is a miracle that this moldy, misshapen footwear has not already dissolved into a pile of rancid dust.
-
-STATISTICS:
-
-Weight: 1"
-
-
-
-
-//ALGERNON'S CLOACK - 500mo//
-COPY "rick_bigg_mod/items/CLCK08.itm" "override"
-	SAY NAME1 "Cloack"
-	SAY UNIDENTIFIED_DESC "The cloak can be made in every possible shape with just about every type of fabric. The most common forms are a circular piece of fabric with a hole in the center for the head, and fabric draped from neck, connected by a chain, brooch, cord, or pins.
-
-STATISTICS:
-
-Weight: 3"
-
-	SAY NAME2 "Algernon's Cloack"
-	SAY DESC "This is the cloack of the fat man Algernon.
-	
-STATISTICS:
-
-Weight: 3"
-
-
-
-
-
-
-
-//DURLAG'S PRIDE - 0//
-COPY "rick_bigg_mod/items/SW2H08_.itm" "override"
-	SAY NAME1 "Two-Handed Sword"
-	SAY UNIDENTIFIED_DESC "The two-handed sword is a derivative of the long sword. Weaponsmiths have always looked for ways to improve existing weapons. In an effort to improve the long sword, the blade was lengthened. Eventually, the handle had to be extended and two hands became necessary to properly swing the sword. The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations.
-
-STATISTICS:
-
-Damage: 2d6 (slashing)
-Speed Factor: 10
-Proficiency Type: Two-handed Sword
-Type: Two-handed
-Requires:
- 14 Strength
-
-Weight: 15"
-
-	SAY NAME2 "Durlag's Pride"
-	SAY DESC "Durlag's Pride
-
-STATISTICS:
-
-Damage: 2d6 (slashing)
-Speed Factor: 8
-Proficiency Type: Two-handed Sword
-Type: Two-handed
-Requires:
- 14 Strength
-
-Weight: 15"
-
-
-
-
-
-
 //CLOACK OF THE HIGH FOREST - 0//
 COPY "rick_bigg_mod/items/NPCLCK.itm" "override"
 	SAY NAME1 "Cloack"
@@ -157,168 +99,6 @@ Equipped abilities:
 – Protects against critical hits
 
 Weight: 3"
-
-
-
-
-
-
-
-
-
-
-//RING OF WIZARDRY - 10000mo//
-COPY "rick_bigg_mod/items/RING40.itm" "override"
-	SAY NAME1 "Ring"
-	SAY DESC "A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.
-
-STATISTICS:
-
-Weight: 0"
-
-	SAY NAME2 "Ring of Wizardry"
-	SAY DESC "The origins of this ring are unclear, and while its enchantments share similarities with historical examples of Rings of Wizardry, there is something strange in how it feels, either in the weight of the metal or in the aura it projects, and it does not function the same. It was likely found on some distant plane and, as such, its maker will remain a mystery to you.
-
-STATISTICS:
-
-Equipped abilities:
-– The wearer can memorize 1 extra spell per level
-
-Weight: 0"
-
-
-
-
-//RING OF HUMAN INFLUENCE - 2500mo//
-COPY "rick_bigg_mod/items/RING30.itm" "override"
-	SAY NAME1 "Ring"
-	SAY DESC "A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.
-
-STATISTICS:
-
-Weight: 0"
-
-	SAY NAME2 "Ring of Human Influence"
-	SAY DESC "For seven years, Count Fisfnilt searched the realms for a suitable bride for his son Ewnin. Unfortunately, all the women that Fisfnilt found were not up to the standards set by Ewnin, an impossibly spoiled man. Desiring an heir and impatient with his son, the Count had the court mage fashion this ring. He gifted the ring to a woman of no small courtly influence and Ewnin was instantly smitten. They wed three weeks later.
-
-STATISTICS:
-
-Equipped abilities:
-– Charisma +1
-
-Charge abilities:
-– Charm Person once per day (Save vs. Spell negates)
-  Range: 60 ft.
-  Duration: 100 seconds
-  Area of Effect: 1 creature
-
-Weight: 0"
-
-
-
-
-
-
-//RING OF INFRAVISION - 1500mo//
-COPY "rick_bigg_mod/items/RING21.itm" "override"
-	SAY NAME1 "Ring"
-	SAY DESC "A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.
-
-STATISTICS:
-
-Weight: 0"
-
-	SAY NAME2 "Ring of Infravision"
-	SAY DESC "Merchants that dare the risks of trading with the drow of the Great Rift are often given these items to aid in their movements underground. 
-
-STATISTICS:
-
-Equipped abilities:
-– Infravision up to 120 ft.
-- +1 THAC0
-
-Weight: 0"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//RING OF CLUMSINESS - 1500mo//
-COPY "rick_bigg_mod/items/RING04.itm" "override"
-	SAY NAME1 "Ring"
-	SAY UNIDENTIFIED_DESC "A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.
-
-STATISTICS:
-
-Weight: 0"
-
-	SAY NAME2 "Ring of Clumsiness"
-	SAY DESC "The most notorious owner of this ring made a substantial living exploiting its cursed nature. Gregoria the Foole, a Jester by trade, would use his incomparable sleight of hand to switch this ring with that of a patsy taken from his audience. The rest of his performance would involve the mocking of the newly clumsy individual, much to the delight of their comrades. The ring was removed (by a method known only to the wily Jester) only once the stooge had promised no reprisals for the treatment he had received, though Gregoria frequently still had to make a hasty retreat. What he didn't know was that the ring also held hidden abilities, which were revealed by an angry mage during her final performance at Zhentil Keep... 
-
-
-STATISTICS:
-
-Equipped abilities:
-– Dexterity: -50% penalty
-– May only be removed with a Remove Curse spell
-
-Charge abilities twice a day:
-- Lighting Bolt (level 10) three times per day
-
-Weight: 0"
-
-
-
-
-
-
-//RING OF FOLLY - 4000mo//
-COPY "rick_bigg_mod/items/RING23.itm" "override"
-	SAY NAME1 "Ring"
-	SAY UNIDENTIFIED_DESC "A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.
-
-STATISTICS:
-
-Weight: 0"
-
-SAY NAME2 "Ring of Folly"
-	SAY DESC "Oft the bane of the careless mage, this ring was actually used to promote humility. Hergat Norin, a grand wizard of Narfell, would give the this ring, also known as Discipliner,to his most skilled and most lazy students. Drastically weakening their learning abilities, the ring required all their willpower to unleash its true potential.
-
-STATISTICS:
-
-Equipped abilities:
-– Intelligence: -50% penalty
-- Casting level: -2
-- Casting speed: +2
-- The wearer can memorize one more spell per level
-
-– May only be removed with a Remove Curse spell
-
-Weight: 0 " 
-
-
-
-
 
 
 
@@ -351,9 +131,6 @@ Weight: 0"
 
 
 
-
-
-
 //JAHEIRA'S GIRDLE - 0//
 COPY "rick_bigg_mod/items/BDBELT02.itm" "override"
 	SAY NAME1 "Girdle"
@@ -375,8 +152,6 @@ Equipped abilities:
 - Saving Throws: +1
 
 Weight: 2" 
-
-
 
 
 

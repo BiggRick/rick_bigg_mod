@@ -44,7 +44,7 @@ Weight: 1"
 
 
 
-//AMULET OF PROTECTION +3 - 12000mo//
+//AMULET OF PROTECTION +3 - 15000mo//
 COPY "rick_bigg_mod/items/TB#AMUL3.itm" "override"
 	SAY NAME1 "Amulet"
 	SAY UNIDENTIFIED_DESC "Amulets are usually magical devices that are commonly worn around the neck, suspended from a chain. The type of chain that comes with an amulet generally increases the item's aesthetic value, not its magical properties. Only one amulet can be dangled from the neck at a time.
@@ -273,7 +273,7 @@ Equipped abilities:
 – Save vs. Breath: +2
 – Save vs. Petrification/Polymorph: +2
 – Save vs. Spell: +2
-– Save vs. Wand: +2
+– Save vs. Rod/Wand: +2
 – May only be removed with a Remove Curse spell
 
 Weight: 1"
@@ -446,7 +446,7 @@ Weight: 1"
 
 
 
-//ARCHER EYE - solo ranger - 5500mo//
+//ARCHER'S EYE - solo ranger - 5500mo//
 COPY "rick_bigg_mod/items/BDAMUL02.itm" "override"
 	SAY NAME1 "Amulet"
 	SAY UNIDENTIFIED_DESC "Amulets are usually magical devices that are commonly worn around the neck, suspended from a chain. The type of chain that comes with an amulet generally increases the item's aesthetic value, not its magical properties. Only one amulet can be dangled from the neck at a time.
@@ -455,7 +455,7 @@ STATISTICS:
 
 Weight: 1"
 
-	SAY NAME2 "Archer Eye"
+	SAY NAME2 "Archer's Eye"
 	SAY DESC "This silver pendant, shaped like a wolf howling at the moon, once belonged to Christopher, a legendary Ranger of the Tethir Forest. Tales claim Christopher could pierce an apple from a mile away, even in the pitch-black darkness of a moonless night. Infused with the blessing of the wild, the amulet guides the wearer's hand, seamlessly aligning the trajectory of arrows and bolts toward the vital points of their prey. Only a true warden of the woods can attune to its magic; in the hands of anyone else, the central stone remains dull and weightless.
 
 STATISTICS:
@@ -519,7 +519,7 @@ Weight: 1"
 
 
 
-//HEART OF THE FOREST - solo druidi - 8000mo//
+//PENDANT OF THE DESPERATE HEART - 3500mo//
 COPY "rick_bigg_mod/items/BDAMUL26.itm" "override"
 	SAY NAME1 "Amulet"
 	SAY UNIDENTIFIED_DESC "Amulets are usually magical devices that are commonly worn around the neck, suspended from a chain. The type of chain that comes with an amulet generally increases the item's aesthetic value, not its magical properties. Only one amulet can be dangled from the neck at a time.
@@ -528,14 +528,13 @@ STATISTICS:
 
 Weight: 1"
 
-	SAY NAME2 "Heart of the Forest"
-	SAY DESC "This ancient amulet is crafted from a petrified seed of the first Great Oak, encased in a delicate web of living, indestructible roots. Blessed by Rillifane Rallathil and Silvanus, the amulet pulses with the pure, untamed heartbeat of nature. It rejects all who do not share a deep connection with the wilderness, functioning only for true protectors of the balance. When worn by a druid, it shields their body with a bark-like aura of protection and channels the raw energy of the earth, expanding their spiritual vessel to grant deeper access to divine magic.
+	SAY NAME2 "Pendant of the Desperate Heart "
+	SAY DESC "This silver amulet reacts only when its wearer faces imminent death. As blood spills and the rhythm of the heart falters, the gem embedded within pulses with fierce, panicked energy. This surge manifests as a shimmering wall of defensive force, granting the dying warrior a final, desperate chance to turn the tide of battle.
 
 STATISTICS:
 
 Equipped abilities: 
-– Armor Class: +1
-– Can memorize one extra divine spell of each level from 1st to 5th
+– Armor Class: +3 bonus when hit points drop below 33%
 
 Weight: 1"
 

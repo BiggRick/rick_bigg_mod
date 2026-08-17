@@ -27,6 +27,34 @@ Weight: 2"
 
 
 
+//HELM OF CLARITY - 2500mo//
+COPY "rick_bigg_mod/items/.itm" "override"
+	SAY NAME1 "Helmet"
+	SAY DESC "This class of decorative helmet, made of reinforced leather or metal, covers the face and head. Eye slits and breathing holes come highly recommended. 
+
+STATISTICS:
+
+Equipped abilities:
+– Protects against critical hits
+
+Weight: 2"
+
+	SAY NAME2 "Helm of Clarity"
+	SAY DESC "This unadorned steel helm was forged for an elite inquisitor who demanded absolute dominion over his own mind. Imbued with abjuration magic, the metal hums with a faint, calming resonance that instantly dispels unnatural emotions. No magical song can cloud the wearer's judgment, and no battlefield frenzy can break their cold focus. Furthermore, its reinforced design shields the skull from the most precise and devastating blows, ensuring the vanguard remains unbroken.
+
+STATISTICS:
+
+Equipped abilities:
+- Immunity to Charm
+- Immunity to Rage
+– Protects against critical hits
+
+Weight: 3"
+
+
+
+
+
 //HELM OF HORNS - solo guerrieri - 1500mo//
 COPY "rick_bigg_mod/items/TB#HEHO.itm" "override"
 	SAY NAME1 "Helmet"
@@ -112,7 +140,7 @@ Weight: 2"
 
 
 
-//HELM OF BALDURAN - 8000mo//
+//HELM OF BALDURAN - 10000mo//
 COPY "rick_bigg_mod/items/HELM07.itm" "override"
 	SAY NAME1 "Helmet"
 	SAY UNIDENTIFIED_DESC "This class of open-face helmet, made of reinforced leather or metal, covers most of the head save the face and neck. These helmets commonly provide protection for the nose. 
@@ -187,11 +215,11 @@ Weight: 2"
 STATISTICS:
 
 Equipped abilities:
-- Magic Resistance: +5%
+- Armor Class: +1
 – Protects against critical hits
 
 Combat abilities:
-- 20% chance every hit to receive +2 Melee THAC0 and Damage bonus for 6 seconds 
+- 15% chance every hit to receive +2 Melee THAC0 and +4 Melee Damage bonus for 6 seconds 
 
 Weight: 2"
 
@@ -201,7 +229,7 @@ Weight: 2"
 
 
 
-//MIRROR HELM - valore 6500mo//
+//MIRROR HELM - valore 2500mo//
 COPY "rick_bigg_mod/items/TB#HEMI.itm" "override"
 	SAY NAME1 "Helmet"
 	SAY UNIDENTIFIED_DESC "This class of decorative helmet, made of reinforced leather or metal, covers the face and head. Eye slits and breathing holes come highly recommended. 
@@ -326,7 +354,7 @@ Weight: 2"
 
 
 
-//VHAILOR'S HELM - solo guerrieri  - no caotici - valore 7000mo//
+//VHAILOR'S HELM - solo guerrieri - valore 14000mo//
 COPY "rick_bigg_mod/items/WA2HELM.itm" "override"
 	SAY NAME1 "Helmet"
 	SAY UNIDENTIFIED_DESC "This class of decorative helmet, made of reinforced leather or metal, covers the face and head. Eye slits and breathing holes come highly recommended. 
@@ -376,6 +404,61 @@ Equipped abilities:
 – Armor Class vs. Crushing: +4
 
 Weight: 3"
+
+
+
+
+
+//THIEVES'HOOD - solo ladri - valore 5500mo//
+COPY "rick_bigg_mod/items/HELM29.itm" "override"
+	SAY NAME1 "Hood"
+	SAY UNIDENTIFIED_DESC "This hood is simple in design and appears to offer minor protection. 
+
+STATISTICS:
+
+Weight: 1"
+
+	SAY NAME2 "Thieves'Hood"
+	SAY DESC "Crafted from a thick, enchanted fabric that hums with a faint protective aura, this hood sharpens the wearer's senses to an supernatural degree. The magic woven into its threads grants the user a heightened awareness of their immediate surroundings, shielding their blind spots from lethal strikes and piercing through illusions designed to deceive the eye.
+
+STATISTICS:
+
+Equipped abilities:
+– Immunity to Backstab
+- Detect Illusion: +15%
+
+Weight: 1"
+
+
+
+
+
+//THIEVES'HOOD - solo ladri tutti - valore 9500mo//
+COPY "rick_bigg_mod/items/HELM30.itm" "override"
+	SAY NAME1 "Hood"
+	SAY UNIDENTIFIED_DESC "This hood is simple in design and appears to offer minor protection. 
+
+STATISTICS:
+
+Weight: 1"
+
+	SAY NAME2 "Thieves'Hood"
+	SAY DESC "Crafted from a thick, enchanted fabric that hums with a faint protective aura, this hood sharpens the wearer's senses to an supernatural degree. The magic woven into its threads grants the user a heightened awareness of their immediate surroundings, shielding their blind spots from lethal strikes and piercing through illusions designed to deceive the eye.
+	
+	Combined with the Sandthief's Ring, its protective properties have now been further augmented.
+	
+STATISTICS:
+
+Equipped abilities:
+– Immunity to Backstab
+- Detect Illusion: +30%
+- Hide in Shadows: +25%
+- Move silently: +25%
+
+Combat abilities:
+- Whenever the wielder is hit, there is a 20% chance he/she is surrounded by 3 mirror images for 3 rounds
+
+Weight: 1"
 
 
 
@@ -451,174 +534,6 @@ Weight: 2"
 
 
 
-
-
-
-
-
-
-
-//THIEVES'HOOD - solo ladri - valore 5500mo//
-COPY "rick_bigg_mod/items/HELM29.itm" "override"
-	SAY NAME1 "Hood"
-	SAY UNIDENTIFIED_DESC "This hood is simple in design and appears to offer minor protection. 
-
-STATISTICS:
-
-Weight: 1"
-
-	SAY NAME2 "Thieves'Hood"
-	SAY DESC "Crafted from a thick, enchanted fabric that hums with a faint protective aura, this hood sharpens the wearer's senses to an supernatural degree. The magic woven into its threads grants the user a heightened awareness of their immediate surroundings, shielding their blind spots from lethal strikes and piercing through illusions designed to deceive the eye.
-
-STATISTICS:
-
-Equipped abilities:
-– Immunity to Backstab
-- Detect Illusion: +15%
-
-Weight: 1"
-
-
-
-
-
-//THIEVES'HOOD - solo ladri tutti - valore 9500mo//
-COPY "rick_bigg_mod/items/HELM30.itm" "override"
-	SAY NAME1 "Hood"
-	SAY UNIDENTIFIED_DESC "This hood is simple in design and appears to offer minor protection. 
-
-STATISTICS:
-
-Weight: 1"
-
-	SAY NAME2 "Thieves'Hood"
-	SAY DESC "Crafted from a thick, enchanted fabric that hums with a faint protective aura, this hood sharpens the wearer's senses to an supernatural degree. The magic woven into its threads grants the user a heightened awareness of their immediate surroundings, shielding their blind spots from lethal strikes and piercing through illusions designed to deceive the eye.
-	
-	Combined with the Sandthief's Ring, its protective properties have now been further augmented.
-	
-STATISTICS:
-
-Equipped abilities:
-– Immunity to Backstab
-- Detect Illusion: +30%
-- Hide in Shadows: +25%
-- Move silently: +25%
-
-Combat abilities:
-- Whenever the wielder is hit, there is a 20% chance he/she is surrounded by 3 mirror images for 3 rounds
-
-Weight: 1"
-
-
-
-
-
-//BARD HAT - valore 6500mo - solo bardi//
-COPY "rick_bigg_mod/items/BDHELM11.itm" "override"
-	SAY NAME1 "Cap"
-	SAY UNIDENTIFIED_DESC "This soft cap looks neither durable nor practical. Its stylish appearance marks it as strictly decorative.
-
-STATISTICS:
-
-Weight: 0"
-
-	SAY NAME2 "Bard Hat"
-	SAY DESC "This ostentatious peacock-blue hat is festooned with green and purple feathers. Once the possession of an unfailingly chipper bard, the hat was stolen when the bard couldn't resist showing off the hat in a seedy tavern and bragging about its magical powers. In truth the hat has only moderate enchantments on it, but its stylish appearance makes it a coveted choice for many bards.
-
-STATISTICS:
-
-Equipped abilities:
-- Charisma: +1
-– Immunity to silence and deafness
-– Bard song effects linger on for 3 additional rounds after the bard stops singing
-
-Weight: 0"
-
-
-
-
-
-//WIZARD HAT - valore 6000mo - solo maghi//
-COPY "rick_bigg_mod/items/BDHELM12.itm" "override"
-	SAY NAME1 "Cap"
-	SAY UNIDENTIFIED_DESC "This soft cap looks neither durable nor practical. Its stylish appearance marks it as strictly decorative.
-
-STATISTICS:
-
-Weight: 0"
-
-	SAY NAME2 "Wizard Hat"
-	SAY DESC "This classic pointed wizard's hat has the wearer's title emblazoned across it in rather gaudy sequins. The wizzard's hat makes the wearer much powerful, and allow him to cast Dimension Jump at will. A wizard who runs away from combat lives to run away another day, after all.
-
-STATISTICS:
-
-Equipped abilities:
-- Intelligence: +1
-– Casting Level: +2
-
-Charge abilities:
-- Cast Dimension Jump at will
-
-Weight: 0"
-
-
-
-
-
-
-
-
-//CIRCLET OF NETHERIL - valore 2500mo - solo maghi//
-COPY "rick_bigg_mod/items/COMPON17.itm" "override"
-	SAY NAME1 "Circlet"
-	SAY UNIDENTIFIED_DESC "This thin circlet of gold appears too simple and plain to be a crown. Although unadorned with gems, there are arcane and cryptic symbols etched along the surface.
-
-STATISTICS:
-
-Weight: 1"
-
-	SAY NAME2 "Circlet of Netheril"
-	SAY DESC "This elegant golden band is etched with shifting runes from the long-fallen empire of Netheril. Crafted with maestry, the artifact's raw power flows entirely from the enchanted metal and its ancient inscriptions. It aligns itself with the wearer's consciousness, sharpening their focus and enhancing their mastery over the Weave.
-
-STATISTICS:
-
-Equipped abilities:
-– Casting Level: +2
-
-Weight: 1"
-
-
-
-
-
-//CIRCLET OF NETHERIL UPGRADED - valore 16000mo - solo maghi//
-COPY "rick_bigg_mod/items/HELM28.itm" "override"
-	SAY NAME1 "Circlet"
-	SAY UNIDENTIFIED_DESC "This thin circlet of gold appears too simple and plain to be a crown. Although unadorned with gems, there are arcane and cryptic symbols etched along the surface.
-
-STATISTICS:
-
-Weight: 1"
-
-	SAY NAME2 "Circlet of Netheril"
-	SAY DESC "This elegant golden band is etched with shifting runes from the long-fallen empire of Netheril. Crafted with maestry, the artifact's raw power flows entirely from the enchanted metal and its ancient inscriptions. It aligns itself with the wearer's consciousness, sharpening their focus and enhancing their mastery over the Weave.
-	
-	Combined with the bronze ioun stone, the Circlet of Netheril is a great boon to any practitioner of the arcane arts. Of course, something so valuable is likely to attract unwanted attention from rival mages... 
-
-STATISTICS:
-
-Equipped abilities:
-– Casting Level: +2
-- Casting Speed: +1
-– The wearer can memorize 1 extra 7th-level spell, 1 extra 8th-level spell, and 1 extra 9th-level spell
-
-Weight: 1"
-
-
-
-
-
-
 //CASQUE OF NECRON - valore 14000mo - solo maghi - no good//
 COPY "rick_bigg_mod/items/OHHCASQ.itm" "override"
 	SAY NAME1 "Casque"
@@ -647,6 +562,180 @@ Charge abilities:
 - Cast Wail of Banshee once per day
 
 Weight: 3"
+
+
+
+
+
+
+//CIRCLET OF AWARENESS - valore 1250mo//
+COPY "rick_bigg_mod/items/BAND02.itm" "override"
+	SAY NAME1 "Circlet"
+	SAY UNIDENTIFIED_DESC "A circlet is a circular band, typically made of precious metal, worn on the head as an ornament or symbol of status. Circlets carrying low-level enchantments are commonly worn by mages across Faerûn.
+
+Weight: 1"
+
+	SAY NAME2 "Circlet of Awareness"
+	SAY DESC "A circlet is a circular band, typically made of precious metal, worn on the head as an ornament or symbol of status. This bronze circlet is enchanted to heighten the wearer's reflexes and vigilance, allowing them to swiftly dodge incoming area attacks and dragon breath.
+
+STATISTICS:
+
+Equipped abilities:
+– Save vs. Breath: +2
+
+Weight: 1"
+
+
+
+
+
+
+
+//CIRCLET OF STABILITY - valore 1250mo//
+COPY "rick_bigg_mod/items/BAND01.itm" "override"
+	SAY NAME1 "Circlet"
+	SAY UNIDENTIFIED_DESC "A circlet is a circular band, typically made of precious metal, worn on the head as an ornament or symbol of status. Circlets carrying low-level enchantments are commonly worn by mages across Faerûn.
+
+Weight: 1"
+
+	SAY NAME2 "Circlet of Stability"
+	SAY DESC "A circlet is a circular band, typically made of precious metal, worn on the head as an ornament or symbol of status. This bronze circlet is enchanted to anchor the wearer's physical form against forced transformation and petrifying magic.
+
+STATISTICS:
+
+Equipped abilities:
+– Save vs. Petrification/Polymorph: +2
+
+Weight: 1"
+
+
+
+
+
+//CIRCLET OF THE FOREST FATHER - solo druidi - valore 3500mo//
+COPY "rick_bigg_mod/items/BAND03.itm" "override"
+	SAY NAME1 "Circlet"
+	SAY UNIDENTIFIED_DESC "A circlet is a circular band, typically made of precious metal, worn on the head as an ornament or symbol of status. Circlets carrying low-level enchantments are commonly worn by mages across Faerûn.
+
+Weight: 1"
+
+	SAY NAME2 "Circlet of Forest Father"
+	SAY DESC "This circlet is forged from sacred ore bathed in the waters of Eldath and blessed under the boughs of Silvanus. It hums with the primal heartbeat of the High Forest, expanding the wearer's spiritual vessel to harbor a greater abundance of nature's raw, divine magic.
+
+STATISTICS:
+
+Equipped abilities:
+– Can memorize one extra divine spell of each level from 1st to 5th
+
+Weight: 1"
+
+
+
+
+
+//SUPREME CIRCLET OF THE FOREST FATHER - solo druidi - valore 7500mo//
+COPY "rick_bigg_mod/items/BDHELM16.itm" "override"
+	SAY NAME1 "Circlet"
+	SAY UNIDENTIFIED_DESC "A circlet is a circular band, typically made of precious metal, worn on the head as an ornament or symbol of status. Circlets carrying low-level enchantments are commonly worn by mages across Faerûn.
+
+Weight: 1"
+
+	SAY NAME2 "Supreme Circlet of Forest Father"
+	SAY DESC "This bronze circlet is forged from sacred ore bathed in the waters of Eldath and blessed under the boughs of Silvanus. It hums with the primal heartbeat of the High Forest, expanding the wearer's spiritual vessel to harbor a greater abundance of nature's raw, divine magic. 
+
+STATISTICS:
+
+Equipped abilities:
+– Can memorize one extra divine spell per level
+
+Weight: 1"
+
+
+
+
+
+//SPACE-WARP CIRCLET - valore 5000mo - solo maghi//
+COPY "rick_bigg_mod/items/BAND04.itm" "override"
+	SAY NAME1 "Circlet"
+	SAY UNIDENTIFIED_DESC "A circlet is a circular band, typically made of precious metal, worn on the head as an ornament or symbol of status. Circlets carrying low-level enchantments are commonly worn by mages across Faerûn.
+
+Weight: 1"
+
+	SAY NAME2 "Space-Warp Circlet"
+	SAY DESC "To look directly at this silver band is to experience a sudden, dizzying vertigo. The air surrounding the artifact constantly ripples and folds, pulled toward a central gemstone that seems to swallow the local geometry of the room.The item allows a practitioner of the Art to treat distance as a mere illusion. By focusing their mind, a mage can collapse the spatial gap between two points, stepping through a miniature rift to reappear elsewhere instantaneously. This violent folding of reality requires immense cognitive focus, meaning any mind untrained in high arcane theory would be instantly shattered by the transition.
+
+STATISTICS:
+
+Equipped abilities:
+- Armor Class: +1
+– Saving Throws: +1
+
+Charge abilities:
+- Cast Dimension Jump at will
+
+Weight: 0"
+
+
+
+
+
+
+
+
+//CIRCLET OF NETHERIL - valore 3500mo - solo maghi//
+COPY "rick_bigg_mod/items/COMPON17.itm" "override"
+	SAY NAME1 "Circlet"
+	SAY UNIDENTIFIED_DESC "This thin circlet of gold appears too simple and plain to be a crown. Although unadorned with gems, there are arcane and cryptic symbols etched along the surface.
+
+STATISTICS:
+
+Weight: 1"
+
+	SAY NAME2 "Circlet of Netheril"
+	SAY DESC "This elegant golden band is etched with shifting runes from the long-fallen empire of Netheril. Crafted with maestry, the artifact's raw power flows entirely from the enchanted metal and its ancient inscriptions. It aligns itself with the wearer's consciousness, sharpening their focus and enhancing their mastery over the Weave.
+
+STATISTICS:
+
+Equipped abilities:
+– Casting Level: +2
+- Magic Resistance: +5%
+
+Weight: 1"
+
+
+
+
+
+//CIRCLET OF NETHERIL UPGRADED - valore 15000mo - solo maghi//
+COPY "rick_bigg_mod/items/HELM28.itm" "override"
+	SAY NAME1 "Circlet"
+	SAY UNIDENTIFIED_DESC "This thin circlet of gold appears too simple and plain to be a crown. Although unadorned with gems, there are arcane and cryptic symbols etched along the surface.
+
+STATISTICS:
+
+Weight: 1"
+
+	SAY NAME2 "Circlet of Netheril"
+	SAY DESC "This elegant golden band is etched with shifting runes from the long-fallen empire of Netheril. Crafted with maestry, the artifact's raw power flows entirely from the enchanted metal and its ancient inscriptions. It aligns itself with the wearer's consciousness, sharpening their focus and enhancing their mastery over the Weave.
+	
+	Combined with the bronze ioun stone, the Circlet of Netheril is a great boon to any practitioner of the arcane arts. Of course, something so valuable is likely to attract unwanted attention from rival mages... 
+
+STATISTICS:
+
+Equipped abilities:
+– Casting Level: +2
+- Casting Speed: +1
+– Can memorize one extra 6th-level and 7th-level wizard spell
+- Magic Resistance: +10%
+
+Weight: 1"
+
+
+
+
+
+
+
 
 
 
@@ -821,7 +910,7 @@ STATISTICS:
 
 Equipped abilities:
 – Armor Class: +1
-– Save vs. Death: +4
+– Save vs. Death: +2
 
 Weight: 0"
 
@@ -829,7 +918,7 @@ Weight: 0"
 
 
 
-//GOLDEN IOUN STONE - valore 8000mo - solo maghi e bardi//
+//GOLDEN IOUN STONE - valore 7500mo - solo maghi e bardi//
 COPY "rick_bigg_mod/items/HELM27.itm" "override"
 	SAY NAME1 "Ioun Stone"
 	SAY UNIDENTIFIED_DESC "This is a small stone that floats in an orbit around the owner's head. Simply equip the stone to set it in its orbit. These obviously magical stones have different properties depending on their color.
@@ -844,7 +933,7 @@ Weight: 0"
 STATISTICS:
 
 Equipped abilities:
-– Can memorize one extra 7th-level and 8th-level wizard spell
+– Can memorize one extra 6th-level and 7th-level wizard spell
 
 Weight: 0"
 

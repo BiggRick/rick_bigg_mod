@@ -3,10 +3,9 @@ AX1H11      AX1H03        _		    1         AXE_OF_MAULETAR_+2
 AX1H11      AX1H11        _         1         AXE_+2
 AX1H11      AX1H17        _         1         AXE_+3
 
-AX1H04      AX1H18        _         _         THROWN_AXE+1
-AX1H04      BDAX1H04      _         _         THROWN_AXE+1
+AX1H05		AX1H06		  _			2		  THROWING_AXE_RETURN_DOPPIONE
 
-AX1H01      AX1H19        _         _         GOLDEN_AXE
+AX1H01      AX1H19        _         1         GOLDEN_AXE
 
 BLUN13      BLUN39        IBLUN32   1         FLAIL+2
 BLUN13      BLUN32        IBLUN32   1         FLAIL+3
@@ -21,23 +20,31 @@ BLUN21      BLUN11        IBLUN11   1         MACE+2
 BLUN21      BLUN33        IBLUN11   1         MACE+3
 BLUN21      BLUN21        IBLUN11   1         MACE+2
 
-BLUN04      BLUN41        _         _         STUPIFIER+1
+BLUN04      BLUN41        _         1         STUPIFIER+1
 
-BLUN15		BLUN34		  _         _		  MORNING_STAR+3
+BLUN15		BLUN34		  _         1		  MORNING_STAR+3
 
 OHBLUN51    BLUN31        IBLUN31   1         CLUB+2
 OHBLUN51    BLUN37        IBLUN31   1         CLUB+3
 OHBLUN51    OHBLUN51      IBLUN31   1         CLUB+2
 OHBLUN51	BLUN24		  IBLUN31   1		  GHASHER+2
 
-BLUN01      BLUN38        _         _         NIGHT_CLUB
+BLUN01      BLUN38        _         1         NIGHT_CLUB
 
-BOW16       BOW24         _         _         CL.BOW+3
+BOW16       BOW24         _         4         CL.BOW+3
 
-BOW18       BOW26         _         _         S.BOW+3
+BOW18       BOW26         _         4         S.BOW+3
 
-BOW17       BOW17         IBOW07    4         L.BOW+2
-BOW17       BOW25         IBOW07    4         L.BOW+2
+BOW17       BOW25         _         4         L.BOW+3
+
+XBOW09		XBOW18		  _		    4		  L.CROSSBOW+3
+
+XBOW07		XBOW17		  _		    4		  H.CROSSBOW+3
+
+SLNG04		SLNG10		  _			4		  SLING+3
+SLNG04		SLNG03		  _			4		  SLING+3
+SLNG04		SLNG11		  _			4		  SLING_UNERRING+1
+
 
 DAGG15      DAGG03        _         1         DAGGER+2
 DAGG15      DAGG24        _         1         DAGGER+3
@@ -67,6 +74,7 @@ SW1H41		SW1H73		  _			1		  LONG_SWORD+3
 SW1H41		SW1H53		  _			1		  SWORD_OF_FLAME+1
 SW1H41		SW1H37		  _			1		  TARAGARTH+1
 SW1H41		SW1H40		  _			1		  BLADE_OF_ROSES+3
+SW1H41		SW1H36		  _			1		  NAMARRA +2
 
 BDSW1H23	SW1H23		  _			1		  RASHAD_TALON+2
 BDSW1H23	SW1H76		  _			1		  SCIMITAR+3
@@ -95,7 +103,6 @@ SW2H11		SW2H20		  _			1		  TWO-HANDED_SWORD+3
 
 BDHELM04	HELM02		  _			_		  HELM_OF_OPPOSITE_ALIGNEMENT
 HELM01		HELM33		  _         _		  HELM_MERCENARY_BALTHAZAR	
-
 
 PLAT14		PLAT05		  _			_		  PLATE_OF_THE_DARK+1
 PLAT14		PLAT19		  _			_		  FULL_PLATE+2_ALTERNATIVE
@@ -181,6 +188,8 @@ BOOT02		BOOT02ZH	  IBOOT02	_		  BOOTS OF STEALTH DOPPIONE
 BRAC02		BRAC01		  IBRAC02   _		  BRACERS OF DEFENSE AC 7
 
 BELT05		BELT05		  IBELT01_  _		  CAMBIO ICONA BELT SEX
+
+RING10		RING47		  _			_		  IRON THORN
 
 
 

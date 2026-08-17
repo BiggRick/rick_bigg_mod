@@ -284,7 +284,7 @@ Weight: 7"
 STATISTICS:
 
 Combat abilities:
-– Hit target is affected by Miscast Magic for 100 seconds (80% chance of spellcasting failure, Save vs. Wand at -2 negates)
+– Hit target is affected by Miscast Magic for 100 seconds (80% chance of spellcasting failure, Save vs. Rod at -2 negates)
 
 THAC0: +2
 Damage: 1d8+3 (slashing)
@@ -322,7 +322,7 @@ Weight: 7"
 STATISTICS:
 
 Equipped abilities:
-– Critical Hit Chance: +5%
+– Critical hit chance: +5%
 
 Combat abilities:
 – Deals an extra 2d4 points of crushing damage on a critical hit
@@ -360,7 +360,7 @@ Requires:
 Weight: 7"
 
 	SAY NAME2 "Axe of Troll Decapitation +2"
-	SAY DESC "Runes along the length of this powerful weapon spell 'death to trolls' in multiple languages. Legend tells that the famous dwarf Durlag Trollkiller used this weapon in his adventuring days, but lost it during a particularly brutal fight in the Troll Hills.
+	SAY DESC "Runes etched along the entire length of this powerful weapon spell out 'death to trolls' in numerous ancient languages. Legends tell that this axe was forged in the deep fires of the earth to end the relentless raids of regenerating giants, becoming the ultimate bane of their encampments across the wild northern territories.
 
 STATISTICS:
 

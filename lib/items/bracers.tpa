@@ -192,7 +192,7 @@ Weight: 2"
 STATISTICS:
 
 Equipped abilities:
-– Critical Hit Chance: +5% (only with melee weapons)
+– Critical hit chance: +5% (only with melee weapons)
 
 Weight: 2"
 
@@ -388,7 +388,7 @@ Charge abilities:
   Area of Effect: the user
   
 Requires:
-16 Dexterity
+17 Dexterity
 
 Weight: 2"
 
@@ -429,7 +429,7 @@ Weight: 2"
 
 
 
-//BARD'S GLOVES - solo bardi - 5500mo//
+//BARD'S GLOVES - solo bardi - 3500mo//
 COPY "rick_bigg_mod/items/BRAC24.itm" "override"
 	SAY NAME1 "Gauntlets"
 	SAY UNIDENTIFIED_DESC "Gauntlets are armored gloves. They can be made of leather, metal plates, or chain mail. Every suit of armor is assumed to include gauntlets of an appropriate type. Magical gauntlets tend to be finer, lighter, and more easily worn than normal varieties.
@@ -439,20 +439,19 @@ STATISTICS:
 Weight: 2"
 
 	SAY NAME2 "Bard's Gloves"
-	SAY DESC "A pair of exquisite, fingerless gloves seamlessly woven from shifting, iridescent threads that hum with a faint, innate power. This artifact responds exclusively to the unique soul and versatile nature of a true Bard. The gloves react intuitively to the wearer's intent, completely eliminating friction during complex gestures to unlock hidden arcane potential and quicken the flow of magic, while a permanent, ancient ward woven into the palms repels hostile sorcery.
+	SAY DESC "A pair of exquisite, fingerless gloves seamlessly woven from shifting, iridescent threads that hum with a faint, innate power. This artifact responds exclusively to the unique soul and versatile nature of a true Bard. The gloves react intuitively to the wearer's intent, reducing friction during complex gestures to unlock hidden arcane potential and quicken the flow of magic.
 
 STATISTICS:
 
 Equipped abilities:
 – Casting level: +1
 - Casting speed: +1
-- Magic resistance: +5%
 
 Weight: 2"
 
 
 
-//WONDROUS GLOVES - solo bardi - 13000mo//
+//WONDROUS GLOVES - solo bardi - 11000mo//
 COPY "rick_bigg_mod/items/BRAC25.itm" "override"
 	SAY NAME1 "Gauntlets"
 	SAY UNIDENTIFIED_DESC "Gauntlets are armored gloves. They can be made of leather, metal plates, or chain mail. Every suit of armor is assumed to include gauntlets of an appropriate type. Magical gauntlets tend to be finer, lighter, and more easily worn than normal varieties.
@@ -462,16 +461,16 @@ STATISTICS:
 Weight: 2"
 
 	SAY NAME2 "Wondrous Gloves"
-	SAY DESC "A pair of exquisite, fingerless gloves seamlessly woven from shifting, iridescent threads that hum with a faint, innate power. This artifact responds exclusively to the unique soul and versatile nature of a true Bard. The gloves react intuitively to the wearer's intent, completely eliminating friction during complex gestures to unlock hidden arcane potential and quicken the flow of magic, while a permanent, ancient ward woven into the palms repels hostile sorcery.
+	SAY DESC "A pair of exquisite, fingerless gloves seamlessly woven from shifting, iridescent threads that hum with a faint, innate power. This artifact responds exclusively to the unique soul and versatile nature of a true Bard. The gloves react intuitively to the wearer's intent, reducing friction during complex gestures to unlock hidden arcane potential and quicken the flow of magic.
 	
-	When enhanced to their wondrous form, the woven matrix awakens completely, extending an absolute shield that anchors the wearer's physical form against paralyzing effects and all forms of structural damage.
+	When enhanced to their wondrous form, the woven matrix awakens completely, extending an absolute shield that anchors the wearer's physical form against paralyzing effects and protecting against all forms of elemental damage.
 
 STATISTICS:
 
 Equipped abilities:
 – Casting level: +2
 - Casting speed: +2
-- All resistances: +5%
+- All non physical damage resistances: +20%
 - Immunity to hold
 
 Weight: 2"
@@ -534,7 +533,7 @@ Weight: 2"
 
 
 
-//THE AMPLIFIERS - solo maghi - 8500mo//
+//THE AMPLIFIERS - solo maghi - 7500mo//
 COPY "rick_bigg_mod/items/BRAC26.itm" "override"
 	SAY NAME1 "Bracers"
 	SAY UNIDENTIFIED_DESC "Bracers are thick bands of metal or leather that are strapped, belted, or tied to a character's forearm.
@@ -544,12 +543,11 @@ STATISTICS:
 Weight: 2"
 
 	SAY NAME2 "The Amplifiers"
-	SAY DESC "Crafted by the legendary eastern sorcerer Zhao the Undying, these two-pound bracers bind directly to the wearer's lifeforce but remain completely inert unless worn by a true mage. The artifacts directly siphon raw magic from the environment and channel it straight into the caster's veins. This constant surge dramatically elevates the user's casting potency to new heights. As a result, every form of offensive magic is violently supercharged, making fire, lightning, and arcane bolts exceptionally destruc
+	SAY DESC "Crafted by the legendary eastern sorcerer Zhao the Undying, these two-pound bracers bind directly to the wearer's lifeforce but remain completely inert unless worn by a true mage. The artifacts directly siphon raw magic from the environment and channel it straight into the caster's veins. This constant surge dramatically elevates the user's casting potency to new heights. As a result, every form of offensive magic is violently supercharged, making fire, lightning, and arcane bolts exceptionally destructive.
 
 STATISTICS:
 
 Equipped abilities:
-- Casting level: +2
 – Magical damage (all form): +20%
 
 Weight: 2"

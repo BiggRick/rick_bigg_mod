@@ -1,0 +1,89 @@
+//TOME OF UNDERSTANDING - 500mo//
+COPY "rick_bigg_mod/items/BOOK08.itm" "override"
+	SAY NAME1 "Book"
+	SAY UNIDENTIFIED_DESC "The cloak can be made in every possible shape with just about every type of fabric. The most common forms are a circular piece of fabric with a hole in the center for the head, and fabric draped from neck, connected by a chain, brooch, cord, or pins.
+
+STATISTICS:
+
+Weight: 3"
+
+	SAY NAME2 "Tome of Understanding"
+	SAY DESC "A typical tome of understanding contains a sober, if dry analysis of legal battles, historic events, government policies, philosophical treatises, and theories of magic and metaphysics.
+
+Weight: 25"
+
+
+
+
+
+
+//DURLAG'S PRIDE - 0//
+COPY "rick_bigg_mod/items/SW2H08_.itm" "override"
+	SAY NAME1 "Two-Handed Sword"
+	SAY UNIDENTIFIED_DESC "The two-handed sword is a derivative of the long sword. Weaponsmiths have always looked for ways to improve existing weapons. In an effort to improve the long sword, the blade was lengthened. Eventually, the handle had to be extended and two hands became necessary to properly swing the sword. The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations.
+
+STATISTICS:
+
+Damage: 2d6 (slashing)
+Speed Factor: 10
+Proficiency Type: Two-handed Sword
+Type: Two-handed
+Requires:
+ 14 Strength
+
+Weight: 15"
+
+	SAY NAME2 "Durlag's Pride"
+	SAY DESC "Durlag's Pride
+
+STATISTICS:
+
+Damage: 2d6 (slashing)
+Speed Factor: 8
+Proficiency Type: Two-handed Sword
+Type: Two-handed
+Requires:
+ 14 Strength
+
+Weight: 15"
+
+
+
+
+
+
+
+//OLD SLIPPERS - 0mo//
+COPY "rick_bigg_mod/items/PLOT01P.itm" "override"
+	SAY NAME1 "Old Slippers"
+	SAY UNIDENTIFIED_DESC "It is a miracle that this moldy, misshapen footwear has not already dissolved into a pile of rancid dust.
+
+STATISTICS:
+
+Weight: 1"
+
+	SAY NAME2 "Old Slippers"
+	SAY DESC "It is a miracle that this moldy, misshapen footwear has not already dissolved into a pile of rancid dust.
+
+STATISTICS:
+
+Weight: 1"
+
+
+
+
+//ALGERNON'S CLOACK - 500mo//
+COPY "rick_bigg_mod/items/CLCK08.itm" "override"
+	SAY NAME1 "Cloack"
+	SAY UNIDENTIFIED_DESC "The cloak can be made in every possible shape with just about every type of fabric. The most common forms are a circular piece of fabric with a hole in the center for the head, and fabric draped from neck, connected by a chain, brooch, cord, or pins.
+
+STATISTICS:
+
+Weight: 3"
+
+	SAY NAME2 "Algernon's Cloack"
+	SAY DESC "This is the cloak of Algernon, the fat man.
+	
+STATISTICS:
+
+Weight: 3"

@@ -112,41 +112,6 @@ Weight: 3"
 
 
 
-//NAMARRA +2 - 5500mo//
-COPY "rick_bigg_mod/items/SW1H36.itm" "override"
-	SAY NAME1 "Long Sword"
-	SAY UNIDENTIFIED_DESC "These swords are usually referred to as double-edged swords, war swords, or military swords. In many cases, the long sword has a single-edged blade. There is no single version of the long sword; the design and length vary from culture to culture and may vary within the same culture depending on the era. Among the most common characteristics of all long swords is their length, which ranges from thirty-five inches to forty-seven inches. In the latter case, the blade is known to take up forty inches of the total length. Most long swords have a double-edged blade and a sharp point at the tip. Despite the tip, the long sword is designed for slashing, not thrusting.
-
-STATISTICS:
-
-Damage: 1d8 (slashing or piercing)
-Speed Factor: 5
-Proficiency Type: Long Sword
-Type: One-handed
-Requires:
- 9 Strength
-
-Weight: 4"
-
-	SAY NAME2 "Namarra +2"
-	SAY DESC "Also known as Neversleep, this ancient blade is thought to have been present at some of the most influential conflicts in Faerûn's history. Sightings have been noted as far north as Thay and as south as the jungles of Chult, though documentation is oddly lacking regarding the details. It is perhaps a result of the sword's ability to silence all sound within a large radius, removing the effectiveness of attacking mages but also preventing any discussion that might have followed. 
-
-STATISTICS:
-
-Charge abilities:
-– Silence, 15' Radius once per day (Save vs. Wand at -4 to negate)
-  Duration: 1 turn
-
-THAC0: +2
-Damage: 1d8+3 (slashing or piercing)
-Speed Factor: 3
-Proficiency Type: Long Sword
-Type: One-handed
-Requires:
- 9 Strength
-
-Weight: 2"
-
 
 //ADJATHA THE DRINKER +3 - no good - valore 7500mo//
 COPY "rick_bigg_mod/items/SW1H35.itm" "override"
@@ -253,10 +218,7 @@ Some say it was even capable of cutting through full plate armor.
 
 STATISTICS:
 
-Combat abilities:
-- +4 THAC0 (only with this weapon)
-
-THAC0: +4
+THAC0: +8
 Damage: 1d8+4
 Damage type: Slashing or Piercing
 Speed Factor: 1
@@ -292,7 +254,7 @@ Weight: 4"
 STATISTICS:
 
 Charge abilities:
-- Charged Beam three times per day: 10d10 magical damage (Save vs. Wand at -4 for half)
+- Charged Beam three times per day: 10d10 magical damage (Save vs. Rod at -4 for half)
 
 THAC0: +4
 Damage: 1d8+4, double damage vs. Fiends
@@ -362,7 +324,7 @@ Weight: 3"
 
 
 
-//DEFENDER +5 - valore 13000mo //
+//DEFENDER +5 - valore 14000mo //
 COPY "rick_bigg_mod/items/SW1H77.itm" "override"
 	SAY NAME1 "Long Sword"
 	SAY UNIDENTIFIED_DESC "These swords are usually referred to as double-edged swords, war swords, or military swords. In many cases, the long sword has a single-edged blade. There is no single version of the long sword; the design and length vary from culture to culture and may vary within the same culture depending on the era. Among the most common characteristics of all long swords is their length, which ranges from thirty-five inches to forty-seven inches. In the latter case, the blade is known to take up forty inches of the total length. Most long swords have a double-edged blade and a sharp point at the tip. Despite the tip, the long sword is designed for slashing, not thrusting.
@@ -470,8 +432,9 @@ STATISTICS:
 
 Equipped abilities:
 - Protection from undead, shapeshifters, demons and devils 
-– Saving Throws: +2
-- Magic Resistance: +20%
+- Armor Class: +1
+– Saving Throws: +1
+- Magic Resistance: +10%
 
 THAC0: +5
 Damage: 1d8+5, +6 damage vs. undead, shapeshifters, demons and devils
