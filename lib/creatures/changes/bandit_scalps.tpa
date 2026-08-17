@@ -33,6 +33,11 @@ IF
     Global("metVai","GLOBAL",1)
     !Global("tb#vaiLeft","GLOBAL",1)
     GlobalLT("chapter","GLOBAL",5)
+    Allegiance(Myself, ENEMY)
+    !Gender(Myself, SUMMONED)
+    !Gender(Myself, ILLUSIONARY)
+    !Gender(Myself, SUMMONED_DEMON)
+    !Gender(Myself, NIETHER)
 THEN RESPONSE #100
     CreateItem("MISC86", 1, 0, 0)
     SetGlobal("tb#scalpInit","LOCALS",2)
@@ -55,6 +60,16 @@ IF
     !Global("tb#collectInnocentScalps","GLOBAL", 1)
     GlobalLT("chapter","GLOBAL",5)
     !InPartySlot(Myself, 0)
+    !InPartySlot(Myself, 1)
+    !InPartySlot(Myself, 2)
+    !InPartySlot(Myself, 3)
+    !InPartySlot(Myself, 4)
+    !InPartySlot(Myself, 5)
+    Allegiance(Myself, ENEMY)
+    !Gender(Myself, SUMMONED)
+    !Gender(Myself, ILLUSIONARY)
+    !Gender(Myself, SUMMONED_DEMON)
+    !Gender(Myself, NIETHER)
     NOT_A_PG
 THEN RESPONSE #100
     CreateItem("tb#scalp", 1, 0, 0)
