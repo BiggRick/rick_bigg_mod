@@ -96,7 +96,7 @@ COPY - ~.../script-all-creatures.baf~ ~.../script-all-creatures.baf~
 
 
 COPY_EXISTING ~misc86.itm~ ~override~
-    WRITE_LONG 0x34 25
+    WRITE_LONG 0x34 10
 
 COPY_EXISTING ~misc86.itm~ ~override/tb#scalp.itm~
     SAY NAME1 ~Humanoid scalp~
