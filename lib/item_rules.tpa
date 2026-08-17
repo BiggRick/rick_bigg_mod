@@ -1,3 +1,4 @@
+INCLUDE ~rick_bigg_mod/lib/redescribe_shared.tpa~
 INCLUDE ~rick_bigg_mod/lib/weapon_rules.tpa~
 INCLUDE ~rick_bigg_mod/lib/armor_rules.tpa~
 INCLUDE ~rick_bigg_mod/lib/fix_unusabilities.tpa~

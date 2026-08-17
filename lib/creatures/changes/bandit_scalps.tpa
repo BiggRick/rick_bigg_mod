@@ -1,0 +1,159 @@
+
+<<<<<<<< .../script-all-creatures.baf
+
+IF
+    Global("tb#scalpInit","LOCALS",0)
+    OR (4)
+        HasItem("MISC86", Myself)
+        Race(Myself, HOBGOBLIN)
+        Race(Myself, GNOLL)
+        Race(Myself, OGRE)
+THEN RESPONSE #100
+    SetGlobal("tb#scalpInit","LOCALS",1)
+    DestroyItem("MISC86")
+END
+
+IF
+    Global("tb#scalpInit","LOCALS",0)
+    OR (7)
+        Race(Myself, HUMAN)
+        Race(Myself, ELF)
+        Race(Myself, HALF_ELF)
+        Race(Myself, DWARF)
+        Race(Myself, HALFLING)
+        Race(Myself, GNOME)
+        Race(Myself, HALFORC)
+    !HasItem("MISC86", Myself)
+THEN RESPONSE #100
+    SetGlobal("tb#scalpInit","LOCALS",51)
+END
+
+IF
+    Global("tb#scalpInit","LOCALS",1)
+    Global("metVai","GLOBAL",1)
+    !Global("tb#vaiLeft","GLOBAL",1)
+    GlobalLT("chapter","GLOBAL",5)
+    Allegiance(Myself, ENEMY)
+    !Gender(Myself, SUMMONED)
+    !Gender(Myself, ILLUSIONARY)
+    !Gender(Myself, SUMMONED_DEMON)
+    !Gender(Myself, NIETHER)
+THEN RESPONSE #100
+    CreateItem("MISC86", 1, 0, 0)
+    SetGlobal("tb#scalpInit","LOCALS",2)
+END
+
+IF
+    Global("tb#scalpInit","LOCALS",2)
+    OR(2)
+        Global("tb#vaiLeft","GLOBAL",1)
+        GlobalGT("chapter","GLOBAL",4)
+THEN RESPONSE #100
+    SetGlobal("tb#scalpInit","LOCALS",3)
+    DestroyItem("MISC86")
+END
+
+IF
+    Global("tb#scalpInit","LOCALS",51)
+    Global("metVai","GLOBAL",1)
+    !Global("tb#vaiLeft","GLOBAL",1)
+    !Global("tb#collectInnocentScalps","GLOBAL", 1)
+    GlobalLT("chapter","GLOBAL",5)
+    !InPartySlot(Myself, 0)
+    !InPartySlot(Myself, 1)
+    !InPartySlot(Myself, 2)
+    !InPartySlot(Myself, 3)
+    !InPartySlot(Myself, 4)
+    !InPartySlot(Myself, 5)
+    Allegiance(Myself, ENEMY)
+    !Gender(Myself, SUMMONED)
+    !Gender(Myself, ILLUSIONARY)
+    !Gender(Myself, SUMMONED_DEMON)
+    !Gender(Myself, NIETHER)
+    NOT_A_PG
+THEN RESPONSE #100
+    CreateItem("tb#scalp", 1, 0, 0)
+    SetGlobal("tb#scalpInit","LOCALS",52)
+END
+
+IF
+    Global("tb#scalpInit","LOCALS",52)
+    OR (3)
+        Global("tb#vaiLeft","GLOBAL",1)
+        Global("tb#collectInnocentScalps","GLOBAL", 1)
+        GlobalGT("chapter","GLOBAL",4)
+THEN RESPONSE #100
+    SetGlobal("tb#scalpInit","LOCALS",53)
+    DestroyItem("tb#scalp")
+END
+>>>>>>>>
+
+COPY - ~.../script-all-creatures.baf~ ~.../script-all-creatures.baf~
+    PATCH_PHP_EACH JOINABLE_NPC_ARRAY_dv AS dv => X BEGIN
+        REPLACE_TEXTUALLY ~NOT_A_PG~ ~NOT_A_PG !Name("%dv%",Myself)~
+    END
+    REPLACE_TEXTUALLY ~NOT_A_PG~ ~~
+
+
+COPY_EXISTING ~misc86.itm~ ~override~
+    WRITE_LONG 0x34 10
+
+COPY_EXISTING ~misc86.itm~ ~override/tb#scalp.itm~
+    SAY NAME1 ~Humanoid scalp~
+    SAY NAME2 ~Humanoid scalp~
+    SAY UNIDENTIFIED_DESC ~This is the scalp of a humanoid. Unscrupulous people might try to pass it off as a bandit scalp.
+
+STATISTICS:
+
+Weight: 0~
+    WRITE_ASCII 0x3a ~TB#SCALP~ #8
+
+
+COPY_EXISTING ~vax.cre~ ~override~  // TBD - quest kagain
+            ~zal.cre~ ~override~
+            ~tranzi.cre~ ~override~
+            ~teven.cre~ ~override~
+            ~taugos.cre~ ~override~
+            ~raiken.cre~ ~override~
+            ~credus.cre~ ~override~
+            ~venkt.cre~ ~override~
+            ~COKSMTH.cre~ ~override~
+            ~IRONGU.cre~ ~override~
+            ~IRONGU01.cre~ ~override~
+            ~IRONGU02.cre~ ~override~
+            ~IRONGU03.cre~ ~override~
+            ~IRONGU03.cre~ ~override~
+            ~IRONGUAR.cre~ ~override~
+            ~IRON5.cre~ ~override~
+            ~HAREIS.cre~ ~override~
+            ~NATASH.cre~ ~override~
+            ~DAVAEO.cre~ ~override~
+ // to check - bg1 npc project in lion's way
+    ADD_CRE_ITEM ~MISC86~ #1 #0 #0 ~NONE~ ~INV~
+
+SILENT
+COPY_EXISTING_REGEXP GLOB ~^.*\.cre$~ ~override~
+  found = 0
+  FOR (iter = 0; iter < 2; ++iter) BEGIN
+    offset = SCRIPT_OVERRIDE
+    WHILE (offset <= SCRIPT_DEFAULT && !found) BEGIN
+      READ_ASCII offset script
+      TO_UPPER script
+      PATCH_IF $done (EVALUATE_BUFFER ~%script%~) STRING_EQUAL_CASE ~%name%~ THEN BEGIN
+        found = 1
+      END ELSE PATCH_IF !FILE_EXISTS_IN_GAME ~%script%.bcs~ || ~%script%~ STRING_EQUAL_CASE ~none~ || ~%script%~ STRING_EQUAL_CASE ~~ || ~%script%~ STRING_EQUAL_CASE ~ ~ THEN BEGIN
+         offset += 8
+      END ELSE PATCH_IF iter = 1 BEGIN
+        SPRINT $done (EVALUATE_BUFFER ~%script%~) ~%name%~
+        INNER_ACTION BEGIN
+          EXTEND_TOP ~%script%.bcs~ ~.../script-all-creatures.baf~
+        END
+        found = 1
+      END ELSE BEGIN
+        offset += 8
+      END
+    END
+  END
+BUT_ONLY
+VERBOSE
+

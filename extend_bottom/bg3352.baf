@@ -1,0 +1,12 @@
+IF
+    Global("tb#TranzigAlliesSpawn","GLOBAL",0)
+    Global("Chapter","GLOBAL",3)
+THEN
+    RESPONSE #100
+        SetGlobal("tb#TranzigAlliesSpawn","GLOBAL",1)
+        CreateCreature("TB#TRN02",[200.550],NE)
+        CreateCreature("TB#TRN02",[250.600],NE)
+        CreateCreature("TB#TRN01",[250.630],NE)
+        CreateCreature("TB#TRN01",[150.630],NE)
+END
+

@@ -27,6 +27,13 @@ COPY_EXISTING ~PLAT22.ITM~ ~override~
 Keep the component's existing patch macros beneath that `COPY_EXISTING` block.
 Restore the original scope after the diagnosis is complete.
 
+## Install the scoped component
+
+For every component installation during a diagnosis, invoke the
+`weidu-component-install` skill first. Use its focused-install procedure and
+inspect the generated debug log before drawing conclusions from the diagnostic
+output.
+
 ## Log the description buffer
 
 `REPLACE_TEXTUALLY` operates on the current patch buffer. Read the complete

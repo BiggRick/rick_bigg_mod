@@ -2,6 +2,9 @@
 COPY ~rick_bigg_mod/copy~ ~override~
 
 
+INCLUDE ~rick_bigg_mod/lib/borrowed_from_cdtweaks/joinable_npc_array.tpa~
+
+
 INCLUDE ~rick_bigg_mod/lib/items.tpa~
 INCLUDE ~rick_bigg_mod/lib/spells.tpa~
 INCLUDE ~rick_bigg_mod/lib/creatures.tpa~
@@ -14,6 +17,15 @@ INCLUDE ~rick_bigg_mod/lib/replace_items.tpa~
 INCLUDE ~rick_bigg_mod/lib/races.tpa~
 INCLUDE ~rick_bigg_mod/lib/styles.tpa~
 
+COMPILE ~rick_bigg_mod/compile~
+
+ACTION_BASH_FOR ~rick_bigg_mod/extend_bottom~ ~^.*\.baf$~ BEGIN
+    EXTEND_BOTTOM ~%BASH_FOR_RES%.bcs~ ~%BASH_FOR_FILESPEC%~
+END
+
+ACTION_BASH_FOR ~rick_bigg_mod/extend_top~ ~^.*\.baf$~ BEGIN
+    EXTEND_TOP ~%BASH_FOR_RES%.bcs~ ~%BASH_FOR_FILESPEC%~
+END
+
 INCLUDE ~rick_bigg_mod/lib/item_rules.tpa~
 INCLUDE ~rick_bigg_mod/lib/weaponproficiencies.tpa~
-

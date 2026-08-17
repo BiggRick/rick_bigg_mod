@@ -1,0 +1,41 @@
+DEFINE_PATCH_MACRO common_preprocess BEGIN
+	// Ensure we work with WNL line endings only
+	REPLACE_TEXTUALLY ~%WNL%~ ~%LNL%~
+	REPLACE_TEXTUALLY ~%LNL%~ ~%WNL%~
+	// strip stray em / en dashes (UTF-8 copy-paste artifact)
+	REPLACE_TEXTUALLY ~^\(–\|—\) ~ ~- ~
+END
+
+
+DEFINE_PATCH_MACRO minimum_strength BEGIN
+	// Handle minimum strength requirement
+	PATCH_IF NOT (~%min_strength%~ STRING_EQUAL_CASE ~0~) BEGIN
+		// First, remove ANY old requirement lines (handles duplicates)
+		REPLACE_TEXTUALLY ~^Requires:\(%WNL%\)* [0-9]+ Strength%WNL%~ ~~
+		
+		// Now add the correct requirement
+		PATCH_IF INDEX_BUFFER( ~^Requires:~ ) > 0 BEGIN
+			// Requires section exists, check if it has anything after it
+			PATCH_IF INDEX_BUFFER( ~^Requires:%WNL%$~ ) > 0 BEGIN
+				// Requires: with nothing after it, add strength
+				REPLACE_TEXTUALLY ~^Requires:$~ ~Requires:%WNL% %min_strength% Strength%min_strength_special%~
+			END ELSE BEGIN
+				// Requires has other content, add strength as new line
+				REPLACE_TEXTUALLY ~^Requires:%WNL%~ ~Requires:%WNL% %min_strength% Strength%min_strength_special%%WNL%~
+			END
+		END ELSE BEGIN
+			// No Requires section, create one
+			REPLACE_TEXTUALLY ~^Weight:~ ~Requires:%WNL% %min_strength% Strength%min_strength_special%%WNL%Weight:~
+		END
+	END
+END
+
+
+
+DEFINE_PATCH_MACRO common_postprocess BEGIN
+	REPLACE_TEXTUALLY ~[%WNL%]+- ~ ~%WNL%- ~
+	FOR (i = 0; i < 10; i += 1) BEGIN
+		REPLACE_TEXTUALLY ~%WNL%%WNL%%WNL%~ ~%WNL%%WNL%~
+	END
+END
+

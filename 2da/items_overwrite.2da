@@ -14,6 +14,8 @@ BLUN13      BLUN13        IBLUN32   1         FLAIL+3
 HAMM08		HAMM03		  _     	1		  ASHIDEENA+2
 HAMM08		HAMM12		  _         1		  HAMMER+3
 
+HAMM04      HAMM06        _         _         KNEECAPPER substitutes DWARVEN THROWER
+
 HAMM02		HAMM13		  _			1		  HAMMER_OF_DAWN+1
 
 BLUN21      BLUN11        IBLUN11   1         MACE+2

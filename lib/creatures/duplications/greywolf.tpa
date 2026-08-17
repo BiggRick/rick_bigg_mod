@@ -1,0 +1,17 @@
+COPY_EXISTING ~dogwar01.cre~ ~override/tb#gwf01.cre~
+              ~dogwar01.cre~ ~override/tb#gwf02.cre~
+    SAY NAME1 ~Hound~
+    SAY NAME2 ~Hound~
+    WRITE_ASCIIE DEATHVAR ~%DEST_RES%~ #32
+    WRITE_ASCII SCRIPT_RACE ~tb#gwf~ #8
+    WRITE_BYTE 0x270 128
+
+COPY_EXISTING ~bandit.cre~   ~override/tb#gwf03.cre~
+              ~bandit.cre~   ~override/tb#gwf04.cre~
+    SAY NAME1 ~Mercenary~
+    SAY NAME2 ~Mercenary~
+    WRITE_ASCIIE DEATHVAR ~%DEST_RES%~ #32
+    WRITE_ASCII DIALOG ~~ #8
+    WRITE_ASCII SCRIPT_RACE ~tb#gwf~ #8
+    WRITE_BYTE 0x270 128
+    REMOVE_CRE_ITEM ~misc86~

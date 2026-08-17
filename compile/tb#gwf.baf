@@ -1,0 +1,20 @@
+IF
+    Allegiance("Greywolf", ENEMY)
+    Global("tb#gwf", "LOCALS", 0)
+THEN RESPONSE #100
+    Enemy()
+    SetGlobal("tb#gwf", "LOCALS", 1)
+    Continue()
+END
+
+IF
+    Dead("Prism")  // Prism
+    HasItem("MISC43","Greywolf")  // Emerald
+    Allegiance(Myself,NEUTRAL)
+    Delay(2)
+THEN
+    RESPONSE #100
+        SmallWait(8)
+        EscapeArea()
+END
+

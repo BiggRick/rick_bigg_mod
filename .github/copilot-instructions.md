@@ -1,8 +1,8 @@
-Purpose
+# Purpose
 
 This file gives concise, repo-specific instructions for Copilot sessions operating on the Rick & Bigg Mod repository.
 
-Quick commands
+# Quick commands
 
 - Package / install (WeiDU):
   - From the repository root, run your WeiDU installer: weidu rick_bigg_mod.tp2
@@ -23,7 +23,7 @@ Quick commands
 - Tests / Lint:
   - No formal test, CI, or linter configuration found in the repository.
 
-High-level architecture
+# High-level architecture
 
 - rick_bigg_mod.tp2 (root): WeiDU installer/manifest. Declares metadata and runtime checks (e.g., requires Spell Revisions; limits to EET trilogy). Use this as the entrypoint for packaging/installing the mod.
 
@@ -37,7 +37,7 @@ High-level architecture
 
 - powershell/check-duplicates.ps1: Repo-level validation script that scans *.tp* files for duplicate COPY statements and duplicate SAY NAME2 strings.
 
-Key conventions and patterns
+# Key conventions and patterns
 
 - File types
   - .tp2 : WeiDU installer manifest (project metadata, preconditions, high-level BEGIN blocks).
@@ -59,17 +59,36 @@ Key conventions and patterns
 - Installer checks
   - The TP2 contains explicit installer checks (see lines that FAIL if not EET or if Spell Revisions missing). Keep cross-mod dependencies declared in the TP2 to prevent broken installs.
 
-Author / contact
+# Author / contact
 
 - AUTHOR in rick_bigg_mod.tp2: vbigiani@gmail.com
 
-Notes for Copilot sessions
+# Notes for Copilot sessions
 
 - Prefer editing or adding modular .tpa includes under lib/ rather than modifying rick_bigg_mod.tp2 unless a new top-level component/installation flow is required.
+
 - Use powershell/check-duplicates.ps1 as a quick pre-commit check for duplicate COPY / SAY NAME2 issues.
-- After editing any `.tpa` file or before committing, run `powershell -NoProfile -ExecutionPolicy Bypass -File .\powershell\check-tpa-quotes.ps1`. For a targeted check, pass edited or staged `.tpa` paths after `-Files`. Do not leave double quotes inside a double-quoted `SAY` value; use single quotes internally or delimit the full value with `~...~`.
+
+- After you have finished to edit any `.tp*` file or before committing, run `powershell -NoProfile -ExecutionPolicy Bypass -File .\powershell\check-tpa-quotes.ps1`. For a targeted check, pass edited or staged `.tp*` paths after `-Files`. 
+  - do NOT run this check while you are in the processing of editing a `*.tp*` file or before installing a component, just do it after you have finished editing and saved the file.
+
 - Avoid changing game asset filenames or COPY targets without updating all references in .tpa/.tp2 and 2da/TRA files.
 
-Summary
+- If you get stuck thinking more than 2 minutes on a prompt, ask the user for clarification or hints.
+
+# Hard Rules
+
+- In `*.tp*` files, use ASCII hyphens (`-`) only; never use en dashes or em dashes. Exceptions:
+  - In an item's lore/description grammar takes precedence.
+  - the user explicitly asked to use en or em dashes for a specific scope (for example, as a regexp to remove existing en/em dashes).
+
+- `*.tp*` files must be saved as UTF-8 without BOM. WeiDU will fail to parse files with BOM.
+
+- in `*.tp*` files, use double quotes (`"`) for string delimiters. If a string contains quotes, use single quotes (`'`) in the string or tilde delimiters (`~...~`) outside. Avoid nested double quotes.
+  - BAD: SAY NAME2 "This is a "bad" example."
+  - GOOD: SAY NAME2 "This is a 'good' example."
+  - GOOD: SAY NAME2 ~This is a "good" example.~
+
+# Summary
 
 Created concise repo-specific instructions for building/validating and for common extension patterns (adding items/assets, where to include code). If anything should be adjusted, or if coverage should be added for a specific workflow (e.g., building a distributable archive), say what to include next.

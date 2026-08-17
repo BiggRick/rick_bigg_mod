@@ -8,8 +8,18 @@ DEFINE_PATCH_FUNCTION redescribe_weapon
 		speed_factor = 0
 		min_strength = 0
 		range = 0
-	STR_VAR attacks_per_round = "_"
+	STR_VAR
+		attacks_per_round = "_"
+		range_special = ~~
+		thac0_special = ~~
+		damage_special = ~~
+		speed_factor_special = ~~
+		min_strength_special = ~~
+		attacks_per_round_special = ~~
 BEGIN
+	LAUNCH_PATCH_MACRO common_preprocess
+	
+	LAUNCH_PATCH_MACRO minimum_strength
 
 	PATCH_IF thac0 = 0 BEGIN
 		TEXT_SPRINT thac0_string ~\1~
@@ -19,24 +29,24 @@ BEGIN
 		TEXT_SPRINT thac0_string ~THAC0: %thac0%\1~
 	END
 	PATCH_IF INDEX_BUFFER( ~THAC0:[^,%WNL%]*\(,?.*\)$~ ) > 0 BEGIN
-		REPLACE_TEXTUALLY ~^THAC0:[^,%WNL%]*\(,?.*\)$~ ~%thac0_string%~
+		REPLACE_TEXTUALLY ~^THAC0:[^,%WNL%]*\(,?.*\)$~ ~%thac0_string%%thac0_special%~
 	END ELSE BEGIN
-		REPLACE_TEXTUALLY ~^Damage:\(\)~ ~%thac0_string%%WNL%Damage:~
+		REPLACE_TEXTUALLY ~^Damage:\(\)~ ~%thac0_string%%thac0_special%%WNL%Damage:~
 	END
 	
 	PATCH_IF damage = 0 AND dice_type * dice_number = 0 BEGIN
 		TEXT_SPRINT damage_string ~~
 	END ELSE BEGIN
 		PATCH_IF dice_type * dice_number = 0 AND NOT has_launcher BEGIN
-			TEXT_SPRINT damage_string ~Damage: %damage%\1%WNL%~
+			TEXT_SPRINT damage_string ~Damage: %damage%\1%damage_special%%WNL%~
 		END PATCH_IF dice_type * dice_number = 0 AND has_launcher BEGIN
-			TEXT_SPRINT damage_string ~Damage: +%damage%\1%WNL%~
+			TEXT_SPRINT damage_string ~Damage: +%damage%\1%damage_special%%WNL%~
 		END ELSE PATCH_IF damage > 0 BEGIN
-			TEXT_SPRINT damage_string ~Damage: %dice_number%d%dice_type%+%damage%\1%WNL%~
+			TEXT_SPRINT damage_string ~Damage: %dice_number%d%dice_type%+%damage%\1%damage_special%%WNL%~
 		END ELSE PATCH_IF damage < 0 BEGIN
-			TEXT_SPRINT damage_string ~Damage: %dice_number%d%dice_type%%damage%\1%WNL%~
+			TEXT_SPRINT damage_string ~Damage: %dice_number%d%dice_type%%damage%\1%damage_special%%WNL%~
 		END ELSE PATCH_IF damage = 0 BEGIN
-			TEXT_SPRINT damage_string ~Damage: %dice_number%d%dice_type%\1%WNL%~
+			TEXT_SPRINT damage_string ~Damage: %dice_number%d%dice_type%\1%damage_special%%WNL%~
 		END
 		
 		PATCH_IF has_launcher BEGIN
@@ -57,7 +67,7 @@ BEGIN
 		REPLACE_TEXTUALLY ~^Speed Factor:\(\)~ ~%damage_string%%WNL%Speed Factor:~
 	END
 	
-	REPLACE_TEXTUALLY ~^Speed Factor:.*$~ ~Speed Factor: %speed_factor%~
+	REPLACE_TEXTUALLY ~^Speed Factor:.*$~ ~Speed Factor: %speed_factor%%speed_factor_special%~
 	
 	REPLACE_TEXTUALLY ~^Range:.*[%WNL%]+~ ~~
 	PATCH_IF range >= 26 BEGIN
@@ -69,33 +79,21 @@ BEGIN
 	END ELSE PATCH_IF range == 0 BEGIN
 		TEXT_SPRINT range_string ~Range: Adjacent~
 	END
-	REPLACE_TEXTUALLY ~^Type:\(.*\)$~ ~Type:\1%WNL%%range_string%~
+	REPLACE_TEXTUALLY ~^Type:\(.*\)$~ ~Type:\1%WNL%%range_string%%range_special%~
 
-	PATCH_IF INDEX_BUFFER ( ~Requires:[^_]* [0-9]+ Strength$~ ) > 0 BEGIN
-		REPLACE_TEXTUALLY ~^Requires:\([^_]*\) [0-9]+ Strength$~ ~Requires:\1 %min_strength% Strength~
-	END ELSE PATCH_IF INDEX_BUFFER ( ~Requires:$~ ) > 0 BEGIN
-		REPLACE_TEXTUALLY ~^Requires:$~ ~Requires:%WNL% %min_strength% Strength~
-	END ELSE BEGIN
-		REPLACE_TEXTUALLY ~^Type:\(.*\)$~ ~Type:\1%WNL%Requires:%WNL% %min_strength% Strength~
-	END
-
+	REPLACE_TEXTUALLY ~^- .*\(attack\|shot\)s? per round$~ ~~
 	PATCH_IF IS_AN_INT ~%attacks_per_round%~ BEGIN
 		PATCH_IF attacks_per_round > 0 BEGIN
 			PATCH_IF attacks_per_round > 5 BEGIN
 				base_attacks = (attacks_per_round - 6) * 2 + 1
-				TEXT_SPRINT attacks_string ~- %base_attacks%/2 attacks per round~
+				TEXT_SPRINT attacks_string ~%base_attacks%/2 attacks per round~
 			END ELSE BEGIN
-				TEXT_SPRINT attacks_string ~- %attacks_per_round% attacks per round~
+				TEXT_SPRINT attacks_string ~%attacks_per_round% attacks per round~
 			END
-			PATCH_IF INDEX_BUFFER (~^– .*\(attack\|shot\)s? per round$~) > 0 BEGIN
-				REPLACE_TEXTUALLY ~^– .*\(attack\|shot\)s? per round$~ ~%attacks_string%~
-			END ELSE PATCH_IF INDEX_BUFFER (~^Combat abilities:$~) > 0 BEGIN
-				REPLACE_TEXTUALLY ~^Combat abilities:$~ ~Combat abilities:%WNL%%attacks_string%~
-			END ELSE BEGIN
-				REPLACE_TEXTUALLY ~^STATISTICS:\([%WNL%]+\)~ ~STATISTICS:\1Combat abilities:%WNL%%attacks_string%%WNL%%WNL%~
-			END
-		END ELSE BEGIN
-			REPLACE_TEXTUALLY ~^– .*\(attack\|shot\)s? per round$~ ~~
+
+			REPLACE_TEXTUALLY ~^Type:\(.*\)$~ ~Type:\1%WNL%%attacks_string%%attacks_per_round_special%~
 		END
 	END
+
+	LAUNCH_PATCH_MACRO common_postprocess
 END

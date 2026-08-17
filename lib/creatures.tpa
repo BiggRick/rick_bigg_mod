@@ -1,4 +1,9 @@
-ACTION_BASH_FOR ~rick_bigg_mod/lib/creatures~ ~^.*\.tpa$~ BEGIN
+ACTION_BASH_FOR ~rick_bigg_mod/lib/creatures/changes~ ~^.*\.tpa$~ BEGIN
+    PRINT ~EXECUTE %BASH_FOR_FILESPEC%~
+    INCLUDE ~%BASH_FOR_FILESPEC%~
+END
+
+ACTION_BASH_FOR ~rick_bigg_mod/lib/creatures/duplications~ ~^.*\.tpa$~ BEGIN
     PRINT ~EXECUTE %BASH_FOR_FILESPEC%~
     INCLUDE ~%BASH_FOR_FILESPEC%~
 END
