@@ -1,5 +1,5 @@
-//FESTERING FLAIL +2 - 5500mo//
-COPY "rick_bigg_mod/items/TB#FLAIL.itm" "override"
+//FLESH-TEARER +2 - 4500mo//
+COPY "rick_bigg_mod/items/TB#BLUN.itm" "override"
 	SAY NAME1 "Flail"
 	SAY UNIDENTIFIED_DESC "The flail is a sturdy wooden handle attached to an iron rod, a wooden rod with spikes, or a spiked iron ball. Between the handle and its implement is either a hinge or chain link. The weapon was originally used as a tool for threshing grain.
 
@@ -14,32 +14,26 @@ Requires:
 
 Weight: 15"
 
-	SAY NAME2 "Festering Flail +2"
-	SAY DESC "The razor-sharp tip of this spear easily cuts through armor and down to the bone. Victims of its devastating attacks bleed heavily as their wounds instantly fester and weep, dazing them with pain and making it difficult to continue the battle.
+	SAY NAME2 "Flesh-Tearer +2"
+	SAY DESC "This brutal weapon was forged by a mad duergar smith who sought to combine the bone-shattering impact of a flail with the horrific lacerations of a broadsword. The spiked iron heads feature jagged, razor-sharp ridges that spin violently when swung. The result is a terrifying weapon that not only crushes the armor of its victims but also shears through leather and flesh with a grotesque tearing sound.o commemorate the defeat of the devil Belhifet. It was meant to always remain within the town of Easthaven to remind the people of the great evil that had been barely defeated. 
 
 STATISTICS:
 
-Combat abilities:
-– Inflicts 2 points of bleeding damage per hit (1 point per round)
-- Critical hit chance: +5% with this weapon 
-– On a critical hit, the target is infected by disease (-2 penalty to Strength and Dexterity for 1 turn, non-cumulative)
-
 THAC0: +2
-Damage: 1d10+2 (crushing or piercing)
-Speed Factor: 5
+Damage: 1d10+2, +3 slashing damage
+Damage type: (crushing or piercing)
+Speed Factor: 4
 Proficiency Type: Flail/Morning Star
 Type: One-handed
 Requires:
  15 Strength
 
-Weight: 13"
+Weight: 9"
 
 
 
 
-
-
-//DEFENDER OF EASTHEAVEN +4 - 15000mo//
+//DEFENDER OF EASTHEAVEN +4 - 14000mo//
 COPY "rick_bigg_mod/items/WAFLAIL.itm" "override"
 	SAY NAME1 "Flail"
 	SAY UNIDENTIFIED_DESC "The flail is a sturdy wooden handle attached to an iron rod, a wooden rod with spikes, or a spiked iron ball. Between the handle and its implement is either a hinge or chain link. The weapon was originally used as a tool for threshing grain.
@@ -55,7 +49,7 @@ Requires:
 
 Weight: 15"
 
-	SAY NAME2 "Defender of Eastheaven +4"
+	SAY NAME2 "Defender of Eastheaven +3"
 	SAY DESC "This flail was created a century ago to commemorate the defeat of the devil Belhifet. It was meant to always remain within the town of Easthaven to remind the people of the great evil that had been barely defeated. 
 
 STATISTICS:
@@ -72,7 +66,10 @@ Type: One-handed
 Requires:
  15 Strength
 
-Weight: 11"
+Weight: 9"
+
+
+
 
 
 
@@ -104,7 +101,7 @@ Equipped abilities:
 - Armor Class: +1 vs. Slashing, Piercing and Crushing
 
 Combat abilities:
-– 33% chance of slowing target for 20 seconds
+– 30% chance of slowing target for 3 rounds
 
 THAC0: +3
 Damage: 1d10+3, +1 acid damage, +1 cold damage, +1 fire damage
@@ -147,7 +144,7 @@ Equipped abilities:
 - Armor Class: +1 vs. Slashing, Piercing and Crushing
 
 Combat abilities:
-– 33% chance each hit that target will be slowed for 20 seconds
+– 30% chance each hit that target will be slowed for 3 rounds
 
 THAC0: +4
 Damage: 1d10+4, +1 fire damage, +1 cold damage, +1 acid damage, +1 poison damage
@@ -192,7 +189,7 @@ Equipped abilities:
 - Armor Class: +1 vs. Slashing, Piercing and Crushing
 
 Combat abilities:
-– 33% chance each hit that target will be slowed for 20 seconds
+– 30% chance each hit that target will be slowed for 3 rounds
 
 THAC0: +4
 Damage: 1d10+4, +1 fire damage, +1 cold damage, +1 acid damage, +1 Electricity damage
@@ -210,7 +207,7 @@ Weight: 9"
 
 
 
-//FLAIL OF AGES +5 - 23000//
+//FLAIL OF AGES +5 - 20000//
 COPY "rick_bigg_mod/items/BLUN30.itm" "override"
 	SAY NAME1 "Flail"
 	SAY UNIDENTIFIED_DESC "The flail is a sturdy wooden handle attached to an iron rod, a wooden rod with spikes, or a spiked iron ball. Between the handle and its implement is either a hinge or chain link. The weapon was originally used as a tool for threshing grain.
@@ -235,10 +232,9 @@ STATISTICS:
 
 Equipped abilities:
 - Armor Class: +2 vs. Slashing, Piercing and Crushing
-– Free Action
 
 Combat abilities: 
-– 33% chance each hit that target will be slowed for 20 seconds
+– 30% chance each hit that target will be slowed for 3 rounds
 
 THAC0: +5
 Damage: 1d10+5, +2 acid damage, +2 cold damage, +2 fire damage, +2 poison damage, +2 Electricity damage

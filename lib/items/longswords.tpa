@@ -73,46 +73,6 @@ Weight: 4"
 
 
 
-
-
-//RAS THE DANCING BLADE +2 - valore 6000mo//
-COPY "rick_bigg_mod/items/SW1H33.itm" "override"
-	SAY NAME1 "Long Sword"
-	SAY UNIDENTIFIED_DESC "These swords are usually referred to as double-edged swords, war swords, or military swords. In many cases, the long sword has a single-edged blade. There is no single version of the long sword; the design and length vary from culture to culture and may vary within the same culture depending on the era. Among the most common characteristics of all long swords is their length, which ranges from thirty-five inches to forty-seven inches. In the latter case, the blade is known to take up forty inches of the total length. Most long swords have a double-edged blade and a sharp point at the tip. Despite the tip, the long sword is designed for slashing, not thrusting.
-
-STATISTICS:
-
-Damage: 1d8 (slashing or piercing)
-Speed Factor: 5
-Proficiency Type: Long Sword
-Type: One-handed
-Requires:
- 9 Strength
-
-Weight: 4"
-
-	SAY NAME2 "Ras the Dancing Blade +2"
-	SAY DESC "Beroalf was a barbarian who traveled from the cold north in search of adventure. He sought treasures and glory, but soon all he wanted were companions to share in the excitement of battle, much like those he had left behind in his faraway village. Unfortunately, his coarse remarks and rudimentary hygiene repelled most travelers he met, until he expressed his thoughts to a sympathetic mage. The mage, for a price, constructed Ras, the dancing blade. Though not quite what Beroalf had in mind, he was thrilled nonetheless and wielded the sword for many years. How they were ultimately separated is not known.
-
-STATISTICS:
-
-Combat abilities:
-– Dancing sword can attack on its own for 4 rounds
-
-THAC0: +2
-Damage: 1d8+2 (slashing or piercing)
-Speed Factor: 3
-Proficiency Type: Long Sword
-Type: One-handed
-Requires:
- 9 Strength
-
-Weight: 3"
-
-
-
-
-
 //ADJATHA THE DRINKER +3 - no good - valore 7500mo//
 COPY "rick_bigg_mod/items/SW1H35.itm" "override"
 	SAY NAME1 "Long Sword"
@@ -173,7 +133,7 @@ Weight: 4"
 STATISTICS:
 
 Equipped abilities:
-- Saving Throws vs. Spell: +4
+- Magic Resistance: +10%
 
 Combat abilities:
 – Struck arcane spellcasters receive an extra 25% chance to Miscast Magic
@@ -232,51 +192,6 @@ Weight: 3"
 
 
 
-//MASTER SWORD +4 - no evil - valore 12000mo//
-COPY "rick_bigg_mod/items/TB#LINK.itm" "override"
-	SAY NAME1 "Long Sword"
-	SAY UNIDENTIFIED_DESC "These swords are usually referred to as double-edged swords, war swords, or military swords. In many cases, the long sword has a single-edged blade. There is no single version of the long sword; the design and length vary from culture to culture and may vary within the same culture depending on the era. Among the most common characteristics of all long swords is their length, which ranges from thirty-five inches to forty-seven inches. In the latter case, the blade is known to take up forty inches of the total length. Most long swords have a double-edged blade and a sharp point at the tip. Despite the tip, the long sword is designed for slashing, not thrusting.
-
-STATISTICS:
-
-Damage: 1d8 (slashing or piercing)
-Speed Factor: 5
-Proficiency Type: Long Sword
-Type: One-handed
-Requires:
-9 Strength
-
-Weight: 4"
-
-	SAY NAME2 "Master Sword +4"
-	SAY DESC ~Queen Ellesime presents this legendary blade to you with deep solemnity. It is not a weapon born of Faerûn, but a multi-dimensional relic retrieved from the Astral Sea by the high mages of Suldanessellar.According to planar scrolls, this is the "Blade of Evil's Bane" from a distant realm known as Hyrule. It achieved its ultimate form when it was blessed by Princess Zelda, the mortal incarnation of a goddess. The weapon was destined for her chosen champion—a courageous elven youth named Link, the Hero of Legend. Together, Link and Zelda used the sword's sacred light to defeat the demonic kings who threatened their world. For generations after, the blade rested in a stone pedestal deep within a sacred grove, waiting for a worthy successor. Even separated from Hyrule, the sword retains its purpose. Its edge burns with a divine radiance that inflicts devastating wounds upon fiends. Furthermore, it can channel the wielder's inner life force into a piercing beam of pure magic. Ellesime bestows it upon you now, recognizing that your spirit echoes the legendary courage of Link.
-
-STATISTICS:
-
-Charge abilities:
-- Charged Beam three times per day: 10d10 magical damage (Save vs. Rod at -4 for half)
-
-THAC0: +4
-Damage: 1d8+4, double damage vs. Fiends
-Damage type: Slashing or Piercing
-Speed Factor: 1
-Proficiency Type: Long Sword
-Type: One-handed
-Requires:
-9 Strength
-
-Weight: 2~
-
-
-
-
-
-
-
-
-
-
-
 //EQUALIZER +3 - valore 13000mo//
 COPY "rick_bigg_mod/items/SW1H54.itm" "override"
 	SAY NAME1 "Long Sword"
@@ -301,11 +216,11 @@ STATISTICS:
 Equipped abilities: 
 – Protection from Evil and Good
 - Immunity to Charm and Confusion
-- Magic Resistance bonus: +20%
 
 Charge abilities:
-- Cast Detect Alignment at will
-- Cast Truee Seeing three times per day
+- Detect Alignment at will
+
+- Zone of Neutrality two times per day
 
 THAC0 & Damage:
   vs. True Neutral, Chaotic Neutral, Lawful Neutral: +3 to hit, 1d8+3 damage
@@ -324,7 +239,52 @@ Weight: 3"
 
 
 
-//DEFENDER +5 - valore 14000mo //
+
+
+//MASTER SWORD +5 - no evil - valore 15000mo//
+COPY "rick_bigg_mod/items/TB#LINK.itm" "override"
+	SAY NAME1 "Long Sword"
+	SAY UNIDENTIFIED_DESC "These swords are usually referred to as double-edged swords, war swords, or military swords. In many cases, the long sword has a single-edged blade. There is no single version of the long sword; the design and length vary from culture to culture and may vary within the same culture depending on the era. Among the most common characteristics of all long swords is their length, which ranges from thirty-five inches to forty-seven inches. In the latter case, the blade is known to take up forty inches of the total length. Most long swords have a double-edged blade and a sharp point at the tip. Despite the tip, the long sword is designed for slashing, not thrusting.
+
+STATISTICS:
+
+Damage: 1d8 (slashing or piercing)
+Speed Factor: 5
+Proficiency Type: Long Sword
+Type: One-handed
+Requires:
+9 Strength
+
+Weight: 4"
+
+	SAY NAME2 "Master Sword +5"
+	SAY DESC ~Queen Ellesime presents this legendary blade to you with deep solemnity. It is not a weapon born of Faerûn, but a multi-dimensional relic retrieved from the Astral Sea by the high mages of Suldanessellar.According to planar scrolls, this is the "Blade of Evil's Bane" from a distant realm known as Hyrule. It achieved its ultimate form when it was blessed by Princess Zelda, the mortal incarnation of a goddess. The weapon was destined for her chosen champion—a courageous elven youth named Link, the Hero of Legend. Together, Link and Zelda used the sword's sacred light to defeat the demonic kings who threatened their world. For generations after, the blade rested in a stone pedestal deep within a sacred grove, waiting for a worthy successor. Even separated from Hyrule, the sword retains its purpose. Its edge burns with a divine radiance that inflicts devastating wounds upon fiends. Furthermore, it can channel the wielder's inner life force into a piercing beam of pure magic. Ellesime bestows it upon you now, recognizing that your spirit echoes the legendary courage of Link.
+
+STATISTICS:
+
+Equipped abilities:
+- Immunity to fear
+- Armor Class vs. Missile: +3
+
+Charge abilities:
+- Charged Beam three times per day: 10d10 magical damage (Save vs. Rod at -4 for half)
+
+THAC0: +5
+Damage: 1d8+5, +5 extra vs. evil
+Damage type: Slashing or Piercing
+Speed Factor: 1
+Proficiency Type: Long Sword
+Type: One-handed
+Requires:
+9 Strength
+
+Weight: 2~
+
+
+
+
+
+//DEFENDER +5 - valore 15000mo //
 COPY "rick_bigg_mod/items/SW1H77.itm" "override"
 	SAY NAME1 "Long Sword"
 	SAY UNIDENTIFIED_DESC "These swords are usually referred to as double-edged swords, war swords, or military swords. In many cases, the long sword has a single-edged blade. There is no single version of the long sword; the design and length vary from culture to culture and may vary within the same culture depending on the era. Among the most common characteristics of all long swords is their length, which ranges from thirty-five inches to forty-seven inches. In the latter case, the blade is known to take up forty inches of the total length. Most long swords have a double-edged blade and a sharp point at the tip. Despite the tip, the long sword is designed for slashing, not thrusting.
@@ -364,89 +324,9 @@ Type: One-handed
 Requires:
  9 Strength
 
-Weight: 2
-"
-
-
-
-
-
-//FOEBANE +3 - valore 6000mo //
-COPY "rick_bigg_mod/items/SW1H62.itm" "override"
-	SAY NAME1 "Long Sword"
-	SAY UNIDENTIFIED_DESC "These swords are usually referred to as double-edged swords, war swords, or military swords. In many cases, the long sword has a single-edged blade. There is no single version of the long sword; the design and length vary from culture to culture and may vary within the same culture depending on the era. Among the most common characteristics of all long swords is their length, which ranges from thirty-five inches to forty-seven inches. In the latter case, the blade is known to take up forty inches of the total length. Most long swords have a double-edged blade and a sharp point at the tip. Despite the tip, the long sword is designed for slashing, not thrusting.
-
-STATISTICS:
-
-Damage: 1d8 (slashing or piercing)
-Speed Factor: 5
-Proficiency Type: Long Sword
-Type: One-handed
-Requires:
- 9 Strength
-
-Weight: 4"
-
-	SAY NAME2 "Foebane +3"
-	SAY DESC "Foebane was forged during the height of the ancient wars between the surface elves and the drow of the Underdark. It was commissioned by Fflar, a high-ranking elven, and created by the archmage Demron, with a single, brutal purpose: to be the ultimate bane of all extraplanar and monstrous threats and defend from their assault Myth Drannor. The blade is etched with glowing runes that hum with a low, predatory vibration when in the presence of creatures not native to the Prime Material Plane. However, wehn the elven city fell, the sword was lost beneath the rubble of the once-great metropolis, and been separated from its magical scabbard.
-
-STATISTICS:
-
-THAC0: +3
-Damage: 1d8+3, +6 damage vs. undead, shapeshifters, demons and devils
-Damage type: Slashing or Piercing
-Speed Factor: 2
-Proficiency Type: Long Sword
-Type: One-handed
-Requires:
- 9 Strength
-
 Weight: 3
 "
 
-
-
-
-//FOEBANE +5 - valore 15000mo //
-COPY "rick_bigg_mod/items/SW1H63.itm" "override"
-	SAY NAME1 "Long Sword"
-	SAY UNIDENTIFIED_DESC "These swords are usually referred to as double-edged swords, war swords, or military swords. In many cases, the long sword has a single-edged blade. There is no single version of the long sword; the design and length vary from culture to culture and may vary within the same culture depending on the era. Among the most common characteristics of all long swords is their length, which ranges from thirty-five inches to forty-seven inches. In the latter case, the blade is known to take up forty inches of the total length. Most long swords have a double-edged blade and a sharp point at the tip. Despite the tip, the long sword is designed for slashing, not thrusting.
-
-STATISTICS:
-
-Damage: 1d8 (slashing or piercing)
-Speed Factor: 5
-Proficiency Type: Long Sword
-Type: One-handed
-Requires:
- 9 Strength
-
-Weight: 4"
-
-	SAY NAME2 "Foebane +5"
-	SAY DESC "Foebane was forged during the height of the ancient wars between the surface elves and the drow of the Underdark. It was commissioned by Fflar, a high-ranking elven, and created by the archmage Demron, with a single, brutal purpose: to be the ultimate bane of all extraplanar and monstrous threats and defend from their assault Myth Drannor. The blade is etched with glowing runes that hum with a low, predatory vibration when in the presence of creatures not native to the Prime Material Plane. However, wehn the elven city fell, the sword was lost beneath the rubble of the once-great metropolis, and been separated from its magical scabbard.
-	
-	Reunited with Fflar's scabbard, Foebane is now again the greater weapon the legends claimed.
-
-STATISTICS:
-
-Equipped abilities:
-- Protection from undead, shapeshifters, demons and devils 
-- Armor Class: +1
-– Saving Throws: +1
-- Magic Resistance: +10%
-
-THAC0: +5
-Damage: 1d8+5, +6 damage vs. undead, shapeshifters, demons and devils
-Damage type: Slashing or Piercing
-Speed Factor: 1
-Proficiency Type: Long Sword
-Type: One-handed
-Requires:
- 9 Strength
-
-Weight: 3
-"
 
 
 
@@ -479,14 +359,14 @@ Weight: 4"
 STATISTICS:
 
 Equipped abilities:
-- Immunity to hold and charm
-- Saving throws vs. Necromancy: +4
+- Protection from Fiends
+- Fire Resistance: +25%
 
 Combat abilities:
-- On a critical miss cast Enhanced Bard Song
+- On a critical miss activate Enhanced Bard Song
 
 THAC0: +5
-Damage: 1d8+5, +5 vs. Undead and Necromancers
+Damage: 1d8+5, double damage vs. fiends
 Damage type: Slashing or Piercing
 Speed Factor: 1
 Proficiency Type: Long Sword

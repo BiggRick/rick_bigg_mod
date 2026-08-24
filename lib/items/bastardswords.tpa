@@ -127,7 +127,7 @@ Weight: 8"
 
 
 
-//SWORD OF BALDURAN +3 - 9000mo//
+//SWORD OF BALDURAN +3 - 8000mo//
 COPY "rick_bigg_mod/items/SW1H18.itm" "override"
 	SAY NAME1 "Bastard Sword"
 	SAY UNIDENTIFIED_DESC "Also known as the hand-and-a-half sword, the bastard sword derives its name from the fact that it is halfway between the two-handed sword and the long sword. The bastard sword has a double-edged blade and a long grip, which can accommodate both hands if preferred. The overall length of the bastard sword ranges between four feet and four feet ten inches.
@@ -151,11 +151,7 @@ Weight: 10"
 STATISTICS:
 
 Equipped abilities:
-- Magic Resistance: +10%
 - Charisma: +1
-
-Charge abilities:
-- Cast True Strike twice per day
 
 THAC0: +3, +4 vs. Monsters
 Damage: 2d4+4, +5 vs. Monsters
@@ -198,10 +194,10 @@ STATISTICS:
 
 Charge abilities:
 – Sunray once per day
- Damage: 3d6 (Save vs. Spell or be blinded for 1 turn)
- Undead: An additional 1d6 points of damage per level of caster (Save vs. Spell or be destroyed)
- Range: 20 ft.
- Area: 15-ft. radius
+  Damage: 3d6 (Save vs. Spell or be blinded for 1 turn)
+  Undead: An additional 1d6 points of damage per level of caster (Save vs. Spell or be destroyed)
+  Range: 20 ft.
+  Area: 15-ft. radius
 
 THAC0: +2, +4 vs. evil
 Damage: 2d4+3, +4 vs. evil, does double damage against undead
@@ -219,7 +215,7 @@ Weight: 8
 
 
 
-//PERIDAN +3 - valore 8000mo//
+//PERIDAN +3 - valore 7500mo//
 COPY "rick_bigg_mod/items/SW1H32.itm" "override"
 	SAY NAME1 "Bastard Sword"
 	SAY UNIDENTIFIED_DESC "Also known as the hand-and-a-half sword, the bastard sword derives its name from the fact that it is halfway between the two-handed sword and the long sword. The bastard sword has a double-edged blade and a long grip, which can accommodate both hands if preferred. The overall length of the bastard sword ranges between four feet and four feet ten inches.
@@ -244,11 +240,8 @@ STATISTICS:
 Equipped abilities: 
 – Immunity to fear
 
-Charge abilities:
-– Protection from the Elements once per day
-
 THAC0: +3
-Damage: 2d4+4, +5 against dragons
+Damage: 2d4+4, +5 extra against dragons
 Damage type: Slashing
 Speed Factor: 5
 Proficiency Type: Bastard Sword
@@ -384,14 +377,12 @@ Requires:
 Weight: 10"
 
 	SAY NAME2 "Angurvadal +4"
-	SAY DESC "Angurvadal, often translated as the 'Stream of Anguish,' is a blade of ancient and terrible renown. While common legends speak of it as a noble heirloom of Northern heroes, those who have held the blade in the heat of battle know a darker truth. Etched within its heat-darkened steel are ancient runes that bind more than just solar fire; they act as a cage for the restless spirit of an ancient Black Dragon.
-	
-'No one knows what would happen if the real power of this sword were unleashed.'
+	SAY DESC "Angurvadal, often translated as the 'Stream of Anguish,' is a blade of ancient and terrible renown. While common legends speak of it as a noble heirloom of Northern heroes, those who have held the blade in the heat of battle know a darker truth. Etched within its heat-darkened steel are ancient runes that bind more than just solar fire; they act as a cage for the restless spirit of an ancient Black Dragon.	No one knows what would happen if the real power of this sword were unleashed.
 
 STATISTICS:
 
 THAC0: +4
-Damage: 2d4+5, +3 acid damage
+Damage: 2d4+5, +2 acid damage
 Damage type: Slashing
 Speed Factor: 4
 Proficiency Type: Bastard Sword
@@ -433,7 +424,7 @@ Combat abilities:
 - 5% chance cast Black Dragon's Breath (24d4+12 acid damage save vs. Breath for half, enemies only)
 
 THAC0: +5
-Damage: 2d4+6, +3 acid damage
+Damage: 2d4+6, +4 acid damage
 Damage type: Slashing
 Speed Factor: 3
 Proficiency Type: Bastard Sword
@@ -449,7 +440,7 @@ Weight: 7"
 
 
 
-//ANDURIL +5 - no evil - valore 17000mo//
+//ANDURIL +5 - valore 15000mo//
 COPY "rick_bigg_mod/items/SW1H65.itm" "override"
 	SAY NAME1 "Bastard Sword"
 	SAY UNIDENTIFIED_DESC "Also known as the hand-and-a-half sword, the bastard sword derives its name from the fact that it is halfway between the two-handed sword and the long sword. The bastard sword has a double-edged blade and a long grip, which can accommodate both hands if preferred. The overall length of the bastard sword ranges between four feet and four feet ten inches.
@@ -475,7 +466,7 @@ Equipped abilities:
 - Critical hit chance: +5% with this weapon 
 
 Combat abilities:
-- On a critical hit deals 10 Magic damage
+- On a critical hit deals 10 extra magical damage
 
 THAC0: +5
 Damage: 2d4+6

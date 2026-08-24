@@ -109,43 +109,6 @@ Weight: 3"
 
 
 
-//DERVISH CRESCENT +2 - 5500mo//
-COPY "rick_bigg_mod/items/BDSW1H08.itm" "override"
-	SAY NAME1 "Scimitar"
-	SAY UNIDENTIFIED_DESC "The long, curved, single-edged blade is characteristic of both the saber and the scimitar, even though their origins lie in different parts of Faerûn. Whereas the saber was intended chiefly for horsemen, mainly due to its versatility, the scimitar has a heavier oriental influence. The 'shamshir', as it was originally called, is larger, more highly curved, and tapered to an elongated, sharp point. This makes the weapon slightly slower but more effective and deadly in combat.
-
-STATISTICS:
-
-Damage: 2d4 (slashing)
-Speed Factor: 6
-Proficiency Type: Scimitar/Wakizashi/Ninjatō
-Type: One-handed
-Requires:
- 11 Strength
-
-Weight: 4"
-
-	SAY NAME2 "Dervish Crescent +2"
-	SAY DESC "The length of this blade is etched with flames, genies, and whirlwinds. Small glittering particles along its length evoke a sandstorm. The style and quality of the blade indicates it was made in Calimshan.
-
-STATISTICS:
-
--Charge abilities:
-– Fireshield (Red) two times per day (at level 10)
-
-THAC0: +2
-Damage: 2d4+2, +1 fire
-Damage Type: Slashing
-Speed Factor: 4
-Proficiency Type: Scimitar/Wakizashi/Ninjatō
-Type: One-handed
-Requires:
- 11 Strength
-
-Weight: 3"
-
-
-
 
 //TWINKLE +3 - 9000mo//
 COPY "rick_bigg_mod/items/SW1H16.itm" "override"
@@ -245,7 +208,7 @@ Weight: 4"
 STATISTICS:
 
 Combat abilities:
-– 20% chance to have 1 extra attack for two rounds
+– 20% chance to gain one extra attack for two rounds
 
 THAC0: +3
 Damage: 2d4+3 (slashing)
@@ -277,12 +240,12 @@ Requires:
 Weight: 4"
 
 	SAY NAME2 "Soul Reaver +4"
-	SAY DESC "A social faux pas placed upstart Andor Licon in a duel with Baron Eeirk, heir to a warrior king. Though they seemed of even skill, Andor grew oddly weaker with each hit of the Baron's family blade. Panicking, he bade his bodyguards kill Eeirk. Despite his claims of morality, some noted that the young noble had positioned his men before the duel was even underway, and though he professed disdain for its dark magic, Andor made a tidy fortune off the sale of the evil blade. 
+	SAY DESC "This blade was carried by Vaelen, a legendary duelist who famously never lost a drop of blood in a hundred matches. His secret lay not in his defense, but in the blade's horrific enchantment: each strike subtly detached the victim's soul from their physical body. Opponents would quickly find their coordination shattering, their blades swinging wildly at empty air as their martial prowess dissolved. Vaelen was eventually executed when judges realized his flawless victories were fueled by this gradual, invisible theft of his rivals' fighting spirits.
 
 STATISTICS:
 
 Combat abilities:
-– 33% chance target receive a cumulative 1 point penalty to their THAC0 for 2 turns
+- 30% chance that the target receive a cumulative 1 point penalty to their THAC0 for 4 rounds
 
 THAC0: +4
 Damage: 2d4+4 (slashing)
@@ -299,7 +262,7 @@ Weight: 2"
 
 
 
-//SPECTRAL BRAND +4 - 9500mo/
+//SPECTRAL BRAND +4 - no good - 9500mo/
 COPY "rick_bigg_mod/items/SW1H68.itm" "override"
 	SAY NAME1 "Scimitar"
 	SAY UNIDENTIFIED_DESC "The long, curved, single-edged blade is characteristic of both the saber and the scimitar, even though their origins lie in different parts of Faerûn. Whereas the saber was intended chiefly for horsemen, mainly due to its versatility, the scimitar has a heavier oriental influence. The 'shamshir', as it was originally called, is larger, more highly curved, and tapered to an elongated, sharp point. This makes the weapon slightly slower but more effective and deadly in combat.
@@ -316,16 +279,22 @@ Requires:
 Weight: 4"
 
 	SAY NAME2 "Spectral Brand +4"
-	SAY DESC "The origins of this ethereal blade are as elusive as the weapon itself. Legends whispered among the nomads of the Calim Desert speak of a dervish who struck a bargain with a spirit of the Ethereal Plane, seeking a weapon that no armor could turn aside. The result was Spectral Brand, a scimitar that exists only partially in the physical world.
+	SAY DESC "This scimitar crackles with a cold, malevolent energy. Forged in the depths of the Underdark by a drow bladesinger who bartered his soul to a demon lord, the weapon drinks the warmth of its victims. The blade itself is semi-translucent, flickering like a dying shadow, and it whispers dark promises of power to whoever holds it. 
 	
 STATISTICS:
 
-Charge abilities:
+Charge abilities: 
 – Summon Spectral Blade once per day
-  This dancing sword fights on behalf of the one who wields Spectral Brand for 4 rounds, attacking once per round and doing 1d8+3 slashing damage with each hit.
+  This dancing sword fights on behalf of the one who wields Spectral Brand for 1 turn, as if wielded by a level 20 fighter:
+	THAC0: -6
+	Damage 2d4+8, +2 cold damage
+	Damage type: Slashing
+	Attacks per round: 3
+	HP: 80
+	Immunity to all damage except magical
 
 THAC0: +4
-Damage: 2d4+4, +1d8 cold damage
+Damage: 2d4+4, +2 cold damage
 Damage type: Slashing
 Speed Factor: 2
 Proficiency Type: Scimitar/Wakizashi/Ninjatō
@@ -339,7 +308,7 @@ Weight: 2"
 
 
 
-//SPECTRAL BRAND +5 - 16000mo//
+//SPECTRAL BRAND +5 - no good - 16000mo//
 COPY "rick_bigg_mod/items/SW1H69.itm" "override"
 	SAY NAME1 "Scimitar"
 	SAY UNIDENTIFIED_DESC "The long, curved, single-edged blade is characteristic of both the saber and the scimitar, even though their origins lie in different parts of Faerûn. Whereas the saber was intended chiefly for horsemen, mainly due to its versatility, the scimitar has a heavier oriental influence. The 'shamshir', as it was originally called, is larger, more highly curved, and tapered to an elongated, sharp point. This makes the weapon slightly slower but more effective and deadly in combat.
@@ -356,24 +325,27 @@ Requires:
 Weight: 4"
 
 	SAY NAME2 "Spectral Brand +5"
-	SAY DESC "The origins of this ethereal blade are as elusive as the weapon itself. Legends whispered among the nomads of the Calim Desert speak of a dervish who struck a bargain with a spirit of the Ethereal Plane, seeking a weapon that no armor could turn aside. The result was Spectral Brand, a scimitar that exists only partially in the physical world.
+	SAY DESC "This scimitar crackles with a cold, malevolent energy. Forged in the depths of the Underdark by a drow bladesinger who bartered his soul to a demon lord, the weapon drinks the warmth of its victims. The blade itself is semi-translucent, flickering like a dying shadow, and it whispers dark promises of power to whoever holds it. 
 	
 	Drawing on the necromancy of the Skull of the Lich, Spectral Brand now unleash is real dark power.
 
 STATISTICS:
 
-Equipped abilities:
-– Immunity to Level Drain
-
-Combat abilities:
-– Each hit makes the target receive a cumulative 10% penality to their Slashing Resistance and Cold Resistance for 2 rounds
-
-Charge abilities:
+Charge abilities: 
 – Summon Spectral Blade once per day
-  This dancing sword fights on behalf of the one who wields Spectral Brand for 4 rounds, attacking once per round and doing 1d8+3 slashing damage with each hit.
+  This dancing sword fights on behalf of the one who wields Spectral Brand for 5 rounds, as if wielded by a level 20 fighter:
+	THAC0: -6
+	Damage 2d4+8, +2 cold damage
+	Damage type: Slashing
+	Attacks per round: 3
+	HP: 80
+	Immunity to all damage except magical
+	
+Combat abilities:
+– Each hit makes the target receive a non-cumulative 20% penality to their Slashing Resistance and Cold Resistance for 2 rounds
 
 THAC0: +5
-Damage: 2d4+5, +1d8 cold damage
+Damage: 2d4+5, +4 cold damage
 Damage type: Slashing
 Speed Factor: 1
 Proficiency Type: Scimitar/Wakizashi/Ninjatō

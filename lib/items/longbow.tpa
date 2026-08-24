@@ -207,7 +207,8 @@ Equipped abilities:
 - 1/2 extra attack per round
 
 THAC0: +4
-Damage: +3, +1d8 electricity damage
+Damage: +3, +3 electricity damage
+Damage Type: Missile
 Speed Factor: 4
 Proficiency Type: Longbow
 Type: Two-handed
@@ -219,7 +220,7 @@ Weight: 2"
 
 
 
-//TARALASH +2 - valore 4500mo //
+//TARALASH +2 - valore 5500mo //
 COPY "rick_bigg_mod/items/BOW22.itm" "override"
 	SAY NAME1 "Longbow"
 	SAY UNIDENTIFIED_DESC "The longbow is similar to the shortbow, except that the staff is about as tall as the archer is—usually six to six-and-a-half feet. It has better range and accuracy than the shortbow, but a slower Speed Factor.
@@ -241,7 +242,7 @@ Weight: 3"
 STATISTICS:
 
 Combat abilities:
-- Struck target must save vs. Polymorph or be slowed for 5 rounds
+- Struck target must save vs. Polymorph at -2 or be slowed for 5 rounds
 
 THAC0: +3
 Damage: +2

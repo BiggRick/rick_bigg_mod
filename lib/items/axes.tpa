@@ -201,7 +201,7 @@ Weight: 1"
 STATISTICS:
 
 Equipped abilities:
-– 1 extra attack per round
+– 1/2 extra attack per round
 
 Combat abilities: 
 – Returns to the wielder's hand when thrown
@@ -343,46 +343,6 @@ Weight: 7"
 
 
 
-//AXE OF TROLL DECAPITATION +2 - 4500mo//
-COPY "rick_bigg_mod/items/OHRAX1H1.itm" "override"
-	SAY NAME1 "Battle Axe"
-	SAY UNIDENTIFIED_DESC "The most common version of the battle axe is a stout pole about four feet in length with a single-edged, trumpet-shaped blade mounted on one end. This axe, in particular, appears to be very poorly made and slightly smaller than the average battle axe.
-
-STATISTICS:
-
-Damage: 1d8+1 (slashing)
-Speed Factor: 7
-Proficiency Type: Axe
-Type: One-handed
-Requires:
- 13 Strength
-
-Weight: 7"
-
-	SAY NAME2 "Axe of Troll Decapitation +2"
-	SAY DESC "Runes etched along the entire length of this powerful weapon spell out 'death to trolls' in numerous ancient languages. Legends tell that this axe was forged in the deep fires of the earth to end the relentless raids of regenerating giants, becoming the ultimate bane of their encampments across the wild northern territories.
-
-STATISTICS:
-
-Combat abilities:
-- On hit two extra Fire Damage vs. trolls after 6 seconds 
-
-THAC0: +2, +4 vs. trolls
-Damage: 1d8+3, +2 Fire Damage vs. trolls 
-Speed Factor: 5
-Proficiency Type: Axe
-Type: One-handed
-Requires:
- 13 Strength
-
-Weight: 7"
-
-
-
-
-
-
-
 
 
 //FROSTREAVER +3 - valore 7000mo//
@@ -437,12 +397,15 @@ Requires:
 Weight: 7"
 
 	SAY NAME2 "Stonefire +4"
-	SAY DESC "The Stonefires were an old lineage of dwarves, and the eldest male of the line carried this axe, an heirloom of utmost importance. Unfortunately, they were decimated in 1150 DR, falling in a mere two years to a mysterious plague. Ulgan, keeper of the axe, fled in hopes of escaping the inevitable, but he died several weeks later. His body was found in the Cloakwood Forest, but the axe was missing.
+	SAY DESC "The Stonefires were an old lineage of dwarves, and the eldest male of the line carried this axe, an heirloom of utmost importance. Unfortunately, they were decimated in 1150 DR, falling in a mere two years to a mysterious plague. Ulgan, keeper of the axe, fled in hopes of escaping the inevitable, but he died several weeks later. His body was found in the Underdark, but the axe was missing.
 
 STATISTICS:
 
+Equipped abilities:
+Fire Resistance: +40%
+
 THAC0: +4 
-Damage: 1d8+5, +1d4 fire damage
+Damage: 1d8+5, +2 fire damage
 Damage type: slashing
 Speed Factor: 3
 Proficiency Type: Axe
@@ -491,7 +454,7 @@ Requires:
 Weight: 7"
 
 
-//AXE OF THE UNYIELDING +5 - no good - 18000mo//
+//AXE OF THE UNYIELDING +5 - 18000mo//
 COPY "rick_bigg_mod/items/AX1H15.itm" "override"
 	SAY NAME1 "Battle Axe"
 	SAY UNIDENTIFIED_DESC "The most common version of the battle axe is a stout pole about four feet in length with a single-edged, trumpet-shaped blade mounted on one end. This axe, in particular, appears to be very poorly made and slightly smaller than the average battle axe.
@@ -517,7 +480,6 @@ STATISTICS:
 Equipped abilities: 
 - Immunity to Stun
 – Armor Class: +2
-– Strength: 20
 
 Combat abilities:
 – 15% chance of decapitating opponent with each successful attack (Save vs. Death at -4 negates)

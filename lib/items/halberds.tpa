@@ -73,44 +73,6 @@ Weight: 12"
 
 
 
-//BLACKMIST +2 - 6000mo//
-COPY "rick_bigg_mod/items/HALB06.itm" "override"
-	SAY NAME1 "Halberd"
-	SAY UNIDENTIFIED_DESC "By far the oldest and most often used polearm, the halberd consists of a cleaver-like axe blade mounted on a staff averaging six feet in length. The axe blade is balanced at the rear with a fluke and surmounted by a sharp spike, usually of quadrangular design. The fluke is sometimes replaced by a hook used to dismount cavalry. A halberd can be best described as a cross between a spear and an axe.
-
-STATISTICS:
-
-Damage: 1d10 (piercing or slashing)
-Speed Factor: 9
-Proficiency Type: Halberd
-Type: Two-handed
-Requires:
- 13 Strength
-
-Weight: 15"
-
-
-	SAY NAME2 "Blackmist +2"
-	SAY DESC "This was the weapon of Dominique Harl, a sightless paladin who frequently traveled Faerûn. When attacked, Dominique would unleash the black mist that is this halberd's namesake, potentially blinding all within 5 feet. This often gave him the advantage, for he lived in darkness all his life, seeing only with the inner light of faith. Dominique eventually fell, his body found in a dark forest, slain by a creature of the night even more at home in the shadows than he.
-
-STATISTICS:
-
-Charge abilities:
-– Blindness two times per day (Save vs. Rod negates)
-  Duration: 2 hours
-  Area of Effect: 5-ft. radius
-
-THAC0: +2
-Damage: 1d10+2 (piercing)
-Speed Factor: 7
-Proficiency Type: Halberd
-Type: Two-handed
-Requires:
- 13 Strength
-
-Weight: 12" 
-
-
 
 
 //DUSKBLADE +3 - valore 7500mo - no good//
@@ -189,7 +151,7 @@ Weight: 12"
 
 
 
-//DRAGON'S BREATH +5 - 9000mo//
+//DRAGON'S BREATH +5 - 10000mo//
 COPY "rick_bigg_mod/items/HALB05.itm" "override"
 	SAY NAME1 "Halberd"
 	SAY UNIDENTIFIED_DESC "By far the oldest and most often used polearm, the halberd consists of a cleaver-like axe blade mounted on a staff averaging six feet in length. The axe blade is balanced at the rear with a fluke and surmounted by a sharp spike, usually of quadrangular design. The fluke is sometimes replaced by a hook used to dismount cavalry. A halberd can be best described as a cross between a spear and an axe.
@@ -303,7 +265,7 @@ Weight: 11"
 
 
 
-//RAVAGER +6 - 20000mo - no good//
+//RAVAGER +5 - 22000mo - no good//
 COPY "rick_bigg_mod/items/HALB11.itm" "override"
 	SAY NAME1 "Halberd"
 	SAY UNIDENTIFIED_DESC "By far the oldest and most often used polearm, the halberd consists of a cleaver-like axe blade mounted on a staff averaging six feet in length. The axe blade is balanced at the rear with a fluke and surmounted by a sharp spike, usually of quadrangular design. The fluke is sometimes replaced by a hook used to dismount cavalry. A halberd can be best described as a cross between a spear and an axe.
@@ -320,7 +282,7 @@ Requires:
 Weight: 15"
 
 
-	SAY NAME2 "Ravager +6"
+	SAY NAME2 "Ravager +5"
 	SAY DESC "The Ravager is a weapon of singular, terrifying purpose. Its name is not merely a title, but a literal description of its effect on the battlefield. Forged in the depths of the Abyss by master smiths whose names are now forgotten, this halberd was designed to be the ultimate harvester of souls. The blade is forged from a dense, light-absorbing obsidian alloy, etched with pulsating crimson runes that glow with a malevolent light whenever blood is drawn.
 	
 	Combined with the Serpent Shaft, this dark halberd has become one of the deadliest weapons in the Realms.
@@ -331,13 +293,13 @@ Combat abilities:
 – Hit target suffer 3d6 points of poison damage (no save, bypass MR)
 – 15% chance of decapitating opponent with each successful attack (no save)
 
-THAC0: +6
-Damage: 1d10+6 (piercing)
-Speed Factor: 3
+THAC0: +5
+Damage: 1d10+5 (piercing)
+Speed Factor: 4
 Proficiency Type: Halberd
 Type: Two-handed
 Requires:
  13 Strength
  
-Weight: 9
+Weight: 10
 "

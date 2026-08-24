@@ -49,6 +49,88 @@ Weight: 15"
 
 
 
+//BLACK SPIDER FIGURINE - valore 5000mo//
+COPY "rick_bigg_mod/items/MISC3E.itm" "override"
+	SAY NAME1 "Figurine"
+	SAY UNIDENTIFIED_DESC "This is a small spider figurine.
+
+STATISTICS:
+
+Weight: 0"
+
+	SAY NAME2 "Black Spider Figurine"
+	SAY DESC "This black spider figurine fits in the palm of your hand. When the command word is spoken, the figurine comes to life as a semi-intelligent spider called Kitthix. The huge spider will obey its master's commands for the duration of the spell or until slain. After one hour, regardless of whether the spider lived or died, the figurine returns. It takes a day to recharge the figurine.
+
+STATISTICS:
+
+Charge abilities:
+– Summon Kitthix once per day
+  Range: 20 ft.
+  Duration: 1 hour
+  The spider can phase during combat. It can also use its Web Tangle ability, which sprays a stream of webbing at one target. If the target fails its Save vs. Breath at -2, it will be held by the webbing for 2 rounds. Kitthix's melee attack inflicts 1d8 damage (piercing), occurs 2 times per round, and is poisonous (Save vs. Poison negates).
+
+Weight: 0"
+
+
+
+
+//GOLDEN LION FIGURINE - solo druidi - valore 4000mo//
+COPY "rick_bigg_mod/items/MISC3D.itm" "override"
+	SAY NAME1 "Figurine"
+	SAY UNIDENTIFIED_DESC "This is a small lion figurine.
+
+STATISTICS:
+
+Weight: 0"
+
+	SAY NAME2 "Golden Lion Figurine"
+	SAY DESC "This small figurine is a perfect replication, in miniature, of a lion. When the command word is spoken, the lion grows to normal proportions, becoming a living, breathing, giant cat named Joolon. The lion obeys the summoner's commands and remains for one hour or until slain, at which point it once again becomes a figurine.
+
+STATISTICS:
+
+Charge abilities:
+– Summon Joolon once per day
+  Range: 20 ft.
+  Duration: 1 hour
+  Joolon is hasted, immune to normal weapons, and attacks three times per round at 1d12+9 (piercing)
+
+Weight: 0"
+
+
+
+
+
+//MOON DOG FIGURINE - solo ranger - valore 4000mo//
+COPY "rick_bigg_mod/items/MISC7T.itm" "override"
+	SAY NAME1 "Figurine"
+	SAY UNIDENTIFIED_DESC "This is a small dog figurine.
+
+STATISTICS:
+
+Weight: 0"
+
+	SAY NAME2 "Moon Dog Figurine"
+	SAY DESC "This figurine of wondrous power calls forth from the ether the moon dog Cerebus. Cerebus will obey the owner of the figurine if he so chooses. Unlike similar figurines, Cerebus serves through his desire to combat evil and forward the cause of righteousness and is not bound by the magic of the figurine.
+
+STATISTICS:
+
+Charge abilities:
+– Summon Cerebus once per day
+  Range: 20 ft.
+  Duration: 1 hour
+  Cerebus attacks once per round at 3d4 (piercing, strikes as +4 weapon). He is immune to charm, domination, morale failure, poison, and non-enchanted weapons.
+
+Cerebus has the following innate powers:
+– Mirror Image (3/day): As per the spell
+– Improved Invisibility (1/day): As per the spell
+– Moon Dog Sight (3/day): The moon dog can see through (and therefore dispel) all forms of illusion and invisibility, detecting traps and evil in the vicinity
+– Healing Lick (3/day): Heals 20 Hit Points and cures disease, deafness, blindness, and poison
+– Moon Dog Howl (1/day): Damages and instills fear in enemies who are evil while also dispelling fear and casting Protection From Evil on party members
+
+Weight: 0"
+
+
+
 
 
 

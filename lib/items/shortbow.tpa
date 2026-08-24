@@ -103,7 +103,7 @@ Weight: 2"
 
 
 
-//TUIGAN BOW +2 - 3500mo//
+//TUIGAN BOW +2 - 4500mo//
 COPY "rick_bigg_mod/items/BOW14.itm" "override"
 	SAY NAME1 "Shortbow"
 	SAY UNIDENTIFIED_DESC "Shortbows were the first bows to be developed, although they were not called such. This is more of a default term that refers to anything which is not a longbow. Shortbow staves are about five feet long on the average. As the years passed, attempts were made to increase bow ranges. Bows were either given longer staves or flexibility was increased with no change to the length. The former resulted in what is now called the longbow.
@@ -122,6 +122,8 @@ Weight: 2"
 	SAY DESC "The Tuigans are a nomadic people widely dispersed across the steppe regions of Faerûn but bound together by a common bloodline. The bows they make are specially tailored for their mobile warriors, and the process used is carefully guarded, but the result is well known: Any bow of Tuigan origin can be fired faster than is possible with a normal one. This masterwork variant is blessed by steppe spirits. When the archer lands a perfect, critical strike, these spirits grant their favor, temporarily twisting fate to smile upon the wielder.
 
 STATISTICS:
+
+- Critical hit chance: +5% with this weapon
 
 Combat abilities:
 – After scoring a critical hit, the wielder is affected by the Luck spell
@@ -229,17 +231,17 @@ Requires:
 
 Weight: 2"
 
-	SAY NAME2 "Darkfire Bow +2"
+	SAY NAME2 "Coldfire Bow +2"
 	SAY DESC "Crafted during the fall of Myth Drannor, this elegant shortbow is a masterpiece of contradictory wizardry. To forge it, an elven bladesinger bound a minor fire elemental to the upper limb and an ice spirit to the lower limb.These opposing forces are kept in a perpetual, tense balance by a core of crystallized magic in the grip. When drawn, arrows are cloaked in a volatile, violet flame that burns with both blistering heat and absolute zero. This elemental friction creates an arcane aura around the wielder, shielding them from hostile spells and extreme temperatures.
 
 STATISTICS:
 
 Equipped abilities:
-– Cold Resistance: +10%
-– Magical Damage Resistance: +10%
+– Fire Resistance: +5%
+– Cold Resistance: +5%
 
 THAC0: +2
-Damage: +2, +2 fire/magical damage
+Damage: +2, +2 fire/cold damage
 Speed Factor: 4
 Proficiency Type: Shortbow
 Type: Two-handed
@@ -266,7 +268,7 @@ Requires:
 
 Weight: 2"
 
-	SAY NAME2 "Darkfire Bow +3"
+	SAY NAME2 "Coldfire Bow +3"
 	SAY DESC "Crafted during the fall of Myth Drannor, this elegant shortbow is a masterpiece of contradictory wizardry. To forge it, an elven bladesinger bound a minor fire elemental to the upper limb and an ice spirit to the lower limb.These opposing forces are kept in a perpetual, tense balance by a core of crystallized magic in the grip. When drawn, arrows are cloaked in a volatile, violet flame that burns with both blistering heat and absolute zero. This elemental friction creates an arcane aura around the wielder, shielding them from hostile spells and extreme temperatures.
 	
 	Re-strung with the divine Bowstring of Gond, the weapon's structural tension has been perfected, unlocking an even greater, devastating force with every shot.
@@ -274,11 +276,12 @@ Weight: 2"
 STATISTICS:
 
 Equipped abilities:
-– Cold Resistance: +20%
-– Magical Damage Resistance: +20%
+– Fire Resistance: +10%
+– Cold Resistance: +10%
+– 1/2 extra attack per round
 
 THAC0: +3
-Damage: +3, +6 fire/magical damage
+Damage: +3, +4 fire/magical damage
 Speed Factor: 3
 Proficiency Type: Shortbow
 Type: Two-handed

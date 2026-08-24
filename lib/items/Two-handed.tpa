@@ -146,44 +146,6 @@ Weight: 12"
 
 
 
-//FLAME OF THE NORTH +2 - 7500mo//
-COPY "rick_bigg_mod/items/SW2H12.itm" "override"
-	SAY NAME1 "Two-Handed Sword"
-	SAY UNIDENTIFIED_DESC "The two-handed sword is a derivative of the long sword. Weaponsmiths have always looked for ways to improve existing weapons. In an effort to improve the long sword, the blade was lengthened. Eventually, the handle had to be extended and two hands became necessary to properly swing the sword. The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations.
-
-STATISTICS:
-
-Damage: 2d6 (slashing)
-Speed Factor: 10
-Proficiency Type: Two-handed Sword
-Type: Two-handed
-Requires:
- 15 Strength
-
-Weight: 15"
-
-SAY NAME2 "Flame of the North +2"
-	SAY DESC "The title does not refer to the blade itself, but rather to the woman who originally wielded it in the icy hinterlands of Faerûn. Her name was Carerra, and she was a veritable firestorm that swept across arctic trolls and the northern orcish tribes. She was a hated enemy of many a shaman whose magic often floundered against her fury. After a lifetime of raucous battle, it was old age that eventually claimed her. The sword was passed to her granddaughter, an adventurer, who presumably brought it to Amn.
-
-STATISTICS:
-
-Equipped abilities:
-– Protection From Evil
-
-THAC0: +2, +4 vs. evil
-Damage: 2d6+2, +4 vs. evil
-Damage type: Slashing
-Speed Factor: 8
-Proficiency Type: Two-handed sword
-Type: Two-handed
-Requires:
- 15 Strength
-
-Weight: 10" 
-
-
-
-
 
 
 
@@ -229,7 +191,7 @@ Weight: 10"
 
 
 
-//SILVER SWORD +3 - 10000mo - no buoni//
+//SILVER SWORD +3 - 10000mo//
 COPY "rick_bigg_mod/items/SW2H15.itm" "override"
 	SAY NAME1 "Two-Handed Sword"
 	SAY UNIDENTIFIED_DESC "The two-handed sword is a derivative of the long sword. Weaponsmiths have always looked for ways to improve existing weapons. In an effort to improve the long sword, the blade was lengthened. Eventually, the handle had to be extended and two hands became necessary to properly swing the sword. The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations.
@@ -246,7 +208,7 @@ Requires:
 Weight: 15"
 
 SAY NAME2 "Silver Sword +3"
-	SAY DESC "This vorpal Silver Sword radiates a dark aura when you examine it, and the blade is so finely sharpened it could likely sever a head in a single blow.
+	SAY DESC ""This vorpal Silver Sword is perfectly balanced, its surface reflecting a flawless, liquid-like sheen when you examine it, and the blade is so finely sharpened it could likely sever a head in a single blow. 
 
 STATISTICS:
 
@@ -295,7 +257,7 @@ Equipped abilities:
 Combat abilities:
 - Extended range 3
 - Demons and Devils must save vs. Death at -4 or be utterly destroyed
-– While enraged, deals an extra 2d8 points of magical damage and slows the target for 1 round (no save) on a critical hit
+– While enraged, deals an extra 4d4 points of crushing damage at the target on a critical hit
 
 THAC0: +5
 Damage: 2d12+5 (slashing)
@@ -374,7 +336,7 @@ Equipped abilities:
 - Critical hit chance: +5% with this weapon 
 
 Combat abilities:
-- On a critical hit the wielder gains 2 extra attacks per round for twelve seconds
+– On kill gain one extra attack
 
 THAC0: +4
 Damage: 2d6+4 (slashing)
@@ -389,8 +351,47 @@ Weight: 7"
 
 
 
-//GRAM THE SWORD OF GRIEF +5 - no buoni - 15000mo//
+//GRAM THE SWORD OF GRIEF +4 - only evil - 14000mo//
 COPY "rick_bigg_mod/items/SW2H17.itm" "override"
+	SAY NAME1 "Two-Handed Sword"
+	SAY UNIDENTIFIED_DESC "The two-handed sword is a derivative of the long sword. Weaponsmiths have always looked for ways to improve existing weapons. In an effort to improve the long sword, the blade was lengthened. Eventually, the handle had to be extended and two hands became necessary to properly swing the sword. The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations.
+
+STATISTICS:
+
+Damage: 2d6 (slashing)
+Speed Factor: 10
+Proficiency Type: Two-handed Sword
+Type: Two-handed
+Requires:
+ 15 Strength
+
+Weight: 15"
+
+SAY NAME2 "Gram the Sword of Grief +4"
+	SAY DESC "The origins of this massive blade are shrouded in the mists of ancient sagas. It is a weapon forged in the crucible of tragedy and tempered in blood and tears of the forsaken. Throughout its blood-soaked history, Gram has passed through the hands of many who sought power, only to find that the sword demanded a heavy toll on their soul.
+
+STATISTICS:
+
+Combat abilities:
+– Inflicts 10 points of bleeding damage per hit (two point per round)
+
+THAC0: +4
+Damage: 2d6+4 (slashing)
+Speed Factor: 6
+Proficiency Type: Two-handed Sword
+Type: Two-handed
+Requires:
+ 15 Strength
+
+Weight: 11" 
+
+
+
+
+
+
+//GRAM THE SWORD OF GRIEF +5 - only evil - 19000mo//
+COPY "rick_bigg_mod/items/SW2H18.itm" "override"
 	SAY NAME1 "Two-Handed Sword"
 	SAY UNIDENTIFIED_DESC "The two-handed sword is a derivative of the long sword. Weaponsmiths have always looked for ways to improve existing weapons. In an effort to improve the long sword, the blade was lengthened. Eventually, the handle had to be extended and two hands became necessary to properly swing the sword. The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations.
 
@@ -407,45 +408,6 @@ Weight: 15"
 
 SAY NAME2 "Gram the Sword of Grief +5"
 	SAY DESC "The origins of this massive blade are shrouded in the mists of ancient sagas. It is a weapon forged in the crucible of tragedy and tempered in blood and tears of the forsaken. Throughout its blood-soaked history, Gram has passed through the hands of many who sought power, only to find that the sword demanded a heavy toll on their soul.
-
-STATISTICS:
-
-Combat abilities:
-– Inflicts 10 points of bleeding damage per hit (two point per round)
-
-THAC0: +5
-Damage: 2d6+5 (slashing)
-Speed Factor: 5
-Proficiency Type: Two-handed Sword
-Type: Two-handed
-Requires:
- 15 Strength
-
-Weight: 9" 
-
-
-
-
-
-
-//GRAM THE SWORD OF GRIEF +6 - 20000mo//
-COPY "rick_bigg_mod/items/SW2H18.itm" "override"
-	SAY NAME1 "Two-Handed Sword"
-	SAY UNIDENTIFIED_DESC "The two-handed sword is a derivative of the long sword. Weaponsmiths have always looked for ways to improve existing weapons. In an effort to improve the long sword, the blade was lengthened. Eventually, the handle had to be extended and two hands became necessary to properly swing the sword. The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations.
-
-STATISTICS:
-
-Damage: 2d6 (slashing)
-Speed Factor: 10
-Proficiency Type: Two-handed Sword
-Type: Two-handed
-Requires:
- 15 Strength
-
-Weight: 15"
-
-SAY NAME2 "Gram the Sword of Grief +6"
-	SAY DESC "The origins of this massive blade are shrouded in the mists of ancient sagas. It is a weapon forged in the crucible of tragedy and tempered in blood and tears of the forsaken. Throughout its blood-soaked history, Gram has passed through the hands of many who sought power, only to find that the sword demanded a heavy toll on their soul.
 	
 	This fearsome blade shows its real power with the Heart of the Damned set into its pommel.
 
@@ -458,15 +420,15 @@ Combat abilities:
 – Inflicts 10 points of bleeding damage per hit (two point per round)
 – 20% chance to drain 2 points of Strength from the target and transfer them to the wielder for 5 rounds
 
-THAC0: +6
-Damage: 2d6+6 (slashing)
-Speed Factor: 4
+THAC0: +5
+Damage: 2d6+5 (slashing)
+Speed Factor: 5
 Proficiency Type: Two-handed Sword
 Type: Two-handed
 Requires:
  15 Strength
 
-Weight: 9" 
+Weight: 10" 
 
 
 
@@ -522,7 +484,7 @@ Weight: 7"
 
 
 
-//CARSOMYR + 6 - 30000mo//
+//CARSOMYR + 5 - 25000mo//
 COPY "rick_bigg_mod/items/sw2h19.itm" "override"
 	SAY NAME1 "Two-Handed Sword"
 	SAY UNIDENTIFIED_DESC "The two-handed sword is a derivative of the long sword. Weaponsmiths have always looked for ways to improve existing weapons. In an effort to improve the long sword, the blade was lengthened. Eventually, the handle had to be extended and two hands became necessary to properly swing the sword. The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations.
@@ -538,7 +500,7 @@ Requires:
 
 Weight: 15"
 
-	SAY NAME2 "Carsomyr +6"
+	SAY NAME2 "Carsomyr +5"
 	SAY DESC "Carsomyr is a weapon of legend, perhaps one of the most powerful blades ever forged on Faerûn, though its origin and history is thought purposefully forgotten so that the sword itself shall never overshadow the importance of the struggles that must be fought today. It is infused with the very essence of virtue and requires as much from any Paladin who would hope to wield it. The evils of the realms must truly stand aside when this weapon is brought to bear, their magic dispelled with a word, steadfastly resisted with ease. Carsomyr also harbors a special distaste for the forces of evil and chaos, and such creatures must fear additional damage from its touch in battle.
 	
 	Even a holy relic as powerful as Carsomyr is made even greater when combined with the Eye of Tyr.
@@ -555,12 +517,15 @@ Charge abilities:
 – Dispel Magic at level 30 three times per day
   Range: 40 ft.
   Area of Effect: 15-ft. radius
- 
+  
+- Holy Word at level 30 once per day
+  Range: Personal
+  Area of Effect: 30-ft radius
 
-THAC0: +6
-Damage: 2d6+6, +6 extra vs. evil
+THAC0: +5
+Damage: 2d6+5, +5 extra vs. evil
 Damage type: Slashing
-Speed Factor: 4
+Speed Factor: 5
 Proficiency Type: Two-handed Sword 
 Type: Two-handed
 Requires:

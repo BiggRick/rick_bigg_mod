@@ -94,3 +94,17 @@ END
 
 
 
+
+LAUNCH_ACTION_FUNCTION "duplicate_spell_change_save"
+	INT_VAR
+		save_bonus = 0 - 2
+	STR_VAR
+		source_file = "SPPR411"
+		destination_file = "SPER10"
+		destination_save = "WAND" // DEATH, POLYMORPH, BREATH, WAND, SPELL
+END
+
+
+
+
+

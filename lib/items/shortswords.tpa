@@ -110,7 +110,7 @@ Weight: 2"
 
 
 
-//ILBRATHA +2 - 5000mo//
+//ILBRATHA +2 - 4500mo//
 COPY "rick_bigg_mod/items/SW1H26.itm" "override"
 	SAY NAME1 "Short Sword"
 	SAY UNIDENTIFIED_DESC "The short sword is the first type of sword to come into existence. In the simplest of terms, a short sword can be considered a dagger with a blade so long that it can no longer be called a dagger. The term short sword does not exist in sword classifications. However, it has come to be used to describe a double-edged blade about two feet in length. The sword tip is usually pointed, ideal for thrusting.
@@ -131,9 +131,8 @@ Weight: 3"
 
 STATISTICS:
 
-Charge abilities:
-– Mirror Image twice per day
-  Duration: 1 turn
+Combat abilities:
+- 20% chance when hit to cast Reflected Image on self
 
 THAC0: +2
 Damage: 1d6+2 (piercing)

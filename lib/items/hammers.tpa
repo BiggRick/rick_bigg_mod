@@ -111,45 +111,6 @@ Weight: 4"
 
 
 
-//DREAD HAMMER +3 - valore 5500mo - no buoni//
-COPY "rick_bigg_mod/items/BDHAMM06.itm" "override"
-	SAY NAME1 "Hammer"
-	SAY UNIDENTIFIED_DESC "A massive warhammer inscribed with dwarven runes.
-
-STATISTICS:
-
-Damage: 2d3+1 (crushing)
-Speed Factor: 6
-Proficiency Type: War Hammer
-Type: One-handed
-Requires:
- 15 Strength
-
-Weight: 9"
-
-	SAY NAME2 "Dread Hammer +3"
-	SAY DESC "Once the property of dwarven cleric of Abbathor, Gurn Coldhearth, this mighty war hammer was infused with dark magics soon after Coldhearth's transformation into a lich. The brown leather of the handle and gray metal of the head are purest black now, seemingly forged of a darkness so deep no light can escape it. Any hand that holds it soon grows cold and numb, but those strong enough to endure the discomfort will wield a weapon of formidable power.
-
-STATISTICS:
-
-Equipped abilities:
-– On a critical miss, the wielder takes 1d4 points of cold damage
-
-Combat abilities:
-– Deals an extra 2d4 points of cold damage vs. good-aligned
-
-THAC0: +3
-Damage: 2d3+4, +2 cold
-Damage Type: Crushing
-Speed Factor: 3
-Proficiency Type: War Hammer
-Type: One-handed
-Requires:
- 15 Strength
-
-Weight: 9"
-
-
 
 
 
@@ -239,7 +200,7 @@ COPY_EXISTING "AEGIS.ITM" "override/AEGIS2.ITM"
 	
 	
 	
-//CROM FAEYR +5 - valore 25000mo//
+//CROM FAEYR +5 - valore 20000mo//
 COPY "rick_bigg_mod/items/HAMM09.itm" "override"
 	SAY NAME1 "Hammer"
 	SAY UNIDENTIFIED_DESC "A massive warhammer inscribed with dwarven runes.

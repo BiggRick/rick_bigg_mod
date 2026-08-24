@@ -176,7 +176,7 @@ Weight: 4
 
 
 
-//ROD OF SMITING +2 - solo maghi e chierici - 7500mo//
+//ROD OF SMITING +3 - 7500mo//
 COPY "rick_bigg_mod/items/RODS04.itm" "override"
 	SAY NAME1 "Staff"
 	SAY UNIDENTIFIED_DESC "Rods are about three feet long and as thick as your thumb. They are normally found in cases or similar storage places. Rods can be fashioned from metal, wood, ivory, or bone. They can be plain or decorated and carved, tipped, or not. Rods are powered by charges, unless noted otherwise in the description of a particular rod. Each time the rod is used, one or more charge may be expended.
@@ -185,21 +185,18 @@ STATISTICS:
 
 Weight: 3"
 
-	SAY NAME2 "Rod of Smiting +2"
-	SAY DESC "This long, thin rod can be wielded as a staff. This rod has been designed to destroy golems. Any golem struck by the rod must make a Saving Throw or be destroyed. In the hands of any other than a cleric or mage, the rod becomes unusable.
+	SAY NAME2 "Rod of Smiting +3"
+	SAY DESC "This heavy, thick rod is crafted from solid, dark iron and can be wielded effectively as a staff. Originally forged during the ancient magical wars to counter mechanical monstrosities, this weapon has been specifically designed to shatter and destroy golems. The sheer force imbued within its core disrupts the very enchantments that animate artificial constructs.
 
 STATISTICS:
-
-Equipped abilities:
-- Strikes golem as +5
 
 Combat abilities:
 – Struck golems must save vs. Death or be destroyed
 
-THAC0: +2
-Damage: 1d6+2, +10 vs. golems
+THAC0: +3
+Damage: 1d6+3, +7 extra vs. golems
 Damage type: Crushing
-Speed Factor: 2
+Speed Factor: 1
 Proficiency Type: Quarterstaff
 Type: Two-handed
 
@@ -258,49 +255,6 @@ Weight: 4
 
 
 
-//STAFF OF CURING +2 - solo chierici paladini druidi e ranger- 5500mo//
-COPY "rick_bigg_mod/items/STAF10.itm" "override"
-	SAY NAME1 "Staff"
-	SAY UNIDENTIFIED_DESC "The simplest and humblest of staff weapons, the quarterstaff is a length of wood ranging six to nine feet in length. High-quality quarterstaves are made of stout oak and are shod with metal at both ends. The quarterstaff must be wielded with both hands.
-
-STATISTICS:
-
-Damage: 1d6 (crushing)
-Speed Factor: 4
-Proficiency Type: Quarterstaff
-Type: Two-handed
-Requires:
- 5 Strength
-
-Weight: 4"
-
-	SAY NAME2 "Staff of Curing +2"
-	SAY DESC "Torm is said to manifest these items during times of great trouble, granting them to priests who care for the wounded, diseased, and poisoned. It is not to be taken for granted, however, as the enchantment, though useful, is fleeting. It must be used with all due care.
-
-STATISTICS:
-
-Equipped abilities:
-– Armor Class: +2
-
-Charge abilities:
-– Cure two times per day
-  Special: Heals 3d6+3 Hit Points and cures disease and poison
-  Range: Touch
-  Area of Effect: 1 creature
-
-THAC0: +2
-Damage: 1d6+2 (crushing)
-Speed Factor: 2
-Proficiency Type: Quarterstaff
-Type: Two-handed
-Requires:
- 5 Strength
-
-Weight: 3
-"
-
-
-
 
 //ROD OF TERROR +3 - 7000mo//
 COPY "rick_bigg_mod/items/RODS05.itm" "override"
@@ -312,13 +266,13 @@ STATISTICS:
 Weight: 3"
 
 	SAY NAME2 "Rod of Terror +3"
-	SAY DESC "When activated, this rod may be used as a Staff +3. Any creature hit by the rod must make a Saving Throw vs. Rod or flee in terror, fearing the wielder as if he or she were a flesh-eating demon from the Abyss. There is a drawback to using this rod, however: Each time the rod is used, there is a 10% chance that the wielder is scared instead.
+	SAY DESC "When activated, this rod may be used as a magical staff. Any creature hit by the rod must make a Saving Throw vs. Rod or flee in terror, fearing the wielder as if he or she were a flesh-eating demon from the Abyss. There is a drawback to using this rod, however: Each time the rod is used, there is a 20% chance that the wielder is scared instead.
 
 STATISTICS:
 
 Combat abilities:
-– 80% target must save vs. Rod or flee in terror for 4 rounds
-– 20% wielder must save vs. Rod or flee in terror for 4 rounds
+– 90% target must save vs. Rod or flee in terror for 4 rounds
+– 10% wielder must save vs. Rod or flee in terror for 4 rounds
 
 THAC0: +3
 Damage: 1d6+3 (crushing)
@@ -561,7 +515,6 @@ STATISTICS:
 
 Equipped abilities:
 - Charisma: +1
-- Saving Throws vs Enchantment School: +2
 
 Charge abilities:
 – Domination (save vs. Rod -4 negates) three times per day
@@ -582,7 +535,7 @@ Weight: 2
 
 
 
-//SERPENT SHAFT +4 - valore 10000mo//
+//SERPENT SHAFT +4 - valore 9500mo//
 COPY "rick_bigg_mod/items/STAF23.itm" "override"
 	SAY NAME1 "Staff"
 	SAY UNIDENTIFIED_DESC "The simplest and humblest of staff weapons, the quarterstaff is a length of wood ranging six to nine feet in length. High-quality quarterstaves are made of stout oak and are shod with metal at both ends. The quarterstaff must be wielded with both hands.
@@ -599,12 +552,12 @@ Requires:
 Weight: 4"
 
 	SAY NAME2 "Serpent Shaft +4"
-	SAY DESC "Adorned with serpentine designs, this powerful quarterstaff has a chance to release a lethal toxin against its opponents with every blow. 
+	SAY DESC "Adorned with serpentine designs, this powerful quarterstaff has a chance to release a lethal toxin against its opponents with every blow. It was originally crafted for the high priests of a forgotten snake cult, but it found its way into the hands of the Shadow Thieves, who used it to execute high-profile targets without leaving a trace of standard weaponry. The wood is rumored to be carved from a tree grown in the Abyss, watered only with the blood of venomous beasts.
 
 STATISTICS:
 
 Combat abilities:
-– Poison opponents with every successful attack. The poison lasts for 2 rounds and does 2 HP of damage/second unless the target makes a save vs. Death.
+– Poison opponents with every successful attack. The poison lasts for 1 rounds and does 3 HP of damage/second (Save vs. Death at -4 negates)
 
 THAC0: +4
 Damage: 1d6+4 (crushing)
@@ -664,7 +617,7 @@ Weight: 3
 
 
 
-//STAFF OF THE WOODLANDS +5 - 20000mo - solo druidi//
+//STAFF OF THE WOODLANDS +5 - 16000mo - solo druidi puri//
 COPY "rick_bigg_mod/items/STAF14.itm" "override"
 	SAY NAME1 "Staff"
 	SAY UNIDENTIFIED_DESC "The simplest and humblest of staff weapons, the quarterstaff is a length of wood ranging six to nine feet in length. High-quality quarterstaves are made of stout oak and are shod with metal at both ends. The quarterstaff must be wielded with both hands.
@@ -687,8 +640,6 @@ STATISTICS:
 
 Equipped abilities: 
 – Barkskin on self
-– AC bonus: +2
-- Saving Throws bonus: +2
 
 Charge abilities:
 – Summon 8-HD Shambling Mound twice per day
@@ -795,7 +746,7 @@ Combat abilities:
 – 15% chance opponent is knocked back and stunned (save vs. Rod at -4 negates)
 
 THAC0: +4
-Damage: 1d6+4
+Damage: 1d6+9
 Damage Type: Crushing
 Speed Factor: 1
 Proficiency Type: Quarterstaff
@@ -827,7 +778,7 @@ Requires:
 
 Weight: 4"
 
-	SAY NAME2 "Staff of the Ram +6"
+	SAY NAME2 "Staff of the Ram +5"
 	SAY DESC "The Staff of the Ram is a weapon of deceptive simplicity and earth-shattering force. Crafted from the wood of an iron-oak tree that grew atop the highest peak of the Mount Tozal, the staff was tempered in the crushing depths of the Elemental Plane of Earth. The name of the weapon comes from its unique enchantment: the tip of the staff is capped with an invisible, magical force shaped like a charging ram’s head. When the wielder strikes, this force is unleashed with a thunderous roar, magnifying the physical blow a hundredfold.
 	
 	Roranach's Horn augments the Staff of the Ram's already noteworthy abilities, creating a weapon few opponents are able to stand against.
@@ -839,10 +790,10 @@ Equipped abilities:
 
 Combat abilities:
 – Deals extra 10 points of piercing damage on a critical hit
-– 15% chance opponent is knocked back and stunned
+– 15% chance opponent is knocked back and stunned (no save)
 
-THAC0: +6
-Damage: 1d6+6
+THAC0: +5
+Damage: 1d6+10
 Damage Type: Crushing
 Speed Factor: 1
 Proficiency Type: Quarterstaff

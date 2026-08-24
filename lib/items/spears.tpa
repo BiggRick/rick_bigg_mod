@@ -74,43 +74,6 @@ Weight: 3"
 
 
 
-//BACKBITER SPEAR +3 - 2000mo//
-COPY "rick_bigg_mod/items/SPER03.itm" "override"
-	SAY NAME1 "Spear"
-	SAY UNIDENTIFIED_DESC "One of the earliest weapons, dating back to the most primitive of times, the first spears were simply wooden poles or sticks sharpened at one end. When the civilized races mastered metals, spearheads were made from iron and steel. Having reached this end, weaponsmiths began experimenting with different types of spearheads, thus leading to the development of certain polearm types.
-
-STATISTICS:
-
-Damage: 1d8 (piercing)
-Speed Factor: 6
-Proficiency Type: Spear
-Type: Two-handed
-Requires:
- 7 Strength
-
-Weight: 5"
-
-
-	SAY NAME2 "Backbiter Spear +3"
-	SAY DESC "This weapon will appear as a magical spear; however when a combat situation arises, the wielder will attack an enemy and Backbiter will attack the wielder. For every attack made, there's a chance Backbiter will attack the foe and also the wielder. This is a powerful spear, but one must ask if it is worth it in the end.
-
-STATISTICS:
-
-Combat abilities:
-– 20% Chance the wielder receives 3 points of damage (piercing) by the spear upon every successful hit
-
-THAC0: +3
-Damage: 1d8+3 (piercing)
-Speed Factor: 3
-Proficiency Type: Spear
-Type: Two-handed
-Requires:
- 7 Strength
-
-Weight: 2" 
-
-
-
 //SPEAR OF THE UNICORN +2 - 5500mo - no evil//
 COPY "rick_bigg_mod/items/SPER07.itm" "override"
 	SAY NAME1 "Spear"
@@ -188,7 +151,7 @@ Weight: 3"
 
 
 
-//IMPALER +3 - no good - 8000mo//
+//IMPALER +3 - 8000mo//
 COPY "rick_bigg_mod/items/SPER08.itm" "override"
 	SAY NAME1 "Spear"
 	SAY UNIDENTIFIED_DESC "One of the earliest weapons, dating back to the most primitive of times, the first spears were simply wooden poles or sticks sharpened at one end. When the civilized races mastered metals, spearheads were made from iron and steel. Having reached this end, weaponsmiths began experimenting with different types of spearheads, thus leading to the development of certain polearm types.
@@ -206,13 +169,12 @@ Weight: 5"
 
 
 	SAY NAME2 "Impaler +3"
-	SAY DESC "The Impaler has a palpable aura of magic that hints at the vicious nature of the weapon and why it has been a favorite of several powerful orc chieftains in the past. When a victim is struck they are, as one would guess, very nearly impaled, run through as the massive enchantment does its dirty work. 
+	SAY DESC "The Impaler radiates a palpable, thrumming aura of magic—a silent testament to the weapon's sheer, unadulterated brutality. It is easy to see why this spear was the prized possession of several legendary orc chieftains, leaders who valued raw devastation above all else. When the spear strikes, its massive enchantment drives the point forward with terrifying, supernatural force. Victims are not merely wounded; they are violently run through, as the weapon's savage magic tears through armor and bone alike to complete its grim work.
 
 STATISTICS:
 
 THAC0: +3
-Damage: 1d8+3, +7 piercing damage
-Damage type: Piercing
+Damage: 1d8+10 (piercing)
 Speed Factor: 3
 Proficiency Type: Spear
 Type: Two-handed
@@ -224,7 +186,7 @@ Weight: 3"
 
 
 
-//SPEAR OF WITHERING +4 - no druidi - valore 10000mo//
+//SPEAR OF WITHERING +4 - no druidi e no buoni - valore 10000mo//
 COPY "rick_bigg_mod/items/SPER10.itm" "override"
 	SAY NAME1 "Spear"
 	SAY UNIDENTIFIED_DESC "One of the earliest weapons, dating back to the most primitive of times, the first spears were simply wooden poles or sticks sharpened at one end. When the civilized races mastered metals, spearheads were made from iron and steel. Having reached this end, weaponsmiths began experimenting with different types of spearheads, thus leading to the development of certain polearm types.
@@ -246,11 +208,13 @@ Weight: 5"
 
 STATISTICS:
 
-Charge Abilities:
-- Cast Poison once per day (at level 15)
+Combat abilities:
+- 15% chance on hit to poison target
+  Damage: 4d4 (no save) + 1 every 4 seconds (Save vs. Rod at -2 for half)
+  Duration: 1 turn
 
 THAC0: +4
-Damage: 1d8+4, +3 poison damage
+Damage: 1d8+4, +2 poison damage
 Damage type: Piercing
 Speed Factor: 2
 Proficiency Type: Spear
@@ -336,7 +300,7 @@ Weight: 2"
 
 
 
-//IXIL'S NAIL +6 - 18000mo//
+//IXIL'S NAIL +5 - 18000mo//
 COPY "rick_bigg_mod/items/SPER12.itm" "override"
 	SAY NAME1 "Spear"
 	SAY UNIDENTIFIED_DESC "One of the earliest weapons, dating back to the most primitive of times, the first spears were simply wooden poles or sticks sharpened at one end. When the civilized races mastered metals, spearheads were made from iron and steel. Having reached this end, weaponsmiths began experimenting with different types of spearheads, thus leading to the development of certain polearm types.
@@ -353,7 +317,7 @@ Requires:
 Weight: 5"
 
 
-	SAY NAME2 "Ixil's Nail +6"
+	SAY NAME2 "Ixil's Nail +5"
 	SAY DESC "This spear is a weapon of terrifying elegance, crafted from a single, seamless rod of blackened obsidian, while the head is a jagged, crystalline spike known as the 'Nail of Ixil'—a fragment of an ancient, sentient mountain that was shattered by a divine blow.
 	
 	With shaft and tip reunited, Ixil's Spike is a fearsome weapon. During the battle, the head can detach to pin opponents to the ground even as a new head magically reforms on the end of the spear.
@@ -366,8 +330,8 @@ Equipped abilities:
 Combat abilities:
 – Hit target is pinned for 3 rounds and takes an additional 1d4+6 piercing damage each round (Save vs. Wand -4 negates)
 
-THAC0: +6
-Damage: 1d8+6 (piercing)
+THAC0: +5
+Damage: 1d8+5 (piercing)
 Speed Factor: 1 
 Proficiency Type: Spear 
 Type: Two-handed

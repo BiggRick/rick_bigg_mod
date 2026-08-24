@@ -112,6 +112,42 @@ Weight: 8"
 
 
 
+//STRONG ARM +2 - valore 8000mo //
+COPY "rick_bigg_mod/items/BOW11.itm" "override"
+	SAY NAME1 "Composite Longbow"
+	SAY UNIDENTIFIED_DESC "Composite bows are longbows or shortbows whose staves are made from more than one type of material. This gives greater flexibility and makes arrows fired from this bow deliver more damage. These were developed after the normal longbow.
+
+STATISTICS:
+
+THAC0: +1
+Damage: +1 (missile)
+Speed Factor: 7
+Proficiency Type: Longbow
+Type: Two-handed
+Requires:
+ 15 Strength
+
+Weight: 10"
+
+	SAY NAME2 "Strong Arm +2"
+	SAY DESC "This massive bow was the property of the ranger Bearpaw, who reportedly received it from a strangely benevolent ogre. The reason for the gift was never discussed, but he earned the respect of everyone he met, and likely befriended the creature while patrolling the Cloakwood Forest. Bearpaw could draw back the bow without the slightest effort, but when he died it was bequeathed to his wife and sons, and not a one could draw the string even halfway. They eventually sold it to a merchant heading south.
+
+STATISTICS:
+
+THAC0: +3
+Damage: +6 (missile)
+Speed Factor: 5
+Proficiency Type: Longbow
+Type: Two-handed
+Requires:
+ 18 Strength
+
+Weight: 12"
+
+
+
+
+
 
 
 //ELVEN COURT BOW +3 - valore 13000mo //
@@ -135,9 +171,6 @@ Weight: 10"
 	SAY DESC "This yew bow is more a work of art than a weapon of war: Fine engravings dance over the polished wood, and the bowstring gleams of gold, almost singing when drawn. This was a ceremonial bow in the Elven Court for a thousand years, though that is scarcely a single lifetime in elven terms. Every 50 years or so it was granted to someone who had performed a great service, the recipient eventually choosing who would hold it next. Two centuries ago, a human, Yin Pon, rescued an elven prince and was gifted the bow, which he carried with him to Baldur's Gate, where it was subsequently lost.
 
 STATISTICS:
-
-Combat abilities:
-- Protection from Monsters
 
 THAC0: +8
 Damage: +4, +3 extra vs. Monsters
@@ -177,8 +210,8 @@ Weight: 10"
 STATISTICS:
 
 Combat abilities:
-- 10% chance to force target to save vs. Wand or die as if hit by Wail of the Banshee
-- 20% chance target must save vs. Wand at -4 or panic for 5 rounds
+- 10% chance to force target to save vs. Rod or die as if hit by Wail of the Banshee
+- 20% chance target must save vs. Rod at -4 or panic for 5 rounds
 - Deals 6 extra point of magic damage to panicked targets
 
 THAC0: +4

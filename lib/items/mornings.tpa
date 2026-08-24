@@ -111,7 +111,7 @@ Weight: 10"
 
 
 
-//EVERARD'S MORNING STAR +4 - 10000mo//
+//EVERARD'S MORNING STAR +4 - 12000mo//
 COPY "rick_bigg_mod/items/WASTAR.itm" "override"
 	SAY NAME1 "Morning Star"
 	SAY UNIDENTIFIED_DESC "The morning star is a wooden shaft topped with a metal head covered by a spiked iron sheath. Morning stars have an overall length of about four feet. Some have a round, oval, or cylindrical shaped head studded with spikes. Extending from most morning star heads, regardless of design, is a long point for thrusting.
@@ -128,12 +128,9 @@ Requires:
 Weight: 12"
 
 	SAY NAME2 "Everard's Morning Star +4"
-	SAY DESC "This morning star was the personal weapon of the cleric Everard. Everard was a powerful priest of Tempus who sacrificed his life in the battle against the devil Belhifet.
+	SAY DESC "This morning star was the personal weapon of Everard, High Priest of Tempus. During the siege of Kuldahar, Everard made the ultimate sacrifice to shatter Jerrod's Stone, sealing the planar rift and banishing the devil Belhifet back to the Abyss. Imbued with the late priest's divine devotion, the weapon's heavy spikes easily splinter enemy defenses.
 
 STATISTICS:
-
-Equipped abilities:
-– Strength bonus: +1
 
 Combat abilities:
 - Each hit makes the target receive a cumulative 1 point penalty to their AC for 4 rounds
@@ -168,19 +165,14 @@ Weight: 12"
 
 	SAY NAME2 "Ice Star +5"
 	SAY DESC "The Ice Star is a weapon of frigid and relentless power, said to have been pulled from the deepest crevasse of the Reghed Glacier in the frozen north of Icewind Dale. According to ancient skalds, the mace was not forged in a traditional fire, but shaped by the crushing pressure of moving ice and enchanted by a coven of winter hags to serve as a beacon for the coming of an eternal winter. Its head is a spiked sphere of 'Everfrost'—a substance as hard as adamantine that never thaws, even when held over a roaring forge.
-	
-	The most terrifying aspect of the weapon, however, is its ability to channel the primordial winter; at the wielder's command, the mace can exhale a devastating Cone of Cold, a blast of absolute zero that flash-freezes all enemies caught in its path.
 
 STATISTICS:
 
 Equipped abilities:
-– Fire Resistance: +50%
-
-Charge abilities:
-– Cone of Cold (at level 15) two times per day
+– Fire Resistance: +40%
 
 THAC0: +5
-Damage: 1d8+6, +4d4 cold damage
+Damage: 1d8+6, +8 cold damage
 Damage type: Crushing or Piercing
 Speed Factor: 2
 Proficiency Type: Flail/Morning Star
