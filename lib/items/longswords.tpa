@@ -139,7 +139,10 @@ Combat abilities:
 – Struck arcane spellcasters receive an extra 25% chance to Miscast Magic
 
 Charge abilities:
-- Cast Pierce Shield once per day
+- Deny Defenses once per day
+  Remove all combat protections
+  Area of Effect: one creature
+  
 
 THAC0: +3
 Damage: 1d8+3 (slashing or piercing)
@@ -220,8 +223,13 @@ Equipped abilities:
 Charge abilities:
 - Detect Alignment at will
 
-- Zone of Neutrality two times per day
-
+- Zone of Neutrality once per day
+  vs. True Neutral, Chaotic Neutral, Lawful Neutral: no effect
+  vs. Neutral Good, Neutral Evil: -1 Luck for 1 turn
+  vs. Other Alignments: -2 Luck for 1 turn
+  Range: Long 
+  Area of Effect: 20' radius
+  
 THAC0 & Damage:
   vs. True Neutral, Chaotic Neutral, Lawful Neutral: +3 to hit, 1d8+3 damage
   vs. Neutral Good, Neutral Evil: +4 to hit, 1d8+4 damage
@@ -314,6 +322,7 @@ STATISTICS:
 
 Equipped abilities: 
 - Armor Class vs. Slashing, Piercing and Crushing: +3
+– The wearer and any allies within their visual radius have +1 Armor Class
 
 THAC0: +5
 Damage: 1d8+5
@@ -360,10 +369,10 @@ STATISTICS:
 
 Equipped abilities:
 - Protection from Fiends
-- Fire Resistance: +25%
+- Fire Resistance: +40%
 
 Combat abilities:
-- On a critical miss activate Enhanced Bard Song
+- On a critical miss the party gains +5% critical hit chance for 3 rounds
 
 THAC0: +5
 Damage: 1d8+5, double damage vs. fiends

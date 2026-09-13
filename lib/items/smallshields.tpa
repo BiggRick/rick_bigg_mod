@@ -66,11 +66,43 @@ Weight: 2
 "
 
 
+//REFLECTION SHIELD +2 - 4500mo//
+COPY "rick_bigg_mod/items/SHLD24A.itm" "override"
+	SAY NAME1 "Small Shield"
+	SAY UNIDENTIFIED_DESC "A small shield is usually round and is carried on the forearm, gripped with the shield hand. Its light weight as compared to a medium shield permits the user to carry other items in that hand, although <PRO_HESHE> cannot wield or carry another weapon. 
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +1
+– No protection against missile attacks
+
+Requires:
+ 8 Strength
+
+Weight: 3
+"
+
+	SAY NAME2 "Reflection Shield +2"
+	SAY DESC "Thought only a decoration from some forgotten festhall, this shield languished in a shop until a young noble purchased it as parade armor. Its dormant enchantments were discovered when a age targeted him with deadly spells; the shield violently reflected the arcane bolts back at the caster, obliterating them with their own magic. Chronomancers notes a strange crest faded on its surface—a golden triad of triangles—and ancient tablets recount a legend from another realm, where a green-clad hero used a similar mirror to turn a demon king's magic against himself.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +3
+– No protection against missile attacks
+– Reflects energy missiles back at their user
+
+Requires:
+ 8 Strength
+
+Weight: 2
+"
 
 
 
 
-//SUNCATCHER +2 - 3500mo//
+//SUNCATCHER +3 - no evil - 5500mo//
 COPY "rick_bigg_mod/items/BDSHLD02.itm" "override"
 	SAY NAME1 "Small Shield"
 	SAY UNIDENTIFIED_DESC "A small shield is usually round and is carried on the forearm, gripped with the shield hand. Its light weight as compared to a medium shield permits the user to carry other items in that hand, although <PRO_HESHE> cannot wield or carry another weapon. 
@@ -87,14 +119,14 @@ Requires:
 Weight: 3
 "
 
-	SAY NAME2 "Suncatcher +2"
-	SAY DESC "Barnassus, a cleric of Lathander, created a polished bronze shield hundreds of years ago in order to battle a medusa rumored to be lurking in the catacombs beneath his city. Barnassus tracked the medusa to her lair and realized, almost too late, that what he faced was no ordinary medusa but one that had also succumbed to the curse of vampirism. Barnassus closed his eyes and charged forward, ready to take down his enemy or die trying. Lathander rewarded Barnassus's bravery by filling the room with sunlight while the priest slew the medusa.
+	SAY NAME2 "Suncatcher +3"
+	SAY DESC "Barnassus, a cleric of Lathander, created a polished bronze shield hundreds of years ago in order to battle a medusa rumored to be lurking in the catacombs beneath his city. Barnassus tracked the medusa to her lair and realized, almost too late, that what he faced was no ordinary medusa but one that had also succumbed to the curse of vampirism. Barnassus closed his eyes and charged forward, ready to take down his enemy or die trying. Lathander rewarded Barnassus's bravery by granting him divine sight even though he fought with his eyes closed, while the priest slew the medusa.
 
 STATISTICS:
 
 Equipped abilities:
-– Armor Class: +3
-– 15% chance that anyone attacking the wielder in melee takes 1d4 points of fire damage and becomes blinded for 2 rounds (Save vs. Spell halves damage and negates blindness)
+– Armor Class: +4
+– 20% chance that anyone attacking the wielder in melee becomes blinded for 2 rounds (Save vs. Rod at -2 negates blindness, undead no save)
 – No protection against missile attacks
 
 Requires:
@@ -142,43 +174,11 @@ Weight: 2
 
 
 
-//REFLECTION SHIELD +2 - 11000mo//
-COPY "rick_bigg_mod/items/SHLD24A.itm" "override"
-	SAY NAME1 "Small Shield"
-	SAY UNIDENTIFIED_DESC "A small shield is usually round and is carried on the forearm, gripped with the shield hand. Its light weight as compared to a medium shield permits the user to carry other items in that hand, although <PRO_HESHE> cannot wield or carry another weapon. 
-
-STATISTICS:
-
-Equipped abilities:
-– Armor Class: +1
-– No protection against missile attacks
-
-Requires:
- 8 Strength
-
-Weight: 3
-"
-
-	SAY NAME2 "Reflection Shield +2"
-	SAY DESC "Thought only a decoration from some forgotten festhall, this shield languished in the backroom of a shop until a young noble purchased it as parade armor. Its dormant, supreme enchantments were discovered when a later attempt on his life was foiled, as the shield violently reflected each attack back at the would-be assassins, leaving them obliterated by their own malice. Subsequent study by master arcanists has linked its flawless forge-fire to the mythic elven excavations of Myth Rhynn. The shield does not merely block incoming strikes; it commands reality to turn the attacker's own lethality against themselves.
-
-STATISTICS:
-
-Equipped abilities:
-– Armor Class: +3
-– No protection against missile attacks
-– Reflects missiles back at their user
-
-Requires:
- 8 Strength
-
-Weight: 2
-"
 
 
 
 
-//SHIELD OF THE FROZEN FIST +3 - 10000mo//
+//SHIELD OF THE FROZEN FIST +3 - 9000mo//
 COPY "rick_bigg_mod/items/TB#SHFF.itm" "override"
 	SAY NAME1 "Small Shield"
 	SAY UNIDENTIFIED_DESC "A small shield is usually round and is carried on the forearm, gripped with the shield hand. Its light weight as compared to a medium shield permits the user to carry other items in that hand, although <PRO_HESHE> cannot wield or carry another weapon. 
@@ -203,7 +203,7 @@ STATISTICS:
 Equipped abilities:
 – Armor Class: +4
 – No protection against missile attacks
-- Cold Resistance: +40%
+- Fire Resistance: +20%
 - All melee attacks deal an additional 1d4 points of cold damage
 
 Requires:
@@ -241,9 +241,9 @@ STATISTICS:
 Equipped abilities:
 – Armor Class: +4
 – No protection against missile attacks
-- Fire Resistance: +30%
-- Cold Resistance: +30%
-- Electricity Resistance: +30%
+- Fire Resistance: +20%
+- Cold Resistance: +20%
+- Electricity Resistance: +20%
 
 Requires:
  8 Strength
@@ -253,7 +253,7 @@ Weight: 2
 
 
 
-//SHIELD OF BLINDNESS +3 - 13000mo//
+//SHIELD OF BLINDNESS +3 - 11000mo//
 COPY "rick_bigg_mod/items/TB#SHBL.itm" "override"
 	SAY NAME1 "Small Shield"
 	SAY UNIDENTIFIED_DESC "A small shield is usually round and is carried on the forearm, gripped with the shield hand. Its light weight as compared to a medium shield permits the user to carry other items in that hand, although <PRO_HESHE> cannot wield or carry another weapon. 

@@ -64,7 +64,7 @@ Weight: 5
 
 
 
-//SHIELD OF BALDURAN +2 - 6500mo//
+//SHIELD OF BALDURAN +2 - 6000mo//
 COPY "rick_bigg_mod/items/SHLD06P.itm" "override"
 	SAY NAME1 "Medium Shield"
 	SAY UNIDENTIFIED_DESC "A medium shield is carried in the same manner as a small shield. Unlike the small shield, however, its weight prevents the character from using <PRO_HISHER> shield hand for anything other than carrying the medium shield. Medium shields are usually made of metal, range from three to four feet in diameter, and can be of any shape, from round to square to a dragon's spread wings. A typical medieval shield resembles a triangle with one point facing downward.
@@ -209,7 +209,7 @@ Weight: 4
 
 
 
-//KAZRAH'S SHIELD +3 - 11000mo//
+//KAZRAH'S SHIELD +3 - 9500mo//
 COPY "rick_bigg_mod/items/OHBSHLD1.itm" "override"
 	SAY NAME1 "Medium Shield"
 	SAY UNIDENTIFIED_DESC "A medium shield is carried in the same manner as a small shield. Unlike the small shield, however, its weight prevents the character from using <PRO_HISHER> shield hand for anything other than carrying the medium shield. Medium shields are usually made of metal, range from three to four feet in diameter, and can be of any shape, from round to square to a dragon's spread wings. A typical medieval shield resembles a triangle with one point facing downward.
@@ -232,7 +232,6 @@ STATISTICS:
 
 Equipped abilities:
 – Armor Class: +4
-– Electricity Resistance: +30%
 
 Combat abilities:
 - 10% chance that Shocking Grasp is cast on hitter

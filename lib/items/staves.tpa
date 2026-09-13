@@ -238,7 +238,7 @@ Cast Call Lightning once per day
   Range: 80 ft.
   
 Combat abilities:
-– Thunderclap: 25% chance of stunning hit target for 2 rounds (save vs. Rod negates)
+– Thunderclap: 20% chance of stunning hit target for 2 rounds (save vs. Rod negates)
 
 THAC0: +2
 Damage: 1d6+2 (crushing)
@@ -683,29 +683,25 @@ Requires:
 Weight: 4"
 
 	SAY NAME2 "Staff of the Magi +5"
-	SAY DESC "This type of staff is thoroughly linked to the image of the spellcasting profession, rare though it is. It is among the most powerful tools that a wizard can possess, the culmination of complex enchantments and endless study. This fantastic weapon can strike from range, grants immunity to Time Stop, and cast Magical Strike, a powerful attack that bypasses mages' protections. The quintessential Mage item.
+	SAY DESC "
 
 STATISTICS:
 
 Equipped abilities:
-- Immunity to Time Stop
-- Immunity to Charm
-
-Combat abilities:
-– Extended range
-- Each hit makes the target receive a cumulative penalty for 2 turns: 
-   -1 Saving Throws 
-   -10% Magic Resistance 
+- Casting Level: +2
+- Casting Speed: +1
+- Magic Resistance: +10%
+- Can see invisible creatures
 
 Charge abilities:
-– Magical Strike three times per day 
+– Cognitive Void once per day 
   Damage: 6d6 (magical), bypasses all protections
+  Target forgets two ninth level spells (or lower) and suffers a -4 penalty to caster level for 5 rounds
   Range: 40 ft.
   
-- Dimension Jump at will
-  
 THAC0: +5
-Damage: 1d6+5 (magical)
+Damage: 1d6+5, no Strength bonus
+Damage Type: Magical
 Speed Factor: 0
 Proficiency Type: Quarterstaff
 Type: Two-handed
@@ -743,7 +739,7 @@ Weight: 4"
 STATISTICS:
 
 Combat abilities: 
-– 15% chance opponent is knocked back and stunned (save vs. Rod at -4 negates)
+– 10% chance opponent is knocked back and stunned (save vs. Rod at -4 negates)
 
 THAC0: +4
 Damage: 1d6+9
@@ -790,7 +786,7 @@ Equipped abilities:
 
 Combat abilities:
 – Deals extra 10 points of piercing damage on a critical hit
-– 15% chance opponent is knocked back and stunned (no save)
+– 10% chance opponent is knocked back and stunned (no save)
 
 THAC0: +5
 Damage: 1d6+10

@@ -1,0 +1,67 @@
+//CAPTIVE AUDIENCE  - solo bardi - 5500mo//
+COPY "rick_bigg_mod/items/MISC2P.itm" "override"
+	SAY NAME1 "Harp"
+	SAY DESC "Harps are stringed instruments often used by bards. This harp is ideal for the traveling warbler or tales and ballads.
+
+STATISTICS:
+
+Weight: 3"
+
+	SAY NAME2 "The Captive Audience"
+	SAY DESC "This finely made harp is well known among the nomadic peoples of the east, though more for the infamy of its owner, Greagan of Lowhill. He was a bard of sorts, though less for his love of people than his hatred of hard work. He bade a mage relation construct this harp so its magic might disguise his utter lack of talent in the arts. Its power was greater than he had hoped, and he later turned to petty burglary using "his" music to captivate his victims. Greagan ultimately disappeared some years ago amidst rumors of a bardic college uncharacteristically moved to violence. The harp still functions, though any self-respecting troubadour would reserve its use for the most dire of circumstances. The magic seems to be waning as well, and perhaps this is one item best lost to time.
+
+STATISTICS:
+
+Charge abilities:
+– Captivation once per day (Charm creature Save vs. Spell at -2 negates)
+  Range: 25 ft.
+  Duration: 12 hours
+  Area of Effect: 1 creature
+
+Weight: 3"
+
+
+
+
+//HARP OF DISCORD - solo bardi - 6000mo//
+COPY "rick_bigg_mod/items/MISC3M.itm" "override"
+	SAY NAME1 "Harp"
+	SAY DESC "Harps are stringed instruments often used by bards. This harp is ideal for the traveling warbler or tales and ballads.
+
+STATISTICS:
+
+Weight: 3"
+
+	SAY NAME2 "Harp of Discord"
+	SAY DESC "Even the most talented bard cannot get this harp to play in tune. Each stroke of the harp's strings results in a harsh, off-key note. If the bard attempts to play a proper ballad upon the harp, its magical effects are released. All creatures, other than the bard and his/her party, must make a Saving Throw vs. Spell or be confused for thirty seconds.
+
+STATISTICS:
+
+Charge abilities:
+– Confusion three times per day (Save vs. Wand at -2 negates)
+  Duration: 5 rounds
+  Area of Effect: 15-ft. radius
+
+Weight: 6"
+
+
+
+
+//FLUTE OF THE IMMACULATE BREEZE - solo bardi - 2500mo//
+COPY "rick_bigg_mod/items/BDBRD02.itm" "override"
+	SAY NAME1 "Flute"
+	SAY DESC "A flute is a long, hollow instrument with holes along its length. A bard can coax a pleasing, piping tune from a flute, which is also easy to carry on the road.
+
+STATISTICS:
+
+Weight: 3"
+
+	SAY NAME2 "Flute of the Immaculate Breeze"
+	SAY DESC "Originally crafted by gnomes, this flute appears diminutive at first but when picked up, it assumes the proper size for the bard who wields it. Tiny engravings of flowers, winding vines, and wispy clouds cover the length of the flute. When played, the scent of flowers fill the air and nearby spectators sometimes feel the sensation of a gentle rain on their face. 
+
+STATISTICS:
+
+Charge abilities:
+– Zone of Sweet Air twice per day
+
+Weight: 3"

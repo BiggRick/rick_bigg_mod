@@ -68,7 +68,7 @@ Weight: 12"
 
 
 
-//SPIDER'S BANE +2 - 6000mo//
+//SPIDER'S BANE +2 - 5000mo//
 COPY "rick_bigg_mod/items/SW2H06.itm" "override"
 	SAY NAME1 "Two-Handed Sword"
 	SAY UNIDENTIFIED_DESC "The two-handed sword is a derivative of the long sword. Weaponsmiths have always looked for ways to improve existing weapons. In an effort to improve the long sword, the blade was lengthened. Eventually, the handle had to be extended and two hands became necessary to properly swing the sword. The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations.
@@ -90,7 +90,8 @@ SAY NAME2 "Spider's Bane +2"
 STATISTICS:
 
 Equipped abilities:
-– Protects the wielder from any magics that affect movement, such as Hold and Web.
+– Protects the wielder from Web and Entangle
+- Poison Damage Resistance: +50%
 
 THAC0: +2, +4 vs Spiders and Ettercaps
 Damage: 2d6+2, +4 vs Spiders and Ettercaps
@@ -213,7 +214,7 @@ SAY NAME2 "Silver Sword +3"
 STATISTICS:
 
 Combat abilities:
-– 15% chance per hit that target must save vs. Death at -4 or die
+– 10% chance per hit that target must save vs. Death at -4 or die
 
 THAC0: +3
 Damage: 2d6+3 (slashing)
@@ -333,10 +334,9 @@ STATISTICS:
 Equipped abilities:
 - Immunity to fatigue
 - Doubles movement rate
-- Critical hit chance: +5% with this weapon 
 
 Combat abilities:
-– On kill gain one extra attack
+– On kill gain one extra attack for 2 rounds
 
 THAC0: +4
 Damage: 2d6+4 (slashing)
@@ -560,7 +560,7 @@ Equipped abilities:
 – Immunity to confusion and all psionic attacks
 
 Combat abilities:
-– 15% chance per hit that target must save vs. Death at -4 or die
+– 10% chance per hit that target must save vs. Death at -4 or die
 - Slays Mind Flayers
 
 THAC0: +5

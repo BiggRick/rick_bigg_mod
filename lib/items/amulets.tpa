@@ -362,12 +362,13 @@ STATISTICS:
 Weight: 1"
 
 	SAY NAME2 "Amulet of Spell Warding"
-	SAY DESC "A favorite item of protection for a mage entering a magical duel, this amulet provides protection against spells, but does not interfere with the mage's own spellcasting.
+	SAY DESC "Originally crafted exclusively to deflect direct sorcerous assaults, this amulet was a favorite item of protection for mages entering formal magical duels. However, as rival duelists increasingly resorted to hidden wands and trick rods to bypass traditional wards, enchanters updated the amulet's matrix. The modern iteration provides robust protection against both raw spells and channeled magical devices, all without interfering with the wearer's own spellcasting.
 
 STATISTICS:
 
 Equipped abilities:
 – Save vs. Spell: +3
+- Save vs. Rod/Staff/Wand: +3
 
 Weight: 1"
 
@@ -375,7 +376,7 @@ Weight: 1"
 
 
 
-//KALIGUN'S AMULET OF MAGIC RESISTANCE - 8000mo//
+//KALIGUN'S AMULET OF MAGIC RESISTANCE - 6000mo//
 COPY "rick_bigg_mod/items/AMUL20.itm" "override"
 	SAY NAME1 "Amulet"
 	SAY UNIDENTIFIED_DESC "Amulets are usually magical devices that are commonly worn around the neck, suspended from a chain. The type of chain that comes with an amulet generally increases the item's aesthetic value, not its magical properties. Only one amulet can be dangled from the neck at a time.
@@ -390,7 +391,7 @@ Weight: 1"
 STATISTICS:
 
 Equipped abilities:
-– Magic Resistance: +15%
+– Magic Resistance: +10%
 
 Weight: 1"
 
@@ -423,7 +424,7 @@ Weight: 1"
 
 
 
-//NECKLACE OF FORM STABILITY - 3000mo//
+//NECKLACE OF FORM STABILITY - 2500mo//
 COPY "rick_bigg_mod/items/AMUL24.itm" "override"
 	SAY NAME1 "Amulet"
 	SAY UNIDENTIFIED_DESC "Amulets are usually magical devices that are commonly worn around the neck, suspended from a chain. The type of chain that comes with an amulet generally increases the item's aesthetic value, not its magical properties. Only one amulet can be dangled from the neck at a time.
@@ -438,7 +439,7 @@ Weight: 1"
 STATISTICS:
 
 Equipped abilities:
-– Save vs. Petrification/Polymorph: +5
+– Save vs. Petrification/Polymorph: +4
 
 Weight: 1"
 
@@ -508,7 +509,7 @@ Weight: 1"
 STATISTICS:
 
 Charge abilities:
-– Dire Charm once per day (Save vs. Wand at -5 negates)
+– Dire Charm once per day (Save vs. Wand at -4 negates)
   Range: 35 ft.
   Duration: 1 turn
   Area of Effect: 1 creature
@@ -519,30 +520,7 @@ Weight: 1"
 
 
 
-//PENDANT OF THE DESPERATE HEART - 3500mo//
-COPY "rick_bigg_mod/items/BDAMUL26.itm" "override"
-	SAY NAME1 "Amulet"
-	SAY UNIDENTIFIED_DESC "Amulets are usually magical devices that are commonly worn around the neck, suspended from a chain. The type of chain that comes with an amulet generally increases the item's aesthetic value, not its magical properties. Only one amulet can be dangled from the neck at a time.
-
-STATISTICS:
-
-Weight: 1"
-
-	SAY NAME2 "Pendant of the Desperate Heart "
-	SAY DESC "This silver amulet reacts only when its wearer faces imminent death. As blood spills and the rhythm of the heart falters, the gem embedded within pulses with fierce, panicked energy. This surge manifests as a shimmering wall of defensive force, granting the dying warrior a final, desperate chance to turn the tide of battle.
-
-STATISTICS:
-
-Equipped abilities: 
-– Armor Class: +3 bonus when hit points drop below 33%
-
-Weight: 1"
-
-
-
-
-
-//GUILDMASTER'S AMULET - solo ladri - valore 16000mo//
+//GUILDMASTER'S AMULET - solo ladri - valore 14000mo//
 COPY "rick_bigg_mod/items/AMUL28.itm" "override"
 	SAY NAME1 "Amulet"
 	SAY UNIDENTIFIED_DESC "Amulets are usually magical devices that are commonly worn around the neck, suspended from a chain. The type of chain that comes with an amulet generally increases the item's aesthetic value, not its magical properties. Only one amulet can be dangled from the neck at a time.
@@ -557,7 +535,7 @@ Weight: 1"
 STATISTICS:
 
 Equipped abilities:
-– Armor Class: +3
+– Armor Class: +2
 – Open Locks: +20%
 – Find Traps: +20%
 – While hidden or invisible, the wearer is non-detectable by magical means such as Detect Invisibility and scrying
@@ -585,7 +563,7 @@ Equipped abilities:
 – Speed Factor: +4
 
 Charge abilities:
-– Improved Haste once per day (double movement, attack per round and some effects)
+– Cheetah's Speed once per day (double movement, attack per round and some effects)
   Duration: 5 rounds
   Area of Effect: the user
 

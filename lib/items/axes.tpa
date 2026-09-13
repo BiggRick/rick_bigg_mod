@@ -205,7 +205,7 @@ Equipped abilities:
 
 Combat abilities: 
 – Returns to the wielder's hand when thrown
-– 25% chance hit target must take 2d6 extra crushing damage
+– 20% chance hit target must take 2d6 extra crushing damage (only thrown)
 
 THAC0: +3
 Damage: 1d6+4
@@ -482,7 +482,7 @@ Equipped abilities:
 – Armor Class: +2
 
 Combat abilities:
-– 15% chance of decapitating opponent with each successful attack (Save vs. Death at -4 negates)
+– 10% chance of decapitating opponent with each successful attack (Save vs. Death at -4 negates)
 
 THAC0: +5 
 Damage: 1d8+5 (slashing)

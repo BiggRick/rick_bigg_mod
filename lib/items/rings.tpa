@@ -69,7 +69,7 @@ Weight: 0"
 
 
 
-//RING OF INFRAVISION - 900mo//
+//RING OF THE HAWK'S EYE - 1250mo//
 COPY "rick_bigg_mod/items/RING21.itm" "override"
 	SAY NAME1 "Ring"
 	SAY DESC "A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.
@@ -78,14 +78,13 @@ STATISTICS:
 
 Weight: 0"
 
-	SAY NAME2 "Ring of Infravision"
-	SAY DESC "Merchants that dare the risks of trading with the drow of the Great Rift are often given these items to aid in their movements underground. 
+	SAY NAME2 "Ring of the Hawk's Eye"
+	SAY DESC "This ring can be activated by a simple command word, with each use acting as one charge. The effect is a duplication of the 1st-level wizard spell True Strike. For the duration of the spell, the wearer's perception shifts, granting a massive surge in combat accuracy and an increased likelihood to land devastating critical blows.
 
 STATISTICS:
 
-Equipped abilities:
-– Infravision up to 120 ft.
-- +1 THAC0
+Charge abilities:
+– True Strike once per day
 
 Weight: 0"
 
@@ -450,8 +449,8 @@ Weight: 0"
 STATISTICS:
 
 Equipped abilities:
-– Find Traps: +25%
-– Set Traps: +25%
+– Find Traps: +30%
+– Set Traps: +30%
 
 Weight: 0"
 
@@ -508,7 +507,7 @@ Weight: 0"
 
 
 
-//RING OF REGENERATION - 3500mo//
+//RING OF THE VOID  - solo maghi e bardi - 6500mo//
 COPY "rick_bigg_mod/items/RING34.itm" "override"
 	SAY NAME1 "Ring"
 	SAY DESC "A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.
@@ -517,13 +516,16 @@ STATISTICS:
 
 Weight: 0"
 
-	SAY NAME2 "Ring of Regeneration"
-	SAY DESC "A lowly-ranked Red Wizard named Huhhus is said to have discovered the perfect way to distill troll flesh to make a potion that provided the same regenerative ability as that of the troll. Few were willing to drink the vile liquid, however, and decades later a student of Huhhus created this ring by building upon the foundations of knowledge laid by Huhhus. Within the hollow cavity of the jade ring floats the ichor and brains of a troll, providing a limited regenerative capability to the wearer.
+	SAY NAME2 "Ring of the Void"
+	SAY DESC "This heavy band band is engraved with defensive runes designed to repel otherworldly entities. The ring constantly projects a dense protective ward around the wearer, strengthening their mental and physical resilience against summoning incantations and conjured assaults. Additionally, the ring can be commanded to release a sweeping wave of abjuration energy, instantly tearing hostile extraplanar and summoned creatures from the prime material plane and forcing them back to their home dimensions.
 
 STATISTICS:
 
 Equipped abilities: 
-– Regenerate 1 Hit Point per round
+- Saving Throws vs. Conjuration school: +4
+
+Charge abilities:
+- Banishment three times per day
 
 Weight: 0"
 
@@ -661,6 +663,70 @@ Charge abilities:
   Area of Effect: 1 creature
 
 Weight: 0"
+
+
+
+
+
+
+
+//OAKEN RING - solo druidi - 2000mo//
+COPY "rick_bigg_mod/items/RING43.itm" "override"
+	SAY NAME1 "Ring"
+	SAY DESC "A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.
+
+STATISTICS:
+
+Weight: 0"
+
+	SAY NAME2 "Oaken Ring"
+	SAY DESC "This oak wood ring has a rocky bark that feels as cold and heavy as granite. It possesses a dark, profound memory. Imprinted within its petrified grain is the eternal echo of every wound, burn, and scar that evil forces have inflicted upon the natural world.
+	 
+STATISTICS:
+
+Equipped abilities:
+- Armor Class: +1
+- Saving Throws: +1
+
+Weight: 0"
+
+
+
+
+
+
+//RING OF NATURE'S WRATH - solo druidi - 11000mo//
+COPY "rick_bigg_mod/items/RING44.itm" "override"
+	SAY NAME1 "Ring"
+	SAY DESC "A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.
+
+STATISTICS:
+
+Weight: 0"
+
+	SAY NAME2 "Ring of Nature's Wrath"
+	SAY DESC "This oak wood ring has a rocky bark that feels as cold and heavy as granite. It possesses a dark, profound memory. Imprinted within its petrified grain is the eternal echo of every wound, burn, and scar that evil forces have inflicted upon the natural world.
+	
+	Thanks to the nymph's tear, the wrath of the ring is finally unleashed.	
+ 
+STATISTICS:
+
+Equipped abilities:
+- Armor Class: +1
+- Saving Throws: +1
+- Casting Speed: +2
+
+Charge abilities:
+- Fury of the Nature once per day 
+  When cast, the druid can begin casting a new spell the instant he is finished casting his current spell
+  Duration: 3 rounds
+  Casting Time: 1 round
+  Area of Effect: Caster
+
+Weight: 0"
+
+
+
 
 
 

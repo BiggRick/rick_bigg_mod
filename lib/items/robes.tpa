@@ -14,7 +14,7 @@ STATISTICS:
 
 Equipped abilities:
 - Armor Class: 9
-– Cold Resistance: +25%
+– Cold Resistance: +20%
 
 Weight: 3"
 
@@ -37,7 +37,7 @@ STATISTICS:
 
 Equipped abilities:
 - Armor Class: 9
-– Fire Resistance: +25%
+– Fire Resistance: +20%
 
 Weight: 3"
 
@@ -61,7 +61,7 @@ STATISTICS:
 
 Equipped abilities:
 - Armor Class: 9
-– Electricity Resistance: +25%
+– Electricity Resistance: +20%
 
 Weight: 3"
 
@@ -257,9 +257,9 @@ STATISTICS:
 
 Equipped abilities:
 - Armor Class: 8
-– Fire Resistance: +25%
-– Cold Resistance: +25%
-– Electrical Resistance: +25%
+– Fire Resistance: +20%
+– Cold Resistance: +20%
+– Electrical Resistance: +20%
 - Saving Throws: +1
 
 Weight: 4"
@@ -270,7 +270,7 @@ Weight: 4"
 
 
 
-//DIVINER'S VEST - solo maghi - valore 6000mo//
+//SEER'S VEST - solo maghi - valore 6000mo//
 COPY "rick_bigg_mod/items/BDROBE04.itm" "override"
 	SAY NAME1 "Mage Robe"
 	SAY UNIDENTIFIED_DESC "Since the age of Netheril, mages have learned to bestow a wide variety of magical properties upon the everyday objects that surround them. A favorite item of such enchantment is the common robe. It is lightweight, affordable, and holds its enchantment well, thereby making it ideal equipment for a mage. Due to their magical heritage, however, only single-, dual-, and multi-class mages may wear these enchanted robes.
@@ -279,16 +279,16 @@ STATISTICS:
 
 Weight: 3"
 
-	SAY NAME2 "Diviner's Vest"
+	SAY NAME2 "Seer's Vest"
 	SAY DESC "Created by Vaelen, a paranoid master seer from Luskan, this enchanted silk garment infuses the wearer's mind with cosmic awareness. By granting a constant state of Clairvoyance, it instantly reveals the layout of unknown regions. This supernatural foresight allows the wearer to anticipate danger before it strikes—granting uncanny luck against deadly hazards and completely eliminating the threat of unseen backstabs.
 
 STATISTICS:
 
 Equipped abilities:
 – Armor Class: 7
-- Save vs. Breath: +2
-- Luck: +1
+- Save vs. Breath: +3
 – Immunity to Backstab
+- Luck: +1
 
 Weight: 4"
 
@@ -344,12 +344,13 @@ STATISTICS:
 Equipped abilities:
 – Armor Class: 6
 - Saving Throws: +1
-– Magic Resistance: +20%
+– Magic Resistance: +10%
 – Casting Speed: +2
 - Casting Level: +4
 - Intelligence: 25
 - Immunity to Level Drain
 - Strength, Dexterity and Constitution: -1
+- Maximum HP: -10%
 
 Weight: 3"
 

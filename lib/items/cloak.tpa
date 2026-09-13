@@ -106,7 +106,7 @@ Weight: 3"
 STATISTICS:
 
 Equipped abilities:
-- Armor Class: +1
+- Regenerate 1 Hit Point every 3 rounds
 
 Charge abilities:
 – Polymorph into a Werewolf once per day
@@ -157,7 +157,7 @@ STATISTICS:
 
 Equipped abilities:
 – While hidden or invisible, the wearer is non-detectable by magical means such as Detect Invisibility and scrying
-- Hide in Shadows: +15%
+- Hide in Shadows: +20%
 
 Weight: 3"
 
@@ -244,30 +244,7 @@ Weight: 3"
 
 
 
-//CLOAK OF DEFIANCE - 5000mo//
-COPY "rick_bigg_mod/items/BDCLCK06.itm" "override"
-	SAY NAME1 "Cloak"
-	SAY UNIDENTIFIED_DESC "The cloak can be made in every possible shape with just about every type of fabric. The most common forms are a circular piece of fabric with a hole in the center for the head, and fabric draped from neck, connected by a chain, brooch, cord, or pins.
-
-STATISTICS:
-
-Weight: 3"
-
-	SAY NAME2 "Cloak of Defiance"
-	SAY DESC "Woven during the Fall of Netheril by the mage Vaelen, this cloak was designed to survive the cataclysmic duels of rival arcanists.During the Siege of Voron-Dis, the mantle flared with silver light, absorbing a lethal barrage of disintegration beams and saving Vaelen's life. Though the intense feedback permanently burned out most of its original power, the residual magic within the threads remains fiercely stubborn.Once per day, the wearer can force the cloak to recall its ancient form, temporarily reconstructing an absolute barrier that turns devastating spells into harmless sparks.
-
-STATISTICS:
-
-Charge abilities:
-– Set Magic Resistance to 50% once per day
-  Duration: 1 turn
-
-Weight: 3"
-
-
-
-
-//MATICK'S SHROUD  - solo maghi e bardi - 6500mo//
+//MATICK'S SHROUD  - 6500mo//
 COPY "rick_bigg_mod/items/CLCK20.itm" "override"
 	SAY NAME1 "Cloak"
 	SAY UNIDENTIFIED_DESC "The cloak can be made in every possible shape with just about every type of fabric. The most common forms are a circular piece of fabric with a hole in the center for the head, and fabric draped from neck, connected by a chain, brooch, cord, or pins.
@@ -283,7 +260,7 @@ STATISTICS:
 
 Equipped abilities:
 – Immunity to Magic Missile
-- Saving throws vs. Evocation: +4
+– Saving Throws vs. Invocation school: +4
 - Fire Resistance: +20%
 - Cold Resistance: +20%
 - Electricity Resistance: +20%
@@ -292,55 +269,6 @@ Equipped abilities:
 Weight: 3"
 
 
-
-
-//CLOAK OF THE SEWERS - 4500mo//
-COPY "rick_bigg_mod/items/CLCK27.itm" "override"
-	SAY NAME1 "Cloak"
-	SAY UNIDENTIFIED_DESC "The cloak can be made in every possible shape with just about every type of fabric. The most common forms are a circular piece of fabric with a hole in the center for the head, and fabric draped from neck, connected by a chain, brooch, cord, or pins.
-
-STATISTICS:
-
-Weight: 3"
-
-	SAY NAME2 "Cloak of the Sewers"
-	SAY DESC "For a sewer-dweller like Ivan, survival meant going where others refused. Hiding from thugs, Ivan went so deep into the sewers beneath Atkhatla that he found natural caves, some of which opened to the ocean. Within one cave, Ivan discovered what he thought was a ruined cloak, all torn and stained. He tossed it into the fire he started, but it would not burn. Curious, he donned it, and with some prying, he discovered its hidden abilities. With the right command, he could shift into a mustard jelly.
-
-STATISTICS:
-
-Equipped abilities:
-– Immunity to disease
-
-Charge abilities:
-– Polymorph into a Mustard Jelly once per day
-  Duration: 2 turns
-"
-
-
-
-
-
-
-//CLOAK OF THE STRANGE BEAST - 3000mo//
-COPY "rick_bigg_mod/items/BDLOINCL.itm" "override"
-	SAY NAME1 "Cloak"
-	SAY UNIDENTIFIED_DESC "The cloak can be made in every possible shape with just about every type of fabric. The most common forms are a circular piece of fabric with a hole in the center for the head, and fabric draped from neck, connected by a chain, brooch, cord, or pins.
-
-STATISTICS:
-
-Weight: 3"
-
-	SAY NAME2 "Cloak of the Strange Beast"
-	SAY DESC "This thick pelt can be worn as a cloak by human-sized creatures, or a loincloth by larger creatures. The beast that contributed its hide for this item is a mystery, but long slashes in skin indicate it was stabbed to death with sharp objects. Due to its enchanted nature, a faint pulse of ancient life force still courses through the thick fur, knitting the wearer's wounds and gradually restoring their vitality over time. However, its crude and monstrous appearance makes the wearer look deeply unsettling, severely hindering their social interactions.
-
-STATISTICS:
-
-Equipped abilities:
-– Regenerate 1 Hit Point every round
-– Charisma: -2
-
-Weight: 3
-"
 
 
 
@@ -369,7 +297,7 @@ Weight: 3
 
 
 
-//CLOAK OF THE STARS - 4000mo//
+//CLOAK OF THE STARS - 4500mo//
 COPY "rick_bigg_mod/items/CLCK25.itm" "override"
 	SAY NAME1 "Cloak"
 	SAY UNIDENTIFIED_DESC "The cloak can be made in every possible shape with just about every type of fabric. The most common forms are a circular piece of fabric with a hole in the center for the head, and fabric draped from neck, connected by a chain, brooch, cord, or pins.
@@ -379,7 +307,7 @@ STATISTICS:
 Weight: 3"
 
 	SAY NAME2 "Cloak of the Stars"
-	SAY DESC "Created by ancient elven astrologers during a rare alignment of the Tears of Selûne, this celestial relic is permanently infused with the protective essence of the night sky. The silver constellation patterns along the trim hold a defensive enchantment linked directly to the cosmos, causing the fabric to flash with a sharp burst of astral energy whenever the wearer is struck in combat.
+	SAY DESC "An ancient elven heirloom crafted during a rare astrological alignment of the Tears of Selûne. Permanently infused with the protective energies of the night sky, the garment features intricate silver constellation patterns along its border. These glyphs hold a direct, reactive link to the cosmos; the moment the wearer sustains damage in combat, the fabric erupts in a sharp, retaliatory burst of astral energy.
 	
 Equipped abilities:
 – Magic resistance: +5%
@@ -409,8 +337,8 @@ Weight: 3"
 STATISTICS:
 
 Charge abilities:
-– Deflects all spell damage. This includes offensive spells like Magic Missile, but not disabling (non-damage) spells such as Hold Person once per day
-   Duration: 1 turn
+– Water Shield once per day (set 100% to all non-physical damage type resistances) 
+  Duration: 1 turn
 
 Weight: 3
 "
@@ -461,36 +389,6 @@ Equipped abilities:
 
 Weight: 3
 "
-
-
-
-//CLOAK OF THE DARK MOON - 5500mo - no buoni//
-COPY "rick_bigg_mod/items/OHRCLCK4.itm" "override"
-	SAY NAME1 "Cloak"
-	SAY UNIDENTIFIED_DESC "The cloak can be made in every possible shape with just about every type of fabric. The most common forms are a circular piece of fabric with a hole in the center for the head, and fabric draped from neck, connected by a chain, brooch, cord, or pins.
-
-STATISTICS:
-
-Weight: 3"
-
-	SAY NAME2 "Cloak of the Dark Moon"
-	SAY DESC "Those who worship Shar, the Mistress of the Night, often draw upon their dark goddess's absolute void to craft artifacts of silencing power. This cloak is whispered to have been woven by the Order of the Dark Moon, an elite sect of monastic assassins operating in her shadow. At first glance, the fabric seems to actively devour the light, appearing as a formless tear in reality. Only under closer inspection does the garment reveal an endlessly shifting texture, mimicking the cold, silent depths of the Shadowfell. When donned, the fabric shifts and resizes instantly, molding itself perfectly to the wearer's form like a second skin of living shadow.
-
-STATISTICS:
-
-Equipped abilities (at night):
-– Armor Class: +2 
-– Saving Throws: +2 
-- Magic Resistance: +10% 
-– Immunity to blindness
-- Infravision
-
-Charge abilities:
-– Cloak of Fear once per day
-
-Weight: 3
-"
-
 
 
 //CLOAK OF BRAVERY - 9500mo - no good//
@@ -586,10 +484,10 @@ STATISTICS:
 Equipped abilities:
 – Armor Class: +2
 - Saving Throws: +2
-- Missile Resistance: +60%
+- Missile Resistance: +50%
 
 Charge abilities:
-– Improved Haste three times per day (double movement, attack per round and some effects)
+– Improved Haste once per day (double movement, attack per round and some effects)
   Duration: 5 rounds
   Area of Effect: the user
 
@@ -608,13 +506,15 @@ STATISTICS:
 Weight: 3"
 
 	SAY NAME2 "Life Shroud"
-	SAY DESC "Fashioned by the high clerics of the Morninglord during the catastrophic Siege of Tulanth, this cloak was consecrated for a single purpose: to survive the wrath of the infamous necromancer Abi-Dalzim. As the mage’s horrific wilting spells turned entire armies into dust, the lightbringers channeled their collective divine essence into this garment, creating an absolute shield against arcane necromancy. Infused with pure holy energy, the shroud amplifies its wearer's divine spellcasting and burns undead horrors with radiant fury. Because it is bound to the magic of absolute light, the cloak becomes heavy as lead and entirely useless in the hands of any neutral or evil being.
+	SAY DESC "Fashioned by the high clerics of the Morninglord during the catastrophic Siege of Tulanth, this cloak was consecrated for a single purpose: to survive the wrath of the infamous necromancer Abi-Dalzim. As the mage’s horrific wilting spells turned entire armies into dust, the lightbringers channeled their collective divine essence into this garment, creating an absolute shield against this powerful spell. Infused with pure holy energy, the shroud amplifies its wearer's divine spellcasting and burns undead horrors with radiant fury.
 
 STATISTICS:
 
 Equipped abilities:
+- Immunity to Abi-Dalzim's Horrid Wilting
+- Saving Throws vs. Death/Poison/Paralysis: +3
+- Saving Throws vs. Spell: +3
 - Turn Undead: +3
-- Immunity to arcane necromancy
 
 Charge abilities:
 - Turn Undead three times per day

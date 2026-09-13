@@ -98,7 +98,7 @@ Weight: 15"
 STATISTICS:
 
 Combat abilities:
-– 15% chance per hit of draining 1 level from the target
+– 20% chance per hit of draining 1 level from the target
 
 THAC0: +3
 Damage: 1d10+3
@@ -226,7 +226,7 @@ Weight: 11"
 
 
 
-//RAVAGER +4 - 10000mo - no good//
+//RAVAGER +4 - 9000mo - no good//
 COPY "rick_bigg_mod/items/HALB10.itm" "override"
 	SAY NAME1 "Halberd"
 	SAY UNIDENTIFIED_DESC "By far the oldest and most often used polearm, the halberd consists of a cleaver-like axe blade mounted on a staff averaging six feet in length. The axe blade is balanced at the rear with a fluke and surmounted by a sharp spike, usually of quadrangular design. The fluke is sometimes replaced by a hook used to dismount cavalry. A halberd can be best described as a cross between a spear and an axe.
@@ -249,7 +249,7 @@ Weight: 15"
 STATISTICS:
 
 Combat abilities:
-– 15% chance of decapitating opponent with each successful attack (Save vs. Death -4 negates)
+– 10% chance of decapitating opponent with each successful attack (Save vs. Death -4 negates)
 
 THAC0: +4
 Damage: 1d10+4 (piercing)
@@ -265,7 +265,7 @@ Weight: 11"
 
 
 
-//RAVAGER +5 - 22000mo - no good//
+//RAVAGER +5 - 19000mo - no good//
 COPY "rick_bigg_mod/items/HALB11.itm" "override"
 	SAY NAME1 "Halberd"
 	SAY UNIDENTIFIED_DESC "By far the oldest and most often used polearm, the halberd consists of a cleaver-like axe blade mounted on a staff averaging six feet in length. The axe blade is balanced at the rear with a fluke and surmounted by a sharp spike, usually of quadrangular design. The fluke is sometimes replaced by a hook used to dismount cavalry. A halberd can be best described as a cross between a spear and an axe.
@@ -291,7 +291,7 @@ STATISTICS:
 
 Combat abilities:
 – Hit target suffer 3d6 points of poison damage (no save, bypass MR)
-– 15% chance of decapitating opponent with each successful attack (no save)
+– 10% chance of decapitating opponent with each successful attack (no save)
 
 THAC0: +5
 Damage: 1d10+5 (piercing)

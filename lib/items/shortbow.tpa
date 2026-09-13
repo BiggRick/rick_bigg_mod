@@ -192,15 +192,12 @@ Requires:
 Weight: 2"
 
 	SAY NAME2 "Shortbow of Gesen +3"
-	SAY DESC "Once held by the legendary nomadic leader Gesen Khan, this weapon was forged to dominate the endless steppes. Legend tells that Gesen commissioned this bow from the greatest craftsmen of the steppes, who spent three full moons infusing it with the essence of the wind itself. It is said that when Gesen drew this bow during the siege of T'ulung, his arrows moved faster than the eye could follow, and each one that found its mark struck with the force of a thunderbolt. After a critical strike landed, the very air around the target would shatter, stunning all who witnessed the devastating power of the Khan's wrath. The bow aligns perfectly with the archer's vision, granting unmatched precision on the battlefield.
+	SAY DESC "Once held by the legendary nomadic leader Gesen Khan, this weapon was forged to dominate the endless steppes. Legend tells that Gesen commissioned this bow from the greatest craftsmen of the steppes, who spent three full moons infusing it with the essence of the wind itself. It is said that when Gesen drew this bow during the siege of T'ulung, his arrows moved faster than the eye could follow, and each one that found its mark struck with the force of a thunderbolt.
 
 STATISTICS:
 
-Equipped abilities:
-– Chance to score a ranged critical hit: +10% with this weapon only
-
 Combat abilities:
-– On critical hit opponent is stunned for a round (save vs. Rod at -4)
+– 10% chance target is stunned for 4 rounds (save vs. Rod at -4)
 
 THAC0: +3
 Damage: +3
@@ -278,7 +275,7 @@ STATISTICS:
 Equipped abilities:
 – Fire Resistance: +10%
 – Cold Resistance: +10%
-– 1/2 extra attack per round
+– 1 extra attack per round 
 
 THAC0: +3
 Damage: +3, +4 fire/magical damage

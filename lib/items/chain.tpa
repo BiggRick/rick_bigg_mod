@@ -58,39 +58,6 @@ Weight: 15
 
 
 
-//STALWART CHAIN +2 - 5500mo//
-COPY "rick_bigg_mod/items/BDCHAN06.itm" "override"
-	SAY NAME1 "Chain Mail"
-	SAY UNIDENTIFIED_DESC "Chain mail is made of interlocking metal rings. It is always worn over a layer of padded fabric or soft leather to prevent chafing and lessen the impact of blows. 
-
-STATISTICS:
-
-Armor Class: 5 (3 vs. slashing, 4 vs. piercing and missile)
-Speed Factor: -2
-Requires:
- 9 Strength
-
-Weight: 40"
-
-	SAY NAME2 "Stalwart Chain +2"
-	SAY DESC "Noted dwarven smith Hedda Perigot crafted this suit of armor in response to a challenge. Fellow smiths discussed their disdain of working with non-metal or stone materials at the tavern one night, and Hedda bragged that she had no such difficulties. The smiths challenged her to create a hybrid suit of half-metal, half-armor. Hedda set to work making the lightest, most flexible steel plates she could and affixing them to a well-made leather breastplate. The result was a shimmering suit of chain mail that weighed less than a normal suit and proved most useful against slashing attacks. Hedda won the bet, and free drinks for a month.
-
-STATISTICS:
-
-Equipped abilities:
-– Slashing Resistance: +10%
-
-Armor Class: 3 (1 vs. slashing, 2 vs. piercing and missile)
-Speed Factor: -2
-Requires:
- 9 Strength
-
-Weight: 15
-"
-
-
-
-
 
 
 //MAIL OF THE DEAD +2 - 6000mo//
@@ -152,7 +119,7 @@ Weight: 40
 STATISTICS:
 
 Equipped abilities:
-– Fire Resistance: +25%
+– Fire Resistance: +30%
 
 Armor Class: 2 (0 vs. slashing, 1 vs. piercing and missile)
 Speed Factor: -2
@@ -254,7 +221,7 @@ Weight: 40
 STATISTICS:
 
 Equipped abilities:
-- Reflects missiles back at their user
+- Protection from missiles
 
 Armor Class: 2 (0 vs. slashing, 1 vs. piercing and missile)
 Speed Factor: -2
@@ -266,7 +233,7 @@ Weight: 10
 
 
 
-//MITHRIL CHAIN MAIL +4 - 12000mo//
+//MITHRIL CHAIN MAIL +5 - 14000mo//
 COPY "rick_bigg_mod/items/CHAN06.itm" "override"
 	SAY NAME1 "Chain Mail"
 	SAY UNIDENTIFIED_DESC "Chain mail is made of interlocking metal rings. It is always worn over a layer of padded fabric or soft leather to prevent chafing and lessen the impact of blows. 
@@ -281,7 +248,7 @@ Requires:
 Weight: 40
 "
 
-	SAY NAME2 "Mithril Chain Mail +4"
+	SAY NAME2 "Mithril Chain Mail +5"
 	SAY DESC "This is the personal armor of Drizzt, the famous dark elf Ranger. It was forged for him by his friend Bruenor.
 
 STATISTICS:
@@ -294,50 +261,12 @@ Equipped abilities:
 - Hide in Shadows: -10%
 – Spellcasting is not disabled
 
-Armor Class: 1 (-1 vs. slashing, -3 vs. piercing and missile)
+Armor Class: 0 (-2 vs. slashing, -1 vs. piercing, -4 vs. missile)
 Requires:
  9 Strength
 
 Weight: 10
 "
-
-
-
-
-//ARMOR OF FAITH +4 - solo ranger / 10000mo//
-COPY "rick_bigg_mod/items/CHAN18.itm" "override"
-	SAY NAME1 "Chain Mail"
-	SAY UNIDENTIFIED_DESC "Chain mail is made of interlocking metal rings. It is always worn over a layer of padded fabric or soft leather to prevent chafing and lessen the impact of blows. 
-
-STATISTICS:
-
-Armor Class: 5 (3 vs. slashing, 4 vs. piercing and missile)
-Speed Factor: -2
-Requires:
- 9 Strength
-
-Weight: 40
-"
-
-	SAY NAME2 "Armor of Faith +4"
-	SAY DESC "This was the armor of Seffer Ekr, and a sign of the goddess Mielikki's favor. She had rewarded the ranger's loyalty with the promise that he would never die in battle, and he defied death for many years, holding orcish hordes back from his home forest. A heart attack claimed him when his time was done, not an enemy's blade.
-
-STATISTICS:
-
-Equipped abilities:
-– Saving Throws: +1
-- Casting Level: +4
-– The wearer can memorize 1 extra spell per level
-
-Armor Class: 1 (-1 vs. slashing, 0 vs. piercing and missile)
-Speed Factor: -2
-Requires:
- 9 Strength
-
-Weight: 10
-"
-
-
 
 
 //CRIMSON CHAIN +4 - 12000mo//
@@ -360,7 +289,7 @@ Weight: 40"
 STATISTICS:
 
 Equipped abilities:
-- Crushing Damage Resistance: +15%
+- Crushing Damage Resistance: +20%
 
 Armor Class: 1 (-1 vs. slashing, -0 vs. piercing and missile)
 Speed Factor: -2
@@ -396,7 +325,7 @@ Weight: 40"
 STATISTICS:
 
 Equipped abilities:
-– Cold Resistance: +50%
+– Cold Resistance: +40%
 
 Armor Class: 0 (-2 vs. slashing, -1 vs. piercing, -3 vs. missile)
 Speed Factor: -2
@@ -486,45 +415,7 @@ Weight: 6
 
 
 
-//DARK ELVEN CHAIN MAIL +2 - 7500mo//
-COPY "rick_bigg_mod/items/CLOLTH.itm" "override"
-	SAY NAME1 "Chain Mail"
-	SAY UNIDENTIFIED_DESC "This chainmail clearly bears the hand of a great elvensmith, with their typical beauty and delicate sturdy craftsmanship.
-
-STATISTICS:
-
-Armor Class: 5 (3 vs. slashing, 4 vs. piercing and missile)
-Requires:
- 5 Strength
-
-Weight: 8
-"
-
-	SAY NAME2 "Dark Elven Chain Mail +2"
-	SAY DESC "Dark Elven Chain is the drow version of Elven Chain issued to war parties and raiders visiting the surface, where traditional drow Adamantine armor will quickly deteriorate and turn to Adamantine Dust. Its lightness allows it to be worn by Thieves and Fighter/Mages with few restrictions. This particular armor has been enchanted to make drow raiders even more evasive during their raids.
-
-STATISTICS:
-
-Equipped abilities:
-– Open Locks: -5%
-– Find Traps: -5%
-– Pick Pockets: -20%
-– Move Silently: -10%
-- Hide in Shadows: -10%
-- Saving Throws vs Breath: +3
-
-Armor Class: 3 (1 vs. slashing, 2 vs. piercing and missile)
-Requires:
- 5 Strength
-
-Weight: 5
-"
-
-
-
-
-
-//MELODIC CHAIN +2 - 8000mo - solo bardi//
+//MELODIC CHAIN +2 - 8000mo//
 COPY "rick_bigg_mod/items/CHAN15.itm" "override"
 	SAY NAME1 "Chain Mail"
 	SAY UNIDENTIFIED_DESC "This chainmail clearly bears the hand of a great elvensmith, with their typical beauty and delicate sturdy craftsmanship.
@@ -549,7 +440,9 @@ Equipped abilities:
 – Pick Pockets: -20%
 – Move Silently: -10%
 - Hide in Shadows: -10%
-- +1 Luck on allies and -1 Luck on enemies
+
+Combat abilities:
+- On hit the attacker takes -1 penalty to Luck for 1 round (non-cumulative)
 
 Armor Class: 3 (1 vs. slashing, 2 vs. piercing and missile)
 Requires:
@@ -579,7 +472,7 @@ Weight: 8
 "
 
 	SAY NAME2 "Bladesinger Chain +3"
-	SAY DESC "Forged by master elven smiths for the legendary Bladesingers, this armor moves with fluid grace, humming a soft, harmonic melody during combat. Its links are magically bound to effortlessly deflect aggressive sword strokes and piercing rapiers, making it the pinnacle of elven craft and a truly blessed item.
+	SAY DESC "Forged by master elven smiths for the legendary Bladesingers, this armor moves with fluid grace, humming a soft, harmonic melody during combat. Its links are magically bound to effortlessly deflect aggressive sword strokes, making it the pinnacle of elven craft and a truly blessed item.
 
 STATISTICS:
 
@@ -590,7 +483,7 @@ Equipped abilities:
 – Move Silently: -10%
 - Hide in Shadows: -10%
 
-Armor Class: 2 (-2 vs. slashing, -1 vs. piercing, 1 vs. missile)
+Armor Class: 2 (-3 vs. slashing, -2 vs. piercing, 1 vs. missile)
 Requires:
  5 Strength
 
@@ -602,7 +495,7 @@ Weight: 5
 
 
 
-//SYLVAN CHAIN +4 - 14000mo//
+//SYLVAN CHAIN +3 - 12000mo//
 COPY "rick_bigg_mod/items/CHAN14.itm" "override"
 	SAY NAME1 "Chain Mail"
 	SAY UNIDENTIFIED_DESC "This chainmail clearly bears the hand of a great elvensmith, with their typical beauty and delicate sturdy craftsmanship.
@@ -616,7 +509,7 @@ Requires:
 Weight: 8
 "
 
-	SAY NAME2 "Sylvan Chain +4"
+	SAY NAME2 "Sylvan Chain +3"
 	SAY DESC "This light but strong mail is of sylvan elf construction, and therefore its elegance is only exceeded by its rarity. Normally granted only to especially brave elves, seldom is this armor be found outside of a wood elf tribe, and rarer still on someone not of elven lineage.
 
 STATISTICS:
@@ -625,9 +518,9 @@ Equipped abilities:
 – Open Locks: -5%
 – Find Traps: -5%
 – Pick Pockets: -20%
-- Dexterity: +1
+- Dexterity: +2
 
-Armor Class: 1 (-1 vs. slashing, 0 vs. piercing and missile)
+Armor Class: 2 (0 vs. slashing, 1 vs. piercing and missile)
 Requires:
  5 Strength
 
@@ -636,8 +529,7 @@ Weight: 5
 
 
 
-
-//ASLYFERUND ELVEN CHAIN +5 - 18000mo//
+//ASLYFERUND ELVEN CHAIN +3 - 15000mo//
 COPY "rick_bigg_mod/items/CHAN19.itm" "override"
 	SAY NAME1 "Chain Mail"
 	SAY UNIDENTIFIED_DESC "This chainmail clearly bears the hand of a great elvensmith, with their typical beauty and delicate sturdy craftsmanship.
@@ -651,7 +543,7 @@ Requires:
 Weight: 8
 "
 
-	SAY NAME2 "Aslyferund Elven Chain +5"
+	SAY NAME2 "Aslyferund Elven Chain +3"
 	SAY DESC "Crafted in exile after the fall of Myth Drannor, this magnificent suit of elven chainmail is the tragic masterpiece of the elven smith Aslyferund. Driven by a desire to surpass his peers, he discovered a secret method to gild traditional mithral links with a rare, enchanted gold alloy, binding them with heavy layers of abjuration magic.The resulting armor offers unparalleled protection against elemental and magical forces while still allowing the casting of spells. Sadly, Aslyferund’s refusal to share his secret led to his brutal murder by a jealous rival. The secret died with him, leaving this armor as the only one of its kind in Faerûn.
 
 STATISTICS:
@@ -664,7 +556,7 @@ Equipped abilities:
 - Hide in Shadows: -10%
 - All non physical damage resistances: +20%
 
-Armor Class: 0 (-2 vs. slashing, -1 vs. piercing and missile)
+Armor Class: 2 (0 vs. slashing, 1 vs. piercing and missile)
 Requires:
  5 Strength
 
