@@ -18,7 +18,6 @@ Weight: 2"
 STATISTICS:
 
 Equipped abilities:
-- +1 THAC0
 – Infravision up to 120 ft.
 – Protects against critical hits
 
@@ -51,34 +50,6 @@ Equipped abilities:
 
 Weight: 3"
 
-
-
-
-
-//HELM OF HORNS - solo guerrieri - 1500mo//
-COPY "rick_bigg_mod/items/TB#HEHO.itm" "override"
-	SAY NAME1 "Helmet"
-	SAY DESC "This class of decorative helmet, made of reinforced leather or metal, covers the face and head. Eye slits and breathing holes come highly recommended. 
-
-STATISTICS:
-
-Equipped abilities:
-– Protects against critical hits
-
-Weight: 2"
-
-	SAY NAME2 "Helm of Horns"
-	SAY DESC "This simple iron helmet is lined with jagged, protruding spikes. While crudely made, it is enchanted with a minor retaliatory charm. Whenever the wearer is struck, there is a chance that the helmet’s spikes will magically lengthen or lash out, punishing the attacker for their aggression.
-
-STATISTICS:
-
-Equipped abilities:
-– Protects against critical hits
-
-Combat abilities:
-- 15% chance every hit to deal 3 Piercing Damage to attacker
-
-Weight: 3"
 
 
 
@@ -162,7 +133,6 @@ Equipped abilities:
 – Armor Class: +1
 – Saving Throws: +1
 – Hit Points: +10
-- Infravision
 – Protects against critical hits
 
 Weight: 1"
@@ -219,7 +189,7 @@ Equipped abilities:
 – Protects against critical hits
 
 Combat abilities:
-- 15% chance every hit to receive +2 Melee THAC0 and +4 Melee Damage bonus for 6 seconds 
+- 10% chance every hit to receive +2 Melee THAC0 and +4 Melee Damage bonus for 6 seconds 
 
 Weight: 2"
 
@@ -334,7 +304,7 @@ Equipped abilities:
 Weight: 2"
 
 	SAY NAME2 "Helm of Brilliance"
-	SAY DESC "This helm is made of polished steel and set with diamonds, rubies, and fire opals. The gems glow with an internal light, the source of which can only be magical. The helm makes the wearer resistant to fire as well as giving the wearer the ability to cast Solar Brilliance. Due to the nature of this spell, it bypasses most spell protections.
+	SAY DESC "This helm is made of polished steel and set with diamonds, rubies, and fire opals. The gems glow with an internal light, the source of which can only be magical. The helm makes the wearer resistant to fire as well as giving the wearer the ability to cast Solar Brilliance.
 
 STATISTICS:
 
@@ -343,10 +313,16 @@ Equipped abilities:
 – Protects against critical hits
 
 Charge abilities:
-– Solar Brilliance twice per day
-  Damage: 6d6 fire (no save, bypass spell resistance and magical protections)
+
+– Flamethrower three times per day
+  Damage: 6d6 fire damage (Save vs. Wand at -4 for half)
+  Range: 40 ft.
+  Area of Effect: 2-ft. by 40-ft. jet
+
+– Solar Brilliance once per day
+  Damage: 15d6 fire damage (Save vs. Wand at -4 for half)
   Range: 90 ft.
-  Area: 15-ft. radius
+  Area of Effect: 15-ft. radius
 
 Weight: 2"
 
@@ -425,7 +401,7 @@ STATISTICS:
 
 Equipped abilities:
 – Immunity to Backstab
-- Detect Illusion: +15%
+- Detect Illusion: +20%
 
 Weight: 1"
 
@@ -451,9 +427,8 @@ STATISTICS:
 
 Equipped abilities:
 – Immunity to Backstab
-- Detect Illusion: +30%
-- Hide in Shadows: +25%
-- Move silently: +25%
+- Detect Illusion: +40%
+- Hide in Shadows: +20%
 
 Combat abilities:
 - Whenever the wielder is hit, there is a 20% chance he/she is surrounded by 3 mirror images for 3 rounds
@@ -529,40 +504,6 @@ Charge abilities:
   Effect: all enemies suffer a -4 penalty to hit and damage rolls and a -4 penalty to Armor Class for 1 turn; enemies with 18 or fewer Hit Dice are panicked as well.
 
 Weight: 2"
-
-
-
-
-
-//CASQUE OF NECRON - valore 14000mo - solo maghi - no good//
-COPY "rick_bigg_mod/items/OHHCASQ.itm" "override"
-	SAY NAME1 "Casque"
-	SAY UNIDENTIFIED_DESC "This iron casque radiates a faint, unsettling aura of dark, unnatural malice.
-
-STATISTICS:
-
-Weight: 1"
-
-	SAY NAME2 "Casque of Necron"
-	SAY DESC "Whispered only In Tenebris by the most depraved cultists, the true origin of this obsidian helm is written within Nekron's Bloody Rhymes. Chroniclers speak of its forging during the ancient Aeons of Raging Darkness, when the sky opened to unleash the Rain of a Thousand Flames, an apocalyptic event that marked the beginning of the Dark Reign of Fire. As the artifact was quenched in the blood of innocents, an Unholy Warcry echoed across the planes, summoning the Gargoyles, Angels of Darkness from their eternal slumber. They marched forth from the Bloody Red Dungeons of Dar-Kunor to subjugate the mortal realms under a ruthless Reign of Terror. This horrific crown was created to fulfill The Mystic Prophecy of the Demonknight, ensuring that all creation would plunge blindly From Chaos to Eternity. 
-	
-STATISTICS:
-
-Equipped abilities:
-- Casting Speed: +1
-- Fire Resistance: +20%
-- Cold Resistance: +20%
-- Electricity Resistance: +20%
-- Acid Resistance: +20%
-- Poison Resistance: +20%
-- Magical Damage Resistance: +20%
-- Magic Resistance: +10%
-
-Charge abilities:
-- Cast Wail of Banshee once per day
-
-Weight: 3"
-
 
 
 
@@ -859,7 +800,7 @@ Weight: 0"
 STATISTICS:
 
 Equipped abilities:
-– Regenerate 1 Hit Point every round
+– Regenerate 1 Hit Point per round
 
 Weight: 0"
 

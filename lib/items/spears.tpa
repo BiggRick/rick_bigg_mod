@@ -209,7 +209,7 @@ Weight: 5"
 STATISTICS:
 
 Combat abilities:
-- 15% chance on hit to poison target
+- 20% chance on hit to poison target
   Damage: 4d4 (no save) + 1 every 4 seconds (Save vs. Rod at -2 for half)
   Duration: 1 turn
 
@@ -249,7 +249,7 @@ STATISTICS:
 
 Equipped abilities:
 – Armor Class: +3
-- Save vs. Necromancy: +4
+– Saving Throws vs. Necromancy School: +3
 
 THAC0: +4
 Damage: 1d8+4 (piercing)

@@ -34,8 +34,7 @@ Weight: 4"
 STATISTICS:
 
 Equipped abilities:
-– Move Silently: +30%
-– Hide In Shadows: +15%
+– Move Silently: +40%
 
 Weight: 4"
 
@@ -159,7 +158,7 @@ Weight: 4"
 
 
 
-//LUCKY BOOTS - 1500mo//
+//ROCKY BOOTS - 1500mo//
 COPY "rick_bigg_mod/items/BOOT09.itm" "override"
 	SAY NAME1 "Boots"
 	SAY UNIDENTIFIED_DESC "Boots are normally handmade by cobblers. Common boots are made by using a form, but good boots are designed for the foot of an individual. 
@@ -168,13 +167,13 @@ STATISTICS:
 
 Weight: 4"
 
-	SAY NAME2 "Lucky Boots"
-	SAY DESC "These elegant boots seem to hum with a faint, pleasant aura of fortune. Rumored to have been stitched together by a halfling cobbler who inadvertently blessed them with a stroke of chaotic good luck, they ensure that fate always leans slightly in the wearer's favor. Whether avoiding a deadly trap or landing a crucial blow, the person wearing these boots will find that fortune smiles upon them in the darkest of times.
+	SAY NAME2 "Rocky Boots"
+	SAY DESC "These boots are literally made of enchanted stone and iron. They were forged by a dwarf blacksmith who was utterly sick of front-line warriors whining about their smashed toes. They are ugly as sin, but they get the job done. If a cave troll tries to pulp your shins with a warhammer, the impact will feel like a gentle pat.
 
 STATISTICS:
 
 Equipped abilities:
-– Luck: +1
+– Armor Class vs. Crushing: +3
 
 Weight: 3"
 
@@ -245,26 +244,6 @@ Equipped abilities:
 
 Weight: 4"
 
-
-
-//BOOTS OF FREEDOM - 4500mo//
-COPY "rick_bigg_mod/items/BDBOOT01.itm" "override"
-	SAY NAME1 "Boots"
-	SAY UNIDENTIFIED_DESC "Boots are normally handmade by cobblers. Common boots are made by using a form, but good boots are designed for the foot of an individual. 
-
-STATISTICS:
-
-Weight: 4"
-
-	SAY NAME2 "Boots of Freedom"
-	SAY DESC "These boots belonged to a legendary escaped slave from the Underdark, who spent decades running from the drow. Infused with his desperate will to remain unchained, the leather pulses with a defiant energy that rejects all forms of confinement. No magical snare, paralyzing gaze, or muddy marsh can impede the wearer's step, granting the ultimate freedom of movement.
-
-STATISTICS:
-
-Equipped abilities:
-– Free Action
-
-Weight: 3"
 
 
 

@@ -1,22 +1,3 @@
-//CLOVERLEAF - 1500mo//
-COPY "rick_bigg_mod/items/TB#BELTC.itm" "override"
-	SAY NAME1 "Girdle"
-	SAY UNIDENTIFIED_DESC "Girdles are generally similar to belts. Unlike belts, girdles are not used to hold up pants and dungarees, but to carry pouches, scabbards, and the like. 
-
-STATISTICS:
-
-Weight: 2"
-
-	SAY NAME2 "Cloverleaf"
-	SAY DESC "This vibrant cloth belt is woven with dried four-leaf clovers, a traditional symbol of good fortune among halfling communities. It was originally crafted by a gentle halfling elder from the Gullykin village to protect a young, reckless explorer heading into the wilderness. Legends say that while wearing it, the youth narrowly avoided rampaging ankhegs and survived several lethal traps by sheer, unexplained coincidence.
-
-STATISTICS:
-
-Equipped abilities:
-– Luck: +1
-
-Weight: 2"
-
 
 
 //GOLDEN GIRDLE OF URNST - 1500mo//
@@ -85,6 +66,28 @@ Weight: 2"
 
 
 
+//GIRDLE OF SHIELDING - 2500mo //
+COPY "rick_bigg_mod/items/BELT05.itm" "override"
+	SAY NAME1 "Girdle"
+	SAY UNIDENTIFIED_DESC "Girdles are generally similar to belts. Unlike belts, girdles are not used to hold up pants and dungarees, but to carry pouches, scabbards, and the like. 
+
+STATISTICS:
+
+Weight: 2"
+
+	SAY NAME2 "Girdle of Shielding"
+	SAY DESC "This heavy leather girdle is lined with iron plates and shows signs of heavy use in battle. Though its creator remains unknown, the magic bound within the leather protects the wearer's vital areas from devastating impacts.
+
+STATISTICS:
+
+Equipped abilities:
+- Armor Class: +1
+- Protects against critical hits
+
+Weight: 2"
+
+
+
 
 //BELT OF THE CUNNING ROGUE - 1800mo - solo ladri//
 COPY "rick_bigg_mod/items/BDBELT03.itm" "override"
@@ -101,8 +104,8 @@ Weight: 2"
 STATISTICS:
 
 Equipped abilities:
-– Disarm Traps: +15%
-- Set Traps: +15%
+– Disarm Traps: +20%
+- Set Traps: +20%
 
 Weight: 2"
 
@@ -124,7 +127,7 @@ Weight: 2"
 STATISTICS:
 
 Equipped abilities:
-– Save vs. Transmutation: +4
+– Save vs. Transmutation School: +4
 - Magic Resistance: +5%
 
 Weight: 2"

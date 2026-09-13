@@ -239,7 +239,7 @@ Weight: 2"
 STATISTICS:
 
 Equipped abilities:
-- 1 extra attack per round
+- 1/2 extra attack per round
 – Armor Class: -4 penalty
 - Thac0: -4 penalty
 
@@ -285,7 +285,7 @@ Weight: 2"
 STATISTICS:
 
 Equipped abilities:
-– Pick Pockets: +25%
+– Pick Pockets: +20%
 
 Weight: 2"
 
@@ -384,7 +384,7 @@ STATISTICS:
 
 Charge abilities:
 – Set attack per round to 5 once per day
-  Duration: 3 rounds
+  Duration: 1 round
   Area of Effect: the user
   
 Requires:
@@ -409,7 +409,7 @@ STATISTICS:
 Weight: 2"
 
 	SAY NAME2 "Gauntlets of Crushing"
-	SAY DESC "Forged from heavy meteoric iron during the Time of Troubles, these brutal gauntlets thrum with dense, kinetic energy. They physically guide the wearer's arms, granting a permanent surge of muscle power.A volatile transmutation enchantment sleeps within the metal. Unpredictably in melee combat, the gauntlets release a devastating shockwave upon impact. This force instantly crushes bone and internal organs with the weight of a falling boulder.
+	SAY DESC "Forged from heavy meteoric iron during the Time of Troubles, these brutal gauntlets thrum with dense, kinetic energy. They physically guide the wearer's arms, granting a permanent surge of muscle power. A volatile transmutation enchantment sleeps within the metal. In combat, the gauntlets release a devastating shockwave upon impact. This force instantly crushes bone and internal organs with the weight of a falling boulder.
 
 STATISTICS:
 
@@ -417,7 +417,7 @@ Equipped abilities:
 – Strength: +1
 
 Combat abilities:
-- 10% chanche to deal 4 extra crushing damage (only in melee)
+- Crushing damage: +10% (only in melee)
 
 Requires: 
 17 Strength
@@ -444,7 +444,7 @@ Weight: 2"
 STATISTICS:
 
 Equipped abilities:
-– Casting level: +1
+– Casting level: +2
 - Casting speed: +1
 
 Weight: 2"
@@ -468,9 +468,9 @@ Weight: 2"
 STATISTICS:
 
 Equipped abilities:
-– Casting level: +2
+– Casting level: +4
 - Casting speed: +2
-- All non physical damage resistances: +20%
+- All non-physical damage resistances: +20%
 - Immunity to hold
 
 Weight: 2"
@@ -549,6 +549,7 @@ STATISTICS:
 
 Equipped abilities:
 – Magical damage (all form): +20%
+- Casting level: +2
 
 Weight: 2"
 

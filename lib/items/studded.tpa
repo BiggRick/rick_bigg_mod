@@ -61,7 +61,7 @@ Weight: 10
 
 
 
-//ARMOR OF MISSILE ATTRACTION +2 - 3500mo//
+//ARMOR OF MISSILE ATTRACTION +5 - 4500mo//
 COPY "rick_bigg_mod/items/LEAT06.itm" "override"
 	SAY NAME1 "Studded Leather Armor"
 	SAY UNIDENTIFIED_DESC "Studded leather armor has little in common with normal leather armor. Instead of a hardened shell, studded leather offers hundreds of metal rivets affixed to a supple backing. The numerous studs form a flexible coat of metal that helps to turn aside slashing and cutting attacks, while the leather is little more than a means of securing the rivets in place. 
@@ -76,18 +76,15 @@ Requires:
 Weight: 25
 "
 
-	SAY NAME2 "Armor of Missile Attraction +2"
+	SAY NAME2 "Armor of Missile Attraction +5"
 	SAY DESC "This odd-looking suit of studded leather cannot be removed once put on, except under intervention by a priest. While improving a great protection against all melee weapons, this armor actually becomes a target for missile weapons, and hence so does its wearer. The choice is simple: deadly arrows or deadly swords. 
 
 STATISTICS:
 
 Equipped abilities:
 – May only be removed with a Remove Curse spell
-– Crushing Damage Resistance: +10%
-– Slashing Damage Resistance: +10%
-– Piercing Damage Resistance: +10%
 
-Armor Class: 5 (3 vs. slashing, 4 vs. piercing, 15 vs. missile)
+Armor Class: 2 (0 vs. slashing, 1 vs. piercing, 11 vs. missile)
 Speed Factor: -1
 Requires:
  7 Strength
@@ -158,7 +155,7 @@ Weight: 25
 STATISTICS:
 
 Equipped abilities:
-– Hide In Shadows: +25%
+– Hide In Shadows: +30%
 
 Armor Class: 4 (2 vs. slashing, 3 vs. piercing and missile)
 Speed Factor: -1
@@ -206,43 +203,8 @@ Weight: 8"
 
 
 
-//KRUNTUR'S ARMOR +4 - valore 6000mo//
-COPY "rick_bigg_mod/items/BDCHAN02.itm" "override"
-	SAY NAME1 "Studded Leather Armor"
-	SAY UNIDENTIFIED_DESC "Studded leather armor has little in common with normal leather armor. Instead of a hardened shell, studded leather offers hundreds of metal rivets affixed to a supple backing. The numerous studs form a flexible coat of metal that helps to turn aside slashing and cutting attacks, while the leather is little more than a means of securing the rivets in place. 
 
-STATISTICS:
-
-Armor Class: 7 (5 vs. slashing, 6 vs. piercing and missile)
-Speed Factor: -1
-Requires:
- 7 Strength
-
-Weight: 25
-"
-
-	SAY NAME2 "Kruntur's Armor +4"
-	SAY DESC "Once worn by the dekanter goblin warlord Kruntur, this armor is of an unusually high quality considering the race of its owner. Kruntur prized this armor to such a degree that, upon his death, he refused to leave it. To this day, more than a hundred years later, his spirit still permeates the armor, whispering threats to all who dare wear it and generally making a nuisance of himself. He cannot directly harm the wearer, however the chance to have such fine protection might well make up for the aggravation the armor brings with it.
-
-STATISTICS:
-
-Equipped abilities:
-– Wisdom: -1
-– Immunity to stun
-
-Armor Class: 3 (1 vs. slashing, 2 vs. piercing and missile)
-Speed Factor: -1
-Requires:
- 7 Strength
-
-Weight: 8"
-
-
-
-
-
-
-//THE NIGHT'S EMBRACE +4 - 10000mo//
+//THE NIGHT'S EMBRACE +4 - 9000mo//
 COPY "rick_bigg_mod/items/LEAT17.itm" "override"
 	SAY NAME1 "Studded Leather Armor"
 	SAY UNIDENTIFIED_DESC "Studded leather armor has little in common with normal leather armor. Instead of a hardened shell, studded leather offers hundreds of metal rivets affixed to a supple backing. The numerous studs form a flexible coat of metal that helps to turn aside slashing and cutting attacks, while the leather is little more than a means of securing the rivets in place. 
@@ -264,8 +226,6 @@ STATISTICS:
 
 Equipped abilities:
 – If the wearer is rendered helpless (e.g. by a Hold Person spell), <PRO_HESHE> becomes invisible for 1 turn
-- AC bonus at night: +2
-- Saving Throws bonus at night: +2
 
 Armor Class: 3 (1 vs. slashing, 2 vs. piercing and missile)
 Speed Factor: -1
@@ -345,7 +305,7 @@ Weight: 5"
 
 
 
-//SYLVANUS'S WRATH - solo druidi - 15000mo//
+//VERDANT MALICE +5 - solo druidi - 14000mo//
 COPY "rick_bigg_mod/items/LEAT23.itm" "override"
 	SAY NAME1 "Studded Leather Armor"
 	SAY UNIDENTIFIED_DESC "Studded leather armor has little in common with normal leather armor. Instead of a hardened shell, studded leather offers hundreds of metal rivets affixed to a supple backing. The numerous studs form a flexible coat of metal that helps to turn aside slashing and cutting attacks, while the leather is little more than a means of securing the rivets in place. 
@@ -360,21 +320,17 @@ Requires:
 Weight: 25
 "
 
-	SAY NAME2 "Sylvanus's Wrath +5"
-	SAY DESC "The Oak Father is a god of balance, but nature’s balance is rarely peaceful. It is maintained through sharp claws, devastating storms, and the unyielding fury of the wild against the encroachment of civilization. This ancient, living breastplate was grown—not forged—in the deepest groves of the High Forest during a time when standard metal armor failed the great Archdruids of old.
+	SAY NAME2 "Verdant Malice +5"
+	SAY DESC "Rooted deep in the raw power of nature, this plate of dense brambles pulses with a life of its own. It infuses the wearer with a massive surge of natural vitality, bolstering their life force and granting steady regeneration. However, its true nature is wrathful. When struck in combat, the armor releases a deadly volley of razor-sharp wooden splinters and briars, turning the wearer's defense into a lethal counter-attack. If worn by anyone other than a druid, the violent brambles will ruthlessly tear their body apart.
 
 STATISTICS:
 
-Equipped abilities:
-- Casting Speed: +1
-- Total HP: -10%
+Equipped abilities: 
+– Regenerate 3 Hit Points per round
+- Hit Points max: +25%
 
-Charge abilities:
-- Fury of the Nature once per day 
-  When cast, the druid can begin casting a new spell the instant he is finished casting his current spell
-  Duration: 3 rounds
-  Casting Time: 1 round
-  Area of Effect: Caster
+Combat abilities:
+– Thorn Damage: any opponent within 6 ft. that successfully hits the wearer suffers 4d4 points of piercing damage
 
 Armor Class: 2 (0 vs. slashing, 1 vs. piercing and missile)
 Speed Factor: -1

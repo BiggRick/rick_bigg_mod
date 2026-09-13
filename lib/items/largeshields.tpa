@@ -99,13 +99,15 @@ Requires:
 Weight: 15"
 
 	SAY NAME2 "Shield of the Lost +2"
-	SAY DESC "This odd shield was constructed by nomads that once inhabited the forest of Mir, a group long since absorbed into 'civilized' society and forgotten. Examination reveals fine weaving of ironwood roots and liquid silver, granting the heavy aegis absolute protection against foul magic.
+	SAY DESC "This odd shield was constructed by forgotten nomads of the Forest of Mir. Legend says their artisans wove ironwood roots and liquid silver together to shield their chiefs from the wrath of rival sorcerers. The ancient wood naturally drinks in the raw incantations spoken by mages, while the shimmering silver acts as a mirror that dissolves those very same sorceries when they are channelled through enchanted devices. This harmonious fusion grants the heavy aegis absolute protection against foul magic, regardless of how it is unleashed.
 
 STATISTICS:
 
 Equipped abilities:
 – Armor Class: +3, an extra +1 vs. missile attacks
-- Magic Resistance: +10%
+- Saving Throws vs. Spell: +2
+- Saving Throws vs. Rod/Staff/Wand: +2
+- Magic Resistance: +5%
 
 Requires:
  15 Strength
