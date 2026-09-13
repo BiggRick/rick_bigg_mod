@@ -1,44 +1,22 @@
 ---
 name: create-spell-icons
-description: Create Baldur's Gate II spell icon BMPs, run BAM Batcher, and copy the generated BAMs into the mod. Use when asked to create spell icons or BAMs for a spell code.
+description: Create Baldur's Gate II spell icon BMPs, convert them to BAMs with the repository's Python tools, and copy the generated BAMs into the mod. Use when asked to create spell icons or BAMs for a spell code.
 ---
 
 # Create Spell Icons
 
-Create the four BMP inputs expected by BAM Batcher, convert them to BAM files,
+Create the four BMP inputs expected by the Python BAM converters, convert them to BAM files,
 and copy the resulting spell BAMs into this mod's `copy` directory.
 
-## Bootstrap the BAM editing tool
+## Locate the game assets
 
-The game directory and its `..\bambatch` tree are explicitly in scope for this
+The repository's `tools\bam_batcher` asset tree is explicitly in scope for this
 skill. Do not repeatedly ask for permission before reading, writing, or
-running tools against those paths. Use the official BAM Batcher repository:
-`https://github.com/Sampsca/BAM-Batcher`.
-
-Before editing BAM-related files, automatically ensure a local tool checkout
-exists under `..\bambatch\tools\Sampsca-BAM-Batcher`. Reuse it when present;
-otherwise download it non-interactively:
-
-```powershell
-$game = (Resolve-Path ..).Path
-$toolRoot = Join-Path $game 'bambatch\tools\Sampsca-BAM-Batcher'
-if (-not (Test-Path $toolRoot -PathType Container)) {
-    git clone --depth 1 https://github.com/Sampsca/BAM-Batcher.git $toolRoot
-    if ($LASTEXITCODE -ne 0) {
-        throw "Unable to download Sampsca BAM Batcher."
-    }
-}
-```
-
-Do not use an interactive Git prompt, ask for confirmation, or place the
-checkout outside `..\bambatch\tools`. Use the downloaded tool for any direct
-BAM inspection or editing it supports. Use the existing
-`..\setup-bambatch.exe` for this skill's BMP-to-BAM conversion when it is
-available; do not replace it with an unverified binary. If the checkout is
-missing the required executable or its documented build step is necessary,
-follow that repository's instructions automatically and report a concrete
-build/download error rather than asking for permission to access the game
-directory.
+running tools against those paths. The BMP-to-BAM conversion is implemented by
+the repository scripts
+`tools\bam_batcher\make_spell_bam.py` and
+`tools\bam_batcher\make_inventory_bam.py`; do not download or install another
+converter.
 
 ## Collect and validate inputs
 
@@ -59,23 +37,19 @@ Run from the repository root and verify the game directory layout before
 changing anything:
 
 ```powershell
-$game = Resolve-Path ..
-if (-not (Test-Path (Join-Path $game 'bambatch') -PathType Container)) {
-    throw "Expected ..\bambatch to be a directory."
-}
-if (-not (Test-Path (Join-Path $game 'setup-bambatch.exe') -PathType Leaf)) {
-    throw "Expected ..\setup-bambatch.exe to be a file."
+if (-not (Test-Path '.\tools\bam_batcher' -PathType Container)) {
+    throw "Expected .\tools\bam_batcher to be a directory."
 }
 foreach ($subdir in 'invsmall', 'invlarge', 'spell', 'bam') {
-    if (-not (Test-Path (Join-Path $game "bambatch\$subdir") -PathType Container)) {
-        throw "Missing ..\bambatch\$subdir directory."
+    if (-not (Test-Path ".\tools\bam_batcher\$subdir" -PathType Container)) {
+        throw "Missing .\tools\bam_batcher\$subdir directory."
     }
 }
 $templates = @(
-    (Join-Path $game 'bambatch\invsmall\SPWI110AS.BMP'),
-    (Join-Path $game 'bambatch\invlarge\SPWI110AL.BMP'),
-    (Join-Path $game 'bambatch\spell\SPWI110B.BMP'),
-    (Join-Path $game 'bambatch\spell\SPWI110C.BMP')
+    '.\tools\bam_batcher\invsmall\SPWI110AS.BMP',
+    '.\tools\bam_batcher\invlarge\SPWI110AL.BMP',
+    '.\tools\bam_batcher\spell\SPWI110B.BMP',
+    '.\tools\bam_batcher\spell\SPWI110C.BMP'
 )
 foreach ($template in $templates) {
     if (-not (Test-Path $template -PathType Leaf)) {
@@ -86,10 +60,10 @@ foreach ($template in $templates) {
     }
 }
 $greenExamples = @(
-    (Join-Path $game 'bambatch\invsmall\SPWI423AS.BMP'),
-    (Join-Path $game 'bambatch\invlarge\SPWI423AL.BMP'),
-    (Join-Path $game 'bambatch\spell\SPWI423B.BMP'),
-    (Join-Path $game 'bambatch\spell\SPWI423C.BMP')
+    '.\tools\bam_batcher\invsmall\SPWI423AS.BMP',
+    '.\tools\bam_batcher\invlarge\SPWI423AL.BMP',
+    '.\tools\bam_batcher\spell\SPWI423B.BMP',
+    '.\tools\bam_batcher\spell\SPWI423C.BMP'
 )
 foreach ($example in $greenExamples) {
     if (-not (Test-Path $example -PathType Leaf)) {
@@ -98,9 +72,10 @@ foreach ($example in $greenExamples) {
 }
 ```
 
-Do not silently create or substitute the required `bambatch` directory or
-installer. Do not modify the read-only `SPWI110` source files. Surface the
-error if any required path is absent, has the wrong type, or is not read-only.
+Do not silently create or substitute the required `tools\bam_batcher` directory or
+source templates. Do not modify the read-only `SPWI110` source files. Surface
+the error if any required path is absent, has the wrong type, or is not
+read-only.
 
 ## Draw the icon
 
@@ -112,7 +87,7 @@ multicolored artwork: the 32x32 canvas has very limited visual resolution.
 The top-left pixel must be exactly `#00ff00`; this is the transparent color
 used by the game and must remain unchanged in every icon BMP.
 
-Use an indexed/paletted BMP compatible with BAM Batcher. Preserve or create a
+Use an indexed/paletted BMP compatible with the Python BAM converters. Preserve or create a
 palette entry for `#00ff00`, and verify the actual pixel at `(0, 0)` after
 saving. Do not use antialiasing, smoothing, alpha transparency, or an
 uncontrolled true-color export. If a drawing tool is unavailable, use an
@@ -125,8 +100,8 @@ Use the matching existing spell assets as the visual and palette reference:
 
 | Spell color | Reference files |
 |---|---|
-| `white` | `..\bambatch\invsmall\SPWI110AS.BMP`, `..\bambatch\invlarge\SPWI110AL.BMP`, `..\bambatch\spell\SPWI110B.BMP`, and `..\bambatch\spell\SPWI110C.BMP` |
-| `green` | `..\bambatch\invsmall\SPWI423AS.BMP`, `..\bambatch\invlarge\SPWI423AL.BMP`, `..\bambatch\spell\SPWI423B.BMP`, and `..\bambatch\spell\SPWI423C.BMP` |
+| `white` | `tools\bam_batcher\invsmall\SPWI110AS.BMP`, `tools\bam_batcher\invlarge\SPWI110AL.BMP`, `tools\bam_batcher\spell\SPWI110B.BMP`, and `tools\bam_batcher\spell\SPWI110C.BMP` |
+| `green` | `tools\bam_batcher\invsmall\SPWI423AS.BMP`, `tools\bam_batcher\invlarge\SPWI423AL.BMP`, `tools\bam_batcher\spell\SPWI423B.BMP`, and `tools\bam_batcher\spell\SPWI423C.BMP` |
 | `blue` | `TBD` |
 | `red` | `TBD` |
 
@@ -145,10 +120,10 @@ The four required inputs are:
 
 | Destination | File | Content |
 |---|---|---|
-| `..\bambatch\invsmall` | `<CODE>AS.BMP` | A copy of the existing `SPWI110AS.BMP`; do not redraw it. |
-| `..\bambatch\invlarge` | `<CODE>AL.BMP` | The existing `BLANK_SCROLL.BMP` canvas with the image on top; this produces the `A` BAM. |
-| `..\bambatch\spell` | `<CODE>C.BMP` | The new spell icon alone. |
-| `..\bambatch\spell` | `<CODE>B.BMP` | The spell code rendered or represented with a small amount of gray background, following the existing `SPWI110B.BMP` layout. |
+| `tools\bam_batcher\invsmall` | `<CODE>AS.BMP` | A copy of the existing `SPWI110AS.BMP`; do not redraw it. |
+| `tools\bam_batcher\invlarge` | `<CODE>AL.BMP` | The existing `BLANK_SCROLL.BMP` canvas with the image on top; this produces the `A` BAM. |
+| `tools\bam_batcher\spell` | `<CODE>C.BMP` | The new spell icon alone. |
+| `tools\bam_batcher\spell` | `<CODE>B.BMP` | The spell code rendered or represented with a small amount of gray background, following the existing `SPWI110B.BMP` layout. |
 
 Inspect the example files before editing them so dimensions, indexed palettes,
 and canvas bounds are retained. Never overwrite the `SPWI110` source
@@ -162,8 +137,8 @@ canvas.
 Copy the small inventory template explicitly:
 
 ```powershell
-Copy-Item ..\bambatch\invsmall\SPWI110AS.BMP `
-    ..\bambatch\invsmall\<CODE>AS.BMP
+Copy-Item .\tools\bam_batcher\invsmall\SPWI110AS.BMP `
+    .\tools\bam_batcher\invsmall\<CODE>AS.BMP
 ```
 
 Use the spell name and requested color to choose one clear, recognizable
@@ -180,29 +155,30 @@ scroll template is larger than 32x32, retain its original template dimensions;
 the 32x32 limit applies to the drawn spell icon, not the surrounding scroll
 asset.
 
-## Run BAM Batcher
-
-Install the converter from the game directory, not from the mod directory.
-Run the two components as separate commands and check each exit code:
+## Convert BMPs to BAMs
 
 ```powershell
-Push-Location ..
-try {
-    .\setup-bambatch.exe --force-install 1
-    if ($LASTEXITCODE -ne 0) { throw "BAM Batcher component 1 failed." }
+python .\tools\bam_batcher\make_spell_bam.py `
+    --input-dir .\tools\bam_batcher\spell `
+    --output-dir .\tools\bam_batcher\bam `
+    --template .\tools\bam_batcher\hdr-spl.bam
 
-    .\setup-bambatch.exe --force-install 2
-    if ($LASTEXITCODE -ne 0) { throw "BAM Batcher component 2 failed." }
-}
-finally {
-    Pop-Location
-}
+if ($LASTEXITCODE -ne 0) { throw "Spell BMP-to-BAM conversion failed." }
+
+python .\tools\bam_batcher\make_inventory_bam.py `
+    --large-dir .\tools\bam_batcher\invlarge `
+    --small-dir .\tools\bam_batcher\invsmall `
+    --output-dir .\tools\bam_batcher\bam `
+    --template .\tools\bam_batcher\hdr-inv.bam
+
+if ($LASTEXITCODE -ne 0) { throw "Inventory BMP-to-BAM conversion failed." }
 ```
 
-The first install converts BAMs to BMPs and the second converts BMPs to BAMs
-according to the bundled BAM Batcher components. Inspect the generated
-`..\SETUP-BAMBATCH.DEBUG` log if either command fails. Do not continue to the
-copy step after a failed component.
+Run both commands from the repository root. The spell converter processes BMPs
+from `.\tools\bam_batcher\spell`; the inventory converter pairs `*L.BMP` files
+in `.\tools\bam_batcher\invlarge` with matching `*S.BMP` files in
+`.\tools\bam_batcher\invsmall`. Do not continue to the copy step after either
+command fails.
 
 ## Copy generated BAMs
 
@@ -211,7 +187,7 @@ spell code:
 
 ```powershell
 $code = 'SPWI112' # replace with the normalized requested code
-$bamFiles = @(Get-ChildItem (Join-Path (Resolve-Path '..') "bambatch\bam\$code*.BAM") -File)
+$bamFiles = @(Get-ChildItem ".\tools\bam_batcher\bam\$code*.BAM" -File)
 if ($bamFiles.Count -eq 0) {
     throw "No generated BAMs found for $code."
 }
