@@ -27,7 +27,7 @@ Weight: 2"
 
 
 //HELM OF CLARITY - 2500mo//
-COPY "rick_bigg_mod/items/.itm" "override"
+COPY "rick_bigg_mod/items/HELM06.itm" "override"
 	SAY NAME1 "Helmet"
 	SAY DESC "This class of decorative helmet, made of reinforced leather or metal, covers the face and head. Eye slits and breathing holes come highly recommended. 
 
