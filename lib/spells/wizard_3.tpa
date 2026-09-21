@@ -1,0 +1,237 @@
+//CLAIRVOYANCE//
+COPY "rick_bigg_mod/spell/SPWI301.spl" "override"
+	SAY NAME1 "Clairvoyance"
+	SAY UNIDENTIFIED_DESC 
+"Clairvoyance
+Level: 3
+School: Divination
+Range: Personal
+Duration: 5 turns
+Casting Time: 3
+Area of Effect: Caster
+Saving Throw: None
+
+This spell grants an unnatural perception of things to come. Once Clairvoyance is cast, the caster receives instantaneous warnings of impending danger or harm. He becomes impossible to surprise and cannot be backstabbed. In addition, the spell gives a general idea of what action might be taken to best protect oneself, granting a +3 insight bonus to AC and saves vs. breath. The effects last for the duration of the spell, and cannot be dispelled.
+"
+
+
+
+
+
+//CONFUSION//
+COPY "rick_bigg_mod/spell/SPWI401.spl" "override"
+	SAY NAME1 "Confusion"
+	SAY UNIDENTIFIED_DESC 
+"Confusion
+Level: 3
+School: Enchantment
+Range: Long
+Duration: 5 rounds
+Casting Time: 4
+Area of Effect: 30' radius
+Saving Throw: Spell negates
+
+This spell causes confusion in one or more creatures within the area, creating indecision and the inability to take effective action. All hostile creatures within the area of effect are allowed a saving throw vs. spell at -2. Those successfully saving are unaffected by the spell. Those who fail their saving throws will either go berserk, stand confused, or wander about for the duration of the spell. Wandering creatures move as far from the caster as possible, according to their most typical mode of movement (characters walk, fish swim, bats fly, etc.). Any confused creature that is attacked perceives the attacker as an enemy and acts according to its basic nature.
+"
+
+
+
+
+//DIRE CHARM//
+COPY "rick_bigg_mod/spell/SPWI316.spl" "override"
+	SAY NAME1 "Dire Charm"
+	SAY UNIDENTIFIED_DESC 
+"Dire Charm
+Level: 3
+School: Enchantment
+Range: Long
+Duration: 1 turn
+Casting Time: 3
+Area of Effect: 1 creature
+Saving Throw: Spell negates
+
+This spell works in the exact same manner as Charm Person, with two differences: the enchantment has a longer duration and the saving throw is worse (no bonus at 5th, -1 at 7th, -2 at 9th). Dire Charm affects any single person it is cast upon. The term person includes any bipedal human, demihuman, or humanoid of man-size or smaller, such as dwarves, elves, gnolls, gnomes, half-elves, halflings, half-orcs, hobgoblins, humans, kobolds, and others. Thus, a 10th-level fighter could be charmed, but an ogre could not. If the recipient fails his saving throw, he regards the caster as a trusted friend and ally to be heeded and protected. The caster may give him orders, and the charmed creature will carry them out as quickly as possible.
+
+If the caster harms, or attempts to harm, the charmed creature by some overt action, or if a Dispel Magic spell is successfully cast upon the charmed creature, the charm spell is broken. If two or more charm effects simultaneously affect a creature, the most recent charm takes precedence.
+"
+
+
+
+
+//INVISIBILITY SPHERE//
+COPY "rick_bigg_mod/spell/SPWI307.spl" "override"
+	SAY NAME1 "Invisibility Sphere"
+	SAY UNIDENTIFIED_DESC 
+"Invisibility Sphere
+Level: 3
+School: Illusion
+Range: Personal
+Duration: Special
+Casting Time: 3
+Area of Effect: 10' radius
+Saving Throw: None
+
+This spell confers invisibility upon all friendly creatures within 10 feet of the caster. Creatures leaving the area are still subject to the spell's effect; those entering the area after the casting is completed are not. If an affected creature makes an attack, they will negate the invisibility only for themselves. The spell otherwise lasts for 5 turn.
+"
+
+
+
+
+
+//HASTE//
+COPY "rick_bigg_mod/spell/SPWI305.spl" "override"
+	SAY NAME1 "Haste"
+	SAY UNIDENTIFIED_DESC 
+"Haste
+Level: 3
+School: Transmutation
+Range: Medium
+Duration: 1 turn
+Casting Time: 3
+Area of Effect: 20' radius
+Saving Throw: None
+
+When this spell is cast, the affected creatures gain +6 to movement rate and can make an extra half attack each round. Spellcasting and spell effects are not affected. Haste negates and counters the effects of a Slow spell. When the spell ends, affected creatures become winded for 3 rounds. While winded they receive penalties of -2 to hit, damage, and armor class. This spell is not cumulative with itself or with other similar magic.
+"
+
+
+
+
+
+//HALT UNDEAD//
+COPY "rick_bigg_mod/spell/SPWI324.spl" "override"
+	SAY NAME1 "Halt Undead"
+	SAY UNIDENTIFIED_DESC 
+"Halt Undead
+Level: 3
+School: Necromancy
+Range: Medium
+Duration: 1 turn
+Casting Time: 3
+Area of Effect: Target, and enemies within 5'
+Saving Throw: Spell negates
+
+This spell stops undead creatures in their place for the duration of the spell. The effect is centered on the victim selected by the caster. Any undead creatures within 5 feet of the target are also affected. Those who succeed at a saving throw vs. spell at -2 are totally unaffected by the spell.
+
+Those affected become unable move or groan, but they remain aware of events around them even though they are helpless to change them. Time passes at a normal rate for the targets and hence the effect does not stop any worsening of their condition due to injury or rot.
+"
+
+
+
+
+
+//SKULL TRAP//
+COPY "rick_bigg_mod/spell/SPWI313.spl" "override"
+	SAY NAME1 "Skull Trap"
+	SAY UNIDENTIFIED_DESC 
+"Skull Trap
+Level: 3
+School: Necromancy
+Range: Medium
+Duration: Special
+Casting Time: 3
+Area of Effect: 20' radius
+Saving Throw: Spell half
+
+Upon casting this spell, a skull is thrown by the caster at the target area. The skull floats in the area until a creature comes within 15 feet of it. When this happens, the skull is triggered and explodes, damaging everyone within a 20 foot radius. The explosion deals 1d4 points of magic damage per level of the caster (up to a maximum of 10d4) and drain 2 points of strength for 1 hour, with a save vs. spell at -4 allowed for half damage and negates strength malus. When casting this spell, it is wise to set it far away from the party, lest they set it off accidentally. Undead creatures are not affected by this spell.
+"
+
+
+
+
+
+//VAMPIRIC BITE//
+COPY "rick_bigg_mod/spell/SPWI314.spl" "override"
+	SAY NAME1 "Vampiric Bite"
+	SAY UNIDENTIFIED_DESC 
+"Vampiric Bite
+Level: 3
+School: Necromancy
+Range: Touch
+Duration: Special
+Casting Time: 3
+Area of Effect: 1 creature
+Saving Throw: Spell partial
+
+When this spell is cast, the target loses 3 hit points for every caster level, to a maximum drain of 30 for a 10th level caster. These hit points are added to the caster's current hit points, with any hit points over the caster's normal maximum treated as temporary additional hit points. The temporary hit points last for 1 turn.
+
+Note that this spell may not be cast multiple times to radically increase the caster's hit points. The caster must wait for the first Vampiric Bite spell to run its course before casting another.
+"
+
+
+
+
+//EXPEDITIOUS RETREAT//
+COPY "rick_bigg_mod/spell/SPWI109.spl" "override"
+	SAY NAME1 "Expeditious Retreat"
+	SAY UNIDENTIFIED_DESC 
+"Expeditious Retreat
+Level: 3
+School: Generalist
+Range: Personal
+Duration: 3 rounds
+Casting Time: 1
+Area of Effect: Special
+Saving Throw: None
+
+"When cast, this spell provides all friendly creatures in the area with an amazing fleetness of foot. The affected creatures' movement rate is almost tripled for the duration of the spell, but this excessively unnatural speed prevents them from taking any action other than running. The spell also grants a +4 bonus to AC, an extra +4 AC vs. missiles and a +4 bonus to saving throws vs. breath.
+"
+
+
+
+
+
+
+//ICELANCE//
+COPY "rick_bigg_mod/spell/SPWI323.spl" "override"
+	SAY NAME1 "Icelance"
+	SAY UNIDENTIFIED_DESC 
+"Icelance
+Level: 3
+School: Conjuration
+Range: Medium
+Duration: Special
+Casting Time: 3
+Area of Effect: 1 creature
+Saving Throw: Wand partial
+
+When this spell is cast, a sharp spear of ice impales the target, inflicting 5d6 points of damage. The target must make a save vs. wand at -2 or be held for three rounds.
+"
+
+
+
+
+//FLAME ARROW//
+COPY "rick_bigg_mod/spell/SPWI303.spl" "override"
+	SAY NAME1 "Flame Arrow"
+	SAY UNIDENTIFIED_DESC 
+"Flame Arrow
+Level: 3
+School: Conjuration
+Range: Long
+Duration: Instant
+Casting Time: 3
+Area of Effect: Special
+Saving Throw: None
+
+This spell enables the caster to hurl flaming arrows at his enemies. The caster receives one arrow for every two experience levels (up to a maximum of five arrows at level 10), and each arrow inflicts 1d6 points of missile damage plus 1d6 points of fire damage. Upon completion of the spell, the first arrow will streak towards the creature targeted by the wizard, while additional arrows will randomly target opponents within range.
+"
+
+
+
+//MELF'S MINUTE METEORS//
+COPY "rick_bigg_mod/spell/SPWI325.spl" "override"
+	SAY NAME1 "Melf's Minute Meteor"
+	SAY UNIDENTIFIED_DESC 
+"Melf's Minute Meteors
+Level: 3
+School: Conjuration
+Range: Personal
+Duration: Special
+Casting Time: 3
+Area of Effect: Special
+Saving Throw: Wand special
+
+This spell enables the wizard to summon small globes of fire (5 globes at 5th level, 10 at 7th and 15th at 9th), which, when thrown, burst upon impact and inflict 1d4 points of piercing damage plus 2d4 points of fire damage to the creature struck (save vs. Wand at -2 to halve the fire damage). The wizard gains a +4 bonus to hit with the missiles, and each meteor is considered to be of +3 enchantment to determine what it can hit. The wizard may discharge up to five missiles per round.
+"
+

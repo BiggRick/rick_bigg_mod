@@ -1,0 +1,31 @@
+//MELF'S MINUTE METEOR//
+COPY "rick_bigg_mod/items/MELFMET.itm" "override"
+	SAY NAME1 "Melf's Minute Meteor"
+	SAY UNIDENTIFIED_DESC "This glowing meteor was created with the spell Melf's Minute Meteors.
+
+STATISTICS:
+
+Equipped abilities:
+– Sets attacks per round to 5
+
+THAC0: +4
+Damage: 1d4, +2d4 fire damage (save vs. Wand at -2 for half)
+Damage type: Missile
+Speed Factor: 0
+
+Weight: 0"
+
+	SAY NAME2 "Melf's Minute Meteor"
+	SAY DESC "This glowing meteor was created with the spell Melf's Minute Meteors.
+
+STATISTICS:
+
+Equipped abilities:
+– Sets attacks per round to 5
+
+THAC0: +4
+Damage: 1d4, +2d4 fire damage (save vs. Wand at -2 for half)
+Damage type: Missile
+Speed Factor: 0
+
+Weight: 0"

@@ -1,0 +1,370 @@
+//RESIST ELEMENTS//
+COPY "rick_bigg_mod/spell/SPWI204.spl" "override"
+	SAY NAME1 "Resist Elements"
+	SAY UNIDENTIFIED_DESC 
+"Resist Elements
+Level: 2
+School: Abjuration
+Sphere: Protection
+Range: Touch
+Duration: 5 turns
+Casting Time: 2
+Area of Effect: 1 creature
+Saving Throw: None
+
+Upon the casting of this spell, the recipient's resistance to all forms of elemental damage is increased by 25%. This effect will last for the duration of the spell or until dispelled. Multiple castings of this spell are not cumulative.
+"
+
+
+
+
+//RESIST FEAR//
+COPY "rick_bigg_mod/spell/SPWI210.spl" "override"
+	SAY NAME1 "Resist Fear"
+	SAY UNIDENTIFIED_DESC 
+"Resist Fear
+Level: 2
+School: Abjuration
+Range: Long
+Duration: 5 turns
+Casting Time: 2
+Area of Effect: 30' radius
+Saving Throw: None
+
+The wizard instills courage in allies, raising their morale to its highest. If the recipients are affected by magical fear, this is negated. In addition, the recipients are protected from magical fear for the duration of the spell.
+"
+
+
+
+
+
+//WEB//
+COPY "rick_bigg_mod/spell/SPWI215.spl" "override"
+	SAY NAME1 "Web"
+	SAY UNIDENTIFIED_DESC 
+"Web
+Level: 2
+School: Conjuration
+Range: Long
+Duration: 1 turn
+Casting Time: 2
+Area of Effect: 20' radius
+Saving Throw: Breath negates
+
+A Web spell creates a many-layered mass of strong, sticky strands similar to spider webs but far larger and tougher. The Web spell covers a maximum area of about 20 feet in radius. Creatures caught within webs, or simply touching them, become stuck among the gluey fibers. Creatures that make a successful saving throw vs. breath can move at half speed through the area, but must make additional saving throws each round they remain in the area of effect. A failed saving throw means the creature is stuck in the webs, unable to move for that round. Incorporeal and flying creatures are unaffected by this spell, as are spiders and exceptionally large and strong creatures who suffer little to no distress from the webs.
+"
+
+
+
+
+
+
+
+//MELF'S ACID ARROW//
+COPY "rick_bigg_mod/spell/SPWI211.spl" "override"
+	SAY NAME1 "Melf's Acid Arrow"
+	SAY UNIDENTIFIED_DESC 
+"Melf's Acid Arrow
+Level: 2
+School: Conjuration
+Range: Long
+Duration: special
+Casting Time: 2
+Area of Effect: 1 creature
+Saving Throw: None
+
+By means of this spell, the wizard creates a magical arrow that speeds to its target unerringly. The arrow inflicts 1d6 points of missile damage, and 1d6 points of acid damage plus another 1d6 every 3 seconds. For every two levels that the caster has achieved, the acid lasts for another round, unless somehow dispelled. So at 3rd-4th level, the acid lasts for one round (total 2d6 acid damage), at 5th-6th level, the acid lasts for two rounds (total 4d6 acid damage), and so on (up to a maximum of four rounds at 9th level).
+"
+
+
+
+
+
+
+//LUCK//
+COPY "rick_bigg_mod/spell/SPWI209.spl" "override"
+	SAY NAME1 "Luck"
+	SAY UNIDENTIFIED_DESC 
+"Luck
+Level: 2
+School: Divination
+Range: Medium
+Duration: 5 turns
+Casting Time: 2
+Area of Effect: 1 creature
+Saving Throw: None
+
+The recipient of this spell is lucky in everything that he does for the next hour. The affected character receives a 5% or +1 bonus to all of his actions. This includes saving throws, to hit chances, damage rolls, thieving skills, etc. Multiple castings of this spell are not cumulative.
+"
+
+
+
+
+
+
+//GHOUL TOUCH//
+COPY "rick_bigg_mod/spell/SPWI218.spl" "override"
+	SAY NAME1 "Ghoul Touch"
+	SAY UNIDENTIFIED_DESC 
+"Ghoul Touch
+Level: 2
+School: Necromancy
+Range: Personal
+Duration: 1 turn
+Casting Time: 2
+Area of Effect: Special
+Saving Throw: Special
+
+When the caster completes this spell, a red glow encompasses his hand. On a successful touch from the wizard, the spell inflicts 3d8+3 points of magic damage and paralyzes the target for 5 rounds unless a successful save vs. death is made. The spell expires once the caster makes a successful melee attack or after 1 turn has passed. The wizard gains a +4 bonus to hit the target.
+
+At higher levels:
+- the damage increases by 1d8+1 every three levels, up to 5d8+5 at 9th level
+- the saving throws are made at -1 penalty at 6th level and -2 penalty at 9th
+"
+
+
+
+
+
+
+//EMOTION: HOPELESSNESS//
+COPY "rick_bigg_mod/spell/SPWI299.spl" "override"
+	SAY NAME1 "Emotion: Hopelessness"
+	SAY UNIDENTIFIED_DESC 
+"Emotion: Hopelessness
+Level: 2
+School: Enchantment
+Range: Personal
+Duration: 1 turn
+Casting Time: 2
+Area of Effect: 30' radius
+Saving Throw: None
+
+When this spell is cast, the wizard can disturb the emotional state of those around him. The effect of this is to inflict a feeling of hopelessness upon enemies within visual range of the caster. Those affected will receive a -1 penalty on attack rolls and -2 to weapon damage. This will last for the duration of the spell. It cannot be dispelled and bypasses magic resistance. The spell can only affect humanoids of man size or smaller.
+"
+
+
+
+
+
+//EMOTION: HOPE//
+COPY "rick_bigg_mod/spell/SPWI298.spl" "override"
+	SAY NAME1 "Emotion: Hope"
+	SAY UNIDENTIFIED_DESC 
+"Emotion: Hope
+Level: 2
+School: Enchantment
+Range: Personal
+Duration: 1 turn
+Casting Time: 2
+Area of Effect: 30' radius
+Saving Throw: None
+
+When this spell is cast, the wizard can fortify the emotional state of those around him. The effect of this is to give a feeling of hope upon allies within visual range of the caster. Those affected will receive a +1 bonus on attack rolls and +2 to weapon damage. This will last for the duration of the spell. It cannot be dispelled. The spell can only affect humanoids of man size or smaller.
+"
+
+
+
+
+//HOLD PERSON//
+COPY "rick_bigg_mod/spell/SPWI306.spl" "override"
+	SAY NAME1 "Hold Person"
+	SAY UNIDENTIFIED_DESC 
+"Hold Person
+Level: 2
+School: Enchantment
+Range: Medium
+Duration: 1 turn
+Casting Time: 3
+Area of Effect: Target, and enemies within 5'
+Saving Throw: Spell negates
+
+This spell holds one or more humans, demihumans, or humanoid creatures rigidly immobile and in place for one turn. The effect is centered on the victim selected by the caster. Every enemy within 5 feet of the target is also affected. Those who succeed at a saving throw vs. spell at -2 are totally unaffected by the spell. Undead creatures cannot be held with this spell.
+
+Held creatures cannot move or speak, but they remain aware of events around them even though they are helpless to change them. Time passes at a normal rate for the targets and hence being held does not stop any worsening of their condition due to wounds, disease, or poison.
+"
+
+
+
+
+//DETECT WEAKNESS//
+COPY "rick_bigg_mod/spell/SPWI208.spl" "override"
+	SAY NAME1 "Detect Weakness"
+	SAY UNIDENTIFIED_DESC 
+"Know Opponent
+Level: 2
+School: Divination
+Range: Long
+Duration: 1 turn
+Casting Time: 2
+Area of Effect: 1 creature
+Saving Throw: None
+
+When this spell is cast, the wizard's eyes glow with magical energy, enabling him to read the aura of a creature, and determine the creature's strengths and weaknesses. For the duration of the spell, the target's physical resistances are lowered by 10% and all attacks against the target creature are made with a +3 bonus to the attack roll. Certain magical devices negate the power of the Detect Weakness spell, and the spell has no effect on creatures who don't emanate auras, such as constructs. Magic resistance does not affect this spell.
+"
+
+
+
+
+//INVISIBILITY//
+COPY "rick_bigg_mod/spell/SPWI206.spl" "override"
+	SAY NAME1 "Invisibility"
+	SAY UNIDENTIFIED_DESC 
+"Invisibility
+Level: 2
+School: Illusion
+Range: Touch
+Duration: Special
+Casting Time: 2
+Area of Effect: 1 creature
+Saving Throw: None
+
+This spell causes the creature touched to vanish from sight and be undetectable by normal vision or even infravision. Of course, the invisible creature is not magically silenced, and certain other conditions can render the creature detectable. Items dropped or put down by the invisible creature become visible, items picked up disappear if tucked into the clothing or pouches worn by the creature. The caster cannot perform any actions that manipulate the environment around him such as opening doors, disarming traps, or opening chests. An invisible creature can drink a potion, or cast non-attack spells centered on himself and remain invisible, but he cannot attack nor cast spells on other targets without ending the spell. The spell remains in effect until it is magically broken or dispelled, until the recipient attacks any creature, or until 5 turns have passed.
+"
+
+
+
+
+//MIRROR IMAGE//
+COPY "rick_bigg_mod/spell/SPWI212.spl" "override"
+	SAY NAME1 "Mirror Image"
+	SAY UNIDENTIFIED_DESC 
+"Mirror Image
+Level: 2
+School: Illusion
+Range: Personal
+Duration: 3 turns
+Casting Time: 2
+Area of Effect: Caster
+Saving Throw: None
+
+When a Mirror Image spell is invoked, the spellcaster causes a number of illusory duplicates of himself to come into being around him. The spell creates three images plus one for every 3 levels of the caster (up to a maximum of six images at 9th level). These images do exactly what the wizard does, and since the spell causes a blurring and slight distortion when it is cast, it is impossible for opponents to be certain which are the illusions and which is the actual wizard. When an image is directly struck by a melee or missile attack, magical or otherwise, it disappears, while other existing images remain intact. It is important to note that this will not protect the caster against all attacks, as it is possible for an enemy to choose the real caster amongst all the images. This spell cannot be cast on anyone who is under the effects of a Reflected Image spell, and casting the spell multiple times will not multiply the number of images created.
+"
+
+
+
+
+
+//AGANNAZAR'S SCORCHER//
+COPY "rick_bigg_mod/spell/SPWI217.spl" "override"
+	SAY NAME1 "Agannazar's Scorcher"
+	SAY UNIDENTIFIED_DESC 
+"Agannazar's Scorcher
+Level: 2
+School: Invocation
+Range: Medium
+Duration: 2 rounds
+Casting Time: 2
+Area of Effect: Special
+Saving Throw: Breath half
+
+Upon casting this spell, a jet of flame appears at the caster's fingertips and bursts out toward one target of the caster's choice. That target will be hit by this flame for 6d6 points of damage. The fiery ray will persist for one further round, burning the victim for another 6d6 points of fire damage. Other creatures who cross the path of the flame jet will also take damage as long as they stand in the flame. Victims can save vs. breath for half damage (no malus at 3rd level, -1 at 6th level, -2 at 9th level).
+"
+
+
+
+
+
+//SOUND BURST//
+COPY "rick_bigg_mod/spell/SPWI223.spl" "override"
+	SAY NAME1 "Sound Burst"
+	SAY UNIDENTIFIED_DESC 
+"Sound Burst
+Level: 2
+School: Invocation
+Range: Long
+Duration: 1 turn
+Casting Time: 2
+Area of Effect: 10' radius
+Saving Throw: Spell partial
+
+This spell blasts an area with a tremendous cacophony. Enemies within the area suffer 4d4 points of crushing damage, and are deafened for 1 turn. A successful save vs. spell at -2 penalty halves the damage and negates the deafness. Deafened spellcasters have a 50% chance to miscast any spell. This deafness can be done away with by means of a Dispel Magic spell or a Cure Disease spell.
+"
+
+
+
+
+
+//RAY OF ENFEEBLEMENT//
+COPY "rick_bigg_mod/spell/SPWI221.spl" "override"
+	SAY NAME1 "Mirror Image"
+	SAY UNIDENTIFIED_DESC 
+"Ray of Enfeeblement
+Level: 2
+School: Necromancy
+Range: Long
+Duration: 1 turn
+Casting Time: 2
+Area of Effect: 1 creature
+Saving Throw: Spell negates
+
+By means of a Ray of Enfeeblement, a wizard weakens an opponent, reducing its strength and thereby the attacks that rely upon it. The victim suffers a -6 penalty to strength and has its movement speed reduced by 50% unless they make a successful saving throw vs. spell at a -2 penalty.
+"
+
+
+
+
+
+//VOCALIZE//
+COPY "rick_bigg_mod/spell/SPWI219.spl" "override"
+	SAY NAME1 "Vocalize"
+	SAY UNIDENTIFIED_DESC 
+"Vocalize
+Level: 2
+School: Transmutation
+Range: Personal
+Duration: 5 turn
+Casting Time: 2
+Area of Effect: Caster
+Saving Throw: None
+
+The recipient of this spell gains the ability to cast spells with a verbal component without having to make any noise. Effectively, this spell cancels the silenced effect and makes the recipient immune to it for the spell's duration. This spell has no effect on other noises or speech - it simply removes a spell's verbal component.
+"
+
+
+
+
+
+
+//STRENGTH//
+COPY "rick_bigg_mod/spell/SPWI214.spl" "override"
+	SAY NAME1 "Strength"
+	SAY UNIDENTIFIED_DESC 
+"Strength
+Level: 2
+School: Transmutation
+Range: Short
+Duration: 1 turn/level (max 10 turns)
+Casting Time: 2
+Area of Effect: 1 creature
+Saving Throw: None
+
+Application of this spell sets the strength of the character to 18 and then adds 50 exceptional strength on top of this. The character receives any strength bonuses appropriate. For example, if a character has between 18/50 and 18/00 strength, then his strength will just be set to 18/00. If a character has a strength between 18/01 and 18/50, then his strength will become 18/50 + original percentage. If his strength is less then 18, then it will just become 18/50. However, this spell will have no effect on a character's strength if it is already 19 or more.
+"
+
+
+
+
+
+
+//BLINDNESS//
+COPY "rick_bigg_mod/spell/SPWI297.spl" "override"
+	SAY NAME1 "Blindness"
+	SAY UNIDENTIFIED_DESC 
+"Blindness
+Level: 2
+School: Transmutation
+Range: Long
+Duration: 1 turn
+Casting Time: 2
+Area of Effect: 1 creature
+Saving Throw: Polymorph negates
+
+This spell temporarily blinds its target. A Saving Throw is allowed and, if successful, there are no harmful effects. The saving throw is made with no penalty at 3rd level, -1 at 6th level, and -2 at 9th level. If a victim is blinded, <PRO_HESHE> receives a -4 penalty to <PRO_HISHER> attack rolls and Armor Class.
+"
+
+
+
+
+
+

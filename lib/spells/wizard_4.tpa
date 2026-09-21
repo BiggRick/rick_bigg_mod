@@ -1,0 +1,169 @@
+//BREAK ENCHANTMENT//
+COPY "rick_bigg_mod/spell/SPWI410.spl" "override"
+	SAY NAME1 "Break Enchantment"
+	SAY UNIDENTIFIED_DESC 
+"Break Enchantment
+Level: 4
+School: Abjuration
+Range: Short
+Duration: Permanent
+Casting Time: 4
+Area of Effect: 1 creature
+Saving Throw: None
+
+Upon casting this spell, the mage is able to free a victim from enchantments and curses. The spell can reverse the effects of charm, confusion and feeblemindedness, free a victim from magical sleep or charm, and break the effects of a curse. Note that Break Enchantment cannot remove the curse from a cursed shield, weapon, or suit of armor, for example, but allows those afflicted with any such cursed item to get rid of it. Certain special curses may not be countered by this spell, or may be countered only by a caster of a certain level or through a particular ritual.
+"
+
+
+
+
+//MINOR GLOBE OF INVULNERABILITY//
+COPY "rick_bigg_mod/spell/SPWI406.spl" "override"
+	SAY NAME1 "Minor Globe of Invulnerability"
+	SAY UNIDENTIFIED_DESC 
+"Minor Globe of Invulnerability
+Level: 4
+School: Abjuration
+Range: Personal
+Duration: 1 turn
+Casting Time: 4
+Area of Effect: Caster
+Saving Throw: None
+
+This spell creates a faintly shimmering magical sphere around the caster that prevents any 1st-, 2nd-, or 3rd-level spell effects from penetrating (i.e., the area of effect of any such spells does not include the area of the globe of invulnerability). This includes innate abilities and effects from devices. However, any type of spell can be cast out of the magical sphere, and these pass from the caster of the globe to their subject without affecting the globe. Fourth and higher level spells are not affected by the globe. The globe can be brought down by a successful dispel magic.
+"
+
+
+
+
+
+//ABJURE DEFENSE//
+COPY "rick_bigg_mod/spell/SPWI419.spl" "override"
+	SAY NAME1 "Abjure Defense"
+	SAY UNIDENTIFIED_DESC 
+"Abjure Defense
+Level: 4
+School: Enchantment
+Range: Long
+Duration: Instant
+Casting Time: 1
+Area of Effect: 1 creature
+Saving Throw: None
+
+When a Abjure Defense spell is uttered, it will dispel one spell protection of 7th level or lower on the target. This will always dispel the highest level of spell protection on a target first. If a target has two or more protections tied for the highest level, the choice will be random. Magic resistance does not affect this spell.
+
+The spell protection spells dispelled by Secret Word are: Minor Spell Deflection, Non-Detection, Minor Globe of Invulnerability, Spell Deflection, Dispelling Screen, Spell Shield, Globe of Invulnerability, Greater Spell Deflection, and Shield of the Archons.
+"
+
+
+
+
+//VITRIOLIC SPHERE//
+COPY "rick_bigg_mod/spell/SPWI426.spl" "override"
+	SAY NAME1 "Vitriolic Sphere"
+	SAY UNIDENTIFIED_DESC 
+"Vitriolic Sphere
+Level: 4
+School: Conjuration
+Range: Medium
+Duration: Special
+Casting Time: 3
+Area of Effect: Target, and anyone within 10'
+Saving Throw: Breath half
+
+When this spell is cast, a glowing orb of emerald acid streaks to the target and explodes in a 10-foot radius. Each creature in the area must make a save vs. breath at -4. On a failed save, a creature takes 10d6 acid damage and 3d6 acid damage at the end of its next 2 rounds. On a successful save, a creature takes half the initial damage and half damage at the end of each round.
+"
+
+
+
+
+//PROTECTION FROM ELEMENTAL ENERGY//
+COPY "rick_bigg_mod/spell/SPWI422.spl" "override"
+	SAY NAME1 "Protection From Elemental Energy"
+	SAY UNIDENTIFIED_DESC 
+"Protection From Elemental Energy
+Level: 4
+School: Abjuration
+Range: Touch
+Duration: 5 turns
+Casting Time: 5
+Area of Effect: 1 creature
+Saving Throw: None
+
+When this spell is cast, the recipient receives complete protection from one damage type: acid, cold, fire, or lightning. 100% of the damage from the selected source of energy will be absorbed, and the target creature will become completely immune to the effects of spells based on that element. Multiple castings of this spell are not cumulative, but each time a different damage type can be selected.
+"
+
+
+
+
+//PROTECTION FROM FIRE//
+COPY "rick_bigg_mod/spell/SPWI319.spl" "override"
+	SAY NAME1 "Protection From Fire"
+	SAY UNIDENTIFIED_DESC 
+"Protection From Fire
+Level: 4
+School: Abjuration
+Range: Touch
+Duration: 5 turns
+Casting Time: 5
+Area of Effect: 1 creature
+Saving Throw: None
+
+When this spell is cast, the recipient receives complete protection from fire. 100% of the fire damage will be absorbed, and the target creature will become completely immune to the effects of spells based on that element.
+"
+
+
+
+//PROTECTION FROM COLD//
+COPY "rick_bigg_mod/spell/SPWI320.spl" "override"
+	SAY NAME1 "Protection From Cold"
+	SAY UNIDENTIFIED_DESC 
+"Protection From Cold
+Level: 4
+School: Abjuration
+Range: Touch
+Duration: 5 turns
+Casting Time: 5
+Area of Effect: 1 creature
+Saving Throw: None
+
+When this spell is cast, the recipient receives complete protection from cold. 100% of the cold damage will be absorbed, and the target creature will become completely immune to the effects of spells based on that element.
+"
+
+
+
+
+//PROTECTION FROM ELECTRICITY//
+COPY "rick_bigg_mod/spell/SPWI512.spl" "override"
+	SAY NAME1 "Protection From Electricity"
+	SAY UNIDENTIFIED_DESC 
+"Protection From Electricity
+Level: 4
+School: Abjuration
+Range: Touch
+Duration: 5 turns
+Casting Time: 5
+Area of Effect: 1 creature
+Saving Throw: None
+
+When this spell is cast, the recipient receives complete protection from electricity. 100% of the electricity damage will be absorbed, and the target creature will become completely immune to the effects of spells based on that element.
+"
+
+
+
+
+//PROTECTION FROM ACID//
+COPY "rick_bigg_mod/spell/SPWI517.spl" "override"
+	SAY NAME1 "Protection From Acid"
+	SAY UNIDENTIFIED_DESC 
+"Protection From Acid
+Level: 4
+School: Abjuration
+Range: Touch
+Duration: 5 turns
+Casting Time: 5
+Area of Effect: 1 creature
+Saving Throw: None
+
+When this spell is cast, the recipient receives complete protection from acid. 100% of the acid damage will be absorbed, and the target creature will become completely immune to the effects of spells based on that element.
+"
