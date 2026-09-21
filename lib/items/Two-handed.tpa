@@ -209,7 +209,7 @@ Requires:
 Weight: 15"
 
 SAY NAME2 "Silver Sword +3"
-	SAY DESC ""This vorpal Silver Sword is perfectly balanced, its surface reflecting a flawless, liquid-like sheen when you examine it, and the blade is so finely sharpened it could likely sever a head in a single blow. 
+	SAY DESC "This vorpal Silver Sword is perfectly balanced, its surface reflecting a flawless, liquid-like sheen when you examine it, and the blade is so finely sharpened it could likely sever a head in a single blow. 
 
 STATISTICS:
 

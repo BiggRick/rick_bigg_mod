@@ -12,3 +12,34 @@ END
 
 INCLUDE ~rick_bigg_mod/lib/spells/spells_overwrite.tpa~
 
+COPY_EXISTING_REGEXP ~^.*\.spl$~ ~override~
+	READ_LONG 0x1e unusable
+	WRITE_LONG 0x1e unusable BAND BNOT ( BIT6 BOR BIT7 BOR BIT8 BOR BIT9 BOR BIT10 BOR BIT11 BOR BIT12 BOR BIT13 BOR BIT14 )
+
+	READ_STRREF UNIDENTIFIED_DESC desc
+	PATCH_IF ("%desc%" STRING_COMPARE_REGEXP ~<Invalid Strref -?[0-9]+>~) BEGIN // checking for valid content in string
+		changed = 0
+		INNER_PATCH_SAVE desc ~%desc%~ BEGIN
+			PATCH_IF INDEX_BUFFER( ~^Sphere:[^%WNL%]*$~ ) > 0 BEGIN
+				REPLACE_TEXTUALLY ~^Sphere:[^%WNL%]*[%WNL%]*~ ~~
+				changed = 1
+			END
+			PATCH_IF INDEX_BUFFER( ~^School: Alteration$~ ) > 0 BEGIN
+				REPLACE_TEXTUALLY ~^School: Alteration$~ ~School: Transmutation~
+				changed = 1
+			END
+			PATCH_IF INDEX_BUFFER( ~^School: Evocation$~ ) > 0 BEGIN
+				REPLACE_TEXTUALLY ~^School: Evocation$~ ~School: Invocation~
+				changed = 1
+			END
+			PATCH_IF INDEX_BUFFER( ~^School: Universal$~ ) > 0 BEGIN
+				REPLACE_TEXTUALLY ~^School: Universal$~ ~School: Generalist~
+				changed = 1
+			END
+		END
+		PATCH_IF changed BEGIN
+			SAY_EVALUATED UNIDENTIFIED_DESC ~%desc%~
+		END
+	END
+
+BUT_ONLY

@@ -102,7 +102,7 @@ STATISTICS:
 Weight: 0"
 
 	SAY NAME2 "Ring of Fire Resistance"
-	SAY DESC "The grand mage Batalista intended this item to aid in his travels in the Plane of Fire, and it is said he repeatedly summoned a salamander from that realm to aid in the construction. Salamanders not being known for their patience, it is likely he should not have pestered his "instructor" quite so much. The finger bearing the finished ring was indeed untouched by the inferno that claimed his tower. Had that finger still been attached, Batalista himself might have fared better.
+	SAY DESC "The grand mage Batalista intended this item to aid in his travels in the Plane of Fire, and it is said he repeatedly summoned a salamander from that realm to aid in the construction. Salamanders not being known for their patience, it is likely he should not have pestered his 'instructor' quite so much. The finger bearing the finished ring was indeed untouched by the inferno that claimed his tower. Had that finger still been attached, Batalista himself might have fared better.
 
 STATISTICS:
 
@@ -157,7 +157,7 @@ STATISTICS:
 Weight: 0"
 
 	SAY NAME2 "Ring of Invisibility"
-	SAY DESC "Held by a master Thief for the better part of a generation, this ring was put to bold use in the markets of Waterdeep. Working a crowd in broad daylight, the rogue would steal countless numbers of purses from nobles, replacing them with bags of sand so the theft would go unnoticed. His identity was never known, but the name "Sandthief" was cursed loudly in its stead. It is rumored he retired, and now lives among the nobles he used to rob.
+	SAY DESC "Held by a master Thief for the better part of a generation, this ring was put to bold use in the markets of Waterdeep. Working a crowd in broad daylight, the rogue would steal countless numbers of purses from nobles, replacing them with bags of sand so the theft would go unnoticed. His identity was never known, but the name 'Sandthief' was cursed loudly in its stead. It is rumored he retired, and now lives among the nobles he used to rob.
 
 STATISTICS:
 
@@ -226,7 +226,7 @@ STATISTICS:
 Weight: 0"
 
 	SAY NAME2 "Ring of Free Action"
-	SAY DESC "This ring was given to the reef scavenger and hunter known only as Edventar by a group of aquatic elves long his friends. His help in routing the "Pirate Queen" Yenandra of Dambrath was instrumental in their survival, though Yenandra continues to be feared anywhere the water meets land.
+	SAY DESC "This ring was given to the reef scavenger and hunter known only as Edventar by a group of aquatic elves long his friends. His help in routing the 'Pirate Queen' Yenandra of Dambrath was instrumental in their survival, though Yenandra continues to be feared anywhere the water meets land.
 
 STATISTICS:
 
@@ -336,7 +336,7 @@ STATISTICS:
 Weight: 0"
 
 	SAY NAME2 "Ring of Wizardry"
-	SAY DESC "Long ago, a grand wizard from Amn was rumored to have defied Mystra's limitations on the magical arts. Legends spoke of this wizard being able to cast spells without the limitation of standard memorization. In the end, it was found that his powers stemmed from several magical rings that he had made for himself. His proclaimed "everlasting memory" was a hoax, though his rings continue to be some of the most sought-after items across the Realms. This masterpiece expands the wearer's mental capacity across a vast spectrum of arcane circles, granting unparalleled flexibility in battle.
+	SAY DESC "Long ago, a grand wizard from Amn was rumored to have defied Mystra's limitations on the magical arts. Legends spoke of this wizard being able to cast spells without the limitation of standard memorization. In the end, it was found that his powers stemmed from several magical rings that he had made for himself. His proclaimed 'everlasting memory' was a hoax, though his rings continue to be some of the most sought-after items across the Realms. This masterpiece expands the wearer's mental capacity across a vast spectrum of arcane circles, granting unparalleled flexibility in battle.
 
 STATISTICS:
 
