@@ -43,6 +43,23 @@ COPY_EXISTING ~SPPR103.spl~ ~override/SPIN101.spl~ // Cure Light Wounds
         WRITE_SHORT ab_off + 0x02 4 // ability
         WRITE_SHORT ab_off + 0x12 1 // casting time
     END
+	READ_STRREF UNIDENTIFIED_DESC desc
+	PATCH_IF ("%desc%" STRING_COMPARE_REGEXP ~<Invalid Strref -?[0-9]+>~) BEGIN // checking for valid content in string
+		changed = 0
+		INNER_PATCH_SAVE desc ~%desc%~ BEGIN
+			PATCH_IF INDEX_BUFFER( ~^Level:[^%WNL%]*$~ ) > 0 BEGIN
+				REPLACE_TEXTUALLY ~^Level:[^%WNL%]*[%WNL%]*~ ~~
+				changed = 1
+			END
+			PATCH_IF INDEX_BUFFER( ~^Casting Time:[^%WNL%]*$~ ) > 0 BEGIN
+				REPLACE_TEXTUALLY ~^Casting Time:[^%WNL%]*$~ ~Casting Time:1~
+				changed = 1
+			END
+		END
+		PATCH_IF changed BEGIN
+			SAY_EVALUATED UNIDENTIFIED_DESC ~%desc%~
+		END
+	END
 
 COPY - ~.../bhaalspawn-rules.2da~ ~.../bhaalspawn-rules.2da~
     READ_2DA_ENTRIES_NOW bhaalspawn_rules 1
