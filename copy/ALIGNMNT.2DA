@@ -7,7 +7,7 @@ CLERIC              1                   1                   1                   
 THIEF               0                   1                   1                   1                   1                   1                   1                   1                   1
 BARD                0                   1                   0                   1                   1                   1                   0                   1                   0
 PALADIN             1                   0                   0                   1                   0                   0                   1                   0                   0
-DRUID               1                   1                   0                   1                   1                   1                   1                   1                   1
+DRUID               0                   0                   0                   1                   1                   1                   0                   0                   0
 RANGER              1                   0                   0                   1                   0                   0                   1                   0                   0
 FIGHTER_MAGE        1                   1                   1                   1                   1                   1                   1                   1                   1
 FIGHTER_CLERIC      1                   1                   1                   1                   1                   1                   1                   1                   1
@@ -16,7 +16,7 @@ FIGHTER_MAGE_THIEF  0                   0                   0                   
 MAGE_THIEF          0                   0                   0                   1                   1                   1                   1                   1                   1
 CLERIC_MAGE         1                   1                   1                   1                   1                   1                   1                   1                   1
 CLERIC_THIEF        0                   0                   0                   1                   1                   1                   1                   1                   1
-FIGHTER_DRUID       1                   1                   1                   1                   1                   1                   1                   1                   1
+FIGHTER_DRUID       0                   0                   0                   1                   1                   1                   0                   0                   0
 FIGHTER_MAGE_CLERIC 1                   1                   1                   1                   1                   1                   1                   1                   1
 CLERIC_RANGER       1                   0                   0                   1                   0                   0                   1                   0                   0
 ABJURER             1                   1                   1                   1                   1                   1                   1                   1                   1
