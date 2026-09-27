@@ -17,3 +17,70 @@ COPY ~rick_bigg_mod/spell/tb#cl001.spl~ ~override/tb#cl001.spl~
     WRITE_LONG 0xa2 EVALUATE_BUFFER ~%%code%%~
 
 
+
+
+
+
+
+COPY_EXISTING ~CLASTEXT.2DA~ ~override~
+              ~BGCLATXT.2DA~ ~override~
+              ~SODCLTXT.2DA~ ~override~
+    READ_2DA_ENTRIES_NOW clastext_read 10
+
+    FOR ( row = 0; row < clastext_read; row += 1 ) BEGIN
+        READ_2DA_ENTRY_FORMER clastext_read row 0 class
+
+        PATCH_IF ~%class%~ STRING_EQUAL_CASE ~MAGE~ BEGIN
+            SET_2DA_ENTRY_LATER clastext_set row 4 ( RESOLVE_STR_REF ( "MAGE: The wizard strives to be a master of magical energies, shaping them and casting them as spells. To do so, <PRO_HESHE> studies strange tongues and obscure facts and devotes much of <PRO_HISHER> time to magical research. A wizard must rely on knowledge and wit to survive. Wizards are rarely seen adventuring without a retinue of fighters and men-at-arms. Because there are different types (or schools) of magic, there are different types of wizards. The Mage studies all types of magic and learns a wide variety of spells; <PRO_HISHER> broad range makes <PRO_HIMHER> well suited to the demands of adventuring.
+
+CLASS FEATURES:
+
+– May not wear any armor.
+– May only use the following weapons: dagger, quarterstaff, dart, sling.
+– May only become Proficient (one slot) in any weapon class.
+– May not place any slots in any fighting style.
+– May cast arcane spells.
+- Learns a random spell upon learning a new spell level, and receives one extra spell per level four levels after unlocking that spell level.
+  Example: a 5th level Mage gains one extra 1st level slot compared to a specialist mage, and learns a random 3rd level spell.
+– Hit Die: d4
+
+Prime Requisites For Dual-Classing: Intelligence" ))
+        END ELSE PATCH_IF ~%class%~ STRING_EQUAL_CASE ~FIGHTER~ BEGIN
+            SET_2DA_ENTRY_LATER clastext_set row 4 ( RESOLVE_STR_REF ( "FIGHTER: The Fighter is a champion, swords<PRO_MANWOMAN>, soldier, and brawler who lives or dies by <PRO_HISHER> knowledge of weapons and tactics. Fighters can be found at the front of any battle, contesting toe-to-toe with monsters and villains. A good Fighter needs to be strong and healthy if <PRO_HESHE> hopes to survive.
+
+CLASS FEATURES:
+
+– May wear helmets.
+– May wear any armor and use any weapon.
+– May achieve Grand Mastery (five slots) with any weapon class.
+– May achieve Specialization (two slots) in any fighting style and allocate three slots in Two-Weapon Style.
+– Hit Die: d10
+
+Prime Requisites For Dual-Classing: Strength" ))
+        END ELSE PATCH_IF ~%class%~ STRING_EQUAL_CASE ~RANGER~ BEGIN
+            SET_2DA_ENTRY_LATER clastext_set row 4 ( RESOLVE_STR_REF ( "RANGER: The Ranger is a warrior and a woods<PRO_MANWOMAN> who is skilled with weapons and is knowledgeable in the ways of the forest. The Ranger often protects and guides lost travelers and honest peasant-folk. A Ranger needs to be strong and wise to the ways of nature to live a full life.
+
+CLASS FEATURES:
+
+– May wear helmets.
+– May wear any weapon.
+- May use any armor up to Chain Mail and Medium Shields.
+– May not exceed Mastery (three slots) in any melee weapon class and Grand Mastery (five slots) in any ranged weapon class.
+– May achieve Specialization (two slots) in any fighting style.
+– Begins Specialized (two slots) in Two-Weapon Style.
+– May select a racial enemy, which grants a +4 bonus to hit and damage rolls against the selected enemy race.
+– May use the Tracking ability once per day.
+– May use the Charm Animal ability once per day. Gains one use at level 1 and an additional use every 3 levels thereafter.
+– May use the Goodberry ability once per day. Gains one use at level 1 and an additional use every 3 levels thereafter.
+– +1 to hit and damage rolls with any missile weapon, and AC vs missile, every 5 levels (+1 at 1st level, up to +4 at 16th level).
+- Can score critical hits on a 19 (at 8th level) and a 18 (at 16th level).
+– May use the Hide In Shadows ability while wearing any armor (up to Chain Mail).
+– May cast druidic spells starting at level 8.
+– Alignment restricted to good.
+– Hit Die: d10
+- Cannot dual class" ))
+        END
+    END
+
+    SET_2DA_ENTRIES_NOW clastext_set 10
+
