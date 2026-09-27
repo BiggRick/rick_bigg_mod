@@ -16,6 +16,7 @@ INCLUDE ~rick_bigg_mod/lib/replace_items.tpa~
 INCLUDE ~rick_bigg_mod/lib/bhaalspawn.tpa~
 
 INCLUDE ~rick_bigg_mod/lib/races.tpa~
+INCLUDE ~rick_bigg_mod/lib/classes.tpa~
 INCLUDE ~rick_bigg_mod/lib/styles.tpa~
 
 COMPILE ~rick_bigg_mod/compile~

@@ -1,0 +1,19 @@
+COPY ~rick_bigg_mod/spell/tb#cl001.spl~ ~override/tb#cl001.spl~
+     ~rick_bigg_mod/spell/tb#cl001.spl~ ~override/tb#cl002.spl~
+     ~rick_bigg_mod/spell/tb#cl001.spl~ ~override/tb#cl003.spl~
+     ~rick_bigg_mod/spell/tb#cl001.spl~ ~override/tb#cl004.spl~
+     ~rick_bigg_mod/spell/tb#cl001.spl~ ~override/tb#cl005.spl~
+     ~rick_bigg_mod/spell/tb#cl001.spl~ ~override/tb#cl006.spl~
+     ~rick_bigg_mod/spell/tb#cl001.spl~ ~override/tb#cl007.spl~
+     ~rick_bigg_mod/spell/tb#cl001.spl~ ~override/tb#cl008.spl~
+     ~rick_bigg_mod/spell/tb#cl001.spl~ ~override/tb#cl009.spl~
+    INNER_PATCH ~%DEST_RES%~ BEGIN
+        READ_ASCII 5 code (3)
+        level = code
+        levelm1 = level - 1
+    END
+    SAY NAME1 ~Extra Level %level% Spell~
+    TEXT_SPRINT code ~BIT%levelm1%~
+    WRITE_LONG 0xa2 EVALUATE_BUFFER ~%%code%%~
+
+
