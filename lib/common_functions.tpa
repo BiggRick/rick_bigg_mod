@@ -71,3 +71,64 @@ BEGIN
 END
 
 
+
+
+DEFINE_PATCH_FUNCTION set_cre_speed
+	INT_VAR speed = 6
+BEGIN
+	SET found = 0
+    READ_LONG  0x2c4   eff_off
+    READ_LONG  0x2c8   num_eff
+	PATCH_IF num_eff > 0 THEN BEGIN
+	  FOR (i=0; i<num_eff; i=i+1) BEGIN
+		  READ_LONG eff_off + ((i * 264) + 0x08) "opcode"
+		  
+		  PATCH_IF opcode = 126 BEGIN
+			SET found = 1
+			WRITE_LONG eff_off + ((i * 264) + 0x14) speed
+			WRITE_LONG eff_off + ((i * 264) + 0x18) 1
+		  END
+	  END
+	END
+	
+	PATCH_IF NOT found BEGIN
+		LAUNCH_PATCH_FUNCTION ADD_CRE_EFFECT
+			INT_VAR opcode = 126
+				timing = 9
+				parameter1 = speed
+				parameter2 = 1
+		END
+	END
+END
+
+
+
+DEFINE_PATCH_FUNCTION set_cre_magic_damage_resistance
+	INT_VAR resistance = 0
+BEGIN
+	SET found = 0
+    READ_LONG  0x2c4   eff_off
+    READ_LONG  0x2c8   num_eff
+	PATCH_IF num_eff > 0 THEN BEGIN
+	  FOR (i=0; i<num_eff; i=i+1) BEGIN
+		  READ_LONG eff_off + ((i * 264) + 0x08) "opcode"
+		  
+		  PATCH_IF opcode = 31 BEGIN
+			SET found = 1
+			WRITE_LONG eff_off + ((i * 264) + 0x14) resistance
+			WRITE_LONG eff_off + ((i * 264) + 0x18) 1
+		  END
+	  END
+	END
+	
+	PATCH_IF NOT found BEGIN
+		LAUNCH_PATCH_FUNCTION ADD_CRE_EFFECT
+			INT_VAR opcode = 31
+				timing = 9
+				parameter1 = resistance
+				parameter2 = 1
+		END
+	END
+END
+
+

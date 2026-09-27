@@ -7,7 +7,14 @@ COPY_EXISTING ~tarnes.cre~ ~override~
 		INT_VAR pips = 1
 		STR_VAR proficiency = "PROFICIENCYQUARTERSTAFF"
 	END
-	
+/*
+	LAUNCH_PATCH_FUNCTION set_cre_speed
+		INT_VAR speed = 6
+	END
+	LAUNCH_PATCH_FUNCTION set_cre_magic_damage_resistance
+		INT_VAR resistance = 100
+	END
+*/	
 	
 	COPY_EXISTING ~aoln.cre~ ~override~
 	LAUNCH_PATCH_FUNCTION add_cre_proficiency
