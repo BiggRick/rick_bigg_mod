@@ -75,6 +75,87 @@ When this spell is cast, a glowing orb of emerald acid streaks to the target and
 "
 
 
+//OTILUKE'S RESILIENT SPHERE//
+COPY "rick_bigg_mod/spell/SPWI413.spl" "override"
+	SAY NAME1 "Otiluke's Resilient Sphere"
+	SAY UNIDENTIFIED_DESC 
+"Otiluke's Resilient Sphere
+Level: 4
+School: Conjuration
+Range: Medium
+Duration: 1 turn
+Casting Time: 4
+Area of Effect: 1 creature
+Saving Throw: Spell negates
+
+When this spell is cast, the result is a globe of shimmering force that encloses the subject creature if it fails to successfully save vs. breath at a -4 penalty. The resilient sphere will contain its subject for the duration of the spell. The sphere is completely immune to all damage. Actually, the only method of removing the sphere is a successful dispel magic. Hence, the creature caught inside the globe is completely safe from all attacks, but at the same time is completely unable to affect the outside world.
+
+The caster has the option of using the spell to protect her allies. Resistances and saving throws are bypassed when the target is willing.
+"
+
+
+
+
+
+
+//EMOTION: FEAR//
+COPY "rick_bigg_mod/spell/SPWI499.spl" "override"
+	SAY NAME1 "Emotion: Fear"
+	SAY UNIDENTIFIED_DESC 
+"Emotion: Fear
+Level: 4
+School: Enchantment
+Range: Personal
+Duration: 1 turn
+Casting Time: 4
+Area of Effect: 30' radius
+Saving Throw: None
+
+When this spell is cast, the wizard can disturb the emotional state of those around him. The effect of this is to inflict a sensation of deep fear upon enemies within visual range of the caster. Those affected will receive a -2 penalty on attack rolls and -2 to weapon damage. This will last for the duration of the spell. Enemies also save vs. spell or or flee in terror. Certain creatures are immune to the effects of fear, including all undead. It cannot be dispelled and ignores magic resistance. The spell can only affect humanoids of man size or smaller.
+"
+
+
+
+
+
+//EMOTION: COURAGE//
+COPY "rick_bigg_mod/spell/SPWI498.spl" "override"
+	SAY NAME1 "Emotion: Hope"
+	SAY UNIDENTIFIED_DESC 
+"Emotion: Hope
+Level: 4
+School: Enchantment
+Range: Personal
+Duration: 1 turn
+Casting Time: 4
+Area of Effect: 30' radius
+Saving Throw: None
+
+When this spell is cast, the wizard can fortify the emotional state of those around him. The effect of this is to give a sensation of heroic courage upon allies within visual range of the caster. Those affected will receive a +2 bonus on attack rolls and +2 to weapon damage and total immunity against fear. This will last for the duration of the spell. It cannot be dispelled. The spell can only affect humanoids of man size or smaller.
+"
+
+
+
+
+/GREATER MALISON//
+COPY "rick_bigg_mod/spell/SPWI412.spl" "override"
+	SAY NAME1 "Greater Malison"
+	SAY UNIDENTIFIED_DESC 
+"Greater Malison
+Level: 4
+School: Enchantment
+Range: Long
+Duration: 5 turns
+Casting Time: 4
+Area of Effect: 30' radius
+Saving Throw: None
+
+The spell allows the caster to adversely affect the saving throws of his enemies. The effect is applied to all hostile creatures within the area of effect. Those under the influence of this spell make all their saving throws at a penalty of -2. Multiple castings of this spell are not cumulative.
+"
+
+
+
+
 
 
 //PROTECTION FROM ELEMENTAL ENERGY//
@@ -167,3 +248,175 @@ Saving Throw: None
 
 When this spell is cast, the recipient receives complete protection from acid. 100% of the acid damage will be absorbed, and the target creature will become completely immune to the effects of spells based on that element.
 "
+
+
+
+//IMPROVED INVISIBILITY//
+COPY "rick_bigg_mod/spell/SPWI405.spl" "override"
+	SAY NAME1 "Improved Invisibility"
+	SAY UNIDENTIFIED_DESC 
+"Improved Invisibility
+Level: 4
+School: Illusion
+Range: Touch
+Duration: 1 turn
+Casting Time: 4
+Area of Effect: 1 creature
+Saving Throw: None
+
+This spell is similar to the Invisibility spell, but the recipient is able to attack, either by missile discharge, melee combat, or spellcasting, and remain unseen. Note, however, that there are sometimes telltale traces, a shimmering, that enable observant opponents to approximate the invisible character's whereabouts. These traces are only noticeable when specifically looked for, after the creature has made his presence known. Once the character has revealed himself, opponents can attempt to attack him with conventional weapons, though they do so with a -4 penalty to the attack roll, or they may cast area of effect spells near his position. Opponents remain unable to directly target the invisible creature with spells, scrolls, or abilities until the spell duration expires or the invisibility is dispelled.
+"
+
+
+
+
+//WRAITHFORM//
+COPY "rick_bigg_mod/spell/SPWI315.spl" "override"
+	SAY NAME1 "Wraithform"
+	SAY UNIDENTIFIED_DESC 
+"Wraithform 
+Level: 4
+School: Illusion
+Range: 0
+Duration: 5 rounds
+Casting Time: 1
+Area of Effect: The caster
+Saving Throw: None 
+
+When this spell is cast, the wizard and all of <PRO_HISHER> gear become insubstantial. The caster is subject only to magical or special attacks, including those by weapons of +1 or better enchantment, or by creatures otherwise able to affect those struck only by magical weapons. The wizard also gains 50% physical resistance to damage. While in wraithform, the caster cannot attack.
+"
+
+
+//FIRE SHIELD//
+COPY "rick_bigg_mod/spell/SPWI418.spl" "override"
+	SAY NAME1 "Fire Shield"
+	SAY UNIDENTIFIED_DESC 
+"Fire Shield
+Level: 4
+School: Invocation
+Range: Personal
+Duration: 3 turns
+Casting Time: 4
+Area of Effect: Special
+Saving Throw: None
+
+This spell protects the user by surrounding the caster with a circular wall of flames. This shield not only grants the user 50% cold resistance, but also protects the caster from attacks made within a 5' radius. Opponents that hit the caster with a weapon or spell from within this radius will suffer 1d6+10 points of fire damage (save vs. breath at -2 for half). Multiple castings of this spell are not cumulative, but it can be used in conjunction with similar spells. Tiny and small flying creatures cannot pass through the flames. Magic resistance does not affect this spell.
+"
+
+
+
+
+//ICE STORM//
+COPY "rick_bigg_mod/spell/SPWI404.spl" "override"
+	SAY NAME1 "Ice Storm"
+	SAY UNIDENTIFIED_DESC 
+"Ice Storm
+Level: 4
+School: Invocation
+Range: Long
+Duration: 5 rounds
+Casting Time: 4
+Area of Effect: 30' radius
+Saving Throw: Breath partial
+
+When this spell is cast, great magical hailstones pound down for 5 rounds within a 30 foot radius of a point selected by the caster. Creatures within the area of effect have their movement speed reduced by 50%, and receive 2d8 points of cold damage for each round they remain inside the storm. Creature must also save vs. breath at -2 or have -4 penalty to casting speed and speed factor.
+"
+
+
+
+
+
+
+//CLOAK OF FEAR//
+COPY "rick_bigg_mod/spell/SPWI497.spl" "override"
+	SAY NAME1 "Contagion"
+	SAY UNIDENTIFIED_DESC 
+"Cloak of Fear
+Level: 4
+School: Necromancy
+Range: Personal
+Duration: 1 turn
+Casting Time: 4
+Area of Effect: 6' radius
+Saving Throw: Special
+
+Cloak of Fear empowers the caster to radiate a personal aura of fear out to a 6' radius. All enemies not immune to fear within this aura suffer -2 penalty to attack rolls, and each round they must roll a successful saving throw vs. spell or run away in panic for 1 round. Party members are immune to the effects of the aura.
+"
+
+
+
+
+
+//CONTAGION//
+COPY "rick_bigg_mod/spell/SPWI409.spl" "override"
+	SAY NAME1 "Contagion"
+	SAY UNIDENTIFIED_DESC 
+"Contagion
+Level: 4
+School: Necromancy
+Range: Short
+Duration: 8 hours
+Casting Time: 4
+Area of Effect: Target, and enemies within 5'
+Saving Throw: Death negates
+
+This spell causes a major disease and weakness in a creature. Every 2 rounds the afflicted individual must make a saving throw vs. death at -4 or suffer additional -2 penalty to strength, dexterity, constitution, and charisma (up to -8 to all stats). The effects of this spell will persist until the creature receives a Cure Disease spell, or the spell duration expires. This spell ignores magic resistance.
+"
+
+
+
+
+//SPIRIT ARMOR//
+COPY "rick_bigg_mod/spell/SPWI414.spl" "override"
+	SAY NAME1 "Spirit Armor"
+	SAY UNIDENTIFIED_DESC 
+"Spirit Armor
+Level: 4
+School: Necromancy
+Range: Touch
+Duration: 10 turns
+Casting Time: 4
+Area of Effect: 1 creature
+Saving Throw: None
+
+This spell taps the target's life force in order to create a corporeal barrier around his body. The armor itself is weightless, and does not hinder movement or spellcasting in any way. The spirit armor does not work cumulatively with any other armor, but it will stack with bonuses from dexterity, shields, and magical trinkets. While in effect, the armor class of the recipient will be set to 0, and saving throws vs. death will be made with a +3 bonus. There is a danger in using this spell, however, as the external portion of the target's spirit is temporarily lost when the spell duration expires. This causes the recipient to suffer 2d4 points of damage, unless he succeeds at a saving throw vs. spell.
+"
+
+
+
+
+//STONE TO FLESH//
+COPY "rick_bigg_mod/spell/SPWI625.spl" "override"
+	SAY NAME1 "Stone To Flesh"
+	SAY UNIDENTIFIED_DESC 
+"Stone to Flesh
+Level: 4
+School: Transmutation
+Range: Short
+Duration: Permanent
+Casting Time: 4
+Area of Effect: 1 creature
+Saving Throw: None
+
+This spell is the reverse of Flesh to Stone and will return any creature that has been turned to stone back into flesh. All possessions on the creature likewise will return to normal. The effect is instantaneous and there is no saving throw or system shock check required.
+"
+
+
+
+//STONESKIN//
+COPY "rick_bigg_mod/spell/SPWI408.spl" "override"
+	SAY NAME1 "Stoneskin"
+	SAY UNIDENTIFIED_DESC 
+"Stoneskin
+Level: 4
+School: Transmutation
+Range: Personal
+Duration: 8 hours
+Casting Time: 4
+Area of Effect: Caster
+Saving Throw: None
+
+When a wizard casts this powerful spell upon himself, an outer skin of stone will emerge from the ground, completely covering and shielding him. This skin is, of course, magical and will hinder the wizard in no way. The effect of this is to protect the wizard from physical attacks such as melee weapons and projectiles. One skin is gained for every two levels of the caster. For example, a 10th level wizard would receive 5 skins while a 20th level wizard would receive 10. For each skin the wizard possesses, the spell will stop one attack, so a 10th level wizard would be protected from the first 5 attacks made against him, but the sixth would affect him normally. The skins will remain on the wizard until he is affected by a dispel magic, all of the skins are removed due to physical attacks, or the spell duration expires.
+"
+
+

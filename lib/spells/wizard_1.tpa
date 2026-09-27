@@ -179,7 +179,7 @@ COPY "rick_bigg_mod/spell/SPWI104.spl" "override"
 "Charm Person
 Level: 1
 School: Enchantment
-Range: Long
+Range: Short
 Duration: 5 rounds
 Casting Time: 1
 Area of Effect: 1 person

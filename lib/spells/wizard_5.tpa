@@ -1,0 +1,351 @@
+//SPELL SHIELD//
+COPY_EXISTING "SPWI519.spl" "override"
+	SAY NAME1 "Spell Shield"
+	SAY UNIDENTIFIED_DESC 
+"Spell Shield
+Level: 5
+School: Abjuration
+Range: Personal
+Duration: 5 turns
+Casting Time: 5
+Area of Effect: Caster
+Saving Throw: None
+
+When this spell is cast the wizard is protected from the next magical attack against him. If one of those spells is cast at the wizard this spell activates and absorbs the attack. However, this only works once as this spell is consumed in the process.
+
+The spells that Spell Shield protects the wizard from are: Spell Thrust, Abjure Defense, Pierce Magic, Unraveling Gaze, Khelben's Warding Whip, Pierce Shield, and Spellstrike.
+"
+
+
+
+//CONJURE LESSER ELEMENTAL//
+COPY_EXISTING "SPWI599.spl" "override"
+	SAY NAME1 "Conjure Lesser Elemental"
+	SAY UNIDENTIFIED_DESC 
+"Conjure Lesser Elemental
+Level: 5
+School: Conjuration
+Range: Medium
+Duration: 3 turns
+Casting Time: 5
+Area of Effect: Special
+Saving Throw: None
+
+Upon casting Conjure Lesser Elemental, the caster chooses an element and opens a special gate to the relative Plane, and an elemental is summoned to the vicinity of the spellcaster. The elemental serves the caster's every whim until banished back to its home plane, the spell duration expires, or upon the elemental's death.
+
+Lesser Air Elemental (8 Hit Dice):
+STR 14, DEX 17, CON 16, INT 6, WIS 11, CHA 11;  AL Neutral
+HP 80, AC 0, THAC0 8, Saving Throws 10/12/11/11/13
+3 Attacks Per Round, 1d6+2 Piercing Damage (Fist +2)
+Special Qualities:
+Immune to normal weapons
+Immune to hold, poison, sleep, & stun effects
+Slashing, Crushing, & Piercing Resistance 20%; Missile Resistance 60%
+
+
+Lesser Earth Elemental (8 Hit Dice):
+STR 19, DEX 8, CON 18, INT 6, WIS 11, CHA 11;  AL Neutral
+HP 96, AC 4, THAC0 8, Saving Throws 10/12/11/11/13
+2 Attacks Per Round, 2d6+9 Crushing Damage (Fist +2)
+Special Qualities:
+Immune to normal weapons
+Immune to hold, poison, polymorph, sleep, & stun effects
+Slashing, Piercing, & Missile Resistance 40%
+
+
+Lesser Fire Elemental (8 Hit Dice):
+STR 14, DEX 16, CON 16, INT 6, WIS 11, CHA 11;  AL Neutral
+HP 80, AC 2, THAC0 10, Saving Throws 10/12/11/11/13
+2 Attacks Per Round, 2d4+2 Slashing +2d4 Fire Damage (Fist +2)
+Special Qualities:
+Immune to normal weapons
+Immune to hold, poison, polymorph, sleep, & stun effects
+Fire Resistance 100%
+Slashing, Crushing, Piercing, & Missile Resistance 20%
+
+
+Lesser Water Elemental (8 Hit Dice):
+STR 10, DEX 17, CON 16, INT 6, WIS 11, CHA 11;  AL Neutral
+HP 64, AC 0, THAC0 10, Saving Throws 10/12/11/11/13
+2 Attacks Per Round, 2d4+2 Missile +1d6 Magic Damage (Wave +2)
+Special Qualities:
+Immune to normal weapons
+Immune to hold, poison, polymorph, sleep, & stun effects
+Magic Damage Resistance 100%
+Slashing, Crushing, & Piercing Resistance 20%; Missile Resistance 60%
+"
+
+
+
+//CONJURE LESSER AIR ELEMENTAL//
+COPY_EXISTING "SPWI520.spl" "override"
+	SAY NAME1 "Conjure Lesser Air Elemental"
+	SAY UNIDENTIFIED_DESC 
+"Conjure Lesser Air Elemental
+Level: 5
+School: Conjuration
+Range: Medium
+Duration: 3 turns
+Casting Time: 5
+Area of Effect: Special
+Saving Throw: None
+
+Upon casting Conjure Lesser Air Elemental, the caster opens a special gate to the relative Plane, and an air elemental is summoned to the vicinity of the spellcaster. The elemental serves the caster's every whim until banished back to its home plane, the spell duration expires, or upon the elemental's death.
+
+Lesser Air Elemental (8 Hit Dice):
+STR 14, DEX 17, CON 16, INT 6, WIS 11, CHA 11;  AL Neutral
+HP 80, AC 0, THAC0 8, Saving Throws 10/12/11/11/13
+3 Attacks Per Round, 1d6+2 Piercing Damage (Fist +2)
+Special Qualities:
+Immune to normal weapons
+Immune to hold, poison, sleep, & stun effects
+Slashing, Crushing, & Piercing Resistance 20%; Missile Resistance 60%
+"
+
+
+
+
+//CONJURE LESSER EARTH ELEMENTAL//
+COPY_EXISTING "SPWI521.spl" "override"
+	SAY NAME1 "Conjure Lesser Earth Elemental"
+	SAY UNIDENTIFIED_DESC 
+"Conjure Lesser Earth Elemental
+Level: 5
+School: Conjuration
+Range: Medium
+Duration: 3 turns
+Casting Time: 5
+Area of Effect: Special
+Saving Throw: None
+
+Upon casting Conjure Lesser Earth Elemental, the caster opens a special gate to the relative Plane, and an earth elemental is summoned to the vicinity of the spellcaster. The elemental serves the caster's every whim until banished back to its home plane, the spell duration expires, or upon the elemental's death.
+
+Lesser Earth Elemental (8 Hit Dice):
+STR 19, DEX 8, CON 18, INT 6, WIS 11, CHA 11;  AL Neutral
+HP 96, AC 4, THAC0 8, Saving Throws 10/12/11/11/13
+2 Attacks Per Round, 2d6+9 Crushing Damage (Fist +2)
+Special Qualities:
+Immune to normal weapons
+Immune to hold, poison, polymorph, sleep, & stun effects
+Slashing, Piercing, & Missile Resistance 40%
+"
+
+
+
+
+//CONJURE LESSER FIRE ELEMENTAL//
+COPY_EXISTING "SPWI516.spl" "override"
+	SAY NAME1 "Conjure Lesser Fire Elemental"
+	SAY UNIDENTIFIED_DESC 
+"Conjure Lesser Fire Elemental
+Level: 5
+School: Conjuration
+Range: Medium
+Duration: 3 turns
+Casting Time: 5
+Area of Effect: Special
+Saving Throw: None
+
+Upon casting Conjure Lesser Fire Elemental, the caster opens a special gate to the relative Plane, and a fire elemental is summoned to the vicinity of the spellcaster. The elemental serves the caster's every whim until banished back to its home plane, the spell duration expires, or upon the elemental's death.
+
+Lesser Fire Elemental (8 Hit Dice):
+STR 14, DEX 16, CON 16, INT 6, WIS 11, CHA 11;  AL Neutral
+HP 80, AC 2, THAC0 10, Saving Throws 10/12/11/11/13
+2 Attacks Per Round, 2d4+2 Slashing +2d4 Fire Damage (Fist +2)
+Special Qualities:
+Immune to normal weapons
+Immune to hold, poison, polymorph, sleep, & stun effects
+Fire Resistance 100%
+Slashing, Crushing, Piercing, & Missile Resistance 20%
+"
+
+
+
+
+//MESTIL'S ACID SHEATH/
+COPY_EXISTING "SPWI524.spl" "override"
+	SAY NAME1 "Mestil's Acid Sheath"
+	SAY UNIDENTIFIED_DESC 
+"Mestil's Acid Sheath
+Level: 5
+School: Conjuration
+Range: Personal
+Duration: 3 turns
+Casting Time: 5
+Area of Effect: Special
+Saving Throw: None
+
+This spell conjures an acid shield around the caster. This shield protects the caster from attacks made within a 10' radius. Opponents that hit the caster with a weapon or spell from within this radius will suffer 4d4 points of acid damage and must save vs. breath at -2 (-3 at 12th level, -4 at 14th level) or suffer another 2d4 points of acid damage after 6 seconds . Multiple castings of this spell are not cumulative, but it can be used in conjunction with similar spells. Tiny and small flying creatures cannot pass through the caustic barrier. Magic resistance does not affect this spell.
+"
+
+
+
+
+//MASS LUCK//
+COPY_EXISTING "SPWI598.spl" "override"
+	SAY NAME1 "Mass Luck"
+	SAY UNIDENTIFIED_DESC 
+"Luck
+Level: 5
+School: Divination
+Range: Personal
+Duration: 5 turns
+Casting Time: 5
+Area of Effect: 30' radius
+Saving Throw: None
+
+When this spell is cast, allies are lucky in everything that they do for the next 5 turns. The affected characters receive a 5% or +1 bonus to all of their actions. This includes saving throws, to hit chances, damage rolls, thieving skills, etc. Multiple castings of this spell are not cumulative.
+"
+
+
+//DOMINATION//
+COPY_EXISTING "SPWI506.spl" "override"
+	SAY NAME1 "Domination"
+	SAY UNIDENTIFIED_DESC 
+"Domination
+Level: 5
+School: Enchantment
+Range: Short
+Duration: 1 turn
+Casting Time: 5
+Area of Effect: 1 creature
+Saving Throw: Spell negates
+
+The Domination spell enables the caster to control the actions of any one creature while the spell is in effect. This control is maintained through a telepathic link between the caster and the victim. The target gets a saving throw vs. spell at -2 (-3 at 12th, -4 at 14th) in order to avoid the effect.
+"
+
+
+
+
+//HOLD MONSTER//
+COPY_EXISTING "SPWI507.spl" "override"
+	SAY NAME1 "Hold Monster"
+	SAY UNIDENTIFIED_DESC 
+"Hold Monster
+Level: 5
+School: Enchantment
+Range: Medium
+Duration: 5 rounds
+Casting Time: 5
+Area of Effect: Target, and enemies within 5'
+Saving Throw: Spell negates
+
+This spell holds creatures of any type rigidly immobile and in place for one turn. The effect is centered on the victim selected by the caster. Every enemy within 5 feet of the target is also affected. Those who succeed at a saving throw vs. spell at -2 are totally unaffected by the spell. Undead creatures cannot be held with this spell.
+
+Held creatures cannot move or speak, but they remain aware of events around them even though they are helpless to change them. Time passes at a normal rate for the targets and hence being held does not stop any worsening of their condition due to wounds, disease, or poison.
+"
+
+
+
+
+//CONE OF COLD//
+COPY_EXISTING "SPWI503.spl" "override"
+	SAY NAME1 "Cone of Cold"
+	SAY UNIDENTIFIED_DESC 
+"Cone of Cold
+Level: 5
+School: Invocation
+Range: Special
+Duration: Instant
+Casting Time: 5
+Area of Effect: Special
+Saving Throw: Breath half
+
+When this spell is cast, it causes a cone-shaped spray of extreme cold to spring forth from the wizard's hand. The cone is 30 feet in length and spread out in a horizontal arc of 60 degrees in front of the wizard. It deals 1d4+1 points of damage per level of the wizard's experience (to a maximum of 15d4+15 at 15th level) and slows targets for 1 round. Victims can save vs. breath at -4 to take only half damage and negate the slow effects."
+"
+
+
+
+
+
+
+
+
+
+//PHANTOM BLADE//
+COPY_EXISTING "SPWI518.spl" "override"
+	SAY NAME1 "Phantom Blade"
+	SAY UNIDENTIFIED_DESC 
+"Phantom Blade
+Level: 5
+School: Illusion
+Range: Personal
+Duration: 5 turns
+Casting Time: 5
+Area of Effect: Special
+Saving Throw: None
+
+This spell creates a translucent, weightless, shadowlike sword made of material from the Plane of Shadow that extends 6 feet from the caster's hand. The sword deals 1d12+4 points of magic damage to its victims. Due to its ethereal nature, strength bonuses do not apply, but attacks with the phantom blade are considered melee touch attacks, and thus gain a +4 bonus to hit and attacks 3 times per round. Furthermore, a successful strike temporarily scrambles magic, target suffers a 10% miscast magic chance for 5 rounds (cumulative). The blade is considered to be of +4 enchantment when determining what it can hit. The phantom blade can only be used by the caster, and remains in his hand for the duration of the spell or until dispelled."
+"
+
+
+
+//SHADOW DOOR//
+COPY_EXISTING "SPWI505.spl" "override"
+	SAY NAME1 "Shadow Door"
+	SAY UNIDENTIFIED_DESC 
+"Shadow Door
+Level: 5
+School: Illusion
+Range: Long
+Duration: 1 turn
+Casting Time: 1
+Area of Effect: Caster
+Saving Throw: None
+
+By means of this spell, the wizard creates the illusion of a door. The door transports the caster to any place within sight. Upon passing through the portal, the caster finds himself at his chosen destination. The caster always arrives at exactly the spot desired, and the dimensional door doesn't allow anyone or anything else to pass through. Spells about to be cast upon the wizard will fail, and missiles about to hit him will instead hit thin air.
+Unlike the 1st level spell Dimension Door, the caster will reappear in the new spot totally invisible (as the 4th level spell) and blurred (as the 1st level spell) for the duration of 1 turn."
+
+
+
+
+
+
+//POLYMORPH SELF//
+COPY_EXISTING "SPWI505.spl" "override"
+	SAY NAME1 "Shadow Door"
+	SAY UNIDENTIFIED_DESC 
+"Polymorph Self
+Level: 5
+School: Transmutation
+Range: Personal
+Duration: 5 turns
+Casting Time: 5
+Area of Effect: Caster
+Saving Throw: None
+
+When this spell is cast, the wizard is able to assume the form of another creature: that of a flind, an ogre, a mustard jelly, a sword spider, or a winter wolf. The caster also gains the form's physical mode of locomotion and breathing. This spell does not the wizard change personality and mentality.
+
+For the duration of the spell, the caster may transform into any of the new forms at any time, as many times as he wishes. The caster gains the natural attacks of the new form in some cases and may use weapons in others. The wizard's mental attributes are not affected, but physical attributes are changed to adhere to the new form. Also, any natural protections that the new form offers are conferred to the wizard.
+
+Flind
+Str 17, Dex 17, Con 16;  AC 1, THAC0 10
+2 Attacks Per Round, 1d10+3 Piercing +1d6 Fire Damage (Halberd +2)
+
+
+Ogre
+Str 18/00, Dex 9, Con 18;  AC 3, THAC0 8
+2 Attacks Per Round, 1d10+8 Crushing Damage (Morning Star +2)
+
+
+Mustard Jelly
+Str 14, Dex 9, Con 16;  AC 4, THAC0 10
+1 Attack Per Round, 5d5 Acid Damage + Slow (Corrosive Spore +2)
+Slow: target is slowed for 3 rounds (save vs. polymorph negates)
+Immune to backstab, poison, charm, confusion, & hold effects
+Immune to normal weapons
+Electrical Resistance 100%, Cold Resistance 50%
+
+
+Sword Spider
+Str 17, Dex 10, Con 15;  AC 3, THAC0 14
+4 Attacks Per Round, 1d6+3 Piercing Damage + Poison (Legs & Bite +1)
+Poison: 4 hp/round for 4 rounds (save vs. poison negates)
+Immune to web and poison effects
+
+
+Winter Wolf
+Str 18, Dex 17, Con 15;  AC 2, THAC0 10
+2 Attacks Per Round, 1d6+3 Piercing + 1d6 Cold Damage (Frostbite +2)
+Cold Resistance 100%"
+

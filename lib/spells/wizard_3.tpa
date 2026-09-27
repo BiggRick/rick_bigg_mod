@@ -44,7 +44,7 @@ COPY "rick_bigg_mod/spell/SPWI316.spl" "override"
 "Dire Charm
 Level: 3
 School: Enchantment
-Range: Long
+Range: Short
 Duration: 1 turn
 Casting Time: 3
 Area of Effect: 1 creature
@@ -106,7 +106,7 @@ COPY "rick_bigg_mod/spell/SPWI324.spl" "override"
 Level: 3
 School: Necromancy
 Range: Medium
-Duration: 1 turn
+Duration: 5 rounds
 Casting Time: 3
 Area of Effect: Target, and enemies within 5'
 Saving Throw: Spell negates
@@ -157,27 +157,6 @@ When this spell is cast, the target loses 3 hit points for every caster level, t
 
 Note that this spell may not be cast multiple times to radically increase the caster's hit points. The caster must wait for the first Vampiric Bite spell to run its course before casting another.
 "
-
-
-
-
-//EXPEDITIOUS RETREAT//
-COPY "rick_bigg_mod/spell/SPWI109.spl" "override"
-	SAY NAME1 "Expeditious Retreat"
-	SAY UNIDENTIFIED_DESC 
-"Expeditious Retreat
-Level: 3
-School: Generalist
-Range: Personal
-Duration: 3 rounds
-Casting Time: 1
-Area of Effect: Special
-Saving Throw: None
-
-"When cast, this spell provides all friendly creatures in the area with an amazing fleetness of foot. The affected creatures' movement rate is almost tripled for the duration of the spell, but this excessively unnatural speed prevents them from taking any action other than running. The spell also grants a +4 bonus to AC, an extra +4 AC vs. missiles and a +4 bonus to saving throws vs. breath.
-"
-
-
 
 
 
@@ -235,3 +214,22 @@ Saving Throw: Wand special
 This spell enables the wizard to summon small globes of fire (5 globes at 5th level, 10 at 7th and 15th at 9th), which, when thrown, burst upon impact and inflict 1d4 points of piercing damage plus 2d4 points of fire damage to the creature struck (save vs. Wand at -2 to halve the fire damage). The wizard gains a +4 bonus to hit with the missiles, and each meteor is considered to be of +3 enchantment to determine what it can hit. The wizard may discharge up to five missiles per round.
 "
 
+
+
+
+
+//KNOCK//
+COPY "rick_bigg_mod/spell/SPWI207.spl" "override"
+	SAY NAME1 "Knock"
+	SAY UNIDENTIFIED_DESC 
+"Knock
+Level: 3
+School: Generalist
+Range: Short
+Duration: Instant
+Casting Time: 3
+Area of Effect: 1 object
+Saving Throw: Special
+
+This spell creates a ram-like force that can strike with considerable power. The force can be used to open or smash locked, held, or wizard-locked doors, as well as locked boxes or chests, but it does not raise barred gates or similar impediments.
+"

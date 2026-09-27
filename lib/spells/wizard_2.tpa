@@ -94,7 +94,7 @@ Casting Time: 2
 Area of Effect: 1 creature
 Saving Throw: None
 
-The recipient of this spell is lucky in everything that he does for the next hour. The affected character receives a 5% or +1 bonus to all of his actions. This includes saving throws, to hit chances, damage rolls, thieving skills, etc. Multiple castings of this spell are not cumulative.
+The recipient of this spell is lucky in everything that he does for the 5 turns. The affected character receives a 5% or +1 bonus to all of his actions. This includes saving throws, to hit chances, damage rolls, thieving skills, etc. Multiple castings of this spell are not cumulative.
 "
 
 
@@ -140,7 +140,7 @@ Casting Time: 2
 Area of Effect: 30' radius
 Saving Throw: None
 
-When this spell is cast, the wizard can disturb the emotional state of those around him. The effect of this is to inflict a feeling of hopelessness upon enemies within visual range of the caster. Those affected will receive a -1 penalty on attack rolls and -2 to weapon damage. This will last for the duration of the spell. It cannot be dispelled and bypasses magic resistance. The spell can only affect humanoids of man size or smaller.
+When this spell is cast, the wizard can disturb the emotional state of those around him. The effect of this is to inflict a feeling of hopelessness upon enemies within visual range of the caster. Those affected will receive a -1 penalty on attack rolls and -1 to weapon damage. This will last for the duration of the spell. It cannot be dispelled and ignores magic resistance. The spell can only affect humanoids of man size or smaller.
 "
 
 
@@ -160,7 +160,7 @@ Casting Time: 2
 Area of Effect: 30' radius
 Saving Throw: None
 
-When this spell is cast, the wizard can fortify the emotional state of those around him. The effect of this is to give a feeling of hope upon allies within visual range of the caster. Those affected will receive a +1 bonus on attack rolls and +2 to weapon damage. This will last for the duration of the spell. It cannot be dispelled. The spell can only affect humanoids of man size or smaller.
+When this spell is cast, the wizard can fortify the emotional state of those around him. The effect of this is to give a feeling of hope upon allies within visual range of the caster. Those affected will receive a +1 bonus on attack rolls and +1 to weapon damage. This will last for the duration of the spell. It cannot be dispelled. The spell can only affect humanoids of man size or smaller.
 "
 
 
@@ -174,7 +174,7 @@ COPY "rick_bigg_mod/spell/SPWI306.spl" "override"
 Level: 2
 School: Enchantment
 Range: Medium
-Duration: 1 turn
+Duration: 5 rounds
 Casting Time: 3
 Area of Effect: Target, and enemies within 5'
 Saving Throw: Spell negates
@@ -366,5 +366,20 @@ This spell temporarily blinds its target. A Saving Throw is allowed and, if succ
 
 
 
+//FIND TRAPS//
+COPY "rick_bigg_mod/spell/SPWI296.spl" "override"
+	SAY NAME1 "Find Traps"
+	SAY UNIDENTIFIED_DESC 
+"Find Traps
+Level: 2
+School: Divination
+Range: Personal
+Duration: 5 turns
+Casting Time: 2
+Area of Effect: 30' radius
+Saving Throw: None
+
+When a wizard casts a find traps spell, all traps - concealed normally or magically - of magical or mechanical nature become apparent to him. Once per round, all traps within a 30 foot radius of the caster will be revealed. A trap is any device or magical ward that meets three criteria: it can inflict a sudden or unexpected result, the spellcaster would view the result as undesirable or harmful, and the creator specifically intended the harmful or undesirable result as such. Thus, traps include glyphs and similar spells or devices.
+"
 
 
