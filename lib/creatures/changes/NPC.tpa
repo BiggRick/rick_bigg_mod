@@ -587,6 +587,7 @@ COPY_EXISTING "shank.cre" "override"
 //SHANK//	
 COPY_EXISTING "chase.cre" "override"
 	WRITE_LONG 0x1c 90
+	WRITE_ASCII 0x280 "Chase" #32
 	ADD_CRE_ITEM "MISC33" #1 #1 #1 "NONE" "INV"
 
 
