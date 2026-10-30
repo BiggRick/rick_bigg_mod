@@ -1,5 +1,6 @@
+/*
 //SPELL SHIELD//
-COPY_EXISTING "SPWI519.spl" "override"
+COPY "rick_bigg_mod/spell/SPWI519.spl" "override"
 	SAY NAME1 "Spell Shield"
 	SAY UNIDENTIFIED_DESC 
 "Spell Shield
@@ -15,11 +16,10 @@ When this spell is cast the wizard is protected from the next magical attack aga
 
 The spells that Spell Shield protects the wizard from are: Spell Thrust, Abjure Defense, Pierce Magic, Unraveling Gaze, Khelben's Warding Whip, Pierce Shield, and Spellstrike.
 "
-
-
+*/
 
 //CONJURE LESSER ELEMENTAL//
-COPY_EXISTING "SPWI599.spl" "override"
+COPY "rick_bigg_mod/spell/SPWI599.spl" "override"
 	SAY NAME1 "Conjure Lesser Elemental"
 	SAY UNIDENTIFIED_DESC 
 "Conjure Lesser Elemental
@@ -76,9 +76,8 @@ Slashing, Crushing, & Piercing Resistance 20%; Missile Resistance 60%
 "
 
 
-
 //CONJURE LESSER AIR ELEMENTAL//
-COPY_EXISTING "SPWI520.spl" "override"
+COPY "rick_bigg_mod/spell/SPWI520.spl" "override"
 	SAY NAME1 "Conjure Lesser Air Elemental"
 	SAY UNIDENTIFIED_DESC 
 "Conjure Lesser Air Elemental
@@ -106,7 +105,7 @@ Slashing, Crushing, & Piercing Resistance 20%; Missile Resistance 60%
 
 
 //CONJURE LESSER EARTH ELEMENTAL//
-COPY_EXISTING "SPWI521.spl" "override"
+COPY "rick_bigg_mod/spell/SPWI521.spl" "override"
 	SAY NAME1 "Conjure Lesser Earth Elemental"
 	SAY UNIDENTIFIED_DESC 
 "Conjure Lesser Earth Elemental
@@ -134,7 +133,7 @@ Slashing, Piercing, & Missile Resistance 40%
 
 
 //CONJURE LESSER FIRE ELEMENTAL//
-COPY_EXISTING "SPWI516.spl" "override"
+COPY "rick_bigg_mod/spell/SPWI516.spl" "override"
 	SAY NAME1 "Conjure Lesser Fire Elemental"
 	SAY UNIDENTIFIED_DESC 
 "Conjure Lesser Fire Elemental
@@ -163,7 +162,7 @@ Slashing, Crushing, Piercing, & Missile Resistance 20%
 
 
 //MESTIL'S ACID SHEATH/
-COPY_EXISTING "SPWI524.spl" "override"
+COPY "rick_bigg_mod/spell/SPWI524.spl" "override"
 	SAY NAME1 "Mestil's Acid Sheath"
 	SAY UNIDENTIFIED_DESC 
 "Mestil's Acid Sheath
@@ -182,7 +181,7 @@ This spell conjures an acid shield around the caster. This shield protects the c
 
 
 //MASS LUCK//
-COPY_EXISTING "SPWI598.spl" "override"
+COPY "rick_bigg_mod/spell/SPWI598.spl" "override"
 	SAY NAME1 "Mass Luck"
 	SAY UNIDENTIFIED_DESC 
 "Luck
@@ -199,7 +198,7 @@ When this spell is cast, allies are lucky in everything that they do for the nex
 
 
 //DOMINATION//
-COPY_EXISTING "SPWI506.spl" "override"
+COPY "rick_bigg_mod/spell/SPWI506.spl" "override"
 	SAY NAME1 "Domination"
 	SAY UNIDENTIFIED_DESC 
 "Domination
@@ -217,7 +216,7 @@ The Domination spell enables the caster to control the actions of any one creatu
 
 
 //HOLD MONSTER//
-COPY_EXISTING "SPWI507.spl" "override"
+COPY "rick_bigg_mod/spell/SPWI507.spl" "override"
 	SAY NAME1 "Hold Monster"
 	SAY UNIDENTIFIED_DESC 
 "Hold Monster
@@ -238,7 +237,7 @@ Held creatures cannot move or speak, but they remain aware of events around them
 
 
 //CONE OF COLD//
-COPY_EXISTING "SPWI503.spl" "override"
+COPY "rick_bigg_mod/spell/SPWI503.spl" "override"
 	SAY NAME1 "Cone of Cold"
 	SAY UNIDENTIFIED_DESC 
 "Cone of Cold
@@ -251,7 +250,6 @@ Area of Effect: Special
 Saving Throw: Breath half
 
 When this spell is cast, it causes a cone-shaped spray of extreme cold to spring forth from the wizard's hand. The cone is 30 feet in length and spread out in a horizontal arc of 60 degrees in front of the wizard. It deals 1d4+1 points of damage per level of the wizard's experience (to a maximum of 15d4+15 at 15th level) and slows targets for 1 round. Victims can save vs. breath at -4 to take only half damage and negate the slow effects."
-"
 
 
 
@@ -262,7 +260,7 @@ When this spell is cast, it causes a cone-shaped spray of extreme cold to spring
 
 
 //PHANTOM BLADE//
-COPY_EXISTING "SPWI518.spl" "override"
+COPY "rick_bigg_mod/spell/SPWI518.spl" "override"
 	SAY NAME1 "Phantom Blade"
 	SAY UNIDENTIFIED_DESC 
 "Phantom Blade
@@ -275,12 +273,12 @@ Area of Effect: Special
 Saving Throw: None
 
 This spell creates a translucent, weightless, shadowlike sword made of material from the Plane of Shadow that extends 6 feet from the caster's hand. The sword deals 1d12+4 points of magic damage to its victims. Due to its ethereal nature, strength bonuses do not apply, but attacks with the phantom blade are considered melee touch attacks, and thus gain a +4 bonus to hit and attacks 3 times per round. Furthermore, a successful strike temporarily scrambles magic, target suffers a 10% miscast magic chance for 5 rounds (cumulative). The blade is considered to be of +4 enchantment when determining what it can hit. The phantom blade can only be used by the caster, and remains in his hand for the duration of the spell or until dispelled."
-"
+
 
 
 
 //SHADOW DOOR//
-COPY_EXISTING "SPWI505.spl" "override"
+COPY "rick_bigg_mod/spell/SPWI505.spl" "override"
 	SAY NAME1 "Shadow Door"
 	SAY UNIDENTIFIED_DESC 
 "Shadow Door
@@ -300,7 +298,7 @@ Unlike the 1st level spell Dimension Door, the caster will reappear in the new s
 
 
 //WAVES OF FATIGUE//
-COPY_EXISTING "SPWI508.spl" "override"
+COPY "rick_bigg_mod/spell/SPWI508.spl" "override"
 	SAY NAME1 "Waves of Fatigue"
 	SAY UNIDENTIFIED_DESC 
 "Waves of Fatigue
@@ -312,12 +310,12 @@ Casting Time: 5
 Area of Effect: 30' radius
 Saving Throw: None
 
-Surges of negative energy render all hostile living creatures in the spell's area fatigued, as if they haven't rested in a day. Additionally, their Strength is reduced by 1 and their movement rate is decreased by 25%. Multiple castings of this spell are cumulative.
+Surges of negative energy render all hostile living creatures in the spell's area fatigued, as if they haven't rested in a day. Additionally, their Strength is reduced by 1 and their movement rate is decreased by 25%. Multiple castings of this spell are cumulative."
 
 
 
 //LOWER RESISTANCE//
-COPY_EXISTING "SPWI514.spl" "override"
+COPY "rick_bigg_mod/spell/SPWI514.spl" "override"
 	SAY NAME1 "Lower Resistance"
 	SAY UNIDENTIFIED_DESC 
 "Lower Resistance
@@ -336,7 +334,7 @@ When cast upon a target creature, this spell lowers their magic resistance by 20
 
 
 //POLYMORPH OTHER//
-COPY_EXISTING "SPWI415.spl" "override"
+COPY "rick_bigg_mod/spell/SPWI415.spl" "override"
 	SAY NAME1 "Polymorph Other"
 	SAY UNIDENTIFIED_DESC 
 "Polymorph Other
@@ -357,7 +355,7 @@ Note that all clothes and equipment that the target was wearing will mold into t
 
 
 //ENCHANTED WEAPON//
-COPY_EXISTING "SPWI417.spl" "override"
+COPY "rick_bigg_mod/spell/SPWI417.spl" "override"
 	SAY NAME1 "Enchanted Weapon"
 	SAY UNIDENTIFIED_DESC 
 "Enchanted Weapon
@@ -370,6 +368,5 @@ Area of Effect: 1 creature
 Saving Throw: None
 
 When this spell is cast on a creature, it enchants any weapons they are currently wielding. For the duration of the spell, those weapons are treated as having a +3 enchantment for the purpose of determining what they can hit. The weapons also grant a +3 bonus to THAC0 and damage. This effect cannot be dispelled by Dispel Magic."
-"
 
 

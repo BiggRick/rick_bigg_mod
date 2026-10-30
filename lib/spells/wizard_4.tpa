@@ -137,7 +137,7 @@ When this spell is cast, the wizard can fortify the emotional state of those aro
 
 
 
-/GREATER MALISON//
+//GREATER MALISON//
 COPY "rick_bigg_mod/spell/SPWI412.spl" "override"
 	SAY NAME1 "Greater Malison"
 	SAY UNIDENTIFIED_DESC 

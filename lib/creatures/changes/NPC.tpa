@@ -582,6 +582,14 @@ COPY_EXISTING "shank.cre" "override"
 
 
 
+	
+
+//SHANK//	
+COPY_EXISTING "chase.cre" "override"
+	WRITE_LONG 0x1c 90
+	ADD_CRE_ITEM "MISC33" #1 #1 #1 "NONE" "INV"
+
+
 
 
 //AOLN//	
@@ -803,7 +811,7 @@ COPY_EXISTING "bently.cre" "override"
 
 
 //GELLANA//	
-COPY_EXISTING "gellana.cre" "override"
+COPY_EXISTING "gellan.cre" "override"
 
 	LAUNCH_PATCH_FUNCTION add_cre_proficiency
 		INT_VAR pips = 1
@@ -1328,9 +1336,9 @@ COPY_EXISTING "gurke.cre" "override"
 		INT_VAR resistance = 0
 	END
 	
-	WRITE_LONG 0x14  //EXP//
-	WRITE_SHORT 0x24 70 //PF//
-	WRITE_SHORT 0x26 70 //ACTUAL PF//
+	WRITE_LONG 0x14 270 //EXP//
+	WRITE_SHORT 0x24 50 //PF//
+	WRITE_SHORT 0x26 50 //ACTUAL PF//
 	WRITE_SHORT 0x46 10 //AC//
 	WRITE_SHORT 0x48 10 //AC//
 	WRITE_SHORT 0x4A 0 //AC CRUSHING//
@@ -1688,7 +1696,7 @@ COPY_EXISTING "tranzi.cre" "override"
 		INT_VAR resistance = 0
 	END
 	
-	WRITE_LONG 0x14  //EXP//
+	WRITE_LONG 0x14 975 //EXP//
 	WRITE_SHORT 0x24 28 //PF//
 	WRITE_SHORT 0x26 28 //ACTUAL PF//
 	WRITE_SHORT 0x46 10 //AC//

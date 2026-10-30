@@ -1,0 +1,15 @@
+IF
+	Global("tb#spawnCreatures","BG2700",0)
+THEN
+	RESPONSE #100
+		CreateCreature("GIBBER01", [1280.280], 14) // creatura, posizione X-Y, rotazione - 0 = sud, 4 = ovest, 8 = nord, 12 = est. valori da 0 a 15 con le frazioni
+		CreateCreature("GIBBER01", [1380.280], 14) // creatura, posizione X-Y, rotazione - 0 = sud, 4 = ovest, 8 = nord, 12 = est. valori da 0 a 15 con le frazioni
+		CreateCreature("GIBBER01", [1330.330], 14) // creatura, posizione X-Y, rotazione - 0 = sud, 4 = ovest, 8 = nord, 12 = est. valori da 0 a 15 con le frazioni
+
+		CreateCreature("WOLF", [3000.1500], 14) // creatura, posizione X-Y, rotazione - 0 = sud, 4 = ovest, 8 = nord, 12 = est. valori da 0 a 15 con le frazioni
+
+		SetGlobal("tb#spawnCreatures","BG2700",1)
+		
+		Continue()
+END
+

@@ -1,6 +1,6 @@
 
 //CONJURE ELEMENTAL//
-COPY_EXISTING "SPWI699.spl" "override"
+COPY "rick_bigg_mod/spell/SPWI699.spl" "override"
 	SAY NAME1 "Conjure Elemental"
 	SAY UNIDENTIFIED_DESC 
 "Conjure Elemental
@@ -88,7 +88,7 @@ Slashing, Crushing, & Piercing Resistance 20%; Missile Resistance 60%
 
 
 //CONJURE AIR ELEMENTAL//
-COPY_EXISTING "SPWI621.spl" "override"
+COPY "rick_bigg_mod/spell/SPWI621.spl" "override"
 	SAY NAME1 "Conjure Air Elemental"
 	SAY UNIDENTIFIED_DESC 
 "Conjure Air Elemental
@@ -123,7 +123,7 @@ Slashing, Crushing, & Piercing Resistance 20%; Missile Resistance 60%
 
 
 //CONJURE EARTH ELEMENTAL//
-COPY_EXISTING "SPWI622.spl" "override"
+COPY "rick_bigg_mod/spell/SPWI622.spl" "override"
 	SAY NAME1 "Conjure Earth Elemental"
 	SAY UNIDENTIFIED_DESC 
 "Conjure Earth Elemental
@@ -157,7 +157,7 @@ Slashing, Piercing, & Missile Resistance 40%
 
 
 //CONJURE FIRE ELEMENTAL//
-COPY_EXISTING "SPWI620.spl" "override"
+COPY "rick_bigg_mod/spell/SPWI620.spl" "override"
 	SAY NAME1 "Conjure Fire Elemental"
 	SAY UNIDENTIFIED_DESC 
 "Conjure Fire Elemental
