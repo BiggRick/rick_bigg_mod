@@ -283,7 +283,7 @@ Casting Time: 1
 Area of Effect: The caster
 Saving Throw: None 
 
-When this spell is cast, the wizard and all of <PRO_HISHER> gear become insubstantial. The caster is subject only to magical or special attacks, including those by weapons of +1 or better enchantment, or by creatures otherwise able to affect those struck only by magical weapons. The wizard also gains 50% physical resistance to damage. While in wraithform, the caster cannot attack.
+When this spell is cast, the wizard and all of <PRO_HISHER> gear become insubstantial. The caster is subject only to magical or special attacks, including those by weapons of +1 or better enchantment, or by creatures otherwise able to affect those struck only by magical weapons. The wizard also gains 50% physical resistance to damage, 25% resistance to cold damage and immunity to poison and disease. He also gains a 25% bonus to hide in shadows. While in wraithform, the caster cannot attack.
 "
 
 

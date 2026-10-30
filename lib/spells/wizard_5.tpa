@@ -66,7 +66,7 @@ Slashing, Crushing, Piercing, & Missile Resistance 20%
 
 Lesser Water Elemental (8 Hit Dice):
 STR 10, DEX 17, CON 16, INT 6, WIS 11, CHA 11;  AL Neutral
-HP 64, AC 0, THAC0 10, Saving Throws 10/12/11/11/13
+HP 64, AC 2, THAC0 10, Saving Throws 10/12/11/11/13
 2 Attacks Per Round, 2d4+2 Missile +1d6 Magic Damage (Wave +2)
 Special Qualities:
 Immune to normal weapons
@@ -216,7 +216,6 @@ The Domination spell enables the caster to control the actions of any one creatu
 
 
 
-
 //HOLD MONSTER//
 COPY_EXISTING "SPWI507.spl" "override"
 	SAY NAME1 "Hold Monster"
@@ -300,52 +299,77 @@ Unlike the 1st level spell Dimension Door, the caster will reappear in the new s
 
 
 
-
-//POLYMORPH SELF//
-COPY_EXISTING "SPWI505.spl" "override"
-	SAY NAME1 "Shadow Door"
+//WAVES OF FATIGUE//
+COPY_EXISTING "SPWI508.spl" "override"
+	SAY NAME1 "Waves of Fatigue"
 	SAY UNIDENTIFIED_DESC 
-"Polymorph Self
+"Waves of Fatigue
 Level: 5
-School: Transmutation
-Range: Personal
-Duration: 5 turns
+School: Necromancy
+Range: Long
+Duration: 5 rounds
 Casting Time: 5
-Area of Effect: Caster
+Area of Effect: 30' radius
 Saving Throw: None
 
-When this spell is cast, the wizard is able to assume the form of another creature: that of a flind, an ogre, a mustard jelly, a sword spider, or a winter wolf. The caster also gains the form's physical mode of locomotion and breathing. This spell does not the wizard change personality and mentality.
-
-For the duration of the spell, the caster may transform into any of the new forms at any time, as many times as he wishes. The caster gains the natural attacks of the new form in some cases and may use weapons in others. The wizard's mental attributes are not affected, but physical attributes are changed to adhere to the new form. Also, any natural protections that the new form offers are conferred to the wizard.
-
-Flind
-Str 17, Dex 17, Con 16;  AC 1, THAC0 10
-2 Attacks Per Round, 1d10+3 Piercing +1d6 Fire Damage (Halberd +2)
+Surges of negative energy render all hostile living creatures in the spell's area fatigued, as if they haven't rested in a day. Additionally, their Strength is reduced by 1 and their movement rate is decreased by 25%. Multiple castings of this spell are cumulative.
 
 
-Ogre
-Str 18/00, Dex 9, Con 18;  AC 3, THAC0 8
-2 Attacks Per Round, 1d10+8 Crushing Damage (Morning Star +2)
+
+//LOWER RESISTANCE//
+COPY_EXISTING "SPWI514.spl" "override"
+	SAY NAME1 "Lower Resistance"
+	SAY UNIDENTIFIED_DESC 
+"Lower Resistance
+Level: 5
+School: Transmutation
+Range: Long
+Duration: 1 turn
+Casting Time: 5
+Area of Effect: 1 creature
+Saving Throw: None
+
+When cast upon a target creature, this spell lowers their magic resistance by 20%, plus an additional 4% for each caster level above 9th, up to level 14 for a maximum of 40%. There is no saving throw vs. this spell and magic resistance is ignored. This spell is not affected by dispel magic. Once it has been cast, there is no way to cancel the effects until the spell expires. This effect is cumulative for each casting of this spell."
 
 
-Mustard Jelly
-Str 14, Dex 9, Con 16;  AC 4, THAC0 10
-1 Attack Per Round, 5d5 Acid Damage + Slow (Corrosive Spore +2)
-Slow: target is slowed for 3 rounds (save vs. polymorph negates)
-Immune to backstab, poison, charm, confusion, & hold effects
-Immune to normal weapons
-Electrical Resistance 100%, Cold Resistance 50%
 
 
-Sword Spider
-Str 17, Dex 10, Con 15;  AC 3, THAC0 14
-4 Attacks Per Round, 1d6+3 Piercing Damage + Poison (Legs & Bite +1)
-Poison: 4 hp/round for 4 rounds (save vs. poison negates)
-Immune to web and poison effects
+
+//POLYMORPH OTHER//
+COPY_EXISTING "SPWI415.spl" "override"
+	SAY NAME1 "Polymorph Other"
+	SAY UNIDENTIFIED_DESC 
+"Polymorph Other
+Level: 5
+School: Transmutation
+Range: Long
+Duration: 1 turn
+Casting Time: 5
+Area of Effect: 1 creature
+Saving Throw: Polymorph negates
+
+Polymorph Other is a powerful magic that alters the form of the creature affected. The target's mental attributes are not affected and they do not receive the special abilities of the new form, but physical attributes are changed to adhere to the new form and the affected creature loses any special abilities it had in its original form. This particular version of the spell will transform the recipient into a squirrel unless a save vs. polymorph is made successfully. The save is made at -1 penalty at level 12th and -2 at level 14th.
+
+Note that all clothes and equipment that the target was wearing will mold into the new form. However, they will return to their previous state once the target dies or the effects are dispelled."
 
 
-Winter Wolf
-Str 18, Dex 17, Con 15;  AC 2, THAC0 10
-2 Attacks Per Round, 1d6+3 Piercing + 1d6 Cold Damage (Frostbite +2)
-Cold Resistance 100%"
+
+
+
+//ENCHANTED WEAPON//
+COPY_EXISTING "SPWI417.spl" "override"
+	SAY NAME1 "Enchanted Weapon"
+	SAY UNIDENTIFIED_DESC 
+"Enchanted Weapon
+Level: 5
+School: Generalist
+Range: 0
+Duration: 5 turns
+Casting Time: 1 round
+Area of Effect: 1 creature
+Saving Throw: None
+
+When this spell is cast on a creature, it enchants any weapons they are currently wielding. For the duration of the spell, those weapons are treated as having a +3 enchantment for the purpose of determining what they can hit. The weapons also grant a +3 bonus to THAC0 and damage. This effect cannot be dispelled by Dispel Magic."
+"
+
 
