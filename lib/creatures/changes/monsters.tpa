@@ -408,7 +408,7 @@ COPY_EXISTING "gibber.cre" "override"
 "gibber01.cre" "override"
 "gibbersu.cre" "override"
 "gibblaur.cre" "override"
-"ttgib.cre" "override"
+"ttgibb.cre" "override"
 
 	LAUNCH_PATCH_FUNCTION add_cre_proficiency
 		INT_VAR pips = 0
@@ -1535,7 +1535,7 @@ COPY_EXISTING "ogregr.cre" "override"
 "ogregr_d.cre" "override"
 "ogrelesu.cre" "override"
 "ogremiri.cre" "override"
-"ogregrill01.cre" "override"
+"ogrill01.cre" "override"
 
 	LAUNCH_PATCH_FUNCTION add_cre_proficiency
 		INT_VAR pips = 0
@@ -1918,7 +1918,7 @@ COPY_EXISTING "iogremag.cre" "override"
 COPY_EXISTING "basill.cre" "override"
 "basillsu.cre" "override"
 "basles01.cre" "override"
-"playbass.cre" "override"
+"plybass.cre" "override"
 
 	LAUNCH_PATCH_FUNCTION add_cre_proficiency
 		INT_VAR pips = 0
@@ -2125,7 +2125,7 @@ COPY_EXISTING "nwolf.cre" "override"
 //DIRE WOLF//	
 COPY_EXISTING "wolfdi.cre" "override"
 "wolfdi01.cre" "override"
-"wolfdisu" "override"
+"wolfdisu.cre" "override"
 
 	LAUNCH_PATCH_FUNCTION add_cre_proficiency
 		INT_VAR pips = 0
@@ -2191,8 +2191,8 @@ COPY_EXISTING "wolfdi.cre" "override"
 //WORG//	
 COPY_EXISTING "wolfwo01.cre" "override"
 "worg.cre" "override"
-"worgar" "override"
-"worgarsu" "override"
+"worgar.cre" "override"
+"worgsu.cre" "override"
 
 	LAUNCH_PATCH_FUNCTION add_cre_proficiency
 		INT_VAR pips = 0
@@ -2258,7 +2258,7 @@ COPY_EXISTING "wolfwo01.cre" "override"
 //DREAD WOLF//	
 COPY_EXISTING "wolfd1.cre" "override"
 "wolfdr.cre" "override"
-"wolfdr01" "override"
+"wolfdr01.cre" "override"
 
 	LAUNCH_PATCH_FUNCTION add_cre_proficiency
 		INT_VAR pips = 0
@@ -2328,9 +2328,9 @@ COPY_EXISTING "wolfd1.cre" "override"
 //WINTER WOLF//	
 COPY_EXISTING "obsice03.cre" "override"
 "wolfwi.cre" "override"
-"wolfwi01" "override"
-"wolfwisu" "override"
-"wolfwwsu" "override"
+"wolfwi01.cre" "override"
+"wolfwisu.cre" "override"
+"wolfwwsu.cre" "override"
 
 	LAUNCH_PATCH_FUNCTION add_cre_proficiency
 		INT_VAR pips = 0
@@ -2732,6 +2732,7 @@ COPY_EXISTING "beargr.cre" "override"
 "bearca.cre" "override"
 "bearca01.cre" "override"
 "bearcasu.cre" "override"
+"beargrsu.cre" "override"
 "cavene.cre" "override"
 "tranim01.cre" "override"
 "vbearca.cre" "override"
@@ -2801,7 +2802,7 @@ SAY NAME2 "Grizzly Bear"
 	COPY_EXISTING "bearcasu.cre" "override"
 	WRITE_LONG 0x14 0 //EXP//
 	
-	COPY_EXISTING "bearcagr.cre" "override"
+	COPY_EXISTING "beargrsu.cre" "override"
 	WRITE_LONG 0x14 0 //EXP//
 	
 	
@@ -2870,7 +2871,7 @@ COPY_EXISTING "bearpo.cre" "override"
 	WRITE_BYTE 0x240 4 //MORALERUN//
 	WRITE_BYTE 0x2B 34 //ALIGNEMENT //
 	
-	COPY_EXISTING "bearcapo.cre" "override"
+	COPY_EXISTING "bearposu.cre" "override"
 	WRITE_LONG 0x14 0 //EXP//
 	
 	
@@ -2878,7 +2879,7 @@ COPY_EXISTING "bearpo.cre" "override"
 	
 	
 //CARRION CRAWLER// 
-COPY_EXISTING  "carcra0101.cre" "override"
+COPY_EXISTING  "carcra01.cre" "override"
 "carrio.cre" "override"
 "carriosu.cre" "override"
 "cryptcra.cre" "override"
@@ -2970,7 +2971,7 @@ COPY_EXISTING  "spidsm01.cre" "override"
 	WRITE_SHORT 0x46 9 //AC//
 	WRITE_SHORT 0x48 9 //AC//
 	WRITE_SHORT 0x4A 0 //AC CRUSHING//
-	WRITE_SHORT 0x4C 0-4 //AC MISSILE//
+	WRITE_SHORT 0x4C 0 - 4 //AC MISSILE//
 	WRITE_SHORT 0x4E 0 //AC PIERCING//
 	WRITE_SHORT 0x50 0 //AC SLASHING//
 	WRITE_BYTE 0x52 18 //THAC0//
@@ -3039,7 +3040,7 @@ COPY_EXISTING  "spidhu.cre" "override"
 	WRITE_SHORT 0x46 7 //AC//
 	WRITE_SHORT 0x48 7 //AC//
 	WRITE_SHORT 0x4A 0 //AC CRUSHING//
-	WRITE_SHORT 0x4C 0-2 //AC MISSILE//
+	WRITE_SHORT 0x4C 0 - 2 //AC MISSILE//
 	WRITE_SHORT 0x4E 0 //AC PIERCING//
 	WRITE_SHORT 0x50 0 //AC SLASHING//
 	WRITE_BYTE 0x52 17 //THAC0//
@@ -3083,10 +3084,10 @@ COPY_EXISTING  "spidhu.cre" "override"
 	
 	
 //GIANT SPIDER// 
-COPY_EXISTING "rsspidg.cre" "override"
-"spidg.cre" "override"
-"spidg1.cre" "override"
-"spidgsu.cre" "override"
+COPY_EXISTING "rsspidgi.cre" "override"
+"spidgi.cre" "override"
+"spidgi01.cre" "override"
+"spidgisu.cre" "override"
 "spspid05.cre" "override"
 "udspid01.cre" "override"
 "udspid02.cre" "override"
@@ -3114,7 +3115,7 @@ COPY_EXISTING "rsspidg.cre" "override"
 	WRITE_SHORT 0x46 7 //AC//
 	WRITE_SHORT 0x48 7 //AC//
 	WRITE_SHORT 0x4A 0 //AC CRUSHING//
-	WRITE_SHORT 0x4C 0-2 //AC MISSILE//
+	WRITE_SHORT 0x4C 0 - 2 //AC MISSILE//
 	WRITE_SHORT 0x4E 0 //AC PIERCING//
 	WRITE_SHORT 0x50 0 //AC SLASHING//
 	WRITE_BYTE 0x52 16 //THAC0//
@@ -3156,7 +3157,7 @@ COPY_EXISTING "rsspidg.cre" "override"
 	WRITE_BYTE 0x2B 34 //ALIGNEMENT //
 	WRITE_BYTE 0x271 2 //RACE //
 	
-	COPY_EXISTING "spidgsu.cre" "override"
+	COPY_EXISTING "spidgisu.cre" "override"
 	WRITE_LONG 0x14 0 //EXP//
 	
 
@@ -3183,7 +3184,7 @@ COPY_EXISTING  "etter01.cre" "override"
 	WRITE_SHORT 0x46 7 //AC//
 	WRITE_SHORT 0x48 7 //AC//
 	WRITE_SHORT 0x4A 0 //AC CRUSHING//
-	WRITE_SHORT 0x4C 0-4 //AC MISSILE//
+	WRITE_SHORT 0x4C 0 - 4 //AC MISSILE//
 	WRITE_SHORT 0x4E 0 //AC PIERCING//
 	WRITE_SHORT 0x50 0 //AC SLASHING//
 	WRITE_BYTE 0x52 14 //THAC0//
@@ -3229,7 +3230,7 @@ COPY_EXISTING  "etter01.cre" "override"
 
 //PHASE SPIDER// 
 COPY_EXISTING  "spidph.cre" "override"
-"spidph1.cre" "override"
+"spidph01.cre" "override"
 "spidphsu.cre" "override"
 "spspid06.cre" "override"
 
@@ -3250,7 +3251,7 @@ COPY_EXISTING  "spidph.cre" "override"
 	WRITE_SHORT 0x46 5 //AC//
 	WRITE_SHORT 0x48 5 //AC//
 	WRITE_SHORT 0x4A 0 //AC CRUSHING//
-	WRITE_SHORT 0x4C 0-2 //AC MISSILE//
+	WRITE_SHORT 0x4C 0 - 2 //AC MISSILE//
 	WRITE_SHORT 0x4E 0 //AC PIERCING//
 	WRITE_SHORT 0x50 0 //AC SLASHING//
 	WRITE_BYTE 0x52 13 //THAC0//
@@ -3316,7 +3317,7 @@ COPY_EXISTING  "spidwr.cre" "override"
 	WRITE_SHORT 0x46 3 //AC//
 	WRITE_SHORT 0x48 3 //AC//
 	WRITE_SHORT 0x4A 0 //AC CRUSHING//
-	WRITE_SHORT 0x4C 0-2 //AC MISSILE//
+	WRITE_SHORT 0x4C 0 - 2 //AC MISSILE//
 	WRITE_SHORT 0x4E 0 //AC PIERCING//
 	WRITE_SHORT 0x50 0 //AC SLASHING//
 	WRITE_BYTE 0x52 12 //THAC0//
@@ -3381,9 +3382,9 @@ COPY_EXISTING  "spidsw.cre" "override"
 	WRITE_SHORT 0x46 5 //AC//
 	WRITE_SHORT 0x48 5 //AC//
 	WRITE_SHORT 0x4A 0 //AC CRUSHING//
-	WRITE_SHORT 0x4C 0-2 //AC MISSILE//
-	WRITE_SHORT 0x4E 0-2 //AC PIERCING//
-	WRITE_SHORT 0x50 0-2 //AC SLASHING//
+	WRITE_SHORT 0x4C 0 - 2 //AC MISSILE//
+	WRITE_SHORT 0x4E 0 - 2 //AC PIERCING//
+	WRITE_SHORT 0x50 0 - 2 //AC SLASHING//
 	WRITE_BYTE 0x52 9 //THAC0//
 	WRITE_BYTE 0x53 4 //N°ATT//
 	WRITE_BYTE 0x54 10 //SAVEDEATH//
@@ -3426,9 +3427,8 @@ COPY_EXISTING  "spidsw.cre" "override"
 	
 	
 //DOPPELGANGER//	
-COPY_EXISTING "doppel7.cre" "override"
+COPY_EXISTING "doppl7.cre" "override"
 "dopple.cre" "override"
-"dopple01.cre" "override"
 "dopple01.cre" "override"
 "doppss.cre" "override"
 "dopzorl.cre" "override"
@@ -3974,7 +3974,7 @@ SAY NAME2 "Greater Ghoul"
 	WRITE_BYTE 0x73 0 //SPIKED//
 	WRITE_BYTE 0x74 0 //AXE//
 	WRITE_BYTE 0x75 0 //MISSILE//
-	WRITE_BYTE 0x234 6 /LIV1CLASS//
+	WRITE_BYTE 0x234 6 //LIV1CLASS//
 	WRITE_BYTE 0x235 0 //LIV2CLASS//
 	WRITE_BYTE 0x236 0 //LIV3CLASS//
 	WRITE_BYTE 0x238 18 //STR//
@@ -4038,7 +4038,7 @@ COPY_EXISTING "nevm1.cre" "override"
 	WRITE_BYTE 0x73 0 //SPIKED//
 	WRITE_BYTE 0x74 0 //AXE//
 	WRITE_BYTE 0x75 0 //MISSILE//
-	WRITE_BYTE 0x234 7 /LIV1CLASS//
+	WRITE_BYTE 0x234 7 //LIV1CLASS//
 	WRITE_BYTE 0x235 0 //LIV2CLASS//
 	WRITE_BYTE 0x236 0 //LIV3CLASS//
 	WRITE_BYTE 0x238 18 //STR//
@@ -4050,7 +4050,7 @@ COPY_EXISTING "nevm1.cre" "override"
 	WRITE_BYTE 0x23E 5 //CHR//
 	WRITE_BYTE 0x23F 20 //MORALEDEFAULT//
 	WRITE_BYTE 0x240 0 //MORALERUN//	
-	WRITE_LONG 0x28	oxec00 //ANIMATION//
+	WRITE_LONG 0x28	0xec00 //ANIMATION//
 
 
 
@@ -4089,7 +4089,7 @@ COPY_EXISTING "fsmumm.cre" "override"
 	WRITE_BYTE 0x56 9 //SAVEPOLY//
 	WRITE_BYTE 0x57 9 //SAVEBREATH//
 	WRITE_BYTE 0x58 11 //SAVESPELL//
-	WRITE_BYTE 0x59 0-25 //FIRERES//
+	WRITE_BYTE 0x59 0 - 25 //FIRERES//
 	WRITE_BYTE 0x5A 100 //COLDRES//
 	WRITE_BYTE 0x5B 0 //ELECRES//
 	WRITE_BYTE 0x5C 0 //ACIDRES//
@@ -4106,7 +4106,7 @@ COPY_EXISTING "fsmumm.cre" "override"
 	WRITE_BYTE 0x73 0 //SPIKED//
 	WRITE_BYTE 0x74 0 //AXE//
 	WRITE_BYTE 0x75 0 //MISSILE//
-	WRITE_BYTE 0x234 9 /LIV1CLASS//
+	WRITE_BYTE 0x234 9 //LIV1CLASS//
 	WRITE_BYTE 0x235 0 //LIV2CLASS//
 	WRITE_BYTE 0x236 0 //LIV3CLASS//
 	WRITE_BYTE 0x238 18 //STR//
@@ -4140,8 +4140,8 @@ COPY_EXISTING "mumgre01.cre" "override"
 	WRITE_LONG 0x14 8000 //EXP//
 	WRITE_SHORT 0x24 104 //PF//
 	WRITE_SHORT 0x26 104 //ACTUAL PF//
-	WRITE_SHORT 0x46 0-3 //AC//
-	WRITE_SHORT 0x48 0-3 //AC//
+	WRITE_SHORT 0x46 0 - 3 //AC//
+	WRITE_SHORT 0x48 0 - 3 //AC//
 	WRITE_SHORT 0x4A 0 //AC CRUSHING//
 	WRITE_SHORT 0x4C 0 //AC MISSILE//
 	WRITE_SHORT 0x4E 0 //AC PIERCING//
@@ -4153,7 +4153,7 @@ COPY_EXISTING "mumgre01.cre" "override"
 	WRITE_BYTE 0x56 6 //SAVEPOLY//
 	WRITE_BYTE 0x57 5 //SAVEBREATH//
 	WRITE_BYTE 0x58 8 //SAVESPELL//
-	WRITE_BYTE 0x59 0-25 //FIRERES//
+	WRITE_BYTE 0x59 0 - 25 //FIRERES//
 	WRITE_BYTE 0x5A 100 //COLDRES//
 	WRITE_BYTE 0x5B 0 //ELECRES//
 	WRITE_BYTE 0x5C 0 //ACIDRES//
@@ -4170,7 +4170,7 @@ COPY_EXISTING "mumgre01.cre" "override"
 	WRITE_BYTE 0x73 0 //SPIKED//
 	WRITE_BYTE 0x74 0 //AXE//
 	WRITE_BYTE 0x75 0 //MISSILE//
-	WRITE_BYTE 0x234 13 /LIV1CLASS//
+	WRITE_BYTE 0x234 13 //LIV1CLASS//
 	WRITE_BYTE 0x235 0 //LIV2CLASS//
 	WRITE_BYTE 0x236 0 //LIV3CLASS//
 	WRITE_BYTE 0x238 18 //STR//
@@ -4271,7 +4271,7 @@ COPY_EXISTING "fsskel.cre" "override"
 
 
 //SKELETON WARRIOR//	
-COPY_EXISTING "ar18skel" "override"
+COPY_EXISTING "ar18skel.cre" "override"
 "endske01.cre" "override"
 "endske02.cre" "override"
 "endske03.cre" "override"
@@ -4734,7 +4734,7 @@ COPY_EXISTING "uhcreat.cre" "override"
 	WRITE_BYTE 0x23E 9 //CHR//
 	WRITE_BYTE 0x23F 20 //MORALEDEFAULT//
 	WRITE_BYTE 0x240 0 //MORALERUN//
-	WRITE_LONG 0x28	oxea10 //ANIMATION//
+	WRITE_LONG 0x28	 0xea10 //ANIMATION//
 	WRITE_BYTE 0x273 170 //CLASS//
 	
 	REMOVE_CRE_ITEM "undtype"
@@ -4839,8 +4839,8 @@ SAY NAME1 "Wraith"
 	WRITE_LONG 0x14 7000 //EXP//
 	WRITE_SHORT 0x24 72 //PF//
 	WRITE_SHORT 0x26 72 //ACTUAL PF//
-	WRITE_SHORT 0x46 0-2 //AC//
-	WRITE_SHORT 0x48 0-2 //AC//
+	WRITE_SHORT 0x46 0 - 2 //AC//
+	WRITE_SHORT 0x48 0 - 2 //AC//
 	WRITE_SHORT 0x4A 0 //AC CRUSHING//
 	WRITE_SHORT 0x4C 0 //AC MISSILE//
 	WRITE_SHORT 0x4E 0 //AC PIERCING//
@@ -4908,8 +4908,8 @@ COPY_EXISTING "shadfi02.cre" "override"
 	WRITE_LONG 0x14 13000 //EXP//
 	WRITE_SHORT 0x24 104 //PF//
 	WRITE_SHORT 0x26 104 //ACTUAL PF//
-	WRITE_SHORT 0x46 0-6 //AC//
-	WRITE_SHORT 0x48 0-6 //AC//
+	WRITE_SHORT 0x46 0 - 6 //AC//
+	WRITE_SHORT 0x48 0 - 6 //AC//
 	WRITE_SHORT 0x4A 0 //AC CRUSHING//
 	WRITE_SHORT 0x4C 0 //AC MISSILE//
 	WRITE_SHORT 0x4E 0 //AC PIERCING//
@@ -4976,8 +4976,8 @@ COPY_EXISTING "ankheg.cre" "override"
 	WRITE_SHORT 0x48 3 //AC//
 	WRITE_SHORT 0x4A 0 //AC CRUSHING//
 	WRITE_SHORT 0x4C 0 //AC MISSILE//
-	WRITE_SHORT 0x4E 0-1 //AC PIERCING//
-	WRITE_SHORT 0x50 0-3 //AC SLASHING//
+	WRITE_SHORT 0x4E 0 - 1 //AC PIERCING//
+	WRITE_SHORT 0x50 0 - 3 //AC SLASHING//
 	WRITE_BYTE 0x52 16 //THAC0//
 	WRITE_BYTE 0x53 2 //N°ATT//
 	WRITE_BYTE 0x54 11 //SAVEDEATH//
@@ -5044,7 +5044,7 @@ COPY_EXISTING "sirine.cre" "override"
 	WRITE_SHORT 0x46 10 //AC//
 	WRITE_SHORT 0x48 10 //AC//
 	WRITE_SHORT 0x4A 0 //AC CRUSHING//
-	WRITE_SHORT 0x4C 0-4 //AC MISSILE//
+	WRITE_SHORT 0x4C 0 - 4 //AC MISSILE//
 	WRITE_SHORT 0x4E 0 //AC PIERCING//
 	WRITE_SHORT 0x50 0 //AC SLASHING//
 	WRITE_BYTE 0x52 16 //THAC0//
@@ -5110,7 +5110,7 @@ COPY_EXISTING "corwyvrn.cre" "override"
 	WRITE_SHORT 0x46 1 //AC//
 	WRITE_SHORT 0x48 1 //AC//
 	WRITE_SHORT 0x4A 0 //AC CRUSHING//
-	WRITE_SHORT 0x4C 0-2 //AC MISSILE//
+	WRITE_SHORT 0x4C 0 - 2 //AC MISSILE//
 	WRITE_SHORT 0x4E 0 //AC PIERCING//
 	WRITE_SHORT 0x50 0 //AC SLASHING//
 	WRITE_BYTE 0x52 14 //THAC0//
@@ -5181,10 +5181,10 @@ COPY_EXISTING "wyvernbi.cre" "override"
 	WRITE_LONG 0x14 4000 //EXP//
 	WRITE_SHORT 0x24 72 //PF//
 	WRITE_SHORT 0x26 72 //ACTUAL PF//
-	WRITE_SHORT 0x46 0-2 //AC//
-	WRITE_SHORT 0x48 0-2 //AC//
+	WRITE_SHORT 0x46 0 - 2 //AC//
+	WRITE_SHORT 0x48 0 - 2 //AC//
 	WRITE_SHORT 0x4A 0 //AC CRUSHING//
-	WRITE_SHORT 0x4C 0-2 //AC MISSILE//
+	WRITE_SHORT 0x4C 0 - 2 //AC MISSILE//
 	WRITE_SHORT 0x4E 0 //AC PIERCING//
 	WRITE_SHORT 0x50 0 //AC SLASHING//
 	WRITE_BYTE 0x52 12 //THAC0//
@@ -5231,7 +5231,7 @@ COPY_EXISTING "nwyvbab.cre" "override"
 "plywyvrn.cre" "override"
 "wyvbab01.cre" "override"
 "wyvbabsu.cre" "override"
-"wyverbab.cre" "override"
+"wyverba.cre" "override"
 
 	LAUNCH_PATCH_FUNCTION add_cre_proficiency
 		INT_VAR pips = 0
@@ -5250,7 +5250,7 @@ COPY_EXISTING "nwyvbab.cre" "override"
 	WRITE_SHORT 0x46 4 //AC//
 	WRITE_SHORT 0x48 4 //AC//
 	WRITE_SHORT 0x4A 0 //AC CRUSHING//
-	WRITE_SHORT 0x4C 0-2 //AC MISSILE//
+	WRITE_SHORT 0x4C 0 - 2 //AC MISSILE//
 	WRITE_SHORT 0x4E 0 //AC PIERCING//
 	WRITE_SHORT 0x50 0 //AC SLASHING//
 	WRITE_BYTE 0x52 17 //THAC0//
@@ -5332,8 +5332,8 @@ COPY_EXISTING "jelgre01.cre" "override"
 	WRITE_BYTE 0x56 10 //SAVEPOLY//
 	WRITE_BYTE 0x57 16 //SAVEBREATH//
 	WRITE_BYTE 0x58 16 //SAVESPELL//
-	WRITE_BYTE 0x59 0-40 //FIRERES//
-	WRITE_BYTE 0x5A 0-40 //COLDRES//
+	WRITE_BYTE 0x59 0 - 40 //FIRERES//
+	WRITE_BYTE 0x5A 0 - 40 //COLDRES//
 	WRITE_BYTE 0x5B 0 //ELECRES//
 	WRITE_BYTE 0x5C 100 //ACIDRES//
 	WRITE_BYTE 0x5D 0 //MAGICRES//
@@ -5398,7 +5398,7 @@ COPY_EXISTING "jelgra01.cre" "override"
 	WRITE_BYTE 0x58 16 //SAVESPELL//
 	WRITE_BYTE 0x59 100 //FIRERES//
 	WRITE_BYTE 0x5A 100 //COLDRES//
-	WRITE_BYTE 0x5B 0-40 //ELECRES//
+	WRITE_BYTE 0x5B 0 - 40 //ELECRES//
 	WRITE_BYTE 0x5C 100 //ACIDRES//
 	WRITE_BYTE 0x5D 0 //MAGICRES//
 	WRITE_BYTE 0x60 80 //SLASHINGRES//
@@ -5650,9 +5650,9 @@ COPY_EXISTING "helmho.cre" "override"
 	WRITE_SHORT 0x46 2 //AC//
 	WRITE_SHORT 0x48 2 //AC//
 	WRITE_SHORT 0x4A 0 //AC CRUSHING//
-	WRITE_SHORT 0x4C 0-1 //AC MISSILE//
-	WRITE_SHORT 0x4E 0-1 //AC PIERCING//
-	WRITE_SHORT 0x50 0-3 //AC SLASHING//
+	WRITE_SHORT 0x4C 0 - 1 //AC MISSILE//
+	WRITE_SHORT 0x4E 0 - 1 //AC PIERCING//
+	WRITE_SHORT 0x50 0 - 3 //AC SLASHING//
 	WRITE_BYTE 0x52 14 //THAC0//
 	WRITE_BYTE 0x53 7 //N°ATT//
 	WRITE_BYTE 0x54 10 //SAVEDEATH//
@@ -5663,7 +5663,7 @@ COPY_EXISTING "helmho.cre" "override"
 	WRITE_BYTE 0x59 50 //FIRERES//
 	WRITE_BYTE 0x5A 50 //COLDRES//
 	WRITE_BYTE 0x5B 0 //ELECRES//
-	WRITE_BYTE 0x5C 0-25 //ACIDRES//
+	WRITE_BYTE 0x5C 0 - 25 //ACIDRES//
 	WRITE_BYTE 0x5D 30 //MAGICRES//
 	WRITE_BYTE 0x60 20 //SLASHINGRES//
 	WRITE_BYTE 0x61 0 //CRUSHINGRES//
@@ -5720,9 +5720,9 @@ COPY_EXISTING "bodfgt02.cre" "override"
 	WRITE_SHORT 0x46 5 //AC//
 	WRITE_SHORT 0x48 5 //AC//
 	WRITE_SHORT 0x4A 0 //AC CRUSHING//
-	WRITE_SHORT 0x4C 0-1 //AC MISSILE//
-	WRITE_SHORT 0x4E 0-1 //AC PIERCING//
-	WRITE_SHORT 0x50 0-2 //AC SLASHING//
+	WRITE_SHORT 0x4C 0 - 1 //AC MISSILE//
+	WRITE_SHORT 0x4E 0 - 1 //AC PIERCING//
+	WRITE_SHORT 0x50 0 - 2 //AC SLASHING//
 	WRITE_BYTE 0x52 14 //THAC0//
 	WRITE_BYTE 0x53 7 //N°ATT//
 	WRITE_BYTE 0x54 10 //SAVEDEATH//
@@ -5733,7 +5733,7 @@ COPY_EXISTING "bodfgt02.cre" "override"
 	WRITE_BYTE 0x59 50 //FIRERES//
 	WRITE_BYTE 0x5A 50 //COLDRES//
 	WRITE_BYTE 0x5B 0 //ELECRES//
-	WRITE_BYTE 0x5C 0-25 //ACIDRES//
+	WRITE_BYTE 0x5C 0 - 25 //ACIDRES//
 	WRITE_BYTE 0x5D 30 //MAGICRES//
 	WRITE_BYTE 0x60 20 //SLASHINGRES//
 	WRITE_BYTE 0x61 0 //CRUSHINGRES//
@@ -5797,9 +5797,9 @@ SAY NAME2 "Battle Horror"
 	WRITE_SHORT 0x46 1 //AC//
 	WRITE_SHORT 0x48 1 //AC//
 	WRITE_SHORT 0x4A 0 //AC CRUSHING//
-	WRITE_SHORT 0x4C 0-1 //AC MISSILE//
-	WRITE_SHORT 0x4E 0-1 //AC PIERCING//
-	WRITE_SHORT 0x50 0-3 //AC SLASHING//
+	WRITE_SHORT 0x4C 0 - 1 //AC MISSILE//
+	WRITE_SHORT 0x4E 0 - 1 //AC PIERCING//
+	WRITE_SHORT 0x50 0 - 3 //AC SLASHING//
 	WRITE_BYTE 0x52 12 //THAC0//
 	WRITE_BYTE 0x53 7 //N°ATT//
 	WRITE_BYTE 0x54 8 //SAVEDEATH//
@@ -5810,7 +5810,7 @@ SAY NAME2 "Battle Horror"
 	WRITE_BYTE 0x59 50 //FIRERES//
 	WRITE_BYTE 0x5A 50 //COLDRES//
 	WRITE_BYTE 0x5B 0 //ELECRES//
-	WRITE_BYTE 0x5C 0-25 //ACIDRES//
+	WRITE_BYTE 0x5C 0 - 25 //ACIDRES//
 	WRITE_BYTE 0x5D 50 //MAGICRES//
 	WRITE_BYTE 0x60 20 //SLASHINGRES//
 	WRITE_BYTE 0x61 0 //CRUSHINGRES//
@@ -5865,9 +5865,9 @@ COPY_EXISTING "doomdur.cre" "override"
 	WRITE_SHORT 0x46 1 //AC//
 	WRITE_SHORT 0x48 1 //AC//
 	WRITE_SHORT 0x4A 0 //AC CRUSHING//
-	WRITE_SHORT 0x4C 0-1 //AC MISSILE//
-	WRITE_SHORT 0x4E 0-1 //AC PIERCING//
-	WRITE_SHORT 0x50 0-3 //AC SLASHING//
+	WRITE_SHORT 0x4C 0 - 1 //AC MISSILE//
+	WRITE_SHORT 0x4E 0 - 1 //AC PIERCING//
+	WRITE_SHORT 0x50 0 - 3 //AC SLASHING//
 	WRITE_BYTE 0x52 11 //THAC0//
 	WRITE_BYTE 0x53 7 //N°ATT//
 	WRITE_BYTE 0x54 8 //SAVEDEATH//
@@ -5878,7 +5878,7 @@ COPY_EXISTING "doomdur.cre" "override"
 	WRITE_BYTE 0x59 50 //FIRERES//
 	WRITE_BYTE 0x5A 50 //COLDRES//
 	WRITE_BYTE 0x5B 0 //ELECRES//
-	WRITE_BYTE 0x5C 0-25 //ACIDRES//
+	WRITE_BYTE 0x5C 0 - 25 //ACIDRES//
 	WRITE_BYTE 0x5D 50 //MAGICRES//
 	WRITE_BYTE 0x60 20 //SLASHINGRES//
 	WRITE_BYTE 0x61 0 //CRUSHINGRES//
@@ -5931,7 +5931,7 @@ COPY_EXISTING "dvstalk.cre" "override"
 	WRITE_SHORT 0x46 7 //AC//
 	WRITE_SHORT 0x48 7 //AC//
 	WRITE_SHORT 0x4A 0 //AC CRUSHING//
-	WRITE_SHORT 0x4C 0-4 //AC MISSILE//
+	WRITE_SHORT 0x4C 0 - 4 //AC MISSILE//
 	WRITE_SHORT 0x4E 0 //AC PIERCING//
 	WRITE_SHORT 0x50 0 //AC SLASHING//
 	WRITE_BYTE 0x52 14 //THAC0//
@@ -6003,7 +6003,7 @@ COPY_EXISTING "c6vamp01.cre" "override"
 	WRITE_SHORT 0x46 3 //AC//
 	WRITE_SHORT 0x48 3 //AC//
 	WRITE_SHORT 0x4A 0 //AC CRUSHING//
-	WRITE_SHORT 0x4C 0-2 //AC MISSILE//
+	WRITE_SHORT 0x4C 0 - 2 //AC MISSILE//
 	WRITE_SHORT 0x4E 0 //AC PIERCING//
 	WRITE_SHORT 0x50 0 //AC SLASHING//
 	WRITE_BYTE 0x52 14 //THAC0//
@@ -6048,7 +6048,7 @@ COPY_EXISTING "c6vamp01.cre" "override"
 	REMOVE_CRE_ITEM "vamp2"
 	REMOVE_CRE_ITEM "immune1"
 	REMOVE_CRE_ITEM "immune2"
-	REMOVE_CRE_ITEM "immune3
+	REMOVE_CRE_ITEM "immune3"
 	REMOVE_CRE_ITEM "vampreg"
 	REMOVE_CRE_ITEM "vampreg1"
 	REMOVE_CRE_ITEM "vampreg2"
@@ -6087,7 +6087,7 @@ COPY_EXISTING "ivamp01.cre" "override"
 	WRITE_SHORT 0x46 1 //AC//
 	WRITE_SHORT 0x48 1 //AC//
 	WRITE_SHORT 0x4A 0 //AC CRUSHING//
-	WRITE_SHORT 0x4C 0-4 //AC MISSILE//
+	WRITE_SHORT 0x4C 0 - 4 //AC MISSILE//
 	WRITE_SHORT 0x4E 0 //AC PIERCING//
 	WRITE_SHORT 0x50 0 //AC SLASHING//
 	WRITE_BYTE 0x52 12 //THAC0//
@@ -6132,7 +6132,7 @@ COPY_EXISTING "ivamp01.cre" "override"
 	REMOVE_CRE_ITEM "vamp2"
 	REMOVE_CRE_ITEM "immune1"
 	REMOVE_CRE_ITEM "immune2"
-	REMOVE_CRE_ITEM "immune3
+	REMOVE_CRE_ITEM "immune3"
 	REMOVE_CRE_ITEM "vampreg"
 	REMOVE_CRE_ITEM "vampreg1"
 	REMOVE_CRE_ITEM "vampreg2"
@@ -6162,7 +6162,7 @@ COPY_EXISTING "sarvam02.cre" "override"
 	WRITE_SHORT 0x46 0 //AC//
 	WRITE_SHORT 0x48 0 //AC//
 	WRITE_SHORT 0x4A 0 //AC CRUSHING//
-	WRITE_SHORT 0x4C 0-4 //AC MISSILE//
+	WRITE_SHORT 0x4C 0 - 4 //AC MISSILE//
 	WRITE_SHORT 0x4E 0 //AC PIERCING//
 	WRITE_SHORT 0x50 0 //AC SLASHING//
 	WRITE_BYTE 0x52 9 //THAC0//
@@ -6207,7 +6207,7 @@ COPY_EXISTING "sarvam02.cre" "override"
 	REMOVE_CRE_ITEM "vamp2"
 	REMOVE_CRE_ITEM "immune1"
 	REMOVE_CRE_ITEM "immune2"
-	REMOVE_CRE_ITEM "immune3
+	REMOVE_CRE_ITEM "immune3"
 	REMOVE_CRE_ITEM "vampreg"
 	REMOVE_CRE_ITEM "vampreg1"
 	REMOVE_CRE_ITEM "vampreg2"
@@ -6364,7 +6364,7 @@ COPY_EXISTING "bandcap.cre" "override"
 	
 	
 //BANDIT VETERAN BG//	
-COPY_EXISTING "bandtc.cre" "override"
+COPY_EXISTING "banditc.cre" "override"
 
 	LAUNCH_PATCH_FUNCTION add_cre_proficiency
 		INT_VAR pips = 0
