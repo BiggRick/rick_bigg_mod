@@ -86,9 +86,247 @@ BEGIN
             item_offset = offset
         END
     END
-
     PATCH_IF item_id < 0 BEGIN
         PATCH_FAIL ~get_item_id(%item_name%) (%SOURCE_RES%)~
+END
+END
+
+
+DEFINE_PATCH_FUNCTION remove_spawn_point
+    STR_VAR spawn_point_name = ""
+BEGIN
+    LAUNCH_PATCH_FUNCTION get_spawn_point_id
+        STR_VAR spawn_point_name = ~%spawn_point_name%~
+        RET spawn_point_id = spawn_point_id
+    END
+    LAUNCH_PATCH_FUNCTION fj_are_structure
+        INT_VAR fj_delete_mode = spawn_point_id
+        STR_VAR fj_structure_type = "spawn"
     END
 END
 
+
+DEFINE_PATCH_FUNCTION edit_spawn_point
+    INT_VAR spawn_count = 0
+        difficulty = 1
+        spawn_rate = 6
+        spawn_method = 1
+        duration = 1000
+        wander_distance = 1000
+        follow_distance = 1000
+        max_creatures = 8
+        active = 1
+        hours_active = 0xffffffff
+        probability_day = 85
+        probability_night = 85
+        frequency = 16842752
+        countdown = 0
+        weight_1 = 0
+        weight_2 = 0
+        weight_3 = 0
+        weight_4 = 0
+        weight_5 = 0
+        weight_6 = 0
+        weight_7 = 0
+        weight_8 = 0
+        weight_9 = 0
+        weight_10 = 0
+    STR_VAR spawn_point_name = ""
+        creature_1 = ""
+        creature_2 = ""
+        creature_3 = ""
+        creature_4 = ""
+        creature_5 = ""
+        creature_6 = ""
+        creature_7 = ""
+        creature_8 = ""
+        creature_9 = ""
+        creature_10 = ""
+BEGIN
+    LAUNCH_PATCH_FUNCTION get_spawn_point_id
+        STR_VAR spawn_point_name = ~%spawn_point_name%~
+        RET spawn_point_offset = spawn_point_offset
+    END
+    WRITE_ASCII spawn_point_offset + 0x24 ~%creature_1%~ #8
+    WRITE_ASCII spawn_point_offset + 0x2c ~%creature_2%~ #8
+    WRITE_ASCII spawn_point_offset + 0x34 ~%creature_3%~ #8
+    WRITE_ASCII spawn_point_offset + 0x3c ~%creature_4%~ #8
+    WRITE_ASCII spawn_point_offset + 0x44 ~%creature_5%~ #8
+    WRITE_ASCII spawn_point_offset + 0x4c ~%creature_6%~ #8
+    WRITE_ASCII spawn_point_offset + 0x54 ~%creature_7%~ #8
+    WRITE_ASCII spawn_point_offset + 0x5c ~%creature_8%~ #8
+    WRITE_ASCII spawn_point_offset + 0x64 ~%creature_9%~ #8
+    WRITE_ASCII spawn_point_offset + 0x6c ~%creature_10%~ #8
+    WRITE_SHORT spawn_point_offset + 0x74 spawn_count
+    WRITE_SHORT spawn_point_offset + 0x76 difficulty
+    WRITE_SHORT spawn_point_offset + 0x78 spawn_rate
+    WRITE_SHORT spawn_point_offset + 0x7a spawn_method
+    WRITE_LONG  spawn_point_offset + 0x7c duration
+    WRITE_SHORT spawn_point_offset + 0x80 wander_distance
+    WRITE_SHORT spawn_point_offset + 0x82 follow_distance
+    WRITE_SHORT spawn_point_offset + 0x84 max_creatures
+    WRITE_SHORT spawn_point_offset + 0x86 active
+    WRITE_LONG  spawn_point_offset + 0x88 hours_active
+    WRITE_SHORT spawn_point_offset + 0x8c probability_day
+    WRITE_SHORT spawn_point_offset + 0x8e probability_night
+    WRITE_LONG  spawn_point_offset + 0x90 frequency
+    WRITE_LONG  spawn_point_offset + 0x94 countdown
+    WRITE_BYTE spawn_point_offset + 0x98 weight_1
+    WRITE_BYTE spawn_point_offset + 0x99 weight_2
+    WRITE_BYTE spawn_point_offset + 0x9a weight_3
+    WRITE_BYTE spawn_point_offset + 0x9b weight_4
+    WRITE_BYTE spawn_point_offset + 0x9c weight_5
+    WRITE_BYTE spawn_point_offset + 0x9d weight_6
+    WRITE_BYTE spawn_point_offset + 0x9e weight_7
+    WRITE_BYTE spawn_point_offset + 0x9f weight_8
+    WRITE_BYTE spawn_point_offset + 0xa0 weight_9
+    WRITE_BYTE spawn_point_offset + 0xa1 weight_10
+END
+
+
+DEFINE_PATCH_FUNCTION remove_actor
+    STR_VAR actor_name = ""
+BEGIN
+    LAUNCH_PATCH_FUNCTION get_actor_id
+        STR_VAR actor_name = ~%actor_name%~
+        RET actor_id = actor_id
+    END
+    LAUNCH_PATCH_FUNCTION fj_are_structure
+        INT_VAR fj_delete_mode = actor_id
+        STR_VAR fj_structure_type = "actor"
+    END
+END
+
+
+DEFINE_PATCH_FUNCTION remove_item
+    STR_VAR container_name = ""
+        item_name = ""
+BEGIN
+    LAUNCH_PATCH_FUNCTION get_container_id
+        STR_VAR container_name = ~%container_name%~
+        RET container_id = container_id
+    END
+    LAUNCH_PATCH_FUNCTION get_item_id
+        INT_VAR container_id = container_id
+        STR_VAR item_name = ~%item_name%~
+        RET item_id = item_id
+    END
+    LAUNCH_PATCH_FUNCTION fj_are_structure
+        INT_VAR fj_delete_mode = item_id
+        STR_VAR fj_structure_type = "itm"
+    END
+END
+
+
+DEFINE_PATCH_FUNCTION replace_item
+    INT_VAR charge_1 = 1
+        charge_2 = 1
+        charge_3 = 1
+        flags = 0
+    STR_VAR container_name = ""
+        old_item_name = ""
+        new_item_name = ""
+BEGIN
+    LAUNCH_PATCH_FUNCTION get_container_id
+        STR_VAR container_name = ~%container_name%~
+        RET container_id = container_id
+    END
+    LAUNCH_PATCH_FUNCTION get_item_id
+        INT_VAR container_id = container_id
+        STR_VAR item_name = ~%old_item_name%~
+        RET item_offset = item_offset
+    END
+    WRITE_ASCII item_offset ~%new_item_name%~
+    WRITE_SHORT item_offset + 0x0a charge_1
+    WRITE_SHORT item_offset + 0x0c charge_2
+    WRITE_SHORT item_offset + 0x0e charge_3
+    WRITE_LONG item_offset + 0x10 flags
+END
+
+
+DEFINE_PATCH_FUNCTION add_item
+    INT_VAR charge_1 = 1
+        charge_2 = 0
+        charge_3 = 0
+        flags = 0
+    STR_VAR container_name = ""
+        item_name = ""
+BEGIN
+    LAUNCH_PATCH_FUNCTION get_container_id
+        STR_VAR container_name = ~%container_name%~
+        RET container_id = container_id
+    END
+    LAUNCH_PATCH_FUNCTION fj_are_structure
+        INT_VAR fj_con_itm_idx = container_id
+            fj_charge0 = charge_1
+            fj_charge1 = charge_2
+            fj_charge2 = charge_3
+            fj_flags = flags
+        STR_VAR fj_structure_type = "itm"
+            fj_name = ~%item_name%~
+    END
+END
+
+
+DEFINE_PATCH_FUNCTION edit_rest_interrupt
+    INT_VAR creature_count = 2
+        difficulty = 2
+        removal_time = 1000
+        wander_distance = 1000
+        follow_distance = 1000
+        max_creatures = 10
+        active = 1
+        probability_day = 3
+        probability_night = 3
+    STR_VAR message_1 = "You are awakened as gibberlings come screaming out of the darkness."
+        message_2 = "The lonely cry of the wolf wakens you suddenly. Before you can properly get your bearings, a wolf pack is upon you."
+        message_3 = "Monsters awaken you from your rest."
+        message_4 = "Monsters awaken you from your rest."
+        message_5 = "Monsters awaken you from your rest."
+        message_6 = "Monsters awaken you from your rest."
+        message_7 = "Monsters awaken you from your rest."
+        message_8 = "Monsters awaken you from your rest."
+        message_9 = "Monsters awaken you from your rest."
+        message_10 = "Monsters awaken you from your rest."
+        creature_1 = "GIBBER"
+        creature_2 = "WOLF"
+        creature_3 = ""
+        creature_4 = ""
+        creature_5 = ""
+        creature_6 = ""
+        creature_7 = ""
+        creature_8 = ""
+        creature_9 = ""
+        creature_10 = ""
+BEGIN
+    READ_LONG 0xc0 rest_interrupt_offset
+    SAY rest_interrupt_offset + 0x20 ~%message_1%~
+    SAY rest_interrupt_offset + 0x24 ~%message_2%~
+    SAY rest_interrupt_offset + 0x28 ~%message_3%~
+    SAY rest_interrupt_offset + 0x2c ~%message_4%~
+    SAY rest_interrupt_offset + 0x30 ~%message_5%~
+    SAY rest_interrupt_offset + 0x34 ~%message_6%~
+    SAY rest_interrupt_offset + 0x38 ~%message_7%~
+    SAY rest_interrupt_offset + 0x3c ~%message_8%~
+    SAY rest_interrupt_offset + 0x40 ~%message_9%~
+    SAY rest_interrupt_offset + 0x44 ~%message_10%~
+    WRITE_ASCII rest_interrupt_offset + 0x48 ~%creature_1%~
+    WRITE_ASCII rest_interrupt_offset + 0x50 ~%creature_2%~
+    WRITE_ASCII rest_interrupt_offset + 0x58 ~%creature_3%~
+    WRITE_ASCII rest_interrupt_offset + 0x60 ~%creature_4%~
+    WRITE_ASCII rest_interrupt_offset + 0x68 ~%creature_5%~
+    WRITE_ASCII rest_interrupt_offset + 0x70 ~%creature_6%~
+    WRITE_ASCII rest_interrupt_offset + 0x78 ~%creature_7%~
+    WRITE_ASCII rest_interrupt_offset + 0x80 ~%creature_8%~
+    WRITE_ASCII rest_interrupt_offset + 0x88 ~%creature_9%~
+    WRITE_ASCII rest_interrupt_offset + 0x90 ~%creature_10%~
+    WRITE_SHORT rest_interrupt_offset + 0x98 creature_count
+    WRITE_SHORT rest_interrupt_offset + 0x9a difficulty
+    WRITE_LONG rest_interrupt_offset + 0x9c removal_time
+    WRITE_SHORT rest_interrupt_offset + 0xa0 wander_distance
+    WRITE_SHORT rest_interrupt_offset + 0xa2 follow_distance
+    WRITE_SHORT rest_interrupt_offset + 0xa4 max_creatures
+    WRITE_SHORT rest_interrupt_offset + 0xa6 active
+    WRITE_SHORT rest_interrupt_offset + 0xa8 probability_day
+    WRITE_SHORT rest_interrupt_offset + 0xaa probability_night
+END

@@ -3,95 +3,67 @@ COPY_EXISTING ~bg2700.are~ ~override~
 
 
     // rimuovere spawn point
-    LAUNCH_PATCH_FUNCTION get_spawn_point_id
+    LAUNCH_PATCH_FUNCTION remove_spawn_point
         STR_VAR spawn_point_name = "Spawn Point 2" // ID spawn point
-        RET spawn_point_id = spawn_point_id
-            spawn_point_offset = spawn_point_offset
-    END
-
-    LAUNCH_PATCH_FUNCTION fj_are_structure
-        INT_VAR fj_delete_mode = spawn_point_id
-        STR_VAR fj_structure_type = "spawn"
     END
 
 
 
 
     // modificare spawn point
-    LAUNCH_PATCH_FUNCTION get_spawn_point_id
+    LAUNCH_PATCH_FUNCTION edit_spawn_point
+        INT_VAR spawn_count = 3
+            difficulty = 1
+            spawn_rate = 6
+            spawn_method = 1
+            duration = 1000
+            wander_distance = 1000
+            follow_distance = 1000
+            max_creatures = 8
+            active = 1
+            hours_active = 0xffffffff
+            probability_day = 85
+            probability_night = 85
+            frequency = 16842752
+            countdown = 0 - 1
+            weight_1 = 0 - 12
+            weight_2 = 1
+            weight_3 = 0 - 36
+            weight_4 = 0
+            weight_5 = 0
+            weight_6 = 0
+            weight_7 = 0
+            weight_8 = 0
+            weight_9 = 0
+            weight_10 = 0
         STR_VAR spawn_point_name = "Spawn Point 2" // ID spawn point
-        RET spawn_point_id = spawn_point_id
-            spawn_point_offset = spawn_point_offset
+            creature_1 = "GIBBER2"
+            creature_2 = "WOLF"
+            creature_3 = "WOLFDI"
+            creature_4 = ""
+            creature_5 = ""
+            creature_6 = ""
+            creature_7 = ""
+            creature_8 = ""
+            creature_9 = ""
+            creature_10 = ""
     END
-
-    WRITE_ASCII spawn_point_offset + 0x24 ~GIBBER2~ #8 // 1st creature
-    WRITE_ASCII spawn_point_offset + 0x2c ~WOLF~ #8 // 2nd creature
-    WRITE_ASCII spawn_point_offset + 0x34 ~WOLFDI~ #8 // 3rd creature
-    WRITE_ASCII spawn_point_offset + 0x3c ~~ #8 // 4th creature
-    WRITE_ASCII spawn_point_offset + 0x44 ~~ #8 // 5th creature
-    WRITE_ASCII spawn_point_offset + 0x4c ~~ #8 // 6th creature
-    WRITE_ASCII spawn_point_offset + 0x54 ~~ #8 // 7th creature
-    WRITE_ASCII spawn_point_offset + 0x5c ~~ #8 // 8th creature
-    WRITE_ASCII spawn_point_offset + 0x64 ~~ #8 // 9th creature
-    WRITE_ASCII spawn_point_offset + 0x6c ~~ #8 // 10th creature
-    WRITE_SHORT spawn_point_offset + 0x74 3 // number of non-blank creatures
-    WRITE_SHORT spawn_point_offset + 0x76 1 // difficulty
-    WRITE_SHORT spawn_point_offset + 0x78 6 // spawn rate
-    WRITE_SHORT spawn_point_offset + 0x7a 1 // spawn method - 1 = repeatable, 2 = once
-    WRITE_LONG  spawn_point_offset + 0x7c 1000 // duration
-    WRITE_SHORT spawn_point_offset + 0x80 1000 // max wander distance
-    WRITE_SHORT spawn_point_offset + 0x82 1000 // max follow distance
-    WRITE_SHORT spawn_point_offset + 0x84 8 // max n' creatures
-    WRITE_SHORT spawn_point_offset + 0x86 1 // active
-    WRITE_LONG  spawn_point_offset + 0x88 0xffffffff // hours active - 0xffffffff = always
-    WRITE_SHORT spawn_point_offset + 0x8c 85 // probability (day)
-    WRITE_SHORT spawn_point_offset + 0x8e 85 // probability (night)
-    WRITE_LONG  spawn_point_offset + 0x90 16842752 // frequency
-    WRITE_LONG  spawn_point_offset + 0x94 0 - 1 // countdown
-    WRITE_BYTE spawn_point_offset + 0x98 0 - 12 // weight 1st creature
-    WRITE_BYTE spawn_point_offset + 0x99 1 // weight 2nd creature
-    WRITE_BYTE spawn_point_offset + 0x9a 0 - 36 // weight 3rd creature
-    WRITE_BYTE spawn_point_offset + 0x9b 0 // weight 4th creature
-    WRITE_BYTE spawn_point_offset + 0x9c 0 // weight 5th creature
-    WRITE_BYTE spawn_point_offset + 0x9d 0 // weight 6th creature
-    WRITE_BYTE spawn_point_offset + 0x9e 0 // weight 7th creature
-    WRITE_BYTE spawn_point_offset + 0x9f 0 // weight 8th creature
-    WRITE_BYTE spawn_point_offset + 0xa0 0 // weight 9th creature
-    WRITE_BYTE spawn_point_offset + 0xa1 0 // weight 10th creature
 
 
 
 
     // rimuovere creatura
-    LAUNCH_PATCH_FUNCTION get_actor_id
+    LAUNCH_PATCH_FUNCTION remove_actor
         STR_VAR actor_name = "Gatewarden" // ID creatura - non file name
-        RET actor_id = actor_id
-            actor_offset = actor_offset
-    END
-
-    LAUNCH_PATCH_FUNCTION fj_are_structure
-        INT_VAR fj_delete_mode = actor_id
-        STR_VAR fj_structure_type = "actor"
     END
 
 
 
 
     // rimuovere oggetto
-    LAUNCH_PATCH_FUNCTION get_container_id
+    LAUNCH_PATCH_FUNCTION remove_item
         STR_VAR container_name = "Container 3" // ID container
-        RET container_id = container_id
-            container_offset = container_offset
-    END
-    LAUNCH_PATCH_FUNCTION get_item_id
-        INT_VAR container_id = container_id
-        STR_VAR item_name = "ring06"         // object
-        RET item_id = item_id
-            item_offset = item_offset
-    END
-    LAUNCH_PATCH_FUNCTION fj_are_structure
-        INT_VAR fj_delete_mode = item_id
-        STR_VAR fj_structure_type = "itm"
+            item_name = "ring06"         // object
     END
 
 
@@ -99,22 +71,15 @@ COPY_EXISTING ~bg2700.are~ ~override~
 
 
     // sostituire oggetto
-    LAUNCH_PATCH_FUNCTION get_container_id
-        STR_VAR container_name = "Container 3" // ID container
-        RET container_id = container_id
-            container_offset = container_offset
+    LAUNCH_PATCH_FUNCTION replace_item
+        INT_VAR charge_1 = 1
+            charge_2 = 1
+            charge_3 = 1
+            flags = 0        // 0 = none ; 1 = identified; 2 = unstealable; 4 = stolen; 8 = undroppabble (can add values)
+        STR_VAR container_name = "Container 3"
+            old_item_name = "ring06"
+            new_item_name = "ring10"
     END
-    LAUNCH_PATCH_FUNCTION get_item_id
-        INT_VAR container_id = container_id
-        STR_VAR item_name = "ring06"        // old object
-        RET item_id = item_id
-            item_offset = item_offset
-    END
-    WRITE_ASCII item_offset ~ring10~ // new object
-    WRITE_SHORT item_offset + 0x0a 1 // count / charge 1
-    WRITE_SHORT item_offset + 0x0c 1 // charge 2
-    WRITE_SHORT item_offset + 0x0e 1 // charge 3
-    WRITE_LONG  item_offset + 0x10 0 // 0 = none ; 1 = identified; 2 = unstealable; 4 = stolen; 8 = undroppabble (can be added)
 
 
 
@@ -123,55 +88,49 @@ COPY_EXISTING ~bg2700.are~ ~override~
 
 
     // aggiungere oggetto
-    LAUNCH_PATCH_FUNCTION get_container_id
+    LAUNCH_PATCH_FUNCTION add_item
+        INT_VAR charge_1 = 167    // count / charge 1
+            charge_2 = 0      // charge 2
+            charge_3 = 0      // charge 3
+            flags = 0        // 0 = none ; 1 = identified; 2 = unstealable; 4 = stolen; 8 = undroppabble (can add values)
         STR_VAR container_name = "Container 3"
-        RET container_id = container_id
-            container_offset = container_offset
-    END
-    LAUNCH_PATCH_FUNCTION fj_are_structure
-        INT_VAR fj_con_itm_idx = container_id
-            fj_charge0 = 167    // count / charge 1
-            fj_charge1 = 0      // charge 2
-            fj_charge2 = 0      // charge 3
-            fj_flags = 0        // 0 = none ; 1 = identified; 2 = unstealable; 4 = stolen; 8 = undroppabble (can be added)
-        STR_VAR fj_structure_type = "itm"
-            fj_name "misc07"
+            item_name = "misc07"
     END
 
 
 
 
     // modificare rest interrupt
-    READ_LONG 0xc0 rest_interrupt_offset
-
-    SAY rest_interrupt_offset + 0x20 ~You are awakened as gibberlings come screaming out of the darkness.~ // text creature #1
-    SAY rest_interrupt_offset + 0x24 ~The lonely cry of the wolf wakens you suddenly. Before you can properly get your bearings, a wolf pack is upon you.~ // text creature #2
-    SAY rest_interrupt_offset + 0x28 ~Monsters awaken you from your rest.~ // text creature #3
-    SAY rest_interrupt_offset + 0x2c ~Monsters awaken you from your rest.~ // text creature #4
-    SAY rest_interrupt_offset + 0x30 ~Monsters awaken you from your rest.~ // text creature #5
-    SAY rest_interrupt_offset + 0x34 ~Monsters awaken you from your rest.~ // text creature #6
-    SAY rest_interrupt_offset + 0x38 ~Monsters awaken you from your rest.~ // text creature #7
-    SAY rest_interrupt_offset + 0x3c ~Monsters awaken you from your rest.~ // text creature #8
-    SAY rest_interrupt_offset + 0x40 ~Monsters awaken you from your rest.~ // text creature #9
-    SAY rest_interrupt_offset + 0x44 ~Monsters awaken you from your rest.~ // text creature #10
-    WRITE_ASCII rest_interrupt_offset + 0x48 ~GIBBER~ // creature #1
-    WRITE_ASCII rest_interrupt_offset + 0x50 ~WOLF~   // creature #2
-    WRITE_ASCII rest_interrupt_offset + 0x58 ~~   // creature #3
-    WRITE_ASCII rest_interrupt_offset + 0x60 ~~   // creature #4
-    WRITE_ASCII rest_interrupt_offset + 0x68 ~~   // creature #5
-    WRITE_ASCII rest_interrupt_offset + 0x70 ~~   // creature #6
-    WRITE_ASCII rest_interrupt_offset + 0x78 ~~   // creature #7
-    WRITE_ASCII rest_interrupt_offset + 0x80 ~~   // creature #8
-    WRITE_ASCII rest_interrupt_offset + 0x88 ~~   // creature #9
-    WRITE_ASCII rest_interrupt_offset + 0x90 ~~   // creature #10
-    WRITE_SHORT rest_interrupt_offset + 0x98 2   // number of non-blank creatures
-    WRITE_SHORT rest_interrupt_offset + 0x9a 2   // difficulty
-    WRITE_LONG  rest_interrupt_offset + 0x9c 1000   // removal time
-    WRITE_SHORT rest_interrupt_offset + 0xa0 1000 // wander distance
-    WRITE_SHORT rest_interrupt_offset + 0xa2 1000 // follow distance
-    WRITE_SHORT rest_interrupt_offset + 0xa4 10 // max number of creatures
-    WRITE_SHORT rest_interrupt_offset + 0xa6 1 // active
-    WRITE_SHORT rest_interrupt_offset + 0xa8 3 // % probability per hour (day)
-    WRITE_SHORT rest_interrupt_offset + 0xaa 3 // % probability per hour (night)
+    LAUNCH_PATCH_FUNCTION edit_rest_interrupt
+        INT_VAR creature_count = 2 // number of non-blank creatures
+            difficulty = 2
+            removal_time = 1000
+            wander_distance = 1000
+            follow_distance = 1000
+            max_creatures = 10
+            active = 1
+            probability_day = 3
+            probability_night = 3
+        STR_VAR message_1 = "You are awakened as gibberlings come screaming out of the darkness."
+            message_2 = "The lonely cry of the wolf wakens you suddenly. Before you can properly get your bearings, a wolf pack is upon you."
+            message_3 = "Monsters awaken you from your rest."
+            message_4 = "Monsters awaken you from your rest."
+            message_5 = "Monsters awaken you from your rest."
+            message_6 = "Monsters awaken you from your rest."
+            message_7 = "Monsters awaken you from your rest."
+            message_8 = "Monsters awaken you from your rest."
+            message_9 = "Monsters awaken you from your rest."
+            message_10 = "Monsters awaken you from your rest."
+            creature_1 = "GIBBER"
+            creature_2 = "WOLF"
+            creature_3 = ""
+            creature_4 = ""
+            creature_5 = ""
+            creature_6 = ""
+            creature_7 = ""
+            creature_8 = ""
+            creature_9 = ""
+            creature_10 = ""
+    END
 
 */

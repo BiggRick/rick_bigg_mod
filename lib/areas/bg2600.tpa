@@ -2,14 +2,6 @@
 COPY_EXISTING ~bg2600.are~ ~override~
 
     // Remove gatewarden
-    LAUNCH_PATCH_FUNCTION get_actor_id
+    LAUNCH_PATCH_FUNCTION remove_actor
         STR_VAR actor_name = "Gatewarden"
-        RET actor_id = actor_id
-            actor_offset = actor_offset
     END
-
-    LAUNCH_PATCH_FUNCTION fj_are_structure
-        INT_VAR fj_delete_mode = actor_id
-        STR_VAR fj_structure_type = "actor"
-    END
-
