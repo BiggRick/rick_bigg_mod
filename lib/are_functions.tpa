@@ -1,0 +1,94 @@
+DEFINE_PATCH_FUNCTION get_spawn_point_id
+    STR_VAR spawn_point_name = ""
+    RET spawn_point_id
+        spawn_point_offset
+BEGIN
+    GET_OFFSET_ARRAY spawn_points ARE_V10_SPAWN_POINTS
+    spawn_point_id = 0 - 1
+    spawn_point_offset = 0 - 1
+    PHP_EACH spawn_points AS index => offset BEGIN
+        READ_ASCII offset name (32) NULL
+        PATCH_IF ~%name%~ STRING_EQUAL_CASE ~%spawn_point_name%~ BEGIN
+            spawn_point_id = index
+            spawn_point_offset = offset
+        END
+    END
+
+    PATCH_IF spawn_point_id < 0 BEGIN
+        PATCH_FAIL ~get_spawn_point_id(%spawn_point_name%) (%SOURCE_RES%)~
+    END
+END
+
+
+
+DEFINE_PATCH_FUNCTION get_actor_id
+    STR_VAR actor_name = ""
+    RET actor_id
+        actor_offset
+BEGIN
+    GET_OFFSET_ARRAY actors ARE_V10_ACTORS
+    actor_id = 0 - 1
+    actor_offset = 0 - 1
+    PHP_EACH actors AS index => offset BEGIN
+        READ_ASCII offset name (32) NULL
+        PATCH_IF ~%name%~ STRING_EQUAL_CASE ~%actor_name%~ BEGIN
+            actor_id = index
+            actor_offset = offset
+        END
+    END
+
+    PATCH_IF actor_id < 0 BEGIN
+        PATCH_FAIL ~get_actor_id(%actor_name%) (%SOURCE_RES%)~
+    END
+END
+
+
+
+
+DEFINE_PATCH_FUNCTION get_container_id
+    STR_VAR container_name = ""
+    RET container_id
+        container_offset
+BEGIN
+    GET_OFFSET_ARRAY containers ARE_V10_CONTAINERS
+    container_id = 0 - 1
+    container_offset = 0 - 1
+    PHP_EACH containers AS index => offset BEGIN
+        READ_ASCII offset name (32) NULL
+        PATCH_IF ~%name%~ STRING_EQUAL_CASE ~%container_name%~ BEGIN
+            container_id = index
+            container_offset = offset
+        END
+    END
+
+    PATCH_IF container_id < 0 BEGIN
+        PATCH_FAIL ~get_container_id(%container_name%) (%SOURCE_RES%)~
+    END
+END
+
+
+
+DEFINE_PATCH_FUNCTION get_item_id
+    INT_VAR container_id = 0 - 1
+    STR_VAR item_name = ""
+    RET item_id
+        item_offset
+BEGIN
+    GET_OFFSET_ARRAY containers ARE_V10_CONTAINERS
+    READ_LONG $containers( EVALUATE_BUFFER ~%container_id%~ ) + 0x40 item_start
+    GET_OFFSET_ARRAY2 items $containers( EVALUATE_BUFFER ~%container_id%~ ) ARE_V10_ITEMS
+    item_id = 0 - 1
+    item_offset = 0 - 1
+    PHP_EACH items AS index => offset BEGIN
+        READ_ASCII offset name (32) NULL
+        PATCH_IF ~%name%~ STRING_EQUAL_CASE ~%item_name%~ BEGIN
+            item_id = index + item_start
+            item_offset = offset
+        END
+    END
+
+    PATCH_IF item_id < 0 BEGIN
+        PATCH_FAIL ~get_item_id(%item_name%) (%SOURCE_RES%)~
+    END
+END
+

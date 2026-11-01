@@ -1,0 +1,38 @@
+// Lion's Way
+COPY_EXISTING ~bg2800.are~ ~override~
+
+    // Replace +1 ring with Gold Ring
+    LAUNCH_PATCH_FUNCTION get_container_id
+        STR_VAR container_name = "Container 3"
+        RET container_id = container_id
+            container_offset = container_offset
+    END
+    LAUNCH_PATCH_FUNCTION get_item_id
+        INT_VAR container_id = container_id
+        STR_VAR item_name = "ring06"
+        RET item_id = item_id
+            item_offset = item_offset
+    END
+    WRITE_ASCII item_offset ~ring10~
+    WRITE_SHORT item_offset + 0x0a 1 // count / charge 1
+    WRITE_SHORT item_offset + 0x0c 1 // charge 2
+    WRITE_SHORT item_offset + 0x0e 1 // charge 3
+    WRITE_LONG  item_offset + 0x10 0 // 0 = none ; 1 = identified; 2 = unstealable; 4 = stolen; 8 = undroppabble (can be added)
+
+    // Add 167 gold to the old +1 ring
+    LAUNCH_PATCH_FUNCTION get_container_id
+        STR_VAR container_name = "Container 3"
+        RET container_id = container_id
+            container_offset = container_offset
+    END
+    LAUNCH_PATCH_FUNCTION fj_are_structure
+        INT_VAR fj_con_itm_idx = container_id
+            fj_charge0 = 167    // count / charge 1
+            fj_charge1 = 0      // charge 2
+            fj_charge2 = 0      // charge 3
+            fj_flags = 0        // 0 = none ; 1 = identified; 2 = unstealable; 4 = stolen; 8 = undroppabble (can be added)
+        STR_VAR fj_structure_type = "itm"
+            fj_name = "misc07"
+    END
+
+

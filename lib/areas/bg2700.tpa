@@ -1,12 +1,34 @@
+// Coast Way
 COPY_EXISTING ~bg2700.are~ ~override~
+
+    // Replace Dread Wolf with Dire Wolf
     LAUNCH_PATCH_FUNCTION get_spawn_point_id
-        STR_VAR spawn_point_name = "Spawn Point 2"
+        STR_VAR spawn_point_name = "Spawn Point 2" // ID spawn point
         RET spawn_point_id = spawn_point_id
             spawn_point_offset = spawn_point_offset
     END
 
-    LAUNCH_PATCH_FUNCTION fj_are_structure
-        INT_VAR fj_delete_mode = spawn_point_id
-        STR_VAR fj_structure_type = "spawn"
-    END
-
+    WRITE_ASCII spawn_point_offset + 0x24 ~GIBBER2~ // 1st creature
+    WRITE_ASCII spawn_point_offset + 0x2c ~WOLF~  // 2nd creature
+    WRITE_ASCII spawn_point_offset + 0x34 ~WOLFDI~  // 3rd creature
+    WRITE_ASCII spawn_point_offset + 0x3c ~~  // 4th creature
+    // COPILOT - until 10th creature aat 0x6c
+    WRITE_SHORT spawn_point_offset + 0x74 3 // number of non-blank creatures
+    WRITE_SHORT spawn_point_offset + 0x76 1 // difficulty
+    WRITE_SHORT spawn_point_offset + 0x78 6 // spawn rate
+    WRITE_SHORT spawn_point_offset + 0x7a 1 // spawn method - 1 = repeatable, 2 = once
+    WRITE_LONG  spawn_point_offset + 0x7c 1000 // duration
+    WRITE_SHORT spawn_point_offset + 0x80 1000 // max wander distance
+    WRITE_SHORT spawn_point_offset + 0x82 1000 // max follow distance
+    WRITE_SHORT spawn_point_offset + 0x84 8 // max n' creatures
+    WRITE_SHORT spawn_point_offset + 0x86 1 // active
+    WRITE_LONG  spawn_point_offset + 0x88 0xffffffff // hours active - 0xffffffff = always
+    WRITE_SHORT spawn_point_offset + 0x8c 85 // probability (day)
+    WRITE_SHORT spawn_point_offset + 0x8e 85 // probability (night)
+    WRITE_LONG  spawn_point_offset + 0x90 16842752 // frequency
+    WRITE_LONG  spawn_point_offset + 0x94 0 - 1 // countdown
+    WRITE_BYTE  spawn_point_offset + 0x98 0 - 12 // weight 1st creature
+    WRITE_BYTE  spawn_point_offset + 0x99 1      // weight 2nd creature
+    WRITE_BYTE  spawn_point_offset + 0x9a 0 - 36 // weight 3rd creature
+    WRITE_BYTE  spawn_point_offset + 0x9b 0      // weight 4th creature
+    // COPILOT - until 10th creature aat 0xa1
