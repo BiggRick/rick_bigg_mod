@@ -1,0 +1,65 @@
+IF
+    See([PC])
+    AttackedBy([GOODCUTOFF],DEFAULT)
+    !Allegiance(Myself,ENEMY)
+THEN
+    RESPONSE #100
+        SmallWait(5)
+        SetGlobal("tb#AolnEscort","GLOBAL",5)
+        Enemy()
+END
+
+IF
+    Global("tb#AolnEscort","GLOBAL",5)
+    Allegiance(Myself,NEUTRAL)
+THEN
+    RESPONSE #100
+        DestroySelf()
+END
+
+IF
+    Die()
+THEN
+    RESPONSE #100
+        SetGlobal("tb#AolnEscort","GLOBAL",4)
+END
+
+IF
+    See([PC])
+    !See([ENEMY])
+    !Allegiance(Myself,ENEMY)
+    NumberOfTimesTalkedTo(0)
+THEN
+    RESPONSE #100
+        Dialogue([PC])
+END
+
+IF
+    GlobalGT("tb#AolnEscort","GLOBAL",0)
+    Global("tb#AolnAfterTarnesh","GLOBAL",0)
+    Dead("Tarnesh")
+THEN
+    RESPONSE #100
+        SetGlobal("tb#AolnAfterTarnesh","GLOBAL",1)
+        Dialogue([PC])
+END
+
+IF
+    Global("tb#AolnEscort","GLOBAL",1)
+    Global("tb#AolnEscortAmbush","GLOBAL",1)
+    AreaCheck("BG6100")
+THEN
+    RESPONSE #100
+        Ally()
+        SetGlobal("tb#AolnEscortAmbush","GLOBAL",2)
+        Continue()
+END
+
+
+
+IF
+    Global("tb#AolnEscort","GLOBAL",4)
+THEN
+    RESPONSE #100
+        DestroySelf()
+END

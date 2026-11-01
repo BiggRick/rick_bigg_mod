@@ -1,0 +1,7 @@
+IF
+    Global("tb#AolnEscort","GLOBAL",3)
+THEN
+    RESPONSE #100
+        SetGlobal("tb#AolnEscort","GLOBAL",4)
+        Continue()
+END

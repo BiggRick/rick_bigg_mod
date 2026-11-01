@@ -1,0 +1,9 @@
+IF
+    Global("tb#AolnEscort","GLOBAL",1)
+THEN
+    RESPONSE #100
+        CreateCreatureObject("AOLN",Player1,0,0,0)
+        SetGlobal("tb#AolnEscort","GLOBAL",2)
+        Continue()
+END
+
