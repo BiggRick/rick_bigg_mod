@@ -10,7 +10,7 @@ COPY_EXISTING ~bg2700.are~ ~override~
 
     WRITE_ASCII spawn_point_offset + 0x24 ~GIBBER2~ #8 // 1st creature
     WRITE_ASCII spawn_point_offset + 0x2c ~WOLF~ #8 // 2nd creature
-    WRITE_ASCII spawn_point_offset + 0x34 ~WOLFDI~ #8 // 3rd creature
+    WRITE_ASCII spawn_point_offset + 0x34 ~WORG~ #8 // 3rd creature
     WRITE_ASCII spawn_point_offset + 0x3c ~~ #8 // 4th creature
     WRITE_ASCII spawn_point_offset + 0x44 ~~ #8 // 5th creature
     WRITE_ASCII spawn_point_offset + 0x4c ~~ #8 // 6th creature
