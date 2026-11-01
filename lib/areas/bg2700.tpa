@@ -2,7 +2,7 @@
 COPY_EXISTING ~bg2700.are~ ~override~
 
     // Replace Dread Wolf with Dire Wolf
-    LAUNCH_PATCH_FUNCTION edit_spawn_point
+    LAUNCH_PATCH_FUNCTION edit_are_spawn_point
         INT_VAR spawn_count = 3
             difficulty = 1
             spawn_rate = 6

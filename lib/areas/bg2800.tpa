@@ -2,7 +2,7 @@
 COPY_EXISTING ~bg2800.are~ ~override~
 
     // Replace +1 ring with Gold Ring
-    LAUNCH_PATCH_FUNCTION replace_item
+    LAUNCH_PATCH_FUNCTION replace_are_item
         INT_VAR charge_1 = 1
             charge_2 = 1
             charge_3 = 1
@@ -13,7 +13,7 @@ COPY_EXISTING ~bg2800.are~ ~override~
     END
 
     // Add 167 gold to the old +1 ring
-    LAUNCH_PATCH_FUNCTION add_item
+    LAUNCH_PATCH_FUNCTION add_are_item
         INT_VAR charge_1 = 167
             charge_2 = 0
             charge_3 = 0
@@ -21,4 +21,3 @@ COPY_EXISTING ~bg2800.are~ ~override~
         STR_VAR container_name = "Container 3"
             item_name = "misc07"
     END
-

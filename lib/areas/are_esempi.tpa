@@ -3,7 +3,7 @@ COPY_EXISTING ~bg2700.are~ ~override~
 
 
     // rimuovere spawn point
-    LAUNCH_PATCH_FUNCTION remove_spawn_point
+    LAUNCH_PATCH_FUNCTION remove_are_spawn_point
         STR_VAR spawn_point_name = "Spawn Point 2" // ID spawn point
     END
 
@@ -11,7 +11,7 @@ COPY_EXISTING ~bg2700.are~ ~override~
 
 
     // modificare spawn point
-    LAUNCH_PATCH_FUNCTION edit_spawn_point
+    LAUNCH_PATCH_FUNCTION edit_are_spawn_point
         INT_VAR spawn_count = 3
             difficulty = 1
             spawn_rate = 6
@@ -53,7 +53,7 @@ COPY_EXISTING ~bg2700.are~ ~override~
 
 
     // rimuovere creatura
-    LAUNCH_PATCH_FUNCTION remove_actor
+    LAUNCH_PATCH_FUNCTION remove_are_actor
         STR_VAR actor_name = "Gatewarden" // ID creatura - non file name
     END
 
@@ -61,7 +61,7 @@ COPY_EXISTING ~bg2700.are~ ~override~
 
 
     // rimuovere oggetto
-    LAUNCH_PATCH_FUNCTION remove_item
+    LAUNCH_PATCH_FUNCTION remove_are_item
         STR_VAR container_name = "Container 3" // ID container
             item_name = "ring06"         // object
     END
@@ -71,7 +71,7 @@ COPY_EXISTING ~bg2700.are~ ~override~
 
 
     // sostituire oggetto
-    LAUNCH_PATCH_FUNCTION replace_item
+    LAUNCH_PATCH_FUNCTION replace_are_item
         INT_VAR charge_1 = 1
             charge_2 = 1
             charge_3 = 1
@@ -88,7 +88,7 @@ COPY_EXISTING ~bg2700.are~ ~override~
 
 
     // aggiungere oggetto
-    LAUNCH_PATCH_FUNCTION add_item
+    LAUNCH_PATCH_FUNCTION add_are_item
         INT_VAR charge_1 = 167    // count / charge 1
             charge_2 = 0      // charge 2
             charge_3 = 0      // charge 3
@@ -101,7 +101,7 @@ COPY_EXISTING ~bg2700.are~ ~override~
 
 
     // modificare rest interrupt
-    LAUNCH_PATCH_FUNCTION edit_rest_interrupt
+    LAUNCH_PATCH_FUNCTION edit_are_rest_interrupt
         INT_VAR creature_count = 2 // number of non-blank creatures
             difficulty = 2
             removal_time = 1000
