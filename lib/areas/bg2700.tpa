@@ -1,0 +1,12 @@
+COPY_EXISTING ~bg2700.are~ ~override~
+    LAUNCH_PATCH_FUNCTION get_spawn_point_id
+        STR_VAR spawn_point_name = "Spawn Point 2"
+        RET spawn_point_id = spawn_point_id
+            spawn_point_offset = spawn_point_offset
+    END
+
+    LAUNCH_PATCH_FUNCTION fj_are_structure
+        INT_VAR fj_delete_mode = spawn_point_id
+        STR_VAR fj_structure_type = "spawn"
+    END
+

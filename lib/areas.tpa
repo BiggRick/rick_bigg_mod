@@ -1,0 +1,7 @@
+INCLUDE ~rick_bigg_mod/lib/get_spawn_point_id.tpa~
+
+ACTION_BASH_FOR ~rick_bigg_mod/lib/areas~ ~^.*\.tpa$~ BEGIN
+    PRINT ~EXECUTE %BASH_FOR_FILESPEC%~
+    INCLUDE ~%BASH_FOR_FILESPEC%~
+END
+
