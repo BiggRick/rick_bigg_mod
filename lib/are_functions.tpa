@@ -96,7 +96,7 @@ DEFINE_PATCH_FUNCTION remove_are_spawn_point
     STR_VAR spawn_point_name = ""
 BEGIN
     LAUNCH_PATCH_FUNCTION get_are_spawn_point_id
-        STR_VAR spawn_point_name =  EVALAUTE_BUFFER ~%spawn_point_name%~
+        STR_VAR spawn_point_name = EVALUATE_BUFFER ~%spawn_point_name%~
         RET spawn_point_id = spawn_point_id
     END
     LAUNCH_PATCH_FUNCTION fj_are_structure
@@ -144,7 +144,7 @@ DEFINE_PATCH_FUNCTION edit_are_spawn_point
         creature_10 = ""
 BEGIN
     LAUNCH_PATCH_FUNCTION get_are_spawn_point_id
-        STR_VAR spawn_point_name = EVALAUTE_BUFFER ~%spawn_point_name%~
+        STR_VAR spawn_point_name = EVALUATE_BUFFER ~%spawn_point_name%~
         RET spawn_point_offset = spawn_point_offset
     END
     WRITE_ASCII spawn_point_offset + 0x24 ~%creature_1%~ #8
@@ -188,7 +188,7 @@ DEFINE_PATCH_FUNCTION remove_are_actor
     STR_VAR actor_name = ""
 BEGIN
     LAUNCH_PATCH_FUNCTION get_are_actor_id
-        STR_VAR actor_name = EVALAUTE_BUFFER ~%actor_name%~
+        STR_VAR actor_name = EVALUATE_BUFFER ~%actor_name%~
         RET actor_id = actor_id
     END
     LAUNCH_PATCH_FUNCTION fj_are_structure
@@ -203,12 +203,12 @@ DEFINE_PATCH_FUNCTION remove_are_item
         item_name = ""
 BEGIN
     LAUNCH_PATCH_FUNCTION get_are_container_id
-        STR_VAR container_name =  EVALAUTE_BUFFER ~%container_name%~
+        STR_VAR container_name = EVALUATE_BUFFER ~%container_name%~
         RET container_id = container_id
     END
     LAUNCH_PATCH_FUNCTION get_are_item_id
         INT_VAR container_id = container_id
-        STR_VAR item_name = EVALAUTE_BUFFER ~%item_name%~
+        STR_VAR item_name = EVALUATE_BUFFER ~%item_name%~
         RET item_id = item_id
     END
     LAUNCH_PATCH_FUNCTION fj_are_structure
@@ -228,12 +228,12 @@ DEFINE_PATCH_FUNCTION replace_are_item
         new_item_name = ""
 BEGIN
     LAUNCH_PATCH_FUNCTION get_are_container_id
-        STR_VAR container_name = EVALAUTE_BUFFER ~%container_name%~
+        STR_VAR container_name = EVALUATE_BUFFER ~%container_name%~
         RET container_id = container_id
     END
     LAUNCH_PATCH_FUNCTION get_are_item_id
         INT_VAR container_id = container_id
-        STR_VAR item_name = EVALAUTE_BUFFER ~%old_item_name%~
+        STR_VAR item_name = EVALUATE_BUFFER ~%old_item_name%~
         RET item_offset = item_offset
     END
     WRITE_ASCII item_offset ~%new_item_name%~
@@ -253,7 +253,7 @@ DEFINE_PATCH_FUNCTION add_are_item
         item_name = ""
 BEGIN
     LAUNCH_PATCH_FUNCTION get_are_container_id
-        STR_VAR container_name = EVALAUTE_BUFFER ~%container_name%~
+        STR_VAR container_name = EVALUATE_BUFFER ~%container_name%~
         RET container_id = container_id
     END
     LAUNCH_PATCH_FUNCTION fj_are_structure
@@ -263,7 +263,7 @@ BEGIN
             fj_charge2 = charge_3
             fj_flags = flags
         STR_VAR fj_structure_type = "itm"
-            fj_name = EVALAUTE_BUFFER ~%item_name%~
+            fj_name = EVALUATE_BUFFER ~%item_name%~
     END
 END
 
