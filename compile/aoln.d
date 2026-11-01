@@ -2,7 +2,7 @@ ADD_TRANS_TRIGGER ~AOLN~ 2 ~CheckStatLT(LastTalkedToBy,15,CHR)~
 REPLACE_STATE_TRIGGER ~AOLN~ 0 ~NumTimesTalkedTo(0) Global("tb#AolnEscort","GLOBAL",0)~
 
 EXTEND_BOTTOM ~AOLN~ 2
-  IF ~CheckStatGT(LastTalkedToBy,14,CHR)~ REPLY ~It would seem I could use the help. Could you escort me to the Friendly Arm?~ GOTO tb#aoln_escort
+  IF ~CheckStatGT(LastTalkedToBy,14,CHR)~ REPLY ~I could use the help. What do you think about traveling with me to the Friendly Arm?~ GOTO tb#aoln_escort
   IF ~CheckStatGT(LastTalkedToBy,14,CHR)~ REPLY ~Thanks for the warning. Farewell.~ GOTO tb#aoln_leave
 END
 
