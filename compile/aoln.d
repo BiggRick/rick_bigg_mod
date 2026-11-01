@@ -2,7 +2,7 @@ ADD_TRANS_TRIGGER ~AOLN~ 2 ~CheckStatLT(LastTalkedToBy,15,CHR)~
 REPLACE_STATE_TRIGGER ~AOLN~ 0 ~NumTimesTalkedTo(0) Global("tb#AolnEscort","GLOBAL",0)~
 
 EXTEND_BOTTOM ~AOLN~ 2
-  IF ~CheckStatGT(LastTalkedToBy,14,CHR)~ REPLY ~I would seem I could use the help. Could you escort me to the Friendly Arm?~ GOTO tb#aoln_escort
+  IF ~CheckStatGT(LastTalkedToBy,14,CHR)~ REPLY ~It would seem I could use the help. Could you escort me to the Friendly Arm?~ GOTO tb#aoln_escort
   IF ~CheckStatGT(LastTalkedToBy,14,CHR)~ REPLY ~Thanks for the warning. Farewell.~ GOTO tb#aoln_leave
 END
 
@@ -34,7 +34,7 @@ APPEND ~AOLN~
   END
 
   IF ~~ THEN BEGIN tb#aoln_escort
-    SAY ~Aye, I'll see you safely to the Friendly Arm. Stay close.~
+    SAY ~I normally don't travel with strangers, but you look really wet behind your ears; it would not do to leave you to die by yourself.~
     IF ~~ THEN DO ~SetGlobal("tb#AolnEscort","GLOBAL",1)
       Ally()~ EXIT
   END
