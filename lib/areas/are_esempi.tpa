@@ -17,7 +17,7 @@ COPY_EXISTING ~bg2700.are~ ~override~
 
 
 
-    // modificare
+    // modificare spawn point
     LAUNCH_PATCH_FUNCTION get_spawn_point_id
         STR_VAR spawn_point_name = "Spawn Point 2" // ID spawn point
         RET spawn_point_id = spawn_point_id
@@ -139,5 +139,39 @@ COPY_EXISTING ~bg2700.are~ ~override~
     END
 
 
+
+
+    // modificare rest interrupt
+    READ_LONG 0xc0 rest_interrupt_offset
+
+    SAY rest_interrupt_offset + 0x20 ~You are awakened as gibberlings come screaming out of the darkness.~ // text creature #1
+    SAY rest_interrupt_offset + 0x24 ~The lonely cry of the wolf wakens you suddenly. Before you can properly get your bearings, a wolf pack is upon you.~ // text creature #2
+    SAY rest_interrupt_offset + 0x28 ~Monsters awaken you from your rest.~ // text creature #3
+    SAY rest_interrupt_offset + 0x2c ~Monsters awaken you from your rest.~ // text creature #4
+    SAY rest_interrupt_offset + 0x30 ~Monsters awaken you from your rest.~ // text creature #5
+    SAY rest_interrupt_offset + 0x34 ~Monsters awaken you from your rest.~ // text creature #6
+    SAY rest_interrupt_offset + 0x38 ~Monsters awaken you from your rest.~ // text creature #7
+    SAY rest_interrupt_offset + 0x3c ~Monsters awaken you from your rest.~ // text creature #8
+    SAY rest_interrupt_offset + 0x40 ~Monsters awaken you from your rest.~ // text creature #9
+    SAY rest_interrupt_offset + 0x44 ~Monsters awaken you from your rest.~ // text creature #10
+    WRITE_ASCII rest_interrupt_offset + 0x48 ~GIBBER~ // creature #1
+    WRITE_ASCII rest_interrupt_offset + 0x50 ~WOLF~   // creature #2
+    WRITE_ASCII rest_interrupt_offset + 0x58 ~~   // creature #3
+    WRITE_ASCII rest_interrupt_offset + 0x60 ~~   // creature #4
+    WRITE_ASCII rest_interrupt_offset + 0x68 ~~   // creature #5
+    WRITE_ASCII rest_interrupt_offset + 0x70 ~~   // creature #6
+    WRITE_ASCII rest_interrupt_offset + 0x78 ~~   // creature #7
+    WRITE_ASCII rest_interrupt_offset + 0x80 ~~   // creature #8
+    WRITE_ASCII rest_interrupt_offset + 0x88 ~~   // creature #9
+    WRITE_ASCII rest_interrupt_offset + 0x90 ~~   // creature #10
+    WRITE_SHORT rest_interrupt_offset + 0x98 2   // number of non-blank creatures
+    WRITE_SHORT rest_interrupt_offset + 0x9a 2   // difficulty
+    WRITE_LONG  rest_interrupt_offset + 0x9c 1000   // removal time
+    WRITE_SHORT rest_interrupt_offset + 0xa0 1000 // wander distance
+    WRITE_SHORT rest_interrupt_offset + 0xa2 1000 // follow distance
+    WRITE_SHORT rest_interrupt_offset + 0xa4 10 // max number of creatures
+    WRITE_SHORT rest_interrupt_offset + 0xa6 1 // active
+    WRITE_SHORT rest_interrupt_offset + 0xa8 3 // % probability per hour (day)
+    WRITE_SHORT rest_interrupt_offset + 0xaa 3 // % probability per hour (night)
 
 */

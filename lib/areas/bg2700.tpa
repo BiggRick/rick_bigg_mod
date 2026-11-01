@@ -42,3 +42,5 @@ COPY_EXISTING ~bg2700.are~ ~override~
     WRITE_BYTE spawn_point_offset + 0x9f 0 // weight 8th creature
     WRITE_BYTE spawn_point_offset + 0xa0 0 // weight 9th creature
     WRITE_BYTE spawn_point_offset + 0xa1 0 // weight 10th creature
+
+
