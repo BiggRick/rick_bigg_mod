@@ -17,7 +17,7 @@ COPY_EXISTING ~bg2800.are~ ~override~
         INT_VAR charge_1 = 167
             charge_2 = 0
             charge_3 = 0
-            flags = 0
+            flags = 0        // 0 = none ; 1 = identified; 2 = unstealable; 4 = stolen; 8 = undroppabble (can add values)
         STR_VAR container_name = "Container 3"
             item_name = "misc07"
     END

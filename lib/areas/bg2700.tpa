@@ -12,7 +12,7 @@ COPY_EXISTING ~bg2700.are~ ~override~
             follow_distance = 1000
             max_creatures = 8
             active = 1
-            hours_active = 0xffffffff
+            hours_active = 0xffffffff // 0xffffffff = always
             probability_day = 85
             probability_night = 85
             frequency = 16842752
