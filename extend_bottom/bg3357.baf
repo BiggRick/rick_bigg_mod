@@ -1,0 +1,15 @@
+IF
+	Global("tb#spawnCreatures","BG3357",0)
+THEN
+	RESPONSE #100
+        ActionOverride("karlat",DestroySelf())
+
+		CreateCreature("tb#kar01", [460.290], 0) // creatura, posizione X-Y, rotazione - 0 = sud, 4 = ovest, 8 = nord, 12 = est. valori da 0 a 15 con le frazioni
+		CreateCreature("tb#kar02", [520.300], 0) // creatura, posizione X-Y, rotazione - 0 = sud, 4 = ovest, 8 = nord, 12 = est. valori da 0 a 15 con le frazioni
+
+		CreateCreature("karlat", [530.390], 0) // creatura, posizione X-Y, rotazione - 0 = sud, 4 = ovest, 8 = nord, 12 = est. valori da 0 a 15 con le frazioni
+
+		SetGlobal("tb#spawnCreatures","BG3357",1)
+		
+		Continue()
+END

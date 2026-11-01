@@ -1,0 +1,10 @@
+COPY_EXISTING ~bandit.cre~   ~override/tb#kar01.cre~
+              ~bandit.cre~   ~override/tb#kar02.cre~
+    SAY NAME1 ~Mercenary~
+    SAY NAME2 ~Mercenary~
+    WRITE_ASCII 0x268 ~WTARSGT~
+    WRITE_ASCIIE DEATHVAR ~%DEST_RES%~ #32
+    WRITE_ASCII DIALOG ~~ #8
+    WRITE_BYTE 0x270 128
+    REMOVE_CRE_ITEM ~misc86~
+
