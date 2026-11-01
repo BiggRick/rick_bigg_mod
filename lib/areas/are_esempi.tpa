@@ -17,6 +17,51 @@ COPY_EXISTING ~bg2700.are~ ~override~
 
 
 
+    // modificare
+    LAUNCH_PATCH_FUNCTION get_spawn_point_id
+        STR_VAR spawn_point_name = "Spawn Point 2" // ID spawn point
+        RET spawn_point_id = spawn_point_id
+            spawn_point_offset = spawn_point_offset
+    END
+
+    WRITE_ASCII spawn_point_offset + 0x24 ~GIBBER2~ #8 // 1st creature
+    WRITE_ASCII spawn_point_offset + 0x2c ~WOLF~ #8 // 2nd creature
+    WRITE_ASCII spawn_point_offset + 0x34 ~WOLFDI~ #8 // 3rd creature
+    WRITE_ASCII spawn_point_offset + 0x3c ~~ #8 // 4th creature
+    WRITE_ASCII spawn_point_offset + 0x44 ~~ #8 // 5th creature
+    WRITE_ASCII spawn_point_offset + 0x4c ~~ #8 // 6th creature
+    WRITE_ASCII spawn_point_offset + 0x54 ~~ #8 // 7th creature
+    WRITE_ASCII spawn_point_offset + 0x5c ~~ #8 // 8th creature
+    WRITE_ASCII spawn_point_offset + 0x64 ~~ #8 // 9th creature
+    WRITE_ASCII spawn_point_offset + 0x6c ~~ #8 // 10th creature
+    WRITE_SHORT spawn_point_offset + 0x74 3 // number of non-blank creatures
+    WRITE_SHORT spawn_point_offset + 0x76 1 // difficulty
+    WRITE_SHORT spawn_point_offset + 0x78 6 // spawn rate
+    WRITE_SHORT spawn_point_offset + 0x7a 1 // spawn method - 1 = repeatable, 2 = once
+    WRITE_LONG  spawn_point_offset + 0x7c 1000 // duration
+    WRITE_SHORT spawn_point_offset + 0x80 1000 // max wander distance
+    WRITE_SHORT spawn_point_offset + 0x82 1000 // max follow distance
+    WRITE_SHORT spawn_point_offset + 0x84 8 // max n' creatures
+    WRITE_SHORT spawn_point_offset + 0x86 1 // active
+    WRITE_LONG  spawn_point_offset + 0x88 0xffffffff // hours active - 0xffffffff = always
+    WRITE_SHORT spawn_point_offset + 0x8c 85 // probability (day)
+    WRITE_SHORT spawn_point_offset + 0x8e 85 // probability (night)
+    WRITE_LONG  spawn_point_offset + 0x90 16842752 // frequency
+    WRITE_LONG  spawn_point_offset + 0x94 0 - 1 // countdown
+    WRITE_BYTE spawn_point_offset + 0x98 0 - 12 // weight 1st creature
+    WRITE_BYTE spawn_point_offset + 0x99 1 // weight 2nd creature
+    WRITE_BYTE spawn_point_offset + 0x9a 0 - 36 // weight 3rd creature
+    WRITE_BYTE spawn_point_offset + 0x9b 0 // weight 4th creature
+    WRITE_BYTE spawn_point_offset + 0x9c 0 // weight 5th creature
+    WRITE_BYTE spawn_point_offset + 0x9d 0 // weight 6th creature
+    WRITE_BYTE spawn_point_offset + 0x9e 0 // weight 7th creature
+    WRITE_BYTE spawn_point_offset + 0x9f 0 // weight 8th creature
+    WRITE_BYTE spawn_point_offset + 0xa0 0 // weight 9th creature
+    WRITE_BYTE spawn_point_offset + 0xa1 0 // weight 10th creature
+
+
+
+
     // rimuovere creatura
     LAUNCH_PATCH_FUNCTION get_actor_id
         STR_VAR actor_name = "Gatewarden" // ID creatura - non file name
