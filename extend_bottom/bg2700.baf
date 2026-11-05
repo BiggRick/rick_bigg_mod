@@ -13,3 +13,11 @@ THEN
 		Continue()
 END
 
+IF
+    GlobalGT("tb#AolnEscort","GLOBAL",1)
+    Exists("AOLN")
+THEN
+    RESPONSE #100
+        ActionOverride("AOLN",DestroySelf())
+        Continue()
+END

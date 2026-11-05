@@ -1,0 +1,7 @@
+// Candlekeep prologue
+COPY_EXISTING ~bg2600.are~ ~override~
+
+    // Remove gatewarden
+    LAUNCH_PATCH_FUNCTION remove_are_actor
+        STR_VAR actor_name = "Gatewarden"
+    END

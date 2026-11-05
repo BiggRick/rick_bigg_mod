@@ -752,6 +752,8 @@ COPY_EXISTING "aoln.cre" "override"
 	WRITE_BYTE 0x240 4 //MORALERUN//
 	WRITE_BYTE 0x273 2 //CLASS//	
 
+	WRITE_ASCII 0x248 tb#aoln // override script
+
 	REMOVE_CRE_ITEM "leat01"
 	ADD_CRE_ITEM "leat04" #1 #0 #0 ~IDENTIFIED~ ~ARMOR~
 	

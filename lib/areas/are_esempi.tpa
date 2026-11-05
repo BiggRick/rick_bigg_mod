@@ -1,0 +1,136 @@
+/*
+COPY_EXISTING ~bg2700.are~ ~override~
+
+
+    // rimuovere spawn point
+    LAUNCH_PATCH_FUNCTION remove_are_spawn_point
+        STR_VAR spawn_point_name = "Spawn Point 2" // ID spawn point
+    END
+
+
+
+
+    // modificare spawn point
+    LAUNCH_PATCH_FUNCTION edit_are_spawn_point
+        INT_VAR spawn_count = 3
+            difficulty = 1
+            spawn_rate = 6
+            spawn_method = 1
+            duration = 1000
+            wander_distance = 1000
+            follow_distance = 1000
+            max_creatures = 8
+            active = 1
+            hours_active = 0xffffffff
+            probability_day = 85
+            probability_night = 85
+            frequency = 16842752
+            countdown = 0 - 1
+            weight_1 = 0 - 12
+            weight_2 = 1
+            weight_3 = 0 - 36
+            weight_4 = 0
+            weight_5 = 0
+            weight_6 = 0
+            weight_7 = 0
+            weight_8 = 0
+            weight_9 = 0
+            weight_10 = 0
+        STR_VAR spawn_point_name = "Spawn Point 2" // ID spawn point
+            creature_1 = "GIBBER2"
+            creature_2 = "WOLF"
+            creature_3 = "WOLFDI"
+            creature_4 = ""
+            creature_5 = ""
+            creature_6 = ""
+            creature_7 = ""
+            creature_8 = ""
+            creature_9 = ""
+            creature_10 = ""
+    END
+
+
+
+
+    // rimuovere creatura
+    LAUNCH_PATCH_FUNCTION remove_are_actor
+        STR_VAR actor_name = "Gatewarden" // ID creatura - non file name
+    END
+
+
+
+
+    // rimuovere oggetto
+    LAUNCH_PATCH_FUNCTION remove_are_item
+        STR_VAR container_name = "Container 3" // ID container
+            item_name = "ring06"         // object
+    END
+
+
+
+
+
+    // sostituire oggetto
+    LAUNCH_PATCH_FUNCTION replace_are_item
+        INT_VAR charge_1 = 1
+            charge_2 = 1
+            charge_3 = 1
+            flags = 0        // 0 = none ; 1 = identified; 2 = unstealable; 4 = stolen; 8 = undroppabble (can add values)
+        STR_VAR container_name = "Container 3"
+            old_item_name = "ring06"
+            new_item_name = "ring10"
+    END
+
+
+
+
+
+
+
+    // aggiungere oggetto
+    LAUNCH_PATCH_FUNCTION add_are_item
+        INT_VAR charge_1 = 167    // count / charge 1
+            charge_2 = 0      // charge 2
+            charge_3 = 0      // charge 3
+            flags = 0        // 0 = none ; 1 = identified; 2 = unstealable; 4 = stolen; 8 = undroppabble (can add values)
+        STR_VAR container_name = "Container 3"
+            item_name = "misc07"
+    END
+
+
+
+
+    // modificare rest interrupt
+    LAUNCH_PATCH_FUNCTION edit_are_rest_interrupt
+        INT_VAR creature_count = 2 // number of non-blank creatures
+            difficulty = 2
+            removal_time = 1000
+            wander_distance = 1000
+            follow_distance = 1000
+            max_creatures = 10
+            active = 1
+            probability_day = 3
+            probability_night = 3
+        STR_VAR message_1 = "You are awakened as gibberlings come screaming out of the darkness."
+            message_2 = "The lonely cry of the wolf wakens you suddenly. Before you can properly get your bearings, a wolf pack is upon you."
+            message_3 = "Monsters awaken you from your rest."
+            message_4 = "Monsters awaken you from your rest."
+            message_5 = "Monsters awaken you from your rest."
+            message_6 = "Monsters awaken you from your rest."
+            message_7 = "Monsters awaken you from your rest."
+            message_8 = "Monsters awaken you from your rest."
+            message_9 = "Monsters awaken you from your rest."
+            message_10 = "Monsters awaken you from your rest."
+            creature_1 = "GIBBER"
+            creature_2 = "WOLF"
+            creature_3 = ""
+            creature_4 = ""
+            creature_5 = ""
+            creature_6 = ""
+            creature_7 = ""
+            creature_8 = ""
+            creature_9 = ""
+            creature_10 = ""
+    END
+
+*/

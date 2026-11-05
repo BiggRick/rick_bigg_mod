@@ -1,0 +1,23 @@
+// Lion's Way
+COPY_EXISTING ~bg2800.are~ ~override~
+
+    // Replace +1 ring with Gold Ring
+    LAUNCH_PATCH_FUNCTION replace_are_item
+        INT_VAR charge_1 = 1
+            charge_2 = 1
+            charge_3 = 1
+            flags = 0        // 0 = none ; 1 = identified; 2 = unstealable; 4 = stolen; 8 = undroppabble (can add values)
+        STR_VAR container_name = "Container 3"
+            old_item_name = "ring06"
+            new_item_name = "ring10"
+    END
+
+    // Add 167 gold to the old +1 ring
+    LAUNCH_PATCH_FUNCTION add_are_item
+        INT_VAR charge_1 = 167
+            charge_2 = 0
+            charge_3 = 0
+            flags = 0        // 0 = none ; 1 = identified; 2 = unstealable; 4 = stolen; 8 = undroppabble (can add values)
+        STR_VAR container_name = "Container 3"
+            item_name = "misc07"
+    END

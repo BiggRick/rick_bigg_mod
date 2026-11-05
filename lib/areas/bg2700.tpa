@@ -1,0 +1,41 @@
+// Coast Way
+COPY_EXISTING ~bg2700.are~ ~override~
+
+    // Replace Dread Wolf with Dire Wolf
+    LAUNCH_PATCH_FUNCTION edit_are_spawn_point
+        INT_VAR spawn_count = 3
+            difficulty = 1
+            spawn_rate = 6
+            spawn_method = 1
+            duration = 1000
+            wander_distance = 1000
+            follow_distance = 1000
+            max_creatures = 8
+            active = 1
+            hours_active = 0xffffffff // 0xffffffff = always
+            probability_day = 85
+            probability_night = 85
+            frequency = 16842752
+            countdown = 0 - 1
+            weight_1 = 0 - 12
+            weight_2 = 1
+            weight_3 = 0 - 36
+            weight_4 = 0
+            weight_5 = 0
+            weight_6 = 0
+            weight_7 = 0
+            weight_8 = 0
+            weight_9 = 0
+            weight_10 = 0
+        STR_VAR spawn_point_name = "Spawn Point 2" // ID spawn point
+            creature_1 = "GIBBER2"
+            creature_2 = "WOLF"
+            creature_3 = "WORG"
+            creature_4 = ""
+            creature_5 = ""
+            creature_6 = ""
+            creature_7 = ""
+            creature_8 = ""
+            creature_9 = ""
+            creature_10 = ""
+    END
