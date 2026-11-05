@@ -1,0 +1,300 @@
+//COMMON PEOPLE//
+	
+COPY_EXISTING 
+
+//Candlekeep//
+"chante.cre" "override"
+"chante2.cre" "override"
+"voieas.cre" "override"
+"voinor.cre" "override"
+"voisou.cre" "override"
+"voiwes.cre" "override"
+"parda.cre" "override"
+"parda1.cre" "override"
+"karan.cre" "override"
+"karan1.cre" "override"
+"innke2.cre" "override"
+"winthr2.cre" "override"
+"read.cre" "override"
+"read2.cre" "override"
+"read3.cre" "override"
+"read4.cre" "override"
+"read5.cre" "override"
+"read6.cre" "override"
+
+//Friendly Arm//
+"jopi.cre" "override"
+"surrey.cre" "override"
+"nessie.cre" "override"
+"whelp.cre" "override"
+
+//Beregost//
+"MTBE5.cre" "override"
+"MTBE9.cre" "override"
+"Algern.cre" "override"
+"NOBL10.cre" "override"
+"GOLINV.CRE" "override"
+"GYLLIA.CRE" "override"
+"MIRIAN.CRE" " override"
+"MTBE11.CRE" "override"
+"MTBE10.CRE" "override"
+"hephis.cre" "override"
+"OOGIEW.CRE "override"
+"TOWNCR.CRE" "override"
+"lachlu.cre" "override"
+"smith.cre" "override"
+"ashen.cre" "override"
+
+//Nord Nashkell//
+"PORTAL.CRE" "override"
+"lena.cre" "override"
+"samuel.cre" "override"
+
+//Nashkell//
+"oublek.cre" "override"
+"KARP.CRE" "override"
+"noober.cre" "override"
+"samant.cre" "override"
+"taris.cre" "override"
+"ftown2.cre" "override"
+"INNKN2.CRE" "override"
+
+//Nashkell Mines//
+"prism.cre" "override"
+"MINERN.CRE" "override"
+"cory.CRE" "override"
+"dilak.CRE" "override"
+"dink.CRE" "override"
+"ruffie.CRE" "override"
+"gord.CRE" "override"
+"lesley.CRE" "override"
+"kylee.CRE" "override"
+"beldin.CRE" "override"
+
+//Carnival//
+"LESTOR.CRE" "override"
+"BINKY.CRE" "override"
+"NOSFER.CRE" "override"
+"PNASHK.CRE" "override"
+"PERFBA.CRE" "override"
+"PNASK.CRE" "override"
+
+//Noble//
+"nobl6.cre" "override"
+"nobl5.cre" "override"
+"nobl4.cre" "override"
+"nobw4.cre" "override"
+
+//Common People BG//
+"FTOWFR.cre" "override"
+"FTOWFR_B.cre" "override"
+"FTOWFR_D.cre" "override"
+"FTOWFR_E.cre" "override"
+"FTOWFRSC.cre" "override"
+"MTOWFR.cre" "override"
+"MTOWFR_A.cre" "override"
+"MTOWFR_B.cre" "override"
+"MTOWFR_C.cre" "override"
+"MTOWFR_D.cre" "override"
+"MTOWFR_E.cre" "override"
+"MTOWFRSC.cre" "override"
+"MTOWFRST.cre" "override"
+"FTOWBE_A.CRE" "override"
+"FTOWBE_B.CRE" "override"
+"FTOWBE_C.CRE" "override"
+"FTOWBE_D.CRE" "override"
+"FTOWBE_E.CRE" "override"
+"FTOWBESC.CRE" "override"
+"FTOWBEX.CRE" "override"
+"MTOWBE.CRE" "override"
+"MTOWBE_A.CRE" "override"
+"MTOWBE_B.CRE" "override"
+"MTOWBE_C.CRE" "override"
+"MTOWBE_D.CRE" "override"
+"MTOWBE_E.CRE" "override"
+"MTOWBESC.CRE" "override"
+"MTOWBEST.CRE" "override"
+"MTOWBEX.CRE" "override"
+"travel2.cre" "override"
+"travel.cre" "override"
+"FTOWN2.CRE" "override"
+
+//Cook BG//
+"MCOOK.cre" "override"
+"MCOOK2.cre" "override"
+"MCOOK3.cre" "override"
+"MCOOK4.cre" "override"
+"MCOOK5.cre" "override"
+"MCOOK6.cre" "override"
+"COOKGE.cre" "override"
+
+//Bartender//
+"BART2.CRE" "override"
+"BART3.CRE" "override"
+"BART4.CRE" "override"
+"BART5.CRE" "override"
+"BART6.CRE" "override"
+"BART7.CRE" "override"
+"BART8.CRE" "override"
+"BART9.CRE" "override"
+"BART10.CRE" "override"
+"Merchant.CRE" "override"
+"BART11.CRE" "override"
+"BART12.CRE" "override"
+"BART13.CRE" "override"
+"BART14.CRE" "override"
+"BART15.CRE" "override"
+"BART16.CRE" "override"
+"BARSLIM.CRE" "override"
+"BART0133.CRE" "override"
+"BART0720.CRE" "override"
+
+//Prostitute//
+"PROSBA_B.CRE" "override"
+"PROSBA_C.CRE" "override"
+
+//Farmer//
+"FARM.CRE" "override"
+"FARM3.CRE" "override"
+"farm.CRE" "override"
+"FARM4.CRE" "override"
+"FARMER.CRE" "override"
+
+	WRITE_LONG 0x14 7 //EXP//
+	WRITE_SHORT 0x24 5 //PF//
+	WRITE_SHORT 0x26 5 //ACTUAL PF//
+	WRITE_SHORT 0x46 10 //AC//
+	WRITE_SHORT 0x48 10 //AC//
+	WRITE_SHORT 0x4A 0 //AC CRUSHING//
+	WRITE_SHORT 0x4C 0 //AC MISSILE//
+	WRITE_SHORT 0x4E 0 //AC PIERCING//
+	WRITE_SHORT 0x50 0 //AC SLASHING//
+	WRITE_BYTE 0x52 20 //THAC0//
+	WRITE_BYTE 0x53 1 //N°ATT//
+	WRITE_BYTE 0x54 16 //SAVEDEATH//
+	WRITE_BYTE 0x55 18 //SAVEWAND//
+	WRITE_BYTE 0x56 17 //SAVEPOLY//
+	WRITE_BYTE 0x57 20 //SAVEBREATH//
+	WRITE_BYTE 0x58 19 //SAVESPELL//
+	WRITE_BYTE 0x59 0 //FIRERES//
+	WRITE_BYTE 0x5A 0 //COLDRES//
+	WRITE_BYTE 0x5B 0 //ELECRES//
+	WRITE_BYTE 0x5C 0 //ACIDRES//
+	WRITE_BYTE 0x5D 0 //MAGICRES//
+	WRITE_BYTE 0x60 0 //SLASHINGRES//
+	WRITE_BYTE 0x61 0 //CRUSHINGRES//
+	WRITE_BYTE 0x62 0 //PIERCINGRES//
+	WRITE_BYTE 0x63 0 //MISSILERES//
+	WRITE_BYTE 0x6E 0 //LARGESWORDS//
+	WRITE_BYTE 0x6F 0 //SMALLSWORDS//
+	WRITE_BYTE 0x70 0 //BOW//
+	WRITE_BYTE 0x71 0 //SPEAR//
+	WRITE_BYTE 0x72 0 //BLUNT//
+	WRITE_BYTE 0x73 0 //SPIKED//
+	WRITE_BYTE 0x74 0 //AXE//
+	WRITE_BYTE 0x75 0 //MISSILE//
+	WRITE_BYTE 0x234 1 //LIV1CLASS//
+	WRITE_BYTE 0x235 0 //LIV2CLASS//
+	WRITE_BYTE 0x236 0 //LIV3CLASS//
+	WRITE_BYTE 0x238 9 //STR//
+	WRITE_BYTE 0x239 0 //STREX//
+	WRITE_BYTE 0x23A 9 //INT//
+	WRITE_BYTE 0x23B 9 //SAG//
+	WRITE_BYTE 0x23C 9 //DEX//
+	WRITE_BYTE 0x23D 9 //CON//
+	WRITE_BYTE 0x23E 9 //CHR//
+	WRITE_BYTE 0x23F 10 //MORALEDEFAULT//
+	WRITE_BYTE 0x240 7 //MORALERUN//
+	
+	
+	
+	
+//Boy//
+"BOYBA1.cre" "override"
+"BOYBA1_A.cre" "override" 
+"BOYBA1_B.cre" "override"
+"BOYBA1_C.cre" "override"
+"BOYBA2.cre" "override"
+"BOYBA3.cre" "override"
+"BOYBA3_A.cre" "override"
+"BOYBA3_B.cre" "override"
+"BOYBAX.cre" "override"
+"BOYBAX_A.cre" "override"
+"BOYBAX_B.cre" "override"
+"BOYBAX_C.cre" "override"
+"BOYBE1.cre" "override"
+"BOYBE2.cre" "override"
+"CHILDULG.cre" "override"
+"CHILNA.cre" "override"
+"CHILNA_A.cre" "override"
+"CHILNA_B.cre" "override"
+"CHILNA_C.cre" "override"
+"CHILNA_D.cre" "override"
+"BOY3.cre" "override"
+"BOYBA1.cre" "override"
+"BRAT1.cre" "override"
+"BRAT3.cre" "override"
+"BURCH1.cre" "override"
+"DASLAVE3.cre" "override"
+"GCHILD01.cre" "override"
+"SLBOY.cre" "override"
+"SPOILED1.cre" "override"
+"SUELF5.cre" "override"
+"TRKID03.cre" "override"
+"URCHIN1.cre" "override"
+"URCHIN3.cre" "override"
+"AMBOY01.CRE" "override"
+"AMBOY02.CRE" "override"
+"AMBSLEEP.CRE" "override"
+"AMGRAV01.CRE" "override"
+"AMINTB01.CRE" "override"
+"ORPHAN1.CRE" "override"
+"SARBOY01.CRE" "override"
+"SHELLI.CRE" "override"
+"jase.cre" "override"
+
+WRITE_LONG 0x14 1 //EXP//
+	WRITE_SHORT 0x24 3 //PF//
+	WRITE_SHORT 0x26 3 //ACTUAL PF//
+	WRITE_SHORT 0x46 10 //AC//
+	WRITE_SHORT 0x48 10 //AC//
+	WRITE_SHORT 0x4A 0 //AC CRUSHING//
+	WRITE_SHORT 0x4C 0 //AC MISSILE//
+	WRITE_SHORT 0x4E 0 //AC PIERCING//
+	WRITE_SHORT 0x50 0 //AC SLASHING//
+	WRITE_BYTE 0x52 20 //THAC0//
+	WRITE_BYTE 0x53 1 //N°ATT//
+	WRITE_BYTE 0x54 16 //SAVEDEATH//
+	WRITE_BYTE 0x55 18 //SAVEWAND//
+	WRITE_BYTE 0x56 17 //SAVEPOLY//
+	WRITE_BYTE 0x57 20 //SAVEBREATH//
+	WRITE_BYTE 0x58 19 //SAVESPELL//
+	WRITE_BYTE 0x59 0 //FIRERES//
+	WRITE_BYTE 0x5A 0 //COLDRES//
+	WRITE_BYTE 0x5B 0 //ELECRES//
+	WRITE_BYTE 0x5C 0 //ACIDRES//
+	WRITE_BYTE 0x5D 0 //MAGICRES//
+	WRITE_BYTE 0x60 0 //SLASHINGRES//
+	WRITE_BYTE 0x61 0 //CRUSHINGRES//
+	WRITE_BYTE 0x62 0 //PIERCINGRES//
+	WRITE_BYTE 0x63 0 //MISSILERES//
+	WRITE_BYTE 0x6E 0 //LARGESWORDS//
+	WRITE_BYTE 0x6F 0 //SMALLSWORDS//
+	WRITE_BYTE 0x70 0 //BOW//
+	WRITE_BYTE 0x71 0 //SPEAR//
+	WRITE_BYTE 0x72 0 //BLUNT//
+	WRITE_BYTE 0x73 0 //SPIKED//
+	WRITE_BYTE 0x74 0 //AXE//
+	WRITE_BYTE 0x75 0 //MISSILE//
+	WRITE_BYTE 0x234 1 //LIV1CLASS//
+	WRITE_BYTE 0x235 0 //LIV2CLASS//
+	WRITE_BYTE 0x236 0 //LIV3CLASS//
+	WRITE_BYTE 0x238 9 //STR//
+	WRITE_BYTE 0x239 0 //STREX//
+	WRITE_BYTE 0x23A 9 //INT//
+	WRITE_BYTE 0x23B 9 //SAG//
+	WRITE_BYTE 0x23C 9 //DEX//
+	WRITE_BYTE 0x23D 9 //CON//
+	WRITE_BYTE 0x23E 9 //CHR//
+	WRITE_BYTE 0x23F 10 //MORALEDEFAULT//
+	WRITE_BYTE 0x240 7 //MORALERUN//
