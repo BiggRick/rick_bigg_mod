@@ -96,3 +96,21 @@ Weight: 3"
 	SAY DESC "A typical tome of understanding contains a sober, if dry analysis of legal battles, historic events, government policies, philosophical treatises, and theories of magic and metaphysics.
 
 Weight: 25"
+
+
+
+//UNSHEY'S GIRDLE - 1mo//
+COPY "rick_bigg_mod/items/BDBELT01.itm" "override"
+	SAY NAME1 "Unshey's Girdle"
+	SAY UNIDENTIFIED_DESC "Girdles are generally similar to belts. Unlike belts, girdles are not used to hold up pants and dungarees, but to carry pouches, scabbards, and the like. 
+
+STATISTICS:
+
+Weight: 3"
+
+	SAY NAME2 "Unshey's Girdle"
+	SAY DESC "Girdles are generally similar to belts. Unlike belts, girdles are not used to hold up pants and dungarees, but to carry pouches, scabbards, and the like. 
+
+STATISTICS:
+
+Weight: 3"
