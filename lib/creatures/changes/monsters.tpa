@@ -2585,7 +2585,7 @@ COPY_EXISTING "rat.cre" "override"
 "bat_in.cre" "override"
 "bat_out.cre" "override"
 "batin01.cre" "override"
-"batou01.cre" "override"
+"batout01.cre" "override"
 	
 	WRITE_LONG 0x14 1 //EXP//
 	WRITE_SHORT 0x24 1 //PF//
@@ -6283,7 +6283,7 @@ COPY_EXISTING "wasleep.cre" "override"
 "watch6.cre" "override"
 "watch9.cre" "override"
 "watchn.cre" "override"
-"watcn2.cre" "override"
+"watchn2.cre" "override"
 "watchn3.cre" "override"
 "hull.cre" "override"
 "hull2.cre" "override"
