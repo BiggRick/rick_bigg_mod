@@ -1,5 +1,5 @@
 //SHORT SWORD +2 - 1800mo//
-COPY "rick_bigg_mod/items/SW1H09.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/SW1H09.itm" "override"
 	SAY NAME1 "Short Sword"
 	SAY UNIDENTIFIED_DESC "The short sword is the first type of sword to come into existence. In the simplest of terms, a short sword can be considered a dagger with a blade so long that it can no longer be called a dagger. The term short sword does not exist in sword classifications. However, it has come to be used to describe a double-edged blade about two feet in length. The sword tip is usually pointed, ideal for thrusting.
 
@@ -35,7 +35,7 @@ Weight: 2"
 
 
 //THE SHADOW'S BLADE +3 - 6500mo - solo ladri//
-COPY "rick_bigg_mod/items/SW1H10.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/SW1H10.itm" "override"
 	SAY NAME1 "Short Sword"
 	SAY UNIDENTIFIED_DESC "The short sword is the first type of sword to come into existence. In the simplest of terms, a short sword can be considered a dagger with a blade so long that it can no longer be called a dagger. The term short sword does not exist in sword classifications. However, it has come to be used to describe a double-edged blade about two feet in length. The sword tip is usually pointed, ideal for thrusting.
 
@@ -73,7 +73,7 @@ Weight: 3"
 
 
 //ARBANE +2 - 5500mo//
-COPY "rick_bigg_mod/items/SW1H27.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/SW1H27.itm" "override"
 	SAY NAME1 "Short Sword"
 	SAY UNIDENTIFIED_DESC "The short sword is the first type of sword to come into existence. In the simplest of terms, a short sword can be considered a dagger with a blade so long that it can no longer be called a dagger. The term short sword does not exist in sword classifications. However, it has come to be used to describe a double-edged blade about two feet in length. The sword tip is usually pointed, ideal for thrusting.
 
@@ -111,7 +111,7 @@ Weight: 2"
 
 
 //ILBRATHA +2 - 4500mo//
-COPY "rick_bigg_mod/items/SW1H26.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/SW1H26.itm" "override"
 	SAY NAME1 "Short Sword"
 	SAY UNIDENTIFIED_DESC "The short sword is the first type of sword to come into existence. In the simplest of terms, a short sword can be considered a dagger with a blade so long that it can no longer be called a dagger. The term short sword does not exist in sword classifications. However, it has come to be used to describe a double-edged blade about two feet in length. The sword tip is usually pointed, ideal for thrusting.
 
@@ -151,7 +151,7 @@ Weight: 2"
 
 
 //WHISTLING SWORD +3 - 7000mo//
-COPY "rick_bigg_mod/items/SW1H25.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/SW1H25.itm" "override"
 	SAY NAME1 "Short Sword"
 	SAY UNIDENTIFIED_DESC "The short sword is the first type of sword to come into existence. In the simplest of terms, a short sword can be considered a dagger with a blade so long that it can no longer be called a dagger. The term short sword does not exist in sword classifications. However, it has come to be used to describe a double-edged blade about two feet in length. The sword tip is usually pointed, ideal for thrusting.
 
@@ -189,7 +189,7 @@ Weight: 2"
 
 
 //CUTTHROAT +4 - 9000mo//
-COPY "rick_bigg_mod/items/SW1H28.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/SW1H28.itm" "override"
 	SAY NAME1 "Short Sword"
 	SAY UNIDENTIFIED_DESC "The short sword is the first type of sword to come into existence. In the simplest of terms, a short sword can be considered a dagger with a blade so long that it can no longer be called a dagger. The term short sword does not exist in sword classifications. However, it has come to be used to describe a double-edged blade about two feet in length. The sword tip is usually pointed, ideal for thrusting.
 
@@ -227,7 +227,7 @@ Weight: 2"
 
 
 //BLACKRAZOR +4 - 14000mo - solo malvagi//
-COPY "rick_bigg_mod/items/MISCBC.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/MISCBC.itm" "override"
 	SAY NAME1 "Short Sword"
 	SAY UNIDENTIFIED_DESC "The short sword is the first type of sword to come into existence. In the simplest of terms, a short sword can be considered a dagger with a blade so long that it can no longer be called a dagger. The term short sword does not exist in sword classifications. However, it has come to be used to describe a double-edged blade about two feet in length. The sword tip is usually pointed, ideal for thrusting.
 
@@ -268,7 +268,7 @@ Weight: 2"
 
 
 //SWORD OF THE MASK +4 - 9000mo//
-COPY "rick_bigg_mod/items/SW1H58.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/SW1H58.itm" "override"
 	SAY NAME1 "Short Sword"
 	SAY UNIDENTIFIED_DESC "The short sword is the first type of sword to come into existence. In the simplest of terms, a short sword can be considered a dagger with a blade so long that it can no longer be called a dagger. The term short sword does not exist in sword classifications. However, it has come to be used to describe a double-edged blade about two feet in length. The sword tip is usually pointed, ideal for thrusting.
 
@@ -307,7 +307,7 @@ Weight: 2"
 
 
 //SWORD OF THE MASK +5 - 16000mo//
-COPY "rick_bigg_mod/items/SW1H59.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/SW1H59.itm" "override"
 	SAY NAME1 "Short Sword"
 	SAY UNIDENTIFIED_DESC "The short sword is the first type of sword to come into existence. In the simplest of terms, a short sword can be considered a dagger with a blade so long that it can no longer be called a dagger. The term short sword does not exist in sword classifications. However, it has come to be used to describe a double-edged blade about two feet in length. The sword tip is usually pointed, ideal for thrusting.
 

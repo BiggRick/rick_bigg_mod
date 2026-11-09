@@ -1,5 +1,5 @@
 //CLAIRVOYANCE//
-COPY "rick_bigg_mod/spell/SPWI301.spl" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/spell/SPWI301.spl" "override"
 	SAY NAME1 "Clairvoyance"
 	SAY UNIDENTIFIED_DESC 
 "Clairvoyance
@@ -19,7 +19,7 @@ This spell grants an unnatural perception of things to come. Once Clairvoyance i
 
 
 //CONFUSION//
-COPY "rick_bigg_mod/spell/SPWI401.spl" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/spell/SPWI401.spl" "override"
 	SAY NAME1 "Confusion"
 	SAY UNIDENTIFIED_DESC 
 "Confusion
@@ -38,7 +38,7 @@ This spell causes confusion in one or more creatures within the area, creating i
 
 
 //DIRE CHARM//
-COPY "rick_bigg_mod/spell/SPWI316.spl" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/spell/SPWI316.spl" "override"
 	SAY NAME1 "Dire Charm"
 	SAY UNIDENTIFIED_DESC 
 "Dire Charm
@@ -59,7 +59,7 @@ If the caster harms, or attempts to harm, the charmed creature by some overt act
 
 
 //INVISIBILITY SPHERE//
-COPY "rick_bigg_mod/spell/SPWI307.spl" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/spell/SPWI307.spl" "override"
 	SAY NAME1 "Invisibility Sphere"
 	SAY UNIDENTIFIED_DESC 
 "Invisibility Sphere
@@ -79,7 +79,7 @@ This spell confers invisibility upon all friendly creatures within 10 feet of th
 
 
 //HASTE//
-COPY "rick_bigg_mod/spell/SPWI305.spl" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/spell/SPWI305.spl" "override"
 	SAY NAME1 "Haste"
 	SAY UNIDENTIFIED_DESC 
 "Haste
@@ -99,7 +99,7 @@ When this spell is cast, the affected creatures gain +6 to movement rate and can
 
 
 //HALT UNDEAD//
-COPY "rick_bigg_mod/spell/SPWI324.spl" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/spell/SPWI324.spl" "override"
 	SAY NAME1 "Halt Undead"
 	SAY UNIDENTIFIED_DESC 
 "Halt Undead
@@ -121,7 +121,7 @@ Those affected become unable move or groan, but they remain aware of events arou
 
 
 //SKULL TRAP//
-COPY "rick_bigg_mod/spell/SPWI313.spl" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/spell/SPWI313.spl" "override"
 	SAY NAME1 "Skull Trap"
 	SAY UNIDENTIFIED_DESC 
 "Skull Trap
@@ -141,7 +141,7 @@ Upon casting this spell, a skull is thrown by the caster at the target area. The
 
 
 //VAMPIRIC BITE//
-COPY "rick_bigg_mod/spell/SPWI314.spl" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/spell/SPWI314.spl" "override"
 	SAY NAME1 "Vampiric Bite"
 	SAY UNIDENTIFIED_DESC 
 "Vampiric Bite
@@ -162,7 +162,7 @@ Note that this spell may not be cast multiple times to radically increase the ca
 
 
 //ICELANCE//
-COPY "rick_bigg_mod/spell/SPWI323.spl" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/spell/SPWI323.spl" "override"
 	SAY NAME1 "Icelance"
 	SAY UNIDENTIFIED_DESC 
 "Icelance
@@ -181,7 +181,7 @@ When this spell is cast, a sharp spear of ice impales the target, inflicting 5d6
 
 
 //FLAME ARROW//
-COPY "rick_bigg_mod/spell/SPWI303.spl" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/spell/SPWI303.spl" "override"
 	SAY NAME1 "Flame Arrow"
 	SAY UNIDENTIFIED_DESC 
 "Flame Arrow
@@ -199,7 +199,7 @@ This spell enables the caster to hurl flaming arrows at his enemies. The caster 
 
 
 //MELF'S MINUTE METEORS//
-COPY "rick_bigg_mod/spell/SPWI325.spl" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/spell/SPWI325.spl" "override"
 	SAY NAME1 "Melf's Minute Meteor"
 	SAY UNIDENTIFIED_DESC 
 "Melf's Minute Meteors
@@ -219,7 +219,7 @@ This spell enables the wizard to summon small globes of fire (5 globes at 5th le
 
 
 //KNOCK//
-COPY "rick_bigg_mod/spell/SPWI207.spl" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/spell/SPWI207.spl" "override"
 	SAY NAME1 "Knock"
 	SAY UNIDENTIFIED_DESC 
 "Knock

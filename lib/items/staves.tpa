@@ -1,5 +1,5 @@
 //STAFF +1 - 750mo//
-COPY "rick_bigg_mod/items/STAF02.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/STAF02.itm" "override"
 	SAY NAME1 "Staff"
 	SAY UNIDENTIFIED_DESC "The simplest and humblest of staff weapons, the quarterstaff is a length of wood ranging six to nine feet in length. High-quality quarterstaves are made of stout oak and are shod with metal at both ends. The quarterstaff must be wielded with both hands.
 
@@ -37,7 +37,7 @@ Weight: 3"
 
 
 //STAFF +2- 1500mo//
-COPY "rick_bigg_mod/items/STAF18.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/STAF18.itm" "override"
 	SAY NAME1 "Staff"
 	SAY UNIDENTIFIED_DESC "The simplest and humblest of staff weapons, the quarterstaff is a length of wood ranging six to nine feet in length. High-quality quarterstaves are made of stout oak and are shod with metal at both ends. The quarterstaff must be wielded with both hands.
 
@@ -72,7 +72,7 @@ Weight: 3"
 
 
 //STAFF OF STRIKING +2 - 5000mo//
-COPY "rick_bigg_mod/items/STAF05.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/STAF05.itm" "override"
 	SAY NAME1 "Staff"
 	SAY UNIDENTIFIED_DESC "The simplest and humblest of staff weapons, the quarterstaff is a length of wood ranging six to nine feet in length. High-quality quarterstaves are made of stout oak and are shod with metal at both ends. The quarterstaff must be wielded with both hands.
 
@@ -109,7 +109,7 @@ Weight: 4"
 
 
 //STAFF SPEAR +2 - 3500mo//
-COPY "rick_bigg_mod/items/STAF07.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/STAF07.itm" "override"
 	SAY NAME1 "Staff"
 	SAY UNIDENTIFIED_DESC "The simplest and humblest of staff weapons, the quarterstaff is a length of wood ranging six to nine feet in length. High-quality quarterstaves are made of stout oak and are shod with metal at both ends. The quarterstaff must be wielded with both hands.
 
@@ -142,7 +142,7 @@ Requires:
 
 
 //STAFF MACE +2 - 3500mo//
-COPY "rick_bigg_mod/items/STAF06.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/STAF06.itm" "override"
 	SAY NAME1 "Staff"
 	SAY UNIDENTIFIED_DESC "The simplest and humblest of staff weapons, the quarterstaff is a length of wood ranging six to nine feet in length. High-quality quarterstaves are made of stout oak and are shod with metal at both ends. The quarterstaff must be wielded with both hands.
 
@@ -177,7 +177,7 @@ Weight: 4
 
 
 //ROD OF SMITING +3 - 7500mo//
-COPY "rick_bigg_mod/items/RODS04.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/RODS04.itm" "override"
 	SAY NAME1 "Staff"
 	SAY UNIDENTIFIED_DESC "Rods are about three feet long and as thick as your thumb. They are normally found in cases or similar storage places. Rods can be fashioned from metal, wood, ivory, or bone. They can be plain or decorated and carved, tipped, or not. Rods are powered by charges, unless noted otherwise in the description of a particular rod. Each time the rod is used, one or more charge may be expended.
 
@@ -208,7 +208,7 @@ Weight: 3
 
 
 //STAFF OF THUNDER AND LIGHTNING +2 - solo druidi - 6000mo//
-COPY "rick_bigg_mod/items/STAF13.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/STAF13.itm" "override"
 	SAY NAME1 "Staff"
 	SAY UNIDENTIFIED_DESC "The simplest and humblest of staff weapons, the quarterstaff is a length of wood ranging six to nine feet in length. High-quality quarterstaves are made of stout oak and are shod with metal at both ends. The quarterstaff must be wielded with both hands.
 
@@ -257,7 +257,7 @@ Weight: 4
 
 
 //ROD OF TERROR +3 - 7000mo//
-COPY "rick_bigg_mod/items/RODS05.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/RODS05.itm" "override"
 	SAY NAME1 "Rod"
 	SAY UNIDENTIFIED_DESC "Rods are about three feet long and as thick as your thumb. They are normally found in cases or similar storage places. Rods can be fashioned from metal, wood, ivory, or bone. They can be plain or decorated and carved, tipped, or not. Rods are powered by charges, unless noted otherwise in the description of a particular rod. Each time the rod is used, one or more charge may be expended.
 
@@ -288,7 +288,7 @@ Weight: 3
 
 
 //STAFF OF AIR +3 - solo maghi, bardi e druidi - 80000mo//
-COPY "rick_bigg_mod/items/STAF15.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/STAF15.itm" "override"
 	SAY NAME1 "Staff"
 	SAY UNIDENTIFIED_DESC "The simplest and humblest of staff weapons, the quarterstaff is a length of wood ranging six to nine feet in length. High-quality quarterstaves are made of stout oak and are shod with metal at both ends. The quarterstaff must be wielded with both hands.
 
@@ -339,7 +339,7 @@ Weight: 2
 
 
 //STAFF OF EARTH +3 - solo maghi, bardi e druidi - 80000mo//
-COPY "rick_bigg_mod/items/STAF16.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/STAF16.itm" "override"
 	SAY NAME1 "Staff"
 	SAY UNIDENTIFIED_DESC "The simplest and humblest of staff weapons, the quarterstaff is a length of wood ranging six to nine feet in length. High-quality quarterstaves are made of stout oak and are shod with metal at both ends. The quarterstaff must be wielded with both hands.
 
@@ -391,7 +391,7 @@ Weight: 2
 
 
 //STAFF OF WATER +3 - solo maghi, bardi e druidi - 80000mo//
-COPY "rick_bigg_mod/items/TB#STAFW.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/TB#STAFW.itm" "override"
 	SAY NAME1 "Staff"
 	SAY UNIDENTIFIED_DESC "The simplest and humblest of staff weapons, the quarterstaff is a length of wood ranging six to nine feet in length. High-quality quarterstaves are made of stout oak and are shod with metal at both ends. The quarterstaff must be wielded with both hands.
 
@@ -440,7 +440,7 @@ Weight: 2
 
 
 //STAFF OF FIRE +3 - solo maghi, bardi e druidi - 80000mo//
-COPY "rick_bigg_mod/items/STAF17.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/STAF17.itm" "override"
 	SAY NAME1 "Staff"
 	SAY UNIDENTIFIED_DESC "The simplest and humblest of staff weapons, the quarterstaff is a length of wood ranging six to nine feet in length. High-quality quarterstaves are made of stout oak and are shod with metal at both ends. The quarterstaff must be wielded with both hands.
 
@@ -493,7 +493,7 @@ Weight: 2
 
 
 //STAFF OF COMMAND +3 - 10000mo//
-COPY "rick_bigg_mod/items/STAF09.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/STAF09.itm" "override"
 	SAY NAME1 "Staff"
 	SAY UNIDENTIFIED_DESC "The simplest and humblest of staff weapons, the quarterstaff is a length of wood ranging six to nine feet in length. High-quality quarterstaves are made of stout oak and are shod with metal at both ends. The quarterstaff must be wielded with both hands.
 
@@ -536,7 +536,7 @@ Weight: 2
 
 
 //SERPENT SHAFT +4 - valore 9500mo//
-COPY "rick_bigg_mod/items/STAF23.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/STAF23.itm" "override"
 	SAY NAME1 "Staff"
 	SAY UNIDENTIFIED_DESC "The simplest and humblest of staff weapons, the quarterstaff is a length of wood ranging six to nine feet in length. High-quality quarterstaves are made of stout oak and are shod with metal at both ends. The quarterstaff must be wielded with both hands.
 
@@ -575,7 +575,7 @@ Weight: 2
 
 
 //STAFF OF RHYNN +4 - valore 14000mo//
-COPY "rick_bigg_mod/items/STAF20.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/STAF20.itm" "override"
 	SAY NAME1 "Staff"
 	SAY UNIDENTIFIED_DESC "The simplest and humblest of staff weapons, the quarterstaff is a length of wood ranging six to nine feet in length. High-quality quarterstaves are made of stout oak and are shod with metal at both ends. The quarterstaff must be wielded with both hands.
 
@@ -618,7 +618,7 @@ Weight: 3
 
 
 //STAFF OF THE WOODLANDS +5 - 16000mo - solo druidi puri//
-COPY "rick_bigg_mod/items/STAF14.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/STAF14.itm" "override"
 	SAY NAME1 "Staff"
 	SAY UNIDENTIFIED_DESC "The simplest and humblest of staff weapons, the quarterstaff is a length of wood ranging six to nine feet in length. High-quality quarterstaves are made of stout oak and are shod with metal at both ends. The quarterstaff must be wielded with both hands.
 
@@ -667,7 +667,7 @@ Weight: 2
 
 
 //STAFF OF THE MAGI +5 - 25000mo - solo maghi//
-COPY "rick_bigg_mod/items/STAF11.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/STAF11.itm" "override"
 	SAY NAME1 "Staff"
 	SAY UNIDENTIFIED_DESC "The simplest and humblest of staff weapons, the quarterstaff is a length of wood ranging six to nine feet in length. High-quality quarterstaves are made of stout oak and are shod with metal at both ends. The quarterstaff must be wielded with both hands.
 
@@ -718,7 +718,7 @@ Weight: 4
 
 
 //STAFF OF THE RAM +4 - 11000mo//
-COPY "rick_bigg_mod/items/STAF21.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/STAF21.itm" "override"
 	SAY NAME1 "Staff"
 	SAY UNIDENTIFIED_DESC "The simplest and humblest of staff weapons, the quarterstaff is a length of wood ranging six to nine feet in length. High-quality quarterstaves are made of stout oak and are shod with metal at both ends. The quarterstaff must be wielded with both hands.
 
@@ -759,7 +759,7 @@ Weight: 3
 
 
 //STAFF OF THE RAM +6 - 20000mo//
-COPY "rick_bigg_mod/items/STAF22.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/STAF22.itm" "override"
 	SAY NAME1 "Staff"
 	SAY UNIDENTIFIED_DESC "The simplest and humblest of staff weapons, the quarterstaff is a length of wood ranging six to nine feet in length. High-quality quarterstaves are made of stout oak and are shod with metal at both ends. The quarterstaff must be wielded with both hands.
 

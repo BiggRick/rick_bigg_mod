@@ -1,5 +1,5 @@
 //BOOTS OF SPEED - 3000mo//
-COPY "rick_bigg_mod/items/BOOT01.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BOOT01.itm" "override"
 	SAY NAME1 "Boots"
 	SAY UNIDENTIFIED_DESC "Boots are normally handmade by cobblers. Common boots are made by using a form, but good boots are designed for the foot of an individual. 
 
@@ -20,7 +20,7 @@ Weight: 4"
 
 
 //BOOTS OF STEALTH - 1500mo//
-COPY "rick_bigg_mod/items/BOOT02.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BOOT02.itm" "override"
 	SAY NAME1 "Boots"
 	SAY UNIDENTIFIED_DESC "Boots are normally handmade by cobblers. Common boots are made by using a form, but good boots are designed for the foot of an individual. 
 
@@ -42,7 +42,7 @@ Weight: 4"
 
 
 //BOOTS OF THE NORTH - 1250mo//
-COPY "rick_bigg_mod/items/BOOT03.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BOOT03.itm" "override"
 	SAY NAME1 "Boots"
 	SAY UNIDENTIFIED_DESC "Boots are normally handmade by cobblers. Common boots are made by using a form, but good boots are designed for the foot of an individual. 
 
@@ -65,7 +65,7 @@ Weight: 4"
 
 
 //BOOTS OF AVOIDANCE - 2500mo//
-COPY "rick_bigg_mod/items/BOOT04.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BOOT04.itm" "override"
 	SAY NAME1 "Boots"
 	SAY UNIDENTIFIED_DESC "Boots are normally handmade by cobblers. Common boots are made by using a form, but good boots are designed for the foot of an individual. 
 
@@ -88,7 +88,7 @@ Weight: 4"
 
 
 //BOOTS OF GROUNDING - 1750mo//
-COPY "rick_bigg_mod/items/BOOT05.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BOOT05.itm" "override"
 	SAY NAME1 "Boots"
 	SAY UNIDENTIFIED_DESC "Boots are normally handmade by cobblers. Common boots are made by using a form, but good boots are designed for the foot of an individual. 
 
@@ -110,7 +110,7 @@ Weight: 4"
 
 
 //BOOTS OF ELVENKIND - solo ladri e ranger - 5000mo//
-COPY "rick_bigg_mod/items/BOOT07.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BOOT07.itm" "override"
 	SAY NAME1 "Boots"
 	SAY UNIDENTIFIED_DESC "Boots are normally handmade by cobblers. Common boots are made by using a form, but good boots are designed for the foot of an individual. 
 
@@ -133,7 +133,7 @@ Weight: 3"
 
 
 //BOOTS OF PHASING - 2000mo//
-COPY "rick_bigg_mod/items/BOOT08.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BOOT08.itm" "override"
 	SAY NAME1 "Boots"
 	SAY UNIDENTIFIED_DESC "Boots are normally handmade by cobblers. Common boots are made by using a form, but good boots are designed for the foot of an individual. 
 
@@ -159,7 +159,7 @@ Weight: 4"
 
 
 //ROCKY BOOTS - 1500mo//
-COPY "rick_bigg_mod/items/BOOT09.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BOOT09.itm" "override"
 	SAY NAME1 "Boots"
 	SAY UNIDENTIFIED_DESC "Boots are normally handmade by cobblers. Common boots are made by using a form, but good boots are designed for the foot of an individual. 
 
@@ -182,7 +182,7 @@ Weight: 3"
 
 
 //STAR-STREWN BOOTS - 3500mo//
-COPY "rick_bigg_mod/items/BOOT10.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BOOT10.itm" "override"
 	SAY NAME1 "Boots"
 	SAY UNIDENTIFIED_DESC "Boots are normally handmade by cobblers. Common boots are made by using a form, but good boots are designed for the foot of an individual. 
 
@@ -205,7 +205,7 @@ Weight: 4"
 
 
 //OSTENTATIOUS BOOTS - 1500mo//
-COPY "rick_bigg_mod/items/BDBOOT02.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BDBOOT02.itm" "override"
 	SAY NAME1 "Boots"
 	SAY UNIDENTIFIED_DESC "Boots are normally handmade by cobblers. Common boots are made by using a form, but good boots are designed for the foot of an individual. 
 
@@ -226,7 +226,7 @@ Weight: 4"
 
 
 //BOOTS OF THE WEST - 1500mo//
-COPY "rick_bigg_mod/items/MISC8J.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/MISC8J.itm" "override"
 	SAY NAME1 "Boots"
 	SAY UNIDENTIFIED_DESC "Boots are normally handmade by cobblers. Common boots are made by using a form, but good boots are designed for the foot of an individual. 
 
@@ -249,7 +249,7 @@ Weight: 4"
 
 
 //BOOTS OF ETHEREALNESS - 6500mo//
-COPY "rick_bigg_mod/items/BOOT11.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BOOT11.itm" "override"
 	SAY NAME1 "Boots"
 	SAY UNIDENTIFIED_DESC "Boots are normally handmade by cobblers. Common boots are made by using a form, but good boots are designed for the foot of an individual. 
 
@@ -272,7 +272,7 @@ Weight: 3"
 
 
 //GARGOYLE BOOTS - 12000mo//
-COPY "rick_bigg_mod/items/BOOT12.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BOOT12.itm" "override"
 	SAY NAME1 "Boots"
 	SAY UNIDENTIFIED_DESC "Boots are normally handmade by cobblers. Common boots are made by using a form, but good boots are designed for the foot of an individual. 
 

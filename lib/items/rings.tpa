@@ -1,5 +1,5 @@
 //RING OF PROTECTION +1 - 2500mo//
-COPY "rick_bigg_mod/items/RING06.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/RING06.itm" "override"
 	SAY NAME1 "Ring"
 	SAY DESC "A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.
 
@@ -21,7 +21,7 @@ Weight: 0"
 
 
 //RING OF PROTECTION +2 - 6000mo//
-COPY "rick_bigg_mod/items/RING07.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/RING07.itm" "override"
 	SAY NAME1 "Ring"
 	SAY DESC "A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.
 
@@ -44,7 +44,7 @@ Weight: 0"
 
 
 //RING OF PROTECTION +3 - 14000mo//
-COPY "rick_bigg_mod/items/RING41.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/RING41.itm" "override"
 	SAY NAME1 "Ring"
 	SAY DESC "A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.
 
@@ -70,7 +70,7 @@ Weight: 0"
 
 
 //RING OF THE HAWK'S EYE - 1250mo//
-COPY "rick_bigg_mod/items/RING21.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/RING21.itm" "override"
 	SAY NAME1 "Ring"
 	SAY DESC "A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.
 
@@ -93,7 +93,7 @@ Weight: 0"
 
 
 //RING OF FIRE RESISTANCE - 1500mo//
-COPY "rick_bigg_mod/items/RING02.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/RING02.itm" "override"
 	SAY NAME1 "Ring"
 	SAY DESC "A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.
 
@@ -117,7 +117,7 @@ Weight: 0"
 
 
 //RING OF CLUMSINESS - 1500mo//
-COPY "rick_bigg_mod/items/RING04.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/RING04.itm" "override"
 	SAY NAME1 "Ring"
 	SAY UNIDENTIFIED_DESC "A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.
 
@@ -148,7 +148,7 @@ Weight: 0"
 
 
 //RING OF INVISIBILITY - 4500mo//
-COPY "rick_bigg_mod/items/RING05.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/RING05.itm" "override"
 	SAY NAME1 "Ring"
 	SAY UNIDENTIFIED_DESC "A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.
 
@@ -173,7 +173,7 @@ Weight: 0"
 
 
 //RING OF HOLYNESS - solo chierici - 3500mo//
-COPY "rick_bigg_mod/items/RING22.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/RING22.itm" "override"
 	SAY NAME1 "Ring"
 	SAY DESC "A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.
 
@@ -195,7 +195,7 @@ Weight: 0"
 
 
 //RING OF ANTI-VENOM - 2500mo//
-COPY "rick_bigg_mod/items/RING46.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/RING46.itm" "override"
 	SAY NAME1 "Ring"
 	SAY DESC "A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.
 
@@ -217,7 +217,7 @@ Weight: 0"
 
 
 //RING OF FREE ACTION - 4500mo//
-COPY "rick_bigg_mod/items/RING09.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/RING09.itm" "override"
 	SAY NAME1 "Ring"
 	SAY DESC "A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.
 
@@ -242,7 +242,7 @@ Weight: 0"
 
 
 //RING OF ANIMAL FRIENDSHIP - solo druidi e ranger - 1800mo//
-COPY "rick_bigg_mod/items/RING03.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/RING03.itm" "override"
 	SAY NAME1 "Ring"
 	SAY DESC "A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.
 
@@ -269,7 +269,7 @@ Weight: 0"
 
 
 //RING OF HUMAN INFLUENCE - 5000mo//
-COPY "rick_bigg_mod/items/RING30.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/RING30.itm" "override"
 	SAY NAME1 "Ring"
 	SAY DESC "A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.
 
@@ -298,7 +298,7 @@ Weight: 0"
 
 
 //RING OF FOLLY - solo maghi - 1500mo//
-COPY "rick_bigg_mod/items/RING23.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/RING23.itm" "override"
 	SAY NAME1 "Ring"
 	SAY UNIDENTIFIED_DESC "A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.
 
@@ -327,7 +327,7 @@ Weight: 0"
 
 
 //RING OF WIZARDRY - solo maghi - 7500mo//
-COPY "rick_bigg_mod/items/RING40.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/RING40.itm" "override"
 	SAY NAME1 "Ring"
 	SAY DESC "A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.
 
@@ -350,7 +350,7 @@ Weight: 0"
 
 
 //RING OF ENERGY - 5000mo//
-COPY "rick_bigg_mod/items/RING20.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/RING20.itm" "override"
 	SAY NAME1 "Ring"
 	SAY DESC "A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.
 
@@ -377,7 +377,7 @@ Weight: 0"
 
 
 //RING OF GAXX - solo maghi - solo malvagi - 18000mo//
-COPY "rick_bigg_mod/items/RING39.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/RING39.itm" "override"
 	SAY NAME1 "Ring"
 	SAY DESC "A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.
 
@@ -408,7 +408,7 @@ Weight: 0"
 
 
 //RING OF THE RAM - 9500mo//
-COPY "rick_bigg_mod/items/RING33.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/RING33.itm" "override"
 	SAY NAME1 "Ring"
 	SAY DESC "A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.
 
@@ -435,7 +435,7 @@ Weight: 0"
 
 
 //RING OF TRAPMASTER - solo ladri generalist - 2500mo//
-COPY "rick_bigg_mod/items/RING35.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/RING35.itm" "override"
 	SAY NAME1 "Ring"
 	SAY DESC "A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.
 
@@ -459,7 +459,7 @@ Weight: 0"
 
 
 //RING OF DJINNI SUMMONING - 5000mo//
-COPY "rick_bigg_mod/items/RING35.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/RING35.itm" "override"
 	SAY NAME1 "Ring"
 	SAY DESC "A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.
 
@@ -484,7 +484,7 @@ Weight: 0"
 
 
 //RING OF REGENERATION - 4500mo//
-COPY "rick_bigg_mod/items/RING31.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/RING31.itm" "override"
 	SAY NAME1 "Ring"
 	SAY DESC "A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.
 
@@ -508,7 +508,7 @@ Weight: 0"
 
 
 //RING OF THE VOID  - solo maghi e bardi - 6500mo//
-COPY "rick_bigg_mod/items/RING34.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/RING34.itm" "override"
 	SAY NAME1 "Ring"
 	SAY DESC "A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.
 
@@ -534,7 +534,7 @@ Weight: 0"
 
 
 //RING OF AIR CONTROL - solo maghi, bardi e druidi - 6000mo//
-COPY "rick_bigg_mod/items/RING28.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/RING28.itm" "override"
 	SAY NAME1 "Ring"
 	SAY DESC "A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.
 
@@ -566,7 +566,7 @@ Weight: 0"
 
 
 //RING OF FIRE CONTROL - solo maghi, bardi e druidi - 6000mo//
-COPY "rick_bigg_mod/items/RING27.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/RING27.itm" "override"
 	SAY NAME1 "Ring"
 	SAY DESC "A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.
 
@@ -600,7 +600,7 @@ Weight: 0"
 
 
 //RING OF EARTH CONTROL - solo maghi, bardi e druidi - 6000mo//
-COPY "rick_bigg_mod/items/RING29.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/RING29.itm" "override"
 	SAY NAME1 "Ring"
 	SAY DESC "A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.
 
@@ -634,7 +634,7 @@ Weight: 0"
 
 
 //RING OF WATER CONTROL - solo maghi, bardi e druidi - 6000mo//
-COPY "rick_bigg_mod/items/TB#RIWAT.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/TB#RIWAT.itm" "override"
 	SAY NAME1 "Ring"
 	SAY DESC "A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.
 
@@ -671,7 +671,7 @@ Weight: 0"
 
 
 //OAKEN RING - solo druidi - 2000mo//
-COPY "rick_bigg_mod/items/RING43.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/RING43.itm" "override"
 	SAY NAME1 "Ring"
 	SAY DESC "A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.
 
@@ -696,7 +696,7 @@ Weight: 0"
 
 
 //RING OF NATURE'S WRATH - solo druidi - 11000mo//
-COPY "rick_bigg_mod/items/RING44.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/RING44.itm" "override"
 	SAY NAME1 "Ring"
 	SAY DESC "A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.
 

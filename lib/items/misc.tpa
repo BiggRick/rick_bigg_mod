@@ -1,5 +1,5 @@
 //OLD SLIPPERS - 0mo//
-COPY "rick_bigg_mod/items/PLOT01P.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/PLOT01P.itm" "override"
 	SAY NAME1 "Old Slippers"
 	SAY UNIDENTIFIED_DESC "It is a miracle that this moldy, misshapen footwear has not already dissolved into a pile of rancid dust.
 
@@ -18,7 +18,7 @@ Weight: 1"
 
 
 //ALGERNON'S CLOACK - 500mo//
-COPY "rick_bigg_mod/items/CLCK08.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/CLCK08.itm" "override"
 	SAY NAME1 "Cloack"
 	SAY UNIDENTIFIED_DESC "The cloak can be made in every possible shape with just about every type of fabric. The most common forms are a circular piece of fabric with a hole in the center for the head, and fabric draped from neck, connected by a chain, brooch, cord, or pins.
 
@@ -36,7 +36,7 @@ Weight: 3"
 
 
 //DURLAG'S PRIDE - 0//
-COPY "rick_bigg_mod/items/SW2H08_.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/SW2H08_.itm" "override"
 	SAY NAME1 "Two-Handed Sword"
 	SAY UNIDENTIFIED_DESC "The two-handed sword is a derivative of the long sword. Weaponsmiths have always looked for ways to improve existing weapons. In an effort to improve the long sword, the blade was lengthened. Eventually, the handle had to be extended and two hands became necessary to properly swing the sword. The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations.
 
@@ -67,7 +67,7 @@ Weight: 15"
 
 
 //TOME OF UNDERSTANDING - 500mo//
-COPY "rick_bigg_mod/items/BOOK08.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BOOK08.itm" "override"
 	SAY NAME1 "Book"
 	SAY UNIDENTIFIED_DESC "The cloak can be made in every possible shape with just about every type of fabric. The most common forms are a circular piece of fabric with a hole in the center for the head, and fabric draped from neck, connected by a chain, brooch, cord, or pins.
 
@@ -84,7 +84,7 @@ Weight: 25"
 
 
 //HOLY WATER - 50mo//
-COPY "rick_bigg_mod/items/MISCAU.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/MISCAU.itm" "override"
 	SAY NAME1 "Book"
 	SAY UNIDENTIFIED_DESC "The cloak can be made in every possible shape with just about every type of fabric. The most common forms are a circular piece of fabric with a hole in the center for the head, and fabric draped from neck, connected by a chain, brooch, cord, or pins.
 
@@ -100,7 +100,7 @@ Weight: 25"
 
 
 //UNSHEY'S GIRDLE - 1mo//
-COPY "rick_bigg_mod/items/BDBELT01.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BDBELT01.itm" "override"
 	SAY NAME1 "Unshey's Girdle"
 	SAY UNIDENTIFIED_DESC "Girdles are generally similar to belts. Unlike belts, girdles are not used to hold up pants and dungarees, but to carry pouches, scabbards, and the like. 
 

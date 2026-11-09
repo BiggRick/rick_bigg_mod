@@ -1,9 +1,11 @@
 
-COPY ~rick_bigg_mod/copy~ ~override~
+INCLUDE ~rick_bigg_mod/lib/change_msec_pro.tpa~
+
+COPY ~weidu_external/rick_bigg_mod/workspace/copy~ ~override~
+
 
 
 INCLUDE ~rick_bigg_mod/lib/borrowed_from_cdtweaks/joinable_npc_array.tpa~
-
 
 INCLUDE ~rick_bigg_mod/lib/items.tpa~
 INCLUDE ~rick_bigg_mod/lib/spells.tpa~
@@ -30,6 +32,7 @@ ACTION_BASH_FOR ~rick_bigg_mod/extend_top~ ~^.*\.baf$~ BEGIN
     EXTEND_TOP ~%BASH_FOR_RES%.bcs~ ~%BASH_FOR_FILESPEC%~
 END
 
+/*
 INCLUDE ~rick_bigg_mod/lib/item_rules.tpa~
 INCLUDE ~rick_bigg_mod/lib/weaponproficiencies.tpa~
-
+*/

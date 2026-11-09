@@ -1,5 +1,5 @@
 //CLOAK OF PROTECTION +1 - valore 3000mo//
-COPY "rick_bigg_mod/items/CLCK01.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/CLCK01.itm" "override"
 	SAY NAME1 "Cloak"
 	SAY UNIDENTIFIED_DESC "The cloak can be made in every possible shape with just about every type of fabric. The most common forms are a circular piece of fabric with a hole in the center for the head, and fabric draped from neck, connected by a chain, brooch, cord, or pins.
 
@@ -22,7 +22,7 @@ Weight: 3"
 
 
 //CLOAK OF PROTECTION +2 - valore 7000mo//
-COPY "rick_bigg_mod/items/CLCK02.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/CLCK02.itm" "override"
 	SAY NAME1 "Cloak"
 	SAY UNIDENTIFIED_DESC "The cloak can be made in every possible shape with just about every type of fabric. The most common forms are a circular piece of fabric with a hole in the center for the head, and fabric draped from neck, connected by a chain, brooch, cord, or pins.
 
@@ -44,7 +44,7 @@ Weight: 3"
 
 
 //CLOAK OF PROTECTION +3 - valore 15000mo//
-COPY "rick_bigg_mod/items/CLCK31.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/CLCK31.itm" "override"
 	SAY NAME1 "Cloak"
 	SAY UNIDENTIFIED_DESC "The cloak can be made in every possible shape with just about every type of fabric. The most common forms are a circular piece of fabric with a hole in the center for the head, and fabric draped from neck, connected by a chain, brooch, cord, or pins.
 
@@ -68,7 +68,7 @@ Weight: 3"
 
 
 //CLOAK OF DISPLACEMENT - 4000mo//
-COPY "rick_bigg_mod/items/CLCK03.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/CLCK03.itm" "override"
 	SAY NAME1 "Cloak"
 	SAY UNIDENTIFIED_DESC "The cloak can be made in every possible shape with just about every type of fabric. The most common forms are a circular piece of fabric with a hole in the center for the head, and fabric draped from neck, connected by a chain, brooch, cord, or pins.
 
@@ -92,7 +92,7 @@ Weight: 3"
 
 
 //CLOAK OF THE WOLF - valore 5000mo//
-COPY "rick_bigg_mod/items/CLCK04.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/CLCK04.itm" "override"
 	SAY NAME1 "Cloak"
 	SAY UNIDENTIFIED_DESC "The cloak can be made in every possible shape with just about every type of fabric. The most common forms are a circular piece of fabric with a hole in the center for the head, and fabric draped from neck, connected by a chain, brooch, cord, or pins.
 
@@ -117,7 +117,7 @@ Weight: 3"
 
 
 //CLOAK OF BALDURAN - 12000mo//
-COPY "rick_bigg_mod/items/CLCK05.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/CLCK05.itm" "override"
 	SAY NAME1 "Cloak"
 	SAY UNIDENTIFIED_DESC "The cloak can be made in every possible shape with just about every type of fabric. The most common forms are a circular piece of fabric with a hole in the center for the head, and fabric draped from neck, connected by a chain, brooch, cord, or pins.
 
@@ -142,7 +142,7 @@ Weight: 3"
 
 
 //CLOAK OF NON-DETECTION - solo ladri e ranger - 2000mo//
-COPY "rick_bigg_mod/items/CLCK06.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/CLCK06.itm" "override"
 	SAY NAME1 "Cloak"
 	SAY UNIDENTIFIED_DESC "The cloak can be made in every possible shape with just about every type of fabric. The most common forms are a circular piece of fabric with a hole in the center for the head, and fabric draped from neck, connected by a chain, brooch, cord, or pins.
 
@@ -166,7 +166,7 @@ Weight: 3"
 
 
 //NYMPH CLOAK - 4500mo//
-COPY "rick_bigg_mod/items/CLCK07.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/CLCK07.itm" "override"
 	SAY NAME1 "Cloak"
 	SAY UNIDENTIFIED_DESC "The cloak can be made in every possible shape with just about every type of fabric. The most common forms are a circular piece of fabric with a hole in the center for the head, and fabric draped from neck, connected by a chain, brooch, cord, or pins.
 
@@ -194,7 +194,7 @@ Weight: 3"
 
 
 //CLOAK OF ATONMENT - 2500mo//
-COPY "rick_bigg_mod/items/OHRCLCK3.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/OHRCLCK3.itm" "override"
 	SAY NAME1 "Cloak"
 	SAY UNIDENTIFIED_DESC "The cloak can be made in every possible shape with just about every type of fabric. The most common forms are a circular piece of fabric with a hole in the center for the head, and fabric draped from neck, connected by a chain, brooch, cord, or pins.
 
@@ -219,7 +219,7 @@ Weight: 3"
 
 
 //GARGOYLE CLOAK - 5000mo//
-COPY "rick_bigg_mod/items/BDCLCK05.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BDCLCK05.itm" "override"
 	SAY NAME1 "Cloak"
 	SAY UNIDENTIFIED_DESC "The cloak can be made in every possible shape with just about every type of fabric. The most common forms are a circular piece of fabric with a hole in the center for the head, and fabric draped from neck, connected by a chain, brooch, cord, or pins.
 
@@ -245,7 +245,7 @@ Weight: 3"
 
 
 //MATICK'S SHROUD  - 6500mo//
-COPY "rick_bigg_mod/items/CLCK20.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/CLCK20.itm" "override"
 	SAY NAME1 "Cloak"
 	SAY UNIDENTIFIED_DESC "The cloak can be made in every possible shape with just about every type of fabric. The most common forms are a circular piece of fabric with a hole in the center for the head, and fabric draped from neck, connected by a chain, brooch, cord, or pins.
 
@@ -274,7 +274,7 @@ Weight: 3"
 
 
 //SABLE CLOAK - 4000mo//
-COPY "rick_bigg_mod/items/BDCLCK02.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BDCLCK02.itm" "override"
 	SAY NAME1 "Cloak"
 	SAY UNIDENTIFIED_DESC "The cloak can be made in every possible shape with just about every type of fabric. The most common forms are a circular piece of fabric with a hole in the center for the head, and fabric draped from neck, connected by a chain, brooch, cord, or pins.
 
@@ -298,7 +298,7 @@ Weight: 3
 
 
 //CLOAK OF THE STARS - 4500mo//
-COPY "rick_bigg_mod/items/CLCK25.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/CLCK25.itm" "override"
 	SAY NAME1 "Cloak"
 	SAY UNIDENTIFIED_DESC "The cloak can be made in every possible shape with just about every type of fabric. The most common forms are a circular piece of fabric with a hole in the center for the head, and fabric draped from neck, connected by a chain, brooch, cord, or pins.
 
@@ -323,7 +323,7 @@ Weight: 3
 
 
 //CLOAK OF INVULNERABILITY - 8500mo//
-COPY "rick_bigg_mod/items/CLCK26.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/CLCK26.itm" "override"
 	SAY NAME1 "Cloak"
 	SAY UNIDENTIFIED_DESC "The cloak can be made in every possible shape with just about every type of fabric. The most common forms are a circular piece of fabric with a hole in the center for the head, and fabric draped from neck, connected by a chain, brooch, cord, or pins.
 
@@ -347,7 +347,7 @@ Weight: 3
 
 
 //CLOAK OF REFLECTION - 5000mo//
-COPY "rick_bigg_mod/items/CLCK24.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/CLCK24.itm" "override"
 	SAY NAME1 "Cloak"
 	SAY UNIDENTIFIED_DESC "The cloak can be made in every possible shape with just about every type of fabric. The most common forms are a circular piece of fabric with a hole in the center for the head, and fabric draped from neck, connected by a chain, brooch, cord, or pins.
 
@@ -370,7 +370,7 @@ Weight: 3
 
 
 //CLOAK OF ELVENKIND - 4500mo - solo ladri e ranger//
-COPY "rick_bigg_mod/items/CLCK23.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/CLCK23.itm" "override"
 	SAY NAME1 "Cloak"
 	SAY UNIDENTIFIED_DESC "The cloak can be made in every possible shape with just about every type of fabric. The most common forms are a circular piece of fabric with a hole in the center for the head, and fabric draped from neck, connected by a chain, brooch, cord, or pins.
 
@@ -392,7 +392,7 @@ Weight: 3
 
 
 //CLOAK OF BRAVERY - 9500mo - no good//
-COPY "rick_bigg_mod/items/CLCK30.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/CLCK30.itm" "override"
 	SAY NAME1 "Cloak"
 	SAY UNIDENTIFIED_DESC "The cloak can be made in every possible shape with just about every type of fabric. The most common forms are a circular piece of fabric with a hole in the center for the head, and fabric draped from neck, connected by a chain, brooch, cord, or pins.
 
@@ -418,7 +418,7 @@ Weight: 3"
 
 
 //ARMOR CLOAK - 7500mo//
-COPY "rick_bigg_mod/items/CLCK29.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/CLCK29.itm" "override"
 	SAY NAME1 "Cloak"
 	SAY UNIDENTIFIED_DESC "The cloak can be made in every possible shape with just about every type of fabric. The most common forms are a circular piece of fabric with a hole in the center for the head, and fabric draped from neck, connected by a chain, brooch, cord, or pins.
 
@@ -443,7 +443,7 @@ Weight: 3"
 
 
 //RANGER CLOAK - 4500mo - solo ranger//
-COPY "rick_bigg_mod/items/COMPON16.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/COMPON16.itm" "override"
 	SAY NAME1 "Cloak"
 	SAY UNIDENTIFIED_DESC "The cloak can be made in every possible shape with just about every type of fabric. The most common forms are a circular piece of fabric with a hole in the center for the head, and fabric draped from neck, connected by a chain, brooch, cord, or pins.
 
@@ -466,7 +466,7 @@ Weight: 3"
 
 
 //WHIRLWIND SHROUD - 12000mo - solo ranger//
-COPY "rick_bigg_mod/items/CLCK32.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/CLCK32.itm" "override"
 	SAY NAME1 "Cloak"
 	SAY UNIDENTIFIED_DESC "The cloak can be made in every possible shape with just about every type of fabric. The most common forms are a circular piece of fabric with a hole in the center for the head, and fabric draped from neck, connected by a chain, brooch, cord, or pins.
 
@@ -497,7 +497,7 @@ Weight: 3"
 
 
 //LIFE SHROUD - 10000mo - solo chierici no evil//
-COPY "rick_bigg_mod/items/BDCLCK03.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BDCLCK03.itm" "override"
 	SAY NAME1 "Cloak"
 	SAY UNIDENTIFIED_DESC "The cloak can be made in every possible shape with just about every type of fabric. The most common forms are a circular piece of fabric with a hole in the center for the head, and fabric draped from neck, connected by a chain, brooch, cord, or pins.
 

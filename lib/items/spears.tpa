@@ -1,5 +1,5 @@
 //SPEAR +1 - 1250mo//
-COPY "rick_bigg_mod/items/SPER02.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/SPER02.itm" "override"
 	SAY NAME1 "Spear"
 	SAY UNIDENTIFIED_DESC "One of the earliest weapons, dating back to the most primitive of times, the first spears were simply wooden poles or sticks sharpened at one end. When the civilized races mastered metals, spearheads were made from iron and steel. Having reached this end, weaponsmiths began experimenting with different types of spearheads, thus leading to the development of certain polearm types.
 
@@ -37,7 +37,7 @@ Weight: 5"
 
 
 //SPEAR +2 - 2500mo//
-COPY "rick_bigg_mod/items/SPER05.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/SPER05.itm" "override"
 	SAY NAME1 "Spear"
 	SAY UNIDENTIFIED_DESC "One of the earliest weapons, dating back to the most primitive of times, the first spears were simply wooden poles or sticks sharpened at one end. When the civilized races mastered metals, spearheads were made from iron and steel. Having reached this end, weaponsmiths began experimenting with different types of spearheads, thus leading to the development of certain polearm types.
 
@@ -75,7 +75,7 @@ Weight: 3"
 
 
 //SPEAR OF THE UNICORN +2 - 5500mo - no evil//
-COPY "rick_bigg_mod/items/SPER07.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/SPER07.itm" "override"
 	SAY NAME1 "Spear"
 	SAY UNIDENTIFIED_DESC "One of the earliest weapons, dating back to the most primitive of times, the first spears were simply wooden poles or sticks sharpened at one end. When the civilized races mastered metals, spearheads were made from iron and steel. Having reached this end, weaponsmiths began experimenting with different types of spearheads, thus leading to the development of certain polearm types.
 
@@ -114,7 +114,7 @@ Weight: 3"
 
 
 //HALCYON +2//
-COPY "rick_bigg_mod/items/SPER09.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/SPER09.itm" "override"
 	SAY NAME1 "Spear"
 	SAY UNIDENTIFIED_DESC "One of the earliest weapons, dating back to the most primitive of times, the first spears were simply wooden poles or sticks sharpened at one end. When the civilized races mastered metals, spearheads were made from iron and steel. Having reached this end, weaponsmiths began experimenting with different types of spearheads, thus leading to the development of certain polearm types.
 
@@ -152,7 +152,7 @@ Weight: 3"
 
 
 //IMPALER +3 - 8000mo//
-COPY "rick_bigg_mod/items/SPER08.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/SPER08.itm" "override"
 	SAY NAME1 "Spear"
 	SAY UNIDENTIFIED_DESC "One of the earliest weapons, dating back to the most primitive of times, the first spears were simply wooden poles or sticks sharpened at one end. When the civilized races mastered metals, spearheads were made from iron and steel. Having reached this end, weaponsmiths began experimenting with different types of spearheads, thus leading to the development of certain polearm types.
 
@@ -187,7 +187,7 @@ Weight: 3"
 
 
 //SPEAR OF WITHERING +4 - no druidi e no buoni - valore 10000mo//
-COPY "rick_bigg_mod/items/SPER10.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/SPER10.itm" "override"
 	SAY NAME1 "Spear"
 	SAY UNIDENTIFIED_DESC "One of the earliest weapons, dating back to the most primitive of times, the first spears were simply wooden poles or sticks sharpened at one end. When the civilized races mastered metals, spearheads were made from iron and steel. Having reached this end, weaponsmiths began experimenting with different types of spearheads, thus leading to the development of certain polearm types.
 
@@ -226,7 +226,7 @@ Weight: 5"
 
 
 //SPEAR OF KULDAHAR +4 - valore 14000mo//
-COPY "rick_bigg_mod/items/WASPEAR.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/WASPEAR.itm" "override"
 	SAY NAME1 "Spear"
 	SAY UNIDENTIFIED_DESC "One of the earliest weapons, dating back to the most primitive of times, the first spears were simply wooden poles or sticks sharpened at one end. When the civilized races mastered metals, spearheads were made from iron and steel. Having reached this end, weaponsmiths began experimenting with different types of spearheads, thus leading to the development of certain polearm types.
 
@@ -264,7 +264,7 @@ Weight: 3"
 
 
 //IXIL'S NAIL +5 - valore 10000mo//
-COPY "rick_bigg_mod/items/SPER11.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/SPER11.itm" "override"
 	SAY NAME1 "Spear"
 	SAY UNIDENTIFIED_DESC "One of the earliest weapons, dating back to the most primitive of times, the first spears were simply wooden poles or sticks sharpened at one end. When the civilized races mastered metals, spearheads were made from iron and steel. Having reached this end, weaponsmiths began experimenting with different types of spearheads, thus leading to the development of certain polearm types.
 
@@ -301,7 +301,7 @@ Weight: 2"
 
 
 //IXIL'S NAIL +5 - 18000mo//
-COPY "rick_bigg_mod/items/SPER12.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/SPER12.itm" "override"
 	SAY NAME1 "Spear"
 	SAY UNIDENTIFIED_DESC "One of the earliest weapons, dating back to the most primitive of times, the first spears were simply wooden poles or sticks sharpened at one end. When the civilized races mastered metals, spearheads were made from iron and steel. Having reached this end, weaponsmiths began experimenting with different types of spearheads, thus leading to the development of certain polearm types.
 

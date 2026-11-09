@@ -1,5 +1,5 @@
 //SMALL SHIELD +1 - 1000mo//
-COPY "rick_bigg_mod/items/SHLD02A.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/SHLD02A.itm" "override"
 	SAY NAME1 "Small Shield"
 	SAY UNIDENTIFIED_DESC "A small shield is usually round and is carried on the forearm, gripped with the shield hand. Its light weight as compared to a medium shield permits the user to carry other items in that hand, although <PRO_HESHE> cannot wield or carry another weapon. 
 
@@ -34,7 +34,7 @@ Weight: 3
 
 
 //SMALL SHIELD +2 - 1800mo//
-COPY "rick_bigg_mod/items/SHLD28A.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/SHLD28A.itm" "override"
 	SAY NAME1 "Small Shield"
 	SAY UNIDENTIFIED_DESC "A small shield is usually round and is carried on the forearm, gripped with the shield hand. Its light weight as compared to a medium shield permits the user to carry other items in that hand, although <PRO_HESHE> cannot wield or carry another weapon. 
 
@@ -67,7 +67,7 @@ Weight: 2
 
 
 //REFLECTION SHIELD +2 - 4500mo//
-COPY "rick_bigg_mod/items/SHLD24A.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/SHLD24A.itm" "override"
 	SAY NAME1 "Small Shield"
 	SAY UNIDENTIFIED_DESC "A small shield is usually round and is carried on the forearm, gripped with the shield hand. Its light weight as compared to a medium shield permits the user to carry other items in that hand, although <PRO_HESHE> cannot wield or carry another weapon. 
 
@@ -103,7 +103,7 @@ Weight: 2
 
 
 //SUNCATCHER +3 - no evil - 5500mo//
-COPY "rick_bigg_mod/items/BDSHLD02.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BDSHLD02.itm" "override"
 	SAY NAME1 "Small Shield"
 	SAY UNIDENTIFIED_DESC "A small shield is usually round and is carried on the forearm, gripped with the shield hand. Its light weight as compared to a medium shield permits the user to carry other items in that hand, although <PRO_HESHE> cannot wield or carry another weapon. 
 
@@ -139,7 +139,7 @@ Weight: 2
 
 
 //SHIELD OF HARMONY +2 - 6000mo//
-COPY "rick_bigg_mod/items/SHLD25.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/SHLD25.itm" "override"
 	SAY NAME1 "Small Shield"
 	SAY UNIDENTIFIED_DESC "A small shield is usually round and is carried on the forearm, gripped with the shield hand. Its light weight as compared to a medium shield permits the user to carry other items in that hand, although <PRO_HESHE> cannot wield or carry another weapon. 
 
@@ -179,7 +179,7 @@ Weight: 2
 
 
 //SHIELD OF THE FROZEN FIST +3 - 9000mo//
-COPY "rick_bigg_mod/items/TB#SHFF.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/TB#SHFF.itm" "override"
 	SAY NAME1 "Small Shield"
 	SAY UNIDENTIFIED_DESC "A small shield is usually round and is carried on the forearm, gripped with the shield hand. Its light weight as compared to a medium shield permits the user to carry other items in that hand, although <PRO_HESHE> cannot wield or carry another weapon. 
 
@@ -217,7 +217,7 @@ Weight: 2
 
 
 //ROSEWOOD SHIELD +3 - 75000mo//
-COPY "rick_bigg_mod/items/TB#SHRW.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/TB#SHRW.itm" "override"
 	SAY NAME1 "Small Shield"
 	SAY UNIDENTIFIED_DESC "A small shield is usually round and is carried on the forearm, gripped with the shield hand. Its light weight as compared to a medium shield permits the user to carry other items in that hand, although <PRO_HESHE> cannot wield or carry another weapon. 
 
@@ -254,7 +254,7 @@ Weight: 2
 
 
 //SHIELD OF BLINDNESS +3 - 11000mo//
-COPY "rick_bigg_mod/items/TB#SHBL.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/TB#SHBL.itm" "override"
 	SAY NAME1 "Small Shield"
 	SAY UNIDENTIFIED_DESC "A small shield is usually round and is carried on the forearm, gripped with the shield hand. Its light weight as compared to a medium shield permits the user to carry other items in that hand, although <PRO_HESHE> cannot wield or carry another weapon. 
 

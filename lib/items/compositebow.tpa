@@ -1,5 +1,5 @@
 //COMPOSITE LONGBOW +1 - valore 2500mo //
-COPY "rick_bigg_mod/items/BOW02.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BOW02.itm" "override"
 	SAY NAME1 "Composite Longbow"
 	SAY UNIDENTIFIED_DESC "Composite bows are longbows or shortbows whose staves are made from more than one type of material. This gives greater flexibility and makes arrows fired from this bow deliver more damage. These were developed after the normal longbow.
 
@@ -34,7 +34,7 @@ Weight: 9"
 
 
 //COMPOSITE LONGBOW +2 - valore 3500mo //
-COPY "rick_bigg_mod/items/BOW16.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BOW16.itm" "override"
 	SAY NAME1 "Composite Longbow"
 	SAY UNIDENTIFIED_DESC "Composite bows are longbows or shortbows whose staves are made from more than one type of material. This gives greater flexibility and makes arrows fired from this bow deliver more damage. These were developed after the normal longbow.
 
@@ -73,7 +73,7 @@ Weight: 8"
 
 
 //HEARTSEEKER +2 - valore 5000mo //
-COPY "rick_bigg_mod/items/BOW10.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BOW10.itm" "override"
 	SAY NAME1 "Composite Longbow"
 	SAY UNIDENTIFIED_DESC "Composite bows are longbows or shortbows whose staves are made from more than one type of material. This gives greater flexibility and makes arrows fired from this bow deliver more damage. These were developed after the normal longbow.
 
@@ -113,7 +113,7 @@ Weight: 8"
 
 
 //STRONG ARM +2 - valore 8000mo //
-COPY "rick_bigg_mod/items/BOW11.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BOW11.itm" "override"
 	SAY NAME1 "Composite Longbow"
 	SAY UNIDENTIFIED_DESC "Composite bows are longbows or shortbows whose staves are made from more than one type of material. This gives greater flexibility and makes arrows fired from this bow deliver more damage. These were developed after the normal longbow.
 
@@ -151,7 +151,7 @@ Weight: 12"
 
 
 //ELVEN COURT BOW +3 - valore 13000mo //
-COPY "rick_bigg_mod/items/BOW12.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BOW12.itm" "override"
 	SAY NAME1 "Composite Longbow"
 	SAY UNIDENTIFIED_DESC "Composite bows are longbows or shortbows whose staves are made from more than one type of material. This gives greater flexibility and makes arrows fired from this bow deliver more damage. These were developed after the normal longbow.
 
@@ -188,7 +188,7 @@ Weight: 7"
 
 
 //BOW OF THE BANSHEE +3 - no good - valore 14000mo //
-COPY "rick_bigg_mod/items/BDBOW04.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BDBOW04.itm" "override"
 	SAY NAME1 "Composite Longbow"
 	SAY UNIDENTIFIED_DESC "Composite bows are longbows or shortbows whose staves are made from more than one type of material. This gives greater flexibility and makes arrows fired from this bow deliver more damage. These were developed after the normal longbow.
 

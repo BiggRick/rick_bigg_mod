@@ -1,5 +1,5 @@
 //BUCKLER +1 - 750mo//
-COPY "rick_bigg_mod/items/SHLD17.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/SHLD17.itm" "override"
 	SAY NAME1 "Buckler"
 	SAY UNIDENTIFIED_DESC "A buckler, also known as a target shield, is a small round shield of wood or metal that fastens to the forearm. Because of its size, it is light and can be worn with very little restriction to movement.
 
@@ -33,7 +33,7 @@ Weight: 2
 
 
 //BUCKLER +2 - 1500mo//
-COPY "rick_bigg_mod/items/OHSHLD50.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/OHSHLD50.itm" "override"
 	SAY NAME1 "Buckler"
 	SAY UNIDENTIFIED_DESC "A buckler, also known as a target shield, is a small round shield of wood or metal that fastens to the forearm. Because of its size, it is light and can be worn with very little restriction to movement.
 
@@ -67,7 +67,7 @@ Weight: 2
 
 
 //KIEL'S BUCKLER +2 - 4000mo//
-COPY "rick_bigg_mod/items/SHLD20.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/SHLD20.itm" "override"
 	SAY NAME1 "Buckler"
 	SAY UNIDENTIFIED_DESC "A buckler, also known as a target shield, is a small round shield of wood or metal that fastens to the forearm. Because of its size, it is light and can be worn with very little restriction to movement.
 
@@ -103,7 +103,7 @@ Weight: 2
 
 
 //STEADFAST +2 - 5500mo//
-COPY "rick_bigg_mod/items/BDSHLD06.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BDSHLD06.itm" "override"
 	SAY NAME1 "Buckler"
 	SAY UNIDENTIFIED_DESC "A buckler, also known as a target shield, is a small round shield of wood or metal that fastens to the forearm. Because of its size, it is light and can be worn with very little restriction to movement.
 
@@ -138,7 +138,7 @@ Weight: 2
 
 
 //BUCKLER OF FIRE AND ICE +3 - 7000mo//
-COPY "rick_bigg_mod/items/BDSHLD01.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BDSHLD01.itm" "override"
 	SAY NAME1 "Buckler"
 	SAY UNIDENTIFIED_DESC "A buckler, also known as a target shield, is a small round shield of wood or metal that fastens to the forearm. Because of its size, it is light and can be worn with very little restriction to movement.
 

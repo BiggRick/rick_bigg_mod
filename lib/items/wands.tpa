@@ -2,7 +2,7 @@
 
 
 //WAND OF FIRE - 2500mo//
-COPY "rick_bigg_mod/items/WAND05.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/WAND05.itm" "override"
 	SAY NAME1 "Wand"
 	SAY UNIDENTIFIED_DESC "Wands are 1 1/4 ft. long and slender. They are made of ivory, bone, or wood and are usually tipped with something—metal, crystal, stone, and so on. They are fragile and tend to break easily. Because of this, they are often kept in cases. 
 
@@ -31,7 +31,7 @@ Weight: 1"
 
 
 //WAND OF MAGIC MISSILES - 1500mo - usabile da tutti//
-COPY "rick_bigg_mod/items/WAND03.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/WAND03.itm" "override"
 	SAY NAME1 "Wand"
 	SAY UNIDENTIFIED_DESC "Wands are 1 1/4 ft. long and slender. They are made of ivory, bone, or wood and are usually tipped with something—metal, crystal, stone, and so on. They are fragile and tend to break easily. Because of this, they are often kept in cases. 
 
@@ -61,7 +61,7 @@ Weight: 1"
 
 
 //WAND OF FEAR - 2000mo//
-COPY "rick_bigg_mod/items/WAND02.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/WAND02.itm" "override"
 	SAY NAME1 "Wand"
 	SAY UNIDENTIFIED_DESC "Wands are 1 1/4 ft. long and slender. They are made of ivory, bone, or wood and are usually tipped with something—metal, crystal, stone, and so on. They are fragile and tend to break easily. Because of this, they are often kept in cases. 
 
@@ -91,7 +91,7 @@ Weight: 1"
 
 
 //WAND OF PARALYZATION - 3000mo//
-COPY "rick_bigg_mod/items/WAND04.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/WAND04.itm" "override"
 	SAY NAME1 "Wand"
 	SAY UNIDENTIFIED_DESC "Wands are 1 1/4 ft. long and slender. They are made of ivory, bone, or wood and are usually tipped with something—metal, crystal, stone, and so on. They are fragile and tend to break easily. Because of this, they are often kept in cases. 
 
@@ -124,7 +124,7 @@ Weight: 1"
 
 
 //WAND OF FROST - 4000mo//
-COPY "rick_bigg_mod/items/WAND06.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/WAND06.itm" "override"
 	SAY NAME1 "Wand"
 	SAY UNIDENTIFIED_DESC "Wands are 1 1/4 ft. long and slender. They are made of ivory, bone, or wood and are usually tipped with something—metal, crystal, stone, and so on. They are fragile and tend to break easily. Because of this, they are often kept in cases. 
 
@@ -156,7 +156,7 @@ Weight: 1"
 
 
 //WAND OF LIGHTNING - 2500mo//
-COPY "rick_bigg_mod/items/WAND07.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/WAND07.itm" "override"
 	SAY NAME1 "Wand"
 	SAY UNIDENTIFIED_DESC "Wands are 1 1/4 ft. long and slender. They are made of ivory, bone, or wood and are usually tipped with something—metal, crystal, stone, and so on. They are fragile and tend to break easily. Because of this, they are often kept in cases. 
 
@@ -187,7 +187,7 @@ Weight: 1"
 
 
 //WAND OF SLEEP - 2000mo//
-COPY "rick_bigg_mod/items/WAND08.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/WAND08.itm" "override"
 	SAY NAME1 "Wand"
 	SAY UNIDENTIFIED_DESC "Wands are 1 1/4 ft. long and slender. They are made of ivory, bone, or wood and are usually tipped with something—metal, crystal, stone, and so on. They are fragile and tend to break easily. Because of this, they are often kept in cases. 
 
@@ -218,7 +218,7 @@ Weight: 1"
 
 
 //WAND OF POLYMORPHING - 4500mo//
-COPY "rick_bigg_mod/items/WAND09.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/WAND09.itm" "override"
 	SAY NAME1 "Wand"
 	SAY UNIDENTIFIED_DESC "Wands are 1 1/4 ft. long and slender. They are made of ivory, bone, or wood and are usually tipped with something—metal, crystal, stone, and so on. They are fragile and tend to break easily. Because of this, they are often kept in cases. 
 
@@ -250,7 +250,7 @@ Weight: 1"
 
 
 //WAND OF MONSTER SUMMONING - 3000mo//
-COPY "rick_bigg_mod/items/WAND10.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/WAND10.itm" "override"
 	SAY NAME1 "Wand"
 	SAY UNIDENTIFIED_DESC "Wands are 1 1/4 ft. long and slender. They are made of ivory, bone, or wood and are usually tipped with something—metal, crystal, stone, and so on. They are fragile and tend to break easily. Because of this, they are often kept in cases. 
 
@@ -279,7 +279,7 @@ Weight: 1"
 
 
 //WAND OF THE HEAVENS - 4000mo - solo chierici//
-COPY "rick_bigg_mod/items/WAND11.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/WAND11.itm" "override"
 	SAY NAME1 "Wand"
 	SAY UNIDENTIFIED_DESC "Wands are 1 1/4 ft. long and slender. They are made of ivory, bone, or wood and are usually tipped with something—metal, crystal, stone, and so on. They are fragile and tend to break easily. Because of this, they are often kept in cases. 
 
@@ -309,7 +309,7 @@ Weight: 1"
 
 
 //WAND OF THE CLOUDKILL - 4500mo//
-COPY "rick_bigg_mod/items/WAND13.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/WAND13.itm" "override"
 	SAY NAME1 "Wand"
 	SAY UNIDENTIFIED_DESC "Wands are 1 1/4 ft. long and slender. They are made of ivory, bone, or wood and are usually tipped with something—metal, crystal, stone, and so on. They are fragile and tend to break easily. Because of this, they are often kept in cases. 
 
@@ -340,7 +340,7 @@ Weight: 1"
 
 
 //ROD OF ABSORPTION - 8500mo//
-COPY "rick_bigg_mod/items/RODS01.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/RODS01.itm" "override"
 	SAY NAME1 "Wand"
 	SAY UNIDENTIFIED_DESC "Rods are about three feet long and as thick as your thumb. They are normally found in cases or similar storage places. Rods can be fashioned from metal, wood, ivory, or bone. They can be plain or decorated and carved, tipped, or not. Rods are powered by charges, unless noted otherwise in the description of a particular rod. Each time the rod is used, one or more charge may be expended.
 
@@ -366,7 +366,7 @@ Weight: 3"
 
 
 //WAND OF CURSING - usabile da tutti - 7000mo//
-COPY "rick_bigg_mod/items/WAND19.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/WAND19.itm" "override"
 	SAY NAME1 "Wand"
 	SAY UNIDENTIFIED_DESC "Wands are 1 1/4 ft. long and slender. They are made of ivory, bone, or wood and are usually tipped with something—metal, crystal, stone, and so on. They are fragile and tend to break easily. Because of this, they are often kept in cases. 
 
@@ -392,7 +392,7 @@ Weight: 1"
 
 
 //ROD OF REVERSAL - 7500mo//
-COPY "rick_bigg_mod/items/RODS06.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/RODS06.itm" "override"
 	SAY NAME1 "Rod"
 	SAY UNIDENTIFIED_DESC "Rods are about three feet long and as thick as your thumb. They are normally found in cases or similar storage places. Rods can be fashioned from metal, wood, ivory, or bone. They can be plain or decorated and carved, tipped, or not. Rods are powered by charges, unless noted otherwise in the description of a particular rod. Each time the rod is used, one or more charge may be expended.
 

@@ -1,5 +1,5 @@
 //LEATHER ARMOR - 15mo//
-COPY "rick_bigg_mod/items/LEAT01.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/LEAT01.itm" "override"
 	SAY NAME1 "Leather Armor"
 	SAY UNIDENTIFIED_DESC "Basic armor made of thick, wax or water-hardened leather. It is sturdy protection, not supple like boots or a cloak. Soft garment leathers like that would offer no more protection than common clothing. 
 
@@ -16,7 +16,7 @@ Weight: 15
 
 
 //LEATHER ARMOR +1 - 1200mo//
-COPY "rick_bigg_mod/items/LEAT02.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/LEAT02.itm" "override"
 	SAY NAME1 "Leather Armor"
 	SAY UNIDENTIFIED_DESC "Basic armor made of thick, wax or water-hardened leather. It is sturdy protection, not supple like boots or a cloak. Soft garment leathers like that would offer no more protection than common clothing. 
 
@@ -46,7 +46,7 @@ Weight: 10"
 
 
 //LEATHER ARMOR +2 - 2000mo//
-COPY "rick_bigg_mod/items/LEAT11.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/LEAT11.itm" "override"
 	SAY NAME1 "Leather Armor"
 	SAY UNIDENTIFIED_DESC "Basic armor made of thick, wax or water-hardened leather. It is sturdy protection, not supple like boots or a cloak. Soft garment leathers like that would offer no more protection than common clothing. 
 
@@ -74,7 +74,7 @@ Weight: 8"
 
 
 //RACONTEUR'S REGALIA +2 - 3500mo - solo bardi//
-COPY "rick_bigg_mod/items/BDLEAT03.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BDLEAT03.itm" "override"
 	SAY NAME1 "Leather Armor"
 	SAY UNIDENTIFIED_DESC "Basic armor made of thick, wax or water-hardened leather. It is sturdy protection, not supple like boots or a cloak. Soft garment leathers like that would offer no more protection than common clothing. 
 
@@ -117,7 +117,7 @@ Weight: 8"
 
 
 //KARAJAH'S LIFE AND DEATH +3 - 5500mo//
-COPY "rick_bigg_mod/items/LEAT09.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/LEAT09.itm" "override"
 	SAY NAME1 "Leather Armor"
 	SAY UNIDENTIFIED_DESC "Basic armor made of thick, wax or water-hardened leather. It is sturdy protection, not supple like boots or a cloak. Soft garment leathers like that would offer no more protection than common clothing. 
 
@@ -147,7 +147,7 @@ Weight: 5"
 
 
 //AEGER'S LEATHER +2 - 5000mo//
-COPY "rick_bigg_mod/items/LEAT20.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/LEAT20.itm" "override"
 	SAY NAME1 "Leather Armor"
 	SAY UNIDENTIFIED_DESC "Basic armor made of thick, wax or water-hardened leather. It is sturdy protection, not supple like boots or a cloak. Soft garment leathers like that would offer no more protection than common clothing. 
 
@@ -182,7 +182,7 @@ Weight: 15"
 
 
 //SKIN OF THE GHOUL +3 - no druidi - 6000mo//
-COPY "rick_bigg_mod/items/LEAT13.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/LEAT13.itm" "override"
 	SAY NAME1 "Leather Armor"
 	SAY UNIDENTIFIED_DESC "Basic armor made of thick, wax or water-hardened leather. It is sturdy protection, not supple like boots or a cloak. Soft garment leathers like that would offer no more protection than common clothing. 
 
@@ -214,7 +214,7 @@ Weight: 5"
 
 
 //PROTECTOR OF THE SECOND +4 - solo ranger e ladri - 8500mo//
-COPY "rick_bigg_mod/items/TB#LEPR.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/TB#LEPR.itm" "override"
 	SAY NAME1 "Leather Armor"
 	SAY UNIDENTIFIED_DESC "Basic armor made of thick, wax or water-hardened leather. It is sturdy protection, not supple like boots or a cloak. Soft garment leathers like that would offer no more protection than common clothing. 
 
@@ -251,7 +251,7 @@ Weight: 4"
 
 
 //ARMOR OF THE VIPER +4 - 8000mo//
-COPY "rick_bigg_mod/items/LEAT18.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/LEAT18.itm" "override"
 	SAY NAME1 "Leather Armor"
 	SAY UNIDENTIFIED_DESC "Basic armor made of thick, wax or water-hardened leather. It is sturdy protection, not supple like boots or a cloak. Soft garment leathers like that would offer no more protection than common clothing. 
 
@@ -285,7 +285,7 @@ Weight: 6"
 
 
 //HUMAN FLESH +5 - solo malvagi - 15000mo//
-COPY "rick_bigg_mod/items/LEAT21.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/LEAT21.itm" "override"
 	SAY NAME1 "Leather Armor"
 	SAY UNIDENTIFIED_DESC "Basic armor made of thick, wax or water-hardened leather. It is sturdy protection, not supple like boots or a cloak. Soft garment leathers like that would offer no more protection than common clothing. 
 

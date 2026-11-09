@@ -1,6 +1,6 @@
 
 //DEFENSIVE HARMONY//
-COPY "rick_bigg_mod/spell/SPPR406.spl" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/spell/SPPR406.spl" "override"
 	SAY NAME1 "Defensive Harmony"
 	SAY UNIDENTIFIED_DESC 
 "Defensive Harmony
@@ -20,7 +20,7 @@ Defensive Harmony grants affected creatures a defensive bonus by enhancing the c
 
 
 //MAGIC CIRCLE AGAINST EVIL//
-COPY "rick_bigg_mod/spell/SPPR408.spl" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/spell/SPPR408.spl" "override"
 	SAY NAME1 "Magic Circle against Evil"
 	SAY UNIDENTIFIED_DESC 
 "Magic Circle against Evil

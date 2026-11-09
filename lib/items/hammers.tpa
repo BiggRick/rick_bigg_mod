@@ -1,5 +1,5 @@
 //WAR HAMMER +2 - valore 2500mo//
-COPY "rick_bigg_mod/items/HAMM08.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/HAMM08.itm" "override"
 	SAY NAME1 "Hammer"
 	SAY UNIDENTIFIED_DESC "Mounted knights cannot effectively use long pole weapons while on horseback and, as a result, many weapons have been fitted with shorter shafts so they may be wielded with just one hand. Maces and flails are two examples of this—the war hammer is another. The horseman's war hammer is the descendent of the Lucerne hammer. It is made entirely of steel, with rondels protecting and strengthening the grip. (Rondels are small disks of metal, often shaped into decorative designs.) The shaft is about eighteen inches long.
 
@@ -35,7 +35,7 @@ Weight: 6"
 
 
 //THE KNEECAPPER +2 - valore 6000mo//
-COPY "rick_bigg_mod/items/HAMM04.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/HAMM04.itm" "override"
 	SAY NAME1 "Hammer"
 	SAY UNIDENTIFIED_DESC "A massive warhammer inscribed with dwarven runes.
 
@@ -73,7 +73,7 @@ Weight: 9"
 
 
 //BOROK'S FIST +2 - 4500mo//
-COPY "rick_bigg_mod/items/HAMM05.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/HAMM05.itm" "override"
 	SAY NAME1 "Hammer"
 	SAY UNIDENTIFIED_DESC "Mounted knights cannot effectively use pole arms while on horseback, and as a result, many weapons have been altered so they may be used one-handed. The horseman's war hammer is made entirely of steel and has a shaft about eighteen inches long. Powerful magical energy flows through this weapon, though its origins are nondescript.
 
@@ -117,7 +117,7 @@ Weight: 4"
 
 
 //HAMMER OF THUNDERBOLTS +3 - 7500mo//
-COPY "rick_bigg_mod/items/HAMM07.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/HAMM07.itm" "override"
 	SAY NAME1 "Hammer"
 	SAY UNIDENTIFIED_DESC "A massive warhammer inscribed with dwarven runes.
 
@@ -156,7 +156,7 @@ Weight: 9"
 
 
 //AEGIS-FANG +3 - valore 13000mo//
-COPY "rick_bigg_mod/items/AEGIS.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/AEGIS.itm" "override"
 	SAY NAME1 "Hammer"
 	SAY UNIDENTIFIED_DESC "A massive warhammer inscribed with dwarven runes.
 
@@ -201,7 +201,7 @@ COPY_EXISTING "AEGIS.ITM" "override/AEGIS2.ITM"
 	
 	
 //CROM FAEYR +5 - valore 20000mo//
-COPY "rick_bigg_mod/items/HAMM09.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/HAMM09.itm" "override"
 	SAY NAME1 "Hammer"
 	SAY UNIDENTIFIED_DESC "A massive warhammer inscribed with dwarven runes.
 
@@ -242,7 +242,7 @@ Weight: 9"
 
 
 //RUNEHAMMER +4 - valore 9000mo - no evil//
-COPY "rick_bigg_mod/items/HAMM10.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/HAMM10.itm" "override"
 	SAY NAME1 "Hammer"
 	SAY UNIDENTIFIED_DESC "A massive warhammer inscribed with dwarven runes.
 
@@ -282,7 +282,7 @@ Weight: 9"
 
 
 //RUNEHAMMER +5 - valore 18000mo - no evil//
-COPY "rick_bigg_mod/items/HAMM11.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/HAMM11.itm" "override"
 	SAY NAME1 "Hammer"
 	SAY UNIDENTIFIED_DESC "A massive warhammer inscribed with dwarven runes.
 

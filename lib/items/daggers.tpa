@@ -1,5 +1,5 @@
 //DAGGER +1 - 500mo //
-COPY "rick_bigg_mod/items/DAGG02.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/DAGG02.itm" "override"
 	SAY NAME1 "Dagger"
 	SAY UNIDENTIFIED_DESC "The typical dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter.
 
@@ -34,7 +34,7 @@ Weight: 1"
 
 
 //DAGGER +2 - 1500mo //
-COPY "rick_bigg_mod/items/DAGG15.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/DAGG15.itm" "override"
 	SAY NAME1 "Dagger"
 	SAY UNIDENTIFIED_DESC "The typical dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter.
 
@@ -70,7 +70,7 @@ Weight: 1"
 
 
 //DAGGER OF VENOM +2 - 6000mo - no buoni//
-COPY "rick_bigg_mod/items/MISC75.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/MISC75.itm" "override"
 	SAY NAME1 "Dagger"
 	SAY UNIDENTIFIED_DESC "The typical dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter.
 
@@ -109,7 +109,7 @@ Weight: 2"
 
 
 //LONGTOOTH +2 - 4000mo//
-COPY "rick_bigg_mod/items/DAGG04.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/DAGG04.itm" "override"
 	SAY NAME1 "Dagger"
 	SAY UNIDENTIFIED_DESC "The typical dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter.
 
@@ -144,7 +144,7 @@ Weight: 1"
 
 
 //NEB'S NASTY CUTTER +3 - 7500mo - no buoni//
-COPY "rick_bigg_mod/items/NEBDAG.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/NEBDAG.itm" "override"
 	SAY NAME1 "Dagger"
 	SAY UNIDENTIFIED_DESC "The typical dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter.
 
@@ -182,7 +182,7 @@ Weight: 1"
 
 
 //STILETTO OF DEMARCHESS +3 - 6000mo//
-COPY "rick_bigg_mod/items/DAGG17.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/DAGG17.itm" "override"
 	SAY NAME1 "Dagger"
 	SAY UNIDENTIFIED_DESC "The typical dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter.
 
@@ -223,8 +223,8 @@ Weight: 1"
 
 
 //ELEMENTS' FURY +3 - 6500mo//
-COPY "rick_bigg_mod/items/BDDAGG01.itm" "override"
-"rick_bigg_mod/items/BDDAGG01.itm" "override/DAGG13.itm"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BDDAGG01.itm" "override"
+"weidu_external/rick_bigg_mod/workspace/items/BDDAGG01.itm" "override/DAGG13.itm"
 	SAY NAME1 "Dagger"
 	SAY UNIDENTIFIED_DESC "The typical dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter.
 
@@ -269,7 +269,7 @@ Weight: 1"
 
 
 //BONEBLADE +4 - 7500mo/
-COPY "rick_bigg_mod/items/DAGG14.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/DAGG14.itm" "override"
 	SAY NAME1 "Dagger"
 	SAY UNIDENTIFIED_DESC "The typical dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter.
 
@@ -311,7 +311,7 @@ Weight: 1"
 
 
 //LIFE STEALER +4 - 8000mo/
-COPY "rick_bigg_mod/items/DAGG20.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/DAGG20.itm" "override"
 	SAY NAME1 "Dagger"
 	SAY UNIDENTIFIED_DESC "The typical dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter.
 
@@ -348,7 +348,7 @@ Weight: 1"
 
 
 //DAGGER OF THE STAR +4 - 6000mo/
-COPY "rick_bigg_mod/items/DAGG21.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/DAGG21.itm" "override"
 	SAY NAME1 "Dagger"
 	SAY UNIDENTIFIED_DESC "The typical dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter.
 
@@ -382,7 +382,7 @@ Weight: 1"
 
 
 //DAGGER OF THE STAR +5 - valore 14000mo/
-COPY "rick_bigg_mod/items/DAGG22.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/DAGG22.itm" "override"
 	SAY NAME1 "Dagger"
 	SAY UNIDENTIFIED_DESC "The typical dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter.
 
@@ -438,7 +438,7 @@ Weight: 1"
 
 
 //PIRATE DAGGER +1 - 2500mo//
-COPY "rick_bigg_mod/items/TB#DAG01.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/TB#DAG01.itm" "override"
 	SAY NAME1 "Dagger"
 	SAY UNIDENTIFIED_DESC "The typical throwing dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter than the dagger. Unlike a dagger, this one has a smaller handle and is balanced differently.
 
@@ -480,7 +480,7 @@ Weight: 0"
 
 
 //BOOMERANG DAGGER +2 - 3500mo/
-COPY "rick_bigg_mod/items/DAGG11.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/DAGG11.itm" "override"
 	SAY NAME1 "Dagger"
 	SAY UNIDENTIFIED_DESC "The typical throwing dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter than the dagger. Unlike a dagger, this one has a smaller handle and is balanced differently.
 
@@ -523,7 +523,7 @@ Weight: 1"
 
 
 //FIRETOOTH +3 - 6500mo//
-COPY "rick_bigg_mod/items/DAGG12.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/DAGG12.itm" "override"
 	SAY NAME1 "Dagger"
 	SAY UNIDENTIFIED_DESC "The typical throwing dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter than the dagger. Unlike a dagger, this one has a smaller handle and is balanced differently.
 
@@ -563,7 +563,7 @@ Weight: 1"
 
 
 //IXIL'S SPIKE +3 - 7000mo//
-COPY "rick_bigg_mod/items/DAGG23.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/DAGG23.itm" "override"
 	SAY NAME1 "Dagger"
 	SAY UNIDENTIFIED_DESC "The typical dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter.
 

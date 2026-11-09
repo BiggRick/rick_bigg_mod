@@ -1,5 +1,5 @@
 //SHORTBOW +1 - 1200mo//
-COPY "rick_bigg_mod/items/BOW06.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BOW06.itm" "override"
 	SAY NAME1 "Shortbow"
 	SAY UNIDENTIFIED_DESC "Shortbows were the first bows to be developed, although they were not called such. This is more of a default term that refers to anything which is not a longbow. Shortbow staves are about five feet long on the average. As the years passed, attempts were made to increase bow ranges. Bows were either given longer staves or flexibility was increased with no change to the length. The former resulted in what is now called the longbow.
 
@@ -33,7 +33,7 @@ Weight: 2"
 
 
 //SHORTBOW +2 - 2000mo//
-COPY "rick_bigg_mod/items/BOW18.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BOW18.itm" "override"
 	SAY NAME1 "Shortbow"
 	SAY UNIDENTIFIED_DESC "Shortbows were the first bows to be developed, although they were not called such. This is more of a default term that refers to anything which is not a longbow. Shortbow staves are about five feet long on the average. As the years passed, attempts were made to increase bow ranges. Bows were either given longer staves or flexibility was increased with no change to the length. The former resulted in what is now called the longbow.
 
@@ -69,7 +69,7 @@ Weight: 2"
 
 
 //PROTECTOR OF THE DRYADS +2 - 2500mo//
-COPY "rick_bigg_mod/items/BOW08.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BOW08.itm" "override"
 	SAY NAME1 "Shortbow"
 	SAY UNIDENTIFIED_DESC "Shortbows were the first bows to be developed, although they were not called such. This is more of a default term that refers to anything which is not a longbow. Shortbow staves are about five feet long on the average. As the years passed, attempts were made to increase bow ranges. Bows were either given longer staves or flexibility was increased with no change to the length. The former resulted in what is now called the longbow.
 
@@ -104,7 +104,7 @@ Weight: 2"
 
 
 //TUIGAN BOW +2 - 4500mo//
-COPY "rick_bigg_mod/items/BOW14.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BOW14.itm" "override"
 	SAY NAME1 "Shortbow"
 	SAY UNIDENTIFIED_DESC "Shortbows were the first bows to be developed, although they were not called such. This is more of a default term that refers to anything which is not a longbow. Shortbow staves are about five feet long on the average. As the years passed, attempts were made to increase bow ranges. Bows were either given longer staves or flexibility was increased with no change to the length. The former resulted in what is now called the longbow.
 
@@ -142,7 +142,7 @@ Weight: 2"
 
 
 //TANSHERON +2 - 5500mo//
-COPY "rick_bigg_mod/items/BOW15.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BOW15.itm" "override"
 	SAY NAME1 "Shortbow"
 	SAY UNIDENTIFIED_DESC "Shortbows were the first bows to be developed, although they were not called such. This is more of a default term that refers to anything which is not a longbow. Shortbow staves are about five feet long on the average. As the years passed, attempts were made to increase bow ranges. Bows were either given longer staves or flexibility was increased with no change to the length. The former resulted in what is now called the longbow.
 
@@ -177,7 +177,7 @@ Weight: 2"
 
 
 //SHORTBOW OF GESEN +3 - 11000mo//
-COPY "rick_bigg_mod/items/BOW19.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BOW19.itm" "override"
 	SAY NAME1 "Shortbow"
 	SAY UNIDENTIFIED_DESC "Shortbows were the first bows to be developed, although they were not called such. This is more of a default term that refers to anything which is not a longbow. Shortbow staves are about five feet long on the average. As the years passed, attempts were made to increase bow ranges. Bows were either given longer staves or flexibility was increased with no change to the length. The former resulted in what is now called the longbow.
 
@@ -214,7 +214,7 @@ Weight: 2"
 
 
 //DARKFIRE BOW +2 - 5500mo//
-COPY "rick_bigg_mod/items/BOW20.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BOW20.itm" "override"
 	SAY NAME1 "Shortbow"
 	SAY UNIDENTIFIED_DESC "Shortbows were the first bows to be developed, although they were not called such. This is more of a default term that refers to anything which is not a longbow. Shortbow staves are about five feet long on the average. As the years passed, attempts were made to increase bow ranges. Bows were either given longer staves or flexibility was increased with no change to the length. The former resulted in what is now called the longbow.
 
@@ -251,7 +251,7 @@ Weight: 2"
 
 
 //DARKFIRE BOW +3 - 11000mo//
-COPY "rick_bigg_mod/items/BOW21.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BOW21.itm" "override"
 	SAY NAME1 "Shortbow"
 	SAY UNIDENTIFIED_DESC "Shortbows were the first bows to be developed, although they were not called such. This is more of a default term that refers to anything which is not a longbow. Shortbow staves are about five feet long on the average. As the years passed, attempts were made to increase bow ranges. Bows were either given longer staves or flexibility was increased with no change to the length. The former resulted in what is now called the longbow.
 

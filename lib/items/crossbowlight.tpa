@@ -1,5 +1,5 @@
 //LIGHT CROSSBOW +1 - 1500mo//
-COPY "rick_bigg_mod/items/XBOW05.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/XBOW05.itm" "override"
 	SAY NAME1 "Light Crossbow"
 	SAY UNIDENTIFIED_DESC "A crossbow is a bow mounted crosswise on a wooden or metal shaft, the latter called a tiller. The bow is usually made of ash or yew. The crossbow fires a quarrel (also called a bolt).
 
@@ -33,7 +33,7 @@ Weight: 6"
 
 
 //LIGHT CROSSBOW +2 - 2500mo//
-COPY "rick_bigg_mod/items/XBOW09.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/XBOW09.itm" "override"
 	SAY NAME1 "Light Crossbow"
 	SAY UNIDENTIFIED_DESC "A crossbow is a bow mounted crosswise on a wooden or metal shaft, the latter called a tiller. The bow is usually made of ash or yew. The crossbow fires a quarrel (also called a bolt).
 
@@ -67,7 +67,7 @@ Weight: 5"
 
 
 //THE ARMY SCYTHE +2 - 6000mo//
-COPY "rick_bigg_mod/items/XBOW06.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/XBOW06.itm" "override"
 	SAY NAME1 "Light Crossbow"
 	SAY UNIDENTIFIED_DESC "A crossbow is a bow mounted crosswise on a wooden or metal shaft, the latter called a tiller. The bow is usually made of ash or yew. The crossbow fires a quarrel (also called a bolt).
 
@@ -106,7 +106,7 @@ Weight: 5"
 
 
 //NACARADAN'S CROSSBOW +2 - 4500mo//
-COPY "rick_bigg_mod/items/XBOW10.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/XBOW10.itm" "override"
 	SAY NAME1 "Light Crossbow"
 	SAY UNIDENTIFIED_DESC "A crossbow is a bow mounted crosswise on a wooden or metal shaft, the latter called a tiller. The bow is usually made of ash or yew. The crossbow fires a quarrel (also called a bolt).
 
@@ -140,7 +140,7 @@ Weight: 5"
 
 
 //CROSSBOW OF AFFLICTION +2 - 5500mo//
-COPY "rick_bigg_mod/items/XBOW13.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/XBOW13.itm" "override"
 	SAY NAME1 "Light Crossbow"
 	SAY UNIDENTIFIED_DESC "A crossbow is a bow mounted crosswise on a wooden or metal shaft, the latter called a tiller. The bow is usually made of ash or yew. The crossbow fires a quarrel (also called a bolt).
 
@@ -181,7 +181,7 @@ Weight: 5"
 
 
 //ASTRAL CROSSBOW +3 - no evil - 11000mo//
-COPY "rick_bigg_mod/items/BDXBOW01.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BDXBOW01.itm" "override"
 	SAY NAME1 "Light Crossbow"
 	SAY UNIDENTIFIED_DESC "A crossbow is a bow mounted crosswise on a wooden or metal shaft, the latter called a tiller. The bow is usually made of ash or yew. The crossbow fires a quarrel (also called a bolt).
 
@@ -221,7 +221,7 @@ Weight: 5"
 
 
 //PYREHEART REPEATER +2 - 5000mo//
-COPY "rick_bigg_mod/items/XBOW15.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/XBOW15.itm" "override"
 	SAY NAME1 "Light Crossbow"
 	SAY UNIDENTIFIED_DESC "A crossbow is a bow mounted crosswise on a wooden or metal shaft, the latter called a tiller. The bow is usually made of ash or yew. The crossbow fires a quarrel (also called a bolt).
 
@@ -257,7 +257,7 @@ Weight: 5"
 
 
 //PYREHEART REPEATER +3 - 13000mo//
-COPY "rick_bigg_mod/items/XBOW16.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/XBOW16.itm" "override"
 	SAY NAME1 "Light Crossbow"
 	SAY UNIDENTIFIED_DESC "A crossbow is a bow mounted crosswise on a wooden or metal shaft, the latter called a tiller. The bow is usually made of ash or yew. The crossbow fires a quarrel (also called a bolt).
 

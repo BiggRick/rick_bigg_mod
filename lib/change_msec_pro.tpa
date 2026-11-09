@@ -1,0 +1,245 @@
+
+
+
+DEFINE_PATCH_FUNCTION old_to_new_projectl
+  INT_VAR value = 0
+  RET decoded
+BEGIN
+  PATCH_IF VARIABLE_IS_SET $projectl_ids_old_decode( ~%value%~ ) BEGIN
+    TEXT_SPRINT to_decode $projectl_ids_old_decode( ~%value%~ )
+    SET decoded = $projectl_ids_new_decode( ~%to_decode%~ )
+
+    PATCH_IF ~%SOURCE_FILE%~ STRING_EQUAL_CASE ~SPWI111.spl~ BEGIN
+      PATCH_PRINT ~%SOURCE_FILE% %value% %to_decode% %decoded%~
+    END
+  END ELSE BEGIN
+    decoded = value
+  END
+END
+
+COPY_EXISTING ~projectl.ids~ ~override~
+  READ_2DA_ENTRIES_NOW projectl_ids_new 2
+
+  SET $projectl_ids_new_decode( ~None~ ) = 0
+  FOR (i = 1; i < projectl_ids_new; i += 1) BEGIN
+    READ_2DA_ENTRY_FORMER projectl_ids_new i 0 value
+    READ_2DA_ENTRY_FORMER projectl_ids_new i 1 code
+    SET $projectl_ids_new_decode( ~%code%~ ) = value
+  END
+BUT_ONLY
+
+COPY ~rick_bigg_mod/2da/projectl.ids~ ~override~
+  READ_2DA_ENTRIES_NOW projectl_ids_old 2
+
+  TEXT_SPRINT $projectl_ids_old_decode( 0 ) ~None~
+  FOR (i = 1; i < projectl_ids_old; i += 1) BEGIN
+    READ_2DA_ENTRY_FORMER projectl_ids_old i 0 value
+    READ_2DA_ENTRY_FORMER projectl_ids_old i 1 code
+    value = value + 0
+    TEXT_SPRINT $projectl_ids_old_decode( ~%value%~ ) ~%code%~
+
+    LAUNCH_PATCH_FUNCTION old_to_new_projectl 
+      INT_VAR value = value
+      RET decoded = decoded
+    END
+  END
+BUT_ONLY
+
+
+
+
+
+
+DEFINE_PATCH_FUNCTION old_to_new_msectype
+  INT_VAR value = 0
+  RET decoded
+BEGIN
+  TEXT_SPRINT to_decode $msectype_2da_old_decode( ~%value%~ )
+  SET decoded = $msectype_2da_new_decode( ~%to_decode%~ )
+END
+
+COPY_EXISTING ~msectype.2da~ ~override~
+  READ_2DA_ENTRIES_NOW msectype_2da_new 2
+
+  FOR (i = 1; i < msectype_2da_new; i += 1) BEGIN
+    READ_2DA_ENTRY_FORMER msectype_2da_new i 0 code
+
+    SET $msectype_2da_new_decode( ~%code%~ ) = i - 1
+  END
+BUT_ONLY
+
+COPY ~rick_bigg_mod/2da/msectype.2da~ ~override~
+  READ_2DA_ENTRIES_NOW msectype_2da_old 2
+
+  FOR (i = 1; i < msectype_2da_old; i += 1) BEGIN
+    READ_2DA_ENTRY_FORMER msectype_2da_old i 0 code
+    SET value = i - 1
+    TEXT_SPRINT $msectype_2da_old_decode( ~%value%~ ) ~%code%~
+
+    LAUNCH_PATCH_FUNCTION old_to_new_msectype
+      INT_VAR value = value
+      RET decoded = decoded
+    END
+  END
+BUT_ONLY
+
+
+
+
+
+
+
+DEFINE_PATCH_FUNCTION change_msec_pro
+    INT_VAR opcode_offset = 0
+            opcode_length = 0
+            parameter1_offset = 0
+            parameter2_offset = 0
+BEGIN
+    PATCH_IF opcode_length == 2 BEGIN
+      READ_SHORT opcode_offset opcode
+    END ELSE PATCH_IF opcode_length == 4 BEGIN
+      READ_LONG opcode_offset opcode
+    END
+    READ_LONG  parameter1_offset parameter1
+    READ_LONG  parameter2_offset parameter2
+
+    PATCH_IF opcode == 0x53 /* protection from projectile */
+          || opcode == 0xc5 /* bounce projectile */ BEGIN
+      LAUNCH_PATCH_FUNCTION old_to_new_projectl
+        INT_VAR value = parameter2
+        RET decoded = decoded
+      END
+      WRITE_LONG parameter2_offset decoded
+    END
+    
+    PATCH_IF opcode == 0x8c /* casting glow */ BEGIN
+      LAUNCH_PATCH_FUNCTION old_to_new_projectl
+        INT_VAR value = parameter1
+        RET decoded = decoded
+      END
+      WRITE_LONG parameter1_offset decoded
+    END
+
+    PATCH_IF opcode == 0xcb /* bounce secondary type */
+          || opcode == 0xcd /* protect vs secondary type */
+          || opcode == 0xdd /* remove secondary type */
+          || opcode == 0xe2 /* immunity vs secondary type levels */
+          || opcode == 0xe4 /* bounce vs secondary type levels */
+          || opcode == 0xe6 /* remove one secondary type */ BEGIN
+      LAUNCH_PATCH_FUNCTION old_to_new_msectype
+        INT_VAR value = parameter2
+        RET decoded = decoded
+      END
+      WRITE_LONG parameter2_offset decoded
+    END
+END
+
+DELETE + ~weidu_external/rick_bigg_mod/workspace/copy~
+         ~weidu_external/rick_bigg_mod/workspace/items~
+         ~weidu_external/rick_bigg_mod/workspace/eff~
+         ~weidu_external/rick_bigg_mod/workspace/spell~
+MKDIR ~weidu_external/rick_bigg_mod/workspace/copy~
+      ~weidu_external/rick_bigg_mod/workspace/items~
+      ~weidu_external/rick_bigg_mod/workspace/eff~
+      ~weidu_external/rick_bigg_mod/workspace/spell~
+COPY + ~rick_bigg_mod/copy~  ~weidu_external/rick_bigg_mod/workspace/copy~
+       ~rick_bigg_mod/items~ ~weidu_external/rick_bigg_mod/workspace/items~
+       ~rick_bigg_mod/spell~ ~weidu_external/rick_bigg_mod/workspace/spell~
+       ~rick_bigg_mod/eff~   ~weidu_external/rick_bigg_mod/workspace/eff~
+  SET "min_size" = 0 - 1
+  PATCH_IF ("%SOURCE_FILE%" STRING_COMPARE_REGEXP "^.+\.eff" = 0) BEGIN
+    LAUNCH_PATCH_FUNCTION change_msec_pro
+        INT_VAR opcode_offset = 0x10
+                opcode_length = 4
+                parameter1_offset = 0x1c
+                parameter2_offset = 0x20
+    END
+
+
+    READ_LONG 0xd0 value
+    LAUNCH_PATCH_FUNCTION old_to_new_msectype
+      INT_VAR value = value
+      RET decoded = decoded
+    END
+    WRITE_LONG 0xd0 decoded
+
+    READ_LONG 0xa0 value
+    LAUNCH_PATCH_FUNCTION old_to_new_projectl
+      INT_VAR value = value
+      RET decoded = decoded
+    END
+    WRITE_LONG 0xa0 decoded
+
+  END ELSE PATCH_IF ("%SOURCE_FILE%" STRING_COMPARE_REGEXP "^.+\.spl" = 0) BEGIN
+    READ_LONG   0x64 "abil_off" ELSE 0
+    READ_SHORT  0x68 "abil_num" ELSE 0
+    READ_LONG   0x6a "fx_off"   ELSE 0
+    SET "counter_offset" = 0x70
+    SET "abil_length" = 0x28
+    SET "global_loop" = 0
+    SET "min_size" = 0x72
+    SET opcode_length = 2
+    SET projectl_offset = 0x26
+    SET projectl_value_change = 1
+    SET msectype_offset = 0x27
+    SET msectype_where = 0
+  END ELSE
+  PATCH_IF ("%SOURCE_FILE%" STRING_COMPARE_REGEXP "^.+\.itm" = 0) BEGIN
+    READ_LONG   0x64 "abil_off" ELSE 0
+    READ_SHORT  0x68 "abil_num" ELSE 0
+    READ_LONG   0x6a "fx_off"   ELSE 0
+    SET "counter_offset" = 0x70
+    SET "abil_length" = 0x38
+    SET "global_loop" = 1
+    SET "min_size" = 0x72
+    SET opcode_length = 2
+    SET projectl_offset = 0x2a
+    SET projectl_value_change = 0
+    SET msectype_offset = 0x19
+    SET msectype_where = 1
+  END
+  PATCH_IF (SOURCE_SIZE >= min_size) AND (min_size > 0) BEGIN
+    PATCH_IF msectype_where = 0 BEGIN
+      READ_BYTE msectype_offset value
+      LAUNCH_PATCH_FUNCTION old_to_new_msectype
+        INT_VAR value = value
+        RET decoded = decoded
+      END
+      WRITE_BYTE msectype_offset decoded
+    END
+
+    FOR (index = (0 - global_loop) ; index < abil_num ; index = index + 1) BEGIN
+      PATCH_IF ("%index%" < 0) BEGIN // if loop through globals needed
+        SET "abil_fx_idx" = 0
+      END ELSE BEGIN // otherwise normal ability
+
+        PATCH_IF msectype_where = 1 BEGIN
+          READ_BYTE "%abil_off%" + ("%abil_length%" * "%index%") + msectype_offset value
+          LAUNCH_PATCH_FUNCTION old_to_new_msectype
+            INT_VAR value = value
+            RET decoded = decoded
+          END
+          WRITE_BYTE "%abil_off%" + ("%abil_length%" * "%index%") + msectype_offset decoded
+        END
+
+        READ_SHORT "%abil_off%" + ("%abil_length%" * "%index%") + projectl_offset value
+        LAUNCH_PATCH_FUNCTION old_to_new_projectl
+          INT_VAR value = value - projectl_value_change
+          RET decoded = decoded
+        END
+        WRITE_SHORT "%abil_off%" + ("%abil_length%" * "%index%") + projectl_offset decoded + projectl_value_change
+
+        SET "counter_offset" = ("%abil_off%" + 0x1e + ("%abil_length%" * "%index%"))
+        READ_SHORT  ("%abil_off%" + 0x20 + ("%abil_length%" * "%index%")) "abil_fx_idx"
+      END
+      READ_SHORT "%counter_offset%" "counter" // fx_num on global loop, otherwise abil_fx_num
+      FOR (index2 = 0 ; index2 < counter ; index2 = index2 + 1) BEGIN
+        LAUNCH_PATCH_FUNCTION change_msec_pro
+            INT_VAR opcode_offset = ("%fx_off%"        + (("%abil_fx_idx%" + "%index2%") * 0x30))
+            opcode_length = opcode_length
+            parameter1_offset =     ("%fx_off%" + 0x04 + (("%abil_fx_idx%" + "%index2%") * 0x30))
+            parameter2_offset =     ("%fx_off%" + 0x08 + (("%abil_fx_idx%" + "%index2%") * 0x30))
+        END
+      END
+    END
+  END

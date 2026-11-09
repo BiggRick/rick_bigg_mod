@@ -1,5 +1,5 @@
 //SCIMITAR +1 - 1500mo//
-COPY "rick_bigg_mod/items/SW1H22.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/SW1H22.itm" "override"
 	SAY NAME1 "Scimitar"
 	SAY UNIDENTIFIED_DESC "The long, curved, single-edged blade is characteristic of both the saber and the scimitar, even though their origins lie in different parts of Faerûn. Whereas the saber was intended chiefly for horsemen, mainly due to its versatility, the scimitar has a heavier oriental influence. The 'shamshir', as it was originally called, is larger, more highly curved, and tapered to an elongated, sharp point. This makes the weapon slightly slower but more effective and deadly in combat.
 
@@ -35,7 +35,7 @@ Weight: 3"
 
 
 //SCIMITAR +2 - 2500mo//
-COPY "rick_bigg_mod/items/BDSW1H23.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BDSW1H23.itm" "override"
 	SAY NAME1 "Scimitar"
 	SAY UNIDENTIFIED_DESC "The long, curved, single-edged blade is characteristic of both the saber and the scimitar, even though their origins lie in different parts of Faerûn. Whereas the saber was intended chiefly for horsemen, mainly due to its versatility, the scimitar has a heavier oriental influence. The 'shamshir', as it was originally called, is larger, more highly curved, and tapered to an elongated, sharp point. This makes the weapon slightly slower but more effective and deadly in combat.
 
@@ -72,7 +72,7 @@ Weight: 3"
 
 
 //HAWKSIGHT +2 - 5000mo//
-COPY "rick_bigg_mod/items/OHRSW1H1.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/OHRSW1H1.itm" "override"
 	SAY NAME1 "Scimitar"
 	SAY UNIDENTIFIED_DESC "The long, curved, single-edged blade is characteristic of both the saber and the scimitar, even though their origins lie in different parts of Faerûn. Whereas the saber was intended chiefly for horsemen, mainly due to its versatility, the scimitar has a heavier oriental influence. The 'shamshir', as it was originally called, is larger, more highly curved, and tapered to an elongated, sharp point. This makes the weapon slightly slower but more effective and deadly in combat.
 
@@ -111,7 +111,7 @@ Weight: 3"
 
 
 //TWINKLE +3 - 9000mo//
-COPY "rick_bigg_mod/items/SW1H16.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/SW1H16.itm" "override"
 	SAY NAME1 "Scimitar"
 	SAY UNIDENTIFIED_DESC "The long, curved, single-edged blade is characteristic of both the saber and the scimitar, even though their origins lie in different parts of Faerûn. Whereas the saber was intended chiefly for horsemen, mainly due to its versatility, the scimitar has a heavier oriental influence. The 'shamshir', as it was originally called, is larger, more highly curved, and tapered to an elongated, sharp point. This makes the weapon slightly slower but more effective and deadly in combat.
 
@@ -148,7 +148,7 @@ Weight: 4"
 
 
 //ICINGDEATH +3 - 8500mo//
-COPY "rick_bigg_mod/items/SW1H15.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/SW1H15.itm" "override"
 	SAY NAME1 "Scimitar"
 	SAY UNIDENTIFIED_DESC "The long, curved, single-edged blade is characteristic of both the saber and the scimitar, even though their origins lie in different parts of Faerûn. Whereas the saber was intended chiefly for horsemen, mainly due to its versatility, the scimitar has a heavier oriental influence. The 'shamshir', as it was originally called, is larger, more highly curved, and tapered to an elongated, sharp point. This makes the weapon slightly slower but more effective and deadly in combat.
 
@@ -187,7 +187,7 @@ Weight: 4"
 
 
 //BELM +3 - 8000mo//
-COPY "rick_bigg_mod/items/SW1H30.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/SW1H30.itm" "override"
 	SAY NAME1 "Scimitar"
 	SAY UNIDENTIFIED_DESC "The long, curved, single-edged blade is characteristic of both the saber and the scimitar, even though their origins lie in different parts of Faerûn. Whereas the saber was intended chiefly for horsemen, mainly due to its versatility, the scimitar has a heavier oriental influence. The 'shamshir', as it was originally called, is larger, more highly curved, and tapered to an elongated, sharp point. This makes the weapon slightly slower but more effective and deadly in combat.
 
@@ -224,7 +224,7 @@ Weight: 2"
 
 
 //SOUL REAVER +4//
-COPY "rick_bigg_mod/items/SW2H08.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/SW2H08.itm" "override"
 	SAY NAME1 "Scimitar"
 	SAY UNIDENTIFIED_DESC "The long, curved, single-edged blade is characteristic of both the saber and the scimitar, even though their origins lie in different parts of Faerûn. Whereas the saber was intended chiefly for horsemen, mainly due to its versatility, the scimitar has a heavier oriental influence. The 'shamshir', as it was originally called, is larger, more highly curved, and tapered to an elongated, sharp point. This makes the weapon slightly slower but more effective and deadly in combat.
 
@@ -263,7 +263,7 @@ Weight: 2"
 
 
 //SPECTRAL BRAND +4 - no good - 9500mo/
-COPY "rick_bigg_mod/items/SW1H68.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/SW1H68.itm" "override"
 	SAY NAME1 "Scimitar"
 	SAY UNIDENTIFIED_DESC "The long, curved, single-edged blade is characteristic of both the saber and the scimitar, even though their origins lie in different parts of Faerûn. Whereas the saber was intended chiefly for horsemen, mainly due to its versatility, the scimitar has a heavier oriental influence. The 'shamshir', as it was originally called, is larger, more highly curved, and tapered to an elongated, sharp point. This makes the weapon slightly slower but more effective and deadly in combat.
 
@@ -309,7 +309,7 @@ Weight: 2"
 
 
 //SPECTRAL BRAND +5 - no good - 16000mo//
-COPY "rick_bigg_mod/items/SW1H69.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/SW1H69.itm" "override"
 	SAY NAME1 "Scimitar"
 	SAY UNIDENTIFIED_DESC "The long, curved, single-edged blade is characteristic of both the saber and the scimitar, even though their origins lie in different parts of Faerûn. Whereas the saber was intended chiefly for horsemen, mainly due to its versatility, the scimitar has a heavier oriental influence. The 'shamshir', as it was originally called, is larger, more highly curved, and tapered to an elongated, sharp point. This makes the weapon slightly slower but more effective and deadly in combat.
 

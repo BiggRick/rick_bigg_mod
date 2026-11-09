@@ -1,5 +1,5 @@
 //POTION OF STRENGTH - valore 300mo//
-COPY "rick_bigg_mod/items/POTN03.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/POTN03.itm" "override"
 	SAY NAME1 "Potion"
 	SAY UNIDENTIFIED_DESC "Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.
 
@@ -23,7 +23,7 @@ Weight: 1"
 
 
 //POTION OF EXCEPTIONAL STRENGTH - valore 350mo//
-COPY "rick_bigg_mod/items/POTN12.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/POTN12.itm" "override"
 	SAY NAME1 "Potion"
 	SAY UNIDENTIFIED_DESC "Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.
 
@@ -47,7 +47,7 @@ Weight: 1"
 
 
 //POTION OF EXTRAORDINARY STRENGTH - 400mo//
-COPY "rick_bigg_mod/items/POTN04.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/POTN04.itm" "override"
 	SAY NAME1 "Potion"
 	SAY UNIDENTIFIED_DESC "Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.
 
@@ -74,7 +74,7 @@ Weight: 1"
 
 
 //POTION OF SUPERIOR STRENGTH - valore 450mo//
-COPY "rick_bigg_mod/items/POTN05.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/POTN05.itm" "override"
 	SAY NAME1 "Potion"
 	SAY UNIDENTIFIED_DESC "Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.
 
@@ -100,7 +100,7 @@ Weight: 1"
 
 
 //POTION OF PHENOMENAL STRENGTH - 500mo//
-COPY "rick_bigg_mod/items/POTN06.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/POTN06.itm" "override"
 	SAY NAME1 "Potion"
 	SAY UNIDENTIFIED_DESC "Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.
 
@@ -127,7 +127,7 @@ Weight: 1"
 
 
 //POTION OF OGRE STRENGTH - 600mo//
-COPY "rick_bigg_mod/items/POTN07.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/POTN07.itm" "override"
 	SAY NAME1 "Potion"
 	SAY UNIDENTIFIED_DESC "Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.
 
@@ -151,7 +151,7 @@ Weight: 1"
 
 
 //POTION OF GENIUS - valore 500mo//
-COPY "rick_bigg_mod/items/POTN29.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/POTN29.itm" "override"
 	SAY NAME1 "Potion"
 	SAY UNIDENTIFIED_DESC "Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.
 
@@ -178,7 +178,7 @@ Weight: 1"
 
 
 //POTION OF INSIGHT - 500mo//
-COPY "rick_bigg_mod/items/POTN43.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/POTN43.itm" "override"
 	SAY NAME1 "Potion"
 	SAY UNIDENTIFIED_DESC "Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.
 
@@ -201,7 +201,7 @@ Weight: 1"
 
 
 //POTION OF AGILITY - 500mo//
-COPY "rick_bigg_mod/items/POTN19.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/POTN19.itm" "override"
 	SAY NAME1 "Potion"
 	SAY UNIDENTIFIED_DESC "Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.
 
@@ -224,7 +224,7 @@ Weight: 1"
 
 
 //POTION OF FORTITUDE - 500mo//
-COPY "rick_bigg_mod/items/POTN28.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/POTN28.itm" "override"
 	SAY NAME1 "Potion"
 	SAY UNIDENTIFIED_DESC "Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.
 
@@ -248,7 +248,7 @@ Weight: 1"
 
 
 //POTION OF FREEDOM - 400mo//
-COPY "rick_bigg_mod/items/POTN45.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/POTN45.itm" "override"
 	SAY NAME1 "Potion"
 	SAY UNIDENTIFIED_DESC "Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.
 
@@ -272,7 +272,7 @@ Weight: 1"
 
 
 //POTION OF MIND FOCUSING - 300mo//
-COPY "rick_bigg_mod/items/POTN37.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/POTN37.itm" "override"
 	SAY NAME1 "Potion"
 	SAY UNIDENTIFIED_DESC "Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.
 
@@ -300,7 +300,7 @@ Weight: 1"
 
 
 //POTION OF ELEMENTAL ABSORPTION//
-COPY "rick_bigg_mod/items/POTN18.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/POTN18.itm" "override"
 	SAY NAME1 "Potion"
 	SAY UNIDENTIFIED_DESC "Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.
 
@@ -331,7 +331,7 @@ Weight: 1"
 
 
 //POTION OF HEROISM - 800mo - solo guerrieri//
-COPY "rick_bigg_mod/items/POTN09.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/POTN09.itm" "override"
 	SAY NAME1 "Potion"
 	SAY UNIDENTIFIED_DESC "Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.
 
@@ -358,7 +358,7 @@ Weight: 1"
 
 
 //POTION OF INVULNERABILITY - 800mo//
-COPY "rick_bigg_mod/items/POTN11.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/POTN11.itm" "override"
 	SAY NAME1 "Potion"
 	SAY UNIDENTIFIED_DESC "Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.
 
@@ -382,7 +382,7 @@ Weight: 1"
 
 
 //POTION OF INFRAVISION - 100mo//
-COPY "rick_bigg_mod/items/POTN30.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/POTN30.itm" "override"
 	SAY NAME1 "Potion"
 	SAY UNIDENTIFIED_DESC "Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.
 
@@ -406,7 +406,7 @@ Weight: 1"
 
 
 //POTION OF MAGIC PROTECTION - 1000mo//
-COPY "rick_bigg_mod/items/POTN34.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/POTN34.itm" "override"
 	SAY NAME1 "Potion"
 	SAY UNIDENTIFIED_DESC "Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.
 
@@ -432,7 +432,7 @@ Weight: 1"
 
 
 //POTION OF MAGIC SHIELDING - 1000mo//
-COPY "rick_bigg_mod/items/POTN35.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/POTN35.itm" "override"
 	SAY NAME1 "Potion"
 	SAY UNIDENTIFIED_DESC "Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.
 
@@ -460,7 +460,7 @@ Weight: 1"
 
 
 //POTION OF PERSUASIVENESS - 500mo//
-COPY "rick_bigg_mod/items/POTN60.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/POTN60.itm" "override"
 	SAY NAME1 "Potion"
 	SAY UNIDENTIFIED_DESC "Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.
 
@@ -485,7 +485,7 @@ Weight: 1"
 
 
 //POTION OF REGENERATION - 500mo//
-COPY "rick_bigg_mod/items/POTN42.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/POTN42.itm" "override"
 	SAY NAME1 "Potion"
 	SAY UNIDENTIFIED_DESC "Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.
 
@@ -511,7 +511,7 @@ Weight: 1"
 
 
 //VITRIOL GRANADE - 500mo//
-COPY "rick_bigg_mod/items/POTN26.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/POTN26.itm" "override"
 	SAY NAME1 "Potion"
 	SAY UNIDENTIFIED_DESC "Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.
 
@@ -533,7 +533,7 @@ Weight: 1"
 
 
 //POTION OF MURDER - 900mo - solo ladri e assassini//
-COPY "rick_bigg_mod/items/POTN41.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/POTN41.itm" "override"
 	SAY NAME1 "Potion"
 	SAY UNIDENTIFIED_DESC "Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.
 
@@ -559,7 +559,7 @@ Weight: 1"
 
 
 //POTION OF MAGIC POWER - 1500mo - solo maghi e bardi//
-COPY "rick_bigg_mod/items/POTN33.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/POTN33.itm" "override"
 	SAY NAME1 "Potion"
 	SAY UNIDENTIFIED_DESC "Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.
 
@@ -585,7 +585,7 @@ Weight: 1"
 
 
 //POTION OF MISSILE PROTECTION - 300mo//
-COPY "rick_bigg_mod/items/POTN44.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/POTN44.itm" "override"
 	SAY NAME1 "Potion"
 	SAY UNIDENTIFIED_DESC "Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.
 
@@ -608,7 +608,7 @@ Weight: 1"
 
 
 //POTION OF FIRE BREATH - 300mo//
-COPY "rick_bigg_mod/items/POTN27.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/POTN27.itm" "override"
 	SAY NAME1 "Potion"
 	SAY UNIDENTIFIED_DESC "Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.
 
@@ -631,7 +631,7 @@ Weight: 1"
 
 
 //OIL OF FIERY BURNING - 300mo//
-COPY "rick_bigg_mod/items/POTN13.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/POTN13.itm" "override"
 	SAY NAME1 "Potion"
 	SAY UNIDENTIFIED_DESC "Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.
 

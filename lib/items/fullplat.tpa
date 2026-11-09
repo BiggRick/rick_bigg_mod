@@ -1,5 +1,5 @@
 //FULL PLATE MAIL +1 - 7500mo//
-COPY "rick_bigg_mod/items/PLAT14.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/PLAT14.itm" "override"
 	SAY NAME1 "Full Plate Mail"
 	SAY UNIDENTIFIED_DESC "Full plate armor is the best armor a warrior can buy, both in appearance and protection. The perfectly fitted, interlocking plates are specially angled to deflect arrows and blows, and the entire suit is carefully adorned with rich engraving and embossed detail.
 
@@ -30,7 +30,7 @@ Weight: 50
 
 
 //PLATE OF BALDURAN +2 - 12000mo//
-COPY "rick_bigg_mod/items/WA2PLAT.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/WA2PLAT.itm" "override"
 	SAY NAME1 "Full Plate Mail"
 	SAY UNIDENTIFIED_DESC "Full plate armor is the best armor a warrior can buy, both in appearance and protection. The perfectly fitted, interlocking plates are specially angled to deflect arrows and blows, and the entire suit is carefully adorned with rich engraving and embossed detail.
 
@@ -64,7 +64,7 @@ Weight: 50
 
 
 //FULL PLATE MAIL +2 - 9000mo//
-COPY "rick_bigg_mod/items/PLAT23.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/PLAT23.itm" "override"
 	SAY NAME1 "Full Plate Mail"
 	SAY UNIDENTIFIED_DESC "Full plate armor is the best armor a warrior can buy, both in appearance and protection. The perfectly fitted, interlocking plates are specially angled to deflect arrows and blows, and the entire suit is carefully adorned with rich engraving and embossed detail.
 
@@ -101,7 +101,7 @@ Weight: 50
 
 
 //ARMOR OF THE HEART +3 - no evil - 14000mo//
-COPY "rick_bigg_mod/items/PLAT16.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/PLAT16.itm" "override"
 	SAY NAME1 "Full Plate Mail"
 	SAY UNIDENTIFIED_DESC "Full plate armor is the best armor a warrior can buy, both in appearance and protection. The perfectly fitted, interlocking plates are specially angled to deflect arrows and blows, and the entire suit is carefully adorned with rich engraving and embossed detail.
 
@@ -136,7 +136,7 @@ Weight: 40
 
 
 //PLATE OF THE DARK +3 - no good - 15000mo//
-COPY "rick_bigg_mod/items/TB#PLATD.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/TB#PLATD.itm" "override"
 	SAY NAME1 "Full Plate Mail"
 	SAY UNIDENTIFIED_DESC "Full plate armor is the best armor a warrior can buy, both in appearance and protection. The perfectly fitted, interlocking plates are specially angled to deflect arrows and blows, and the entire suit is carefully adorned with rich engraving and embossed detail.
 
@@ -171,7 +171,7 @@ Weight: 35
 
 
 //RED DRAGON SCALE - 15000mo//
-COPY "rick_bigg_mod/items/PLAT18.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/PLAT18.itm" "override"
 	SAY NAME1 "Full Plate Mail"
 	SAY UNIDENTIFIED_DESC "Full plate armor is the best armor a warrior can buy, both in appearance and protection. The perfectly fitted, interlocking plates are specially angled to deflect arrows and blows, and the entire suit is carefully adorned with rich engraving and embossed detail.
 
@@ -205,7 +205,7 @@ Weight: 25
 
 
 //BLUE DRAGON SCALE - 18000mo//
-COPY "rick_bigg_mod/items/PLAT20.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/PLAT20.itm" "override"
 	SAY NAME1 "Full Plate Mail"
 	SAY UNIDENTIFIED_DESC "Full plate armor is the best armor a warrior can buy, both in appearance and protection. The perfectly fitted, interlocking plates are specially angled to deflect arrows and blows, and the entire suit is carefully adorned with rich engraving and embossed detail.
 
@@ -244,7 +244,7 @@ Weight: 25
 
 
 //SHURUPPAK'S PLATE +5 - 20000mo//
-COPY "rick_bigg_mod/items/PLAT22.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/PLAT22.itm" "override"
 	SAY NAME1 "Full Plate Mail"
 	SAY UNIDENTIFIED_DESC "Full plate armor is the best armor a warrior can buy, both in appearance and protection. The perfectly fitted, interlocking plates are specially angled to deflect arrows and blows, and the entire suit is carefully adorned with rich engraving and embossed detail.
 

@@ -1,5 +1,5 @@
 //BLACK SPIDER FIGURINE - valore 5000mo//
-COPY "rick_bigg_mod/items/MISC3E.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/MISC3E.itm" "override"
 	SAY NAME1 "Figurine"
 	SAY UNIDENTIFIED_DESC "This is a small spider figurine.
 
@@ -24,7 +24,7 @@ Weight: 0"
 
 
 //GOLDEN LION FIGURINE - solo druidi - valore 4000mo//
-COPY "rick_bigg_mod/items/MISC3D.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/MISC3D.itm" "override"
 	SAY NAME1 "Figurine"
 	SAY UNIDENTIFIED_DESC "This is a small lion figurine.
 
@@ -50,7 +50,7 @@ Weight: 0"
 
 
 //MOON DOG FIGURINE - solo ranger - valore 4000mo//
-COPY "rick_bigg_mod/items/MISC7T.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/MISC7T.itm" "override"
 	SAY NAME1 "Figurine"
 	SAY UNIDENTIFIED_DESC "This is a small dog figurine.
 

@@ -1,5 +1,5 @@
 //FLESH-TEARER +2 - 4500mo//
-COPY "rick_bigg_mod/items/TB#BLUN.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/TB#BLUN.itm" "override"
 	SAY NAME1 "Flail"
 	SAY UNIDENTIFIED_DESC "The flail is a sturdy wooden handle attached to an iron rod, a wooden rod with spikes, or a spiked iron ball. Between the handle and its implement is either a hinge or chain link. The weapon was originally used as a tool for threshing grain.
 
@@ -34,7 +34,7 @@ Weight: 9"
 
 
 //DEFENDER OF EASTHEAVEN +4 - 14000mo//
-COPY "rick_bigg_mod/items/WAFLAIL.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/WAFLAIL.itm" "override"
 	SAY NAME1 "Flail"
 	SAY UNIDENTIFIED_DESC "The flail is a sturdy wooden handle attached to an iron rod, a wooden rod with spikes, or a spiked iron ball. Between the handle and its implement is either a hinge or chain link. The weapon was originally used as a tool for threshing grain.
 
@@ -77,7 +77,7 @@ Weight: 9"
 
 
 //FLAIL OF AGES +3 - 12000mo//
-COPY "rick_bigg_mod/items/BLUN14.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BLUN14.itm" "override"
 	SAY NAME1 "Flail"
 	SAY UNIDENTIFIED_DESC "The flail is a sturdy wooden handle attached to an iron rod, a wooden rod with spikes, or a spiked iron ball. Between the handle and its implement is either a hinge or chain link. The weapon was originally used as a tool for threshing grain.
 
@@ -118,7 +118,7 @@ Weight: 10"
 
 
 //FLAIL OF AGES +4 - 15000mo//
-COPY "rick_bigg_mod/items/BLUN30C.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BLUN30C.itm" "override"
 	SAY NAME1 "Flail"
 	SAY UNIDENTIFIED_DESC "The flail is a sturdy wooden handle attached to an iron rod, a wooden rod with spikes, or a spiked iron ball. Between the handle and its implement is either a hinge or chain link. The weapon was originally used as a tool for threshing grain.
 
@@ -163,7 +163,7 @@ Weight: 9"
 
 
 //FLAIL OF AGES +4 - 15000mo//
-COPY "rick_bigg_mod/items/BLUN30D.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BLUN30D.itm" "override"
 	SAY NAME1 "Flail"
 	SAY UNIDENTIFIED_DESC "The flail is a sturdy wooden handle attached to an iron rod, a wooden rod with spikes, or a spiked iron ball. Between the handle and its implement is either a hinge or chain link. The weapon was originally used as a tool for threshing grain.
 
@@ -208,7 +208,7 @@ Weight: 9"
 
 
 //FLAIL OF AGES +5 - 20000//
-COPY "rick_bigg_mod/items/BLUN30.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BLUN30.itm" "override"
 	SAY NAME1 "Flail"
 	SAY UNIDENTIFIED_DESC "The flail is a sturdy wooden handle attached to an iron rod, a wooden rod with spikes, or a spiked iron ball. Between the handle and its implement is either a hinge or chain link. The weapon was originally used as a tool for threshing grain.
 
