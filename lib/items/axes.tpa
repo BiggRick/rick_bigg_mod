@@ -1,5 +1,5 @@
 //RETURNING THROWING AXE +1 - 2500mo//
-COPY "rick_bigg_mod/items/AX1H05.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/AX1H05.itm" "override"
 	SAY NAME1 "Throwing Axe"
 	SAY UNIDENTIFIED_DESC "The hand axe or throwing axe is also known as a hatchet. The axe blade has a sharp steel tip counterbalanced by a pointed fluke. The short handle has a point on the bottom, and the head may have a spike on the top.
 
@@ -43,7 +43,7 @@ Weight: 4"
 
 
 //HANGARD'S AXE +2//
-COPY "rick_bigg_mod/items/AX1H08.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/AX1H08.itm" "override"
 	SAY NAME1 "Throwing Axe"
 	SAY UNIDENTIFIED_DESC "The hand axe or throwing axe is also known as a hatchet. The axe blade has a sharp steel tip counterbalanced by a pointed fluke. The short handle has a point on the bottom, and the head may have a spike on the top.
 
@@ -86,7 +86,7 @@ Weight: 4"
 
 
 //AZUREDGE +2 - 8000mo - no evil//
-COPY "rick_bigg_mod/items/AX1H10.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/AX1H10.itm" "override"
 	SAY NAME1 "Throwing Axe"
 	SAY UNIDENTIFIED_DESC "The hand axe or throwing axe is also known as a hatchet. The axe blade has a sharp steel tip counterbalanced by a pointed fluke. The short handle has a point on the bottom, and the head may have a spike on the top.
 
@@ -132,7 +132,7 @@ Weight: 2"
 
 
 //RYFTHOME AXE +3 - valore 7000mo//
-COPY "rick_bigg_mod/items/AX1H09.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/AX1H09.itm" "override"
 	SAY NAME1 "Throwing Axe"
 	SAY UNIDENTIFIED_DESC "The hand axe or throwing axe is also known as a hatchet. The axe blade has a sharp steel tip counterbalanced by a pointed fluke. The short handle has a point on the bottom, and the head may have a spike on the top.
 
@@ -178,7 +178,7 @@ Weight: 2"
 
 
 //K'LOGARATH +3// - valore 12000mo
-COPY "rick_bigg_mod/items/AX1H16.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/AX1H16.itm" "override"
 	SAY NAME1 "Throwing Axe"
 	SAY UNIDENTIFIED_DESC "The hand axe or throwing axe is also known as a hatchet. The axe blade has a sharp steel tip counterbalanced by a pointed fluke. The short handle has a point on the bottom, and the head may have a spike on the top.
 
@@ -224,7 +224,7 @@ Weight: 1"
 
 
 //BATTLE AXE +2 - 2500mo//
-COPY "rick_bigg_mod/items/AX1H11.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/AX1H11.itm" "override"
 	SAY NAME1 "Battle Axe"
 	SAY UNIDENTIFIED_DESC "The most common version of the battle axe is a stout pole about four feet in length with a single-edged, trumpet-shaped blade mounted on one end. This axe, in particular, appears to be very poorly made and slightly smaller than the average battle axe.
 
@@ -263,7 +263,7 @@ Weight: 5"
 
 
 //WIZARD SLAYER +2 - 6000mo//
-COPY "rick_bigg_mod/items/AX1H07.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/AX1H07.itm" "override"
 	SAY NAME1 "Battle Axe"
 	SAY UNIDENTIFIED_DESC "The most common version of the battle axe is a stout pole about four feet in length with a single-edged, trumpet-shaped blade mounted on one end. This axe, in particular, appears to be very poorly made and slightly smaller than the average battle axe.
 
@@ -301,7 +301,7 @@ Weight: 7"
 
 
 //AXE OF THE RUIN +3 - valore 6000mo//
-COPY "rick_bigg_mod/items/TB#AX1.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/TB#AX1.itm" "override"
 	SAY NAME1 "Battle Axe"
 	SAY UNIDENTIFIED_DESC "The most common version of the battle axe is a stout pole about four feet in length with a single-edged, trumpet-shaped blade mounted on one end. This axe, in particular, appears to be very poorly made and slightly smaller than the average battle axe.
 
@@ -346,7 +346,7 @@ Weight: 7"
 
 
 //FROSTREAVER +3 - valore 7000mo//
-COPY "rick_bigg_mod/items/AX1H13.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/AX1H13.itm" "override"
 	SAY NAME1 "Battle Axe"
 	SAY UNIDENTIFIED_DESC "The most common version of the battle axe is a stout pole about four feet in length with a single-edged, trumpet-shaped blade mounted on one end. This axe, in particular, appears to be very poorly made and slightly smaller than the average battle axe.
 
@@ -381,7 +381,7 @@ Weight: 7"
 
 
 //STONEFIRE +4 - valore 8000mo//
-COPY "rick_bigg_mod/items/AX1H12.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/AX1H12.itm" "override"
 	SAY NAME1 "Battle Axe"
 	SAY UNIDENTIFIED_DESC "The most common version of the battle axe is a stout pole about four feet in length with a single-edged, trumpet-shaped blade mounted on one end. This axe, in particular, appears to be very poorly made and slightly smaller than the average battle axe.
 
@@ -419,7 +419,7 @@ Weight: 7"
 
 
 //AXE OF THE UNYIELDING +3 - 9500mo//
-COPY "rick_bigg_mod/items/AX1H14.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/AX1H14.itm" "override"
 	SAY NAME1 "Battle Axe"
 	SAY UNIDENTIFIED_DESC "The most common version of the battle axe is a stout pole about four feet in length with a single-edged, trumpet-shaped blade mounted on one end. This axe, in particular, appears to be very poorly made and slightly smaller than the average battle axe.
 
@@ -455,7 +455,7 @@ Weight: 7"
 
 
 //AXE OF THE UNYIELDING +5 - 18000mo//
-COPY "rick_bigg_mod/items/AX1H15.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/AX1H15.itm" "override"
 	SAY NAME1 "Battle Axe"
 	SAY UNIDENTIFIED_DESC "The most common version of the battle axe is a stout pole about four feet in length with a single-edged, trumpet-shaped blade mounted on one end. This axe, in particular, appears to be very poorly made and slightly smaller than the average battle axe.
 

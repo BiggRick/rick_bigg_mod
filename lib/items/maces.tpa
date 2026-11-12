@@ -1,5 +1,5 @@
 //ARDULIA'S FALL +2 - 5500mo//
-COPY "rick_bigg_mod/items/BLUN20.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BLUN20.itm" "override"
 	SAY NAME1 "Mace"
 	SAY UNIDENTIFIED_DESC "The mace is a direct descendant of the basic club, being nothing more than a wooden shaft with a stone or iron head mounted on the end. The head design varies: Some are spiked, others flanged, and still others have pyramidal knobs.
 
@@ -39,7 +39,7 @@ Weight: 7"
 
 
 //MAULER'S ARM +2 - 4000mo//
-COPY "rick_bigg_mod/items/BLUN19.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BLUN19.itm" "override"
 	SAY NAME1 "Mace"
 	SAY UNIDENTIFIED_DESC "The mace is a direct descendant of the basic club, being nothing more than a wooden shaft with a stone or iron head mounted on the end. The head design varies: Some are spiked, others flanged, and still others have pyramidal knobs.
 
@@ -77,7 +77,7 @@ Weight: 7"
 
 
 //SKULLACRASHER +3 - 5000mo//
-COPY "rick_bigg_mod/items/BLUN18.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BLUN18.itm" "override"
 	SAY NAME1 "Mace"
 	SAY UNIDENTIFIED_DESC "The mace is a direct descendant of the basic club, being nothing more than a wooden shaft with a stone or iron head mounted on the end. The head design varies: Some are spiked, others flanged, and still others have pyramidal knobs.
 
@@ -111,7 +111,7 @@ Weight: 6"
 
 
 //JERROD'S MACE +3 - valore 9000mo//
-COPY "rick_bigg_mod/items/WAMACE.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/WAMACE.itm" "override"
 	SAY NAME1 "Mace"
 	SAY UNIDENTIFIED_DESC "The mace is a direct descendant of the basic club, being nothing more than a wooden shaft with a stone or iron head mounted on the end. The head design varies: Some are spiked, others flanged, and still others have pyramidal knobs.
 
@@ -150,7 +150,7 @@ Weight: 6"
 
 
 //MACE OF DISRUPTION +3 - valore 8000mo//
-COPY "rick_bigg_mod/items/BLUN12.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BLUN12.itm" "override"
 	SAY NAME1 "Mace"
 	SAY UNIDENTIFIED_DESC "The mace is a direct descendant of the basic club, being nothing more than a wooden shaft with a stone or iron head mounted on the end. The head design varies: Some are spiked, others flanged, and still others have pyramidal knobs.
 
@@ -192,7 +192,7 @@ Weight: 6"
 
 
 //MACE OF DISRUPTION +4 - valore 12000mo//
-COPY "rick_bigg_mod/items/BLUN25.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BLUN25.itm" "override"
 	SAY NAME1 "Mace"
 	SAY UNIDENTIFIED_DESC "The mace is a direct descendant of the basic club, being nothing more than a wooden shaft with a stone or iron head mounted on the end. The head design varies: Some are spiked, others flanged, and still others have pyramidal knobs.
 
@@ -235,7 +235,7 @@ Weight: 6"
 
 
 //ROD OF ATROPHY +5 - valore 10000mo//
-COPY "rick_bigg_mod/items/RODS02.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/RODS02.itm" "override"
 	SAY NAME1 "Rod"
 	SAY UNIDENTIFIED_DESC "Rods are about three feet long and as thick as your thumb. They are normally found in cases or similar storage places. Rods can be fashioned from metal, wood, ivory, or bone. They can be plain or decorated and carved, tipped, or not. Rods are powered by charges, unless noted otherwise in the description of a particular rod. Each time the rod is used, one or more charge may be expended.
 
@@ -268,7 +268,7 @@ Weight: 1"
 
 
 //STORM STAR +4 - valore 8000mo//
-COPY "rick_bigg_mod/items/BLUN28.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BLUN28.itm" "override"
 	SAY NAME1 "Mace"
 	SAY UNIDENTIFIED_DESC "The mace is a direct descendant of the basic club, being nothing more than a wooden shaft with a stone or iron head mounted on the end. The head design varies: Some are spiked, others flanged, and still others have pyramidal knobs.
 
@@ -305,7 +305,7 @@ Weight: 5"
 
 
 //STORM STAR +5 - valore 15000mo//
-COPY "rick_bigg_mod/items/BLUN29.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BLUN29.itm" "override"
 	SAY NAME1 "Mace"
 	SAY UNIDENTIFIED_DESC "The mace is a direct descendant of the basic club, being nothing more than a wooden shaft with a stone or iron head mounted on the end. The head design varies: Some are spiked, others flanged, and still others have pyramidal knobs.
 

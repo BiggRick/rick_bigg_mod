@@ -1,5 +1,5 @@
 //MAGE ROBE OF COLD RESISTANCE - valore 800mo//
-COPY "rick_bigg_mod/items/CLCK09.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/CLCK09.itm" "override"
 	SAY NAME1 "Mage Robe"
 	SAY UNIDENTIFIED_DESC "Since the age of Netheril, mages have learned to bestow a wide variety of magical properties upon the everyday objects that surround them. A favorite item of such enchantment is the common robe. It is lightweight, affordable, and holds its enchantment well, thereby making it ideal equipment for a mage. Due to their magical heritage, however, only single-, dual-, and multi-class mages may wear these enchanted robes.
 
@@ -22,7 +22,7 @@ Weight: 3"
 
 
 //MAGE ROBE OF FIRE RESISTANCE - valore 800mo//
-COPY "rick_bigg_mod/items/CLCK10.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/CLCK10.itm" "override"
 	SAY NAME1 "Mage Robe"
 	SAY UNIDENTIFIED_DESC "Since the age of Netheril, mages have learned to bestow a wide variety of magical properties upon the everyday objects that surround them. A favorite item of such enchantment is the common robe. It is lightweight, affordable, and holds its enchantment well, thereby making it ideal equipment for a mage. Due to their magical heritage, however, only single-, dual-, and multi-class mages may wear these enchanted robes.
 
@@ -46,7 +46,7 @@ Weight: 3"
 
 
 //MAGE ROBE OF ELECTRIC RESISTANCE - valore 800mo//
-COPY "rick_bigg_mod/items/CLCK11.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/CLCK11.itm" "override"
 	SAY NAME1 "Mage Robe"
 	SAY UNIDENTIFIED_DESC "Since the age of Netheril, mages have learned to bestow a wide variety of magical properties upon the everyday objects that surround them. A favorite item of such enchantment is the common robe. It is lightweight, affordable, and holds its enchantment well, thereby making it ideal equipment for a mage. Due to their magical heritage, however, only single-, dual-, and multi-class mages may wear these enchanted robes.
 
@@ -69,7 +69,7 @@ Weight: 3"
 
 
 //KNAVE'S ROBE - valore 1200mo//
-COPY "rick_bigg_mod/items/CLCK12.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/CLCK12.itm" "override"
 	SAY NAME1 "Mage Robe"
 	SAY UNIDENTIFIED_DESC "Since the age of Netheril, mages have learned to bestow a wide variety of magical properties upon the everyday objects that surround them. A favorite item of such enchantment is the common robe. It is lightweight, affordable, and holds its enchantment well, thereby making it ideal equipment for a mage. Due to their magical heritage, however, only single-, dual-, and multi-class mages may wear these enchanted robes.
 
@@ -92,7 +92,7 @@ Weight: 4"
 
 
 //TRAVELER'S ROBE - valore 1200mo//
-COPY "rick_bigg_mod/items/CLCK13.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/CLCK13.itm" "override"
 	SAY NAME1 "Mage Robe"
 	SAY UNIDENTIFIED_DESC "Since the age of Netheril, mages have learned to bestow a wide variety of magical properties upon the everyday objects that surround them. A favorite item of such enchantment is the common robe. It is lightweight, affordable, and holds its enchantment well, thereby making it ideal equipment for a mage. Due to their magical heritage, however, only single-, dual-, and multi-class mages may wear these enchanted robes.
 
@@ -116,7 +116,7 @@ Weight: 4"
 
 
 //ADVENTURER'S ROBE - valore 1200mo//
-COPY "rick_bigg_mod/items/CLCK14.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/CLCK14.itm" "override"
 	SAY NAME1 "Mage Robe"
 	SAY UNIDENTIFIED_DESC "Since the age of Netheril, mages have learned to bestow a wide variety of magical properties upon the everyday objects that surround them. A favorite item of such enchantment is the common robe. It is lightweight, affordable, and holds its enchantment well, thereby making it ideal equipment for a mage. Due to their magical heritage, however, only single-, dual-, and multi-class mages may wear these enchanted robes.
 
@@ -140,7 +140,7 @@ Weight: 4"
 
 
 //ROBE OF THE GOOD ARCHMAGI - solo maghi puri - valore 10000mo//
-COPY "rick_bigg_mod/items/CLCK15.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/CLCK15.itm" "override"
 	SAY NAME1 "Mage Robe"
 	SAY UNIDENTIFIED_DESC "Since the age of Netheril, mages have learned to bestow a wide variety of magical properties upon the everyday objects that surround them. A favorite item of such enchantment is the common robe. It is lightweight, affordable, and holds its enchantment well, thereby making it ideal equipment for a mage. Due to their magical heritage, however, only single-, dual-, and multi-class mages may wear these enchanted robes.
 
@@ -167,7 +167,7 @@ Weight: 6"
 
 
 //ROBE OF THE NEUTRAL ARCHMAGI - solo maghi puri - valore 10000mo//
-COPY "rick_bigg_mod/items/CLCK16.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/CLCK16.itm" "override"
 	SAY NAME1 "Mage Robe"
 	SAY UNIDENTIFIED_DESC "Since the age of Netheril, mages have learned to bestow a wide variety of magical properties upon the everyday objects that surround them. A favorite item of such enchantment is the common robe. It is lightweight, affordable, and holds its enchantment well, thereby making it ideal equipment for a mage. Due to their magical heritage, however, only single-, dual-, and multi-class mages may wear these enchanted robes.
 
@@ -193,7 +193,7 @@ Weight: 6"
 
 
 //ROBE OF THE EVIL ARCHMAGI - solo maghi puri - valore 10000mo//
-COPY "rick_bigg_mod/items/CLCK17.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/CLCK17.itm" "override"
 	SAY NAME1 "Mage Robe"
 	SAY UNIDENTIFIED_DESC "Since the age of Netheril, mages have learned to bestow a wide variety of magical properties upon the everyday objects that surround them. A favorite item of such enchantment is the common robe. It is lightweight, affordable, and holds its enchantment well, thereby making it ideal equipment for a mage. Due to their magical heritage, however, only single-, dual-, and multi-class mages may wear these enchanted robes.
 
@@ -219,7 +219,7 @@ Weight: 6"
 
 
 //ROBE OF THE RED FLAMES - solo maghi - valore 5500mo//
-COPY "rick_bigg_mod/items/BDROBE05.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BDROBE05.itm" "override"
 	SAY NAME1 "Mage Robe"
 	SAY UNIDENTIFIED_DESC "Since the age of Netheril, mages have learned to bestow a wide variety of magical properties upon the everyday objects that surround them. A favorite item of such enchantment is the common robe. It is lightweight, affordable, and holds its enchantment well, thereby making it ideal equipment for a mage. Due to their magical heritage, however, only single-, dual-, and multi-class mages may wear these enchanted robes.
 
@@ -242,7 +242,7 @@ Weight: 4"
 
 
 //ROBE OF ELEMENTAL ABSORPTION - solo maghi - valore 2500mo//
-COPY "rick_bigg_mod/items/ohnrobe2.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/ohnrobe2.itm" "override"
 	SAY NAME1 "Mage Robe"
 	SAY UNIDENTIFIED_DESC "Since the age of Netheril, mages have learned to bestow a wide variety of magical properties upon the everyday objects that surround them. A favorite item of such enchantment is the common robe. It is lightweight, affordable, and holds its enchantment well, thereby making it ideal equipment for a mage. Due to their magical heritage, however, only single-, dual-, and multi-class mages may wear these enchanted robes.
 
@@ -271,7 +271,7 @@ Weight: 4"
 
 
 //SEER'S VEST - solo maghi - valore 6000mo//
-COPY "rick_bigg_mod/items/BDROBE04.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BDROBE04.itm" "override"
 	SAY NAME1 "Mage Robe"
 	SAY UNIDENTIFIED_DESC "Since the age of Netheril, mages have learned to bestow a wide variety of magical properties upon the everyday objects that surround them. A favorite item of such enchantment is the common robe. It is lightweight, affordable, and holds its enchantment well, thereby making it ideal equipment for a mage. Due to their magical heritage, however, only single-, dual-, and multi-class mages may wear these enchanted robes.
 
@@ -300,7 +300,7 @@ Weight: 4"
 
 
 //ROBE OF THE SHATTERED ONE - solo maghi puri - valore 18000mo//
-COPY "rick_bigg_mod/items/BDROBE01.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BDROBE01.itm" "override"
 	SAY NAME1 "Mage Robe"
 	SAY UNIDENTIFIED_DESC "Since the age of Netheril, mages have learned to bestow a wide variety of magical properties upon the everyday objects that surround them. A favorite item of such enchantment is the common robe. It is lightweight, affordable, and holds its enchantment well, thereby making it ideal equipment for a mage. Due to their magical heritage, however, only single-, dual-, and multi-class mages may wear these enchanted robes.
 
@@ -328,7 +328,7 @@ Weight: 6"
 
 
 //ROBE OF VECNA - solo maghi puri - valore 25000mo//
-COPY "rick_bigg_mod/items/WA2ROBE.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/WA2ROBE.itm" "override"
 	SAY NAME1 "Mage Robe"
 	SAY UNIDENTIFIED_DESC "Since the age of Netheril, mages have learned to bestow a wide variety of magical properties upon the everyday objects that surround them. A favorite item of such enchantment is the common robe. It is lightweight, affordable, and holds its enchantment well, thereby making it ideal equipment for a mage. Due to their magical heritage, however, only single-, dual-, and multi-class mages may wear these enchanted robes.
 

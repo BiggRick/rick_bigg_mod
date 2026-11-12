@@ -1,5 +1,5 @@
 //MORNING STAR +2 - valore 2800mo//
-COPY "rick_bigg_mod/items/BLUN15.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BLUN15.itm" "override"
 	SAY NAME1 "Morning Star"
 	SAY UNIDENTIFIED_DESC "The morning star is a wooden shaft topped with a metal head covered by a spiked iron sheath. Morning stars have an overall length of about four feet. Some have a round, oval, or cylindrical shaped head studded with spikes. Extending from most morning star heads, regardless of design, is a long point for thrusting.
 
@@ -36,7 +36,7 @@ Weight: 10"
 
 
 //KIEL'S MORNING STAR +3 - valore 7500mo//
-COPY "rick_bigg_mod/items/BLUN09.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BLUN09.itm" "override"
 	SAY NAME1 "Morning Star"
 	SAY UNIDENTIFIED_DESC "The morning star is a wooden shaft topped with a metal head covered by a spiked iron sheath. Morning stars have an overall length of about four feet. Some have a round, oval, or cylindrical shaped head studded with spikes. Extending from most morning star heads, regardless of design, is a long point for thrusting.
 
@@ -76,7 +76,7 @@ Weight: 10"
 
 
 //THE SLEEPER +2 - 5500mo//
-COPY "rick_bigg_mod/items/BLUN16.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BLUN16.itm" "override"
 	SAY NAME1 "Morning Star"
 	SAY UNIDENTIFIED_DESC "The morning star is a wooden shaft topped with a metal head covered by a spiked iron sheath. Morning stars have an overall length of about four feet. Some have a round, oval, or cylindrical shaped head studded with spikes. Extending from most morning star heads, regardless of design, is a long point for thrusting.
 
@@ -112,7 +112,7 @@ Weight: 10"
 
 
 //EVERARD'S MORNING STAR +4 - 12000mo//
-COPY "rick_bigg_mod/items/WASTAR.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/WASTAR.itm" "override"
 	SAY NAME1 "Morning Star"
 	SAY UNIDENTIFIED_DESC "The morning star is a wooden shaft topped with a metal head covered by a spiked iron sheath. Morning stars have an overall length of about four feet. Some have a round, oval, or cylindrical shaped head studded with spikes. Extending from most morning star heads, regardless of design, is a long point for thrusting.
 
@@ -148,7 +148,7 @@ Weight: 8"
 
 
 //ICE STAR +5 - 14000mo//
-COPY "rick_bigg_mod/items/BLUN35.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BLUN35.itm" "override"
 	SAY NAME1 "Morning Star"
 	SAY UNIDENTIFIED_DESC "The morning star is a wooden shaft topped with a metal head covered by a spiked iron sheath. Morning stars have an overall length of about four feet. Some have a round, oval, or cylindrical shaped head studded with spikes. Extending from most morning star heads, regardless of design, is a long point for thrusting.
 

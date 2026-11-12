@@ -43,7 +43,7 @@ INCLUDE ~rick_bigg_mod/lib/items/items_overwrite.tpa~
 
 
 //MOONBLADE +3 - 0//
-COPY "rick_bigg_mod/items/sw1h13.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/sw1h13.itm" "override"
 	SAY NAME1 "Long Sword"
 	SAY UNIDENTIFIED_DESC "These swords are usually referred to as double-edged swords, war swords, or military swords. In many cases, the long sword has a single-edged blade. There is no single version of the long sword; the design and length vary from culture to culture and may vary within the same culture depending on the era. Among the most common characteristics of all long swords is their length, which ranges from thirty-five inches to forty-seven inches. In the latter case, the blade is known to take up forty inches of the total length. Most long swords have a double-edged blade and a sharp point at the tip. Despite the tip, the long sword is designed for slashing, not thrusting.
 
@@ -80,7 +80,7 @@ Weight: 3"
 
 
 //CLOACK OF THE HIGH FOREST - 0//
-COPY "rick_bigg_mod/items/NPCLCK.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/NPCLCK.itm" "override"
 	SAY NAME1 "Cloack"
 	SAY UNIDENTIFIED_DESC "The cloak can be made in every possible shape with just about every type of fabric. The most common forms are a circular piece of fabric with a hole in the center for the head, and fabric draped from neck, connected by a chain, brooch, cord, or pins.
 
@@ -104,7 +104,7 @@ Weight: 3"
 
 
 //XZAR'S RING OF MENTAL DEFENCE - 0//
-COPY "rick_bigg_mod/items/X#XZRING.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/X#XZRING.itm" "override"
 	SAY NAME1 "Ring"
 	SAY UNIDENTIFIED_DESC "A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.
 
@@ -132,7 +132,7 @@ Weight: 0"
 
 
 //JAHEIRA'S GIRDLE - 0//
-COPY "rick_bigg_mod/items/BDBELT02.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BDBELT02.itm" "override"
 	SAY NAME1 "Girdle"
 	SAY UNIDENTIFIED_DESC "Girdles are generally similar to belts. Unlike belts, girdles are not used to hold up pants and dungarees, but to carry pouches, scabbards, and the like. 
 
@@ -157,7 +157,7 @@ Weight: 2"
 
 
 //MYR'CUTIO'S BARDIC CHAIN +1 - 0//
-COPY "rick_bigg_mod/items/X#GARCH.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/X#GARCH.itm" "override"
 	SAY NAME1 "Chain Mail"
 	SAY UNIDENTIFIED_DESC "Chain mail is made of interlocking metal rings. It is always worn over a layer of padded fabric or soft leather to prevent chafing and lessen the impact of blows. 
 
@@ -190,7 +190,7 @@ Weight: 20"
 
 
 //MYR'CUTIO'S BARDIC CHAIN +2 - 0//
-COPY "rick_bigg_mod/items/X#GARCH2.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/X#GARCH2.itm" "override"
 	SAY NAME1 "Chain Mail"
 	SAY UNIDENTIFIED_DESC "Chain mail is made of interlocking metal rings. It is always worn over a layer of padded fabric or soft leather to prevent chafing and lessen the impact of blows. 
 
@@ -226,7 +226,7 @@ Weight: 15"
 
 
 //ILVASTARR FAMILY SHIELD +1 - 0//
-COPY "rick_bigg_mod/items/x#ajshld.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/x#ajshld.itm" "override"
 	SAY NAME1 "Medium Shield"
 	SAY UNIDENTIFIED_DESC "A medium shield is carried in the same manner as a small shield.  Its weight prevents the character from using his shield hand for anything other than carrying the medium shield.  Medium shields are usually made of metal, range from 3'-4' in diameter, and can be of any shape, from round to square to a spread dragon's wings.  A typical medieval shield resembles a triangle with one point facing downward.
 
@@ -260,7 +260,7 @@ Weight: 7"
 
 
 //HANDMAIDEN'S MACE +4 - 0//
-COPY "rick_bigg_mod/items/HLOLTH.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/HLOLTH.itm" "override"
 	SAY NAME1 "Mace"
 	SAY UNIDENTIFIED_DESC "The mace is a direct descendant of the basic club, being nothing more than a wooden shaft with a stone or iron head mounted on the end. The head design varies: Some are spiked, others flanged, and still others have pyramidal knobs.
 
@@ -304,7 +304,7 @@ Weight: 5"
 
 
 //ARROW OF BITING//
-COPY "rick_bigg_mod/items/AROW05.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/AROW05.itm" "override"
 	SAY NAME1 "Arrow"
 	SAY UNIDENTIFIED_DESC "The flight arrow, as its name implies, is built for distance. These are lightweight arrows and are often used for hunting. Most of these arrows are made of ash or birch and are thirty to forty inches long.
 
@@ -333,7 +333,7 @@ Weight: 0"
 
 
 //ARROW OF BITING//
-COPY "rick_bigg_mod/items/AROW12.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/AROW12.itm" "override"
 	SAY NAME1 "Arrow"
 	SAY UNIDENTIFIED_DESC "The flight arrow, as its name implies, is built for distance. These are lightweight arrows and are often used for hunting. Most of these arrows are made of ash or birch and are thirty to forty inches long.
 
@@ -362,7 +362,7 @@ Weight: 0"
 
 
 //ELDOTH'S POISONED ARROW//
-COPY "rick_bigg_mod/items/AROW14.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/AROW14.itm" "override"
 	SAY NAME1 "Arrow"
 	SAY UNIDENTIFIED_DESC "The flight arrow, as its name implies, is built for distance. These are lightweight arrows and are often used for hunting. Most of these arrows are made of ash or birch and are thirty to forty inches long.
 
@@ -393,7 +393,7 @@ Weight: 0"
 
 
 //ARROW OF ACID//
-COPY "rick_bigg_mod/items/AROW04.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/AROW04.itm" "override"
 	SAY NAME1 "Arrow"
 	SAY UNIDENTIFIED_DESC "The flight arrow, as its name implies, is built for distance. These are lightweight arrows and are often used for hunting. Most of these arrows are made of ash or birch and are thirty to forty inches long.
 
@@ -425,7 +425,7 @@ Weight: 0"
 
 
 //ARROW OF DETONATION//
-COPY "rick_bigg_mod/items/AROW06.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/AROW06.itm" "override"
 	SAY NAME1 "Arrow"
 	SAY UNIDENTIFIED_DESC "The flight arrow, as its name implies, is built for distance. These are lightweight arrows and are often used for hunting. Most of these arrows are made of ash or birch and are thirty to forty inches long.
 
@@ -452,7 +452,7 @@ Weight: 0"
 
 
 //ARROW OF PIERCING//
-COPY "rick_bigg_mod/items/AROW10.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/AROW10.itm" "override"
 	SAY NAME1 "Arrow"
 	SAY UNIDENTIFIED_DESC "The flight arrow, as its name implies, is built for distance. These are lightweight arrows and are often used for hunting. Most of these arrows are made of ash or birch and are thirty to forty inches long.
 
@@ -480,7 +480,7 @@ Weight: 0"
 
 
 //ARROW OF FIRE//
-COPY "rick_bigg_mod/items/AROW08.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/AROW08.itm" "override"
 	SAY NAME1 "Arrow"
 	SAY UNIDENTIFIED_DESC "The flight arrow, as its name implies, is built for distance. These are lightweight arrows and are often used for hunting. Most of these arrows are made of ash or birch and are thirty to forty inches long.
 
@@ -510,7 +510,7 @@ Weight: 0"
 
 
 //ARROW OF FIRE//
-COPY "rick_bigg_mod/items/AROWKC.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/AROWKC.itm" "override"
 	SAY NAME1 "Arrow"
 	SAY UNIDENTIFIED_DESC "The flight arrow, as its name implies, is built for distance. These are lightweight arrows and are often used for hunting. Most of these arrows are made of ash or birch and are thirty to forty inches long.
 
@@ -538,7 +538,7 @@ Weight: 0"
 
 
 //ARROW OF ICE//
-COPY "rick_bigg_mod/items/AROW09.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/AROW09.itm" "override"
 	SAY NAME1 "Arrow"
 	SAY UNIDENTIFIED_DESC "The flight arrow, as its name implies, is built for distance. These are lightweight arrows and are often used for hunting. Most of these arrows are made of ash or birch and are thirty to forty inches long.
 
@@ -564,7 +564,7 @@ Weight: 0"
 
 
 //BOLT OF LIGHTNING//
-COPY "rick_bigg_mod/items/BOLT03.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BOLT03.itm" "override"
 	SAY NAME1 "Bolt"
 	SAY UNIDENTIFIED_DESC "Quarrels or bolts are the ammunition fired by crossbows regardless of the weapon's size.
 
@@ -595,7 +595,7 @@ Weight: 0"
 
 
 //PARALYTIC BOLT//
-COPY "rick_bigg_mod/items/BOLT05.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BOLT05.itm" "override"
 	SAY NAME1 "Bolt"
 	SAY UNIDENTIFIED_DESC "Quarrels or bolts are the ammunition fired by crossbows regardless of the weapon's size.
 

@@ -1,5 +1,5 @@
 //MEDIUM SHIELD +1 - 1500mo//
-COPY "rick_bigg_mod/items/SHLD04A.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/SHLD04A.itm" "override"
 	SAY NAME1 "Medium Shield"
 	SAY UNIDENTIFIED_DESC "A medium shield is carried in the same manner as a small shield. Unlike the small shield, however, its weight prevents the character from using <PRO_HISHER> shield hand for anything other than carrying the medium shield. Medium shields are usually made of metal, range from three to four feet in diameter, and can be of any shape, from round to square to a dragon's spread wings. A typical medieval shield resembles a triangle with one point facing downward.
 
@@ -32,7 +32,7 @@ Weight: 6
 
 
 //MEDIUM SHIELD +2 - 2500mo//
-COPY "rick_bigg_mod/items/SHLD29A.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/SHLD29A.itm" "override"
 	SAY NAME1 "Medium Shield"
 	SAY UNIDENTIFIED_DESC "A medium shield is carried in the same manner as a small shield. Unlike the small shield, however, its weight prevents the character from using <PRO_HISHER> shield hand for anything other than carrying the medium shield. Medium shields are usually made of metal, range from three to four feet in diameter, and can be of any shape, from round to square to a dragon's spread wings. A typical medieval shield resembles a triangle with one point facing downward.
 
@@ -65,7 +65,7 @@ Weight: 5
 
 
 //SHIELD OF BALDURAN +2 - 6000mo//
-COPY "rick_bigg_mod/items/SHLD06P.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/SHLD06P.itm" "override"
 	SAY NAME1 "Medium Shield"
 	SAY UNIDENTIFIED_DESC "A medium shield is carried in the same manner as a small shield. Unlike the small shield, however, its weight prevents the character from using <PRO_HISHER> shield hand for anything other than carrying the medium shield. Medium shields are usually made of metal, range from three to four feet in diameter, and can be of any shape, from round to square to a dragon's spread wings. A typical medieval shield resembles a triangle with one point facing downward.
 
@@ -101,7 +101,7 @@ Weight: 5
 
 
 //SHIELD OF EGONS +2 - solo paladini e chierici no malvagi- 4500mo//
-COPY "rick_bigg_mod/items/BDSHLD03.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BDSHLD03.itm" "override"
 	SAY NAME1 "Medium Shield"
 	SAY UNIDENTIFIED_DESC "A medium shield is carried in the same manner as a small shield. Unlike the small shield, however, its weight prevents the character from using <PRO_HISHER> shield hand for anything other than carrying the medium shield. Medium shields are usually made of metal, range from three to four feet in diameter, and can be of any shape, from round to square to a dragon's spread wings. A typical medieval shield resembles a triangle with one point facing downward.
 
@@ -137,7 +137,7 @@ Weight: 5
 
 
 //DRAGONSCALE SHIELD +2 - 9000mo//
-COPY "rick_bigg_mod/items/SHLD21.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/SHLD21.itm" "override"
 	SAY NAME1 "Medium Shield"
 	SAY UNIDENTIFIED_DESC "A medium shield is carried in the same manner as a small shield. Unlike the small shield, however, its weight prevents the character from using <PRO_HISHER> shield hand for anything other than carrying the medium shield. Medium shields are usually made of metal, range from three to four feet in diameter, and can be of any shape, from round to square to a dragon's spread wings. A typical medieval shield resembles a triangle with one point facing downward.
 
@@ -177,7 +177,7 @@ Weight: 5
 
 
 //SENTINEL +3 - 8000mo//
-COPY "rick_bigg_mod/items/SHLD22.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/SHLD22.itm" "override"
 	SAY NAME1 "Medium Shield"
 	SAY UNIDENTIFIED_DESC "A medium shield is carried in the same manner as a small shield. Unlike the small shield, however, its weight prevents the character from using <PRO_HISHER> shield hand for anything other than carrying the medium shield. Medium shields are usually made of metal, range from three to four feet in diameter, and can be of any shape, from round to square to a dragon's spread wings. A typical medieval shield resembles a triangle with one point facing downward.
 
@@ -210,7 +210,7 @@ Weight: 4
 
 
 //KAZRAH'S SHIELD +3 - 9500mo//
-COPY "rick_bigg_mod/items/OHBSHLD1.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/OHBSHLD1.itm" "override"
 	SAY NAME1 "Medium Shield"
 	SAY UNIDENTIFIED_DESC "A medium shield is carried in the same manner as a small shield. Unlike the small shield, however, its weight prevents the character from using <PRO_HISHER> shield hand for anything other than carrying the medium shield. Medium shields are usually made of metal, range from three to four feet in diameter, and can be of any shape, from round to square to a dragon's spread wings. A typical medieval shield resembles a triangle with one point facing downward.
 
@@ -245,7 +245,7 @@ Weight: 4
 
 
 //SHIELD OF THE ORDER +3 - 11000mo - no malvagi//
-COPY "rick_bigg_mod/items/SHLD32.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/SHLD32.itm" "override"
 	SAY NAME1 "Medium Shield"
 	SAY UNIDENTIFIED_DESC "A medium shield is carried in the same manner as a small shield. Unlike the small shield, however, its weight prevents the character from using <PRO_HISHER> shield hand for anything other than carrying the medium shield. Medium shields are usually made of metal, range from three to four feet in diameter, and can be of any shape, from round to square to a dragon's spread wings. A typical medieval shield resembles a triangle with one point facing downward.
 

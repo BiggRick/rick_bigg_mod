@@ -1,5 +1,5 @@
 //CHAIN MAIL +1 - 2000mo//
-COPY "rick_bigg_mod/items/CHAN02.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/CHAN02.itm" "override"
 	SAY NAME1 "Chain Mail"
 	SAY UNIDENTIFIED_DESC "Chain mail is made of interlocking metal rings. It is always worn over a layer of padded fabric or soft leather to prevent chafing and lessen the impact of blows. 
 
@@ -28,7 +28,7 @@ Weight: 20
 
 
 //CHAIN MAIL +2 - 4000mo//
-COPY "rick_bigg_mod/items/CHAN08.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/CHAN08.itm" "override"
 	SAY NAME1 "Chain Mail"
 	SAY UNIDENTIFIED_DESC "Chain mail is made of interlocking metal rings. It is always worn over a layer of padded fabric or soft leather to prevent chafing and lessen the impact of blows. 
 
@@ -61,7 +61,7 @@ Weight: 15
 
 
 //MAIL OF THE DEAD +2 - 6000mo//
-COPY "rick_bigg_mod/items/TB#CHAN.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/TB#CHAN.itm" "override"
 	SAY NAME1 "Chain Mail"
 	SAY UNIDENTIFIED_DESC "Chain mail is made of interlocking metal rings. It is always worn over a layer of padded fabric or soft leather to prevent chafing and lessen the impact of blows. 
 
@@ -99,7 +99,7 @@ Weight: 15
 
 
 //DARKMAIL +3 - 6500mo//
-COPY "rick_bigg_mod/items/CHAN09.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/CHAN09.itm" "override"
 	SAY NAME1 "Chain Mail"
 	SAY UNIDENTIFIED_DESC "Chain mail is made of interlocking metal rings. It is always worn over a layer of padded fabric or soft leather to prevent chafing and lessen the impact of blows. 
 
@@ -134,7 +134,7 @@ Weight: 10
 
 
 //COMMANDER CHAIN MAIL +3 - 7500mo//
-COPY "rick_bigg_mod/items/BDCHAN04.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BDCHAN04.itm" "override"
 	SAY NAME1 "Chain Mail"
 	SAY UNIDENTIFIED_DESC "Chain mail is made of interlocking metal rings. It is always worn over a layer of padded fabric or soft leather to prevent chafing and lessen the impact of blows. 
 
@@ -169,7 +169,7 @@ Weight: 10
 
 
 //ASHEN CHAIN +3 - 7000mo//
-COPY "rick_bigg_mod/items/CHAN17.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/CHAN17.itm" "override"
 	SAY NAME1 "Chain Mail"
 	SAY UNIDENTIFIED_DESC "Chain mail is made of interlocking metal rings. It is always worn over a layer of padded fabric or soft leather to prevent chafing and lessen the impact of blows. 
 
@@ -201,7 +201,7 @@ Weight: 10
 
 
 //JESTER'S CHAIN +3 - solo bardi - 9000mo//
-COPY "rick_bigg_mod/items/CHAN10.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/CHAN10.itm" "override"
 	SAY NAME1 "Chain Mail"
 	SAY UNIDENTIFIED_DESC "Chain mail is made of interlocking metal rings. It is always worn over a layer of padded fabric or soft leather to prevent chafing and lessen the impact of blows. 
 
@@ -234,7 +234,7 @@ Weight: 10
 
 
 //MITHRIL CHAIN MAIL +5 - 14000mo//
-COPY "rick_bigg_mod/items/CHAN06.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/CHAN06.itm" "override"
 	SAY NAME1 "Chain Mail"
 	SAY UNIDENTIFIED_DESC "Chain mail is made of interlocking metal rings. It is always worn over a layer of padded fabric or soft leather to prevent chafing and lessen the impact of blows. 
 
@@ -270,7 +270,7 @@ Weight: 10
 
 
 //CRIMSON CHAIN +4 - 12000mo//
-COPY "rick_bigg_mod/items/CHAN11.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/CHAN11.itm" "override"
 	SAY NAME1 "Chain Mail"
 	SAY UNIDENTIFIED_DESC "Chain mail is made of interlocking metal rings. It is always worn over a layer of padded fabric or soft leather to prevent chafing and lessen the impact of blows. 
 
@@ -306,7 +306,7 @@ Weight: 10
 
 
 //WHITE DRAGON SCALE - 14000mo//
-COPY "rick_bigg_mod/items/CHAN20.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/CHAN20.itm" "override"
 	SAY NAME1 "Chain Mail"
 	SAY UNIDENTIFIED_DESC "Chain mail is made of interlocking metal rings. It is always worn over a layer of padded fabric or soft leather to prevent chafing and lessen the impact of blows. 
 
@@ -343,7 +343,7 @@ Weight: 15
 
 
 //ELVEN CHAIN MAIL +1 - 5000mo//
-COPY "rick_bigg_mod/items/CHAN12.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/CHAN12.itm" "override"
 	SAY NAME1 "Chain Mail"
 	SAY UNIDENTIFIED_DESC "This chainmail clearly bears the hand of a great elvensmith, with their typical beauty and delicate sturdy craftsmanship.
 
@@ -380,7 +380,7 @@ Weight: 8
 
 
 //ELVEN CHAIN MAIL +2 - 5000mo//
-COPY "rick_bigg_mod/items/CHAN13.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/CHAN13.itm" "override"
 	SAY NAME1 "Chain Mail"
 	SAY UNIDENTIFIED_DESC "This chainmail clearly bears the hand of a great elvensmith, with their typical beauty and delicate sturdy craftsmanship.
 
@@ -416,7 +416,7 @@ Weight: 6
 
 
 //MELODIC CHAIN +2 - 8000mo//
-COPY "rick_bigg_mod/items/CHAN15.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/CHAN15.itm" "override"
 	SAY NAME1 "Chain Mail"
 	SAY UNIDENTIFIED_DESC "This chainmail clearly bears the hand of a great elvensmith, with their typical beauty and delicate sturdy craftsmanship.
 
@@ -458,7 +458,7 @@ Weight: 6
 
 
 //BLADESINGER CHAIN +3 - 13000mo//
-COPY "rick_bigg_mod/items/CHAN16.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/CHAN16.itm" "override"
 	SAY NAME1 "Chain Mail"
 	SAY UNIDENTIFIED_DESC "This chainmail clearly bears the hand of a great elvensmith, with their typical beauty and delicate sturdy craftsmanship.
 
@@ -496,7 +496,7 @@ Weight: 5
 
 
 //SYLVAN CHAIN +3 - 12000mo//
-COPY "rick_bigg_mod/items/CHAN14.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/CHAN14.itm" "override"
 	SAY NAME1 "Chain Mail"
 	SAY UNIDENTIFIED_DESC "This chainmail clearly bears the hand of a great elvensmith, with their typical beauty and delicate sturdy craftsmanship.
 
@@ -530,7 +530,7 @@ Weight: 5
 
 
 //ASLYFERUND ELVEN CHAIN +3 - 15000mo//
-COPY "rick_bigg_mod/items/CHAN19.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/CHAN19.itm" "override"
 	SAY NAME1 "Chain Mail"
 	SAY UNIDENTIFIED_DESC "This chainmail clearly bears the hand of a great elvensmith, with their typical beauty and delicate sturdy craftsmanship.
 

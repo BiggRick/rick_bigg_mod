@@ -3743,7 +3743,7 @@ COPY_EXISTING "emerso.cre" "override"
 
 
 //GREYWOLF//	
-COPY_EXISTING "greyowo.cre" "override"
+COPY_EXISTING "greywo.cre" "override"
 
 	LAUNCH_PATCH_FUNCTION add_cre_proficiency
 		INT_VAR pips = 1

@@ -1,7 +1,7 @@
 
 
 //GOLDEN GIRDLE OF URNST - 1500mo//
-COPY "rick_bigg_mod/items/BELT02.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BELT02.itm" "override"
 	SAY NAME1 "Girdle"
 	SAY UNIDENTIFIED_DESC "Girdles are generally similar to belts. Unlike belts, girdles are not used to hold up pants and dungarees, but to carry pouches, scabbards, and the like. 
 
@@ -22,7 +22,7 @@ Weight: 2"
 
 
 //GIRDLE OF BLUNTNESS - 1500mo//
-COPY "rick_bigg_mod/items/BELT03.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BELT03.itm" "override"
 	SAY NAME1 "Girdle"
 	SAY UNIDENTIFIED_DESC "Girdles are generally similar to belts. Unlike belts, girdles are not used to hold up pants and dungarees, but to carry pouches, scabbards, and the like. 
 
@@ -45,7 +45,7 @@ Weight: 2"
 
 
 //GIRDLE OF PIERCING - 1500mo//
-COPY "rick_bigg_mod/items/BELT04.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BELT04.itm" "override"
 	SAY NAME1 "Girdle"
 	SAY UNIDENTIFIED_DESC "Girdles are generally similar to belts. Unlike belts, girdles are not used to hold up pants and dungarees, but to carry pouches, scabbards, and the like. 
 
@@ -67,7 +67,7 @@ Weight: 2"
 
 
 //GIRDLE OF SHIELDING - 2500mo //
-COPY "rick_bigg_mod/items/BELT05.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BELT05.itm" "override"
 	SAY NAME1 "Girdle"
 	SAY UNIDENTIFIED_DESC "Girdles are generally similar to belts. Unlike belts, girdles are not used to hold up pants and dungarees, but to carry pouches, scabbards, and the like. 
 
@@ -90,7 +90,7 @@ Weight: 2"
 
 
 //BELT OF THE CUNNING ROGUE - 1800mo - solo ladri//
-COPY "rick_bigg_mod/items/BDBELT03.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BDBELT03.itm" "override"
 	SAY NAME1 "Girdle"
 	SAY UNIDENTIFIED_DESC "Girdles are generally similar to belts. Unlike belts, girdles are not used to hold up pants and dungarees, but to carry pouches, scabbards, and the like. 
 
@@ -113,7 +113,7 @@ Weight: 2"
 
 
 //GIRDLE OF THE UNYIELDING FORM - 3500mo//
-COPY "rick_bigg_mod/items/TB#BELTM.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/TB#BELTM.itm" "override"
 	SAY NAME1 "Girdle"
 	SAY UNIDENTIFIED_DESC "Girdles are generally similar to belts. Unlike belts, girdles are not used to hold up pants and dungarees, but to carry pouches, scabbards, and the like. 
 
@@ -139,7 +139,7 @@ Weight: 2"
 
 
 //GIRDLE OF HILL GIANT STRENGTH - solo combattenti - 10000mo//
-COPY "rick_bigg_mod/items/BELT06.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BELT06.itm" "override"
 	SAY NAME1 "Girdle"
 	SAY UNIDENTIFIED_DESC "Girdles are generally similar to belts. Unlike belts, girdles are not used to hold up pants and dungarees, but to carry pouches, scabbards, and the like. 
 
@@ -161,7 +161,7 @@ Weight: 2"
 
 
 //GIRDLE OF STONE GIANT STRENGTH - solo combattenti - 12000mo//
-COPY "rick_bigg_mod/items/BELT07.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BELT07.itm" "override"
 	SAY NAME1 "Girdle"
 	SAY UNIDENTIFIED_DESC "Girdles are generally similar to belts. Unlike belts, girdles are not used to hold up pants and dungarees, but to carry pouches, scabbards, and the like. 
 
@@ -184,7 +184,7 @@ Weight: 2"
 
 
 //GIRDLE OF FROST GIANT STRENGTH - solo combattenti - 12000mo//
-COPY "rick_bigg_mod/items/BELT08.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BELT08.itm" "override"
 	SAY NAME1 "Girdle"
 	SAY UNIDENTIFIED_DESC "Girdles are generally similar to belts. Unlike belts, girdles are not used to hold up pants and dungarees, but to carry pouches, scabbards, and the like. 
 
@@ -207,7 +207,7 @@ Weight: 2"
 
 
 //GIRDLE OF FIRE GIANT STRENGTH - solo combattenti - 12000mo//
-COPY "rick_bigg_mod/items/BELT11.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BELT11.itm" "override"
 	SAY NAME1 "Girdle"
 	SAY UNIDENTIFIED_DESC "Girdles are generally similar to belts. Unlike belts, girdles are not used to hold up pants and dungarees, but to carry pouches, scabbards, and the like. 
 
@@ -232,7 +232,7 @@ Weight: 2"
 
 
 //GIRDLE OF FORTITUDE - 8000mo//
-COPY "rick_bigg_mod/items/BELT09.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BELT09.itm" "override"
 	SAY NAME1 "Girdle"
 	SAY UNIDENTIFIED_DESC "Girdles are generally similar to belts. Unlike belts, girdles are not used to hold up pants and dungarees, but to carry pouches, scabbards, and the like. 
 
@@ -258,7 +258,7 @@ Weight: 2"
 
 
 //BELT OF THE SKILLFUL BLADE - solo spadaccini - 11000mo//
-COPY "rick_bigg_mod/items/BDBELT02.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BDBELT02.itm" "override"
 	SAY NAME1 "Girdle"
 	SAY UNIDENTIFIED_DESC "Girdles are generally similar to belts. Unlike belts, girdles are not used to hold up pants and dungarees, but to carry pouches, scabbards, and the like. 
 
@@ -285,7 +285,7 @@ Weight: 2"
 
 
 //GIRDLE OF ABSORPTION  - 2500mo//
-COPY "rick_bigg_mod/items/BDBELT04.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BDBELT04.itm" "override"
 	SAY NAME1 "Girdle"
 	SAY UNIDENTIFIED_DESC "Girdles are generally similar to belts. Unlike belts, girdles are not used to hold up pants and dungarees, but to carry pouches, scabbards, and the like. 
 
@@ -309,7 +309,7 @@ Weight: 2"
 
 
 //GIRDLE OF INERTIAL BARRIER - 6500mo//
-COPY "rick_bigg_mod/items/BELT10.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BELT10.itm" "override"
 	SAY NAME1 "Girdle"
 	SAY UNIDENTIFIED_DESC "Girdles are generally similar to belts. Unlike belts, girdles are not used to hold up pants and dungarees, but to carry pouches, scabbards, and the like. 
 
@@ -335,7 +335,7 @@ Weight: 2"
 
 
 //GIRDLE OF AVOIDANCE - 9000mo//
-COPY "rick_bigg_mod/items/OHRBELT2.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/OHRBELT2.itm" "override"
 	SAY NAME1 "Girdle"
 	SAY UNIDENTIFIED_DESC "Girdles are generally similar to belts. Unlike belts, girdles are not used to hold up pants and dungarees, but to carry pouches, scabbards, and the like. 
 

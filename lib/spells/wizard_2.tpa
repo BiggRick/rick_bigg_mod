@@ -1,5 +1,5 @@
 //RESIST ELEMENTS//
-COPY "rick_bigg_mod/spell/SPWI204.spl" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/spell/SPWI204.spl" "override"
 	SAY NAME1 "Resist Elements"
 	SAY UNIDENTIFIED_DESC 
 "Resist Elements
@@ -19,7 +19,7 @@ Upon the casting of this spell, the recipient's resistance to all forms of eleme
 
 
 //RESIST FEAR//
-COPY "rick_bigg_mod/spell/SPWI210.spl" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/spell/SPWI210.spl" "override"
 	SAY NAME1 "Resist Fear"
 	SAY UNIDENTIFIED_DESC 
 "Resist Fear
@@ -39,7 +39,7 @@ The wizard instills courage in allies, raising their morale to its highest. If t
 
 
 //WEB//
-COPY "rick_bigg_mod/spell/SPWI215.spl" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/spell/SPWI215.spl" "override"
 	SAY NAME1 "Web"
 	SAY UNIDENTIFIED_DESC 
 "Web
@@ -61,7 +61,7 @@ A Web spell creates a many-layered mass of strong, sticky strands similar to spi
 
 
 //MELF'S ACID ARROW//
-COPY "rick_bigg_mod/spell/SPWI211.spl" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/spell/SPWI211.spl" "override"
 	SAY NAME1 "Melf's Acid Arrow"
 	SAY UNIDENTIFIED_DESC 
 "Melf's Acid Arrow
@@ -82,7 +82,7 @@ By means of this spell, the wizard creates a magical arrow that speeds to its ta
 
 
 //LUCK//
-COPY "rick_bigg_mod/spell/SPWI209.spl" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/spell/SPWI209.spl" "override"
 	SAY NAME1 "Luck"
 	SAY UNIDENTIFIED_DESC 
 "Luck
@@ -103,7 +103,7 @@ The recipient of this spell is lucky in everything that he does for the 5 turns.
 
 
 //GHOUL TOUCH//
-COPY "rick_bigg_mod/spell/SPWI218.spl" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/spell/SPWI218.spl" "override"
 	SAY NAME1 "Ghoul Touch"
 	SAY UNIDENTIFIED_DESC 
 "Ghoul Touch
@@ -128,7 +128,7 @@ At higher levels:
 
 
 //EMOTION: HOPELESSNESS//
-COPY "rick_bigg_mod/spell/SPWI299.spl" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/spell/SPWI299.spl" "override"
 	SAY NAME1 "Emotion: Hopelessness"
 	SAY UNIDENTIFIED_DESC 
 "Emotion: Hopelessness
@@ -148,7 +148,7 @@ When this spell is cast, the wizard can disturb the emotional state of those aro
 
 
 //EMOTION: HOPE//
-COPY "rick_bigg_mod/spell/SPWI298.spl" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/spell/SPWI298.spl" "override"
 	SAY NAME1 "Emotion: Hope"
 	SAY UNIDENTIFIED_DESC 
 "Emotion: Hope
@@ -167,7 +167,7 @@ When this spell is cast, the wizard can fortify the emotional state of those aro
 
 
 //HOLD PERSON//
-COPY "rick_bigg_mod/spell/SPWI306.spl" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/spell/SPWI306.spl" "override"
 	SAY NAME1 "Hold Person"
 	SAY UNIDENTIFIED_DESC 
 "Hold Person
@@ -188,7 +188,7 @@ Held creatures cannot move or speak, but they remain aware of events around them
 
 
 //DETECT WEAKNESS//
-COPY "rick_bigg_mod/spell/SPWI208.spl" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/spell/SPWI208.spl" "override"
 	SAY NAME1 "Detect Weakness"
 	SAY UNIDENTIFIED_DESC 
 "Know Opponent
@@ -207,7 +207,7 @@ When this spell is cast, the wizard's eyes glow with magical energy, enabling hi
 
 
 //INVISIBILITY//
-COPY "rick_bigg_mod/spell/SPWI206.spl" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/spell/SPWI206.spl" "override"
 	SAY NAME1 "Invisibility"
 	SAY UNIDENTIFIED_DESC 
 "Invisibility
@@ -226,7 +226,7 @@ This spell causes the creature touched to vanish from sight and be undetectable 
 
 
 //MIRROR IMAGE//
-COPY "rick_bigg_mod/spell/SPWI212.spl" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/spell/SPWI212.spl" "override"
 	SAY NAME1 "Mirror Image"
 	SAY UNIDENTIFIED_DESC 
 "Mirror Image
@@ -246,7 +246,7 @@ When a Mirror Image spell is invoked, the spellcaster causes a number of illusor
 
 
 //AGANNAZAR'S SCORCHER//
-COPY "rick_bigg_mod/spell/SPWI217.spl" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/spell/SPWI217.spl" "override"
 	SAY NAME1 "Agannazar's Scorcher"
 	SAY UNIDENTIFIED_DESC 
 "Agannazar's Scorcher
@@ -266,7 +266,7 @@ Upon casting this spell, a jet of flame appears at the caster's fingertips and b
 
 
 //SOUND BURST//
-COPY "rick_bigg_mod/spell/SPWI223.spl" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/spell/SPWI223.spl" "override"
 	SAY NAME1 "Sound Burst"
 	SAY UNIDENTIFIED_DESC 
 "Sound Burst
@@ -286,7 +286,7 @@ This spell blasts an area with a tremendous cacophony. Enemies within the area s
 
 
 //RAY OF ENFEEBLEMENT//
-COPY "rick_bigg_mod/spell/SPWI221.spl" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/spell/SPWI221.spl" "override"
 	SAY NAME1 "Mirror Image"
 	SAY UNIDENTIFIED_DESC 
 "Ray of Enfeeblement
@@ -306,7 +306,7 @@ By means of a Ray of Enfeeblement, a wizard weakens an opponent, reducing its st
 
 
 //VOCALIZE//
-COPY "rick_bigg_mod/spell/SPWI219.spl" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/spell/SPWI219.spl" "override"
 	SAY NAME1 "Vocalize"
 	SAY UNIDENTIFIED_DESC 
 "Vocalize
@@ -327,7 +327,7 @@ The recipient of this spell gains the ability to cast spells with a verbal compo
 
 
 //STRENGTH//
-COPY "rick_bigg_mod/spell/SPWI214.spl" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/spell/SPWI214.spl" "override"
 	SAY NAME1 "Strength"
 	SAY UNIDENTIFIED_DESC 
 "Strength
@@ -348,7 +348,7 @@ Application of this spell sets the strength of the character to 18 and then adds
 
 
 //BLINDNESS//
-COPY "rick_bigg_mod/spell/SPWI297.spl" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/spell/SPWI297.spl" "override"
 	SAY NAME1 "Blindness"
 	SAY UNIDENTIFIED_DESC 
 "Blindness
@@ -367,7 +367,7 @@ This spell temporarily blinds its target. A Saving Throw is allowed and, if succ
 
 
 //FIND TRAPS//
-COPY "rick_bigg_mod/spell/SPWI296.spl" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/spell/SPWI296.spl" "override"
 	SAY NAME1 "Find Traps"
 	SAY UNIDENTIFIED_DESC 
 "Find Traps

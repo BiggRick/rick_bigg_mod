@@ -1,5 +1,5 @@
 //LONG SWORD +2 - valore 2250mo//
-COPY "rick_bigg_mod/items/SW1H41.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/SW1H41.itm" "override"
 	SAY NAME1 "Long Sword"
 	SAY UNIDENTIFIED_DESC "These swords are usually referred to as double-edged swords, war swords, or military swords. In many cases, the long sword has a single-edged blade. There is no single version of the long sword; the design and length vary from culture to culture and may vary within the same culture depending on the era. Among the most common characteristics of all long swords is their length, which ranges from thirty-five inches to forty-seven inches. In the latter case, the blade is known to take up forty inches of the total length. Most long swords have a double-edged blade and a sharp point at the tip. Despite the tip, the long sword is designed for slashing, not thrusting.
 
@@ -34,7 +34,7 @@ Weight: 3"
 
 
 //THE BURNING EARTH +2 - valore 6000mo//
-COPY "rick_bigg_mod/items/SW1H24.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/SW1H24.itm" "override"
 	SAY NAME1 "Long Sword"
 	SAY UNIDENTIFIED_DESC "These swords are usually referred to as double-edged swords, war swords, or military swords. In many cases, the long sword has a single-edged blade. There is no single version of the long sword; the design and length vary from culture to culture and may vary within the same culture depending on the era. Among the most common characteristics of all long swords is their length, which ranges from thirty-five inches to forty-seven inches. In the latter case, the blade is known to take up forty inches of the total length. Most long swords have a double-edged blade and a sharp point at the tip. Despite the tip, the long sword is designed for slashing, not thrusting.
 
@@ -74,7 +74,7 @@ Weight: 4"
 
 
 //ADJATHA THE DRINKER +3 - no good - valore 7500mo//
-COPY "rick_bigg_mod/items/SW1H35.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/SW1H35.itm" "override"
 	SAY NAME1 "Long Sword"
 	SAY UNIDENTIFIED_DESC "These swords are usually referred to as double-edged swords, war swords, or military swords. In many cases, the long sword has a single-edged blade. There is no single version of the long sword; the design and length vary from culture to culture and may vary within the same culture depending on the era. Among the most common characteristics of all long swords is their length, which ranges from thirty-five inches to forty-seven inches. In the latter case, the blade is known to take up forty inches of the total length. Most long swords have a double-edged blade and a sharp point at the tip. Despite the tip, the long sword is designed for slashing, not thrusting.
 
@@ -112,7 +112,7 @@ Weight: 3"
 
 
 //SPELL BREAKER +3 - solo wizard slayer - valore 9000mo//
-COPY "rick_bigg_mod/items/BDSW1H25.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BDSW1H25.itm" "override"
 	SAY NAME1 "Long Sword"
 	SAY UNIDENTIFIED_DESC "These swords are usually referred to as double-edged swords, war swords, or military swords. In many cases, the long sword has a single-edged blade. There is no single version of the long sword; the design and length vary from culture to culture and may vary within the same culture depending on the era. Among the most common characteristics of all long swords is their length, which ranges from thirty-five inches to forty-seven inches. In the latter case, the blade is known to take up forty inches of the total length. Most long swords have a double-edged blade and a sharp point at the tip. Despite the tip, the long sword is designed for slashing, not thrusting.
 
@@ -160,7 +160,7 @@ Weight: 3"
 
 
 //SLASHING BLADE +4 - valore 7500mo//
-COPY "rick_bigg_mod/items/SW1H39.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/SW1H39.itm" "override"
 	SAY NAME1 "Long Sword"
 	SAY UNIDENTIFIED_DESC "These swords are usually referred to as double-edged swords, war swords, or military swords. In many cases, the long sword has a single-edged blade. There is no single version of the long sword; the design and length vary from culture to culture and may vary within the same culture depending on the era. Among the most common characteristics of all long swords is their length, which ranges from thirty-five inches to forty-seven inches. In the latter case, the blade is known to take up forty inches of the total length. Most long swords have a double-edged blade and a sharp point at the tip. Despite the tip, the long sword is designed for slashing, not thrusting.
 
@@ -196,7 +196,7 @@ Weight: 3"
 
 
 //EQUALIZER +3 - valore 13000mo//
-COPY "rick_bigg_mod/items/SW1H54.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/SW1H54.itm" "override"
 	SAY NAME1 "Long Sword"
 	SAY UNIDENTIFIED_DESC "These swords are usually referred to as double-edged swords, war swords, or military swords. In many cases, the long sword has a single-edged blade. There is no single version of the long sword; the design and length vary from culture to culture and may vary within the same culture depending on the era. Among the most common characteristics of all long swords is their length, which ranges from thirty-five inches to forty-seven inches. In the latter case, the blade is known to take up forty inches of the total length. Most long swords have a double-edged blade and a sharp point at the tip. Despite the tip, the long sword is designed for slashing, not thrusting.
 
@@ -250,7 +250,7 @@ Weight: 3"
 
 
 //MASTER SWORD +5 - no evil - valore 15000mo//
-COPY "rick_bigg_mod/items/TB#LINK.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/TB#LINK.itm" "override"
 	SAY NAME1 "Long Sword"
 	SAY UNIDENTIFIED_DESC "These swords are usually referred to as double-edged swords, war swords, or military swords. In many cases, the long sword has a single-edged blade. There is no single version of the long sword; the design and length vary from culture to culture and may vary within the same culture depending on the era. Among the most common characteristics of all long swords is their length, which ranges from thirty-five inches to forty-seven inches. In the latter case, the blade is known to take up forty inches of the total length. Most long swords have a double-edged blade and a sharp point at the tip. Despite the tip, the long sword is designed for slashing, not thrusting.
 
@@ -293,7 +293,7 @@ Weight: 2~
 
 
 //DEFENDER +5 - valore 15000mo //
-COPY "rick_bigg_mod/items/SW1H77.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/SW1H77.itm" "override"
 	SAY NAME1 "Long Sword"
 	SAY UNIDENTIFIED_DESC "These swords are usually referred to as double-edged swords, war swords, or military swords. In many cases, the long sword has a single-edged blade. There is no single version of the long sword; the design and length vary from culture to culture and may vary within the same culture depending on the era. Among the most common characteristics of all long swords is their length, which ranges from thirty-five inches to forty-seven inches. In the latter case, the blade is known to take up forty inches of the total length. Most long swords have a double-edged blade and a sharp point at the tip. Despite the tip, the long sword is designed for slashing, not thrusting.
 
@@ -343,7 +343,7 @@ Weight: 3
 
 
 //EMERALD SWORD +5 - valore 15000mo //
-COPY "rick_bigg_mod/items/BDSW1H05.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BDSW1H05.itm" "override"
 	SAY NAME1 "Long Sword"
 	SAY UNIDENTIFIED_DESC "These swords are usually referred to as double-edged swords, war swords, or military swords. In many cases, the long sword has a single-edged blade. There is no single version of the long sword; the design and length vary from culture to culture and may vary within the same culture depending on the era. Among the most common characteristics of all long swords is their length, which ranges from thirty-five inches to forty-seven inches. In the latter case, the blade is known to take up forty inches of the total length. Most long swords have a double-edged blade and a sharp point at the tip. Despite the tip, the long sword is designed for slashing, not thrusting.
 

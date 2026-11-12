@@ -18,7 +18,7 @@ WRITE_ASCII 0x58 "CSHLD06" #8
 
 
 //PELLAN'S SHIELD +2 - 4500mo//
-COPY "rick_bigg_mod/items/SHLD19A.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/SHLD19A.itm" "override"
 	SAY NAME1 "Large Shield"
 	SAY UNIDENTIFIED_DESC "	A large shield inlaid with a golden griffin. This shield, also known as the kite or tower shield, is a massive metal shield reaching nearly from the chin to the toe of the user. It must be firmly fastened to the forearm and the shield hand must firmly grip it at all times. Naturally, this precludes use of the shield hand for anything but holding the body shield in place. Strangely enough, this shield feels unusually light for its size.
 
@@ -50,7 +50,7 @@ Weight: 10"
 
 
 //THE BLOODIED GUARDIAN +2 - 5500mo//
-COPY "rick_bigg_mod/items/BDSHLD08.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BDSHLD08.itm" "override"
 	SAY NAME1 "Large Shield"
 	SAY UNIDENTIFIED_DESC "	A large shield inlaid with a golden griffin. This shield, also known as the kite or tower shield, is a massive metal shield reaching nearly from the chin to the toe of the user. It must be firmly fastened to the forearm and the shield hand must firmly grip it at all times. Naturally, this precludes use of the shield hand for anything but holding the body shield in place. Strangely enough, this shield feels unusually light for its size.
 
@@ -84,7 +84,7 @@ Weight: 10"
 
 
 //SHIELD OF THE LOST +2 - 7000mo//
-COPY "rick_bigg_mod/items/SHLD26A.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/SHLD26A.itm" "override"
 	SAY NAME1 "Large Shield"
 	SAY UNIDENTIFIED_DESC "	A large shield inlaid with a golden griffin. This shield, also known as the kite or tower shield, is a massive metal shield reaching nearly from the chin to the toe of the user. It must be firmly fastened to the forearm and the shield hand must firmly grip it at all times. Naturally, this precludes use of the shield hand for anything but holding the body shield in place. Strangely enough, this shield feels unusually light for its size.
 
@@ -118,7 +118,7 @@ Weight: 12"
 
 
 //SHIELD OF DEVOTION +3 - 9000mo - solo paladini//
-COPY "rick_bigg_mod/items/SHLD09P.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/SHLD09P.itm" "override"
 	SAY NAME1 "Large Shield"
 	SAY UNIDENTIFIED_DESC "	A large shield inlaid with a golden griffin. This shield, also known as the kite or tower shield, is a massive metal shield reaching nearly from the chin to the toe of the user. It must be firmly fastened to the forearm and the shield hand must firmly grip it at all times. Naturally, this precludes use of the shield hand for anything but holding the body shield in place. Strangely enough, this shield feels unusually light for its size.
 
@@ -152,7 +152,7 @@ Weight: 8"
 
 
 //FORTRESS SHIELD +3 - 12000mo//
-COPY "rick_bigg_mod/items/SHLD23.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/SHLD23.itm" "override"
 	SAY NAME1 "Large Shield"
 	SAY UNIDENTIFIED_DESC "	A large shield inlaid with a golden griffin. This shield, also known as the kite or tower shield, is a massive metal shield reaching nearly from the chin to the toe of the user. It must be firmly fastened to the forearm and the shield hand must firmly grip it at all times. Naturally, this precludes use of the shield hand for anything but holding the body shield in place. Strangely enough, this shield feels unusually light for its size.
 
@@ -182,7 +182,7 @@ Weight: 8"
 
 
 //DARKSTEEL SHIELD +3 - 12000mo//
-COPY "rick_bigg_mod/items/SHLD31.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/SHLD31.itm" "override"
 	SAY NAME1 "Large Shield"
 	SAY UNIDENTIFIED_DESC "	A large shield inlaid with a golden griffin. This shield, also known as the kite or tower shield, is a massive metal shield reaching nearly from the chin to the toe of the user. It must be firmly fastened to the forearm and the shield hand must firmly grip it at all times. Naturally, this precludes use of the shield hand for anything but holding the body shield in place. Strangely enough, this shield feels unusually light for its size.
 

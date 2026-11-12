@@ -1,5 +1,5 @@
 //SLING +1 - 750mo//
-COPY "rick_bigg_mod/items/SLNG02.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/SLNG02.itm" "override"
 	SAY NAME1 "Sling"
 	SAY UNIDENTIFIED_DESC "Slings have existed since the beginning of recorded history. The basic sling consists of a leather or fabric strap with a pouch for holding the missile. The weapon is held by both ends of the strap and twirled around the wielder's head. When top speed is attained, the missile is launched by releasing one of the strap's ends. 
 
@@ -34,7 +34,7 @@ Weight: 0"
 
 
 //SLING +2 - 1500mo//
-COPY "rick_bigg_mod/items/SLNG04.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/SLNG04.itm" "override"
 	SAY NAME1 "Sling"
 	SAY UNIDENTIFIED_DESC "Slings have existed since the beginning of recorded history. The basic sling consists of a leather or fabric strap with a pouch for holding the missile. The weapon is held by both ends of the strap and twirled around the wielder's head. When top speed is attained, the missile is launched by releasing one of the strap's ends. 
 
@@ -67,7 +67,7 @@ Weight: 0"
 
 
 //SLING OF SEEKING +2 - 3500mo//
-COPY "rick_bigg_mod/items/SLNG07.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/SLNG07.itm" "override"
 	SAY NAME1 "Sling"
 	SAY UNIDENTIFIED_DESC "Slings have existed since the beginning of recorded history. The basic sling consists of a leather or fabric strap with a pouch for holding the missile. The weapon is held by both ends of the strap and twirled around the wielder's head. When top speed is attained, the missile is launched by releasing one of the strap's ends. 
 
@@ -100,7 +100,7 @@ Weight: 0"
 
 
 //ARLA'S DRAGONBANE +2 - 4500mo//
-COPY "rick_bigg_mod/items/SLNG05.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/SLNG05.itm" "override"
 	SAY NAME1 "Sling"
 	SAY UNIDENTIFIED_DESC "Slings have existed since the beginning of recorded history. The basic sling consists of a leather or fabric strap with a pouch for holding the missile. The weapon is held by both ends of the strap and twirled around the wielder's head. When top speed is attained, the missile is launched by releasing one of the strap's ends. 
 
@@ -134,7 +134,7 @@ Weight: 0"
 
 
 //SLING OF ARVOREEN +3 - 6500mo//
-COPY "rick_bigg_mod/items/SLNG06.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/SLNG06.itm" "override"
 	SAY NAME1 "Sling"
 	SAY UNIDENTIFIED_DESC "Slings have existed since the beginning of recorded history. The basic sling consists of a leather or fabric strap with a pouch for holding the missile. The weapon is held by both ends of the strap and twirled around the wielder's head. When top speed is attained, the missile is launched by releasing one of the strap's ends. 
 
@@ -171,7 +171,7 @@ Weight: 0"
 
 
 //RAINBOW SLING +3 - 9000mo//
-COPY "rick_bigg_mod/items/OHNSLNG1.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/OHNSLNG1.itm" "override"
 	SAY NAME1 "Sling"
 	SAY UNIDENTIFIED_DESC "Slings have existed since the beginning of recorded history. The basic sling consists of a leather or fabric strap with a pouch for holding the missile. The weapon is held by both ends of the strap and twirled around the wielder's head. When top speed is attained, the missile is launched by releasing one of the strap's ends. 
 
@@ -205,7 +205,7 @@ Weight: 0"
 
 
 //RAINBOW SLING +3 - 9000mo//
-COPY "rick_bigg_mod/items/OHNSLNG1.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/OHNSLNG1.itm" "override"
 	SAY NAME1 "Sling"
 	SAY UNIDENTIFIED_DESC "Slings have existed since the beginning of recorded history. The basic sling consists of a leather or fabric strap with a pouch for holding the missile. The weapon is held by both ends of the strap and twirled around the wielder's head. When top speed is attained, the missile is launched by releasing one of the strap's ends. 
 

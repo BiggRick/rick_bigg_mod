@@ -1,5 +1,5 @@
 //BASTARD SWORD +1 - 1500mo//
-COPY "rick_bigg_mod/items/SW1H02.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/SW1H02.itm" "override"
 	SAY NAME1 "Bastard Sword"
 	SAY UNIDENTIFIED_DESC "Also known as the hand-and-a-half sword, the bastard sword derives its name from the fact that it is halfway between the two-handed sword and the long sword. The bastard sword has a double-edged blade and a long grip, which can accommodate both hands if preferred. The overall length of the bastard sword ranges between four feet and four feet ten inches.
 
@@ -47,7 +47,7 @@ Weight: 9"
 
 
 //BASTARD SWORD +2 - 2500mo//
-COPY "rick_bigg_mod/items/SW1H42.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/SW1H42.itm" "override"
 	SAY NAME1 "Bastard Sword"
 	SAY UNIDENTIFIED_DESC "Also known as the hand-and-a-half sword, the bastard sword derives its name from the fact that it is halfway between the two-handed sword and the long sword. The bastard sword has a double-edged blade and a long grip, which can accommodate both hands if preferred. The overall length of the bastard sword ranges between four feet and four feet ten inches.
 
@@ -85,7 +85,7 @@ Weight: 8"
 
 
 //KONDAR +2 - 4000mo//
-COPY "rick_bigg_mod/items/TB#KOND.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/TB#KOND.itm" "override"
 	SAY NAME1 "Bastard Sword"
 	SAY UNIDENTIFIED_DESC "Also known as the hand-and-a-half sword, the bastard sword derives its name from the fact that it is halfway between the two-handed sword and the long sword. The bastard sword has a double-edged blade and a long grip, which can accommodate both hands if preferred. The overall length of the bastard sword ranges between four feet and four feet ten inches.
 
@@ -128,7 +128,7 @@ Weight: 8"
 
 
 //SWORD OF BALDURAN +3 - 8000mo//
-COPY "rick_bigg_mod/items/SW1H18.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/SW1H18.itm" "override"
 	SAY NAME1 "Bastard Sword"
 	SAY UNIDENTIFIED_DESC "Also known as the hand-and-a-half sword, the bastard sword derives its name from the fact that it is halfway between the two-handed sword and the long sword. The bastard sword has a double-edged blade and a long grip, which can accommodate both hands if preferred. The overall length of the bastard sword ranges between four feet and four feet ten inches.
 
@@ -171,7 +171,7 @@ Weight: 7"
 
 
 //DAYSTAR +2 - valore 10000mo - no evil//
-COPY "rick_bigg_mod/items/SW1H31.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/SW1H31.itm" "override"
 	SAY NAME1 "Bastard Sword"
 	SAY UNIDENTIFIED_DESC "Also known as the hand-and-a-half sword, the bastard sword derives its name from the fact that it is halfway between the two-handed sword and the long sword. The bastard sword has a double-edged blade and a long grip, which can accommodate both hands if preferred. The overall length of the bastard sword ranges between four feet and four feet ten inches.
 
@@ -216,7 +216,7 @@ Weight: 8
 
 
 //PERIDAN +3 - valore 7500mo//
-COPY "rick_bigg_mod/items/SW1H32.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/SW1H32.itm" "override"
 	SAY NAME1 "Bastard Sword"
 	SAY UNIDENTIFIED_DESC "Also known as the hand-and-a-half sword, the bastard sword derives its name from the fact that it is halfway between the two-handed sword and the long sword. The bastard sword has a double-edged blade and a long grip, which can accommodate both hands if preferred. The overall length of the bastard sword ranges between four feet and four feet ten inches.
 
@@ -260,7 +260,7 @@ Weight: 7"
 
 
 //JHOR THE BLEEDER + 4 - valore 8500mo //
-COPY "rick_bigg_mod/items/SW1H38.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/SW1H38.itm" "override"
 	SAY NAME1 "Bastard Sword"
 	SAY UNIDENTIFIED_DESC "Also known as the hand-and-a-half sword, the bastard sword derives its name from the fact that it is halfway between the two-handed sword and the long sword. The bastard sword has a double-edged blade and a long grip, which can accommodate both hands if preferred. The overall length of the bastard sword ranges between four feet and four feet ten inches.
 
@@ -301,7 +301,7 @@ Weight: 5
 
 
 //VIPER'S EDGE +4 - valore 12000mo - no good//
-COPY "rick_bigg_mod/items/SW1P01.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/SW1P01.itm" "override"
 	SAY NAME1 "Bastard Sword"
 	SAY UNIDENTIFIED_DESC "Also known as the hand-and-a-half sword, the bastard sword derives its name from the fact that it is halfway between the two-handed sword and the long sword. The bastard sword has a double-edged blade and a long grip, which can accommodate both hands if preferred. The overall length of the bastard sword ranges between four feet and four feet ten inches.
 
@@ -360,7 +360,7 @@ Weight: 6
 
 
 //ANGURVADAL +4 - valore 7500mo//
-COPY "rick_bigg_mod/items/SW1H60.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/SW1H60.itm" "override"
 	SAY NAME1 "Bastard Sword"
 	SAY UNIDENTIFIED_DESC "Also known as the hand-and-a-half sword, the bastard sword derives its name from the fact that it is halfway between the two-handed sword and the long sword. The bastard sword has a double-edged blade and a long grip, which can accommodate both hands if preferred. The overall length of the bastard sword ranges between four feet and four feet ten inches.
 
@@ -397,7 +397,7 @@ Weight: 7"
 
 
 //ANGURVADAL +5 - valore 18000mo//
-COPY "rick_bigg_mod/items/SW1H61.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/SW1H61.itm" "override"
 	SAY NAME1 "Bastard Sword"
 	SAY UNIDENTIFIED_DESC "Also known as the hand-and-a-half sword, the bastard sword derives its name from the fact that it is halfway between the two-handed sword and the long sword. The bastard sword has a double-edged blade and a long grip, which can accommodate both hands if preferred. The overall length of the bastard sword ranges between four feet and four feet ten inches.
 
@@ -441,7 +441,7 @@ Weight: 7"
 
 
 //ANDURIL +5 - valore 15000mo//
-COPY "rick_bigg_mod/items/SW1H65.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/SW1H65.itm" "override"
 	SAY NAME1 "Bastard Sword"
 	SAY UNIDENTIFIED_DESC "Also known as the hand-and-a-half sword, the bastard sword derives its name from the fact that it is halfway between the two-handed sword and the long sword. The bastard sword has a double-edged blade and a long grip, which can accommodate both hands if preferred. The overall length of the bastard sword ranges between four feet and four feet ten inches.
 

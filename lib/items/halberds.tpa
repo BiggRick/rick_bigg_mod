@@ -1,5 +1,5 @@
 //HALBERD +2- 3000mo//
-COPY "rick_bigg_mod/items/HALB07.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/HALB07.itm" "override"
 	SAY NAME1 "Halberd"
 	SAY UNIDENTIFIED_DESC "By far the oldest and most often used polearm, the halberd consists of a cleaver-like axe blade mounted on a staff averaging six feet in length. The axe blade is balanced at the rear with a fluke and surmounted by a sharp spike, usually of quadrangular design. The fluke is sometimes replaced by a hook used to dismount cavalry. A halberd can be best described as a cross between a spear and an axe.
 
@@ -35,7 +35,7 @@ Weight: 12"
 
 
 //COLD FURY +2 - 4500mo//
-COPY "rick_bigg_mod/items/BDHALB03.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BDHALB03.itm" "override"
 	SAY NAME1 "Halberd"
 	SAY UNIDENTIFIED_DESC "By far the oldest and most often used polearm, the halberd consists of a cleaver-like axe blade mounted on a staff averaging six feet in length. The axe blade is balanced at the rear with a fluke and surmounted by a sharp spike, usually of quadrangular design. The fluke is sometimes replaced by a hook used to dismount cavalry. A halberd can be best described as a cross between a spear and an axe.
 
@@ -76,7 +76,7 @@ Weight: 12"
 
 
 //DUSKBLADE +3 - valore 7500mo - no good//
-COPY "rick_bigg_mod/items/HALB08.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/HALB08.itm" "override"
 	SAY NAME1 "Halberd"
 	SAY UNIDENTIFIED_DESC "By far the oldest and most often used polearm, the halberd consists of a cleaver-like axe blade mounted on a staff averaging six feet in length. The axe blade is balanced at the rear with a fluke and surmounted by a sharp spike, usually of quadrangular design. The fluke is sometimes replaced by a hook used to dismount cavalry. A halberd can be best described as a cross between a spear and an axe.
 
@@ -115,7 +115,7 @@ Weight: 12"
 
 
 //DRAGON'S BANE +3 - valore 7000mo//
-COPY "rick_bigg_mod/items/HALB04.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/HALB04.itm" "override"
 	SAY NAME1 "Halberd"
 	SAY UNIDENTIFIED_DESC "By far the oldest and most often used polearm, the halberd consists of a cleaver-like axe blade mounted on a staff averaging six feet in length. The axe blade is balanced at the rear with a fluke and surmounted by a sharp spike, usually of quadrangular design. The fluke is sometimes replaced by a hook used to dismount cavalry. A halberd can be best described as a cross between a spear and an axe.
 
@@ -152,7 +152,7 @@ Weight: 12"
 
 
 //DRAGON'S BREATH +5 - 10000mo//
-COPY "rick_bigg_mod/items/HALB05.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/HALB05.itm" "override"
 	SAY NAME1 "Halberd"
 	SAY UNIDENTIFIED_DESC "By far the oldest and most often used polearm, the halberd consists of a cleaver-like axe blade mounted on a staff averaging six feet in length. The axe blade is balanced at the rear with a fluke and surmounted by a sharp spike, usually of quadrangular design. The fluke is sometimes replaced by a hook used to dismount cavalry. A halberd can be best described as a cross between a spear and an axe.
 
@@ -189,7 +189,7 @@ Weight: 10"
 
 
 //WAVE +4 - 12000mo//
-COPY "rick_bigg_mod/items/HALB09.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/HALB09.itm" "override"
 	SAY NAME1 "Halberd"
 	SAY UNIDENTIFIED_DESC "By far the oldest and most often used polearm, the halberd consists of a cleaver-like axe blade mounted on a staff averaging six feet in length. The axe blade is balanced at the rear with a fluke and surmounted by a sharp spike, usually of quadrangular design. The fluke is sometimes replaced by a hook used to dismount cavalry. A halberd can be best described as a cross between a spear and an axe.
 
@@ -227,7 +227,7 @@ Weight: 11"
 
 
 //RAVAGER +4 - 9000mo - no good//
-COPY "rick_bigg_mod/items/HALB10.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/HALB10.itm" "override"
 	SAY NAME1 "Halberd"
 	SAY UNIDENTIFIED_DESC "By far the oldest and most often used polearm, the halberd consists of a cleaver-like axe blade mounted on a staff averaging six feet in length. The axe blade is balanced at the rear with a fluke and surmounted by a sharp spike, usually of quadrangular design. The fluke is sometimes replaced by a hook used to dismount cavalry. A halberd can be best described as a cross between a spear and an axe.
 
@@ -266,7 +266,7 @@ Weight: 11"
 
 
 //RAVAGER +5 - 19000mo - no good//
-COPY "rick_bigg_mod/items/HALB11.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/HALB11.itm" "override"
 	SAY NAME1 "Halberd"
 	SAY UNIDENTIFIED_DESC "By far the oldest and most often used polearm, the halberd consists of a cleaver-like axe blade mounted on a staff averaging six feet in length. The axe blade is balanced at the rear with a fluke and surmounted by a sharp spike, usually of quadrangular design. The fluke is sometimes replaced by a hook used to dismount cavalry. A halberd can be best described as a cross between a spear and an axe.
 

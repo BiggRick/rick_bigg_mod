@@ -1,12 +1,12 @@
-COPY ~rick_bigg_mod/spell/tb#cl001.spl~ ~override/tb#cl001.spl~
-     ~rick_bigg_mod/spell/tb#cl001.spl~ ~override/tb#cl002.spl~
-     ~rick_bigg_mod/spell/tb#cl001.spl~ ~override/tb#cl003.spl~
-     ~rick_bigg_mod/spell/tb#cl001.spl~ ~override/tb#cl004.spl~
-     ~rick_bigg_mod/spell/tb#cl001.spl~ ~override/tb#cl005.spl~
-     ~rick_bigg_mod/spell/tb#cl001.spl~ ~override/tb#cl006.spl~
-     ~rick_bigg_mod/spell/tb#cl001.spl~ ~override/tb#cl007.spl~
-     ~rick_bigg_mod/spell/tb#cl001.spl~ ~override/tb#cl008.spl~
-     ~rick_bigg_mod/spell/tb#cl001.spl~ ~override/tb#cl009.spl~
+COPY ~weidu_external/rick_bigg_mod/workspace/spell/tb#cl001.spl~ ~override/tb#cl001.spl~
+     ~weidu_external/rick_bigg_mod/workspace/spell/tb#cl001.spl~ ~override/tb#cl002.spl~
+     ~weidu_external/rick_bigg_mod/workspace/spell/tb#cl001.spl~ ~override/tb#cl003.spl~
+     ~weidu_external/rick_bigg_mod/workspace/spell/tb#cl001.spl~ ~override/tb#cl004.spl~
+     ~weidu_external/rick_bigg_mod/workspace/spell/tb#cl001.spl~ ~override/tb#cl005.spl~
+     ~weidu_external/rick_bigg_mod/workspace/spell/tb#cl001.spl~ ~override/tb#cl006.spl~
+     ~weidu_external/rick_bigg_mod/workspace/spell/tb#cl001.spl~ ~override/tb#cl007.spl~
+     ~weidu_external/rick_bigg_mod/workspace/spell/tb#cl001.spl~ ~override/tb#cl008.spl~
+     ~weidu_external/rick_bigg_mod/workspace/spell/tb#cl001.spl~ ~override/tb#cl009.spl~
     INNER_PATCH ~%DEST_RES%~ BEGIN
         READ_ASCII 5 code (3)
         level = code

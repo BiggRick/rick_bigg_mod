@@ -1,5 +1,5 @@
 //MELF'S MINUTE METEOR//
-COPY "rick_bigg_mod/items/MELFMET.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/MELFMET.itm" "override"
 	SAY NAME1 "Melf's Minute Meteor"
 	SAY UNIDENTIFIED_DESC "This glowing meteor was created with the spell Melf's Minute Meteors.
 

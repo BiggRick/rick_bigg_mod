@@ -1,5 +1,5 @@
 //CLUB +1 - valore 1000mo//
-COPY "rick_bigg_mod/items/BLUN36.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BLUN36.itm" "override"
 	SAY NAME1 "Club"
 	SAY UNIDENTIFIED_DESC "Most clubs are stout, hardwood sticks, narrow at the grip and wider at the end. This simple weapon has been used since people first began using tools. Anyone can find a good stout piece of wood and swing it; hence the club's widespread use.
 
@@ -35,7 +35,7 @@ Weight: 3"
 
 
 //CLUB +2 - valore 2000mo//
-COPY "rick_bigg_mod/items/OHBLUN51.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/OHBLUN51.itm" "override"
 	SAY NAME1 "Club"
 	SAY UNIDENTIFIED_DESC "Most clubs are stout, hardwood sticks, narrow at the grip and wider at the end. This simple weapon has been used since people first began using tools. Anyone can find a good stout piece of wood and swing it; hence the club's widespread use.
 
@@ -74,7 +74,7 @@ Weight: 1"
 
 
 //BONE CLUB +2, +4 VS UNDEAD - 4500mo//
-COPY "rick_bigg_mod/items/BLUN23.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BLUN23.itm" "override"
 	SAY NAME1 "Club"
 	SAY UNIDENTIFIED_DESC "Most clubs are stout, hardwood sticks, narrow at the grip and wider at the end. This simple weapon has been used since people first began using tools. Anyone can find a good stout piece of wood and swing it; hence the club's widespread use.
 
@@ -109,7 +109,7 @@ Weight: 3"
 
 
 //WYVERN'S TAIL +3 - 5500mo//
-COPY "rick_bigg_mod/items/BLUN17.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BLUN17.itm" "override"
 	SAY NAME1 "Club"
 	SAY UNIDENTIFIED_DESC "Most clubs are stout, hardwood sticks, narrow at the grip and wider at the end. This simple weapon has been used since people first began using tools. Anyone can find a good stout piece of wood and swing it; hence the club's widespread use.
 
@@ -148,7 +148,7 @@ Weight: 3"
 
 
 //ROOT OF THE PROBLEM +3 - valore 8000mo - solo druidi//
-COPY "rick_bigg_mod/items/BLUN10.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BLUN10.itm" "override"
 	SAY NAME1 "Club"
 	SAY UNIDENTIFIED_DESC "Most clubs are stout, hardwood sticks, narrow at the grip and wider at the end. This simple weapon has been used since people first began using tools. Anyone can find a good stout piece of wood and swing it; hence the club's widespread use.
 
@@ -187,7 +187,7 @@ Weight: 3"
 
 
 //BLACKBLOOD +4 - valore 8500mo//
-COPY "rick_bigg_mod/items/BLUN22.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BLUN22.itm" "override"
 	SAY NAME1 "Club"
 	SAY UNIDENTIFIED_DESC "Most clubs are stout, hardwood sticks, narrow at the grip and wider at the end. This simple weapon has been used since people first began using tools. Anyone can find a good stout piece of wood and swing it; hence the club's widespread use.
 
@@ -222,7 +222,7 @@ Requires:
  
  
 //CLUB DETONATION +3 - 8000mo//
-COPY "rick_bigg_mod/items/BLUN26.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BLUN26.itm" "override"
 	SAY NAME1 "Club"
 	SAY UNIDENTIFIED_DESC "Most clubs are stout, hardwood sticks, narrow at the grip and wider at the end. This simple weapon has been used since people first began using tools. Anyone can find a good stout piece of wood and swing it; hence the club's widespread use.
 
@@ -265,7 +265,7 @@ Weight: 3"
 
 
 //CLUB DETONATION +5 - 14000mo//
-COPY "rick_bigg_mod/items/BLUN27.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BLUN27.itm" "override"
 	SAY NAME1 "Club"
 	SAY UNIDENTIFIED_DESC "Most clubs are stout, hardwood sticks, narrow at the grip and wider at the end. This simple weapon has been used since people first began using tools. Anyone can find a good stout piece of wood and swing it; hence the club's widespread use.
 

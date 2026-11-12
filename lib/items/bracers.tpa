@@ -1,5 +1,5 @@
 //BRACERS OF DEFENSE AC 7 - 3000mo//
-COPY "rick_bigg_mod/items/BRAC02.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BRAC02.itm" "override"
 	SAY NAME1 "Bracers"
 	SAY UNIDENTIFIED_DESC "Bracers are thick bands of metal or leather that are strapped, belted, or tied to a character's forearm.
 
@@ -20,7 +20,7 @@ Weight: 2"
 
 
 //BRACERS OF DEFENSE AC 6 - 4000mo//
-COPY "rick_bigg_mod/items/BRAC03.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BRAC03.itm" "override"
 	SAY NAME1 "Bracers"
 	SAY UNIDENTIFIED_DESC "Bracers are thick bands of metal or leather that are strapped, belted, or tied to a character's forearm.
 
@@ -42,7 +42,7 @@ Weight: 2"
 
 
 //BRACERS OF DEFENSE AC 5 - 5000mo//
-COPY "rick_bigg_mod/items/BRAC13.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BRAC13.itm" "override"
 	SAY NAME1 "Bracers"
 	SAY UNIDENTIFIED_DESC "Bracers are thick bands of metal or leather that are strapped, belted, or tied to a character's forearm.
 
@@ -64,7 +64,7 @@ Weight: 2"
 
 
 //BRACERS OF DEFENSE AC 4 - 6000mo//
-COPY "rick_bigg_mod/items/BRAC14.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BRAC14.itm" "override"
 	SAY NAME1 "Bracers"
 	SAY UNIDENTIFIED_DESC "Bracers are thick bands of metal or leather that are strapped, belted, or tied to a character's forearm.
 
@@ -87,7 +87,7 @@ Weight: 2"
 
 
 //BRACERS OF DEFENSE AC 3 - 7000mo//
-COPY "rick_bigg_mod/items/BRAC15.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BRAC15.itm" "override"
 	SAY NAME1 "Bracers"
 	SAY UNIDENTIFIED_DESC "Bracers are thick bands of metal or leather that are strapped, belted, or tied to a character's forearm.
 
@@ -110,7 +110,7 @@ Weight: 2"
 
 
 //BRACERS OF ARCHERY - 4000mo//
-COPY "rick_bigg_mod/items/BRAC04.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BRAC04.itm" "override"
 	SAY NAME1 "Bracers"
 	SAY UNIDENTIFIED_DESC "Bracers are thick bands of metal or leather that are strapped, belted, or tied to a character's forearm.
 
@@ -134,7 +134,7 @@ Weight: 2"
 
 
 //GAUNTLETS OF OGRE POWER - 7000mo//
-COPY "rick_bigg_mod/items/BRAC06.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BRAC06.itm" "override"
 	SAY NAME1 "Gauntlets"
 	SAY UNIDENTIFIED_DESC "Gauntlets are armored gloves. They can be made of leather, metal plates, or chain mail. Every suit of armor is assumed to include gauntlets of an appropriate type. Magical gauntlets tend to be finer, lighter, and more easily worn than normal varieties.
 
@@ -156,7 +156,7 @@ Weight: 2"
 
 
 //GAUNTLETS OF DEXTERITY - 6000mo//
-COPY "rick_bigg_mod/items/BRAC07.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BRAC07.itm" "override"
 	SAY NAME1 "Gauntlets"
 	SAY UNIDENTIFIED_DESC "Gauntlets are armored gloves. They can be made of leather, metal plates, or chain mail. Every suit of armor is assumed to include gauntlets of an appropriate type. Magical gauntlets tend to be finer, lighter, and more easily worn than normal varieties.
 
@@ -178,7 +178,7 @@ Weight: 2"
 
 
 //GAUNTLETS OF STRIKING - solo combattenti - 4500mo//
-COPY "rick_bigg_mod/items/BRAC09.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BRAC09.itm" "override"
 	SAY NAME1 "Gauntlets"
 	SAY UNIDENTIFIED_DESC "Gauntlets are armored gloves. They can be made of leather, metal plates, or chain mail. Every suit of armor is assumed to include gauntlets of an appropriate type. Magical gauntlets tend to be finer, lighter, and more easily worn than normal varieties.
 
@@ -201,7 +201,7 @@ Weight: 2"
 
 
 //GAUNTLETS OF WEAPON EXPERTISE - solo combattenti - 4000mo//
-COPY "rick_bigg_mod/items/BRAC10.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BRAC10.itm" "override"
 	SAY NAME1 "Gauntlets"
 	SAY UNIDENTIFIED_DESC "Gauntlets are armored gloves. They can be made of leather, metal plates, or chain mail. Every suit of armor is assumed to include gauntlets of an appropriate type. Magical gauntlets tend to be finer, lighter, and more easily worn than normal varieties.
 
@@ -225,7 +225,7 @@ Weight: 2"
 
 
 //BRACERS OF FRENZY - 3500mo//
-COPY "rick_bigg_mod/items/BRAC11.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BRAC11.itm" "override"
 	SAY NAME1 "Bracers"
 	SAY UNIDENTIFIED_DESC "Bracers are thick bands of metal or leather that are strapped, belted, or tied to a character's forearm.
 
@@ -248,7 +248,7 @@ Weight: 2"
 
 
 //GAUNTLETS OF UNDEAD CONTROL - 2500mo - no buoni//
-COPY "rick_bigg_mod/items/BRAC08.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BRAC08.itm" "override"
 	SAY NAME1 "Gauntlets"
 	SAY UNIDENTIFIED_DESC "Gauntlets are armored gloves. They can be made of leather, metal plates, or chain mail. Every suit of armor is assumed to include gauntlets of an appropriate type. Magical gauntlets tend to be finer, lighter, and more easily worn than normal varieties.
 
@@ -271,7 +271,7 @@ Weight: 2"
 
 
 //GLOVES OF PICKPOCKETING - 2500mo - no buoni//
-COPY "rick_bigg_mod/items/BRAC17.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BRAC17.itm" "override"
 	SAY NAME1 "Gauntlets"
 	SAY UNIDENTIFIED_DESC "Gauntlets are armored gloves. They can be made of leather, metal plates, or chain mail. Every suit of armor is assumed to include gauntlets of an appropriate type. Magical gauntlets tend to be finer, lighter, and more easily worn than normal varieties.
 
@@ -294,7 +294,7 @@ Weight: 2"
 
 
 //GLOVES OF PERSEVERANCE - 3500mo - solo chierici e paladini - no malvagi//
-COPY "rick_bigg_mod/items/BDBRAC15.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BDBRAC15.itm" "override"
 	SAY NAME1 "Gauntlets"
 	SAY UNIDENTIFIED_DESC "Gauntlets are armored gloves. They can be made of leather, metal plates, or chain mail. Every suit of armor is assumed to include gauntlets of an appropriate type. Magical gauntlets tend to be finer, lighter, and more easily worn than normal varieties.
 
@@ -320,7 +320,7 @@ Weight: 2"
 
 
 //GAUNTLETS OF THE DUELLIST - 1500mo - no maghi, chierici e druidi //
-COPY "rick_bigg_mod/items/BRAC18.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BRAC18.itm" "override"
 	SAY NAME1 "Gauntlets"
 	SAY UNIDENTIFIED_DESC "Gauntlets are armored gloves. They can be made of leather, metal plates, or chain mail. Every suit of armor is assumed to include gauntlets of an appropriate type. Magical gauntlets tend to be finer, lighter, and more easily worn than normal varieties.
 
@@ -343,7 +343,7 @@ Weight: 2"
 
 
 //GLOVES OF HEALING - 6500mo - solo paladini e chierici buoni //
-COPY "rick_bigg_mod/items/BRAC20.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BRAC20.itm" "override"
 	SAY NAME1 "Gauntlets"
 	SAY UNIDENTIFIED_DESC "Gauntlets are armored gloves. They can be made of leather, metal plates, or chain mail. Every suit of armor is assumed to include gauntlets of an appropriate type. Magical gauntlets tend to be finer, lighter, and more easily worn than normal varieties.
 
@@ -369,7 +369,7 @@ Weight: 2"
 
 
 //BRACERS OF BLINDING STRIKE - solo combattenti - 5000mo//
-COPY "rick_bigg_mod/items/BRAC16.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BRAC16.itm" "override"
 	SAY NAME1 "Bracers"
 	SAY UNIDENTIFIED_DESC "Bracers are thick bands of metal or leather that are strapped, belted, or tied to a character's forearm.
 
@@ -400,7 +400,7 @@ Weight: 2"
 
 
 //GAUNTLETS OF CRUSHING - solo guerrieri - 8000mo//
-COPY "rick_bigg_mod/items/BRAC19.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BRAC19.itm" "override"
 	SAY NAME1 "Gauntlets"
 	SAY UNIDENTIFIED_DESC "Gauntlets are armored gloves. They can be made of leather, metal plates, or chain mail. Every suit of armor is assumed to include gauntlets of an appropriate type. Magical gauntlets tend to be finer, lighter, and more easily worn than normal varieties.
 
@@ -430,7 +430,7 @@ Weight: 2"
 
 
 //BARD'S GLOVES - solo bardi - 3500mo//
-COPY "rick_bigg_mod/items/BRAC24.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BRAC24.itm" "override"
 	SAY NAME1 "Gauntlets"
 	SAY UNIDENTIFIED_DESC "Gauntlets are armored gloves. They can be made of leather, metal plates, or chain mail. Every suit of armor is assumed to include gauntlets of an appropriate type. Magical gauntlets tend to be finer, lighter, and more easily worn than normal varieties.
 
@@ -452,7 +452,7 @@ Weight: 2"
 
 
 //WONDROUS GLOVES - solo bardi - 11000mo//
-COPY "rick_bigg_mod/items/BRAC25.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BRAC25.itm" "override"
 	SAY NAME1 "Gauntlets"
 	SAY UNIDENTIFIED_DESC "Gauntlets are armored gloves. They can be made of leather, metal plates, or chain mail. Every suit of armor is assumed to include gauntlets of an appropriate type. Magical gauntlets tend to be finer, lighter, and more easily worn than normal varieties.
 
@@ -481,7 +481,7 @@ Weight: 2"
 
 
 //PALADIN'S BRACERS - solo paladini - 3500mo//
-COPY "rick_bigg_mod/items/BRAC22.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BRAC22.itm" "override"
 	SAY NAME1 "Bracers"
 	SAY UNIDENTIFIED_DESC "Bracers are thick bands of metal or leather that are strapped, belted, or tied to a character's forearm.
 
@@ -504,7 +504,7 @@ Weight: 2"
 
 
 //BLESSED BRACERS - solo paladini - 15000mo//
-COPY "rick_bigg_mod/items/BRAC23.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BRAC23.itm" "override"
 	SAY NAME1 "Bracers"
 	SAY UNIDENTIFIED_DESC "Bracers are thick bands of metal or leather that are strapped, belted, or tied to a character's forearm.
 
@@ -534,7 +534,7 @@ Weight: 2"
 
 
 //THE AMPLIFIERS - solo maghi - 7500mo//
-COPY "rick_bigg_mod/items/BRAC26.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BRAC26.itm" "override"
 	SAY NAME1 "Bracers"
 	SAY UNIDENTIFIED_DESC "Bracers are thick bands of metal or leather that are strapped, belted, or tied to a character's forearm.
 
@@ -557,7 +557,7 @@ Weight: 2"
 
 
 //GAUNTLETS OF WAR ALACRITY - solo combattenti - 12000mo//
-COPY "rick_bigg_mod/items/BRAC21.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BRAC21.itm" "override"
 	SAY NAME1 "Bracers"
 	SAY UNIDENTIFIED_DESC "Gauntlets are armored gloves. They can be made of leather, metal plates, or chain mail. Every suit of armor is assumed to include gauntlets of an appropriate type. Magical gauntlets tend to be finer, lighter, and more easily worn than normal varieties.
 

@@ -1,5 +1,5 @@
 //KATANA - 50mo//
-COPY "rick_bigg_mod/items/SW1H43.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/SW1H43.itm" "override"
 	SAY NAME1 "Katana"
 	SAY DESC "The katana is a single-edged, slightly curved sword that ends with a chisel point. The katana is perhaps one of the finest swords ever made, the steps to its creation a long and secret process that is more art form than anything else. This blade is an important facet of Kara-Turan culture. To touch or wield a samurai's katana is to insult the samurai and to incite his wrath. For a gaijin, or foreigner, to own such a blade is a rare occurrence. Either the gaijin is a greatly honored friend of an important minister, or the gaijin has murdered a samurai.
 
@@ -18,7 +18,7 @@ Weight: 6"
 
 
 //KATANA +1 - 2000mo//
-COPY "rick_bigg_mod/items/SW1H44.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/SW1H44.itm" "override"
 	SAY NAME1 "Katana"
 	SAY UNIDENTIFIED_DESC "The katana is a single-edged, slightly curved sword that ends with a chisel point. The katana is perhaps one of the finest swords ever made, the steps to its creation a long and secret process that is more art form than anything else. This blade is an important facet of Kara-Turan culture. To touch or wield a samurai's katana is to insult the samurai and to incite his wrath. For a gaijin, or foreigner, to own such a blade is a rare occurrence. Either the gaijin is a greatly honored friend of an important minister, or the gaijin has murdered a samurai.
 
@@ -54,7 +54,7 @@ Weight: 5"
 
 
 //KATANA +2 - 3000mo//
-COPY "rick_bigg_mod/items/SW1H55.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/SW1H55.itm" "override"
 	SAY NAME1 "Katana"
 	SAY UNIDENTIFIED_DESC "The katana is a single-edged, slightly curved sword that ends with a chisel point. The katana is perhaps one of the finest swords ever made, the steps to its creation a long and secret process that is more art form than anything else. This blade is an important facet of Kara-Turan culture. To touch or wield a samurai's katana is to insult the samurai and to incite his wrath. For a gaijin, or foreigner, to own such a blade is a rare occurrence. Either the gaijin is a greatly honored friend of an important minister, or the gaijin has murdered a samurai.
 
@@ -93,7 +93,7 @@ Weight: 4"
 
 
 //MALAKAR +2 - 4000mo//
-COPY "rick_bigg_mod/items/SW1H45.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/SW1H45.itm" "override"
 	SAY NAME1 "Katana"
 	SAY UNIDENTIFIED_DESC "The katana is a single-edged, slightly curved sword that ends with a chisel point. The katana is perhaps one of the finest swords ever made, the steps to its creation a long and secret process that is more art form than anything else. This blade is an important facet of Kara-Turan culture. To touch or wield a samurai's katana is to insult the samurai and to incite his wrath. For a gaijin, or foreigner, to own such a blade is a rare occurrence. Either the gaijin is a greatly honored friend of an important minister, or the gaijin has murdered a samurai.
 
@@ -130,7 +130,7 @@ Weight: 4"
 
 
 //USUNO'S BLADE +3 - 8000mo//
-COPY "rick_bigg_mod/items/SW1H67.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/SW1H67.itm" "override"
 	SAY NAME1 "Katana"
 	SAY UNIDENTIFIED_DESC "The katana is a single-edged, slightly curved sword that ends with a chisel point. The katana is perhaps one of the finest swords ever made, the steps to its creation a long and secret process that is more art form than anything else. This blade is an important facet of Kara-Turan culture. To touch or wield a samurai's katana is to insult the samurai and to incite his wrath. For a gaijin, or foreigner, to own such a blade is a rare occurrence. Either the gaijin is a greatly honored friend of an important minister, or the gaijin has murdered a samurai.
 
@@ -169,7 +169,7 @@ Weight: 3"
 
 
 //YAMATO +4 - 10000mo//
-COPY "rick_bigg_mod/items/SW1H66.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/SW1H66.itm" "override"
 	SAY NAME1 "Katana"
 	SAY UNIDENTIFIED_DESC "The katana is a single-edged, slightly curved sword that ends with a chisel point. The katana is perhaps one of the finest swords ever made, the steps to its creation a long and secret process that is more art form than anything else. This blade is an important facet of Kara-Turan culture. To touch or wield a samurai's katana is to insult the samurai and to incite his wrath. For a gaijin, or foreigner, to own such a blade is a rare occurrence. Either the gaijin is a greatly honored friend of an important minister, or the gaijin has murdered a samurai.
 
@@ -206,7 +206,7 @@ Weight: 2"
 
 
 //CELESTIAL FURY +4 - 13000mo//
-COPY "rick_bigg_mod/items/SW1H51.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/SW1H51.itm" "override"
 	SAY NAME1 "Katana"
 	SAY UNIDENTIFIED_DESC "The katana is a single-edged, slightly curved sword that ends with a chisel point. The katana is perhaps one of the finest swords ever made, the steps to its creation a long and secret process that is more art form than anything else. This blade is an important facet of Kara-Turan culture. To touch or wield a samurai's katana is to insult the samurai and to incite his wrath. For a gaijin, or foreigner, to own such a blade is a rare occurrence. Either the gaijin is a greatly honored friend of an important minister, or the gaijin has murdered a samurai.
 
@@ -247,7 +247,7 @@ Weight: 2"
 
 
 //HINDO'S DOOM +3 - no evil- 8000mo//
-COPY "rick_bigg_mod/items/SW1H70.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/SW1H70.itm" "override"
 	SAY NAME1 "Katana"
 	SAY UNIDENTIFIED_DESC "The katana is a single-edged, slightly curved sword that ends with a chisel point. The katana is perhaps one of the finest swords ever made, the steps to its creation a long and secret process that is more art form than anything else. This blade is an important facet of Kara-Turan culture. To touch or wield a samurai's katana is to insult the samurai and to incite his wrath. For a gaijin, or foreigner, to own such a blade is a rare occurrence. Either the gaijin is a greatly honored friend of an important minister, or the gaijin has murdered a samurai.
 
@@ -285,7 +285,7 @@ Weight: 3"
 
 
 //HINDO'S DOOM +5 - no evil - 17000mo//
-COPY "rick_bigg_mod/items/SW1H71.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/SW1H71.itm" "override"
 	SAY NAME1 "Katana"
 	SAY UNIDENTIFIED_DESC "The katana is a single-edged, slightly curved sword that ends with a chisel point. The katana is perhaps one of the finest swords ever made, the steps to its creation a long and secret process that is more art form than anything else. This blade is an important facet of Kara-Turan culture. To touch or wield a samurai's katana is to insult the samurai and to incite his wrath. For a gaijin, or foreigner, to own such a blade is a rare occurrence. Either the gaijin is a greatly honored friend of an important minister, or the gaijin has murdered a samurai.
 

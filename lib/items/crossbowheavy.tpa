@@ -1,5 +1,5 @@
 //HEAVY CROSSBOW +1 - 2000mo//
-COPY "rick_bigg_mod/items/XBOW02.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/XBOW02.itm" "override"
 	SAY NAME1 "Heavy Crossbow"
 	SAY UNIDENTIFIED_DESC "A crossbow is a bow mounted crosswise on a wooden or metal shaft, the latter called a tiller. The bow is usually made of ash or yew. The crossbow fires a quarrel (also called a bolt). 
 
@@ -35,7 +35,7 @@ Weight: 12"
 
 
 //HEAVY CROSSBOW +2 - 3000mo//
-COPY "rick_bigg_mod/items/XBOW07.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/XBOW07.itm" "override"
 	SAY NAME1 "Heavy Crossbow"
 	SAY UNIDENTIFIED_DESC "A crossbow is a bow mounted crosswise on a wooden or metal shaft, the latter called a tiller. The bow is usually made of ash or yew. The crossbow fires a quarrel (also called a bolt). 
 
@@ -69,7 +69,7 @@ Weight: 11"
 
 
 //THE GUIDE +2 - 6000mo//
-COPY "rick_bigg_mod/items/XBOW03.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/XBOW03.itm" "override"
 	SAY NAME1 "Heavy Crossbow"
 	SAY UNIDENTIFIED_DESC "A crossbow is a bow mounted crosswise on a wooden or metal shaft, the latter called a tiller. The bow is usually made of ash or yew. The crossbow fires a quarrel (also called a bolt). 
 
@@ -103,7 +103,7 @@ Weight: 11"
 
 
 //HEAVY CROSSBOW OF DOOM +2 - 7000mo//
-COPY "rick_bigg_mod/items/BDXBOW02.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BDXBOW02.itm" "override"
 	SAY NAME1 "Heavy Crossbow"
 	SAY UNIDENTIFIED_DESC "A crossbow is a bow mounted crosswise on a wooden or metal shaft, the latter called a tiller. The bow is usually made of ash or yew. The crossbow fires a quarrel (also called a bolt). 
 
@@ -141,7 +141,7 @@ Weight: 11"
 
 
 //VITRIOL CROSSBOW +3 - 9000mo//
-COPY "rick_bigg_mod/items/XBOW14.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/XBOW14.itm" "override"
 	SAY NAME1 "Heavy Crossbow"
 	SAY UNIDENTIFIED_DESC "A crossbow is a bow mounted crosswise on a wooden or metal shaft, the latter called a tiller. The bow is usually made of ash or yew. The crossbow fires a quarrel (also called a bolt). 
 
@@ -177,7 +177,7 @@ Weight: 10"
 
 
 //TITAN'S DRAW +3 - 11000mo//
-COPY "rick_bigg_mod/items/XBOW08.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/XBOW08.itm" "override"
 	SAY NAME1 "Heavy Crossbow"
 	SAY UNIDENTIFIED_DESC "A crossbow is a bow mounted crosswise on a wooden or metal shaft, the latter called a tiller. The bow is usually made of ash or yew. The crossbow fires a quarrel (also called a bolt). 
 

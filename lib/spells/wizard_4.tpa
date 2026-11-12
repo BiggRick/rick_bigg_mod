@@ -1,5 +1,5 @@
 //BREAK ENCHANTMENT//
-COPY "rick_bigg_mod/spell/SPWI410.spl" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/spell/SPWI410.spl" "override"
 	SAY NAME1 "Break Enchantment"
 	SAY UNIDENTIFIED_DESC 
 "Break Enchantment
@@ -18,7 +18,7 @@ Upon casting this spell, the mage is able to free a victim from enchantments and
 
 
 //MINOR GLOBE OF INVULNERABILITY//
-COPY "rick_bigg_mod/spell/SPWI406.spl" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/spell/SPWI406.spl" "override"
 	SAY NAME1 "Minor Globe of Invulnerability"
 	SAY UNIDENTIFIED_DESC 
 "Minor Globe of Invulnerability
@@ -38,7 +38,7 @@ This spell creates a faintly shimmering magical sphere around the caster that pr
 
 
 //ABJURE DEFENSE//
-COPY "rick_bigg_mod/spell/SPWI419.spl" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/spell/SPWI419.spl" "override"
 	SAY NAME1 "Abjure Defense"
 	SAY UNIDENTIFIED_DESC 
 "Abjure Defense
@@ -59,7 +59,7 @@ The spell protection spells dispelled by Secret Word are: Minor Spell Deflection
 
 
 //VITRIOLIC SPHERE//
-COPY "rick_bigg_mod/spell/SPWI426.spl" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/spell/SPWI426.spl" "override"
 	SAY NAME1 "Vitriolic Sphere"
 	SAY UNIDENTIFIED_DESC 
 "Vitriolic Sphere
@@ -76,7 +76,7 @@ When this spell is cast, a glowing orb of emerald acid streaks to the target and
 
 
 //OTILUKE'S RESILIENT SPHERE//
-COPY "rick_bigg_mod/spell/SPWI413.spl" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/spell/SPWI413.spl" "override"
 	SAY NAME1 "Otiluke's Resilient Sphere"
 	SAY UNIDENTIFIED_DESC 
 "Otiluke's Resilient Sphere
@@ -99,7 +99,7 @@ The caster has the option of using the spell to protect her allies. Resistances 
 
 
 //EMOTION: FEAR//
-COPY "rick_bigg_mod/spell/SPWI499.spl" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/spell/SPWI499.spl" "override"
 	SAY NAME1 "Emotion: Fear"
 	SAY UNIDENTIFIED_DESC 
 "Emotion: Fear
@@ -119,7 +119,7 @@ When this spell is cast, the wizard can disturb the emotional state of those aro
 
 
 //EMOTION: COURAGE//
-COPY "rick_bigg_mod/spell/SPWI498.spl" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/spell/SPWI498.spl" "override"
 	SAY NAME1 "Emotion: Hope"
 	SAY UNIDENTIFIED_DESC 
 "Emotion: Hope
@@ -138,7 +138,7 @@ When this spell is cast, the wizard can fortify the emotional state of those aro
 
 
 //GREATER MALISON//
-COPY "rick_bigg_mod/spell/SPWI412.spl" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/spell/SPWI412.spl" "override"
 	SAY NAME1 "Greater Malison"
 	SAY UNIDENTIFIED_DESC 
 "Greater Malison
@@ -159,7 +159,7 @@ The spell allows the caster to adversely affect the saving throws of his enemies
 
 
 //PROTECTION FROM ELEMENTAL ENERGY//
-COPY "rick_bigg_mod/spell/SPWI422.spl" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/spell/SPWI422.spl" "override"
 	SAY NAME1 "Protection From Elemental Energy"
 	SAY UNIDENTIFIED_DESC 
 "Protection From Elemental Energy
@@ -178,7 +178,7 @@ When this spell is cast, the recipient receives complete protection from one dam
 
 
 //PROTECTION FROM FIRE//
-COPY "rick_bigg_mod/spell/SPWI319.spl" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/spell/SPWI319.spl" "override"
 	SAY NAME1 "Protection From Fire"
 	SAY UNIDENTIFIED_DESC 
 "Protection From Fire
@@ -196,7 +196,7 @@ When this spell is cast, the recipient receives complete protection from fire. 1
 
 
 //PROTECTION FROM COLD//
-COPY "rick_bigg_mod/spell/SPWI320.spl" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/spell/SPWI320.spl" "override"
 	SAY NAME1 "Protection From Cold"
 	SAY UNIDENTIFIED_DESC 
 "Protection From Cold
@@ -215,7 +215,7 @@ When this spell is cast, the recipient receives complete protection from cold. 1
 
 
 //PROTECTION FROM ELECTRICITY//
-COPY "rick_bigg_mod/spell/SPWI512.spl" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/spell/SPWI512.spl" "override"
 	SAY NAME1 "Protection From Electricity"
 	SAY UNIDENTIFIED_DESC 
 "Protection From Electricity
@@ -234,7 +234,7 @@ When this spell is cast, the recipient receives complete protection from electri
 
 
 //PROTECTION FROM ACID//
-COPY "rick_bigg_mod/spell/SPWI517.spl" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/spell/SPWI517.spl" "override"
 	SAY NAME1 "Protection From Acid"
 	SAY UNIDENTIFIED_DESC 
 "Protection From Acid
@@ -252,7 +252,7 @@ When this spell is cast, the recipient receives complete protection from acid. 1
 
 
 //IMPROVED INVISIBILITY//
-COPY "rick_bigg_mod/spell/SPWI405.spl" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/spell/SPWI405.spl" "override"
 	SAY NAME1 "Improved Invisibility"
 	SAY UNIDENTIFIED_DESC 
 "Improved Invisibility
@@ -271,7 +271,7 @@ This spell is similar to the Invisibility spell, but the recipient is able to at
 
 
 //WRAITHFORM//
-COPY "rick_bigg_mod/spell/SPWI315.spl" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/spell/SPWI315.spl" "override"
 	SAY NAME1 "Wraithform"
 	SAY UNIDENTIFIED_DESC 
 "Wraithform 
@@ -288,7 +288,7 @@ When this spell is cast, the wizard and all of <PRO_HISHER> gear become insubsta
 
 
 //FIRE SHIELD//
-COPY "rick_bigg_mod/spell/SPWI418.spl" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/spell/SPWI418.spl" "override"
 	SAY NAME1 "Fire Shield"
 	SAY UNIDENTIFIED_DESC 
 "Fire Shield
@@ -307,7 +307,7 @@ This spell protects the user by surrounding the caster with a circular wall of f
 
 
 //ICE STORM//
-COPY "rick_bigg_mod/spell/SPWI404.spl" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/spell/SPWI404.spl" "override"
 	SAY NAME1 "Ice Storm"
 	SAY UNIDENTIFIED_DESC 
 "Ice Storm
@@ -328,7 +328,7 @@ When this spell is cast, great magical hailstones pound down for 5 rounds within
 
 
 //CLOAK OF FEAR//
-COPY "rick_bigg_mod/spell/SPWI497.spl" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/spell/SPWI497.spl" "override"
 	SAY NAME1 "Contagion"
 	SAY UNIDENTIFIED_DESC 
 "Cloak of Fear
@@ -348,7 +348,7 @@ Cloak of Fear empowers the caster to radiate a personal aura of fear out to a 6'
 
 
 //CONTAGION//
-COPY "rick_bigg_mod/spell/SPWI409.spl" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/spell/SPWI409.spl" "override"
 	SAY NAME1 "Contagion"
 	SAY UNIDENTIFIED_DESC 
 "Contagion
@@ -367,7 +367,7 @@ This spell causes a major disease and weakness in a creature. Every 2 rounds the
 
 
 //SPIRIT ARMOR//
-COPY "rick_bigg_mod/spell/SPWI414.spl" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/spell/SPWI414.spl" "override"
 	SAY NAME1 "Spirit Armor"
 	SAY UNIDENTIFIED_DESC 
 "Spirit Armor
@@ -386,7 +386,7 @@ This spell taps the target's life force in order to create a corporeal barrier a
 
 
 //STONE TO FLESH//
-COPY "rick_bigg_mod/spell/SPWI625.spl" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/spell/SPWI625.spl" "override"
 	SAY NAME1 "Stone To Flesh"
 	SAY UNIDENTIFIED_DESC 
 "Stone to Flesh
@@ -404,7 +404,7 @@ This spell is the reverse of Flesh to Stone and will return any creature that ha
 
 
 //STONESKIN//
-COPY "rick_bigg_mod/spell/SPWI408.spl" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/spell/SPWI408.spl" "override"
 	SAY NAME1 "Stoneskin"
 	SAY UNIDENTIFIED_DESC 
 "Stoneskin

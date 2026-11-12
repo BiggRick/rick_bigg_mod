@@ -1,5 +1,5 @@
 //PROTECTION FROM PETRIFICATION//
-COPY "rick_bigg_mod/spell/SPWI108.spl" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/spell/SPWI108.spl" "override"
 	SAY NAME1 "Protection From Petrification"
 	SAY UNIDENTIFIED_DESC 
 "Protection from Petrification
@@ -19,7 +19,7 @@ This spell grants the recipient immunity to all petrification attacks. This incl
 
 
 //GLITTERDUST//
-COPY "rick_bigg_mod/spell/SPWI224.spl" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/spell/SPWI224.spl" "override"
 	SAY NAME1 "Glitterdust"
 	SAY UNIDENTIFIED_DESC 
 "Glitterdust
@@ -38,7 +38,7 @@ This spell creates a cloud of glittering golden particles within the area of eff
 
 
 //GREASE//
-COPY "rick_bigg_mod/spell/SPWI101.spl" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/spell/SPWI101.spl" "override"
 	SAY NAME1 "Grease"
 	SAY UNIDENTIFIED_DESC 
 "Grease
@@ -57,7 +57,7 @@ A Grease spell covers a material surface with a slippery layer of a fatty, greas
 
 
 //MAGE ARMOR//
-COPY "rick_bigg_mod/spell/SPWI102.spl" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/spell/SPWI102.spl" "override"
 	SAY NAME1 "Mage Armor"
 	SAY UNIDENTIFIED_DESC 
 "Mage Armor
@@ -76,7 +76,7 @@ By means of this spell, the wizard creates a magical field of force that sets it
 
 
 //CHILL TOUCH//
-COPY "rick_bigg_mod/spell/SPWI117.spl" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/spell/SPWI117.spl" "override"
 	SAY NAME1 "Chill Touch"
 	SAY UNIDENTIFIED_DESC 
 "Chill Touch
@@ -99,7 +99,7 @@ At higher levels:
 
 
 //SPOOK//
-COPY "rick_bigg_mod/spell/SPWI125.spl" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/spell/SPWI125.spl" "override"
 	SAY NAME1 "Spook"
 	SAY UNIDENTIFIED_DESC 
 "Spook
@@ -117,7 +117,7 @@ A Spook spell enables the wizard to play upon natural fears to cause the target 
 
 
 //BLUR - per Valerio, da livello 2 a livello 1//
-COPY "rick_bigg_mod/spell/SPWI201.spl" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/spell/SPWI201.spl" "override"
 	SAY NAME1 "Blur"
 	SAY UNIDENTIFIED_DESC 
 "Blur
@@ -136,7 +136,7 @@ A Blur spell causes the mage's form and spirit to become blurred, shifting and w
 
 
 //DETECT ALIGNMENT //
-COPY "rick_bigg_mod/spell/SPWI122.spl" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/spell/SPWI122.spl" "override"
 	SAY NAME1 "Detect Alignment"
 	SAY UNIDENTIFIED_DESC 
 "Detect Alignment
@@ -155,7 +155,7 @@ This spell allows the wizard to search out the feelings of all creatures within 
 
 
 //TRUE STRIKE//
-COPY "rick_bigg_mod/spell/SPWI111.spl" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/spell/SPWI111.spl" "override"
 	SAY NAME1 "True Strike"
 	SAY UNIDENTIFIED_DESC 
 "True Strike
@@ -173,7 +173,7 @@ This spell grants the creature touched otherworldly sight, resulting in preterna
 
 
 //CHARM PERSON//
-COPY "rick_bigg_mod/spell/SPWI104.spl" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/spell/SPWI104.spl" "override"
 	SAY NAME1 "Charm Person"
 	SAY UNIDENTIFIED_DESC 
 "Charm Person
@@ -192,7 +192,7 @@ If the caster harms, or attempts to harm, the charmed creature by some overt act
 
 
 //REFLECTED IMAGE//
-COPY "rick_bigg_mod/spell/SPWI120.spl" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/spell/SPWI120.spl" "override"
 	SAY NAME1 "Reflected Image"
 	SAY UNIDENTIFIED_DESC 
 "Reflected Image
@@ -211,7 +211,7 @@ Upon casting this spell, the wizard creates one illusory image of himself that w
 
 
 //MALISON - icona e codice e scroll by Valerio//
-COPY "rick_bigg_mod/spell/SPWI199.spl" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/spell/SPWI199.spl" "override"
 	SAY NAME1 "Malison"
 	SAY UNIDENTIFIED_DESC 
 "Malison
@@ -229,7 +229,7 @@ The spell allows the caster to adversely affect the saving throws of a target cr
 
 
 //SHOCKING GRASP//
-COPY "rick_bigg_mod/spell/SPWI115.spl" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/spell/SPWI115.spl" "override"
 	SAY NAME1 "Shocking Grasp"
 	SAY UNIDENTIFIED_DESC 
 "Shocking Grasp
@@ -252,7 +252,7 @@ At higher levels:
 
 
 //CHROMATIC ORB//
-COPY "rick_bigg_mod/spell/SPWI118.spl" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/spell/SPWI118.spl" "override"
 	SAY NAME1 "Chromatic Orb"
 	SAY UNIDENTIFIED_DESC 
 "Chromatic Orb
@@ -280,7 +280,7 @@ Blue: Paralysis (save vs. paralysis negates)
 
 
 //DIMENSION DOOR//
-COPY "rick_bigg_mod/spell/SPWI121.spl" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/spell/SPWI121.spl" "override"
 	SAY NAME1 "Dimension Door"
 	SAY UNIDENTIFIED_DESC 
 "Dimension Door
@@ -299,7 +299,7 @@ This spell transports the caster to any place within sight. When the spell is ca
 
 
 //FIND TRAPS//
-COPY "rick_bigg_mod/spell/SPWI297.spl" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/spell/SPWI297.spl" "override"
 	SAY NAME1 "Find Traps"
 	SAY UNIDENTIFIED_DESC 
 "Find Traps

@@ -1,5 +1,5 @@
 //TWO-HANDED SWORD +1 - 2000mo//
-COPY "rick_bigg_mod/items/SW2H02.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/SW2H02.itm" "override"
 	SAY NAME1 "Two-Handed Sword"
 	SAY UNIDENTIFIED_DESC "The two-handed sword is a derivative of the long sword. Weaponsmiths have always looked for ways to improve existing weapons. In an effort to improve the long sword, the blade was lengthened. Eventually, the handle had to be extended and two hands became necessary to properly swing the sword. The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations.
 
@@ -33,7 +33,7 @@ Weight: 12"
 
 
 //TWO-HANDED SWORD +2 - 3000mo//
-COPY "rick_bigg_mod/items/SW2H11.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/SW2H11.itm" "override"
 	SAY NAME1 "Two-Handed Sword"
 	SAY UNIDENTIFIED_DESC "The two-handed sword is a derivative of the long sword. Weaponsmiths have always looked for ways to improve existing weapons. In an effort to improve the long sword, the blade was lengthened. Eventually, the handle had to be extended and two hands became necessary to properly swing the sword. The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations.
 
@@ -69,7 +69,7 @@ Weight: 12"
 
 
 //SPIDER'S BANE +2 - 5000mo//
-COPY "rick_bigg_mod/items/SW2H06.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/SW2H06.itm" "override"
 	SAY NAME1 "Two-Handed Sword"
 	SAY UNIDENTIFIED_DESC "The two-handed sword is a derivative of the long sword. Weaponsmiths have always looked for ways to improve existing weapons. In an effort to improve the long sword, the blade was lengthened. Eventually, the handle had to be extended and two hands became necessary to properly swing the sword. The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations.
 
@@ -109,7 +109,7 @@ Weight: 10"
 
 
 //BERSERKERING SWORD +3 - 3000mo//
-COPY "rick_bigg_mod/items/SW2H03.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/SW2H03.itm" "override"
 	SAY NAME1 "Two-Handed Sword"
 	SAY UNIDENTIFIED_DESC "The two-handed sword is a derivative of the long sword. Weaponsmiths have always looked for ways to improve existing weapons. In an effort to improve the long sword, the blade was lengthened. Eventually, the handle had to be extended and two hands became necessary to properly swing the sword. The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations.
 
@@ -151,7 +151,7 @@ Weight: 12"
 
 
 //SWORD OF CHAOS +2 - 5500mo//
-COPY "rick_bigg_mod/items/SW2H16.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/SW2H16.itm" "override"
 	SAY NAME1 "Two-Handed Sword"
 	SAY UNIDENTIFIED_DESC "The two-handed sword is a derivative of the long sword. Weaponsmiths have always looked for ways to improve existing weapons. In an effort to improve the long sword, the blade was lengthened. Eventually, the handle had to be extended and two hands became necessary to properly swing the sword. The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations.
 
@@ -193,7 +193,7 @@ Weight: 10"
 
 
 //SILVER SWORD +3 - 10000mo//
-COPY "rick_bigg_mod/items/SW2H15.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/SW2H15.itm" "override"
 	SAY NAME1 "Two-Handed Sword"
 	SAY UNIDENTIFIED_DESC "The two-handed sword is a derivative of the long sword. Weaponsmiths have always looked for ways to improve existing weapons. In an effort to improve the long sword, the blade was lengthened. Eventually, the handle had to be extended and two hands became necessary to properly swing the sword. The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations.
 
@@ -232,7 +232,7 @@ Weight: 15"
 
 
 //DEMON SLAYER +5 - solo berserk - 12000mo//
-COPY "rick_bigg_mod/items/SW2H07.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/SW2H07.itm" "override"
 	SAY NAME1 "Two-Handed Sword"
 	SAY UNIDENTIFIED_DESC "The two-handed sword is a derivative of the long sword. Weaponsmiths have always looked for ways to improve existing weapons. In an effort to improve the long sword, the blade was lengthened. Eventually, the handle had to be extended and two hands became necessary to properly swing the sword. The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations.
 
@@ -273,7 +273,7 @@ Weight: 45"
 
 
 //PSION'S BLADE +3 - 11000mo//
-COPY "rick_bigg_mod/items/SW2H21.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/SW2H21.itm" "override"
 	SAY NAME1 "Two-Handed Sword"
 	SAY UNIDENTIFIED_DESC "The two-handed sword is a derivative of the long sword. Weaponsmiths have always looked for ways to improve existing weapons. In an effort to improve the long sword, the blade was lengthened. Eventually, the handle had to be extended and two hands became necessary to properly swing the sword. The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations.
 
@@ -311,7 +311,7 @@ Weight: 11"
 
 
 //WORLD'S EDGE +4 - 18000mo//
-COPY "rick_bigg_mod/items/SW2H09.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/SW2H09.itm" "override"
 	SAY NAME1 "Two-Handed Sword"
 	SAY UNIDENTIFIED_DESC "The two-handed sword is a derivative of the long sword. Weaponsmiths have always looked for ways to improve existing weapons. In an effort to improve the long sword, the blade was lengthened. Eventually, the handle had to be extended and two hands became necessary to properly swing the sword. The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations.
 
@@ -352,7 +352,7 @@ Weight: 7"
 
 
 //GRAM THE SWORD OF GRIEF +4 - only evil - 14000mo//
-COPY "rick_bigg_mod/items/SW2H17.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/SW2H17.itm" "override"
 	SAY NAME1 "Two-Handed Sword"
 	SAY UNIDENTIFIED_DESC "The two-handed sword is a derivative of the long sword. Weaponsmiths have always looked for ways to improve existing weapons. In an effort to improve the long sword, the blade was lengthened. Eventually, the handle had to be extended and two hands became necessary to properly swing the sword. The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations.
 
@@ -391,7 +391,7 @@ Weight: 11"
 
 
 //GRAM THE SWORD OF GRIEF +5 - only evil - 19000mo//
-COPY "rick_bigg_mod/items/SW2H18.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/SW2H18.itm" "override"
 	SAY NAME1 "Two-Handed Sword"
 	SAY UNIDENTIFIED_DESC "The two-handed sword is a derivative of the long sword. Weaponsmiths have always looked for ways to improve existing weapons. In an effort to improve the long sword, the blade was lengthened. Eventually, the handle had to be extended and two hands became necessary to properly swing the sword. The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations.
 
@@ -437,7 +437,7 @@ Weight: 10"
 
 
 //CARSOMYR + 5 - 25000mo//
-COPY "rick_bigg_mod/items/sw2h10.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/sw2h10.itm" "override"
 	SAY NAME1 "Two-Handed Sword"
 	SAY UNIDENTIFIED_DESC "The two-handed sword is a derivative of the long sword. Weaponsmiths have always looked for ways to improve existing weapons. In an effort to improve the long sword, the blade was lengthened. Eventually, the handle had to be extended and two hands became necessary to properly swing the sword. The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations.
 
@@ -485,7 +485,7 @@ Weight: 7"
 
 
 //CARSOMYR + 5 - 25000mo//
-COPY "rick_bigg_mod/items/sw2h19.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/sw2h19.itm" "override"
 	SAY NAME1 "Two-Handed Sword"
 	SAY UNIDENTIFIED_DESC "The two-handed sword is a derivative of the long sword. Weaponsmiths have always looked for ways to improve existing weapons. In an effort to improve the long sword, the blade was lengthened. Eventually, the handle had to be extended and two hands became necessary to properly swing the sword. The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations.
 
@@ -536,7 +536,7 @@ Weight: 6"
 
 
 //IR'REVRYKRAL + 5 - 18000mo//
-COPY "rick_bigg_mod/items/OHREAVER.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/OHREAVER.itm" "override"
 	SAY NAME1 "Two-Handed Sword"
 	SAY UNIDENTIFIED_DESC "The two-handed sword is a derivative of the long sword. Weaponsmiths have always looked for ways to improve existing weapons. In an effort to improve the long sword, the blade was lengthened. Eventually, the handle had to be extended and two hands became necessary to properly swing the sword. The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations.
 

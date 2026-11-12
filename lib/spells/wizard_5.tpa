@@ -1,6 +1,6 @@
 /*
 //SPELL SHIELD//
-COPY "rick_bigg_mod/spell/SPWI519.spl" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/spell/SPWI519.spl" "override"
 	SAY NAME1 "Spell Shield"
 	SAY UNIDENTIFIED_DESC 
 "Spell Shield
@@ -19,7 +19,7 @@ The spells that Spell Shield protects the wizard from are: Spell Thrust, Abjure 
 */
 
 //CONJURE LESSER ELEMENTAL//
-COPY "rick_bigg_mod/spell/SPWI599.spl" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/spell/SPWI599.spl" "override"
 	SAY NAME1 "Conjure Lesser Elemental"
 	SAY UNIDENTIFIED_DESC 
 "Conjure Lesser Elemental
@@ -77,7 +77,7 @@ Slashing, Crushing, & Piercing Resistance 20%; Missile Resistance 60%
 
 
 //CONJURE LESSER AIR ELEMENTAL//
-COPY "rick_bigg_mod/spell/SPWI520.spl" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/spell/SPWI520.spl" "override"
 	SAY NAME1 "Conjure Lesser Air Elemental"
 	SAY UNIDENTIFIED_DESC 
 "Conjure Lesser Air Elemental
@@ -105,7 +105,7 @@ Slashing, Crushing, & Piercing Resistance 20%; Missile Resistance 60%
 
 
 //CONJURE LESSER EARTH ELEMENTAL//
-COPY "rick_bigg_mod/spell/SPWI521.spl" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/spell/SPWI521.spl" "override"
 	SAY NAME1 "Conjure Lesser Earth Elemental"
 	SAY UNIDENTIFIED_DESC 
 "Conjure Lesser Earth Elemental
@@ -133,7 +133,7 @@ Slashing, Piercing, & Missile Resistance 40%
 
 
 //CONJURE LESSER FIRE ELEMENTAL//
-COPY "rick_bigg_mod/spell/SPWI516.spl" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/spell/SPWI516.spl" "override"
 	SAY NAME1 "Conjure Lesser Fire Elemental"
 	SAY UNIDENTIFIED_DESC 
 "Conjure Lesser Fire Elemental
@@ -162,7 +162,7 @@ Slashing, Crushing, Piercing, & Missile Resistance 20%
 
 
 //MESTIL'S ACID SHEATH/
-COPY "rick_bigg_mod/spell/SPWI524.spl" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/spell/SPWI524.spl" "override"
 	SAY NAME1 "Mestil's Acid Sheath"
 	SAY UNIDENTIFIED_DESC 
 "Mestil's Acid Sheath
@@ -181,7 +181,7 @@ This spell conjures an acid shield around the caster. This shield protects the c
 
 
 //MASS LUCK//
-COPY "rick_bigg_mod/spell/SPWI598.spl" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/spell/SPWI598.spl" "override"
 	SAY NAME1 "Mass Luck"
 	SAY UNIDENTIFIED_DESC 
 "Luck
@@ -198,7 +198,7 @@ When this spell is cast, allies are lucky in everything that they do for the nex
 
 
 //DOMINATION//
-COPY "rick_bigg_mod/spell/SPWI506.spl" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/spell/SPWI506.spl" "override"
 	SAY NAME1 "Domination"
 	SAY UNIDENTIFIED_DESC 
 "Domination
@@ -216,7 +216,7 @@ The Domination spell enables the caster to control the actions of any one creatu
 
 
 //HOLD MONSTER//
-COPY "rick_bigg_mod/spell/SPWI507.spl" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/spell/SPWI507.spl" "override"
 	SAY NAME1 "Hold Monster"
 	SAY UNIDENTIFIED_DESC 
 "Hold Monster
@@ -237,7 +237,7 @@ Held creatures cannot move or speak, but they remain aware of events around them
 
 
 //CONE OF COLD//
-COPY "rick_bigg_mod/spell/SPWI503.spl" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/spell/SPWI503.spl" "override"
 	SAY NAME1 "Cone of Cold"
 	SAY UNIDENTIFIED_DESC 
 "Cone of Cold
@@ -260,7 +260,7 @@ When this spell is cast, it causes a cone-shaped spray of extreme cold to spring
 
 
 //PHANTOM BLADE//
-COPY "rick_bigg_mod/spell/SPWI518.spl" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/spell/SPWI518.spl" "override"
 	SAY NAME1 "Phantom Blade"
 	SAY UNIDENTIFIED_DESC 
 "Phantom Blade
@@ -278,7 +278,7 @@ This spell creates a translucent, weightless, shadowlike sword made of material 
 
 
 //SHADOW DOOR//
-COPY "rick_bigg_mod/spell/SPWI505.spl" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/spell/SPWI505.spl" "override"
 	SAY NAME1 "Shadow Door"
 	SAY UNIDENTIFIED_DESC 
 "Shadow Door
@@ -298,7 +298,7 @@ Unlike the 1st level spell Dimension Door, the caster will reappear in the new s
 
 
 //WAVES OF FATIGUE//
-COPY "rick_bigg_mod/spell/SPWI508.spl" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/spell/SPWI508.spl" "override"
 	SAY NAME1 "Waves of Fatigue"
 	SAY UNIDENTIFIED_DESC 
 "Waves of Fatigue
@@ -315,7 +315,7 @@ Surges of negative energy render all hostile living creatures in the spell's are
 
 
 //LOWER RESISTANCE//
-COPY "rick_bigg_mod/spell/SPWI514.spl" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/spell/SPWI514.spl" "override"
 	SAY NAME1 "Lower Resistance"
 	SAY UNIDENTIFIED_DESC 
 "Lower Resistance
@@ -334,7 +334,7 @@ When cast upon a target creature, this spell lowers their magic resistance by 20
 
 
 //POLYMORPH OTHER//
-COPY "rick_bigg_mod/spell/SPWI415.spl" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/spell/SPWI415.spl" "override"
 	SAY NAME1 "Polymorph Other"
 	SAY UNIDENTIFIED_DESC 
 "Polymorph Other
@@ -355,7 +355,7 @@ Note that all clothes and equipment that the target was wearing will mold into t
 
 
 //ENCHANTED WEAPON//
-COPY "rick_bigg_mod/spell/SPWI417.spl" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/spell/SPWI417.spl" "override"
 	SAY NAME1 "Enchanted Weapon"
 	SAY UNIDENTIFIED_DESC 
 "Enchanted Weapon

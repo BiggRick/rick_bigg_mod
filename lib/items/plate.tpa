@@ -1,5 +1,5 @@
 //PLATE MAIL +1 - 4000mo//
-COPY "rick_bigg_mod/items/PLAT10.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/PLAT10.itm" "override"
 	SAY NAME1 "Plate Mail"
 	SAY UNIDENTIFIED_DESC "Plate mail is a combination of chain armor with metal plates covering the vital areas such as the chest, abdomen, and groin. Similar in construction to bronze plate mail, true plate mail comprises chain and leather.
 
@@ -30,7 +30,7 @@ Weight: 40
 
 
 //PLATE MAIL +2 - 5500mo//
-COPY "rick_bigg_mod/items/OHPLAT50.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/OHPLAT50.itm" "override"
 	SAY NAME1 "Plate Mail"
 	SAY UNIDENTIFIED_DESC "Plate mail is a combination of chain armor with metal plates covering the vital areas such as the chest, abdomen, and groin. Similar in construction to bronze plate mail, true plate mail comprises chain and leather.
 
@@ -67,7 +67,7 @@ Weight: 30
 
 
 //ANKHEG SCALE - 6000mo//
-COPY "rick_bigg_mod/items/PLAT06_.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/PLAT06_.itm" "override"
 	SAY NAME1 "Plate Mail"
 	SAY UNIDENTIFIED_DESC "Plate mail is a combination of chain armor with metal plates covering the vital areas such as the chest, abdomen, and groin. Similar in construction to bronze plate mail, true plate mail comprises chain and leather.
 
@@ -99,7 +99,7 @@ Weight: 20
 
 
 //ANKHEG SCALE - 6000mo//
-COPY "rick_bigg_mod/items/PLAT06.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/PLAT06.itm" "override"
 	SAY NAME1 "Plate Mail"
 	SAY UNIDENTIFIED_DESC "Plate mail is a combination of chain armor with metal plates covering the vital areas such as the chest, abdomen, and groin. Similar in construction to bronze plate mail, true plate mail comprises chain and leather.
 
@@ -130,7 +130,7 @@ Weight: 20
 
 
 //THE PRACTICAL DEFENSE + 2 - 7500mo//
-COPY "rick_bigg_mod/items/PLAT08.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/PLAT08.itm" "override"
 	SAY NAME1 "Plate Mail"
 	SAY UNIDENTIFIED_DESC "Plate mail is a combination of chain armor with metal plates covering the vital areas such as the chest, abdomen, and groin. Similar in construction to bronze plate mail, true plate mail comprises chain and leather.
 
@@ -164,7 +164,7 @@ Weight: 18
 
 
 //DELVER'S PLATE MAIL +2 - solo berserk - 7500mo//
-COPY "rick_bigg_mod/items/PLAT11.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/PLAT11.itm" "override"
 	SAY NAME1 "Plate Mail"
 	SAY UNIDENTIFIED_DESC "Plate mail is a combination of chain armor with metal plates covering the vital areas such as the chest, abdomen, and groin. Similar in construction to bronze plate mail, true plate mail comprises chain and leather.
 
@@ -197,7 +197,7 @@ Weight: 25
 
 
 //DOOMPLATE +3 - 8000mo//
-COPY "rick_bigg_mod/items/PLAT12.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/PLAT12.itm" "override"
 	SAY NAME1 "Plate Mail"
 	SAY UNIDENTIFIED_DESC "Plate mail is a combination of chain armor with metal plates covering the vital areas such as the chest, abdomen, and groin. Similar in construction to bronze plate mail, true plate mail comprises chain and leather.
 
@@ -232,7 +232,7 @@ Weight: 27
 
 
 //GORGON PLATE +3 - 10000mo//
-COPY "rick_bigg_mod/items/PLAT13.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/PLAT13.itm" "override"
 	SAY NAME1 "Plate Mail"
 	SAY UNIDENTIFIED_DESC "Plate mail is a combination of chain armor with metal plates covering the vital areas such as the chest, abdomen, and groin. Similar in construction to bronze plate mail, true plate mail comprises chain and leather.
 
@@ -267,7 +267,7 @@ Weight: 30
 
 
 //FALLORAIN'S PLATE +4 - 14000mo//
-COPY "rick_bigg_mod/items/PLAT17.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/PLAT17.itm" "override"
 	SAY NAME1 "Plate Mail"
 	SAY UNIDENTIFIED_DESC "FPlate mail is a combination of chain armor with metal plates covering the vital areas such as the chest, abdomen, and groin. Similar in construction to bronze plate mail, true plate mail comprises chain and leather.
 
@@ -302,7 +302,7 @@ Weight: 25
 
 
 //MAGMA BULWARK +4 - 15000mo//
-COPY "rick_bigg_mod/items/TB#PLAT1.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/TB#PLAT1.itm" "override"
 	SAY NAME1 "Full Plate Mail"
 	SAY UNIDENTIFIED_DESC "Full plate armor is the best armor a warrior can buy, both in appearance and protection. The perfectly fitted, interlocking plates are specially angled to deflect arrows and blows, and the entire suit is carefully adorned with rich engraving and embossed detail.
 
@@ -338,7 +338,7 @@ Weight: 35
 
 
 //ENKIDU'S PLATE +5 - 17000mo//
-COPY "rick_bigg_mod/items/PLAT21.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/PLAT21.itm" "override"
 	SAY NAME1 "Plate Mail"
 	SAY UNIDENTIFIED_DESC "Plate mail is a combination of chain armor with metal plates covering the vital areas such as the chest, abdomen, and groin. Similar in construction to bronze plate mail, true plate mail comprises chain and leather.
 

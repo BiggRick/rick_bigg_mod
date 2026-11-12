@@ -1,5 +1,5 @@
 //CAPTIVE AUDIENCE  - solo bardi - 5500mo//
-COPY "rick_bigg_mod/items/MISC2P.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/MISC2P.itm" "override"
 	SAY NAME1 "Harp"
 	SAY DESC "Harps are stringed instruments often used by bards. This harp is ideal for the traveling warbler or tales and ballads.
 
@@ -24,7 +24,7 @@ Weight: 3"
 
 
 //HARP OF DISCORD - solo bardi - 6000mo//
-COPY "rick_bigg_mod/items/MISC3M.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/MISC3M.itm" "override"
 	SAY NAME1 "Harp"
 	SAY DESC "Harps are stringed instruments often used by bards. This harp is ideal for the traveling warbler or tales and ballads.
 
@@ -48,7 +48,7 @@ Weight: 6"
 
 
 //FLUTE OF THE IMMACULATE BREEZE - solo bardi - 2500mo//
-COPY "rick_bigg_mod/items/BDBRD02.itm" "override"
+COPY "weidu_external/rick_bigg_mod/workspace/items/BDBRD02.itm" "override"
 	SAY NAME1 "Flute"
 	SAY DESC "A flute is a long, hollow instrument with holes along its length. A bard can coax a pleasing, piping tune from a flute, which is also easy to carry on the road.
 
