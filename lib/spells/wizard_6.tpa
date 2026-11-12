@@ -1,4 +1,3 @@
-
 //CONJURE ELEMENTAL//
 COPY "rick_bigg_mod/spell/SPWI699.spl" "override"
 	SAY NAME1 "Conjure Elemental"
