@@ -1,0 +1,184 @@
+COPY_EXISTING ~L_%EE_LANGUAGE%.lua~ ~override~
+	APPEND_FILE TEXT ~rick_bigg_mod/copy/m_rbm_spec.lua~ EVALUATE_BUFFER
+BUT_ONLY
+
+ACTION_CLEAR_ARRAY rbm_spec_abjuration
+ACTION_CLEAR_ARRAY rbm_spec_conjuration
+ACTION_CLEAR_ARRAY rbm_spec_divination
+ACTION_CLEAR_ARRAY rbm_spec_enchantment
+ACTION_CLEAR_ARRAY rbm_spec_illusion
+ACTION_CLEAR_ARRAY rbm_spec_invocation
+ACTION_CLEAR_ARRAY rbm_spec_necromancy
+ACTION_CLEAR_ARRAY rbm_spec_alteration
+ACTION_CLEAR_ARRAY rbm_spec_abjuration_alteration
+ACTION_CLEAR_ARRAY rbm_spec_conjuration_invocation
+ACTION_CLEAR_ARRAY rbm_spec_divination_alteration
+ACTION_CLEAR_ARRAY rbm_spec_conjuration_necromancy
+ACTION_CLEAR_ARRAY rbm_spec_invocation_alteration
+ACTION_CLEAR_ARRAY rbm_spec_kit_names
+ACTION_CLEAR_ARRAY rbm_spec_hidden
+
+COPY_EXISTING ~clastext.2da~ ~override~
+	COUNT_2DA_COLS colcount
+	READ_2DA_ENTRIES_NOW clastext_data colcount
+	FOR (row = 0; row < clastext_data; ++row) BEGIN
+		READ_2DA_ENTRY_FORMER clastext_data row 0 kit_name
+		READ_2DA_ENTRY_FORMER clastext_data row 5 name_strref
+		PATCH_IF "%kit_name%" STRING_EQUAL_CASE ~ABJURER~ BEGIN
+			SPRINT $rbm_spec_kit_names("22") ~%name_strref%~
+		END
+		PATCH_IF "%kit_name%" STRING_EQUAL_CASE ~CONJURER~ BEGIN
+			SPRINT $rbm_spec_kit_names("23") ~%name_strref%~
+		END
+		PATCH_IF "%kit_name%" STRING_EQUAL_CASE ~DIVINER~ BEGIN
+			SPRINT $rbm_spec_kit_names("24") ~%name_strref%~
+		END
+		PATCH_IF "%kit_name%" STRING_EQUAL_CASE ~ENCHANTER~ BEGIN
+			SPRINT $rbm_spec_kit_names("25") ~%name_strref%~
+		END
+		PATCH_IF "%kit_name%" STRING_EQUAL_CASE ~ILLUSIONIST~ BEGIN
+			SPRINT $rbm_spec_kit_names("26") ~%name_strref%~
+		END
+		PATCH_IF "%kit_name%" STRING_EQUAL_CASE ~INVOKER~ BEGIN
+			SPRINT $rbm_spec_kit_names("27") ~%name_strref%~
+		END
+		PATCH_IF "%kit_name%" STRING_EQUAL_CASE ~NECROMANCER~ BEGIN
+			SPRINT $rbm_spec_kit_names("28") ~%name_strref%~
+		END
+		PATCH_IF "%kit_name%" STRING_EQUAL_CASE ~TRANSMUTER~ BEGIN
+			SPRINT $rbm_spec_kit_names("29") ~%name_strref%~
+		END
+	END
+	BUT_ONLY
+
+ACTION_PHP_EACH rbm_spec_kit_names AS kit=>name_strref BEGIN
+	APPEND ~L_%EE_LANGUAGE%.lua~ ~rbmSpecKitNameStrref[%kit%] = %name_strref%~
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~hidespl.2da~ BEGIN
+	COPY_EXISTING - ~hidespl.2da~ ~nowhere~
+		REPLACE_EVALUATE ~\([A-Z0-9]+\)[ %TAB%]+1~ BEGIN
+			SPRINT $rbm_spec_hidden("%MATCH1%") ~1~
+		END
+		~~
+	BUT_ONLY
+END
+
+COPY_EXISTING_REGEXP ~^SPWI[1-9][0-9A-Z]+\.spl$~ ~override~
+	READ_SHORT 0x1c spell_type
+	READ_LONG 0x34 spell_level
+	READ_BYTE 0x25 spell_school
+	PATCH_IF spell_type = 1 && spell_level > 0 && spell_level < 10 && spell_school > 0 && (BYTE_AT 0x1f BAND 0b01000000) = 0 BEGIN
+		SPRINT resref ~%SOURCE_RES%~
+		TO_UPPER resref
+		PATCH_IF !VARIABLE_IS_SET $rbm_spec_hidden("%resref%") BEGIN
+			SPRINT spell_num ~%resref%~
+			INNER_PATCH_SAVE spell_num ~%spell_num%~ BEGIN
+				REPLACE_TEXTUALLY ~SPWI~ ~2~
+			END
+			PATCH_IF IS_AN_INT spell_num BEGIN
+				LOOKUP_IDS_SYMBOL_OF_INT spell_name spell spell_num
+			END ELSE BEGIN
+				SPRINT spell_name ~NOT_IDENTIFIED~
+			END
+			PATCH_MATCH "%spell_name%" WITH
+				~WIZARD_WISH~
+				~WIZARD_LIMITED_WISH~
+				~WIZARD_MINOR_SEQUENCER~
+				~WIZARD_CONTINGENCY~
+				~WIZARD_CHAIN_CONTINGENCY~
+				~WIZARD_SPELL_SEQUENCER~
+				~WIZARD_SPELL_TRIGGER~
+				BEGIN
+				END
+				~WIZARD_LOWER_RESISTANCE~
+				BEGIN
+					SET $rbm_spec_abjuration_alteration("%resref%") = spell_level
+				END
+				~WIZARD_EYE~
+				BEGIN
+					SET $rbm_spec_divination_alteration("%resref%") = spell_level
+				END
+				~WIZARD_SUMMON_SHADOW~
+				BEGIN
+					SET $rbm_spec_conjuration_necromancy("%resref%") = spell_level
+				END
+				~WIZARD_MELF_MINUTE_METEORS~
+				~WIZARD_FIRE_SHIELD_BLUE~
+				~WIZARD_FIRE_SHIELD_RED~
+				~WIZARD_DEATH_FOG~
+				~WIZARD_OTILUKES_FREEZING_SPHERE~
+				~WIZARD_TENSERS_TRANSFORMATION~
+				BEGIN
+					SET $rbm_spec_invocation_alteration("%resref%") = spell_level
+				END
+				DEFAULT
+					PATCH_IF spell_school = 1 BEGIN SET $rbm_spec_abjuration("%resref%") = spell_level END
+					PATCH_IF spell_school = 2 BEGIN SET $rbm_spec_conjuration("%resref%") = spell_level END
+					PATCH_IF spell_school = 3 BEGIN SET $rbm_spec_divination("%resref%") = spell_level END
+					PATCH_IF spell_school = 4 BEGIN SET $rbm_spec_enchantment("%resref%") = spell_level END
+					PATCH_IF spell_school = 5 BEGIN SET $rbm_spec_illusion("%resref%") = spell_level END
+					PATCH_IF spell_school = 6 BEGIN SET $rbm_spec_invocation("%resref%") = spell_level END
+					PATCH_IF spell_school = 7 BEGIN SET $rbm_spec_necromancy("%resref%") = spell_level END
+					PATCH_IF spell_school = 8 BEGIN SET $rbm_spec_alteration("%resref%") = spell_level END
+			END
+		END
+	END
+BUT_ONLY
+
+ACTION_PHP_EACH rbm_spec_abjuration AS spell=>level BEGIN
+	APPEND ~L_%EE_LANGUAGE%.lua~ ~rbmSpecSpellLists.abjuration["%spell%"] = %level%~
+END
+ACTION_PHP_EACH rbm_spec_conjuration AS spell=>level BEGIN
+	APPEND ~L_%EE_LANGUAGE%.lua~ ~rbmSpecSpellLists.conjuration["%spell%"] = %level%~
+END
+ACTION_PHP_EACH rbm_spec_divination AS spell=>level BEGIN
+	APPEND ~L_%EE_LANGUAGE%.lua~ ~rbmSpecSpellLists.divination["%spell%"] = %level%~
+END
+ACTION_PHP_EACH rbm_spec_enchantment AS spell=>level BEGIN
+	APPEND ~L_%EE_LANGUAGE%.lua~ ~rbmSpecSpellLists.enchantment["%spell%"] = %level%~
+END
+ACTION_PHP_EACH rbm_spec_illusion AS spell=>level BEGIN
+	APPEND ~L_%EE_LANGUAGE%.lua~ ~rbmSpecSpellLists.illusion["%spell%"] = %level%~
+END
+ACTION_PHP_EACH rbm_spec_invocation AS spell=>level BEGIN
+	APPEND ~L_%EE_LANGUAGE%.lua~ ~rbmSpecSpellLists.invocation["%spell%"] = %level%~
+END
+ACTION_PHP_EACH rbm_spec_necromancy AS spell=>level BEGIN
+	APPEND ~L_%EE_LANGUAGE%.lua~ ~rbmSpecSpellLists.necromancy["%spell%"] = %level%~
+END
+ACTION_PHP_EACH rbm_spec_alteration AS spell=>level BEGIN
+	APPEND ~L_%EE_LANGUAGE%.lua~ ~rbmSpecSpellLists.alteration["%spell%"] = %level%~
+END
+ACTION_PHP_EACH rbm_spec_abjuration_alteration AS spell=>level BEGIN
+	APPEND ~L_%EE_LANGUAGE%.lua~ ~rbmSpecSpellLists.abjuration_alteration["%spell%"] = %level%~
+END
+ACTION_PHP_EACH rbm_spec_conjuration_invocation AS spell=>level BEGIN
+	APPEND ~L_%EE_LANGUAGE%.lua~ ~rbmSpecSpellLists.conjuration_invocation["%spell%"] = %level%~
+END
+ACTION_PHP_EACH rbm_spec_divination_alteration AS spell=>level BEGIN
+	APPEND ~L_%EE_LANGUAGE%.lua~ ~rbmSpecSpellLists.divination_alteration["%spell%"] = %level%~
+END
+ACTION_PHP_EACH rbm_spec_conjuration_necromancy AS spell=>level BEGIN
+	APPEND ~L_%EE_LANGUAGE%.lua~ ~rbmSpecSpellLists.conjuration_necromancy["%spell%"] = %level%~
+END
+ACTION_PHP_EACH rbm_spec_invocation_alteration AS spell=>level BEGIN
+	APPEND ~L_%EE_LANGUAGE%.lua~ ~rbmSpecSpellLists.invocation_alteration["%spell%"] = %level%~
+END
+
+COPY_EXISTING ~ui.menu~ ~override~
+	PATCH_IF INDEX_BUFFER(~rbmSpecialistRequirementsSatisfied~) < 0 BEGIN
+		PATCH_IF INDEX_BUFFER(~clickable lua "createCharScreen:IsDoneButtonClickable()"~) >= 0 BEGIN
+			REPLACE_TEXTUALLY ~clickable lua "createCharScreen:IsDoneButtonClickable()"~ ~clickable lua "createCharScreen:IsDoneButtonClickable() and rbmSpecialistRequirementsSatisfied(mageSpells)"~
+		END ELSE BEGIN
+			PATCH_WARN ~Unable to locate the mage memorization Done button in ui.menu; specialist spell selection will not be enforced during character creation.~
+		END
+		PATCH_IF INDEX_BUFFER(~bookSpells~) >= 0 BEGIN
+			REPLACE_TEXTUALLY ~^\(.*\)bam[ %TAB%]+lua[ %TAB%]+"bookSpells\[rowNumber\]\.icon"~ ~\1bam	lua "bookSpells[rowNumber].icon"%WNL%\1greyscale lua "bookMode==0 and not rbmSpecialistCanMemorize(bookSpells[rowNumber])"~
+			REPLACE_TEXTUALLY ~\(mageScreen:MemorizeSpell([ %TAB%]*bookSpells\[currentBookSpell\]\.level,[ %TAB%]*bookSpells\[currentBookSpell\]\.index )\)~ ~if rbmSpecialistCanMemorize(bookSpells[currentBookSpell]) then \1 end~
+			REPLACE_TEXTUALLY ~#bottomSpells < #bottomSpellsPlaceHolder~ ~#bottomSpells < #bottomSpellsPlaceHolder and rbmSpecialistCanMemorize(bookSpells[currentBookSpell])~
+		END ELSE BEGIN
+			PATCH_WARN ~Unable to locate the mage spellbook list in ui.menu; specialist memorization will not be enforced outside character creation.~
+		END
+	END
+BUT_ONLY
