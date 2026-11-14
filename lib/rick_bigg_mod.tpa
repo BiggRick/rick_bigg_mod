@@ -9,6 +9,9 @@ INCLUDE ~rick_bigg_mod/lib/borrowed_from_cdtweaks/joinable_npc_array.tpa~
 
 INCLUDE ~rick_bigg_mod/lib/items.tpa~
 INCLUDE ~rick_bigg_mod/lib/spells.tpa~
+
+// FIXME - HP recalculation
+
 INCLUDE ~rick_bigg_mod/lib/creatures.tpa~
 INCLUDE ~rick_bigg_mod/lib/eff.tpa~
 INCLUDE ~rick_bigg_mod/lib/stores.tpa~
@@ -23,6 +26,16 @@ INCLUDE ~rick_bigg_mod/lib/classes.tpa~
 INCLUDE ~rick_bigg_mod/lib/styles.tpa~
 
 COMPILE ~rick_bigg_mod/compile~
+
+INCLUDE ~rick_bigg_mod/lib/specialist_mages.tpa~
+
+// SOD be gone
+COPY_EXISTING ~BDSODTRN.BCS~ ~override~
+    DECOMPILE_AND_PATCH BEGIN
+        REPLACE_TEXTUALLY ~StartMovie("SODCIN01")~ ~~
+        REPLACE_TEXTUALLY ~MoveToCampaign("SoD")~ ~CreateCreatureObject("K#TELBGT",Player1,0,0,0)~
+    END
+
 
 ACTION_BASH_FOR ~rick_bigg_mod/extend_bottom~ ~^.*\.baf$~ BEGIN
     EXTEND_BOTTOM ~%BASH_FOR_RES%.bcs~ ~%BASH_FOR_FILESPEC%~

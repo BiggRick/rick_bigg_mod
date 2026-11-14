@@ -157,6 +157,9 @@ COPY_EXISTING "fireb1.cre" "override"
 COPY_EXISTING "fuller.cre" "override"
 "fuller2.cre" "override"
 
+	LAUNCH_PATCH_FUNCTION remove_bg2_cre_proficency
+	END
+
 	LAUNCH_PATCH_FUNCTION add_cre_proficiency
 		INT_VAR pips = 0
 		STR_VAR proficiency = "PROFICIENCYSINGLEWEAPON"
