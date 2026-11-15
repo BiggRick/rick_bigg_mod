@@ -35,7 +35,7 @@ COPY_EXISTING
 "NOBL10.cre" "override"
 "GOLINV.CRE" "override"
 "GYLLIA.CRE" "override"
-"MIRIAN.CRE" " override"
+"MIRIAN.CRE" "override"
 "MTBE11.CRE" "override"
 "MTBE10.CRE" "override"
 "hephis.cre" "override"
