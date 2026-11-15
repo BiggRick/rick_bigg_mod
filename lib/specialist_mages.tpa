@@ -10,11 +10,6 @@ ACTION_CLEAR_ARRAY rbm_spec_illusion
 ACTION_CLEAR_ARRAY rbm_spec_invocation
 ACTION_CLEAR_ARRAY rbm_spec_necromancy
 ACTION_CLEAR_ARRAY rbm_spec_alteration
-ACTION_CLEAR_ARRAY rbm_spec_abjuration_alteration
-ACTION_CLEAR_ARRAY rbm_spec_conjuration_invocation
-ACTION_CLEAR_ARRAY rbm_spec_divination_alteration
-ACTION_CLEAR_ARRAY rbm_spec_conjuration_necromancy
-ACTION_CLEAR_ARRAY rbm_spec_invocation_alteration
 ACTION_CLEAR_ARRAY rbm_spec_kit_names
 ACTION_CLEAR_ARRAY rbm_spec_hidden
 
@@ -81,47 +76,14 @@ COPY_EXISTING_REGEXP ~^SPWI[1-9][0-9A-Z]+\.spl$~ ~override~
 			END ELSE BEGIN
 				SPRINT spell_name ~NOT_IDENTIFIED~
 			END
-			PATCH_MATCH "%spell_name%" WITH
-				~WIZARD_WISH~
-				~WIZARD_LIMITED_WISH~
-				~WIZARD_MINOR_SEQUENCER~
-				~WIZARD_CONTINGENCY~
-				~WIZARD_CHAIN_CONTINGENCY~
-				~WIZARD_SPELL_SEQUENCER~
-				~WIZARD_SPELL_TRIGGER~
-				BEGIN
-				END
-				~WIZARD_LOWER_RESISTANCE~
-				BEGIN
-					SET $rbm_spec_abjuration_alteration("%resref%") = spell_level
-				END
-				~WIZARD_EYE~
-				BEGIN
-					SET $rbm_spec_divination_alteration("%resref%") = spell_level
-				END
-				~WIZARD_SUMMON_SHADOW~
-				BEGIN
-					SET $rbm_spec_conjuration_necromancy("%resref%") = spell_level
-				END
-				~WIZARD_MELF_MINUTE_METEORS~
-				~WIZARD_FIRE_SHIELD_BLUE~
-				~WIZARD_FIRE_SHIELD_RED~
-				~WIZARD_DEATH_FOG~
-				~WIZARD_OTILUKES_FREEZING_SPHERE~
-				~WIZARD_TENSERS_TRANSFORMATION~
-				BEGIN
-					SET $rbm_spec_invocation_alteration("%resref%") = spell_level
-				END
-				DEFAULT
-					PATCH_IF spell_school = 1 BEGIN SET $rbm_spec_abjuration("%resref%") = spell_level END
-					PATCH_IF spell_school = 2 BEGIN SET $rbm_spec_conjuration("%resref%") = spell_level END
-					PATCH_IF spell_school = 3 BEGIN SET $rbm_spec_divination("%resref%") = spell_level END
-					PATCH_IF spell_school = 4 BEGIN SET $rbm_spec_enchantment("%resref%") = spell_level END
-					PATCH_IF spell_school = 5 BEGIN SET $rbm_spec_illusion("%resref%") = spell_level END
-					PATCH_IF spell_school = 6 BEGIN SET $rbm_spec_invocation("%resref%") = spell_level END
-					PATCH_IF spell_school = 7 BEGIN SET $rbm_spec_necromancy("%resref%") = spell_level END
-					PATCH_IF spell_school = 8 BEGIN SET $rbm_spec_alteration("%resref%") = spell_level END
-			END
+				PATCH_IF spell_school = 1 BEGIN SET $rbm_spec_abjuration("%resref%") = spell_level END
+				PATCH_IF spell_school = 2 BEGIN SET $rbm_spec_conjuration("%resref%") = spell_level END
+				PATCH_IF spell_school = 3 BEGIN SET $rbm_spec_divination("%resref%") = spell_level END
+				PATCH_IF spell_school = 4 BEGIN SET $rbm_spec_enchantment("%resref%") = spell_level END
+				PATCH_IF spell_school = 5 BEGIN SET $rbm_spec_illusion("%resref%") = spell_level END
+				PATCH_IF spell_school = 6 BEGIN SET $rbm_spec_invocation("%resref%") = spell_level END
+				PATCH_IF spell_school = 7 BEGIN SET $rbm_spec_necromancy("%resref%") = spell_level END
+				PATCH_IF spell_school = 8 BEGIN SET $rbm_spec_alteration("%resref%") = spell_level END
 		END
 	END
 BUT_ONLY
@@ -149,21 +111,6 @@ ACTION_PHP_EACH rbm_spec_necromancy AS spell=>level BEGIN
 END
 ACTION_PHP_EACH rbm_spec_alteration AS spell=>level BEGIN
 	APPEND ~L_%EE_LANGUAGE%.lua~ ~rbmSpecSpellLists.alteration["%spell%"] = %level%~
-END
-ACTION_PHP_EACH rbm_spec_abjuration_alteration AS spell=>level BEGIN
-	APPEND ~L_%EE_LANGUAGE%.lua~ ~rbmSpecSpellLists.abjuration_alteration["%spell%"] = %level%~
-END
-ACTION_PHP_EACH rbm_spec_conjuration_invocation AS spell=>level BEGIN
-	APPEND ~L_%EE_LANGUAGE%.lua~ ~rbmSpecSpellLists.conjuration_invocation["%spell%"] = %level%~
-END
-ACTION_PHP_EACH rbm_spec_divination_alteration AS spell=>level BEGIN
-	APPEND ~L_%EE_LANGUAGE%.lua~ ~rbmSpecSpellLists.divination_alteration["%spell%"] = %level%~
-END
-ACTION_PHP_EACH rbm_spec_conjuration_necromancy AS spell=>level BEGIN
-	APPEND ~L_%EE_LANGUAGE%.lua~ ~rbmSpecSpellLists.conjuration_necromancy["%spell%"] = %level%~
-END
-ACTION_PHP_EACH rbm_spec_invocation_alteration AS spell=>level BEGIN
-	APPEND ~L_%EE_LANGUAGE%.lua~ ~rbmSpecSpellLists.invocation_alteration["%spell%"] = %level%~
 END
 
 COPY_EXISTING ~ui.menu~ ~override~

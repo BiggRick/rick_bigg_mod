@@ -7,24 +7,19 @@ rbmSpecSpellLists = {
 	invocation = {},
 	necromancy = {},
 	alteration = {},
-	abjuration_alteration = {},
-	conjuration_invocation = {},
-	divination_alteration = {},
-	conjuration_necromancy = {},
-	invocation_alteration = {},
 }
 
 rbmSpecKitNameStrref = {}
 
 rbmSpecKitSchools = {
-	[22] = { "abjuration", "abjuration_alteration" },
-	[23] = { "conjuration", "conjuration_invocation", "conjuration_necromancy" },
-	[24] = { "divination", "divination_alteration" },
+	[22] = { "abjuration" },
+	[23] = { "conjuration" },
+	[24] = { "divination" },
 	[25] = { "enchantment" },
 	[26] = { "illusion" },
-	[27] = { "invocation", "conjuration_invocation", "invocation_alteration" },
-	[28] = { "necromancy", "conjuration_necromancy" },
-	[29] = { "alteration", "abjuration_alteration", "divination_alteration", "invocation_alteration" },
+	[27] = { "invocation" },
+	[28] = { "necromancy" },
+	[29] = { "alteration" },
 }
 
 rbmSpecKitMasks = {

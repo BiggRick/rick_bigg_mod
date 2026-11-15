@@ -62,6 +62,11 @@ DEFINE_PATCH_MACRO ~fix_unusabilities~ BEGIN
             PATCH_IF (LONG_AT 0x1e BAND BIT30) AND NOT (LONG_AT 0x1e BAND BIT11) BEGIN
                 WRITE_LONG 0x1e LONG_AT 0x1e BOR BIT12
             END
-        END
-    END
-END
+        END // helmets
+
+        PATCH_IF SHORT_AT 0x1c == 11 AND NOT (LONG_AT 0x1e BAND BIT18) BEGIN // if wizard scroll
+            WRITE_BYTE 0x2d BYTE_AT 0x2d BAND BNOT (BIT0 BOR BIT1 BOR BIT2 BOR BIT3 BOR BIT4 BOR BIT5)
+            WRITE_BYTE 0x2f BYTE_AT 0x2f BAND BNOT (BIT6 BOR BIT7)
+        END // if wizard scroll
+    END // if droppable
+END // DEFINE_PATCH_MACRO
