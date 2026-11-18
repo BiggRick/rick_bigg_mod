@@ -1,3 +1,5 @@
+INCLUDE ~rick_bigg_mod/lib/specialist_mages.tpa~
+
 COPY ~weidu_external/rick_bigg_mod/workspace/spell/tb#cl001.spl~ ~override/tb#cl001.spl~
      ~weidu_external/rick_bigg_mod/workspace/spell/tb#cl001.spl~ ~override/tb#cl002.spl~
      ~weidu_external/rick_bigg_mod/workspace/spell/tb#cl001.spl~ ~override/tb#cl003.spl~
@@ -18,20 +20,8 @@ COPY ~weidu_external/rick_bigg_mod/workspace/spell/tb#cl001.spl~ ~override/tb#cl
 
 
 
-
-
-
-
-COPY_EXISTING ~CLASTEXT.2DA~ ~override~
-              ~BGCLATXT.2DA~ ~override~
-              ~SODCLTXT.2DA~ ~override~
-    READ_2DA_ENTRIES_NOW clastext_read 10
-
-    FOR ( row = 0; row < clastext_read; row += 1 ) BEGIN
-        READ_2DA_ENTRY_FORMER clastext_read row 0 class
-
-        PATCH_IF ~%class%~ STRING_EQUAL_CASE ~MAGE~ BEGIN
-            SET_2DA_ENTRY_LATER clastext_set row 4 ( RESOLVE_STR_REF ( "MAGE: The wizard strives to be a master of magical energies, shaping them and casting them as spells. To do so, <PRO_HESHE> studies strange tongues and obscure facts and devotes much of <PRO_HISHER> time to magical research. A wizard must rely on knowledge and wit to survive. Wizards are rarely seen adventuring without a retinue of fighters and men-at-arms. Because there are different types (or schools) of magic, there are different types of wizards. The Mage studies all types of magic and learns a wide variety of spells; <PRO_HISHER> broad range makes <PRO_HIMHER> well suited to the demands of adventuring.
+OUTER_PATCH ~~ BEGIN
+    SET $class_new_description( "MAGE" ) = RESOLVE_STR_REF ( "MAGE: The wizard strives to be a master of magical energies, shaping them and casting them as spells. To do so, <PRO_HESHE> studies strange tongues and obscure facts and devotes much of <PRO_HISHER> time to magical research. A wizard must rely on knowledge and wit to survive. Wizards are rarely seen adventuring without a retinue of fighters and men-at-arms. Because there are different types (or schools) of magic, there are different types of wizards. The Mage studies all types of magic and learns a wide variety of spells; <PRO_HISHER> broad range makes <PRO_HIMHER> well suited to the demands of adventuring.
 
 CLASS FEATURES:
 
@@ -40,13 +30,206 @@ CLASS FEATURES:
 – May only become Proficient (one slot) in any weapon class.
 – May not place any slots in any fighting style.
 – May cast arcane spells.
-- Learns a random spell upon learning a new spell level, and receives one extra spell per level four levels after unlocking that spell level.
-  Example: a 5th level Mage gains one extra 1st level slot compared to a specialist mage, and learns a random 3rd level spell.
+- Receives one extra spell per level four levels after unlocking that spell level.
+  Example: a 1st-4th level Mage has the same number of level 1 spell slots as a specialist, while a 5th level Mage gains one extra 1st level slot compared to a specialist mage.
+- Learns the following Generalist spells upon learning a new spell level:
+  - 3rd Level - Find Traps
+  - 5th Level - Knock
+  - 7th Level - Simbul's Spell Matrix
+  - 9th Level - Enchanted Weapon
+  - 12th Level - Limited Wish
+  - 14th Level - Simbul's Spell Sequencer
+  - 16th Level - Simbul's Spell Trigger
+  - 18th Level - Wish
 – Hit Die: d4
 
-Prime Requisites For Dual-Classing: Intelligence" ))
-        END ELSE PATCH_IF ~%class%~ STRING_EQUAL_CASE ~FIGHTER~ BEGIN
-            SET_2DA_ENTRY_LATER clastext_set row 4 ( RESOLVE_STR_REF ( "FIGHTER: The Fighter is a champion, swords<PRO_MANWOMAN>, soldier, and brawler who lives or dies by <PRO_HISHER> knowledge of weapons and tactics. Fighters can be found at the front of any battle, contesting toe-to-toe with monsters and villains. A good Fighter needs to be strong and healthy if <PRO_HESHE> hopes to survive.
+Prime Requisites For Dual-Classing: Intelligence" )
+
+    SET $class_new_description( "ABJURER" ) = RESOLVE_STR_REF ( "ABJURER: A Mage who specializes in protective magics.
+
+Advantages:
+– Receives a +15% bonus when scribing scrolls from the Abjuration school.
+– Receives a +2 bonus when making Saving Throws against spells from the Abjuration school.
+– Targets suffer a -2 penalty when making Saving Throws against spells from the Abjuration school.
+- Gains a +1 to all Saving Throws; this increases to +2 at 12th level.
+- Learns the following Abjuration spells upon learning a new spell level:
+  - 3rd Level - Resist Elements
+  - 5th Level - Minor Spell Deflection
+  - 7th Level - Protection from Elemental Energy
+  - 9th Level - Breach
+  - 12th Level - Protection from Magical Weapons
+  - 14th Level - Khelben's Warding Whip
+  - 16th Level - Mind Blank
+  - 18th Level - Spell Trap
+
+Disadvantages:
+– Receives a -15% penalty when scribing scrolls from other schools.
+- Must memorize at least one Abjuration spell per level.
+
+Requires at least 13 Wisdom." )
+
+    SET $class_new_description( "CONJURER" ) = RESOLVE_STR_REF ( "CONJURER: A Mage who specializes in creating creatures and objects to assist <PRO_HIMHER>.
+
+Advantages:
+– Receives a +15% bonus when scribing scrolls from the Conjuration school.
+– Receives a +2 bonus when making Saving Throws against spells from the Conjuration school.
+– Targets suffer a -2 penalty when making Saving Throws against spells from the Conjuration school.
+- All the party's summoned creatures (other than illusory ones) receive +1 THAC0, damage, AC and Saving Throws. This increases to +2 at 12th level.
+- Learns the following Abjuration spells upon learning a new spell level:
+  - 3rd Level - Stinking Cloud
+  - 5th Level - Monster Summoning 3
+  - 7th Level - Vitriolic Sphere
+  - 9th Level - Conjure Lesser Elementals
+  - 12th Level - Banishment
+  - 14th Level - Summon Genie
+  - 16th Level - Incendiary Cloud
+  - 18th Level - Black Blade of Disaster
+
+Disadvantages:
+– Receives a -15% penalty when scribing scrolls from other schools.
+- Must memorize at least one Conjuration spell per level.
+
+Requires at least 13 Constitution." )
+
+    SET $class_new_description( "DIVINER" ) = RESOLVE_STR_REF ( "DIVINER: A Mage who specializes in detection and divining magics.
+
+Advantages:
+– Receives a +15% bonus when scribing scrolls from the Divination school.
+– Receives a +2 bonus when making Saving Throws against spells from the Divination school.
+– Targets suffer a -2 penalty when making Saving Throws against spells from the Divination school.
+- +1 Luck. This bonus extends to the whole party at 12th level.
+- Learns the following Divination spells upon learning a new spell level:
+  - 3rd Level - Detect Weakness
+  - 5th Level - Clarvoyance
+  - 7th Level - Unveiling Sight
+  - 9th Level - Mass Luck
+  - 12th Level - Contingency
+  - 14th Level - Unveiling Gaze
+  - 16th Level - Preemptive Sight
+  - 18th Level - Ancient Recall
+
+Disadvantages:
+– Receives a -15% penalty when scribing scrolls from other schools.
+- Must memorize at least one Divination spell per level.
+
+Requires at least 13 Wisdom." )
+
+    SET $class_new_description( "ENCHANTER" ) = RESOLVE_STR_REF ( "ENCHANTER: A Mage who specializes in manipulating the minds of sentient beings.
+
+Advantages:
+– Receives a +15% bonus when scribing scrolls from the Enchantment school.
+– Receives a +2 bonus when making Saving Throws against spells from the Enchantment school.
+– Targets suffer a -2 penalty when making Saving Throws against spells from the Enchantment school.
+- When hit, enemies have a 10% chance of being affected by the Confusion spell for 1 round. This increases to 20% at 12th level (with a -2 penalty to the Saving Throw).
+- Learns the following Enchantment spells upon learning a new spell level:
+    - 3rd Level - Emotion: Hopelessness
+    - 5th Level - Dire Charm
+    - 7th Level - Emotion: Courage
+    - 9th Level - Hold Monster
+    - 12th Level - Chaos
+    - 14th Level - Blinding Rage
+    - 16th Level - Power Word Blind
+    - 18th Level - Subjugation
+
+Disadvantages:
+– Receives a -15% penalty when scribing scrolls from other schools.
+- Must memorize at least one Enchantment spell per level.
+
+Requires at least 13 Charisma." )
+
+    SET $class_new_description( "ILLUSIONIST" ) = RESOLVE_STR_REF ( "ILLUSIONIST: A Mage who specializes in creating illusions to confuse and mislead.
+
+Advantages:
+– Receives a +15% bonus when scribing scrolls from the Illusion school.
+– Receives a +2 bonus when making Saving Throws against spells from the Illusion school.
+– Targets suffer a -2 penalty when making Saving Throws against spells from the Illusion school.
+- 10% chance to cast Reflected Image on self when hit. This increases to 20% at 12th level.
+- Learns the following Illusion spells upon learning a new spell level:
+  - 3rd Level - Mirror Image
+  - 5th Level - Invisibility Sphere
+  - 7th Level - Shadow Form
+  - 9th Level - Phantom Blade
+  - 12th Level - Illusionary Monsters
+  - 14th Level - Mislead
+  - 16th Level - Maze
+  - 18th Level - Illusionary Dragon
+
+Disadvantages:
+– Receives a -15% penalty when scribing scrolls from other schools.
+- Must memorize at least one Illusion spell per level.
+
+Requires at least 13 Dexterity." )
+
+    SET $class_new_description( "INVOKER" ) = RESOLVE_STR_REF ( "INVOKER: A Mage who specializes in the manipulation of raw and elemental energies.
+
+Advantages:
+– Receives a +15% bonus when scribing scrolls from the Invocation school.
+– Receives a +2 bonus when making Saving Throws against spells from the Invocation school.
+– Targets suffer a -2 penalty when making Saving Throws against spells from the Invocation school.
+- +10% to Fire, Cold, Electricity and Magic damage. This increases to +20% at 12th level.
+- Learns the following Invocation spells upon learning a new spell level:
+  - 3rd Level - Agannazar's Scorcher
+  - 5th Level - Fireball
+  - 7th Level - Fire Shield
+  - 9th Level - Cone of Cold
+  - 12th Level - Disintegrate
+  - 14th Level - Mordekainen's Sword
+  - 16th Level - Bigby's Icy Grasp
+  - 18th Level - Meteor Swarm
+
+Disadvantages:
+– Receives a -15% penalty when scribing scrolls from other schools.
+- Must memorize at least one Invocation spell per level.
+
+Requires at least 13 Constitution." )
+
+    SET $class_new_description( "NECROMANCER" ) = RESOLVE_STR_REF ( "NECROMANCER: A Mage who specializes in magic dealing with death.
+
+Advantages:
+– Receives a +15% bonus when scribing scrolls from the Necromancy school.
+– Receives a +2 bonus when making Saving Throws against spells from the Necromancy school.
+– Targets suffer a -2 penalty when making Saving Throws against spells from the Necromancy school.
+- Heals 2 Hit Points when killing an enemy. This increases to 4 Hit Points at 12th level.
+- Learns the following Necromancy spells upon learning a new spell level:
+  - 3rd Level - Horror
+  - 5th Level - Animate Dead
+  - 7th Level - Contagion
+  - 9th Level - Wave of Fatigue
+  - 12th Level - Animate Skeleton Warrior
+  - 14th Level - Control Undead
+  - 16th Level - Abi-Dalzim's Horrid Wilting
+  - 18th Level - Summon Death Knight
+
+Disadvantages:
+– Receives a -15% penalty when scribing scrolls from other schools.
+- Must memorize at least one Necromancy spell per level.
+
+Requires at least 13 Wisdom." )
+
+    SET $class_new_description( "TRANSMUTER" ) = RESOLVE_STR_REF ( "TRANSMUTER: A Mage who specializes in magic that alters physical reality.
+
+Advantages:
+– Receives a +15% bonus when scribing scrolls from the Alteration school.
+– Receives a +2 bonus when making Saving Throws against spells from the Alteration school.
+– Targets suffer a -2 penalty when making Saving Throws against spells from the Alteration school.
+- +1 to hit and damage rolls with any weapon. This increases to +2 at 12th level.
+- Learns the following Alteration spells upon learning a new spell level:
+  - 3rd Level - Blindness
+  - 5th Level - Haste
+  - 7th Level - Teleport Field
+  - 9th Level - Polymorph
+  - 12th Level - Tenser's Transformation
+  - 14th Level - Prismatic Mantle
+  - 16th Level - Mutagenic Orbs
+  - 18th Level - Time Stop
+
+Disadvantages:
+– Receives a -15% penalty when scribing scrolls from other schools.
+- Must memorize at least one Alteration spell per level.
+
+Requires at least 13 Dexterity." )
+
+    SET $class_new_description ( "FIGHTER" ) = RESOLVE_STR_REF ( "FIGHTER: The Fighter is a champion, swords<PRO_MANWOMAN>, soldier, and brawler who lives or dies by <PRO_HISHER> knowledge of weapons and tactics. Fighters can be found at the front of any battle, contesting toe-to-toe with monsters and villains. A good Fighter needs to be strong and healthy if <PRO_HESHE> hopes to survive.
 
 CLASS FEATURES:
 
@@ -56,9 +239,9 @@ CLASS FEATURES:
 – May achieve Specialization (two slots) in any fighting style and allocate three slots in Two-Weapon Style.
 – Hit Die: d10
 
-Prime Requisites For Dual-Classing: Strength" ))
-        END ELSE PATCH_IF ~%class%~ STRING_EQUAL_CASE ~RANGER~ BEGIN
-            SET_2DA_ENTRY_LATER clastext_set row 4 ( RESOLVE_STR_REF ( "RANGER: The Ranger is a warrior and a woods<PRO_MANWOMAN> who is skilled with weapons and is knowledgeable in the ways of the forest. The Ranger often protects and guides lost travelers and honest peasant-folk. A Ranger needs to be strong and wise to the ways of nature to live a full life.
+Prime Requisites For Dual-Classing: Strength" )
+
+    SET $class_new_description ( "RANGER" ) = RESOLVE_STR_REF ( "RANGER: The Ranger is a warrior and a woods<PRO_MANWOMAN> who is skilled with weapons and is knowledgeable in the ways of the forest. The Ranger often protects and guides lost travelers and honest peasant-folk. A Ranger needs to be strong and wise to the ways of nature to live a full life.
 
 CLASS FEATURES:
 
@@ -78,9 +261,35 @@ CLASS FEATURES:
 – May cast druidic spells starting at level 8.
 – Alignment restricted to good.
 – Hit Die: d10
-- Cannot dual class" ))
+- Cannot dual class" )
+END
+
+
+COPY_EXISTING ~CLASTEXT.2DA~ ~override~
+              ~BGCLATXT.2DA~ ~override~
+              ~SODCLTXT.2DA~ ~override~
+    READ_2DA_ENTRIES_NOW clastext_read 10
+
+    FOR ( row = 0; row < clastext_read; row += 1 ) BEGIN
+        READ_2DA_ENTRY_FORMER clastext_read row 0 class
+
+        PATCH_IF VARIABLE_IS_SET $class_new_description(~%class%~) BEGIN
+            SET_2DA_ENTRY_LATER clastext_set row 4 ( $class_new_description(~%class%~) )
         END
     END
 
     SET_2DA_ENTRIES_NOW clastext_set 10
+
+COPY_EXISTING ~KITLIST.2DA~ ~override~
+    READ_2DA_ENTRIES_NOW kitlist_read 10
+
+    FOR (row = 0; row < kitlist_read; row += 1) BEGIN
+        READ_2DA_ENTRY_FORMER kitlist_read row 1 kit
+
+        PATCH_IF VARIABLE_IS_SET $class_new_description(~%kit%~) BEGIN
+            SET_2DA_ENTRY_LATER kitlist_set row 4 ( $class_new_description(~%kit%~) )
+        END
+    END
+
+    SET_2DA_ENTRIES_NOW kitlist_set 10
 

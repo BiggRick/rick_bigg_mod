@@ -61,9 +61,7 @@ BEGIN ~Test Weapon Rules~
 DESIGNATED 300
 FORBID_COMPONENT ~rick_bigg_mod/rick_bigg_mod.tp2~ 100 ~duplicate~
 
-INCLUDE ~rick_bigg_mod/lib/fix_unusabilities.tpa~
-COPY_EXISTING ~scrl70.itm~ ~override~
-LAUNCH_PATCH_MACRO fix_unusabilities
+INCLUDE ~rick_bigg_mod/lib/classes.tpa~
 
 
 

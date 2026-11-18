@@ -27,8 +27,6 @@ INCLUDE ~rick_bigg_mod/lib/styles.tpa~
 
 COMPILE ~rick_bigg_mod/compile~
 
-INCLUDE ~rick_bigg_mod/lib/specialist_mages.tpa~
-
 // SOD be gone
 COPY_EXISTING ~BDSODTRN.BCS~ ~override~
     DECOMPILE_AND_PATCH BEGIN

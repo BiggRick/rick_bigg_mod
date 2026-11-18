@@ -46,9 +46,11 @@ COPY_EXISTING ~clastext.2da~ ~override~
 	END
 	BUT_ONLY
 
+SILENT
 ACTION_PHP_EACH rbm_spec_kit_names AS kit=>name_strref BEGIN
 	APPEND ~L_%EE_LANGUAGE%.lua~ ~rbmSpecKitNameStrref[%kit%] = %name_strref%~
 END
+VERBOSE
 
 ACTION_IF FILE_EXISTS_IN_GAME ~hidespl.2da~ BEGIN
 	COPY_EXISTING - ~hidespl.2da~ ~nowhere~
@@ -88,6 +90,7 @@ COPY_EXISTING_REGEXP ~^SPWI[1-9][0-9A-Z]+\.spl$~ ~override~
 	END
 BUT_ONLY
 
+SILENT
 ACTION_PHP_EACH rbm_spec_abjuration AS spell=>level BEGIN
 	APPEND ~L_%EE_LANGUAGE%.lua~ ~rbmSpecSpellLists.abjuration["%spell%"] = %level%~
 END
@@ -112,14 +115,62 @@ END
 ACTION_PHP_EACH rbm_spec_alteration AS spell=>level BEGIN
 	APPEND ~L_%EE_LANGUAGE%.lua~ ~rbmSpecSpellLists.alteration["%spell%"] = %level%~
 END
+	COPY_EXISTING ~ui.menu~ ~override~
+		// Remove broad patches left by earlier builds. Each spell menu is scoped below.
+		REPLACE_TEXTUALLY ~createCharScreen:IsDoneButtonClickable() and rbmSpecialistRequirementsSatisfied(mageSpells)~ ~createCharScreen:IsDoneButtonClickable()~
 
-COPY_EXISTING ~ui.menu~ ~override~
-	PATCH_IF INDEX_BUFFER(~rbmSpecialistRequirementsSatisfied~) < 0 BEGIN
-		PATCH_IF INDEX_BUFFER(~clickable lua "createCharScreen:IsDoneButtonClickable()"~) >= 0 BEGIN
-			REPLACE_TEXTUALLY ~clickable lua "createCharScreen:IsDoneButtonClickable()"~ ~clickable lua "createCharScreen:IsDoneButtonClickable() and rbmSpecialistRequirementsSatisfied(mageSpells)"~
+		PATCH_IF INDEX_BUFFER(~name 'CHARGEN_CHOOSE_SPELLS'~) >= 0 BEGIN
+			PATCH_IF INDEX_BUFFER(~name 'CHARGEN_CHOOSE_SPELLS'
+	onClose "rbmSpecialistSpellSelectionActive = false"~) < 0 BEGIN
+				REPLACE_TEXTUALLY EXACT_MATCH ~name 'CHARGEN_CHOOSE_SPELLS'~ ~name 'CHARGEN_CHOOSE_SPELLS'
+	onClose "rbmSpecialistSpellSelectionActive = false"~
+			END
+			PATCH_IF INDEX_BUFFER(~table.sort(chargen.choose_spell, sortBySpellName)%WNL%		rbmSpecialistSpellSelectionActive = true~) < 0 BEGIN
+				REPLACE_TEXTUALLY EXACT_MATCH ~table.sort(chargen.choose_spell, sortBySpellName)~ ~table.sort(chargen.choose_spell, sortBySpellName)%WNL%		rbmSpecialistSpellSelectionActive = true~
+			END
+			SET sort_index=INDEX_BUFFER(~table.sort(chargen.choose_spell, sortBySpellName)~)
+			PATCH_IF sort_index>=0 BEGIN
+				SET done_index=INDEX_BUFFER(~clickable lua "createCharScreen:IsDoneButtonClickable()"~ sort_index)
+				PATCH_IF done_index>=0 BEGIN
+					SPRINT old_done ~clickable lua "createCharScreen:IsDoneButtonClickable()"~
+					SPRINT new_done ~clickable lua "createCharScreen:IsDoneButtonClickable() and rbmSpecialistRequirementsSatisfied(spellBook)"~
+					DELETE_BYTES done_index (STRING_LENGTH "%old_done%")
+					INSERT_BYTES done_index (STRING_LENGTH "%new_done%")
+					WRITE_ASCIIE done_index "%new_done%"
+				END ELSE BEGIN
+					PATCH_WARN ~Unable to locate the CHARGEN_CHOOSE_SPELLS Done button in ui.menu.~
+				END
+			END
 		END ELSE BEGIN
-			PATCH_WARN ~Unable to locate the mage memorization Done button in ui.menu; specialist spell selection will not be enforced during character creation.~
+			PATCH_WARN ~Unable to locate CHARGEN_CHOOSE_SPELLS in ui.menu; specialist spell learning will not be enforced.~
 		END
+
+		PATCH_IF INDEX_BUFFER(~name 'CHARGEN_MEMORIZE_MAGE'~) >= 0 BEGIN
+			PATCH_IF INDEX_BUFFER(~name 'CHARGEN_MEMORIZE_MAGE'
+	onClose "rbmSpecialistSpellSelectionActive = false"~) < 0 BEGIN
+				REPLACE_TEXTUALLY EXACT_MATCH ~name 'CHARGEN_MEMORIZE_MAGE'~ ~name 'CHARGEN_MEMORIZE_MAGE'
+	onClose "rbmSpecialistSpellSelectionActive = false"~
+			END
+			PATCH_IF INDEX_BUFFER(~table.sort(chargen.choose_spell, sortByMageSpellName)%WNL%		rbmSpecialistSpellSelectionActive = true~) < 0 BEGIN
+				REPLACE_TEXTUALLY EXACT_MATCH ~table.sort(chargen.choose_spell, sortByMageSpellName)~ ~table.sort(chargen.choose_spell, sortByMageSpellName)%WNL%		rbmSpecialistSpellSelectionActive = true~
+			END
+			SET sort_index=INDEX_BUFFER(~table.sort(chargen.choose_spell, sortByMageSpellName)~)
+			PATCH_IF sort_index>=0 BEGIN
+				SET done_index=INDEX_BUFFER(~clickable lua "createCharScreen:IsDoneButtonClickable()"~ sort_index)
+				PATCH_IF done_index>=0 BEGIN
+					SPRINT old_done ~clickable lua "createCharScreen:IsDoneButtonClickable()"~
+					SPRINT new_done ~clickable lua "createCharScreen:IsDoneButtonClickable() and rbmSpecialistRequirementsSatisfied(mageSpells)"~
+					DELETE_BYTES done_index (STRING_LENGTH "%old_done%")
+					INSERT_BYTES done_index (STRING_LENGTH "%new_done%")
+					WRITE_ASCIIE done_index "%new_done%"
+				END ELSE BEGIN
+					PATCH_WARN ~Unable to locate the CHARGEN_MEMORIZE_MAGE Done button in ui.menu.~
+				END
+			END
+		END ELSE BEGIN
+			PATCH_WARN ~Unable to locate CHARGEN_MEMORIZE_MAGE in ui.menu; specialist spell memorization will not be enforced.~
+		END
+
 		PATCH_IF INDEX_BUFFER(~bookSpells~) >= 0 BEGIN
 			REPLACE_TEXTUALLY ~^\(.*\)bam[ %TAB%]+lua[ %TAB%]+"bookSpells\[rowNumber\]\.icon"~ ~\1bam	lua "bookSpells[rowNumber].icon"%WNL%\1greyscale lua "bookMode==0 and not rbmSpecialistCanMemorize(bookSpells[rowNumber])"~
 			REPLACE_TEXTUALLY ~\(mageScreen:MemorizeSpell([ %TAB%]*bookSpells\[currentBookSpell\]\.level,[ %TAB%]*bookSpells\[currentBookSpell\]\.index )\)~ ~if rbmSpecialistCanMemorize(bookSpells[currentBookSpell]) then \1 end~
@@ -127,5 +178,4 @@ COPY_EXISTING ~ui.menu~ ~override~
 		END ELSE BEGIN
 			PATCH_WARN ~Unable to locate the mage spellbook list in ui.menu; specialist memorization will not be enforced outside character creation.~
 		END
-	END
-BUT_ONLY
+	BUT_ONLY
