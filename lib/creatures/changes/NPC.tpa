@@ -2,6 +2,9 @@
 //GORION//	
 COPY_EXISTING "gorion.cre" "override"
 
+LAUNCH_PATCH_FUNCTION remove_bg2_cre_proficency
+	END
+
 	LAUNCH_PATCH_FUNCTION add_cre_proficiency
 		INT_VAR pips = 0
 		STR_VAR proficiency = "PROFICIENCYSINGLEWEAPON"
@@ -78,6 +81,9 @@ COPY_EXISTING "gorion.cre" "override"
 //FIREBEAD ELVENHAIR//	
 COPY_EXISTING "fireb1.cre" "override"
 "firebe.cre" "override"
+
+LAUNCH_PATCH_FUNCTION remove_bg2_cre_proficency
+	END
 
 	LAUNCH_PATCH_FUNCTION add_cre_proficiency
 		INT_VAR pips = 0
@@ -157,6 +163,9 @@ COPY_EXISTING "fireb1.cre" "override"
 COPY_EXISTING "fuller.cre" "override"
 "fuller2.cre" "override"
 
+LAUNCH_PATCH_FUNCTION remove_bg2_cre_proficency
+	END
+
 	LAUNCH_PATCH_FUNCTION remove_bg2_cre_proficency
 	END
 
@@ -233,6 +242,9 @@ COPY_EXISTING "fuller.cre" "override"
 //PHLYDIA//	
 COPY_EXISTING "phlydi.cre" "override"
 "phlydi2.cre" "override"
+
+LAUNCH_PATCH_FUNCTION remove_bg2_cre_proficency
+	END
 
 	LAUNCH_PATCH_FUNCTION add_cre_proficiency
 		INT_VAR pips = 0
@@ -311,6 +323,9 @@ COPY_EXISTING "phlydi.cre" "override"
 COPY_EXISTING "dreppi.cre" "override"
 "dreppi2.cre" "override"
 
+LAUNCH_PATCH_FUNCTION remove_bg2_cre_proficency
+	END
+
 	LAUNCH_PATCH_FUNCTION add_cre_proficiency
 		INT_VAR pips = 0
 		STR_VAR proficiency = "PROFICIENCYSINGLEWEAPON"
@@ -384,6 +399,9 @@ COPY_EXISTING "dreppi.cre" "override"
 
 //JONDALAR//	
 COPY_EXISTING "jondal.cre" "override"
+
+LAUNCH_PATCH_FUNCTION remove_bg2_cre_proficency
+	END
 
 	LAUNCH_PATCH_FUNCTION add_cre_proficiency
 		INT_VAR pips = 0
@@ -460,6 +478,9 @@ COPY_EXISTING "jondal.cre" "override"
 //ERIK//	
 COPY_EXISTING "erik.cre" "override"
 
+LAUNCH_PATCH_FUNCTION remove_bg2_cre_proficency
+	END
+
 	LAUNCH_PATCH_FUNCTION add_cre_proficiency
 		INT_VAR pips = 0
 		STR_VAR proficiency = "PROFICIENCYSINGLEWEAPON"
@@ -535,6 +556,9 @@ COPY_EXISTING "erik.cre" "override"
 COPY_EXISTING "reevor.cre" "override"
 "reevor2.cre" "override"
 
+LAUNCH_PATCH_FUNCTION remove_bg2_cre_proficency
+	END
+
 	LAUNCH_PATCH_FUNCTION add_cre_proficiency
 		INT_VAR pips = 0
 		STR_VAR proficiency = "PROFICIENCYSINGLEWEAPON"
@@ -609,6 +633,9 @@ COPY_EXISTING "reevor.cre" "override"
 COPY_EXISTING "carbos.cre" "override"
 "carbos_.cre" "override"
 
+LAUNCH_PATCH_FUNCTION remove_bg2_cre_proficency
+	END
+
 	LAUNCH_PATCH_FUNCTION add_cre_proficiency
 		INT_VAR pips = 0
 		STR_VAR proficiency = "PROFICIENCYSINGLEWEAPON"
@@ -676,7 +703,7 @@ COPY_EXISTING "carbos.cre" "override"
 	WRITE_BYTE 0x240 6 //MORALERUN//
 	WRITE_LONG 0x28 0X6300 //ANIMATION//
 	WRITE_BYTE 0x273 4 //CLASS//
-	WRITE_BYTE 0x271 1 //RACE //
+	WRITE_BYTE 0x272 1 //RACE //
 	WRITE_LONG 0x1c 8 //GOLD//
 	
 	REMOVE_CRE_ITEM "dagg01"
@@ -688,6 +715,9 @@ COPY_EXISTING "carbos.cre" "override"
 COPY_EXISTING "shank.cre" "override"
 "shank_.cre" "override"
 
+LAUNCH_PATCH_FUNCTION remove_bg2_cre_proficency
+	END
+
 	LAUNCH_PATCH_FUNCTION add_cre_proficiency
 		INT_VAR pips = 0
 		STR_VAR proficiency = "PROFICIENCYSINGLEWEAPON"
@@ -755,7 +785,7 @@ COPY_EXISTING "shank.cre" "override"
 	WRITE_BYTE 0x240 6 //MORALERUN//
 	WRITE_LONG 0x28 0X6300 //ANIMATION//
 	WRITE_BYTE 0x273 4 //CLASS//
-	WRITE_BYTE 0x271 1 //RACE //
+	WRITE_BYTE 0x272 1 //RACE //
 	WRITE_LONG 0x1c 6 //GOLD//
 	
 	REMOVE_CRE_ITEM "dagg01"
@@ -774,6 +804,9 @@ COPY_EXISTING "chase.cre" "override"
 
 //AOLN//	
 COPY_EXISTING "aoln.cre" "override"
+
+LAUNCH_PATCH_FUNCTION remove_bg2_cre_proficency
+	END
 
 	LAUNCH_PATCH_FUNCTION add_cre_proficiency
 		INT_VAR pips = 0
@@ -862,6 +895,9 @@ ADD_CRE_ITEM "bdbelt01" #1 #0 #0 ~NONE~ ~INV~
 //TARNESH//	
 COPY_EXISTING "tarnes.cre" "override"
 
+LAUNCH_PATCH_FUNCTION remove_bg2_cre_proficency
+	END
+
 	LAUNCH_PATCH_FUNCTION add_cre_proficiency
 		INT_VAR pips = 0
 		STR_VAR proficiency = "PROFICIENCYSINGLEWEAPON"
@@ -930,12 +966,94 @@ COPY_EXISTING "tarnes.cre" "override"
 	WRITE_LONG 0x1c 55 //GOLD//
 	WRITE_LONG 0x244 0x0080 //KIT//
 	
+	ADD_CRE_ITEM "clck12" #1 #0 #0 ~NONE~ ~ARMOR~
+	
 	//COMANDO MAGIA//
 	
 	
+//JOIA//	
+COPY_EXISTING "joia.cre" "override"
+
+LAUNCH_PATCH_FUNCTION remove_bg2_cre_proficency
+	END
+
+	LAUNCH_PATCH_FUNCTION add_cre_proficiency
+		INT_VAR pips = 0
+		STR_VAR proficiency = "PROFICIENCYSINGLEWEAPON"
+	END
+	LAUNCH_PATCH_FUNCTION add_cre_proficiency
+		INT_VAR pips = 0
+		STR_VAR proficiency = "PROFICIENCYSWORDANDSHIELD"
+	END
+	LAUNCH_PATCH_FUNCTION add_cre_proficiency
+		INT_VAR pips = 0
+		STR_VAR proficiency = "PROFICIENCY2HANDED"
+	END
+	LAUNCH_PATCH_FUNCTION add_cre_proficiency
+		INT_VAR pips = 0
+		STR_VAR proficiency = "PROFICIENCY2WEAPON"
+	END
+	LAUNCH_PATCH_FUNCTION set_cre_magic_damage_resistance
+		INT_VAR resistance = 0
+	END
+	
+	WRITE_LONG 0x14 420 //EXP//
+	WRITE_SHORT 0x24 20 //PF//
+	WRITE_SHORT 0x26 20 //ACTUAL PF//
+	WRITE_SHORT 0x46 10 //AC//
+	WRITE_SHORT 0x48 10 //AC//
+	WRITE_SHORT 0x4A 0 //AC CRUSHING//
+	WRITE_SHORT 0x4C 0 //AC MISSILE//
+	WRITE_SHORT 0x4E 0 //AC PIERCING//
+	WRITE_SHORT 0x50 0 //AC SLASHING//
+	WRITE_BYTE 0x52 19 //THAC0//
+	WRITE_BYTE 0x53 1 //N°ATT//
+	WRITE_BYTE 0x54 14 //SAVEDEATH//
+	WRITE_BYTE 0x55 11 //SAVEWAND//
+	WRITE_BYTE 0x56 13 //SAVEPOLY//
+	WRITE_BYTE 0x57 15 //SAVEBREATH//
+	WRITE_BYTE 0x58 12 //SAVESPELL//
+	WRITE_BYTE 0x59 0 //FIRERES//
+	WRITE_BYTE 0x5A 0 //COLDRES//
+	WRITE_BYTE 0x5B 0 //ELECRES//
+	WRITE_BYTE 0x5C 0 //ACIDRES//
+	WRITE_BYTE 0x5D 0 //MAGICRES//
+	WRITE_BYTE 0x60 0 //SLASHINGRES//
+	WRITE_BYTE 0x61 0 //CRUSHINGRES//
+	WRITE_BYTE 0x62 0 //PIERCINGRES//
+	WRITE_BYTE 0x63 0 //MISSILERES//
+	WRITE_BYTE 0x6E 0 //LARGESWORDS//
+	WRITE_BYTE 0x6F 1 //SMALLSWORDS//
+	WRITE_BYTE 0x70 0 //BOW//
+	WRITE_BYTE 0x71 0 //SPEAR//
+	WRITE_BYTE 0x72 0 //BLUNT//
+	WRITE_BYTE 0x73 0 //SPIKED//
+	WRITE_BYTE 0x74 0 //AXE//
+	WRITE_BYTE 0x75 1 //MISSILE//
+	WRITE_BYTE 0x234 5 //LIV1CLASS//
+	WRITE_BYTE 0x235 0 //LIV2CLASS//
+	WRITE_BYTE 0x236 0 //LIV3CLASS//
+	WRITE_BYTE 0x238 9 //STR//
+	WRITE_BYTE 0x239 0 //STREX//
+	WRITE_BYTE 0x23A 16 //INT//
+	WRITE_BYTE 0x23B 9 //SAG//
+	WRITE_BYTE 0x23C 15 //DEX//
+	WRITE_BYTE 0x23D 13 //CON//
+	WRITE_BYTE 0x23E 13 //CHR//
+	WRITE_BYTE 0x23F 10 //MORALEDEFAULT//
+	WRITE_BYTE 0x240 5 //MORALERUN//
+	WRITE_LONG 0x1c 5 //GOLD//
+	WRITE_LONG 0x244 0x4000 //KIT//
+	WRITE_LONG 0x28	0x6210 //ANIMATION//
+		
+	ADD_CRE_ITEM "dagg01" #1 #0 #0 ~IDENTIFIED~ ~WEAPON~ EQUIP
+
 
 //BENTLEY//	
 COPY_EXISTING "bently.cre" "override"
+
+LAUNCH_PATCH_FUNCTION remove_bg2_cre_proficency
+	END
 
 	LAUNCH_PATCH_FUNCTION add_cre_proficiency
 		INT_VAR pips = 0
@@ -1011,6 +1129,9 @@ COPY_EXISTING "bently.cre" "override"
 
 //GELLANA//	
 COPY_EXISTING "gellan.cre" "override"
+
+LAUNCH_PATCH_FUNCTION remove_bg2_cre_proficency
+	END
 
 	LAUNCH_PATCH_FUNCTION add_cre_proficiency
 		INT_VAR pips = 1
@@ -1089,6 +1210,9 @@ COPY_EXISTING "gellan.cre" "override"
 //LANDRIN//	
 COPY_EXISTING "landri.cre" "override"
 
+LAUNCH_PATCH_FUNCTION remove_bg2_cre_proficency
+	END
+
 	LAUNCH_PATCH_FUNCTION add_cre_proficiency
 		INT_VAR pips = 0
 		STR_VAR proficiency = "PROFICIENCYSINGLEWEAPON"
@@ -1166,6 +1290,9 @@ COPY_EXISTING "landri.cre" "override"
 //UNSHEY//	
 COPY_EXISTING "unshey.cre" "override"
 
+LAUNCH_PATCH_FUNCTION remove_bg2_cre_proficency
+	END
+
 	LAUNCH_PATCH_FUNCTION add_cre_proficiency
 		INT_VAR pips = 0
 		STR_VAR proficiency = "PROFICIENCYSINGLEWEAPON"
@@ -1239,6 +1366,9 @@ COPY_EXISTING "unshey.cre" "override"
 //BJORNIN//	
 COPY_EXISTING "bjorni.cre" "override"
 
+LAUNCH_PATCH_FUNCTION remove_bg2_cre_proficency
+	END
+
 	LAUNCH_PATCH_FUNCTION add_cre_proficiency
 		INT_VAR pips = 0
 		STR_VAR proficiency = "PROFICIENCYSINGLEWEAPON"
@@ -1309,6 +1439,9 @@ COPY_EXISTING "bjorni.cre" "override"
 	
 //MARL//	
 COPY_EXISTING "marl.cre" "override"
+
+LAUNCH_PATCH_FUNCTION remove_bg2_cre_proficency
+	END
 
 	LAUNCH_PATCH_FUNCTION add_cre_proficiency
 		INT_VAR pips = 0
@@ -1382,6 +1515,9 @@ COPY_EXISTING "marl.cre" "override"
 //DUNKIN//	
 COPY_EXISTING "dunkin.cre" "override"
 
+LAUNCH_PATCH_FUNCTION remove_bg2_cre_proficency
+	END
+
 	LAUNCH_PATCH_FUNCTION add_cre_proficiency
 		INT_VAR pips = 0
 		STR_VAR proficiency = "PROFICIENCYSINGLEWEAPON"
@@ -1453,6 +1589,9 @@ COPY_EXISTING "dunkin.cre" "override"
 	
 //KARLAT//	
 COPY_EXISTING "karlat.cre" "override"
+
+LAUNCH_PATCH_FUNCTION remove_bg2_cre_proficency
+	END
 
 	LAUNCH_PATCH_FUNCTION add_cre_proficiency
 		INT_VAR pips = 0
@@ -1528,6 +1667,9 @@ COPY_EXISTING "karlat.cre" "override"
 //GURKE//	
 COPY_EXISTING "gurke.cre" "override"
 
+LAUNCH_PATCH_FUNCTION remove_bg2_cre_proficency
+	END
+
 	LAUNCH_PATCH_FUNCTION add_cre_proficiency
 		INT_VAR pips = 0
 		STR_VAR proficiency = "PROFICIENCYSINGLEWEAPON"
@@ -1599,6 +1741,9 @@ COPY_EXISTING "gurke.cre" "override"
 
 //SILKE//	
 COPY_EXISTING "silke.cre" "override"
+
+LAUNCH_PATCH_FUNCTION remove_bg2_cre_proficency
+	END
 
 	LAUNCH_PATCH_FUNCTION add_cre_proficiency
 		INT_VAR pips = 0
@@ -1676,6 +1821,9 @@ COPY_EXISTING "silke.cre" "override"
 //PERDUE//	
 COPY_EXISTING "perdue.cre" "override"
 
+LAUNCH_PATCH_FUNCTION remove_bg2_cre_proficency
+	END
+
 	LAUNCH_PATCH_FUNCTION add_cre_proficiency
 		INT_VAR pips = 0
 		STR_VAR proficiency = "PROFICIENCYSINGLEWEAPON"
@@ -1747,6 +1895,9 @@ COPY_EXISTING "perdue.cre" "override"
 	
 //ZHURLONG//	
 COPY_EXISTING "zhurlo.cre" "override"
+
+LAUNCH_PATCH_FUNCTION remove_bg2_cre_proficency
+	END
 
 	LAUNCH_PATCH_FUNCTION add_cre_proficiency
 		INT_VAR pips = 0
@@ -1825,6 +1976,9 @@ REMOVE_CRE_ITEM "leat01"
 //TAEROM//	
 COPY_EXISTING "taerom.cre" "override"
 
+LAUNCH_PATCH_FUNCTION remove_bg2_cre_proficency
+	END
+
 	LAUNCH_PATCH_FUNCTION add_cre_proficiency
 		INT_VAR pips = 0
 		STR_VAR proficiency = "PROFICIENCYSINGLEWEAPON"
@@ -1896,6 +2050,9 @@ COPY_EXISTING "taerom.cre" "override"
 	
 //TRANZIG//	
 COPY_EXISTING "tranzi.cre" "override"
+
+LAUNCH_PATCH_FUNCTION remove_bg2_cre_proficency
+	END
 
 	LAUNCH_PATCH_FUNCTION add_cre_proficiency
 		INT_VAR pips = 0
@@ -1974,6 +2131,9 @@ COPY_EXISTING "tranzi.cre" "override"
 //VAI//	
 COPY_EXISTING "taerom.cre" "override"
 
+LAUNCH_PATCH_FUNCTION remove_bg2_cre_proficency
+	END
+
 	LAUNCH_PATCH_FUNCTION add_cre_proficiency
 		INT_VAR pips = 0
 		STR_VAR proficiency = "PROFICIENCYSINGLEWEAPON"
@@ -2048,6 +2208,9 @@ COPY_EXISTING "taerom.cre" "override"
 
 //CATTACK//	
 COPY_EXISTING "cattac.cre" "override"
+
+LAUNCH_PATCH_FUNCTION remove_bg2_cre_proficency
+	END
 
 	LAUNCH_PATCH_FUNCTION add_cre_proficiency
 		INT_VAR pips = 1
@@ -2128,6 +2291,9 @@ COPY_EXISTING "cattac.cre" "override"
 //BLANE//	
 COPY_EXISTING "blane.cre" "override"
 
+LAUNCH_PATCH_FUNCTION remove_bg2_cre_proficency
+	END
+
 	LAUNCH_PATCH_FUNCTION add_cre_proficiency
 		INT_VAR pips = 0
 		STR_VAR proficiency = "PROFICIENCYSINGLEWEAPON"
@@ -2206,6 +2372,9 @@ COPY_EXISTING "blane.cre" "override"
 	
 //BRAN//	
 COPY_EXISTING "bran.cre" "override"
+
+LAUNCH_PATCH_FUNCTION remove_bg2_cre_proficency
+	END
 
 	LAUNCH_PATCH_FUNCTION add_cre_proficiency
 		INT_VAR pips = 0
@@ -2286,6 +2455,9 @@ COPY_EXISTING "bran.cre" "override"
 //KELDDATH ORMLYR//	
 COPY_EXISTING "keldda.cre" "override"
 
+LAUNCH_PATCH_FUNCTION remove_bg2_cre_proficency
+	END
+
 	LAUNCH_PATCH_FUNCTION add_cre_proficiency
 		INT_VAR pips = 0
 		STR_VAR proficiency = "PROFICIENCYSINGLEWEAPON"
@@ -2365,6 +2537,9 @@ COPY_EXISTING "keldda.cre" "override"
 //GALILEUS//	
 COPY_EXISTING "galile.cre" "override"
 
+LAUNCH_PATCH_FUNCTION remove_bg2_cre_proficency
+	END
+
 	LAUNCH_PATCH_FUNCTION add_cre_proficiency
 		INT_VAR pips = 0
 		STR_VAR proficiency = "PROFICIENCYSINGLEWEAPON"
@@ -2442,6 +2617,9 @@ COPY_EXISTING "galile.cre" "override"
 //PERMIDION STARK//	
 COPY_EXISTING "permid.cre" "override"
 
+LAUNCH_PATCH_FUNCTION remove_bg2_cre_proficency
+	END
+
 	LAUNCH_PATCH_FUNCTION add_cre_proficiency
 		INT_VAR pips = 1
 		STR_VAR proficiency = "PROFICIENCYSINGLEWEAPON"
@@ -2513,6 +2691,9 @@ COPY_EXISTING "permid.cre" "override"
 
 //THALANTYR//	
 COPY_EXISTING "thalan.cre" "override"
+
+LAUNCH_PATCH_FUNCTION remove_bg2_cre_proficency
+	END
 
 	LAUNCH_PATCH_FUNCTION add_cre_proficiency
 		INT_VAR pips = 0
@@ -2596,6 +2777,9 @@ COPY_EXISTING "thalan.cre" "override"
 //BUB SNIKT//	
 COPY_EXISTING "bub.cre" "override"
 
+LAUNCH_PATCH_FUNCTION remove_bg2_cre_proficency
+	END
+
 	LAUNCH_PATCH_FUNCTION add_cre_proficiency
 		INT_VAR pips = 0
 		STR_VAR proficiency = "PROFICIENCYSINGLEWEAPON"
@@ -2669,6 +2853,9 @@ COPY_EXISTING "bub.cre" "override"
 //BARDOLAN//	
 COPY_EXISTING "bardol.cre" "override"
 
+LAUNCH_PATCH_FUNCTION remove_bg2_cre_proficency
+	END
+
 	LAUNCH_PATCH_FUNCTION add_cre_proficiency
 		INT_VAR pips = 0
 		STR_VAR proficiency = "PROFICIENCYSINGLEWEAPON"
@@ -2741,6 +2928,9 @@ COPY_EXISTING "bardol.cre" "override"
 	
 //JAMIE//	
 COPY_EXISTING "jamie.cre" "override"
+
+LAUNCH_PATCH_FUNCTION remove_bg2_cre_proficency
+	END
 
 	LAUNCH_PATCH_FUNCTION add_cre_proficiency
 		INT_VAR pips = 0
@@ -2816,6 +3006,9 @@ COPY_EXISTING "jamie.cre" "override"
 
 //BERRUN GHASTKILL//	
 COPY_EXISTING "berrun.cre" "override"
+
+LAUNCH_PATCH_FUNCTION remove_bg2_cre_proficency
+	END
 
 	LAUNCH_PATCH_FUNCTION add_cre_proficiency
 		INT_VAR pips = 0
@@ -2896,6 +3089,9 @@ COPY_EXISTING "berrun.cre" "override"
 //NEIRA//	
 COPY_EXISTING "neira.cre" "override"
 
+LAUNCH_PATCH_FUNCTION remove_bg2_cre_proficency
+	END
+
 	LAUNCH_PATCH_FUNCTION add_cre_proficiency
 		INT_VAR pips = 0
 		STR_VAR proficiency = "PROFICIENCYSINGLEWEAPON"
@@ -2917,8 +3113,8 @@ COPY_EXISTING "neira.cre" "override"
 	END
 	
 	WRITE_LONG 0x14 650 //EXP//
-	WRITE_SHORT 0x24 60 //PF//
-	WRITE_SHORT 0x26 60 //ACTUAL PF//
+	WRITE_SHORT 0x24 48 //PF//
+	WRITE_SHORT 0x26 48 //ACTUAL PF//
 	WRITE_SHORT 0x46 10 //AC//
 	WRITE_SHORT 0x48 10 //AC//
 	WRITE_SHORT 0x4A 0 //AC CRUSHING//
@@ -2972,6 +3168,9 @@ COPY_EXISTING "neira.cre" "override"
 	
 //NALIN//	
 COPY_EXISTING "nalin.cre" "override"
+
+LAUNCH_PATCH_FUNCTION remove_bg2_cre_proficency
+	END
 
 	LAUNCH_PATCH_FUNCTION add_cre_proficiency
 		INT_VAR pips = 0
@@ -3053,6 +3252,9 @@ COPY_EXISTING "nalin.cre" "override"
 COPY_EXISTING "volo.cre" "override"
 "sarvolo.cre" "override"
 
+LAUNCH_PATCH_FUNCTION remove_bg2_cre_proficency
+	END
+
 	LAUNCH_PATCH_FUNCTION add_cre_proficiency
 		INT_VAR pips = 0
 		STR_VAR proficiency = "PROFICIENCYSINGLEWEAPON"
@@ -3127,6 +3329,9 @@ COPY_EXISTING "volo.cre" "override"
 //NIMBUL//	
 COPY_EXISTING "nimbul.cre" "override"
 
+LAUNCH_PATCH_FUNCTION remove_bg2_cre_proficency
+	END
+
 	LAUNCH_PATCH_FUNCTION add_cre_proficiency
 		INT_VAR pips = 1
 		STR_VAR proficiency = "PROFICIENCYSINGLEWEAPON"
@@ -3148,8 +3353,8 @@ COPY_EXISTING "nimbul.cre" "override"
 	END
 	
 	WRITE_LONG 0x14 3000 //EXP//
-	WRITE_SHORT 0x24 35 //PF//
-	WRITE_SHORT 0x26 35 //ACTUAL PF//
+	WRITE_SHORT 0x24 46 //PF//
+	WRITE_SHORT 0x26 46 //ACTUAL PF//
 	WRITE_SHORT 0x46 10 //AC//
 	WRITE_SHORT 0x48 10 //AC//
 	WRITE_SHORT 0x4A 0 //AC CRUSHING//
@@ -3180,21 +3385,20 @@ COPY_EXISTING "nimbul.cre" "override"
 	WRITE_BYTE 0x73 0 //SPIKED//
 	WRITE_BYTE 0x74 0 //AXE//
 	WRITE_BYTE 0x75 0 //MISSILE//
-	WRITE_BYTE 0x234 7 //LIV1CLASS//
+	WRITE_BYTE 0x234 8 //LIV1CLASS//
 	WRITE_BYTE 0x235 7 //LIV2CLASS//
 	WRITE_BYTE 0x236 0 //LIV3CLASS//
 	WRITE_BYTE 0x238 13 //STR//
 	WRITE_BYTE 0x239 0 //STREX//
-	WRITE_BYTE 0x23A 16 //INT//
+	WRITE_BYTE 0x23A 17 //INT//
 	WRITE_BYTE 0x23B 9 //SAG//
 	WRITE_BYTE 0x23C 17 //DEX//
-	WRITE_BYTE 0x23D 9 //CON//
+	WRITE_BYTE 0x23D 15 //CON//
 	WRITE_BYTE 0x23E 13 //CHR//
 	WRITE_BYTE 0x23F 15 //MORALEDEFAULT//
 	WRITE_BYTE 0x240 3 //MORALERUN//
-	WRITE_BYTE 0x272 3 //RACE//
-	WRITE_LONG 0x28 0x6301 //ANIMATION//
 	WRITE_LONG 0x1c 158 //GOLD//
+	WRITE_LONG 0x10 (LONG_AT 0x10 BOR BIT6) //BICLASSE ORIGINAL//
 	
 	//COMANDO MAGIA//
 	
@@ -3208,6 +3412,9 @@ COPY_EXISTING "nimbul.cre" "override"
 	
 //BENTHA//	
 COPY_EXISTING "bentha.cre" "override"
+
+LAUNCH_PATCH_FUNCTION remove_bg2_cre_proficency
+	END
 
 	LAUNCH_PATCH_FUNCTION add_cre_proficiency
 		INT_VAR pips = 0
@@ -3283,6 +3490,9 @@ COPY_EXISTING "bentha.cre" "override"
 	
 //ZORDRAL//	
 COPY_EXISTING "zordra.cre" "override"
+
+LAUNCH_PATCH_FUNCTION remove_bg2_cre_proficency
+	END
 
 	LAUNCH_PATCH_FUNCTION add_cre_proficiency
 		INT_VAR pips = 0
@@ -3360,6 +3570,9 @@ COPY_EXISTING "zordra.cre" "override"
 //GAZIB//	
 COPY_EXISTING "gazib.cre" "override"
 
+LAUNCH_PATCH_FUNCTION remove_bg2_cre_proficency
+	END
+
 	LAUNCH_PATCH_FUNCTION add_cre_proficiency
 		INT_VAR pips = 0
 		STR_VAR proficiency = "PROFICIENCYSINGLEWEAPON"
@@ -3435,6 +3648,9 @@ COPY_EXISTING "gazib.cre" "override"
 COPY_EXISTING "oopah.cre" "override"
 "oopah2.cre" "override"
 
+LAUNCH_PATCH_FUNCTION remove_bg2_cre_proficency
+	END
+
 	LAUNCH_PATCH_FUNCTION add_cre_proficiency
 		INT_VAR pips = 0
 		STR_VAR proficiency = "PROFICIENCYSINGLEWEAPON"
@@ -3465,7 +3681,7 @@ COPY_EXISTING "oopah.cre" "override"
 	WRITE_SHORT 0x4E 0 //AC PIERCING//
 	WRITE_SHORT 0x50 0 //AC SLASHING//
 	WRITE_BYTE 0x52 16 //THAC0//
-	WRITE_BYTE 0x53 7 //N°ATT//
+	WRITE_BYTE 0x53 1 //N°ATT//
 	WRITE_BYTE 0x54 11 //SAVEDEATH//
 	WRITE_BYTE 0x55 13 //SAVEWAND//
 	WRITE_BYTE 0x56 12 //SAVEPOLY//
@@ -3476,10 +3692,10 @@ COPY_EXISTING "oopah.cre" "override"
 	WRITE_BYTE 0x5B 0 //ELECRES//
 	WRITE_BYTE 0x5C 0 //ACIDRES//
 	WRITE_BYTE 0x5D 0 //MAGICRES//
-	WRITE_BYTE 0x60 10 //SLASHINGRES//
-	WRITE_BYTE 0x61 10 //CRUSHINGRES//
-	WRITE_BYTE 0x62 10 //PIERCINGRES//
-	WRITE_BYTE 0x63 10 //MISSILERES//
+	WRITE_BYTE 0x60 20 //SLASHINGRES//
+	WRITE_BYTE 0x61 20 //CRUSHINGRES//
+	WRITE_BYTE 0x62 20 //PIERCINGRES//
+	WRITE_BYTE 0x63 20 //MISSILERES//
 	WRITE_BYTE 0x6E 0 //LARGESWORDS//
 	WRITE_BYTE 0x6F 0 //SMALLSWORDS//
 	WRITE_BYTE 0x70 0 //BOW//
@@ -3509,6 +3725,9 @@ COPY_EXISTING "oopah.cre" "override"
 	
 //VITIARE//	
 COPY_EXISTING "vitiare.cre" "override"
+
+LAUNCH_PATCH_FUNCTION remove_bg2_cre_proficency
+	END
 
 	LAUNCH_PATCH_FUNCTION add_cre_proficiency
 		INT_VAR pips = 1
@@ -3583,6 +3802,9 @@ COPY_EXISTING "vitiare.cre" "override"
 //ZEKE//	
 COPY_EXISTING "zeke.cre" "override"
 
+LAUNCH_PATCH_FUNCTION remove_bg2_cre_proficency
+	END
+
 	LAUNCH_PATCH_FUNCTION add_cre_proficiency
 		INT_VAR pips = 1
 		STR_VAR proficiency = "PROFICIENCYSINGLEWEAPON"
@@ -3655,6 +3877,9 @@ COPY_EXISTING "zeke.cre" "override"
 //DANDAL//	
 COPY_EXISTING "dandal.cre" "override"
 
+LAUNCH_PATCH_FUNCTION remove_bg2_cre_proficency
+	END
+
 	LAUNCH_PATCH_FUNCTION add_cre_proficiency
 		INT_VAR pips = 0
 		STR_VAR proficiency = "PROFICIENCYSINGLEWEAPON"
@@ -3725,6 +3950,9 @@ COPY_EXISTING "dandal.cre" "override"
 	
 //EMERSON//	
 COPY_EXISTING "emerso.cre" "override"
+
+LAUNCH_PATCH_FUNCTION remove_bg2_cre_proficency
+	END
 
 	LAUNCH_PATCH_FUNCTION add_cre_proficiency
 		INT_VAR pips = 0
@@ -3803,6 +4031,9 @@ COPY_EXISTING "emerso.cre" "override"
 
 //GREYWOLF//	
 COPY_EXISTING "greywo.cre" "override"
+
+LAUNCH_PATCH_FUNCTION remove_bg2_cre_proficency
+	END
 
 	LAUNCH_PATCH_FUNCTION add_cre_proficiency
 		INT_VAR pips = 1
@@ -3884,6 +4115,9 @@ COPY_EXISTING "greywo.cre" "override"
 //GALTOK//	
 COPY_EXISTING "galtok.cre" "override"
 
+LAUNCH_PATCH_FUNCTION remove_bg2_cre_proficency
+	END
+
 	LAUNCH_PATCH_FUNCTION add_cre_proficiency
 		INT_VAR pips = 1
 		STR_VAR proficiency = "PROFICIENCYSINGLEWEAPON"
@@ -3959,6 +4193,9 @@ COPY_EXISTING "galtok.cre" "override"
 	
 //MULAHEY//	
 COPY_EXISTING "mulahe.cre" "override"
+
+LAUNCH_PATCH_FUNCTION remove_bg2_cre_proficency
+	END
 
 	LAUNCH_PATCH_FUNCTION add_cre_proficiency
 		INT_VAR pips = 0
@@ -4038,6 +4275,9 @@ COPY_EXISTING "mulahe.cre" "override"
 //HENTOLD//	
 COPY_EXISTING "hentol.cre" "override"
 
+LAUNCH_PATCH_FUNCTION remove_bg2_cre_proficency
+	END
+
 	LAUNCH_PATCH_FUNCTION add_cre_proficiency
 		INT_VAR pips = 0
 		STR_VAR proficiency = "PROFICIENCYSINGLEWEAPON"
@@ -4109,6 +4349,8 @@ COPY_EXISTING "hentol.cre" "override"
 //REVENANT --> WIGHT//	
 COPY_EXISTING "reven01.cre" "override"
 "revent.cre" "override"
+
+
 
 SAY NAME1 "Wight"
 SAY NAME2 "Wight"	
@@ -4243,6 +4485,9 @@ COPY_EXISTING "laurel.cre" "override"
 //HAFIZ//	
 COPY_EXISTING "hafiz.cre" "override"
 
+LAUNCH_PATCH_FUNCTION remove_bg2_cre_proficency
+	END
+
 	LAUNCH_PATCH_FUNCTION add_cre_proficiency
 		INT_VAR pips = 0
 		STR_VAR proficiency = "PROFICIENCYSINGLEWEAPON"
@@ -4322,6 +4567,9 @@ COPY_EXISTING "hafiz.cre" "override"
 //LAMALHA//	
 COPY_EXISTING "lamalh.cre" "override"
 
+LAUNCH_PATCH_FUNCTION remove_bg2_cre_proficency
+	END
+
 	LAUNCH_PATCH_FUNCTION add_cre_proficiency
 		INT_VAR pips = 0
 		STR_VAR proficiency = "PROFICIENCYSINGLEWEAPON"
@@ -4400,6 +4648,9 @@ COPY_EXISTING "lamalh.cre" "override"
 	
 //ZEELA//	
 COPY_EXISTING "zeela.cre" "override"
+
+LAUNCH_PATCH_FUNCTION remove_bg2_cre_proficency
+	END
 
 	LAUNCH_PATCH_FUNCTION add_cre_proficiency
 		INT_VAR pips = 0
@@ -4481,9 +4732,175 @@ COPY_EXISTING "zeela.cre" "override"
 	
 	
 	
+//MANEIRA//	
+COPY_EXISTING "maneir.cre" "override"
+
+LAUNCH_PATCH_FUNCTION remove_bg2_cre_proficency
+	END
+
+	LAUNCH_PATCH_FUNCTION add_cre_proficiency
+		INT_VAR pips = 1
+		STR_VAR proficiency = "PROFICIENCYSINGLEWEAPON"
+	END
+	LAUNCH_PATCH_FUNCTION add_cre_proficiency
+		INT_VAR pips = 0
+		STR_VAR proficiency = "PROFICIENCYSWORDANDSHIELD"
+	END
+	LAUNCH_PATCH_FUNCTION add_cre_proficiency
+		INT_VAR pips = 0
+		STR_VAR proficiency = "PROFICIENCY2HANDED"
+	END
+	LAUNCH_PATCH_FUNCTION add_cre_proficiency
+		INT_VAR pips = 0
+		STR_VAR proficiency = "PROFICIENCY2WEAPON"
+	END
+	LAUNCH_PATCH_FUNCTION set_cre_magic_damage_resistance
+		INT_VAR resistance = 0
+	END
+	
+	WRITE_LONG 0x14 650 //EXP//
+	WRITE_SHORT 0x24 56 //PF//
+	WRITE_SHORT 0x26 56 //ACTUAL PF//
+	WRITE_SHORT 0x46 10 //AC//
+	WRITE_SHORT 0x48 10 //AC//
+	WRITE_SHORT 0x4A 0 //AC CRUSHING//
+	WRITE_SHORT 0x4C 0 //AC MISSILE//
+	WRITE_SHORT 0x4E 0 //AC PIERCING//
+	WRITE_SHORT 0x50 0 //AC SLASHING//
+	WRITE_BYTE 0x52 16 //THAC0//
+	WRITE_BYTE 0x53 1 //N°ATT//
+	WRITE_BYTE 0x54 11 //SAVEDEATH//
+	WRITE_BYTE 0x55 12 //SAVEWAND//
+	WRITE_BYTE 0x56 11 //SAVEPOLY//
+	WRITE_BYTE 0x57 13 //SAVEBREATH//
+	WRITE_BYTE 0x58 13 //SAVESPELL//
+	WRITE_BYTE 0x59 0 //FIRERES//
+	WRITE_BYTE 0x5A 0 //COLDRES//
+	WRITE_BYTE 0x5B 0 //ELECRES//
+	WRITE_BYTE 0x5C 0 //ACIDRES//
+	WRITE_BYTE 0x5D 0 //MAGICRES//
+	WRITE_BYTE 0x60 0 //SLASHINGRES//
+	WRITE_BYTE 0x61 0 //CRUSHINGRES//
+	WRITE_BYTE 0x62 0 //PIERCINGRES//
+	WRITE_BYTE 0x63 0 //MISSILERES//
+	WRITE_BYTE 0x6E 0 //LARGESWORDS//
+	WRITE_BYTE 0x6F 2 //SMALLSWORDS//
+	WRITE_BYTE 0x70 0 //BOW//
+	WRITE_BYTE 0x71 0 //SPEAR//
+	WRITE_BYTE 0x72 0 //BLUNT//
+	WRITE_BYTE 0x73 0 //SPIKED//
+	WRITE_BYTE 0x74 0 //AXE//
+	WRITE_BYTE 0x75 2 //MISSILE//
+	WRITE_BYTE 0x234 5 //LIV1CLASS//
+	WRITE_BYTE 0x235 6 //LIV2CLASS//
+	WRITE_BYTE 0x236 0 //LIV3CLASS//
+	WRITE_BYTE 0x238 15 //STR//
+	WRITE_BYTE 0x239 0 //STREX//
+	WRITE_BYTE 0x23A 9 //INT//
+	WRITE_BYTE 0x23B 9 //SAG//
+	WRITE_BYTE 0x23C 17 //DEX//
+	WRITE_BYTE 0x23D 9 //CON//
+	WRITE_BYTE 0x23E 13 //CHR//
+	WRITE_BYTE 0x23F 10 //MORALEDEFAULT//
+	WRITE_BYTE 0x240 3 //MORALERUN//
+	WRITE_LONG 0x1c 78 //GOLD//
+	WRITE_LONG 0x10 (LONG_AT 0x10 BOR BIT3) //BICLASSE ORIGINAL//
+	
+	REMOVE_CRE_ITEM "brac02"
+	REMOVE_CRE_ITEM "blun02"
+	REMOVE_CRE_ITEM "potn41"
+	ADD_CRE_ITEM "boot05" #1 #0 #0 ~NONE~ ~BOOTS~
+	
+	
+	
+//TELKA//	
+COPY_EXISTING "telka.cre" "override"
+
+LAUNCH_PATCH_FUNCTION remove_bg2_cre_proficency
+	END
+
+	LAUNCH_PATCH_FUNCTION add_cre_proficiency
+		INT_VAR pips = 0
+		STR_VAR proficiency = "PROFICIENCYSINGLEWEAPON"
+	END
+	LAUNCH_PATCH_FUNCTION add_cre_proficiency
+		INT_VAR pips = 0
+		STR_VAR proficiency = "PROFICIENCYSWORDANDSHIELD"
+	END
+	LAUNCH_PATCH_FUNCTION add_cre_proficiency
+		INT_VAR pips = 0
+		STR_VAR proficiency = "PROFICIENCY2HANDED"
+	END
+	LAUNCH_PATCH_FUNCTION add_cre_proficiency
+		INT_VAR pips = 0
+		STR_VAR proficiency = "PROFICIENCY2WEAPON"
+	END
+	LAUNCH_PATCH_FUNCTION set_cre_magic_damage_resistance
+		INT_VAR resistance = 0
+	END
+	
+	WRITE_LONG 0x14 650 //EXP//
+	WRITE_SHORT 0x24 56 //PF//
+	WRITE_SHORT 0x26 56 //ACTUAL PF//
+	WRITE_SHORT 0x46 10 //AC//
+	WRITE_SHORT 0x48 10 //AC//
+	WRITE_SHORT 0x4A 0 //AC CRUSHING//
+	WRITE_SHORT 0x4C 0 //AC MISSILE//
+	WRITE_SHORT 0x4E 0 //AC PIERCING//
+	WRITE_SHORT 0x50 0 //AC SLASHING//
+	WRITE_BYTE 0x52 16 //THAC0//
+	WRITE_BYTE 0x53 1 //N°ATT//
+	WRITE_BYTE 0x54 11 //SAVEDEATH//
+	WRITE_BYTE 0x55 12 //SAVEWAND//
+	WRITE_BYTE 0x56 11 //SAVEPOLY//
+	WRITE_BYTE 0x57 13 //SAVEBREATH//
+	WRITE_BYTE 0x58 13 //SAVESPELL//
+	WRITE_BYTE 0x59 0 //FIRERES//
+	WRITE_BYTE 0x5A 0 //COLDRES//
+	WRITE_BYTE 0x5B 0 //ELECRES//
+	WRITE_BYTE 0x5C 0 //ACIDRES//
+	WRITE_BYTE 0x5D 0 //MAGICRES//
+	WRITE_BYTE 0x60 0 //SLASHINGRES//
+	WRITE_BYTE 0x61 0 //CRUSHINGRES//
+	WRITE_BYTE 0x62 0 //PIERCINGRES//
+	WRITE_BYTE 0x63 0 //MISSILERES//
+	WRITE_BYTE 0x6E 0 //LARGESWORDS//
+	WRITE_BYTE 0x6F 2 //SMALLSWORDS//
+	WRITE_BYTE 0x70 3 //BOW//
+	WRITE_BYTE 0x71 0 //SPEAR//
+	WRITE_BYTE 0x72 0 //BLUNT//
+	WRITE_BYTE 0x73 0 //SPIKED//
+	WRITE_BYTE 0x74 0 //AXE//
+	WRITE_BYTE 0x75 0 //MISSILE//
+	WRITE_BYTE 0x234 5 //LIV1CLASS//
+	WRITE_BYTE 0x235 6 //LIV2CLASS//
+	WRITE_BYTE 0x236 0 //LIV3CLASS//
+	WRITE_BYTE 0x238 15 //STR//
+	WRITE_BYTE 0x239 0 //STREX//
+	WRITE_BYTE 0x23A 9 //INT//
+	WRITE_BYTE 0x23B 9 //SAG//
+	WRITE_BYTE 0x23C 17 //DEX//
+	WRITE_BYTE 0x23D 9 //CON//
+	WRITE_BYTE 0x23E 13 //CHR//
+	WRITE_BYTE 0x23F 10 //MORALEDEFAULT//
+	WRITE_BYTE 0x240 3 //MORALERUN//
+	WRITE_LONG 0x1c 83 //GOLD//
+	WRITE_LONG 0x10 (LONG_AT 0x10 BOR BIT3) //BICLASSE ORIGINAL//
+	
+	REMOVE_CRE_ITEM "arow09"
+	REMOVE_CRE_ITEM "arow01"
+	REMOVE_CRE_ITEM "arow04"
+	REMOVE_CRE_ITEM "arow08"
+	ADD_CRE_ITEM "arow04" #28 #0 #0 ~NONE~ ~QUIVER~ 
+	ADD_CRE_ITEM "POTN08" #1 #1 #1 "IDENTIFIED" "INV"
+
+	
 	
 //NARCILLICUS//	
 COPY_EXISTING "narcil.cre" "override"
+
+LAUNCH_PATCH_FUNCTION remove_bg2_cre_proficency
+	END
 
 	LAUNCH_PATCH_FUNCTION add_cre_proficiency
 		INT_VAR pips = 0
@@ -4566,6 +4983,9 @@ COPY_EXISTING "narcil.cre" "override"
 //SENDAI//	
 COPY_EXISTING "sendai_.cre" "override"
 
+LAUNCH_PATCH_FUNCTION remove_bg2_cre_proficency
+	END
+
 	LAUNCH_PATCH_FUNCTION add_cre_proficiency
 		INT_VAR pips = 0
 		STR_VAR proficiency = "PROFICIENCYSINGLEWEAPON"
@@ -4644,6 +5064,9 @@ COPY_EXISTING "sendai_.cre" "override"
 //ALEXANDER//	
 COPY_EXISTING "alexan.cre" "override"
 
+LAUNCH_PATCH_FUNCTION remove_bg2_cre_proficency
+	END
+
 	LAUNCH_PATCH_FUNCTION add_cre_proficiency
 		INT_VAR pips = 0
 		STR_VAR proficiency = "PROFICIENCYSINGLEWEAPON"
@@ -4719,6 +5142,9 @@ COPY_EXISTING "alexan.cre" "override"
 //DELGOD//	
 COPY_EXISTING "delgod.cre" "override"
 
+LAUNCH_PATCH_FUNCTION remove_bg2_cre_proficency
+	END
+
 	LAUNCH_PATCH_FUNCTION add_cre_proficiency
 		INT_VAR pips = 0
 		STR_VAR proficiency = "PROFICIENCYSINGLEWEAPON"
@@ -4792,8 +5218,104 @@ COPY_EXISTING "delgod.cre" "override"
 	ADD_CRE_ITEM "sw2h01" #1 #0 #0 ~IDENTIFIED~ ~WEAPON~
 	
 	
+//CORVINUS//
+
+COPY_EXISTING "lendar.cre" "override/tb#corv.cre" //esempio nuova CRE copiata//
+
+	SAY NAME1 ~Corvinus~
+	SAY NAME2 ~Corvinus~
+	
+LAUNCH_PATCH_FUNCTION remove_bg2_cre_proficency
+	END	
+
+	LAUNCH_PATCH_FUNCTION add_cre_proficiency
+		INT_VAR pips = 0
+		STR_VAR proficiency = "PROFICIENCYSINGLEWEAPON"
+	END
+	LAUNCH_PATCH_FUNCTION add_cre_proficiency
+		INT_VAR pips = 0
+		STR_VAR proficiency = "PROFICIENCYSWORDANDSHIELD"
+	END
+	LAUNCH_PATCH_FUNCTION add_cre_proficiency
+		INT_VAR pips = 0
+		STR_VAR proficiency = "PROFICIENCY2HANDED"
+	END
+	LAUNCH_PATCH_FUNCTION add_cre_proficiency
+		INT_VAR pips = 0
+		STR_VAR proficiency = "PROFICIENCY2WEAPON"
+	END
+	LAUNCH_PATCH_FUNCTION set_cre_magic_damage_resistance
+		INT_VAR resistance = 0
+	END
+	
+	WRITE_LONG 0x14 650 //EXP//
+	WRITE_SHORT 0x24 20 //PF//
+	WRITE_SHORT 0x26 20 //ACTUAL PF//
+	WRITE_SHORT 0x46 10 //AC//
+	WRITE_SHORT 0x48 10 //AC//
+	WRITE_SHORT 0x4A 0 //AC CRUSHING//
+	WRITE_SHORT 0x4C 0 //AC MISSILE//
+	WRITE_SHORT 0x4E 0 //AC PIERCING//
+	WRITE_SHORT 0x50 0 //AC SLASHING//
+	WRITE_BYTE 0x52 19 //THAC0//
+	WRITE_BYTE 0x53 1 //N°ATT//
+	WRITE_BYTE 0x54 14 //SAVEDEATH//
+	WRITE_BYTE 0x55 11 //SAVEWAND//
+	WRITE_BYTE 0x56 13 //SAVEPOLY//
+	WRITE_BYTE 0x57 15 //SAVEBREATH//
+	WRITE_BYTE 0x58 12 //SAVESPELL//
+	WRITE_BYTE 0x59 0 //FIRERES//
+	WRITE_BYTE 0x5A 0 //COLDRES//
+	WRITE_BYTE 0x5B 0 //ELECRES//
+	WRITE_BYTE 0x5C 0 //ACIDRES//
+	WRITE_BYTE 0x5D 0 //MAGICRES//
+	WRITE_BYTE 0x60 0 //SLASHINGRES//
+	WRITE_BYTE 0x61 0 //CRUSHINGRES//
+	WRITE_BYTE 0x62 0 //PIERCINGRES//
+	WRITE_BYTE 0x63 0 //MISSILERES//
+	WRITE_BYTE 0x6E 0 //LARGESWORDS//
+	WRITE_BYTE 0x6F 0 //SMALLSWORDS//
+	WRITE_BYTE 0x70 0 //BOW//
+	WRITE_BYTE 0x71 0 //SPEAR//
+	WRITE_BYTE 0x72 1 //BLUNT//
+	WRITE_BYTE 0x73 0 //SPIKED//
+	WRITE_BYTE 0x74 0 //AXE//
+	WRITE_BYTE 0x75 0 //MISSILE//
+	WRITE_BYTE 0x234 6 //LIV1CLASS//
+	WRITE_BYTE 0x235 0 //LIV2CLASS//
+	WRITE_BYTE 0x236 0 //LIV3CLASS//
+	WRITE_BYTE 0x238 9 //STR//
+	WRITE_BYTE 0x239 0 //STREX//
+	WRITE_BYTE 0x23A 17 //INT//
+	WRITE_BYTE 0x23B 9 //SAG//
+	WRITE_BYTE 0x23C 13 //DEX//
+	WRITE_BYTE 0x23D 15 //CON//
+	WRITE_BYTE 0x23E 13 //CHR//
+	WRITE_BYTE 0x23F 10 //MORALEDEFAULT//
+	WRITE_BYTE 0x240 5 //MORALERUN//
+	WRITE_LONG 0x1c 96 //GOLD//
+	WRITE_LONG 0x244 0x0800 //KIT//
+	WRITE_BYTE 0x27B 50 //ALIGNEMENT//
+	WRITE_BYTE 0x2e 37 //COLOR MAJOR//
+	
+	REMOVE_CRE_ITEM "scrl1k" 
+	REMOVE_CRE_ITEM "scrl2e" 
+	REMOVE_CRE_ITEM "scrl1g" 
+	REMOVE_CRE_ITEM "scrl1c" 
+	ADD_CRE_ITEM "scrl91" #1 #0 #0 ~NONE~ ~INV~
+	ADD_CRE_ITEM "scrl76" #1 #0 #0 ~NONE~ ~INV~
+	ADD_CRE_ITEM "scrl1b" #1 #0 #0 ~NONE~ ~INV~
+		
+	//COMANDO MAGIA//
+	
+	//TBD Valerio - script, dialog, death variables//
+	
+	
 //VAX//	
 COPY_EXISTING "vax.cre" "override"
+
+LAUNCH_PATCH_FUNCTION remove_bg2_cre_proficency
+	END
 
 	LAUNCH_PATCH_FUNCTION add_cre_proficiency
 		INT_VAR pips = 0
@@ -4865,6 +5387,9 @@ COPY_EXISTING "vax.cre" "override"
 	
 //ZAL//	
 COPY_EXISTING "zal.cre" "override"
+
+LAUNCH_PATCH_FUNCTION remove_bg2_cre_proficency
+	END
 
 	LAUNCH_PATCH_FUNCTION add_cre_proficiency
 		INT_VAR pips = 0
@@ -4941,6 +5466,9 @@ COPY_EXISTING "zal.cre" "override"
 //DRYAD//	
 COPY_EXISTING "dryad.cre" "override"
 
+LAUNCH_PATCH_FUNCTION remove_bg2_cre_proficency
+	END
+
 	LAUNCH_PATCH_FUNCTION add_cre_proficiency
 		INT_VAR pips = 0
 		STR_VAR proficiency = "PROFICIENCYSINGLEWEAPON"
@@ -4964,7 +5492,7 @@ COPY_EXISTING "dryad.cre" "override"
 		INT_VAR speed = 6
 	END
 	
-	WRITE_LONG 0x14 175 //EXP//
+	WRITE_LONG 0x14 270 //EXP//
 	WRITE_SHORT 0x24 30 //PF//
 	WRITE_SHORT 0x26 30 //ACTUAL PF//
 	WRITE_SHORT 0x46 10 //AC//
@@ -5014,16 +5542,158 @@ COPY_EXISTING "dryad.cre" "override"
 	REMOVE_CRE_ITEM "dart01" 
 	ADD_CRE_ITEM "dart02" #60 #0 #0 ~NONE~ ~QUIVER~ 
 	
-
-
-
 	
-//GNOLL KING//
+//KRUMM//	
+COPY_EXISTING "krumm.cre" "override"
 
-COPY_EXISTING "gnoll_c.cre" "override/tb#gnkng.cre" // esempio nuova CRE copiata
+LAUNCH_PATCH_FUNCTION remove_bg2_cre_proficency
+	END
 
-	SAY NAME1 ~Gnoll King~
-	SAY NAME2 ~Gnoll King~
+	LAUNCH_PATCH_FUNCTION add_cre_proficiency
+		INT_VAR pips = 0
+		STR_VAR proficiency = "PROFICIENCYSINGLEWEAPON"
+	END
+	LAUNCH_PATCH_FUNCTION set_cre_speed
+		INT_VAR speed = 5
+	END
+	LAUNCH_PATCH_FUNCTION set_cre_magic_damage_resistance
+		INT_VAR resistance = 0
+	END
+	WRITE_LONG 0x14 975 //EXP//
+	WRITE_SHORT 0x24 72 //PF//
+	WRITE_SHORT 0x26 72 //ACTUAL PF//
+	WRITE_SHORT 0x46 7 //AC//
+	WRITE_SHORT 0x48 7 //AC//
+	WRITE_SHORT 0x4A 0 //AC CRUSHING//
+	WRITE_SHORT 0x4C 0 //AC MISSILE//
+	WRITE_SHORT 0x4E 0 //AC PIERCING//
+	WRITE_SHORT 0x50 0 //AC SLASHING//
+	WRITE_BYTE 0x52 15 //THAC0//
+	WRITE_BYTE 0x53 1 //N°ATT//
+	WRITE_BYTE 0x54 11 //SAVEDEATH//
+	WRITE_BYTE 0x55 13 //SAVEWAND//
+	WRITE_BYTE 0x56 12 //SAVEPOLY//
+	WRITE_BYTE 0x57 13 //SAVEBREATH//
+	WRITE_BYTE 0x58 14 //SAVESPELL//
+	WRITE_BYTE 0x59 0 //FIRERES//
+	WRITE_BYTE 0x5A 0 //COLDRES//
+	WRITE_BYTE 0x5B 0 //ELECRES//
+	WRITE_BYTE 0x5C 0 //ACIDRES//
+	WRITE_BYTE 0x5D 0 //MAGICRES//
+	WRITE_BYTE 0x60 20 //SLASHINGRES//
+	WRITE_BYTE 0x61 20 //CRUSHINGRES//
+	WRITE_BYTE 0x62 20 //PIERCINGRES//
+	WRITE_BYTE 0x63 20 //MISSILERES//
+	WRITE_BYTE 0x6E 0 //LARGESWORDS//
+	WRITE_BYTE 0x6F 0 //SMALLSWORDS//
+	WRITE_BYTE 0x70 0 //BOW//
+	WRITE_BYTE 0x71 0 //SPEAR//
+	WRITE_BYTE 0x72 2 //BLUNT//
+	WRITE_BYTE 0x73 2 //SPIKED//
+	WRITE_BYTE 0x74 0 //AXE//
+	WRITE_BYTE 0x75 0 //MISSILE//
+	WRITE_BYTE 0x234 6 //LIV1CLASS//
+	WRITE_BYTE 0x235 0 //LIV2CLASS//
+	WRITE_BYTE 0x236 0 //LIV3CLASS//
+	WRITE_BYTE 0x238 18 //STR//
+	WRITE_BYTE 0x239 100 //STREX//
+	WRITE_BYTE 0x23A 5 //INT//
+	WRITE_BYTE 0x23B 5 //SAG//
+	WRITE_BYTE 0x23C 9 //DEX//
+	WRITE_BYTE 0x23D 16 //CON//
+	WRITE_BYTE 0x23E 9 //CHR//
+	WRITE_BYTE 0x23F 10 //MORALEDEFAULT//
+	WRITE_BYTE 0x240 3 //MORALERUN//
+	WRITE_BYTE 0x27B 51 //ALIGNEMENT//
+	WRITE_BYTE 0x273 125 //CLASS//
+	WRITE_BYTE 0x272 113 //RACE//
+	WRITE_LONG 0x1c 24 //GOLD//
+	WRITE_LONG 0x28 0X9000 //ANIMATION//
+	
+	REMOVE_CRE_ITEM "leat04"
+	REMOVE_CRE_ITEM "belt03"
+	
+	
+//CALDO//	
+COPY_EXISTING "caldo.cre" "override"
+
+LAUNCH_PATCH_FUNCTION remove_bg2_cre_proficency
+	END
+
+	LAUNCH_PATCH_FUNCTION add_cre_proficiency
+		INT_VAR pips = 0
+		STR_VAR proficiency = "PROFICIENCYSINGLEWEAPON"
+	END
+	LAUNCH_PATCH_FUNCTION set_cre_speed
+		INT_VAR speed = 5
+	END
+	LAUNCH_PATCH_FUNCTION set_cre_magic_damage_resistance
+		INT_VAR resistance = 0
+	END
+	WRITE_LONG 0x14 650 //EXP//
+	WRITE_SHORT 0x24 55 //PF//
+	WRITE_SHORT 0x26 55 //ACTUAL PF//
+	WRITE_SHORT 0x46 7 //AC//
+	WRITE_SHORT 0x48 7 //AC//
+	WRITE_SHORT 0x4A 0 //AC CRUSHING//
+	WRITE_SHORT 0x4C 0 //AC MISSILE//
+	WRITE_SHORT 0x4E 0 //AC PIERCING//
+	WRITE_SHORT 0x50 0 //AC SLASHING//
+	WRITE_BYTE 0x52 16 //THAC0//
+	WRITE_BYTE 0x53 1 //N°ATT//
+	WRITE_BYTE 0x54 11 //SAVEDEATH//
+	WRITE_BYTE 0x55 13 //SAVEWAND//
+	WRITE_BYTE 0x56 12 //SAVEPOLY//
+	WRITE_BYTE 0x57 13 //SAVEBREATH//
+	WRITE_BYTE 0x58 14 //SAVESPELL//
+	WRITE_BYTE 0x59 0 //FIRERES//
+	WRITE_BYTE 0x5A 0 //COLDRES//
+	WRITE_BYTE 0x5B 0 //ELECRES//
+	WRITE_BYTE 0x5C 0 //ACIDRES//
+	WRITE_BYTE 0x5D 0 //MAGICRES//
+	WRITE_BYTE 0x60 20 //SLASHINGRES//
+	WRITE_BYTE 0x61 20 //CRUSHINGRES//
+	WRITE_BYTE 0x62 20 //PIERCINGRES//
+	WRITE_BYTE 0x63 20 //MISSILERES//
+	WRITE_BYTE 0x6E 0 //LARGESWORDS//
+	WRITE_BYTE 0x6F 0 //SMALLSWORDS//
+	WRITE_BYTE 0x70 0 //BOW//
+	WRITE_BYTE 0x71 0 //SPEAR//
+	WRITE_BYTE 0x72 2 //BLUNT//
+	WRITE_BYTE 0x73 2 //SPIKED//
+	WRITE_BYTE 0x74 0 //AXE//
+	WRITE_BYTE 0x75 0 //MISSILE//
+	WRITE_BYTE 0x234 5 //LIV1CLASS//
+	WRITE_BYTE 0x235 0 //LIV2CLASS//
+	WRITE_BYTE 0x236 0 //LIV3CLASS//
+	WRITE_BYTE 0x238 18 //STR//
+	WRITE_BYTE 0x239 100 //STREX//
+	WRITE_BYTE 0x23A 5 //INT//
+	WRITE_BYTE 0x23B 5 //SAG//
+	WRITE_BYTE 0x23C 9 //DEX//
+	WRITE_BYTE 0x23D 15 //CON//
+	WRITE_BYTE 0x23E 9 //CHR//
+	WRITE_BYTE 0x23F 10 //MORALEDEFAULT//
+	WRITE_BYTE 0x240 3 //MORALERUN//
+	WRITE_BYTE 0x27B 51 //ALIGNEMENT//
+	WRITE_BYTE 0x273 125 //CLASS//
+	WRITE_BYTE 0x272 113 //RACE//
+	WRITE_LONG 0x1c 39 //GOLD//
+	WRITE_LONG 0x28 0X9000 //ANIMATION//
+	
+	REMOVE_CRE_ITEM "leat04"
+	REMOVE_CRE_ITEM "shld03a"
+	REMOVE_CRE_ITEM "blun02"
+	ADD_CRE_ITEM "blun06" #1 #0 #0 ~NONE~ ~WEAPON~ EQUIP
+	
+	
+//INGOT//
+
+COPY_EXISTING "ingot.cre" "override"
+
+LAUNCH_PATCH_FUNCTION remove_bg2_cre_proficency
+	END
+
 LAUNCH_PATCH_FUNCTION add_cre_proficiency
 		INT_VAR pips = 1
 		STR_VAR proficiency = "PROFICIENCY2HANDED"
@@ -5081,14 +5751,741 @@ LAUNCH_PATCH_FUNCTION add_cre_proficiency
 	WRITE_BYTE 0x23F 10 //MORALEDEFAULT//
 	WRITE_BYTE 0x240 3 //MORALERUN//
 	
-	// TBD Valerio - script, dialog, death variables
+	REMOVE_CRE_ITEM "halb13"
+	ADD_CRE_ITEM "halb01" #1 #0 #0 ~NONE~ ~WEAPON~ EQUIP
 	
 	
 	
+//LUDRUG//
+
+COPY_EXISTING "GNOLL5.cre" "override"
+
+LAUNCH_PATCH_FUNCTION remove_bg2_cre_proficency
+	END
+
+LAUNCH_PATCH_FUNCTION add_cre_proficiency
+		INT_VAR pips = 1
+		STR_VAR proficiency = "PROFICIENCY2HANDED"
+	END
+	
+	LAUNCH_PATCH_FUNCTION set_cre_speed
+		INT_VAR speed = 7
+	END
+	LAUNCH_PATCH_FUNCTION set_cre_magic_damage_resistance
+		INT_VAR resistance = 0
+	END
+	WRITE_LONG 0x14 420 //EXP//
+	WRITE_SHORT 0x24 40
+	WRITE_SHORT 0x26 40
+	WRITE_SHORT 0x46 5 //AC//
+	WRITE_SHORT 0x48 5 //AC//
+	WRITE_SHORT 0x4A 0 //AC CRUSHING//
+	WRITE_SHORT 0x4C 0 //AC MISSILE//
+	WRITE_SHORT 0x4E 0 //AC PIERCING//
+	WRITE_SHORT 0x50 0 //AC SLASHING//
+	WRITE_BYTE 0x52 16 //THAC0//
+	WRITE_BYTE 0x53 7 //N°ATT//
+	WRITE_BYTE 0x54 11 //SAVEDEATH//
+	WRITE_BYTE 0x55 13 //SAVEWAND//
+	WRITE_BYTE 0x56 12 //SAVEPOLY//
+	WRITE_BYTE 0x57 13 //SAVEBREATH//
+	WRITE_BYTE 0x58 14 //SAVESPELL//
+	WRITE_BYTE 0x59 0 //FIRERES//
+	WRITE_BYTE 0x5A 0 //COLDRES//
+	WRITE_BYTE 0x5B 0 //ELECRES//
+	WRITE_BYTE 0x5C 0 //ACIDRES//
+	WRITE_BYTE 0x5D 0 //MAGICRES//
+	WRITE_BYTE 0x60 0 //SLASHINGRES//
+	WRITE_BYTE 0x61 0 //CRUSHINGRES//
+	WRITE_BYTE 0x62 0 //PIERCINGRES//
+	WRITE_BYTE 0x63 0 //MISSILERES//
+	WRITE_BYTE 0x6E 0 //LARGESWORDS//
+	WRITE_BYTE 0x6F 0 //SMALLSWORDS//
+	WRITE_BYTE 0x70 0 //BOW//
+	WRITE_BYTE 0x71 2 //SPEAR//
+	WRITE_BYTE 0x72 0 //BLUNT//
+	WRITE_BYTE 0x73 0 //SPIKED//
+	WRITE_BYTE 0x74 0 //AXE//
+	WRITE_BYTE 0x75 0 //MISSILE//
+	WRITE_BYTE 0x234 5 //LIV1CLASS//
+	WRITE_BYTE 0x235 0 //LIV2CLASS//
+	WRITE_BYTE 0x236 0 //LIV3CLASS//
+	WRITE_BYTE 0x238 18 //STR//
+	WRITE_BYTE 0x239 50 //STREX//
+	WRITE_BYTE 0x23A 13 //INT//
+	WRITE_BYTE 0x23B 9 //SAG//
+	WRITE_BYTE 0x23C 9 //DEX//
+	WRITE_BYTE 0x23D 9 //CON//
+	WRITE_BYTE 0x23E 13 //CHR//
+	WRITE_BYTE 0x23F 10 //MORALEDEFAULT//
+	WRITE_BYTE 0x240 3 //MORALERUN//
+	
+	
+//RAGNOR - GNOLL KING//
+
+COPY_EXISTING "gnoll_c.cre" "override/tb#ragno.cre" // esempio nuova CRE copiata
+
+	SAY NAME1 ~Ragnor~
+	SAY NAME2 ~Ragnor~
+	
+LAUNCH_PATCH_FUNCTION remove_bg2_cre_proficency
+	END	
+	
+LAUNCH_PATCH_FUNCTION add_cre_proficiency
+		INT_VAR pips = 1
+		STR_VAR proficiency = "PROFICIENCY2HANDED"
+	END
+	
+	LAUNCH_PATCH_FUNCTION set_cre_speed
+		INT_VAR speed = 7
+	END
+	LAUNCH_PATCH_FUNCTION set_cre_magic_damage_resistance
+		INT_VAR resistance = 0
+	END
+	WRITE_LONG 0x14 1400 //EXP//
+	WRITE_SHORT 0x24 84
+	WRITE_SHORT 0x26 84
+	WRITE_SHORT 0x46 5 //AC//
+	WRITE_SHORT 0x48 5 //AC//
+	WRITE_SHORT 0x4A 0 //AC CRUSHING//
+	WRITE_SHORT 0x4C 0 //AC MISSILE//
+	WRITE_SHORT 0x4E 0 //AC PIERCING//
+	WRITE_SHORT 0x50 0 //AC SLASHING//
+	WRITE_BYTE 0x52 14 //THAC0//
+	WRITE_BYTE 0x53 2 //N°ATT//
+	WRITE_BYTE 0x54 10 //SAVEDEATH//
+	WRITE_BYTE 0x55 12 //SAVEWAND//
+	WRITE_BYTE 0x56 11 //SAVEPOLY//
+	WRITE_BYTE 0x57 12 //SAVEBREATH//
+	WRITE_BYTE 0x58 13 //SAVESPELL//
+	WRITE_BYTE 0x59 0 //FIRERES//
+	WRITE_BYTE 0x5A 0 //COLDRES//
+	WRITE_BYTE 0x5B 0 //ELECRES//
+	WRITE_BYTE 0x5C 0 //ACIDRES//
+	WRITE_BYTE 0x5D 0 //MAGICRES//
+	WRITE_BYTE 0x60 0 //SLASHINGRES//
+	WRITE_BYTE 0x61 0 //CRUSHINGRES//
+	WRITE_BYTE 0x62 0 //PIERCINGRES//
+	WRITE_BYTE 0x63 0 //MISSILERES//
+	WRITE_BYTE 0x6E 0 //LARGESWORDS//
+	WRITE_BYTE 0x6F 0 //SMALLSWORDS//
+	WRITE_BYTE 0x70 0 //BOW//
+	WRITE_BYTE 0x71 3 //SPEAR//
+	WRITE_BYTE 0x72 0 //BLUNT//
+	WRITE_BYTE 0x73 0 //SPIKED//
+	WRITE_BYTE 0x74 0 //AXE//
+	WRITE_BYTE 0x75 0 //MISSILE//
+	WRITE_BYTE 0x234 7 //LIV1CLASS//
+	WRITE_BYTE 0x235 0 //LIV2CLASS//
+	WRITE_BYTE 0x236 0 //LIV3CLASS//
+	WRITE_BYTE 0x238 18 //STR//
+	WRITE_BYTE 0x239 50 //STREX//
+	WRITE_BYTE 0x23A 13 //INT//
+	WRITE_BYTE 0x23B 9 //SAG//
+	WRITE_BYTE 0x23C 16 //DEX//
+	WRITE_BYTE 0x23D 16 //CON//
+	WRITE_BYTE 0x23E 16 //CHR//
+	WRITE_BYTE 0x23F 10 //MORALEDEFAULT//
+	WRITE_BYTE 0x240 1 //MORALERUN//
+	
+	REMOVE_CRE_ITEM "halb01"
+	ADD_CRE_ITEM "halb07" #1 #0 #0 ~NONE~ ~WEAPON~ EQUIP
+	
+	// TBD Valerio - script, dialog, death variables//
+	
+	
+	
+//GRISHNAK - CAPITANO GNOLL ALL'INGRESSO/
+
+COPY_EXISTING "gnoll_c.cre" "override/tb#grish.cre" // esempio nuova CRE copiata
+
+	SAY NAME1 ~Grishnak~
+	SAY NAME2 ~Grishnak~
+	
+LAUNCH_PATCH_FUNCTION remove_bg2_cre_proficency
+	END	
+	
+LAUNCH_PATCH_FUNCTION add_cre_proficiency
+		INT_VAR pips = 1
+		STR_VAR proficiency = "PROFICIENCY2HANDED"
+	END
+	
+	LAUNCH_PATCH_FUNCTION set_cre_speed
+		INT_VAR speed = 7
+	END
+	LAUNCH_PATCH_FUNCTION set_cre_magic_damage_resistance
+		INT_VAR resistance = 0
+	END
+	WRITE_LONG 0x14 420 //EXP//
+	WRITE_SHORT 0x24 54
+	WRITE_SHORT 0x26 54
+	WRITE_SHORT 0x46 7 //AC//
+	WRITE_SHORT 0x48 7 //AC//
+	WRITE_SHORT 0x4A 0 //AC CRUSHING//
+	WRITE_SHORT 0x4C 0 //AC MISSILE//
+	WRITE_SHORT 0x4E 0 //AC PIERCING//
+	WRITE_SHORT 0x50 0 //AC SLASHING//
+	WRITE_BYTE 0x52 16 //THAC0//
+	WRITE_BYTE 0x53 7 //N°ATT//
+	WRITE_BYTE 0x54 11 //SAVEDEATH//
+	WRITE_BYTE 0x55 13 //SAVEWAND//
+	WRITE_BYTE 0x56 12 //SAVEPOLY//
+	WRITE_BYTE 0x57 13 //SAVEBREATH//
+	WRITE_BYTE 0x58 14 //SAVESPELL//
+	WRITE_BYTE 0x59 0 //FIRERES//
+	WRITE_BYTE 0x5A 0 //COLDRES//
+	WRITE_BYTE 0x5B 0 //ELECRES//
+	WRITE_BYTE 0x5C 0 //ACIDRES//
+	WRITE_BYTE 0x5D 0 //MAGICRES//
+	WRITE_BYTE 0x60 0 //SLASHINGRES//
+	WRITE_BYTE 0x61 0 //CRUSHINGRES//
+	WRITE_BYTE 0x62 0 //PIERCINGRES//
+	WRITE_BYTE 0x63 0 //MISSILERES//
+	WRITE_BYTE 0x6E 0 //LARGESWORDS//
+	WRITE_BYTE 0x6F 0 //SMALLSWORDS//
+	WRITE_BYTE 0x70 0 //BOW//
+	WRITE_BYTE 0x71 2 //SPEAR//
+	WRITE_BYTE 0x72 0 //BLUNT//
+	WRITE_BYTE 0x73 0 //SPIKED//
+	WRITE_BYTE 0x74 0 //AXE//
+	WRITE_BYTE 0x75 0 //MISSILE//
+	WRITE_BYTE 0x234 5 //LIV1CLASS//
+	WRITE_BYTE 0x235 0 //LIV2CLASS//
+	WRITE_BYTE 0x236 0 //LIV3CLASS//
+	WRITE_BYTE 0x238 17 //STR//
+	WRITE_BYTE 0x239 0 //STREX//
+	WRITE_BYTE 0x23A 13 //INT//
+	WRITE_BYTE 0x23B 9 //SAG//
+	WRITE_BYTE 0x23C 13 //DEX//
+	WRITE_BYTE 0x23D 15 //CON//
+	WRITE_BYTE 0x23E 9 //CHR//
+	WRITE_BYTE 0x23F 10 //MORALEDEFAULT//
+	WRITE_BYTE 0x240 1 //MORALERUN//
+	
+	// TBD Valerio - script, dialog, death variables//
+	
+	
+	
+//KRIVIK - GNOLL SCOUT FORTEZZA GNOLL//
+
+COPY_EXISTING "nexlit.cre" "override/tb#krivi.cre" // esempio nuova CRE copiata
+
+SAY NAME1 "Krivik"
+SAY NAME2 "Krivik"
+
+LAUNCH_PATCH_FUNCTION remove_bg2_cre_proficency
+	END
+
+	LAUNCH_PATCH_FUNCTION add_cre_proficiency
+		INT_VAR pips = 0
+		STR_VAR proficiency = "PROFICIENCYSINGLEWEAPON"
+	END
+	LAUNCH_PATCH_FUNCTION set_cre_speed
+		INT_VAR speed = 5
+	END
+	LAUNCH_PATCH_FUNCTION set_cre_magic_damage_resistance
+		INT_VAR resistance = 0
+	END
+	WRITE_LONG 0x14 65 //EXP//
+	WRITE_SHORT 0x24 18
+	WRITE_SHORT 0x26 18
+	WRITE_SHORT 0x46 7 //AC//
+	WRITE_SHORT 0x48 7 //AC//
+	WRITE_SHORT 0x4A 0 //AC CRUSHING//
+	WRITE_SHORT 0x4C 0 //AC MISSILE//
+	WRITE_SHORT 0x4E 0 //AC PIERCING//
+	WRITE_SHORT 0x50 0 //AC SLASHING//
+	WRITE_BYTE 0x52 18 //THAC0//
+	WRITE_BYTE 0x53 1 //N°ATT//
+	WRITE_BYTE 0x54 13 //SAVEDEATH//
+	WRITE_BYTE 0x55 14 //SAVEWAND//
+	WRITE_BYTE 0x56 15 //SAVEPOLY//
+	WRITE_BYTE 0x57 16 //SAVEBREATH//
+	WRITE_BYTE 0x58 16 //SAVESPELL//
+	WRITE_BYTE 0x59 0 //FIRERES//
+	WRITE_BYTE 0x5A 0 //COLDRES//
+	WRITE_BYTE 0x5B 0 //ELECRES//
+	WRITE_BYTE 0x5C 0 //ACIDRES//
+	WRITE_BYTE 0x5D 0 //MAGICRES//
+	WRITE_BYTE 0x60 0 //SLASHINGRES//
+	WRITE_BYTE 0x61 0 //CRUSHINGRES//
+	WRITE_BYTE 0x62 0 //PIERCINGRES//
+	WRITE_BYTE 0x63 0 //MISSILERES//
+	WRITE_BYTE 0x6E 0 //LARGESWORDS//
+	WRITE_BYTE 0x6F 2 //SMALLSWORDS//
+	WRITE_BYTE 0x70 0 //BOW//
+	WRITE_BYTE 0x71 0 //SPEAR//
+	WRITE_BYTE 0x72 0 //BLUNT//
+	WRITE_BYTE 0x73 0 //SPIKED//
+	WRITE_BYTE 0x74 0 //AXE//
+	WRITE_BYTE 0x75 0 //MISSILE//
+	WRITE_BYTE 0x234 3 //LIV1CLASS//
+	WRITE_BYTE 0x235 0 //LIV2CLASS//
+	WRITE_BYTE 0x236 0 //LIV3CLASS//
+	WRITE_BYTE 0x238 9 //STR//
+	WRITE_BYTE 0x239 0 //STREX//
+	WRITE_BYTE 0x23A 9 //INT//
+	WRITE_BYTE 0x23B 9 //SAG//
+	WRITE_BYTE 0x23C 13 //DEX//
+	WRITE_BYTE 0x23D 9 //CON//
+	WRITE_BYTE 0x23E 9 //CHR//
+	WRITE_BYTE 0x23F 10 //MORALEDEFAULT//
+	WRITE_BYTE 0x240 5 //MORALERUN//
+	
+	// TBD Valerio - script, dialog, death variables//
+	
+	
+//GNARL//	
+COPY_EXISTING "gnarl.cre" "override"
+
+LAUNCH_PATCH_FUNCTION remove_bg2_cre_proficency
+	END
+
+	LAUNCH_PATCH_FUNCTION add_cre_proficiency
+		INT_VAR pips = 0
+		STR_VAR proficiency = "PROFICIENCYSINGLEWEAPON"
+	END
+	LAUNCH_PATCH_FUNCTION set_cre_speed
+		INT_VAR speed = 6
+	END
+	LAUNCH_PATCH_FUNCTION set_cre_magic_damage_resistance
+		INT_VAR resistance = 0
+	END
+	WRITE_LONG 0x14 975 //EXP//
+	WRITE_SHORT 0x24 65 //PF//
+	WRITE_SHORT 0x26 65 //ACTUAL PF//
+	WRITE_SHORT 0x46 10 //AC//
+	WRITE_SHORT 0x48 10 //AC//
+	WRITE_SHORT 0x4A 0 //AC CRUSHING//
+	WRITE_SHORT 0x4C 0 //AC MISSILE//
+	WRITE_SHORT 0x4E 0 //AC PIERCING//
+	WRITE_SHORT 0x50 0 //AC SLASHING//
+	WRITE_BYTE 0x52 15 //THAC0//
+	WRITE_BYTE 0x53 7 //N°ATT//
+	WRITE_BYTE 0x54 11 //SAVEDEATH//
+	WRITE_BYTE 0x55 13 //SAVEWAND//
+	WRITE_BYTE 0x56 12 //SAVEPOLY//
+	WRITE_BYTE 0x57 13 //SAVEBREATH//
+	WRITE_BYTE 0x58 14 //SAVESPELL//
+	WRITE_BYTE 0x59 0 //FIRERES//
+	WRITE_BYTE 0x5A 0 //COLDRES//
+	WRITE_BYTE 0x5B 0 //ELECRES//
+	WRITE_BYTE 0x5C 0 //ACIDRES//
+	WRITE_BYTE 0x5D 0 //MAGICRES//
+	WRITE_BYTE 0x60 0 //SLASHINGRES//
+	WRITE_BYTE 0x61 0 //CRUSHINGRES//
+	WRITE_BYTE 0x62 0 //PIERCINGRES//
+	WRITE_BYTE 0x63 0 //MISSILERES//
+	WRITE_BYTE 0x6E 3 //LARGESWORDS//
+	WRITE_BYTE 0x6F 0 //SMALLSWORDS//
+	WRITE_BYTE 0x70 0 //BOW//
+	WRITE_BYTE 0x71 0 //SPEAR//
+	WRITE_BYTE 0x72 2 //BLUNT//
+	WRITE_BYTE 0x73 1 //SPIKED//
+	WRITE_BYTE 0x74 0 //AXE//
+	WRITE_BYTE 0x75 0 //MISSILE//
+	WRITE_BYTE 0x234 6 //LIV1CLASS//
+	WRITE_BYTE 0x235 0 //LIV2CLASS//
+	WRITE_BYTE 0x236 0 //LIV3CLASS//
+	WRITE_BYTE 0x238 18 //STR//
+	WRITE_BYTE 0x239 90 //STREX//
+	WRITE_BYTE 0x23A 9 //INT//
+	WRITE_BYTE 0x23B 9 //SAG//
+	WRITE_BYTE 0x23C 9 //DEX//
+	WRITE_BYTE 0x23D 15 //CON//
+	WRITE_BYTE 0x23E 9 //CHR//
+	WRITE_BYTE 0x23F 10 //MORALEDEFAULT//
+	WRITE_BYTE 0x240 5 //MORALERUN//
+	WRITE_LONG 0x1c 89 //GOLD//
+	WRITE_BYTE 0x273 127 //CLASS//
+	WRITE_BYTE 0x272 213 //RACE//
+	WRITE_BYTE 0x271 5 //GENERAL//
+	WRITE_LONG 0x28 0X7000 //ANIMATION//
+		
+	REMOVE_CRE_ITEM "potn03"
+	REMOVE_CRE_ITEM "sw1h01" 
+			
+	ADD_CRE_ITEM "plat01" #1 #0 #0 ~IDENTIFIED~ ~ARMOR~
+	ADD_CRE_ITEM "sw1h01" #1 #0 #0 ~IDENTIFIED~ ~WEAPON~
+	ADD_CRE_ITEM "potn19" #1 #0 #0 ~IDENTIFIED~ ~INV~
+	ADD_CRE_ITEM "helm11" #1 #0 #0 ~NONE~ ~HELMET~
+	
+	
+	
+//HAIRTOOTH//	
+COPY_EXISTING "hairto.cre" "override"
+
+LAUNCH_PATCH_FUNCTION remove_bg2_cre_proficency
+	END
+
+	LAUNCH_PATCH_FUNCTION add_cre_proficiency
+		INT_VAR pips = 0
+		STR_VAR proficiency = "PROFICIENCYSINGLEWEAPON"
+	END
+	LAUNCH_PATCH_FUNCTION set_cre_speed
+		INT_VAR speed = 6
+	END
+	LAUNCH_PATCH_FUNCTION set_cre_magic_damage_resistance
+		INT_VAR resistance = 0
+	END
+	WRITE_LONG 0x14 650 //EXP//
+	WRITE_SHORT 0x24 50 //PF//
+	WRITE_SHORT 0x26 50 //ACTUAL PF//
+	WRITE_SHORT 0x46 10 //AC//
+	WRITE_SHORT 0x48 10 //AC//
+	WRITE_SHORT 0x4A 0 //AC CRUSHING//
+	WRITE_SHORT 0x4C 0 //AC MISSILE//
+	WRITE_SHORT 0x4E 0 //AC PIERCING//
+	WRITE_SHORT 0x50 0 //AC SLASHING//
+	WRITE_BYTE 0x52 16 //THAC0//
+	WRITE_BYTE 0x53 7 //N°ATT//
+	WRITE_BYTE 0x54 11 //SAVEDEATH//
+	WRITE_BYTE 0x55 13 //SAVEWAND//
+	WRITE_BYTE 0x56 12 //SAVEPOLY//
+	WRITE_BYTE 0x57 13 //SAVEBREATH//
+	WRITE_BYTE 0x58 14 //SAVESPELL//
+	WRITE_BYTE 0x59 0 //FIRERES//
+	WRITE_BYTE 0x5A 0 //COLDRES//
+	WRITE_BYTE 0x5B 0 //ELECRES//
+	WRITE_BYTE 0x5C 0 //ACIDRES//
+	WRITE_BYTE 0x5D 0 //MAGICRES//
+	WRITE_BYTE 0x60 0 //SLASHINGRES//
+	WRITE_BYTE 0x61 0 //CRUSHINGRES//
+	WRITE_BYTE 0x62 0 //PIERCINGRES//
+	WRITE_BYTE 0x63 0 //MISSILERES//
+	WRITE_BYTE 0x6E 3 //LARGESWORDS//
+	WRITE_BYTE 0x6F 0 //SMALLSWORDS//
+	WRITE_BYTE 0x70 0 //BOW//
+	WRITE_BYTE 0x71 0 //SPEAR//
+	WRITE_BYTE 0x72 1 //BLUNT//
+	WRITE_BYTE 0x73 1 //SPIKED//
+	WRITE_BYTE 0x74 0 //AXE//
+	WRITE_BYTE 0x75 0 //MISSILE//
+	WRITE_BYTE 0x234 5 //LIV1CLASS//
+	WRITE_BYTE 0x235 0 //LIV2CLASS//
+	WRITE_BYTE 0x236 0 //LIV3CLASS//
+	WRITE_BYTE 0x238 18 //STR//
+	WRITE_BYTE 0x239 90 //STREX//
+	WRITE_BYTE 0x23A 9 //INT//
+	WRITE_BYTE 0x23B 9 //SAG//
+	WRITE_BYTE 0x23C 9 //DEX//
+	WRITE_BYTE 0x23D 13 //CON//
+	WRITE_BYTE 0x23E 9 //CHR//
+	WRITE_BYTE 0x23F 10 //MORALEDEFAULT//
+	WRITE_BYTE 0x240 5 //MORALERUN//
+	WRITE_LONG 0x1c 67 //GOLD//
+	WRITE_BYTE 0x273 127 //CLASS//
+	WRITE_BYTE 0x272 113 //RACE//
+	WRITE_BYTE 0x271 5 //GENERAL//
+	WRITE_LONG 0x28 0X7000 //ANIMATION//
+		
+	REMOVE_CRE_ITEM "brac07"
+	REMOVE_CRE_ITEM "b1-8" 
+			
+	ADD_CRE_ITEM "chan04" #1 #0 #0 ~IDENTIFIED~ ~ARMOR~
+	ADD_CRE_ITEM "sw1h01" #1 #0 #0 ~IDENTIFIED~ ~WEAPON~
+	ADD_CRE_ITEM "potn09" #1 #0 #0 ~IDENTIFIED~ ~INV~
+	ADD_CRE_ITEM "helm11" #1 #0 #0 ~NONE~ ~HELMET~
 	
 	
 	
 
+
+//NEVILLE//	
+COPY_EXISTING "nevill.cre" "override"
+
+LAUNCH_PATCH_FUNCTION remove_bg2_cre_proficency
+	END
+
+	LAUNCH_PATCH_FUNCTION add_cre_proficiency
+		INT_VAR pips = 1
+		STR_VAR proficiency = "PROFICIENCYSINGLEWEAPON"
+	END
+	LAUNCH_PATCH_FUNCTION add_cre_proficiency
+		INT_VAR pips = 0
+		STR_VAR proficiency = "PROFICIENCYSWORDANDSHIELD"
+	END
+	LAUNCH_PATCH_FUNCTION add_cre_proficiency
+		INT_VAR pips = 0
+		STR_VAR proficiency = "PROFICIENCY2HANDED"
+	END
+	LAUNCH_PATCH_FUNCTION add_cre_proficiency
+		INT_VAR pips = 0
+		STR_VAR proficiency = "PROFICIENCY2WEAPON"
+	END
+	LAUNCH_PATCH_FUNCTION set_cre_magic_damage_resistance
+		INT_VAR resistance = 0
+	END
+	
+	WRITE_LONG 0x14 975 //EXP//
+	WRITE_SHORT 0x24 77 //PF//
+	WRITE_SHORT 0x26 77 //ACTUAL PF//
+	WRITE_SHORT 0x46 10 //AC//
+	WRITE_SHORT 0x48 10 //AC//
+	WRITE_SHORT 0x4A 0 //AC CRUSHING//
+	WRITE_SHORT 0x4C 0 //AC MISSILE//
+	WRITE_SHORT 0x4E 0 //AC PIERCING//
+	WRITE_SHORT 0x50 0 //AC SLASHING//
+	WRITE_BYTE 0x52 14 //THAC0//
+	WRITE_BYTE 0x53 1 //N°ATT//
+	WRITE_BYTE 0x54 10 //SAVEDEATH//
+	WRITE_BYTE 0x55 12 //SAVEWAND//
+	WRITE_BYTE 0x56 11 //SAVEPOLY//
+	WRITE_BYTE 0x57 12 //SAVEBREATH//
+	WRITE_BYTE 0x58 13 //SAVESPELL//
+	WRITE_BYTE 0x59 0 //FIRERES//
+	WRITE_BYTE 0x5A 0 //COLDRES//
+	WRITE_BYTE 0x5B 0 //ELECRES//
+	WRITE_BYTE 0x5C 0 //ACIDRES//
+	WRITE_BYTE 0x5D 0 //MAGICRES//
+	WRITE_BYTE 0x60 0 //SLASHINGRES//
+	WRITE_BYTE 0x61 0 //CRUSHINGRES//
+	WRITE_BYTE 0x62 0 //PIERCINGRES//
+	WRITE_BYTE 0x63 0 //MISSILERES//
+	WRITE_BYTE 0x6E 3 //LARGESWORDS//
+	WRITE_BYTE 0x6F 0 //SMALLSWORDS//
+	WRITE_BYTE 0x70 0 //BOW//
+	WRITE_BYTE 0x71 0 //SPEAR//
+	WRITE_BYTE 0x72 0 //BLUNT//
+	WRITE_BYTE 0x73 0 //SPIKED//
+	WRITE_BYTE 0x74 0 //AXE//
+	WRITE_BYTE 0x75 2 //MISSILE//
+	WRITE_BYTE 0x234 7 //LIV1CLASS//
+	WRITE_BYTE 0x235 0 //LIV2CLASS//
+	WRITE_BYTE 0x236 0 //LIV3CLASS//
+	WRITE_BYTE 0x238 13 //STR//
+	WRITE_BYTE 0x239 0 //STREX//
+	WRITE_BYTE 0x23A 17 //INT//
+	WRITE_BYTE 0x23B 9 //SAG//
+	WRITE_BYTE 0x23C 15 //DEX//
+	WRITE_BYTE 0x23D 15 //CON
+	WRITE_BYTE 0x23E 9 //CHR//
+	WRITE_BYTE 0x23F 10 //MORALEDEFAULT//
+	WRITE_BYTE 0x240 3 //MORALERUN
+	WRITE_LONG 0x1c 185 //GOLD//
+	
+	REMOVE_CRE_ITEM "chan01" 
+	REMOVE_CRE_ITEM "scrl1e" 
+	ADD_CRE_ITEM "plat01" #1 #0 #0 ~IDENTIFIED~ ~ARMOR~
+	ADD_CRE_ITEM "helm11" #1 #0 #0 ~NONE~ ~HELMET~
+	
+		
+	
+//NEXLIT//
+
+COPY_EXISTING "nexlit.cre" "override"
+
+SAY NAME1 "Nexlit"
+SAY NAME2 "Nexlit"
+
+LAUNCH_PATCH_FUNCTION remove_bg2_cre_proficency
+	END
+
+	LAUNCH_PATCH_FUNCTION add_cre_proficiency
+		INT_VAR pips = 1
+		STR_VAR proficiency = "PROFICIENCYSINGLEWEAPON"
+	END
+	LAUNCH_PATCH_FUNCTION set_cre_speed
+		INT_VAR speed = 5
+	END
+	LAUNCH_PATCH_FUNCTION set_cre_magic_damage_resistance
+		INT_VAR resistance = 0
+	END
+	WRITE_LONG 0x14 175 //EXP//
+	WRITE_SHORT 0x24 30
+	WRITE_SHORT 0x26 30
+	WRITE_SHORT 0x46 7 //AC//
+	WRITE_SHORT 0x48 7 //AC//
+	WRITE_SHORT 0x4A 0 //AC CRUSHING//
+	WRITE_SHORT 0x4C 0 //AC MISSILE//
+	WRITE_SHORT 0x4E 0 //AC PIERCING//
+	WRITE_SHORT 0x50 0 //AC SLASHING//
+	WRITE_BYTE 0x52 16 //THAC0//
+	WRITE_BYTE 0x53 7 //N°ATT//
+	WRITE_BYTE 0x54 11 //SAVEDEATH//
+	WRITE_BYTE 0x55 13 //SAVEWAND//
+	WRITE_BYTE 0x56 12 //SAVEPOLY//
+	WRITE_BYTE 0x57 13 //SAVEBREATH//
+	WRITE_BYTE 0x58 14 //SAVESPELL//
+	WRITE_BYTE 0x59 0 //FIRERES//
+	WRITE_BYTE 0x5A 0 //COLDRES//
+	WRITE_BYTE 0x5B 0 //ELECRES//
+	WRITE_BYTE 0x5C 0 //ACIDRES//
+	WRITE_BYTE 0x5D 0 //MAGICRES//
+	WRITE_BYTE 0x60 0 //SLASHINGRES//
+	WRITE_BYTE 0x61 0 //CRUSHINGRES//
+	WRITE_BYTE 0x62 0 //PIERCINGRES//
+	WRITE_BYTE 0x63 0 //MISSILERES//
+	WRITE_BYTE 0x6E 0 //LARGESWORDS//
+	WRITE_BYTE 0x6F 2 //SMALLSWORDS//
+	WRITE_BYTE 0x70 0 //BOW//
+	WRITE_BYTE 0x71 0 //SPEAR//
+	WRITE_BYTE 0x72 0 //BLUNT//
+	WRITE_BYTE 0x73 0 //SPIKED//
+	WRITE_BYTE 0x74 0 //AXE//
+	WRITE_BYTE 0x75 0 //MISSILE//
+	WRITE_BYTE 0x234 5 //LIV1CLASS//
+	WRITE_BYTE 0x235 0 //LIV2CLASS//
+	WRITE_BYTE 0x236 0 //LIV3CLASS//
+	WRITE_BYTE 0x238 13 //STR//
+	WRITE_BYTE 0x239 0 //STREX//
+	WRITE_BYTE 0x23A 9 //INT//
+	WRITE_BYTE 0x23B 9 //SAG//
+	WRITE_BYTE 0x23C 16 //DEX//
+	WRITE_BYTE 0x23D 13 //CON//
+	WRITE_BYTE 0x23E 13 //CHR//
+	WRITE_BYTE 0x23F 10 //MORALEDEFAULT//
+	WRITE_BYTE 0x240 3 //MORALERUN//
+	
+	REMOVE_CRE_ITEM "sw1h07"
+	ADD_CRE_ITEM "sw1h08" #1 #0 #0 ~NONE~ ~WEAPON~ EQUIP
+	
+	
+//URSA THE CAVE BEAR//	
+COPY_EXISTING "ursa.cre" "override"
+
+	LAUNCH_PATCH_FUNCTION add_cre_proficiency
+		INT_VAR pips = 0
+		STR_VAR proficiency = "PROFICIENCYSINGLEWEAPON"
+	END
+	LAUNCH_PATCH_FUNCTION set_cre_speed
+		INT_VAR speed = 6
+	END
+	LAUNCH_PATCH_FUNCTION set_cre_magic_damage_resistance
+		INT_VAR resistance = 0
+	END
+	
+	WRITE_LONG 0x14 1400 //EXP//
+	WRITE_SHORT 0x24 84 //PF//
+	WRITE_SHORT 0x26 84 //ACTUAL PF//
+	WRITE_SHORT 0x46 5 //AC//
+	WRITE_SHORT 0x48 5 //AC//
+	WRITE_SHORT 0x4A 0 //AC CRUSHING//
+	WRITE_SHORT 0x4C 0 //AC MISSILE//
+	WRITE_SHORT 0x4E 0 //AC PIERCING//
+	WRITE_SHORT 0x50 0 //AC SLASHING//
+	WRITE_BYTE 0x52 13 //THAC0//
+	WRITE_BYTE 0x53 2 //N°ATT//
+	WRITE_BYTE 0x54 6 //SAVEDEATH//
+	WRITE_BYTE 0x55 13 //SAVEWAND//
+	WRITE_BYTE 0x56 12 //SAVEPOLY//
+	WRITE_BYTE 0x57 13 //SAVEBREATH//
+	WRITE_BYTE 0x58 14 //SAVESPELL//
+	WRITE_BYTE 0x59 40 //FIRERES//
+	WRITE_BYTE 0x5A 40 //COLDRES//
+	WRITE_BYTE 0x5B 0 //ELECRES//
+	WRITE_BYTE 0x5C 0 //ACIDRES//
+	WRITE_BYTE 0x5D 0 //MAGICRES//
+	WRITE_BYTE 0x60 20 //SLASHINGRES//
+	WRITE_BYTE 0x61 20 //CRUSHINGRES//
+	WRITE_BYTE 0x62 20 //PIERCINGRES//
+	WRITE_BYTE 0x63 20 //MISSILERES//
+	WRITE_BYTE 0x6E 0 //LARGESWORDS//
+	WRITE_BYTE 0x6F 0 //SMALLSWORDS//
+	WRITE_BYTE 0x70 0 //BOW//
+	WRITE_BYTE 0x71 0 //SPEAR//
+	WRITE_BYTE 0x72 0 //BLUNT//
+	WRITE_BYTE 0x73 0 //SPIKED//
+	WRITE_BYTE 0x74 0 //AXE//
+	WRITE_BYTE 0x75 0 //MISSILE//
+	WRITE_BYTE 0x234 6 //LIV1CLASS//
+	WRITE_BYTE 0x235 0 //LIV2CLASS//
+	WRITE_BYTE 0x236 0 //LIV3CLASS//
+	WRITE_BYTE 0x238 18 //STR//
+	WRITE_BYTE 0x239 100 //STREX//
+	WRITE_BYTE 0x23A 5 //INT//
+	WRITE_BYTE 0x23B 5 //SAG//
+	WRITE_BYTE 0x23C 9 //DEX//
+	WRITE_BYTE 0x23D 18 //CON//
+	WRITE_BYTE 0x23E 5 //CHR//
+	WRITE_BYTE 0x23F 10 //MORALEDEFAULT//
+	WRITE_BYTE 0x240 4 //MORALERUN//
+	WRITE_BYTE 0x27B 34 //ALIGNEMENT //
+	
+	COPY_EXISTING "bearposu.cre" "override"
+	WRITE_LONG 0x14 0 //EXP//
+
+
+
+//BORDA//	
+COPY_EXISTING "borda.cre" "override"
+
+LAUNCH_PATCH_FUNCTION remove_bg2_cre_proficency
+	END
+
+	LAUNCH_PATCH_FUNCTION add_cre_proficiency
+		INT_VAR pips = 1
+		STR_VAR proficiency = "PROFICIENCYSINGLEWEAPON"
+	END
+	LAUNCH_PATCH_FUNCTION add_cre_proficiency
+		INT_VAR pips = 0
+		STR_VAR proficiency = "PROFICIENCYSWORDANDSHIELD"
+	END
+	LAUNCH_PATCH_FUNCTION add_cre_proficiency
+		INT_VAR pips = 0
+		STR_VAR proficiency = "PROFICIENCY2HANDED"
+	END
+	LAUNCH_PATCH_FUNCTION add_cre_proficiency
+		INT_VAR pips = 0
+		STR_VAR proficiency = "PROFICIENCY2WEAPON"
+	END
+	LAUNCH_PATCH_FUNCTION set_cre_magic_damage_resistance
+		INT_VAR resistance = 0
+	END
+	
+	WRITE_LONG 0x14 1400 //EXP//
+	WRITE_SHORT 0x24 38 //PF//
+	WRITE_SHORT 0x26 38 //ACTUAL PF//
+	WRITE_SHORT 0x46 10 //AC//
+	WRITE_SHORT 0x48 10 //AC//
+	WRITE_SHORT 0x4A 0 //AC CRUSHING//
+	WRITE_SHORT 0x4C 0 //AC MISSILE//
+	WRITE_SHORT 0x4E 0 //AC PIERCING//
+	WRITE_SHORT 0x50 0 //AC SLASHING//
+	WRITE_BYTE 0x52 17 //THAC0//
+	WRITE_BYTE 0x53 1 //N°ATT//
+	WRITE_BYTE 0x54 12 //SAVEDEATH//
+	WRITE_BYTE 0x55 9 //SAVEWAND//
+	WRITE_BYTE 0x56 11 //SAVEPOLY//
+	WRITE_BYTE 0x57 13 //SAVEBREATH//
+	WRITE_BYTE 0x58 10 //SAVESPELL//
+	WRITE_BYTE 0x59 0 //FIRERES//
+	WRITE_BYTE 0x5A 0 //COLDRES//
+	WRITE_BYTE 0x5B 0 //ELECRES//
+	WRITE_BYTE 0x5C 0 //ACIDRES//
+	WRITE_BYTE 0x5D 0 //MAGICRES//
+	WRITE_BYTE 0x60 0 //SLASHINGRES//
+	WRITE_BYTE 0x61 0 //CRUSHINGRES//
+	WRITE_BYTE 0x62 0 //PIERCINGRES//
+	WRITE_BYTE 0x63 0 //MISSILERES//
+	WRITE_BYTE 0x6E 0 //LARGESWORDS//
+	WRITE_BYTE 0x6F 2 //SMALLSWORDS//
+	WRITE_BYTE 0x70 1 //BOW//
+	WRITE_BYTE 0x71 0 //SPEAR//
+	WRITE_BYTE 0x72 0 //BLUNT//
+	WRITE_BYTE 0x73 0 //SPIKED//
+	WRITE_BYTE 0x74 0 //AXE//
+	WRITE_BYTE 0x75 0 //MISSILE//
+	WRITE_BYTE 0x234 7 //LIV1CLASS//
+	WRITE_BYTE 0x235 8 //LIV2CLASS//
+	WRITE_BYTE 0x236 0 //LIV3CLASS//
+	WRITE_BYTE 0x238 13 //STR//
+	WRITE_BYTE 0x239 0 //STREX//
+	WRITE_BYTE 0x23A 16 //INT//
+	WRITE_BYTE 0x23B 9 //SAG//
+	WRITE_BYTE 0x23C 18 //DEX//
+	WRITE_BYTE 0x23D 13 //CON//
+	WRITE_BYTE 0x23E 16 //CHR//
+	WRITE_BYTE 0x23F 10 //MORALEDEFAULT//
+	WRITE_BYTE 0x240 4 //MORALERUN//
+	WRITE_LONG 0x1c 174 //GOLD//
+	WRITE_LONG 0x244 0x4000 //KIT//
+	
+	ADD_CRE_ITEM "leat02" #1 #0 #0 ~NONE~ ~ARMOR~
+	REMOVE_CRE_ITEM "wand08"
+	
+	//COMANDO MAGIA//
+	
 		
 
 	

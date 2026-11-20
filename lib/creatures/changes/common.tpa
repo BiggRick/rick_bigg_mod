@@ -79,6 +79,9 @@ COPY_EXISTING
 "PERFBA.CRE" "override"
 "PNASK.CRE" "override"
 
+//River//
+"JARED.CRE" "override"
+
 //Noble//
 "nobl6.cre" "override"
 "nobl5.cre" "override"

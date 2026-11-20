@@ -1,4 +1,4 @@
-//POTION OF STRENGTH - valore 300mo//
+//POTION OF STRENGTH - valore 400mo//
 COPY "weidu_external/rick_bigg_mod/workspace/items/POTN03.itm" "override"
 	SAY NAME1 "Potion"
 	SAY UNIDENTIFIED_DESC "Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.
@@ -9,7 +9,7 @@ Weight: 1"
 
 
 	SAY NAME2 "Potion of Strength"
-	SAY DESC "This potion increases the strength of the user. When it is consumed, the individual gains great strength and bonuses to hit and damage while using any hand-held or thrown weapon. The effect lasts for 2 hours.
+	SAY DESC "This potion increases the strength of the user. When it is consumed, the individual gains great strength and bonuses to hit and damage while using any hand-held or thrown weapon. The effect will last the full duration, which is 3 hours, or until dispelled.
 
 STATISTICS:
 
@@ -22,7 +22,7 @@ Weight: 1"
 
 
 
-//POTION OF EXCEPTIONAL STRENGTH - valore 350mo//
+//POTION OF EXCEPTIONAL STRENGTH - valore 450mo//
 COPY "weidu_external/rick_bigg_mod/workspace/items/POTN12.itm" "override"
 	SAY NAME1 "Potion"
 	SAY UNIDENTIFIED_DESC "Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.
@@ -33,7 +33,7 @@ Weight: 1"
 
 
 	SAY NAME2 "Potion of Exceptional Strength"
-	SAY DESC "This potion increases the strength of the user. When it is consumed, the individual gains great strength and bonuses to hit and damage while using any hand-held or thrown weapon. The effect lasts for 2 hours.
+	SAY DESC "This potion increases the strength of the user. When it is consumed, the individual gains great strength and bonuses to hit and damage while using any hand-held or thrown weapon. The effect will last the full duration, which is 3 hours, or until dispelled.
 
 STATISTICS:
 
@@ -46,7 +46,7 @@ Weight: 1"
 
 
 
-//POTION OF EXTRAORDINARY STRENGTH - 400mo//
+//POTION OF EXTRAORDINARY STRENGTH - 500mo//
 COPY "weidu_external/rick_bigg_mod/workspace/items/POTN04.itm" "override"
 	SAY NAME1 "Potion"
 	SAY UNIDENTIFIED_DESC "Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.
@@ -57,7 +57,7 @@ Weight: 1"
 
 
 	SAY NAME2 "Potion of Extraordinary Strength"
-	SAY DESC "This potion increases the strength of the user. When it is consumed, the individual gains great strength and bonuses to hit and damage while using any hand-held or thrown weapon. The effect lasts for 2 hours.
+	SAY DESC "This potion increases the strength of the user. When it is consumed, the individual gains great strength and bonuses to hit and damage while using any hand-held or thrown weapon. The effect will last the full duration, which is 3 hours, or until dispelled.
 
 STATISTICS:
 
@@ -73,7 +73,7 @@ Weight: 1"
 
 
 
-//POTION OF SUPERIOR STRENGTH - valore 450mo//
+//POTION OF SUPERIOR STRENGTH - valore 550mo//
 COPY "weidu_external/rick_bigg_mod/workspace/items/POTN05.itm" "override"
 	SAY NAME1 "Potion"
 	SAY UNIDENTIFIED_DESC "Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.
@@ -84,7 +84,7 @@ Weight: 1"
 
 
 	SAY NAME2 "Potion of Superior Strength"
-	SAY DESC "This potion increases the strength of the user. When it is consumed, the individual gains great strength and bonuses to hit and damage while using any hand-held or thrown weapon. The effect lasts for 2 hours.
+	SAY DESC "This potion increases the strength of the user. When it is consumed, the individual gains great strength and bonuses to hit and damage while using any hand-held or thrown weapon. The effect will last the full duration, which is 3 hours, or until dispelled.
 
 STATISTICS:
 
@@ -99,7 +99,7 @@ Weight: 1"
 
 
 
-//POTION OF PHENOMENAL STRENGTH - 500mo//
+//POTION OF PHENOMENAL STRENGTH - 600mo//
 COPY "weidu_external/rick_bigg_mod/workspace/items/POTN06.itm" "override"
 	SAY NAME1 "Potion"
 	SAY UNIDENTIFIED_DESC "Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.
@@ -110,7 +110,7 @@ Weight: 1"
 
 
 	SAY NAME2 "Potion of Phenomenal Strength"
-	SAY DESC "This potion increases the strength of the user. When it is consumed, the individual gains great strength and bonuses to hit and damage while using any hand-held or thrown weapon. The effect lasts for 2 hours.
+	SAY DESC "This potion increases the strength of the user. When it is consumed, the individual gains great strength and bonuses to hit and damage while using any hand-held or thrown weapon. The effect will last the full duration, which is 3 hours, or until dispelled.
 
 STATISTICS:
 
@@ -126,7 +126,7 @@ Weight: 1"
 
 
 
-//POTION OF OGRE STRENGTH - 600mo//
+//POTION OF OGRE STRENGTH - 700mo//
 COPY "weidu_external/rick_bigg_mod/workspace/items/POTN07.itm" "override"
 	SAY NAME1 "Potion"
 	SAY UNIDENTIFIED_DESC "Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.
@@ -135,9 +135,8 @@ STATISTICS:
 
 Weight: 1"
 
-
 	SAY NAME2 "Potion of Ogre Strength"
-	SAY DESC "This potion increases the strength of the user. When it is consumed, the individual gains great strength and bonuses to hit and damage while using any hand-held or thrown weapon. The effect lasts for 2 hours.
+	SAY DESC "This potion increases the strength of the user. When it is consumed, the individual gains great strength and bonuses to hit and damage while using any hand-held or thrown weapon. The effect will last the full duration, which is 3 hours, or until dispelled.
 
 STATISTICS:
 
@@ -258,12 +257,12 @@ Weight: 1"
 
 
 	SAY NAME2 "Potion of Freedom"
-	SAY DESC "This potion acts like the spell Free Action when consumed. The drinker becomes completely immune to any effects that influence action or movement, whether it is magical in origin or not. The duration of the potion is 2 hours.
+	SAY DESC "This potion acts like the spell Free Action when consumed. The drinker becomes completely immune to any effects that influence action or movement, whether it is magical in origin or not. The duration of the potion is 10 turns.
 
 STATISTICS:
 
 Special: Free Action
-Duration: 2 hours
+Duration: 10 turns
 
 Weight: 1" 
 
@@ -282,14 +281,36 @@ Weight: 1"
 
 
 	SAY NAME2 "Potion of Mind Focusing"
-	SAY DESC "This potion will grant whoever drinks it the ability to focus their mind unerringly and be quicker and more efficient in battle.
+	SAY DESC "This potion will grant whoever drinks it the ability to focus their mind unerringly and be quicker and more efficient in battle. The duration of the potion is 10 turns.
 
 STATISTICS:
 
 Speed Factor: +5
-THAC0: +3
-
+THAC0: +2
+Lore: +30
 Duration: 10 turns
+
+Weight: 1" 
+
+
+
+//POTION OF FORTUNE  - 900mo//
+COPY "weidu_external/rick_bigg_mod/workspace/items/POTN43.itm" "override"
+	SAY NAME1 "Potion"
+	SAY UNIDENTIFIED_DESC "Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.
+
+STATISTICS:
+
+Weight: 1"
+
+
+	SAY NAME2 "Potion of Fortune "
+	SAY DESC "This potion will make whoever drinks it luckier in anything they do. The duration of the potion is 5 turns.
+
+STATISTICS:
+
+Luck: +2
+Duration: 5 turns
 
 Weight: 1" 
 
@@ -297,9 +318,110 @@ Weight: 1"
 
 
 
+//POTION OF FIRE RESISTANCE - 300mo//
+COPY "weidu_external/rick_bigg_mod/workspace/items/POTN02.itm" "override"
+	SAY NAME1 "Potion"
+	SAY UNIDENTIFIED_DESC "Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.
+
+STATISTICS:
+
+Weight: 1"
 
 
-//POTION OF ELEMENTAL ABSORPTION//
+	SAY NAME2 "Potion of Fire Resistance"
+	SAY DESC "This potion will imbue the person drinking it with 50% resistance to fire damage. The effect will last for 10 turns or until dispelled.
+
+STATISTICS:
+
+Fire Resistance: set to +50%
+Duration: 10 turns
+
+Weight: 1"
+
+
+
+//POTION OF COLD RESISTANCE - 300mo//
+COPY "weidu_external/rick_bigg_mod/workspace/items/POTN22.itm" "override"
+	SAY NAME1 "Potion"
+	SAY UNIDENTIFIED_DESC "Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.
+
+STATISTICS:
+
+Weight: 1"
+
+
+	SAY NAME2 "Potion of Cold Resistance"
+	SAY DESC "This potion will imbue the person drinking it with 50% resistance to cold damage. The effect will last for 10 turns or until dispelled.
+
+STATISTICS:
+
+Cold Resistance: set to +50%
+Duration: 10 turns
+
+Weight: 1"
+
+
+
+
+//POTION OF INSULATION - 300mo//
+COPY "weidu_external/rick_bigg_mod/workspace/items/POTN31.itm" "override"
+	SAY NAME1 "Potion"
+	SAY UNIDENTIFIED_DESC "Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.
+
+STATISTICS:
+
+Weight: 1"
+
+
+	SAY NAME2 "Potion of Insulation"
+	SAY DESC "This potion will imbue the person drinking it with 50% resistance to electricity damage. The effect will last for 10 turns or until dispelled.
+
+STATISTICS:
+
+Electricity Resistance: set to +50%
+Duration: 10 turns
+
+Weight: 1"
+
+
+
+
+
+
+//POTION OF CORROSIVE WARD - 300mo//
+COPY "weidu_external/rick_bigg_mod/workspace/items/TB#POTNA.itm" "override"
+	SAY NAME1 "Potion"
+	SAY UNIDENTIFIED_DESC "Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.
+
+STATISTICS:
+
+Weight: 1"
+
+
+	SAY NAME2 "Potion of Corrosive Ward"
+	SAY DESC "This potion will imbue the person drinking it with 50% resistance to acid damage. The effect will last for 10 turns or until dispelled.
+
+STATISTICS:
+
+Acid Resistance: set to +50%
+Duration: 10 turns
+
+Weight: 1"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//POTION OF ELEMENTAL ABSORPTION - 700mo//
 COPY "weidu_external/rick_bigg_mod/workspace/items/POTN18.itm" "override"
 	SAY NAME1 "Potion"
 	SAY UNIDENTIFIED_DESC "Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.
@@ -314,13 +436,33 @@ Weight: 1"
 
 STATISTICS:
 
-Fire Resistance: +50%
-Cold Resistance: +50%
-Electricity Resistance: +50%
-Acid Resistance: +50%
-Poison Resistance: +50%
-
+Fire Resistance: set to 50%
+Cold Resistance: set to 50%
+Electricity Resistance: set to 50%
+Acid Resistance: set to 50%
 Duration: 10 turns
+
+Weight: 1" 
+
+
+
+//POTION OF CLARITY - 700mo//
+COPY "weidu_external/rick_bigg_mod/workspace/items/POTN21.itm" "override"
+	SAY NAME1 "Potion"
+	SAY UNIDENTIFIED_DESC "Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.
+
+STATISTICS:
+
+Weight: 1"
+
+
+	SAY NAME2 "Potion of Clarity"
+	SAY DESC "This potion will maintain clarity and order from encroaching chaos and insanity. After drinking this potion, the imbiber feels an overwhelming sensation of calm and purpose, such that <PRO_HESHE> will be unaffected by threatening influences like feeblemind, confusion, fear, and charm. This feeling will last for 5 turns or until dispelled.
+
+STATISTICS:
+
+Special: prevents feeblemind, confusion, fear and charm
+Duration: 5 turns
 
 Weight: 1" 
 
@@ -330,7 +472,7 @@ Weight: 1"
 
 
 
-//POTION OF HEROISM - 800mo - solo guerrieri//
+//POTION OF HEROISM - 600mo - solo combattenti//
 COPY "weidu_external/rick_bigg_mod/workspace/items/POTN09.itm" "override"
 	SAY NAME1 "Potion"
 	SAY UNIDENTIFIED_DESC "Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.
@@ -341,14 +483,13 @@ Weight: 1"
 
 
 	SAY NAME2 "Potion of Heroism"
-	SAY DESC "This potion is imbued with a powerful enchantment that will give a temporary increase of power. The effect lasts for 2 hours, which makes this potion a powerful ally in a melee combat. 
+	SAY DESC "This potion is imbued with a powerful enchantment that will give a temporary increase of power. The effect lasts for 5 turns, which makes this potion a powerful ally in a melee combat, but can only be used by Warriors.
 
 STATISTICS:
 
 Hit Points: +15
-THAC0: +2
-Damage: +4
-
+Melee THAC0: +2
+Melee Damage: +4
 Duration: 5 turns
 
 Weight: 1" 
@@ -357,7 +498,7 @@ Weight: 1"
 
 
 
-//POTION OF INVULNERABILITY - 800mo//
+//POTION OF INVULNERABILITY - 900mo - solo combattenti//
 COPY "weidu_external/rick_bigg_mod/workspace/items/POTN11.itm" "override"
 	SAY NAME1 "Potion"
 	SAY UNIDENTIFIED_DESC "Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.
@@ -368,7 +509,8 @@ Weight: 1"
 
 
 	SAY NAME2 "Potion of Invulnerability"
-	SAY DESC "This potion confers very high resistance to all attacks while giving bonuses to all Saving Throws. The effects of the elixir last for 5 turns.
+	SAY DESC "This potion confers very high resistance to all attacks while giving bonuses to all Saving Throws. The effects of the elixir last for 5 turns, but can only be used by Warriors.
+
 
 STATISTICS:
 
@@ -381,7 +523,7 @@ Weight: 1"
 
 
 
-//POTION OF INFRAVISION - 100mo//
+//POTION OF EAGLE EYE - 600mo//
 COPY "weidu_external/rick_bigg_mod/workspace/items/POTN30.itm" "override"
 	SAY NAME1 "Potion"
 	SAY UNIDENTIFIED_DESC "Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.
@@ -391,14 +533,15 @@ STATISTICS:
 Weight: 1"
 
 
-	SAY NAME2 "Potion of Infravision"
-	SAY DESC "This potion will grant the person drinking it the ability to see in the infrared spectrum up to 120 feet, namely infravision. It will also raise precision in battle. The effect will last for 4 hours or until dispelled. 
+	SAY NAME2 "Potion of Eagle Eye"
+	SAY DESC "This potion is imbued with a powerful enchantment that sharpens the drinker's eyesight to supernatural levels and lends deadly precision and force to every shot. The effect lasts for 5 turns, which makes this potion a powerful ally in ranged combat, but can only be used by Warriors.
 
 STATISTICS:
 
-Special: Infravision
-THAC0: +1
-Duration: 4 hours
+Missile Critical Hit bonus: +5%
+Missile THAC0: +4
+Missile Damage: +2
+Duration: 5 turns
 
 Weight: 1" 
 
@@ -426,6 +569,27 @@ Duration: 5 turns
 Weight: 1" 
 
 
+//OIL OF SPEED - 500mo//
+COPY "weidu_external/rick_bigg_mod/workspace/items/POTN14.itm" "override"
+	SAY NAME1 "Potion"
+	SAY UNIDENTIFIED_DESC "Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.
+
+STATISTICS:
+
+Weight: 1"
+
+
+	SAY NAME2 "Oil of Speed"
+	SAY DESC "This oil increases the movement and combat capabilities of the imbiber. The movement rate is doubled and the user gains half an extra attack per round. This does not reduce spellcasting time, however. The duration of the effect is 5 turns.
+
+STATISTICS:
+
+Special: Doubles movement rate and grants half an extra attack per round
+Duration: 5 turns
+
+Weight: 1" 
+
+
 
 
 
@@ -442,12 +606,58 @@ Weight: 1"
 
 
 	SAY NAME2 "Potion of Magic Shielding"
-	SAY DESC "This powerful elixir imbues the drinker with 50% resistance to all forms of magical damage and raises saving throws. The effect lasts for 5 turns, making this potion slightly more battle specific.
+	SAY DESC "This powerful elixir imbues the drinker with 50% resistance to magic and to all forms of magical damage. The effect lasts for 5 turns, making this potion slightly more battle specific.
 
 STATISTICS:
 
-Damage Resistance: +50% against all forms of magical damage
-Saving Throws: +5
+Magic Damage Resistance: set to 50%
+Magic Resistance: set to 50%
+Duration: 5 turns
+
+Weight: 1" 
+
+
+
+//POTION OF MASTER THIEVERY - 600mo//
+COPY "weidu_external/rick_bigg_mod/workspace/items/POTN36.itm" "override"
+	SAY NAME1 "Potion"
+	SAY UNIDENTIFIED_DESC "Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.
+
+STATISTICS:
+
+Weight: 1"
+
+
+	SAY NAME2 "Potion of Master Thievery"
+	SAY DESC "This potion will temporarily transform the drinker into a master thief. The skills that are affected are Open Locks and Pick Pockets, which are increased significantly. The effect will last for 5 turns; however, only Thieves and Bards may use this potion.
+
+STATISTICS:
+
+Open Locks: +40%
+Pick Pockets: +40%
+Duration: 5 turns
+
+Weight: 1" 
+
+
+
+//POTION OF PERCEPTION - 600mo//
+COPY "weidu_external/rick_bigg_mod/workspace/items/POTN39.itm" "override"
+	SAY NAME1 "Potion"
+	SAY UNIDENTIFIED_DESC "Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.
+
+STATISTICS:
+
+Weight: 1"
+
+
+	SAY NAME2 "Potion of Perception"
+	SAY DESC "This potion will temporarily transform the drinker into a master thief. The skills that are affected are Open Locks and Pick Pockets, which are increased significantly. The effect will last for 5 turns; however, only Thieves and Bards may use this potion.
+
+STATISTICS:
+
+Open Locks: +40%
+Pick Pockets: +40%
 Duration: 5 turns
 
 Weight: 1" 
@@ -495,12 +705,12 @@ Weight: 1"
 
 
 	SAY NAME2 "Potion of Regeneration"
-	SAY DESC "This is a powerful elixir that imbues the drinker with the regeneration ability similar to that of a troll, wounds literally closing over and healing as you watch. The effect, which lasts for 5 turns, is to regenerate 1 Hit Point every 3 seconds.
+	SAY DESC "This is a powerful elixir that imbues the drinker with the regeneration ability similar to that of a troll, wounds literally closing over and healing as you watch. The effect, which lasts for 10 turns, is to regenerate 1 Hit Point every 3 seconds.
 
 STATISTICS:
 
 Special: Regenerate 1 Hit Points every 3 seconds
-Duration: 5 turns
+Duration: 10 turns
 
 Weight: 1" 
 
@@ -558,7 +768,7 @@ Weight: 1"
 
 
 
-//POTION OF MAGIC POWER - 1500mo - solo maghi e bardi//
+//POTION OF MAGIC POWER - 1500mo - solo maghi//
 COPY "weidu_external/rick_bigg_mod/workspace/items/POTN33.itm" "override"
 	SAY NAME1 "Potion"
 	SAY UNIDENTIFIED_DESC "Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.
@@ -569,22 +779,44 @@ Weight: 1"
 
 
 	SAY NAME2 "Potion of Magic Power"
-	SAY DESC "This powerful elixir enhances the wizard's abilities: first it increases the casting level, the casting speed factor and then adds 25% damage to each magical attack performed. The effect lasts for 10 turns.
+	SAY DESC "This powerful elixir enhances the wizard's abilities: first it increases the casting level, increases the spells' duration, and finally adds 25% damage to each magical attack performed. The effect lasts for 5 turns.
 
 STATISTICS:
-Casting level: +4
-Casting speed: +4
-Magic Damage: +25%
-Duration: 10 turns
+Casting level: +5
+Magic and elemental damage: +25%
+Arcane spell duration: +50%
+Duration: 5 turns
 
 Weight: 1" 
 
 
 
+//POTION OF SPELL WARDING - 1500mo - solo maghi e bardi//
+COPY "weidu_external/rick_bigg_mod/workspace/items/POTN34.itm" "override"
+	SAY NAME1 "Potion"
+	SAY UNIDENTIFIED_DESC "Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.
+
+STATISTICS:
+
+Weight: 1"
+
+
+	SAY NAME2 "Potion of Spell Warding"
+	SAY DESC "This powerful elixir will protect the imbiber from magical effects. This affects a total of 9 spell levels, but having 1 level left of protection means a 1st level spell would get absorbed, as well as a 7th level spell. Spells greater than 7th level will not be affected. This potion will not protect the caster from a dispel magic. However, it will not be affected by a dispel magic, either. The effect lasts for 1 turn.
+
+STATISTICS:
+
+Special: Spell Deflection (9 spell levels, up to 7th level)
+Duration: 1 turn
+
+Weight: 1"
 
 
 
-//POTION OF MISSILE PROTECTION - 300mo//
+
+
+
+//POTION OF MISSILE PROTECTION - 500mo//
 COPY "weidu_external/rick_bigg_mod/workspace/items/POTN44.itm" "override"
 	SAY NAME1 "Potion"
 	SAY UNIDENTIFIED_DESC "Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.
@@ -595,12 +827,35 @@ Weight: 1"
 
 
 	SAY NAME2 "Potion of Missile Protection"
-	SAY DESC "This elixir grants protection against all missile attacks. The effect lasts for 10 turns.
+	SAY DESC "This elixir grants protection against all missile attacks. The effect lasts for 5 turns.
 
 STATISTICS:
 Armor Class vs Missile: +5
-Missile Damage Resistance: +25%
-Duration: 10 turns
+Missile Damage Resistance: set to 50%
+Duration: 5 turns
+
+Weight: 1" 
+
+
+
+
+//POTION OF DEFENSE - 500mo//
+COPY "weidu_external/rick_bigg_mod/workspace/items/POTN24.itm" "override"
+	SAY NAME1 "Potion"
+	SAY UNIDENTIFIED_DESC "Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.
+
+STATISTICS:
+
+Weight: 1"
+
+
+	SAY NAME2 "Potion of Defense"
+	SAY DESC "This potion confers protection against physical attacks, setting the imbiber's base Armor Class to 0. The effect lasts for 5 turns.
+
+STATISTICS:
+
+Armor Class: 0
+Duration: 5 turns
 
 Weight: 1" 
 
@@ -648,3 +903,90 @@ STATISTICS:
 Damage: 3d6 (fire)
 
 Weight: 1" 
+
+
+
+//POTION OF INVISIBILITY - 300mo//
+COPY "weidu_external/rick_bigg_mod/workspace/items/POTN10.itm" "override"
+	SAY NAME1 "Potion"
+	SAY UNIDENTIFIED_DESC "Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.
+
+STATISTICS:
+
+Weight: 1"
+
+
+	SAY NAME2 "Potion of Invisibility"
+	SAY DESC "This potion confers invisibility similar to the 2nd-level wizard spell of the same name. Entering combat terminates invisibility. Barring that, the effects will last for 10 turns.
+
+STATISTICS:
+
+Special: Invisibility
+Duration: 10 turns
+
+Weight: 1" 
+
+
+
+POTION OF HEALING - 75mo//
+COPY "weidu_external/rick_bigg_mod/workspace/items/POTN08.itm" "override"
+	SAY NAME1 "Potion"
+	SAY UNIDENTIFIED_DESC "Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.
+
+STATISTICS:
+
+Weight: 1"
+
+
+	SAY NAME2 "Potion of Healing"
+	SAY DESC "When wholly consumed, this potion restores 10 Hit Points to the person. The effect is instantaneous and the potion is destroyed in the process.
+
+STATISTICS:
+
+Special: Restores 10 Hit Points.
+
+Weight: 1"
+
+
+
+
+POTION OF EXTRA HEALING - 300mo//
+COPY "weidu_external/rick_bigg_mod/workspace/items/POTN52.itm" "override"
+	SAY NAME1 "Potion"
+	SAY UNIDENTIFIED_DESC "Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.
+
+STATISTICS:
+
+Weight: 1"
+
+
+	SAY NAME2 "Potion of Extra Healing"
+	SAY DESC "When wholly consumed, this potion restores 25 Hit Points to the person. The effect is instantaneous, and the potion is destroyed in the process.
+
+STATISTICS:
+
+Special: Restores 25 Hit Points
+
+Weight: 1"
+
+
+
+
+POTION OF SUPERIOR HEALING - 500mo//
+COPY "weidu_external/rick_bigg_mod/workspace/items/POTN55.itm" "override"
+	SAY NAME1 "Potion"
+	SAY UNIDENTIFIED_DESC "Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.
+
+STATISTICS:
+
+Weight: 1"
+
+
+	SAY NAME2 "Potion of Superior Healing"
+	SAY DESC "When wholly consumed, this potion restores 40 Hit Points to the person. The effect is instantaneous, and the potion is destroyed in the process.
+
+STATISTICS:
+
+Special: Restores 40 Hit Points
+
+Weight: 1"
