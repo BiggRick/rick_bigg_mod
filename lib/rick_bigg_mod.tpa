@@ -27,8 +27,6 @@ INCLUDE ~rick_bigg_mod/lib/styles.tpa~
 
 COMPILE ~rick_bigg_mod/compile~
 
-INCLUDE ~rick_bigg_mod/lib/specialist_mages.tpa~
-
 // SOD be gone
 COPY_EXISTING ~BDSODTRN.BCS~ ~override~
     DECOMPILE_AND_PATCH BEGIN
@@ -45,7 +43,8 @@ ACTION_BASH_FOR ~rick_bigg_mod/extend_top~ ~^.*\.baf$~ BEGIN
     EXTEND_TOP ~%BASH_FOR_RES%.bcs~ ~%BASH_FOR_FILESPEC%~
 END
 
-/*
+
 INCLUDE ~rick_bigg_mod/lib/item_rules.tpa~
+/*
 INCLUDE ~rick_bigg_mod/lib/weaponproficiencies.tpa~
 */

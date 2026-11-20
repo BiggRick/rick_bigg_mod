@@ -7,24 +7,20 @@ rbmSpecSpellLists = {
 	invocation = {},
 	necromancy = {},
 	alteration = {},
-	abjuration_alteration = {},
-	conjuration_invocation = {},
-	divination_alteration = {},
-	conjuration_necromancy = {},
-	invocation_alteration = {},
 }
 
 rbmSpecKitNameStrref = {}
+rbmSpecialistSpellSelectionActive = false
 
 rbmSpecKitSchools = {
-	[22] = { "abjuration", "abjuration_alteration" },
-	[23] = { "conjuration", "conjuration_invocation", "conjuration_necromancy" },
-	[24] = { "divination", "divination_alteration" },
+	[22] = { "abjuration" },
+	[23] = { "conjuration" },
+	[24] = { "divination" },
 	[25] = { "enchantment" },
 	[26] = { "illusion" },
-	[27] = { "invocation", "conjuration_invocation", "invocation_alteration" },
-	[28] = { "necromancy", "conjuration_necromancy" },
-	[29] = { "alteration", "abjuration_alteration", "divination_alteration", "invocation_alteration" },
+	[27] = { "invocation" },
+	[28] = { "necromancy" },
+	[29] = { "alteration" },
 }
 
 rbmSpecKitMasks = {
@@ -50,8 +46,30 @@ function rbmSpecialistKitId()
 		return nil
 	end
 
-	local character = characters and characters[id]
+	local character = characters and (id and characters[id])
+	if not character and characters and currentID then
+		character = characters[currentID]
+	end
+
 	local className = character and character.class
+	if className then
+		local searchStart = 1
+		while true do
+			local kitStart, kitEnd, kitText = string.find(className, "{K=(%d+),C=%d+}", searchStart)
+			if not kitStart then
+				break
+			end
+			local kit = tonumber(kitText)
+			if rbmSpecKitSchools[kit] then
+				return kit
+			end
+			if rbmSpecKitMasks[kit] then
+				return rbmSpecKitMasks[kit]
+			end
+			searchStart = kitEnd + 1
+		end
+	end
+
 	if not className then
 		return nil
 	end
@@ -105,6 +123,10 @@ local function rbmCountSpecialistSpells(spells, kit)
 end
 
 function rbmSpecialistRequirementsSatisfied(spells)
+	if not rbmSpecialistSpellSelectionActive then
+		return true
+	end
+
 	local kit = rbmSpecialistKitId()
 	local level = chargen and chargen.currentSpellLevelChoice
 	if not kit or not level or not rbmHasSpecialistSpellAtLevel(kit, level) then
@@ -128,12 +150,20 @@ end
 
 function rbmSpecialistCanMemorize(spell)
 	local kit = rbmSpecialistKitId()
-	if not kit or not bottomSpells or not characters or not characters[id] then
+	if not kit or not bottomSpells or not characters then
+		return true
+	end
+
+	local characterID = id
+	if not characterID or not characters[characterID] then
+		characterID = currentID
+	end
+	if not characterID or not characters[characterID] then
 		return true
 	end
 
 	local level = currentSpellLevel
-	local mageDetails = characters[id].mageDetails
+	local mageDetails = characters[characterID].mageDetails
 	local details = mageDetails and mageDetails[level]
 	if not details or not details.maxMemorized then
 		return true
