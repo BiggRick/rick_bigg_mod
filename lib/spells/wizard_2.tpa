@@ -264,6 +264,25 @@ Upon casting this spell, a jet of flame appears at the caster's fingertips and b
 
 
 
+//SNILLOC'S SNOWBALL SWARM//
+COPY "weidu_external/rick_bigg_mod/workspace/spell/SPWI217.spl" "override"
+	SAY NAME1 "Agannazar's Scorcher"
+	SAY UNIDENTIFIED_DESC 
+"Snilloc's Snowball Swarm
+Level: 2
+School: Invocation
+Range: Long
+Duration: Instant
+Casting Time: 2
+Area of Effect: 30' radius 
+Saving Throw: Special
+
+This spell causes a flurry of snowballs to erupt from a point within range. These snowballs will hit everything within the area of effect, doing 1d4 points of cold damage every to levels, up to a maximum of 5d4 at level 9. Against fire-using or fire-dwelling creatures, it inflicts double that damage. Creatures must save vs. Polymorph at -2 or have their movement rate halved for 3 rounds.
+"
+
+
+
+
 
 //SOUND BURST//
 COPY "weidu_external/rick_bigg_mod/workspace/spell/SPWI223.spl" "override"

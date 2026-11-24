@@ -270,9 +270,9 @@ This spell is similar to the Invisibility spell, but the recipient is able to at
 
 
 
-//WRAITHFORM//
+//SHADOWFORM//
 COPY "weidu_external/rick_bigg_mod/workspace/spell/SPWI315.spl" "override"
-	SAY NAME1 "Wraithform"
+	SAY NAME1 "Shadowform"
 	SAY UNIDENTIFIED_DESC 
 "Wraithform 
 Level: 4
@@ -283,7 +283,7 @@ Casting Time: 1
 Area of Effect: The caster
 Saving Throw: None 
 
-When this spell is cast, the wizard and all of <PRO_HISHER> gear become insubstantial. The caster is subject only to magical or special attacks, including those by weapons of +1 or better enchantment, or by creatures otherwise able to affect those struck only by magical weapons. The wizard also gains 50% physical resistance to damage, 25% resistance to cold damage and immunity to poison and disease. He also gains a 25% bonus to hide in shadows. While in wraithform, the caster cannot attack.
+When this spell is cast, the wizard and all of <PRO_HISHER> gear become insubstantial. The caster is subject only to magical or special attacks, including those by weapons of +1 or better enchantment, or by creatures otherwise able to affect those struck only by magical weapons. The wizard also gains +5 Armor Class, 25% resistance to cold and acid damage and immunity to poison and disease. He also gains a 40% bonus to hide in shadows. While in shadowform, the caster cannot attack.
 "
 
 

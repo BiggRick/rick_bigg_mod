@@ -82,6 +82,9 @@ COPY_EXISTING
 //River//
 "JARED.CRE" "override"
 
+//Lonely Peaks//
+"hulrik.CRE" "override"
+
 //Noble//
 "nobl6.cre" "override"
 "nobl5.cre" "override"
